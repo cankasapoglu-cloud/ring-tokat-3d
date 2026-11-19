@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Ring Tokat 3D</title>
+<meta name="description" content="Fotoğraf yükle, avatarı tokatla, stres at." />
+<meta name="theme-color" content="#050814" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Ring Tokat" />
+<link rel="apple-touch-icon" href="icons/icon-180.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="arena-canvas" aria-label="3D boks ringi ve avatar"></canvas>
+<div id="feverFrame" class="fever-frame" hidden></div>
+
+<header class="hud">
+  <div class="hud-top">
+    <div class="score" aria-live="off">
+      <span class="eyebrow">SKOR</span>
+      <strong id="score">0</strong>
+      <span id="best" class="best">REKOR 0</span>
+    </div>
+    <div class="tools">
+      <button id="soundBtn" class="tool" type="button" aria-label="Sesi kapat" aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5L12 18.5v-13L7.500 9.500z" /><path id="soundOn" d="M15.500 9a4 4 0 0 1 0 6M18 6.500a8 8 0 0 1 0 11" /><path id="soundOff" d="m16 9.500 5 5m0-5-5 5" hidden /></svg>
+      </button>
+      <button id="orbitBtn" class="tool" type="button" aria-label="360 derece inceleme" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="12" rx="9" ry="3.800" /><path d="M12 3v18" /><path d="m17 17.500 2.500-1.500-.3 3" /></svg>
+      </button>
+      <button id="guideBtn" class="tool" type="button" aria-label="Nasıl oynanır">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M9.500 9.300a2.600 2.600 0 1 1 3.900 2.300c-.9.500-1.400 1.100-1.400 2.100" /><path d="M12 17h.01" /></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="meter">
+    <div class="meter-labels">
+      <span id="meterLabel" class="eyebrow">NAKAVT BARI</span>
+      <span id="combo" class="combo" hidden>x1 KOMBO</span>
+    </div>
+    <div class="meter-track"><div id="meterFill" class="meter-fill"></div></div>
+  </div>
+
+  <div class="hud-actions">
+    <button id="faceBtn" class="pill pill-primary" type="button">
+      <img id="faceThumb" class="face-thumb" alt="" hidden />
+      <svg id="faceIcon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.500" r="4" /><path d="M4.500 20a7.500 7.500 0 0 1 15 0" /></svg>
+      <span id="faceBtnLabel">Yüz Yükle</span>
+    </button>
+    <button id="wardrobeBtn" class="pill" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.500 4-5 3 2 4 2-1v10h9V10l2 1 2-4-5-3a3.500 3.500 0 0 1-7 0z" /></svg>
+      <span>Ekipman</span>
+    </button>
+  </div>
+</header>
+
+<div id="callout" class="callout" role="status" aria-live="polite"></div>
+
+<div id="loading" class="loading" role="status">
+  <span class="spinner" aria-hidden="true"></span>
+  <span id="loadingText">Arena hazırlanıyor…</span>
+</div>
+
+<div id="fatal" class="fatal" role="alert" hidden>
+  <h1>Oyun açılamadı</h1>
+  <p id="fatalText"></p>
+  <button id="fatalRetry" class="btn btn-primary" type="button">Yeniden Dene</button>
+</div>
+
+<footer class="dock">
+  <p id="hint" class="hint">Yanak: tokat · Karın: güler · Ayak: zıplar</p>
+  <div class="attacks">
+    <button class="attack" type="button" data-attack="triggerSlap"><span aria-hidden="true">🖐️</span>Tokat</button>
+    <button class="attack" type="button" data-attack="triggerPunch"><span aria-hidden="true">👊</span>Yumruk</button>
+    <button class="attack" type="button" data-attack="triggerKick"><span aria-hidden="true">🥾</span>Tekme</button>
+    <button class="attack" type="button" data-attack="triggerWaterBalloon"><span aria-hidden="true">💦</span>Su Balonu</button>
+    <button class="attack" type="button" data-attack="triggerPie"><span aria-hidden="true">🥧</span>Pasta</button>
+    <button id="resetBtn" class="attack attack-reset" type="button"><span aria-hidden="true">🧽</span>Sıfırla</button>
+  </div>
+</footer>
+
+<input id="faceFile" class="file-input" type="file" accept="image/*" tabindex="-1" aria-hidden="true" />
+<input id="shirtFile" class="file-input" type="file" accept="image/*" tabindex="-1" aria-hidden="true" />
+
+<dialog id="faceSheet" class="sheet" aria-labelledby="faceTitle">
+  <div class="sheet-head">
+    <h2 id="faceTitle">Yüzü Yerleştir</h2>
+    <button class="close" type="button" data-close aria-label="Kapat">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+    </button>
+  </div>
+  <p class="sheet-sub">Gözleri iki halkaya, ağzı alttaki çizgiye getir. Tek parmakla kaydır, iki parmakla büyüt ve döndür.</p>
+  <div id="faceStage" class="face-stage">
+    <canvas id="faceCanvas" width="768" height="768"></canvas>
+    <svg class="face-guide" viewBox="0 0 512 512" aria-hidden="true">
+      <defs>
+        <mask id="ovalMask">
+          <rect width="512" height="512" fill="#fff" />
+          <ellipse cx="256" cy="268" rx="158" ry="206" fill="#000" />
+        </mask>
+      </defs>
+      <rect width="512" height="512" fill="#050814" fill-opacity=".58" mask="url(#ovalMask)" />
+      <ellipse cx="256" cy="268" rx="158" ry="206" class="guide-line" />
+      <circle cx="180.500" cy="217.600" r="24" class="guide-mark" />
+      <circle cx="331.500" cy="217.600" r="24" class="guide-mark" />
+      <path d="M206 376h100" class="guide-mark" />
+    </svg>
+  </div>
+  <label class="slider"><span>Yakınlık</span><input id="faceZoom" type="range" min="0" max="100" step="0.5" value="50" /></label>
+  <label class="slider"><span>Açı</span><input id="faceRotate" type="range" min="-60" max="60" step="0.5" value="0" /></label>
+  <p id="faceStatus" class="status" role="status"></p>
+  <div class="sheet-actions">
+    <button id="faceApply" class="btn btn-primary" type="button">Avatara Giydir</button>
+    <button id="facePick" class="btn" type="button">Başka Fotoğraf Seç</button>
+    <button id="faceRestore" class="btn btn-quiet" type="button" hidden>Varsayılan Yüze Dön</button>
+  </div>
+  <p class="privacy">Fotoğrafın telefonunda işlenir, hiçbir sunucuya gönderilmez.</p>
+</dialog>
+
+<dialog id="wardrobeSheet" class="sheet" aria-labelledby="wardrobeTitle">
+  <div class="sheet-head">
+    <h2 id="wardrobeTitle">Ekipman</h2>
+    <button class="close" type="button" data-close aria-label="Kapat">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+    </button>
+  </div>
+  <section class="group"><h3>Karakter</h3><div id="genderChips" class="chips"></div></section>
+  <section class="group">
+    <h3>Tişört Baskısı</h3>
+    <div class="chips">
+      <button id="shirtPick" class="chip" type="button">Tişörte Görsel Yükle</button>
+      <button id="shirtRemove" class="chip" type="button" hidden>Baskıyı Kaldır</button>
+    </div>
+  </section>
+  <section class="group"><h3>Tişört Rengi</h3><div id="kitChips" class="chips"></div></section>
+  <section class="group"><h3>Baş Aksesuarı</h3><div id="headChips" class="chips"></div></section>
+  <section class="group"><h3>Vücut Oranı</h3><div id="propChips" class="chips"></div></section>
+</dialog>
+
+<dialog id="guideSheet" class="sheet" aria-labelledby="guideTitle">
+  <div class="sheet-head">
+    <h2 id="guideTitle">Nasıl Oynanır</h2>
+    <button class="close" type="button" data-close aria-label="Kapat">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+    </button>
+  </div>
+  <ul class="guide">
+    <li><b>Dokun:</b> Yanağına dokununca tokat yer, karnına dokununca güler, ayağına dokununca zıplar.</li>
+    <li><b>Kaydır:</b> Yüzünde parmağını yukarı kaydırırsan aparkat atarsın.</li>
+    <li><b>Saldır:</b> Alt bardan tokat, yumruk, tekme, su balonu veya pasta seç.</li>
+    <li><b>Nakavt:</b> Barı doldurursan süper nakavt başlar. Üst üste vurursan yere düşer.</li>
+    <li><b>Ses gelmiyorsa:</b> iPhone'un yanındaki sessiz düğmesini kontrol et.</li>
+    <li><b>Uygulama gibi aç:</b> Safari'de Paylaş düğmesine, sonra Ana Ekrana Ekle'ye dokun.</li>
+  </ul>
+</dialog>
+
+<script type="importmap">
+{ "imports": {
+  "three": "./lib/three/build/three.module.min.js",
+  "three/addons/": "./lib/three/examples/jsm/"
+} }
+</script>
+<script src="game_ui.js"></script>
+<script type="module" src="boot.js"></script>
+</body>
+</html>
