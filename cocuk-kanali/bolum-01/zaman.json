@@ -1,0 +1,14 @@
+{
+  "fps": 30,
+  "sure": 79.0,
+  "giris": {"t": 1.0, "ses": "01_giris"},
+  "turlar": [
+    {"t": 9.0,  "soru": "02_soru1", "cevap": "03_kirmizi"},
+    {"t": 21.5, "soru": "04_soru2", "cevap": "05_mavi"},
+    {"t": 34.0, "soru": "06_soru3", "cevap": "07_sari"},
+    {"t": 46.5, "soru": "08_soru4", "cevap": "09_yesil"}
+  ],
+  "tur": {"soru": 0.3, "dusun": 4.3, "cevap": 7.0, "nesne": 9.1, "tasi": 11.3},
+  "sayma": {"t": 59.5, "ses": "10_sayma", "vuruslar": [2.5, 3.48, 4.4, 5.3], "son": 6.05},
+  "kapanis": {"t": 68.5, "ses": "11_kapanis", "renkler": [1.28, 1.95, 2.6, 3.25], "veda": 5.5}
+}
