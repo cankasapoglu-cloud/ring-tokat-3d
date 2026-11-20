@@ -6,11 +6,20 @@
 import os, glob, sys, colorsys
 import numpy as np
 from PIL import Image, ImageFilter
-from rembg import new_session, remove
+import subprocess
 
 D = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(os.path.join(D, "hazir"), exist_ok=True)
-ses = new_session("birefnet-general-lite")
+os.makedirs(os.path.join(D, "onbellek"), exist_ok=True)
+
+
+def arka_plan_sil(yol):
+    """rembg'yi ayrı süreçte çalıştırır (bellek sınırı), sonucu önbelleğe alır."""
+    c = os.path.join(D, "onbellek", os.path.basename(yol))
+    if not os.path.exists(c) or os.path.getmtime(c) < os.path.getmtime(yol):
+        subprocess.run([sys.executable, os.path.join(D, "alfa.py"), yol, c], check=True)
+    return Image.open(c).convert("RGBA")
+
 ham = lambda ad: os.path.join(D, "ham", ad + ".png")
 out = lambda ad: os.path.join(D, "hazir", ad)
 
@@ -65,7 +74,7 @@ tabanlar = [p for p in pozlar if not p.endswith(("_agiz", "_goz"))]
 katman, kutular = {}, []
 for p in tabanlar:
     rgb = Image.open(ham("pitir_" + p)).convert("RGB")
-    rgba = remove(rgb, session=ses)
+    rgba = arka_plan_sil(ham("pitir_" + p))
     alfa = np.asarray(rgba)[..., 3]
     katman["pitir_" + p] = rgba
     ys, xs = np.where(alfa > 12)

@@ -198,7 +198,7 @@
   // --- renkler ---
   SAHNE.renkler = (t, b) => {
     arkaPlan('bg_cayir', t);
-    const O = b.ozet, M = { x: 1010, y: 430 }, yuva = i => ({ x: 1345 + i * 100, y: 100 }), sira = i => ({ x: 640 + i * 222, y: 500 });
+    const O = b.ozet, M = { x: 1010, y: 530 }, yuva = i => ({ x: 1345 + i * 100, y: 100 }), sira = i => ({ x: 640 + i * 222, y: 500 });
     const durum = [];
     b.turlar.forEach((r, i) => {
       if (t < r.t) return;
@@ -215,7 +215,7 @@
     b.turlar.forEach((r, i) => {
       if (t < r.t || t > r.bit) return;
       soruIsaretleri(t, r);
-      kelime(t, r, RENK[i].ad, RENK[i], 860, 150);
+      kelime(t, r, RENK[i].ad, RENK[i], 860, 130);
       const no = gorun(t, r.cevap + (r.cevapBit - r.cevap) * 0.55, r.bit - 0.9);
       if (RENK[i].nesne) rozet(1540, 560, no, t, RENK[i].nesne);
       else if (no > 0) isilti(PX, PY - 330, 300 * Math.min(1, no), t, 10);
@@ -359,7 +359,7 @@
     b.turlar.forEach((r, i) => {
       if (t < r.cevap - 0.1) { if (t >= r.soru && t < r.cevap) salla = Math.max(salla, sinirla(gorun(t, r.soru + 0.3, r.soruBit - 0.6, 0.3, 0.3))); return; }
       const p0 = yavasla(ilerle(t, r.cevap - 0.1, 0.6));
-      let x = CX, y = ara(CY + 150, CY - 210, p0) - 30 * zipla(t, r.cevap + 0.6, 0.4), h = 420;
+      let x = CX, y = ara(CY + 150, CY - 265, p0) - 30 * zipla(t, r.cevap + 0.6, 0.4), h = 420;
       const p1 = yumusak(ilerle(t, r.bit - 1.1, 1.0)), y1 = yuva(i);
       x = ara(x, y1.x, p1); y = ara(y, y1.y, p1); h = ara(h, 170, p1);
       if (b.ozet) { const sure = b.ozet.bit - b.ozet.t; y -= 40 * zipla(t, b.ozet.t + sure * (0.48 + i * 0.07), 0.45); }
@@ -380,12 +380,12 @@
   };
 
   // --- taşıtlar ---
-  const YOL = AYAR.yolY || 960;
+  const YOL = AYAR.yolY || 850;
   const TASIT = [
     { id: 'araba', ad: 'ARABA', r: RENK[0], y: YOL, h: 300 },
     { id: 'otobus', ad: 'OTOBÜS', r: RENK[2], y: YOL, h: 400 },
     { id: 'tren', ad: 'TREN', r: RENK[3], y: YOL, h: 330 },
-    { id: 'ucak', ad: 'UÇAK', r: RENK[1], y: 560, h: 330 },
+    { id: 'ucak', ad: 'UÇAK', r: RENK[1], y: 520, h: 330 },
   ];
   function tasit(T, x, y, t, hareket, s = 1) {
     const yon = (AYAR.sagaBakan || []).includes(T.id) ? -1 : 1;
@@ -395,7 +395,6 @@
   SAHNE.tasitlar = (t, b) => {
     arkaPlan('bg_yol', t, 1.0);
     const r0 = b.turlar.find(r => t >= r.t && t < r.bit);
-    pitirTur(t, b, { x: 260, y: AYAR.yolPitirY || 880, ek: { s: 0.8 } });
     b.turlar.forEach((r, i) => {
       if (t < r.t || t > r.bit + 0.2) return;
       const T = TASIT[i], gir = yavasla(ilerle(t, r.t + 0.2, 2.4)), cik = Math.pow(ilerle(t, r.bit - 1.3, 1.5), 2);
@@ -407,6 +406,7 @@
       const sure = b.ozet.bit + 1.2 - b.ozet.t;
       TASIT.forEach((T, i) => { const p = ilerle(t, b.ozet.t + i * sure * 0.13, sure * 0.6); if (p > 0 && p < 1) tasit(T, ara(W + 700, -800, p), T.y, t, 1, 0.85); });
     }
+    pitirTur(t, b, { x: 260, y: AYAR.yolPitirY || 930, ek: { s: 0.8 } });
   };
 
   // --- hafıza oyunu ---
