@@ -3,8 +3,8 @@
 import subprocess, os, json
 D = os.path.dirname(os.path.abspath(__file__))
 # sahne sınırları (saniye): şarkının yazıya dökülmüş söz zamanlarından
-SINIR = [0, 4.35, 8.7, 13.05, 17.3, 21.8, 25.0, 29.4, 33.75, 38.1, 42.5, 46.3, 50.0]
-YAZI = [("baslik", 0.6, 4.2, 150), ("kirmizi", 8.7, 12.9, 60), ("mavi", 13.05, 17.1, 60), ("sari", 17.3, 21.6, 60), ("yesil", 21.8, 23.9, 60)]
+SINIR = [0, 3.3, 8.7, 13.05, 17.3, 21.8, 25.0, 29.4, 33.75, 38.1, 42.5, 46.3, 50.0]
+YAZI = [("baslik", 0.6, 7.6, 150), ("kirmizi", 8.7, 12.9, 60), ("mavi", 13.05, 17.1, 60), ("sari", 17.3, 21.6, 60), ("yesil", 21.8, 23.9, 60)]
 FPS = 24
 
 
@@ -17,7 +17,7 @@ girdi, filtre = [], []
 for i in range(12):
     f = os.path.join(D, "klip", f"{i + 1:02d}.mp4")
     hedef, ham = SINIR[i + 1] - SINIR[i], sure(f)
-    hiz = min(1.25, max(1.0, (ham - 0.1) / hedef))          # kısa sahnelerde hafif hızlandır, gerisini kırp
+    hiz = min(1.25, max(0.9, (ham - 0.1) / hedef))          # kısa sahnelerde hafif hızlandır, gerisini kırp
     girdi += ["-i", f]
     filtre.append(f"[{i}:v]trim=0:{hedef * hiz:.3f},setpts=(PTS-STARTPTS)/{hiz:.4f},fps={FPS},scale=1920:1080,setsar=1[v{i}]")
 filtre.append("".join(f"[v{i}]" for i in range(12)) + "concat=n=12:v=1:a=0[vid]")
