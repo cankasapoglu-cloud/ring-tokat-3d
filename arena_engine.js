@@ -765,7 +765,8 @@
           var raw = window.AndroidBridge.getPendingFaceJson();
           if (!raw) return;
           var payload = JSON.parse(raw);
-          fighter.setFace(payload.textureDataUrl).then(function() {
+          var apply = payload.headDataUrl ? fighter.setPhotoHead(payload) : fighter.setFace(payload.textureDataUrl);
+          apply.then(function() {
             window.ArenaAudio.playRingBell(1);
             phys.squash = 0.20;
             phys.neckVelY += 5.0;

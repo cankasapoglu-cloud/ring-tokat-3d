@@ -186,6 +186,14 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round
 .slider { display: grid; grid-template-columns: 66px 1fr; align-items: center; gap: 8px; min-height: 40px; font-size: 14px; font-weight: 600; color: var(--muted); }
 .slider input { width: 100%; height: 36px; accent-color: var(--cyan); touch-action: pan-x; }
 .status { min-height: 18px; color: var(--gold); font-size: 13px; }
+.face-busy { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 180px; font-size: 15px; font-weight: 700; }
+.face-busy[hidden] { display: none; }
+.face-preview {
+  width: min(70%, 34dvh); aspect-ratio: 1; margin: 0 auto 10px; border-radius: 16px; overflow: hidden;
+  background: radial-gradient(circle at 50% 40%, #2a3358, #0b1022 72%);
+}
+.face-preview img { width: 100%; height: 100%; object-fit: contain; display: block; }
+#faceGenderChips { justify-content: center; margin-bottom: 8px; }
 .sheet-actions { display: grid; gap: 8px; margin-top: 6px; }
 .btn {
   width: 100%; min-height: 48px; border-radius: 14px; font-size: 16px; font-weight: 800;

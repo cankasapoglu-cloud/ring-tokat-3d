@@ -201,6 +201,193 @@ function addSlapMark(material) {
   material.customProgramCacheKey = () => 'avatar-head-slap';
 }
 
+// ---------- Fotoğraf kafası ----------
+// Kesilmiş kafa fotoğrafı (512 kare, saydam), gözler PHOTO_EYE_MID'de ve PHOTO_EYE_GAP aralıkla durur.
+const PHOTO_SIZE = 512;
+const PHOTO_EYE_GAP = 88;
+const PHOTO_EYE_MID = [256, 232];
+
+// Android tarafındaki eski yüz çıktısını (gözler FACE_LANDMARKS'ta, saydamsız) fotoğraf kafasına çevirir.
+function legacyFaceToHead(image) {
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = PHOTO_SIZE;
+  const ctx = canvas.getContext('2d');
+  const gap = FACE_LANDMARKS[1][0] - FACE_LANDMARKS[0][0];
+  const k = PHOTO_EYE_GAP / gap;
+  ctx.translate(PHOTO_EYE_MID[0] - 256 * k, PHOTO_EYE_MID[1] - FACE_LANDMARKS[0][1] * k);
+  ctx.scale(k, k);
+  ctx.drawImage(image, 0, 0, 512, 512);
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  const g = ctx.createRadialGradient(0, 0, 0.82, 0, 0, 1);
+  g.addColorStop(0, 'rgba(0,0,0,1)');
+  g.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.globalCompositeOperation = 'destination-in';
+  const rx = PHOTO_EYE_GAP * 1.12;
+  const ry = PHOTO_EYE_GAP * 1.45;
+  ctx.setTransform(rx, 0, 0, ry, PHOTO_EYE_MID[0], PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.42);
+  ctx.fillStyle = g;
+  ctx.beginPath();
+  ctx.arc(0, 0, 1, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  const mouthY = PHOTO_EYE_MID[1] + (FACE_LANDMARKS[2][1] - FACE_LANDMARKS[0][1]) * k;
+  return {
+    canvas,
+    mouth: [256, mouthY],
+    chin: [256, mouthY + PHOTO_EYE_GAP * 0.75],
+    faceHalf: PHOTO_EYE_GAP * 1.05,
+    bounds: [256 - rx, PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.42 - ry, 256 + rx, PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.42 + ry],
+  };
+}
+
+function averageColor(canvas, x0, y0, x1, y1) {
+  const data = canvas.getContext('2d').getImageData(x0, y0, Math.max(1, x1 - x0), Math.max(1, y1 - y0)).data;
+  const sum = [0, 0, 0];
+  let n = 0;
+  for (let p = 0; p < data.length; p += 4) {
+    if (data[p + 3] < 200) continue;
+    sum[0] += data[p]; sum[1] += data[p + 1]; sum[2] += data[p + 2];
+    n++;
+  }
+  return n ? new THREE.Color(sum[0] / n / 255, sum[1] / n / 255, sum[2] / n / 255).convertSRGBToLinear() : null;
+}
+
+const photoSlapUniform = { value: new THREE.Vector2(0, 1) };
+
+function addPhotoSlapMark(material) {
+  const cheekX = PHOTO_EYE_GAP * 0.8 / PHOTO_SIZE;
+  const cheekY = (PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.8) / PHOTO_SIZE;
+  material.onBeforeCompile = shader => {
+    shader.uniforms.uSlap = photoSlapUniform;
+    shader.fragmentShader = shader.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform vec2 uSlap;')
+      .replace('#include <map_fragment>', `#include <map_fragment>
+      if (uSlap.x > 0.01) {
+        vec2 px = vec2(vMapUv.x, 1.0 - vMapUv.y);
+        vec2 c = vec2(0.5 + (uSlap.y >= 0.0 ? ${cheekX.toFixed(4)} : -${cheekX.toFixed(4)}), ${cheekY.toFixed(4)});
+        vec2 q = (px - c) * ${PHOTO_SIZE.toFixed(1)};
+        float mark = 1.0 - smoothstep(0.6, 1.0, length(q / vec2(30.0, 26.0)));
+        for (int i = 0; i < 4; i++) {
+          vec2 f = (q - vec2(-22.0 + float(i) * 15.0, -32.0)) / vec2(6.0, 17.0);
+          mark = max(mark, 1.0 - smoothstep(0.7, 1.0, length(f)));
+        }
+        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.95, 0.05, 0.16), mark * uSlap.x * 0.5);
+      }`);
+  };
+  material.customProgramCacheKey = () => 'avatar-photo-slap';
+}
+
+// Fotoğrafı kafa biçiminde öne doğru kubbeleşen bir kabuğa giydirir; arkasına saç renginde bir kafa küresi koyar.
+function buildPhotoHead(avatar, head) {
+  const rest = avatar.photoRest;
+  const eyeMid = rest.eyeL.clone().add(rest.eyeR).multiplyScalar(0.5);
+  const gapWorld = rest.eyeL.distanceTo(rest.eyeR);
+  const s = gapWorld / PHOTO_EYE_GAP; // fotoğraf pikseli başına dünya birimi
+  const skull = rest.skull;
+  const centerZ = skull ? (skull.min.z + skull.max.z) / 2 : rest.headPos.z;
+  const front = Math.max(gapWorld * 1.1, eyeMid.z - centerZ + gapWorld * 0.55,
+    skull ? skull.max.z - centerZ + gapWorld * 0.1 : 0);
+
+  const [bx0, by0, bx1] = head.bounds;
+  const faceHalf = head.faceHalf;
+  const chinY = head.chin[1];
+  // Kafa elipsi (fotoğraf pikseli): yüz genişliği ve tepeden çeneye yükseklik.
+  const rx = Math.max(faceHalf * 1.08, Math.min((bx1 - bx0) / 2, faceHalf * 1.45));
+  const top = Math.min(by0, PHOTO_EYE_MID[1] - PHOTO_EYE_GAP * 1.4);
+  const cy = (top + chinY) / 2;
+  const ry = (chinY - top) / 2 * 1.04;
+
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = PHOTO_SIZE;
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  ctx.drawImage(head.canvas, 0, 0);
+  const base = ctx.getImageData(0, 0, PHOTO_SIZE, PHOTO_SIZE);
+
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 4;
+
+  const geo = new THREE.PlaneGeometry(PHOTO_SIZE * s, PHOTO_SIZE * s, 64, 64);
+  const pos = geo.attributes.position;
+  for (let i = 0; i < pos.count; i++) {
+    const px = pos.getX(i) / s + PHOTO_SIZE / 2;
+    const py = PHOTO_SIZE / 2 - pos.getY(i) / s;
+    const nx = (px - PHOTO_EYE_MID[0]) / rx;
+    const ny = (py - cy) / ry;
+    const r2 = nx * nx + ny * ny;
+    // Elips içinde kubbe, dışında (saç uçları) yumuşakça geriye kıvrılan kenar.
+    const dome = r2 < 1 ? Math.sqrt(1 - r2) : 0;
+    const rim = r2 >= 1 ? -Math.min(0.5, (Math.sqrt(r2) - 1) * 0.9) : 0;
+    // Burun bölgesine hafif çıkıntı.
+    const nose = Math.exp(-(((px - PHOTO_EYE_MID[0]) / (PHOTO_EYE_GAP * 0.32)) ** 2 +
+      ((py - (PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.42)) / (PHOTO_EYE_GAP * 0.42)) ** 2));
+    pos.setZ(i, dome * front + rim * front + nose * gapWorld * 0.12);
+  }
+  geo.computeVertexNormals();
+
+  const shellMat = new THREE.MeshStandardMaterial({
+    map: tex, emissiveMap: tex, emissive: 0xffffff, emissiveIntensity: 0.32,
+    roughness: 0.78, metalness: 0, transparent: true, alphaTest: 0.08, side: THREE.DoubleSide,
+  });
+  addPhotoSlapMark(shellMat);
+  const shell = new THREE.Mesh(geo, shellMat);
+  shell.castShadow = true;
+  // Gözler fotoğrafta (256, 232) noktasında; düzlemin ortası (256, 256).
+  shell.position.set((PHOTO_SIZE / 2 - PHOTO_EYE_MID[0]) * s, (PHOTO_EYE_MID[1] - PHOTO_SIZE / 2) * s, 0);
+
+  // Arka kafa: saç rengi (yoksa ten rengi) elipsoit, ön kabuğun biraz içinde.
+  const hairColor = averageColor(head.canvas, Math.round(256 - faceHalf * 0.6), Math.max(0, Math.round(top + 4)),
+    Math.round(256 + faceHalf * 0.6), Math.round(top + PHOTO_EYE_GAP * 0.35));
+  const skinColor = averageColor(head.canvas, Math.round(256 - PHOTO_EYE_GAP * 0.9), Math.round(PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.55),
+    Math.round(256 - PHOTO_EYE_GAP * 0.55), Math.round(PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.85));
+  const backMat = new THREE.MeshStandardMaterial({ color: hairColor || skinColor || new THREE.Color(0x3a2a20), roughness: 0.85 });
+  // Modelin kendi kafatası bu kürenin içinde kalır; yalnızca boynu görünür.
+  const backGeo = new THREE.SphereGeometry(1, 40, 28);
+  let backX = rx * s * 0.94;
+  let backY = ry * s * 0.96;
+  let backZ = front * 0.95;
+  let backCy = (PHOTO_EYE_MID[1] - cy) * s;
+  // Modelin kafatası kesildiği için küre fotoğraf silüetinin içinde kalır; derinliği modelin kafasınca.
+  if (skull) backZ = Math.max(backZ, centerZ - skull.min.z);
+  // Ön yarı basık tutulur ki fotoğrafın arkasında kalsın; arka yarı kafatasını sarar.
+  // Ön-alt kısım ağız hizasının üstünde biter ki çenenin altından saç rengi görünmesin.
+  const bp = backGeo.attributes.position;
+  const frontBottom = Math.max(gapWorld * 0.2, backCy + gapWorld * 0.35);
+  const backBottom = Math.min(backY, backCy + gapWorld * 1.15); // ense ağız hizasında biter, boyna sarkmaz
+  for (let i = 0; i < bp.count; i++) {
+    const z = bp.getZ(i);
+    const y = bp.getY(i);
+    // Arkada enseye kadar iner, yanlarda ve önde ağız hizasının üstünde kalır.
+    const down = y < 0 ? backBottom + (frontBottom - backBottom) * smoothstep(-0.65, -0.05, z) : backY;
+    bp.setXYZ(i, bp.getX(i) * backX, y * down + backCy, z * (z > 0 ? front * 0.55 : backZ));
+  }
+  backGeo.computeVertexNormals();
+  const back = new THREE.Mesh(backGeo, backMat);
+  back.castShadow = true;
+
+  const group = new THREE.Group();
+  group.add(back, shell);
+
+  // Grup holder uzayında göz ortasına (derinlikte kafa merkezine) oturur, sonra kafa kemiğine bağlanır.
+  const desired = new THREE.Matrix4().makeTranslation(eyeMid.x, eyeMid.y, centerZ);
+  const local = rest.headWorldInv.clone().multiply(desired);
+  local.decompose(group.position, group.quaternion, group.scale);
+  avatar.bones.Head.add(group);
+
+  return {
+    group, canvas, ctx, base, tex,
+    materials: [shellMat, backMat],
+    geometries: [geo, back.geometry],
+  };
+}
+
+function disposePhotoHead(ph) {
+  ph.group.parent?.remove(ph.group);
+  ph.tex.dispose();
+  ph.materials.forEach(m => m.dispose());
+  ph.geometries.forEach(g => g.dispose());
+}
+
 async function buildAvatar(gender) {
   const dir = `./avatar/${gender}`;
   const manager = new THREE.LoadingManager();
@@ -339,8 +526,89 @@ async function buildAvatar(gender) {
     };
   }
 
+  // Fotoğraf kafasının yerleşimi için dinlenme pozundaki göz ve kafa ölçüleri (holder uzayında).
+  const photoRest = {
+    eyeL: world(bones.LEye),
+    eyeR: world(bones.REye),
+    headPos: world(bones.Head),
+    headWorldInv: bones.Head.matrixWorld.clone().invert(),
+    skull: null,
+  };
+  // Modelin kafatasının sınırları (boyun hariç): fotoğraf kafası bunu tamamen örtmeli.
+  {
+    const geo = mesh.geometry;
+    const headIndex = mesh.material.findIndex(m => /head/i.test(m.name));
+    const posAttr = geo.attributes.position;
+    const idx = geo.index;
+    const eyeY = (photoRest.eyeL.y + photoRest.eyeR.y) / 2;
+    const gap = photoRest.eyeL.distanceTo(photoRest.eyeR);
+    const box = new THREE.Box3();
+    const p = new THREE.Vector3();
+    mesh.updateMatrixWorld(true);
+    for (const group of geo.groups) {
+      if (group.materialIndex !== headIndex) continue;
+      for (let i = group.start; i < group.start + group.count; i++) {
+        const vi = idx ? idx.getX(i) : i;
+        p.fromBufferAttribute(posAttr, vi).applyMatrix4(mesh.matrixWorld);
+        if (p.y > eyeY - gap * 1.6) box.expandByPoint(p);
+      }
+    }
+    if (!box.isEmpty()) photoRest.skull = box;
+
+    // Fotoğraf kafası takılınca modelin kafası çene hizasından kesilir, yalnızca boynu kalır.
+    // Boyun ekseni çevresindeki dar silindir ağız hizasına kadar kalır; çene, ense saçı ve kafatası gider.
+    const topY = eyeY - gap * 1.2;
+    const neckPos = world(bones.Neck);
+    const headPos = photoRest.headPos;
+    const neckR = gap * 1.3;
+    const uvAttr = geo.attributes.uv;
+    const tex = skin.headBase;
+    const isHair = (u, w) => {
+      const x = Math.min(1023, Math.max(0, Math.round(u * 1023)));
+      const y = Math.min(1023, Math.max(0, Math.round((1 - w) * 1023)));
+      const p = (y * 1024 + x) * 4;
+      return Math.max(tex[p], tex[p + 1], tex[p + 2]) < 70;
+    };
+    const full = { index: idx, groups: geo.groups.map(g => ({ ...g })) };
+    const kept = [];
+    const groups = [];
+    const v = new THREE.Vector3();
+    const keepNeck = (a, b, c) => {
+      const cx = [a, b, c].reduce((s, vi) => s.add(v.fromBufferAttribute(posAttr, vi).applyMatrix4(mesh.matrixWorld)), new THREE.Vector3()).divideScalar(3);
+      if (cx.y > topY) return false;
+      const t = Math.min(1.4, Math.max(0, (cx.y - neckPos.y) / Math.max(1e-4, headPos.y - neckPos.y)));
+      const ax = neckPos.x + (headPos.x - neckPos.x) * t;
+      const az = neckPos.z + (headPos.z - neckPos.z) * t;
+      // Çene hizasının altında yalnızca boyun vardır; üstünde (çene/çene altı) dar silindir tutulur.
+      if (cx.y > eyeY - gap * 2.05 && Math.hypot(cx.x - ax, cx.z - az) > neckR) return false;
+      if (uvAttr) {
+        const u = (uvAttr.getX(a) + uvAttr.getX(b) + uvAttr.getX(c)) / 3;
+        const w = (uvAttr.getY(a) + uvAttr.getY(b) + uvAttr.getY(c)) / 3;
+        if (isHair(u, w)) return false;
+      }
+      return true;
+    };
+    for (const group of geo.groups) {
+      const start = kept.length;
+      for (let i = group.start; i < group.start + group.count; i += 3) {
+        const a = idx ? idx.getX(i) : i;
+        const b = idx ? idx.getX(i + 1) : i + 1;
+        const c = idx ? idx.getX(i + 2) : i + 2;
+        if (group.materialIndex === headIndex && !keepNeck(a, b, c)) continue;
+        kept.push(a, b, c);
+      }
+      groups.push({ start, count: kept.length - start, materialIndex: group.materialIndex });
+    }
+    const cutIndex = new THREE.BufferAttribute(posAttr.count > 65535 ? new Uint32Array(kept) : new Uint16Array(kept), 1);
+    photoRest.setHeadCut = on => {
+      geo.setIndex(on ? cutIndex : full.index);
+      geo.groups = (on ? groups : full.groups).map(g => ({ ...g }));
+    };
+  }
+
   return {
-    gender, holder, fbx, mesh, skin, headTex, bodyTex, bones, rig, arms, scale,
+    gender, holder, fbx, mesh, skin, headTex, bodyTex, bones, rig, arms, scale, photoRest,
+    headMats: mesh.material.filter(m => /opacity/i.test(m.name)),
     thighLen, calfLen, headOffset, headRestInv, spineRestInv, headUpAxis,
     textures: [headTex, bodyTex, headNormal, bodyNormal, opacity],
     morphNow: {},
@@ -373,7 +641,8 @@ class Fighter {
     this.avatar = null;
     this.gender = first.gender;
     this.loadToken = 0;
-    this.faceImage = null;
+    this.headSource = null;
+    this.photoHead = null;
     this.shirtImage = null;
     this.bandageOn = false;
     this.blinkAt = 2;
@@ -425,18 +694,63 @@ class Fighter {
 
   mount(avatar) {
     if (this.avatar) {
+      if (this.photoHead) disposePhotoHead(this.photoHead);
+      this.photoHead = null;
       this.root.remove(this.avatar.holder);
       disposeAvatar(this.avatar);
     }
     this.avatar = avatar;
     this.gender = avatar.gender;
     this.root.add(avatar.holder);
-    if (this.bandageOn) avatar.skin.setBandage(true);
     if (this.shirtColor) avatar.skin.setShirt({ color: this.shirtColor });
     if (this.shirtImage) avatar.skin.setShirt({ image: this.shirtImage });
-    if (this.faceImage) avatar.skin.setFace(this.faceImage, FACE_LANDMARKS);
+    this.applyPhotoHead();
     avatar.headTex.needsUpdate = true;
     avatar.bodyTex.needsUpdate = true;
+  }
+
+  // Yüklenen kafayı mevcut avatara takar; yoksa modelin kendi kafasını gösterir.
+  applyPhotoHead() {
+    const a = this.avatar;
+    if (this.photoHead) disposePhotoHead(this.photoHead);
+    this.photoHead = null;
+    const head = this.headSource;
+    a.headMats.forEach(m => { m.visible = !head; });
+    if (a.photoRest.setHeadCut) a.photoRest.setHeadCut(!!head);
+    if (!head) {
+      a.skin.setFace(null);
+      if (this.bandageOn) a.skin.setBandage(true);
+      return;
+    }
+    this.photoHead = buildPhotoHead(a, head);
+    // Kol ve bacak teni fotoğraftaki tene yaklaşsın.
+    a.skin.setFace(head.canvas, [
+      [PHOTO_EYE_MID[0] - PHOTO_EYE_GAP / 2, PHOTO_EYE_MID[1]],
+      [PHOTO_EYE_MID[0] + PHOTO_EYE_GAP / 2, PHOTO_EYE_MID[1]],
+      head.mouth,
+    ]);
+    this.drawPhotoBandage();
+  }
+
+  drawPhotoBandage() {
+    const ph = this.photoHead;
+    if (!ph) return;
+    ph.ctx.putImageData(ph.base, 0, 0);
+    if (this.bandageOn) {
+      const ctx = ph.ctx;
+      ctx.save();
+      ctx.translate(PHOTO_EYE_MID[0] + PHOTO_EYE_GAP * 0.72, PHOTO_EYE_MID[1] + PHOTO_EYE_GAP * 0.72);
+      ctx.rotate(-0.3);
+      ctx.fillStyle = '#FDE68A';
+      ctx.strokeStyle = '#B45309';
+      ctx.lineWidth = 3;
+      ctx.fillRect(-30, -11, 60, 22);
+      ctx.strokeRect(-30, -11, 60, 22);
+      ctx.fillStyle = '#FEF3C7';
+      ctx.fillRect(-10, -10, 20, 20);
+      ctx.restore();
+    }
+    ph.tex.needsUpdate = true;
   }
 
   async setGender(gender) {
@@ -448,10 +762,24 @@ class Fighter {
     this.mount(next);
   }
 
+  // Eski yol (Android): gözleri hizalanmış kare yüz fotoğrafı. Oval kesilip fotoğraf kafası yapılır.
   async setFace(dataUrl) {
     const image = dataUrl ? await loadImage(dataUrl) : null;
-    this.faceImage = image;
-    this.avatar.skin.setFace(image, FACE_LANDMARKS);
+    this.headSource = image ? legacyFaceToHead(image) : null;
+    this.applyPhotoHead();
+    this.avatar.headTex.needsUpdate = true;
+    this.avatar.bodyTex.needsUpdate = true;
+  }
+
+  // Yeni yol: photo_head.js ile saçıyla birlikte kesilmiş kafa.
+  async setPhotoHead(info) {
+    if (!info) return this.setFace(null);
+    const image = await loadImage(info.headDataUrl);
+    const canvas = document.createElement('canvas');
+    canvas.width = canvas.height = PHOTO_SIZE;
+    canvas.getContext('2d').drawImage(image, 0, 0, PHOTO_SIZE, PHOTO_SIZE);
+    this.headSource = { canvas, mouth: info.mouth, chin: info.chin, faceHalf: info.faceHalf, bounds: info.bounds };
+    this.applyPhotoHead();
     this.avatar.headTex.needsUpdate = true;
     this.avatar.bodyTex.needsUpdate = true;
   }
@@ -465,9 +793,17 @@ class Fighter {
 
   setSlapMark(alpha, side) {
     slapUniform.value.set(alpha, side);
+    photoSlapUniform.value.set(alpha, side);
   }
 
   setBandage(on) {
+    if (this.photoHead) {
+      if (this.bandageOn !== on) {
+        this.bandageOn = on;
+        this.drawPhotoBandage();
+      }
+      return;
+    }
     this.bandageOn = on;
     if (this.avatar.skin.setBandage(on)) this.avatar.headTex.needsUpdate = true;
   }

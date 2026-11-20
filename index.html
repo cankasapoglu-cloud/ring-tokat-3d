@@ -90,12 +90,22 @@
 
 <dialog id="faceSheet" class="sheet" aria-labelledby="faceTitle">
   <div class="sheet-head">
-    <h2 id="faceTitle">Yüzü Yerleştir</h2>
+    <h2 id="faceTitle">Yüklenen Kafa</h2>
     <button class="close" type="button" data-close aria-label="Kapat">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
     </button>
   </div>
-  <p class="sheet-sub">Gözleri iki halkaya, ağzı alttaki çizgiye getir. Tek parmakla kaydır, iki parmakla büyüt ve döndür.</p>
+  <div id="faceBusy" class="face-busy" hidden>
+    <span class="spinner" aria-hidden="true"></span>
+    <span id="faceBusyText">Yüz aranıyor…</span>
+  </div>
+  <div id="faceAuto" hidden>
+    <div class="face-preview"><img id="facePreview" alt="Fotoğraftan kesilen kafa" /></div>
+    <p id="faceGenderNote" class="sheet-sub"></p>
+    <div id="faceGenderChips" class="chips"></div>
+  </div>
+  <div id="faceManual">
+  <p id="faceManualSub" class="sheet-sub">Gözleri iki halkaya, ağzı alttaki çizgiye getir. Tek parmakla kaydır, iki parmakla büyüt ve döndür.</p>
   <div id="faceStage" class="face-stage">
     <canvas id="faceCanvas" width="768" height="768"></canvas>
     <svg class="face-guide" viewBox="0 0 512 512" aria-hidden="true">
@@ -114,10 +124,12 @@
   </div>
   <label class="slider"><span>Yakınlık</span><input id="faceZoom" type="range" min="0" max="100" step="0.5" value="50" /></label>
   <label class="slider"><span>Açı</span><input id="faceRotate" type="range" min="-60" max="60" step="0.5" value="0" /></label>
+  </div>
   <p id="faceStatus" class="status" role="status"></p>
   <div class="sheet-actions">
     <button id="faceApply" class="btn btn-primary" type="button">Avatara Giydir</button>
     <button id="facePick" class="btn" type="button">Başka Fotoğraf Seç</button>
+    <button id="faceManualBtn" class="btn btn-quiet" type="button" hidden>Elle Yerleştir</button>
     <button id="faceRestore" class="btn btn-quiet" type="button" hidden>Varsayılan Yüze Dön</button>
   </div>
   <p class="privacy">Fotoğrafın telefonunda işlenir, hiçbir sunucuya gönderilmez.</p>

@@ -78,10 +78,12 @@
       engine().setSoundEnabled(game.sound);
       engine().setOrbitMode(game.orbit);
       applyLook();
+      // Yüz modelleri arka planda hazırlanır; fotoğraf seçildiğinde beklemek gerekmesin.
+      setTimeout(function () { loadPhotoHead().catch(function () { /* fotoğraf seçilince yeniden denenir */ }); }, 2500);
     },
     onCharacterHit: onCharacterHit,
     getPendingFaceJson: function () {
-      return game.pendingFace ? JSON.stringify({ textureDataUrl: game.pendingFace }) : '';
+      return game.pendingFace ? JSON.stringify(game.pendingFace) : '';
     },
     getPendingShirtImage: function () { return game.pendingShirt; }
   };
@@ -234,8 +236,17 @@
   });
 
   /* ---------- Ekipman ---------- */
+  function setLook(key, value) {
+    game.look[key] = value;
+    document.querySelectorAll('[data-key="' + key + '"] .chip').forEach(function (c) {
+      c.setAttribute('aria-pressed', String(c.dataset.value === value));
+    });
+    applyLook();
+  }
+
   function buildChips(containerId, key, options) {
     var box = $(containerId);
+    box.dataset.key = key;
     options.forEach(function (opt) {
       var chip = document.createElement('button');
       chip.type = 'button';
@@ -249,17 +260,12 @@
         chip.appendChild(swatch);
       }
       chip.appendChild(document.createTextNode(opt[1]));
-      chip.addEventListener('click', function () {
-        game.look[key] = opt[0];
-        box.querySelectorAll('.chip').forEach(function (c) {
-          c.setAttribute('aria-pressed', String(c === chip));
-        });
-        applyLook();
-      });
+      chip.addEventListener('click', function () { setLook(key, opt[0]); });
       box.appendChild(chip);
     });
   }
   buildChips('genderChips', 'gender', OPTIONS.gender);
+  buildChips('faceGenderChips', 'gender', OPTIONS.gender);
   buildChips('kitChips', 'kit', OPTIONS.kit);
   buildChips('headChips', 'headgear', OPTIONS.headgear);
   buildChips('propChips', 'proportion', OPTIONS.proportion);
@@ -446,13 +452,71 @@
     stage.addEventListener(type, function (e) { pointers.delete(e.pointerId); });
   });
 
+  /* ---------- Otomatik kafa kesme ve cinsiyet ---------- */
+  var photoHeadModule = null;
+  function loadPhotoHead() {
+    if (!photoHeadModule) {
+      photoHeadModule = import('./photo_head.js').then(function (m) {
+        return m.warmup().then(function () { return m; });
+      });
+      photoHeadModule.catch(function () { photoHeadModule = null; });
+    }
+    return photoHeadModule;
+  }
+
+  // busy: işleniyor, auto: otomatik kesilen kafa, manual: elle yerleştirme stüdyosu
+  function showFaceMode(mode) {
+    $('faceBusy').hidden = mode !== 'busy';
+    $('faceAuto').hidden = mode !== 'auto';
+    $('faceManual').hidden = mode !== 'manual';
+    $('faceApply').hidden = mode !== 'manual';
+    $('faceManualBtn').hidden = mode !== 'auto';
+    $('facePick').hidden = mode === 'busy';
+    $('faceRestore').hidden = mode === 'busy' || !game.pendingFace;
+    $('faceTitle').textContent = mode === 'manual' ? 'Yüzü Yerleştir' : 'Yüklenen Kafa';
+    if (mode === 'manual') queuePaint();
+  }
+
+  function setFaceButton(url) {
+    $('faceThumb').src = url;
+    $('faceThumb').hidden = false;
+    $('faceIcon').style.display = 'none';
+    $('faceBtn').classList.add('has-face');
+    $('faceBtnLabel').textContent = 'Yüzü Düzenle';
+  }
+
+  function applyAutoHead(r) {
+    var url = r.head.toDataURL('image/png');
+    game.pendingFace = { headDataUrl: url, mouth: r.mouth, chin: r.chin, faceHalf: r.faceHalf, bounds: r.bounds };
+    setFaceButton(url);
+    $('facePreview').src = url;
+    var sure = r.genderScore >= 0.6;
+    var female = r.gender === 'female';
+    $('faceGenderNote').textContent = sure
+      ? (female ? 'Kadın' : 'Erkek') + ' olarak algılandı, ' + (female ? 'kadın' : 'erkek') + ' bedeni seçildi. Yanlışsa aşağıdan değiştir.'
+      : 'Kadın mı erkek mi emin olamadım. Bedeni aşağıdan seç.';
+    if (sure) setLook('gender', r.gender);
+    if (engine()) engine().pullCustomFaceFromBridge();
+    showFaceMode('auto');
+    $('faceSheet').close();
+    showCallout(sure ? (female ? 'KADIN BEDENİ!' : 'ERKEK BEDENİ!') : 'KAFA TAKILDI!');
+  }
+
+  function openManual(message) {
+    $('faceManualSub').textContent = message;
+    showFaceMode('manual');
+  }
+
   function pickFace() { $('faceFile').click(); }
 
   $('faceBtn').addEventListener('click', function () {
-    if (studio.photo) $('faceSheet').showModal();
+    if (game.pendingFace || studio.photo) $('faceSheet').showModal();
     else pickFace();
   });
   $('facePick').addEventListener('click', pickFace);
+  $('faceManualBtn').addEventListener('click', function () {
+    openManual('Gözleri iki halkaya, ağzı alttaki çizgiye getir. Elle yerleştirmede saç kesilmez, sadece yüz ovali kullanılır.');
+  });
 
   $('faceFile').addEventListener('change', function (e) {
     var file = e.target.files[0];
@@ -461,13 +525,24 @@
     $('faceStatus').textContent = '';
     loadPhoto(file, MAX_PHOTO).then(function (canvas) {
       setStudioPhoto(canvas);
+      $('faceBusyText').textContent = 'Yüz aranıyor…';
+      showFaceMode('busy');
       if (!$('faceSheet').open) $('faceSheet').showModal();
+      return loadPhotoHead().then(function (m) {
+        $('faceBusyText').textContent = 'Kafa kesiliyor…';
+        return m.cutHead(canvas);
+      }).then(function (r) {
+        if (r) applyAutoHead(r);
+        else openManual('Fotoğrafta yüz bulamadım. Gözleri iki halkaya, ağzı alttaki çizgiye getir.');
+      }, function () {
+        openManual('Otomatik kesme açılamadı. Gözleri iki halkaya, ağzı alttaki çizgiye getir.');
+      });
     }).catch(function () {
       $('faceStatus').textContent = 'Fotoğraf okunamadı, başka bir fotoğraf dene.';
       if (!$('faceSheet').open && studio.photo) $('faceSheet').showModal();
       if (!studio.photo) {
         $('faceBtnLabel').textContent = 'Fotoğraf okunamadı';
-        setTimeout(function () { $('faceBtnLabel').textContent = 'Yüz Yükle'; }, 2600);
+        setTimeout(function () { $('faceBtnLabel').textContent = game.pendingFace ? 'Yüzü Düzenle' : 'Yüz Yükle'; }, 2600);
       }
     });
   });
@@ -477,13 +552,9 @@
     var out = document.createElement('canvas');
     out.width = out.height = FACE_SIZE;
     paintFace(out.getContext('2d'), FACE_SIZE);
-    game.pendingFace = out.toDataURL('image/jpeg', .92);
-    $('faceThumb').src = game.pendingFace;
-    $('faceThumb').hidden = false;
-    $('faceIcon').style.display = 'none';
-    $('faceBtn').classList.add('has-face');
-    $('faceBtnLabel').textContent = 'Yüzü Düzenle';
-    $('faceRestore').hidden = false;
+    var url = out.toDataURL('image/jpeg', .92);
+    game.pendingFace = { textureDataUrl: url };
+    setFaceButton(url);
     if (engine()) engine().pullCustomFaceFromBridge();
     $('faceSheet').close();
   });
@@ -491,6 +562,7 @@
   $('faceRestore').addEventListener('click', function () {
     game.pendingFace = '';
     studio.photo = null;
+    $('facePreview').removeAttribute('src');
     $('faceThumb').hidden = true;
     $('faceThumb').removeAttribute('src');
     $('faceIcon').style.display = '';
