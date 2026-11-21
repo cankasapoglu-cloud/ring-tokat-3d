@@ -1,0 +1,677 @@
+{
+ "format": {
+  "channels": 1,
+  "sample_rate": 44100,
+  "subtype": "PCM_16",
+  "samples": 5948943,
+  "duration_sec": 134.8967,
+  "peak_dbfs": -3.0
+ },
+ "identity": {
+  "max_abs_diff_lsb": 2.0,
+  "samples_compared": 2571652,
+  "global_gain_db": -0.626
+ },
+ "overlap": {
+  "chunks": 21,
+  "min_gap_sec": 2.0537,
+  "nonzero_outside": 0
+ },
+ "edges": {
+  "worst_placed_edge_db_re_line_rms": -60.2,
+  "worst_raw_cut_level_db_re_line_rms": -33.9,
+  "worst_leak_db_re_line_rms": -53.6,
+  "worst_loss_db_re_line_rms": -39.0,
+  "fade_ms_min": 15.0,
+  "fade_ms_max": 30.0,
+  "stem_noise_floor_dbfs": -86.37,
+  "max_first_last_sample_lsb": 0,
+  "per_chunk": [
+   {
+    "chunk": "K1_L1",
+    "placed_edge_in_db_re_line": -182.0,
+    "placed_edge_out_db_re_line": -60.2,
+    "raw_at_cut_in_dbfs": -91.2,
+    "raw_at_cut_out_dbfs": -51.3,
+    "raw_at_cut_in_db_re_line": -73.8,
+    "raw_at_cut_out_db_re_line": -33.9,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K1_L2",
+    "placed_edge_in_db_re_line": -63.4,
+    "placed_edge_out_db_re_line": -72.9,
+    "raw_at_cut_in_dbfs": -51.3,
+    "raw_at_cut_out_dbfs": -63.0,
+    "raw_at_cut_in_db_re_line": -34.6,
+    "raw_at_cut_out_db_re_line": -46.3,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K1_L3+4",
+    "placed_edge_in_db_re_line": -68.0,
+    "placed_edge_out_db_re_line": -182.0,
+    "raw_at_cut_in_dbfs": -63.0,
+    "raw_at_cut_out_dbfs": -86.3,
+    "raw_at_cut_in_db_re_line": -46.5,
+    "raw_at_cut_out_db_re_line": -68.9,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K2_L1",
+    "placed_edge_in_db_re_line": -181.0,
+    "placed_edge_out_db_re_line": -181.0,
+    "raw_at_cut_in_dbfs": -83.2,
+    "raw_at_cut_out_dbfs": -91.0,
+    "raw_at_cut_in_db_re_line": -64.8,
+    "raw_at_cut_out_db_re_line": -72.6,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K2_L2",
+    "placed_edge_in_db_re_line": -181.7,
+    "placed_edge_out_db_re_line": -181.7,
+    "raw_at_cut_in_dbfs": -91.0,
+    "raw_at_cut_out_dbfs": -90.4,
+    "raw_at_cut_in_db_re_line": -73.3,
+    "raw_at_cut_out_db_re_line": -72.7,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K2_L3+4",
+    "placed_edge_in_db_re_line": -182.1,
+    "placed_edge_out_db_re_line": -181.6,
+    "raw_at_cut_in_dbfs": -90.4,
+    "raw_at_cut_out_dbfs": -86.7,
+    "raw_at_cut_in_db_re_line": -73.1,
+    "raw_at_cut_out_db_re_line": -68.9,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K3_L1",
+    "placed_edge_in_db_re_line": -183.6,
+    "placed_edge_out_db_re_line": -81.7,
+    "raw_at_cut_in_dbfs": -106.8,
+    "raw_at_cut_out_dbfs": -70.2,
+    "raw_at_cut_in_db_re_line": -91.0,
+    "raw_at_cut_out_db_re_line": -54.4,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K3_L2",
+    "placed_edge_in_db_re_line": -81.7,
+    "placed_edge_out_db_re_line": -183.4,
+    "raw_at_cut_in_dbfs": -70.2,
+    "raw_at_cut_out_dbfs": -84.1,
+    "raw_at_cut_in_db_re_line": -54.2,
+    "raw_at_cut_out_db_re_line": -68.1,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K3_L3+4",
+    "placed_edge_in_db_re_line": -182.5,
+    "placed_edge_out_db_re_line": -89.5,
+    "raw_at_cut_in_dbfs": -84.1,
+    "raw_at_cut_out_dbfs": -64.7,
+    "raw_at_cut_in_db_re_line": -67.2,
+    "raw_at_cut_out_db_re_line": -46.3,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K4_L1",
+    "placed_edge_in_db_re_line": -182.3,
+    "placed_edge_out_db_re_line": -75.8,
+    "raw_at_cut_in_dbfs": -91.3,
+    "raw_at_cut_out_dbfs": -62.5,
+    "raw_at_cut_in_db_re_line": -74.2,
+    "raw_at_cut_out_db_re_line": -45.4,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K4_L2",
+    "placed_edge_in_db_re_line": -75.4,
+    "placed_edge_out_db_re_line": -66.2,
+    "raw_at_cut_in_dbfs": -62.5,
+    "raw_at_cut_out_dbfs": -59.4,
+    "raw_at_cut_in_db_re_line": -44.4,
+    "raw_at_cut_out_db_re_line": -41.3,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K4_L3+4",
+    "placed_edge_in_db_re_line": -62.9,
+    "placed_edge_out_db_re_line": -178.8,
+    "raw_at_cut_in_dbfs": -59.4,
+    "raw_at_cut_out_dbfs": -93.4,
+    "raw_at_cut_in_db_re_line": -40.9,
+    "raw_at_cut_out_db_re_line": -72.8,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K5_L1",
+    "placed_edge_in_db_re_line": -181.2,
+    "placed_edge_out_db_re_line": -80.6,
+    "raw_at_cut_in_dbfs": -91.0,
+    "raw_at_cut_out_dbfs": -71.7,
+    "raw_at_cut_in_db_re_line": -72.8,
+    "raw_at_cut_out_db_re_line": -53.5,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K5_L2",
+    "placed_edge_in_db_re_line": -79.7,
+    "placed_edge_out_db_re_line": -76.9,
+    "raw_at_cut_in_dbfs": -71.7,
+    "raw_at_cut_out_dbfs": -71.8,
+    "raw_at_cut_in_db_re_line": -52.6,
+    "raw_at_cut_out_db_re_line": -52.7,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K5_L3+4",
+    "placed_edge_in_db_re_line": -79.6,
+    "placed_edge_out_db_re_line": -183.4,
+    "raw_at_cut_in_dbfs": -71.8,
+    "raw_at_cut_out_dbfs": -90.9,
+    "raw_at_cut_in_db_re_line": -54.3,
+    "raw_at_cut_out_db_re_line": -74.9,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K6_L1",
+    "placed_edge_in_db_re_line": -180.7,
+    "placed_edge_out_db_re_line": -180.7,
+    "raw_at_cut_in_dbfs": -90.9,
+    "raw_at_cut_out_dbfs": -82.3,
+    "raw_at_cut_in_db_re_line": -72.2,
+    "raw_at_cut_out_db_re_line": -63.6,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K6_L2",
+    "placed_edge_in_db_re_line": -180.4,
+    "placed_edge_out_db_re_line": -75.7,
+    "raw_at_cut_in_dbfs": -82.3,
+    "raw_at_cut_out_dbfs": -67.7,
+    "raw_at_cut_in_db_re_line": -63.3,
+    "raw_at_cut_out_db_re_line": -48.7,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K6_L3+4",
+    "placed_edge_in_db_re_line": -78.7,
+    "placed_edge_out_db_re_line": -182.0,
+    "raw_at_cut_in_dbfs": -67.7,
+    "raw_at_cut_out_dbfs": -86.3,
+    "raw_at_cut_in_db_re_line": -49.7,
+    "raw_at_cut_out_db_re_line": -68.9,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K7_L1",
+    "placed_edge_in_db_re_line": -178.5,
+    "placed_edge_out_db_re_line": -82.2,
+    "raw_at_cut_in_dbfs": -90.5,
+    "raw_at_cut_out_dbfs": -73.6,
+    "raw_at_cut_in_db_re_line": -69.6,
+    "raw_at_cut_out_db_re_line": -52.7,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K7_L2",
+    "placed_edge_in_db_re_line": -178.2,
+    "placed_edge_out_db_re_line": -74.2,
+    "raw_at_cut_in_dbfs": -73.6,
+    "raw_at_cut_out_dbfs": -64.7,
+    "raw_at_cut_in_db_re_line": -52.4,
+    "raw_at_cut_out_db_re_line": -43.5,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   },
+   {
+    "chunk": "K7_L3+4",
+    "placed_edge_in_db_re_line": -87.1,
+    "placed_edge_out_db_re_line": -178.9,
+    "raw_at_cut_in_dbfs": -64.7,
+    "raw_at_cut_out_dbfs": -86.0,
+    "raw_at_cut_in_db_re_line": -43.9,
+    "raw_at_cut_out_db_re_line": -65.5,
+    "first_sample_lsb": 0,
+    "last_sample_lsb": 0
+   }
+  ]
+ },
+ "onsets": {
+  "max_abs_error_ms": 0.158,
+  "max_abs_vowel_error_ms": 0.054,
+  "max_abs_offset_vs_tempo_analysis_ms": 0.12,
+  "xcorr_max_lag_error_samples": 0,
+  "detector_port_check_ms": 0.05,
+  "per_line": [
+   {
+    "verse": 1,
+    "line": 1,
+    "intended_onset": 8.25329,
+    "measured_onset": 8.25327,
+    "error_ms": -0.025,
+    "intended_vowel_onset": 8.26229,
+    "measured_vowel_onset": 8.26229,
+    "vowel_error_ms": 0.0,
+    "measured_offset_from_bar_ms": -21.52
+   },
+   {
+    "verse": 1,
+    "line": 2,
+    "intended_onset": 12.38127,
+    "measured_onset": 12.38128,
+    "error_ms": 0.012,
+    "intended_vowel_onset": 12.45427,
+    "measured_vowel_onset": 12.45424,
+    "vowel_error_ms": -0.03,
+    "measured_offset_from_bar_ms": -30.91
+   },
+   {
+    "verse": 1,
+    "line": 3,
+    "intended_onset": 16.53428,
+    "measured_onset": 16.53422,
+    "error_ms": -0.059,
+    "intended_vowel_onset": 16.54748,
+    "measured_vowel_onset": 16.54744,
+    "vowel_error_ms": -0.042,
+    "measured_offset_from_bar_ms": -15.36
+   },
+   {
+    "verse": 1,
+    "line": 4,
+    "intended_onset": 18.60348,
+    "measured_onset": 18.60333,
+    "error_ms": -0.145,
+    "intended_vowel_onset": 18.62668,
+    "measured_vowel_onset": 18.62667,
+    "vowel_error_ms": -0.013,
+    "measured_offset_from_bar_ms": -14.95
+   },
+   {
+    "verse": 2,
+    "line": 1,
+    "intended_onset": 24.82117,
+    "measured_onset": 24.82116,
+    "error_ms": -0.011,
+    "intended_vowel_onset": 24.82797,
+    "measured_vowel_onset": 24.82794,
+    "vowel_error_ms": -0.033,
+    "measured_offset_from_bar_ms": -3.22
+   },
+   {
+    "verse": 2,
+    "line": 2,
+    "intended_onset": 28.92578,
+    "measured_onset": 28.92576,
+    "error_ms": -0.021,
+    "intended_vowel_onset": 28.98818,
+    "measured_vowel_onset": 28.98819,
+    "vowel_error_ms": 0.006,
+    "measured_offset_from_bar_ms": -36.01
+   },
+   {
+    "verse": 2,
+    "line": 3,
+    "intended_onset": 33.07186,
+    "measured_onset": 33.07186,
+    "error_ms": 0.001,
+    "intended_vowel_onset": 33.11326,
+    "measured_vowel_onset": 33.11331,
+    "vowel_error_ms": 0.051,
+    "measured_offset_from_bar_ms": -27.31
+   },
+   {
+    "verse": 2,
+    "line": 4,
+    "intended_onset": 35.16186,
+    "measured_onset": 35.16188,
+    "error_ms": 0.024,
+    "intended_vowel_onset": 35.17086,
+    "measured_vowel_onset": 35.17086,
+    "vowel_error_ms": 0.002,
+    "measured_offset_from_bar_ms": -5.99
+   },
+   {
+    "verse": 3,
+    "line": 1,
+    "intended_onset": 41.37448,
+    "measured_onset": 41.3745,
+    "error_ms": 0.015,
+    "intended_vowel_onset": 41.37678,
+    "measured_vowel_onset": 41.37673,
+    "vowel_error_ms": -0.045,
+    "measured_offset_from_bar_ms": 0.54
+   },
+   {
+    "verse": 3,
+    "line": 2,
+    "intended_onset": 45.47286,
+    "measured_onset": 45.47287,
+    "error_ms": 0.007,
+    "intended_vowel_onset": 45.53746,
+    "measured_vowel_onset": 45.53748,
+    "vowel_error_ms": 0.023,
+    "measured_offset_from_bar_ms": -38.49
+   },
+   {
+    "verse": 3,
+    "line": 3,
+    "intended_onset": 49.63255,
+    "measured_onset": 49.63254,
+    "error_ms": -0.005,
+    "intended_vowel_onset": 49.63665,
+    "measured_vowel_onset": 49.63669,
+    "vowel_error_ms": 0.039,
+    "measured_offset_from_bar_ms": -16.21
+   },
+   {
+    "verse": 3,
+    "line": 4,
+    "intended_onset": 51.70515,
+    "measured_onset": 51.7051,
+    "error_ms": -0.047,
+    "intended_vowel_onset": 51.72585,
+    "measured_vowel_onset": 51.72587,
+    "vowel_error_ms": 0.023,
+    "measured_offset_from_bar_ms": -12.35
+   },
+   {
+    "verse": 4,
+    "line": 1,
+    "intended_onset": 57.91204,
+    "measured_onset": 57.91208,
+    "error_ms": 0.038,
+    "intended_vowel_onset": 57.92054,
+    "measured_vowel_onset": 57.92052,
+    "vowel_error_ms": -0.018,
+    "measured_offset_from_bar_ms": -11.46
+   },
+   {
+    "verse": 4,
+    "line": 2,
+    "intended_onset": 62.02692,
+    "measured_onset": 62.02693,
+    "error_ms": 0.008,
+    "intended_vowel_onset": 62.09342,
+    "measured_vowel_onset": 62.0934,
+    "vowel_error_ms": -0.019,
+    "measured_offset_from_bar_ms": -34.01
+   },
+   {
+    "verse": 4,
+    "line": 3,
+    "intended_onset": 66.21206,
+    "measured_onset": 66.212,
+    "error_ms": -0.056,
+    "intended_vowel_onset": 66.21516,
+    "measured_vowel_onset": 66.21515,
+    "vowel_error_ms": -0.013,
+    "measured_offset_from_bar_ms": 13.66
+   },
+   {
+    "verse": 4,
+    "line": 4,
+    "intended_onset": 68.26826,
+    "measured_onset": 68.26823,
+    "error_ms": -0.029,
+    "intended_vowel_onset": 68.26826,
+    "measured_vowel_onset": 68.26821,
+    "vowel_error_ms": -0.051,
+    "measured_offset_from_bar_ms": 1.2
+   },
+   {
+    "verse": 5,
+    "line": 1,
+    "intended_onset": 74.46503,
+    "measured_onset": 74.46504,
+    "error_ms": 0.011,
+    "intended_vowel_onset": 74.46693,
+    "measured_vowel_onset": 74.46698,
+    "vowel_error_ms": 0.054,
+    "measured_offset_from_bar_ms": -8.09
+   },
+   {
+    "verse": 5,
+    "line": 2,
+    "intended_onset": 78.57362,
+    "measured_onset": 78.57359,
+    "error_ms": -0.028,
+    "intended_vowel_onset": 78.64862,
+    "measured_vowel_onset": 78.64859,
+    "vowel_error_ms": -0.026,
+    "measured_offset_from_bar_ms": -36.93
+   },
+   {
+    "verse": 5,
+    "line": 3,
+    "intended_onset": 82.7297,
+    "measured_onset": 82.72973,
+    "error_ms": 0.033,
+    "intended_vowel_onset": 82.7409,
+    "measured_vowel_onset": 82.74093,
+    "vowel_error_ms": 0.03,
+    "measured_offset_from_bar_ms": -18.19
+   },
+   {
+    "verse": 5,
+    "line": 4,
+    "intended_onset": 84.7978,
+    "measured_onset": 84.79781,
+    "error_ms": 0.007,
+    "intended_vowel_onset": 84.7978,
+    "measured_vowel_onset": 84.7978,
+    "vowel_error_ms": 0.0,
+    "measured_offset_from_bar_ms": -18.81
+   },
+   {
+    "verse": 6,
+    "line": 1,
+    "intended_onset": 91.01472,
+    "measured_onset": 91.01469,
+    "error_ms": -0.029,
+    "intended_vowel_onset": 91.01742,
+    "measured_vowel_onset": 91.01744,
+    "vowel_error_ms": 0.018,
+    "measured_offset_from_bar_ms": -8.02
+   },
+   {
+    "verse": 6,
+    "line": 2,
+    "intended_onset": 95.1275,
+    "measured_onset": 95.12742,
+    "error_ms": -0.08,
+    "intended_vowel_onset": 95.2005,
+    "measured_vowel_onset": 95.2005,
+    "vowel_error_ms": -0.001,
+    "measured_offset_from_bar_ms": -32.69
+   },
+   {
+    "verse": 6,
+    "line": 3,
+    "intended_onset": 99.25641,
+    "measured_onset": 99.25638,
+    "error_ms": -0.034,
+    "intended_vowel_onset": 99.30301,
+    "measured_vowel_onset": 99.30302,
+    "vowel_error_ms": 0.006,
+    "measured_offset_from_bar_ms": -41.12
+   },
+   {
+    "verse": 6,
+    "line": 4,
+    "intended_onset": 101.35151,
+    "measured_onset": 101.35135,
+    "error_ms": -0.158,
+    "intended_vowel_onset": 101.37471,
+    "measured_vowel_onset": 101.37469,
+    "vowel_error_ms": -0.016,
+    "measured_offset_from_bar_ms": -14.85
+   },
+   {
+    "verse": 7,
+    "line": 1,
+    "intended_onset": 107.57339,
+    "measured_onset": 107.5733,
+    "error_ms": -0.091,
+    "intended_vowel_onset": 107.57459,
+    "measured_vowel_onset": 107.57463,
+    "vowel_error_ms": 0.036,
+    "measured_offset_from_bar_ms": 1.0
+   },
+   {
+    "verse": 7,
+    "line": 2,
+    "intended_onset": 111.67877,
+    "measured_onset": 111.6788,
+    "error_ms": 0.03,
+    "intended_vowel_onset": 111.76447,
+    "measured_vowel_onset": 111.76449,
+    "vowel_error_ms": 0.02,
+    "measured_offset_from_bar_ms": -30.89
+   },
+   {
+    "verse": 7,
+    "line": 3,
+    "intended_onset": 115.8246,
+    "measured_onset": 115.82467,
+    "error_ms": 0.067,
+    "intended_vowel_onset": 115.8685,
+    "measured_vowel_onset": 115.86855,
+    "vowel_error_ms": 0.049,
+    "measured_offset_from_bar_ms": -22.42
+   },
+   {
+    "verse": 7,
+    "line": 4,
+    "intended_onset": 117.9097,
+    "measured_onset": 117.90965,
+    "error_ms": -0.052,
+    "intended_vowel_onset": 117.9132,
+    "measured_vowel_onset": 117.9132,
+    "vowel_error_ms": -0.003,
+    "measured_offset_from_bar_ms": -6.14
+   }
+  ]
+ },
+ "repair_K6_L2": {
+  "max_sample_jump_de_ko": 0.12833,
+  "max_sample_jump_pek_le": 0.001312,
+  "natural_max_sample_diff_in_line": 0.3126,
+  "closure_level_de_ko_dbfs": -60.1,
+  "closure_level_pek_le_dbfs": -76.4,
+  "syllables": {
+   "de": {
+    "rms_dbfs": -14.0,
+    "midi": 64.17,
+    "core_ms": 43.0,
+    "json_midi": 63.98
+   },
+   "kö": {
+    "rms_dbfs": -14.8,
+    "midi": 61.99,
+    "core_ms": 154.0,
+    "json_midi": 62.06
+   },
+   "pek": {
+    "rms_dbfs": -16.6,
+    "midi": 63.86,
+    "core_ms": 78.0,
+    "json_midi": 63.89
+   },
+   "le": {
+    "rms_dbfs": -17.5,
+    "midi": 65.04,
+    "core_ms": 120.0,
+    "json_midi": 65.04
+   }
+  },
+  "pitch_step_de_to_ko_semitones": -2.18,
+  "tail_shift_ms": 0.0,
+  "vowel_onset_beats": {
+   "de": 1.287,
+   "ko": 1.557,
+   "pek": 2.082,
+   "le": 2.456,
+   "var": 3.019
+  }
+ },
+ "repair_K6_L4": {
+  "max_sample_jump": 0.01974,
+  "rms_before_dbfs": -27.7,
+  "rms_centre_dbfs": -25.5,
+  "rms_after_dbfs": -21.6,
+  "murmur_midi_before": 58.32,
+  "murmur_midi_after": 56.8,
+  "lar_midi": 63.42,
+  "din_midi": 61.82,
+  "lar_rms_dbfs": -15.8,
+  "din_rms_dbfs": -14.8,
+  "final_bak_midi": 60.07,
+  "natural_L3last_to_L4first": [
+   {
+    "verse": 1,
+    "from_midi": 63.64,
+    "to_midi": 61.82
+   },
+   {
+    "verse": 2,
+    "from_midi": 63.91,
+    "to_midi": 61.66
+   },
+   {
+    "verse": 3,
+    "from_midi": 63.69,
+    "to_midi": 62.05
+   },
+   {
+    "verse": 4,
+    "from_midi": 63.9,
+    "to_midi": 61.99
+   },
+   {
+    "verse": 5,
+    "from_midi": 63.4,
+    "to_midi": 61.89
+   },
+   {
+    "verse": 6,
+    "from_midi": 63.47,
+    "to_midi": 62.15
+   },
+   {
+    "verse": 7,
+    "from_midi": 63.39,
+    "to_midi": 63.05
+   }
+  ]
+ },
+ "all_passed": false,
+ "failed": [
+  "gecis disi butun ornekler kaynakla birebir (en buyuk fark 2.00 LSB, 2571652 ornek karsilastirildi)",
+  "    'de' -> kapanis -> 'kö' birlesiminde ornek sicramasi < 0.05"
+ ]
+}

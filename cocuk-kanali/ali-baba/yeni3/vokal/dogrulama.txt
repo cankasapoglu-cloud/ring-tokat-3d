@@ -1,0 +1,120 @@
+== 1) DOSYA BICIMI ==
+  [GECTI] mono, 44.1 kHz -- 1 kanal, 44100 Hz, PCM_16
+  [GECTI] uzunluk = 64 olcu + 2.5 s -- 5948943 ornek = 134.8967 s (beklenen 5948943)
+  [GECTI] tepe = -3 dBFS (+-0.01) -- -3.0000 dBFS, ornek 750262 (17.0127 s)
+== 2) DIZELER: 7 x 4, SIRA, OLCU ==
+  [GECTI] 28 dize, kita/dize sirasi dogru
+  [GECTI] her dize dogru olcude (kita basi 4+8v; L1=0, L2=2, L3=4, L4=5)
+  [GECTI] dize metinleri beklenen sozlerle ayni (6. kita L2 = 'köpekleri')
+  [GECTI] hece listeleri beklenenle ayni (toplam 226 hece)
+  [GECTI] dizeler hedef zamaninda sirali ve ust uste binmiyor
+  [GECTI] heceler diziyi kesintisiz doser (en buyuk bosluk/ortusme 0.00 ms)
+  [GECTI] hece hedef zamani = kaynak + dizenin kaydirmasi (K6 L2 haric, o parca parca)
+  [GECTI] her hecede ozgun MIDI perdesi var
+== 3) ISLEM YOK KANITI: yerlesen ses = kaynak ornekleri x tek kazanc, tam sayili kaydirma ==
+  [KALDI] gecis disi butun ornekler kaynakla birebir (en buyuk fark 2.00 LSB, 2571652 ornek karsilastirildi)
+     tek genel kazanc: -0.626 dB (kazanc oncesi tepe -2.374 dBFS); dize basina kazanc yok
+  [GECTI] tepe ornegi dogal kaynak ornegi (ortusme toplami degil) -- K1_L3+4 icinde, kaynak 10.8143 s, kaynak degeri 0.7609
+== 4) PARCALAR ARASI ORTUSME / SESSIZLIK ==
+  [GECTI] 21 parca (7 x [L1],[L2],[L3+L4]) ust uste binmiyor -- en kisa ara 2.054 s, en uzun 4.187 s
+  [GECTI] parcalarin disinda her ornek tam sifir -- sifir olmayan 0 ornek; parcalarin toplam suresi 59.30 s / 134.90 s
+  [GECTI] ilk ses giris bolumunden (4 olcu = 8.2748 s) sonra degil, hemen once baslar -- ilk parca 8.2191 s
+== 5) KESIM KENARLARINDA ENERJI ==
+   parca       | kenar: ilk/son 3 ms RMS (yerlesmis dosya, dBFS -> dize RMS'ine gore dB) | kaynakta kesim aninda +-3 ms RMS (dBFS -> dize RMS'ine gore) | ilk/son ornek (LSB)
+   K1_L1     giris -199.4 dBFS (-182.0 dB) cikis  -77.6 dBFS ( -60.2 dB) | ham giris  -91.2 ( -73.8) cikis  -51.3 ( -33.9) | 0 / 0
+   K1_L2     giris  -80.1 dBFS ( -63.4 dB) cikis  -89.6 dBFS ( -72.9 dB) | ham giris  -51.3 ( -34.6) cikis  -63.0 ( -46.3) | 0 / 0
+   K1_L3+4   giris  -84.5 dBFS ( -68.0 dB) cikis -199.4 dBFS (-182.0 dB) | ham giris  -63.0 ( -46.5) cikis  -86.3 ( -68.9) | 0 / 0
+   K2_L1     giris -199.4 dBFS (-181.0 dB) cikis -199.4 dBFS (-181.0 dB) | ham giris  -83.2 ( -64.8) cikis  -91.0 ( -72.6) | 0 / 0
+   K2_L2     giris -199.4 dBFS (-181.7 dB) cikis -199.4 dBFS (-181.7 dB) | ham giris  -91.0 ( -73.3) cikis  -90.4 ( -72.7) | 0 / 0
+   K2_L3+4   giris -199.4 dBFS (-182.1 dB) cikis -199.4 dBFS (-181.6 dB) | ham giris  -90.4 ( -73.1) cikis  -86.7 ( -68.9) | 0 / 0
+   K3_L1     giris -199.4 dBFS (-183.6 dB) cikis  -97.5 dBFS ( -81.7 dB) | ham giris -106.8 ( -91.0) cikis  -70.2 ( -54.4) | 0 / 0
+   K3_L2     giris  -97.7 dBFS ( -81.7 dB) cikis -199.4 dBFS (-183.4 dB) | ham giris  -70.2 ( -54.2) cikis  -84.1 ( -68.1) | 0 / 0
+   K3_L3+4   giris -199.4 dBFS (-182.5 dB) cikis -107.9 dBFS ( -89.5 dB) | ham giris  -84.1 ( -67.2) cikis  -64.7 ( -46.3) | 0 / 0
+   K4_L1     giris -199.4 dBFS (-182.3 dB) cikis  -92.9 dBFS ( -75.8 dB) | ham giris  -91.3 ( -74.2) cikis  -62.5 ( -45.4) | 0 / 0
+   K4_L2     giris  -93.5 dBFS ( -75.4 dB) cikis  -84.3 dBFS ( -66.2 dB) | ham giris  -62.5 ( -44.4) cikis  -59.4 ( -41.3) | 0 / 0
+   K4_L3+4   giris  -81.4 dBFS ( -62.9 dB) cikis -199.4 dBFS (-178.8 dB) | ham giris  -59.4 ( -40.9) cikis  -93.4 ( -72.8) | 0 / 0
+   K5_L1     giris -199.4 dBFS (-181.2 dB) cikis  -98.8 dBFS ( -80.6 dB) | ham giris  -91.0 ( -72.8) cikis  -71.7 ( -53.5) | 0 / 0
+   K5_L2     giris  -98.8 dBFS ( -79.7 dB) cikis  -96.0 dBFS ( -76.9 dB) | ham giris  -71.7 ( -52.6) cikis  -71.8 ( -52.7) | 0 / 0
+   K5_L3+4   giris  -97.1 dBFS ( -79.6 dB) cikis -199.4 dBFS (-183.4 dB) | ham giris  -71.8 ( -54.3) cikis  -90.9 ( -74.9) | 0 / 0
+   K6_L1     giris -199.4 dBFS (-180.7 dB) cikis -199.4 dBFS (-180.7 dB) | ham giris  -90.9 ( -72.2) cikis  -82.3 ( -63.6) | 0 / 0
+   K6_L2     giris -199.4 dBFS (-180.4 dB) cikis  -94.7 dBFS ( -75.7 dB) | ham giris  -82.3 ( -63.3) cikis  -67.7 ( -48.7) | 0 / 0
+   K6_L3+4   giris  -96.7 dBFS ( -78.7 dB) cikis -199.4 dBFS (-182.0 dB) | ham giris  -67.7 ( -49.7) cikis  -86.3 ( -68.9) | 0 / 0
+   K7_L1     giris -199.4 dBFS (-178.5 dB) cikis -103.1 dBFS ( -82.2 dB) | ham giris  -90.5 ( -69.6) cikis  -73.6 ( -52.7) | 0 / 0
+   K7_L2     giris -199.4 dBFS (-178.2 dB) cikis  -95.4 dBFS ( -74.2 dB) | ham giris  -73.6 ( -52.4) cikis  -64.7 ( -43.5) | 0 / 0
+   K7_L3+4   giris -107.9 dBFS ( -87.1 dB) cikis -199.4 dBFS (-178.9 dB) | ham giris  -64.7 ( -43.9) cikis  -86.0 ( -65.5) | 0 / 0
+  [GECTI] yerlesmis dosyada her parca kenari (ilk/son 3 ms) dize RMS'inin en az 40 dB altinda -- en kotu -60.2 dB
+     kaynakta (gecis uygulanmadan once) kesim anindaki ham duzey: en kotu -33.9 dB (dize RMS'ine gore); -40 dB'yi saglamayan parca kenari olan parcalar: K1_L1, K1_L2
+     (bu dar bosluklarda ham duzey -40 dB'ye inmiyor; gecis uygulandiktan sonra yerlesmis dosyadaki kenar yukaridaki gibi)
+  [GECTI] parcalarin ilk ve son ornegi sifira yakin (tik yok) -- en buyuk |deger| 0 LSB
+  [GECTI] kenar gecisleri 15-30 ms -- en kisa 15.0 ms, en uzun 30.0 ms
+  [GECTI] komsu dizeden sizan enerji dize RMS'inin en az 40 dB altinda -- en kotu -53.6 dB
+  [GECTI] gecisin kendi dizesinden kistigi enerji dize RMS'inin en az 35 dB altinda (kelime kirpilmiyor) -- en kotu -39.0 dB
+  [GECTI] her dizenin ses araligindaki RMS kaynakla ayni (kelime eksigi yok; K6 L2 ayrica) -- en buyuk fark 0.001 dB
+== 6) BASLANGIC ANLARI (yerlesmis dosyada olculen - amaclanan) ==
+  [GECTI] algilayici kaynakta tempo.json 'onset' degerlerini yeniden uretiyor -- en buyuk fark 0.050 ms
+   dize   amaclanan   olculen   fark(ms) | unlu: amaclanan  olculen  fark(ms) | olcu basina gore ofset: kullanilan / tempo analizi (ms)
+   K1 L1     8.2533     8.2533   -0.02   |         8.2623     8.2623   +0.00   |  -21.5 /  -21.5
+   K1 L2    12.3813    12.3813   +0.01   |        12.4543    12.4542   -0.03   |  -30.9 /  -30.8
+   K1 L3    16.5343    16.5342   -0.06   |        16.5475    16.5474   -0.04   |  -15.3 /  -15.3
+   K1 L4    18.6035    18.6033   -0.15   |        18.6267    18.6267   -0.01   |  -14.8 /  -14.8
+   K2 L1    24.8212    24.8212   -0.01   |        24.8280    24.8279   -0.03   |   -3.2 /   -3.3
+   K2 L2    28.9258    28.9258   -0.02   |        28.9882    28.9882   +0.01   |  -36.0 /  -36.0
+   K2 L3    33.0719    33.0719   +0.00   |        33.1133    33.1133   +0.05   |  -27.3 /  -27.3
+   K2 L4    35.1619    35.1619   +0.02   |        35.1709    35.1709   +0.00   |   -6.0 /   -6.0
+   K3 L1    41.3745    41.3745   +0.02   |        41.3768    41.3767   -0.05   |   +0.5 /   +0.5
+   K3 L2    45.4729    45.4729   +0.01   |        45.5375    45.5375   +0.02   |  -38.5 /  -38.5
+   K3 L3    49.6326    49.6325   -0.01   |        49.6367    49.6367   +0.04   |  -16.2 /  -16.2
+   K3 L4    51.7052    51.7051   -0.05   |        51.7259    51.7259   +0.02   |  -12.3 /  -12.3
+   K4 L1    57.9120    57.9121   +0.04   |        57.9205    57.9205   -0.02   |  -11.5 /  -11.5
+   K4 L2    62.0269    62.0269   +0.01   |        62.0934    62.0934   -0.02   |  -34.0 /  -34.0
+   K4 L3    66.2121    66.2120   -0.06   |        66.2152    66.2151   -0.01   |  +13.7 /  +13.7
+   K4 L4    68.2683    68.2682   -0.03   |        68.2683    68.2682   -0.05   |   +1.2 /   +1.2
+   K5 L1    74.4650    74.4650   +0.01   |        74.4669    74.4670   +0.05   |   -8.1 /   -8.1
+   K5 L2    78.5736    78.5736   -0.03   |        78.6486    78.6486   -0.03   |  -36.9 /  -37.0
+   K5 L3    82.7297    82.7297   +0.03   |        82.7409    82.7409   +0.03   |  -18.2 /  -18.2
+   K5 L4    84.7978    84.7978   +0.01   |        84.7978    84.7978   +0.00   |  -18.8 /  -18.8
+   K6 L1    91.0147    91.0147   -0.03   |        91.0174    91.0174   +0.02   |   -8.0 /   -8.0
+   K6 L2    95.1275    95.1274   -0.08   |        95.2005    95.2005   -0.00   |  -32.6 /  -32.6
+   K6 L3    99.2564    99.2564   -0.03   |        99.3030    99.3030   +0.01   |  -41.1 /  -41.1
+   K6 L4   101.3515   101.3514   -0.16   |       101.3747   101.3747   -0.02   |  -14.7 /  -14.8
+   K7 L1   107.5734   107.5733   -0.09   |       107.5746   107.5746   +0.04   |   +1.1 /   +1.1
+   K7 L2   111.6788   111.6788   +0.03   |       111.7645   111.7645   +0.02   |  -30.9 /  -30.8
+   K7 L3   115.8246   115.8247   +0.07   |       115.8685   115.8685   +0.05   |  -22.5 /  -22.4
+   K7 L4   117.9097   117.9096   -0.05   |       117.9132   117.9132   -0.00   |   -6.1 /   -6.1
+  [GECTI] olculen baslangic - amaclanan: en buyuk hata 2 ms'nin altinda -- en buyuk 0.158 ms (akustik baslangic), 0.054 ms (ilk unlu)
+  [GECTI] kullanilan ofset = tempo analizinin dize ofseti (yarim ornek + 4 basamak yuvarlama icinde) -- en buyuk fark 0.120 ms
+  [GECTI] capraz korelasyon: her dize amaclanan konumda (0 ornek sapma) -- en buyuk sapma 0 ornek
+== 7) 6. KITA ONARIMLARI ==
+   (a) L2 'köpekleri':
+  [KALDI]     'de' -> kapanis -> 'kö' birlesiminde ornek sicramasi < 0.05 -- en buyuk |fark| 0.12833 (tam olcek); dizenin dogal en buyuk ornek farki 0.3126
+  [GECTI]     'pek' | 'le' capraz gecisinde ornek sicramasi < 0.05 -- en buyuk |fark| 0.001312
+     kapanis duzeyleri (kaynak olceginde): 'de' ile 'kö' arasi -60.1 dBFS, 'pek' ile 'le' arasi (capraz gecis) -76.4 dBFS
+  [GECTI]     iki ek de sessiz /k/ kapanisinin icinde (< -55 dBFS)
+     hece cekirdekleri (yerlesmis dosyada olculdu; RMS kaynak olceginde): de -14.0 dBFS, MIDI 64.17 (json 63.98), cekirdek 43 ms; kö -14.8 dBFS, MIDI 61.99 (json 62.06), cekirdek 154 ms; pek -16.6 dBFS, MIDI 63.86 (json 63.89), cekirdek 78 ms; le -17.5 dBFS, MIDI 65.04 (json 65.04), cekirdek 120 ms
+  [GECTI]     'de'|'kö' iki yaninda RMS benzer (fark < 3 dB) -- fark -0.8 dB
+  [GECTI]     'pek'|'le' iki yaninda RMS benzer (fark < 3 dB) -- fark -0.9 dB
+  [GECTI]     'pek'|'le' iki yaninda perde benzer (fark < 1.5 yarim ses) -- pek 63.86 -> le 65.04 (ozgun 'dek' 63.99 -> 'le' 65.04)
+     [BILGI] 'de' 64.17 -> 'kö' 61.99: -2.18 yarim ses (BILINEN: 'kö' D4'te soylenmis; bu adimda perde islemi yok, duzeltilmedi)
+  [GECTI]     olculen perdeler json'daki ozgun perdelerle ayni (+-0.3 yarim ses): perde degismedi
+  [GECTI]     'leri var' ozgun yerinde (kayma 0) -- 'var' unlu baslangici olcu icinde 3.019 vurus (diger kitalarda 2.996-3.053)
+     vurus konumlari (unlu baslangici): de 1.287, kö 1.557 (ozgun 'ör' 1.557), pek 2.082 (ozgun 'dek' 2.032; diger kitalarda 2. hece 1.919-2.046), le 2.456, ri 2.738, var 3.019
+     kelime suresi: ozgun 'ördekleri' 0.7263 s, yeni 'köpekleri' 0.7734 s (/k/ patlamasi unluden 47 ms once basladigi icin); 'de' hecesi 80 ms (ozgun 140 ms)
+   (b) L4 <- 1. kitanin L4'u:
+  [GECTI]     L3 | verici L4 capraz gecisinde ornek sicramasi < 0.05 -- en buyuk |fark| 0.01974
+     gecisin 30 ms oncesi (K6 /r/ mirildanmasi) -27.7 dBFS, ortasi (10 ms) -25.5 dBFS, 30 ms sonrasi (verici /d/ kapanisi) -21.6 dBFS
+     perde: gecis oncesi mirildanma MIDI 58.32 (sesli oran 1.00), sonrasi 56.8 (sesli oran 1.00)
+     hece cekirdekleri: 'lar' -15.8 dBFS MIDI 63.42 -> 'Din' -14.8 dBFS MIDI 61.82
+     dogal ornekler (ozgun kayit) L3 son hece -> L4 'Din' MIDI: K1 63.64->61.82, K2 63.91->61.66, K3 63.69->62.05, K4 63.90->61.99, K5 63.40->61.89, K6 63.47->62.15, K7 63.39->63.05
+     dogal ornekler L3 RMS -> L4 RMS (dBFS): K1 -16.5->-17.4, K2 -17.3->-17.8, K3 -16.9->-18.4, K4 -18.5->-20.6, K5 -17.5->-16.0, K6 -18.0->-19.6, K7 -20.8->-20.5
+  [GECTI]     'lar' -> 'Din' perde adimi dogal araligin icinde -- -1.61 yarim ses (ozgun kitalarda -2.25 .. -0.34)
+  [GECTI]     'lar' -> 'Din' RMS farki < 3 dB -- 1.0 dB
+  [GECTI]     gecisin iki yanindaki mirildanma duzeyi benzer (fark < 12 dB) ve gecis ortasi iki yandan yuksek degil -- once -27.7, orta -25.5, sonra -21.6 dBFS
+  [GECTI]     yeni L4'un son 'bak'i C4'te (+-0.5 yarim ses) -- MIDI 60.07 (6. kitanin kendi son 'bak'i 62.11 = D4 idi)
+  [GECTI]     verici L4, K6'nin L4 olcu cizgisinde (ofset vericinin kendi ofseti) -- ofset -14.7 ms (K6'nin kendi L4'u -21.2 ms idi)
+  [GECTI]     K6'nin kendi L4'unden ornek kullanilmadi -- K6 parcasi kaynakta 80.1480 s'de bitiyor (kendi /d/ patlamasi 80.150)
+== 8) 3. KITA L4 SONUNDAKI FAZLADAN SES ==
+  [GECTI] fazladan sesin hedefteki yeri tam sessiz -- 53.7925-53.9941 s (olcu 6'nin basi 53.7861 s)
+  [GECTI] son 'bak'in unlusu eksiksiz (kesim sessiz /k/ kapanisinin icinde) -- kaynak kesim 41.3171; unlu sonu 41.2463; ek ses 41.3879
+
+SONUC: KALAN KONTROLLER: gecis disi butun ornekler kaynakla birebir (en buyuk fark 2.00 LSB, 2571652 ornek karsilastirildi);     'de' -> kapanis -> 'kö' birlesiminde ornek sicramasi < 0.05
+Not: bunlarin hepsi olcumdur; ses kulakla DINLENMEDI. 'de|kö' eki ile L3|L4 ekinin kulaga dogal gelip gelmedigi dogrulanmadi.
