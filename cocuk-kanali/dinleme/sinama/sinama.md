@@ -11,7 +11,7 @@ Kabul edilmiş bir kayda (Ali Baba, `dinle_2.mp3`) kodla, her seferinde **tek** 
 - **6'sında araç uyarmadı ama bir sayı oynadı** (yalnız iyi sürümle yan yana ölçülünce görülür): çeyrek vuruş geç vokal, vokoderle esnetme dokusu (1,5 ve 2 kat), 6 dB fazla açık vokal, %80'e yavaşlatılmış şarkı ve — çok zayıf biçimde — sonu kesilmiş sözcükler.
 - **2'sinde hiçbir şey oynamadı:** yarım vuruş geç vokal ve her 3 saniyede bir tık.
 
-Kabul edilmiş iki kayıtta araç toplam 6 uyarı satırı verdi; bunların 4'ü yanlış alarm, biri gerçek bir söz hatası, biri teknik bir not.
+Kabul edilmiş iki kayıtta araç toplam 6 uyarı satırı verdi: 4'ü yanlış alarm (biri büyük olasılıkla), biri gerçek bir söz hatası, biri teknik bir not.
 
 **Ne anlama geliyor:** Araç akort, uyum, vokal düzeyi, boğukluk ve (söz dosyası verilirse) yanlış söz için güvenilir bir bekçi. Zamanlama kayması, yapaylık, enerji ve küçük kurgu kusurları (tık, kesik sözcük) için bekçi değil; bunlarda en fazla "iki sürümden hangisi farklı" sorusuna cevap verir.
 
@@ -20,9 +20,9 @@ Bir sınır baştan söylenmeli: kusurları ben de duyamadım. Her kusurun dosya
 ## Nasıl sınandı
 
 - **Kaynak:** `ali-baba/dinle_2.mp3` ve aracın daha önce ayırdığı vokal ve altyapı kanalları. İki kanalın toplamı asıl dosyayı geri veriyor (fark −42 dB). Bozuk sürümlerde yalnız vokal kanalı (ya da bütün karışım) değiştirilip yeniden karıştırıldı.
-- **Ölçüm:** her dosya için `dinle.py <dosya> --ayir`, yani bitmiş bir MP3'ü dinletir gibi; araç vokali kendisi ayırdı. Toplam 40 çalıştırma.
-- **Gürültü:** aynı dosya iki kez ölçülünce 320 sayının hepsi birebir aynı çıktı. Asıl gürültü, dosya yeniden kodlanınca ortaya çıkıyor. Bunu ölçmek için kusursuz 5 kopya kullanıldı: asıl, yeniden kodlanmış MP3, WAV, yeniden karışım, 1 dB kısık ve 23 ms kaydırılmış kopya. Bir ölçünün bu 5 kopyadaki en büyük–en küçük farkı "gürültü" sayıldı.
-- **Karar:** "araç uyardı" = kusurla ilgili özet satırı, kusursuz 5 kopyanın hepsinden kötü durumda. "Sayı oynadı" = kusur için önceden seçilmiş ölçülerden biri gürültünün 3 katından fazla değişti. İlgili ölçüler çalıştırmalardan önce seçildi.
+- **Ölçüm:** her dosya için `dinle.py <dosya> --ayir`, yani bitmiş bir MP3'ü dinletir gibi; araç vokali kendisi ayırdı. Toplam 40 çalıştırma (ayrıca yeniden yapılan 2 esnetme ölçümü).
+- **Gürültü:** aynı dosya iki kez ölçülünce, çalışma süreleri dışındaki 314 sayının hepsi birebir aynı çıktı. Asıl gürültü, dosya yeniden kodlanınca ortaya çıkıyor. Bunu ölçmek için kusursuz 5 kopya kullanıldı: asıl, yeniden kodlanmış MP3, WAV, yeniden karışım, 1 dB kısık ve 23 ms kaydırılmış kopya. Bir ölçünün bu 5 kopyadaki en büyük–en küçük farkı "gürültü" sayıldı.
+- **Karar:** "araç uyardı" = kusurla ilgili özet satırı, kusursuz 5 kopyanın hepsinden kötü durumda. "Sayı oynadı" = kusur için önceden seçilmiş ölçülerden biri gürültünün 3 katından fazla değişti. İlgili satır ve ölçüler, bozuk sürümlerin sonuçları görülmeden önce seçildi.
 - **Sözler:** ücretli döküm (Scribe) krediyi korumak için yalnız 22,5 saniyelik iki kısa parçada (7 ve 8 numaralı kusurlar) ve 18 saniyelik bir kuru vokal parçasında yapıldı. Harcanan: 346 kredi. Defter toplamı 6921 / 8000.
 
 ## Tespit tablosu
@@ -37,7 +37,7 @@ Bir sınır baştan söylenmeli: kusurları ben de duyamadım. Her kusurun dosya
 | 3b | Vokalde 2 kat vokoder esnetmesi dokusu | 🔶 uyarmadı, sayı oynadı | Yapaylık satırı "işaret yok". Zarf titremesi −8,7 → −12,9 dB; Distill-MOS 3,42 → 3,07; UTMOS22 1,49 → 1,30 | 7 (zarf), 19 (UTMOS22) |
 | 4 | Perde hece başına düzleştirilmiş (otomatik akort benzeri) | ✅ araç uyardı | Yapaylık satırı ⚠️, 2 işaret: "notaların içi çok düz", "geçişler ani". Çok düz nota oranı 0,03 → 0,41; nota içi oynaklık 11,6 → 5,6 cent | 13 |
 | 5 | Her 3 saniyede bir tık (36 adet) | ❌ hiçbir şey oynamadı | Gerçek tepe 0,0 → +0,9 dBTP (gürültü 1,2 dB). Panoda da görünmüyor | 0,8 |
-| 6a | Vokal 6 dB kısık | ✅ araç uyardı | Denge satırı ✅ → ⚠️. Vokal − altyapı −4,1 → −9,8 dB (eşik −6); 5 yerde "gömük vokal" | 3,8 |
+| 6a | Vokal 6 dB kısık | ✅ araç uyardı | Denge satırı ✅ → ⚠️. Vokal − altyapı −4,1 → −9,8 dB (eşik −6); 6 yerde "gömük vokal" | 3,8 |
 | 6b | Vokal 6 dB fazla açık | 🔶 uyarmadı, sayı oynadı | Denge satırı ✅ kaldı. Vokal − altyapı −4,1 → +2,5 dB (eşik +9) | 4,4 |
 | 7 | Her satırın son sözcüğü 150 ms erken kesik | 🔶 uyarmadı, sayı çok az oynadı | Sözler satırı ✅ (hata %0). Vokalli süre %58,0 → %57,1; perdeli çerçeve oranı 0,302 → 0,277 | 4,5 |
 | 8 | Bir satır yerine başka satır söyleniyor | ✅ araç uyardı (söz dosyası ve Scribe ile) | Sözler satırı ✅ → ⚠️. Hata %0 → %6,7: "Koyunlar" yerine "İnekler", "meler" yerine "bağırır", saniyeleriyle | ölçülmedi (tek döküm) |
@@ -62,7 +62,7 @@ Tık konusunda üç ek deneme yapıldı (sayıma katılmadı):
 6. **Bu sayılar için mutlak eşik konamıyor.** Kabul edilmiş El Yıkama kaydında zarf titremesi −11,7 dB, UTMOS22 1,31, MusicCoCa coşku +0,089. Esnetilmiş sürümler (−12,9 … −14,2 dB; 1,28–1,30) ve yavaşlatılmış sürüm (+0,093) bunlardan ayırt edilemiyor. Yalnız aynı şarkının iki hali karşılaştırılabilir.
 7. **Fazla açık vokal.** Fark doğru ölçülüyor (+6,6 dB; gerçek +6) ama eşik +9 dB.
 8. **Yanlış söz.** Yalnız beklenen söz dosyası ve ücretli döküm varsa görülür (110 saniyelik şarkı yaklaşık 606 kredi). Onlarsız çalıştırmada hiçbir sayı oynamadı.
-9. **Denge ölçüsü dosyanın düzeyine duyarlı** (`--ayir` yolunda). Aynı vokal/altyapı oranı için −0,8 dB (çıtırtılı), −4,1 dB (taban), −4,9 dB (1 dB kısık) ve −6,8 dB (6 dB kısık; ⚠️ aldı) ölçüldü. Neden: ayırıcı, tepesi 0,9'u aşan kanalı tek başına kısıyor. Gerçek belirsizlik yaklaşık ±3 dB; 6a ve 6b'deki 6 dB'lik farklar bunun üstünde ama payı dar.
+9. **Denge ölçüsü dosyanın düzeyine duyarlı** (`--ayir` yolunda). Aynı vokal/altyapı oranı için −0,8 dB (çıtırtılı), −4,1 dB (taban), −4,9 dB (1 dB kısık) ve −6,8 dB (6 dB kısık; ⚠️ aldı) ölçüldü. Bir nedeni: ayırıcı, tepesi 0,9'u aşan kanalı tek başına kısıyor (çıtırtılı sürümde altyapı kanalı 3,6 dB kısılmış). 6 dB kısık dosyadaki kaymanın nedenini bulamadım. Gerçek belirsizlik yaklaşık ±3 dB; 6a ve 6b'deki 6 dB'lik farklar bunun üstünde ama payı dar.
 10. **Sınanamayanlar.** Yabancı aksan, sesin hoşluğu, "ninni gibi" hissi. Bunlar için kodla kusur üretilemedi (konuşma sentezi bu sınamada yasaktı); araç da ölçemediğini raporunda söylüyor.
 
 ## Yanlış alarmlar
@@ -109,7 +109,7 @@ Gürültü tek şarkıdan ve 5 kopyadan çıkarıldı; başka şarkıda farklı 
 
 ## Kanallar elde olunca
 
-Dokuz sürüm ayrıca `--vokal <bozuk vokal> --altyapi <altyapı>` yoluyla ölçüldü (araç ayırma yapmadı).
+Yedi bozuk sürüm (ve taban ile bir denetim) ayrıca `--vokal <bozuk vokal> --altyapi <altyapı>` yoluyla ölçüldü; araç ayırma yapmadı.
 
 - Aynı kalanlar: 50 cent detone ✅, düz perde ✅, 6 dB kısık vokal ✅ (−3,4 → −9,4 dB), çeyrek vuruş 🔶 (kayma +26 → −104 ms), yarım vuruş ❌, kesik satır sonu 🔶 zayıf.
 - Değişen: 2 kat esnetme bu yolda ✅ (1 yapaylık işareti). İşaret "basamaklı perde" diyor; doğru satır, yanlış gerekçe.
@@ -156,5 +156,6 @@ Hepsi `cocuk-kanali/dinleme/sinama/` altında.
 | `kod/bozuk_uret.py` | Bozuk sürümleri üretir |
 | `kod/bozuk_dogrula.py`, `kod/kosu.py`, `kod/degerlendir.py`, `kod/sonuc_yaz.py` | Doğrulama, çalıştırma, değerlendirme |
 
-Bozuk sesler depoya yazılmadı (yaklaşık 130 MB); `~/.cache/dinleme/sinama/ses/` altında duruyor ve `kod/bozuk_uret.py` ile yeniden üretilir.
+Bozuk sesler depoya yazılmadı (yaklaşık 290 MB); `~/.cache/dinleme/sinama/ses/` altında duruyor ve `kod/bozuk_uret.py` ile yeniden üretilir.
 Yeniden üretilen dosyalar birebir aynı çıkmazsa `kosu.py`'nin "kisa" grubu yeniden ücretli döküm ister (yaklaşık 346 kredi).
+Aracın kanal önbelleğinde bu sınamadan yaklaşık 1 GB ayrılmış kanal kaldı (`~/.cache/dinleme/kanallar/`); silinebilir.

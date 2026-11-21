@@ -36,7 +36,7 @@ NOT = {
     "5b": "Ek deneme. Kısık tık: çoğu yerde müzik örter, duyulup duyulmadığı şüpheli; kaçması aracın suçu sayılmaz.",
     "5c": "Ek deneme. Şüphe götürmeyecek kadar duyulur çıtırtı (5 ms, tiz bantta müziğin 27 dB üstünde, 36 kez). Araç 'Kırpılma' satırını ❌ yaptı ve 36 çıtırtıdan 3'ünün saniyesini verdi; ama yalnızca çıtırtı dosyayı tam ölçeğin üstüne ittiği için (aşağıdaki 5d'ye bakın).",
     "5d": "Ek deneme. 5c'nin aynısı, bütün dosya 6 dB kısılmış: çıtırtı müziğe göre aynı yükseklikte ama hiçbir örnek tam ölçeğe dayanmıyor. İlgili satırların hiçbiri oynamadı; yalnız tepe faktörü arttı. Yani araç çıtırtıyı değil kırpılmayı görüyor.",
-    "6a": "Araç ölçtü: vokal altyapının 9,8 dB altında (tabanda 4,1); eşik −6. Ayrıca 5 yerde 'gömük vokal' diye zaman verdi.",
+    "6a": "Araç ölçtü: vokal altyapının 9,8 dB altında (tabanda 4,1); eşik −6. Ayrıca 6 yerde 'gömük vokal' diye zaman verdi.",
     "6b": "Araç farkı doğru ölçtü (+6,6 dB; gerçek +6) ama 'çok açık' eşiği +9 dB olduğu için satır ✅ kaldı.",
     "7": "Scribe kesik sözcükleri tamamlayıp doğru yazdı ('va' → 'var', 'ba' → 'bak'): sözcük hata oranı %0, düşük güvenli sözcük yok. Tek iz: vokalli süre oranı %58,0 → %57,1 ve perdeli çerçeve oranı; gürültünün 4 katı kadar, kusurun ne olduğunu söylemeyen küçük oynamalar. Panoda, asıl sürümle yan yana bakılırsa satır aralarındaki boşluklar görülüyor.",
     "8": "Sözler satırı ⚠️ oldu: iki yanlış sözcük, yeri ve kendisiyle ('Koyunlar' yerine 'İnekler', 'meler' yerine 'bağırır'). Yalnız söz dosyası + ücretli döküm varsa çalışır; onlarsız hiçbir sayı oynamaz (ezgi aynı).",

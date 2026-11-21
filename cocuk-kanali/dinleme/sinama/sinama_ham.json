@@ -4628,11 +4628,6 @@
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Tepe",
-      "kusursuz_kopyalarin_en_kotusu": null,
-      "bozuk": "dikkat"
-     },
-     {
       "konu": "Akort (detone mi)",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
@@ -4641,6 +4636,11 @@
       "konu": "Çakışan uzun notalar",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
+     },
+     {
+      "konu": "Tepe",
+      "kusursuz_kopyalarin_en_kotusu": null,
+      "bozuk": "dikkat"
      }
     ],
     "yeni_ilgili_sorunlar": {
@@ -4821,24 +4821,24 @@
     "karar": "tek raporla yakalandı",
     "kotulesen_ilgili_satirlar": [
      {
-      "konu": "Çakışan uzun notalar",
+      "konu": "Vokal altyapıyla aynı armonide mi",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      },
      {
-      "konu": "Vokal altyapıyla aynı armonide mi",
+      "konu": "Çakışan uzun notalar",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      }
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Çakışan uzun notalar",
+      "konu": "Vokal altyapıyla aynı armonide mi",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      },
      {
-      "konu": "Vokal altyapıyla aynı armonide mi",
+      "konu": "Çakışan uzun notalar",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      }
@@ -6049,8 +6049,8 @@
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Tepe",
-      "kusursuz_kopyalarin_en_kotusu": null,
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
       "bozuk": "dikkat"
      },
      {
@@ -6059,8 +6059,8 @@
       "bozuk": "sorun"
      },
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "konu": "Tepe",
+      "kusursuz_kopyalarin_en_kotusu": null,
       "bozuk": "dikkat"
      }
     ],
@@ -6247,14 +6247,14 @@
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Kırpılma",
-      "kusursuz_kopyalarin_en_kotusu": null,
-      "bozuk": "sorun"
-     },
-     {
       "konu": "Yapaylık işaretleri (vekil)",
       "kusursuz_kopyalarin_en_kotusu": "bilgi",
       "bozuk": "dikkat"
+     },
+     {
+      "konu": "Kırpılma",
+      "kusursuz_kopyalarin_en_kotusu": null,
+      "bozuk": "sorun"
      },
      {
       "konu": "Ritme oturma",
@@ -6644,19 +6644,14 @@
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Tepe",
-      "kusursuz_kopyalarin_en_kotusu": null,
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
       "bozuk": "dikkat"
      },
      {
       "konu": "Kırpılma",
       "kusursuz_kopyalarin_en_kotusu": null,
       "bozuk": "sorun"
-     },
-     {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
-      "bozuk": "dikkat"
      },
      {
       "konu": "Ritme oturma",
@@ -6666,6 +6661,11 @@
      {
       "konu": "Çakışan uzun notalar",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
+      "bozuk": "dikkat"
+     },
+     {
+      "konu": "Tepe",
+      "kusursuz_kopyalarin_en_kotusu": null,
       "bozuk": "dikkat"
      }
     ],
@@ -7087,12 +7087,12 @@
     "kotulesen_ilgili_satirlar": [],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Ses yüksekliği",
+      "konu": "Vokal / altyapı dengesi",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "dikkat"
      },
      {
-      "konu": "Vokal / altyapı dengesi",
+      "konu": "Ses yüksekliği",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "dikkat"
      }
@@ -8056,25 +8056,25 @@
     "karar": "tek raporla yakalandı",
     "kotulesen_ilgili_satirlar": [
      {
-      "konu": "Enerji / coşku",
-      "kusursuz_kopyalarin_en_kotusu": "iyi",
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
       "bozuk": "dikkat"
      },
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "konu": "Enerji / coşku",
+      "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "dikkat"
      }
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Enerji / coşku",
-      "kusursuz_kopyalarin_en_kotusu": "iyi",
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
       "bozuk": "dikkat"
      },
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "konu": "Enerji / coşku",
+      "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "dikkat"
      },
      {

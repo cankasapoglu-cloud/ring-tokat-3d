@@ -82,7 +82,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: akor sesi süre oranı 0.711->0
 
 ## 1a  Vokal 50 cent tiz (detone)  [kanalli_yol]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Akort (detone mi)', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Tepe', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'dikkat'}, {'konu': 'Akort (detone mi)', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 10}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Akort (detone mi)', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Akort (detone mi)', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Tepe', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 10}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -97,7 +97,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: akor sesi süre oranı 0.704->0
 
 ## 1b  Vokal 100 cent (yarım ses) tiz  [ayirma_yolu]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Vokal altyapıyla aynı armonide mi', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Vokal altyapıyla aynı armonide mi', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 21}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Vokal altyapıyla aynı armonide mi', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Vokal altyapıyla aynı armonide mi', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 21}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -206,7 +206,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: CED (vokal) sentetik şarkı ol
 
 ## 3b  Vokal 2 kat vokoder esnetmesi dokusunda (süre ve perde aynı)  [kanalli_yol]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Tepe', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'dikkat'}, {'konu': 'Kırpılma', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'sorun'}, {'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Kırpılma', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'sorun'}, {'konu': 'Tepe', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -221,7 +221,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: perdeli çerçeve oranı 0.307-
 
 ## 4  Vokalin perdesi hece başına düzleştirilmiş (otomatik akort benzeri)  [ayirma_yolu]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Kırpılma', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'sorun'}, {'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Ritme oturma', 'kusursuz_kopyalarin_en_kotusu': 'dikkat', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Kırpılma', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'sorun'}, {'konu': 'Ritme oturma', 'kusursuz_kopyalarin_en_kotusu': 'dikkat', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -237,7 +237,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: notaya uzaklık ortalama, işar
 
 ## 4  Vokalin perdesi hece başına düzleştirilmiş (otomatik akort benzeri)  [kanalli_yol]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Tepe', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'dikkat'}, {'konu': 'Kırpılma', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'sorun'}, {'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Ritme oturma', 'kusursuz_kopyalarin_en_kotusu': 'dikkat', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Kırpılma', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'sorun'}, {'konu': 'Ritme oturma', 'kusursuz_kopyalarin_en_kotusu': 'dikkat', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}, {'konu': 'Tepe', 'kusursuz_kopyalarin_en_kotusu': None, 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -294,7 +294,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: olay yoğunluğu (1/sn) 4.24->4
 
 ## 5d  Aynı çıtırtı, bütün dosya 6 dB kısık (tam ölçeğe dayanmıyor)  [ayirma_yolu]  -> YALNIZ KARŞILAŞTIRMAYLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [] ; butun kotulesenler: [{'konu': 'Ses yüksekliği', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}, {'konu': 'Vokal / altyapı dengesi', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+ozet satirlari (ilgili, kotulesen): [] ; butun kotulesenler: [{'konu': 'Vokal / altyapı dengesi', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}, {'konu': 'Ses yüksekliği', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -383,7 +383,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: MusicCoCa kayıt kalitesi fark�
 
 ## 10  Bütün karışım 4 kHz'de kesilmiş (boğuk)  [ayirma_yolu]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Enerji / coşku', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}, {'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Enerji / coşku', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}, {'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Enerji / coşku', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; butun kotulesenler: [{'konu': 'Yapaylık işaretleri (vekil)', 'kusursuz_kopyalarin_en_kotusu': 'bilgi', 'bozuk': 'dikkat'}, {'konu': 'Enerji / coşku', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}, {'konu': 'Çakışan uzun notalar', 'kusursuz_kopyalarin_en_kotusu': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|

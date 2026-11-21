@@ -2,7 +2,8 @@
 """degerlendir.py - sinama kosularinin rapor.json dosyalarini toplar; her olcu icin araci-aynen-yeniden-calistirma gurultusunu
 hesaplar; her bozuk surumde hangi olcunun gurultunun kac kati oynadigini ve aracin OZET satirlarinin degisip degismedigini cikarir.
 
-Cikti: dinleme/sinama/sinama.json  (sinama.md bu sayilardan elle yazilir; tablolar: sinama_tablolar.md)
+Cikti: dinleme/sinama/sinama_ham.json (butun olculer + kararlar) ve sinama_tablolar.md (okunur dokum).
+Sonra sonuc_yaz.py calistirilir: sinama.json. (sinama.md bu sayilardan elle yazildi.)
 
 KARAR KURALLARI (kosulardan ONCE yazildi. Sonuclar gorulunce TEK duzeltme yapildi, asagida (*) ile isaretli)
 - Gurultu: kusursuz 5 kopya {asil, yeniden kodlanmis MP3, WAV, yeniden karisim, 1 dB kisik + 23 ms kaydirilmis} arasinda olcunun

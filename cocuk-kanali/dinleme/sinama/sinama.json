@@ -790,7 +790,7 @@
    "dosya": "b01b_detone_100c",
    "sonuc": "tek raporla yakalandı",
    "guc": null,
-   "aracin_ozet_satiri": "Çakışan uzun notalar: iyi → sorun; Vokal altyapıyla aynı armonide mi: iyi → sorun",
+   "aracin_ozet_satiri": "Vokal altyapıyla aynı armonide mi: iyi → sorun; Çakışan uzun notalar: iyi → sorun",
    "olcu": "armonik destek farkı",
    "taban": 0.249,
    "bozuk": -0.056,
@@ -1013,8 +1013,8 @@
    "kat": 11.7,
    "ikinci_olcu": null,
    "ilgisiz_kotulesen_satirlar": [
-    "Ses yüksekliği",
-    "Vokal / altyapı dengesi"
+    "Vokal / altyapı dengesi",
+    "Ses yüksekliği"
    ],
    "kanallar_elde_yolu": null,
    "sayima_dahil": false,
@@ -1037,7 +1037,7 @@
    "ilgisiz_kotulesen_satirlar": [],
    "kanallar_elde_yolu": "tek raporla yakalandı",
    "sayima_dahil": true,
-   "not": "Araç ölçtü: vokal altyapının 9,8 dB altında (tabanda 4,1); eşik −6. Ayrıca 5 yerde 'gömük vokal' diye zaman verdi."
+   "not": "Araç ölçtü: vokal altyapının 9,8 dB altında (tabanda 4,1); eşik −6. Ayrıca 6 yerde 'gömük vokal' diye zaman verdi."
   },
   {
    "no": "6b",
@@ -1137,7 +1137,7 @@
    "dosya": "b10_alcak_geciren_4k",
    "sonuc": "tek raporla yakalandı",
    "guc": null,
-   "aracin_ozet_satiri": "Enerji / coşku: iyi → dikkat; Yapaylık işaretleri (vekil): bilgi → dikkat",
+   "aracin_ozet_satiri": "Yapaylık işaretleri (vekil): bilgi → dikkat; Enerji / coşku: iyi → dikkat",
    "olcu": "üst frekans sınırı (Hz)",
    "taban": 18755,
    "bozuk": 5189,

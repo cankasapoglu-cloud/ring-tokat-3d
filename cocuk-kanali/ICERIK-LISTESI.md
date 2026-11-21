@@ -10,7 +10,7 @@ Yöntem: Önce en çok izlenen videoların **temasını ve formülünü** kendi 
 
 | # | Örnek alınan video (izlenme) | Neden tutuyor | Bizim videomuz | Arama terimleri | Telif durumu | Durum |
 |---|---|---|---|---|---|---|
-| 1 | Ali Baba'nın Çiftliği – Sevimli Dostlar (518 M) | Hayvan sesleri, tekrar, çocuk eşlik eder | **Ali Baba'nın Çiftliği** (Pıtır ve Ali Baba) | ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı | Melodi anonim (Old MacDonald); kendi kaydımız | Üretimde |
+| 1 | Ali Baba'nın Çiftliği – Sevimli Dostlar (518 M) | Hayvan sesleri, tekrar, çocuk eşlik eder | **Ali Baba'nın Çiftliği** (Pıtır ve Ali Baba) | ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı | Melodi anonim (Old MacDonald); kendi kaydımız | Hazır |
 | 2 | Renk şarkıları (genel) | Tek kavram, parlak renkler | **Balon Şarkısı** (renkler) | renkler şarkısı, renkleri öğreniyorum | Tamamen özgün | Hazır |
 | 3 | Baby Shark Dance – Pinkfong (17,6 Mr) | Aile üyeleri, el hareketi, hızlanan tempo | **Pıtır'ın Ailesi** (bebek kedi, anne, baba, nine, dede; "miyav miyav") | aile şarkısı, dans şarkısı, bebek şarkıları | Özgün söz ve melodi; "Baby Shark" adı kullanılmaz | Hazır |
 | 4 | Wheels on the Bus – CoComelon (9,8 Mr) | Taşıt, ses taklidi, tekrar | **Otobüs Şarkısı** (tekerlek döner, kapı açılır, korna öter) | otobüs şarkısı, taşıtlar şarkısı | Özgün söz ve melodi (geleneksel ezgiyi kullanmadan) | Sırada |
@@ -50,7 +50,7 @@ Tam hareketli bir şarkı klibi yaklaşık 40.000 ElevenLabs kredisi tutuyor.
 
 | Dönem | Üretilecek | Tahmini kredi |
 |---|---|---|
-| Bu ay (kalan kredi yaklaşık 170.000) | Ali Baba'nın Çiftliği (üretimde), Parmak Ailesi, Beş Küçük Maymun, Pıtır'ın Ailesi | 160.000 |
+| Bu ay (kalan kredi yaklaşık 170.000) | Ali Baba'nın Çiftliği (hazır), Parmak Ailesi, Beş Küçük Maymun, Pıtır'ın Ailesi | 160.000 |
 | Gelecek ay | El Yıkama, Otobüs, Gezegenler, Sayı Şarkısı, ilk derleme | 160.000 |
 | Sonraki ay | Kalan Faz 1 videoları, Faz 3'ün ilk serisi | — |
 
