@@ -109,7 +109,7 @@ Pıtır'la iyi seyirler!
 ### 2.4 Kanal anahtar kelimeleri
 
 ```
-çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, Pıtır ile Öğren, Pıtır, okul öncesi, çocuklar için, renkler şarkısı, hayvan sesleri, çiftlik şarkısı, parmak ailesi, sayma şarkısı, aile şarkısı, el yıkama şarkısı, kedi çizgi film
+çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, Dudek Stüdyo, Pıtır, okul öncesi, çocuklar için, renkler şarkısı, hayvan sesleri, çiftlik şarkısı, parmak ailesi, sayma şarkısı, aile şarkısı, el yıkama şarkısı, kedi çizgi film
 ```
 
 Bu listeye başka kanalların ya da ünlü videoların adını eklemeyin.
@@ -119,9 +119,9 @@ Bu listeye başka kanalların ya da ünlü videoların adını eklemeyin.
 Her videonun açıklamasının en sonuna konur. 3. bölümdeki açıklamalarda zaten yerinde; ayrıca yapıştırmanız gerekmez. Yeni videolar için buradan alırsınız.
 
 ```
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 "Abone ol, beğen" çağrısı bilerek yok; çocuklara özel videolarda işe yaramaz.
@@ -145,7 +145,7 @@ Videolar: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi, Beş Kü�
 **Liste 2**
 
 ```
-Hayvanlar ve Hayvan Sesleri - Pıtır ile Öğren
+Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo
 ```
 
 ```
@@ -157,7 +157,7 @@ Videolar: Ali Baba'nın Çiftliği, Beş Küçük Maymun, Pıtır'ın Ailesi.
 **Liste 3**
 
 ```
-Aile Şarkıları ve Parmak Oyunları - Pıtır ile Öğren
+Aile Şarkıları ve Parmak Oyunları - Dudek Stüdyo
 ```
 
 ```
@@ -169,7 +169,7 @@ Videolar: Pıtır'ın Ailesi, Parmak Ailesi.
 **Liste 4**
 
 ```
-Renkler ve Sayılar - Pıtır ile Öğren
+Renkler ve Sayılar - Dudek Stüdyo
 ```
 
 ```
@@ -181,7 +181,7 @@ Videolar: Balon Şarkısı, Beş Küçük Maymun.
 **Liste 5**
 
 ```
-Temizlik ve Günlük Alışkanlıklar - Pıtır ile Öğren
+Temizlik ve Günlük Alışkanlıklar - Dudek Stüdyo
 ```
 
 ```
@@ -193,7 +193,7 @@ Videolar: El Yıkama Şarkısı (şimdilik tek video).
 **Liste 6**
 
 ```
-Taşıtlar ve Yolculuk - Pıtır ile Öğren
+Taşıtlar ve Yolculuk - Dudek Stüdyo
 ```
 
 ```
@@ -202,7 +202,7 @@ Otobüs, tekerlek, korna; taşıtları ve yolculuğu anlatan şarkılar.
 
 Videolar: Otobüs Şarkısı (şimdilik tek video).
 
-Sonra açılacaklar: "Uzun Bölümler - Pıtır ile Öğren" (ilk uzun bölüm yüklenince) ve "Hareket ve Oyun - Pıtır ile Öğren" (ilk hareket ya da oyun videosu yüklenince).
+Sonra açılacaklar: "Uzun Bölümler - Dudek Stüdyo" (ilk uzun bölüm yüklenince) ve "Hareket ve Oyun - Dudek Stüdyo" (ilk hareket ya da oyun videosu yüklenince).
 
 ---
 
@@ -245,7 +245,7 @@ Başlıkta 100, açıklamada 5.000 karakter sınırı var. Aşağıdaki yazılar
 Başlık:
 
 ```
-Ali Baba'nın Çiftliği | Hayvan Sesleri Şarkısı | Pıtır ile Öğren
+Ali Baba'nın Çiftliği | Hayvan Sesleri Şarkısı | Dudek Stüdyo
 ```
 
 Açıklama:
@@ -291,19 +291,19 @@ Ali Baba'nın bir çiftliği var
 (kedi sesi) diye bağırır
 Çiftliğinde Ali Baba'nın
 
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı, çiftlik hayvanları, hayvanlar şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren, Pıtır
+ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı, çiftlik hayvanları, hayvanlar şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/ali-baba/kapak.jpg`. Pıtır iki ineğin ortasında gülüyor; arkada kırmızı ahır. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Çiftlik Şarkısı" yazısı eklemek. İkinci seçenek: aynı klasördeki `kapak-7.jpg` (Pıtır iki tayın ortasında).
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Hayvanlar ve Hayvan Sesleri - Pıtır ile Öğren.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo.
 - **Not:** Hayvan sesleri şarkıda söylenmiyor, gerçek ses olarak çalıyor; bu yüzden sözlerde parantez içinde yazıldı.
 
 ### 3.2 Pıtır'ın Ailesi
@@ -314,7 +314,7 @@ ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı, çiftlik hayvanlar
 Başlık:
 
 ```
-Pıtır'ın Ailesi | Aile Şarkısı, Bebek Şarkıları | Pıtır ile Öğren
+Pıtır'ın Ailesi | Aile Şarkısı, Bebek Şarkıları | Dudek Stüdyo
 ```
 
 Açıklama:
@@ -343,19 +343,19 @@ Dede kedi masal okur
 Hep birlikte dans ederiz, la la la
 Biz kocaman bir aileyiz. Yaşasın!
 
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-aile şarkısı, kedi ailesi, aile üyeleri, anne baba nine dede, kedi şarkısı, dans şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren, Pıtır'ın Ailesi
+aile şarkısı, kedi ailesi, aile üyeleri, anne baba nine dede, kedi şarkısı, dans şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır'ın Ailesi
 ```
 
 - **Küçük resim:** Hazır kapak yok. Fikir: videonun sonundaki kucaklaşma sahnesi (1:16 civarı). Bahçede beş kedi birbirine sarılmış; üstüne "Pıtır'ın Ailesi" yazısı. Yazısız kare burada: `/home/user/ring-tokat-3d/cocuk-kanali/pitirin-ailesi/kare/13_kucak.png`. İsterseniz Claude yazıyı ekleyip kapağı hazırlar.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - Pıtır ile Öğren; Hayvanlar ve Hayvan Sesleri - Pıtır ile Öğren.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - Dudek Stüdyo; Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo.
 - **Not:** Sözler kaydın makineyle yazıya dökülmüş hâlidir. "Miyav", "hop", "tık", "ho" seslerinin kaç kez söylendiğini izlerken bir kez kontrol edin; fark varsa açıklamada düzeltin.
 
 ### 3.3 Parmak Ailesi
@@ -366,7 +366,7 @@ aile şarkısı, kedi ailesi, aile üyeleri, anne baba nine dede, kedi şarkıs�
 Başlık:
 
 ```
-Parmak Ailesi Şarkısı | Bebek Parmak, Parmak Oyunu | Pıtır ile Öğren
+Parmak Ailesi Şarkısı | Bebek Parmak, Parmak Oyunu | Dudek Stüdyo
 ```
 
 Açıklama:
@@ -396,19 +396,19 @@ Buradayım, buradayım. Merhaba!
 Parmak ailesi hep birlikte
 El sallıyor, el sallıyor. Hoşça kal!
 
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-parmak ailesi şarkısı, parmak ailesi, bebek parmak, parmak oyunu, aile şarkısı, aile üyeleri, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren
+parmak ailesi şarkısı, parmak ailesi, bebek parmak, parmak oyunu, aile şarkısı, aile üyeleri, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/parmak-ailesi/kapak.jpg`. Mavi zeminde bir el, beş parmağında beş kedi kuklası. "Parmak Ailesi" yazısı üzerinde hazır; olduğu gibi kullanılır.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - Pıtır ile Öğren.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - Dudek Stüdyo.
 - **Not:** Abi kıtasında "Buradayım. Merhaba!" bir kez fazla söyleniyor; kayıtta öyle olduğu için sözlere de öyle yazıldı.
 
 ### 3.4 Beş Küçük Maymun
@@ -419,7 +419,7 @@ parmak ailesi şarkısı, parmak ailesi, bebek parmak, parmak oyunu, aile şark�
 Başlık:
 
 ```
-Beş Küçük Maymun | Sayma Şarkısı, Geri Sayım | Pıtır ile Öğren
+Beş Küçük Maymun | Sayma Şarkısı, Geri Sayım | Dudek Stüdyo
 ```
 
 Açıklama:
@@ -457,19 +457,19 @@ Anne doktoru aradı, doktor dedi ki
 
 Maymunlar uyudu mışıl mışıl
 
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-beş küçük maymun, sayma şarkısı, geri sayım, sayılar şarkısı, maymun şarkısı, tekerleme, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren
+beş küçük maymun, sayma şarkısı, geri sayım, sayılar şarkısı, maymun şarkısı, tekerleme, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/bes-kucuk-maymun/kapak.jpg`. Pijamalı beş maymun yatağın üstünde zıplıyor; sağ üstte büyük kırmızı 5. Başka yazı gerekmez; olduğu gibi kullanılır. (Bu resimde Pıtır yok; ileride köşeye küçük bir Pıtır eklenebilir.)
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - Pıtır ile Öğren; Hayvanlar ve Hayvan Sesleri - Pıtır ile Öğren.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - Dudek Stüdyo; Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo.
 
 ### 3.5 Balon Şarkısı
 
@@ -479,7 +479,7 @@ beş küçük maymun, sayma şarkısı, geri sayım, sayılar şarkısı, maymun
 Başlık:
 
 ```
-Balon Şarkısı | Çocuklar İçin Renkler Şarkısı | Pıtır ile Öğren
+Balon Şarkısı | Çocuklar İçin Renkler Şarkısı | Dudek Stüdyo
 ```
 
 Açıklama (sözsüz hâli):
@@ -488,19 +488,19 @@ Açıklama (sözsüz hâli):
 Pıtır renkli balonlarla kırmızı, mavi, sarı ve yeşili tanıtıyor; renk adları ekranda büyük harflerle görünür.
 3-7 yaş için, 50 saniye.
 
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-balon şarkısı, renkler şarkısı, renkleri öğreniyorum, renkler, kırmızı mavi sarı yeşil, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren, Pıtır
+balon şarkısı, renkler şarkısı, renkleri öğreniyorum, renkler, kırmızı mavi sarı yeşil, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/balon-sarkisi/kapak.jpg`. Pıtır'ın büyük, sevinçli yüzü; arkada renkli balonlar. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Renkler Şarkısı" yazısı eklemek.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - Pıtır ile Öğren.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - Dudek Stüdyo.
 - **Eksik:** Bu şarkının sözleri hiçbir dosyada yazılı değil; uydurmadık. Bu yüzden açıklama sözsüz verildi. Üç yol var: sözleri siz yazıp gönderirsiniz, ekleriz; ya da izin verirseniz şarkı yazıya döktürülür (bu araç ücretlidir, size sormadan çalıştırılmaz); ya da sözsüz yüklenir, sözler sonra eklenir.
 
 ### 3.6 El Yıkama Şarkısı
@@ -511,7 +511,7 @@ balon şarkısı, renkler şarkısı, renkleri öğreniyorum, renkler, kırmız�
 Başlık:
 
 ```
-El Yıkama Şarkısı | Çocuklar İçin Temizlik Şarkısı | Pıtır ile Öğren
+El Yıkama Şarkısı | Çocuklar İçin Temizlik Şarkısı | Dudek Stüdyo
 ```
 
 Açıklama:
@@ -536,19 +536,19 @@ Havluyla kurulayalım, pat pat pat
 Ellerim tertemiz, pırıl pırıl
 Mikroplara güle güle, yaşasın!
 
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller nasıl yıkanır, günlük alışkanlıklar, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren
+el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller nasıl yıkanır, günlük alışkanlıklar, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo
 ```
 
 - **Küçük resim:** Hazır kapak yok. Fikir: videoda 0:58 civarındaki sahne. Mavi fayanslı banyoda Pıtır, pırıl pırıl parlayan iki patisini gösteriyor; üstüne "El Yıkama" yazısı. Yazısız kare burada: `/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/kare/09_temiz.png`. İsterseniz Claude yazıyı ekleyip kapağı hazırlar.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Temizlik ve Günlük Alışkanlıklar - Pıtır ile Öğren.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Temizlik ve Günlük Alışkanlıklar - Dudek Stüdyo.
 - **Not:** Projedeki ses ölçüm aracı bu kayıtta şarkıcının sesi ile arkadaki müziğin uyumuna bir soru işareti koymuş. Bu bir makine tahminidir, kesin değildir. Yüklemeden önce bir kez dikkatle dinleyin; kulağınıza iyi geliyorsa olduğu gibi yüklenir.
 
 ### 3.7 Otobüs Şarkısı (Pıtır'ın Otobüsü)
@@ -560,7 +560,7 @@ el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller 
 Başlık:
 
 ```
-Otobüs Şarkısı | Pıtır'ın Otobüsü | Pıtır ile Öğren
+Otobüs Şarkısı | Pıtır'ın Otobüsü | Dudek Stüdyo
 ```
 
 Açıklama:
@@ -603,19 +603,19 @@ Pıtır şoför, haydi yola!
 Otobüs durdu, hoşça kal Pıtır!
 Güle güle, güle güle!
 
-Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+#DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-otobüs şarkısı, taşıtlar şarkısı, otobüs, taşıtlar, araçlar, yolculuk şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren, Pıtır
+otobüs şarkısı, taşıtlar şarkısı, otobüs, taşıtlar, araçlar, yolculuk şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/kare/02_kanca_b.png`. Sarı otobüs, direksiyonda şoför şapkalı Pıtır, camlarda el sallayan üç arkadaş. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Otobüs Şarkısı" yazısı eklemek.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Taşıtlar ve Yolculuk - Pıtır ile Öğren.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Taşıtlar ve Yolculuk - Dudek Stüdyo.
 - **Not:** Sözler ve ezgi özgündür; bilinen otobüs şarkısının sözü ve ezgisi kullanılmadı. 0:51'de "nereden" sözü "neden" gibi duyulabilir; yüklemeden önce bir kez dinleyin.
 
 ---
