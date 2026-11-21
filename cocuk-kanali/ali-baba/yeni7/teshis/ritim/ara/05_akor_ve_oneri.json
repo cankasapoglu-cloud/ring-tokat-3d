@@ -1,0 +1,209 @@
+{
+ "tanim": "Soru 2'nin devamı: (a) vokalin hedef notası, bulunduğu vuruşun AKORUNA uyuyor mu (akor sesi mi)?  RED (eski hedefler) / RED (yuva esaslı öneri) / REF (özgün söyleyiş, v2_2 akorları).\n(b) Öneri: her hecenin hedefi = hecenin sekizlik yuvasında orkestra ezgisinin çaldığı nota. ara/hedefler_yuva_esasli.json'a yazılır (mevcut hedefler.json'a dokunulmaz).\n(c) Önerinin PSOLA'ya maliyeti: özgün perdeden kaç yarım ses kaydırma gerekiyor (eski / yeni).",
+ "akor_sesi_orani": {
+  "RED_eski_hedef": {
+   "tum_heceler": {
+    "akor_sesi": 167,
+    "toplam": 229,
+    "yuzde": 72.9
+   },
+   "vurus_ustundeki_heceler": {
+    "akor_sesi": 56,
+    "toplam": 98,
+    "yuzde": 57.1
+   },
+   "vurusa_gore": {
+    "0": {
+     "akor_sesi": 21,
+     "toplam": 21,
+     "yuzde": 100.0
+    },
+    "1": {
+     "akor_sesi": 21,
+     "toplam": 21,
+     "yuzde": 100.0
+    },
+    "2": {
+     "akor_sesi": 7,
+     "toplam": 28,
+     "yuzde": 25.0
+    },
+    "3": {
+     "akor_sesi": 7,
+     "toplam": 28,
+     "yuzde": 25.0
+    }
+   }
+  },
+  "RED_yuva_esasli_oneri": {
+   "tum_heceler": {
+    "akor_sesi": 229,
+    "toplam": 229,
+    "yuzde": 100.0
+   },
+   "vurus_ustundeki_heceler": {
+    "akor_sesi": 98,
+    "toplam": 98,
+    "yuzde": 100.0
+   },
+   "vurusa_gore": {
+    "0": {
+     "akor_sesi": 21,
+     "toplam": 21,
+     "yuzde": 100.0
+    },
+    "1": {
+     "akor_sesi": 21,
+     "toplam": 21,
+     "yuzde": 100.0
+    },
+    "2": {
+     "akor_sesi": 28,
+     "toplam": 28,
+     "yuzde": 100.0
+    },
+    "3": {
+     "akor_sesi": 28,
+     "toplam": 28,
+     "yuzde": 100.0
+    }
+   }
+  },
+  "REF_ozgun_soyleyis": {
+   "tum_heceler": {
+    "akor_sesi": 157,
+    "toplam": 229,
+    "yuzde": 68.6
+   },
+   "vurus_ustundeki_heceler": {
+    "akor_sesi": 65,
+    "toplam": 98,
+    "yuzde": 66.3
+   },
+   "vurusa_gore": {
+    "0": {
+     "akor_sesi": 15,
+     "toplam": 21,
+     "yuzde": 71.4
+    },
+    "1": {
+     "akor_sesi": 21,
+     "toplam": 21,
+     "yuzde": 100.0
+    },
+    "2": {
+     "akor_sesi": 14,
+     "toplam": 28,
+     "yuzde": 50.0
+    },
+    "3": {
+     "akor_sesi": 15,
+     "toplam": 28,
+     "yuzde": 53.6
+    }
+   },
+   "not": "v2_2 akorları key_chords.json kestirimidir (majör/minör belirsiz olduğundan kök üstünde iki üçlü de akor sesi sayıldı)"
+  }
+ },
+ "degisen_hece": 83,
+ "PSOLA_kaydirma_yarim_ses": {
+  "eski": {
+   "ad": "",
+   "n": 229,
+   "ortanca": 1.0,
+   "ortalama": 1.5,
+   "ss": 1.8,
+   "p10": 0.0,
+   "p25": 0.1,
+   "p75": 3.0,
+   "p90": 4.9,
+   "mutlak_ortanca": 1.0,
+   "yuzde_30ms_ici": 100.0,
+   "yuzde_50ms_ici": 100.0,
+   "en_kucuk": 0.0,
+   "en_buyuk": 8.7
+  },
+  "yeni": {
+   "ad": "",
+   "n": 229,
+   "ortanca": 2.0,
+   "ortalama": 2.2,
+   "ss": 2.0,
+   "p10": 0.0,
+   "p25": 0.1,
+   "p75": 3.2,
+   "p90": 5.1,
+   "mutlak_ortanca": 2.0,
+   "yuzde_30ms_ici": 100.0,
+   "yuzde_50ms_ici": 100.0,
+   "en_kucuk": 0.0,
+   "en_buyuk": 8.7
+  },
+  "eski_4_yarim_sesten_fazla": 28,
+  "yeni_4_yarim_sesten_fazla": 49,
+  "yeni_6_yarim_sesten_fazla": 7,
+  "yeni_en_buyukler": [
+   [
+    8.7,
+    7,
+    "L4",
+    "çift"
+   ],
+   [
+    -7.1,
+    6,
+    "L1",
+    "nın"
+   ],
+   [
+    -7.0,
+    1,
+    "L1",
+    "nın"
+   ],
+   [
+    -7.0,
+    2,
+    "L1",
+    "nın"
+   ],
+   [
+    -7.0,
+    3,
+    "L1",
+    "nın"
+   ],
+   [
+    -7.0,
+    4,
+    "L1",
+    "nın"
+   ],
+   [
+    -6.9,
+    5,
+    "L1",
+    "nın"
+   ],
+   [
+    5.5,
+    3,
+    "L4",
+    "çift"
+   ],
+   [
+    -5.3,
+    7,
+    "L1",
+    "li"
+   ],
+   [
+    5.2,
+    1,
+    "L2",
+    "çift"
+   ]
+  ]
+ },
+ "kural": "hedef(hece) = ezgi[floor(sekizlik yuva)],  ezgi (ölçü içi sekizlikler 0..7) = G G G D E E D D;  'diye bağırır' = G.  10 heceli 1. dize: G G G G D E E D D D;  9 heceli 2./4. dize: G G G D E E D D D"
+}

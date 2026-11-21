@@ -167,5 +167,291 @@
   "dinle_sn": 93.7,
   "donus": 0,
   "zaman": "17:15:01"
+ },
+ "b06a_vokal_eksi6": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b06a_vokal_eksi6.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 230.7,
+  "dinle_sn": 78.9,
+  "donus": 0,
+  "zaman": "17:20:10"
+ },
+ "b06b_vokal_arti6": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b06b_vokal_arti6.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 125.0,
+  "dinle_sn": 63.9,
+  "donus": 0,
+  "zaman": "17:23:19"
+ },
+ "b07_satir_sonu_kesik": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b07_satir_sonu_kesik.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 119.8,
+  "dinle_sn": 87.1,
+  "donus": 0,
+  "zaman": "17:26:46"
+ },
+ "b08_yanlis_satir": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b08_yanlis_satir.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 119.0,
+  "dinle_sn": 66.2,
+  "donus": 0,
+  "zaman": "17:29:51"
+ },
+ "b09_tempo_80": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b09_tempo_80.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 139.1,
+  "dinle_sn": 77.3,
+  "donus": 0,
+  "zaman": "17:33:28"
+ },
+ "b10_alcak_geciren_4k": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b10_alcak_geciren_4k.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 117.4,
+  "dinle_sn": 62.0,
+  "donus": 0,
+  "zaman": "17:36:27"
+ },
+ "e1_el_yikama_coskulu_2": {
+  "grup": "ikinci",
+  "dosya": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/coskulu_2.mp3",
+  "arg": [
+   "--ayir",
+   "--sozler",
+   "dinleme/sinama/sozler/el_yikama.txt"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 44.0,
+  "donus": 0,
+  "zaman": "17:37:11"
+ },
+ "k00_kuru_vokal": {
+  "grup": "kuru",
+  "dosya": "/root/.cache/dinleme/sinama/ses/k00_kuru_vokal.wav",
+  "arg": [
+   "--kuru"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 44.3,
+  "donus": 0,
+  "zaman": "17:37:56"
+ },
+ "k03a_kuru_esnetme_15": {
+  "grup": "kuru",
+  "dosya": "/root/.cache/dinleme/sinama/ses/k03a_kuru_esnetme_15.wav",
+  "arg": [
+   "--kuru"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 59.0,
+  "donus": 0,
+  "zaman": "17:38:55"
+ },
+ "k03b_kuru_esnetme_20": {
+  "grup": "kuru",
+  "dosya": "/root/.cache/dinleme/sinama/ses/k03b_kuru_esnetme_20.wav",
+  "arg": [
+   "--kuru"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 70.9,
+  "donus": 0,
+  "zaman": "17:40:06"
+ },
+ "c07_satir_sonu_kesik_kita12": {
+  "grup": "kisa",
+  "dosya": "/root/.cache/dinleme/sinama/ses/c07_satir_sonu_kesik_kita12.mp3",
+  "arg": [
+   "--ayir",
+   "--sozler",
+   "dinleme/sinama/sozler/ali_baba_kita12.txt"
+  ],
+  "ayirma_sn": 28.0,
+  "dinle_sn": 20.8,
+  "donus": 0,
+  "zaman": "17:40:56"
+ },
+ "c08_yanlis_satir_kita12": {
+  "grup": "kisa",
+  "dosya": "/root/.cache/dinleme/sinama/ses/c08_yanlis_satir_kita12.mp3",
+  "arg": [
+   "--ayir",
+   "--sozler",
+   "dinleme/sinama/sozler/ali_baba_kita12.txt"
+  ],
+  "ayirma_sn": 28.2,
+  "dinle_sn": 21.6,
+  "donus": 0,
+  "zaman": "17:41:46"
+ },
+ "k13b_kita1_esnetme_20": {
+  "grup": "kisa",
+  "dosya": "/root/.cache/dinleme/sinama/ses/k13b_kita1_esnetme_20.wav",
+  "arg": [
+   "--kuru",
+   "--dokum",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 4.4,
+  "donus": 0,
+  "zaman": "17:41:50"
+ },
+ "v_n3_yeniden_karisim": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/n3_yeniden_karisim.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/n3_yeniden_karisim_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 23.8,
+  "donus": 0,
+  "zaman": "17:42:14"
+ },
+ "v_b01a_detone_50c": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b01a_detone_50c.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b01a_detone_50c_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 23.5,
+  "donus": 0,
+  "zaman": "17:42:38"
+ },
+ "v_b02a_gec_ceyrek": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b02a_gec_ceyrek.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b02a_gec_ceyrek_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 23.1,
+  "donus": 0,
+  "zaman": "17:43:01"
+ },
+ "v_b02b_gec_yarim": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b02b_gec_yarim.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b02b_gec_yarim_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 22.7,
+  "donus": 0,
+  "zaman": "17:43:23"
+ },
+ "v_b03b_esnetme_20": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b03b_esnetme_20.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b03b_esnetme_20_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 22.9,
+  "donus": 0,
+  "zaman": "17:43:46"
+ },
+ "v_b04_duz_perde": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b04_duz_perde.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b04_duz_perde_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 22.4,
+  "donus": 0,
+  "zaman": "17:44:09"
+ },
+ "v_b04k_world_kontrol": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b04k_world_kontrol.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b04k_world_kontrol_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 23.0,
+  "donus": 0,
+  "zaman": "17:44:32"
+ },
+ "v_b06a_vokal_eksi6": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b06a_vokal_eksi6.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b06a_vokal_eksi6_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 23.6,
+  "donus": 0,
+  "zaman": "17:44:55"
+ },
+ "v_b07_satir_sonu_kesik": {
+  "grup": "kanalli",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b07_satir_sonu_kesik.mp3",
+  "arg": [
+   "--vokal",
+   "/root/.cache/dinleme/sinama/ses/kanal/b07_satir_sonu_kesik_vokal.wav",
+   "--altyapi",
+   "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav",
+   "--hizli"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 23.0,
+  "donus": 0,
+  "zaman": "17:45:18"
  }
 }

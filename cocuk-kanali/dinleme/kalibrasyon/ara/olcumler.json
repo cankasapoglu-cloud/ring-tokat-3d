@@ -1795,6 +1795,232 @@
   "calisma_sn": 290.6
  },
  {
+  "ad": "ali-baba__coskulu_1",
+  "yol": "ali-baba/coskulu_1.mp3",
+  "karar": "reddetti",
+  "gerekce": "'çok kötü; koyun hâlâ mö diyor'; çok uzun (3-3,5 dk)",
+  "boyut": [
+   "sozler",
+   "sure"
+  ],
+  "sarki": "ali-baba",
+  "hatalar": [],
+  "sure_sn": 213.0,
+  "lufs": -11.8,
+  "tepe_dbtp": -0.1,
+  "enerji_puani": 67.0,
+  "tempo_bpm": 116.0,
+  "olay_sn": 4.11,
+  "nabiz": 0.855,
+  "vurmali_armonik_db": -0.47,
+  "aki": 1.61,
+  "parlaklik_hz": 2267.0,
+  "duzey_oynakligi_db": 1.3,
+  "coca_cosku": 0.22,
+  "coca_tempo": 0.079,
+  "coca_kalite": 0.06,
+  "coca_sarki_var": 0.137,
+  "ced_ninni": 0.0,
+  "ced_coskulu_eksi_sakin": 0.198,
+  "ced_mutlu": 0.126,
+  "ced_heyecanli": 0.02,
+  "ced_yumusak": 0.005,
+  "ced_cocuk": 0.18,
+  "ced_hayvan": {},
+  "vokal_eksi_altyapi_db": -4.6,
+  "vokalli_oran": 0.286,
+  "sizinti_db": -31.7,
+  "gomuk_yer": 0,
+  "ton": "Re majör (D major)",
+  "ton_belirsiz": false,
+  "akor_guveni": 0.7,
+  "ton_degisimi": false,
+  "destek_fark": 0.295,
+  "destek_gercek": 0.492,
+  "en_iyi_kaydirma": 0,
+  "sifir_kacinci": 1,
+  "gam_ici": 0.988,
+  "gam_guvenilir": true,
+  "akor_sesi": 0.679,
+  "gam_disi": 0.012,
+  "cent_medyan": 9.4,
+  "yuzde_25cent": 86.0,
+  "cakisan": 0,
+  "uzun_nota": 33,
+  "cakisan_oran": 0.0,
+  "ritim_R": 0.4,
+  "ritim_kayma_ms": 60.0,
+  "ritim_40ms": 23.0,
+  "ritim_tempo": 115.9,
+  "ritim_R16": 0.35,
+  "nota_sayisi": 111,
+  "ses_araligi_ys": 5.1,
+  "medyan_hz": 295.0,
+  "pyin_uyum": 94.1,
+  "sesli_cerceve": 0.142,
+  "nota_suresi_medyan": 0.21,
+  "gecis_cerceve_orani": 0.18,
+  "kayan_nota_orani": 0.12,
+  "alttan_giris_orani": 0.01,
+  "ani_gecis_orani": 0.57,
+  "uzun_nota_035": 19,
+  "y_nota_ici_oynaklik_cent_medyan": 12.4,
+  "y_cok_duz_nota_orani": 0.0,
+  "y_perde_izgaraya_yapisma_R": 0.61,
+  "y_vibratolu_uzun_nota_orani": 0.21,
+  "y_donmus_unlu_sayisi_045sn_ustu": 0,
+  "y_donmus_sure_orani": 0.0,
+  "y_unsuzlerde_tiz_payi_db": -12.8,
+  "y_vokal_ust_frekans_hz": 10723,
+  "y_tiz_doku_degisim_katsayisi": 1.51,
+  "y_zarf_titremesi_db": -13.9,
+  "y_isaret_sayisi": 0,
+  "y_isaretler": [],
+  "y_bagli_gecis_suresi_ms_medyan": 32.0,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9833,
+  "dnsmos": 2.58,
+  "nisqa": 3.0,
+  "distillmos": 3.48,
+  "utmos22": 1.47,
+  "nisqa_kesintisizlik": 4.36,
+  "nisqa_renk": 3.5,
+  "v_sarki": 0.066,
+  "v_konusma": 0.339,
+  "v_sentetik_sarki": 0.018,
+  "v_konusma_sentezi": 0.01,
+  "v_kadin": 0.058,
+  "v_cocuk": 0.01,
+  "dokum_kaynagi": "onbellek",
+  "dil_olasiligi": 1.0,
+  "wer": 0.12,
+  "wer_kucuksuz": 0.111,
+  "degisik": 7,
+  "eksik": 2,
+  "fazla": 4,
+  "beklenen_sozcuk": 108,
+  "yanlis_sozcukler": [
+   [
+    "ürü",
+    "\"Üü,",
+    111.7
+   ],
+   [
+    "öter",
+    "gümler.",
+    113.04
+   ],
+   [
+    "Çiftliğinde",
+    "Ben",
+    113.82
+   ],
+   [
+    "Ali",
+    "balta",
+    114.18
+   ],
+   [
+    "Baba'nın",
+    "var.",
+    114.8
+   ],
+   [
+    "Çiftliğinde",
+    "çiftlikte",
+    175.88
+   ],
+   [
+    "Çiftliğinde",
+    "çiftlikte",
+    208.98
+   ]
+  ],
+  "eksik_sozcukler": [
+   [
+    "bir",
+    76.54
+   ],
+   [
+    "Ü",
+    111.26
+   ]
+  ],
+  "fazla_sozcukler": [
+   [
+    "grupu",
+    114.52
+   ],
+   [
+    "bağırmak,",
+    139.94
+   ],
+   [
+    "\"vak\"",
+    140.66
+   ],
+   [
+    "diye",
+    141.5
+   ]
+  ],
+  "hece_sn_soz_ici": 5.13,
+  "hece_sn_obek_medyan": 4.25,
+  "hece_sn_en_hizli": 4.89,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 1,
+  "ses_olaylari": [
+   [
+    "[hareketli melodi]",
+    1.52
+   ],
+   [
+    "[hareketli melodi]",
+    16.52
+   ],
+   [
+    "[hareketli melodi]",
+    49.64
+   ],
+   [
+    "[hareketli melodi]",
+    82.74
+   ],
+   [
+    "[hareketli melodi]",
+    115.32
+   ],
+   [
+    "[hareketli melodi]",
+    144.8
+   ],
+   [
+    "[hareketli melodi]",
+    177.38
+   ],
+   [
+    "[hareketli melodi]",
+    210.1
+   ]
+  ],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Enerji / coşku": "iyi",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "iyi",
+   "Gam içi söyleme": "iyi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "iyi",
+   "Ritme oturma": "dikkat",
+   "Yapaylık işaretleri (vekil)": "bilgi",
+   "Sözler": "dikkat",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "söz hatası": 13
+  },
+  "calisma_sn": 525.0
+ },
+ {
   "ad": "ali-baba__coskulu_2",
   "yol": "ali-baba/coskulu_2.mp3",
   "karar": "reddetti",

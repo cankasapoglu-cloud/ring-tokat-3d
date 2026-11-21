@@ -1,0 +1,156 @@
+{
+ "orkestra_mp3_icinde_gecikme_ms": [
+  {
+   "bolge": "giris",
+   "gecikme_ms": 4.966,
+   "iliski": 0.998
+  },
+  {
+   "bolge": "kita4_cevap",
+   "gecikme_ms": 4.966,
+   "iliski": 0.984
+  },
+  {
+   "bolge": "bitis",
+   "gecikme_ms": 4.966,
+   "iliski": 0.998
+  }
+ ],
+ "vokal_mp3_icinde_gecikme_ms": [
+  {
+   "kita": 1,
+   "satir": "L1",
+   "gecikme_ms": 4.943,
+   "iliski": 0.872
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "gecikme_ms": 4.943,
+   "iliski": 0.869
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "gecikme_ms": 4.943,
+   "iliski": 0.855
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "gecikme_ms": 4.943,
+   "iliski": 0.87
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "gecikme_ms": 4.943,
+   "iliski": 0.859
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "gecikme_ms": 4.943,
+   "iliski": 0.88
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "gecikme_ms": 4.943,
+   "iliski": 0.861
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "gecikme_ms": 4.943,
+   "iliski": 0.857
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "gecikme_ms": 4.943,
+   "iliski": 0.854
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "gecikme_ms": 4.943,
+   "iliski": 0.861
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "gecikme_ms": 4.943,
+   "iliski": 0.883
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "gecikme_ms": 4.943,
+   "iliski": 0.866
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "gecikme_ms": 4.943,
+   "iliski": 0.858
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "gecikme_ms": 4.943,
+   "iliski": 0.893
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "gecikme_ms": 4.943,
+   "iliski": 0.859
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "gecikme_ms": 4.943,
+   "iliski": 0.84
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "gecikme_ms": 4.943,
+   "iliski": 0.844
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "gecikme_ms": 4.943,
+   "iliski": 0.86
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "gecikme_ms": 4.943,
+   "iliski": 0.851
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "gecikme_ms": 4.943,
+   "iliski": 0.83
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "gecikme_ms": 4.943,
+   "iliski": 0.853
+  }
+ ],
+ "ozet": {
+  "orkestra_gecikme_ortanca_ms": 4.966,
+  "vokal_gecikme_ortanca_ms": 4.943,
+  "vokal_gecikme_min_ms": 4.943,
+  "vokal_gecikme_max_ms": 4.943,
+  "vokal_eksi_orkestra_ms": -0.023,
+  "kullanilan_vokal_satiri": 21,
+  "aciklama": "gecikme = mp3 içindeki konum - tasarlanan konum (orkestra = wav + 0.100 s; vokal = vokal_psola.wav zamanı). vokal_eksi_orkestra 0 ise karışım hiçbir kayma eklememiştir."
+ }
+}

@@ -5,3 +5,13 @@ dinle.py: /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/coskulu_1.mp3 -> /home/
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
   [MusicCoCa               25.5 sn]
   kanal ayirma basladi (105 sn'lik sarki icin yaklasik 80-100 sn) ...
+  [kanallar               401.4 sn]
+  [ton + akor              12.9 sn]
+  [perde izleme             8.6 sn]
+  [nota + uyum              0.1 sn]
+  [ritim                    1.9 sn]
+  [yapaylik vekilleri       0.3 sn]
+  [MOS tahminleri (vokal)  37.3 sn]
+  [sozler                   0.3 sn]
+  [panolar                 11.0 sn]
+bitti: 525 sn. Rapor: /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/ali-baba__coskulu_1/rapor.md

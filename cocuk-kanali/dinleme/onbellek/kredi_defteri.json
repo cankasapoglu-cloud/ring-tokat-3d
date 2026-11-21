@@ -89,8 +89,32 @@
    "model": "scribe_v1",
    "sure_sn": 186.0,
    "tahmini_kredi": 1023.0
+  },
+  {
+   "zaman": "2026-11-21 17:40:55",
+   "dosya": "c07_satir_sonu_kesik_kita12.mp3",
+   "ozet": "b903473015d17b69",
+   "model": "scribe_v1",
+   "sure_sn": 22.5,
+   "tahmini_kredi": 123.8
+  },
+  {
+   "zaman": "2026-11-21 17:41:45",
+   "dosya": "c08_yanlis_satir_kita12.mp3",
+   "ozet": "412b2302d4d3be7a",
+   "model": "scribe_v1",
+   "sure_sn": 22.5,
+   "tahmini_kredi": 123.8
+  },
+  {
+   "zaman": "2026-11-21 17:41:50",
+   "dosya": "k13b_kita1_esnetme_20.wav",
+   "ozet": "695c4be4590eb84f",
+   "model": "scribe_v1",
+   "sure_sn": 17.8,
+   "tahmini_kredi": 97.9
   }
  ],
- "toplam_tahmini_kredi": 6575.8,
+ "toplam_tahmini_kredi": 6921.3,
  "sinir": 8000
 }

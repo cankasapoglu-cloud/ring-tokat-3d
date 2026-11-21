@@ -9,6 +9,7 @@ ali-baba__demo_altyapi_sesli   begendi         155      -13.0         64        
 ali-baba__ornek_kita1          reddetti         27      -14.6         59        134       4.06       0.58       -6.3       1.43       2464       0.28       0.08      0.000      0.011
 ali-baba__sarki_birlesik       reddetti        155      -14.0         62        134       3.98       0.58       -5.0       1.49       2554       0.25       0.09      0.000      0.026
 ali-baba__dogal_onizleme       reddetti        134      -14.3         56        116       3.47       0.52       -5.0       1.48       2429       0.13      -0.04      0.000      0.019
+ali-baba__coskulu_1            reddetti        213      -11.8         67        116       4.11       0.85       -0.5       1.61       2267       0.22       0.08      0.000      0.198
 ali-baba__coskulu_2            reddetti        186      -12.3         66        116       4.62       0.76       -4.2       1.58       2097       0.13       0.08      0.000      0.141
 parmak-ailesi__duzgun_1        reddetti         91      -12.1         52        156       4.24       0.52       -9.8       1.58       2043      -0.05       0.04      0.016     -0.001
 parmak-ailesi__duzgun_2        reddetti         95      -15.4         46        156       3.45       0.46       -8.3       1.62       1829      -0.10      -0.02      0.025      0.004
@@ -28,6 +29,7 @@ ali-baba__demo_altyapi_sesli   begendi         9.4       0.13        -16       0
 ali-baba__ornek_kita1          reddetti       -3.8       0.46        -44       0.49          0          1       0.95          E       0.86       0.05        9.8         86          2         12       0.19         46       0.79
 ali-baba__sarki_birlesik       reddetti       -5.9       0.63        -13       0.49          0          1       0.99          E       0.95       0.01        8.4         91          3         99       0.41         29       0.80
 ali-baba__dogal_onizleme       reddetti      -13.0       0.60        -15       0.14         -4          3       0.91          E       0.67       0.08       17.0         68          4         31       0.34          4       0.78
+ali-baba__coskulu_1            reddetti       -4.6       0.29        -32       0.29          0          1       0.99          E       0.68       0.01        9.4         86          0         33       0.40         60       0.70
 ali-baba__coskulu_2            reddetti       -4.3       0.40        -40       0.12         -4          4       0.99          E       0.62       0.01       11.2         83          0         24       0.37         34       0.72
 parmak-ailesi__duzgun_1        reddetti        4.4       0.66        -51       0.28          0          1       0.90          H       0.52       0.10        7.1         94          8         59       0.72         25       0.80
 parmak-ailesi__duzgun_2        reddetti        4.7       0.60        -15       0.19          5          2       0.98          E       0.62       0.02        8.5         85          0         30       0.64         39       0.76
@@ -47,6 +49,7 @@ ali-baba__demo_altyapi_sesli   begendi        11.3       0.11       0.15       0
 ali-baba__ornek_kita1          reddetti        9.8       0.00       0.62       0.27          4      0.310       -9.2      10615       2.03      -19.8          1       2.50       2.87       3.00       1.48       0.08       0.03      0.002
 ali-baba__sarki_birlesik       reddetti       10.6       0.08       0.66       0.08         21      0.204      -15.4      10745       2.42      -14.8          2       2.39       2.76       3.19       1.34       0.07       0.07      0.021
 ali-baba__dogal_onizleme       reddetti       14.6       0.01       0.28       0.08          3      0.049      -16.0      10723       2.42      -14.4          1       2.56       2.76       2.97       1.43       0.02       0.43      0.002
+ali-baba__coskulu_1            reddetti       12.4       0.00       0.61       0.21          0      0.000      -12.8      10723       1.51      -13.9          0       2.58       3.00       3.48       1.47       0.07       0.34      0.018
 ali-baba__coskulu_2            reddetti       12.6       0.03       0.55       0.25          0      0.000      -12.0      10723       1.34      -12.9          0       2.35       2.49       2.76       1.58       0.04       0.29      0.011
 parmak-ailesi__duzgun_1        reddetti        9.1       0.05       0.74       0.06          0      0.000      -14.1      10745       1.07      -12.0          1       2.51       1.93       3.29       1.30       0.07       0.02      0.054
 parmak-ailesi__duzgun_2        reddetti       11.2       0.00       0.59       0.56          0      0.000      -10.6      10766       1.13      -12.5          0       2.76       3.67       3.91       1.95       0.10       0.01      0.029
@@ -66,6 +69,7 @@ ali-baba__demo_altyapi_sesli   begendi           -          -          -        
 ali-baba__ornek_kita1          reddetti      1.000      1.000         10          3          0         13       4.15       4.55       5.88          0          5       1.00
 ali-baba__sarki_birlesik       reddetti      0.481      0.481         42         10          0        108       4.07       3.30       6.90          1          3       1.00
 ali-baba__dogal_onizleme       reddetti      0.194      0.120         20          1          0        108       4.18       4.69       5.56          0          2       1.00
+ali-baba__coskulu_1            reddetti      0.120      0.111          7          2          4        108       5.13       4.25       4.89          0          1       1.00
 ali-baba__coskulu_2            reddetti      0.139      0.130          8          0          7        108       4.86       4.05       4.25          0          1       1.00
 parmak-ailesi__duzgun_1        reddetti      0.080      0.080          3          1          0         50       2.68       2.39       2.98          0          0          -
 parmak-ailesi__duzgun_2        reddetti      0.040      0.040          2          0          0         50       3.08       2.63       3.11          0          0       1.00
@@ -130,6 +134,13 @@ parmak-ailesi__sarki_2         reddetti      0.023      0.023          0        
     eksik: [('bir', 115.82)]
     fazla: []
     ton: Do majör (C major)  | CED hayvan: {'Animal': 0.099, 'Cattle, bovinae': 0.06, 'Moo': 0.061, 'Sheep': 0.051, 'Bleat': 0.059, 'Goat': 0.013, 'Horse': 0.039, 'Neigh, whinny': 0.051, 'Chicken, rooster': 0.044, 'Crowing, cock-a-doodle-doo': 0.038, 'Duck': 0.027, 'Quack': 0.061, 'Dog': 0.025, 'Bark': 0.009, 'Cat': 0.041, 'Meow': 0.042, 'Bird': 0.004} | ses olaylari: [('[müzik]', 0.0), ('[inek sesi]', 20.66), ('[koyun sesi]', 37.3), ('[at sesi]', 53.5), ('[horoz sesi]', 72.36), ('[ördek sesi]', 85.82), ('[köpek sesi]', 103.8), ('[kedi sesi]', 120.48), ('[müzik]', 128.24)]
+
+ ali-baba__coskulu_1 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'iyi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: [('ürü', '"Üü,', 111.7), ('öter', 'gümler.', 113.04), ('Çiftliğinde', 'Ben', 113.82), ('Ali', 'balta', 114.18), ("Baba'nın", 'var.', 114.8), ('Çiftliğinde', 'çiftlikte', 175.88), ('Çiftliğinde', 'çiftlikte', 208.98)]
+    eksik: [('bir', 76.54), ('Ü', 111.26)]
+    fazla: [('grupu', 114.52), ('bağırmak,', 139.94), ('"vak"', 140.66), ('diye', 141.5)]
+    ton: Re majör (D major)  | CED hayvan: {} | ses olaylari: [('[hareketli melodi]', 1.52), ('[hareketli melodi]', 16.52), ('[hareketli melodi]', 49.64), ('[hareketli melodi]', 82.74), ('[hareketli melodi]', 115.32), ('[hareketli melodi]', 144.8), ('[hareketli melodi]', 177.38), ('[hareketli melodi]', 210.1)]
 
  ali-baba__coskulu_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'iyi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'sorun', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
     isaretler: []

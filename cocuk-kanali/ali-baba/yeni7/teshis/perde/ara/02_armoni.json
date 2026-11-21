@@ -1,0 +1,6795 @@
+{
+ "heceler": [
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 0,
+   "hece": "A",
+   "vurus": 0,
+   "bas": 9.228,
+   "bit": 9.488,
+   "cekirdek_ms": 245,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.05,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 9.488,
+   "bit": 9.791,
+   "cekirdek_ms": 305,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 2,
+   "hece": "Ba",
+   "vurus": 1,
+   "bas": 9.791,
+   "bit": 9.936,
+   "cekirdek_ms": 145,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 3,
+   "hece": "ba",
+   "vurus": 1.25,
+   "bas": 9.936,
+   "bit": 10.066,
+   "cekirdek_ms": 130,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.32,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 4,
+   "hece": "nın",
+   "vurus": 1.5,
+   "bas": 10.066,
+   "bit": 10.379,
+   "cekirdek_ms": 310,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.1,
+    "D5": 0.9
+   },
+   "klarnet_ayni_nota_orani": 0.1,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.84,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 5,
+   "hece": "bir",
+   "vurus": 2,
+   "bas": 10.379,
+   "bit": 10.603,
+   "cekirdek_ms": 225,
+   "soylenen_midi": 61.99,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.02,
+    "C": 0.98
+   },
+   "akor_sesi_orani": 0.02,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.02,
+    "E5": 0.98
+   },
+   "klarnet_ayni_nota_orani": 0.02,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.03,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 6,
+   "hece": "çift",
+   "vurus": 2.5,
+   "bas": 10.603,
+   "bit": 10.94,
+   "cekirdek_ms": 115,
+   "soylenen_midi": 63.89,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 7,
+   "hece": "li",
+   "vurus": 3,
+   "bas": 10.94,
+   "bit": 11.079,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.12,
+    "G": 0.88
+   },
+   "akor_sesi_orani": 0.12,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.12,
+    "D5": 0.88
+   },
+   "klarnet_ayni_nota_orani": 0.12,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.78,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 8,
+   "hece": "ği",
+   "vurus": 3.25,
+   "bas": 11.079,
+   "bit": 11.22,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.96,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L1",
+   "sira": 9,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 11.22,
+   "bit": 11.447,
+   "cekirdek_ms": 220,
+   "soylenen_midi": 61.99,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 13.779,
+   "bit": 14.08,
+   "cekirdek_ms": 235,
+   "soylenen_midi": 67.05,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 14.08,
+   "bit": 14.386,
+   "cekirdek_ms": 310,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.07,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 14.386,
+   "bit": 14.659,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 78.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 14.659,
+   "bit": 14.934,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.04,
+    "D5": 0.96
+   },
+   "klarnet_ayni_nota_orani": 0.04,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.91,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 4,
+   "hece": "i",
+   "vurus": 2,
+   "bas": 14.934,
+   "bit": 15.18,
+   "cekirdek_ms": 245,
+   "soylenen_midi": 62.02,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.09,
+    "C": 0.91
+   },
+   "akor_sesi_orani": 0.09,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.09,
+    "E5": 0.91
+   },
+   "klarnet_ayni_nota_orani": 0.09,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.09,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 5,
+   "hece": "nek",
+   "vurus": 2.5,
+   "bas": 15.18,
+   "bit": 15.485,
+   "cekirdek_ms": 205,
+   "soylenen_midi": 64.04,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.07,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 6,
+   "hece": "le",
+   "vurus": 3,
+   "bas": 15.485,
+   "bit": 15.639,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.25,
+    "G": 0.75
+   },
+   "akor_sesi_orani": 0.25,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.25,
+    "D5": 0.75
+   },
+   "klarnet_ayni_nota_orani": 0.25,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.76,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 7,
+   "hece": "ri",
+   "vurus": 3.25,
+   "bas": 15.639,
+   "bit": 15.778,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 64.1,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.98,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "sira": 8,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 15.778,
+   "bit": 16.04,
+   "cekirdek_ms": 260,
+   "soylenen_midi": 61.98,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "diye",
+   "sira": 0,
+   "hece": "di",
+   "vurus": 2,
+   "bas": 21.82,
+   "bit": 22.144,
+   "cekirdek_ms": 325,
+   "soylenen_midi": 66.97,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "diye",
+   "sira": 1,
+   "hece": "ye",
+   "vurus": 2.5,
+   "bas": 22.144,
+   "bit": 22.355,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 67.06,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.04,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "diye",
+   "sira": 2,
+   "hece": "ba",
+   "vurus": 3,
+   "bas": 22.355,
+   "bit": 22.505,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "diye",
+   "sira": 3,
+   "hece": "ğı",
+   "vurus": 3.25,
+   "bas": 22.505,
+   "bit": 22.65,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.05,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "diye",
+   "sira": 4,
+   "hece": "rır",
+   "vurus": 3.5,
+   "bas": 22.65,
+   "bit": 22.884,
+   "cekirdek_ms": 185,
+   "soylenen_midi": 67.03,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 22.884,
+   "bit": 23.203,
+   "cekirdek_ms": 85,
+   "soylenen_midi": 67.27,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 23.203,
+   "bit": 23.529,
+   "cekirdek_ms": 315,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.05,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 23.529,
+   "bit": 23.792,
+   "cekirdek_ms": 265,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 23.792,
+   "bit": 24.079,
+   "cekirdek_ms": 280,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.07,
+    "D5": 0.93
+   },
+   "klarnet_ayni_nota_orani": 0.07,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.89,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 4,
+   "hece": "A",
+   "vurus": 2,
+   "bas": 24.079,
+   "bit": 24.331,
+   "cekirdek_ms": 220,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.09,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 5,
+   "hece": "li",
+   "vurus": 2.5,
+   "bas": 24.331,
+   "bit": 24.622,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 64.03,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.04,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 6,
+   "hece": "Ba",
+   "vurus": 3,
+   "bas": 24.622,
+   "bit": 24.794,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 64.04,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.22,
+    "G": 0.78
+   },
+   "akor_sesi_orani": 0.22,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.22,
+    "D5": 0.78
+   },
+   "klarnet_ayni_nota_orani": 0.22,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.82,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 7,
+   "hece": "ba",
+   "vurus": 3.25,
+   "bas": 24.794,
+   "bit": 24.917,
+   "cekirdek_ms": 115,
+   "soylenen_midi": 64.04,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.96,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "sira": 8,
+   "hece": "nın",
+   "vurus": 3.5,
+   "bas": 24.917,
+   "bit": 25.364,
+   "cekirdek_ms": 305,
+   "soylenen_midi": 62.04,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 0.96
+   },
+   "klarnet_ayni_nota_orani": 0.96,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 0,
+   "hece": "A",
+   "vurus": 0,
+   "bas": 27.505,
+   "bit": 27.758,
+   "cekirdek_ms": 230,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 27.758,
+   "bit": 28.085,
+   "cekirdek_ms": 330,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 2,
+   "hece": "Ba",
+   "vurus": 1,
+   "bas": 28.085,
+   "bit": 28.209,
+   "cekirdek_ms": 120,
+   "soylenen_midi": 67.05,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 3,
+   "hece": "ba",
+   "vurus": 1.25,
+   "bas": 28.209,
+   "bit": 28.347,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 67.05,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 78.84,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 4,
+   "hece": "nın",
+   "vurus": 1.5,
+   "bas": 28.347,
+   "bit": 28.672,
+   "cekirdek_ms": 325,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 0.99,
+    "C": 0.01
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.11,
+    "D5": 0.88,
+    "E5": 0.01
+   },
+   "klarnet_ayni_nota_orani": 0.11,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.88,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 5,
+   "hece": "bir",
+   "vurus": 2,
+   "bas": 28.672,
+   "bit": 28.902,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 61.98,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.03,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 6,
+   "hece": "çift",
+   "vurus": 2.5,
+   "bas": 28.902,
+   "bit": 29.217,
+   "cekirdek_ms": 245,
+   "soylenen_midi": 64.03,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 7,
+   "hece": "li",
+   "vurus": 3,
+   "bas": 29.217,
+   "bit": 29.362,
+   "cekirdek_ms": 145,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.16,
+    "G": 0.84
+   },
+   "akor_sesi_orani": 0.16,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.16,
+    "D5": 0.84
+   },
+   "klarnet_ayni_nota_orani": 0.16,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.76,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 8,
+   "hece": "ği",
+   "vurus": 3.25,
+   "bas": 29.362,
+   "bit": 29.488,
+   "cekirdek_ms": 125,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.98,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "sira": 9,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 29.488,
+   "bit": 29.726,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 32.061,
+   "bit": 32.345,
+   "cekirdek_ms": 105,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 32.345,
+   "bit": 32.671,
+   "cekirdek_ms": 330,
+   "soylenen_midi": 67.03,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 32.671,
+   "bit": 32.945,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 32.945,
+   "bit": 33.179,
+   "cekirdek_ms": 235,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.05,
+    "D5": 0.95
+   },
+   "klarnet_ayni_nota_orani": 0.05,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.8,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 4,
+   "hece": "ko",
+   "vurus": 2,
+   "bas": 33.179,
+   "bit": 33.476,
+   "cekirdek_ms": 300,
+   "soylenen_midi": 62.03,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.21,
+    "C": 0.79
+   },
+   "akor_sesi_orani": 0.21,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.21,
+    "E5": 0.79
+   },
+   "klarnet_ayni_nota_orani": 0.21,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.09,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 5,
+   "hece": "yun",
+   "vurus": 2.5,
+   "bas": 33.476,
+   "bit": 33.815,
+   "cekirdek_ms": 340,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 0.98,
+    "G": 0.02
+   },
+   "akor_sesi_orani": 0.98,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 0.98,
+    "D5": 0.02
+   },
+   "klarnet_ayni_nota_orani": 0.98,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 6,
+   "hece": "la",
+   "vurus": 3,
+   "bas": 33.815,
+   "bit": 33.945,
+   "cekirdek_ms": 125,
+   "soylenen_midi": 64.01,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.84,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 7,
+   "hece": "rı",
+   "vurus": 3.25,
+   "bas": 33.945,
+   "bit": 34.091,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 64.07,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.93,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "sira": 8,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 34.091,
+   "bit": 34.309,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "diye",
+   "sira": 0,
+   "hece": "di",
+   "vurus": 2,
+   "bas": 40.113,
+   "bit": 40.4,
+   "cekirdek_ms": 285,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "diye",
+   "sira": 1,
+   "hece": "ye",
+   "vurus": 2.5,
+   "bas": 40.4,
+   "bit": 40.666,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "diye",
+   "sira": 2,
+   "hece": "ba",
+   "vurus": 3,
+   "bas": 40.666,
+   "bit": 40.789,
+   "cekirdek_ms": 115,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "diye",
+   "sira": 3,
+   "hece": "ğı",
+   "vurus": 3.25,
+   "bas": 40.789,
+   "bit": 40.965,
+   "cekirdek_ms": 175,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "diye",
+   "sira": 4,
+   "hece": "rır",
+   "vurus": 3.5,
+   "bas": 40.965,
+   "bit": 41.19,
+   "cekirdek_ms": 195,
+   "soylenen_midi": 67.05,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 41.19,
+   "bit": 41.488,
+   "cekirdek_ms": 115,
+   "soylenen_midi": 66.98,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 41.488,
+   "bit": 41.814,
+   "cekirdek_ms": 325,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.04,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 41.814,
+   "bit": 42.088,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 42.088,
+   "bit": 42.368,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.04,
+    "D5": 0.96
+   },
+   "klarnet_ayni_nota_orani": 0.04,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.84,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 4,
+   "hece": "A",
+   "vurus": 2,
+   "bas": 42.368,
+   "bit": 42.647,
+   "cekirdek_ms": 255,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.04,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 5,
+   "hece": "li",
+   "vurus": 2.5,
+   "bas": 42.647,
+   "bit": 42.919,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 6,
+   "hece": "Ba",
+   "vurus": 3,
+   "bas": 42.919,
+   "bit": 43.098,
+   "cekirdek_ms": 145,
+   "soylenen_midi": 63.98,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.01,
+    "G": 0.99
+   },
+   "akor_sesi_orani": 0.01,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.01,
+    "D5": 0.99
+   },
+   "klarnet_ayni_nota_orani": 0.01,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.78,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 7,
+   "hece": "ba",
+   "vurus": 3.25,
+   "bas": 43.098,
+   "bit": 43.246,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 63.98,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.97,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "sira": 8,
+   "hece": "nın",
+   "vurus": 3.5,
+   "bas": 43.246,
+   "bit": 43.475,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 61.97,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 0,
+   "hece": "A",
+   "vurus": 0,
+   "bas": 45.745,
+   "bit": 46.041,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 0.92
+   },
+   "klarnet_ayni_nota_orani": 0.92,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 46.041,
+   "bit": 46.34,
+   "cekirdek_ms": 295,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.05,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 2,
+   "hece": "Ba",
+   "vurus": 1,
+   "bas": 46.34,
+   "bit": 46.508,
+   "cekirdek_ms": 120,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 3,
+   "hece": "ba",
+   "vurus": 1.25,
+   "bas": 46.508,
+   "bit": 46.627,
+   "cekirdek_ms": 110,
+   "soylenen_midi": 67.05,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.85,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 4,
+   "hece": "nın",
+   "vurus": 1.5,
+   "bas": 46.627,
+   "bit": 46.951,
+   "cekirdek_ms": 325,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.13,
+    "D5": 0.87
+   },
+   "klarnet_ayni_nota_orani": 0.13,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.9,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 5,
+   "hece": "bir",
+   "vurus": 2,
+   "bas": 46.951,
+   "bit": 47.176,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 61.98,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.01,
+    "C": 0.99
+   },
+   "akor_sesi_orani": 0.01,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.01,
+    "E5": 0.99
+   },
+   "klarnet_ayni_nota_orani": 0.01,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.05,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 6,
+   "hece": "çift",
+   "vurus": 2.5,
+   "bas": 47.176,
+   "bit": 47.507,
+   "cekirdek_ms": 130,
+   "soylenen_midi": 64.03,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 7,
+   "hece": "li",
+   "vurus": 3,
+   "bas": 47.507,
+   "bit": 47.645,
+   "cekirdek_ms": 130,
+   "soylenen_midi": 64.03,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.1,
+    "G": 0.9
+   },
+   "akor_sesi_orani": 0.1,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.1,
+    "D5": 0.9
+   },
+   "klarnet_ayni_nota_orani": 0.1,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.79,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 8,
+   "hece": "ği",
+   "vurus": 3.25,
+   "bas": 47.645,
+   "bit": 47.769,
+   "cekirdek_ms": 125,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.97,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "sira": 9,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 47.769,
+   "bit": 48.008,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 61.99,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 50.344,
+   "bit": 50.631,
+   "cekirdek_ms": 225,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 50.631,
+   "bit": 50.957,
+   "cekirdek_ms": 325,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 50.957,
+   "bit": 51.23,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 66.98,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 51.23,
+   "bit": 51.463,
+   "cekirdek_ms": 235,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.05,
+    "D5": 0.95
+   },
+   "klarnet_ayni_nota_orani": 0.05,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.79,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 4,
+   "hece": "at",
+   "vurus": 2,
+   "bas": 51.463,
+   "bit": 51.855,
+   "cekirdek_ms": 235,
+   "soylenen_midi": 61.99,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.27,
+    "C": 0.73
+   },
+   "akor_sesi_orani": 0.27,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.27,
+    "E5": 0.73
+   },
+   "klarnet_ayni_nota_orani": 0.27,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.05,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 5,
+   "hece": "la",
+   "vurus": 3,
+   "bas": 52.067,
+   "bit": 52.242,
+   "cekirdek_ms": 175,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.17,
+    "G": 0.83
+   },
+   "akor_sesi_orani": 0.17,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.17,
+    "D5": 0.83
+   },
+   "klarnet_ayni_nota_orani": 0.17,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.83,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 6,
+   "hece": "rı",
+   "vurus": 3.25,
+   "bas": 52.242,
+   "bit": 52.367,
+   "cekirdek_ms": 125,
+   "soylenen_midi": 64.18,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.91,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "sira": 7,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 52.367,
+   "bit": 52.61,
+   "cekirdek_ms": 235,
+   "soylenen_midi": 61.99,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 74.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "diye",
+   "sira": 0,
+   "hece": "di",
+   "vurus": 2,
+   "bas": 58.398,
+   "bit": 58.679,
+   "cekirdek_ms": 280,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "diye",
+   "sira": 1,
+   "hece": "ye",
+   "vurus": 2.5,
+   "bas": 58.679,
+   "bit": 58.918,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "diye",
+   "sira": 2,
+   "hece": "ba",
+   "vurus": 3,
+   "bas": 58.918,
+   "bit": 59.088,
+   "cekirdek_ms": 170,
+   "soylenen_midi": 67.11,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "diye",
+   "sira": 3,
+   "hece": "ğı",
+   "vurus": 3.25,
+   "bas": 59.088,
+   "bit": 59.238,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.06,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "diye",
+   "sira": 4,
+   "hece": "rır",
+   "vurus": 3.5,
+   "bas": 59.238,
+   "bit": 59.447,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 67.03,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 59.447,
+   "bit": 59.774,
+   "cekirdek_ms": 220,
+   "soylenen_midi": 67.08,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 59.774,
+   "bit": 60.1,
+   "cekirdek_ms": 325,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 60.1,
+   "bit": 60.369,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 78.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 60.369,
+   "bit": 60.662,
+   "cekirdek_ms": 280,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.05,
+    "D5": 0.95
+   },
+   "klarnet_ayni_nota_orani": 0.05,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.88,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 4,
+   "hece": "A",
+   "vurus": 2,
+   "bas": 60.662,
+   "bit": 60.982,
+   "cekirdek_ms": 290,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.06,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 5,
+   "hece": "li",
+   "vurus": 2.5,
+   "bas": 60.982,
+   "bit": 61.213,
+   "cekirdek_ms": 225,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 6,
+   "hece": "Ba",
+   "vurus": 3,
+   "bas": 61.213,
+   "bit": 61.363,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.13,
+    "G": 0.87
+   },
+   "akor_sesi_orani": 0.13,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.13,
+    "D5": 0.87
+   },
+   "klarnet_ayni_nota_orani": 0.13,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.77,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 7,
+   "hece": "ba",
+   "vurus": 3.25,
+   "bas": 61.363,
+   "bit": 61.532,
+   "cekirdek_ms": 170,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.98,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "sira": 8,
+   "hece": "nın",
+   "vurus": 3.5,
+   "bas": 61.532,
+   "bit": 61.782,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 62.03,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 74.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 0,
+   "hece": "A",
+   "vurus": 0,
+   "bas": 64.018,
+   "bit": 64.341,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 67.03,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 64.341,
+   "bit": 64.639,
+   "cekirdek_ms": 285,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 2,
+   "hece": "Ba",
+   "vurus": 1,
+   "bas": 64.639,
+   "bit": 64.786,
+   "cekirdek_ms": 120,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 3,
+   "hece": "ba",
+   "vurus": 1.25,
+   "bas": 64.786,
+   "bit": 64.956,
+   "cekirdek_ms": 170,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 0.98,
+    "D5": 0.02
+   },
+   "klarnet_ayni_nota_orani": 0.98,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.76,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 4,
+   "hece": "nın",
+   "vurus": 1.5,
+   "bas": 64.956,
+   "bit": 65.241,
+   "cekirdek_ms": 285,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 0.99,
+    "C": 0.01
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 0.99,
+    "E5": 0.01
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.82,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 5,
+   "hece": "bir",
+   "vurus": 2,
+   "bas": 65.241,
+   "bit": 65.465,
+   "cekirdek_ms": 220,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.05,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 6,
+   "hece": "çift",
+   "vurus": 2.5,
+   "bas": 65.465,
+   "bit": 65.796,
+   "cekirdek_ms": 245,
+   "soylenen_midi": 64.23,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 7,
+   "hece": "li",
+   "vurus": 3,
+   "bas": 65.796,
+   "bit": 65.932,
+   "cekirdek_ms": 135,
+   "soylenen_midi": 64.05,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.1,
+    "G": 0.9
+   },
+   "akor_sesi_orani": 0.1,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.1,
+    "D5": 0.9
+   },
+   "klarnet_ayni_nota_orani": 0.1,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.83,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 8,
+   "hece": "ği",
+   "vurus": 3.25,
+   "bas": 65.932,
+   "bit": 66.075,
+   "cekirdek_ms": 145,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.93,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "sira": 9,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 66.075,
+   "bit": 66.305,
+   "cekirdek_ms": 225,
+   "soylenen_midi": 62.02,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 68.643,
+   "bit": 68.972,
+   "cekirdek_ms": 265,
+   "soylenen_midi": 66.95,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 68.972,
+   "bit": 69.243,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 69.243,
+   "bit": 69.525,
+   "cekirdek_ms": 280,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 69.525,
+   "bit": 69.778,
+   "cekirdek_ms": 215,
+   "soylenen_midi": 67.05,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.02,
+    "D5": 0.98
+   },
+   "klarnet_ayni_nota_orani": 0.02,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.81,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 4,
+   "hece": "ho",
+   "vurus": 2,
+   "bas": 69.778,
+   "bit": 70.053,
+   "cekirdek_ms": 235,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.06,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 5,
+   "hece": "roz",
+   "vurus": 2.5,
+   "bas": 70.053,
+   "bit": 70.367,
+   "cekirdek_ms": 225,
+   "soylenen_midi": 64.01,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.07,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 6,
+   "hece": "la",
+   "vurus": 3,
+   "bas": 70.367,
+   "bit": 70.52,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 64.04,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.1,
+    "G": 0.9
+   },
+   "akor_sesi_orani": 0.1,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.1,
+    "D5": 0.9
+   },
+   "klarnet_ayni_nota_orani": 0.1,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.86,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 7,
+   "hece": "rı",
+   "vurus": 3.25,
+   "bas": 70.52,
+   "bit": 70.662,
+   "cekirdek_ms": 145,
+   "soylenen_midi": 64.12,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.96,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "sira": 8,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 70.662,
+   "bit": 70.902,
+   "cekirdek_ms": 230,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "diye",
+   "sira": 0,
+   "hece": "di",
+   "vurus": 2,
+   "bas": 76.684,
+   "bit": 76.957,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "diye",
+   "sira": 1,
+   "hece": "ye",
+   "vurus": 2.5,
+   "bas": 76.957,
+   "bit": 77.197,
+   "cekirdek_ms": 230,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "diye",
+   "sira": 2,
+   "hece": "ba",
+   "vurus": 3,
+   "bas": 77.197,
+   "bit": 77.369,
+   "cekirdek_ms": 155,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "diye",
+   "sira": 3,
+   "hece": "ğı",
+   "vurus": 3.25,
+   "bas": 77.369,
+   "bit": 77.524,
+   "cekirdek_ms": 155,
+   "soylenen_midi": 66.97,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.06,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "diye",
+   "sira": 4,
+   "hece": "rır",
+   "vurus": 3.5,
+   "bas": 77.524,
+   "bit": 77.732,
+   "cekirdek_ms": 185,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 77.732,
+   "bit": 78.047,
+   "cekirdek_ms": 220,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 78.047,
+   "bit": 78.386,
+   "cekirdek_ms": 340,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.09,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 78.386,
+   "bit": 78.638,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 78.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 78.638,
+   "bit": 78.891,
+   "cekirdek_ms": 255,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.12,
+    "D5": 0.88
+   },
+   "klarnet_ayni_nota_orani": 0.12,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.88,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 4,
+   "hece": "A",
+   "vurus": 2,
+   "bas": 78.891,
+   "bit": 79.213,
+   "cekirdek_ms": 320,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.19,
+    "C": 0.81
+   },
+   "akor_sesi_orani": 0.19,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.19,
+    "E5": 0.81
+   },
+   "klarnet_ayni_nota_orani": 0.19,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.18,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 5,
+   "hece": "li",
+   "vurus": 2.5,
+   "bas": 79.213,
+   "bit": 79.49,
+   "cekirdek_ms": 255,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 6,
+   "hece": "Ba",
+   "vurus": 3,
+   "bas": 79.49,
+   "bit": 79.657,
+   "cekirdek_ms": 165,
+   "soylenen_midi": 63.95,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.2,
+    "G": 0.8
+   },
+   "akor_sesi_orani": 0.2,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.2,
+    "D5": 0.8
+   },
+   "klarnet_ayni_nota_orani": 0.2,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.79,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 7,
+   "hece": "ba",
+   "vurus": 3.25,
+   "bas": 79.657,
+   "bit": 79.815,
+   "cekirdek_ms": 155,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "sira": 8,
+   "hece": "nın",
+   "vurus": 3.5,
+   "bas": 79.815,
+   "bit": 80.126,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 62.02,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 0,
+   "hece": "A",
+   "vurus": 0,
+   "bas": 82.347,
+   "bit": 82.588,
+   "cekirdek_ms": 215,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 0.95
+   },
+   "klarnet_ayni_nota_orani": 0.95,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 82.588,
+   "bit": 82.923,
+   "cekirdek_ms": 335,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 2,
+   "hece": "Ba",
+   "vurus": 1,
+   "bas": 82.923,
+   "bit": 83.095,
+   "cekirdek_ms": 170,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 3,
+   "hece": "ba",
+   "vurus": 1.25,
+   "bas": 83.095,
+   "bit": 83.209,
+   "cekirdek_ms": 115,
+   "soylenen_midi": 67.05,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.71,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 4,
+   "hece": "nın",
+   "vurus": 1.5,
+   "bas": 83.209,
+   "bit": 83.52,
+   "cekirdek_ms": 310,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.1,
+    "D5": 0.9
+   },
+   "klarnet_ayni_nota_orani": 0.1,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.81,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 5,
+   "hece": "bir",
+   "vurus": 2,
+   "bas": 83.52,
+   "bit": 83.759,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.03,
+    "C": 0.97
+   },
+   "akor_sesi_orani": 0.03,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.03,
+    "E5": 0.97
+   },
+   "klarnet_ayni_nota_orani": 0.03,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.05,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 6,
+   "hece": "çift",
+   "vurus": 2.5,
+   "bas": 83.759,
+   "bit": 84.073,
+   "cekirdek_ms": 315,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 7,
+   "hece": "li",
+   "vurus": 3,
+   "bas": 84.073,
+   "bit": 84.2,
+   "cekirdek_ms": 125,
+   "soylenen_midi": 64.04,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.2,
+    "G": 0.8
+   },
+   "akor_sesi_orani": 0.2,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.2,
+    "D5": 0.8
+   },
+   "klarnet_ayni_nota_orani": 0.2,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.81,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 8,
+   "hece": "ği",
+   "vurus": 3.25,
+   "bas": 84.2,
+   "bit": 84.354,
+   "cekirdek_ms": 155,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.89,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "sira": 9,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 84.354,
+   "bit": 84.594,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 62.02,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 86.917,
+   "bit": 87.203,
+   "cekirdek_ms": 285,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 0.87
+   },
+   "klarnet_ayni_nota_orani": 0.87,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 87.203,
+   "bit": 87.529,
+   "cekirdek_ms": 325,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.07,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 87.529,
+   "bit": 87.799,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 87.799,
+   "bit": 88.047,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 66.98,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.06,
+    "D5": 0.94
+   },
+   "klarnet_ayni_nota_orani": 0.06,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.85,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 4,
+   "hece": "ör",
+   "vurus": 2,
+   "bas": 88.047,
+   "bit": 88.366,
+   "cekirdek_ms": 295,
+   "soylenen_midi": 62.03,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.08,
+    "C": 0.92
+   },
+   "akor_sesi_orani": 0.08,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.08,
+    "E5": 0.92
+   },
+   "klarnet_ayni_nota_orani": 0.08,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.14,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 5,
+   "hece": "dek",
+   "vurus": 2.5,
+   "bas": 88.366,
+   "bit": 88.615,
+   "cekirdek_ms": 165,
+   "soylenen_midi": 64.01,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.04,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 6,
+   "hece": "le",
+   "vurus": 3,
+   "bas": 88.615,
+   "bit": 88.803,
+   "cekirdek_ms": 185,
+   "soylenen_midi": 64.05,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.28,
+    "G": 0.72
+   },
+   "akor_sesi_orani": 0.28,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.28,
+    "D5": 0.72
+   },
+   "klarnet_ayni_nota_orani": 0.28,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.83,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 7,
+   "hece": "ri",
+   "vurus": 3.25,
+   "bas": 88.803,
+   "bit": 88.955,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 64.24,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.97,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "sira": 8,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 88.955,
+   "bit": 89.191,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "diye",
+   "sira": 0,
+   "hece": "di",
+   "vurus": 2,
+   "bas": 94.935,
+   "bit": 95.24,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "diye",
+   "sira": 1,
+   "hece": "ye",
+   "vurus": 2.5,
+   "bas": 95.24,
+   "bit": 95.468,
+   "cekirdek_ms": 230,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "diye",
+   "sira": 2,
+   "hece": "ba",
+   "vurus": 3,
+   "bas": 95.468,
+   "bit": 95.657,
+   "cekirdek_ms": 190,
+   "soylenen_midi": 67.03,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "diye",
+   "sira": 3,
+   "hece": "ğı",
+   "vurus": 3.25,
+   "bas": 95.657,
+   "bit": 95.815,
+   "cekirdek_ms": 155,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.04,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "diye",
+   "sira": 4,
+   "hece": "rır",
+   "vurus": 3.5,
+   "bas": 95.815,
+   "bit": 96.02,
+   "cekirdek_ms": 190,
+   "soylenen_midi": 67.03,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 96.02,
+   "bit": 96.338,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 66.96,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 96.338,
+   "bit": 96.671,
+   "cekirdek_ms": 335,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 96.671,
+   "bit": 96.932,
+   "cekirdek_ms": 260,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 96.932,
+   "bit": 97.188,
+   "cekirdek_ms": 255,
+   "soylenen_midi": 66.99,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.09,
+    "D5": 0.91
+   },
+   "klarnet_ayni_nota_orani": 0.09,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.8,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 4,
+   "hece": "A",
+   "vurus": 2,
+   "bas": 97.188,
+   "bit": 97.483,
+   "cekirdek_ms": 295,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.18,
+    "C": 0.82
+   },
+   "akor_sesi_orani": 0.18,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.18,
+    "E5": 0.82
+   },
+   "klarnet_ayni_nota_orani": 0.18,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.1,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 5,
+   "hece": "li",
+   "vurus": 2.5,
+   "bas": 97.483,
+   "bit": 97.764,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 6,
+   "hece": "Ba",
+   "vurus": 3,
+   "bas": 97.764,
+   "bit": 97.912,
+   "cekirdek_ms": 135,
+   "soylenen_midi": 64.08,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.25,
+    "G": 0.75
+   },
+   "akor_sesi_orani": 0.25,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.25,
+    "D5": 0.75
+   },
+   "klarnet_ayni_nota_orani": 0.25,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.78,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 7,
+   "hece": "ba",
+   "vurus": 3.25,
+   "bas": 97.912,
+   "bit": 98.09,
+   "cekirdek_ms": 175,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.93,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "sira": 8,
+   "hece": "nın",
+   "vurus": 3.5,
+   "bas": 98.09,
+   "bit": 98.513,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 0.97
+   },
+   "klarnet_ayni_nota_orani": 0.97,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 0,
+   "hece": "A",
+   "vurus": 0,
+   "bas": 100.637,
+   "bit": 100.943,
+   "cekirdek_ms": 260,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 100.943,
+   "bit": 101.198,
+   "cekirdek_ms": 255,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 2,
+   "hece": "Ba",
+   "vurus": 1,
+   "bas": 101.198,
+   "bit": 101.376,
+   "cekirdek_ms": 180,
+   "soylenen_midi": 67.08,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 3,
+   "hece": "ba",
+   "vurus": 1.25,
+   "bas": 101.376,
+   "bit": 101.529,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 0.99,
+    "D5": 0.01
+   },
+   "klarnet_ayni_nota_orani": 0.99,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.73,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 4,
+   "hece": "nın",
+   "vurus": 1.5,
+   "bas": 101.529,
+   "bit": 101.801,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.87,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 5,
+   "hece": "bir",
+   "vurus": 2,
+   "bas": 101.801,
+   "bit": 102.03,
+   "cekirdek_ms": 225,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.04,
+    "C": 0.96
+   },
+   "akor_sesi_orani": 0.04,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.04,
+    "E5": 0.96
+   },
+   "klarnet_ayni_nota_orani": 0.04,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.04,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 6,
+   "hece": "çift",
+   "vurus": 2.5,
+   "bas": 102.03,
+   "bit": 102.357,
+   "cekirdek_ms": 330,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.04,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 7,
+   "hece": "li",
+   "vurus": 3,
+   "bas": 102.357,
+   "bit": 102.493,
+   "cekirdek_ms": 135,
+   "soylenen_midi": 64.03,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.19,
+    "G": 0.81
+   },
+   "akor_sesi_orani": 0.19,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.19,
+    "D5": 0.81
+   },
+   "klarnet_ayni_nota_orani": 0.19,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.85,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 8,
+   "hece": "ği",
+   "vurus": 3.25,
+   "bas": 102.493,
+   "bit": 102.651,
+   "cekirdek_ms": 160,
+   "soylenen_midi": 64.03,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.95,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "sira": 9,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 102.651,
+   "bit": 102.856,
+   "cekirdek_ms": 205,
+   "soylenen_midi": 62.02,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 74.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 105.202,
+   "bit": 105.483,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 66.8,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 105.483,
+   "bit": 105.814,
+   "cekirdek_ms": 320,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 105.814,
+   "bit": 106.08,
+   "cekirdek_ms": 265,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 106.08,
+   "bit": 106.325,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 66.98,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.08,
+    "D5": 0.92
+   },
+   "klarnet_ayni_nota_orani": 0.08,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.83,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 4,
+   "hece": "kö",
+   "vurus": 2,
+   "bas": 106.325,
+   "bit": 106.629,
+   "cekirdek_ms": 265,
+   "soylenen_midi": 61.97,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.08,
+    "C": 0.92
+   },
+   "akor_sesi_orani": 0.08,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.08,
+    "E5": 0.92
+   },
+   "klarnet_ayni_nota_orani": 0.08,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.06,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 5,
+   "hece": "pek",
+   "vurus": 2.5,
+   "bas": 106.629,
+   "bit": 106.908,
+   "cekirdek_ms": 280,
+   "soylenen_midi": 63.99,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 6,
+   "hece": "le",
+   "vurus": 3,
+   "bas": 106.908,
+   "bit": 107.094,
+   "cekirdek_ms": 185,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.25,
+    "G": 0.75
+   },
+   "akor_sesi_orani": 0.25,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.25,
+    "D5": 0.75
+   },
+   "klarnet_ayni_nota_orani": 0.25,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.78,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 7,
+   "hece": "ri",
+   "vurus": 3.25,
+   "bas": 107.094,
+   "bit": 107.221,
+   "cekirdek_ms": 130,
+   "soylenen_midi": 64.08,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.96,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "sira": 8,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 107.221,
+   "bit": 107.456,
+   "cekirdek_ms": 230,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "diye",
+   "sira": 0,
+   "hece": "di",
+   "vurus": 2,
+   "bas": 113.21,
+   "bit": 113.523,
+   "cekirdek_ms": 315,
+   "soylenen_midi": 66.97,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 0.9
+   },
+   "klarnet_ayni_nota_orani": 0.9,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "diye",
+   "sira": 1,
+   "hece": "ye",
+   "vurus": 2.5,
+   "bas": 113.523,
+   "bit": 113.752,
+   "cekirdek_ms": 230,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "diye",
+   "sira": 2,
+   "hece": "ba",
+   "vurus": 3,
+   "bas": 113.752,
+   "bit": 113.958,
+   "cekirdek_ms": 205,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "diye",
+   "sira": 3,
+   "hece": "ğı",
+   "vurus": 3.25,
+   "bas": 113.958,
+   "bit": 114.078,
+   "cekirdek_ms": 120,
+   "soylenen_midi": 66.96,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.07,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "diye",
+   "sira": 4,
+   "hece": "rır",
+   "vurus": 3.5,
+   "bas": 114.078,
+   "bit": 114.315,
+   "cekirdek_ms": 235,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 114.315,
+   "bit": 114.622,
+   "cekirdek_ms": 105,
+   "soylenen_midi": 67.12,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 114.622,
+   "bit": 114.957,
+   "cekirdek_ms": 335,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 114.957,
+   "bit": 115.229,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 115.229,
+   "bit": 115.486,
+   "cekirdek_ms": 260,
+   "soylenen_midi": 66.97,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.05,
+    "D5": 0.95
+   },
+   "klarnet_ayni_nota_orani": 0.05,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.8,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 4,
+   "hece": "A",
+   "vurus": 2,
+   "bas": 115.486,
+   "bit": 115.76,
+   "cekirdek_ms": 270,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.14,
+    "C": 0.86
+   },
+   "akor_sesi_orani": 0.14,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.14,
+    "E5": 0.86
+   },
+   "klarnet_ayni_nota_orani": 0.14,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.05,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 5,
+   "hece": "li",
+   "vurus": 2.5,
+   "bas": 115.76,
+   "bit": 116.035,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 63.98,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 6,
+   "hece": "Ba",
+   "vurus": 3,
+   "bas": 116.035,
+   "bit": 116.213,
+   "cekirdek_ms": 180,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.36,
+    "G": 0.64
+   },
+   "akor_sesi_orani": 0.36,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.36,
+    "D5": 0.64
+   },
+   "klarnet_ayni_nota_orani": 0.36,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.8,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 7,
+   "hece": "ba",
+   "vurus": 3.25,
+   "bas": 116.213,
+   "bit": 116.396,
+   "cekirdek_ms": 185,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.91,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "sira": 8,
+   "hece": "nın",
+   "vurus": 3.5,
+   "bas": 116.396,
+   "bit": 116.662,
+   "cekirdek_ms": 190,
+   "soylenen_midi": 61.97,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 74.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 0,
+   "hece": "A",
+   "vurus": 0,
+   "bas": 118.932,
+   "bit": 119.225,
+   "cekirdek_ms": 260,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 119.225,
+   "bit": 119.501,
+   "cekirdek_ms": 280,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 2,
+   "hece": "Ba",
+   "vurus": 1,
+   "bas": 119.501,
+   "bit": 119.646,
+   "cekirdek_ms": 145,
+   "soylenen_midi": 67.04,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 3,
+   "hece": "ba",
+   "vurus": 1.25,
+   "bas": 119.646,
+   "bit": 119.782,
+   "cekirdek_ms": 135,
+   "soylenen_midi": 67.06,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 78.75,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 4,
+   "hece": "nın",
+   "vurus": 1.5,
+   "bas": 119.782,
+   "bit": 120.079,
+   "cekirdek_ms": 295,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.1,
+    "D5": 0.9
+   },
+   "klarnet_ayni_nota_orani": 0.1,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.89,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 5,
+   "hece": "bir",
+   "vurus": 2,
+   "bas": 120.079,
+   "bit": 120.321,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 62.03,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.08,
+    "C": 0.92
+   },
+   "akor_sesi_orani": 0.08,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.08,
+    "E5": 0.92
+   },
+   "klarnet_ayni_nota_orani": 0.08,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.11,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 6,
+   "hece": "çift",
+   "vurus": 2.5,
+   "bas": 120.321,
+   "bit": 120.654,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 64.09,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 7,
+   "hece": "li",
+   "vurus": 3,
+   "bas": 120.654,
+   "bit": 120.795,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 64.01,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.11,
+    "G": 0.89
+   },
+   "akor_sesi_orani": 0.11,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.11,
+    "D5": 0.89
+   },
+   "klarnet_ayni_nota_orani": 0.11,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.84,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 8,
+   "hece": "ği",
+   "vurus": 3.25,
+   "bas": 120.795,
+   "bit": 120.943,
+   "cekirdek_ms": 150,
+   "soylenen_midi": 63.96,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.96,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "sira": 9,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 120.943,
+   "bit": 121.153,
+   "cekirdek_ms": 210,
+   "soylenen_midi": 62.0,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 123.49,
+   "bit": 123.77,
+   "cekirdek_ms": 220,
+   "soylenen_midi": 66.81,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.02,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 123.77,
+   "bit": 124.1,
+   "cekirdek_ms": 330,
+   "soylenen_midi": 67.02,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 124.1,
+   "bit": 124.364,
+   "cekirdek_ms": 265,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 124.364,
+   "bit": 124.62,
+   "cekirdek_ms": 240,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.08,
+    "D5": 0.92
+   },
+   "klarnet_ayni_nota_orani": 0.08,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.86,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 4,
+   "hece": "ke",
+   "vurus": 2,
+   "bas": 124.62,
+   "bit": 124.885,
+   "cekirdek_ms": 215,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.01,
+    "C": 0.99
+   },
+   "akor_sesi_orani": 0.01,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.0,
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.03,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 5,
+   "hece": "di",
+   "vurus": 2.5,
+   "bas": 124.885,
+   "bit": 125.085,
+   "cekirdek_ms": 200,
+   "soylenen_midi": 64.02,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.07,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 6,
+   "hece": "si",
+   "vurus": 3,
+   "bas": 125.085,
+   "bit": 125.492,
+   "cekirdek_ms": 410,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.38,
+    "G": 0.62
+   },
+   "akor_sesi_orani": 0.38,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.38,
+    "D5": 0.62
+   },
+   "klarnet_ayni_nota_orani": 0.38,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.85,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "sira": 7,
+   "hece": "var",
+   "vurus": 3.5,
+   "bas": 125.492,
+   "bit": 125.742,
+   "cekirdek_ms": 245,
+   "soylenen_midi": 61.99,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "diye",
+   "sira": 0,
+   "hece": "di",
+   "vurus": 2,
+   "bas": 131.55,
+   "bit": 131.814,
+   "cekirdek_ms": 260,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.01,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "diye",
+   "sira": 1,
+   "hece": "ye",
+   "vurus": 2.5,
+   "bas": 131.814,
+   "bit": 132.061,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "diye",
+   "sira": 2,
+   "hece": "ba",
+   "vurus": 3,
+   "bas": 132.061,
+   "bit": 132.222,
+   "cekirdek_ms": 160,
+   "soylenen_midi": 67.03,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "diye",
+   "sira": 3,
+   "hece": "ğı",
+   "vurus": 3.25,
+   "bas": 132.222,
+   "bit": 132.376,
+   "cekirdek_ms": 155,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.09,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "diye",
+   "sira": 4,
+   "hece": "rır",
+   "vurus": 3.5,
+   "bas": 132.376,
+   "bit": 132.604,
+   "cekirdek_ms": 200,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 0,
+   "hece": "çift",
+   "vurus": 0,
+   "bas": 132.604,
+   "bit": 132.907,
+   "cekirdek_ms": 120,
+   "soylenen_midi": 66.9,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 1,
+   "hece": "li",
+   "vurus": 0.5,
+   "bas": 132.907,
+   "bit": 133.243,
+   "cekirdek_ms": 335,
+   "soylenen_midi": 67.01,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 2,
+   "hece": "ğin",
+   "vurus": 1,
+   "bas": 133.243,
+   "bit": 133.516,
+   "cekirdek_ms": 275,
+   "soylenen_midi": 67.0,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "G5",
+   "klarnetler": {
+    "G5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "G5",
+   "klarnet_olculen_midi": 79.0,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 3,
+   "hece": "de",
+   "vurus": 1.5,
+   "bas": 133.516,
+   "bit": 133.767,
+   "cekirdek_ms": 250,
+   "soylenen_midi": 66.96,
+   "soylenen": "G4",
+   "hedef": "G4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "G5": 0.03,
+    "D5": 0.97
+   },
+   "klarnet_ayni_nota_orani": 0.03,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.83,
+   "klarnetle_aralik_yarim_ses": 5
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 4,
+   "hece": "A",
+   "vurus": 2,
+   "bas": 133.767,
+   "bit": 134.074,
+   "cekirdek_ms": 305,
+   "soylenen_midi": 62.02,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "C",
+   "akorlar": {
+    "G": 0.14,
+    "C": 0.86
+   },
+   "akor_sesi_orani": 0.14,
+   "klarnet": "E5",
+   "klarnetler": {
+    "D5": 0.14,
+    "E5": 0.86
+   },
+   "klarnet_ayni_nota_orani": 0.14,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.09,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 5,
+   "hece": "li",
+   "vurus": 2.5,
+   "bas": 134.074,
+   "bit": 134.354,
+   "cekirdek_ms": 280,
+   "soylenen_midi": 64.0,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "C",
+   "akorlar": {
+    "C": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "E5",
+   "klarnetler": {
+    "E5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "E5",
+   "klarnet_olculen_midi": 76.03,
+   "klarnetle_aralik_yarim_ses": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 6,
+   "hece": "Ba",
+   "vurus": 3,
+   "bas": 134.354,
+   "bit": 134.515,
+   "cekirdek_ms": 140,
+   "soylenen_midi": 64.03,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "C": 0.22,
+    "G": 0.78
+   },
+   "akor_sesi_orani": 0.22,
+   "klarnet": "D5",
+   "klarnetler": {
+    "E5": 0.22,
+    "D5": 0.78
+   },
+   "klarnet_ayni_nota_orani": 0.22,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.85,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 7,
+   "hece": "ba",
+   "vurus": 3.25,
+   "bas": 134.515,
+   "bit": 134.613,
+   "cekirdek_ms": 85,
+   "soylenen_midi": 64.04,
+   "soylenen": "E4",
+   "hedef": "E4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 0.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 0.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.95,
+   "klarnetle_aralik_yarim_ses": 2
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "sira": 8,
+   "hece": "nın",
+   "vurus": 3.5,
+   "bas": 134.613,
+   "bit": 134.956,
+   "cekirdek_ms": 290,
+   "soylenen_midi": 62.01,
+   "soylenen": "D4",
+   "hedef": "D4",
+   "akor": "G",
+   "akorlar": {
+    "G": 1.0
+   },
+   "akor_sesi_orani": 1.0,
+   "klarnet": "D5",
+   "klarnetler": {
+    "D5": 1.0
+   },
+   "klarnet_ayni_nota_orani": 1.0,
+   "klarnet_olculen": "D5",
+   "klarnet_olculen_midi": 73.99,
+   "klarnetle_aralik_yarim_ses": 0
+  }
+ ],
+ "ozet_A": {
+  "hece": 229,
+  "toplam_sesli_sn": 50.9,
+  "akor_sesi_olmayan_hece": 62,
+  "akor_sesi_olmayan_sn": 11.6,
+  "klarnetten_farkli_nota_hece": 83,
+  "klarnetten_farkli_sn": 17.2,
+  "klarnetle_ikili_aralik_(1-2_yarim_ses)_hece": 62,
+  "ikili_sn": 11.6,
+  "klarnet_stem_dogrulama_uyusan": 224,
+  "klarnet_olculen_hece": 229
+ },
+ "tablo_satir_sira": [
+  {
+   "satir": "L1",
+   "sira": 0,
+   "vurus": 0,
+   "hece_K1": "A",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    9.228,
+    27.505,
+    45.745
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 1,
+   "vurus": 0.5,
+   "hece_K1": "li",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    9.488,
+    27.758,
+    46.041
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 2,
+   "vurus": 1,
+   "hece_K1": "Ba",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    9.791,
+    28.085,
+    46.34
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 3,
+   "vurus": 1.25,
+   "hece_K1": "ba",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    9.936,
+    28.209,
+    46.508
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 4,
+   "vurus": 1.5,
+   "hece_K1": "nın",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 5,
+   "ornek_zamanlar": [
+    10.066,
+    28.347,
+    46.627
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 5,
+   "vurus": 2,
+   "hece_K1": "bir",
+   "soylenen": "D4",
+   "akor": "C",
+   "akor_disi_kita": 7,
+   "klarnet": "E5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    10.379,
+    28.672,
+    46.951
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 6,
+   "vurus": 2.5,
+   "hece_K1": "çift",
+   "soylenen": "E4",
+   "akor": "C",
+   "akor_disi_kita": 0,
+   "klarnet": "E5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    10.603,
+    28.902,
+    47.176
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 7,
+   "vurus": 3,
+   "hece_K1": "li",
+   "soylenen": "E4",
+   "akor": "G",
+   "akor_disi_kita": 7,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    10.94,
+    29.217,
+    47.507
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 8,
+   "vurus": 3.25,
+   "hece_K1": "ği",
+   "soylenen": "E4",
+   "akor": "G",
+   "akor_disi_kita": 7,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    11.079,
+    29.362,
+    47.645
+   ]
+  },
+  {
+   "satir": "L1",
+   "sira": 9,
+   "vurus": 3.5,
+   "hece_K1": "var",
+   "soylenen": "D4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    11.22,
+    29.488,
+    47.769
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 0,
+   "vurus": 0,
+   "hece_K1": "çift",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 5,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    13.779,
+    32.061,
+    68.643
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 1,
+   "vurus": 0.5,
+   "hece_K1": "li",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 5,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    14.08,
+    32.345,
+    68.972
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 2,
+   "vurus": 1,
+   "hece_K1": "ğin",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 5,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    14.386,
+    32.671,
+    69.243
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 3,
+   "vurus": 1.5,
+   "hece_K1": "de",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 5,
+   "kita": 5,
+   "aralik": 5,
+   "ornek_zamanlar": [
+    14.659,
+    32.945,
+    69.525
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 4,
+   "vurus": 2,
+   "hece_K1": "i",
+   "soylenen": "D4",
+   "akor": "C",
+   "akor_disi_kita": 5,
+   "klarnet": "E5",
+   "klarnetten_farkli_kita": 5,
+   "kita": 5,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    14.934,
+    33.179,
+    69.778
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 5,
+   "vurus": 2.5,
+   "hece_K1": "nek",
+   "soylenen": "E4",
+   "akor": "C",
+   "akor_disi_kita": 0,
+   "klarnet": "E5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 5,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    15.18,
+    33.476,
+    70.053
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 6,
+   "vurus": 3,
+   "hece_K1": "le",
+   "soylenen": "E4",
+   "akor": "G",
+   "akor_disi_kita": 5,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 5,
+   "kita": 5,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    15.485,
+    33.815,
+    70.367
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 7,
+   "vurus": 3.25,
+   "hece_K1": "ri",
+   "soylenen": "E4",
+   "akor": "G",
+   "akor_disi_kita": 5,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 5,
+   "kita": 5,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    15.639,
+    33.945,
+    70.52
+   ]
+  },
+  {
+   "satir": "L2",
+   "sira": 8,
+   "vurus": 3.5,
+   "hece_K1": "var",
+   "soylenen": "D4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 5,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    15.778,
+    34.091,
+    70.662
+   ]
+  },
+  {
+   "satir": "diye",
+   "sira": 0,
+   "vurus": 2,
+   "hece_K1": "di",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    21.82,
+    40.113,
+    58.398
+   ]
+  },
+  {
+   "satir": "diye",
+   "sira": 1,
+   "vurus": 2.5,
+   "hece_K1": "ye",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    22.144,
+    40.4,
+    58.679
+   ]
+  },
+  {
+   "satir": "diye",
+   "sira": 2,
+   "vurus": 3,
+   "hece_K1": "ba",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    22.355,
+    40.666,
+    58.918
+   ]
+  },
+  {
+   "satir": "diye",
+   "sira": 3,
+   "vurus": 3.25,
+   "hece_K1": "ğı",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    22.505,
+    40.789,
+    59.088
+   ]
+  },
+  {
+   "satir": "diye",
+   "sira": 4,
+   "vurus": 3.5,
+   "hece_K1": "rır",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    22.65,
+    40.965,
+    59.238
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 0,
+   "vurus": 0,
+   "hece_K1": "çift",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    22.884,
+    41.19,
+    59.447
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 1,
+   "vurus": 0.5,
+   "hece_K1": "li",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    23.203,
+    41.488,
+    59.774
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 2,
+   "vurus": 1,
+   "hece_K1": "ğin",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "G5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    23.529,
+    41.814,
+    60.1
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 3,
+   "vurus": 1.5,
+   "hece_K1": "de",
+   "soylenen": "G4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 5,
+   "ornek_zamanlar": [
+    23.792,
+    42.088,
+    60.369
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 4,
+   "vurus": 2,
+   "hece_K1": "A",
+   "soylenen": "D4",
+   "akor": "C",
+   "akor_disi_kita": 7,
+   "klarnet": "E5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    24.079,
+    42.368,
+    60.662
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 5,
+   "vurus": 2.5,
+   "hece_K1": "li",
+   "soylenen": "E4",
+   "akor": "C",
+   "akor_disi_kita": 0,
+   "klarnet": "E5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    24.331,
+    42.647,
+    60.982
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 6,
+   "vurus": 3,
+   "hece_K1": "Ba",
+   "soylenen": "E4",
+   "akor": "G",
+   "akor_disi_kita": 7,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    24.622,
+    42.919,
+    61.213
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 7,
+   "vurus": 3.25,
+   "hece_K1": "ba",
+   "soylenen": "E4",
+   "akor": "G",
+   "akor_disi_kita": 7,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 7,
+   "kita": 7,
+   "aralik": 2,
+   "ornek_zamanlar": [
+    24.794,
+    43.098,
+    61.363
+   ]
+  },
+  {
+   "satir": "L4",
+   "sira": 8,
+   "vurus": 3.5,
+   "hece_K1": "nın",
+   "soylenen": "D4",
+   "akor": "G",
+   "akor_disi_kita": 0,
+   "klarnet": "D5",
+   "klarnetten_farkli_kita": 0,
+   "kita": 7,
+   "aralik": 0,
+   "ornek_zamanlar": [
+    24.917,
+    43.246,
+    61.532
+   ]
+  }
+ ],
+ "ezgi_duzlugu": {
+  "reddedilen_hedef": {
+   "satirda_farkli_nota_ort": 2.5,
+   "nota_degisen_hece_gecisi_orani": 0.27,
+   "satir_araligi_yarim_ses_ort": 3.75
+  },
+  "referans_soylenen": {
+   "satirda_farkli_nota_ort": 4.18,
+   "nota_degisen_hece_gecisi_orani": 0.68,
+   "satir_araligi_yarim_ses_ort": 5.29
+  }
+ },
+ "kroma_uyumu": {
+  "reddedilen_(altyapi+ezgi)": {
+   "hece": 229,
+   "soylenen_sinifin_payi_ortanca": 0.324,
+   "pay_p25": 0.042,
+   "ilk3_sirada_%": 58.5,
+   "ilk1_sirada_%": 52.0,
+   "6dan_sonra_%": 18.3,
+   "yarim_ses_komsu_payi_ortanca": 0.108,
+   "tam_ses_komsu_payi_ortanca": 0.07
+  },
+  "reddedilen_(ezgi_alti_olmadan)": {
+   "hece": 229,
+   "soylenen_sinifin_payi_ortanca": 0.309,
+   "pay_p25": 0.041,
+   "ilk3_sirada_%": 62.9,
+   "ilk1_sirada_%": 52.0,
+   "6dan_sonra_%": 18.8,
+   "yarim_ses_komsu_payi_ortanca": 0.111,
+   "tam_ses_komsu_payi_ortanca": 0.07
+  },
+  "referans_(ayrilmis_orkestra)": {
+   "hece": 229,
+   "soylenen_sinifin_payi_ortanca": 0.124,
+   "pay_p25": 0.064,
+   "ilk3_sirada_%": 58.5,
+   "ilk1_sirada_%": 22.3,
+   "6dan_sonra_%": 19.7,
+   "yarim_ses_komsu_payi_ortanca": 0.101,
+   "tam_ses_komsu_payi_ortanca": 0.101
+  },
+  "rastgele_taban_reddedilen": 0.041,
+  "rastgele_taban_referans": 0.049,
+  "uyari": "Referans orkestrası MDX ile ayrılmıştır: içinde vokal kalıntısı varsa referansın payını yukarı çeker. Reddedilende orkestra temizdir."
+ },
+ "akor_sablonu": {
+  "reddedilen": {
+   "hece": 229,
+   "akor_sesi_%": 72.9,
+   "akor_sesine_yarim_ses_komsu_%": 0.0
+  },
+  "referans": {
+   "hece": 229,
+   "akor_sesi_%": 65.1,
+   "akor_sesine_yarim_ses_komsu_%": 25.3
+  },
+  "reddedilen_kestirilen_akorlar_soylenen_vuruslar": {
+   "G": 77,
+   "C": 21
+  },
+  "referans_kestirilen_akorlar_soylenen_vuruslar": {
+   "Dm": 31,
+   "C": 28,
+   "Gm": 20,
+   "A": 11,
+   "A#": 6,
+   "F": 1,
+   "Am": 1
+  },
+  "referans_1_kita_vurus_akorlari": [
+   "Dm",
+   "Dm",
+   "C",
+   "C",
+   "Gm",
+   "A#",
+   "A",
+   "A",
+   "Dm",
+   "Dm",
+   "C",
+   "C",
+   "Gm",
+   "Gm",
+   "A",
+   "A",
+   "Dm",
+   "Dm",
+   "C",
+   "C",
+   "Gm",
+   "Gm",
+   "A",
+   "Dm"
+  ],
+  "reddedilen_1_kita_vurus_akorlari": [
+   "G",
+   "G",
+   "C",
+   "G",
+   "G",
+   "D",
+   "G",
+   "G",
+   "G",
+   "G",
+   "C",
+   "G",
+   "G",
+   "G",
+   "D",
+   "G",
+   "G",
+   "D",
+   "D",
+   "Gm",
+   "G",
+   "Dm",
+   "G",
+   "G",
+   "G",
+   "G",
+   "C",
+   "G",
+   "G",
+   "D",
+   "G",
+   "Em"
+  ]
+ }
+}

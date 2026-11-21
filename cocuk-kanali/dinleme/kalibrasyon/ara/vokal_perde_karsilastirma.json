@@ -1,0 +1,58 @@
+{
+ "a) aracin MDX vokali (dinle_2)": {
+  "dosya": "dinle_2_(Vocals)_UVR-MDX-NET-Voc_FT.wav",
+  "ornekleme_hz": 44100,
+  "tam_olcek_ornek_orani": 0.0,
+  "nota": 128,
+  "izgara_R": 0.67,
+  "akort_merkezi_cent": 0.0,
+  "merkeze_gore_medyan_sapma_cent": 8.0,
+  "yuzde_25cent_icinde_merkeze_gore": 89.4,
+  "nota_ici_oynaklik_cent": 11.1,
+  "medyan_hz": 328.7,
+  "pyin_uyum": 93.6,
+  "sesli_cerceve_orani": 0.307
+ },
+ "b) dinle_2_vokal.wav (eski ayirma)": {
+  "dosya": "ali-baba/dinle_2_vokal.wav",
+  "ornekleme_hz": 44100,
+  "tam_olcek_ornek_orani": 0.0,
+  "nota": 140,
+  "izgara_R": 0.32,
+  "akort_merkezi_cent": -3.2,
+  "merkeze_gore_medyan_sapma_cent": 15.5,
+  "yuzde_25cent_icinde_merkeze_gore": 69.7,
+  "nota_ici_oynaklik_cent": 15.3,
+  "medyan_hz": 325.7,
+  "pyin_uyum": 88.8,
+  "sesli_cerceve_orani": 0.351
+ },
+ "c) vokal_dogal.wav (yerlestirilmis)": {
+  "dosya": "ali-baba/yeni3/vokal/vokal_dogal.wav",
+  "ornekleme_hz": 44100,
+  "tam_olcek_ornek_orani": 0.0,
+  "nota": 136,
+  "izgara_R": 0.32,
+  "akort_merkezi_cent": -3.8,
+  "merkeze_gore_medyan_sapma_cent": 15.8,
+  "yuzde_25cent_icinde_merkeze_gore": 69.8,
+  "nota_ici_oynaklik_cent": 15.7,
+  "medyan_hz": 326.2,
+  "pyin_uyum": 87.8,
+  "sesli_cerceve_orani": 0.271
+ },
+ "d) c x kazanc, 16 bit (2. asamada kullanilan)": {
+  "dosya": "onizleme_vokal.wav",
+  "ornekleme_hz": 44100,
+  "tam_olcek_ornek_orani": 4e-05,
+  "nota": 137,
+  "izgara_R": 0.33,
+  "akort_merkezi_cent": -3.9,
+  "merkeze_gore_medyan_sapma_cent": 15.6,
+  "yuzde_25cent_icinde_merkeze_gore": 69.8,
+  "nota_ici_oynaklik_cent": 15.8,
+  "medyan_hz": 325.9,
+  "pyin_uyum": 87.0,
+  "sesli_cerceve_orani": 0.277
+ }
+}

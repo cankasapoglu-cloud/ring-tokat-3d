@@ -1,0 +1,2058 @@
+{
+ "arac": "dinle.py 1.0 (2026-11-21)",
+ "dosya": "/root/.cache/dinleme/sinama/ses/k03a_kuru_esnetme_15.wav",
+ "zaman": "2026-11-21 17:37:56",
+ "uyari": "Bu rapor olcum ve makine tahminidir; insan kulagi degildir. Son karar dinleyen insanindir.",
+ "hatalar": [],
+ "temel": {
+  "dosya": "k03a_kuru_esnetme_15.wav",
+  "sure_sn": 165.18,
+  "kanal": 1,
+  "kodek": "pcm_s16le",
+  "ornekleme_hz": 44100,
+  "bit_hizi_kbps": 706.0,
+  "lufs": -19.9,
+  "lra_lu": 8.8,
+  "gercek_tepe_dbtp": -4.7,
+  "ornek_tepe_dbfs": -4.68,
+  "rms_dbfs": -23.03,
+  "tepe_faktoru_db": 18.3,
+  "dc_kaymasi": -2e-05,
+  "kirpilma": {
+   "tam_olcek_ornek": 0,
+   "ardisik_kosu_3ornek_ustu": 0,
+   "ilk_zamanlar_sn": [],
+   "var_mi": false
+  },
+  "sessizlik": {
+   "esik_dbfs": -50.0,
+   "bastaki_sn": 9.24,
+   "sondaki_sn": 1.44,
+   "ic_bosluklar": [
+    {
+     "bas": 21.76,
+     "son": 27.88
+    },
+    {
+     "bas": 40.34,
+     "son": 49.62
+    },
+    {
+     "bas": 62.46,
+     "son": 69.78
+    },
+    {
+     "bas": 82.08,
+     "son": 89.18
+    },
+    {
+     "bas": 101.6,
+     "son": 110.9
+    },
+    {
+     "bas": 123.48,
+     "son": 129.32
+    },
+    {
+     "bas": 142.42,
+     "son": 151.14
+    },
+    {
+     "bas": 154.24,
+     "son": 160.58
+    }
+   ],
+   "sessiz_orani": 0.437
+  },
+  "stereo": {
+   "yorum": "tek kanal (mono) dosya"
+  },
+  "ust_frekans_hz": 17635
+ },
+ "enerji": {
+  "tempo_bpm": 146.3,
+  "tempo_kaynagi": "otomatik tahmin; yarı/çift tempo hatası yapabilir",
+  "vurus_sayisi": 401,
+  "nabiz_netligi": 0.366,
+  "nabiz_netligi_aciklama": "0-1; vurus egri oz-iliskisinin vurus araligindaki tepesi. Yuksek = duzenli, belirgin ritim",
+  "tempo_kararliligi": {
+   "yuzde_3_icinde": 14.9,
+   "yerel_tempo_p10_p90": [
+    103.4,
+    161.5
+   ]
+  },
+  "vurus_araligi_degiskenligi_yuzde": 5.45,
+  "olay_yogunlugu_sn": 3.52,
+  "spektral_aki_ort": 1.763,
+  "vurmali_armonik_db": -7.1,
+  "parlaklik_agirlik_merkezi_hz": 2810.0,
+  "tiz_payi_4khz_ustu_db": -13.3,
+  "bas_payi_150hz_alti_db": -48.3,
+  "duzey_oynakligi_db": 5.33,
+  "bolumler_5sn": [
+   {
+    "bas": 0.0,
+    "duzey_db": -76.2,
+    "olay_sn": 0.0,
+    "aki": 0.055
+   },
+   {
+    "bas": 5.0,
+    "duzey_db": -26.4,
+    "olay_sn": 1.0,
+    "aki": 0.554
+   },
+   {
+    "bas": 10.0,
+    "duzey_db": -19.5,
+    "olay_sn": 4.0,
+    "aki": 1.714
+   },
+   {
+    "bas": 15.0,
+    "duzey_db": -19.1,
+    "olay_sn": 3.4,
+    "aki": 1.735
+   },
+   {
+    "bas": 20.0,
+    "duzey_db": -25.5,
+    "olay_sn": 1.2,
+    "aki": 0.764
+   },
+   {
+    "bas": 25.0,
+    "duzey_db": -23.1,
+    "olay_sn": 2.2,
+    "aki": 0.976
+   },
+   {
+    "bas": 30.0,
+    "duzey_db": -19.6,
+    "olay_sn": 2.4,
+    "aki": 1.741
+   },
+   {
+    "bas": 35.0,
+    "duzey_db": -19.5,
+    "olay_sn": 2.8,
+    "aki": 1.72
+   },
+   {
+    "bas": 40.0,
+    "duzey_db": -57.1,
+    "olay_sn": 0.6,
+    "aki": 0.395
+   },
+   {
+    "bas": 45.0,
+    "duzey_db": -28.8,
+    "olay_sn": 0.4,
+    "aki": 0.551
+   },
+   {
+    "bas": 50.0,
+    "duzey_db": -18.5,
+    "olay_sn": 3.8,
+    "aki": 1.838
+   },
+   {
+    "bas": 55.0,
+    "duzey_db": -19.6,
+    "olay_sn": 3.2,
+    "aki": 1.711
+   },
+   {
+    "bas": 60.0,
+    "duzey_db": -27.1,
+    "olay_sn": 1.2,
+    "aki": 0.833
+   },
+   {
+    "bas": 65.0,
+    "duzey_db": -32.7,
+    "olay_sn": 0.2,
+    "aki": 0.296
+   },
+   {
+    "bas": 70.0,
+    "duzey_db": -20.8,
+    "olay_sn": 3.8,
+    "aki": 1.734
+   },
+   {
+    "bas": 75.0,
+    "duzey_db": -20.2,
+    "olay_sn": 3.4,
+    "aki": 1.757
+   },
+   {
+    "bas": 80.0,
+    "duzey_db": -27.8,
+    "olay_sn": 1.4,
+    "aki": 0.81
+   },
+   {
+    "bas": 85.0,
+    "duzey_db": -27.3,
+    "olay_sn": 1.0,
+    "aki": 0.536
+   },
+   {
+    "bas": 90.0,
+    "duzey_db": -20.6,
+    "olay_sn": 3.2,
+    "aki": 1.732
+   },
+   {
+    "bas": 95.0,
+    "duzey_db": -20.2,
+    "olay_sn": 3.4,
+    "aki": 1.676
+   },
+   {
+    "bas": 100.0,
+    "duzey_db": -27.0,
+    "olay_sn": 0.8,
+    "aki": 0.796
+   },
+   {
+    "bas": 105.0,
+    "duzey_db": -73.4,
+    "olay_sn": 0.0,
+    "aki": 0.159
+   },
+   {
+    "bas": 110.0,
+    "duzey_db": -22.9,
+    "olay_sn": 3.0,
+    "aki": 1.742
+   },
+   {
+    "bas": 115.0,
+    "duzey_db": -20.9,
+    "olay_sn": 3.8,
+    "aki": 1.781
+   },
+   {
+    "bas": 120.0,
+    "duzey_db": -23.4,
+    "olay_sn": 1.2,
+    "aki": 1.072
+   },
+   {
+    "bas": 125.0,
+    "duzey_db": -30.8,
+    "olay_sn": 0.8,
+    "aki": 0.427
+   },
+   {
+    "bas": 130.0,
+    "duzey_db": -22.3,
+    "olay_sn": 4.0,
+    "aki": 1.855
+   },
+   {
+    "bas": 135.0,
+    "duzey_db": -22.1,
+    "olay_sn": 3.8,
+    "aki": 1.666
+   },
+   {
+    "bas": 140.0,
+    "duzey_db": -26.3,
+    "olay_sn": 1.6,
+    "aki": 0.837
+   },
+   {
+    "bas": 145.0,
+    "duzey_db": -65.1,
+    "olay_sn": 0.4,
+    "aki": 0.348
+   },
+   {
+    "bas": 150.0,
+    "duzey_db": -25.8,
+    "olay_sn": 2.2,
+    "aki": 1.223
+   },
+   {
+    "bas": 155.0,
+    "duzey_db": -72.0,
+    "olay_sn": 0.0,
+    "aki": 0.192
+   },
+   {
+    "bas": 160.0,
+    "duzey_db": -27.1,
+    "olay_sn": 1.6,
+    "aki": 1.137
+   }
+  ],
+  "enerji_puani": {
+   "puan_0_100": 53.0,
+   "bilesenler_0_1": {
+    "olay_yogunlugu_sn": 0.34,
+    "nabiz_netligi": 0.53,
+    "vurmali_armonik_db": 0.64,
+    "spektral_aki_ort": 0.53,
+    "parlaklik_agirlik_merkezi_hz": 0.67
+   },
+   "aciklama": "Sinyal tabanli hareketlilik gostergesi (sarkilar arasi KARSILASTIRMA icin). 'Cocuk bunu sever' demek degildir."
+  }
+ },
+ "etiket_karisim": {
+  "pencere_sn": 10.0,
+  "pencere_sayisi": 17,
+  "sure_sn": 0.8,
+  "en_yuksek_10": [
+   [
+    "Music",
+    0.367
+   ],
+   [
+    "Female singing",
+    0.221
+   ],
+   [
+    "Silence",
+    0.122
+   ],
+   [
+    "Speech",
+    0.079
+   ],
+   [
+    "Singing",
+    0.061
+   ],
+   [
+    "Synthetic singing",
+    0.057
+   ],
+   [
+    "Male singing",
+    0.053
+   ],
+   [
+    "Child singing",
+    0.05
+   ],
+   [
+    "A capella",
+    0.033
+   ],
+   [
+    "Echo",
+    0.031
+   ]
+  ],
+  "ses_turu": {
+   "Music": 0.367,
+   "Singing": 0.061,
+   "Child singing": 0.05,
+   "Female singing": 0.221,
+   "Male singing": 0.053,
+   "Speech": 0.079,
+   "Child speech, kid speaking": 0.0,
+   "Synthetic singing": 0.057,
+   "Speech synthesizer": 0.003,
+   "Rapping": 0.004,
+   "Humming": 0.001,
+   "Chant": 0.006
+  },
+  "duygu": {
+   "Music for children": 0.002,
+   "Happy music": 0.0,
+   "Exciting music": 0.0,
+   "Funny music": 0.0,
+   "Tender music": 0.0,
+   "Lullaby": 0.01,
+   "Sad music": 0.0
+  },
+  "hayvan": {
+   "Meow": 0.008
+  },
+  "zaman_cizelgesi": [
+   {
+    "bas": 0.0,
+    "Singing": 0.048,
+    "Speech": 0.428,
+    "Lullaby": 0.0,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 10.0,
+    "Singing": 0.028,
+    "Speech": 0.015,
+    "Lullaby": 0.022,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 20.0,
+    "Singing": 0.073,
+    "Speech": 0.012,
+    "Lullaby": 0.009,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 30.0,
+    "Singing": 0.023,
+    "Speech": 0.012,
+    "Lullaby": 0.03,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 40.0,
+    "Singing": 0.022,
+    "Speech": 0.542,
+    "Lullaby": 0.0,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 50.0,
+    "Singing": 0.024,
+    "Speech": 0.01,
+    "Lullaby": 0.03,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 60.0,
+    "Singing": 0.119,
+    "Speech": 0.056,
+    "Lullaby": 0.0,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 70.0,
+    "Singing": 0.032,
+    "Speech": 0.024,
+    "Lullaby": 0.016,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.001
+   },
+   {
+    "bas": 80.0,
+    "Singing": 0.083,
+    "Speech": 0.078,
+    "Lullaby": 0.0,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.001
+   },
+   {
+    "bas": 90.0,
+    "Singing": 0.039,
+    "Speech": 0.02,
+    "Lullaby": 0.018,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.001
+   },
+   {
+    "bas": 100.0,
+    "Singing": 0.132,
+    "Speech": 0.006,
+    "Lullaby": 0.0,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 110.0,
+    "Singing": 0.052,
+    "Speech": 0.012,
+    "Lullaby": 0.01,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 120.0,
+    "Singing": 0.098,
+    "Speech": 0.005,
+    "Lullaby": 0.0,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 130.0,
+    "Singing": 0.042,
+    "Speech": 0.02,
+    "Lullaby": 0.031,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 140.0,
+    "Singing": 0.11,
+    "Speech": 0.068,
+    "Lullaby": 0.0,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 150.0,
+    "Singing": 0.095,
+    "Speech": 0.02,
+    "Lullaby": 0.003,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.0
+   },
+   {
+    "bas": 160.0,
+    "Singing": 0.025,
+    "Speech": 0.018,
+    "Lullaby": 0.001,
+    "Exciting music": 0.0,
+    "Happy music": 0.0,
+    "Animal": 0.003
+   }
+  ],
+  "coskulu_eksi_sakin": -0.01,
+  "ninni_olasiligi": 0.01,
+  "sarki_eksi_konusma": -0.018,
+  "aciklama": "AudioSet etiket olasiliklari (0-1), 10 sn'lik pencerelerin ortalamasi. Kucuk ve kalibre edilmemis sayilardir: mutlak deger degil, surumler arasi fark anlamlidir. Projedeki 9 dosyalik denemede 'Lullaby' etiketi yavas surumlerde 0,026-0,049, coskulu surumlerde 0,000 cikti (n=9, etiketler uretim niyeti)."
+ },
+ "kanal_kaynagi": "dosyanin kendisi (--kuru)",
+ "perde": {
+  "izleme": {
+   "yontem": "SwiftF0 (16 ms adim)",
+   "sesli_cerceve_orani": 0.256,
+   "pyin_ile_uyum_yuzde_50cent": 99.4,
+   "pyin_sesli_ortusme": 1.0
+  },
+  "nota_sayisi": 149,
+  "nota_suresi_medyan_sn": 0.22,
+  "ses_araligi": {
+   "alt": "C4",
+   "ust": "F4",
+   "yarim_ses": 5.0,
+   "medyan": "E4",
+   "medyan_hz": 329.0
+  },
+  "nota_ici_oynaklik_cent_medyan": 8.2,
+  "nota_ici_oynaklik_aciklama": "0,2 sn'den uzun notalarda perdenin nota icindeki standart sapmasi. Insan sesinde genelde 8-35 cent; 5 cent'in altindaysa perde 'cetvelle cizilmis' gibi duzdur.",
+  "cok_duz_nota_orani": 0.13,
+  "kayan_nota_orani": 0.15,
+  "uzun_nota_sayisi_035sn_ustu": 32,
+  "vibratolu_uzun_nota_orani": 0.19,
+  "vibrato_hz_medyan": 5.2,
+  "vibrato_genlik_cent_medyan": 14.0,
+  "alttan_giris_orani": 0.0,
+  "gecis_cerceve_orani": 0.07,
+  "ses_sinifi_dagilimi": {
+   "C": 0.075,
+   "C#": 0.002,
+   "D": 0.181,
+   "D#": 0.003,
+   "E": 0.673,
+   "F": 0.066,
+   "F#": 0.0,
+   "G": 0.0,
+   "G#": 0.0,
+   "A": 0.0,
+   "A#": 0.0,
+   "B": 0.0
+  },
+  "vokal_ton_ks": {
+   "ton": "Mi minör (E minor)",
+   "tonik": 4,
+   "mod": "minor",
+   "r": 0.64,
+   "ikinci_r": 0.55,
+   "adaylar": [
+    "Mi minör (E minor) r=0.64",
+    "Mi majör (E major) r=0.55",
+    "La majör (A major) r=0.39",
+    "Do diyez minör (C# minor) r=0.32"
+   ]
+  }
+ },
+ "dogallik_vekilleri": {
+  "uyari": "Bunlar vekil (dolayli) olcumlerdir: 'yapay duyuluyor' yargisinin yerini tutmaz; iki surumu KARSILASTIRMAK icindir.",
+  "nota_ici_oynaklik_cent_medyan": 8.2,
+  "cok_duz_nota_orani": 0.13,
+  "bagli_gecis_sayisi": 8,
+  "bagli_gecis_suresi_ms_medyan": 48.0,
+  "ani_gecis_orani_35ms_alti": 0.5,
+  "vibratolu_uzun_nota_orani": 0.19,
+  "vibrato_hiz_yayilimi_hz": 0.5,
+  "donmus_unlu_sayisi_045sn_ustu": 0,
+  "donmus_unluler": [],
+  "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9872,
+  "donmus_sure_orani": 0.0,
+  "unsuz_cerceve_orani": 0.55,
+  "unsuzlerde_tiz_payi_db": -11.7,
+  "unlulerde_tiz_payi_db": -14.4,
+  "vokal_ust_frekans_hz": 10723,
+  "tiz_doku_degisim_katsayisi": 1.49,
+  "tiz_doku_aciklama": "Tutulan unlulerde 4-8 kHz'in zaman icinde ne kadar oynadigi. Duragan gurultu icin kuramsal deger ~0,52. Belirgin dusuk (<0,35) = fazla puruzsuz/'vizildayan' sentez dokusu; belirgin yuksek (>1,2) = kopuk kopuk 'muzikal gurultu' (ayirma ya da gurultu giderme artigi) olabilir.",
+  "zarf_titremesi_db": -14.5,
+  "zarf_titremesi_aciklama": "Tutulan seslerde 15-40 Hz genlik titresiminin 1-15 Hz'e orani (dB). dogrula.py'de: ayrilmis dogal vokal -9..-11, esnetilmis vokal -14, konusma sentezi -16, vokoderle ezgiye oturtulmus (reddedilen) vokal -21. Yani COK DUSUK deger asiri puruzsuz/duragan ses demek olabilir; tek basina karar verdirmez.",
+  "isaretler": [],
+  "isaret_sayisi": 0,
+  "neyi_yakalar": "dogrula.py denetimlerinde YAKALANAN: perdesi yarim seslere yapistirilmis vokal (duzluk + izgaraya yapisma), 4 kHz'de kesilmis vokal (tiz eksigi), hecelerı vokoderle uzatilmis vokal (donmus unlu). YAKALANMAYAN: perdesi degistirilmeden vokoderden gecirilmis vokal, 1,6-1,8 kat esnetilmis vokal, konusma sentezi. 'Isaret yok' = 'dogal' DEGILDIR."
+ },
+ "etiket_vokal": {
+  "ses_turu": {
+   "Music": 0.367,
+   "Singing": 0.061,
+   "Child singing": 0.05,
+   "Female singing": 0.221,
+   "Male singing": 0.053,
+   "Speech": 0.079,
+   "Child speech, kid speaking": 0.0,
+   "Synthetic singing": 0.057,
+   "Speech synthesizer": 0.003,
+   "Rapping": 0.004,
+   "Humming": 0.001,
+   "Chant": 0.006
+  },
+  "sarki_eksi_konusma": -0.018
+ },
+ "kalite_tahminleri": {
+  "pencere_sn": 10.0,
+  "pencere_baslangiclari": [
+   0.0,
+   10.0,
+   20.0,
+   30.0,
+   40.0,
+   50.0,
+   60.0,
+   70.0,
+   80.0,
+   90.0,
+   100.0,
+   110.0,
+   120.0,
+   130.0,
+   140.0,
+   150.0,
+   160.0
+  ],
+  "dnsmos": {
+   "genel": 2.15,
+   "sinyal": 2.72,
+   "arka_plan": 2.82,
+   "p808": 2.55,
+   "pencereler_genel": [
+    1.94,
+    1.51,
+    2.8,
+    1.99,
+    1.88,
+    2.07,
+    2.82,
+    2.45,
+    2.36,
+    2.38,
+    2.16,
+    2.58,
+    2.08,
+    1.55,
+    1.43,
+    2.12,
+    2.41
+   ],
+   "sure_sn": 5.5
+  },
+  "nisqa": {
+   "genel": 2.47,
+   "gurultusuzluk": 2.75,
+   "kesintisizlik": 3.87,
+   "renklenmezlik": 3.09,
+   "ses_duzeyi": 3.14,
+   "pencereler_genel": [
+    1.92,
+    2.71,
+    2.63,
+    3.5,
+    1.16,
+    3.11,
+    1.95,
+    2.81,
+    2.32,
+    2.81,
+    2.47,
+    3.37,
+    1.68,
+    2.97,
+    1.84,
+    2.55,
+    2.19
+   ],
+   "pencereler_kesintisizlik": [
+    2.83,
+    3.56,
+    4.4,
+    4.34,
+    3.32,
+    3.97,
+    3.41,
+    3.88,
+    4.02,
+    3.99,
+    4.31,
+    4.53,
+    4.09,
+    3.86,
+    3.78,
+    4.04,
+    3.48
+   ],
+   "sure_sn": 3.6
+  },
+  "distillmos": {
+   "genel": 2.61,
+   "pencereler_genel": [
+    1.55,
+    3.28,
+    2.8,
+    3.38,
+    1.84,
+    3.1,
+    2.16,
+    3.19,
+    2.11,
+    3.07,
+    1.82,
+    3.29,
+    2.3,
+    3.25,
+    2.16,
+    2.61,
+    2.43
+   ],
+   "sure_sn": 11.7
+  },
+  "utmos22": {
+   "genel": 1.35,
+   "pencereler_genel": [
+    1.47,
+    1.29,
+    1.37,
+    1.28,
+    1.63,
+    1.31,
+    1.35,
+    1.27,
+    1.33,
+    1.28,
+    1.36,
+    1.27,
+    1.35,
+    1.27,
+    1.44,
+    1.35,
+    1.3
+   ],
+   "sure_sn": 13.1
+  },
+  "aciklama": "1-5 arasi KONUSMA kalitesi tahminleri (5 = temiz). Sarki icin egitilmediler: sarki sesi, temiz konusmadan hep dusuk puan alir; karisimda (muzikli) taban degeri verirler. Kullanim: ayni yolla elde edilmis iki vokali karsilastirmak ve gurultu / kirpilma / kopukluk alarmi. Ayrilmis (MDX) vokal, ayirma artiklari yuzunden kuru vokalden dusuk cikar. 0,5 puandan kucuk farklar anlamsizdir."
+ },
+ "sorunlar": [
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 21.76,
+   "son": 27.88,
+   "metin": "iç sessizlik"
+  },
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 40.34,
+   "son": 49.62,
+   "metin": "iç sessizlik"
+  },
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 62.46,
+   "son": 69.78,
+   "metin": "iç sessizlik"
+  },
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 82.08,
+   "son": 89.18,
+   "metin": "iç sessizlik"
+  },
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 101.6,
+   "son": 110.9,
+   "metin": "iç sessizlik"
+  },
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 123.48,
+   "son": 129.32,
+   "metin": "iç sessizlik"
+  },
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 142.42,
+   "son": 151.14,
+   "metin": "iç sessizlik"
+  },
+  {
+   "sira": "kırpılma / sessizlik",
+   "zaman": 154.24,
+   "son": 160.58,
+   "metin": "iç sessizlik"
+  }
+ ],
+ "notalar": [
+  {
+   "bas": 9.36,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": 11,
+   "ic_std_cent": 3.3,
+   "vibrato": false
+  },
+  {
+   "bas": 9.97,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 8.1,
+   "vibrato": false
+  },
+  {
+   "bas": 10.11,
+   "sure": 0.35,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 10.2,
+   "vibrato": false
+  },
+  {
+   "bas": 10.53,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 6.9,
+   "vibrato": false
+  },
+  {
+   "bas": 11.3,
+   "sure": 0.22,
+   "nota": "F4",
+   "cent": -12,
+   "ic_std_cent": 7.0,
+   "vibrato": false
+  },
+  {
+   "bas": 11.71,
+   "sure": 0.3,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 3.5,
+   "vibrato": false
+  },
+  {
+   "bas": 12.85,
+   "sure": 0.69,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 8.3,
+   "vibrato": false
+  },
+  {
+   "bas": 13.87,
+   "sure": 0.26,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 13.8,
+   "vibrato": false
+  },
+  {
+   "bas": 14.38,
+   "sure": 0.11,
+   "nota": "F4",
+   "cent": 0,
+   "ic_std_cent": 3.6,
+   "vibrato": false
+  },
+  {
+   "bas": 14.82,
+   "sure": 0.34,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 5.9,
+   "vibrato": false
+  },
+  {
+   "bas": 15.52,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 20.2,
+   "vibrato": false
+  },
+  {
+   "bas": 15.74,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 8.8,
+   "vibrato": false
+  },
+  {
+   "bas": 16.18,
+   "sure": 0.64,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 14.4,
+   "vibrato": true
+  },
+  {
+   "bas": 17.07,
+   "sure": 0.13,
+   "nota": "D4",
+   "cent": 14,
+   "ic_std_cent": 3.5,
+   "vibrato": false
+  },
+  {
+   "bas": 17.5,
+   "sure": 0.19,
+   "nota": "F4",
+   "cent": -18,
+   "ic_std_cent": 8.0,
+   "vibrato": false
+  },
+  {
+   "bas": 17.7,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 8.2,
+   "vibrato": false
+  },
+  {
+   "bas": 17.95,
+   "sure": 0.34,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 5.5,
+   "vibrato": false
+  },
+  {
+   "bas": 18.29,
+   "sure": 0.16,
+   "nota": "D4",
+   "cent": 6,
+   "ic_std_cent": 7.5,
+   "vibrato": false
+  },
+  {
+   "bas": 18.82,
+   "sure": 0.19,
+   "nota": "D4",
+   "cent": 9,
+   "ic_std_cent": 5.3,
+   "vibrato": false
+  },
+  {
+   "bas": 19.6,
+   "sure": 0.24,
+   "nota": "D4",
+   "cent": -8,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 20.24,
+   "sure": 0.24,
+   "nota": "C4",
+   "cent": -15,
+   "ic_std_cent": 9.4,
+   "vibrato": false
+  },
+  {
+   "bas": 21.14,
+   "sure": 0.13,
+   "nota": "C4",
+   "cent": 11,
+   "ic_std_cent": 3.4,
+   "vibrato": false
+  },
+  {
+   "bas": 28.56,
+   "sure": 0.51,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 29.12,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 2.7,
+   "vibrato": false
+  },
+  {
+   "bas": 29.92,
+   "sure": 0.21,
+   "nota": "F4",
+   "cent": -22,
+   "ic_std_cent": 5.8,
+   "vibrato": false
+  },
+  {
+   "bas": 30.32,
+   "sure": 0.29,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 7.2,
+   "vibrato": false
+  },
+  {
+   "bas": 31.47,
+   "sure": 0.62,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 7.8,
+   "vibrato": false
+  },
+  {
+   "bas": 32.46,
+   "sure": 0.5,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 14.3,
+   "vibrato": true
+  },
+  {
+   "bas": 32.96,
+   "sure": 0.14,
+   "nota": "F4",
+   "cent": -1,
+   "ic_std_cent": 8.4,
+   "vibrato": false
+  },
+  {
+   "bas": 33.42,
+   "sure": 0.27,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 6.7,
+   "vibrato": false
+  },
+  {
+   "bas": 34.19,
+   "sure": 1.23,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 15.1,
+   "vibrato": true
+  },
+  {
+   "bas": 35.86,
+   "sure": 0.21,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 20.5,
+   "vibrato": false
+  },
+  {
+   "bas": 36.1,
+   "sure": 0.21,
+   "nota": "F4",
+   "cent": -2,
+   "ic_std_cent": 11.2,
+   "vibrato": false
+  },
+  {
+   "bas": 36.3,
+   "sure": 0.54,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 7.2,
+   "vibrato": false
+  },
+  {
+   "bas": 36.85,
+   "sure": 0.21,
+   "nota": "D4",
+   "cent": 13,
+   "ic_std_cent": 11.5,
+   "vibrato": false
+  },
+  {
+   "bas": 37.36,
+   "sure": 0.26,
+   "nota": "D4",
+   "cent": -9,
+   "ic_std_cent": 9.0,
+   "vibrato": false
+  },
+  {
+   "bas": 37.63,
+   "sure": 0.22,
+   "nota": "E4",
+   "cent": -10,
+   "ic_std_cent": 9.5,
+   "vibrato": false
+  },
+  {
+   "bas": 38.05,
+   "sure": 0.4,
+   "nota": "D4",
+   "cent": 0,
+   "ic_std_cent": 9.8,
+   "vibrato": false
+  },
+  {
+   "bas": 39.23,
+   "sure": 0.18,
+   "nota": "D4",
+   "cent": -14,
+   "ic_std_cent": 14.0,
+   "vibrato": false
+  },
+  {
+   "bas": 39.7,
+   "sure": 0.18,
+   "nota": "C4",
+   "cent": -1,
+   "ic_std_cent": 7.9,
+   "vibrato": false
+  },
+  {
+   "bas": 49.7,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": -21,
+   "ic_std_cent": 5.6,
+   "vibrato": false
+  },
+  {
+   "bas": 50.27,
+   "sure": 0.53,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 10.9,
+   "vibrato": true
+  },
+  {
+   "bas": 50.85,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 0.8,
+   "vibrato": false
+  },
+  {
+   "bas": 51.73,
+   "sure": 0.14,
+   "nota": "F4",
+   "cent": -5,
+   "ic_std_cent": 8.1,
+   "vibrato": false
+  },
+  {
+   "bas": 52.03,
+   "sure": 0.32,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 15.9,
+   "vibrato": false
+  },
+  {
+   "bas": 53.17,
+   "sure": 0.72,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 53.94,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 0.8,
+   "vibrato": false
+  },
+  {
+   "bas": 55.15,
+   "sure": 0.37,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 8.2,
+   "vibrato": false
+  },
+  {
+   "bas": 56.29,
+   "sure": 0.66,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 17.5,
+   "vibrato": true
+  },
+  {
+   "bas": 56.94,
+   "sure": 0.11,
+   "nota": "E4",
+   "cent": -45,
+   "ic_std_cent": 6.3,
+   "vibrato": false
+  },
+  {
+   "bas": 57.57,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": 23,
+   "ic_std_cent": 9.1,
+   "vibrato": false
+  },
+  {
+   "bas": 58.19,
+   "sure": 0.38,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 6.2,
+   "vibrato": false
+  },
+  {
+   "bas": 58.62,
+   "sure": 0.18,
+   "nota": "D4",
+   "cent": -1,
+   "ic_std_cent": 3.1,
+   "vibrato": false
+  },
+  {
+   "bas": 59.01,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": -6,
+   "ic_std_cent": 17.0,
+   "vibrato": false
+  },
+  {
+   "bas": 59.44,
+   "sure": 0.11,
+   "nota": "E4",
+   "cent": -6,
+   "ic_std_cent": 2.2,
+   "vibrato": false
+  },
+  {
+   "bas": 60.61,
+   "sure": 0.18,
+   "nota": "C4",
+   "cent": -9,
+   "ic_std_cent": 6.5,
+   "vibrato": false
+  },
+  {
+   "bas": 61.94,
+   "sure": 0.22,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 0.9,
+   "vibrato": false
+  },
+  {
+   "bas": 69.89,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": -34,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 70.48,
+   "sure": 0.5,
+   "nota": "E4",
+   "cent": 7,
+   "ic_std_cent": 12.6,
+   "vibrato": true
+  },
+  {
+   "bas": 71.84,
+   "sure": 0.14,
+   "nota": "F4",
+   "cent": -9,
+   "ic_std_cent": 2.7,
+   "vibrato": false
+  },
+  {
+   "bas": 72.21,
+   "sure": 0.3,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 4.7,
+   "vibrato": false
+  },
+  {
+   "bas": 73.42,
+   "sure": 0.43,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 9.4,
+   "vibrato": false
+  },
+  {
+   "bas": 74.38,
+   "sure": 0.3,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 15.7,
+   "vibrato": false
+  },
+  {
+   "bas": 74.91,
+   "sure": 0.1,
+   "nota": "F4",
+   "cent": 11,
+   "ic_std_cent": 7.2,
+   "vibrato": false
+  },
+  {
+   "bas": 75.1,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": 14,
+   "ic_std_cent": 1.0,
+   "vibrato": false
+  },
+  {
+   "bas": 75.31,
+   "sure": 0.34,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 10.6,
+   "vibrato": false
+  },
+  {
+   "bas": 76.08,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": 4,
+   "ic_std_cent": 4.7,
+   "vibrato": false
+  },
+  {
+   "bas": 76.29,
+   "sure": 0.26,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 8.7,
+   "vibrato": false
+  },
+  {
+   "bas": 76.8,
+   "sure": 0.53,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 11.1,
+   "vibrato": false
+  },
+  {
+   "bas": 77.62,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": 46,
+   "ic_std_cent": 16.5,
+   "vibrato": false
+  },
+  {
+   "bas": 77.81,
+   "sure": 0.19,
+   "nota": "E4",
+   "cent": 15,
+   "ic_std_cent": 15.4,
+   "vibrato": false
+  },
+  {
+   "bas": 78.0,
+   "sure": 0.11,
+   "nota": "F4",
+   "cent": -6,
+   "ic_std_cent": 5.4,
+   "vibrato": false
+  },
+  {
+   "bas": 78.4,
+   "sure": 0.34,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 7.9,
+   "vibrato": false
+  },
+  {
+   "bas": 78.74,
+   "sure": 0.21,
+   "nota": "D4",
+   "cent": 9,
+   "ic_std_cent": 13.2,
+   "vibrato": false
+  },
+  {
+   "bas": 79.2,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": -1,
+   "ic_std_cent": 7.9,
+   "vibrato": false
+  },
+  {
+   "bas": 79.57,
+   "sure": 0.18,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 4.2,
+   "vibrato": false
+  },
+  {
+   "bas": 79.95,
+   "sure": 0.3,
+   "nota": "D4",
+   "cent": 10,
+   "ic_std_cent": 13.0,
+   "vibrato": false
+  },
+  {
+   "bas": 80.8,
+   "sure": 0.16,
+   "nota": "C4",
+   "cent": 5,
+   "ic_std_cent": 6.7,
+   "vibrato": false
+  },
+  {
+   "bas": 81.12,
+   "sure": 0.13,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 4.1,
+   "vibrato": false
+  },
+  {
+   "bas": 81.55,
+   "sure": 0.16,
+   "nota": "C4",
+   "cent": 3,
+   "ic_std_cent": 2.4,
+   "vibrato": false
+  },
+  {
+   "bas": 89.86,
+   "sure": 0.51,
+   "nota": "E4",
+   "cent": 6,
+   "ic_std_cent": 12.2,
+   "vibrato": false
+  },
+  {
+   "bas": 90.38,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 5.5,
+   "vibrato": false
+  },
+  {
+   "bas": 91.2,
+   "sure": 0.18,
+   "nota": "F4",
+   "cent": -9,
+   "ic_std_cent": 19.4,
+   "vibrato": false
+  },
+  {
+   "bas": 91.38,
+   "sure": 0.11,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 2.4,
+   "vibrato": false
+  },
+  {
+   "bas": 91.58,
+   "sure": 0.35,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 92.77,
+   "sure": 0.54,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 6.5,
+   "vibrato": false
+  },
+  {
+   "bas": 93.42,
+   "sure": 0.35,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 93.9,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 0.9,
+   "vibrato": false
+  },
+  {
+   "bas": 94.27,
+   "sure": 0.11,
+   "nota": "F4",
+   "cent": -10,
+   "ic_std_cent": 3.1,
+   "vibrato": false
+  },
+  {
+   "bas": 94.69,
+   "sure": 0.32,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 5.7,
+   "vibrato": false
+  },
+  {
+   "bas": 95.46,
+   "sure": 0.16,
+   "nota": "D4",
+   "cent": 12,
+   "ic_std_cent": 11.5,
+   "vibrato": false
+  },
+  {
+   "bas": 95.86,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 2.1,
+   "vibrato": false
+  },
+  {
+   "bas": 96.18,
+   "sure": 0.54,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 11.0,
+   "vibrato": false
+  },
+  {
+   "bas": 97.01,
+   "sure": 0.27,
+   "nota": "E4",
+   "cent": 7,
+   "ic_std_cent": 8.1,
+   "vibrato": false
+  },
+  {
+   "bas": 97.46,
+   "sure": 0.14,
+   "nota": "F4",
+   "cent": -7,
+   "ic_std_cent": 3.8,
+   "vibrato": false
+  },
+  {
+   "bas": 97.6,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": -7,
+   "ic_std_cent": 4.8,
+   "vibrato": false
+  },
+  {
+   "bas": 97.82,
+   "sure": 0.3,
+   "nota": "E4",
+   "cent": -6,
+   "ic_std_cent": 6.6,
+   "vibrato": false
+  },
+  {
+   "bas": 98.16,
+   "sure": 0.21,
+   "nota": "D4",
+   "cent": -1,
+   "ic_std_cent": 7.8,
+   "vibrato": false
+  },
+  {
+   "bas": 98.54,
+   "sure": 0.34,
+   "nota": "D4",
+   "cent": 6,
+   "ic_std_cent": 10.4,
+   "vibrato": false
+  },
+  {
+   "bas": 99.38,
+   "sure": 0.27,
+   "nota": "D4",
+   "cent": 14,
+   "ic_std_cent": 9.9,
+   "vibrato": false
+  },
+  {
+   "bas": 100.93,
+   "sure": 0.14,
+   "nota": "C4",
+   "cent": 10,
+   "ic_std_cent": 3.3,
+   "vibrato": false
+  },
+  {
+   "bas": 110.99,
+   "sure": 0.13,
+   "nota": "D4",
+   "cent": -9,
+   "ic_std_cent": 5.0,
+   "vibrato": false
+  },
+  {
+   "bas": 111.55,
+   "sure": 0.51,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 7.0,
+   "vibrato": false
+  },
+  {
+   "bas": 112.16,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 6.0,
+   "vibrato": false
+  },
+  {
+   "bas": 112.96,
+   "sure": 0.14,
+   "nota": "F4",
+   "cent": -2,
+   "ic_std_cent": 11.0,
+   "vibrato": false
+  },
+  {
+   "bas": 113.3,
+   "sure": 0.37,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 5.6,
+   "vibrato": false
+  },
+  {
+   "bas": 114.48,
+   "sure": 0.56,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 9.2,
+   "vibrato": false
+  },
+  {
+   "bas": 115.15,
+   "sure": 0.37,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 3.6,
+   "vibrato": false
+  },
+  {
+   "bas": 115.97,
+   "sure": 0.16,
+   "nota": "F4",
+   "cent": 2,
+   "ic_std_cent": 8.6,
+   "vibrato": false
+  },
+  {
+   "bas": 116.42,
+   "sure": 0.32,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 3.9,
+   "vibrato": false
+  },
+  {
+   "bas": 117.55,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 5.0,
+   "vibrato": false
+  },
+  {
+   "bas": 117.95,
+   "sure": 0.21,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 3.8,
+   "vibrato": false
+  },
+  {
+   "bas": 118.72,
+   "sure": 0.27,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 10.3,
+   "vibrato": false
+  },
+  {
+   "bas": 119.15,
+   "sure": 0.11,
+   "nota": "F4",
+   "cent": 22,
+   "ic_std_cent": 7.4,
+   "vibrato": false
+  },
+  {
+   "bas": 119.26,
+   "sure": 0.56,
+   "nota": "E4",
+   "cent": 5,
+   "ic_std_cent": 14.2,
+   "vibrato": false
+  },
+  {
+   "bas": 119.86,
+   "sure": 0.24,
+   "nota": "D4",
+   "cent": 2,
+   "ic_std_cent": 8.2,
+   "vibrato": false
+  },
+  {
+   "bas": 120.3,
+   "sure": 0.24,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 3.8,
+   "vibrato": false
+  },
+  {
+   "bas": 121.18,
+   "sure": 0.18,
+   "nota": "D4",
+   "cent": 12,
+   "ic_std_cent": 4.2,
+   "vibrato": false
+  },
+  {
+   "bas": 130.22,
+   "sure": 0.43,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 8.5,
+   "vibrato": false
+  },
+  {
+   "bas": 130.78,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 2.0,
+   "vibrato": false
+  },
+  {
+   "bas": 131.55,
+   "sure": 0.13,
+   "nota": "F4",
+   "cent": -13,
+   "ic_std_cent": 3.9,
+   "vibrato": false
+  },
+  {
+   "bas": 131.68,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 4.6,
+   "vibrato": false
+  },
+  {
+   "bas": 131.98,
+   "sure": 0.35,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 10.5,
+   "vibrato": false
+  },
+  {
+   "bas": 133.12,
+   "sure": 0.48,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 5.1,
+   "vibrato": false
+  },
+  {
+   "bas": 133.87,
+   "sure": 0.18,
+   "nota": "E4",
+   "cent": 1,
+   "ic_std_cent": 6.4,
+   "vibrato": false
+  },
+  {
+   "bas": 134.77,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": 31,
+   "ic_std_cent": 2.2,
+   "vibrato": false
+  },
+  {
+   "bas": 135.06,
+   "sure": 0.27,
+   "nota": "E4",
+   "cent": 3,
+   "ic_std_cent": 7.3,
+   "vibrato": false
+  },
+  {
+   "bas": 136.24,
+   "sure": 0.43,
+   "nota": "E4",
+   "cent": 7,
+   "ic_std_cent": 10.9,
+   "vibrato": false
+  },
+  {
+   "bas": 137.04,
+   "sure": 0.69,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 137.73,
+   "sure": 0.24,
+   "nota": "F4",
+   "cent": -14,
+   "ic_std_cent": 15.1,
+   "vibrato": false
+  },
+  {
+   "bas": 138.1,
+   "sure": 0.34,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 14.8,
+   "vibrato": false
+  },
+  {
+   "bas": 138.51,
+   "sure": 0.21,
+   "nota": "D4",
+   "cent": 0,
+   "ic_std_cent": 3.4,
+   "vibrato": false
+  },
+  {
+   "bas": 138.94,
+   "sure": 0.24,
+   "nota": "D4",
+   "cent": 1,
+   "ic_std_cent": 6.4,
+   "vibrato": false
+  },
+  {
+   "bas": 140.64,
+   "sure": 0.14,
+   "nota": "C4",
+   "cent": 4,
+   "ic_std_cent": 1.9,
+   "vibrato": false
+  },
+  {
+   "bas": 141.25,
+   "sure": 0.18,
+   "nota": "C4",
+   "cent": 5,
+   "ic_std_cent": 3.4,
+   "vibrato": false
+  },
+  {
+   "bas": 141.94,
+   "sure": 0.14,
+   "nota": "C4",
+   "cent": -12,
+   "ic_std_cent": 2.5,
+   "vibrato": false
+  },
+  {
+   "bas": 142.14,
+   "sure": 0.26,
+   "nota": "C4",
+   "cent": -6,
+   "ic_std_cent": 1.6,
+   "vibrato": false
+  },
+  {
+   "bas": 151.39,
+   "sure": 0.22,
+   "nota": "D4",
+   "cent": 3,
+   "ic_std_cent": 8.8,
+   "vibrato": false
+  },
+  {
+   "bas": 151.76,
+   "sure": 0.11,
+   "nota": "E4",
+   "cent": -6,
+   "ic_std_cent": 3.2,
+   "vibrato": false
+  },
+  {
+   "bas": 152.11,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 6.4,
+   "vibrato": false
+  },
+  {
+   "bas": 152.88,
+   "sure": 0.3,
+   "nota": "C4",
+   "cent": -4,
+   "ic_std_cent": 9.2,
+   "vibrato": false
+  },
+  {
+   "bas": 153.22,
+   "sure": 0.24,
+   "nota": "D4",
+   "cent": 0,
+   "ic_std_cent": 9.2,
+   "vibrato": false
+  },
+  {
+   "bas": 153.62,
+   "sure": 0.22,
+   "nota": "C4",
+   "cent": 9,
+   "ic_std_cent": 10.9,
+   "vibrato": false
+  },
+  {
+   "bas": 160.61,
+   "sure": 0.26,
+   "nota": "D4",
+   "cent": -9,
+   "ic_std_cent": 7.4,
+   "vibrato": false
+  },
+  {
+   "bas": 160.98,
+   "sure": 0.26,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 11.2,
+   "vibrato": false
+  },
+  {
+   "bas": 161.41,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 4.8,
+   "vibrato": false
+  },
+  {
+   "bas": 162.16,
+   "sure": 0.35,
+   "nota": "C4",
+   "cent": -5,
+   "ic_std_cent": 5.0,
+   "vibrato": false
+  },
+  {
+   "bas": 162.59,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 2.2,
+   "vibrato": false
+  },
+  {
+   "bas": 162.94,
+   "sure": 0.18,
+   "nota": "C4",
+   "cent": 2,
+   "ic_std_cent": 8.0,
+   "vibrato": false
+  }
+ ],
+ "calisma_sureleri_sn": {
+  "cozme + temel": 2.0,
+  "enerji": 9.9,
+  "CED etiket (karisim)": 1.0,
+  "kanallar": 0.0,
+  "perde izleme": 7.1,
+  "nota + uyum": 0.0,
+  "yapaylik vekilleri": 0.2,
+  "MOS tahminleri (vokal)": 36.2,
+  "sozler": 0.1
+ },
+ "toplam_sure_sn": 57.4,
+ "ozet": [
+  {
+   "durum": "dikkat",
+   "konu": "Ses yüksekliği",
+   "bulgu": "-19,9 LUFS, gerçek tepe -4,7 dBTP (YouTube yaklaşık -14 LUFS'e çeker; kısık kalır)."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Sessizlik",
+   "bulgu": "başta 9,2 sn, sonda 1,4 sn, içeride 8 boşluk."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Enerji / coşku",
+   "bulgu": "hareketlilik puanı 53/100 (tempo 146 BPM, saniyede 3,5 olay); CED 'ninni' olasılığı 0,010 → **ninni/sakin yana kayıyor olabilir**. Projedeki sürümlerle karşılaştırma (hareketlilik puanı: 'coşkulu' adlı 6 sürümde 66…79, 'yavaş' adlı 3 sürümde 52…61)."
+  },
+  {
+   "durum": "bilgi",
+   "konu": "Uyum",
+   "bulgu": "altyapı olmadığı için vokal-altyapı uyumu ölçülmedi (yalnızca vokalin kendi perdesi ölçüldü)."
+  },
+  {
+   "durum": "bilgi",
+   "konu": "Yapaylık işaretleri (vekil)",
+   "bulgu": "işaret bulunmadı — bu 'doğal' demek DEĞİLDİR, yalnızca bilinen kaba izler yok."
+  }
+ ]
+}

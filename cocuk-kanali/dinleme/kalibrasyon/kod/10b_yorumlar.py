@@ -70,12 +70,10 @@ Y["ENERJI_YORUM"] = "\n".join([
     "**MusicCoCa coşku farkı ve CED \"ninni\" olasılığı kullanıcının yargısını temiz ayırıyor;** iki şarkıda da aynı şarkının coşkulu ve ninni gibi kaydı doğru yana düşüyor "
     "(El Yıkama: %s karşısında %s; Parmak Ailesi: %s karşısında %s)." % (s(m(E + "coskulu_2", "coca_cosku"), 2, True), s(m(E + "sarki_1", "coca_cosku"), 2, True), s(m(P + "coskulu_1", "coca_cosku"), 2, True), s(m(P + "yavas_2", "coca_cosku"), 2, True)),
     "",
-    "- Etiketsiz kayıtlar da tutarlı: yavaş dönemin öteki kayıtları (%s) eksi yanda." % ", ".join("`%s` %s" % (kisa(a), s(m(a, "coca_cosku"), 2, True)) for a in etiketsiz_eksi),
+    "- Etiketsiz kayıtlardan eksi yanda kalanlar: %s. Hepsi yavaş söylenen kayıtlar (%s hece/sn)." % (", ".join("`%s` %s" % (kisa(a), s(m(a, "coca_cosku"), 2, True)) for a in etiketsiz_eksi), ar(etiketsiz_eksi, "hece_sn_obek_medyan", 1)),
     "- `v2_2` (beğenildi, coşkusu hiç konuşulmadı) %s ile boşluğun içinde. Eşik bıçak sırtı değil; arada kalan kayıt \"kararsız\" sayılmalı." % s(m(A + "v2_2", "coca_cosku"), 2, True),
-    "- **Hareketlilik puanı tek başına güvenilmez.** \"Ninni gibi\" denen `el-yikama/sarki_1` %s puan alıyor; seçilen coşkulu kayıtlar %s. Aradaki %s puanlık boşluğun içine etiketsiz %d kayıt giriyor. "
-    "Puan vuruş ve olay sayıyor; `sarki_1` yavaş söylenmiş ama altyapısı kıpırtılı." % (s(m(E + "sarki_1", "enerji_puani"), 0), ar([E + "coskulu_2", P + "coskulu_1"], "enerji_puani", 0),
-                                                                                    s((min(deg([E + "coskulu_2", P + "coskulu_1"], "enerji_puani")) - m(E + "sarki_1", "enerji_puani")), 0),
-                                                                                    len([a for a in M if a not in COS + NIN and m(E + "sarki_1", "enerji_puani") < (m(a, "enerji_puani") or 0) < min(deg([E + "coskulu_2", P + "coskulu_1"], "enerji_puani"))])),
+    "- **Hareketlilik puanı tek başına güvenilmez.** \"Ninni gibi\" denen `el-yikama/sarki_1` %s puan alıyor; kullanıcının \"olmuş\" dediği altyapı %s, seçilen iki coşkulu şarkı %s. "
+    "Puan vuruş ve olay sayıyor; `sarki_1` yavaş söylenmiş ama altyapısı kıpırtılı." % (s(m(E + "sarki_1", "enerji_puani"), 0), s(m(A + "demo_altyapi_sesli", "enerji_puani"), 0), ar([E + "coskulu_2", P + "coskulu_1"], "enerji_puani", 0)),
     "- **Aracın özet satırı yanlış uyarı veriyor.** Kural \"MusicCoCa eksi YA DA ninni ≥ 0,02 YA DA puan < 62\". Üçüncü koşul yüzünden MusicCoCa'sı açıkça artı olan %d kayıt \"ninni/sakin\" uyarısı alıyor: %s."
     % (len(yanlis_uyari), ", ".join("`%s` (puan %s, MusicCoCa %s)" % (kisa(a), s(m(a, "enerji_puani"), 0), s(m(a, "coca_cosku"), 2, True)) for a in yanlis_uyari))
     + (" Bunların arasında kullanıcının \"olmuş\" dediği altyapı da var." if A + "demo_altyapi_sesli" in yanlis_uyari else ""),
@@ -112,7 +110,10 @@ Y["DOGALLIK_YORUM"] = "\n".join([
        ", ".join("`%s` (%s)" % (KISA(a), s(v, 0, yuzde=True)) for v, a in yuksek_donmus) if yuksek_donmus else "hiçbiri",
        s(m(A + "dinle_2", "y_donmus_sure_orani"), 0, yuzde=True), s(m(A + "sarki_birlesik", "y_donmus_sure_orani"), 0, yuzde=True)),
     "- **Nota içi oynaklık, ızgaraya yapışma, vibrato:** örtüşüyor. `sarki_birlesik`'in perdesi panoda cetvelle çizilmiş gibi, ama oynaklığı %s cent (doğal kayıtlar %s). "
-    "Ayrılmış kanaldaki artıklar düz perdeye sahte bir titreme ekliyor." % (s(m(A + "sarki_birlesik", "y_nota_ici_oynaklik_cent_medyan"), 1), ar(DOGAL, "y_nota_ici_oynaklik_cent_medyan", 1)),
+    "Gerçek kanalla ölçünce de %s cent: işlem perdeyi notaya çekerken küçük titremeyi korumuş. Gözün gördüğü şey titremenin azlığı değil, notaların uzunluğu ve basamak gibi geçişler; "
+    "onları sayan ölçüler de (nota süresi medyanı %s sn, geçiş oranı %s) doğal ama yavaş kayıtlarla örtüşüyor (`duzgun_1` %s sn ve %s)."
+    % (s(m(A + "sarki_birlesik", "y_nota_ici_oynaklik_cent_medyan"), 1), ar(DOGAL, "y_nota_ici_oynaklik_cent_medyan", 1), s(gk(A + "sarki_birlesik", "gerçek", "y_nota_ici_oynaklik_cent_medyan"), 1),
+       s(m(A + "sarki_birlesik", "nota_suresi_medyan"), 2), s(m(A + "sarki_birlesik", "gecis_cerceve_orani"), 2), s(m(P + "duzgun_1", "nota_suresi_medyan"), 2), s(m(P + "duzgun_1", "gecis_cerceve_orani"), 2)),
     "- **\"Ünsüzlerde tiz zayıf\" uyarısı:** beğenilen `parmak/coskulu_1` de alıyor (%s dB; eşik −14). Yanlış alarm." % s(m(P + "coskulu_1", "y_unsuzlerde_tiz_payi_db"), 1, True),
     "- **Tiz doku:** işlenmiş vokallerde yüksek (%s, %s), ama hiç işlenmemiş vokalin başka orkestradaki hâlinde de %s. Sesi değil, ayırma artığını ölçüyor."
     % (s(m(A + "ornek_kita1", "y_tiz_doku_degisim_katsayisi"), 2), s(m(A + "sarki_birlesik", "y_tiz_doku_degisim_katsayisi"), 2), s(m(A + "dogal_onizleme", "y_tiz_doku_degisim_katsayisi"), 2)),
@@ -127,26 +128,37 @@ Y["DOGALLIK_YORUM"] = "\n".join([
 ])
 
 # ------------------------------------------------------------------------------------------------ GERCEK KANAL
-BIRLESIK_EK = ""
+VP = oku("vokal_perde_karsilastirma.json")
+VP_A = next((v for k, v in VP.items() if k.startswith("a)")), {})
+VP_B = next((v for k, v in VP.items() if k.startswith("b)")), {})
 if GK:
     o, g = "otomatik", "gerçek"
     Y["GERCEK_KANAL_YORUM"] = "\n".join([
-        "- **Ön dinleme (işlenmemiş vokal, başka orkestra):** otomatik ayırmada ±25 cent içinde %%%s, ızgaraya yapışma %s, vokal − altyapı %s dB çıkmıştı. Gerçek kanallarla %%%s, %s ve %s dB. "
-        "Yani \"detone\" ve \"gömük\" görünen vokal aslında öyle değil; ayırıcı bu karışımda vokali temiz çıkaramamış (klarnet ezgisi ve hayvan sesleri vokal kanalına sızmış)."
-        % (s(gk(A + "dogal_onizleme", o, "yuzde_25cent"), 0), s(gk(A + "dogal_onizleme", o, "y_perde_izgaraya_yapisma_R"), 2), s(gk(A + "dogal_onizleme", o, "vokal_eksi_altyapi_db"), 1, True),
-           s(gk(A + "dogal_onizleme", g, "yuzde_25cent"), 0), s(gk(A + "dogal_onizleme", g, "y_perde_izgaraya_yapisma_R"), 2), s(gk(A + "dogal_onizleme", g, "vokal_eksi_altyapi_db"), 1, True)),
-        "- **Aynı kayıtta armoni:** gerçek kanallarla en iyi kaydırma %s, armonik destek %s, akor sesi %s, gam içi %s."
+        "- **Ön dinleme, \"gömük vokal\" uyarısı ayırma artığıymış.** Otomatik ayırmada vokal − altyapı %s dB çıkmıştı; gerçek kanallarla %s dB. Ayırıcı bu karışımda vokalin bir bölümünü öteki kanala vermiş "
+        "(vokalin altında çalan klarnet ve hayvan sesleri işini zorlaştırıyor)."
+        % (s(gk(A + "dogal_onizleme", o, "vokal_eksi_altyapi_db"), 1, True), s(gk(A + "dogal_onizleme", g, "vokal_eksi_altyapi_db"), 1, True)),
+        "- **Ön dinleme, \"akort\" uyarısı karışımdan değil, kullanılan vokal dosyasından geliyor.** Gerçek kanallarla da ±25 cent içinde %%%s, ızgaraya yapışma %s (ayırmayla %%%s ve %s). İzini sürdüm: "
+        "ön dinlemeye konan vokal dosyası (`ali-baba/dinle_2_vokal.wav`, daha önce başka bir yolla ayrılmış) tek başına ölçülünce de böyle: ızgaraya yapışma %s, notaya uzaklık %s cent, ±25 cent içinde %%%s. "
+        "**Aynı şarkıcının aynı kaydı**, aracın kendi ayırmasıyla %s, %s cent ve %%%s veriyor. Yani akort sayıları, vokalin hangi ayırmadan geldiğine göre iki kat oynuyor. "
+        "Hangisinin kulağın duyduğuna daha yakın olduğunu ölçümle söyleyemem; ama `sarki_birlesik` de aynı vokal dosyasından yapıldı, kulakla bir bakmaya değer."
+        % (s(gk(A + "dogal_onizleme", g, "yuzde_25cent"), 0), s(gk(A + "dogal_onizleme", g, "y_perde_izgaraya_yapisma_R"), 2), s(gk(A + "dogal_onizleme", o, "yuzde_25cent"), 0), s(gk(A + "dogal_onizleme", o, "y_perde_izgaraya_yapisma_R"), 2),
+           s(VP_B.get("izgara_R"), 2), s(VP_B.get("merkeze_gore_medyan_sapma_cent"), 1), s(VP_B.get("yuzde_25cent_icinde_merkeze_gore"), 0),
+           s(VP_A.get("izgara_R"), 2), s(VP_A.get("merkeze_gore_medyan_sapma_cent"), 1), s(VP_A.get("yuzde_25cent_icinde_merkeze_gore"), 0)),
+        "- **Ön dinleme, armoni sayıları değişmedi:** gerçek kanallarla da en iyi kaydırma %s, armonik destek %s (akor sesi %s, gam içi %s). Bu karışımın gerçek bir özelliği; ama yukarıda görüldüğü gibi beğenilen bir kayıtta da aynısı var."
         % (s(gk(A + "dogal_onizleme", g, "en_iyi_kaydirma"), 0, True), s(gk(A + "dogal_onizleme", g, "destek_gercek"), 2), s(gk(A + "dogal_onizleme", g, "akor_sesi"), 0, yuzde=True), s(gk(A + "dogal_onizleme", g, "gam_ici"), 0, yuzde=True)),
-        "- **Esnetilmiş vokal (`sarki_birlesik`):** gerçek kanalla donmuş ünlü %s (ayırmayla %s), nota içi oynaklık %s cent (ayırmayla %s), ızgaraya yapışma %s (ayırmayla %s). "
+        "- **Esnetilmiş vokal (`sarki_birlesik`):** gerçek kanalla donmuş ünlü %s (ayırmayla %s), nota içi oynaklık %s cent (ayırmayla %s), ızgaraya yapışma %s (ayırmayla %s): yapaylık vekilleri gerçek kanalda da aynı, "
+        "yani zayıflıkları ayırmadan değil. Düzelenler: sahte \"çakışan nota\"lar kayboldu (%s/%s → %s/%s; hepsi hayvan sesiydi) ve ritim doğru okundu (R %s → %s; vokal zaten ızgaraya göre yerleştirilmişti)."
         % (s(gk(A + "sarki_birlesik", g, "y_donmus_sure_orani"), 0, yuzde=True), s(gk(A + "sarki_birlesik", o, "y_donmus_sure_orani"), 0, yuzde=True), s(gk(A + "sarki_birlesik", g, "y_nota_ici_oynaklik_cent_medyan"), 1),
-           s(gk(A + "sarki_birlesik", o, "y_nota_ici_oynaklik_cent_medyan"), 1), s(gk(A + "sarki_birlesik", g, "y_perde_izgaraya_yapisma_R"), 2), s(gk(A + "sarki_birlesik", o, "y_perde_izgaraya_yapisma_R"), 2))
-        + BIRLESIK_EK,
+           s(gk(A + "sarki_birlesik", o, "y_nota_ici_oynaklik_cent_medyan"), 1), s(gk(A + "sarki_birlesik", g, "y_perde_izgaraya_yapisma_R"), 2), s(gk(A + "sarki_birlesik", o, "y_perde_izgaraya_yapisma_R"), 2),
+           s(gk(A + "sarki_birlesik", o, "cakisan")), s(gk(A + "sarki_birlesik", o, "uzun_nota")), s(gk(A + "sarki_birlesik", g, "cakisan")), s(gk(A + "sarki_birlesik", g, "uzun_nota")),
+           s(gk(A + "sarki_birlesik", o, "ritim_R"), 2), s(gk(A + "sarki_birlesik", g, "ritim_R"), 2)),
         "- **Vokoder vokali (`ornek_kita1`, kurucunun eski ölçümü):** gerçek kanalla ızgaraya yapışma %s (ayırmayla %s), ±25 cent içinde %%%s (ayırmayla %%%s), ritim R %s (ayırmayla %s). "
         "Ayırma, yapaylığın en belirgin izini (perdenin ızgaraya aşırı yapışması) siliyor ve ritmi bozuk gösteriyor."
         % (s(gk(A + "ornek_kita1", g, "y_perde_izgaraya_yapisma_R"), 2), s(gk(A + "ornek_kita1", o, "y_perde_izgaraya_yapisma_R"), 2), s(gk(A + "ornek_kita1", g, "yuzde_25cent"), 0), s(gk(A + "ornek_kita1", o, "yuzde_25cent"), 0),
            s(gk(A + "ornek_kita1", g, "ritim_R"), 2), s(gk(A + "ornek_kita1", o, "ritim_R"), 2)),
         "",
-        "Çıkarım: **kendi ürettiğimiz kayıtlarda kanallar zaten elimizde; `--ayir` yerine `--vokal/--altyapi` kullanılmalı.** Otomatik ayırma hem yapaylık izlerini bulandırıyor hem de sahte \"detone / gömük\" uyarıları üretiyor.",
+        "Çıkarım: **kendi ürettiğimiz kayıtlarda kanallar zaten elimizde; `--ayir` yerine `--vokal/--altyapi` kullanılmalı.** Otomatik ayırma sahte \"gömük vokal\" ve \"çakışan nota\" uyarıları üretiyor, ritmi yanlış okuyor "
+        "ve vokoder vokalinde en belirgin yapaylık izini siliyor. İkinci çıkarım: **akort ve ızgara sayıları yalnızca aynı yolla elde edilmiş iki vokal arasında karşılaştırılabilir.**",
     ])
 
 # ------------------------------------------------------------------------------------------------ UYUM
@@ -162,7 +174,7 @@ for k, ad_, n_, isr, kucuk_kotu in (("yuzde_25cent", "±25 cent içinde", 0, Fal
     yz = "%" if k == "yuzde_25cent" else ""
     ayiranlar.append("%s: ön dinleme %s%s, öteki %d kayıt %s%s … %s%s%s" % (ad_, yz, s(v0, n_, isr), N_OTEKI, yz, s(min(vs), n_, isr), yz, s(max(vs), n_, isr), "" if temiz else " (örtüşüyor)"))
 Y["UYUM_YORUM"] = "\n".join([
-    "Reddedilen ön dinlemede vokal, beğenilen `dinle_2`'nin vokalinin **hiç işlenmemiş** hâli; değişen yalnızca orkestra. Yani bu çift, \"vokal iyi ama orkestrayla olmamış\" yargısı için neredeyse deney gibi.",
+    "Reddedilen ön dinlemedeki vokal, beğenilen `dinle_2`'den daha önce ayrılmış vokal; **perdesine ve süresine dokunulmadan** yeni orkestranın üstüne dizildi. Değişen orkestra. Bu çift, \"vokal iyi ama orkestrayla olmamış\" yargısı için neredeyse deney gibi.",
     "",
     "**Yan yana (aynı vokal, iki orkestra) fark çok açık:**",
     "",
@@ -170,8 +182,9 @@ Y["UYUM_YORUM"] = "\n".join([
     "|---|---|---|",
     "| Vokalin söylediği seste orkestranın enerjisi (armonik destek) | %s | %s |" % (s(m(A + "dinle_2", "destek_gercek"), 2), s(m(A + "dogal_onizleme", "destek_gercek"), 2)),
     "| En iyi kaydırma (0 olmalı) | %s | %s |" % (s(m(A + "dinle_2", "en_iyi_kaydirma"), 0, True), s(m(A + "dogal_onizleme", "en_iyi_kaydirma"), 0, True)),
-    "| Vokal − altyapı | %s dB | %s dB |" % (s(m(A + "dinle_2", "vokal_eksi_altyapi_db"), 1, True), s(m(A + "dogal_onizleme", "vokal_eksi_altyapi_db"), 1, True)),
-    "| ±25 cent içinde | %%%s | %%%s |" % (s(m(A + "dinle_2", "yuzde_25cent"), 0), s(m(A + "dogal_onizleme", "yuzde_25cent"), 0)),
+    "| Vokal − altyapı (otomatik ayırmayla) | %s dB | %s dB (gerçek kanallarla %s dB: ayırma artığı) |" % (s(m(A + "dinle_2", "vokal_eksi_altyapi_db"), 1, True), s(m(A + "dogal_onizleme", "vokal_eksi_altyapi_db"), 1, True),
+                                                                                                         s(gk(A + "dogal_onizleme", "gerçek", "vokal_eksi_altyapi_db"), 1, True)),
+    "| ±25 cent içinde | %%%s | %%%s (karışımdan değil, kullanılan vokal dosyasından geliyor) |" % (s(m(A + "dinle_2", "yuzde_25cent"), 0), s(m(A + "dogal_onizleme", "yuzde_25cent"), 0)),
     "| Sözcük hata oranı | %s | %s (\"Ali Baba'nın\" → \"Anne babamın\") |" % (s(m(A + "dinle_2", "wer"), 1, yuzde=True), s(m(A + "dogal_onizleme", "wer"), 1, yuzde=True)),
     "",
     "**Tek kayda bakınca aracın armoni hükmü tutmuyor:**",
@@ -187,8 +200,18 @@ Y["UYUM_YORUM"] = "\n".join([
     "",
 ] + ["- " + x + "." for x in ayiranlar] + [
     "",
-    "Bunların hepsi aynı şeyi söylüyor: **ayırıcı bu karışımdan temiz bir vokal çıkaramıyor.** Gerçek kanallarla ölçünce (yukarıdaki tablo) vokalin kendisi sağlam. Demek ki aracın yakaladığı şey dolaylı bir belirti: "
-    "vokalin yerinde, onunla yarışan başka bir ezgi sesi var (vokalin altına konan klarnet) ve makine ikisini ayıramıyor. Bu, kullanıcının \"altta başka ezgi çalıyor, olmamış\" demesiyle uyumlu; ama tek örnek.",
+    "**Ama bu sayıların çoğu karışımı değil, ölçüm yolunu anlatıyor.** Gerçek kanallarla yeniden ölçünce (bölüm 3'teki tablo): vokal − altyapı %s dB çıktı, yani \"gömük vokal\" ayırma artığıydı; "
+    "akort sayıları ise değişmedi, çünkü ön dinlemeye konan vokal dosyası kendi başına da öyle ölçülüyor (aynı şarkıcı, başka bir ayırma)."
+    % s(gk(A + "dogal_onizleme", "gerçek", "vokal_eksi_altyapi_db"), 1, True),
+    "",
+    "Karışımın kendisine ait, ayırmadan bağımsız iki bulgu kalıyor:",
+    "",
+    "1. **Makine aynı vokali bu orkestrada daha kötü anlıyor.** Sözcük hata oranı %s → %s; yedi kıtanın yedisinde \"Ali Baba'nın\" yerine \"Anne babamın\" duyuyor. Döküm karışımın bütününden alındığı için ayırmayla ilgisi yok. Bence en sağlam bulgu bu."
+    % (s(m(A + "dinle_2", "wer"), 1, yuzde=True), s(m(A + "dogal_onizleme", "wer"), 1, yuzde=True)),
+    "2. **Vokalin söylediği seste orkestranın enerjisi az** (%s → %s); perde panosunda gözle görülüyor. Tek başına hüküm verdirmiyor (beğenilen bir kayıt aynı değerde), ama aynı vokalin iki karışımı arasında fark açık."
+    % (s(m(A + "dinle_2", "destek_gercek"), 2), s(m(A + "dogal_onizleme", "destek_gercek"), 2)),
+    "",
+    "İkisi de kullanıcının \"altta başka ezgi çalıyor, olmamış\" demesiyle uyumlu; ama **tek örnek**, eşik çıkarmaya yetmez.",
     "",
     "Ritim ölçüsü bu boyutta işe yaramadı: ön dinleme R %s, beğenilen `dinle_2` %s. Ritmi için hiçbir şikâyet olmayan `el-yikama/sarki_1` %s, `pitirin-ailesi/yavas_2` %s çıktı (vuruş ızgarası yanlış bulunmuş olmalı)."
     % (s(m(A + "dogal_onizleme", "ritim_R"), 2), s(m(A + "dinle_2", "ritim_R"), 2), s(m(E + "sarki_1", "ritim_R"), 2), s(m(PI, "ritim_R"), 2)),
@@ -278,14 +301,13 @@ ESIK.append(dict(boyut="Anlaşılırlık (işlenmiş vokal)", kural="Sözcük ha
                  n="%d + 2" % len(DOGAL), nott="%%30, %s ile %s arasındaki boşluğun içinde bir değer; altında kalmak \"doğal\" demek değil" % (s(m(A + "dogal_onizleme", "wer"), 0, yuzde=True), s(m(A + "sarki_birlesik", "wer"), 0, yuzde=True))))
 ESIK.append(dict(boyut="Süre", kural="**180 sn'den uzun → \"çok uzun\" uyarısı**", dayanak="reddedilen %s sn; kabul edilen en uzun %s sn" % (ar([a for a in uzun if a in M], "sure_sn", 0), s(m(A + "demo_altyapi_sesli", "sure_sn"), 0)), n="5 + 2",
                  nott="kullanıcının sözü: \"3-3,5 dakika çok uzun\""))
-ESIK.append(dict(boyut="Uyum (geçici, tek örnek)", kural="`--ayir` sonrası **vokal − altyapı < −8 dB** ve **±25 cent içinde < %75** birlikteyse: vokal karışımda kayboluyor, kullanıcıya göndermeden önce bak",
-                 dayanak="ön dinleme %s dB ve %%%s; öteki vokalli kayıtlar en kötü %s dB ve %%%s"
-                 % (s(m(A + "dogal_onizleme", "vokal_eksi_altyapi_db"), 1, True), s(m(A + "dogal_onizleme", "yuzde_25cent"), 0), s(min(deg(OTEKI16, "vokal_eksi_altyapi_db")), 1, True), s(min(deg(OTEKI16, "yuzde_25cent")), 0)),
-                 n="%d + 1" % N_OTEKI, nott="**tek olumsuz örnek**; armoniyi değil ayırıcının zorlanmasını ölçüyor"))
+ESIK.append(dict(boyut="Uyum (geçici, tek örnek)", kural="Bir vokal yeni bir orkestraya konduysa: karışımın sözcük hata oranı, aynı vokalin özgün kaydındakinin **iki katını geçiyorsa** vokal orkestrada kayboluyor; kullanıcıya göndermeden önce bak",
+                 dayanak="aynı vokal: özgün kayıtta %s, ön dinlemede %s" % (s(m(A + "dinle_2", "wer"), 1, yuzde=True), s(m(A + "dogal_onizleme", "wer"), 1, yuzde=True)),
+                 n="1 + 1", nott="**tek örnek, yan yana kural**; mutlak eşik değil (söz hatalı doğal bir kayıt da %s alıyor)" % s(wer_dogal_max, 1, yuzde=True)))
 Y["ESIKLER"] = "\n".join(["| Boyut | Kural | Dayanak | Örnek sayısı (olumlu + olumsuz) | Not |", "|---|---|---|---|---|"] + ["| %s | %s | %s | %s | %s |" % (e["boyut"], e["kural"], e["dayanak"], e["n"], e["nott"]) for e in ESIK] + [
     "",
-    "**Eşik önermediğim yerler** (boşluk temiz değil): hareketlilik puanı; küçük sözcük hata oranları (%30'un altı); donmuş ünlü oranı ve öteki yapaylık vekilleri; konuşma-kalitesi tahminleri; "
-    "armonik destek ve \"en iyi kaydırma\"; ritim sıkılığı; hece hızı; aksanla ilgili her şey.",
+    "**Eşik önermediğim yerler** (boşluk temiz değil ya da sayı ölçüm yoluna bağlı): hareketlilik puanı; küçük sözcük hata oranları (%30'un altı); donmuş ünlü oranı ve öteki yapaylık vekilleri; konuşma-kalitesi tahminleri; "
+    "armonik destek ve \"en iyi kaydırma\"; akort (cent) ve ızgaraya yapışma; vokal − altyapı düzeyi; ritim sıkılığı; hece hızı; aksanla ilgili her şey.",
 ])
 Y["_esikler_json"] = [{"boyut": e["boyut"], "kural": e["kural"].replace("**", ""), "dayanak": e["dayanak"], "ornek_sayisi": e["n"], "not": e["nott"].replace("**", "")} for e in ESIK]
 
@@ -299,7 +321,8 @@ Y["OZET_SATIRI_YORUM"] = "\n".join([
     % ("%d ile %d arası" % (min(say(a) for a in BEG), max(say(a) for a in BEG)), "%d ile %d arası" % (min(say(a) for a in RED), max(say(a) for a in RED)), say(P + "duzgun_2"), say(P + "coskulu_1")),
     "- **Beğenilen kayıtlarda yanlış alarmlar:** `el-yikama/coskulu_2`'de \"aynı armonide mi: sorun\"; `parmak/coskulu_1`'de \"ünsüzlerde tiz zayıf\" ve \"söyleyiş hızı\"; üç beğenilen kayıtta \"ritme oturma: dikkat\" (R %s)."
     % ar([A + "dinle_2", E + "coskulu_2", P + "coskulu_1"], "ritim_R", 2),
-    "- **Doğru yerde öten satırlar:** \"Sözler\" (işlenmiş iki vokalde ve ön dinlemede ✗), \"Enerji\" (ninni denen üç kayıtta !), \"Vokal / altyapı dengesi\" ve \"Akort\" (vokalli kayıtlar içinde yalnızca ön dinlemede).",
+    "- **Doğru yerde öten satırlar:** \"Sözler\" (işlenmiş iki vokalde ve ön dinlemede ✗) ve \"Enerji\" (ninni denen üç kayıtta !; ama yukarıdaki iki yanlış uyarıyla birlikte).",
+    "- **Doğru kayıtta ötüp yanlış nedeni gösteren satırlar:** \"Vokal / altyapı dengesi\" ve \"Akort\", vokalli kayıtlar içinde yalnızca ön dinlemede ötüyor; ama gerçek kanallarla bakınca ikisi de karışımı değil ölçüm yolunu anlatıyordu (bölüm 3).",
     "- Beğenilen çalgısal altyapı (`demo_altyapi_sesli`) %d uyarı alıyor; hepsi hayvan seslerinin vokal sanılmasından." % say(A + "demo_altyapi_sesli"),
     "- **Hiç işe yaramayan satır:** \"Ritme oturma\". Beğenilen ve reddedilen kayıtlar arasında R değerleri tamamen karışık; ritmi için şikâyet olmayan iki kayıtta R %s ve %s çıktı." % (s(m(E + "sarki_1", "ritim_R"), 2), s(m(PI, "ritim_R"), 2)),
 ])
@@ -347,6 +370,11 @@ KUS = [
      "Hükmü kaydırma sırasına değil, akor sesi oranına ve gam dışı orana bağlamak; ya da yalnızca ±1, ±2, ±6 kaydırmayı sorun saymak (şimdi −4 de sorun sayılıyor)."),
     ("Ton belirsizken de çakışan nota hükmü", "`duzgun_1`'de 8 uzun nota işaretlendi (6'sı \"gam dışı\" Fa); araç aynı raporda tonun belirsiz olduğunu (Sol majör?) söylüyor, vokalin kendi dağılımı Do majör gösteriyor. Hüküm \"sorun\" çıkıyor.",
      "Ton belirsizse \"gam dışı\" notaları hükme katmamak (gam içi oranında olduğu gibi)."),
+    ("Akort sayıları ayırma yoluna bağlı", "Aynı şarkıcının aynı kaydı iki ayrı ayırmayla notaya uzaklıkta %s ve %s cent, ızgaraya yapışmada %s ve %s veriyor. Rapordaki \"Akort\" eşikleri (18 / 28 cent) bu oynamanın içinde kalıyor."
+     % (s(VP_A.get("merkeze_gore_medyan_sapma_cent"), 1), s(VP_B.get("merkeze_gore_medyan_sapma_cent"), 1), s(VP_A.get("izgara_R"), 2), s(VP_B.get("izgara_R"), 2)),
+     "Akort satırını hüküm olarak değil, aynı yolla elde edilmiş iki vokalin karşılaştırması olarak sunmak."),
+    ("\"Gömük vokal\" uyarısı ayırma artığı olabilir", "Ön dinlemede otomatik ayırma vokal − altyapı farkını %s dB gösterdi; gerçek kanallarla %s dB." % (s(gk(A + "dogal_onizleme", "otomatik", "vokal_eksi_altyapi_db"), 1, True), s(gk(A + "dogal_onizleme", "gerçek", "vokal_eksi_altyapi_db"), 1, True)),
+     "Sızıntı ölçüsü kötüyse (burada %s dB) denge hükmünü vermemek." % s(m(A + "dogal_onizleme", "sizinti_db"), 0, True)),
     ("Donmuş ünlü uyarısı", "Doğal ama yavaş söylenen kayıtlarda ötüyor (%s). Metni \"zaman esnetme / vokoder izlenimi\" diyor." % (", ".join("`%s` %s" % (KISA(a), s(v, 0, yuzde=True)) for v, a in yuksek_donmus) or "–"),
      "Eşiği hece hızına göre ayarlamak ya da metni \"uzun tutulan ünlüler\" diye yumuşatmak."),
     ("\"Ünsüzlerde tiz zayıf\" uyarısı", "−14 dB eşiği doğal kayıtların ortasında: beğenilen `parmak/coskulu_1` %s dB." % s(m(P + "coskulu_1", "y_unsuzlerde_tiz_payi_db"), 1, True), "Eşiği düşürmek ya da uyarıyı kaldırmak."),
@@ -369,7 +397,8 @@ SIN = [
     "**Beğenilen kayıt kusursuz kayıt değil.** `v2_2` beğenildi ama söz hatalı; `dinle_2` beğenildi ama bir kıtada yanlış hayvan var. \"Olumlu\" grup, o boyutta şikâyet edilmeyen kayıtlar demek.",
     "**Beklenen sözler yeniden kuruldu** (üretim istemleri depoda yok); sözcük hata oranları birkaç puan oynayabilir.",
     "**Yedi kayıtta eski döküm kullanıldı**; bunlarda Scribe'ın sözcük güveni yok. Aksanla reddedilen `duzgun_1` bunlardan biri.",
-    "**Bütün vokaller otomatik ayırmayla elde edildi.** Ayırma kendi artıklarını ekliyor; gerçek kanallarla ölçüm iki kayıtta bunu gösterdi. Perde, akort ve yapaylık sayıları \"ayrılmış vokal\" için geçerlidir.",
+    "**Bütün vokaller otomatik ayırmayla elde edildi.** Ayırma kendi artıklarını ekliyor; gerçek kanallarla ölçüm bunu gösterdi. Aynı vokal iki ayrı ayırmada notaya %s ve %s cent uzak ölçüldü. Perde, akort ve yapaylık sayıları \"bu yolla ayrılmış vokal\" için geçerlidir."
+    % (s(VP_A.get("merkeze_gore_medyan_sapma_cent"), 1), s(VP_B.get("merkeze_gore_medyan_sapma_cent"), 1)),
     "**Bütün doğal vokaller aynı tür yapay şarkıcıdan.** Gerçek bir insan şarkıcının ya da başka bir üreticinin kaydında sayılar başka yerde durabilir.",
     "**Ben hiçbir kaydı duymadım.** Bu rapor, makinelerin ürettiği sayıların ve resimlerin kullanıcının sözleriyle karşılaştırmasıdır.",
 ]

@@ -101,9 +101,11 @@ ANA = {
  A + "sarki_birlesik": (lambda a: "%s (aynı vokalin işlenmemiş hâli dinle_2'de %s); donmuş ünlü %s; panoda perde merdiven basamağı gibi. Kalite tahminleri (DNSMOS %s, UTMOS %s) doğal kayıtlardan farksız."
                         % (sz(a), s(m(A + "dinle_2", "wer"), 1, yuzde=True), s(m(a, "y_donmus_sure_orani"), 0, yuzde=True), s(m(a, "dnsmos"), 2), s(m(a, "utmos22"), 2)),
                         "evet", "Sözlerin anlaşılmaz hâle gelmesi ve panodaki görüntü yargıyı açıklıyor; \"yapaylık\" sayıları tek başına yetmezdi."),
- A + "dogal_onizleme": (lambda a: "Aynı vokal dinle_2'de: vokal − altyapı %s dB, ±25 cent içinde %%%s, %s. Burada: %s dB, %%%s, %s; \"aynı armonide mi\" satırı sorun (en iyi kaydırma %s)."
-                        % (s(m(A + "dinle_2", "vokal_eksi_altyapi_db"), 1, True), s(m(A + "dinle_2", "yuzde_25cent"), 0), sz(A + "dinle_2"), s(m(a, "vokal_eksi_altyapi_db"), 1, True), s(m(a, "yuzde_25cent"), 0), sz(a), s(m(a, "en_iyi_kaydirma"), 0, True)),
-                        "kısmen", "dinle_2 ile yan yana konunca fark çok açık. Tek başına bakınca armoni sayıları ayırmıyor (beğenilen bir kayıt aynı değeri alıyor); ayıran, ayırıcının vokali temiz çıkaramaması."),
+ A + "dogal_onizleme": (lambda a: "Aynı vokal dinle_2'de: %s, armonik destek %s. Burada: %s (her kıtada \"Ali Baba'nın\" yerine \"Anne babamın\"), destek %s; \"aynı armonide mi\" satırı sorun (en iyi kaydırma %s). "
+                        "Aracın \"gömük vokal\" (%s dB) ve \"akort\" uyarıları ise karışımı değil ölçüm yolunu anlatıyor: gerçek kanallarla vokal %s dB."
+                        % (sz(A + "dinle_2"), s(m(A + "dinle_2", "destek_gercek"), 2), sz(a), s(m(a, "destek_gercek"), 2), s(m(a, "en_iyi_kaydirma"), 0, True), s(m(a, "vokal_eksi_altyapi_db"), 1, True),
+                           s(next((mm.get("vokal_eksi_altyapi_db") for ee, mm in (GK.get(a) or {}).items() if ee.startswith("gerçek")), None), 1, True)),
+                        "kısmen", "dinle_2 ile yan yana konunca fark açık (makine aynı vokali bu orkestrada iki kattan fazla hatayla yazıyor). Tek başına bakınca armoni sayıları ayırmıyor: beğenilen bir kayıt aynı değeri alıyor."),
  A + "coskulu_1": (lambda a: "Süre %s. %s. Koyun kıtasında döküm \"%s\" yazıyor; ünlü ölçümü iki hecede %s dB (ineğin \"mö\"sü %s dB). Ayrıca horoz kıtasında bozuk dize bulundu (\"diye gümler. Ben balta grupu var\")."
                    % (sure_yaz(a), sz(a), kita(a, 1, "soylenen_ses"), unlu(a, "koyun"), unlu(a, "inek")),
                    "kısmen", "\"Çok uzun\" ve bozuk bir dize bulundu; \"koyun mö diyor\" dökümde görünmüyor."),
@@ -163,7 +165,7 @@ sure_r = olcu("sure", "sure_sn")
 
 BOYUTLAR = [
  dict(ad="Sözler: yanlış, eksik, bozuk sözcük", hukum="güvenilir",
-      ozet="Kullanıcının söylediği yanlış ad / bozuk dize hatalarının hepsi dökümde, saniyesiyle bulundu. Karar için sözcük hata oranına değil, kıta kıta anahtar sözcük denetimine bakılmalı."),
+      ozet="Kullanıcının söylediği yanlış aile adı hataları (iki kayıt) ve hiç anlaşılmayan sözler (bir kayıt) dökümde saniyesiyle bulundu; araç kullanıcının söylemediği gerçek hatalar da buldu. Karar için sözcük hata oranına değil, kıta kıta anahtar sözcük denetimine bakılmalı."),
  dict(ad="Sözler: tek hecelik söylenen hayvan sesi, küçük telaffuz bozukluğu", hukum="kısmen",
       ozet="\"Koyun mö diyor\" üç kayıttan birinde, atın yanlış sesi bir kayıtta bulundu; ikisinde döküm \"me\" yazıyor. \"atıları\" bulunamadı: tanıma modeli sözcüğü düzeltip yazıyor."),
  dict(ad="Süre", hukum="güvenilir", ozet="Doğrudan ölçüm."),
@@ -172,11 +174,11 @@ BOYUTLAR = [
  dict(ad="Ses doğal mı (vokoder, esnetme, perde düzleme)", hukum="kısmen",
       ozet="İşlenmiş iki vokali ayıran tek temiz sayı, makinenin sözleri anlayıp anlamadığı. \"Yapaylık\" vekilleri doğal ama yavaş söylenen kayıtlarda da ötüyor; konuşma-kalitesi tahminleri hiç ayırmıyor. Panoda gözle görülüyor."),
  dict(ad="Vokal orkestrayla uyumlu mu", hukum="kısmen",
-      ozet="Aynı vokalin iki karışımı yan yana ölçülünce fark çok açık. Tek kayda bakarak verilen \"aynı armonide mi\" hükmü güvenilmez: beğenilen bir kayıt da aynı uyarıyı alıyor."),
+      ozet="Aynı vokalin iki karışımı yan yana ölçülünce fark çok açık. Tek kayda bakarak verilen \"aynı armonide mi\" hükmü güvenilmez: beğenilen bir kayıt da aynı uyarıyı alıyor. \"Gömük vokal\" ve \"akort\" uyarıları ise ölçüm yoluna bağlı çıktı."),
  dict(ad="Söyleyiş hızı", hukum="kısmen", ozet="Araç en hızlı kaydı doğru sıralıyor, ama kullanıcının \"çok hızlı\" dediği kayıtla seçtiği kayıt arasındaki fark ölçüm hatası kadar; uyarı yanlış kayda gidiyor."),
  dict(ad="Aksan (\"Türkçe konuşan İngiliz gibi\")", hukum="hayır", ozet="Hiçbir sayı ayırmıyor: sözcük hata oranı, Scribe güveni, kalite tahminleri, denenen iki fonetik ölçü. İki kaydın ortak ölçülebilir özelliği yalnızca yavaşlık."),
  dict(ad="Ezgi bilinen ezgi mi", hukum="hayır", ozet="Araç istenen ezgiyle karşılaştırma yapmıyor."),
- dict(ad="Ses hoş mu, çocuk sever mi", hukum="hayır", ozet="Ölçülemiyor. Konuşma-kalitesi tahminleri kullanıcının zevkiyle ters bile düşüyor (ninni gibi kayıtlar daha yüksek puan alıyor)."),
+ dict(ad="Ses hoş mu, çocuk sever mi", hukum="hayır", ozet="Ölçülemiyor. Konuşma-kalitesi tahminleri kullanıcının zevkiyle ters bile düşüyor (en yüksek puanları reddedilen yavaş kayıtlar alıyor)."),
 ]
 IM = {"güvenilir": "**Evet, güvenilir**", "kısmen": "**Kısmen**", "hayır": "**Hayır**"}
 
@@ -217,7 +219,7 @@ ek("- Döküm: 7 kayıtta şarkının yanındaki eski `*_words.json` dosyası ku
 ek("- **Beklenen sözler yeniden kuruldu.** Üretim istemleri depoda yok. `kalibrasyon/sozler/` altındaki metinler, kayıtların dökümlerindeki ortak kalıptan ve kullanıcının sözlerinden "
    "(\"3. kıta abi parmak olmalı\", \"atları\") çıkarıldı; her dosyanın başında kaynağı yazıyor. Bu yüzden sözcük hata oranları birkaç puan oynayabilir; kıta denetimleri bundan etkilenmez.")
 ek("- Araca dokunulmadı. Eski dökümleri verebilmek için ince bir sarıcı (`kod/dinle_sarici.py`) ve araç dışı üç küçük deney yazıldı (kıta denetimi, söylenen ünlünün tınısı, aksan izi).")
-ek("- İki reddedilmiş kayıt, eldeki gerçek kanallarla (kuru vokal + orkestra) bir kez daha ölçüldü; otomatik ayırmanın payını görmek için.")
+ek("- İki reddedilmiş kayıt, eldeki gerçek kanallarla (kuru vokal + orkestra) bir kez daha ölçüldü; otomatik ayırmanın payını görmek için. Çıkan bir tutarsızlığın izi sürüldü (`kod/08c_vokal_perde_karsilastir.py`).")
 ek("- Gemini'ye canlı istek **gönderilmedi** (bu çalışmanın kuralı yalnızca ElevenLabs dökümüne izin veriyordu; kota da öteki ekiple ortak). Önbellekteki eski Gemini cevapları kanıt olarak kullanıldı.")
 ek("")
 ek("## Ana tablo: her karar ve aracın o boyutta gördüğü")
@@ -391,7 +393,14 @@ J = {
                "arac_aciklıyor_mu": (ANA[x["ad"]][1] if x["ad"] in M else None), "neden": (ANA[x["ad"]][2] if x["ad"] in M else None),
                "aracin_gordugu": (ANA[x["ad"]][0](x["ad"]) if x["ad"] in M else None),
                "olcumler": {k: v for k, v in (M.get(x["ad"]) or {}).items() if k not in ("ad", "yol", "karar", "gerekce", "boyut", "sarki")}} for x in SET],
+ "ozet": {"guvenilir": [b["ad"] for b in BOYUTLAR if b["hukum"] == "güvenilir"], "kismen": [b["ad"] for b in BOYUTLAR if b["hukum"] == "kısmen"], "hayir": [b["ad"] for b in BOYUTLAR if b["hukum"] == "hayır"],
+          "kayit_bazinda": {"evet": n_evet, "kismen": n_kismen, "hayir": n_hayir}},
  "ayrisma": AY, "soz_denetimi": SD, "unlu_tinisi_deneyi": UT, "aksan_deneyi": AK, "gercek_kanallar": GK,
+ "ayni_vokalin_dort_hali_perde_karsilastirmasi": oku("vokal_perde_karsilastirma.json"), "cakisan_nota_hayvan_sesi_denetimi": oku("cakisan_hayvan.json"),
+ "bakilan_panolar": ["ali-baba__v2_2/00_genel_bakis.png", "ali-baba__v2_2/02_perde_026-052sn.png", "ali-baba__v2_2/02_pano_026-052sn.png", "ali-baba__dinle_2/01_perde_000-028sn.png", "ali-baba__dinle_2/01_pano_000-028sn.png",
+                     "parmak-ailesi__coskulu_1/00_genel_bakis.png", "parmak-ailesi__coskulu_1/01_pano_000-027sn.png", "ali-baba__demo_altyapi_sesli/00_genel_bakis.png",
+                     "ali-baba__ornek_kita1/01_perde_000-027sn.png", "ali-baba__ornek_kita1/01_pano_000-027sn.png", "ali-baba__sarki_birlesik/01_perde_000-026sn.png", "ali-baba__sarki_birlesik/01_pano_000-026sn.png",
+                     "ali-baba__dogal_onizleme/01_perde_000-027sn.png", "parmak-ailesi__duzgun_1/01_pano_000-023sn.png", "parmak-ailesi__yavas_2/00_genel_bakis.png"],
  "esik_onerileri": YORUM.get("_esikler_json", []), "arac_kusurlari": YORUM.get("_kusurlar_json", []), "gorsel_kanal": YORUM.get("_gorsel_json", []), "sinirlar": YORUM.get("_sinirlar_json", []),
  "gereksinimler": YORUM.get("_gereksinim_json", []),
 }

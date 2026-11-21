@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "İşte dinleme analizi ve soruların kısa yanıtları:\n\n1) **BİRLİKTE** (Sanal veya kopuk bir yapıştırma hissiyatı yok, vokal ve altyapı uyum içinde mikslenmiş).  \n   *Kopukluk Puanı:* **0 / 10**\n\n2) **Aynı anda hareket ediyor.** Şarkıcının söylediği ritim ve ezgi ile eşlik eden çalgıların ritmi tam olarak senkronizedir.\n\n3) **Evet, kıtalar (sözler) arasında müzikal ara boşlukları mevcuttur.** Sözsüz müzik aralarının saniyeleri:\n   * **00:00 - 00:08** (Giriş müziği)\n   * **00:17 - 00:23** \n   * **00:31 - 00:36** \n   * **00:45 - 00:49** \n   * **00:58 - 01:03** \n   * **01:12 - 01:17** \n   * **01:26 - 01:31**",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "v2_2.mp3"
+ ],
+ "bas": null,
+ "sure": null,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 17:26:48"
+}

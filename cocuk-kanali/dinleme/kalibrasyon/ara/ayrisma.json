@@ -632,6 +632,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.12
+     ],
+     [
       "ali-baba/coskulu_2",
       0.139
      ],
@@ -680,6 +684,7 @@
     "bosluk_orani": 0.41,
     "esik_adayi": 0.282,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/turkce_2",
      "ali-baba/dogal_onizleme"
@@ -715,6 +720,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.045
+     ],
+     [
       "ali-baba/coskulu_2",
       0.026
      ],
@@ -743,6 +752,7 @@
     "bosluk_orani": 0.1,
     "esik_adayi": 0.0355,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/turkce_2",
      "ali-baba/dogal_onizleme"
@@ -778,6 +788,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      -0.042
+     ],
+     [
       "ali-baba/coskulu_2",
       -0.02
      ],
@@ -806,6 +820,7 @@
     "bosluk_orani": 0.08,
     "esik_adayi": -0.0285,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/duzgun_2",
      "parmak/turkce_2",
@@ -845,6 +860,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.0
+     ],
      [
       "ali-baba/coskulu_2",
       0.0
@@ -933,6 +952,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      12.4
+     ],
      [
       "ali-baba/coskulu_2",
       12.6
@@ -1024,6 +1047,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.0
+     ],
+     [
       "ali-baba/coskulu_2",
       0.03
      ],
@@ -1098,6 +1125,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.61
+     ],
      [
       "ali-baba/coskulu_2",
       0.55
@@ -1174,6 +1205,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.21
+     ],
+     [
       "ali-baba/coskulu_2",
       0.25
      ],
@@ -1249,6 +1284,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      -13.9
+     ],
+     [
       "ali-baba/coskulu_2",
       -12.9
      ],
@@ -1297,6 +1336,7 @@
     "bosluk_orani": 0.14,
     "esik_adayi": -14.05,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "parmak/turkce_2",
      "parmak/yavas_2",
      "el-yikama/sarki_1",
@@ -1337,6 +1377,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      1.51
+     ],
      [
       "ali-baba/coskulu_2",
       1.34
@@ -1385,7 +1429,9 @@
     "bosluk_genisligi": 0.54,
     "bosluk_orani": 0.43,
     "esik_adayi": 1.76,
-    "diger_bosluk_icinde": [],
+    "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1"
+    ],
     "diger_olumsuz_tarafta": [
      "ali-baba/dogal_onizleme"
     ]
@@ -1422,6 +1468,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      -12.8
+     ],
      [
       "ali-baba/coskulu_2",
       -12.0
@@ -1486,6 +1536,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      32.0
+     ],
+     [
       "ali-baba/coskulu_2",
       32.0
      ],
@@ -1548,6 +1602,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.9833
+     ],
      [
       "ali-baba/coskulu_2",
       0.9826
@@ -1637,6 +1695,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0
+     ],
+     [
       "ali-baba/coskulu_2",
       0
      ],
@@ -1711,6 +1773,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      2.58
+     ],
      [
       "ali-baba/coskulu_2",
       2.35
@@ -1787,6 +1853,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      3.0
+     ],
+     [
       "ali-baba/coskulu_2",
       2.49
      ],
@@ -1861,6 +1931,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      4.36
+     ],
      [
       "ali-baba/coskulu_2",
       4.13
@@ -1937,6 +2011,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      3.48
+     ],
+     [
       "ali-baba/coskulu_2",
       2.76
      ],
@@ -2011,6 +2089,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      1.47
+     ],
      [
       "ali-baba/coskulu_2",
       1.58
@@ -2087,6 +2169,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.066
+     ],
+     [
       "ali-baba/coskulu_2",
       0.041
      ],
@@ -2161,6 +2247,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.339
+     ],
      [
       "ali-baba/coskulu_2",
       0.293
@@ -2237,6 +2327,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.018
+     ],
+     [
       "ali-baba/coskulu_2",
       0.011
      ],
@@ -2311,6 +2405,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.01
+     ],
      [
       "ali-baba/coskulu_2",
       0.011
@@ -2399,6 +2497,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.4
+     ],
+     [
       "ali-baba/coskulu_2",
       0.37
      ],
@@ -2473,6 +2575,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      1.8221215404313997
+     ],
      [
       "ali-baba/coskulu_2",
       2.1878918861228955
@@ -2556,6 +2662,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.21
+     ],
      [
       "ali-baba/coskulu_2",
       0.18
@@ -2643,6 +2753,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.18
+     ],
      [
       "ali-baba/coskulu_2",
       0.15
@@ -2734,6 +2848,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.12
+     ],
+     [
       "ali-baba/coskulu_2",
       0.29
      ],
@@ -2797,6 +2915,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.57
+     ],
+     [
       "ali-baba/coskulu_2",
       0.67
      ],
@@ -2834,6 +2956,7 @@
     "esik_adayi": 0.855,
     "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/duzgun_2",
      "parmak/turkce_2",
@@ -2873,6 +2996,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.17117117117117117
+     ],
      [
       "ali-baba/coskulu_2",
       0.0975609756097561
@@ -2963,6 +3090,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0
+     ],
+     [
       "ali-baba/coskulu_2",
       -4
      ],
@@ -3038,6 +3169,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      1
+     ],
+     [
       "ali-baba/coskulu_2",
       4
      ],
@@ -3112,6 +3247,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.492
+     ],
      [
       "ali-baba/coskulu_2",
       0.348
@@ -3199,6 +3338,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.295
+     ],
+     [
       "ali-baba/coskulu_2",
       0.121
      ],
@@ -3273,6 +3416,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.988
+     ],
      [
       "ali-baba/coskulu_2",
       0.987
@@ -3349,6 +3496,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.679
+     ],
+     [
       "ali-baba/coskulu_2",
       0.624
      ],
@@ -3423,6 +3574,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.012
+     ],
      [
       "ali-baba/coskulu_2",
       0.013
@@ -3499,6 +3654,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      9.4
+     ],
+     [
       "ali-baba/coskulu_2",
       11.2
      ],
@@ -3551,6 +3710,7 @@
     "bosluk_orani": 0.88,
     "esik_adayi": 13.1,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "pitirin/yavas_2",
      "ali-baba/ornek_kita1"
@@ -3585,6 +3745,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      86.0
+     ],
      [
       "ali-baba/coskulu_2",
       83.1
@@ -3638,6 +3802,7 @@
     "bosluk_orani": 0.77,
     "esik_adayi": 77.5,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/duzgun_2",
      "ali-baba/ornek_kita1"
@@ -3672,6 +3837,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.61
+     ],
      [
       "ali-baba/coskulu_2",
       0.55
@@ -3725,6 +3894,7 @@
     "bosluk_orani": 0.85,
     "esik_adayi": 0.455,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/duzgun_2",
      "ali-baba/ornek_kita1"
@@ -3759,6 +3929,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.0
+     ],
      [
       "ali-baba/coskulu_2",
       0.0
@@ -3845,6 +4019,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.4
+     ],
      [
       "ali-baba/coskulu_2",
       0.37
@@ -3933,6 +4111,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      23.0
+     ],
+     [
       "ali-baba/coskulu_2",
       44.0
      ],
@@ -4008,6 +4190,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      -4.6
+     ],
+     [
       "ali-baba/coskulu_2",
       -4.3
      ],
@@ -4060,6 +4246,7 @@
     "bosluk_orani": 0.7,
     "esik_adayi": -8.2,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "ali-baba/ornek_kita1",
      "ali-baba/sarki_birlesik"
@@ -4094,6 +4281,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      -31.7
+     ],
      [
       "ali-baba/coskulu_2",
       -40.2
@@ -4182,6 +4373,10 @@
     ],
     "diger": [
      [
+      "ali-baba/coskulu_1",
+      0.12
+     ],
+     [
       "ali-baba/coskulu_2",
       0.139
      ],
@@ -4234,6 +4429,7 @@
     "bosluk_orani": 0.72,
     "esik_adayi": 0.1385,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/turkce_2"
     ],
@@ -4270,6 +4466,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.066
+     ],
      [
       "ali-baba/coskulu_2",
       0.041
@@ -4323,6 +4523,7 @@
     "bosluk_orani": 0.52,
     "esik_adayi": 0.0485,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2",
      "parmak/duzgun_1",
      "parmak/yavas_2",
@@ -4360,6 +4561,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      0.339
+     ],
      [
       "ali-baba/coskulu_2",
       0.293
@@ -4413,6 +4618,7 @@
     "bosluk_orani": 0.58,
     "esik_adayi": 0.3175,
     "diger_bosluk_icinde": [
+     "ali-baba/coskulu_1",
      "ali-baba/coskulu_2"
     ],
     "diger_olumsuz_tarafta": []
@@ -4445,6 +4651,10 @@
      ]
     ],
     "diger": [
+     [
+      "ali-baba/coskulu_1",
+      5.1
+     ],
      [
       "ali-baba/coskulu_2",
       5.4
@@ -5624,13 +5834,17 @@
     ],
     "olumsuz": [
      [
+      "ali-baba/coskulu_1",
+      213.0
+     ],
+     [
       "ali-baba/coskulu_2",
       186.0
      ]
     ],
     "diger": [],
     "n_olumlu": 5,
-    "n_olumsuz": 1,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
      154.74,
@@ -5638,7 +5852,7 @@
     ],
     "temiz_bosluk": true,
     "bosluk_genisligi": 31.26,
-    "bosluk_orani": 0.27,
+    "bosluk_orani": 0.22,
     "esik_adayi": 170.37
    }
   ]
@@ -5669,6 +5883,10 @@
       0.047
      ],
      [
+      "ali-baba/coskulu_1",
+      0.12
+     ],
+     [
       "ali-baba/coskulu_2",
       0.139
      ],
@@ -5687,7 +5905,7 @@
     ],
     "diger": [],
     "n_olumlu": 3,
-    "n_olumsuz": 5,
+    "n_olumsuz": 6,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -5715,6 +5933,10 @@
       0.038
      ],
      [
+      "ali-baba/coskulu_1",
+      0.111
+     ],
+     [
       "ali-baba/coskulu_2",
       0.13
      ],
@@ -5733,7 +5955,7 @@
     ],
     "diger": [],
     "n_olumlu": 3,
-    "n_olumsuz": 5,
+    "n_olumsuz": 6,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -5761,6 +5983,10 @@
       4
      ],
      [
+      "ali-baba/coskulu_1",
+      7
+     ],
+     [
       "ali-baba/coskulu_2",
       8
      ],
@@ -5779,7 +6005,7 @@
     ],
     "diger": [],
     "n_olumlu": 3,
-    "n_olumsuz": 5,
+    "n_olumsuz": 6,
     "yon": "olumlu dusuk",
     "bosluk": [
      1.0,
@@ -5813,6 +6039,10 @@
       1
      ],
      [
+      "ali-baba/coskulu_1",
+      2
+     ],
+     [
       "ali-baba/coskulu_2",
       0
      ],
@@ -5831,7 +6061,7 @@
     ],
     "diger": [],
     "n_olumlu": 3,
-    "n_olumsuz": 5,
+    "n_olumsuz": 6,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -5859,6 +6089,10 @@
       0
      ],
      [
+      "ali-baba/coskulu_1",
+      4
+     ],
+     [
       "ali-baba/coskulu_2",
       7
      ],
@@ -5877,7 +6111,7 @@
     ],
     "diger": [],
     "n_olumlu": 3,
-    "n_olumsuz": 5,
+    "n_olumsuz": 6,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -5901,6 +6135,10 @@
     ],
     "olumsuz": [
      [
+      "ali-baba/coskulu_1",
+      0.045
+     ],
+     [
       "ali-baba/coskulu_2",
       0.026
      ],
@@ -5915,7 +6153,7 @@
     ],
     "diger": [],
     "n_olumlu": 3,
-    "n_olumsuz": 3,
+    "n_olumsuz": 4,
     "yon": "olumlu dusuk",
     "bosluk": [
      0.0,

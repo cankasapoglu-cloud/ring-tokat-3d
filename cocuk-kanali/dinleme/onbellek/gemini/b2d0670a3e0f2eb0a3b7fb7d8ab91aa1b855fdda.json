@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "İşte sorularınızın kısa yanıtları:\n\n1) **BİRLİKTE** (Kopukluk puanı: **0/10**). Vokal ile müzik altyapısı gayet uyumlu, dengeli ve aynı prodüksiyonun parçası olarak tınlamaktadır.\n2) **Aynı anda hareket ediyor.** Şarkıcının söylediği vokal ritmi ve ezgisi, çalgıların ritmiyle tam senkronizedir.\n3) **Hayır, yok.** Cümleleri ve anlamı bölen uzun veya zamansız boşluklar bulunmamaktadır; duraklamalar şarkının doğal ritmik yapısına uygundur.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "coskulu_2.mp3"
+ ],
+ "bas": null,
+ "sure": null,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 17:26:56"
+}

@@ -1,0 +1,418 @@
+{
+ "tanim": "Soru 4 (başka ritmik etkenler), iki tarafta aynı ölçüm:\na) salınım (swing): vuruş arası sekizliğin vuruş içindeki yeri (%50 = düz), orkestra ve vokal\nb) orkestranın ölçü içi vuruş deseni: söylenen ölçülerde 16'lık yuvalara düşen vuruş gücü (pes / orta / tiz bant)\nc) hece uzunlukları ve ezgi notası uzunlukları\nd) dize sonu: son hecenin bitişinden sonra vokal düzeyi ne kadar hızlı düşüyor (kuyruk)\ne) vokalin altındaki ezginin (ezgi_alti) karışımdaki düzeyi (duyulur mu?)\nf) hayvan seslerinin ölçü başına göre gerçek başlangıcı",
+ "a_salinim_yuzde(50=duz, 66.7=uclemeli)": {
+  "RED_orkestra_tiz": 50.1,
+  "REF_orkestra_tiz": 49.4,
+  "RED_vokal": 49.5,
+  "REF_vokal": 49.2
+ },
+ "a_onaltilik_cift_orani(0.5=duz)": {
+  "RED_vokal": {
+   "n": 34,
+   "ortanca": 0.522,
+   "ss": 0.083
+  },
+  "REF_vokal": {
+   "n": 34,
+   "ortanca": 0.524,
+   "ss": 0.085
+  }
+ },
+ "b_olcu_ici_desen_16lik_yuvalar(soylenen_olculer)": {
+  "RED_orkestra": {
+   "pes_40_300": [
+    36.7,
+    29.7,
+    24.6,
+    3.7,
+    44.7,
+    28.4,
+    28.4,
+    4.2,
+    42.0,
+    64.5,
+    32.9,
+    11.8,
+    49.2,
+    24.5,
+    30.7,
+    19.6
+   ],
+   "pes_40_300_onaltilik_bolu_sekizlik": 0.64,
+   "pes_40_300_vurus_arasi_sekizlik_bolu_vurus": 0.68,
+   "orta_300_2000": [
+    18.4,
+    12.2,
+    20.8,
+    6.6,
+    26.4,
+    6.2,
+    15.3,
+    8.8,
+    17.5,
+    5.5,
+    18.4,
+    6.7,
+    20.5,
+    10.6,
+    18.4,
+    8.3
+   ],
+   "orta_300_2000_onaltilik_bolu_sekizlik": 0.42,
+   "orta_300_2000_vurus_arasi_sekizlik_bolu_vurus": 0.88,
+   "tiz_2k_16k": [
+    22.2,
+    3.8,
+    16.2,
+    4.2,
+    24.9,
+    3.4,
+    15.5,
+    5.9,
+    18.2,
+    3.5,
+    24.3,
+    3.3,
+    32.1,
+    3.7,
+    11.1,
+    9.5
+   ],
+   "tiz_2k_16k_onaltilik_bolu_sekizlik": 0.23,
+   "tiz_2k_16k_vurus_arasi_sekizlik_bolu_vurus": 0.69
+  },
+  "REF_orkestra": {
+   "pes_40_300": [
+    35.5,
+    12.5,
+    23.3,
+    20.8,
+    33.9,
+    15.1,
+    27.6,
+    19.3,
+    34.4,
+    12.9,
+    21.2,
+    19.8,
+    33.3,
+    15.2,
+    28.6,
+    18.0
+   ],
+   "pes_40_300_onaltilik_bolu_sekizlik": 0.56,
+   "pes_40_300_vurus_arasi_sekizlik_bolu_vurus": 0.74,
+   "orta_300_2000": [
+    23.0,
+    12.2,
+    17.5,
+    9.9,
+    18.6,
+    12.9,
+    24.7,
+    8.6,
+    24.1,
+    14.1,
+    20.9,
+    11.4,
+    18.2,
+    14.1,
+    25.5,
+    10.5
+   ],
+   "orta_300_2000_onaltilik_bolu_sekizlik": 0.54,
+   "orta_300_2000_vurus_arasi_sekizlik_bolu_vurus": 1.05,
+   "tiz_2k_16k": [
+    17.4,
+    12.4,
+    27.5,
+    12.7,
+    18.9,
+    19.8,
+    32.5,
+    9.1,
+    24.5,
+    15.0,
+    29.8,
+    13.8,
+    19.5,
+    19.7,
+    30.8,
+    8.3
+   ],
+   "tiz_2k_16k_onaltilik_bolu_sekizlik": 0.55,
+   "tiz_2k_16k_vurus_arasi_sekizlik_bolu_vurus": 1.5
+  },
+  "vokal_hece_sayisi_yuvaya_gore": {
+   "0": 21,
+   "1": 0,
+   "2": 21,
+   "3": 0,
+   "4": 21,
+   "5": 7,
+   "6": 21,
+   "7": 0,
+   "8": 21,
+   "9": 0,
+   "10": 20,
+   "11": 0,
+   "12": 21,
+   "13": 20,
+   "14": 21,
+   "15": 0
+  },
+  "olcu_sayisi": {
+   "RED": 21,
+   "REF": 21
+  }
+ },
+ "c_uzunluklar": {
+  "vokal_hece_suresi_ms": {
+   "ad": "",
+   "n": 229,
+   "ortanca": 252.1,
+   "ortalama": 242.1,
+   "ss": 70.3,
+   "p10": 141.6,
+   "p25": 174.8,
+   "p75": 297.3,
+   "p90": 326.1,
+   "mutlak_ortanca": 252.1,
+   "yuzde_30ms_ici": 0.0,
+   "yuzde_50ms_ici": 0.0,
+   "en_kucuk": 97.8,
+   "en_buyuk": 447.0
+  },
+  "vokal_hece_suresi_bolu_yuva_araligi": {
+   "ortanca": 1.01,
+   "p10": 0.83,
+   "p90": 1.18
+  },
+  "klarnet_nota_suresi_ms": {
+   "251": 28,
+   "263": 126,
+   "543": 21
+  },
+  "klarnet_nota_suresi_bolu_sekizlik": 0.92,
+  "olcu_basina_vokal_hece_girisi": 9.24,
+  "olcu_basina_klarnet_nota_girisi": 7,
+  "vokalde_olup_klarnette_olmayan_giris_yuvalari(sekizlik)": "2.5 (1. dize), 6.5, 7",
+  "klarnette_olup_vokalde_olmayan": "yok"
+ },
+ "d_dize_sonu_kuyrugu": {
+  "RED_4_dize_sonu(7)": {
+   "son_hece_duzeyine_gore_dB_+50ms": -55.7,
+   "son_hece_duzeyine_gore_dB_+100ms": -90.0,
+   "son_hece_duzeyine_gore_dB_+200ms": -90.0,
+   "son_hece_duzeyine_gore_dB_+400ms": -90.0
+  },
+  "RED_tum_dize_sonlari(21)": {
+   "son_hece_duzeyine_gore_dB_+50ms": -53.7,
+   "son_hece_duzeyine_gore_dB_+100ms": -90.0,
+   "son_hece_duzeyine_gore_dB_+200ms": -90.0,
+   "son_hece_duzeyine_gore_dB_+400ms": -90.0
+  },
+  "REF_4_dize_sonu(7)": {
+   "son_hece_duzeyine_gore_dB_+50ms": -28.2,
+   "son_hece_duzeyine_gore_dB_+100ms": -27.0,
+   "son_hece_duzeyine_gore_dB_+200ms": -29.5,
+   "son_hece_duzeyine_gore_dB_+400ms": -36.2
+  },
+  "not": "REF'te yalnız 4. dizeden sonra vokal susar (ardından 2 enstrümantal ölçü); MDX kökü yankı kuyruğunun bir kısmını enstrüman köküne bırakmış olabilir, yani REF kuyruğu burada olduğundan KISA ölçülmüş olabilir."
+ },
+ "e_ezgi_alti_duzeyi_soylenen_dizelerde_dB": {
+  "altyapi": -19.2,
+  "ezgi_alti(-4dB ile)": -30.5,
+  "vokal(yaklasik)": -10.7,
+  "ezgi_eksi_altyapi": -11.3,
+  "ezgi_eksi_vokal": -19.8,
+  "bant_500_2000Hz": {
+   "altyapi": -27.0,
+   "ezgi_alti": -34.8,
+   "vokal": -15.2
+  },
+  "bant_1000_2000Hz(çan)": {
+   "altyapi": -32.2,
+   "ezgi_alti": -35.6,
+   "vokal": -22.0
+  }
+ },
+ "f_hayvan_sesleri": {
+  "sesler": [
+   {
+    "ses": "inek_1",
+    "sure_sn": 1.11,
+    "olcu_basina_gore_%10_ms": -24,
+    "olcu_basina_gore_%50_ms": 142,
+    "olcu_basina_gore_tepe_ms": 713,
+    "duyulur_bitis_olcu_basindan_sn": 1.0,
+    "olcunun_dolan_kismi_yuzde": 44
+   },
+   {
+    "ses": "inek_2",
+    "sure_sn": 1.1,
+    "olcu_basina_gore_%10_ms": -23,
+    "olcu_basina_gore_%50_ms": 258,
+    "olcu_basina_gore_tepe_ms": 763,
+    "duyulur_bitis_olcu_basindan_sn": 1.01,
+    "olcunun_dolan_kismi_yuzde": 44
+   },
+   {
+    "ses": "koyun_1",
+    "sure_sn": 1.31,
+    "olcu_basina_gore_%10_ms": -28,
+    "olcu_basina_gore_%50_ms": 112,
+    "olcu_basina_gore_tepe_ms": 813,
+    "duyulur_bitis_olcu_basindan_sn": 1.14,
+    "olcunun_dolan_kismi_yuzde": 50
+   },
+   {
+    "ses": "koyun_2",
+    "sure_sn": 1.31,
+    "olcu_basina_gore_%10_ms": -28,
+    "olcu_basina_gore_%50_ms": 112,
+    "olcu_basina_gore_tepe_ms": 813,
+    "duyulur_bitis_olcu_basindan_sn": 1.14,
+    "olcunun_dolan_kismi_yuzde": 50
+   },
+   {
+    "ses": "at_1",
+    "sure_sn": 1.85,
+    "olcu_basina_gore_%10_ms": -23,
+    "olcu_basina_gore_%50_ms": 161,
+    "olcu_basina_gore_tepe_ms": 723,
+    "duyulur_bitis_olcu_basindan_sn": 1.74,
+    "olcunun_dolan_kismi_yuzde": 76
+   },
+   {
+    "ses": "at_2",
+    "sure_sn": 1.85,
+    "olcu_basina_gore_%10_ms": -23,
+    "olcu_basina_gore_%50_ms": 161,
+    "olcu_basina_gore_tepe_ms": 723,
+    "duyulur_bitis_olcu_basindan_sn": 1.74,
+    "olcunun_dolan_kismi_yuzde": 76
+   },
+   {
+    "ses": "horoz_1",
+    "sure_sn": 1.85,
+    "olcu_basina_gore_%10_ms": -27,
+    "olcu_basina_gore_%50_ms": 260,
+    "olcu_basina_gore_tepe_ms": 1399,
+    "duyulur_bitis_olcu_basindan_sn": 1.71,
+    "olcunun_dolan_kismi_yuzde": 75
+   },
+   {
+    "ses": "horoz_2",
+    "sure_sn": 1.85,
+    "olcu_basina_gore_%10_ms": -27,
+    "olcu_basina_gore_%50_ms": 260,
+    "olcu_basina_gore_tepe_ms": 1399,
+    "duyulur_bitis_olcu_basindan_sn": 1.71,
+    "olcunun_dolan_kismi_yuzde": 75
+   },
+   {
+    "ses": "ordek_1",
+    "sure_sn": 1.32,
+    "olcu_basina_gore_%10_ms": -23,
+    "olcu_basina_gore_%50_ms": 41,
+    "olcu_basina_gore_tepe_ms": 231,
+    "duyulur_bitis_olcu_basindan_sn": 1.12,
+    "olcunun_dolan_kismi_yuzde": 49
+   },
+   {
+    "ses": "ordek_2",
+    "sure_sn": 1.33,
+    "olcu_basina_gore_%10_ms": -23,
+    "olcu_basina_gore_%50_ms": 5,
+    "olcu_basina_gore_tepe_ms": 1012,
+    "duyulur_bitis_olcu_basindan_sn": 1.11,
+    "olcunun_dolan_kismi_yuzde": 48
+   },
+   {
+    "ses": "kopek_1",
+    "sure_sn": 0.75,
+    "olcu_basina_gore_%10_ms": -26,
+    "olcu_basina_gore_%50_ms": -12,
+    "olcu_basina_gore_tepe_ms": 51,
+    "duyulur_bitis_olcu_basindan_sn": 0.56,
+    "olcunun_dolan_kismi_yuzde": 25
+   },
+   {
+    "ses": "kopek_2",
+    "sure_sn": 0.8,
+    "olcu_basina_gore_%10_ms": -27,
+    "olcu_basina_gore_%50_ms": -12,
+    "olcu_basina_gore_tepe_ms": 1,
+    "duyulur_bitis_olcu_basindan_sn": 0.59,
+    "olcunun_dolan_kismi_yuzde": 26
+   },
+   {
+    "ses": "kedi_1",
+    "sure_sn": 0.77,
+    "olcu_basina_gore_%10_ms": -26,
+    "olcu_basina_gore_%50_ms": 359,
+    "olcu_basina_gore_tepe_ms": 437,
+    "duyulur_bitis_olcu_basindan_sn": 0.61,
+    "olcunun_dolan_kismi_yuzde": 27
+   },
+   {
+    "ses": "kedi_2",
+    "sure_sn": 0.7,
+    "olcu_basina_gore_%10_ms": -27,
+    "olcu_basina_gore_%50_ms": -6,
+    "olcu_basina_gore_tepe_ms": 144,
+    "duyulur_bitis_olcu_basindan_sn": 0.63,
+    "olcunun_dolan_kismi_yuzde": 27
+   }
+  ],
+  "ozet_%50_ms": {
+   "ad": "",
+   "n": 14,
+   "ortanca": 127.0,
+   "ortalama": 131.5,
+   "ss": 115.8,
+   "p10": -10.2,
+   "p25": 14.0,
+   "p75": 233.8,
+   "p90": 260.0,
+   "mutlak_ortanca": 127.0,
+   "yuzde_30ms_ici": 28.6,
+   "yuzde_50ms_ici": 35.7,
+   "en_kucuk": -12.0,
+   "en_buyuk": 359.0
+  },
+  "ozet_tepe_ms": {
+   "ad": "",
+   "n": 14,
+   "ortanca": 723.0,
+   "ortalama": 658.7,
+   "ss": 430.1,
+   "p10": 78.9,
+   "p25": 282.5,
+   "p75": 813.0,
+   "p90": 1282.9,
+   "mutlak_ortanca": 723.0,
+   "yuzde_30ms_ici": 7.1,
+   "yuzde_50ms_ici": 7.1,
+   "en_kucuk": 1.0,
+   "en_buyuk": 1399.0
+  },
+  "ozet_olcunun_dolan_kismi_yuzde": {
+   "ad": "",
+   "n": 14,
+   "ortanca": 48.5,
+   "ortalama": 49.4,
+   "ss": 18.8,
+   "p10": 26.3,
+   "p25": 31.2,
+   "p75": 68.8,
+   "p90": 75.7,
+   "mutlak_ortanca": 48.5,
+   "yuzde_30ms_ici": 28.6,
+   "yuzde_50ms_ici": 71.4,
+   "en_kucuk": 25.0,
+   "en_buyuk": 76.0
+  }
+ }
+}

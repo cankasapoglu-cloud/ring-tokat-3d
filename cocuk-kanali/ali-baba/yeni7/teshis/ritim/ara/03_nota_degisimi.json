@@ -1,0 +1,364 @@
+{
+ "tanim": "Soru 2: Vokalin NOTA DEĞİŞTİRDİĞİ anlar, orkestranın aynı ölçülerde vokalin altında çaldığı ezginin (ezgi_alti: klarnet + çan) nota\ndeğiştirdiği anlarla aynı mı?\n A) Kâğıt üstünde: hedefler.json (hece -> hedef nota, hece zamanı) ile zaman_G.json \"ezgi_notalari\" (parti = ezgi_alti, klarnet) karşılaştırılır.\n B) Seste doğrulama: vokal_psola.wav ve ezgi_alti_G.wav'ın f0 izleri (Praat) -> kare kare perde sınıfı uyumu ve en iyi uyumu veren kayma.\nZamanlar reddedilen karışımın zaman eksenindedir (orkestra + 0.100 s).",
+ "satirlar": [
+  {
+   "kita": 1,
+   "satir": "L1",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 1,
+   "satir": "L2",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 1,
+   "satir": "diye",
+   "klarnet_degisim_sayisi": 0,
+   "vokal_degisim_sayisi": 0
+  },
+  {
+   "kita": 1,
+   "satir": "L4",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 2,
+   "satir": "L1",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 2,
+   "satir": "L2",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 2,
+   "satir": "diye",
+   "klarnet_degisim_sayisi": 0,
+   "vokal_degisim_sayisi": 0
+  },
+  {
+   "kita": 2,
+   "satir": "L4",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 3,
+   "satir": "L1",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 3,
+   "satir": "L2",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 3,
+   "satir": "diye",
+   "klarnet_degisim_sayisi": 0,
+   "vokal_degisim_sayisi": 0
+  },
+  {
+   "kita": 3,
+   "satir": "L4",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 4,
+   "satir": "L1",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 4,
+   "satir": "L2",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 4,
+   "satir": "diye",
+   "klarnet_degisim_sayisi": 0,
+   "vokal_degisim_sayisi": 0
+  },
+  {
+   "kita": 4,
+   "satir": "L4",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 5,
+   "satir": "L1",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 5,
+   "satir": "L2",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 5,
+   "satir": "diye",
+   "klarnet_degisim_sayisi": 0,
+   "vokal_degisim_sayisi": 0
+  },
+  {
+   "kita": 5,
+   "satir": "L4",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 6,
+   "satir": "L1",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 6,
+   "satir": "L2",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 6,
+   "satir": "diye",
+   "klarnet_degisim_sayisi": 0,
+   "vokal_degisim_sayisi": 0
+  },
+  {
+   "kita": 6,
+   "satir": "L4",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 7,
+   "satir": "L1",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 7,
+   "satir": "L2",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  },
+  {
+   "kita": 7,
+   "satir": "diye",
+   "klarnet_degisim_sayisi": 0,
+   "vokal_degisim_sayisi": 0
+  },
+  {
+   "kita": 7,
+   "satir": "L4",
+   "klarnet_degisim_sayisi": 3,
+   "vokal_degisim_sayisi": 3
+  }
+ ],
+ "A_hece_yuvasinda_vokal_hedefi_ile_klarnet": {
+  "hece_sayisi": 229,
+  "klarnetin_caldigi_olcudeki_hece": 229,
+  "ayni_perde_sinifi": 146,
+  "farkli": 83,
+  "farkli_yuzde": 36.2,
+  "aralik_dagilimi_yarim_ses_mod12": {
+   "0": 146,
+   "2": 41,
+   "5": 21,
+   "10": 21
+  },
+  "buyuk_ikili_catisma(2_veya_10)": 62,
+  "dortlu_besli(5_veya_7)": 21,
+  "yuvaya_gore_farkli": {
+   "0": "0/21",
+   "1.0": "0/21",
+   "2": "0/21",
+   "2.5": "0/7",
+   "3.0": "21/21",
+   "4": "21/28",
+   "5.0": "0/27",
+   "6": "21/28",
+   "6.5": "20/27",
+   "7.0": "0/28"
+  },
+  "satira_gore_farkli": {
+   "L1": "28/70",
+   "L2": "27/61",
+   "diye": "0/35",
+   "L4": "28/63"
+  }
+ },
+ "A_nota_degisimi_anlari": {
+  "klarnet_nota_degisimi": 63,
+  "vokalde_esi_bulunan": 63,
+  "vokal_hece_basi_eksi_klarnet_ms": {
+   "ad": "",
+   "n": 63,
+   "ortanca": 254.1,
+   "ortalama": 257.3,
+   "ss": 42.9,
+   "p10": 220.9,
+   "p25": 231.0,
+   "p75": 273.7,
+   "p90": 286.0,
+   "mutlak_ortanca": 254.1,
+   "yuzde_30ms_ici": 0.0,
+   "yuzde_50ms_ici": 0.0,
+   "en_kucuk": 213.9,
+   "en_buyuk": 538.3
+  },
+  "vokal_unlu_girisi_eksi_klarnet_ms": {
+   "ad": "",
+   "n": 63,
+   "ortanca": 280.9,
+   "ortalama": 280.0,
+   "ss": 39.1,
+   "p10": 241.0,
+   "p25": 263.2,
+   "p75": 293.8,
+   "p90": 306.5,
+   "mutlak_ortanca": 280.9,
+   "yuzde_30ms_ici": 0.0,
+   "yuzde_50ms_ici": 0.0,
+   "en_kucuk": 226.0,
+   "en_buyuk": 529.1
+  },
+  "yuva_farki_sekizlik": {
+   "1.0": 62,
+   "2": 1
+  },
+  "degisime_gore": {
+   "D->E": {
+    "ad": "",
+    "n": 21,
+    "ortanca": 285.1,
+    "ortalama": 288.4,
+    "ss": 62.1,
+    "p10": 236.3,
+    "p25": 243.5,
+    "p75": 307.0,
+    "p90": 312.1,
+    "mutlak_ortanca": 285.1,
+    "yuzde_30ms_ici": 0.0,
+    "yuzde_50ms_ici": 0.0,
+    "en_kucuk": 226.0,
+    "en_buyuk": 529.1
+   },
+   "E->D": {
+    "ad": "",
+    "n": 21,
+    "ortanca": 278.0,
+    "ortalama": 279.0,
+    "ss": 18.5,
+    "p10": 251.0,
+    "p25": 268.5,
+    "p75": 294.7,
+    "p90": 298.4,
+    "mutlak_ortanca": 278.0,
+    "yuzde_30ms_ici": 0.0,
+    "yuzde_50ms_ici": 0.0,
+    "en_kucuk": 238.3,
+    "en_buyuk": 309.0
+   },
+   "G->D": {
+    "ad": "",
+    "n": 21,
+    "ortanca": 280.7,
+    "ortalama": 272.7,
+    "ss": 16.7,
+    "p10": 243.2,
+    "p25": 265.0,
+    "p75": 285.0,
+    "p90": 289.1,
+    "mutlak_ortanca": 280.7,
+    "yuzde_30ms_ici": 0.0,
+    "yuzde_50ms_ici": 0.0,
+    "en_kucuk": 236.6,
+    "en_buyuk": 291.6
+   }
+  },
+  "40ms_icinde_ayni_anda_olan": 0,
+  "200ms_den_gec": 63
+ },
+ "B_seste_vokal_perdesi_eksi_hedef_sent": {
+  "ad": "",
+  "n": 229,
+  "ortanca": 0.7,
+  "ortalama": 1.1,
+  "ss": 5.4,
+  "p10": -1.6,
+  "p25": -0.4,
+  "p75": 2.2,
+  "p90": 4.8,
+  "mutlak_ortanca": 1.3,
+  "yuzde_30ms_ici": 99.1,
+  "yuzde_50ms_ici": 100.0,
+  "en_kucuk": -37.3,
+  "en_buyuk": 26.1
+ },
+ "B_seste_perde_sinifi_uyumu": {
+  "aciklama": "vokal ile klarnet aynı anda sesliyken perde sınıfı aynı olan karelerin oranı; kayma = vokalin kaç ms GERİDE olduğu varsayımı (vokal(t+kayma) ile klarnet(t) karşılaştırılır)",
+  "kayma_0ms": 0.658,
+  "ortak_sesli_sure_sn": 49.6,
+  "en_iyi_kayma_ms": 275,
+  "en_iyi_kaymada_uyum": 0.891,
+  "kayma_+285ms": 0.888,
+  "kayma_-285ms": 0.422,
+  "egri_her_50ms": {
+   "-600": 0.378,
+   "-550": 0.38,
+   "-500": 0.37,
+   "-450": 0.36,
+   "-400": 0.362,
+   "-350": 0.377,
+   "-300": 0.41,
+   "-250": 0.454,
+   "-200": 0.505,
+   "-150": 0.552,
+   "-100": 0.591,
+   "-50": 0.623,
+   "0": 0.658,
+   "50": 0.703,
+   "100": 0.752,
+   "150": 0.798,
+   "200": 0.846,
+   "250": 0.886,
+   "300": 0.879,
+   "350": 0.821,
+   "400": 0.759,
+   "450": 0.7,
+   "500": 0.645,
+   "550": 0.618,
+   "600": 0.583
+  }
+ },
+ "B_seste_aralik_dagilimi_kayma0_yuzde": {
+  "0": 63.4,
+  "1": 2.9,
+  "2": 9.6,
+  "3": 1.6,
+  "4": 3.7,
+  "5": 4.2,
+  "6": 1.8,
+  "7": 0.2,
+  "8": 0.1,
+  "9": 0.2,
+  "10": 9.4,
+  "11": 2.7
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "Sorularınızın kısa cevapları aşağıdadır:\n\n1) **BİRLİKTE** (Kopukluk Puanı: **0 / 10**)  \n   *Şarkıcının sesi ile altyapı müziği gayet dengeli ve bir arada kaydedilmiş/mikslemiş gibidir, kopukluk yoktur.*\n\n2) **Aynı anda hareket ediyor.**  \n   *Şarkıcının ezgisi ile çalgıların melodisi tam zamanında ve ritmik olarak senkronize ilerlemektedir.*\n\n3) **Evet, var.** Her kıtanın ortasında hayvan seslerinin girdiği 4-5 saniyelik sözsüz boşluklar bulunmaktadır:\n   * **00:16 – 00:21** (İnek sesleri)\n   * **00:34 – 00:38** (Koyun sesleri)\n   * **00:52 – 00:56** (At sesleri)\n   * **01:10 – 01:15** (Horoz sesleri)\n   * **01:29 – 01:33** (Ördek sesleri)\n   * **01:47 – 01:51** (Köpek sesleri)\n   * **02:05 – 02:09** (Kedi sesleri)",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "sarki_A_ozgun_ses.mp3"
+ ],
+ "bas": null,
+ "sure": null,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 17:26:39"
+}

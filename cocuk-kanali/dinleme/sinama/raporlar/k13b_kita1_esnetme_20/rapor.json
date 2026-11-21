@@ -1,0 +1,463 @@
+{
+ "arac": "dinle.py 1.0 (2026-11-21)",
+ "dosya": "/root/.cache/dinleme/sinama/ses/k13b_kita1_esnetme_20.wav",
+ "zaman": "2026-11-21 17:41:47",
+ "uyari": "Bu rapor olcum ve makine tahminidir; insan kulagi degildir. Son karar dinleyen insanindir.",
+ "hatalar": [],
+ "temel": {
+  "dosya": "k13b_kita1_esnetme_20.wav",
+  "sure_sn": 17.8,
+  "kanal": 1,
+  "kodek": "pcm_s16le",
+  "ornekleme_hz": 44100,
+  "bit_hizi_kbps": 706.0,
+  "lufs": -18.4,
+  "lra_lu": 1.9,
+  "gercek_tepe_dbtp": -5.3,
+  "ornek_tepe_dbfs": -5.29,
+  "rms_dbfs": -19.72,
+  "tepe_faktoru_db": 14.4,
+  "dc_kaymasi": -4e-05,
+  "kirpilma": {
+   "tam_olcek_ornek": 0,
+   "ardisik_kosu_3ornek_ustu": 0,
+   "ilk_zamanlar_sn": [],
+   "var_mi": false
+  },
+  "sessizlik": {
+   "esik_dbfs": -50.0,
+   "bastaki_sn": 0.54,
+   "sondaki_sn": 0.6,
+   "ic_bosluklar": [],
+   "sessiz_orani": 0.066
+  },
+  "stereo": {
+   "yorum": "tek kanal (mono) dosya"
+  },
+  "ust_frekans_hz": 17624
+ },
+ "enerji": {
+  "tempo_bpm": 115.3,
+  "tempo_kaynagi": "otomatik tahmin; yarı/çift tempo hatası yapabilir",
+  "vurus_sayisi": 35,
+  "nabiz_netligi": 0.076,
+  "nabiz_netligi_aciklama": "0-1; vurus egri oz-iliskisinin vurus araligindaki tepesi. Yuksek = duzenli, belirgin ritim",
+  "tempo_kararliligi": {
+   "yuzde_3_icinde": 67.9,
+   "yerel_tempo_p10_p90": [
+    107.7,
+    117.5
+   ]
+  },
+  "vurus_araligi_degiskenligi_yuzde": 6.5,
+  "olay_yogunlugu_sn": 3.71,
+  "spektral_aki_ort": 1.742,
+  "vurmali_armonik_db": -7.8,
+  "parlaklik_agirlik_merkezi_hz": 3056.0,
+  "tiz_payi_4khz_ustu_db": -12.6,
+  "bas_payi_150hz_alti_db": -49.5,
+  "duzey_oynakligi_db": 1.88,
+  "bolumler_5sn": [
+   {
+    "bas": 0.0,
+    "duzey_db": -20.2,
+    "olay_sn": 4.2,
+    "aki": 1.806
+   },
+   {
+    "bas": 5.0,
+    "duzey_db": -18.8,
+    "olay_sn": 3.4,
+    "aki": 1.72
+   },
+   {
+    "bas": 10.0,
+    "duzey_db": -19.3,
+    "olay_sn": 3.6,
+    "aki": 1.618
+   },
+   {
+    "bas": 15.0,
+    "duzey_db": -22.0,
+    "olay_sn": 1.2,
+    "aki": 1.436
+   }
+  ],
+  "enerji_puani": {
+   "puan_0_100": 43.0,
+   "bilesenler_0_1": {
+    "olay_yogunlugu_sn": 0.38,
+    "nabiz_netligi": 0.0,
+    "vurmali_armonik_db": 0.59,
+    "spektral_aki_ort": 0.52,
+    "parlaklik_agirlik_merkezi_hz": 0.77
+   },
+   "aciklama": "Sinyal tabanli hareketlilik gostergesi (sarkilar arasi KARSILASTIRMA icin). 'Cocuk bunu sever' demek degildir."
+  }
+ },
+ "kanal_kaynagi": "dosyanin kendisi (--kuru)",
+ "perde": {
+  "izleme": {
+   "yontem": "SwiftF0 (16 ms adim)",
+   "sesli_cerceve_orani": 0.484,
+   "pyin_ile_uyum_yuzde_50cent": 99.1,
+   "pyin_sesli_ortusme": 1.0
+  },
+  "nota_sayisi": 27,
+  "nota_suresi_medyan_sn": 0.22,
+  "ses_araligi": {
+   "alt": "C4",
+   "ust": "F4",
+   "yarim_ses": 4.9,
+   "medyan": "E4",
+   "medyan_hz": 329.0
+  },
+  "nota_ici_oynaklik_cent_medyan": 10.0,
+  "nota_ici_oynaklik_aciklama": "0,2 sn'den uzun notalarda perdenin nota icindeki standart sapmasi. Insan sesinde genelde 8-35 cent; 5 cent'in altindaysa perde 'cetvelle cizilmis' gibi duzdur.",
+  "cok_duz_nota_orani": 0.06,
+  "kayan_nota_orani": 0.44,
+  "uzun_nota_sayisi_035sn_ustu": 9,
+  "vibratolu_uzun_nota_orani": 0.33,
+  "vibrato_hz_medyan": 4.2,
+  "vibrato_genlik_cent_medyan": 18.0,
+  "alttan_giris_orani": 0.0,
+  "gecis_cerceve_orani": 0.1,
+  "ses_sinifi_dagilimi": {
+   "C": 0.083,
+   "C#": 0.0,
+   "D": 0.151,
+   "D#": 0.012,
+   "E": 0.683,
+   "F": 0.068,
+   "F#": 0.0,
+   "G": 0.0,
+   "G#": 0.0,
+   "A": 0.0,
+   "A#": 0.0,
+   "B": 0.002
+  },
+  "vokal_ton_ks": {
+   "ton": "Mi minör (E minor)",
+   "tonik": 4,
+   "mod": "minor",
+   "r": 0.65,
+   "ikinci_r": 0.565,
+   "adaylar": [
+    "Mi minör (E minor) r=0.65",
+    "Mi majör (E major) r=0.57",
+    "La majör (A major) r=0.38",
+    "Do diyez minör (C# minor) r=0.33"
+   ]
+  }
+ },
+ "dogallik_vekilleri": {
+  "uyari": "Bunlar vekil (dolayli) olcumlerdir: 'yapay duyuluyor' yargisinin yerini tutmaz; iki surumu KARSILASTIRMAK icindir.",
+  "nota_ici_oynaklik_cent_medyan": 10.0,
+  "cok_duz_nota_orani": 0.06,
+  "vibratolu_uzun_nota_orani": 0.33,
+  "vibrato_hiz_yayilimi_hz": 0.69,
+  "donmus_unlu_sayisi_045sn_ustu": 0,
+  "donmus_unluler": [],
+  "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9904,
+  "donmus_sure_orani": 0.0,
+  "unsuz_cerceve_orani": 0.48,
+  "unsuzlerde_tiz_payi_db": -11.7,
+  "unlulerde_tiz_payi_db": -12.8,
+  "vokal_ust_frekans_hz": 10723,
+  "tiz_doku_degisim_katsayisi": 1.33,
+  "tiz_doku_aciklama": "Tutulan unlulerde 4-8 kHz'in zaman icinde ne kadar oynadigi. Duragan gurultu icin kuramsal deger ~0,52. Belirgin dusuk (<0,35) = fazla puruzsuz/'vizildayan' sentez dokusu; belirgin yuksek (>1,2) = kopuk kopuk 'muzikal gurultu' (ayirma ya da gurultu giderme artigi) olabilir.",
+  "zarf_titremesi_db": -15.7,
+  "zarf_titremesi_aciklama": "Tutulan seslerde 15-40 Hz genlik titresiminin 1-15 Hz'e orani (dB). dogrula.py'de: ayrilmis dogal vokal -9..-11, esnetilmis vokal -14, konusma sentezi -16, vokoderle ezgiye oturtulmus (reddedilen) vokal -21. Yani COK DUSUK deger asiri puruzsuz/duragan ses demek olabilir; tek basina karar verdirmez.",
+  "isaretler": [],
+  "isaret_sayisi": 0,
+  "neyi_yakalar": "dogrula.py denetimlerinde YAKALANAN: perdesi yarim seslere yapistirilmis vokal (duzluk + izgaraya yapisma), 4 kHz'de kesilmis vokal (tiz eksigi), hecelerı vokoderle uzatilmis vokal (donmus unlu). YAKALANMAYAN: perdesi degistirilmeden vokoderden gecirilmis vokal, 1,6-1,8 kat esnetilmis vokal, konusma sentezi. 'Isaret yok' = 'dogal' DEGILDIR."
+ },
+ "sozler": {
+  "dokum_kaynagi": {
+   "kaynak": "canli cagri",
+   "dosya": "/home/user/ring-tokat-3d/cocuk-kanali/dinleme/onbellek/scribe_v1__k13b_kita1_esnetme_20__695c4be4590eb84f.json",
+   "kredi": 97.9
+  },
+  "dil": "tur",
+  "dil_olasiligi": 1.0,
+  "duyulan_metin": "Ali Baba'nın bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl bağırır dinle bak, dinle bak",
+  "duyulan_sozcuk_sayisi": 15,
+  "ses_olaylari": [],
+  "dusuk_guvenli_sozcukler": [],
+  "hece_hizi": {
+   "toplam_hece": 33,
+   "soz_icinde_hece_sn": 2.4,
+   "obek_sayisi": 1,
+   "obek_hece_sn_medyan": 2.03,
+   "obek_hece_sn_en_hizli": 2.03,
+   "cok_hizli_obekler": [],
+   "cok_yavas_obekler": [],
+   "obekler": [
+    {
+     "bas": 0.6,
+     "son": 16.82,
+     "hece": 33,
+     "hece_sn": 2.03,
+     "soz": "Ali Baba'nın bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl bağırır d"
+    }
+   ],
+   "aciklama": "Saniyede hece. Cocuk sarkilarinda soylenen sozde genelde 2-5 hece/sn; 6,5'in ustu tekerleme hizidir (cocuk eslik edemez), 1,5'in alti cok uzatilmis hecelerdir. Zamanlar Scribe'in sozcuk sinirlarindan gelir (+-50 ms)."
+  }
+ },
+ "sorunlar": [],
+ "notalar": [
+  {
+   "bas": 0.67,
+   "sure": 0.22,
+   "nota": "D4",
+   "cent": 10,
+   "ic_std_cent": 16.8,
+   "vibrato": false
+  },
+  {
+   "bas": 1.47,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": 6,
+   "ic_std_cent": 9.6,
+   "vibrato": false
+  },
+  {
+   "bas": 1.73,
+   "sure": 0.42,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 6.7,
+   "vibrato": false
+  },
+  {
+   "bas": 2.22,
+   "sure": 0.22,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 8.0,
+   "vibrato": false
+  },
+  {
+   "bas": 3.25,
+   "sure": 0.32,
+   "nota": "F4",
+   "cent": -12,
+   "ic_std_cent": 10.7,
+   "vibrato": false
+  },
+  {
+   "bas": 3.57,
+   "sure": 0.11,
+   "nota": "E4",
+   "cent": 9,
+   "ic_std_cent": 7.3,
+   "vibrato": false
+  },
+  {
+   "bas": 3.81,
+   "sure": 0.4,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 3.3,
+   "vibrato": false
+  },
+  {
+   "bas": 5.33,
+   "sure": 0.96,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 10.4,
+   "vibrato": false
+  },
+  {
+   "bas": 6.35,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": 41,
+   "ic_std_cent": 6.0,
+   "vibrato": false
+  },
+  {
+   "bas": 6.62,
+   "sure": 0.38,
+   "nota": "E4",
+   "cent": 6,
+   "ic_std_cent": 16.8,
+   "vibrato": true
+  },
+  {
+   "bas": 7.65,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 2.3,
+   "vibrato": false
+  },
+  {
+   "bas": 7.94,
+   "sure": 0.46,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 8.1,
+   "vibrato": false
+  },
+  {
+   "bas": 8.9,
+   "sure": 0.24,
+   "nota": "E4",
+   "cent": -14,
+   "ic_std_cent": 25.4,
+   "vibrato": false
+  },
+  {
+   "bas": 9.2,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 8.0,
+   "vibrato": false
+  },
+  {
+   "bas": 9.74,
+   "sure": 0.85,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 17.7,
+   "vibrato": true
+  },
+  {
+   "bas": 10.98,
+   "sure": 0.18,
+   "nota": "D4",
+   "cent": 17,
+   "ic_std_cent": 7.0,
+   "vibrato": false
+  },
+  {
+   "bas": 11.18,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": 22,
+   "ic_std_cent": 6.2,
+   "vibrato": false
+  },
+  {
+   "bas": 11.52,
+   "sure": 0.27,
+   "nota": "F4",
+   "cent": -17,
+   "ic_std_cent": 10.5,
+   "vibrato": false
+  },
+  {
+   "bas": 11.79,
+   "sure": 0.21,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 5.5,
+   "vibrato": false
+  },
+  {
+   "bas": 12.08,
+   "sure": 0.51,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 10.4,
+   "vibrato": false
+  },
+  {
+   "bas": 12.59,
+   "sure": 0.26,
+   "nota": "D4",
+   "cent": -13,
+   "ic_std_cent": 5.5,
+   "vibrato": false
+  },
+  {
+   "bas": 13.17,
+   "sure": 0.42,
+   "nota": "D4",
+   "cent": -14,
+   "ic_std_cent": 7.5,
+   "vibrato": false
+  },
+  {
+   "bas": 14.13,
+   "sure": 0.13,
+   "nota": "D4",
+   "cent": 8,
+   "ic_std_cent": 4.1,
+   "vibrato": false
+  },
+  {
+   "bas": 14.4,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": -5,
+   "ic_std_cent": 1.5,
+   "vibrato": false
+  },
+  {
+   "bas": 15.15,
+   "sure": 0.38,
+   "nota": "C4",
+   "cent": -17,
+   "ic_std_cent": 9.6,
+   "vibrato": true
+  },
+  {
+   "bas": 16.22,
+   "sure": 0.16,
+   "nota": "C4",
+   "cent": 9,
+   "ic_std_cent": 2.2,
+   "vibrato": false
+  },
+  {
+   "bas": 16.4,
+   "sure": 0.11,
+   "nota": "C4",
+   "cent": 6,
+   "ic_std_cent": 2.1,
+   "vibrato": false
+  }
+ ],
+ "calisma_sureleri_sn": {
+  "cozme + temel": 0.5,
+  "enerji": 1.8,
+  "kanallar": 0.0,
+  "perde izleme": 0.7,
+  "nota + uyum": 0.0,
+  "yapaylik vekilleri": 0.0,
+  "sozler": 0.3
+ },
+ "toplam_sure_sn": 4.0,
+ "ozet": [
+  {
+   "durum": "dikkat",
+   "konu": "Ses yüksekliği",
+   "bulgu": "-18,4 LUFS, gerçek tepe -5,3 dBTP (YouTube yaklaşık -14 LUFS'e çeker; kısık kalır)."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Enerji / coşku",
+   "bulgu": "hareketlilik puanı 43/100 (tempo 115 BPM, saniyede 3,7 olay) → **ninni/sakin yana kayıyor olabilir**. Projedeki sürümlerle karşılaştırma (hareketlilik puanı: 'coşkulu' adlı 6 sürümde 66…79, 'yavaş' adlı 3 sürümde 52…61)."
+  },
+  {
+   "durum": "bilgi",
+   "konu": "Uyum",
+   "bulgu": "altyapı olmadığı için vokal-altyapı uyumu ölçülmedi (yalnızca vokalin kendi perdesi ölçüldü)."
+  },
+  {
+   "durum": "bilgi",
+   "konu": "Yapaylık işaretleri (vekil)",
+   "bulgu": "işaret bulunmadı — bu 'doğal' demek DEĞİLDİR, yalnızca bilinen kaba izler yok."
+  },
+  {
+   "durum": "bilgi",
+   "konu": "Söyleyiş hızı",
+   "bulgu": "söz öbeklerinde medyan 2,0 hece/sn (en hızlı 2,0)."
+  }
+ ]
+}

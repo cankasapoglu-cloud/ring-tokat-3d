@@ -20,9 +20,9 @@
  "b03b_esnetme_20": {
   "vokal_perde_farki_cent_medyan": 0.0,
   "gecikme_ms": 0.0,
-  "fark_sinyali_db_vokale_gore": 1.4,
+  "fark_sinyali_db_vokale_gore": 3.1,
   "baslangic_keskinligi_p99_taban": 0.696,
-  "baslangic_keskinligi_p99_bozuk": 0.574,
+  "baslangic_keskinligi_p99_bozuk": 0.576,
   "yorum": "perde ve zamanlama ayni; dalga bicimi tumuyle degismis (fark sinyali vokal kadar guclu), ani baslangiclar yumusamis"
  },
  "b04k_world_kontrol": {
@@ -50,7 +50,16 @@
   ],
   "tik_tepe_genligi_medyan": 0.45,
   "karisimin_tepe_genligi": 1.0,
-  "beklenen": "36 tik, 2,37 sn'den baslayarak 3 sn arayla"
+  "beklenen": "36 tik, 2,37 sn'den baslayarak 3 sn arayla",
+  "tik_aninda_6_16khz_fazlalik_db_medyan": 8.9,
+  "en_az": 1.2
+ },
+ "b05b_tik_kisik": {
+  "bulunan_tik_sayisi": 35,
+  "tik_tepe_genligi_medyan": 0.15,
+  "tik_aninda_6_16khz_fazlalik_db_medyan": 2.2,
+  "en_az": -0.7,
+  "yorum": "tik aninda tiz bantta muzigin 10 dB'den fazla ustune cikan bir patlama, kulaklikta 'cit' diye duyulur"
  },
  "b06a_vokal_eksi6": {
   "vokal_duzey_farki_db": -6.0,

@@ -1,0 +1,16 @@
+dinle.py: /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/yeni2/sarki_birlesik.mp3 -> /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/ali-baba__sarki_birlesik__gercek_kanallar
+  [cozme + temel            4.8 sn]
+  [enerji                   8.3 sn]
+  [CED etiket (karisim)     1.0 sn]
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  [MusicCoCa               11.5 sn]
+  [kanallar                 1.1 sn]
+  [ton + akor              10.0 sn]
+  [perde izleme             5.6 sn]
+  [nota + uyum              0.1 sn]
+  [ritim                    0.4 sn]
+  [yapaylik vekilleri       0.2 sn]
+  [MOS tahminleri (vokal)  42.5 sn]
+  [sozler                   0.4 sn]
+  [panolar                  9.0 sn]
+bitti: 95 sn. Rapor: /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/ali-baba__sarki_birlesik__gercek_kanallar/rapor.md
