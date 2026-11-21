@@ -22,25 +22,27 @@ Yöntem: Önce en çok izlenen videoların **temasını ve formülünü** kendi 
 | 10 | Kukuli – Bakkal Amca (764 M) | Mizah, ritim, tanıdık mahalle | **Pazar Şarkısı** (meyve ve sebzeler) | meyveler şarkısı, sebzeler, pazar | Tamamen özgün; Kukuli'ye benzemeyecek | Sonra |
 | 11 | Kırmızı Balık Gölde – Sevimli Dostlar (303 M) | Bilinen tekerleme | **Kırmızı Balık** (kendi düzenlememiz) | kırmızı balık gölde, tekerleme | Anonim olarak bilinir; yayından önce doğrulanmalı | Doğrulama bekliyor |
 | 12 | Maşa ile Koca Ayı (4,7 Mr) | Konuşmasız mizah, dil engeli yok | **Pıtır'ın Küçük Maceraları** (1 dakikalık sessiz komedi) | komik çizgi film, kedi çizgi film | Tamamen özgün | Sonra |
+| 13 | Finger Family ("Baby Finger", "Daddy Finger"; birçok kanalda milyarlarca izlenme) | Aile üyeleri, parmak oyunu, çocuk eliyle eşlik eder | **Parmak Ailesi** (bebek parmak, anne parmak, baba parmak…; Pıtır'ın patisiyle) | parmak ailesi şarkısı, bebek parmak, parmak oyunu | Kalıp geleneksel sayılır; söz ve melodi bizim olacak | Sırada |
+| 14 | Five Little Monkeys ("Beş Küçük Maymun"; birçok kanalda milyarlarca izlenme) | Geri sayma, tekrar, komik düşme | **Beş Küçük Maymun** (yatakta zıplayan maymunlar; 5'ten 1'e sayma) | beş küçük maymun, sayma şarkısı, geri sayım | Geleneksel tekerleme; kendi Türkçe sözümüz ve melodimiz | Sırada |
 
-Mr = milyar, M = milyon.
+Mr = milyar, M = milyon. 13 ve 14. satırlardaki izlenme bilgisi genel bilgidir, derlemede yoktu.
 
 ## Faz 2 — Derlemeler (5 şarkı tamamlanınca)
 
 | # | Video | İçerik | Neden |
 |---|---|---|---|
-| 13 | **Pıtır ile En Sevilen Şarkılar** (15 dk) | İlk 5–6 şarkı arka arkaya | Kukuli'nin "Tüm Şarkılar (1 Saat)" videosu 100 M izlenmiş; izlenme süresinin çoğu derlemelerden gelir |
-| 14 | **Pıtır ile Öğren – Uzun Bölüm** (10 dk) | Mevcut öğretici bölüm (renkler, sayılar, şekiller, hayvanlar, taşıtlar) | Hazır; şarkıların arasına konur |
+| 15 | **Pıtır ile En Sevilen Şarkılar** (15 dk) | İlk 5–6 şarkı arka arkaya | Kukuli'nin "Tüm Şarkılar (1 Saat)" videosu 100 M izlenmiş; izlenme süresinin çoğu derlemelerden gelir |
+| 16 | **Pıtır ile Öğren – Uzun Bölüm** (10 dk) | Mevcut öğretici bölüm (renkler, sayılar, şekiller, hayvanlar, taşıtlar) | Hazır; şarkıların arasına konur |
 
 ## Faz 3 — Özgün Pıtır içerikleri (abone geldikçe)
 
 | # | Seri | Fikir |
 |---|---|---|
-| 15 | **Pıtır ve Arkadaşları** | İnek, koyun, ördek ve köpekle kısa hikâyeler: paylaşma, sıra bekleme, özür dileme |
-| 16 | **Pıtır Soruyor** | "Yağmur neden yağar?", "Arılar ne yapar?" gibi 2 dakikalık merak videoları (5–7 yaş) |
-| 17 | **Hareket Zamanı** | Pıtır'la birlikte zıpla, dön, esne; öğretmenlerin sınıfta açacağı videolar |
-| 18 | **Uyku Vakti** | Sakin ninni ve masal; akşam izlenmesi için |
-| 19 | **Mevsim ve bayram özel bölümleri** | 23 Nisan, yılbaşı, okula başlama |
+| 17 | **Pıtır ve Arkadaşları** | İnek, koyun, ördek ve köpekle kısa hikâyeler: paylaşma, sıra bekleme, özür dileme |
+| 18 | **Pıtır Soruyor** | "Yağmur neden yağar?", "Arılar ne yapar?" gibi 2 dakikalık merak videoları (5–7 yaş) |
+| 19 | **Hareket Zamanı** | Pıtır'la birlikte zıpla, dön, esne; öğretmenlerin sınıfta açacağı videolar |
+| 20 | **Uyku Vakti** | Sakin ninni ve masal; akşam izlenmesi için |
+| 21 | **Mevsim ve bayram özel bölümleri** | 23 Nisan, yılbaşı, okula başlama |
 
 ## Üretim sırası ve bütçe
 
@@ -48,8 +50,8 @@ Tam hareketli bir şarkı klibi yaklaşık 40.000 ElevenLabs kredisi tutuyor.
 
 | Dönem | Üretilecek | Tahmini kredi |
 |---|---|---|
-| Bu ay (kalan kredi yaklaşık 170.000) | Ali Baba'nın Çiftliği (üretimde), Pıtır'ın Ailesi, El Yıkama Şarkısı, Otobüs Şarkısı | 160.000 |
-| Gelecek ay | Gezegenler, Harfler, Sayı Şarkısı, Banyo Şarkısı, ilk derleme | 160.000 |
+| Bu ay (kalan kredi yaklaşık 170.000) | Ali Baba'nın Çiftliği (üretimde), Parmak Ailesi, Beş Küçük Maymun, Pıtır'ın Ailesi | 160.000 |
+| Gelecek ay | El Yıkama, Otobüs, Gezegenler, Sayı Şarkısı, ilk derleme | 160.000 |
 | Sonraki ay | Kalan Faz 1 videoları, Faz 3'ün ilk serisi | — |
 
 ## Kurallar
