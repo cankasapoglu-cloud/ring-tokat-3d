@@ -1,0 +1,31 @@
+{
+ "old_bpm": 104.96,
+ "new_bpm": 105.3,
+ "key": "G",
+ "expected_time_ratio": 0.99677113,
+ "build_seconds": 23.9,
+ "json_time_values_compared": 2195,
+ "json_time_max_error_ms": 0.0964,
+ "json_other_values_compared": 9938,
+ "json_other_values_different": 0,
+ "file_duration_old_new_s": [
+  148.2698,
+  147.7991
+ ],
+ "file_duration_minus_tail_scales": true,
+ "bar_s_old_new": [
+  2.286585,
+  2.279202
+ ],
+ "bar_s_expected_new": 2.279202,
+ "audio_fitted_bar_s_new": 2.27918,
+ "audio_fitted_bpm_new": 105.301,
+ "audio_kick_drift_whole_song_ms": -0.75,
+ "audio_melody_notes_checked_matched_new": [
+  761,
+  761
+ ],
+ "verification_of_new_render_failed_checks": [],
+ "mismatches": [],
+ "ok": true
+}

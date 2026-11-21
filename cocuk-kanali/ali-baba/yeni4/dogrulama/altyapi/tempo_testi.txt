@@ -1,0 +1,12 @@
+json leaves 12145: equal 9953, scaled by 0.99677113 (old/new bpm) 2188 (largest error 0.096 ms), other 4
+    OTHER /tempo_bpm: 104.96 -> 105.3   (old*ratio = 104.6211)
+    OTHER /dosya_suresi_sn: 148.2698 -> 147.7991   (old*ratio = 147.7911)
+    OTHER /ana_kazanc/kazanc_dB: 7.7108 -> 7.6762   (old*ratio = 7.6859)
+    OTHER /gecikme_telafisi/one_alma_ms/klarnet: 16.7 -> 16.6   (old*ratio = 16.6461)
+keys whose values changed: ['baslangic', 'bitis', 'dosya_suresi_sn', 'ilk_son_olcu_vurusu', 'kazanc_dB', 'klarnet', 'muzik_bitis', 'muzik_bitis_sn', 'olcu_baslangiclari', 'olcu_sn', 'ses1_baslangic', 'ses2_baslangic', 'ses_basina_yer_sn', 'son_vurus', 'son_vurus_sn', 'sure', 'tempo_bpm', 'vurus_sn', 'vurus_zamanlari']
+non-zero values under those keys that did NOT change (would be unscaled times): 0 []
+new json: 64 bars; all bar/beat/note/verse-anchor times vs my arithmetic at 105.3 BPM (bar 2.279202 s): max error 0.050 ms (json is rounded to 0.1 ms)
+new file: 147.7991 s; expected final hit (63 bars + 3 beats = 145.2991) + tail 2.5 = 147.7991; json says 147.7991
+blind grid of the NEW audio, 6-14 kHz onsets (hat/snare/tambourine): scan 90-120 BPM -> 105.300; refined 105.3012 BPM (bar 2.279177 s), 380/422 onsets on the grid, sd 2.32 ms, phase +3.72 ms; difference to 105.3 BPM accumulated over 64 bars: -1.61 ms
+blind grid of the NEW audio, 2-5 kHz onsets: scan 90-120 BPM -> 105.304; refined 105.3019 BPM (bar 2.279160 s), 367/493 onsets on the grid, sd 2.37 ms, phase +3.88 ms; difference to 105.3 BPM accumulated over 64 bars: -2.69 ms
+for scale: bar 52 (verse 7) starts 118.5185 s in the new grid vs 118.9024 s in the old one (+383.9 ms)

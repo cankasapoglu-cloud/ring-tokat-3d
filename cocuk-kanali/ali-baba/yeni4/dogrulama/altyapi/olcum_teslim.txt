@@ -1,0 +1,173 @@
+
+=========== key G ===========
+altyapi_G.wav: 2 ch 44100 Hz PCM_16 6538699 fr = 148.2698 s | peak -1.50 dBFS, TP 4x -1.12 / 8x -1.12 / ffmpeg -1.1 dBTP | samples at full scale 0, flat-top pairs at max 0 | -14.01 LUFS (pyloudnorm), -14.0 LUFS LRA 15.1 (ffmpeg)
+ezgi_alti_G.wav: 2 ch 44100 Hz PCM_16 6538699 fr = 148.2698 s | peak -13.84 dBFS, TP 4x -13.83 / 8x -13.81 / ffmpeg -13.8 dBTP | samples at full scale 0, flat-top pairs at max 0 | -21.90 LUFS (pyloudnorm), -21.9 LUFS LRA 6.3 (ffmpeg)
+rehber_G.wav: 2 ch 44100 Hz PCM_16 6538699 fr = 148.2698 s | peak -1.50 dBFS, TP 4x -1.12 / 8x -1.12 / ffmpeg -1.1 dBTP | samples at full scale 0, flat-top pairs at max 0 | -13.68 LUFS (pyloudnorm), -13.6 LUFS LRA 14.7 (ffmpeg)
+max |rehber - (altyapi+ezgi_alti)| = 1.00 LSB
+json: 64 bars, bpm 104.96, bar 2.286585 s; bar/beat times vs i*BAR + b*BEAT: max err 0.049 ms; verse starts [9.1463, 27.439, 45.7317, 64.0244, 82.3171, 100.6098, 118.9024] (max err vs (4+8v)*BAR 0.044 ms)
+json: toplam_olcu 64, muzik_bitis 146.3415 (64*BAR = 146.3415), son_vurus 145.7698, dosya 148.2698 s, file 148.2698 s
+json verse anchors (L1, answer, L2, call1, call2, fill, diye, L4, answer) vs my arithmetic: max err 0.049 ms
+json verse-1 degrees per bar: ['I I IV I', 'I V7 I I', 'I I IV I', 'I I I I', 'I I I I', 'I I I I', 'I I IV I', 'I V7 I I']
+json intro degrees: ['I I IV I', 'I V7 I I', 'I I IV I', 'I V7 I I'] | ending: ['I V7 I I', 'I V7 I I', 'IV IV V7 V7', 'I I I I']
+blind grid, low 35-110 Hz (kick/bass): period scan 90-120 BPM without prior -> 104.964 BPM; 475 onsets, 254 within 25 ms of the refined grid; period 0.571643 s = 104.9606 BPM (json 104.96); phase of grid vs t=0: +29.69 ms; resid sd 8.46 ms; accumulated difference vs nominal over the file -0.88 ms
+blind grid, high 6-14 kHz (hat/snare/tamb.): period scan 90-120 BPM without prior -> 104.960 BPM; 442 onsets, 379 within 25 ms of the refined grid; period 0.571643 s = 104.9606 BPM (json 104.96); phase of grid vs t=0: +4.99 ms; resid sd 3.76 ms; accumulated difference vs nominal over the file -0.83 ms
+blind grid, snare body 160-260 Hz: period scan 90-120 BPM without prior -> 104.956 BPM; 466 onsets, 176 within 25 ms of the refined grid; period 0.571653 s = 104.9587 BPM (json 104.96); phase of grid vs t=0: +4.01 ms; resid sd 7.41 ms; accumulated difference vs nominal over the file +1.78 ms
+COARSE ONLY (mix low band = kick + bass through a 35-110 Hz filter, whose own rise time is ~20 ms; the stem-based kick timing is in 02_stem_olcum.py): low-band onset at json beats (+-30 ms): 187/256; onset(max slope) minus json: median +23.94 ms, min +13.50, max +26.12; first 16 beats +24.42, last 16 +22.13; missing (bar, beat, t): [(0, 2, 1.143), (1, 1, 2.858), (2, 2, 5.716), (3, 1, 7.431), (4, 2, 10.29), (5, 1, 12.005), (6, 2, 14.863), (7, 2, 17.149), (8, 2, 19.436), (9, 1, 21.151), (9, 2, 21.723), (10, 2, 24.009), (11, 1, 25.724), (12, 2, 28.582), (13, 1, 30.297), (14, 2, 33.156), (15, 2, 35.442), (16, 2, 37.729), (17, 1, 39.444), (17, 2, 40.015), (18, 2, 42.302), (19, 1, 44.017), (20, 2, 46.875), (21, 1, 48.59), (22, 2, 51.448), (23, 2, 53.735), (24, 2, 56.021), (25, 1, 57.736), (25, 2, 58.308), (26, 2, 60.594), (27, 1, 62.309), (28, 2, 65.168), (29, 1, 66.883), (30, 2, 69.741), (31, 2, 72.027), (32, 2, 74.314), (33, 1, 76.029), (33, 2, 76.601), (34, 2, 78.887), (35, 1, 80.602), (36, 2, 83.46), (37, 1, 85.175), (38, 2, 88.034), (39, 2, 90.32), (40, 2, 92.607), (41, 1, 94.322), (41, 2, 94.893), (42, 2, 97.18), (43, 1, 98.895), (44, 2, 101.753), (45, 1, 103.468), (46, 2, 106.326), (47, 2, 108.613), (48, 2, 110.899), (49, 1, 112.614), (49, 2, 113.186), (50, 2, 115.473), (51, 1, 117.188), (52, 2, 120.046), (53, 1, 121.761), (54, 2, 124.619), (55, 2, 126.906), (56, 2, 129.192), (57, 1, 130.907), (57, 2, 131.479), (58, 2, 133.765), (59, 1, 135.48), (60, 1, 137.767), (61, 1, 140.053)]
+2-5 kHz level in the first 120 ms of beats 0..3, mean per bar kind (snare+clap expected on beats 1 and 3 of full bars, not in slot bars):
+    intro_a        [-21.9, -21.9, -21.7, -20.5]
+    intro_ans      [-25.1, -24.8, -21.6, -24.3]
+    intro_ansfill  [-25.4, -24.5, -21.9, -24.4]
+    voc            [-29.1, -27.4, -35.1, -27.9]
+    ans            [-24.9, -24.6, -21.6, -23.6]
+    voc_cut        [-32.5, -27.9, -35.5, -27.9]
+    slot           [-46.6, -52.1, -47.8, -52.2]
+    fillin         [-37.4, -34.9, -31.6, -27.3]
+    ansfill        [-25.0, -24.8, -21.6, -24.2]
+    ans2           [-24.3, -24.4, -21.3, -23.1]
+    roll           [-25.1, -24.3, -25.3, -23.7]
+    final          [-20.5, -20.2, -20.2, -20.5]
+altyapi: RMS dBFS per verse bar (rows = verses):
+     -18.9   -16.6   -19.6   -31.4   -31.6   -19.5   -18.8   -16.1
+     -18.4   -16.8   -19.0   -31.4   -31.5   -19.3   -19.6   -16.0
+     -18.8   -16.6   -18.7   -31.3   -31.5   -19.2   -18.9   -15.8
+     -18.7   -16.2   -19.4   -31.3   -31.6   -19.4   -18.9   -16.0
+     -18.6   -16.7   -18.9   -31.5   -31.5   -19.2   -19.5   -15.9
+     -18.8   -16.4   -18.9   -31.3   -31.6   -19.0   -18.9   -15.6
+     -18.5   -16.3   -19.4   -31.4   -31.6   -19.2   -19.0   -15.9
+altyapi: K-weighted loudness (LUFS, 400 ms blocks) per verse bar:
+     -16.1   -12.7   -16.9   -29.7   -30.1   -17.2   -16.2   -12.4
+     -15.7   -12.8   -16.3   -29.7   -30.1   -16.9   -16.9   -12.3
+     -15.9   -12.6   -16.0   -29.9   -30.1   -16.8   -16.3   -12.2
+     -15.9   -12.4   -16.7   -29.9   -30.1   -17.0   -16.3   -12.3
+     -15.9   -12.7   -16.2   -30.0   -30.1   -16.9   -16.8   -12.3
+     -16.0   -12.5   -16.2   -29.9   -30.1   -16.7   -16.3   -12.0
+     -15.8   -12.4   -16.7   -30.0   -30.1   -16.9   -16.3   -12.3
+altyapi: quietest normal bar minus loudest slot bar, per verse: RMS 11.8..12.3 dB; K-weighted 12.6..13.2 LU; mean of normal bars minus slot bars 13.1..13.6 dB
+rehber: RMS dBFS per verse bar (rows = verses):
+     -18.2   -16.6   -18.8   -31.4   -31.6   -19.3   -18.2   -16.1
+     -17.8   -16.8   -18.4   -31.4   -31.5   -19.1   -18.8   -16.0
+     -18.2   -16.6   -18.2   -31.2   -31.5   -19.0   -18.3   -15.8
+     -18.1   -16.2   -18.8   -31.3   -31.6   -19.2   -18.3   -16.0
+     -18.0   -16.7   -18.3   -31.5   -31.5   -19.0   -18.8   -15.9
+     -18.3   -16.4   -18.3   -31.3   -31.6   -18.9   -18.3   -15.6
+     -17.9   -16.3   -18.6   -31.3   -31.6   -19.0   -18.3   -15.9
+rehber: K-weighted loudness (LUFS, 400 ms blocks) per verse bar:
+     -15.0   -12.7   -15.5   -29.7   -30.1   -16.7   -15.1   -12.4
+     -14.7   -12.8   -15.3   -29.7   -30.1   -16.6   -15.7   -12.3
+     -14.9   -12.6   -15.0   -29.6   -30.1   -16.4   -15.2   -12.2
+     -14.9   -12.3   -15.5   -29.9   -30.1   -16.5   -15.2   -12.3
+     -14.9   -12.7   -15.1   -30.0   -30.1   -16.5   -15.5   -12.3
+     -15.0   -12.5   -15.1   -29.9   -30.1   -16.4   -15.2   -12.0
+     -14.7   -12.4   -15.4   -29.9   -30.1   -16.4   -15.1   -12.3
+rehber: quietest normal bar minus loudest slot bar, per verse: RMS 12.0..12.5 dB; K-weighted 12.9..13.6 LU; mean of normal bars minus slot bars 13.5..13.9 dB
+sub-window RMS dBFS over the 7 verses (min / mean / max):
+    alt b5 beats0-1          -20.0   -19.8   -19.7
+    alt b5 beats2-3          -19.3   -18.8   -18.3
+    alt b0 beats2-3          -19.1   -18.6   -18.2
+    alt b3 first250ms        -26.2   -25.9   -25.7
+    alt b3 rest              -33.0   -33.0   -32.9
+    alt b4 first250ms        -26.5   -26.5   -26.3
+    alt b4 rest              -32.9   -32.9   -32.9
+    ezgi b3 first250ms       -44.6   -43.4   -41.8
+    ezgi b3 rest             -67.0   -65.9   -64.9
+    ezgi b2                  -26.6   -26.4   -26.3
+    ezgi b1                  -53.5   -52.5   -51.4
+    ezgi b4                  -93.1   -93.1   -93.1
+    ezgi b5 beats0-1         -63.4   -62.5   -61.3
+    ezgi b5 beats2-3         -29.1   -28.9   -28.8
+    ezgi b7                  -53.7   -52.5   -51.2
+    ezgi b0                  -26.6   -26.4   -26.3
+    ezgi b6                  -26.6   -26.4   -26.3
+ezgi_alti in the intro (0..9.1463): RMS -69.4 dBFS, peak -30.2; in the ending (137.1951..end): RMS -90.9 dBFS
+tail: final hit json 145.7698, loudest hit of the last 4 s detected (25 % rise point, 2-12 kHz) at 145.7712 s; file end - hit = 2.499 s; end of bar 64 = 146.3415 s, file end - bar-64 end = 1.928 s
+      level 1.0-1.5 s after the hit -12.9 dBFS; 0.6-0.4 s before the end (just before the 0.4 s fade) -37.6; last 400 ms -52.0; last 20 ms -84.3 (peak -73.4)
+      file start: peak in the first 1 ms -21.0 dBFS, first 10 ms -4.8 dBFS (music starts at sample 0, no lead-in silence)
+
+=========== key C ===========
+altyapi_C.wav: 2 ch 44100 Hz PCM_16 6538699 fr = 148.2698 s | peak -1.50 dBFS, TP 4x -1.07 / 8x -1.05 / ffmpeg -1.0 dBTP | samples at full scale 0, flat-top pairs at max 0 | -14.01 LUFS (pyloudnorm), -14.0 LUFS LRA 14.4 (ffmpeg)
+ezgi_alti_C.wav: 2 ch 44100 Hz PCM_16 6538699 fr = 148.2698 s | peak -13.74 dBFS, TP 4x -13.73 / 8x -13.70 / ffmpeg -13.7 dBTP | samples at full scale 0, flat-top pairs at max 0 | -22.36 LUFS (pyloudnorm), -22.3 LUFS LRA 6.4 (ffmpeg)
+rehber_C.wav: 2 ch 44100 Hz PCM_16 6538699 fr = 148.2698 s | peak -1.50 dBFS, TP 4x -1.07 / 8x -1.05 / ffmpeg -1.0 dBTP | samples at full scale 0, flat-top pairs at max 0 | -13.67 LUFS (pyloudnorm), -13.6 LUFS LRA 14.1 (ffmpeg)
+max |rehber - (altyapi+ezgi_alti)| = 1.00 LSB
+json: 64 bars, bpm 104.96, bar 2.286585 s; bar/beat times vs i*BAR + b*BEAT: max err 0.049 ms; verse starts [9.1463, 27.439, 45.7317, 64.0244, 82.3171, 100.6098, 118.9024] (max err vs (4+8v)*BAR 0.044 ms)
+json: toplam_olcu 64, muzik_bitis 146.3415 (64*BAR = 146.3415), son_vurus 145.7698, dosya 148.2698 s, file 148.2698 s
+json verse anchors (L1, answer, L2, call1, call2, fill, diye, L4, answer) vs my arithmetic: max err 0.049 ms
+json verse-1 degrees per bar: ['I I IV I', 'I V7 I I', 'I I IV I', 'I I I I', 'I I I I', 'I I I I', 'I I IV I', 'I V7 I I']
+json intro degrees: ['I I IV I', 'I V7 I I', 'I I IV I', 'I V7 I I'] | ending: ['I V7 I I', 'I V7 I I', 'IV IV V7 V7', 'I I I I']
+blind grid, low 35-110 Hz (kick/bass): period scan 90-120 BPM without prior -> 104.964 BPM; 516 onsets, 240 within 25 ms of the refined grid; period 0.571630 s = 104.9631 BPM (json 104.96); phase of grid vs t=0: +36.91 ms; resid sd 10.30 ms; accumulated difference vs nominal over the file -4.31 ms
+blind grid, high 6-14 kHz (hat/snare/tamb.): period scan 90-120 BPM without prior -> 104.960 BPM; 374 onsets, 334 within 25 ms of the refined grid; period 0.571644 s = 104.9605 BPM (json 104.96); phase of grid vs t=0: +5.23 ms; resid sd 3.79 ms; accumulated difference vs nominal over the file -0.65 ms
+blind grid, snare body 160-260 Hz: period scan 90-120 BPM without prior -> 104.978 BPM; 524 onsets, 168 within 25 ms of the refined grid; period 0.571646 s = 104.9601 BPM (json 104.96); phase of grid vs t=0: +5.76 ms; resid sd 5.84 ms; accumulated difference vs nominal over the file -0.21 ms
+COARSE ONLY (mix low band = kick + bass through a 35-110 Hz filter, whose own rise time is ~20 ms; the stem-based kick timing is in 02_stem_olcum.py): low-band onset at json beats (+-30 ms): 124/256; onset(max slope) minus json: median +23.81 ms, min +2.56, max +26.14; first 16 beats +19.90, last 16 +19.99; missing (bar, beat, t): [(0, 0, 0.0), (0, 1, 0.572), (0, 3, 1.715), (1, 2, 3.43), (1, 3, 4.002), (2, 0, 4.573), (2, 1, 5.145), (2, 3, 6.288), (3, 2, 8.003), (3, 3, 8.575), (4, 1, 9.718), (4, 3, 10.861), (5, 2, 12.576), (5, 3, 13.148), (6, 0, 13.72), (6, 1, 14.291), (6, 3, 15.434), (7, 0, 16.006), (8, 0, 18.293), (9, 0, 20.579), (9, 3, 22.294), (10, 0, 22.866), (10, 1, 23.438), (10, 3, 24.581), (11, 2, 26.296), (11, 3, 26.867), (12, 1, 28.011), (12, 3, 29.154), (13, 2, 30.869), (13, 3, 31.441), (14, 0, 32.012), (14, 1, 32.584), (14, 3, 33.727), (15, 0, 34.299), (16, 0, 36.585), (17, 0, 38.872), (17, 3, 40.587), (18, 0, 41.158), (18, 1, 41.73), (18, 3, 42.873), (19, 2, 44.588), (19, 3, 45.16), (20, 1, 46.303), (20, 3, 47.447), (21, 0, 48.018), (21, 2, 49.162), (21, 3, 49.733), (22, 0, 50.305), (22, 1, 50.877), (22, 3, 52.02), (23, 0, 52.592), (24, 0, 54.878), (25, 0, 57.165), (25, 3, 58.88), (26, 0, 59.451), (26, 1, 60.023), (26, 3, 61.166), (27, 2, 62.881), (27, 3, 63.453), (28, 1, 64.596), (28, 3, 65.739), (29, 0, 66.311), (29, 2, 67.454), (29, 3, 68.026), (30, 0, 68.598), (30, 1, 69.169), (30, 3, 70.312), (31, 0, 70.884), (32, 0, 73.171), (33, 0, 75.457), (33, 3, 77.172), (34, 0, 77.744), (34, 1, 78.316), (34, 3, 79.459), (35, 0, 80.031), (35, 2, 81.174), (35, 3, 81.745), (36, 1, 82.889), (36, 3, 84.032), (37, 2, 85.747), (37, 3, 86.319), (38, 0, 86.89), (38, 1, 87.462), (38, 3, 88.605), (39, 0, 89.177), (40, 0, 91.463), (41, 0, 93.75), (41, 3, 95.465), (42, 0, 96.037), (42, 1, 96.608), (42, 3, 97.751), (43, 0, 98.323), (43, 2, 99.466), (43, 3, 100.038), (44, 1, 101.181), (44, 3, 102.325), (45, 2, 104.04), (45, 3, 104.611), (46, 0, 105.183), (46, 1, 105.755), (46, 3, 106.898), (47, 0, 107.469), (48, 0, 109.756), (49, 0, 112.043), (49, 3, 113.758), (50, 0, 114.329), (50, 1, 114.901), (50, 3, 116.044), (51, 2, 117.759), (51, 3, 118.331), (52, 1, 119.474), (52, 3, 120.617), (53, 2, 122.332), (53, 3, 122.904), (54, 0, 123.476), (54, 1, 124.047), (54, 3, 125.191), (55, 0, 125.762), (56, 0, 128.049), (57, 0, 130.335), (57, 3, 132.05), (58, 0, 132.622), (58, 1, 133.194), (58, 3, 134.337), (59, 2, 136.052), (59, 3, 136.624), (60, 2, 138.338), (60, 3, 138.91), (61, 0, 139.482), (61, 2, 140.625), (61, 3, 141.197), (63, 3, 145.77)]
+2-5 kHz level in the first 120 ms of beats 0..3, mean per bar kind (snare+clap expected on beats 1 and 3 of full bars, not in slot bars):
+    intro_a        [-25.9, -26.3, -26.0, -22.8]
+    intro_ans      [-25.1, -25.0, -26.8, -25.4]
+    intro_ansfill  [-25.0, -24.4, -27.1, -24.2]
+    voc            [-30.9, -29.2, -35.7, -29.3]
+    ans            [-25.4, -24.9, -26.3, -24.0]
+    voc_cut        [-35.4, -29.3, -36.2, -29.3]
+    slot           [-47.2, -52.2, -47.9, -52.3]
+    fillin         [-37.6, -35.1, -33.5, -29.1]
+    ansfill        [-25.5, -24.9, -26.8, -24.5]
+    ans2           [-24.6, -24.1, -25.9, -24.4]
+    roll           [-21.6, -26.4, -23.8, -26.4]
+    final          [-22.7, -21.8, -23.2, -23.1]
+altyapi: RMS dBFS per verse bar (rows = verses):
+     -18.8   -16.1   -19.1   -30.3   -30.3   -19.0   -19.1   -15.4
+     -18.9   -15.8   -19.2   -30.3   -30.3   -19.2   -19.0   -15.4
+     -18.9   -15.8   -19.4   -30.3   -30.3   -19.1   -18.9   -15.4
+     -18.7   -15.9   -19.2   -30.2   -30.3   -19.1   -19.0   -15.4
+     -18.6   -16.0   -19.1   -30.3   -30.3   -19.1   -19.1   -15.6
+     -18.5   -16.0   -19.2   -30.3   -30.3   -19.2   -18.8   -15.6
+     -18.8   -16.1   -19.2   -30.2   -30.3   -19.0   -18.9   -15.6
+altyapi: K-weighted loudness (LUFS, 400 ms blocks) per verse bar:
+     -16.3   -12.2   -16.7   -28.7   -28.7   -16.8   -16.7   -11.9
+     -16.4   -12.0   -16.7   -28.7   -28.7   -16.9   -16.6   -11.9
+     -16.3   -12.0   -16.9   -28.7   -28.7   -16.9   -16.5   -11.8
+     -16.2   -12.0   -16.8   -28.6   -28.7   -16.9   -16.5   -11.9
+     -16.0   -12.1   -16.6   -28.6   -28.8   -16.9   -16.6   -12.0
+     -16.0   -12.1   -16.7   -28.7   -28.7   -16.9   -16.4   -12.0
+     -16.2   -12.2   -16.7   -28.6   -28.7   -16.7   -16.5   -12.0
+altyapi: quietest normal bar minus loudest slot bar, per verse: RMS 10.9..11.2 dB; K-weighted 11.7..11.9 LU; mean of normal bars minus slot bars 12.3..12.4 dB
+rehber: RMS dBFS per verse bar (rows = verses):
+     -18.2   -16.1   -18.4   -30.3   -30.3   -18.7   -18.4   -15.4
+     -18.2   -15.8   -18.4   -30.3   -30.3   -18.9   -18.3   -15.4
+     -18.2   -15.8   -18.5   -30.2   -30.3   -18.8   -18.1   -15.4
+     -18.0   -15.9   -18.5   -30.2   -30.3   -18.9   -18.3   -15.4
+     -17.9   -16.0   -18.3   -30.3   -30.3   -18.9   -18.5   -15.6
+     -17.9   -16.0   -18.4   -30.2   -30.3   -18.9   -18.1   -15.6
+     -18.2   -16.1   -18.6   -30.2   -30.3   -18.8   -18.1   -15.6
+rehber: K-weighted loudness (LUFS, 400 ms blocks) per verse bar:
+     -15.3   -12.2   -15.5   -28.7   -28.7   -16.3   -15.5   -11.9
+     -15.3   -12.0   -15.5   -28.7   -28.7   -16.4   -15.5   -11.9
+     -15.2   -12.0   -15.6   -28.6   -28.7   -16.4   -15.2   -11.8
+     -15.1   -12.0   -15.6   -28.6   -28.7   -16.4   -15.4   -11.9
+     -14.9   -12.1   -15.4   -28.6   -28.8   -16.4   -15.6   -12.0
+     -15.0   -12.1   -15.5   -28.6   -28.7   -16.4   -15.3   -12.0
+     -15.2   -12.2   -15.6   -28.6   -28.7   -16.3   -15.3   -12.0
+rehber: quietest normal bar minus loudest slot bar, per verse: RMS 11.3..11.5 dB; K-weighted 12.2..12.3 LU; mean of normal bars minus slot bars 12.6..12.8 dB
+sub-window RMS dBFS over the 7 verses (min / mean / max):
+    alt b5 beats0-1          -19.5   -19.3   -19.1
+    alt b5 beats2-3          -19.1   -19.0   -18.8
+    alt b0 beats2-3          -19.1   -18.8   -18.6
+    alt b3 first250ms        -24.7   -24.5   -24.4
+    alt b3 rest              -32.1   -32.1   -32.0
+    alt b4 first250ms        -24.8   -24.7   -24.7
+    alt b4 rest              -32.0   -32.0   -31.9
+    ezgi b3 first250ms       -44.6   -43.0   -41.2
+    ezgi b3 rest             -69.0   -68.3   -66.8
+    ezgi b2                  -26.5   -26.4   -26.3
+    ezgi b1                  -53.8   -52.5   -50.7
+    ezgi b4                  -92.4   -92.4   -92.3
+    ezgi b5 beats0-1         -69.0   -68.2   -67.4
+    ezgi b5 beats2-3         -28.3   -28.2   -28.2
+    ezgi b7                  -53.8   -52.4   -50.6
+    ezgi b0                  -26.5   -26.4   -26.4
+    ezgi b6                  -26.6   -26.4   -26.3
+ezgi_alti in the intro (0..9.1463): RMS -74.8 dBFS, peak -37.4; in the ending (137.1951..end): RMS -90.8 dBFS
+tail: final hit json 145.7698, loudest hit of the last 4 s detected (25 % rise point, 2-12 kHz) at 145.7712 s; file end - hit = 2.499 s; end of bar 64 = 146.3415 s, file end - bar-64 end = 1.928 s
+      level 1.0-1.5 s after the hit -13.9 dBFS; 0.6-0.4 s before the end (just before the 0.4 s fade) -38.6; last 400 ms -52.5; last 20 ms -84.8 (peak -73.4)
+      file start: peak in the first 1 ms -20.1 dBFS, first 10 ms -6.1 dBFS (music starts at sample 0, no lead-in silence)
+
+G vs C (altyapi, 10 ms RMS envelopes): log-envelope correlation 0.9811; G minus C: mean -0.23 dB, sd 2.49, 1..99 pct -6.4..+5.2 dB
+G vs C, 7-14 kHz envelope (drums, not transposed): best lag +0.00 ms, correlation 0.8555
+G minus C, RMS per bar (64 bars): -0.1 -0.3 -0.1 -0.6 -0.2 -0.5 -0.5 -1.1 -1.3 -0.5 +0.3 -0.7 +0.5 -1.0 +0.2 -1.1 -1.2 -0.1 -0.6 -0.5 +0.1 -0.7 +0.6 -1.0 -1.2 -0.1 -0.1 -0.4 +0.0 -0.4 -0.2 -1.0 -1.3 -0.3 +0.1 -0.5 -0.1 -0.7 +0.1 -1.2 -1.2 -0.1 -0.4 -0.3 -0.3 -0.5 +0.3 -1.1 -1.3 +0.1 -0.1 +0.1 +0.3 -0.3 -0.2 -1.2 -1.3 -0.2 -0.0 -0.3 -0.3 -0.3 +0.5 +0.3
+json notes: same count/rhythm/velocity in G and C: True | C minus G in semitones per part/instrument (count of note slots): {'lead/glockenspiel/(np.int64(5),)': 104, 'lead/trompet/(np.int64(5),)': 104, 'lead/brass/(np.int64(5),)': 104, 'ezgi_alti/klarnet/(np.int64(-7),)': 175, 'ezgi_alti/glockenspiel_hafif/(np.int64(-7),)': 175, 'lead/glockenspiel/(np.int64(-7),)': 10, 'lead/trompet/(np.int64(-7),)': 10}

@@ -1,0 +1,7 @@
+kick_40_120    peak@  27.5 ms  max-rise@  25.5 ms  half-rise@  17.6 ms  peak/mean 8.45 | 2nd rise@ 125.6 ms rel 0.03 | rise at 16ths [0.95, 0.05, 0.0, 0.0]
+low_120_300    peak@   5.5 ms  max-rise@   1.5 ms  half-rise@   1.6 ms  peak/mean 7.25 | 2nd rise@ 315.7 ms rel 0.05 | rise at 16ths [1.0, 0.02, 0.03, 0.03]
+mid_300_2000   peak@ 318.7 ms  max-rise@ 569.9 ms  half-rise@ 284.8 ms  peak/mean 1.65 | 2nd rise@ 285.7 ms rel 0.25 | rise at 16ths [1.0, 0.07, 0.25, 0.06]
+high_2k_8k     peak@ 308.7 ms  max-rise@ 568.9 ms  half-rise@ 279.8 ms  peak/mean 1.87 | 2nd rise@ 279.7 ms rel 0.65 | rise at 16ths [1.0, 0.1, 0.65, 0.09]
+air_8k_16k     peak@ 284.7 ms  max-rise@ 280.7 ms  half-rise@ 277.8 ms  peak/mean 2.68 | 2nd rise@ 568.9 ms rel 0.97 | rise at 16ths [0.97, 0.24, 1.0, 0.23]
+librosa tempo 105.46875 n beats 181 median IBI 0.5717913832199528 -> bpm 104.9333756345181 circ-mean phase 0.2964 s, concentration R=0.996
+librosa body beats: circ-mean phase 0.2966, R=0.996, linear-fit bpm 105.002

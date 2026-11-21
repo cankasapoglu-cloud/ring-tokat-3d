@@ -1,0 +1,194 @@
+verse onset beats [15, 39, 63, 87, 111, 135, 159] [24, 24, 24, 24, 24, 24]
+v1 L1   bar 0 db   8.571 words   8.58 (  +8.7 ms) refined 8.5738 rel=True  [vowel] -> onset   8.574 off +0.003s +0.004b dev-from-expected   +2.5 ms | end  10.74 (3.79 b) | Ali Baba'nın bir çiftliği var,
+v1 L2   bar 1 db  10.857 words  10.84 ( -17.0 ms) refined 10.8222 rel=True  [cons_] -> onset  10.822 off -0.035s -0.061b dev-from-expected  -34.7 ms | end  13.08 (3.89 b) | çiftliğinde inekleri var.
+v1 ses  bar 2 db  13.143 words  13.12 ( -22.6 ms) refined 13.0935 rel=False [vowel] -> onset  13.120 off -0.023s -0.040b dev-from-expected  -22.6 ms | end  13.94 (1.40 b) | "Mö, mö"
+v1 diye bar 2 db  13.143 words  14.28 (  -5.4 ms) refined 14.2941 rel=False [vowel] -> onset  14.280 off +1.137s +1.990b dev-from-expected   -5.4 ms | end  15.32 (3.81 b) | diye bağırır
+v1 L4   bar 3 db  15.428 words  15.40 ( -28.3 ms) refined 15.3706 rel=True  [cons_] -> onset  15.371 off -0.058s -0.101b dev-from-expected  -57.7 ms | end  17.68 (3.94 b) | çiftliğinde Ali Baba'nın.
+   local attack vs lattice (ms): {'low_120_300_ms': 2.999545122649161, 'mid_300_2000_ms': -1.2498104677704513}
+v2 L1   bar 0 db  22.285 words  22.30 ( +14.8 ms) refined 22.2764 rel=True  [vowel] -> onset  22.276 off -0.009s -0.015b dev-from-expected   -8.8 ms | end  24.46 (3.81 b) | Ali Baba'nın bir çiftliği var,
+v2 L2   bar 1 db  24.571 words  24.56 ( -10.9 ms) refined 24.5335 rel=True  [cons_] -> onset  24.534 off -0.037s -0.065b dev-from-expected  -37.4 ms | end  26.82 (3.94 b) | çiftliğinde koyunları var.
+v2 ses  bar 2 db  26.857 words  26.82 ( -36.5 ms) refined 26.8327 rel=False [vowel] -> onset  26.820 off -0.036s -0.064b dev-from-expected  -36.5 ms | end  27.66 (1.41 b) | "Me, me"
+v2 diye bar 2 db  26.857 words  28.00 (  +0.6 ms) refined 28.0171 rel=False [vowel] -> onset  28.000 off +1.143s +2.001b dev-from-expected   +0.6 ms | end  29.06 (3.86 b) | diye bağırır
+v2 L4   bar 3 db  29.142 words  29.12 ( -22.2 ms) refined 29.1008 rel=True  [cons_] -> onset  29.101 off -0.041s -0.072b dev-from-expected  -41.4 ms | end  31.40 (3.95 b) | çiftliğinde Ali Baba'nın.
+   local attack vs lattice (ms): {'low_120_300_ms': 1.9996967484327555, 'mid_300_2000_ms': -0.49992418710820274}
+v3 L1   bar 0 db  35.999 words  36.00 (  +0.8 ms) refined 35.9837 rel=False [vowel] -> onset  36.000 off +0.001s +0.002b dev-from-expected   +0.8 ms | end  38.16 (3.78 b) | Ali Baba'nın bir çiftliği var,
+v3 L2   bar 1 db  38.285 words  38.26 ( -24.8 ms) refined 38.2437 rel=True  [cons_] -> onset  38.244 off -0.041s -0.072b dev-from-expected  -41.1 ms | end  40.54 (3.95 b) | çiftliğinde atları var.
+v3 ses  bar 2 db  40.570 words  40.54 ( -30.5 ms) refined 40.573 rel=False [vowel] -> onset  40.540 off -0.030s -0.053b dev-from-expected  -30.5 ms | end  41.38 (1.42 b) | "Me, me"
+v3 diye bar 2 db  40.570 words  41.72 (  +6.7 ms) refined 41.7371 rel=False [vowel] -> onset  41.720 off +1.149s +2.012b dev-from-expected   +6.7 ms | end  42.76 (3.83 b) | diye bağırır
+v3 L4   bar 3 db  42.856 words  42.84 ( -16.1 ms) refined 42.8193 rel=True  [cons_] -> onset  42.819 off -0.037s -0.064b dev-from-expected  -36.8 ms | end  45.10 (3.93 b) | çiftliğinde Ali Baba'nın.
+   local attack vs lattice (ms): {'low_120_300_ms': 4.749279777527815, 'mid_300_2000_ms': -0.99984837421635}
+v4 L1   bar 0 db  49.713 words  49.74 ( +26.9 ms) refined 49.7164 rel=False [vowel] -> onset  49.740 off +0.027s +0.047b dev-from-expected  +26.9 ms | end  51.90 (3.83 b) | Ali Baba'nın bir çiftliği var,
+v4 L2   bar 1 db  51.999 words  51.98 ( -18.7 ms) refined 51.9738 rel=True  [cons_] -> onset  51.974 off -0.025s -0.044b dev-from-expected  -24.9 ms | end  54.26 (3.96 b) | çiftliğinde horozları var.
+v4 ses  bar 2 db  54.284 words  54.30 ( +15.6 ms) refined 54.3461 rel=False [vowel] -> onset  54.300 off +0.016s +0.027b dev-from-expected  +15.6 ms | end  55.10 (1.43 b) | "Üü, üü"
+v4 diye bar 2 db  54.284 words  55.44 ( +12.8 ms) refined 55.4614 rel=False [vowel] -> onset  55.440 off +1.156s +2.022b dev-from-expected  +12.8 ms | end  56.44 (3.77 b) | diye bağırır
+v4 L4   bar 3 db  56.570 words  56.52 ( -50.0 ms) refined 56.508 rel=True  [cons_] -> onset  56.508 off -0.062s -0.108b dev-from-expected  -62.0 ms | end  58.78 (3.87 b) | çiftliğinde Ali Baba'nın.
+   local attack vs lattice (ms): {'low_120_300_ms': 2.7495830290950596, 'mid_300_2000_ms': -0.99984837421635}
+v5 L1   bar 0 db  63.427 words  63.42 (  -7.0 ms) refined 63.408 rel=True  [vowel] -> onset  63.408 off -0.019s -0.033b dev-from-expected  -19.0 ms | end  65.60 (3.80 b) | Ali Baba'nın bir çiftliği var,
+v5 L2   bar 1 db  65.713 words  65.70 ( -12.7 ms) refined 65.6822 rel=True  [cons_] -> onset  65.682 off -0.030s -0.053b dev-from-expected  -30.4 ms | end  67.96 (3.93 b) | çiftliğinde ördekleri var.
+v5 ses  bar 2 db  67.998 words  67.98 ( -18.3 ms) refined 68.0333 rel=False [vowel] -> onset  67.980 off -0.018s -0.032b dev-from-expected  -18.3 ms | end  69.04 (1.82 b) | "Vak, vak"
+v5 diye bar 2 db  67.998 words  69.16 ( +18.9 ms) refined 69.1669 rel=False [vowel] -> onset  69.160 off +1.162s +2.033b dev-from-expected  +18.9 ms | end  70.16 (3.78 b) | diye bağırır
+v5 L4   bar 3 db  70.284 words  70.26 ( -24.0 ms) refined 70.2393 rel=True  [cons_] -> onset  70.239 off -0.045s -0.078b dev-from-expected  -44.6 ms | end  72.54 (3.95 b) | çiftliğinde Ali Baba'nın.
+   local attack vs lattice (ms): {'low_120_300_ms': 4.499317683973714, 'mid_300_2000_ms': -0.24996209355410137}
+v6 L1   bar 0 db  77.141 words  77.16 ( +19.1 ms) refined 77.1393 rel=True  [vowel] -> onset  77.139 off -0.002s -0.003b dev-from-expected   -1.6 ms | end  79.32 (3.81 b) | Ali Baba'nın bir çiftliği var,
+v6 L2   bar 1 db  79.427 words  79.42 (  -6.6 ms) refined 79.3834 rel=True  [cons_] -> onset  79.383 off -0.043s -0.076b dev-from-expected  -43.2 ms | end  81.66 (3.91 b) | çiftliğinde köpekleri var.
+v6 ses  bar 2 db  81.712 words  81.70 ( -12.2 ms) refined 81.7751 rel=False [cons_] -> onset  81.700 off -0.012s -0.021b dev-from-expected  -12.2 ms | end  82.70 (1.73 b) | "Hav, hav"
+v6 diye bar 2 db  81.712 words  82.86 (  +4.9 ms) refined 82.864 rel=True  [vowel] -> onset  82.864 off +1.152s +2.016b dev-from-expected   +8.9 ms | end  83.88 (3.79 b) | diye bağırır
+v6 L4   bar 3 db  83.998 words  83.98 ( -17.9 ms) refined 83.9492 rel=True  [cons_] -> onset  83.949 off -0.049s -0.085b dev-from-expected  -48.7 ms | end  86.24 (3.92 b) | çiftliğinde Ali Baba'nın.
+   local attack vs lattice (ms): {'low_120_300_ms': 3.2495072162032623, 'mid_300_2000_ms': -1.2498104677704513}
+v7 L1   bar 0 db  90.855 words  90.88 ( +25.2 ms) refined 90.8506 rel=True  [vowel] -> onset  90.851 off -0.004s -0.007b dev-from-expected   -4.2 ms | end  93.04 (3.82 b) | Ali Baba'nın bir çiftliği var,
+v7 L2   bar 1 db  93.140 words  93.12 ( -20.5 ms) refined 93.1022 rel=True  [cons_] -> onset  93.102 off -0.038s -0.067b dev-from-expected  -38.3 ms | end  95.38 (3.92 b) | çiftliğinde kedisi var.
+v7 ses  bar 2 db  95.426 words  95.40 ( -26.1 ms) refined 95.3735 rel=False [vowel] -> onset  95.400 off -0.026s -0.046b dev-from-expected  -26.1 ms | end  96.50 (1.88 b) | "Miyav, miyav"
+v7 diye bar 2 db  95.426 words  96.60 ( +31.0 ms) refined 96.6098 rel=False [vowel] -> onset  96.600 off +1.174s +2.054b dev-from-expected  +31.0 ms | end  97.60 (3.80 b) | diye bağırır
+v7 L4   bar 3 db  97.712 words  97.68 ( -31.8 ms) refined 97.6666 rel=True  [cons_] -> onset  97.667 off -0.045s -0.079b dev-from-expected  -45.2 ms | end  99.96 (3.93 b) | çiftliğinde Ali Baba'nın.
+   local attack vs lattice (ms): {'low_120_300_ms': 4.499317683973714, 'mid_300_2000_ms': -0.24996209355410137}
+{
+ "L1": {
+  "adopted_onset": {
+   "n": 7,
+   "mean_ms": -0.48571428571428593,
+   "median_ms": -1.6,
+   "sd_ms": 13.024639130885582,
+   "min_ms": -19.0,
+   "max_ms": 26.9
+  },
+  "words_file": {
+   "n": 7,
+   "mean_ms": 12.642857142857142,
+   "median_ms": 14.8,
+   "sd_ms": 11.643128831185876,
+   "min_ms": -7.0,
+   "max_ms": 26.9
+  },
+  "refined_only": {
+   "n": 5,
+   "mean_ms": -6.219999999998649,
+   "median_ms": -4.199999999997317,
+   "sd_ms": 7.368147664101184,
+   "min_ms": -18.99999999999835,
+   "max_ms": 2.4999999999995026
+  },
+  "n_refined_reliable": 5
+ },
+ "L2": {
+  "adopted_onset": {
+   "n": 7,
+   "mean_ms": -35.714285714285715,
+   "median_ms": -37.4,
+   "sd_ms": 5.865012135276345,
+   "min_ms": -43.2,
+   "max_ms": -24.9
+  },
+  "words_file": {
+   "n": 7,
+   "mean_ms": -15.885714285714286,
+   "median_ms": -17.0,
+   "sd_ms": 5.746409704310676,
+   "min_ms": -24.8,
+   "max_ms": -6.6
+  },
+  "refined_only": {
+   "n": 7,
+   "mean_ms": -35.74285714285885,
+   "median_ms": -37.400000000001654,
+   "sd_ms": 5.8497514337556,
+   "min_ms": -43.199999999998795,
+   "max_ms": -24.900000000002365
+  },
+  "n_refined_reliable": 7
+ },
+ "ses": {
+  "adopted_onset": {
+   "n": 7,
+   "mean_ms": -18.657142857142855,
+   "median_ms": -22.6,
+   "sd_ms": 15.788500077394229,
+   "min_ms": -36.5,
+   "max_ms": 15.6
+  },
+  "words_file": {
+   "n": 7,
+   "mean_ms": -18.657142857142855,
+   "median_ms": -22.6,
+   "sd_ms": 15.788500077394229,
+   "min_ms": -36.5,
+   "max_ms": 15.6
+  },
+  "refined_only": null,
+  "n_refined_reliable": 0
+ },
+ "diye": {
+  "adopted_onset": {
+   "n": 7,
+   "mean_ms": 10.5,
+   "median_ms": 8.9,
+   "sd_ms": 11.109326840864071,
+   "min_ms": -5.4,
+   "max_ms": 31.0
+  },
+  "words_file": {
+   "n": 7,
+   "mean_ms": 9.928571428571429,
+   "median_ms": 6.7,
+   "sd_ms": 11.27851488269549,
+   "min_ms": -5.4,
+   "max_ms": 31.0
+  },
+  "refined_only": {
+   "n": 1,
+   "mean_ms": 8.97330827068532,
+   "median_ms": 8.97330827068532,
+   "sd_ms": 0.0,
+   "min_ms": 8.97330827068532,
+   "max_ms": 8.97330827068532
+  },
+  "n_refined_reliable": 1
+ },
+ "L4": {
+  "adopted_onset": {
+   "n": 7,
+   "mean_ms": -48.05714285714286,
+   "median_ms": -45.2,
+   "sd_ms": 8.271786323376096,
+   "min_ms": -62.0,
+   "max_ms": -36.8
+  },
+  "words_file": {
+   "n": 7,
+   "mean_ms": -27.185714285714287,
+   "median_ms": -24.0,
+   "sd_ms": 10.604234810601252,
+   "min_ms": -50.0,
+   "max_ms": -16.1
+  },
+  "refined_only": {
+   "n": 7,
+   "mean_ms": -48.07142857142769,
+   "median_ms": -45.199999999994134,
+   "sd_ms": 8.265887608670758,
+   "min_ms": -61.99999999999761,
+   "max_ms": -36.7999999999995
+  },
+  "n_refined_reliable": 7
+ },
+ "all": {
+  "adopted_onset": {
+   "n": 35,
+   "mean_ms": -18.482857142857142,
+   "median_ms": -22.6,
+   "sd_ms": 24.415773422866103,
+   "min_ms": -62.0,
+   "max_ms": 31.0
+  },
+  "words_file": {
+   "n": 35,
+   "mean_ms": -7.831428571428572,
+   "median_ms": -12.2,
+   "sd_ms": 19.742264617943356,
+   "min_ms": -50.0,
+   "max_ms": 31.0
+  },
+  "n_refined_reliable": 20
+ }
+}
+typical word positions (beats from verse downbeat): [('Ali', 0.026), ("Baba'nın", 0.968), ('bir', 1.969), ('çiftliği', 2.465), ('var,', 3.48), ('çiftliğinde', 3.97), ('inekleri', 5.976), ('var.', 7.502), ('"Mö,', 7.96), ('mö"', 9.032), ('diye', 10.012), ('bağırır', 10.967), ('çiftliğinde', 11.958), ('Ali', 14.114), ("Baba'nın.", 14.971)]
+vocal-only (words file) tempo: {'beat_period_s': 0.5714666574813997, 'bpm': 104.99300215420338, 'time_of_beat0_s': -0.012715328898175227, 'residual_sd_ms': 19.576599844763617, 'note': '35 segment onsets of the words file regressed on lattice beat numbers'}

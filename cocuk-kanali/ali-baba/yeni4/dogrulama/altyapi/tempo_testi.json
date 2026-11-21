@@ -1,0 +1,81 @@
+{
+ "old_bpm": 104.96,
+ "new_bpm": 105.3,
+ "ratio": 0.9967711301044634,
+ "leaves": 12145,
+ "equal": 9953,
+ "scaled": 2188,
+ "scaled_max_err_ms": 0.0964102564111613,
+ "other": [
+  [
+   "/tempo_bpm",
+   104.96,
+   105.3
+  ],
+  [
+   "/dosya_suresi_sn",
+   148.2698,
+   147.7991
+  ],
+  [
+   "/ana_kazanc/kazanc_dB",
+   7.7108,
+   7.6762
+  ],
+  [
+   "/gecikme_telafisi/one_alma_ms/klarnet",
+   16.7,
+   16.6
+  ]
+ ],
+ "keys_that_scale": [
+  "baslangic",
+  "bitis",
+  "dosya_suresi_sn",
+  "ilk_son_olcu_vurusu",
+  "kazanc_dB",
+  "klarnet",
+  "muzik_bitis",
+  "muzik_bitis_sn",
+  "olcu_baslangiclari",
+  "olcu_sn",
+  "ses1_baslangic",
+  "ses2_baslangic",
+  "ses_basina_yer_sn",
+  "son_vurus",
+  "son_vurus_sn",
+  "sure",
+  "tempo_bpm",
+  "vurus_sn",
+  "vurus_zamanlari"
+ ],
+ "equal_leaves_under_scaling_keys_nonzero": [],
+ "new_json_grid_max_err_ms": 0.049857549853982164,
+ "new_bars": 64,
+ "new_file_s": 147.79913832199546,
+ "new_file_expected_s": 147.7991452991453,
+ "new_file_json_s": 147.7991,
+ "blind_grid_new_audio": {
+  "6-14 kHz onsets (hat/snare/tambourine)": {
+   "scan_bpm": 105.29999999996434,
+   "bpm": 105.30116176047028,
+   "n_onsets": 422,
+   "n_on_grid": 380,
+   "sd_ms": 2.3163546746413273,
+   "phase_ms": 3.7197164900880098,
+   "bar_s": 2.2791771333532926,
+   "total_diff_ms": -1.6093343351428757
+  },
+  "2-5 kHz onsets": {
+   "scan_bpm": 105.30399999996432,
+   "bpm": 105.30194475301064,
+   "n_onsets": 493,
+   "n_on_grid": 367,
+   "sd_ms": 2.3737972600053756,
+   "phase_ms": 3.8820133146569846,
+   "bar_s": 2.279160186100345,
+   "total_diff_ms": -2.6939585237926167
+  }
+ },
+ "old_vs_new_last_verse_start_ms": 383.9205058717283
+}

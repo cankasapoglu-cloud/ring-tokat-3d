@@ -1,0 +1,512 @@
+{
+ "G": {
+  "key": "G",
+  "bpm": 105.0,
+  "duration_s": 148.2143,
+  "bars": 64,
+  "bar_s": 2.285714,
+  "beat_s": 0.571429,
+  "tail_after_final_hit_s": 2.5,
+  "rehber_minus_sum_max_lsb": 1.0,
+  "altyapi": {
+   "lufs_ffmpeg": -14.0,
+   "lufs_pyloudnorm": -14.01,
+   "lra": 15.0,
+   "sample_peak_dbfs": -1.5,
+   "true_peak_dbtp_4x": -1.12,
+   "true_peak_ffmpeg": -1.1,
+   "clipped_samples": 0
+  },
+  "rehber": {
+   "lufs_ffmpeg": -13.6,
+   "lufs_pyloudnorm": -13.68,
+   "lra": 14.9,
+   "sample_peak_dbfs": -1.5,
+   "true_peak_dbtp_4x": -1.12,
+   "true_peak_ffmpeg": -1.1,
+   "clipped_samples": 0
+  },
+  "ezgi_alti": {
+   "lufs_ffmpeg": -21.9,
+   "lufs_pyloudnorm": -21.9,
+   "lra": 6.4,
+   "sample_peak_dbfs": -13.83,
+   "true_peak_dbtp_4x": -13.72,
+   "true_peak_ffmpeg": -13.7,
+   "clipped_samples": 0
+  },
+  "limiter": {
+   "max_gain_reduction_db": 5.29,
+   "time_over_0p5db_pct": 7.16,
+   "time_over_2db_pct": 0.91,
+   "master_gain_db": 7.68,
+   "ceiling_dbfs": -1.5
+  },
+  "grid": {
+   "beat_onsets": 254,
+   "fitted_beat_s": 0.571424,
+   "fitted_bar_s": 2.2857,
+   "fitted_bpm": 105.001,
+   "onset_minus_grid_ms_median": 1.98,
+   "min": -0.73,
+   "max": 7.53,
+   "kick_stem_fitted_beat_s": 0.571425,
+   "drift_whole_song_ms": -0.77,
+   "kick_rise_minus_grid_ms_mean": 2.42
+  },
+  "notes": {
+   "_glock_blind": {
+    "lead glockenspiel (+1 oktav)": {
+     "checked": 112,
+     "blind_agrees": 109,
+     "disagree_but_repeated_pitch": 2
+    },
+    "ezgi_alti glockenspiel (+1 oktav)": {
+     "checked": 175,
+     "blind_agrees": 175,
+     "disagree_but_repeated_pitch": 0
+    }
+   },
+   "lead trompet": {
+    "checked": 112,
+    "matched": 112,
+    "pitch_err_cents_mean": -3.1,
+    "pitch_err_cents_max_abs": 9.0,
+    "onset_ms_median": 8.8,
+    "onset_ms_min": 1.9,
+    "onset_ms_max": 12.5
+   },
+   "lead glockenspiel (+1 oktav)": {
+    "checked": 112,
+    "matched": 112,
+    "pitch_err_cents_mean": 3.5,
+    "pitch_err_cents_max_abs": 8.6,
+    "onset_ms_median": 5.7,
+    "onset_ms_min": 4.3,
+    "onset_ms_max": 8.3
+   },
+   "ezgi_alti klarnet": {
+    "checked": 175,
+    "matched": 175,
+    "pitch_err_cents_mean": -0.2,
+    "pitch_err_cents_max_abs": 3.7,
+    "onset_ms_median": 7.8,
+    "onset_ms_min": 3.7,
+    "onset_ms_max": 13.2
+   },
+   "ezgi_alti glockenspiel (+1 oktav)": {
+    "checked": 175,
+    "matched": 175,
+    "pitch_err_cents_mean": 5.2,
+    "pitch_err_cents_max_abs": 5.7,
+    "onset_ms_median": 6.0,
+    "onset_ms_min": -2.2,
+    "onset_ms_max": 20.0
+   },
+   "ezgi_alti teslim dosyası (klarnet+glockenspiel karışık; 300-1100 Hz en güçlü tepe)": {
+    "checked": 175,
+    "matched": 175,
+    "pitch_err_cents_mean": -0.2,
+    "pitch_err_cents_max_abs": 3.7,
+    "onset_ms_median": 6.5,
+    "onset_ms_min": 3.8,
+    "onset_ms_max": 8.7
+   },
+   "final_chord_notes": {
+    "checked": 12,
+    "matched": 12
+   }
+  },
+  "notes_total": {
+   "checked": 761,
+   "matched": 761
+  },
+  "bar_kinds": {
+   "intro_a": 2,
+   "intro_ans": 1,
+   "intro_ansfill": 1,
+   "voc": 14,
+   "ans": 8,
+   "voc_cut": 7,
+   "slot": 14,
+   "fillin": 7,
+   "ansfill": 7,
+   "ans2": 1,
+   "roll": 1,
+   "final": 1
+  },
+  "stems_sum_residual_db": -49.9,
+  "limiter_difference_db": -21.9,
+  "slot": {
+   "slot_bars": [
+    3,
+    4
+   ],
+   "first_slot_below_normal_db_min": 13.5,
+   "first_slot_max": 13.7,
+   "second_slot_below_normal_db_min": 13.6,
+   "second_slot_max": 13.9,
+   "quietest_normal_minus_loudest_slot_db_min": 12.0,
+   "normal_bars_dbfs_mean": -17.8,
+   "slot_bars_dbfs_mean": -31.5
+  },
+  "fill_bar": {
+   "bar": 5,
+   "beats01_dbfs": -19.9,
+   "beats23_dbfs": -18.7,
+   "beats23_minus_bar0_beats23_db": [
+    -0.9,
+    0.2
+   ],
+   "chord_and_lead_stems_in_beats01_rel_beats23_db_max": -72.7
+  },
+  "slot_head": {
+   "first_slot_first_250ms_dbfs": -26.0,
+   "second_slot_first_250ms_dbfs": -26.4
+  },
+  "intro_ending_bars_dbfs": {
+   "intro": [
+    -16.4,
+    -16.7,
+    -16.6,
+    -15.7
+   ],
+   "ending": [
+    -16.4,
+    -16.2,
+    -14.6,
+    -13.3
+   ]
+  },
+  "loud_lead_reference": {
+   "rms_rel_rest_of_band_db": -0.7,
+   "f0_band_lead_minus_rest_db_median": 6.3
+  },
+  "ezgi_alti_level": {
+   "rms_rel_band_db": -7.8,
+   "f0_band_stem_minus_band_db_median": -3.3,
+   "f0_band_p10": -10.6,
+   "f0_band_min": -14.6,
+   "octave_band_median": 3.9,
+   "stem_rms_dbfs_active": -26.7,
+   "stem_peak_dbfs": -13.8
+  },
+  "mono": {
+   "lr_correlation": 0.874,
+   "mono_fold_down_lufs": -14.29
+  },
+  "raw_stem_levels_db": {
+   "davul": -32.4,
+   "bas": -31.7,
+   "banjo": -35.7,
+   "akordeon": -42.7,
+   "piyano": -37.3,
+   "brass": -37.4,
+   "trompet": -37.2,
+   "glockenspiel": -39.0,
+   "klarnet": -34.1,
+   "glockenspiel_hafif": -40.9
+  }
+ },
+ "C": {
+  "key": "C",
+  "bpm": 105.0,
+  "duration_s": 148.2143,
+  "bars": 64,
+  "bar_s": 2.285714,
+  "beat_s": 0.571429,
+  "tail_after_final_hit_s": 2.5,
+  "rehber_minus_sum_max_lsb": 1.0,
+  "altyapi": {
+   "lufs_ffmpeg": -14.0,
+   "lufs_pyloudnorm": -14.02,
+   "lra": 14.5,
+   "sample_peak_dbfs": -1.7,
+   "true_peak_dbtp_4x": -1.21,
+   "true_peak_ffmpeg": -1.2,
+   "clipped_samples": 0
+  },
+  "rehber": {
+   "lufs_ffmpeg": -13.6,
+   "lufs_pyloudnorm": -13.67,
+   "lra": 14.0,
+   "sample_peak_dbfs": -1.7,
+   "true_peak_dbtp_4x": -1.21,
+   "true_peak_ffmpeg": -1.2,
+   "clipped_samples": 0
+  },
+  "ezgi_alti": {
+   "lufs_ffmpeg": -22.3,
+   "lufs_pyloudnorm": -22.34,
+   "lra": 6.3,
+   "sample_peak_dbfs": -14.18,
+   "true_peak_dbtp_4x": -13.96,
+   "true_peak_ffmpeg": -13.9,
+   "clipped_samples": 0
+  },
+  "limiter": {
+   "max_gain_reduction_db": 5.97,
+   "time_over_0p5db_pct": 8.64,
+   "time_over_2db_pct": 0.85,
+   "master_gain_db": 7.58,
+   "ceiling_dbfs": -1.7
+  },
+  "grid": {
+   "beat_onsets": 254,
+   "fitted_beat_s": 0.571425,
+   "fitted_bar_s": 2.2857,
+   "fitted_bpm": 105.001,
+   "onset_minus_grid_ms_median": 2.02,
+   "min": -0.73,
+   "max": 8.1,
+   "kick_stem_fitted_beat_s": 0.571425,
+   "drift_whole_song_ms": -0.77,
+   "kick_rise_minus_grid_ms_mean": 2.42
+  },
+  "notes": {
+   "_glock_blind": {
+    "lead glockenspiel (+1 oktav)": {
+     "checked": 112,
+     "blind_agrees": 112,
+     "disagree_but_repeated_pitch": 0
+    },
+    "ezgi_alti glockenspiel (+1 oktav)": {
+     "checked": 175,
+     "blind_agrees": 175,
+     "disagree_but_repeated_pitch": 0
+    }
+   },
+   "lead trompet": {
+    "checked": 112,
+    "matched": 112,
+    "pitch_err_cents_mean": 2.1,
+    "pitch_err_cents_max_abs": 6.7,
+    "onset_ms_median": 8.8,
+    "onset_ms_min": 3.2,
+    "onset_ms_max": 10.9
+   },
+   "lead glockenspiel (+1 oktav)": {
+    "checked": 112,
+    "matched": 112,
+    "pitch_err_cents_mean": 4.8,
+    "pitch_err_cents_max_abs": 5.4,
+    "onset_ms_median": 5.6,
+    "onset_ms_min": 3.8,
+    "onset_ms_max": 9.1
+   },
+   "ezgi_alti klarnet": {
+    "checked": 175,
+    "matched": 175,
+    "pitch_err_cents_mean": -2.1,
+    "pitch_err_cents_max_abs": 4.0,
+    "onset_ms_median": 18.7,
+    "onset_ms_min": 7.5,
+    "onset_ms_max": 42.9
+   },
+   "ezgi_alti glockenspiel (+1 oktav)": {
+    "checked": 175,
+    "matched": 175,
+    "pitch_err_cents_mean": 3.7,
+    "pitch_err_cents_max_abs": 5.9,
+    "onset_ms_median": 5.0,
+    "onset_ms_min": 3.2,
+    "onset_ms_max": 6.9
+   },
+   "ezgi_alti teslim dosyası (klarnet+glockenspiel karışık; 300-1100 Hz en güçlü tepe)": {
+    "checked": 175,
+    "matched": 175,
+    "pitch_err_cents_mean": -2.1,
+    "pitch_err_cents_max_abs": 4.0,
+    "onset_ms_median": 12.5,
+    "onset_ms_min": 3.3,
+    "onset_ms_max": 20.1
+   },
+   "final_chord_notes": {
+    "checked": 12,
+    "matched": 12
+   }
+  },
+  "notes_total": {
+   "checked": 761,
+   "matched": 761
+  },
+  "bar_kinds": {
+   "intro_a": 2,
+   "intro_ans": 1,
+   "intro_ansfill": 1,
+   "voc": 14,
+   "ans": 8,
+   "voc_cut": 7,
+   "slot": 14,
+   "fillin": 7,
+   "ansfill": 7,
+   "ans2": 1,
+   "roll": 1,
+   "final": 1
+  },
+  "stems_sum_residual_db": -50.2,
+  "limiter_difference_db": -21.4,
+  "slot": {
+   "slot_bars": [
+    3,
+    4
+   ],
+   "first_slot_below_normal_db_min": 12.4,
+   "first_slot_max": 12.6,
+   "second_slot_below_normal_db_min": 12.5,
+   "second_slot_max": 12.7,
+   "quietest_normal_minus_loudest_slot_db_min": 10.7,
+   "normal_bars_dbfs_mean": -17.6,
+   "slot_bars_dbfs_mean": -30.2
+  },
+  "fill_bar": {
+   "bar": 5,
+   "beats01_dbfs": -19.3,
+   "beats23_dbfs": -19.0,
+   "beats23_minus_bar0_beats23_db": [
+    -0.6,
+    -0.0
+   ],
+   "chord_and_lead_stems_in_beats01_rel_beats23_db_max": -73.6
+  },
+  "slot_head": {
+   "first_slot_first_250ms_dbfs": -24.4,
+   "second_slot_first_250ms_dbfs": -24.7
+  },
+  "intro_ending_bars_dbfs": {
+   "intro": [
+    -16.2,
+    -15.9,
+    -16.3,
+    -15.6
+   ],
+   "ending": [
+    -15.8,
+    -15.4,
+    -14.8,
+    -13.5
+   ]
+  },
+  "loud_lead_reference": {
+   "rms_rel_rest_of_band_db": -0.2,
+   "f0_band_lead_minus_rest_db_median": 5.8
+  },
+  "ezgi_alti_level": {
+   "rms_rel_band_db": -7.7,
+   "f0_band_stem_minus_band_db_median": 1.7,
+   "f0_band_p10": -5.6,
+   "f0_band_min": -8.9,
+   "octave_band_median": -12.9,
+   "stem_rms_dbfs_active": -26.6,
+   "stem_peak_dbfs": -14.2
+  },
+  "mono": {
+   "lr_correlation": 0.897,
+   "mono_fold_down_lufs": -14.28
+  },
+  "raw_stem_levels_db": {
+   "davul": -32.4,
+   "bas": -30.5,
+   "banjo": -36.5,
+   "akordeon": -41.9,
+   "piyano": -37.3,
+   "brass": -36.5,
+   "trompet": -37.0,
+   "glockenspiel": -37.5,
+   "klarnet": -34.7,
+   "glockenspiel_hafif": -42.6
+  }
+ },
+ "variants_identical_except_transposition": {
+  "ok": true,
+  "per_channel": {
+   "bas": {
+    "notes": 411,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     -5,
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "banjo": {
+    "notes": 1010,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "akordeon": {
+    "notes": 850,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "piyano": {
+    "notes": 758,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     -5,
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "glockenspiel": {
+    "notes": 118,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     -5,
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "trompet": {
+    "notes": 118,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     -5,
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "brass": {
+    "notes": 261,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     -5,
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "davul": {
+    "notes": 2453,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     0
+    ],
+    "same_scale_degrees": true
+   },
+   "klarnet": {
+    "notes": 175,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     7
+    ],
+    "same_scale_degrees": true
+   },
+   "glockenspiel_hafif": {
+    "notes": 175,
+    "same_times_durations_velocities": true,
+    "pitch_shift_semitones_seen": [
+     7
+    ],
+    "same_scale_degrees": true
+   }
+  }
+ },
+ "failed_checks": [],
+ "note": "All values are measurements made by code. Nothing here was judged by ear."
+}

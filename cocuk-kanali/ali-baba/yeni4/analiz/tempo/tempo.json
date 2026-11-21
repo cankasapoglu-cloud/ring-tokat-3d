@@ -1,0 +1,7586 @@
+{
+ "about": "Tempo grid, bar lines, segment positions, key/chords and rough sung pitches of v2_2 (first AI take, FULL MIX only: no separated vocal exists yet). All times in seconds on the timeline of v2_2.mp3 decoded by ffmpeg (44.1 kHz mono; ffmpeg removes the mp3 encoder delay).",
+ "inputs": {
+  "mix": "v2_2.mp3 (48 kHz stereo mp3, 105.0 s; decoded with ffmpeg to 44.1 kHz mono)",
+  "words": "v2_2_words.json (105 words, 20 ms grid)"
+ },
+ "summary": {
+  "bpm": 105.003,
+  "recommended_bpm_for_new_backing": 105.0,
+  "beat_sec": 0.571413,
+  "bar_sec": 2.285653,
+  "beat_sec_at_105_0": 0.571429,
+  "bar_sec_at_105_0": 2.285714,
+  "bpm_note": "machine grid at 105.00 BPM (refined lattice 105.003 +- 0.001 on the decoded mp3; an exact 105.000 grid drifts only 2.7 ms over 100 s). The value 104.96 guessed from the word timestamps was a rounding effect of their 20 ms grid.",
+  "tempo_stable": true,
+  "meter": "4/4; kick on every beat (four on the floor), hats/chord strum on the off-beat eighths; verse = 24 beats = 6 bars",
+  "beat_phase_first_beat_s": 0.0001,
+  "beat_formula": "beat n at phase_first_beat_s + n*beat_sec ; verse v (1..7) downbeat = beat 15 + 24*(v-1)",
+  "verse_downbeats": [
+   8.5713,
+   22.2852,
+   35.9992,
+   49.7131,
+   63.427,
+   77.1409,
+   90.8548
+  ],
+  "verse_spacing_beats": [
+   24,
+   24,
+   24,
+   24,
+   24,
+   24
+  ],
+  "segments_start_on_beat": true,
+  "typical_offset_ms": {
+   "L1": -1.6,
+   "L2": -37.4,
+   "ses": -22.6,
+   "diye": 8.9,
+   "L4": -45.2
+  },
+  "offset_spread_sd_ms": {
+   "L1": 13.0,
+   "L2": 5.9,
+   "ses": 15.8,
+   "diye": 11.1,
+   "L4": 8.3
+  },
+  "statement_segments": "All 35 segments start on their expected beat: L1, L2, ses and L4 on the downbeat of bars 0,1,2,3 of the verse, \"diye bagirir\" on beat 2 of bar 2 (offset 2.0 beats). No pickups. L1 (\"Ali\", vowel) sits within about +-20 ms of the bar line (median -2 ms). L2 and L4 begin with the fricative \"c\" of \"ciftliginde\", whose noise starts 25-45 ms (L2) and 37-62 ms (L4) BEFORE the bar line, so that the vowel lands on the beat. \"diye\" starts on beat 2 of its bar, 0 to +31 ms late (median +9 ms). The sung animal sounds start -37..+16 ms around the bar line (words file only).",
+  "original_key": "D minor",
+  "original_key_confidence": "high for the chord roots and the loop (identical in all 42 bars), medium-high for the chord qualities (Gm and C clear; minor third of Dm and major third of A weak but consistent)",
+  "original_chord_loop": "Dm - C - Gm - A, two beats each, i.e. a 2-bar loop | Dm C | Gm A | that runs three times per verse and restarts on Dm exactly at every verse downbeat",
+  "chords_per_bar": "bar 0: Dm (beats 0-1) C (beats 2-3) | bar 1: Gm (beats 0-1) A (beats 2-3) | bar 2: Dm (beats 0-1) C (beats 2-3) | bar 3: Gm (beats 0-1) A (beats 2-3) | bar 4: Dm (beats 0-1) C (beats 2-3) | bar 5: Gm (beats 0-1) A (beats 2-3)",
+  "tuning_cents_re_A440": 3.7,
+  "tuning_note": "about +2..+6 cents, i.e. standard A=440 within measurement error (bass-register peaks +3.7/+5.5, mid register +1.7, librosa +4)",
+  "sung_pitch_classes": "D E F G A (D4..A4); F natural is sung in every verse (\"bagirir\" G-F-E, the animal word E/F, last line F-E-D). The vocal is NOT the traditional Old MacDonald tune and was composed over D minor harmony.",
+  "key_for_new_backing": "C major",
+  "key_for_new_backing_reason": "The task offered G major or C major. All five sung pitch classes D E F G A are inside C major; in G major the sung F natural (about 15 % of the sung time, present in 7/7 verses) is outside the scale and collides with the F sharp of the V7 chord. Fit score under the planned harmony I I IV I: C major 0.71, F major 0.61, G major 0.60 (D minor original loop key for reference 0.69).",
+  "key_for_new_backing_confidence": "medium-high that C major fits better than G major; MEDIUM that the result is pleasant at all, because the vocal was written over Dm-C-Gm-A: in C major the lines L2 and L4 end on D (= re, not the tonic) and the sung F is a suspended fourth against the E of the C chord. Not checked by ear.",
+  "confidence": "tempo, beat phase and constancy: high. Bar lines at the verse onsets: high (band entry, 24-beat verse period, 2-bar chord loop restarting on the tonic chord there); beat 1 rather than beat 3: medium-high (no drum accent to prove it; harmonic rhythm supports it). Segment offsets: +-10 ms where refined on the mix, +-25 ms where only the words file was available (see refined_reliable). Nothing was checked by ear."
+ },
+ "tempo": {
+  "search_range_bpm": [
+   99.0,
+   111.0
+  ],
+  "method_A_fullband_spectral_flux": {
+   "description": "onset envelope = half-wave rectified log-magnitude spectral flux 30 Hz-16 kHz (hop 5.8 ms); (BPM, phase) maximising the mean envelope on the beat grid; autocorrelation as cross-check",
+   "global_grid_search": {
+    "bpm": 105.00499999999928,
+    "beat_period_s": 0.5714013618399163,
+    "phase_first_beat_s": 0.56856816342079,
+    "score": 3.3485034883724603,
+    "coarse_top5": [
+     {
+      "bpm": 104.99999999999966,
+      "score": 3.3473027436321416
+     },
+     {
+      "bpm": 105.04999999999966,
+      "score": 2.438948285966132
+     },
+     {
+      "bpm": 104.94999999999966,
+      "score": 2.4262136770955944
+     },
+     {
+      "bpm": 105.09999999999965,
+      "score": 1.7686412758196843
+     },
+     {
+      "bpm": 104.89999999999966,
+      "score": 1.7150257882574402
+     }
+    ]
+   },
+   "autocorrelation_bpm_at_1_4_8_24_beats": {
+    "1": {
+     "bpm": 104.99090870368195,
+     "acf": 0.7988266369246992
+    },
+    "4": {
+     "bpm": 104.99499776555673,
+     "acf": 0.787512872919757
+    },
+    "8": {
+     "bpm": 105.00204935429291,
+     "acf": 0.7392518622369464
+    },
+    "24": {
+     "bpm": 105.00096553710259,
+     "acf": 0.7698001859907676
+    }
+   },
+   "windows_20s": [
+    {
+     "t0": 0.0,
+     "t1": 20.0,
+     "bpm": 104.99999999999946,
+     "score": 3.7859546325310705,
+     "beat_near_centre_s": 9.994285714285766,
+     "dev_from_global_grid_ms": 283.2957614263155,
+     "acf_bpm_1beat": 104.99785120123045,
+     "acf_bpm_4beat": 104.99316187397717,
+     "acf_bpm_8beat": 105.00274223563002
+    },
+    {
+     "t0": 10.0,
+     "t1": 30.0,
+     "bpm": 104.99999999999946,
+     "score": 3.2480806123229864,
+     "beat_near_centre_s": 19.995714285714335,
+     "dev_from_global_grid_ms": -0.5001802636069863,
+     "acf_bpm_1beat": 105.05718797181805,
+     "acf_bpm_4beat": 104.99824011486652,
+     "acf_bpm_8beat": 104.99934911748441
+    },
+    {
+     "t0": 20.0,
+     "t1": 40.0,
+     "bpm": 104.99999999999946,
+     "score": 3.447847912016602,
+     "beat_near_centre_s": 30.281428571428624,
+     "dev_from_global_grid_ms": -0.010407667812128985,
+     "acf_bpm_1beat": 105.05122179895037,
+     "acf_bpm_4beat": 105.01527023891923,
+     "acf_bpm_8beat": 105.01469655115744
+    },
+    {
+     "t0": 30.0,
+     "t1": 50.0,
+     "bpm": 104.99999999999946,
+     "score": 3.6754681647103626,
+     "beat_near_centre_s": 39.99571428571434,
+     "dev_from_global_grid_ms": 0.4521553393260769,
+     "acf_bpm_1beat": 105.03878723654265,
+     "acf_bpm_4beat": 105.00309556760814,
+     "acf_bpm_8beat": 105.01166184556931
+    },
+    {
+     "t0": 40.0,
+     "t1": 60.0,
+     "bpm": 105.01999999999946,
+     "score": 3.4146752739326653,
+     "beat_near_centre_s": 50.28089887640455,
+     "dev_from_global_grid_ms": 0.412232911039756,
+     "acf_bpm_1beat": 105.04827414562779,
+     "acf_bpm_4beat": 105.0036153772471,
+     "acf_bpm_8beat": 105.02489635086492
+    },
+    {
+     "t0": 50.0,
+     "t1": 70.0,
+     "bpm": 104.97999999999946,
+     "score": 3.3874138998152628,
+     "beat_near_centre_s": 60.279100781101214,
+     "dev_from_global_grid_ms": 284.7909863291268,
+     "acf_bpm_1beat": 104.98732045527473,
+     "acf_bpm_4beat": 104.9794046559936,
+     "acf_bpm_8beat": 105.01354107349705
+    },
+    {
+     "t0": 60.0,
+     "t1": 80.0,
+     "bpm": 104.99999999999946,
+     "score": 3.422978461567548,
+     "beat_near_centre_s": 70.28000000000006,
+     "dev_from_global_grid_ms": 0.4656921094777777,
+     "acf_bpm_1beat": 104.95567071320575,
+     "acf_bpm_4beat": 105.0064218502595,
+     "acf_bpm_8beat": 105.01480652400006
+    },
+    {
+     "t0": 70.0,
+     "t1": 90.0,
+     "bpm": 104.99999999999946,
+     "score": 3.3833296695247763,
+     "beat_near_centre_s": 79.99428571428577,
+     "dev_from_global_grid_ms": 0.9282551166088782,
+     "acf_bpm_1beat": 104.96059272518988,
+     "acf_bpm_4beat": 104.98206053625204,
+     "acf_bpm_8beat": 104.99982561197464
+    },
+    {
+     "t0": 80.0,
+     "t1": 100.0,
+     "bpm": 104.99999999999946,
+     "score": 3.2171901763277617,
+     "beat_near_centre_s": 90.28000000000006,
+     "dev_from_global_grid_ms": 1.4180277124072882,
+     "acf_bpm_1beat": 104.94340091493454,
+     "acf_bpm_4beat": 104.99692129280282,
+     "acf_bpm_8beat": 104.98890730207327
+    }
+   ],
+   "fine_search_step_0p001": {
+    "bpm": 105.00300000000026,
+    "score": 3.358202223454153
+   }
+  },
+  "method_B_kick_lowfreq_40_120Hz": {
+   "description": "kick band 40-120 Hz amplitude envelope, log-rise half-wave rectified; same grid search and autocorrelation",
+   "global_grid_search": {
+    "bpm": 104.99999999999929,
+    "beat_period_s": 0.5714285714285753,
+    "phase_first_beat_s": 0.004285714285711006,
+    "score": 7.221773579554762,
+    "coarse_top5": [
+     {
+      "bpm": 104.99999999999966,
+      "score": 7.211056964046462
+     },
+     {
+      "bpm": 105.04999999999966,
+      "score": 4.8803208254649055
+     },
+     {
+      "bpm": 104.94999999999966,
+      "score": 4.825309156296186
+     },
+     {
+      "bpm": 105.09999999999965,
+      "score": 3.0603637896437834
+     },
+     {
+      "bpm": 104.89999999999966,
+      "score": 2.9164895435714677
+     }
+    ]
+   },
+   "autocorrelation_bpm_at_1_4_8_24_beats": {
+    "1": {
+     "bpm": 105.01377104776772,
+     "acf": 0.6887366491572212
+    },
+    "4": {
+     "bpm": 105.00547911240095,
+     "acf": 0.6649721831586819
+    },
+    "8": {
+     "bpm": 105.00443480438793,
+     "acf": 0.6553633293313034
+    },
+    "24": {
+     "bpm": 109.56552624907796,
+     "acf": 0.5938404036599991
+    }
+   },
+   "windows_20s": [
+    {
+     "t0": 0.0,
+     "t1": 20.0,
+     "bpm": 104.93999999999947,
+     "score": 5.2774065052263675,
+     "beat_near_centre_s": 9.718410520297361,
+     "dev_from_global_grid_ms": -0.1609082741289014,
+     "acf_bpm_1beat": 105.01251240912947,
+     "acf_bpm_4beat": 105.00430226242474,
+     "acf_bpm_8beat": 105.063698989693
+    },
+    {
+     "t0": 10.0,
+     "t1": 30.0,
+     "bpm": 105.01999999999946,
+     "score": 7.0664706846007865,
+     "beat_near_centre_s": 20.005237097695726,
+     "dev_from_global_grid_ms": 0.9513834098811569,
+     "acf_bpm_1beat": 105.11534214406284,
+     "acf_bpm_4beat": 105.0180440456791,
+     "acf_bpm_8beat": 105.02174441648718
+    },
+    {
+     "t0": 20.0,
+     "t1": 40.0,
+     "bpm": 104.99999999999946,
+     "score": 7.605704232512869,
+     "beat_near_centre_s": 29.71857142857148,
+     "dev_from_global_grid_ms": -1.4549472737712676e-10,
+     "acf_bpm_1beat": 105.07381417511336,
+     "acf_bpm_4beat": 105.01007545937823,
+     "acf_bpm_8beat": 104.99901463298417
+    },
+    {
+     "t0": 30.0,
+     "t1": 50.0,
+     "bpm": 104.97999999999946,
+     "score": 7.7840668467529035,
+     "beat_near_centre_s": 40.004762811964234,
+     "dev_from_global_grid_ms": 0.47709767824682947,
+     "acf_bpm_1beat": 105.053319133182,
+     "acf_bpm_4beat": 104.97607995071527,
+     "acf_bpm_8beat": 104.98431453032732
+    },
+    {
+     "t0": 40.0,
+     "t1": 60.0,
+     "bpm": 105.01999999999946,
+     "score": 7.82060574186601,
+     "beat_near_centre_s": 49.71957722338607,
+     "dev_from_global_grid_ms": 1.0057948143010198,
+     "acf_bpm_1beat": 105.07408312047053,
+     "acf_bpm_4beat": 105.03740338881418,
+     "acf_bpm_8beat": 105.01845612217636
+    },
+    {
+     "t0": 50.0,
+     "t1": 70.0,
+     "bpm": 104.99999999999946,
+     "score": 7.881501521582044,
+     "beat_near_centre_s": 60.002857142857195,
+     "dev_from_global_grid_ms": -1.4285714289269946,
+     "acf_bpm_1beat": 104.99814597475229,
+     "acf_bpm_4beat": 105.00046318568518,
+     "acf_bpm_8beat": 105.02418855269094
+    },
+    {
+     "t0": 60.0,
+     "t1": 80.0,
+     "bpm": 104.99999999999946,
+     "score": 7.955398808365612,
+     "beat_near_centre_s": 69.7171428571429,
+     "dev_from_global_grid_ms": -1.4285714289914986,
+     "acf_bpm_1beat": 105.1869179256529,
+     "acf_bpm_4beat": 105.00416720533651,
+     "acf_bpm_8beat": 105.00244488320581
+    },
+    {
+     "t0": 70.0,
+     "t1": 90.0,
+     "bpm": 104.99999999999946,
+     "score": 8.038144769630101,
+     "beat_near_centre_s": 80.00428571428577,
+     "dev_from_global_grid_ms": -4.785616347646737e-10,
+     "acf_bpm_1beat": 105.07836711069108,
+     "acf_bpm_4beat": 105.0089150230137,
+     "acf_bpm_8beat": 104.99775085902402
+    },
+    {
+     "t0": 80.0,
+     "t1": 100.0,
+     "bpm": 104.99999999999946,
+     "score": 7.521369290705554,
+     "beat_near_centre_s": 89.72000000000006,
+     "dev_from_global_grid_ms": 1.4285714280260486,
+     "acf_bpm_1beat": 104.86510211764985,
+     "acf_bpm_4beat": 105.06770496157914,
+     "acf_bpm_8beat": 105.0238247972803
+    }
+   ],
+   "fine_search_step_0p001": {
+    "bpm": 105.00200000000025,
+    "score": 7.551826627766074
+   }
+  },
+  "method_C_hats_8_16kHz_flux": {
+   "description": "spectral flux 8-16 kHz (hats/shaker); locks to the off-beat eighth",
+   "global_grid_search": {
+    "bpm": 105.00499999999928,
+    "beat_period_s": 0.5714013618399163,
+    "phase_first_beat_s": 0.28143897909623206,
+    "score": 4.05533543233017,
+    "coarse_top5": [
+     {
+      "bpm": 104.99999999999966,
+      "score": 4.016182501969813
+     },
+     {
+      "bpm": 105.04999999999966,
+      "score": 2.6885644206748927
+     },
+     {
+      "bpm": 104.94999999999966,
+      "score": 2.557664155106005
+     },
+     {
+      "bpm": 104.89999999999966,
+      "score": 1.7813541364676553
+     },
+     {
+      "bpm": 105.09999999999965,
+      "score": 1.7096896088777767
+     }
+    ]
+   },
+   "autocorrelation_bpm_at_1_4_8_24_beats": {
+    "1": {
+     "bpm": 104.97880251696614,
+     "acf": 0.7097329612735854
+    },
+    "4": {
+     "bpm": 105.00095389962827,
+     "acf": 0.6915754785098649
+    },
+    "8": {
+     "bpm": 105.00454743572004,
+     "acf": 0.6496435924601035
+    },
+    "24": {
+     "bpm": 105.00362258494155,
+     "acf": 0.7043734801043801
+    }
+   },
+   "windows_20s": [
+    {
+     "t0": 0.0,
+     "t1": 20.0,
+     "bpm": 105.03999999999945,
+     "score": 4.308257879442412,
+     "beat_near_centre_s": 9.996191926885048,
+     "dev_from_global_grid_ms": 0.9297965102407213,
+     "acf_bpm_1beat": 104.97164482701504,
+     "acf_bpm_4beat": 105.01059849855397,
+     "acf_bpm_8beat": 105.00539405227016
+    },
+    {
+     "t0": 10.0,
+     "t1": 30.0,
+     "bpm": 104.99999999999946,
+     "score": 3.67524033133567,
+     "beat_near_centre_s": 20.27857142857148,
+     "dev_from_global_grid_ms": -1.9152149218210068,
+     "acf_bpm_1beat": 105.02463919928095,
+     "acf_bpm_4beat": 105.02072426371127,
+     "acf_bpm_8beat": 105.02067125934066
+    },
+    {
+     "t0": 20.0,
+     "t1": 40.0,
+     "bpm": 104.99999999999946,
+     "score": 3.9726477113453234,
+     "beat_near_centre_s": 29.992857142857194,
+     "dev_from_global_grid_ms": -1.4526519146863537,
+     "acf_bpm_1beat": 105.03713591500055,
+     "acf_bpm_4beat": 105.01169600319747,
+     "acf_bpm_8beat": 105.0116910307048
+    },
+    {
+     "t0": 30.0,
+     "t1": 50.0,
+     "bpm": 105.01999999999946,
+     "score": 4.445622748411042,
+     "beat_near_centre_s": 40.279470577032995,
+     "dev_from_global_grid_ms": -0.06373085737421125,
+     "acf_bpm_1beat": 105.01053065988779,
+     "acf_bpm_4beat": 105.00235298699693,
+     "acf_bpm_8beat": 105.01385822726598
+    },
+    {
+     "t0": 40.0,
+     "t1": 60.0,
+     "bpm": 105.01999999999946,
+     "score": 4.198264512206463,
+     "beat_near_centre_s": 49.9923824033518,
+     "dev_from_global_grid_ms": -0.9750558171494061,
+     "acf_bpm_1beat": 105.00943618704102,
+     "acf_bpm_4beat": 105.00506384627592,
+     "acf_bpm_8beat": 105.01901912721064
+    },
+    {
+     "t0": 50.0,
+     "t1": 70.0,
+     "bpm": 104.99999999999946,
+     "score": 3.861130212283564,
+     "beat_near_centre_s": 60.27714285714291,
+     "dev_from_global_grid_ms": -1.4391151445275474,
+     "acf_bpm_1beat": 104.97289243806968,
+     "acf_bpm_4beat": 105.00024335315466,
+     "acf_bpm_8beat": 105.01201502589807
+    },
+    {
+     "t0": 60.0,
+     "t1": 80.0,
+     "bpm": 104.99999999999946,
+     "score": 3.868661870768879,
+     "beat_near_centre_s": 69.99142857142863,
+     "dev_from_global_grid_ms": -0.976552137396447,
+     "acf_bpm_1beat": 104.96192962810255,
+     "acf_bpm_4beat": 105.01631283260382,
+     "acf_bpm_8beat": 105.02521568209178
+    },
+    {
+     "t0": 70.0,
+     "t1": 90.0,
+     "bpm": 104.99999999999946,
+     "score": 4.049219055870357,
+     "beat_near_centre_s": 80.2771428571429,
+     "dev_from_global_grid_ms": -0.4867795416122478,
+     "acf_bpm_1beat": 104.97753333842373,
+     "acf_bpm_4beat": 104.99772837486523,
+     "acf_bpm_8beat": 104.99639308830174
+    },
+    {
+     "t0": 80.0,
+     "t1": 100.0,
+     "bpm": 104.97999999999946,
+     "score": 3.929875492807713,
+     "beat_near_centre_s": 89.99190321966094,
+     "dev_from_global_grid_ms": 0.45043169784586556,
+     "acf_bpm_1beat": 104.98735867534334,
+     "acf_bpm_4beat": 104.99667049380308,
+     "acf_bpm_8beat": 104.99777366728995
+    }
+   ],
+   "fine_search_step_0p001": {
+    "bpm": 105.00300000000026,
+    "score": 3.8889543760034426
+   }
+  },
+  "third_opinion_librosa_beat_track": {
+   "tempo_bpm": 105.46875,
+   "median_inter_beat_s": 0.5717913832199528,
+   "n_beats": 181,
+   "body_linear_fit_bpm": 105.00151524309136,
+   "beat_phase_circular_mean_s": 0.2965865139225168,
+   "phase_concentration_R": 0.996449887459508,
+   "note": "librosa quantises to its 5.8 ms hop and locks to the OFF-beat eighth (phase 0.297 s = half a beat + 11 ms); its linear-fit tempo over the body is 105.00"
+  },
+  "per_window_summary": {
+   "window_s": 20,
+   "hop_s": 10,
+   "bpm_min_A": 104.97999999999946,
+   "bpm_max_A": 105.01999999999946,
+   "bpm_min_B": 104.93999999999947,
+   "bpm_max_B": 105.01999999999946,
+   "max_abs_phase_dev_from_global_grid_ms_A": 284.79098632912684,
+   "max_abs_phase_dev_from_global_grid_ms_B": 1.4285714289914986,
+   "note": "window search step 0.02 BPM; a 20 s window resolves about +-0.03 BPM. Two A windows lock to the off-beat eighth (deviation about half a beat); folded to the eighth-note lattice they agree within 2 ms."
+  },
+  "fine_drift_check": {
+   "description": "10 s windows every 5 s: position (ms) of the steepest rise of full-rate band envelopes folded over an exact 105.000 BPM beat; a straight line = constant tempo, slope = tempo correction",
+   "window_centres_s": [
+    6.0,
+    11.0,
+    16.0,
+    21.0,
+    26.0,
+    31.0,
+    36.0,
+    41.0,
+    46.0,
+    51.0,
+    56.0,
+    61.0,
+    66.0,
+    71.0,
+    76.0,
+    81.0,
+    86.0,
+    91.0,
+    96.0
+   ],
+   "bands": {
+    "kick_40_120": {
+     "dev_ms": [
+      31.5,
+      19.75,
+      23.5,
+      24.75,
+      26.25,
+      33.25,
+      23.5,
+      23.5,
+      24.75,
+      25.5,
+      19.5,
+      24.75,
+      25.0,
+      28.5,
+      21.75,
+      23.5,
+      25.0,
+      25.25,
+      26.25
+     ],
+     "slope_ms_per_s": -0.014033333552604117,
+     "theil_sen_slope_ms_per_s": 0.006249218847643956,
+     "intercept_ms": 25.752044152375692,
+     "resid_sd_ms": 3.2499044935856958,
+     "implied_bpm": 105.00147352070144,
+     "implied_bpm_theil_sen": 104.9993438361215,
+     "mean_dev_ms": 25.03634414119288,
+     "median_dev_ms": 24.746906636670452
+    },
+    "low_120_300_on": {
+     "dev_ms": [
+      0.75,
+      2.5,
+      2.5,
+      3.25,
+      1.5,
+      1.5,
+      3.25,
+      3.5,
+      1.5,
+      1.5,
+      1.75,
+      1.0,
+      0.75,
+      2.5,
+      2.25,
+      3.0,
+      0.75,
+      1.0,
+      1.75
+     ],
+     "slope_ms_per_s": -0.007455208449820804,
+     "theil_sen_slope_ms_per_s": -0.005554861197905788,
+     "intercept_ms": 2.301028160953564,
+     "resid_sd_ms": 0.8610227197444996,
+     "implied_bpm": 105.0007828027232,
+     "implied_bpm_theil_sen": 105.00058326366573,
+     "mean_dev_ms": 1.920812530012703,
+     "median_dev_ms": 1.7497812773403232
+    },
+    "mid_300_2000_on": {
+     "dev_ms": [
+      -1.5,
+      -1.25,
+      -1.25,
+      -1.5,
+      -1.0,
+      -1.0,
+      -1.0,
+      0.0,
+      -2.25,
+      -2.25,
+      -1.0,
+      -1.5,
+      -2.0,
+      -0.5,
+      -2.25,
+      -2.5,
+      -3.75,
+      -2.5,
+      -2.5
+     ],
+     "slope_ms_per_s": -0.01806791694897778,
+     "theil_sen_slope_ms_per_s": -0.015623047119110028,
+     "intercept_ms": -0.7362237615034928,
+     "resid_sd_ms": 0.697587345448611,
+     "implied_bpm": 105.00189716555748,
+     "implied_bpm_theil_sen": 105.00164044557627,
+     "mean_dev_ms": -1.6576875259013586,
+     "median_dev_ms": -1.4998125234345627
+    },
+    "high_2k_8k_on": {
+     "dev_ms": [
+      -1.75,
+      -1.75,
+      -1.75,
+      0.0,
+      -2.75,
+      -1.5,
+      -1.5,
+      -5.0,
+      -4.75,
+      -4.75,
+      -4.0,
+      -3.0,
+      -2.75,
+      -3.0,
+      -3.25,
+      -2.5,
+      -4.0,
+      -3.75,
+      -3.25
+     ],
+     "slope_ms_per_s": -0.023768958704723436,
+     "theil_sen_slope_ms_per_s": -0.02083072949214763,
+     "intercept_ms": -1.6821581512837145,
+     "resid_sd_ms": 1.102770568451364,
+     "implied_bpm": 105.00249579998656,
+     "implied_bpm_theil_sen": 105.00218727215915,
+     "mean_dev_ms": -2.8943750452246095,
+     "median_dev_ms": -2.999625046869181
+    },
+    "air_8k_16k_on": {
+     "dev_ms": [
+      7.75,
+      -3.5,
+      -3.25,
+      -1.25,
+      -2.5,
+      -2.25,
+      4.75,
+      -5.0,
+      -3.0,
+      -3.25,
+      -3.0,
+      -4.0,
+      -3.0,
+      -3.25,
+      -3.75,
+      -3.0,
+      -5.0,
+      -4.75,
+      -3.25
+     ],
+     "slope_ms_per_s": -0.057273542561566,
+     "theil_sen_slope_ms_per_s": -0.024996875390576045,
+     "intercept_ms": 0.5791381340490381,
+     "resid_sd_ms": 2.6912288129343134,
+     "implied_bpm": 105.00601406641586,
+     "implied_bpm_theil_sen": 105.00262473752625,
+     "mean_dev_ms": -2.341812536590826,
+     "median_dev_ms": -3.249593800774886
+    },
+    "high_2k_8k_off": {
+     "dev_ms": [
+      -3.75,
+      -3.75,
+      -2.5,
+      -2.5,
+      -2.0,
+      -6.25,
+      -6.25,
+      -6.25,
+      -6.5,
+      -4.25,
+      -4.0,
+      -3.0,
+      -5.0,
+      -5.25,
+      -9.25,
+      -9.75,
+      -1.75,
+      -1.75,
+      -2.25
+     ],
+     "slope_ms_per_s": -0.009911041821526911,
+     "theil_sen_slope_ms_per_s": 0.0,
+     "intercept_ms": -4.020286937816978,
+     "resid_sd_ms": 2.3034473935130726,
+     "implied_bpm": 105.00104066970539,
+     "implied_bpm_theil_sen": 105.0,
+     "mean_dev_ms": -4.5257500707148495,
+     "median_dev_ms": -3.999500062492223
+    },
+    "air_8k_16k_off": {
+     "dev_ms": [
+      6.5,
+      -3.5,
+      -3.0,
+      -7.0,
+      -9.0,
+      -7.0,
+      -7.25,
+      -4.25,
+      -6.25,
+      -6.25,
+      -6.0,
+      -6.0,
+      -8.0,
+      -7.75,
+      -5.5,
+      -5.25,
+      -5.25,
+      -3.25,
+      -3.75
+     ],
+     "slope_ms_per_s": -0.030347083807506357,
+     "theil_sen_slope_ms_per_s": 0.02499687539057603,
+     "intercept_ms": -3.596392556193653,
+     "resid_sd_ms": 3.088539135722215,
+     "implied_bpm": 105.003186540502,
+     "implied_bpm_theil_sen": 104.99737539369096,
+     "mean_dev_ms": -5.144093830376477,
+     "median_dev_ms": -5.999250093738306
+    }
+   }
+  },
+  "refined_lattice": {
+   "bpm": 105.00279777191432,
+   "beat_period_s": 0.5714133458646616,
+   "bar_period_s": 2.2856533834586465,
+   "phase_first_beat_s": 0.00011546052631578948,
+   "series_used": [
+    "low_120_300_on",
+    "mid_300_2000_on",
+    "high_2k_8k_on",
+    "air_8k_16k_on"
+   ],
+   "slope_ms_per_s_vs_105_000": -0.026644736842105273,
+   "slope_bootstrap_sd": 0.007356546778978374,
+   "intercept_ms_vs_phase_0": 0.11546052631578947,
+   "residual_sd_ms": 2.4925019570476623,
+   "bpm_uncertainty": 0.0007724374117927293,
+   "per_series_mean_dev_ms": {
+    "kick_40_120": 25.03634414119288,
+    "low_120_300_on": 1.920812530012703,
+    "mid_300_2000_on": -1.6576875259013586,
+    "high_2k_8k_on": -2.8943750452246095,
+    "air_8k_16k_on": -2.341812536590826,
+    "high_2k_8k_off": -4.5257500707148495,
+    "air_8k_16k_off": -5.144093830376477
+   },
+   "definition": "beat time = steepest rise of the on-beat transient (kick click / attack in the bands 120 Hz-16 kHz); the kick low-frequency body (40-120 Hz) rises about 25 ms later",
+   "drift_of_exact_105_bpm_grid_over_100s_ms": -2.6644736842105274
+  },
+  "vocal_only_from_words_file": {
+   "beat_period_s": 0.5714666574813997,
+   "bpm": 104.99300215420338,
+   "time_of_beat0_s": -0.012715328898175227,
+   "residual_sd_ms": 19.576599844763617,
+   "note": "35 segment onsets of the words file regressed on lattice beat numbers"
+  },
+  "result": {
+   "bpm": 105.00279777191432,
+   "beat_period_s": 0.5714133458646616,
+   "bar_period_s": 2.2856533834586465,
+   "tempo_stable": true,
+   "statement": "Tempo is constant (machine grid): 105.00 BPM. Methods A, B, C, librosa and the words-file regression (104.99) agree; no window deviates by more than 0.06 BPM (window resolution) and the beat phase stays within +-3 ms of one straight lattice over the whole song. Use exactly 105.0 BPM for the new backing (bar = 2.285714 s)."
+  }
+ },
+ "beat_phase": {
+  "lattice": {
+   "formula": "beat n at phase_first_beat_s + n*beat_period_s",
+   "phase_first_beat_s": 0.00011546052631578948,
+   "beat_period_s": 0.5714133458646616
+  },
+  "method_A_phase_s": 0.56856816342079,
+  "method_B_phase_s": 0.004285714285711006,
+  "method_C_phase_s": 0.28143897909623206,
+  "methods_compared": {
+   "A_minus_lattice_ms": -3.0,
+   "B_minus_lattice_ms": 4.2,
+   "C_minus_lattice_minus_half_beat_ms": -4.4,
+   "statement": "Full-band flux (A, -3 ms) and kick low-frequency rise (B, +4 ms) pick the SAME beat phase: the eighth that carries the kick. Hats (C) and librosa pick the other eighth (off-beat), 4 ms / 11 ms off the exact half beat. Beat = kick eighth."
+  },
+  "band_attack_position_inside_beat_ms": {
+   "kick_40_120": {
+    "peak_ms": 27.5,
+    "max_rise_ms": 25.5,
+    "rise_at_sixteenths_rel": [
+     0.9485361183717189,
+     0.052388355029651675,
+     0.0038563407479793414,
+     0.004021193652246763
+    ]
+   },
+   "low_120_300": {
+    "peak_ms": 5.5,
+    "max_rise_ms": 1.5,
+    "rise_at_sixteenths_rel": [
+     1.0,
+     0.018251842052079168,
+     0.030051629248683744,
+     0.02709058313712785
+    ]
+   },
+   "mid_300_2000": {
+    "peak_ms": 318.7,
+    "max_rise_ms": -1.5,
+    "rise_at_sixteenths_rel": [
+     1.0,
+     0.06959178991674705,
+     0.24730240895590688,
+     0.05520351627920268
+    ]
+   },
+   "high_2k_8k": {
+    "peak_ms": 308.7,
+    "max_rise_ms": -2.5,
+    "rise_at_sixteenths_rel": [
+     1.0,
+     0.09714463896643234,
+     0.6499100315873506,
+     0.08900914728983542
+    ]
+   },
+   "air_8k_16k": {
+    "peak_ms": 284.7,
+    "max_rise_ms": 280.7,
+    "rise_at_sixteenths_rel": [
+     0.9721015695470199,
+     0.23542672906881035,
+     1.0,
+     0.22576050286126542
+    ]
+   }
+  },
+  "per_verse_local_phase_check": [
+   {
+    "verse": 1,
+    "low_120_300_ms": 2.999545122649161,
+    "mid_300_2000_ms": -1.2498104677704513
+   },
+   {
+    "verse": 2,
+    "low_120_300_ms": 1.9996967484327555,
+    "mid_300_2000_ms": -0.49992418710820274
+   },
+   {
+    "verse": 3,
+    "low_120_300_ms": 4.749279777527815,
+    "mid_300_2000_ms": -0.99984837421635
+   },
+   {
+    "verse": 4,
+    "low_120_300_ms": 2.7495830290950596,
+    "mid_300_2000_ms": -0.99984837421635
+   },
+   {
+    "verse": 5,
+    "low_120_300_ms": 4.499317683973714,
+    "mid_300_2000_ms": -0.24996209355410137
+   },
+   {
+    "verse": 6,
+    "low_120_300_ms": 3.2495072162032623,
+    "mid_300_2000_ms": -1.2498104677704513
+   },
+   {
+    "verse": 7,
+    "low_120_300_ms": 4.499317683973714,
+    "mid_300_2000_ms": -0.24996209355410137
+   }
+  ],
+  "per_verse_note": "steepest rise of the on-beat attack inside the 24 beats of each verse minus the global lattice: 120-300 Hz +2.0..+4.7 ms, 300-2000 Hz -0.2..-1.2 ms, no trend -> one global lattice is valid for every verse",
+  "confidence": "high"
+ },
+ "downbeat": {
+  "bars_are": "4 beats (2.2857 s)",
+  "verse_onset_beat_numbers": [
+   15,
+   39,
+   63,
+   87,
+   111,
+   135,
+   159
+  ],
+  "verse_onset_beat_spacing": [
+   24,
+   24,
+   24,
+   24,
+   24,
+   24
+  ],
+  "verses": [
+   {
+    "verse": 1,
+    "onset_beat": 15,
+    "first_downbeat": 8.57131564849624,
+    "bar_downbeats": [
+     8.57131564849624,
+     10.856969031954886,
+     13.142622415413532,
+     15.428275798872178,
+     17.713929182330826,
+     19.999582565789474
+    ],
+    "next_verse_downbeat": 22.285235949248122,
+    "local_attack_minus_lattice_ms": {
+     "low_120_300_ms": 2.999545122649161,
+     "mid_300_2000_ms": -1.2498104677704513
+    },
+    "animal_word": "inekleri"
+   },
+   {
+    "verse": 2,
+    "onset_beat": 39,
+    "first_downbeat": 22.285235949248122,
+    "bar_downbeats": [
+     22.285235949248122,
+     24.570889332706766,
+     26.856542716165414,
+     29.14219609962406,
+     31.427849483082706,
+     33.713502866541354
+    ],
+    "next_verse_downbeat": 35.99915625,
+    "local_attack_minus_lattice_ms": {
+     "low_120_300_ms": 1.9996967484327555,
+     "mid_300_2000_ms": -0.49992418710820274
+    },
+    "animal_word": "koyunları"
+   },
+   {
+    "verse": 3,
+    "onset_beat": 63,
+    "first_downbeat": 35.99915625,
+    "bar_downbeats": [
+     35.99915625,
+     38.28480963345864,
+     40.570463016917294,
+     42.85611640037594,
+     45.14176978383458,
+     47.427423167293234
+    ],
+    "next_verse_downbeat": 49.71307655075188,
+    "local_attack_minus_lattice_ms": {
+     "low_120_300_ms": 4.749279777527815,
+     "mid_300_2000_ms": -0.99984837421635
+    },
+    "animal_word": "atları"
+   },
+   {
+    "verse": 4,
+    "onset_beat": 87,
+    "first_downbeat": 49.71307655075188,
+    "bar_downbeats": [
+     49.71307655075188,
+     51.99872993421052,
+     54.284383317669175,
+     56.57003670112782,
+     58.85569008458646,
+     61.141343468045115
+    ],
+    "next_verse_downbeat": 63.42699685150376,
+    "local_attack_minus_lattice_ms": {
+     "low_120_300_ms": 2.7495830290950596,
+     "mid_300_2000_ms": -0.99984837421635
+    },
+    "animal_word": "horozları"
+   },
+   {
+    "verse": 5,
+    "onset_beat": 111,
+    "first_downbeat": 63.42699685150376,
+    "bar_downbeats": [
+     63.42699685150376,
+     65.71265023496241,
+     67.99830361842105,
+     70.2839570018797,
+     72.56961038533835,
+     74.85526376879699
+    ],
+    "next_verse_downbeat": 77.14091715225564,
+    "local_attack_minus_lattice_ms": {
+     "low_120_300_ms": 4.499317683973714,
+     "mid_300_2000_ms": -0.24996209355410137
+    },
+    "animal_word": "ördekleri"
+   },
+   {
+    "verse": 6,
+    "onset_beat": 135,
+    "first_downbeat": 77.14091715225564,
+    "bar_downbeats": [
+     77.14091715225564,
+     79.42657053571429,
+     81.71222391917293,
+     83.99787730263158,
+     86.28353068609023,
+     88.56918406954887
+    ],
+    "next_verse_downbeat": 90.85483745300752,
+    "local_attack_minus_lattice_ms": {
+     "low_120_300_ms": 3.2495072162032623,
+     "mid_300_2000_ms": -1.2498104677704513
+    },
+    "animal_word": "köpekleri"
+   },
+   {
+    "verse": 7,
+    "onset_beat": 159,
+    "first_downbeat": 90.85483745300752,
+    "bar_downbeats": [
+     90.85483745300752,
+     93.14049083646616,
+     95.42614421992481,
+     97.71179760338346,
+     99.9974509868421,
+     102.28310437030075
+    ],
+    "next_verse_downbeat": 104.5687577537594,
+    "local_attack_minus_lattice_ms": {
+     "low_120_300_ms": 4.499317683973714,
+     "mid_300_2000_ms": -0.24996209355410137
+    },
+    "animal_word": "kedisi"
+   }
+  ],
+  "irregularities": "None inside the song body: all six verse-to-verse distances are exactly 24 beats (6 bars); every verse = 4 sung bars + 2 instrumental bars. Only the INTRO is odd: 15 beats (not 16) before verse 1, i.e. the audio starts on beat 2 of a 4-bar intro (bar lines of the intro at 1.714, 4.000, 6.286 s); the intro has no kick and no chords, only off-beat percussion.",
+  "evidence": {
+   "E1_band_entry": "kick (40-120 Hz) and the chord instrument are absent in beats 0-14 (level about 0.05 of the body) and enter together exactly on beat 15 = first syllable of verse 1",
+   "E2_verse_period": "beat-feature self-similarity is by far highest at lag 24 beats (0.59; lag 4: 0.17, lag 8: 0.07); the vocal (4 bars) / instrumental (2 bars) change happens at position 16 = a multiple of 4 (overall level drops from about 1.05 to 0.8 there)",
+   "E3_harmonic_rhythm": "chord loop Dm C | Gm A (2 beats per chord) starts on the tonic chord Dm at positions 0, 8, 16 of every verse and the dominant A fills the last two beats before each of them",
+   "E4_lyrics": "the five sung units start at positions 0.0, 4.0, 8.0, 10.0 and 12.0 beats from the verse onset (medians [0.026, 3.97, 7.96, 10.012, 11.958])",
+   "E5_weak": "drums give no bar accent (kick on every beat, same hats); nothing separates \"verse onset = beat 1\" from \"= beat 3\" except E1-E3"
+  },
+  "fold_mod4_relative_to_verse_onset": {
+   "kick": [
+    [
+     1.0036348409036013,
+     0.011966380500539497,
+     42
+    ],
+    [
+     1.0465588465855133,
+     0.013610951821945858,
+     42
+    ],
+    [
+     0.9991412495659553,
+     0.012259154018302342,
+     42
+    ],
+    [
+     0.9931568942613945,
+     0.012234508394419126,
+     41
+    ]
+   ],
+   "kick_off": [
+    [
+     0.9850352784493931,
+     0.049420794306881184,
+     42
+    ],
+    [
+     1.126337815870725,
+     0.05842271986127433,
+     42
+    ],
+    [
+     0.9339142655936864,
+     0.046783170560653745,
+     42
+    ],
+    [
+     1.1320997804303774,
+     0.06407550752432786,
+     41
+    ]
+   ],
+   "low": [
+    [
+     0.9929081376974667,
+     0.020300217427645897,
+     42
+    ],
+    [
+     1.0172708769194192,
+     0.016458455902223477,
+     42
+    ],
+    [
+     1.0230772879433192,
+     0.02124446660115228,
+     42
+    ],
+    [
+     0.9731408309672201,
+     0.021559799794397677,
+     41
+    ]
+   ],
+   "low_off": [
+    [
+     0.7736045152138116,
+     0.032115361525732834,
+     42
+    ],
+    [
+     1.2794768416713378,
+     0.041433407194126914,
+     42
+    ],
+    [
+     0.9777264615436433,
+     0.04893872063093256,
+     42
+    ],
+    [
+     1.2161612240895914,
+     0.046277838564232066,
+     41
+    ]
+   ],
+   "mid": [
+    [
+     0.9861755357570781,
+     0.03694493615862426,
+     42
+    ],
+    [
+     0.9954692421610654,
+     0.041869986096600094,
+     42
+    ],
+    [
+     1.0704922446811844,
+     0.03408720650675127,
+     42
+    ],
+    [
+     1.079403046400041,
+     0.025608066520160892,
+     41
+    ]
+   ],
+   "mid_off": [
+    [
+     1.025860390646617,
+     0.023684374408859385,
+     42
+    ],
+    [
+     1.090761907421675,
+     0.038274323894130664,
+     42
+    ],
+    [
+     0.9447982341323269,
+     0.031280423097840765,
+     42
+    ],
+    [
+     1.079798511392126,
+     0.033206870664734434,
+     41
+    ]
+   ],
+   "hi": [
+    [
+     1.1229644857990413,
+     0.048145980794560755,
+     42
+    ],
+    [
+     0.8780632963036089,
+     0.028538422667919536,
+     42
+    ],
+    [
+     1.2455006454432753,
+     0.050285040639250815,
+     42
+    ],
+    [
+     1.1025150603666267,
+     0.04062607065106123,
+     41
+    ]
+   ],
+   "hi_off": [
+    [
+     1.0454107002579374,
+     0.027870468398675085,
+     42
+    ],
+    [
+     1.060906634672169,
+     0.03822402007143949,
+     42
+    ],
+    [
+     0.9949453599367941,
+     0.0360845841331888,
+     42
+    ],
+    [
+     0.9894821612409728,
+     0.023673884888461397,
+     41
+    ]
+   ],
+   "air": [
+    [
+     1.0018838664812786,
+     0.028249705841140418,
+     42
+    ],
+    [
+     0.980696468464426,
+     0.02464223102871869,
+     42
+    ],
+    [
+     1.1003253677621823,
+     0.03850663602891055,
+     42
+    ],
+    [
+     1.0553170924487116,
+     0.03366639304644565,
+     41
+    ]
+   ],
+   "air_off": [
+    [
+     0.9343191239490494,
+     0.0237951875071852,
+     42
+    ],
+    [
+     1.0459058963117907,
+     0.02704528098335332,
+     42
+    ],
+    [
+     0.9837311738312781,
+     0.032310773736366746,
+     42
+    ],
+    [
+     1.0402480166380452,
+     0.026873571996610123,
+     41
+    ]
+   ],
+   "e_low": [
+    [
+     0.9708695496638555,
+     0.012305303084413566,
+     42
+    ],
+    [
+     0.999333891415997,
+     0.014959784250961453,
+     42
+    ],
+    [
+     0.9848643622262411,
+     0.0161079326628344,
+     42
+    ],
+    [
+     0.9850505765412454,
+     0.01654340367465734,
+     41
+    ]
+   ],
+   "e_low_hit": [
+    [
+     0.9823635973737782,
+     0.012680282033530237,
+     42
+    ],
+    [
+     1.0171759219564616,
+     0.01665249538345997,
+     42
+    ],
+    [
+     0.9879465313650139,
+     0.018833312252662725,
+     42
+    ],
+    [
+     0.9795013791926448,
+     0.01780389584151881,
+     41
+    ]
+   ],
+   "e_mid": [
+    [
+     1.006600089716674,
+     0.041987076396594825,
+     42
+    ],
+    [
+     0.9876850681404619,
+     0.055275082886117606,
+     42
+    ],
+    [
+     0.9716739297254273,
+     0.03663813042167747,
+     42
+    ],
+    [
+     0.9948783119097846,
+     0.029420249714232523,
+     41
+    ]
+   ],
+   "e_mid_hit": [
+    [
+     0.9692190024014393,
+     0.04836762112602395,
+     42
+    ],
+    [
+     0.8586739331555142,
+     0.06285133789998562,
+     42
+    ],
+    [
+     1.1569406087001326,
+     0.04339630499929068,
+     42
+    ],
+    [
+     1.0301193908924007,
+     0.03218908963692695,
+     41
+    ]
+   ],
+   "e_snare": [
+    [
+     0.9873118416040447,
+     0.05529779034091516,
+     42
+    ],
+    [
+     0.8844704482136895,
+     0.05451932888128569,
+     42
+    ],
+    [
+     1.029865683070753,
+     0.05984826352998979,
+     42
+    ],
+    [
+     1.0026481626917025,
+     0.05481643485069842,
+     41
+    ]
+   ],
+   "e_snare_hit": [
+    [
+     0.8878168080274966,
+     0.07828356157304339,
+     42
+    ],
+    [
+     0.8551434809447739,
+     0.08596689553550983,
+     42
+    ],
+    [
+     1.3907841270619643,
+     0.09483646560473225,
+     42
+    ],
+    [
+     1.36605986516455,
+     0.09798513110608223,
+     41
+    ]
+   ],
+   "e_air": [
+    [
+     1.187174822541269,
+     0.05974788395940694,
+     42
+    ],
+    [
+     0.9512043347781232,
+     0.048655959194877196,
+     42
+    ],
+    [
+     1.1186667577164962,
+     0.0628172079507451,
+     42
+    ],
+    [
+     0.9883188175013895,
+     0.04198822313853264,
+     41
+    ]
+   ],
+   "e_air_hit": [
+    [
+     1.1509189603002068,
+     0.08442094684284565,
+     42
+    ],
+    [
+     0.9560480759888667,
+     0.0736813548282784,
+     42
+    ],
+    [
+     1.2356732780226996,
+     0.07858604631451283,
+     42
+    ],
+    [
+     1.186691952368286,
+     0.10085428321224661,
+     41
+    ]
+   ],
+   "e_all": [
+    [
+     1.0209712649588762,
+     0.029787719845108366,
+     42
+    ],
+    [
+     0.9859825764856402,
+     0.033985718529734026,
+     42
+    ],
+    [
+     0.9837287071501665,
+     0.02457559634979184,
+     42
+    ],
+    [
+     0.9875809104073583,
+     0.022703348770239606,
+     41
+    ]
+   ],
+   "e_all_hit": [
+    [
+     0.9944944769699211,
+     0.014477067411589908,
+     42
+    ],
+    [
+     0.9555840762467339,
+     0.01639396399928712,
+     42
+    ],
+    [
+     1.0528964171004125,
+     0.014332188907975432,
+     42
+    ],
+    [
+     0.9718641760955603,
+     0.014189658891622645,
+     41
+    ]
+   ]
+  },
+  "confidence": {
+   "beat_lattice": "high",
+   "bar_lines_at_verse_onsets_and_every_4_beats_after": "high (medium-high for beat 1 vs beat 3, which does not matter for re-placing the segments)"
+  }
+ },
+ "onset_definitions": {
+  "onset": "start of the first word of the segment. Where refined_reliable is true: first time after the preceding energy dip at which the band-subtracted mix envelope (300-3400 Hz for vowel/voiced starts, 2-7 kHz for \"c\" starts; band = 90th percentile of the same beat phase in the instrumental bars) reaches 25 % of the first-syllable peak. Otherwise the words-file start (20 ms grid).",
+  "end": "end of the last word of the segment from the words file (not refined; reverb/breath tails are not included)",
+  "bar_downbeat": "lattice time of the downbeat of the bar the segment belongs to: verse downbeat + 4 beats x bar_in_verse (L1 bar 0, L2 bar 1, ses bar 2, diye bar 2, L4 bar 3)",
+  "offset": "offset_sec = onset - bar_downbeat; offset_beats = offset_sec / beat period. For \"diye\" the expected value is 2 beats; deviation_from_expected_beat_ms removes that.",
+  "accuracy": "refined onsets about +-10 ms; words-file onsets about +-25 ms; bar_downbeat about +-3 ms relative to the drum transients"
+ },
+ "segments": [
+  {
+   "verse": 1,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 15,
+   "bar_downbeat": 8.5713,
+   "onset_words_file": 8.58,
+   "onset_refined": 8.5738,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 8.5738,
+   "end": 10.74,
+   "offset_sec": 0.0025,
+   "offset_beats": 0.0044,
+   "offset_words_file_sec": 0.0087,
+   "offset_words_file_beats": 0.0152,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 2.5,
+   "deviation_words_file_ms": 8.7,
+   "end_beats_after_bar_downbeat": 3.795,
+   "duration_s": 2.166,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 8.57383219954657,
+     "peak_excess_over_band": 1.0637557032697627,
+     "dip_time": 8.449024943310674,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 8.480952380952415,
+     "peak_excess_over_band": 1.0659849782978457,
+     "dip_time": 8.449024943310674,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 8.58,
+     "end": 9.04,
+     "beats_from_verse_downbeat": 0.015
+    },
+    {
+     "text": "Baba'nın",
+     "start": 9.12,
+     "end": 9.64,
+     "beats_from_verse_downbeat": 0.96
+    },
+    {
+     "text": "bir",
+     "start": 9.7,
+     "end": 9.88,
+     "beats_from_verse_downbeat": 1.975
+    },
+    {
+     "text": "çiftliği",
+     "start": 9.98,
+     "end": 10.5,
+     "beats_from_verse_downbeat": 2.465
+    },
+    {
+     "text": "var,",
+     "start": 10.56,
+     "end": 10.74,
+     "beats_from_verse_downbeat": 3.48
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "L2",
+   "text": "çiftliğinde inekleri var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 19,
+   "bar_downbeat": 10.857,
+   "onset_words_file": 10.84,
+   "onset_refined": 10.8222,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 10.8222,
+   "end": 13.08,
+   "offset_sec": -0.0347,
+   "offset_beats": -0.0608,
+   "offset_words_file_sec": -0.017,
+   "offset_words_file_beats": -0.0297,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -34.7,
+   "deviation_words_file_ms": -17.0,
+   "end_beats_after_bar_downbeat": 3.89,
+   "duration_s": 2.258,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 10.952834467120333,
+     "peak_excess_over_band": 0.4571572319162095,
+     "dip_time": 10.764172335600954,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 10.822222222222301,
+     "peak_excess_over_band": 2.6362241472272676,
+     "dip_time": 10.769977324263088,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 10.84,
+     "end": 11.9,
+     "beats_from_verse_downbeat": 3.97
+    },
+    {
+     "text": "inekleri",
+     "start": 12.06,
+     "end": 12.78,
+     "beats_from_verse_downbeat": 6.105
+    },
+    {
+     "text": "var.",
+     "start": 12.84,
+     "end": 13.08,
+     "beats_from_verse_downbeat": 7.47
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "ses",
+   "text": "\"Mö, mö\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 23,
+   "bar_downbeat": 13.1426,
+   "onset_words_file": 13.12,
+   "onset_refined": 13.0935,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 13.12,
+   "end": 13.94,
+   "offset_sec": -0.0226,
+   "offset_beats": -0.0396,
+   "offset_words_file_sec": -0.0226,
+   "offset_words_file_beats": -0.0396,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -22.6,
+   "deviation_words_file_ms": -22.6,
+   "end_beats_after_bar_downbeat": 1.395,
+   "duration_s": 0.82,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 13.093514739229098,
+     "peak_excess_over_band": 0.6738541894287476,
+     "dip_time": 13.087709750566964,
+     "dip_level_rel_peak": 0.038491705415623974
+    },
+    "cons_2k_7k": {
+     "onset": 13.222675736961596,
+     "peak_excess_over_band": 0.37649874546214296,
+     "dip_time": 13.08625850340143,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Mö,",
+     "start": 13.12,
+     "end": 13.4,
+     "beats_from_verse_downbeat": 7.96
+    },
+    {
+     "text": "mö\"",
+     "start": 13.72,
+     "end": 13.94,
+     "beats_from_verse_downbeat": 9.01
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 23,
+   "bar_downbeat": 13.1426,
+   "onset_words_file": 14.28,
+   "onset_refined": 14.2941,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 14.28,
+   "end": 15.32,
+   "offset_sec": 1.1374,
+   "offset_beats": 1.9905,
+   "offset_words_file_sec": 1.1374,
+   "offset_words_file_beats": 1.9905,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": -5.4,
+   "deviation_words_file_ms": -5.4,
+   "end_beats_after_bar_downbeat": 3.811,
+   "duration_s": 1.04,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 14.294149659864042,
+     "peak_excess_over_band": 0.8775699225688344,
+     "dip_time": 14.231746031746093,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 14.327528344671316,
+     "peak_excess_over_band": 2.383648604990998,
+     "dip_time": 14.236099773242694,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 14.28,
+     "end": 14.76,
+     "beats_from_verse_downbeat": 9.99
+    },
+    {
+     "text": "bağırır",
+     "start": 14.84,
+     "end": 15.32,
+     "beats_from_verse_downbeat": 10.97
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 27,
+   "bar_downbeat": 15.4283,
+   "onset_words_file": 15.4,
+   "onset_refined": 15.3706,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 15.3706,
+   "end": 17.68,
+   "offset_sec": -0.0577,
+   "offset_beats": -0.1009,
+   "offset_words_file_sec": -0.0283,
+   "offset_words_file_beats": -0.0495,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -57.7,
+   "deviation_words_file_ms": -28.3,
+   "end_beats_after_bar_downbeat": 3.941,
+   "duration_s": 2.309,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 15.440272108843649,
+     "peak_excess_over_band": 0.09482101363614764,
+     "dip_time": 15.305306122449016,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 15.370612244898032,
+     "peak_excess_over_band": 2.5236778526765837,
+     "dip_time": 15.338684807256291,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 15.4,
+     "end": 16.46,
+     "beats_from_verse_downbeat": 11.951
+    },
+    {
+     "text": "Ali",
+     "start": 16.64,
+     "end": 17.04,
+     "beats_from_verse_downbeat": 14.121
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 17.1,
+     "end": 17.68,
+     "beats_from_verse_downbeat": 14.926
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 39,
+   "bar_downbeat": 22.2852,
+   "onset_words_file": 22.3,
+   "onset_refined": 22.2764,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 22.2764,
+   "end": 24.46,
+   "offset_sec": -0.0088,
+   "offset_beats": -0.0154,
+   "offset_words_file_sec": 0.0148,
+   "offset_words_file_beats": 0.0258,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -8.8,
+   "deviation_words_file_ms": 14.8,
+   "end_beats_after_bar_downbeat": 3.806,
+   "duration_s": 2.184,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 22.276417233560167,
+     "peak_excess_over_band": 1.0972652439010309,
+     "dip_time": 22.169024943310674,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 22.25029478458056,
+     "peak_excess_over_band": 1.1480193075589795,
+     "dip_time": 22.169024943310674,
+     "dip_level_rel_peak": 0.009330699140475312
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 22.3,
+     "end": 22.76,
+     "beats_from_verse_downbeat": 0.026
+    },
+    {
+     "text": "Baba'nın",
+     "start": 22.84,
+     "end": 23.36,
+     "beats_from_verse_downbeat": 0.971
+    },
+    {
+     "text": "bir",
+     "start": 23.4,
+     "end": 23.6,
+     "beats_from_verse_downbeat": 1.951
+    },
+    {
+     "text": "çiftliği",
+     "start": 23.7,
+     "end": 24.22,
+     "beats_from_verse_downbeat": 2.476
+    },
+    {
+     "text": "var,",
+     "start": 24.26,
+     "end": 24.46,
+     "beats_from_verse_downbeat": 3.456
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "L2",
+   "text": "çiftliğinde koyunları var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 43,
+   "bar_downbeat": 24.5709,
+   "onset_words_file": 24.56,
+   "onset_refined": 24.5335,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 24.5335,
+   "end": 26.82,
+   "offset_sec": -0.0374,
+   "offset_beats": -0.0654,
+   "offset_words_file_sec": -0.0109,
+   "offset_words_file_beats": -0.0191,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -37.4,
+   "deviation_words_file_ms": -10.9,
+   "end_beats_after_bar_downbeat": 3.936,
+   "duration_s": 2.286,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 24.62929705215432,
+     "peak_excess_over_band": 0.41761487703686884,
+     "dip_time": 24.472562358276683,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 24.533514739229098,
+     "peak_excess_over_band": 2.076298571291045,
+     "dip_time": 24.481269841269885,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 24.56,
+     "end": 25.58,
+     "beats_from_verse_downbeat": 3.981
+    },
+    {
+     "text": "koyunları",
+     "start": 25.7,
+     "end": 26.52,
+     "beats_from_verse_downbeat": 5.976
+    },
+    {
+     "text": "var.",
+     "start": 26.58,
+     "end": 26.82,
+     "beats_from_verse_downbeat": 7.516
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "ses",
+   "text": "\"Me, me\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 47,
+   "bar_downbeat": 26.8565,
+   "onset_words_file": 26.82,
+   "onset_refined": 26.8327,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 26.82,
+   "end": 27.66,
+   "offset_sec": -0.0365,
+   "offset_beats": -0.064,
+   "offset_words_file_sec": -0.0365,
+   "offset_words_file_beats": -0.064,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -36.5,
+   "deviation_words_file_ms": -36.5,
+   "end_beats_after_bar_downbeat": 1.406,
+   "duration_s": 0.84,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 26.83269841269851,
+     "peak_excess_over_band": 0.7576478645562779,
+     "dip_time": 26.787709750566965,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 26.88058956916112,
+     "peak_excess_over_band": 2.4791550039152765,
+     "dip_time": 26.810929705215504,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Me,",
+     "start": 26.82,
+     "end": 27.1,
+     "beats_from_verse_downbeat": 7.936
+    },
+    {
+     "text": "me\"",
+     "start": 27.46,
+     "end": 27.66,
+     "beats_from_verse_downbeat": 9.056
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 47,
+   "bar_downbeat": 26.8565,
+   "onset_words_file": 28.0,
+   "onset_refined": 28.0171,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 28.0,
+   "end": 29.06,
+   "offset_sec": 1.1435,
+   "offset_beats": 2.0011,
+   "offset_words_file_sec": 1.1435,
+   "offset_words_file_beats": 2.0011,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 0.6,
+   "deviation_words_file_ms": 0.6,
+   "end_beats_after_bar_downbeat": 3.856,
+   "duration_s": 1.06,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 28.01705215419511,
+     "peak_excess_over_band": 0.719125042259058,
+     "dip_time": 27.951746031746094,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 28.053333333333452,
+     "peak_excess_over_band": 2.5974316214912694,
+     "dip_time": 27.964807256235897,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 28.0,
+     "end": 28.5,
+     "beats_from_verse_downbeat": 10.001
+    },
+    {
+     "text": "bağırır",
+     "start": 28.56,
+     "end": 29.06,
+     "beats_from_verse_downbeat": 10.981
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 51,
+   "bar_downbeat": 29.1422,
+   "onset_words_file": 29.12,
+   "onset_refined": 29.1008,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 29.1008,
+   "end": 31.4,
+   "offset_sec": -0.0414,
+   "offset_beats": -0.0725,
+   "offset_words_file_sec": -0.0222,
+   "offset_words_file_beats": -0.0388,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -41.4,
+   "deviation_words_file_ms": -22.2,
+   "end_beats_after_bar_downbeat": 3.951,
+   "duration_s": 2.299,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 29.154467120181515,
+     "peak_excess_over_band": 0.18620051857982398,
+     "dip_time": 29.044172335600955,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 29.10077097505677,
+     "peak_excess_over_band": 1.630457548645984,
+     "dip_time": 29.080453514739297,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 29.12,
+     "end": 30.2,
+     "beats_from_verse_downbeat": 11.961
+    },
+    {
+     "text": "Ali",
+     "start": 30.36,
+     "end": 30.68,
+     "beats_from_verse_downbeat": 14.131
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 30.84,
+     "end": 31.4,
+     "beats_from_verse_downbeat": 14.971
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 63,
+   "bar_downbeat": 35.9992,
+   "onset_words_file": 36.0,
+   "onset_refined": 35.9837,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 36.0,
+   "end": 38.16,
+   "offset_sec": 0.0008,
+   "offset_beats": 0.0015,
+   "offset_words_file_sec": 0.0008,
+   "offset_words_file_beats": 0.0015,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 0.8,
+   "deviation_words_file_ms": 0.8,
+   "end_beats_after_bar_downbeat": 3.782,
+   "duration_s": 2.16,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 35.98367346938784,
+     "peak_excess_over_band": 0.7233817802148685,
+     "dip_time": 35.86902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 35.99963718820871,
+     "peak_excess_over_band": 0.987954403637532,
+     "dip_time": 35.86902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 36.0,
+     "end": 36.48,
+     "beats_from_verse_downbeat": 0.001
+    },
+    {
+     "text": "Baba'nın",
+     "start": 36.56,
+     "end": 37.06,
+     "beats_from_verse_downbeat": 0.982
+    },
+    {
+     "text": "bir",
+     "start": 37.12,
+     "end": 37.32,
+     "beats_from_verse_downbeat": 1.962
+    },
+    {
+     "text": "çiftliği",
+     "start": 37.4,
+     "end": 37.94,
+     "beats_from_verse_downbeat": 2.452
+    },
+    {
+     "text": "var,",
+     "start": 37.98,
+     "end": 38.16,
+     "beats_from_verse_downbeat": 3.467
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "L2",
+   "text": "çiftliğinde atları var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 67,
+   "bar_downbeat": 38.2848,
+   "onset_words_file": 38.26,
+   "onset_refined": 38.2437,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 38.2437,
+   "end": 40.54,
+   "offset_sec": -0.0411,
+   "offset_beats": -0.072,
+   "offset_words_file_sec": -0.0248,
+   "offset_words_file_beats": -0.0434,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -41.1,
+   "deviation_words_file_ms": -24.8,
+   "end_beats_after_bar_downbeat": 3.947,
+   "duration_s": 2.296,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 38.294467120181515,
+     "peak_excess_over_band": 0.06602770937798338,
+     "dip_time": 38.17546485260775,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 38.243673469387836,
+     "peak_excess_over_band": 1.9037761140039353,
+     "dip_time": 38.17836734693882,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 38.26,
+     "end": 39.32,
+     "beats_from_verse_downbeat": 3.957
+    },
+    {
+     "text": "atları",
+     "start": 39.48,
+     "end": 40.22,
+     "beats_from_verse_downbeat": 6.092
+    },
+    {
+     "text": "var.",
+     "start": 40.28,
+     "end": 40.54,
+     "beats_from_verse_downbeat": 7.492
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "ses",
+   "text": "\"Me, me\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 71,
+   "bar_downbeat": 40.5705,
+   "onset_words_file": 40.54,
+   "onset_refined": 40.573,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 40.54,
+   "end": 41.38,
+   "offset_sec": -0.0305,
+   "offset_beats": -0.0533,
+   "offset_words_file_sec": -0.0305,
+   "offset_words_file_beats": -0.0533,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -30.5,
+   "deviation_words_file_ms": -30.5,
+   "end_beats_after_bar_downbeat": 1.417,
+   "duration_s": 0.84,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 40.57301587301598,
+     "peak_excess_over_band": 0.3956104014188941,
+     "dip_time": 40.5048072562359,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 40.60204081632666,
+     "peak_excess_over_band": 1.7073936319186513,
+     "dip_time": 40.526575963718905,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Me,",
+     "start": 40.54,
+     "end": 40.82,
+     "beats_from_verse_downbeat": 7.947
+    },
+    {
+     "text": "me\"",
+     "start": 41.16,
+     "end": 41.38,
+     "beats_from_verse_downbeat": 9.032
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 71,
+   "bar_downbeat": 40.5705,
+   "onset_words_file": 41.72,
+   "onset_refined": 41.7371,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 41.72,
+   "end": 42.76,
+   "offset_sec": 1.1495,
+   "offset_beats": 2.0117,
+   "offset_words_file_sec": 1.1495,
+   "offset_words_file_beats": 2.0117,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 6.7,
+   "deviation_words_file_ms": 6.7,
+   "end_beats_after_bar_downbeat": 3.832,
+   "duration_s": 1.04,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 41.73705215419511,
+     "peak_excess_over_band": 0.4281253950442514,
+     "dip_time": 41.612244897959215,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 41.74721088435385,
+     "peak_excess_over_band": 1.6313931301681297,
+     "dip_time": 41.667392290249495,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 41.72,
+     "end": 42.2,
+     "beats_from_verse_downbeat": 10.012
+    },
+    {
+     "text": "bağırır",
+     "start": 42.28,
+     "end": 42.76,
+     "beats_from_verse_downbeat": 10.992
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 75,
+   "bar_downbeat": 42.8561,
+   "onset_words_file": 42.84,
+   "onset_refined": 42.8193,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 42.8193,
+   "end": 45.1,
+   "offset_sec": -0.0368,
+   "offset_beats": -0.0644,
+   "offset_words_file_sec": -0.0161,
+   "offset_words_file_beats": -0.0282,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -36.8,
+   "deviation_words_file_ms": -16.1,
+   "end_beats_after_bar_downbeat": 3.927,
+   "duration_s": 2.281,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": null,
+     "peak_excess_over_band": 0.0,
+     "dip_time": 42.73369614512475,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 42.81931972789124,
+     "peak_excess_over_band": 1.1574628139597434,
+     "dip_time": 42.769977324263095,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 42.84,
+     "end": 43.92,
+     "beats_from_verse_downbeat": 11.972
+    },
+    {
+     "text": "Ali",
+     "start": 44.08,
+     "end": 44.5,
+     "beats_from_verse_downbeat": 14.142
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 44.56,
+     "end": 45.1,
+     "beats_from_verse_downbeat": 14.982
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 87,
+   "bar_downbeat": 49.7131,
+   "onset_words_file": 49.74,
+   "onset_refined": 49.7164,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 49.74,
+   "end": 51.9,
+   "offset_sec": 0.0269,
+   "offset_beats": 0.0471,
+   "offset_words_file_sec": 0.0269,
+   "offset_words_file_beats": 0.0471,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 26.9,
+   "deviation_words_file_ms": 26.9,
+   "end_beats_after_bar_downbeat": 3.827,
+   "duration_s": 2.16,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 49.71641723356017,
+     "peak_excess_over_band": 0.9555838664420817,
+     "dip_time": 49.60902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 49.77591836734705,
+     "peak_excess_over_band": 1.258547768217519,
+     "dip_time": 49.60902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 49.74,
+     "end": 50.2,
+     "beats_from_verse_downbeat": 0.047
+    },
+    {
+     "text": "Baba'nın",
+     "start": 50.26,
+     "end": 50.78,
+     "beats_from_verse_downbeat": 0.957
+    },
+    {
+     "text": "bir",
+     "start": 50.84,
+     "end": 51.04,
+     "beats_from_verse_downbeat": 1.972
+    },
+    {
+     "text": "çiftliği",
+     "start": 51.12,
+     "end": 51.64,
+     "beats_from_verse_downbeat": 2.462
+    },
+    {
+     "text": "var,",
+     "start": 51.7,
+     "end": 51.9,
+     "beats_from_verse_downbeat": 3.477
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "L2",
+   "text": "çiftliğinde horozları var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 91,
+   "bar_downbeat": 51.9987,
+   "onset_words_file": 51.98,
+   "onset_refined": 51.9738,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 51.9738,
+   "end": 54.26,
+   "offset_sec": -0.0249,
+   "offset_beats": -0.0436,
+   "offset_words_file_sec": -0.0187,
+   "offset_words_file_beats": -0.0328,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -24.9,
+   "deviation_words_file_ms": -18.7,
+   "end_beats_after_bar_downbeat": 3.957,
+   "duration_s": 2.286,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 52.00575963718831,
+     "peak_excess_over_band": 0.13469508491693916,
+     "dip_time": 51.90997732426309,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 51.97383219954657,
+     "peak_excess_over_band": 1.929218736525029,
+     "dip_time": 51.91433106575969,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 51.98,
+     "end": 53.02,
+     "beats_from_verse_downbeat": 3.967
+    },
+    {
+     "text": "horozları",
+     "start": 53.12,
+     "end": 53.94,
+     "beats_from_verse_downbeat": 5.962
+    },
+    {
+     "text": "var.",
+     "start": 54.0,
+     "end": 54.26,
+     "beats_from_verse_downbeat": 7.502
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "ses",
+   "text": "\"Üü, üü\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 95,
+   "bar_downbeat": 54.2844,
+   "onset_words_file": 54.3,
+   "onset_refined": 54.3461,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 54.3,
+   "end": 55.1,
+   "offset_sec": 0.0156,
+   "offset_beats": 0.0273,
+   "offset_words_file_sec": 0.0156,
+   "offset_words_file_beats": 0.0273,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 15.6,
+   "deviation_words_file_ms": 15.6,
+   "end_beats_after_bar_downbeat": 1.427,
+   "duration_s": 0.8,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 54.346077097505784,
+     "peak_excess_over_band": 0.1730684270134668,
+     "dip_time": 54.21981859410435,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 54.283673469387836,
+     "peak_excess_over_band": 0.5004717268614681,
+     "dip_time": 54.244489795918426,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Üü,",
+     "start": 54.3,
+     "end": 54.8,
+     "beats_from_verse_downbeat": 8.027
+    },
+    {
+     "text": "üü\"",
+     "start": 54.9,
+     "end": 55.1,
+     "beats_from_verse_downbeat": 9.077
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 95,
+   "bar_downbeat": 54.2844,
+   "onset_words_file": 55.44,
+   "onset_refined": 55.4614,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 55.44,
+   "end": 56.44,
+   "offset_sec": 1.1556,
+   "offset_beats": 2.0224,
+   "offset_words_file_sec": 1.1556,
+   "offset_words_file_beats": 2.0224,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 12.8,
+   "deviation_words_file_ms": 12.8,
+   "end_beats_after_bar_downbeat": 3.772,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 55.46140589569171,
+     "peak_excess_over_band": 0.955750022100424,
+     "dip_time": 55.37433106575969,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 55.45560090702958,
+     "peak_excess_over_band": 3.0840937310845833,
+     "dip_time": 55.375782312925224,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 55.44,
+     "end": 55.9,
+     "beats_from_verse_downbeat": 10.022
+    },
+    {
+     "text": "bağırır",
+     "start": 55.98,
+     "end": 56.44,
+     "beats_from_verse_downbeat": 10.967
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 99,
+   "bar_downbeat": 56.57,
+   "onset_words_file": 56.52,
+   "onset_refined": 56.508,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 56.508,
+   "end": 58.78,
+   "offset_sec": -0.062,
+   "offset_beats": -0.1085,
+   "offset_words_file_sec": -0.05,
+   "offset_words_file_beats": -0.0876,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -62.0,
+   "deviation_words_file_ms": -50.0,
+   "end_beats_after_bar_downbeat": 3.868,
+   "duration_s": 2.272,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 56.57913832199559,
+     "peak_excess_over_band": 0.3031656834632309,
+     "dip_time": 56.45142857142863,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 56.50802721088444,
+     "peak_excess_over_band": 1.3790490494462257,
+     "dip_time": 56.44852607709756,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 56.52,
+     "end": 57.56,
+     "beats_from_verse_downbeat": 11.912
+    },
+    {
+     "text": "Ali",
+     "start": 57.7,
+     "end": 58.16,
+     "beats_from_verse_downbeat": 13.977
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 58.26,
+     "end": 58.78,
+     "beats_from_verse_downbeat": 14.958
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 111,
+   "bar_downbeat": 63.427,
+   "onset_words_file": 63.42,
+   "onset_refined": 63.408,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 63.408,
+   "end": 65.6,
+   "offset_sec": -0.019,
+   "offset_beats": -0.0332,
+   "offset_words_file_sec": -0.007,
+   "offset_words_file_beats": -0.0122,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -19.0,
+   "deviation_words_file_ms": -7.0,
+   "end_beats_after_bar_downbeat": 3.803,
+   "duration_s": 2.192,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 63.40802721088444,
+     "peak_excess_over_band": 1.2040252239205667,
+     "dip_time": 63.28902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 63.405124716553374,
+     "peak_excess_over_band": 1.737471496120439,
+     "dip_time": 63.28902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 63.42,
+     "end": 63.92,
+     "beats_from_verse_downbeat": -0.012
+    },
+    {
+     "text": "Baba'nın",
+     "start": 63.98,
+     "end": 64.5,
+     "beats_from_verse_downbeat": 0.968
+    },
+    {
+     "text": "bir",
+     "start": 64.56,
+     "end": 64.739,
+     "beats_from_verse_downbeat": 1.983
+    },
+    {
+     "text": "çiftliği",
+     "start": 64.84,
+     "end": 65.34,
+     "beats_from_verse_downbeat": 2.473
+    },
+    {
+     "text": "var,",
+     "start": 65.42,
+     "end": 65.6,
+     "beats_from_verse_downbeat": 3.488
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "L2",
+   "text": "çiftliğinde ördekleri var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 115,
+   "bar_downbeat": 65.7127,
+   "onset_words_file": 65.7,
+   "onset_refined": 65.6822,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 65.6822,
+   "end": 67.96,
+   "offset_sec": -0.0304,
+   "offset_beats": -0.0533,
+   "offset_words_file_sec": -0.0127,
+   "offset_words_file_beats": -0.0221,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -30.4,
+   "deviation_words_file_ms": -12.7,
+   "end_beats_after_bar_downbeat": 3.933,
+   "duration_s": 2.278,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 65.77800453514753,
+     "peak_excess_over_band": 0.19258283820047134,
+     "dip_time": 65.61111111111116,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 65.68222222222231,
+     "peak_excess_over_band": 2.189807157088671,
+     "dip_time": 65.61691609977329,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 65.7,
+     "end": 66.72,
+     "beats_from_verse_downbeat": 3.978
+    },
+    {
+     "text": "ördekleri",
+     "start": 66.9,
+     "end": 67.66,
+     "beats_from_verse_downbeat": 6.078
+    },
+    {
+     "text": "var.",
+     "start": 67.72,
+     "end": 67.96,
+     "beats_from_verse_downbeat": 7.513
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "ses",
+   "text": "\"Vak, vak\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 119,
+   "bar_downbeat": 67.9983,
+   "onset_words_file": 67.98,
+   "onset_refined": 68.0333,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 67.98,
+   "end": 69.04,
+   "offset_sec": -0.0183,
+   "offset_beats": -0.032,
+   "offset_words_file_sec": -0.0183,
+   "offset_words_file_beats": -0.032,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -18.3,
+   "deviation_words_file_ms": -18.3,
+   "end_beats_after_bar_downbeat": 1.823,
+   "duration_s": 1.06,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 68.03333333333346,
+     "peak_excess_over_band": 0.9679994599964044,
+     "dip_time": 67.9448072562359,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 68.0696145124718,
+     "peak_excess_over_band": 0.3381914601468542,
+     "dip_time": 67.94770975056697,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Vak,",
+     "start": 67.98,
+     "end": 68.42,
+     "beats_from_verse_downbeat": 7.968
+    },
+    {
+     "text": "vak\"",
+     "start": 68.58,
+     "end": 69.04,
+     "beats_from_verse_downbeat": 9.018
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 119,
+   "bar_downbeat": 67.9983,
+   "onset_words_file": 69.16,
+   "onset_refined": 69.1669,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 69.16,
+   "end": 70.16,
+   "offset_sec": 1.1617,
+   "offset_beats": 2.033,
+   "offset_words_file_sec": 1.1617,
+   "offset_words_file_beats": 2.033,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 18.9,
+   "deviation_words_file_ms": 18.9,
+   "end_beats_after_bar_downbeat": 3.783,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 69.16689342403637,
+     "peak_excess_over_band": 0.6475270189793624,
+     "dip_time": 69.02902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 69.17705215419511,
+     "peak_excess_over_band": 2.365315711713189,
+     "dip_time": 69.02902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 69.16,
+     "end": 69.62,
+     "beats_from_verse_downbeat": 10.033
+    },
+    {
+     "text": "bağırır",
+     "start": 69.68,
+     "end": 70.16,
+     "beats_from_verse_downbeat": 10.943
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 123,
+   "bar_downbeat": 70.284,
+   "onset_words_file": 70.26,
+   "onset_refined": 70.2393,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 70.2393,
+   "end": 72.54,
+   "offset_sec": -0.0446,
+   "offset_beats": -0.0781,
+   "offset_words_file_sec": -0.024,
+   "offset_words_file_beats": -0.0419,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -44.6,
+   "deviation_words_file_ms": -24.0,
+   "end_beats_after_bar_downbeat": 3.948,
+   "duration_s": 2.301,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 70.32929705215433,
+     "peak_excess_over_band": 0.4141531639053134,
+     "dip_time": 70.16675736961456,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 70.23931972789124,
+     "peak_excess_over_band": 2.096116594435205,
+     "dip_time": 70.16820861678009,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 70.26,
+     "end": 71.3,
+     "beats_from_verse_downbeat": 11.958
+    },
+    {
+     "text": "Ali",
+     "start": 71.48,
+     "end": 71.9,
+     "beats_from_verse_downbeat": 14.093
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 71.98,
+     "end": 72.54,
+     "beats_from_verse_downbeat": 14.968
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 135,
+   "bar_downbeat": 77.1409,
+   "onset_words_file": 77.16,
+   "onset_refined": 77.1393,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 77.1393,
+   "end": 79.32,
+   "offset_sec": -0.0016,
+   "offset_beats": -0.0028,
+   "offset_words_file_sec": 0.0191,
+   "offset_words_file_beats": 0.0334,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -1.6,
+   "deviation_words_file_ms": 19.1,
+   "end_beats_after_bar_downbeat": 3.813,
+   "duration_s": 2.181,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 77.13931972789123,
+     "peak_excess_over_band": 1.2399042714225066,
+     "dip_time": 77.02902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 77.21188208616792,
+     "peak_excess_over_band": 1.4194893183704125,
+     "dip_time": 77.02902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 77.16,
+     "end": 77.64,
+     "beats_from_verse_downbeat": 0.033
+    },
+    {
+     "text": "Baba'nın",
+     "start": 77.7,
+     "end": 78.2,
+     "beats_from_verse_downbeat": 0.978
+    },
+    {
+     "text": "bir",
+     "start": 78.26,
+     "end": 78.48,
+     "beats_from_verse_downbeat": 1.958
+    },
+    {
+     "text": "çiftliği",
+     "start": 78.56,
+     "end": 79.08,
+     "beats_from_verse_downbeat": 2.483
+    },
+    {
+     "text": "var,",
+     "start": 79.16,
+     "end": 79.32,
+     "beats_from_verse_downbeat": 3.533
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "L2",
+   "text": "çiftliğinde köpekleri var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 139,
+   "bar_downbeat": 79.4266,
+   "onset_words_file": 79.42,
+   "onset_refined": 79.3834,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 79.3834,
+   "end": 81.66,
+   "offset_sec": -0.0432,
+   "offset_beats": -0.0756,
+   "offset_words_file_sec": -0.0066,
+   "offset_words_file_beats": -0.0115,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -43.2,
+   "deviation_words_file_ms": -6.6,
+   "end_beats_after_bar_downbeat": 3.909,
+   "duration_s": 2.277,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 79.48349206349219,
+     "peak_excess_over_band": 0.4448472335483827,
+     "dip_time": 79.32240362811795,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 79.38335600907037,
+     "peak_excess_over_band": 2.6363415220538067,
+     "dip_time": 79.33401360544222,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 79.42,
+     "end": 80.44,
+     "beats_from_verse_downbeat": 3.989
+    },
+    {
+     "text": "köpekleri",
+     "start": 80.54,
+     "end": 81.38,
+     "beats_from_verse_downbeat": 5.949
+    },
+    {
+     "text": "var.",
+     "start": 81.44,
+     "end": 81.66,
+     "beats_from_verse_downbeat": 7.524
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "ses",
+   "text": "\"Hav, hav\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 143,
+   "bar_downbeat": 81.7122,
+   "onset_words_file": 81.7,
+   "onset_refined": 81.7751,
+   "refined_reliable": false,
+   "refine_band": "cons_2k_7k",
+   "onset": 81.7,
+   "end": 82.7,
+   "offset_sec": -0.0122,
+   "offset_beats": -0.0214,
+   "offset_words_file_sec": -0.0122,
+   "offset_words_file_beats": -0.0214,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -12.2,
+   "deviation_words_file_ms": -12.2,
+   "end_beats_after_bar_downbeat": 1.729,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 81.72430839002278,
+     "peak_excess_over_band": 1.03634692536309,
+     "dip_time": 81.64158730158736,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 81.77510204081646,
+     "peak_excess_over_band": 0.5731064022169734,
+     "dip_time": 81.70834467120191,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Hav,",
+     "start": 81.7,
+     "end": 82.14,
+     "beats_from_verse_downbeat": 7.979
+    },
+    {
+     "text": "hav\"",
+     "start": 82.26,
+     "end": 82.7,
+     "beats_from_verse_downbeat": 8.959
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 143,
+   "bar_downbeat": 81.7122,
+   "onset_words_file": 82.86,
+   "onset_refined": 82.864,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 82.864,
+   "end": 83.88,
+   "offset_sec": 1.1518,
+   "offset_beats": 2.0156,
+   "offset_words_file_sec": 1.1478,
+   "offset_words_file_beats": 2.0087,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 8.9,
+   "deviation_words_file_ms": 4.9,
+   "end_beats_after_bar_downbeat": 3.794,
+   "duration_s": 1.016,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 82.86399092970531,
+     "peak_excess_over_band": 1.2114146933987269,
+     "dip_time": 82.72902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 82.86253968253978,
+     "peak_excess_over_band": 2.704122227663401,
+     "dip_time": 82.72902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 82.86,
+     "end": 83.34,
+     "beats_from_verse_downbeat": 10.009
+    },
+    {
+     "text": "bağırır",
+     "start": 83.4,
+     "end": 83.88,
+     "beats_from_verse_downbeat": 10.954
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 147,
+   "bar_downbeat": 83.9979,
+   "onset_words_file": 83.98,
+   "onset_refined": 83.9492,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 83.9492,
+   "end": 86.24,
+   "offset_sec": -0.0487,
+   "offset_beats": -0.0853,
+   "offset_words_file_sec": -0.0179,
+   "offset_words_file_beats": -0.0313,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -48.7,
+   "deviation_words_file_ms": -17.9,
+   "end_beats_after_bar_downbeat": 3.924,
+   "duration_s": 2.291,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 84.01011337868492,
+     "peak_excess_over_band": 0.08971985346223146,
+     "dip_time": 83.88530612244902,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 83.9491609977325,
+     "peak_excess_over_band": 2.3473772598000324,
+     "dip_time": 83.88530612244902,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 83.98,
+     "end": 85.02,
+     "beats_from_verse_downbeat": 11.969
+    },
+    {
+     "text": "Ali",
+     "start": 85.2,
+     "end": 85.64,
+     "beats_from_verse_downbeat": 14.104
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 85.7,
+     "end": 86.24,
+     "beats_from_verse_downbeat": 14.979
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 159,
+   "bar_downbeat": 90.8548,
+   "onset_words_file": 90.88,
+   "onset_refined": 90.8506,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 90.8506,
+   "end": 93.04,
+   "offset_sec": -0.0042,
+   "offset_beats": -0.0074,
+   "offset_words_file_sec": 0.0252,
+   "offset_words_file_beats": 0.044,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -4.2,
+   "deviation_words_file_ms": 25.2,
+   "end_beats_after_bar_downbeat": 3.824,
+   "duration_s": 2.189,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 90.85061224489803,
+     "peak_excess_over_band": 1.0993917679855998,
+     "dip_time": 90.74902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 90.92172335600918,
+     "peak_excess_over_band": 0.9502477485656351,
+     "dip_time": 90.74902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 90.88,
+     "end": 91.36,
+     "beats_from_verse_downbeat": 0.044
+    },
+    {
+     "text": "Baba'nın",
+     "start": 91.4,
+     "end": 91.92,
+     "beats_from_verse_downbeat": 0.954
+    },
+    {
+     "text": "bir",
+     "start": 91.98,
+     "end": 92.18,
+     "beats_from_verse_downbeat": 1.969
+    },
+    {
+     "text": "çiftliği",
+     "start": 92.26,
+     "end": 92.8,
+     "beats_from_verse_downbeat": 2.459
+    },
+    {
+     "text": "var,",
+     "start": 92.86,
+     "end": 93.04,
+     "beats_from_verse_downbeat": 3.509
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "L2",
+   "text": "çiftliğinde kedisi var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 163,
+   "bar_downbeat": 93.1405,
+   "onset_words_file": 93.12,
+   "onset_refined": 93.1022,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 93.1022,
+   "end": 95.38,
+   "offset_sec": -0.0383,
+   "offset_beats": -0.067,
+   "offset_words_file_sec": -0.0205,
+   "offset_words_file_beats": -0.0359,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -38.3,
+   "deviation_words_file_ms": -20.5,
+   "end_beats_after_bar_downbeat": 3.919,
+   "duration_s": 2.278,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 93.18639455782326,
+     "peak_excess_over_band": 0.016206269077857032,
+     "dip_time": 93.04272108843543,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 93.10222222222231,
+     "peak_excess_over_band": 3.0759640445555347,
+     "dip_time": 93.05142857142863,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 93.12,
+     "end": 94.14,
+     "beats_from_verse_downbeat": 3.964
+    },
+    {
+     "text": "kedisi",
+     "start": 94.26,
+     "end": 94.98,
+     "beats_from_verse_downbeat": 5.959
+    },
+    {
+     "text": "var.",
+     "start": 95.12,
+     "end": 95.38,
+     "beats_from_verse_downbeat": 7.464
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "ses",
+   "text": "\"Miyav, miyav\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 167,
+   "bar_downbeat": 95.4261,
+   "onset_words_file": 95.4,
+   "onset_refined": 95.3735,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 95.4,
+   "end": 96.5,
+   "offset_sec": -0.0261,
+   "offset_beats": -0.0458,
+   "offset_words_file_sec": -0.0261,
+   "offset_words_file_beats": -0.0458,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -26.1,
+   "deviation_words_file_ms": -26.1,
+   "end_beats_after_bar_downbeat": 1.879,
+   "duration_s": 1.1,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 95.37351473922911,
+     "peak_excess_over_band": 0.7772844794878501,
+     "dip_time": 95.3648072562359,
+     "dip_level_rel_peak": 0.003342600979438823
+    },
+    "cons_2k_7k": {
+     "onset": 95.46058956916113,
+     "peak_excess_over_band": 0.6255828770887316,
+     "dip_time": 95.36916099773251,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Miyav,",
+     "start": 95.4,
+     "end": 95.92,
+     "beats_from_verse_downbeat": 7.954
+    },
+    {
+     "text": "miyav\"",
+     "start": 96.04,
+     "end": 96.5,
+     "beats_from_verse_downbeat": 9.074
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 167,
+   "bar_downbeat": 95.4261,
+   "onset_words_file": 96.6,
+   "onset_refined": 96.6098,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 96.6,
+   "end": 97.6,
+   "offset_sec": 1.1739,
+   "offset_beats": 2.0543,
+   "offset_words_file_sec": 1.1739,
+   "offset_words_file_beats": 2.0543,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 31.0,
+   "deviation_words_file_ms": 31.0,
+   "end_beats_after_bar_downbeat": 3.804,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 96.60979591836744,
+     "peak_excess_over_band": 0.7928846355018776,
+     "dip_time": 96.46902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 96.61560090702957,
+     "peak_excess_over_band": 2.4613120738634104,
+     "dip_time": 96.46902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 96.6,
+     "end": 96.96,
+     "beats_from_verse_downbeat": 10.054
+    },
+    {
+     "text": "bağırır",
+     "start": 97.12,
+     "end": 97.6,
+     "beats_from_verse_downbeat": 10.964
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 171,
+   "bar_downbeat": 97.7118,
+   "onset_words_file": 97.68,
+   "onset_refined": 97.6666,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 97.6666,
+   "end": 99.96,
+   "offset_sec": -0.0452,
+   "offset_beats": -0.0791,
+   "offset_words_file_sec": -0.0318,
+   "offset_words_file_beats": -0.0556,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -45.2,
+   "deviation_words_file_ms": -31.8,
+   "end_beats_after_bar_downbeat": 3.934,
+   "duration_s": 2.293,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 97.75074829931987,
+     "peak_excess_over_band": 0.18826633252274919,
+     "dip_time": 97.60272108843543,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 97.66657596371891,
+     "peak_excess_over_band": 2.174492063797742,
+     "dip_time": 97.61142857142863,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 97.68,
+     "end": 98.74,
+     "beats_from_verse_downbeat": 11.944
+    },
+    {
+     "text": "Ali",
+     "start": 98.92,
+     "end": 99.34,
+     "beats_from_verse_downbeat": 14.114
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 99.42,
+     "end": 99.96,
+     "beats_from_verse_downbeat": 14.989
+    }
+   ]
+  }
+ ],
+ "segment_offset_summary": {
+  "L1": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -0.48571428571428593,
+    "median_ms": -1.6,
+    "sd_ms": 13.024639130885582,
+    "min_ms": -19.0,
+    "max_ms": 26.9
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": 12.642857142857142,
+    "median_ms": 14.8,
+    "sd_ms": 11.643128831185876,
+    "min_ms": -7.0,
+    "max_ms": 26.9
+   },
+   "refined_only": {
+    "n": 5,
+    "mean_ms": -6.219999999998649,
+    "median_ms": -4.199999999997317,
+    "sd_ms": 7.368147664101184,
+    "min_ms": -18.99999999999835,
+    "max_ms": 2.4999999999995026
+   },
+   "n_refined_reliable": 5
+  },
+  "L2": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -35.714285714285715,
+    "median_ms": -37.4,
+    "sd_ms": 5.865012135276345,
+    "min_ms": -43.2,
+    "max_ms": -24.9
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": -15.885714285714286,
+    "median_ms": -17.0,
+    "sd_ms": 5.746409704310676,
+    "min_ms": -24.8,
+    "max_ms": -6.6
+   },
+   "refined_only": {
+    "n": 7,
+    "mean_ms": -35.74285714285885,
+    "median_ms": -37.400000000001654,
+    "sd_ms": 5.8497514337556,
+    "min_ms": -43.199999999998795,
+    "max_ms": -24.900000000002365
+   },
+   "n_refined_reliable": 7
+  },
+  "ses": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -18.657142857142855,
+    "median_ms": -22.6,
+    "sd_ms": 15.788500077394229,
+    "min_ms": -36.5,
+    "max_ms": 15.6
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": -18.657142857142855,
+    "median_ms": -22.6,
+    "sd_ms": 15.788500077394229,
+    "min_ms": -36.5,
+    "max_ms": 15.6
+   },
+   "refined_only": null,
+   "n_refined_reliable": 0
+  },
+  "diye": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": 10.5,
+    "median_ms": 8.9,
+    "sd_ms": 11.109326840864071,
+    "min_ms": -5.4,
+    "max_ms": 31.0
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": 9.928571428571429,
+    "median_ms": 6.7,
+    "sd_ms": 11.27851488269549,
+    "min_ms": -5.4,
+    "max_ms": 31.0
+   },
+   "refined_only": {
+    "n": 1,
+    "mean_ms": 8.97330827068532,
+    "median_ms": 8.97330827068532,
+    "sd_ms": 0.0,
+    "min_ms": 8.97330827068532,
+    "max_ms": 8.97330827068532
+   },
+   "n_refined_reliable": 1
+  },
+  "L4": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -48.05714285714286,
+    "median_ms": -45.2,
+    "sd_ms": 8.271786323376096,
+    "min_ms": -62.0,
+    "max_ms": -36.8
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": -27.185714285714287,
+    "median_ms": -24.0,
+    "sd_ms": 10.604234810601252,
+    "min_ms": -50.0,
+    "max_ms": -16.1
+   },
+   "refined_only": {
+    "n": 7,
+    "mean_ms": -48.07142857142769,
+    "median_ms": -45.199999999994134,
+    "sd_ms": 8.265887608670758,
+    "min_ms": -61.99999999999761,
+    "max_ms": -36.7999999999995
+   },
+   "n_refined_reliable": 7
+  },
+  "all": {
+   "adopted_onset": {
+    "n": 35,
+    "mean_ms": -18.482857142857142,
+    "median_ms": -22.6,
+    "sd_ms": 24.415773422866103,
+    "min_ms": -62.0,
+    "max_ms": 31.0
+   },
+   "words_file": {
+    "n": 35,
+    "mean_ms": -7.831428571428572,
+    "median_ms": -12.2,
+    "sd_ms": 19.742264617943356,
+    "min_ms": -50.0,
+    "max_ms": 31.0
+   },
+   "n_refined_reliable": 20
+  }
+ },
+ "gaps_between_segments_for_cutting_ms": {
+  "per_verse": [
+   {
+    "verse": 1,
+    "L1_end_to_L2_onset_ms": 82,
+    "L2_end_to_ses_onset_ms": 40,
+    "ses_end_to_diye_onset_ms": 340,
+    "diye_end_to_L4_onset_ms": 51,
+    "L4_end_to_next_bar_line_ms": 34
+   },
+   {
+    "verse": 2,
+    "L1_end_to_L2_onset_ms": 73,
+    "L2_end_to_ses_onset_ms": 0,
+    "ses_end_to_diye_onset_ms": 340,
+    "diye_end_to_L4_onset_ms": 41,
+    "L4_end_to_next_bar_line_ms": 28
+   },
+   {
+    "verse": 3,
+    "L1_end_to_L2_onset_ms": 84,
+    "L2_end_to_ses_onset_ms": 0,
+    "ses_end_to_diye_onset_ms": 340,
+    "diye_end_to_L4_onset_ms": 59,
+    "L4_end_to_next_bar_line_ms": 42
+   },
+   {
+    "verse": 4,
+    "L1_end_to_L2_onset_ms": 74,
+    "L2_end_to_ses_onset_ms": 40,
+    "ses_end_to_diye_onset_ms": 340,
+    "diye_end_to_L4_onset_ms": 68,
+    "L4_end_to_next_bar_line_ms": 76
+   },
+   {
+    "verse": 5,
+    "L1_end_to_L2_onset_ms": 82,
+    "L2_end_to_ses_onset_ms": 20,
+    "ses_end_to_diye_onset_ms": 120,
+    "diye_end_to_L4_onset_ms": 79,
+    "L4_end_to_next_bar_line_ms": 30
+   },
+   {
+    "verse": 6,
+    "L1_end_to_L2_onset_ms": 63,
+    "L2_end_to_ses_onset_ms": 40,
+    "ses_end_to_diye_onset_ms": 160,
+    "diye_end_to_L4_onset_ms": 69,
+    "L4_end_to_next_bar_line_ms": 44
+   },
+   {
+    "verse": 7,
+    "L1_end_to_L2_onset_ms": 62,
+    "L2_end_to_ses_onset_ms": 20,
+    "ses_end_to_diye_onset_ms": 100,
+    "diye_end_to_L4_onset_ms": 67,
+    "L4_end_to_next_bar_line_ms": 37
+   }
+  ],
+  "note": "from the words file: L2 runs straight into the sung animal sound (0-40 ms gap) and \"diye\" follows the second animal sound after 100-340 ms; the sung animal sounds therefore cannot be cut out on silence everywhere, cross-fades of a few tens of ms will be needed (to be checked on the separated vocal)"
+ },
+ "typical_word_positions_beats_from_verse_downbeat": [
+  {
+   "index": 0,
+   "text_verse1": "Ali",
+   "median_start_beats": 0.026,
+   "sd_start_beats": 0.02,
+   "median_end_beats": 0.852
+  },
+  {
+   "index": 1,
+   "text_verse1": "Baba'nın",
+   "median_start_beats": 0.968,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 1.867
+  },
+  {
+   "index": 2,
+   "text_verse1": "bir",
+   "median_start_beats": 1.969,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 2.312
+  },
+  {
+   "index": 3,
+   "text_verse1": "çiftliği",
+   "median_start_beats": 2.465,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 3.386
+  },
+  {
+   "index": 4,
+   "text_verse1": "var,",
+   "median_start_beats": 3.48,
+   "sd_start_beats": 0.024,
+   "median_end_beats": 3.806
+  },
+  {
+   "index": 5,
+   "text_verse1": "çiftliğinde",
+   "median_start_beats": 3.97,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 5.774
+  },
+  {
+   "index": 6,
+   "text_verse1": "inekleri",
+   "median_start_beats": 5.976,
+   "sd_start_beats": 0.065,
+   "median_end_beats": 7.397
+  },
+  {
+   "index": 7,
+   "text_verse1": "var.",
+   "median_start_beats": 7.502,
+   "sd_start_beats": 0.021,
+   "median_end_beats": 7.933
+  },
+  {
+   "index": 8,
+   "text_verse1": "\"Mö,",
+   "median_start_beats": 7.96,
+   "sd_start_beats": 0.028,
+   "median_end_beats": 8.738
+  },
+  {
+   "index": 9,
+   "text_verse1": "mö\"",
+   "median_start_beats": 9.032,
+   "sd_start_beats": 0.039,
+   "median_end_beats": 9.427
+  },
+  {
+   "index": 10,
+   "text_verse1": "diye",
+   "median_start_beats": 10.012,
+   "sd_start_beats": 0.02,
+   "median_end_beats": 10.838
+  },
+  {
+   "index": 11,
+   "text_verse1": "bağırır",
+   "median_start_beats": 10.967,
+   "sd_start_beats": 0.015,
+   "median_end_beats": 11.804
+  },
+  {
+   "index": 12,
+   "text_verse1": "çiftliğinde",
+   "median_start_beats": 11.958,
+   "sd_start_beats": 0.019,
+   "median_end_beats": 13.799
+  },
+  {
+   "index": 13,
+   "text_verse1": "Ali",
+   "median_start_beats": 14.114,
+   "sd_start_beats": 0.051,
+   "median_end_beats": 14.828
+  },
+  {
+   "index": 14,
+   "text_verse1": "Baba'nın.",
+   "median_start_beats": 14.971,
+   "sd_start_beats": 0.02,
+   "median_end_beats": 15.934
+  }
+ ],
+ "key": {
+  "statement": "The ORIGINAL band of v2_2 is in D minor (not G major, not C major): 2-bar loop Dm - C - Gm - A (i - VII - iv - V), two beats per chord, identical in all six bars of every verse and in the instrumental bars.",
+  "how": "No bass guitar exists: 40-120 Hz is only the kick (about 52 Hz). The chord instrument plays on the off-beat half of each beat with its lowest notes A2..G3 (95-275 Hz), below the sung range, so root/fifth are read there without vocal interference: A2+D3(+F3) = Dm, C3+G3 (+E in the mid register) = C, G/Bb2/D3/F3 = Gm (Bb is the strongest low partial), A2+E3 (+C#) = A.",
+  "chords_per_bar": [
+   {
+    "bar": 0,
+    "beats_0_1": "Dm",
+    "beats_2_3": "C",
+    "measured_best_template": [
+     "D",
+     "C"
+    ],
+    "root_votes_of_7_verses": [
+     {
+      "D": 4,
+      "Dm": 3
+     },
+     {
+      "C": 4,
+      "Cm": 3
+     }
+    ],
+    "vocal_present": true
+   },
+   {
+    "bar": 1,
+    "beats_0_1": "Gm",
+    "beats_2_3": "A",
+    "measured_best_template": [
+     "Gm",
+     "Am"
+    ],
+    "root_votes_of_7_verses": [
+     {
+      "Gm": 5,
+      "D#": 1,
+      "A#m": 1
+     },
+     {
+      "Am": 2,
+      "F": 3,
+      "A": 2
+     }
+    ],
+    "vocal_present": true
+   },
+   {
+    "bar": 2,
+    "beats_0_1": "Dm",
+    "beats_2_3": "C",
+    "measured_best_template": [
+     "Dm",
+     "C"
+    ],
+    "root_votes_of_7_verses": [
+     {
+      "Dm": 4,
+      "F": 1,
+      "D": 1,
+      "Gm": 1
+     },
+     {
+      "C": 7
+     }
+    ],
+    "vocal_present": true
+   },
+   {
+    "bar": 3,
+    "beats_0_1": "Gm",
+    "beats_2_3": "A",
+    "measured_best_template": [
+     "Gm",
+     "A"
+    ],
+    "root_votes_of_7_verses": [
+     {
+      "A#": 1,
+      "Gm": 5,
+      "D#": 1
+     },
+     {
+      "A": 3,
+      "Am": 2,
+      "Dm": 1,
+      "F": 1
+     }
+    ],
+    "vocal_present": true
+   },
+   {
+    "bar": 4,
+    "beats_0_1": "Dm",
+    "beats_2_3": "C",
+    "measured_best_template": [
+     "Dm",
+     "C"
+    ],
+    "root_votes_of_7_verses": [
+     {
+      "Dm": 6,
+      "A": 1
+     },
+     {
+      "C": 6,
+      "Am": 1
+     }
+    ],
+    "vocal_present": false
+   },
+   {
+    "bar": 5,
+    "beats_0_1": "Gm",
+    "beats_2_3": "A",
+    "measured_best_template": [
+     "Gm",
+     "A"
+    ],
+    "root_votes_of_7_verses": [
+     {
+      "Gm": 7
+     },
+     {
+      "A": 6,
+      "Dm": 1
+     }
+    ],
+    "vocal_present": false
+   }
+  ],
+  "chords_text": "bar 0: Dm (beats 0-1) C (beats 2-3) | bar 1: Gm (beats 0-1) A (beats 2-3) | bar 2: Dm (beats 0-1) C (beats 2-3) | bar 3: Gm (beats 0-1) A (beats 2-3) | bar 4: Dm (beats 0-1) C (beats 2-3) | bar 5: Gm (beats 0-1) A (beats 2-3)",
+  "half_bar_detail": [
+   {
+    "half_bar": 0,
+    "bar": 0,
+    "beats": [
+     0,
+     1
+    ],
+    "chord": "D",
+    "score": 0.6640268468928873,
+    "second": "Dm",
+    "second_score": 0.6614686495130794,
+    "root": "D",
+    "third_evidence_low_band": {
+     "major": 0.013854931129416825,
+     "minor": 0.010662354736725855
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.004659910875645126,
+     "minor": 0.019532795585866923
+    },
+    "per_verse_votes": {
+     "D": 4,
+     "Dm": 3
+    }
+   },
+   {
+    "half_bar": 1,
+    "bar": 0,
+    "beats": [
+     2,
+     3
+    ],
+    "chord": "C",
+    "score": 0.8102934132855695,
+    "second": "Cm",
+    "second_score": 0.808330227331805,
+    "root": "C",
+    "third_evidence_low_band": {
+     "major": 0.00910944420582046,
+     "minor": 0.007086254508859377
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.22279071166612902,
+     "minor": 0.005980335938909214
+    },
+    "per_verse_votes": {
+     "C": 4,
+     "Cm": 3
+    }
+   },
+   {
+    "half_bar": 2,
+    "bar": 1,
+    "beats": [
+     0,
+     1
+    ],
+    "chord": "Gm",
+    "score": 0.6981471086479557,
+    "second": "D#",
+    "second_score": 0.679381125416639,
+    "root": "G",
+    "third_evidence_low_band": {
+     "major": 0.03760773729558603,
+     "minor": 0.5426024955149988
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.005517510984621137,
+     "minor": 0.005436569603301024
+    },
+    "per_verse_votes": {
+     "Gm": 5,
+     "D#": 1,
+     "A#m": 1
+    }
+   },
+   {
+    "half_bar": 3,
+    "bar": 1,
+    "beats": [
+     2,
+     3
+    ],
+    "chord": "Am",
+    "score": 0.7760968875598276,
+    "second": "F",
+    "second_score": 0.7125511267873803,
+    "root": "A",
+    "third_evidence_low_band": {
+     "major": 0.026542842635803775,
+     "minor": 0.09348736947241214
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.009391128039704799,
+     "minor": 0.002818777227766025
+    },
+    "per_verse_votes": {
+     "Am": 2,
+     "F": 3,
+     "A": 2
+    }
+   },
+   {
+    "half_bar": 4,
+    "bar": 2,
+    "beats": [
+     0,
+     1
+    ],
+    "chord": "Dm",
+    "score": 0.7224152874875942,
+    "second": "D",
+    "second_score": 0.6930401457538238,
+    "root": "D",
+    "third_evidence_low_band": {
+     "major": 0.009799453862517597,
+     "minor": 0.03849248059426214
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.016099563124163892,
+     "minor": 0.03297052133010872
+    },
+    "per_verse_votes": {
+     "Dm": 4,
+     "F": 1,
+     "D": 1,
+     "Gm": 1
+    }
+   },
+   {
+    "half_bar": 5,
+    "bar": 2,
+    "beats": [
+     2,
+     3
+    ],
+    "chord": "C",
+    "score": 0.8231305999356865,
+    "second": "Cm",
+    "second_score": 0.8145423593899176,
+    "root": "C",
+    "third_evidence_low_band": {
+     "major": 0.012848191215592376,
+     "minor": 0.0034943187501923116
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.4257667897322775,
+     "minor": 0.009900583502442582
+    },
+    "per_verse_votes": {
+     "C": 7
+    }
+   },
+   {
+    "half_bar": 6,
+    "bar": 3,
+    "beats": [
+     0,
+     1
+    ],
+    "chord": "Gm",
+    "score": 0.7401605006107108,
+    "second": "D#",
+    "second_score": 0.710729273670999,
+    "root": "G",
+    "third_evidence_low_band": {
+     "major": 0.0232555365370042,
+     "minor": 0.5789032869460675
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.006413745883696313,
+     "minor": 0.005527494515531672
+    },
+    "per_verse_votes": {
+     "A#": 1,
+     "Gm": 5,
+     "D#": 1
+    }
+   },
+   {
+    "half_bar": 7,
+    "bar": 3,
+    "beats": [
+     2,
+     3
+    ],
+    "chord": "A",
+    "score": 0.6423469585782369,
+    "second": "Am",
+    "second_score": 0.6347206483193607,
+    "root": "A",
+    "third_evidence_low_band": {
+     "major": 0.034100432806151514,
+     "minor": 0.0243270311057718
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.017234848516895124,
+     "minor": 0.004458520422416264
+    },
+    "per_verse_votes": {
+     "A": 3,
+     "Am": 2,
+     "Dm": 1,
+     "F": 1
+    }
+   },
+   {
+    "half_bar": 8,
+    "bar": 4,
+    "beats": [
+     0,
+     1
+    ],
+    "chord": "Dm",
+    "score": 0.6694499055670478,
+    "second": "D",
+    "second_score": 0.6520690354915958,
+    "root": "D",
+    "third_evidence_low_band": {
+     "major": 0.009329732168066296,
+     "minor": 0.01916554964553747
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.009491733168140313,
+     "minor": 0.043652959569072225
+    },
+    "per_verse_votes": {
+     "Dm": 6,
+     "A": 1
+    }
+   },
+   {
+    "half_bar": 9,
+    "bar": 4,
+    "beats": [
+     2,
+     3
+    ],
+    "chord": "C",
+    "score": 0.8869213624379114,
+    "second": "Am",
+    "second_score": 0.7775494316541279,
+    "root": "C",
+    "third_evidence_low_band": {
+     "major": 0.0030892583927571568,
+     "minor": 0.00233182338733479
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.41633648042245736,
+     "minor": 0.0028339787594839957
+    },
+    "per_verse_votes": {
+     "C": 6,
+     "Am": 1
+    }
+   },
+   {
+    "half_bar": 10,
+    "bar": 5,
+    "beats": [
+     0,
+     1
+    ],
+    "chord": "Gm",
+    "score": 0.8680149711427969,
+    "second": "D#",
+    "second_score": 0.782589238984276,
+    "root": "G",
+    "third_evidence_low_band": {
+     "major": 0.01996906067852681,
+     "minor": 0.5616590049929818
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.019489597047609893,
+     "minor": 0.01683327937493211
+    },
+    "per_verse_votes": {
+     "Gm": 7
+    }
+   },
+   {
+    "half_bar": 11,
+    "bar": 5,
+    "beats": [
+     2,
+     3
+    ],
+    "chord": "A",
+    "score": 0.7724738870516351,
+    "second": "Am",
+    "second_score": 0.7407919060310455,
+    "root": "A",
+    "third_evidence_low_band": {
+     "major": 0.0401602957499743,
+     "minor": 0.011936580173361758
+    },
+    "third_evidence_mid_band_offbeat": {
+     "major": 0.029741733684598322,
+     "minor": 0.0034013005125550244
+    },
+    "per_verse_votes": {
+     "A": 6,
+     "Dm": 1
+    }
+   }
+  ],
+  "positions_detail": [
+   {
+    "position": 0,
+    "bar": 0,
+    "beat_in_bar": 0,
+    "low_chroma": [
+     0.020975892657083082,
+     0.012600446863778435,
+     0.08417346486057839,
+     0.007399347125344279,
+     0.004470894783700365,
+     0.015043188900156709,
+     0.0198113819397159,
+     0.029227932673773632,
+     0.05453563384016409,
+     0.6108822841429388,
+     0.1128000311232994,
+     0.028079501089465476
+    ],
+    "mid_chroma": [
+     0.0023182513141010294,
+     0.010009786510466467,
+     0.2962818664208165,
+     0.021911630859805995,
+     0.024219581019039906,
+     0.0769951406863486,
+     0.08585995057923776,
+     0.3757258806537594,
+     0.024154209092324998,
+     0.07398117634055988,
+     0.004134534790960109,
+     0.004407991732579311
+    ],
+    "mid_offbeat_chroma": [
+     0.001682351763223569,
+     0.0014761512776996137,
+     0.06544786962878062,
+     0.0016597141928052898,
+     0.015421037323196662,
+     0.021675054976387633,
+     0.00526197129983135,
+     0.40428058741283923,
+     0.1675961122994784,
+     0.3106242061138662,
+     0.0018516952188913827,
+     0.0030232484929999825
+    ],
+    "chord": "D",
+    "chord_score": 0.6534843959304864,
+    "chord2": "Dm",
+    "chord2_score": 0.6491256282472877,
+    "chord_from_low_only": "D",
+    "per_verse_votes": {
+     "D": 2,
+     "Dm": 4,
+     "Gm": 1
+    }
+   },
+   {
+    "position": 1,
+    "bar": 0,
+    "beat_in_bar": 1,
+    "low_chroma": [
+     0.01040013401087446,
+     0.0055648214751965455,
+     0.1289780143992482,
+     0.002631527546490944,
+     0.0015262938938875002,
+     0.006281520573295001,
+     0.007898480319117754,
+     0.004417041785406598,
+     0.011422366621475983,
+     0.8056393833558191,
+     0.011584274506197553,
+     0.0036561415129898575
+    ],
+    "mid_chroma": [
+     0.002329950801309834,
+     0.0041528999763336075,
+     0.0169352304894604,
+     0.0035445286198635523,
+     0.04308463951024585,
+     0.010341656434249915,
+     0.004706798242609216,
+     0.005388147948978932,
+     0.026915522236791747,
+     0.8672970345898812,
+     0.010992316735393347,
+     0.0043112744148823875
+    ],
+    "mid_offbeat_chroma": [
+     0.003603414667984673,
+     0.002317189559847483,
+     0.019977563102905084,
+     0.0012187673986631931,
+     0.03458062413594602,
+     0.017390536195346213,
+     0.004057850451458901,
+     0.007336219505073425,
+     0.026245201426894942,
+     0.8786619282272845,
+     0.0032530747222182105,
+     0.0013576306063774156
+    ],
+    "chord": "D",
+    "chord_score": 0.6666737809894945,
+    "chord2": "Dm",
+    "chord2_score": 0.6655300499473628,
+    "chord_from_low_only": "D",
+    "per_verse_votes": {
+     "D": 4,
+     "Dm": 3
+    }
+   },
+   {
+    "position": 2,
+    "bar": 0,
+    "beat_in_bar": 2,
+    "low_chroma": [
+     0.3447334066292606,
+     0.012221130671380979,
+     0.007241148828984329,
+     0.01068191295571266,
+     0.008144324893730643,
+     0.024627372122085378,
+     0.10694642892788019,
+     0.3741637023616932,
+     0.04591905371137882,
+     0.028303092555909952,
+     0.022010219859435107,
+     0.015008206482547541
+    ],
+    "mid_chroma": [
+     0.009279702031145745,
+     0.004204909101940045,
+     0.01182115507672646,
+     0.006897420051266807,
+     0.06711120797235905,
+     0.024680655588916807,
+     0.07197984624133884,
+     0.6137731023751456,
+     0.10010045027414709,
+     0.06712708829119947,
+     0.011186458649225036,
+     0.011838004346589106
+    ],
+    "mid_offbeat_chroma": [
+     0.01920949794941958,
+     0.0026339198179514784,
+     0.0104223774287969,
+     0.005492589209336764,
+     0.042078678917380805,
+     0.011121686288143195,
+     0.011144476425409462,
+     0.3324909631098199,
+     0.36384679609079623,
+     0.176703976306856,
+     0.009972635849092736,
+     0.014882402606996777
+    ],
+    "chord": "Cm",
+    "chord_score": 0.8034077950037577,
+    "chord2": "C",
+    "chord2_score": 0.8006134191127608,
+    "chord_from_low_only": "Cm",
+    "per_verse_votes": {
+     "C": 4,
+     "Cm": 3
+    }
+   },
+   {
+    "position": 3,
+    "bar": 0,
+    "beat_in_bar": 3,
+    "low_chroma": [
+     0.35891093038911415,
+     0.005538186283945138,
+     0.0009011903011216755,
+     0.0034905960620060924,
+     0.010074563517910277,
+     0.004508918643517114,
+     0.009343558497787554,
+     0.574092280356966,
+     0.020208459071585253,
+     0.004689317853023679,
+     0.002497576077815198,
+     0.005744422945207501
+    ],
+    "mid_chroma": [
+     0.0057693946297729315,
+     0.0022249134298096807,
+     0.005058998013689188,
+     0.009379612207354527,
+     0.37943943632443033,
+     0.13238389058463668,
+     0.011199407965836872,
+     0.01112234553987394,
+     0.0229479280838872,
+     0.007537706046436914,
+     0.003903789387164744,
+     0.40903257778710705
+    ],
+    "mid_offbeat_chroma": [
+     0.0011986555964605676,
+     0.00046078442006644295,
+     0.0017654732359628532,
+     0.006468082668481664,
+     0.4035027444148772,
+     0.006075124732007249,
+     0.0010450955223164538,
+     0.012577885794103452,
+     0.043205041999802574,
+     0.002751242242380243,
+     0.0014079788943268088,
+     0.5195418904792144
+    ],
+    "chord": "C",
+    "chord_score": 0.8035688830482413,
+    "chord2": "Cm",
+    "chord2_score": 0.797958877681827,
+    "chord_from_low_only": "C",
+    "per_verse_votes": {
+     "C": 4,
+     "Cm": 3
+    }
+   },
+   {
+    "position": 4,
+    "bar": 1,
+    "beat_in_bar": 0,
+    "low_chroma": [
+     0.034491008741380835,
+     0.018763589337344903,
+     0.04744465607452674,
+     0.01858255472775124,
+     0.031256925339750455,
+     0.061412829595969214,
+     0.043872517914285536,
+     0.11877950340914137,
+     0.03744447019815754,
+     0.1479661437379392,
+     0.3771037361060027,
+     0.06288206481774884
+    ],
+    "mid_chroma": [
+     0.0028163099371114205,
+     0.006712975533914379,
+     0.06726060732330282,
+     0.007787363552076592,
+     0.023698241333320436,
+     0.0665151323493923,
+     0.06808819998317886,
+     0.6629620271409199,
+     0.025060623162921847,
+     0.04540284059582559,
+     0.013155050891301104,
+     0.010540628196734719
+    ],
+    "mid_offbeat_chroma": [
+     0.0005457617943121479,
+     0.0013175331316398434,
+     0.02776500233801803,
+     0.0009478892674415075,
+     0.0016798652357067345,
+     0.010589957068577679,
+     0.0031375642257492177,
+     0.931122562922455,
+     0.00302906931122771,
+     0.011191991498846792,
+     0.004276402599345969,
+     0.004396400606679412
+    ],
+    "chord": "Gm",
+    "chord_score": 0.7115059537674685,
+    "chord2": "D#",
+    "chord2_score": 0.6737100719193927,
+    "chord_from_low_only": "Gm",
+    "per_verse_votes": {
+     "Gm": 4,
+     "D#": 1,
+     "Dm": 1,
+     "F#": 1
+    }
+   },
+   {
+    "position": 5,
+    "bar": 1,
+    "beat_in_bar": 1,
+    "low_chroma": [
+     0.013572724143137654,
+     0.004945559835471615,
+     0.015528469463153878,
+     0.007358627524767239,
+     0.0046748099860697435,
+     0.04783998190869614,
+     0.03178775574830736,
+     0.11073433538026507,
+     0.00803699825766674,
+     0.035086073055046,
+     0.7081012549239949,
+     0.012333409773423221
+    ],
+    "mid_chroma": [
+     0.0017327864860288195,
+     0.0031012539554184123,
+     0.020998243859788986,
+     0.003003411608883512,
+     0.003948328687058145,
+     0.008268209440833377,
+     0.023922050354197262,
+     0.8746480491402088,
+     0.027221433132283878,
+     0.012571599027219726,
+     0.010508074563892906,
+     0.01007655974418598
+    ],
+    "mid_offbeat_chroma": [
+     0.0007504612002650452,
+     0.0012054181631494163,
+     0.02514200672975813,
+     0.0015691626309124885,
+     0.0016222720561583197,
+     0.0071553918293288995,
+     0.0311615900676415,
+     0.9074514577800737,
+     0.0052291095696929525,
+     0.005477772003200464,
+     0.0065967366072560785,
+     0.006638621362562862
+    ],
+    "chord": "Gm",
+    "chord_score": 0.6687064070468068,
+    "chord2": "D#",
+    "chord2_score": 0.6621586350223482,
+    "chord_from_low_only": "Gm",
+    "per_verse_votes": {
+     "A#": 1,
+     "Gm": 3,
+     "D#m": 1,
+     "D#": 1,
+     "A#m": 1
+    }
+   },
+   {
+    "position": 6,
+    "bar": 1,
+    "beat_in_bar": 2,
+    "low_chroma": [
+     0.15026743700578912,
+     0.028735792162165978,
+     0.013525639148049154,
+     0.019207971952037113,
+     0.07598952693806557,
+     0.051508438887541516,
+     0.033849374623486805,
+     0.05913922882129445,
+     0.06142394253940831,
+     0.40277342095913043,
+     0.07060749130652975,
+     0.03297173565650051
+    ],
+    "mid_chroma": [
+     0.009596151860646067,
+     0.0067072556968997285,
+     0.02547720323839976,
+     0.016087530176908314,
+     0.6556655502243335,
+     0.1698957809391372,
+     0.010911172474715928,
+     0.013793773787731603,
+     0.034619433419464274,
+     0.02792336145770993,
+     0.005765586482620942,
+     0.02355720024143278
+    ],
+    "mid_offbeat_chroma": [
+     0.004290946917740165,
+     0.012176577524197792,
+     0.026980311518549425,
+     0.038953707891325295,
+     0.7735582513284935,
+     0.025724110012886287,
+     0.0034850516918957914,
+     0.005438328285001899,
+     0.021619296224079147,
+     0.0271425805430325,
+     0.0027804695471945265,
+     0.0578503685156035
+    ],
+    "chord": "Am",
+    "chord_score": 0.7942063997248902,
+    "chord2": "F",
+    "chord2_score": 0.7632968645599817,
+    "chord_from_low_only": "Am",
+    "per_verse_votes": {
+     "Am": 1,
+     "F": 3,
+     "A": 2,
+     "D": 1
+    }
+   },
+   {
+    "position": 7,
+    "bar": 1,
+    "beat_in_bar": 3,
+    "low_chroma": [
+     0.036707301939035146,
+     0.024349893109441568,
+     0.051231487144603904,
+     0.016239880269612268,
+     0.15425736629637563,
+     0.07011981317215656,
+     0.011347226253445314,
+     0.02979685601025126,
+     0.037677275376323795,
+     0.5065857969762636,
+     0.0473884538500936,
+     0.014298649602396556
+    ],
+    "mid_chroma": [
+     0.002621129022571979,
+     0.011484329592947925,
+     0.38191006684617373,
+     0.03171578137489441,
+     0.09648122756277787,
+     0.014107293336795989,
+     0.05600625174296777,
+     0.003696626397418389,
+     0.005883714725547652,
+     0.37877914074496344,
+     0.006747433407984948,
+     0.010567005244955944
+    ],
+    "mid_offbeat_chroma": [
+     0.0013466075377918856,
+     0.006605678555211806,
+     0.427564038582573,
+     0.0022453657072339845,
+     0.006188200660665071,
+     0.005506183222411371,
+     0.08210811620168768,
+     0.0012109811275287986,
+     0.0023654051483102097,
+     0.46100721808833983,
+     0.0021287967170427833,
+     0.0017234084512035366
+    ],
+    "chord": "Am",
+    "chord_score": 0.7414169812612827,
+    "chord2": "A",
+    "chord2_score": 0.7282824580868648,
+    "chord_from_low_only": "Am",
+    "per_verse_votes": {
+     "A": 2,
+     "Dm": 1,
+     "F": 1,
+     "Am": 3
+    }
+   },
+   {
+    "position": 8,
+    "bar": 2,
+    "beat_in_bar": 0,
+    "low_chroma": [
+     0.051609415969617246,
+     0.015753040266058674,
+     0.19140828018753525,
+     0.006875706687538201,
+     0.007283280681354884,
+     0.0465338573759888,
+     0.009855655744036195,
+     0.03218261365282892,
+     0.059171057228973936,
+     0.4027329106645831,
+     0.1415405643550045,
+     0.03505361718647872
+    ],
+    "mid_chroma": [
+     0.00497510851606993,
+     0.01516975676408397,
+     0.3455620541508889,
+     0.0320628474397316,
+     0.05209237024670388,
+     0.07567227825456009,
+     0.08702853775187451,
+     0.16636418429286878,
+     0.017030628684755307,
+     0.1759960408474603,
+     0.01386233537239837,
+     0.014183857678604335
+    ],
+    "mid_offbeat_chroma": [
+     0.004488436575157373,
+     0.013666643888013951,
+     0.2038567053258637,
+     0.009069629236664324,
+     0.03377756568208373,
+     0.04360118950109102,
+     0.026847789197032935,
+     0.36527630519627374,
+     0.1197454969124552,
+     0.15676703266938716,
+     0.006032802115192315,
+     0.016870403700784468
+    ],
+    "chord": "Dm",
+    "chord_score": 0.7714416350787642,
+    "chord2": "D",
+    "chord2_score": 0.7272771371527768,
+    "chord_from_low_only": "Dm",
+    "per_verse_votes": {
+     "Dm": 5,
+     "D": 2
+    }
+   },
+   {
+    "position": 9,
+    "bar": 2,
+    "beat_in_bar": 1,
+    "low_chroma": [
+     0.04488307662335182,
+     0.0032641757656026995,
+     0.09308284884826172,
+     0.003418392197711937,
+     0.007096802884756303,
+     0.03045110381253548,
+     0.009743251980998999,
+     0.02144451925709428,
+     0.024361169680175244,
+     0.647071417307188,
+     0.10531646200462975,
+     0.009866779637692771
+    ],
+    "mid_chroma": [
+     0.0009194737316194034,
+     0.0022214906765615733,
+     0.010846504175400543,
+     0.0021735954194590365,
+     0.051222045145550496,
+     0.0047296126320829695,
+     0.0027550567416093756,
+     0.0029961879083442037,
+     0.0039024229782357134,
+     0.9121888786166433,
+     0.0036242383838493023,
+     0.0024204935906439766
+    ],
+    "mid_offbeat_chroma": [
+     0.003108550788066361,
+     0.003568049060864478,
+     0.0425382738698636,
+     0.002700989676319141,
+     0.055268011569666285,
+     0.022339853159126417,
+     0.005351337051294846,
+     0.004869084036107336,
+     0.007140684839209598,
+     0.8458078200228956,
+     0.004259027138430899,
+     0.0030483187881554944
+    ],
+    "chord": "Dm",
+    "chord_score": 0.6686641979901916,
+    "chord2": "D",
+    "chord2_score": 0.6506957284250116,
+    "chord_from_low_only": "Dm",
+    "per_verse_votes": {
+     "F": 2,
+     "Dm": 4,
+     "Gm": 1
+    }
+   },
+   {
+    "position": 10,
+    "bar": 2,
+    "beat_in_bar": 2,
+    "low_chroma": [
+     0.4635011738177392,
+     0.009114769587327381,
+     0.00478394058725342,
+     0.0061709551420374,
+     0.013957974595841924,
+     0.01071528249642087,
+     0.027227848602122382,
+     0.35159117634501014,
+     0.028425444021888326,
+     0.023165106844833045,
+     0.03228335561089281,
+     0.029062972348632615
+    ],
+    "mid_chroma": [
+     0.0021382575495658552,
+     0.0022431947334614695,
+     0.007785370991814196,
+     0.0024575762071140555,
+     0.04300662764026842,
+     0.0033329131267789227,
+     0.0028953061516880764,
+     0.8287721822399235,
+     0.03826485040093426,
+     0.0575487736727366,
+     0.0037248335573604745,
+     0.007830113728354052
+    ],
+    "mid_offbeat_chroma": [
+     0.0028056767049551767,
+     0.0007718824553744639,
+     0.002724974913250783,
+     0.002639184288522239,
+     0.020955531296741412,
+     0.0017311771681103405,
+     0.0012325237414618506,
+     0.2767838441935388,
+     0.21946284704839045,
+     0.4629969442297465,
+     0.0022420512878869236,
+     0.005653362672020975
+    ],
+    "chord": "C",
+    "chord_score": 0.8174318829684892,
+    "chord2": "Cm",
+    "chord2_score": 0.8097539920314231,
+    "chord_from_low_only": "C",
+    "per_verse_votes": {
+     "C": 7
+    }
+   },
+   {
+    "position": 11,
+    "bar": 2,
+    "beat_in_bar": 3,
+    "low_chroma": [
+     0.33899648267276083,
+     0.003295335019842751,
+     0.002062724019380248,
+     0.0008176823583472236,
+     0.011738407835342829,
+     0.0034855066418084967,
+     0.004263587703618339,
+     0.613238306404433,
+     0.003764792993214826,
+     0.0031117402470652116,
+     0.005674908542694768,
+     0.009550525561491285
+    ],
+    "mid_chroma": [
+     0.009175143937011087,
+     0.005576741920921485,
+     0.012264965024025928,
+     0.03771783358890538,
+     0.4991199383805089,
+     0.2832901322973292,
+     0.014343916721980668,
+     0.022365799859480496,
+     0.01720968168736401,
+     0.022712201841809564,
+     0.007306327438638596,
+     0.06891731730202473
+    ],
+    "mid_offbeat_chroma": [
+     0.0035927679907685533,
+     0.0028977695989641896,
+     0.00603242502710024,
+     0.017161982716362923,
+     0.8305780481678136,
+     0.005937241152202207,
+     0.0020144712881742612,
+     0.017170999869566866,
+     0.01407413379601414,
+     0.0044594867100419934,
+     0.001962710651434551,
+     0.09411796303155658
+    ],
+    "chord": "C",
+    "chord_score": 0.7940102033122763,
+    "chord2": "Cm",
+    "chord2_score": 0.7850149662205405,
+    "chord_from_low_only": "C",
+    "per_verse_votes": {
+     "C": 5,
+     "Cm": 2
+    }
+   },
+   {
+    "position": 12,
+    "bar": 3,
+    "beat_in_bar": 0,
+    "low_chroma": [
+     0.039216843029140615,
+     0.013629704635292715,
+     0.062424324951762,
+     0.02966572177053204,
+     0.01605716283224484,
+     0.0723647476472544,
+     0.03444883751231196,
+     0.1639884859692066,
+     0.061945575316466994,
+     0.03227112708681789,
+     0.4411277928221087,
+     0.032859676426859684
+    ],
+    "mid_chroma": [
+     0.0027696793798230356,
+     0.00547379016969364,
+     0.08290359978488245,
+     0.006818487354182631,
+     0.017448774348730236,
+     0.10221114862944959,
+     0.07585939567661205,
+     0.6144518098461477,
+     0.03792120907723228,
+     0.028628013229567064,
+     0.014795718285307544,
+     0.010718374218371787
+    ],
+    "mid_offbeat_chroma": [
+     0.0005143286364262226,
+     0.0006585259958241312,
+     0.04279821586869535,
+     0.0010445180923334362,
+     0.0011698574073339787,
+     0.00745504929741625,
+     0.00245844923411706,
+     0.9261601792105054,
+     0.0020829661595733336,
+     0.006949552529939549,
+     0.004861774168297642,
+     0.0038465833995377056
+    ],
+    "chord": "Gm",
+    "chord_score": 0.785679855041848,
+    "chord2": "D#",
+    "chord2_score": 0.7471237365758197,
+    "chord_from_low_only": "Gm",
+    "per_verse_votes": {
+     "A#": 2,
+     "Gm": 4,
+     "D#": 1
+    }
+   },
+   {
+    "position": 13,
+    "bar": 3,
+    "beat_in_bar": 1,
+    "low_chroma": [
+     0.003501824449793608,
+     0.0040972075202009,
+     0.03189718788672085,
+     0.002890927831615313,
+     0.00878536444423453,
+     0.03196562182137338,
+     0.007739401977880238,
+     0.1371965863745372,
+     0.011970371082501579,
+     0.029625328893966792,
+     0.7166787810700262,
+     0.01365139664714871
+    ],
+    "mid_chroma": [
+     0.0017631734590148908,
+     0.0021146089585638073,
+     0.018562944409389295,
+     0.003281346285412522,
+     0.00226129359699925,
+     0.01235126844446946,
+     0.039958748216130276,
+     0.8737370705313255,
+     0.019276465225706214,
+     0.008863531116951642,
+     0.006473283178734844,
+     0.011356266577302284
+    ],
+    "mid_offbeat_chroma": [
+     0.0006981134114793124,
+     0.001912874846598191,
+     0.016202797411383214,
+     0.0008634262071755676,
+     0.0010764740096445933,
+     0.00630343735475417,
+     0.013242025913234808,
+     0.9300702532402596,
+     0.007171142470618651,
+     0.00728533190423149,
+     0.006193214862765702,
+     0.008980908367854921
+    ],
+    "chord": "Gm",
+    "chord_score": 0.6986037207481629,
+    "chord2": "D#",
+    "chord2_score": 0.6757266502434138,
+    "chord_from_low_only": "Gm",
+    "per_verse_votes": {
+     "A#": 2,
+     "Gm": 4,
+     "D#": 1
+    }
+   },
+   {
+    "position": 14,
+    "bar": 3,
+    "beat_in_bar": 2,
+    "low_chroma": [
+     0.03908356496382319,
+     0.03686726231080898,
+     0.011543308835593957,
+     0.006363672572334432,
+     0.04576658126463202,
+     0.03680568810483623,
+     0.018473595668671444,
+     0.016376649963351596,
+     0.03200184573719916,
+     0.7222678309417893,
+     0.017792854942479727,
+     0.01665714469447886
+    ],
+    "mid_chroma": [
+     0.04772188740733868,
+     0.017543761383823752,
+     0.02310835313290827,
+     0.019258241320271065,
+     0.5541815712697099,
+     0.20504203334394797,
+     0.007476692345404041,
+     0.010316793966904577,
+     0.019030843817779648,
+     0.0378569227630439,
+     0.008899508730356616,
+     0.0495633905185115
+    ],
+    "mid_offbeat_chroma": [
+     0.0048958418761416555,
+     0.015044122634924597,
+     0.020478478080403945,
+     0.0056526769392087495,
+     0.7697149377554532,
+     0.012429531965660781,
+     0.0030262772051909644,
+     0.007138274264267718,
+     0.017067591938988973,
+     0.020944141711470937,
+     0.003547685010326142,
+     0.12006044061796241
+    ],
+    "chord": "Am",
+    "chord_score": 0.6398398673248854,
+    "chord2": "A",
+    "chord2_score": 0.6380829013848773,
+    "chord_from_low_only": "Am",
+    "per_verse_votes": {
+     "A": 3,
+     "Am": 1,
+     "Dm": 1,
+     "F": 2
+    }
+   },
+   {
+    "position": 15,
+    "bar": 3,
+    "beat_in_bar": 3,
+    "low_chroma": [
+     0.009570497247720407,
+     0.03133360330149405,
+     0.02705070305167396,
+     0.00507355422645066,
+     0.06407343687152645,
+     0.04684407190793572,
+     0.009776898033685564,
+     0.012238519355782533,
+     0.01183863781963409,
+     0.746074567420651,
+     0.014006536557464713,
+     0.022118974205980114
+    ],
+    "mid_chroma": [
+     0.0041524536229232,
+     0.012089616628192653,
+     0.5789549617920223,
+     0.027116202601853608,
+     0.20640540887657807,
+     0.03141530730936835,
+     0.007384800874229029,
+     0.005320736805644882,
+     0.02275621099967884,
+     0.039923286527261785,
+     0.008757657930724473,
+     0.05572335603152285
+    ],
+    "mid_offbeat_chroma": [
+     0.004021198968690872,
+     0.019425574398865653,
+     0.8409141000120924,
+     0.005027101541161814,
+     0.03210686275538394,
+     0.013518529861022612,
+     0.0036850821512858034,
+     0.002607328288007478,
+     0.0071337297900756925,
+     0.05995443582328757,
+     0.0029626912841576353,
+     0.008643365125968387
+    ],
+    "chord": "A",
+    "chord_score": 0.6458645593985511,
+    "chord2": "Dm",
+    "chord2_score": 0.6293531947194632,
+    "chord_from_low_only": "A",
+    "per_verse_votes": {
+     "A": 4,
+     "Dm": 3
+    }
+   },
+   {
+    "position": 16,
+    "bar": 4,
+    "beat_in_bar": 0,
+    "low_chroma": [
+     0.016299412038880485,
+     0.015346231109481521,
+     0.12000821277319763,
+     0.00464083584242337,
+     0.0032009006842653137,
+     0.02287073485823546,
+     0.011167341368413936,
+     0.013212915270649495,
+     0.020967670253994947,
+     0.686209393906144,
+     0.07111943104058818,
+     0.01495692085372466
+    ],
+    "mid_chroma": [
+     0.006513226744857028,
+     0.006621351646409097,
+     0.1598859638059388,
+     0.007209563584890506,
+     0.07795857498486762,
+     0.05869819215376516,
+     0.018240553350364126,
+     0.023778753500955728,
+     0.04494163161580911,
+     0.5571762599308591,
+     0.027408818347875202,
+     0.01156711033340859
+    ],
+    "mid_offbeat_chroma": [
+     0.0051170066381373575,
+     0.004344586592261125,
+     0.11503539071655146,
+     0.004190974833233883,
+     0.1083930809163799,
+     0.05110790623220762,
+     0.01246276098390868,
+     0.009986012924278326,
+     0.032555990047065546,
+     0.6347809721224802,
+     0.016583750619833748,
+     0.005441567373662183
+    ],
+    "chord": "Dm",
+    "chord_score": 0.6954480999830478,
+    "chord2": "D",
+    "chord2_score": 0.6739667964799598,
+    "chord_from_low_only": "Dm",
+    "per_verse_votes": {
+     "Dm": 5,
+     "Am": 1,
+     "D": 1
+    }
+   },
+   {
+    "position": 17,
+    "bar": 4,
+    "beat_in_bar": 1,
+    "low_chroma": [
+     0.006728865798541989,
+     0.0051076078623728035,
+     0.07215431840839027,
+     0.004740563171386615,
+     0.002400093575920113,
+     0.015460364432839482,
+     0.0074921229677186564,
+     0.004196196755449262,
+     0.010093083060989713,
+     0.8538464998473002,
+     0.01493412526478218,
+     0.0028461588543079804
+    ],
+    "mid_chroma": [
+     0.012670951704554326,
+     0.010220963997757817,
+     0.07665292112195357,
+     0.00834494596713088,
+     0.09614247818803794,
+     0.03126759414429732,
+     0.022020040868488817,
+     0.022025283661753905,
+     0.04475469722129244,
+     0.6413379233121405,
+     0.022008784336750176,
+     0.012553415475842298
+    ],
+    "mid_offbeat_chroma": [
+     0.011169073714108578,
+     0.004894047419895504,
+     0.07608696068897085,
+     0.0025506439909453783,
+     0.13532978079244207,
+     0.036198012905936834,
+     0.006520705352371947,
+     0.003870874528081888,
+     0.009269661804834758,
+     0.7054636071045038,
+     0.004671045620031526,
+     0.003975586077876643
+    ],
+    "chord": "Dm",
+    "chord_score": 0.6453998448917385,
+    "chord2": "D",
+    "chord2_score": 0.6315888531594431,
+    "chord_from_low_only": "Dm",
+    "per_verse_votes": {
+     "Dm": 6,
+     "A": 1
+    }
+   },
+   {
+    "position": 18,
+    "bar": 4,
+    "beat_in_bar": 2,
+    "low_chroma": [
+     0.49781209102591356,
+     0.006191084184343493,
+     0.0021567361391416186,
+     0.0020869286040243436,
+     0.004197761121670381,
+     0.016032289343352612,
+     0.061308427580579986,
+     0.3589210526083964,
+     0.01902388469408676,
+     0.012898240004190143,
+     0.008403721752746052,
+     0.010967782941554307
+    ],
+    "mid_chroma": [
+     0.0076107720167192605,
+     0.005872463270423485,
+     0.017121699603887153,
+     0.006537778626437354,
+     0.13417261673336645,
+     0.017232278234352826,
+     0.013474945139727539,
+     0.2089020813619427,
+     0.03761700437518812,
+     0.5116844204827619,
+     0.02357325318848255,
+     0.016200686966710693
+    ],
+    "mid_offbeat_chroma": [
+     0.021608080608680354,
+     0.0024683142438045812,
+     0.013117947720507736,
+     0.003183981297413,
+     0.14025469098631863,
+     0.0061823019708706975,
+     0.004066351835944598,
+     0.048124156320447704,
+     0.012436088897480425,
+     0.7332009739814485,
+     0.006303998949899074,
+     0.009053113187184658
+    ],
+    "chord": "Am",
+    "chord_score": 0.8061363310237166,
+    "chord2": "F",
+    "chord2_score": 0.7362481403693242,
+    "chord_from_low_only": "C",
+    "per_verse_votes": {
+     "Am": 7
+    }
+   },
+   {
+    "position": 19,
+    "bar": 4,
+    "beat_in_bar": 3,
+    "low_chroma": [
+     0.2976117360391961,
+     0.0013344273925160702,
+     0.0014154217774030252,
+     0.002576718170645236,
+     0.0019807556638439324,
+     0.0032780027576734235,
+     0.023793206908292622,
+     0.6537466562065296,
+     0.005656944432634504,
+     0.0034209896791114686,
+     0.002697997408901979,
+     0.0024871435632517896
+    ],
+    "mid_chroma": [
+     0.07395300481129563,
+     0.007829626252127134,
+     0.018256913316150574,
+     0.014734321455379302,
+     0.409353988455254,
+     0.20329158968193559,
+     0.00845802636174174,
+     0.06248481054393936,
+     0.029471737215037874,
+     0.0295152749840711,
+     0.013313923789044179,
+     0.12933678313402347
+    ],
+    "mid_offbeat_chroma": [
+     0.00479317502994492,
+     0.0011463280478721835,
+     0.0070661765787028,
+     0.002483976221554992,
+     0.6924182698585961,
+     0.011954458512453813,
+     0.0019494415417511087,
+     0.03630540514471108,
+     0.02512180730972412,
+     0.007498384002268128,
+     0.0033600059135838857,
+     0.20590257183883692
+    ],
+    "chord": "C",
+    "chord_score": 0.9305574680201233,
+    "chord2": "Em",
+    "chord2_score": 0.8786937982450853,
+    "chord_from_low_only": "Cm",
+    "per_verse_votes": {
+     "C": 4,
+     "Em": 3
+    }
+   },
+   {
+    "position": 20,
+    "bar": 5,
+    "beat_in_bar": 0,
+    "low_chroma": [
+     0.02412586747011066,
+     0.022050468562184983,
+     0.06577471909375157,
+     0.005591698063231605,
+     0.006219171994587423,
+     0.05232489030728051,
+     0.05434905147838974,
+     0.17862140892424666,
+     0.046255804332749687,
+     0.09691602155689363,
+     0.4119755656388768,
+     0.035795332577695224
+    ],
+    "mid_chroma": [
+     0.005362988377607793,
+     0.005710323504701852,
+     0.20999950284440722,
+     0.004815792507372503,
+     0.020136083425683106,
+     0.03312224606228329,
+     0.02207845627604051,
+     0.5912403746053724,
+     0.021790438392106207,
+     0.05381378918458475,
+     0.013291020896060336,
+     0.01863898392378029
+    ],
+    "mid_offbeat_chroma": [
+     0.0015317341973099844,
+     0.0016315492297779377,
+     0.17049814178581094,
+     0.002152339657454331,
+     0.006668932064723837,
+     0.019534096659043237,
+     0.005416235423992549,
+     0.7419479465071318,
+     0.008380195831375245,
+     0.01971479286708026,
+     0.00660193445484309,
+     0.01592210132145682
+    ],
+    "chord": "Gm",
+    "chord_score": 0.8641334243245982,
+    "chord2": "D#",
+    "chord2_score": 0.7387830859628138,
+    "chord_from_low_only": "Gm",
+    "per_verse_votes": {
+     "Gm": 7
+    }
+   },
+   {
+    "position": 21,
+    "bar": 5,
+    "beat_in_bar": 1,
+    "low_chroma": [
+     0.002075023041137106,
+     0.000981354925634095,
+     0.02799664319762593,
+     0.001845576716124964,
+     0.001415929410285385,
+     0.023112082722443056,
+     0.007292747849470921,
+     0.14769632470891647,
+     0.00477555356622582,
+     0.0673235307356906,
+     0.7113424443470869,
+     0.004142788779358397
+    ],
+    "mid_chroma": [
+     0.007585025172456771,
+     0.005207785274852625,
+     0.08797037700196944,
+     0.009357085988340227,
+     0.016521982455859327,
+     0.0427528465755615,
+     0.026074012238876922,
+     0.7035444023106516,
+     0.027420838254789682,
+     0.026576370892330076,
+     0.02727386844528134,
+     0.01971540538903043
+    ],
+    "mid_offbeat_chroma": [
+     0.001434440952092451,
+     0.0016513742038132214,
+     0.07934275762030661,
+     0.002417462683973698,
+     0.005009710237507856,
+     0.03048239922106146,
+     0.006031427825872745,
+     0.8005937112007036,
+     0.008010584009073674,
+     0.014904414976810415,
+     0.027064624295021128,
+     0.023057092773762968
+    ],
+    "chord": "Gm",
+    "chord_score": 0.8552303606096021,
+    "chord2": "D#",
+    "chord2_score": 0.8060931031001538,
+    "chord_from_low_only": "Gm",
+    "per_verse_votes": {
+     "Gm": 7
+    }
+   },
+   {
+    "position": 22,
+    "bar": 5,
+    "beat_in_bar": 2,
+    "low_chroma": [
+     0.01857761416932888,
+     0.0539320107171135,
+     0.014115233063259663,
+     0.01911841879420887,
+     0.05244462538811247,
+     0.08467986696517638,
+     0.03421533608087,
+     0.034801796715003906,
+     0.06964834452852231,
+     0.5440218876387178,
+     0.04095402691814525,
+     0.03349083902153969
+    ],
+    "mid_chroma": [
+     0.0273026631104485,
+     0.056570193856210524,
+     0.02845932483595042,
+     0.011899637971304866,
+     0.4808525899141551,
+     0.12391388135270284,
+     0.006851817865422062,
+     0.009654630279539177,
+     0.028258353893307653,
+     0.054075641292968046,
+     0.02443683785513902,
+     0.14772442777285177
+    ],
+    "mid_offbeat_chroma": [
+     0.0027362372661062758,
+     0.024821696655094348,
+     0.0058483226193455345,
+     0.0031366516914287895,
+     0.6684747758859997,
+     0.015069385842857847,
+     0.002416080720672841,
+     0.0032295981371262827,
+     0.023556838913118834,
+     0.0312885660118058,
+     0.0047548473105369716,
+     0.21466699894590685
+    ],
+    "chord": "A",
+    "chord_score": 0.8173338749023533,
+    "chord2": "Am",
+    "chord2_score": 0.7831898012465114,
+    "chord_from_low_only": "A",
+    "per_verse_votes": {
+     "A": 7
+    }
+   },
+   {
+    "position": 23,
+    "bar": 5,
+    "beat_in_bar": 3,
+    "low_chroma": [
+     0.005295546177394636,
+     0.026388580782835087,
+     0.01728339229959991,
+     0.004676608909005574,
+     0.047024632721332865,
+     0.03702818864928999,
+     0.003937112436211194,
+     0.01043127037128485,
+     0.013406122521791061,
+     0.8150377619973493,
+     0.015608693427722732,
+     0.0038820897061822416
+    ],
+    "mid_chroma": [
+     0.010917839282947685,
+     0.016863277507015932,
+     0.2070745462481003,
+     0.0091060382192614,
+     0.46657351091326155,
+     0.033468230508776516,
+     0.009132078801508214,
+     0.006902622030148165,
+     0.019284861133688106,
+     0.11341262120836478,
+     0.015813839141465027,
+     0.09145053500546226
+    ],
+    "mid_offbeat_chroma": [
+     0.004066363759003773,
+     0.0346617707141023,
+     0.49106053292073676,
+     0.003503222307117387,
+     0.08173977325606001,
+     0.026040745948664953,
+     0.008249592898578788,
+     0.0038228893435242263,
+     0.013813162376931608,
+     0.28094324577071605,
+     0.006884442005389308,
+     0.045214258699174725
+    ],
+    "chord": "Dm",
+    "chord_score": 0.7891703719418213,
+    "chord2": "D",
+    "chord2_score": 0.765088030886455,
+    "chord_from_low_only": "A",
+    "per_verse_votes": {
+     "Dm": 6
+    }
+   }
+  ],
+  "scale": "D natural minor (D E F G A Bb C) with C# only inside the dominant A chord; relative major F major",
+  "krumhansl_profiles": {
+   "instrumental_bars_low+mid": {
+    "chroma": {
+     "C": 0.05852285423219631,
+     "C#": 0.012614633427309901,
+     "D": 0.07676711296907782,
+     "D#": 0.004309967049662221,
+     "E": 0.1233767798720195,
+     "F": 0.02814928324278373,
+     "F#": 0.01584080815850564,
+     "G": 0.1939300304539991,
+     "G#": 0.020305298828766853,
+     "A": 0.3405118542511891,
+     "A#": 0.08591210408489168,
+     "B": 0.03975927342909809
+    },
+    "top5": [
+     {
+      "key": "A minor",
+      "r": 0.6921321517175728
+     },
+     {
+      "key": "A major",
+      "r": 0.5592549557255151
+     },
+     {
+      "key": "D major",
+      "r": 0.5010950356551883
+     },
+     {
+      "key": "G major",
+      "r": 0.41896409925564626
+     },
+     {
+      "key": "C major",
+      "r": 0.35375001641050924
+     }
+    ]
+   },
+   "all_bars_low_band_only_(vocal_free)": {
+    "chroma": {
+     "C": 0.11854694337816594,
+     "C#": 0.014990750928068909,
+     "D": 0.04576042553939213,
+     "D#": 0.008026036201431332,
+     "E": 0.02419903281802827,
+     "F": 0.03395228956215615,
+     "F#": 0.02470449655317818,
+     "G": 0.16970788172078427,
+     "G#": 0.02925997235738799,
+     "A": 0.3400024030527212,
+     "A#": 0.17191163714219296,
+     "B": 0.01893813074549253
+    },
+    "top5": [
+     {
+      "key": "A minor",
+      "r": 0.6051141552568619
+     },
+     {
+      "key": "G minor",
+      "r": 0.4336798674901441
+     },
+     {
+      "key": "F major",
+      "r": 0.4079074836350887
+     },
+     {
+      "key": "A major",
+      "r": 0.3058395537190236
+     },
+     {
+      "key": "D minor",
+      "r": 0.301423204255226
+     }
+    ]
+   },
+   "all_bars_mid_band_(with_vocal)": {
+    "chroma": {
+     "C": 0.01091646368301686,
+     "C#": 0.009369027634066688,
+     "D": 0.11240119202568546,
+     "D#": 0.012655233369433113,
+     "E": 0.18252163448814343,
+     "F": 0.07378076020516593,
+     "F#": 0.029148565041641237,
+     "G": 0.281382461766621,
+     "G#": 0.029051266242894495,
+     "A": 0.19850357280083789,
+     "A#": 0.012520291121907317,
+     "B": 0.047749531619586526
+    },
+    "top5": [
+     {
+      "key": "G major",
+      "r": 0.6820645933941698
+     },
+     {
+      "key": "E minor",
+      "r": 0.6453125871502512
+     },
+     {
+      "key": "D major",
+      "r": 0.5338507057260384
+     },
+     {
+      "key": "C major",
+      "r": 0.4735525622934077
+     },
+     {
+      "key": "A minor",
+      "r": 0.4404225263361627
+     }
+    ]
+   },
+   "intro_beats_1_14_mid": {
+    "chroma": {
+     "C": 0.048910693385028306,
+     "C#": 0.054016546174119974,
+     "D": 0.07771240446631322,
+     "D#": 0.06064079410030177,
+     "E": 0.09354973962796935,
+     "F": 0.051372586980598135,
+     "F#": 0.0641707214777037,
+     "G": 0.08561341868227228,
+     "G#": 0.1670503025812244,
+     "A": 0.10197143114330749,
+     "A#": 0.09174674198010077,
+     "B": 0.10324461940006048
+    },
+    "top5": [
+     {
+      "key": "G# minor",
+      "r": 0.6858107788686618
+     },
+     {
+      "key": "E major",
+      "r": 0.4855457629761297
+     },
+     {
+      "key": "G# major",
+      "r": 0.24362092099994542
+     },
+     {
+      "key": "C# minor",
+      "r": 0.18629062190419202
+     },
+     {
+      "key": "B major",
+      "r": 0.158545357166258
+     }
+    ]
+   }
+  },
+  "krumhansl_note": "global key-profile correlation is NOT reliable here (the note A dominates the low register as fifth of Dm and root of A; the mid register is dominated by the vocal) - it is reported only for completeness; the decision rests on the chord loop",
+  "tuning": {
+   "instrumental_bars_low_95_275": {
+    "cents": 5.537728192384677,
+    "concentration_R": 0.4019341416088708,
+    "n_peaks": 816,
+    "median_cents_of_peaks_within_30c": 2.027197596616759
+   },
+   "instrumental_bars_mid_275_2000": {
+    "cents": 1.7405470326297565,
+    "concentration_R": 0.3268858197517022,
+    "n_peaks": 5892,
+    "median_cents_of_peaks_within_30c": 0.4228949582397945
+   },
+   "all_bars_low_95_275": {
+    "cents": 3.73008522662562,
+    "concentration_R": 0.3655038286196621,
+    "n_peaks": 2602,
+    "median_cents_of_peaks_within_30c": 0.9619921322411074
+   },
+   "all_bars_mid_275_2000_incl_vocal": {
+    "cents": 1.3473929202515162,
+    "concentration_R": 0.3397495062769905,
+    "n_peaks": 12606,
+    "median_cents_of_peaks_within_30c": 0.5535108069196326
+   },
+   "librosa_estimate_tuning_instrumental_bars_cents": 4.0000000000000036,
+   "librosa_estimate_tuning_whole_song_cents": 4.0000000000000036,
+   "adopted_cents_re_A440": 3.73008522662562,
+   "adopted_A4_hz": 440.94903797743024
+  },
+  "confidence": {
+   "roots_and_loop": "high (per-verse votes agree in 5-7 of 7 verses for every half bar, 7/7 in the vocal-free bars)",
+   "chord_quality": "Gm high (Bb), C high (E), Dm medium-high (F weak but present, no F#), A medium (C# weak; in the last beat of the loop a D sounds on top = Asus4 or anticipation of Dm)",
+   "key_D_minor": "high",
+   "not_verified": "not checked by ear"
+  },
+  "low_register_notes_per_beat_from_10_bass_notes": {
+   "note": "strongest harmonic-sum note 36-135 Hz per beat (it is the LOWEST chord note, not a bass line): A A C G/A | C C A G | ... consistent with the loop above",
+   "pc_by_position_in_verse": {
+    "0": {
+     "G": 6,
+     "C": 1
+    },
+    "1": {
+     "A": 7
+    },
+    "2": {
+     "C": 7
+    },
+    "3": {
+     "F": 1,
+     "A": 4,
+     "G": 2
+    },
+    "4": {
+     "C": 6,
+     "G": 1
+    },
+    "5": {
+     "C": 5,
+     "G": 2
+    },
+    "6": {
+     "A": 7
+    },
+    "7": {
+     "G": 6,
+     "A": 1
+    },
+    "8": {
+     "G": 4,
+     "D": 2,
+     "C": 1
+    },
+    "9": {
+     "A": 7
+    },
+    "10": {
+     "C": 7
+    },
+    "11": {
+     "A": 7
+    },
+    "12": {
+     "C": 5,
+     "G": 2
+    },
+    "13": {
+     "C": 6,
+     "G": 1
+    },
+    "14": {
+     "A": 7
+    },
+    "15": {
+     "G": 7
+    },
+    "16": {
+     "A": 7
+    },
+    "17": {
+     "A": 7
+    },
+    "18": {
+     "C": 7
+    },
+    "19": {
+     "G": 3,
+     "C": 4
+    },
+    "20": {
+     "C": 2,
+     "G": 5
+    },
+    "21": {
+     "G": 3,
+     "C": 2,
+     "A#": 2
+    },
+    "22": {
+     "A": 7
+    },
+    "23": {
+     "A": 6
+    }
+   }
+  }
+ },
+ "vocal_pitch_rough": {
+  "flag": "ROUGH: measured on the full mix; the band (off-beat chords and melody notes in the same register) is still in the signal",
+  "method": "harmonic-comb salience (harmonics 1-5) on a 93 ms STFT, 10 ms hop, 130-700 Hz, per word: median, stable note runs, frame share; cross-check pyworld harvest on the 200-1500 Hz band. Octave is uncertain by construction (G3 results for \"bir\"/\"diye\" are octave errors of G4, pyworld gives G4).",
+  "verse_1": [
+   {
+    "text": "Ali",
+    "start": 8.58,
+    "end": 9.04,
+    "median_midi": 62.2,
+    "median_note": "D4",
+    "median_cents": 20,
+    "median_hz": 297.8,
+    "iqr_semitones": 5.0,
+    "frame_share_by_note": {
+     "D4": 0.59,
+     "G4": 0.23,
+     "F4": 0.07
+    },
+    "note_runs": [
+     {
+      "start": 8.6,
+      "dur": 0.259,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 0.05
+     },
+     {
+      "start": 8.89,
+      "dur": 0.11,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 0.56
+     }
+    ],
+    "subharmonic_salience_ratio": 0.7,
+    "pyworld_median_midi": 62.89,
+    "pyworld_note": "D#4",
+    "pyworld_voiced_frames": 44,
+    "verse": 1,
+    "segment": "L1",
+    "index_in_verse": 0,
+    "start_beats_from_verse_downbeat": 0.02
+   },
+   {
+    "text": "Baba'nın",
+    "start": 9.12,
+    "end": 9.64,
+    "median_midi": 68.95,
+    "median_note": "A4",
+    "median_cents": -5,
+    "median_hz": 439.8,
+    "iqr_semitones": 0.1,
+    "frame_share_by_note": {
+     "A4": 0.96,
+     "G#4": 0.04
+    },
+    "note_runs": [
+     {
+      "start": 9.149,
+      "dur": 0.489,
+      "midi": 68.95,
+      "note": "A4",
+      "cents": -5,
+      "beat_in_verse": 1.01
+     }
+    ],
+    "subharmonic_salience_ratio": 0.68,
+    "pyworld_median_midi": 68.95,
+    "pyworld_note": "A4",
+    "pyworld_voiced_frames": 43,
+    "verse": 1,
+    "segment": "L1",
+    "index_in_verse": 1,
+    "start_beats_from_verse_downbeat": 0.96
+   },
+   {
+    "text": "bir",
+    "start": 9.7,
+    "end": 9.88,
+    "median_midi": 54.95,
+    "median_note": "G3",
+    "median_cents": -5,
+    "median_hz": 195.9,
+    "iqr_semitones": 12.05,
+    "frame_share_by_note": {
+     "G3": 0.6,
+     "G4": 0.4
+    },
+    "note_runs": [
+     {
+      "start": 9.728,
+      "dur": 0.09,
+      "midi": 54.95,
+      "note": "G3",
+      "cents": -5,
+      "beat_in_verse": 2.02
+     }
+    ],
+    "subharmonic_salience_ratio": 0.32,
+    "pyworld_median_midi": 66.86,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 16,
+    "verse": 1,
+    "segment": "L1",
+    "index_in_verse": 2,
+    "start_beats_from_verse_downbeat": 1.98
+   },
+   {
+    "text": "çiftliği",
+    "start": 9.98,
+    "end": 10.5,
+    "median_midi": 65.15,
+    "median_note": "F4",
+    "median_cents": 15,
+    "median_hz": 353.1,
+    "iqr_semitones": 11.8,
+    "frame_share_by_note": {
+     "G4": 0.33,
+     "G3": 0.2,
+     "C3": 0.14
+    },
+    "note_runs": [
+     {
+      "start": 10.197,
+      "dur": 0.07,
+      "midi": 55.15,
+      "note": "G3",
+      "cents": 15,
+      "beat_in_verse": 2.85
+     },
+     {
+      "start": 10.297,
+      "dur": 0.11,
+      "midi": 67.05,
+      "note": "G4",
+      "cents": 5,
+      "beat_in_verse": 3.02
+     },
+     {
+      "start": 10.426,
+      "dur": 0.07,
+      "midi": 65.05,
+      "note": "F4",
+      "cents": 5,
+      "beat_in_verse": 3.25
+     }
+    ],
+    "subharmonic_salience_ratio": 0.55,
+    "pyworld_median_midi": 66.86,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 47,
+    "verse": 1,
+    "segment": "L1",
+    "index_in_verse": 3,
+    "start_beats_from_verse_downbeat": 2.47
+   },
+   {
+    "text": "var,",
+    "start": 10.56,
+    "end": 10.74,
+    "median_midi": 63.95,
+    "median_note": "E4",
+    "median_cents": -5,
+    "median_hz": 329.5,
+    "iqr_semitones": 0.15,
+    "frame_share_by_note": {
+     "E4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 10.586,
+      "dur": 0.15,
+      "midi": 63.85,
+      "note": "E4",
+      "cents": -15,
+      "beat_in_verse": 3.53
+     }
+    ],
+    "subharmonic_salience_ratio": 0.49,
+    "pyworld_median_midi": 63.87,
+    "pyworld_note": "E4",
+    "pyworld_voiced_frames": 16,
+    "verse": 1,
+    "segment": "L1",
+    "index_in_verse": 4,
+    "start_beats_from_verse_downbeat": 3.48
+   },
+   {
+    "text": "çiftliğinde",
+    "start": 10.84,
+    "end": 11.9,
+    "median_midi": 66.95,
+    "median_note": "G4",
+    "median_cents": -5,
+    "median_hz": 391.8,
+    "iqr_semitones": 5.1,
+    "frame_share_by_note": {
+     "G4": 0.67,
+     "D4": 0.24,
+     "G3": 0.03
+    },
+    "note_runs": [
+     {
+      "start": 10.885,
+      "dur": 0.269,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 4.05
+     },
+     {
+      "start": 11.155,
+      "dur": 0.259,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 4.52
+     },
+     {
+      "start": 11.444,
+      "dur": 0.449,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 5.03
+     }
+    ],
+    "subharmonic_salience_ratio": 0.72,
+    "pyworld_median_midi": 66.87,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 104,
+    "verse": 1,
+    "segment": "L2",
+    "index_in_verse": 5,
+    "start_beats_from_verse_downbeat": 3.97
+   },
+   {
+    "text": "inekleri",
+    "start": 12.06,
+    "end": 12.78,
+    "median_midi": 64.05,
+    "median_note": "E4",
+    "median_cents": 5,
+    "median_hz": 331.4,
+    "iqr_semitones": 1.1,
+    "frame_share_by_note": {
+     "E4": 0.46,
+     "F4": 0.39,
+     "E3": 0.14
+    },
+    "note_runs": [
+     {
+      "start": 12.083,
+      "dur": 0.13,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 6.15
+     },
+     {
+      "start": 12.212,
+      "dur": 0.239,
+      "midi": 63.95,
+      "note": "E4",
+      "cents": -5,
+      "beat_in_verse": 6.37
+     },
+     {
+      "start": 12.452,
+      "dur": 0.09,
+      "midi": 51.95,
+      "note": "E3",
+      "cents": -5,
+      "beat_in_verse": 6.79
+     },
+     {
+      "start": 12.541,
+      "dur": 0.14,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 6.95
+     },
+     {
+      "start": 12.681,
+      "dur": 0.09,
+      "midi": 64.05,
+      "note": "E4",
+      "cents": 5,
+      "beat_in_verse": 7.19
+     }
+    ],
+    "subharmonic_salience_ratio": 0.71,
+    "pyworld_median_midi": 64.25,
+    "pyworld_note": "E4",
+    "pyworld_voiced_frames": 70,
+    "verse": 1,
+    "segment": "L2",
+    "index_in_verse": 6,
+    "start_beats_from_verse_downbeat": 6.11
+   },
+   {
+    "text": "var.",
+    "start": 12.84,
+    "end": 13.08,
+    "median_midi": 61.85,
+    "median_note": "D4",
+    "median_cents": -15,
+    "median_hz": 291.8,
+    "iqr_semitones": 0.1,
+    "frame_share_by_note": {
+     "D4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 12.861,
+      "dur": 0.21,
+      "midi": 61.85,
+      "note": "D4",
+      "cents": -15,
+      "beat_in_verse": 7.51
+     }
+    ],
+    "subharmonic_salience_ratio": 0.5,
+    "pyworld_median_midi": 61.92,
+    "pyworld_note": "D4",
+    "pyworld_voiced_frames": 22,
+    "verse": 1,
+    "segment": "L2",
+    "index_in_verse": 7,
+    "start_beats_from_verse_downbeat": 7.47
+   },
+   {
+    "text": "\"Mö,",
+    "start": 13.12,
+    "end": 13.4,
+    "median_midi": 61.95,
+    "median_note": "D4",
+    "median_cents": -5,
+    "median_hz": 293.5,
+    "iqr_semitones": 0.0,
+    "frame_share_by_note": {
+     "D4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 13.14,
+      "dur": 0.259,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 8.0
+     }
+    ],
+    "subharmonic_salience_ratio": 0.67,
+    "pyworld_median_midi": 61.99,
+    "pyworld_note": "D4",
+    "pyworld_voiced_frames": 26,
+    "verse": 1,
+    "segment": "ses",
+    "index_in_verse": 8,
+    "start_beats_from_verse_downbeat": 7.96
+   },
+   {
+    "text": "mö\"",
+    "start": 13.72,
+    "end": 13.94,
+    "median_midi": 68.95,
+    "median_note": "A4",
+    "median_cents": -5,
+    "median_hz": 439.8,
+    "iqr_semitones": 0.2,
+    "frame_share_by_note": {
+     "A4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 13.749,
+      "dur": 0.19,
+      "midi": 68.95,
+      "note": "A4",
+      "cents": -5,
+      "beat_in_verse": 9.06
+     }
+    ],
+    "subharmonic_salience_ratio": 0.55,
+    "pyworld_median_midi": 68.91,
+    "pyworld_note": "A4",
+    "pyworld_voiced_frames": 20,
+    "verse": 1,
+    "segment": "ses",
+    "index_in_verse": 9,
+    "start_beats_from_verse_downbeat": 9.01
+   },
+   {
+    "text": "diye",
+    "start": 14.28,
+    "end": 14.76,
+    "median_midi": 66.95,
+    "median_note": "G4",
+    "median_cents": -5,
+    "median_hz": 391.8,
+    "iqr_semitones": 12.0,
+    "frame_share_by_note": {
+     "G4": 0.49,
+     "G3": 0.38,
+     "G#4": 0.07
+    },
+    "note_runs": [
+     {
+      "start": 14.307,
+      "dur": 0.17,
+      "midi": 55.05,
+      "note": "G3",
+      "cents": 5,
+      "beat_in_verse": 10.04
+     },
+     {
+      "start": 14.477,
+      "dur": 0.22,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 10.34
+     }
+    ],
+    "subharmonic_salience_ratio": 0.54,
+    "pyworld_median_midi": 66.99,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 42,
+    "verse": 1,
+    "segment": "diye",
+    "index_in_verse": 10,
+    "start_beats_from_verse_downbeat": 9.99
+   },
+   {
+    "text": "bağırır",
+    "start": 14.84,
+    "end": 15.32,
+    "median_midi": 64.95,
+    "median_note": "F4",
+    "median_cents": -5,
+    "median_hz": 349.1,
+    "iqr_semitones": 1.8,
+    "frame_share_by_note": {
+     "E4": 0.38,
+     "F4": 0.31,
+     "G4": 0.2
+    },
+    "note_runs": [
+     {
+      "start": 14.866,
+      "dur": 0.1,
+      "midi": 66.85,
+      "note": "G4",
+      "cents": -15,
+      "beat_in_verse": 11.02
+     },
+     {
+      "start": 14.966,
+      "dur": 0.16,
+      "midi": 65.0,
+      "note": "F4",
+      "cents": 0,
+      "beat_in_verse": 11.19
+     },
+     {
+      "start": 15.126,
+      "dur": 0.19,
+      "midi": 63.95,
+      "note": "E4",
+      "cents": -5,
+      "beat_in_verse": 11.47
+     }
+    ],
+    "subharmonic_salience_ratio": 0.71,
+    "pyworld_median_midi": 64.87,
+    "pyworld_note": "F4",
+    "pyworld_voiced_frames": 46,
+    "verse": 1,
+    "segment": "diye",
+    "index_in_verse": 11,
+    "start_beats_from_verse_downbeat": 10.97
+   },
+   {
+    "text": "çiftliğinde",
+    "start": 15.4,
+    "end": 16.46,
+    "median_midi": 66.95,
+    "median_note": "G4",
+    "median_cents": -5,
+    "median_hz": 391.8,
+    "iqr_semitones": 4.9,
+    "frame_share_by_note": {
+     "G4": 0.68,
+     "D4": 0.2,
+     "F4": 0.04
+    },
+    "note_runs": [
+     {
+      "start": 15.455,
+      "dur": 0.229,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 12.05
+     },
+     {
+      "start": 15.734,
+      "dur": 0.718,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 12.54
+     }
+    ],
+    "subharmonic_salience_ratio": 0.69,
+    "pyworld_median_midi": 66.89,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 83,
+    "verse": 1,
+    "segment": "L4",
+    "index_in_verse": 12,
+    "start_beats_from_verse_downbeat": 11.95
+   },
+   {
+    "text": "Ali",
+    "start": 16.64,
+    "end": 17.04,
+    "median_midi": 63.95,
+    "median_note": "E4",
+    "median_cents": -5,
+    "median_hz": 329.5,
+    "iqr_semitones": 1.3,
+    "frame_share_by_note": {
+     "F4": 0.41,
+     "E4": 0.38,
+     "E3": 0.22
+    },
+    "note_runs": [
+     {
+      "start": 16.662,
+      "dur": 0.15,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 14.16
+     },
+     {
+      "start": 16.862,
+      "dur": 0.08,
+      "midi": 52.05,
+      "note": "E3",
+      "cents": 5,
+      "beat_in_verse": 14.51
+     },
+     {
+      "start": 16.941,
+      "dur": 0.09,
+      "midi": 63.85,
+      "note": "E4",
+      "cents": -15,
+      "beat_in_verse": 14.65
+     }
+    ],
+    "subharmonic_salience_ratio": 0.48,
+    "pyworld_median_midi": 63.94,
+    "pyworld_note": "E4",
+    "pyworld_voiced_frames": 27,
+    "verse": 1,
+    "segment": "L4",
+    "index_in_verse": 13,
+    "start_beats_from_verse_downbeat": 14.12
+   },
+   {
+    "text": "Baba'nın.",
+    "start": 17.1,
+    "end": 17.68,
+    "median_midi": 62.3,
+    "median_note": "D4",
+    "median_cents": 30,
+    "median_hz": 299.5,
+    "iqr_semitones": 2.32,
+    "frame_share_by_note": {
+     "D4": 0.48,
+     "F4": 0.25,
+     "E4": 0.23
+    },
+    "note_runs": [
+     {
+      "start": 17.121,
+      "dur": 0.14,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 14.96
+     },
+     {
+      "start": 17.261,
+      "dur": 0.13,
+      "midi": 63.95,
+      "note": "E4",
+      "cents": -5,
+      "beat_in_verse": 15.21
+     },
+     {
+      "start": 17.39,
+      "dur": 0.289,
+      "midi": 61.85,
+      "note": "D4",
+      "cents": -15,
+      "beat_in_verse": 15.43
+     }
+    ],
+    "subharmonic_salience_ratio": 0.67,
+    "pyworld_median_midi": 62.04,
+    "pyworld_note": "D4",
+    "pyworld_voiced_frames": 55,
+    "verse": 1,
+    "segment": "L4",
+    "index_in_verse": 14,
+    "start_beats_from_verse_downbeat": 14.93
+   }
+  ],
+  "verse_2": [
+   {
+    "text": "Ali",
+    "start": 22.3,
+    "end": 22.76,
+    "median_midi": 62.05,
+    "median_note": "D4",
+    "median_cents": 5,
+    "median_hz": 295.2,
+    "iqr_semitones": 5.0,
+    "frame_share_by_note": {
+     "D4": 0.51,
+     "G4": 0.26,
+     "A4": 0.07
+    },
+    "note_runs": [
+     {
+      "start": 22.329,
+      "dur": 0.239,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 0.08
+     },
+     {
+      "start": 22.589,
+      "dur": 0.13,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 0.53
+     }
+    ],
+    "subharmonic_salience_ratio": 0.7,
+    "pyworld_median_midi": 62.01,
+    "pyworld_note": "D4",
+    "pyworld_voiced_frames": 32,
+    "verse": 2,
+    "segment": "L1",
+    "index_in_verse": 0,
+    "start_beats_from_verse_downbeat": 0.03
+   },
+   {
+    "text": "Baba'nın",
+    "start": 22.84,
+    "end": 23.36,
+    "median_midi": 68.95,
+    "median_note": "A4",
+    "median_cents": -5,
+    "median_hz": 439.8,
+    "iqr_semitones": 0.1,
+    "frame_share_by_note": {
+     "A4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 22.868,
+      "dur": 0.489,
+      "midi": 68.95,
+      "note": "A4",
+      "cents": -5,
+      "beat_in_verse": 1.02
+     }
+    ],
+    "subharmonic_salience_ratio": 0.71,
+    "pyworld_median_midi": 68.68,
+    "pyworld_note": "A4",
+    "pyworld_voiced_frames": 49,
+    "verse": 2,
+    "segment": "L1",
+    "index_in_verse": 1,
+    "start_beats_from_verse_downbeat": 0.97
+   },
+   {
+    "text": "bir",
+    "start": 23.4,
+    "end": 23.6,
+    "median_midi": 54.95,
+    "median_note": "G3",
+    "median_cents": -5,
+    "median_hz": 195.9,
+    "iqr_semitones": 12.1,
+    "frame_share_by_note": {
+     "G3": 0.53,
+     "G4": 0.35,
+     "C3": 0.12
+    },
+    "note_runs": [
+     {
+      "start": 23.487,
+      "dur": 0.11,
+      "midi": 54.95,
+      "note": "G3",
+      "cents": -5,
+      "beat_in_verse": 2.1
+     }
+    ],
+    "subharmonic_salience_ratio": 0.28,
+    "pyworld_median_midi": 66.91,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 18,
+    "verse": 2,
+    "segment": "L1",
+    "index_in_verse": 2,
+    "start_beats_from_verse_downbeat": 1.95
+   },
+   {
+    "text": "çiftliği",
+    "start": 23.7,
+    "end": 24.22,
+    "median_midi": 65.05,
+    "median_note": "F4",
+    "median_cents": 5,
+    "median_hz": 351.1,
+    "iqr_semitones": 11.9,
+    "frame_share_by_note": {
+     "G4": 0.29,
+     "G3": 0.27,
+     "F4": 0.16
+    },
+    "note_runs": [
+     {
+      "start": 23.866,
+      "dur": 0.14,
+      "midi": 54.65,
+      "note": "G3",
+      "cents": -35,
+      "beat_in_verse": 2.77
+     },
+     {
+      "start": 24.005,
+      "dur": 0.11,
+      "midi": 66.85,
+      "note": "G4",
+      "cents": -15,
+      "beat_in_verse": 3.01
+     },
+     {
+      "start": 24.115,
+      "dur": 0.1,
+      "midi": 65.0,
+      "note": "F4",
+      "cents": 0,
+      "beat_in_verse": 3.2
+     }
+    ],
+    "subharmonic_salience_ratio": 0.51,
+    "pyworld_median_midi": 66.13,
+    "pyworld_note": "F#4",
+    "pyworld_voiced_frames": 49,
+    "verse": 2,
+    "segment": "L1",
+    "index_in_verse": 3,
+    "start_beats_from_verse_downbeat": 2.48
+   },
+   {
+    "text": "var,",
+    "start": 24.26,
+    "end": 24.46,
+    "median_midi": 63.95,
+    "median_note": "E4",
+    "median_cents": -5,
+    "median_hz": 329.5,
+    "iqr_semitones": 0.1,
+    "frame_share_by_note": {
+     "E4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 24.285,
+      "dur": 0.17,
+      "midi": 63.85,
+      "note": "E4",
+      "cents": -15,
+      "beat_in_verse": 3.5
+     }
+    ],
+    "subharmonic_salience_ratio": 0.51,
+    "pyworld_median_midi": 63.88,
+    "pyworld_note": "E4",
+    "pyworld_voiced_frames": 18,
+    "verse": 2,
+    "segment": "L1",
+    "index_in_verse": 4,
+    "start_beats_from_verse_downbeat": 3.46
+   },
+   {
+    "text": "çiftliğinde",
+    "start": 24.56,
+    "end": 25.58,
+    "median_midi": 66.85,
+    "median_note": "G4",
+    "median_cents": -15,
+    "median_hz": 389.6,
+    "iqr_semitones": 5.0,
+    "frame_share_by_note": {
+     "G4": 0.64,
+     "D4": 0.24,
+     "G3": 0.07
+    },
+    "note_runs": [
+     {
+      "start": 24.604,
+      "dur": 0.239,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 4.06
+     },
+     {
+      "start": 24.863,
+      "dur": 0.599,
+      "midi": 66.85,
+      "note": "G4",
+      "cents": -15,
+      "beat_in_verse": 4.51
+     },
+     {
+      "start": 25.492,
+      "dur": 0.08,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 5.61
+     }
+    ],
+    "subharmonic_salience_ratio": 0.68,
+    "pyworld_median_midi": 66.86,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 85,
+    "verse": 2,
+    "segment": "L2",
+    "index_in_verse": 5,
+    "start_beats_from_verse_downbeat": 3.98
+   },
+   {
+    "text": "koyunları",
+    "start": 25.7,
+    "end": 26.52,
+    "median_midi": 64.25,
+    "median_note": "E4",
+    "median_cents": 25,
+    "median_hz": 335.2,
+    "iqr_semitones": 1.0,
+    "frame_share_by_note": {
+     "E4": 0.5,
+     "F4": 0.46,
+     "E3": 0.03
+    },
+    "note_runs": [
+     {
+      "start": 25.732,
+      "dur": 0.22,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 6.03
+     },
+     {
+      "start": 25.951,
+      "dur": 0.319,
+      "midi": 63.95,
+      "note": "E4",
+      "cents": -5,
+      "beat_in_verse": 6.42
+     },
+     {
+      "start": 26.27,
+      "dur": 0.15,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 6.97
+     },
+     {
+      "start": 26.42,
+      "dur": 0.1,
+      "midi": 64.2,
+      "note": "E4",
+      "cents": 20,
+      "beat_in_verse": 7.24
+     }
+    ],
+    "subharmonic_salience_ratio": 0.66,
+    "pyworld_median_midi": 64.28,
+    "pyworld_note": "E4",
+    "pyworld_voiced_frames": 79,
+    "verse": 2,
+    "segment": "L2",
+    "index_in_verse": 6,
+    "start_beats_from_verse_downbeat": 5.98
+   },
+   {
+    "text": "var.",
+    "start": 26.58,
+    "end": 26.82,
+    "median_midi": 61.85,
+    "median_note": "D4",
+    "median_cents": -15,
+    "median_hz": 291.8,
+    "iqr_semitones": 0.0,
+    "frame_share_by_note": {
+     "D4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 26.61,
+      "dur": 0.21,
+      "midi": 61.85,
+      "note": "D4",
+      "cents": -15,
+      "beat_in_verse": 7.57
+     }
+    ],
+    "subharmonic_salience_ratio": 0.55,
+    "pyworld_median_midi": 61.86,
+    "pyworld_note": "D4",
+    "pyworld_voiced_frames": 22,
+    "verse": 2,
+    "segment": "L2",
+    "index_in_verse": 7,
+    "start_beats_from_verse_downbeat": 7.52
+   },
+   {
+    "text": "\"Me,",
+    "start": 26.82,
+    "end": 27.1,
+    "median_midi": 61.95,
+    "median_note": "D4",
+    "median_cents": -5,
+    "median_hz": 293.5,
+    "iqr_semitones": 0.2,
+    "frame_share_by_note": {
+     "D4": 0.92,
+     "D3": 0.08
+    },
+    "note_runs": [
+     {
+      "start": 26.869,
+      "dur": 0.229,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 8.02
+     }
+    ],
+    "subharmonic_salience_ratio": 0.65,
+    "pyworld_median_midi": 61.98,
+    "pyworld_note": "D4",
+    "pyworld_voiced_frames": 26,
+    "verse": 2,
+    "segment": "ses",
+    "index_in_verse": 8,
+    "start_beats_from_verse_downbeat": 7.94
+   },
+   {
+    "text": "me\"",
+    "start": 27.46,
+    "end": 27.66,
+    "median_midi": 68.95,
+    "median_note": "A4",
+    "median_cents": -5,
+    "median_hz": 439.8,
+    "iqr_semitones": 0.1,
+    "frame_share_by_note": {
+     "A4": 1.0
+    },
+    "note_runs": [
+     {
+      "start": 27.488,
+      "dur": 0.17,
+      "midi": 68.95,
+      "note": "A4",
+      "cents": -5,
+      "beat_in_verse": 9.11
+     }
+    ],
+    "subharmonic_salience_ratio": 0.54,
+    "pyworld_median_midi": 68.9,
+    "pyworld_note": "A4",
+    "pyworld_voiced_frames": 18,
+    "verse": 2,
+    "segment": "ses",
+    "index_in_verse": 9,
+    "start_beats_from_verse_downbeat": 9.06
+   },
+   {
+    "text": "diye",
+    "start": 28.0,
+    "end": 28.5,
+    "median_midi": 66.95,
+    "median_note": "G4",
+    "median_cents": -5,
+    "median_hz": 391.8,
+    "iqr_semitones": 12.05,
+    "frame_share_by_note": {
+     "G4": 0.45,
+     "G3": 0.38,
+     "A4": 0.13
+    },
+    "note_runs": [
+     {
+      "start": 28.026,
+      "dur": 0.18,
+      "midi": 54.95,
+      "note": "G3",
+      "cents": -5,
+      "beat_in_verse": 10.05
+     },
+     {
+      "start": 28.206,
+      "dur": 0.21,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 10.36
+     },
+     {
+      "start": 28.415,
+      "dur": 0.08,
+      "midi": 68.9,
+      "note": "A4",
+      "cents": -10,
+      "beat_in_verse": 10.73
+     }
+    ],
+    "subharmonic_salience_ratio": 0.5,
+    "pyworld_median_midi": 66.96,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 43,
+    "verse": 2,
+    "segment": "diye",
+    "index_in_verse": 10,
+    "start_beats_from_verse_downbeat": 10.0
+   },
+   {
+    "text": "bağırır",
+    "start": 28.56,
+    "end": 29.06,
+    "median_midi": 64.75,
+    "median_note": "F4",
+    "median_cents": -25,
+    "median_hz": 345.1,
+    "iqr_semitones": 2.1,
+    "frame_share_by_note": {
+     "E4": 0.4,
+     "F4": 0.26,
+     "G4": 0.17
+    },
+    "note_runs": [
+     {
+      "start": 28.585,
+      "dur": 0.09,
+      "midi": 67.25,
+      "note": "G4",
+      "cents": 25,
+      "beat_in_verse": 11.02
+     },
+     {
+      "start": 28.705,
+      "dur": 0.13,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 11.23
+     },
+     {
+      "start": 28.834,
+      "dur": 0.22,
+      "midi": 63.85,
+      "note": "E4",
+      "cents": -15,
+      "beat_in_verse": 11.46
+     }
+    ],
+    "subharmonic_salience_ratio": 0.65,
+    "pyworld_median_midi": 64.61,
+    "pyworld_note": "F4",
+    "pyworld_voiced_frames": 47,
+    "verse": 2,
+    "segment": "diye",
+    "index_in_verse": 11,
+    "start_beats_from_verse_downbeat": 10.98
+   },
+   {
+    "text": "çiftliğinde",
+    "start": 29.12,
+    "end": 30.2,
+    "median_midi": 66.85,
+    "median_note": "G4",
+    "median_cents": -15,
+    "median_hz": 389.6,
+    "iqr_semitones": 5.0,
+    "frame_share_by_note": {
+     "G4": 0.67,
+     "D4": 0.15,
+     "A#3": 0.06
+    },
+    "note_runs": [
+     {
+      "start": 29.174,
+      "dur": 0.08,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 12.06
+     },
+     {
+      "start": 29.313,
+      "dur": 0.08,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 12.3
+     },
+     {
+      "start": 29.433,
+      "dur": 0.758,
+      "midi": 66.95,
+      "note": "G4",
+      "cents": -5,
+      "beat_in_verse": 12.51
+     }
+    ],
+    "subharmonic_salience_ratio": 0.67,
+    "pyworld_median_midi": 66.89,
+    "pyworld_note": "G4",
+    "pyworld_voiced_frames": 80,
+    "verse": 2,
+    "segment": "L4",
+    "index_in_verse": 12,
+    "start_beats_from_verse_downbeat": 11.96
+   },
+   {
+    "text": "Ali",
+    "start": 30.36,
+    "end": 30.68,
+    "median_midi": 64.65,
+    "median_note": "F4",
+    "median_cents": -35,
+    "median_hz": 343.1,
+    "iqr_semitones": 0.9,
+    "frame_share_by_note": {
+     "F4": 0.52,
+     "E4": 0.48
+    },
+    "note_runs": [
+     {
+      "start": 30.381,
+      "dur": 0.15,
+      "midi": 64.95,
+      "note": "F4",
+      "cents": -5,
+      "beat_in_verse": 14.17
+     },
+     {
+      "start": 30.531,
+      "dur": 0.14,
+      "midi": 64.05,
+      "note": "E4",
+      "cents": 5,
+      "beat_in_verse": 14.43
+     }
+    ],
+    "subharmonic_salience_ratio": 0.59,
+    "pyworld_median_midi": 64.36,
+    "pyworld_note": "E4",
+    "pyworld_voiced_frames": 29,
+    "verse": 2,
+    "segment": "L4",
+    "index_in_verse": 13,
+    "start_beats_from_verse_downbeat": 14.13
+   },
+   {
+    "text": "Baba'nın.",
+    "start": 30.84,
+    "end": 31.4,
+    "median_midi": 62.45,
+    "median_note": "D4",
+    "median_cents": 45,
+    "median_hz": 302.1,
+    "iqr_semitones": 2.5,
+    "frame_share_by_note": {
+     "D4": 0.42,
+     "E4": 0.25,
+     "F4": 0.23
+    },
+    "note_runs": [
+     {
+      "start": 30.87,
+      "dur": 0.16,
+      "midi": 64.85,
+      "note": "F4",
+      "cents": -15,
+      "beat_in_verse": 15.02
+     },
+     {
+      "start": 31.029,
+      "dur": 0.09,
+      "midi": 63.85,
+      "note": "E4",
+      "cents": -15,
+      "beat_in_verse": 15.3
+     },
+     {
+      "start": 31.119,
+      "dur": 0.22,
+      "midi": 61.95,
+      "note": "D4",
+      "cents": -5,
+      "beat_in_verse": 15.46
+     }
+    ],
+    "subharmonic_salience_ratio": 0.62,
+    "pyworld_median_midi": 63.7,
+    "pyworld_note": "E4",
+    "pyworld_voiced_frames": 53,
+    "verse": 2,
+    "segment": "L4",
+    "index_in_verse": 14,
+    "start_beats_from_verse_downbeat": 14.97
+   }
+  ],
+  "consensus_per_word_index_over_7_verses": [
+   {
+    "index": 0,
+    "segment": "L1",
+    "text_verse1": "Ali",
+    "median_midi": 62.15,
+    "note": "D4",
+    "per_verse_notes": [
+     "D4",
+     "D4",
+     "D4",
+     "D4",
+     "D4",
+     "D4",
+     "D4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 1,
+    "segment": "L1",
+    "text_verse1": "Baba'nın",
+    "median_midi": 68.95,
+    "note": "A4",
+    "per_verse_notes": [
+     "A4",
+     "A4",
+     "A4",
+     "A4",
+     "A4",
+     "A4",
+     "A4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 2,
+    "segment": "L1",
+    "text_verse1": "bir",
+    "median_midi": 55.05,
+    "note": "G3",
+    "per_verse_notes": [
+     "G3",
+     "G3",
+     "G3",
+     "G3",
+     "G3",
+     "G3",
+     "F#4"
+    ],
+    "agree": 6
+   },
+   {
+    "index": 3,
+    "segment": "L1",
+    "text_verse1": "çiftliği",
+    "median_midi": 65.15,
+    "note": "F4",
+    "per_verse_notes": [
+     "F4",
+     "F4",
+     "F#4",
+     "F4",
+     "F4",
+     "F4",
+     "G4"
+    ],
+    "agree": 5
+   },
+   {
+    "index": 4,
+    "segment": "L1",
+    "text_verse1": "var,",
+    "median_midi": 63.95,
+    "note": "E4",
+    "per_verse_notes": [
+     "E4",
+     "E4",
+     "E4",
+     "E4",
+     "E4",
+     "E4",
+     "E4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 5,
+    "segment": "L2",
+    "text_verse1": "çiftliğinde",
+    "median_midi": 66.95,
+    "note": "G4",
+    "per_verse_notes": [
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 6,
+    "segment": "L2",
+    "text_verse1": "inekleri",
+    "median_midi": 64.25,
+    "note": "E4",
+    "per_verse_notes": [
+     "E4",
+     "E4",
+     "E4",
+     "E4",
+     "E4",
+     "F4",
+     "F4"
+    ],
+    "agree": 5
+   },
+   {
+    "index": 7,
+    "segment": "L2",
+    "text_verse1": "var.",
+    "median_midi": 61.95,
+    "note": "D4",
+    "per_verse_notes": [
+     "D4",
+     "D4",
+     "D4",
+     "D4",
+     "D4",
+     "D4",
+     "D4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 8,
+    "segment": "ses",
+    "text_verse1": "\"Mö,",
+    "median_midi": 61.95,
+    "note": "D4",
+    "per_verse_notes": [
+     "D4",
+     "D4",
+     "D4",
+     "D#4",
+     "D4",
+     "D4",
+     "D4"
+    ],
+    "agree": 6
+   },
+   {
+    "index": 9,
+    "segment": "ses",
+    "text_verse1": "mö\"",
+    "median_midi": 68.95,
+    "note": "A4",
+    "per_verse_notes": [
+     "A4",
+     "A4",
+     "A4",
+     "A4",
+     "A4",
+     "A4",
+     "A4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 10,
+    "segment": "diye",
+    "text_verse1": "diye",
+    "median_midi": 66.95,
+    "note": "G4",
+    "per_verse_notes": [
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 11,
+    "segment": "diye",
+    "text_verse1": "bağırır",
+    "median_midi": 64.9,
+    "note": "F4",
+    "per_verse_notes": [
+     "F4",
+     "F4",
+     "F4",
+     "F4",
+     "F4",
+     "F4",
+     "F4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 12,
+    "segment": "L4",
+    "text_verse1": "çiftliğinde",
+    "median_midi": 66.95,
+    "note": "G4",
+    "per_verse_notes": [
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4",
+     "G4"
+    ],
+    "agree": 7
+   },
+   {
+    "index": 13,
+    "segment": "L4",
+    "text_verse1": "Ali",
+    "median_midi": 64.05,
+    "note": "E4",
+    "per_verse_notes": [
+     "E4",
+     "F4",
+     "E4",
+     "E4",
+     "E4",
+     "E4",
+     "E4"
+    ],
+    "agree": 6
+   },
+   {
+    "index": 14,
+    "segment": "L4",
+    "text_verse1": "Baba'nın.",
+    "median_midi": 62.45,
+    "note": "D4",
+    "per_verse_notes": [
+     "D4",
+     "D4",
+     "D#4",
+     "D4",
+     "D4",
+     "E4",
+     "E4"
+    ],
+    "agree": 4
+   }
+  ],
+  "melody_summary": "L1: D4 (Ali, rising to G4) A4 (Baba'nin) G4 (bir) G4-F4 (ciftligi) E4 (var) | L2: D4-G4 (ciftliginde) F4/E4 alternating (animal word) D4 (var) | ses: D4, A4 | diye G4, bagirir G4-F4-E4 | L4: D4-G4 (ciftliginde) F4-E4 (Ali) F4-E4-D4 (Baba'nin)",
+  "sung_pitch_class_duration_share": {
+   "C": 0.0,
+   "C#": 0.0,
+   "D": 0.18801123183982416,
+   "D#": 0.0,
+   "E": 0.1629105115370528,
+   "F": 0.1537541203760224,
+   "F#": 0.0017091930167256741,
+   "G": 0.40564033695519475,
+   "G#": 0.002441704309608106,
+   "A": 0.08553290196557195,
+   "A#": 0.0,
+   "B": 0.0
+  },
+  "key_fit_for_new_backing": {
+   "method": "duration-weighted: chord tone 1, scale tone 0.5, avoid note (semitone above a chord tone) 0, outside scale -1; harmony I I IV I per beat for L1/L2/L4 bars, I for diye bagirir",
+   "ranking": [
+    {
+     "key": "C major",
+     "score": 0.709,
+     "chord_tone": 0.521,
+     "scale_tone": 0.386,
+     "avoid": 0.089,
+     "outside": 0.004
+    },
+    {
+     "key": "D minor (original loop key, for reference: i i iv i)",
+     "score": 0.691,
+     "chord_tone": 0.395,
+     "scale_tone": 0.601,
+     "avoid": 0.0,
+     "outside": 0.004
+    },
+    {
+     "key": "F major",
+     "score": 0.612,
+     "chord_tone": 0.236,
+     "scale_tone": 0.759,
+     "avoid": 0.0,
+     "outside": 0.004
+    },
+    {
+     "key": "G major",
+     "score": 0.602,
+     "chord_tone": 0.674,
+     "scale_tone": 0.17,
+     "avoid": 0.0,
+     "outside": 0.156
+    },
+    {
+     "key": "A# major",
+     "score": 0.406,
+     "chord_tone": 0.313,
+     "scale_tone": 0.52,
+     "avoid": 0.0,
+     "outside": 0.167
+    },
+    {
+     "key": "D# major",
+     "score": 0.311,
+     "chord_tone": 0.373,
+     "scale_tone": 0.377,
+     "avoid": 0.0,
+     "outside": 0.25
+    },
+    {
+     "key": "D major",
+     "score": 0.234,
+     "chord_tone": 0.307,
+     "scale_tone": 0.166,
+     "avoid": 0.37,
+     "outside": 0.156
+    },
+    {
+     "key": "G# major",
+     "score": -0.124,
+     "chord_tone": 0.067,
+     "scale_tone": 0.495,
+     "avoid": 0.0,
+     "outside": 0.438
+    },
+    {
+     "key": "A major",
+     "score": -0.349,
+     "chord_tone": 0.169,
+     "scale_tone": 0.084,
+     "avoid": 0.188,
+     "outside": 0.559
+    },
+    {
+     "key": "E major",
+     "score": -0.579,
+     "chord_tone": 0.166,
+     "scale_tone": 0.004,
+     "avoid": 0.083,
+     "outside": 0.747
+    },
+    {
+     "key": "C# major",
+     "score": -0.719,
+     "chord_tone": 0.089,
+     "scale_tone": 0.067,
+     "avoid": 0.002,
+     "outside": 0.842
+    },
+    {
+     "key": "B major",
+     "score": -0.749,
+     "chord_tone": 0.084,
+     "scale_tone": 0.0,
+     "avoid": 0.083,
+     "outside": 0.833
+    },
+    {
+     "key": "F# major",
+     "score": -0.762,
+     "chord_tone": 0.002,
+     "scale_tone": 0.156,
+     "avoid": 0.0,
+     "outside": 0.842
+    }
+   ]
+  }
+ },
+ "timeline_note": "Bar lines and onsets are on the timeline of v2_2.mp3 as decoded by ffmpeg. A separated vocal file can be shifted by a few ms and can run some tens of ppm faster/slower (the previous take: -4 ms, 78 ppm): re-measure the lag before cutting (method: yeni3/analiz/tempo/kod/09_align_fine.py and 12_align_spectro.py).",
+ "not_verified": "No listening was possible. Everything above is measurement on the full mix. Unverified by ear: that the bar lines feel right, that the refined onsets are the perceived starts, the octave and exact notes of the sung melody, and above all that the D-minor vocal sounds acceptable over a C major (or any major) backing with the traditional tune.",
+ "reproduce": "run kod/run_all.sh; intermediate results: tempo_step1.json, phase_fine.json, drift_fine.json, lattice.json, downbeat_evidence.json, bass_notes.json, key_chords.json, segments.json, vocal_pitch_rough.json"
+}

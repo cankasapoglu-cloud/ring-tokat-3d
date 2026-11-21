@@ -1,0 +1,3 @@
+Tempo test render (build.py --bpm 105.30 --key G), made by the reviewer. The three WAV files were measured
+(see ../tempo_testi.txt and ../olcum_stem_G_105.30.txt) and then deleted so that nobody mistakes them for a deliverable.
+Re-create with ../kod/00_yeniden_uret.sh <scratch folder>.

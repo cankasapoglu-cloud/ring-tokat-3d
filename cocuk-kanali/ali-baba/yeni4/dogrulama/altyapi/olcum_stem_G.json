@@ -1,0 +1,1567 @@
+{
+ "key": "G",
+ "rerender_vs_delivered_altyapi_max_lsb": 0,
+ "rerender_vs_delivered_ezgi_alti_max_lsb": 0,
+ "rerender_vs_delivered_rehber_max_lsb": 0,
+ "rerender_json_identical": true,
+ "cut_xcorr": 25292,
+ "cut_builder": 25292,
+ "band_minus_stems_db": -49.565076355771765,
+ "first_drum_sample_ms": 1.4285714285714286,
+ "lead_trompet": {
+  "do": "G4",
+  "expected_note_slots": 142,
+  "mismatches": [],
+  "min_level_expected_db": -4.224179844498067,
+  "max_level_elsewhere_db": -16.610268171946238,
+  "loudest_elsewhere": [
+   [
+    -16.6,
+    19,
+    "ans",
+    7,
+    1.9
+   ],
+   [
+    -16.6,
+    61,
+    "ans",
+    7,
+    2.5
+   ],
+   [
+    -16.7,
+    5,
+    "ans",
+    7,
+    2.5
+   ],
+   [
+    -16.7,
+    11,
+    "ans",
+    7,
+    2.7
+   ],
+   [
+    -16.9,
+    53,
+    "ans",
+    7,
+    2.7
+   ],
+   [
+    -17.0,
+    60,
+    "ans",
+    7,
+    2.7
+   ]
+  ],
+  "attacks_elsewhere": [],
+  "pitch_err_cents_mean": -3.276824182277378,
+  "pitch_err_cents_maxabs": 7.974588056438847,
+  "repeated_note_reattack_dip_db": {
+   "n": 42,
+   "min": 11.057822193228073,
+   "median": 13.012909442150693
+  },
+  "detected": {
+   "iA": "0:G4 1:G4 2:G4 3:D4 4:E4 5:E4 6:D4 7:D4~",
+   "iANS": "0:B4 1:B4 2:A4 3:A4 4:G4 5:G4~ 6:G4~",
+   "ans": "0:B4 1:B4 2:A4 3:A4 4:G4 5:G4~ 6:G4~"
+  },
+  "free_bars": {
+   "62": [
+    [
+     0,
+     "C5",
+     -0.8
+    ],
+    [
+     1,
+     "E5",
+     0.4
+    ],
+    [
+     2,
+     "G5",
+     -0.3
+    ],
+    [
+     3,
+     "E5",
+     0.0
+    ],
+    [
+     4,
+     "D5",
+     -0.6
+    ],
+    [
+     5,
+     "F#5",
+     -0.0
+    ],
+    [
+     6,
+     "A5",
+     -0.3
+    ],
+    [
+     7,
+     "C6",
+     1.0
+    ]
+   ],
+   "63": [
+    [
+     0,
+     "G3",
+     6.0
+    ],
+    [
+     1,
+     "G3",
+     4.8
+    ],
+    [
+     2,
+     "G3",
+     4.7
+    ],
+    [
+     3,
+     "G3",
+     4.8
+    ],
+    [
+     4,
+     "G3",
+     5.2
+    ],
+    [
+     5,
+     "G3",
+     -18.4
+    ],
+    [
+     6,
+     "G3",
+     6.0
+    ],
+    [
+     7,
+     "G3",
+     4.6
+    ]
+   ]
+  }
+ },
+ "ezgi_alti_klarnet": {
+  "do": "G5",
+  "expected_note_slots": 196,
+  "mismatches": [],
+  "min_level_expected_db": -4.9732414902463695,
+  "max_level_elsewhere_db": -17.92841922900187,
+  "loudest_elsewhere": [
+   [
+    -17.9,
+    55,
+    "slot",
+    0,
+    0.8
+   ],
+   [
+    -18.4,
+    27,
+    "ans",
+    0,
+    0.6
+   ],
+   [
+    -18.6,
+    13,
+    "ans",
+    0,
+    0.7
+   ],
+   [
+    -19.9,
+    7,
+    "slot",
+    0,
+    1.3
+   ],
+   [
+    -20.2,
+    21,
+    "ans",
+    0,
+    1.5
+   ],
+   [
+    -20.6,
+    47,
+    "slot",
+    0,
+    5.2
+   ]
+  ],
+  "attacks_elsewhere": [],
+  "pitch_err_cents_mean": 0.004380008059922544,
+  "pitch_err_cents_maxabs": 0.8100102939977205,
+  "repeated_note_reattack_dip_db": {
+   "n": 84,
+   "min": 8.849238676865646,
+   "median": 15.322879000668756
+  },
+  "detected": {
+   "voc": "0:G5 1:G5 2:G5 3:D5 4:E5 5:E5 6:D5 7:D5~",
+   "fill": "4:G5 5:G5 6:G5 7:G5"
+  },
+  "free_bars": {}
+ },
+ "ezgi_alti_DELIVERED_FILE (clarinet+glockenspiel; lowest strong spectral peak 200-3000 Hz)": {
+  "do": "G5",
+  "expected_note_slots": 175,
+  "mismatches": [],
+  "min_level_expected_db": -5.181314914162602,
+  "max_level_elsewhere_db": -18.494345201051576,
+  "loudest_elsewhere": [
+   [
+    -18.5,
+    55,
+    "slot",
+    0,
+    0.9
+   ],
+   [
+    -18.9,
+    27,
+    "ans",
+    0,
+    0.7
+   ],
+   [
+    -19.0,
+    13,
+    "ans",
+    0,
+    0.6
+   ],
+   [
+    -20.1,
+    7,
+    "slot",
+    0,
+    1.2
+   ],
+   [
+    -20.4,
+    21,
+    "ans",
+    0,
+    1.4
+   ],
+   [
+    -20.9,
+    47,
+    "slot",
+    0,
+    4.5
+   ]
+  ],
+  "attacks_elsewhere": [],
+  "pitch_err_cents_mean": 0.5004783949802345,
+  "pitch_err_cents_maxabs": 10.265811475800035,
+  "repeated_note_reattack_dip_db": {
+   "n": 84,
+   "min": 8.117915992172627,
+   "median": 12.69135203923915
+  },
+  "detected": {
+   "voc": "0:G5 1:G5 2:G5 3:D5 4:E5 5:E5 6:D5",
+   "fill": "4:G5 5:G5 6:G5 7:G5"
+  },
+  "free_bars": {},
+  "strongest_partial_semitones_above_detected_lowest": {
+   "19": 175
+  },
+  "lowest_peak_rel_to_strongest_db": {
+   "min": -9.732179218228268,
+   "median": -7.739541735249809
+  }
+ },
+ "lead_glockenspiel (strongest spectral peak in 500-1500 Hz)": {
+  "do": "G5",
+  "expected_note_slots": 104,
+  "mismatches": [
+   [
+    1,
+    4,
+    "A5",
+    206,
+    -3.6,
+    13.1,
+    "expected G5 attack"
+   ],
+   [
+    3,
+    4,
+    "A5",
+    206,
+    -4.7,
+    12.8,
+    "expected G5 attack"
+   ],
+   [
+    5,
+    4,
+    "A5",
+    206,
+    -3.7,
+    13.2,
+    "expected G5 attack"
+   ],
+   [
+    11,
+    4,
+    "A5",
+    206,
+    -2.9,
+    15.1,
+    "expected G5 attack"
+   ],
+   [
+    13,
+    4,
+    "A5",
+    206,
+    -4.3,
+    11.9,
+    "expected G5 attack"
+   ],
+   [
+    19,
+    2,
+    "B5",
+    205,
+    -0.6,
+    12.4,
+    "expected A5 attack"
+   ],
+   [
+    19,
+    4,
+    "A5",
+    206,
+    -3.6,
+    14.4,
+    "expected G5 attack"
+   ],
+   [
+    21,
+    2,
+    "B5",
+    205,
+    -0.7,
+    11.5,
+    "expected A5 attack"
+   ],
+   [
+    21,
+    4,
+    "A5",
+    206,
+    -4.3,
+    12.8,
+    "expected G5 attack"
+   ],
+   [
+    27,
+    3,
+    "B5",
+    205,
+    0.2,
+    14.6,
+    "expected A5 re-attack"
+   ],
+   [
+    27,
+    4,
+    "A5",
+    206,
+    -4.2,
+    11.4,
+    "expected G5 attack"
+   ],
+   [
+    29,
+    4,
+    "A5",
+    206,
+    -3.6,
+    12.8,
+    "expected G5 attack"
+   ],
+   [
+    35,
+    2,
+    "B5",
+    205,
+    -0.8,
+    11.3,
+    "expected A5 attack"
+   ],
+   [
+    35,
+    4,
+    "A5",
+    206,
+    -4.3,
+    12.7,
+    "expected G5 attack"
+   ],
+   [
+    37,
+    4,
+    "A5",
+    206,
+    -3.1,
+    12.2,
+    "expected G5 attack"
+   ],
+   [
+    43,
+    4,
+    "A5",
+    206,
+    -3.7,
+    12.5,
+    "expected G5 attack"
+   ],
+   [
+    45,
+    4,
+    "A5",
+    206,
+    -4.5,
+    13.5,
+    "expected G5 attack"
+   ],
+   [
+    51,
+    4,
+    "A5",
+    206,
+    -3.1,
+    12.4,
+    "expected G5 attack"
+   ],
+   [
+    53,
+    4,
+    "A5",
+    206,
+    -3.0,
+    13.4,
+    "expected G5 attack"
+   ],
+   [
+    59,
+    2,
+    "B5",
+    205,
+    -0.7,
+    13.8,
+    "expected A5 attack"
+   ],
+   [
+    59,
+    4,
+    "A5",
+    206,
+    -4.3,
+    14.5,
+    "expected G5 attack"
+   ],
+   [
+    60,
+    2,
+    "B5",
+    205,
+    -0.3,
+    12.6,
+    "expected A5 attack"
+   ],
+   [
+    60,
+    4,
+    "A5",
+    206,
+    -3.1,
+    13.2,
+    "expected G5 attack"
+   ],
+   [
+    61,
+    4,
+    "A5",
+    206,
+    -3.4,
+    15.1,
+    "expected G5 attack"
+   ]
+  ],
+  "min_level_expected_db": -5.732665297304862,
+  "max_level_elsewhere_db": -26.44121011786232,
+  "loudest_elsewhere": [
+   [
+    -26.4,
+    61,
+    "ans",
+    7,
+    7.0
+   ],
+   [
+    -26.5,
+    13,
+    "ans",
+    7,
+    8.5
+   ],
+   [
+    -26.6,
+    5,
+    "ans",
+    7,
+    8.0
+   ],
+   [
+    -26.7,
+    51,
+    "ans",
+    7,
+    8.5
+   ],
+   [
+    -26.7,
+    37,
+    "ans",
+    7,
+    7.2
+   ],
+   [
+    -26.7,
+    43,
+    "ans",
+    7,
+    8.7
+   ]
+  ],
+  "attacks_elsewhere": [],
+  "pitch_err_cents_mean": 49.802530036374534,
+  "pitch_err_cents_maxabs": 205.61999171080316,
+  "repeated_note_reattack_dip_db": {
+   "n": 42,
+   "min": 12.411694970208686,
+   "median": 14.18164416108497
+  },
+  "detected": {
+   "iA": "0:G5 1:G5 2:G5 3:D5 4:E5 5:E5 6:D5",
+   "iANS": "0:B5 1:B5 2:A5 3:A5 4:A5",
+   "ans": "0:B5 1:B5 2:A5/B5 3:A5/B5 4:A5"
+  },
+  "free_bars": {
+   "62": [
+    [
+     0,
+     "C6",
+     -1.9
+    ],
+    [
+     1,
+     "E6",
+     -0.1
+    ],
+    [
+     2,
+     "E6",
+     -0.9
+    ],
+    [
+     3,
+     "E6",
+     -0.7
+    ],
+    [
+     4,
+     "E6",
+     0.3
+    ],
+    [
+     5,
+     "F#6",
+     -1.3
+    ],
+    [
+     6,
+     "F#6",
+     -1.3
+    ],
+    [
+     7,
+     "F#6",
+     -1.1
+    ]
+   ],
+   "63": [
+    [
+     0,
+     "D6",
+     3.0
+    ],
+    [
+     1,
+     "D6",
+     -4.5
+    ],
+    [
+     2,
+     "D6",
+     -14.0
+    ],
+    [
+     3,
+     "D6",
+     -19.0
+    ],
+    [
+     4,
+     "D6",
+     -21.4
+    ],
+    [
+     5,
+     "D6",
+     -24.7
+    ],
+    [
+     6,
+     "F#6",
+     2.7
+    ],
+    [
+     7,
+     "F#6",
+     -5.0
+    ]
+   ]
+  },
+  "strongest_partial_semitones_above_detected_lowest": {
+   "27": 18,
+   "29": 14,
+   "31": 6,
+   "33": 66
+  },
+  "lowest_peak_rel_to_strongest_db": {
+   "min": -31.321871524315522,
+   "median": -15.876748810284221
+  }
+ },
+ "ezgi_alti_glockenspiel_hafif (strongest spectral peak in 700-1700 Hz)": {
+  "do": "G6",
+  "expected_note_slots": 175,
+  "mismatches": [
+   [
+    4,
+    3,
+    "G6",
+    504,
+    -3.2,
+    9.3,
+    "expected D6 attack"
+   ],
+   [
+    4,
+    6,
+    "E6",
+    204,
+    -0.3,
+    11.7,
+    "expected D6 attack"
+   ],
+   [
+    6,
+    3,
+    "G6",
+    504,
+    -3.1,
+    10.1,
+    "expected D6 attack"
+   ],
+   [
+    6,
+    6,
+    "E6",
+    204,
+    0.0,
+    9.3,
+    "expected D6 attack"
+   ],
+   [
+    10,
+    3,
+    "G6",
+    504,
+    -3.1,
+    9.1,
+    "expected D6 attack"
+   ],
+   [
+    10,
+    6,
+    "E6",
+    204,
+    -1.2,
+    12.5,
+    "expected D6 attack"
+   ],
+   [
+    12,
+    3,
+    "G6",
+    504,
+    -3.7,
+    9.8,
+    "expected D6 attack"
+   ],
+   [
+    12,
+    6,
+    "E6",
+    204,
+    0.4,
+    8.8,
+    "expected D6 attack"
+   ],
+   [
+    14,
+    3,
+    "G6",
+    504,
+    -2.7,
+    9.5,
+    "expected D6 attack"
+   ],
+   [
+    14,
+    6,
+    "E6",
+    208,
+    -1.2,
+    13.8,
+    "expected D6 attack"
+   ],
+   [
+    18,
+    3,
+    "G6",
+    504,
+    -3.2,
+    9.5,
+    "expected D6 attack"
+   ],
+   [
+    18,
+    6,
+    "E6",
+    204,
+    -0.1,
+    11.5,
+    "expected D6 attack"
+   ],
+   [
+    20,
+    3,
+    "G6",
+    504,
+    -3.1,
+    9.9,
+    "expected D6 attack"
+   ],
+   [
+    20,
+    6,
+    "E6",
+    204,
+    0.0,
+    9.9,
+    "expected D6 attack"
+   ],
+   [
+    22,
+    3,
+    "G6",
+    504,
+    -2.5,
+    10.4,
+    "expected D6 attack"
+   ],
+   [
+    22,
+    6,
+    "E6",
+    204,
+    -0.4,
+    9.7,
+    "expected D6 attack"
+   ],
+   [
+    26,
+    3,
+    "G6",
+    504,
+    -3.7,
+    9.9,
+    "expected D6 attack"
+   ],
+   [
+    26,
+    6,
+    "E6",
+    204,
+    0.4,
+    8.8,
+    "expected D6 attack"
+   ],
+   [
+    28,
+    3,
+    "G6",
+    504,
+    -2.4,
+    8.8,
+    "expected D6 attack"
+   ],
+   [
+    28,
+    6,
+    "E6",
+    208,
+    -1.3,
+    13.8,
+    "expected D6 attack"
+   ],
+   [
+    30,
+    3,
+    "G6",
+    504,
+    -2.3,
+    10.2,
+    "expected D6 attack"
+   ],
+   [
+    30,
+    6,
+    "E6",
+    204,
+    -1.3,
+    8.7,
+    "expected D6 attack"
+   ],
+   [
+    34,
+    3,
+    "G6",
+    504,
+    -2.9,
+    9.3,
+    "expected D6 attack"
+   ],
+   [
+    34,
+    6,
+    "E6",
+    204,
+    0.0,
+    10.3,
+    "expected D6 attack"
+   ],
+   [
+    36,
+    3,
+    "G6",
+    504,
+    -2.5,
+    10.4,
+    "expected D6 attack"
+   ],
+   [
+    36,
+    6,
+    "E6",
+    204,
+    -0.4,
+    9.6,
+    "expected D6 attack"
+   ],
+   [
+    38,
+    3,
+    "G6",
+    504,
+    -3.3,
+    9.1,
+    "expected D6 attack"
+   ],
+   [
+    38,
+    6,
+    "E6",
+    204,
+    -1.1,
+    13.1,
+    "expected D6 attack"
+   ],
+   [
+    42,
+    3,
+    "G6",
+    504,
+    -2.2,
+    8.5,
+    "expected D6 attack"
+   ],
+   [
+    42,
+    6,
+    "E6",
+    204,
+    -1.3,
+    13.7,
+    "expected D6 attack"
+   ],
+   [
+    44,
+    3,
+    "G6",
+    504,
+    -2.3,
+    10.2,
+    "expected D6 attack"
+   ],
+   [
+    44,
+    6,
+    "E6",
+    204,
+    -1.4,
+    9.7,
+    "expected D6 attack"
+   ],
+   [
+    46,
+    3,
+    "G6",
+    504,
+    -3.2,
+    9.7,
+    "expected D6 attack"
+   ],
+   [
+    46,
+    6,
+    "E6",
+    204,
+    0.2,
+    11.3,
+    "expected D6 attack"
+   ],
+   [
+    50,
+    3,
+    "G6",
+    504,
+    -2.7,
+    11.8,
+    "expected D6 attack"
+   ],
+   [
+    50,
+    6,
+    "E6",
+    204,
+    -0.4,
+    9.6,
+    "expected D6 attack"
+   ],
+   [
+    52,
+    3,
+    "G6",
+    504,
+    -3.4,
+    9.0,
+    "expected D6 attack"
+   ],
+   [
+    52,
+    6,
+    "E6",
+    204,
+    -1.1,
+    13.3,
+    "expected D6 attack"
+   ],
+   [
+    54,
+    3,
+    "G6",
+    504,
+    -3.7,
+    9.8,
+    "expected D6 attack"
+   ],
+   [
+    54,
+    6,
+    "E6",
+    204,
+    0.3,
+    8.7,
+    "expected D6 attack"
+   ],
+   [
+    58,
+    3,
+    "G6",
+    504,
+    -2.4,
+    10.3,
+    "expected D6 attack"
+   ],
+   [
+    58,
+    6,
+    "E6",
+    204,
+    -1.3,
+    8.7,
+    "expected D6 attack"
+   ]
+  ],
+  "min_level_expected_db": -8.388956167633687,
+  "max_level_elsewhere_db": -21.63543402185475,
+  "loudest_elsewhere": [
+   [
+    -21.6,
+    29,
+    "ans",
+    0,
+    1.5
+   ],
+   [
+    -21.9,
+    53,
+    "ans",
+    0,
+    1.5
+   ],
+   [
+    -21.9,
+    39,
+    "slot",
+    0,
+    1.5
+   ],
+   [
+    -21.9,
+    15,
+    "slot",
+    0,
+    1.4
+   ],
+   [
+    -22.0,
+    11,
+    "ans",
+    0,
+    1.6
+   ],
+   [
+    -22.2,
+    19,
+    "ans",
+    0,
+    1.3
+   ]
+  ],
+  "attacks_elsewhere": [],
+  "pitch_err_cents_mean": 88.28132339266897,
+  "pitch_err_cents_maxabs": 504.34705682512373,
+  "repeated_note_reattack_dip_db": {
+   "n": 84,
+   "min": 4.135164657574677,
+   "median": 9.976034595188995
+  },
+  "detected": {
+   "voc": "0:G6 1:G6 2:G6 3:G6 4:E6 5:E6 6:E6",
+   "fill": "4:G6 5:G6 6:G6 7:G6"
+  },
+  "free_bars": {},
+  "strongest_partial_semitones_above_detected_lowest": {
+   "0": 133,
+   "27": 21,
+   "30": 21
+  },
+  "lowest_peak_rel_to_strongest_db": {
+   "min": -13.166197981443048,
+   "median": 0.0
+  }
+ },
+ "octaves": {
+  "lead_trumpet_do": "G4",
+  "lead_glock_do": "G5",
+  "glock_minus_trumpet": 12,
+  "alt_clarinet_do": "G5",
+  "alt_glock_do": "G6",
+  "alt_glock_minus_clarinet": 12,
+  "lead_do_pitch_class_is_tonic": true,
+  "alt_do_pitch_class_is_tonic": true
+ },
+ "brass_octave_below": {
+  "checked": 104,
+  "ok": 68,
+  "bad": [
+   [
+    1,
+    0,
+    "B4",
+    "B3"
+   ],
+   [
+    1,
+    1,
+    "B4",
+    "B3"
+   ],
+   [
+    3,
+    0,
+    "B4",
+    "B3"
+   ],
+   [
+    3,
+    1,
+    "B4",
+    "B3"
+   ],
+   [
+    5,
+    0,
+    "B4",
+    "B3"
+   ],
+   [
+    5,
+    1,
+    "B4",
+    "B3"
+   ],
+   [
+    11,
+    0,
+    "B4",
+    "B3"
+   ],
+   [
+    11,
+    1,
+    "B4",
+    "B3"
+   ],
+   [
+    13,
+    0,
+    "B4",
+    "B3"
+   ],
+   [
+    13,
+    1,
+    "B4",
+    "B3"
+   ]
+  ]
+ },
+ "bass": {
+  "iA": {
+   "patterns": [
+    "1(G2) 1(G3) 1(G2) 1(G3) 4(C2) 4(C3) 1(G2) 1(G3)"
+   ],
+   "expected_root_degrees": "I I IV I",
+   "on_beat_not_root": []
+  },
+  "iANS": {
+   "patterns": [
+    "1(G2) 1(G3) 5(D2) 5(D3) 1(G2) 1(G3) 1(G2) 1(G3)"
+   ],
+   "expected_root_degrees": "I V7 I I",
+   "on_beat_not_root": []
+  },
+  "voc": {
+   "patterns": [
+    "1(G2) 1(G3) 1(G2) 1(G3) 4(C2) 4(C3) 1(G2) 1(G3)"
+   ],
+   "expected_root_degrees": "I I IV I",
+   "on_beat_not_root": []
+  },
+  "ans": {
+   "patterns": [
+    "1(G2) 1(G3) 5(D2) 5(D3) 1(G2) 1(G3) 1(G2) 1(G3)"
+   ],
+   "expected_root_degrees": "I V7 I I",
+   "on_beat_not_root": []
+  },
+  "slot": {
+   "patterns": [
+    "1(G2) 1(G2) - - 5(D2) 5(D2) - -"
+   ],
+   "expected_root_degrees": "I I I I",
+   "on_beat_not_root": [
+    "beat 2: degree 5"
+   ]
+  },
+  "fill": {
+   "patterns": [
+    "1(G2) 1(G2) 5(D2) 5(D2) 5(D2) 1(G3) 1(G2) 1(G3)"
+   ],
+   "expected_root_degrees": "I I I I",
+   "on_beat_not_root": [
+    "beat 1: degree 5",
+    "beat 2: degree 5"
+   ]
+  },
+  "roll": {
+   "patterns": [
+    "4(C3) 4(C3) 4(C3) - 5(D3) 5(D3) - -"
+   ],
+   "expected_root_degrees": "IV IV V7 V7",
+   "on_beat_not_root": []
+  },
+  "final": {
+   "patterns": [
+    "1(G2) 1(G2) 1(G2) 1(G2) 1(G2) - 1(G2) 1(G2)"
+   ],
+   "expected_root_degrees": "I I I I",
+   "on_beat_not_root": []
+  }
+ },
+ "bass_slot_vs_normal_db": -8.036522158471843,
+ "chords_comp": {
+  "beats_checked": 193,
+  "match": 193,
+  "skipped_quiet": 63,
+  "mismatches": {}
+ },
+ "chords_full": {
+  "beats_checked": 200,
+  "match": 193,
+  "skipped_quiet": 56,
+  "mismatches": {
+   "fill beat 1: expected I, detected V7": 7
+  }
+ },
+ "master_gain_estimated_db": 7.71083204081897,
+ "windows_db": {
+  "slot bar 3, first 250 ms": [
+   -35.7,
+   -30.1,
+   -28.5,
+   -25.7,
+   -36.2,
+   -59.6,
+   -48.6,
+   -81.1,
+   -152.7,
+   -152.7
+  ],
+  "slot bar 3, 0.25 s .. end": [
+   -50.8,
+   -37.4,
+   -35.0,
+   -32.9,
+   -50.7,
+   -83.9,
+   -76.0,
+   -90.6,
+   -152.7,
+   -152.7
+  ],
+  "slot bar 4, whole": [
+   -76.3,
+   -35.7,
+   -33.5,
+   -31.5,
+   -76.3,
+   -152.7,
+   -152.7,
+   -116.5,
+   -152.7,
+   -152.7
+  ],
+  "bar 5 beats 0-1": [
+   -95.2,
+   -21.4,
+   -24.5,
+   -19.7,
+   -95.2,
+   -152.7,
+   -152.7,
+   -146.4,
+   -152.7,
+   -152.7
+  ],
+  "bar 5 beats 2-3": [
+   -23.0,
+   -23.6,
+   -23.0,
+   -18.2,
+   -26.8,
+   -33.5,
+   -28.0,
+   -152.7,
+   -152.7,
+   -31.8
+  ],
+  "normal bar 0": [
+   -23.3,
+   -23.0,
+   -22.5,
+   -18.2,
+   -26.1,
+   -33.6,
+   -28.0,
+   -59.5,
+   -65.4,
+   -56.9
+  ]
+ },
+ "drum_bands": {
+  "voc <120 Hz": [
+   -23.9,
+   -24.6,
+   -24.7,
+   -24.5
+  ],
+  "voc 180-400 Hz": [
+   -40.0,
+   -24.2,
+   -41.4,
+   -24.1
+  ],
+  "voc 2-5 kHz": [
+   -35.0,
+   -29.2,
+   -38.6,
+   -29.5
+  ],
+  "voc 7-14 kHz": [
+   -37.3,
+   -34.7,
+   -40.2,
+   -35.7
+  ],
+  "slot <120 Hz": [
+   -29.4,
+   -35.8,
+   -29.4,
+   -35.8
+  ],
+  "slot 180-400 Hz": [
+   -46.2,
+   -52.4,
+   -46.2,
+   -52.3
+  ],
+  "slot 2-5 kHz": [
+   -48.7,
+   -53.1,
+   -48.7,
+   -53.1
+  ],
+  "slot 7-14 kHz": [
+   -53.5,
+   -53.9,
+   -53.9,
+   -53.9
+  ],
+  "fill <120 Hz": [
+   -25.6,
+   -24.9,
+   -21.5,
+   -24.5
+  ],
+  "fill 180-400 Hz": [
+   -29.5,
+   -25.2,
+   -39.0,
+   -24.2
+  ],
+  "fill 2-5 kHz": [
+   -38.2,
+   -35.7,
+   -35.8,
+   -29.5
+  ],
+  "fill 7-14 kHz": [
+   -45.9,
+   -42.8,
+   -34.4,
+   -35.5
+  ]
+ },
+ "fill_sixteenth_hits_per_bar5": [
+  8,
+  8,
+  8,
+  8,
+  8,
+  8,
+  8
+ ],
+ "onsets_ms": {
+  "kick (drums < 150 Hz)": {
+   "n": 144,
+   "p10_median": 1.3465101487703344,
+   "p50_median": 5.871633206133423,
+   "p50_min": 4.286682152527077,
+   "p50_max": 10.17089762732519
+  },
+  "drums 2-12 kHz (hat/snare)": {
+   "n": 158,
+   "p10_median": -0.06975554449002241,
+   "p50_median": 1.531027044965753,
+   "p50_min": -0.138266688806312,
+   "p50_max": 5.397378463584913
+  },
+  "bass": {
+   "n": 160,
+   "p10_median": -9.29103755323797,
+   "p50_median": -8.345846468677905,
+   "p50_min": -9.580775399587424,
+   "p50_max": 13.006056080968278
+  },
+  "bass < 250 Hz": {
+   "n": 160,
+   "p10_median": -10.11275648472349,
+   "p50_median": -8.95809136663695,
+   "p50_min": -10.215696034513371,
+   "p50_max": 13.436895083231661
+  },
+  "banjo": {
+   "n": 100,
+   "p10_median": 5.766135722582816,
+   "p50_median": 11.485675571041952,
+   "p50_min": 4.058127315966316,
+   "p50_max": 14.385128034943932
+  },
+  "piano (beats 0, 2)": {
+   "n": 29,
+   "p10_median": 5.233947237432743,
+   "p50_median": 7.600519882743696,
+   "p50_min": 6.715060007743317,
+   "p50_max": 9.662629279354746
+  },
+  "accordion (beats 1, 3)": {
+   "n": 80,
+   "p10_median": -13.81049167635922,
+   "p50_median": 6.9284055085475975,
+   "p50_min": 2.3202533045727014,
+   "p50_max": 8.388778275538584
+  },
+  "trumpet": {
+   "n": 17,
+   "p10_median": 2.72164150214246,
+   "p50_median": 7.2341131574679585,
+   "p50_min": 6.34865328244939,
+   "p50_max": 10.366683258669923
+  },
+  "brass": {
+   "n": 17,
+   "p10_median": -3.401913610982434,
+   "p50_median": 14.013052375408165,
+   "p50_min": 13.13699463525279,
+   "p50_max": 18.529948564792335
+  },
+  "glockenspiel": {
+   "n": 35,
+   "p10_median": 3.660748852383562,
+   "p50_median": 5.157347491839913,
+   "p50_min": 4.013052375408164,
+   "p50_max": 7.287069299264089
+  },
+  "clarinet (under-vocal)": {
+   "n": 25,
+   "p10_median": -8.357391737180137,
+   "p50_median": 6.281732205079037,
+   "p50_min": 5.105635750212399,
+   "p50_max": 8.500082960009763
+  },
+  "light glockenspiel (under-vocal)": {
+   "n": 59,
+   "p10_median": 4.322216691539665,
+   "p50_median": 6.5712626514026615,
+   "p50_min": 5.371937392835547,
+   "p50_max": 8.745368065926755
+  }
+ },
+ "kick_downbeat_first8_ms": 6.71201814058935,
+ "kick_downbeat_last8_ms": 6.486505171167096,
+ "limiter": {
+  "iA": {
+   "max_gr_db": 0.99,
+   "mean_frac_gt1db": 0.0,
+   "mean_frac_gt3db": 0.0
+  },
+  "iANS": {
+   "max_gr_db": 3.51,
+   "mean_frac_gt1db": 0.063,
+   "mean_frac_gt3db": 0.007
+  },
+  "voc": {
+   "max_gr_db": 2.28,
+   "mean_frac_gt1db": 0.038,
+   "mean_frac_gt3db": 0.0
+  },
+  "ans": {
+   "max_gr_db": 4.3,
+   "mean_frac_gt1db": 0.061,
+   "mean_frac_gt3db": 0.008
+  },
+  "slot": {
+   "max_gr_db": 0.01,
+   "mean_frac_gt1db": 0.0,
+   "mean_frac_gt3db": 0.0
+  },
+  "fill": {
+   "max_gr_db": 1.44,
+   "mean_frac_gt1db": 0.004,
+   "mean_frac_gt3db": 0.0
+  },
+  "roll": {
+   "max_gr_db": 2.83,
+   "mean_frac_gt1db": 0.079,
+   "mean_frac_gt3db": 0.0
+  },
+  "final": {
+   "max_gr_db": 5.15,
+   "mean_frac_gt1db": 0.328,
+   "mean_frac_gt3db": 0.092
+  }
+ }
+}

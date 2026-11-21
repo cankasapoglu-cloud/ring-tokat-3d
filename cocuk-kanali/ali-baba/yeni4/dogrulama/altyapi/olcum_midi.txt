@@ -1,0 +1,114 @@
+[G] score MIDI: tempo 571646 us/beat = 104.96006 BPM; notes per channel {0: 411, 1: 743, 2: 850, 3: 756, 4: 118, 5: 118, 6: 258, 7: 175, 8: 175, 9: 2453}; last note ends at beat 258.00 (64 bars = 256 beats)
+[G] trumpet (lead): notes per bar kind (beat:note), all bars of a kind:
+      iA    0:G4 0.5:G4 1:G4 1.5:D4 2:E4 2.5:E4 3:D4
+      iANS  0:B4 0.5:B4 1:A4 1.5:A4 2:G4
+      voc   (silent)
+      ans   0:B4 0.5:B4 1:A4 1.5:A4 2:G4
+      slot  (silent)
+      fill  (silent)
+      roll  0:C5 0.5:E5 1:G5 1.5:E5 2:D5 2.5:F#5 3:A5 3.5:C6
+      final 0:G5 0:B5 0:D6 3:G5 3:B5 3:D6
+[G] glockenspiel (lead): notes per bar kind (beat:note), all bars of a kind:
+      iA    0:G5 0.5:G5 1:G5 1.5:D5 2:E5 2.5:E5 3:D5
+      iANS  0:B5 0.5:B5 1:A5 1.5:A5 2:G5
+      voc   (silent)
+      ans   0:B5 0.5:B5 1:A5 1.5:A5 2:G5
+      slot  (silent)
+      fill  (silent)
+      roll  0:C6 0.5:E6 1:G6 1.5:E6 2:D6 2.5:F#6 3:A6 3.5:C7
+      final 0:G6 0:B6 0:D7 3:G6 3:B6 3:D7
+[G] clarinet (under-vocal): notes per bar kind (beat:note), all bars of a kind:
+      iA    (silent)
+      iANS  (silent)
+      voc   0:G5 0.5:G5 1:G5 1.5:D5 2:E5 2.5:E5 3:D5
+      ans   (silent)
+      slot  (silent)
+      fill  2:G5 2.5:G5 3:G5 3.5:G5
+      roll  (silent)
+      final (silent)
+[G] light glockenspiel (under-vocal): notes per bar kind (beat:note), all bars of a kind:
+      iA    (silent)
+      iANS  (silent)
+      voc   0:G6 0.5:G6 1:G6 1.5:D6 2:E6 2.5:E6 3:D6
+      ans   (silent)
+      slot  (silent)
+      fill  2:G6 2.5:G6 3:G6 3.5:G6
+      roll  (silent)
+      final (silent)
+[G] bass: notes per bar kind (beat:note), all bars of a kind:
+      iA    0:G2 0.5:G3 1:G2 1.5:G3 2:C2 2.5:C3 3:G2 3.5:G3
+      iANS  0:G2 0.5:G3 1:D2 1.5:D3 2:G2 2.5:G3 3:G2 3.5:G3
+      voc   0:G2 0.5:G3 1:G2 1.5:G3 2:C2 2.5:C3 3:G2 3.5:G3
+      ans   0:G2 0.5:G3 1:D2 1.5:D3 2:G2 2.5:G3 3:G2 3.5:G3
+      slot  0:G2 2:D2
+      fill  0:G2 1:D2 1.5:D2 2:D2 2.5:G3 3:G2 3.5:G3
+      roll  0:C3 2:D3
+      final 0:G2 0:G3 3:G2 3:G3
+[G] drum notes used per bar kind:
+      iA    [(36, 38, 39, 42, 45, 46, 48, 49, 54), (36, 38, 39, 42, 45, 46, 48, 54)]
+      iANS  [(36, 38, 39, 42, 43, 45, 46, 47, 48, 50, 54, 55), (36, 38, 39, 42, 46, 54, 55)]
+      voc   [(36, 38, 39, 42, 45, 46, 48, 49, 54, 56, 57, 76, 77), (36, 38, 39, 42, 45, 46, 48, 49, 54, 57), (36, 38, 39, 42, 45, 46, 48, 54), (36, 38, 39, 42, 45, 46, 48, 54, 56, 76, 77), (36, 38, 39, 42, 46, 54), (36, 38, 39, 42, 46, 54, 56, 76, 77)]
+      ans   [(36, 38, 39, 42, 43, 45, 46, 47, 48, 50, 54, 55), (36, 38, 39, 42, 43, 45, 46, 47, 48, 50, 54, 55, 56, 76, 77), (36, 38, 39, 42, 46, 49, 54, 55, 56, 76, 77), (36, 38, 39, 42, 46, 54, 55), (36, 38, 39, 42, 46, 54, 55, 56, 76, 77)]
+      slot  [(36, 42)]
+      fill  [(36, 38, 39, 42, 43, 46, 47, 50, 54, 55), (36, 38, 39, 42, 43, 46, 47, 50, 54, 55, 56, 76, 77)]
+      roll  [(36, 38, 49, 56)]
+      final [(36, 38, 39, 49, 57)]
+[G] notes of banjo/accordion/piano/glockenspiel/trumpet/brass written inside slot bars or bar-5 beats 0-1, or held into a slot bar: 0 []
+[G] sound thrown away before t = 0 (last 50 ms of the pre-roll), after master gain: band: peak -12.3 dBFS, starts 18.3 ms before t=0 (first 100 ms kept: -3.0); st_bas: peak -12.3 dBFS, starts 18.3 ms before t=0 (first 100 ms kept: -10.9); st_brass: peak -29.3 dBFS, starts 6.3 ms before t=0 (first 100 ms kept: -14.6)
+[C] score MIDI: tempo 571646 us/beat = 104.96006 BPM; notes per channel {0: 411, 1: 743, 2: 850, 3: 756, 4: 118, 5: 118, 6: 258, 7: 175, 8: 175, 9: 2453}; last note ends at beat 258.00 (64 bars = 256 beats)
+[C] trumpet (lead): notes per bar kind (beat:note), all bars of a kind:
+      iA    0:C5 0.5:C5 1:C5 1.5:G4 2:A4 2.5:A4 3:G4
+      iANS  0:E5 0.5:E5 1:D5 1.5:D5 2:C5
+      voc   (silent)
+      ans   0:E5 0.5:E5 1:D5 1.5:D5 2:C5
+      slot  (silent)
+      fill  (silent)
+      roll  0:F4 0.5:A4 1:C5 1.5:A4 2:G4 2.5:B4 3:D5 3.5:F5
+      final 0:C5 0:E5 0:G5 3:C5 3:E5 3:G5
+[C] glockenspiel (lead): notes per bar kind (beat:note), all bars of a kind:
+      iA    0:C6 0.5:C6 1:C6 1.5:G5 2:A5 2.5:A5 3:G5
+      iANS  0:E6 0.5:E6 1:D6 1.5:D6 2:C6
+      voc   (silent)
+      ans   0:E6 0.5:E6 1:D6 1.5:D6 2:C6
+      slot  (silent)
+      fill  (silent)
+      roll  0:F5 0.5:A5 1:C6 1.5:A5 2:G5 2.5:B5 3:D6 3.5:F6
+      final 0:C6 0:E6 0:G6 3:C6 3:E6 3:G6
+[C] clarinet (under-vocal): notes per bar kind (beat:note), all bars of a kind:
+      iA    (silent)
+      iANS  (silent)
+      voc   0:C5 0.5:C5 1:C5 1.5:G4 2:A4 2.5:A4 3:G4
+      ans   (silent)
+      slot  (silent)
+      fill  2:C5 2.5:C5 3:C5 3.5:C5
+      roll  (silent)
+      final (silent)
+[C] light glockenspiel (under-vocal): notes per bar kind (beat:note), all bars of a kind:
+      iA    (silent)
+      iANS  (silent)
+      voc   0:C6 0.5:C6 1:C6 1.5:G5 2:A5 2.5:A5 3:G5
+      ans   (silent)
+      slot  (silent)
+      fill  2:C6 2.5:C6 3:C6 3.5:C6
+      roll  (silent)
+      final (silent)
+[C] bass: notes per bar kind (beat:note), all bars of a kind:
+      iA    0:C2 0.5:C3 1:C2 1.5:C3 2:F2 2.5:F3 3:C2 3.5:C3
+      iANS  0:C2 0.5:C3 1:G2 1.5:G3 2:C2 2.5:C3 3:C2 3.5:C3
+      voc   0:C2 0.5:C3 1:C2 1.5:C3 2:F2 2.5:F3 3:C2 3.5:C3
+      ans   0:C2 0.5:C3 1:G2 1.5:G3 2:C2 2.5:C3 3:C2 3.5:C3
+      slot  0:C2 2:G2
+      fill  0:C2 1:G2 1.5:G2 2:G2 2.5:C3 3:C2 3.5:C3
+      roll  0:F3 2:G3
+      final 0:C2 0:C3 3:C2 3:C3
+[C] drum notes used per bar kind:
+      iA    [(36, 38, 39, 42, 45, 46, 48, 49, 54), (36, 38, 39, 42, 45, 46, 48, 54)]
+      iANS  [(36, 38, 39, 42, 43, 45, 46, 47, 48, 50, 54, 55), (36, 38, 39, 42, 46, 54, 55)]
+      voc   [(36, 38, 39, 42, 45, 46, 48, 49, 54, 56, 57, 76, 77), (36, 38, 39, 42, 45, 46, 48, 49, 54, 57), (36, 38, 39, 42, 45, 46, 48, 54), (36, 38, 39, 42, 45, 46, 48, 54, 56, 76, 77), (36, 38, 39, 42, 46, 54), (36, 38, 39, 42, 46, 54, 56, 76, 77)]
+      ans   [(36, 38, 39, 42, 43, 45, 46, 47, 48, 50, 54, 55), (36, 38, 39, 42, 43, 45, 46, 47, 48, 50, 54, 55, 56, 76, 77), (36, 38, 39, 42, 46, 49, 54, 55, 56, 76, 77), (36, 38, 39, 42, 46, 54, 55), (36, 38, 39, 42, 46, 54, 55, 56, 76, 77)]
+      slot  [(36, 42)]
+      fill  [(36, 38, 39, 42, 43, 46, 47, 50, 54, 55), (36, 38, 39, 42, 43, 46, 47, 50, 54, 55, 56, 76, 77)]
+      roll  [(36, 38, 49, 56)]
+      final [(36, 38, 39, 49, 57)]
+[C] notes of banjo/accordion/piano/glockenspiel/trumpet/brass written inside slot bars or bar-5 beats 0-1, or held into a slot bar: 0 []
+[C] sound thrown away before t = 0 (last 50 ms of the pre-roll), after master gain: band: peak -12.0 dBFS, starts 20.2 ms before t=0 (first 100 ms kept: -2.2); st_bas: peak -12.6 dBFS, starts 20.2 ms before t=0 (first 100 ms kept: -11.2); st_brass: peak -28.6 dBFS, starts 6.7 ms before t=0 (first 100 ms kept: -14.7)

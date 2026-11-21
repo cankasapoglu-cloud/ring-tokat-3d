@@ -1,0 +1,4775 @@
+{
+ "flag": "ROUGH: measured on the full mix; the band (off-beat chords and melody notes in the same register) is still in the signal",
+ "tuning_cents_used": 3.73008522662562,
+ "words": [
+  {
+   "text": "Ali",
+   "start": 8.58,
+   "end": 9.04,
+   "median_midi": 62.2,
+   "median_note": "D4",
+   "median_cents": 20,
+   "median_hz": 297.8,
+   "iqr_semitones": 5.0,
+   "frame_share_by_note": {
+    "D4": 0.59,
+    "G4": 0.23,
+    "F4": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 8.6,
+     "dur": 0.259,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 0.05
+    },
+    {
+     "start": 8.89,
+     "dur": 0.11,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 0.56
+    }
+   ],
+   "subharmonic_salience_ratio": 0.7,
+   "pyworld_median_midi": 62.89,
+   "pyworld_note": "D#4",
+   "pyworld_voiced_frames": 44,
+   "verse": 1,
+   "segment": "L1",
+   "index_in_verse": 0,
+   "start_beats_from_verse_downbeat": 0.02
+  },
+  {
+   "text": "Baba'nın",
+   "start": 9.12,
+   "end": 9.64,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 0.96,
+    "G#4": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 9.149,
+     "dur": 0.489,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 1.01
+    }
+   ],
+   "subharmonic_salience_ratio": 0.68,
+   "pyworld_median_midi": 68.95,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 43,
+   "verse": 1,
+   "segment": "L1",
+   "index_in_verse": 1,
+   "start_beats_from_verse_downbeat": 0.96
+  },
+  {
+   "text": "bir",
+   "start": 9.7,
+   "end": 9.88,
+   "median_midi": 54.95,
+   "median_note": "G3",
+   "median_cents": -5,
+   "median_hz": 195.9,
+   "iqr_semitones": 12.05,
+   "frame_share_by_note": {
+    "G3": 0.6,
+    "G4": 0.4
+   },
+   "note_runs": [
+    {
+     "start": 9.728,
+     "dur": 0.09,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.02
+    }
+   ],
+   "subharmonic_salience_ratio": 0.32,
+   "pyworld_median_midi": 66.86,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 16,
+   "verse": 1,
+   "segment": "L1",
+   "index_in_verse": 2,
+   "start_beats_from_verse_downbeat": 1.98
+  },
+  {
+   "text": "çiftliği",
+   "start": 9.98,
+   "end": 10.5,
+   "median_midi": 65.15,
+   "median_note": "F4",
+   "median_cents": 15,
+   "median_hz": 353.1,
+   "iqr_semitones": 11.8,
+   "frame_share_by_note": {
+    "G4": 0.33,
+    "G3": 0.2,
+    "C3": 0.14
+   },
+   "note_runs": [
+    {
+     "start": 10.197,
+     "dur": 0.07,
+     "midi": 55.15,
+     "note": "G3",
+     "cents": 15,
+     "beat_in_verse": 2.85
+    },
+    {
+     "start": 10.297,
+     "dur": 0.11,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 3.02
+    },
+    {
+     "start": 10.426,
+     "dur": 0.07,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 3.25
+    }
+   ],
+   "subharmonic_salience_ratio": 0.55,
+   "pyworld_median_midi": 66.86,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 47,
+   "verse": 1,
+   "segment": "L1",
+   "index_in_verse": 3,
+   "start_beats_from_verse_downbeat": 2.47
+  },
+  {
+   "text": "var,",
+   "start": 10.56,
+   "end": 10.74,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 0.15,
+   "frame_share_by_note": {
+    "E4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 10.586,
+     "dur": 0.15,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 3.53
+    }
+   ],
+   "subharmonic_salience_ratio": 0.49,
+   "pyworld_median_midi": 63.87,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 16,
+   "verse": 1,
+   "segment": "L1",
+   "index_in_verse": 4,
+   "start_beats_from_verse_downbeat": 3.48
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 10.84,
+   "end": 11.9,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 5.1,
+   "frame_share_by_note": {
+    "G4": 0.67,
+    "D4": 0.24,
+    "G3": 0.03
+   },
+   "note_runs": [
+    {
+     "start": 10.885,
+     "dur": 0.269,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 4.05
+    },
+    {
+     "start": 11.155,
+     "dur": 0.259,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 4.52
+    },
+    {
+     "start": 11.444,
+     "dur": 0.449,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 5.03
+    }
+   ],
+   "subharmonic_salience_ratio": 0.72,
+   "pyworld_median_midi": 66.87,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 104,
+   "verse": 1,
+   "segment": "L2",
+   "index_in_verse": 5,
+   "start_beats_from_verse_downbeat": 3.97
+  },
+  {
+   "text": "inekleri",
+   "start": 12.06,
+   "end": 12.78,
+   "median_midi": 64.05,
+   "median_note": "E4",
+   "median_cents": 5,
+   "median_hz": 331.4,
+   "iqr_semitones": 1.1,
+   "frame_share_by_note": {
+    "E4": 0.46,
+    "F4": 0.39,
+    "E3": 0.14
+   },
+   "note_runs": [
+    {
+     "start": 12.083,
+     "dur": 0.13,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.15
+    },
+    {
+     "start": 12.212,
+     "dur": 0.239,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 6.37
+    },
+    {
+     "start": 12.452,
+     "dur": 0.09,
+     "midi": 51.95,
+     "note": "E3",
+     "cents": -5,
+     "beat_in_verse": 6.79
+    },
+    {
+     "start": 12.541,
+     "dur": 0.14,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.95
+    },
+    {
+     "start": 12.681,
+     "dur": 0.09,
+     "midi": 64.05,
+     "note": "E4",
+     "cents": 5,
+     "beat_in_verse": 7.19
+    }
+   ],
+   "subharmonic_salience_ratio": 0.71,
+   "pyworld_median_midi": 64.25,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 70,
+   "verse": 1,
+   "segment": "L2",
+   "index_in_verse": 6,
+   "start_beats_from_verse_downbeat": 6.11
+  },
+  {
+   "text": "var.",
+   "start": 12.84,
+   "end": 13.08,
+   "median_midi": 61.85,
+   "median_note": "D4",
+   "median_cents": -15,
+   "median_hz": 291.8,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "D4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 12.861,
+     "dur": 0.21,
+     "midi": 61.85,
+     "note": "D4",
+     "cents": -15,
+     "beat_in_verse": 7.51
+    }
+   ],
+   "subharmonic_salience_ratio": 0.5,
+   "pyworld_median_midi": 61.92,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 22,
+   "verse": 1,
+   "segment": "L2",
+   "index_in_verse": 7,
+   "start_beats_from_verse_downbeat": 7.47
+  },
+  {
+   "text": "\"Mö,",
+   "start": 13.12,
+   "end": 13.4,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.0,
+   "frame_share_by_note": {
+    "D4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 13.14,
+     "dur": 0.259,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 8.0
+    }
+   ],
+   "subharmonic_salience_ratio": 0.67,
+   "pyworld_median_midi": 61.99,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 26,
+   "verse": 1,
+   "segment": "ses",
+   "index_in_verse": 8,
+   "start_beats_from_verse_downbeat": 7.96
+  },
+  {
+   "text": "mö\"",
+   "start": 13.72,
+   "end": 13.94,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.2,
+   "frame_share_by_note": {
+    "A4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 13.749,
+     "dur": 0.19,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 9.06
+    }
+   ],
+   "subharmonic_salience_ratio": 0.55,
+   "pyworld_median_midi": 68.91,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 20,
+   "verse": 1,
+   "segment": "ses",
+   "index_in_verse": 9,
+   "start_beats_from_verse_downbeat": 9.01
+  },
+  {
+   "text": "diye",
+   "start": 14.28,
+   "end": 14.76,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 12.0,
+   "frame_share_by_note": {
+    "G4": 0.49,
+    "G3": 0.38,
+    "G#4": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 14.307,
+     "dur": 0.17,
+     "midi": 55.05,
+     "note": "G3",
+     "cents": 5,
+     "beat_in_verse": 10.04
+    },
+    {
+     "start": 14.477,
+     "dur": 0.22,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 10.34
+    }
+   ],
+   "subharmonic_salience_ratio": 0.54,
+   "pyworld_median_midi": 66.99,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 42,
+   "verse": 1,
+   "segment": "diye",
+   "index_in_verse": 10,
+   "start_beats_from_verse_downbeat": 9.99
+  },
+  {
+   "text": "bağırır",
+   "start": 14.84,
+   "end": 15.32,
+   "median_midi": 64.95,
+   "median_note": "F4",
+   "median_cents": -5,
+   "median_hz": 349.1,
+   "iqr_semitones": 1.8,
+   "frame_share_by_note": {
+    "E4": 0.38,
+    "F4": 0.31,
+    "G4": 0.2
+   },
+   "note_runs": [
+    {
+     "start": 14.866,
+     "dur": 0.1,
+     "midi": 66.85,
+     "note": "G4",
+     "cents": -15,
+     "beat_in_verse": 11.02
+    },
+    {
+     "start": 14.966,
+     "dur": 0.16,
+     "midi": 65.0,
+     "note": "F4",
+     "cents": 0,
+     "beat_in_verse": 11.19
+    },
+    {
+     "start": 15.126,
+     "dur": 0.19,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 11.47
+    }
+   ],
+   "subharmonic_salience_ratio": 0.71,
+   "pyworld_median_midi": 64.87,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 46,
+   "verse": 1,
+   "segment": "diye",
+   "index_in_verse": 11,
+   "start_beats_from_verse_downbeat": 10.97
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 15.4,
+   "end": 16.46,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 4.9,
+   "frame_share_by_note": {
+    "G4": 0.68,
+    "D4": 0.2,
+    "F4": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 15.455,
+     "dur": 0.229,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 12.05
+    },
+    {
+     "start": 15.734,
+     "dur": 0.718,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 12.54
+    }
+   ],
+   "subharmonic_salience_ratio": 0.69,
+   "pyworld_median_midi": 66.89,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 83,
+   "verse": 1,
+   "segment": "L4",
+   "index_in_verse": 12,
+   "start_beats_from_verse_downbeat": 11.95
+  },
+  {
+   "text": "Ali",
+   "start": 16.64,
+   "end": 17.04,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 1.3,
+   "frame_share_by_note": {
+    "F4": 0.41,
+    "E4": 0.38,
+    "E3": 0.22
+   },
+   "note_runs": [
+    {
+     "start": 16.662,
+     "dur": 0.15,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 14.16
+    },
+    {
+     "start": 16.862,
+     "dur": 0.08,
+     "midi": 52.05,
+     "note": "E3",
+     "cents": 5,
+     "beat_in_verse": 14.51
+    },
+    {
+     "start": 16.941,
+     "dur": 0.09,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 14.65
+    }
+   ],
+   "subharmonic_salience_ratio": 0.48,
+   "pyworld_median_midi": 63.94,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 27,
+   "verse": 1,
+   "segment": "L4",
+   "index_in_verse": 13,
+   "start_beats_from_verse_downbeat": 14.12
+  },
+  {
+   "text": "Baba'nın.",
+   "start": 17.1,
+   "end": 17.68,
+   "median_midi": 62.3,
+   "median_note": "D4",
+   "median_cents": 30,
+   "median_hz": 299.5,
+   "iqr_semitones": 2.32,
+   "frame_share_by_note": {
+    "D4": 0.48,
+    "F4": 0.25,
+    "E4": 0.23
+   },
+   "note_runs": [
+    {
+     "start": 17.121,
+     "dur": 0.14,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 14.96
+    },
+    {
+     "start": 17.261,
+     "dur": 0.13,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 15.21
+    },
+    {
+     "start": 17.39,
+     "dur": 0.289,
+     "midi": 61.85,
+     "note": "D4",
+     "cents": -15,
+     "beat_in_verse": 15.43
+    }
+   ],
+   "subharmonic_salience_ratio": 0.67,
+   "pyworld_median_midi": 62.04,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 55,
+   "verse": 1,
+   "segment": "L4",
+   "index_in_verse": 14,
+   "start_beats_from_verse_downbeat": 14.93
+  },
+  {
+   "text": "Ali",
+   "start": 22.3,
+   "end": 22.76,
+   "median_midi": 62.05,
+   "median_note": "D4",
+   "median_cents": 5,
+   "median_hz": 295.2,
+   "iqr_semitones": 5.0,
+   "frame_share_by_note": {
+    "D4": 0.51,
+    "G4": 0.26,
+    "A4": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 22.329,
+     "dur": 0.239,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 0.08
+    },
+    {
+     "start": 22.589,
+     "dur": 0.13,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 0.53
+    }
+   ],
+   "subharmonic_salience_ratio": 0.7,
+   "pyworld_median_midi": 62.01,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 32,
+   "verse": 2,
+   "segment": "L1",
+   "index_in_verse": 0,
+   "start_beats_from_verse_downbeat": 0.03
+  },
+  {
+   "text": "Baba'nın",
+   "start": 22.84,
+   "end": 23.36,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 22.868,
+     "dur": 0.489,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 1.02
+    }
+   ],
+   "subharmonic_salience_ratio": 0.71,
+   "pyworld_median_midi": 68.68,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 49,
+   "verse": 2,
+   "segment": "L1",
+   "index_in_verse": 1,
+   "start_beats_from_verse_downbeat": 0.97
+  },
+  {
+   "text": "bir",
+   "start": 23.4,
+   "end": 23.6,
+   "median_midi": 54.95,
+   "median_note": "G3",
+   "median_cents": -5,
+   "median_hz": 195.9,
+   "iqr_semitones": 12.1,
+   "frame_share_by_note": {
+    "G3": 0.53,
+    "G4": 0.35,
+    "C3": 0.12
+   },
+   "note_runs": [
+    {
+     "start": 23.487,
+     "dur": 0.11,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.1
+    }
+   ],
+   "subharmonic_salience_ratio": 0.28,
+   "pyworld_median_midi": 66.91,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 18,
+   "verse": 2,
+   "segment": "L1",
+   "index_in_verse": 2,
+   "start_beats_from_verse_downbeat": 1.95
+  },
+  {
+   "text": "çiftliği",
+   "start": 23.7,
+   "end": 24.22,
+   "median_midi": 65.05,
+   "median_note": "F4",
+   "median_cents": 5,
+   "median_hz": 351.1,
+   "iqr_semitones": 11.9,
+   "frame_share_by_note": {
+    "G4": 0.29,
+    "G3": 0.27,
+    "F4": 0.16
+   },
+   "note_runs": [
+    {
+     "start": 23.866,
+     "dur": 0.14,
+     "midi": 54.65,
+     "note": "G3",
+     "cents": -35,
+     "beat_in_verse": 2.77
+    },
+    {
+     "start": 24.005,
+     "dur": 0.11,
+     "midi": 66.85,
+     "note": "G4",
+     "cents": -15,
+     "beat_in_verse": 3.01
+    },
+    {
+     "start": 24.115,
+     "dur": 0.1,
+     "midi": 65.0,
+     "note": "F4",
+     "cents": 0,
+     "beat_in_verse": 3.2
+    }
+   ],
+   "subharmonic_salience_ratio": 0.51,
+   "pyworld_median_midi": 66.13,
+   "pyworld_note": "F#4",
+   "pyworld_voiced_frames": 49,
+   "verse": 2,
+   "segment": "L1",
+   "index_in_verse": 3,
+   "start_beats_from_verse_downbeat": 2.48
+  },
+  {
+   "text": "var,",
+   "start": 24.26,
+   "end": 24.46,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "E4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 24.285,
+     "dur": 0.17,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 3.5
+    }
+   ],
+   "subharmonic_salience_ratio": 0.51,
+   "pyworld_median_midi": 63.88,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 18,
+   "verse": 2,
+   "segment": "L1",
+   "index_in_verse": 4,
+   "start_beats_from_verse_downbeat": 3.46
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 24.56,
+   "end": 25.58,
+   "median_midi": 66.85,
+   "median_note": "G4",
+   "median_cents": -15,
+   "median_hz": 389.6,
+   "iqr_semitones": 5.0,
+   "frame_share_by_note": {
+    "G4": 0.64,
+    "D4": 0.24,
+    "G3": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 24.604,
+     "dur": 0.239,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 4.06
+    },
+    {
+     "start": 24.863,
+     "dur": 0.599,
+     "midi": 66.85,
+     "note": "G4",
+     "cents": -15,
+     "beat_in_verse": 4.51
+    },
+    {
+     "start": 25.492,
+     "dur": 0.08,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 5.61
+    }
+   ],
+   "subharmonic_salience_ratio": 0.68,
+   "pyworld_median_midi": 66.86,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 85,
+   "verse": 2,
+   "segment": "L2",
+   "index_in_verse": 5,
+   "start_beats_from_verse_downbeat": 3.98
+  },
+  {
+   "text": "koyunları",
+   "start": 25.7,
+   "end": 26.52,
+   "median_midi": 64.25,
+   "median_note": "E4",
+   "median_cents": 25,
+   "median_hz": 335.2,
+   "iqr_semitones": 1.0,
+   "frame_share_by_note": {
+    "E4": 0.5,
+    "F4": 0.46,
+    "E3": 0.03
+   },
+   "note_runs": [
+    {
+     "start": 25.732,
+     "dur": 0.22,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.03
+    },
+    {
+     "start": 25.951,
+     "dur": 0.319,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 6.42
+    },
+    {
+     "start": 26.27,
+     "dur": 0.15,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.97
+    },
+    {
+     "start": 26.42,
+     "dur": 0.1,
+     "midi": 64.2,
+     "note": "E4",
+     "cents": 20,
+     "beat_in_verse": 7.24
+    }
+   ],
+   "subharmonic_salience_ratio": 0.66,
+   "pyworld_median_midi": 64.28,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 79,
+   "verse": 2,
+   "segment": "L2",
+   "index_in_verse": 6,
+   "start_beats_from_verse_downbeat": 5.98
+  },
+  {
+   "text": "var.",
+   "start": 26.58,
+   "end": 26.82,
+   "median_midi": 61.85,
+   "median_note": "D4",
+   "median_cents": -15,
+   "median_hz": 291.8,
+   "iqr_semitones": 0.0,
+   "frame_share_by_note": {
+    "D4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 26.61,
+     "dur": 0.21,
+     "midi": 61.85,
+     "note": "D4",
+     "cents": -15,
+     "beat_in_verse": 7.57
+    }
+   ],
+   "subharmonic_salience_ratio": 0.55,
+   "pyworld_median_midi": 61.86,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 22,
+   "verse": 2,
+   "segment": "L2",
+   "index_in_verse": 7,
+   "start_beats_from_verse_downbeat": 7.52
+  },
+  {
+   "text": "\"Me,",
+   "start": 26.82,
+   "end": 27.1,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.2,
+   "frame_share_by_note": {
+    "D4": 0.92,
+    "D3": 0.08
+   },
+   "note_runs": [
+    {
+     "start": 26.869,
+     "dur": 0.229,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 8.02
+    }
+   ],
+   "subharmonic_salience_ratio": 0.65,
+   "pyworld_median_midi": 61.98,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 26,
+   "verse": 2,
+   "segment": "ses",
+   "index_in_verse": 8,
+   "start_beats_from_verse_downbeat": 7.94
+  },
+  {
+   "text": "me\"",
+   "start": 27.46,
+   "end": 27.66,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 27.488,
+     "dur": 0.17,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 9.11
+    }
+   ],
+   "subharmonic_salience_ratio": 0.54,
+   "pyworld_median_midi": 68.9,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 18,
+   "verse": 2,
+   "segment": "ses",
+   "index_in_verse": 9,
+   "start_beats_from_verse_downbeat": 9.06
+  },
+  {
+   "text": "diye",
+   "start": 28.0,
+   "end": 28.5,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 12.05,
+   "frame_share_by_note": {
+    "G4": 0.45,
+    "G3": 0.38,
+    "A4": 0.13
+   },
+   "note_runs": [
+    {
+     "start": 28.026,
+     "dur": 0.18,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 10.05
+    },
+    {
+     "start": 28.206,
+     "dur": 0.21,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 10.36
+    },
+    {
+     "start": 28.415,
+     "dur": 0.08,
+     "midi": 68.9,
+     "note": "A4",
+     "cents": -10,
+     "beat_in_verse": 10.73
+    }
+   ],
+   "subharmonic_salience_ratio": 0.5,
+   "pyworld_median_midi": 66.96,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 43,
+   "verse": 2,
+   "segment": "diye",
+   "index_in_verse": 10,
+   "start_beats_from_verse_downbeat": 10.0
+  },
+  {
+   "text": "bağırır",
+   "start": 28.56,
+   "end": 29.06,
+   "median_midi": 64.75,
+   "median_note": "F4",
+   "median_cents": -25,
+   "median_hz": 345.1,
+   "iqr_semitones": 2.1,
+   "frame_share_by_note": {
+    "E4": 0.4,
+    "F4": 0.26,
+    "G4": 0.17
+   },
+   "note_runs": [
+    {
+     "start": 28.585,
+     "dur": 0.09,
+     "midi": 67.25,
+     "note": "G4",
+     "cents": 25,
+     "beat_in_verse": 11.02
+    },
+    {
+     "start": 28.705,
+     "dur": 0.13,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 11.23
+    },
+    {
+     "start": 28.834,
+     "dur": 0.22,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 11.46
+    }
+   ],
+   "subharmonic_salience_ratio": 0.65,
+   "pyworld_median_midi": 64.61,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 47,
+   "verse": 2,
+   "segment": "diye",
+   "index_in_verse": 11,
+   "start_beats_from_verse_downbeat": 10.98
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 29.12,
+   "end": 30.2,
+   "median_midi": 66.85,
+   "median_note": "G4",
+   "median_cents": -15,
+   "median_hz": 389.6,
+   "iqr_semitones": 5.0,
+   "frame_share_by_note": {
+    "G4": 0.67,
+    "D4": 0.15,
+    "A#3": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 29.174,
+     "dur": 0.08,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 12.06
+    },
+    {
+     "start": 29.313,
+     "dur": 0.08,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 12.3
+    },
+    {
+     "start": 29.433,
+     "dur": 0.758,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 12.51
+    }
+   ],
+   "subharmonic_salience_ratio": 0.67,
+   "pyworld_median_midi": 66.89,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 80,
+   "verse": 2,
+   "segment": "L4",
+   "index_in_verse": 12,
+   "start_beats_from_verse_downbeat": 11.96
+  },
+  {
+   "text": "Ali",
+   "start": 30.36,
+   "end": 30.68,
+   "median_midi": 64.65,
+   "median_note": "F4",
+   "median_cents": -35,
+   "median_hz": 343.1,
+   "iqr_semitones": 0.9,
+   "frame_share_by_note": {
+    "F4": 0.52,
+    "E4": 0.48
+   },
+   "note_runs": [
+    {
+     "start": 30.381,
+     "dur": 0.15,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 14.17
+    },
+    {
+     "start": 30.531,
+     "dur": 0.14,
+     "midi": 64.05,
+     "note": "E4",
+     "cents": 5,
+     "beat_in_verse": 14.43
+    }
+   ],
+   "subharmonic_salience_ratio": 0.59,
+   "pyworld_median_midi": 64.36,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 29,
+   "verse": 2,
+   "segment": "L4",
+   "index_in_verse": 13,
+   "start_beats_from_verse_downbeat": 14.13
+  },
+  {
+   "text": "Baba'nın.",
+   "start": 30.84,
+   "end": 31.4,
+   "median_midi": 62.45,
+   "median_note": "D4",
+   "median_cents": 45,
+   "median_hz": 302.1,
+   "iqr_semitones": 2.5,
+   "frame_share_by_note": {
+    "D4": 0.42,
+    "E4": 0.25,
+    "F4": 0.23
+   },
+   "note_runs": [
+    {
+     "start": 30.87,
+     "dur": 0.16,
+     "midi": 64.85,
+     "note": "F4",
+     "cents": -15,
+     "beat_in_verse": 15.02
+    },
+    {
+     "start": 31.029,
+     "dur": 0.09,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 15.3
+    },
+    {
+     "start": 31.119,
+     "dur": 0.22,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 15.46
+    }
+   ],
+   "subharmonic_salience_ratio": 0.62,
+   "pyworld_median_midi": 63.7,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 53,
+   "verse": 2,
+   "segment": "L4",
+   "index_in_verse": 14,
+   "start_beats_from_verse_downbeat": 14.97
+  },
+  {
+   "text": "Ali",
+   "start": 36.0,
+   "end": 36.48,
+   "median_midi": 62.15,
+   "median_note": "D4",
+   "median_cents": 15,
+   "median_hz": 296.9,
+   "iqr_semitones": 5.0,
+   "frame_share_by_note": {
+    "D4": 0.44,
+    "G4": 0.27,
+    "A3": 0.11
+   },
+   "note_runs": [
+    {
+     "start": 36.118,
+     "dur": 0.16,
+     "midi": 62.05,
+     "note": "D4",
+     "cents": 5,
+     "beat_in_verse": 0.21
+    },
+    {
+     "start": 36.278,
+     "dur": 0.15,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 0.49
+    }
+   ],
+   "subharmonic_salience_ratio": 0.61,
+   "pyworld_median_midi": 62.12,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 46,
+   "verse": 3,
+   "segment": "L1",
+   "index_in_verse": 0,
+   "start_beats_from_verse_downbeat": 0.0
+  },
+  {
+   "text": "Baba'nın",
+   "start": 36.56,
+   "end": 37.06,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.2,
+   "frame_share_by_note": {
+    "A4": 0.91,
+    "G#4": 0.09
+   },
+   "note_runs": [
+    {
+     "start": 36.587,
+     "dur": 0.239,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 1.03
+    },
+    {
+     "start": 36.856,
+     "dur": 0.2,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 1.5
+    }
+   ],
+   "subharmonic_salience_ratio": 0.65,
+   "pyworld_median_midi": 68.92,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 43,
+   "verse": 3,
+   "segment": "L1",
+   "index_in_verse": 1,
+   "start_beats_from_verse_downbeat": 0.98
+  },
+  {
+   "text": "bir",
+   "start": 37.12,
+   "end": 37.32,
+   "median_midi": 55.05,
+   "median_note": "G3",
+   "median_cents": 5,
+   "median_hz": 197.0,
+   "iqr_semitones": 12.1,
+   "frame_share_by_note": {
+    "G4": 0.47,
+    "G3": 0.47,
+    "C3": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 37.195,
+     "dur": 0.08,
+     "midi": 54.9,
+     "note": "G3",
+     "cents": -10,
+     "beat_in_verse": 2.09
+    }
+   ],
+   "subharmonic_salience_ratio": 0.39,
+   "pyworld_median_midi": 66.68,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 6,
+   "verse": 3,
+   "segment": "L1",
+   "index_in_verse": 2,
+   "start_beats_from_verse_downbeat": 1.96
+  },
+  {
+   "text": "çiftliği",
+   "start": 37.4,
+   "end": 37.94,
+   "median_midi": 65.95,
+   "median_note": "F#4",
+   "median_cents": -5,
+   "median_hz": 369.8,
+   "iqr_semitones": 12.0,
+   "frame_share_by_note": {
+    "G4": 0.39,
+    "G3": 0.25,
+    "F4": 0.18
+   },
+   "note_runs": [
+    {
+     "start": 37.435,
+     "dur": 0.13,
+     "midi": 67.15,
+     "note": "G4",
+     "cents": 15,
+     "beat_in_verse": 2.51
+    },
+    {
+     "start": 37.565,
+     "dur": 0.15,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.74
+    },
+    {
+     "start": 37.714,
+     "dur": 0.12,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 3.0
+    },
+    {
+     "start": 37.834,
+     "dur": 0.1,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 3.21
+    }
+   ],
+   "subharmonic_salience_ratio": 0.58,
+   "pyworld_median_midi": 66.57,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 52,
+   "verse": 3,
+   "segment": "L1",
+   "index_in_verse": 3,
+   "start_beats_from_verse_downbeat": 2.45
+  },
+  {
+   "text": "var,",
+   "start": 37.98,
+   "end": 38.16,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "E4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 38.004,
+     "dur": 0.15,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 3.51
+    }
+   ],
+   "subharmonic_salience_ratio": 0.51,
+   "pyworld_median_midi": 63.89,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 16,
+   "verse": 3,
+   "segment": "L1",
+   "index_in_verse": 4,
+   "start_beats_from_verse_downbeat": 3.47
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 38.26,
+   "end": 39.32,
+   "median_midi": 66.85,
+   "median_note": "G4",
+   "median_cents": -15,
+   "median_hz": 389.6,
+   "iqr_semitones": 4.9,
+   "frame_share_by_note": {
+    "G4": 0.7,
+    "D4": 0.25,
+    "D3": 0.02
+   },
+   "note_runs": [
+    {
+     "start": 38.303,
+     "dur": 0.269,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 4.03
+    },
+    {
+     "start": 38.592,
+     "dur": 0.718,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 4.54
+    }
+   ],
+   "subharmonic_salience_ratio": 0.68,
+   "pyworld_median_midi": 66.87,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 72,
+   "verse": 3,
+   "segment": "L2",
+   "index_in_verse": 5,
+   "start_beats_from_verse_downbeat": 3.96
+  },
+  {
+   "text": "atları",
+   "start": 39.48,
+   "end": 40.22,
+   "median_midi": 64.4,
+   "median_note": "E4",
+   "median_cents": 40,
+   "median_hz": 338.2,
+   "iqr_semitones": 1.1,
+   "frame_share_by_note": {
+    "F4": 0.47,
+    "E4": 0.46,
+    "A3": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 39.5,
+     "dur": 0.11,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 6.13
+    },
+    {
+     "start": 39.66,
+     "dur": 0.09,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.41
+    },
+    {
+     "start": 39.75,
+     "dur": 0.259,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 6.56
+    },
+    {
+     "start": 40.009,
+     "dur": 0.17,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 7.02
+    }
+   ],
+   "subharmonic_salience_ratio": 0.66,
+   "pyworld_median_midi": 63.97,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 72,
+   "verse": 3,
+   "segment": "L2",
+   "index_in_verse": 6,
+   "start_beats_from_verse_downbeat": 6.09
+  },
+  {
+   "text": "var.",
+   "start": 40.28,
+   "end": 40.54,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "D4": 0.91,
+    "C#4": 0.09
+   },
+   "note_runs": [
+    {
+     "start": 40.308,
+     "dur": 0.22,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 7.54
+    }
+   ],
+   "subharmonic_salience_ratio": 0.49,
+   "pyworld_median_midi": 61.9,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 23,
+   "verse": 3,
+   "segment": "L2",
+   "index_in_verse": 7,
+   "start_beats_from_verse_downbeat": 7.49
+  },
+  {
+   "text": "\"Me,",
+   "start": 40.54,
+   "end": 40.82,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.2,
+   "frame_share_by_note": {
+    "D4": 0.88,
+    "D3": 0.12
+   },
+   "note_runs": [
+    {
+     "start": 40.598,
+     "dur": 0.22,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 8.05
+    }
+   ],
+   "subharmonic_salience_ratio": 0.61,
+   "pyworld_median_midi": 61.95,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 26,
+   "verse": 3,
+   "segment": "ses",
+   "index_in_verse": 8,
+   "start_beats_from_verse_downbeat": 7.95
+  },
+  {
+   "text": "me\"",
+   "start": 41.16,
+   "end": 41.38,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.25,
+   "frame_share_by_note": {
+    "A4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 41.186,
+     "dur": 0.19,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 9.08
+    }
+   ],
+   "subharmonic_salience_ratio": 0.6,
+   "pyworld_median_midi": 68.92,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 20,
+   "verse": 3,
+   "segment": "ses",
+   "index_in_verse": 9,
+   "start_beats_from_verse_downbeat": 9.03
+  },
+  {
+   "text": "diye",
+   "start": 41.72,
+   "end": 42.2,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 12.1,
+   "frame_share_by_note": {
+    "G4": 0.42,
+    "G3": 0.42,
+    "A4": 0.09
+   },
+   "note_runs": [
+    {
+     "start": 41.745,
+     "dur": 0.15,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 10.06
+    },
+    {
+     "start": 41.985,
+     "dur": 0.15,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 10.48
+    }
+   ],
+   "subharmonic_salience_ratio": 0.5,
+   "pyworld_median_midi": 66.96,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 43,
+   "verse": 3,
+   "segment": "diye",
+   "index_in_verse": 10,
+   "start_beats_from_verse_downbeat": 10.01
+  },
+  {
+   "text": "bağırır",
+   "start": 42.28,
+   "end": 42.76,
+   "median_midi": 64.75,
+   "median_note": "F4",
+   "median_cents": -25,
+   "median_hz": 345.1,
+   "iqr_semitones": 2.0,
+   "frame_share_by_note": {
+    "E4": 0.42,
+    "F4": 0.27,
+    "G4": 0.2
+   },
+   "note_runs": [
+    {
+     "start": 42.304,
+     "dur": 0.09,
+     "midi": 67.15,
+     "note": "G4",
+     "cents": 15,
+     "beat_in_verse": 11.03
+    },
+    {
+     "start": 42.434,
+     "dur": 0.13,
+     "midi": 64.85,
+     "note": "F4",
+     "cents": -15,
+     "beat_in_verse": 11.26
+    },
+    {
+     "start": 42.563,
+     "dur": 0.19,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 11.49
+    }
+   ],
+   "subharmonic_salience_ratio": 0.67,
+   "pyworld_median_midi": 64.72,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 45,
+   "verse": 3,
+   "segment": "diye",
+   "index_in_verse": 11,
+   "start_beats_from_verse_downbeat": 10.99
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 42.84,
+   "end": 43.92,
+   "median_midi": 66.85,
+   "median_note": "G4",
+   "median_cents": -15,
+   "median_hz": 389.6,
+   "iqr_semitones": 4.9,
+   "frame_share_by_note": {
+    "G4": 0.67,
+    "D4": 0.24,
+    "F#4": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 42.883,
+     "dur": 0.249,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 12.05
+    },
+    {
+     "start": 43.162,
+     "dur": 0.249,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 12.54
+    },
+    {
+     "start": 43.451,
+     "dur": 0.459,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 13.04
+    }
+   ],
+   "subharmonic_salience_ratio": 0.66,
+   "pyworld_median_midi": 66.86,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 97,
+   "verse": 3,
+   "segment": "L4",
+   "index_in_verse": 12,
+   "start_beats_from_verse_downbeat": 11.97
+  },
+  {
+   "text": "Ali",
+   "start": 44.08,
+   "end": 44.5,
+   "median_midi": 64.05,
+   "median_note": "E4",
+   "median_cents": 5,
+   "median_hz": 331.4,
+   "iqr_semitones": 1.05,
+   "frame_share_by_note": {
+    "E4": 0.44,
+    "F4": 0.36,
+    "E3": 0.21
+   },
+   "note_runs": [
+    {
+     "start": 44.11,
+     "dur": 0.14,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 14.19
+    },
+    {
+     "start": 44.299,
+     "dur": 0.08,
+     "midi": 52.0,
+     "note": "E3",
+     "cents": 0,
+     "beat_in_verse": 14.53
+    },
+    {
+     "start": 44.379,
+     "dur": 0.12,
+     "midi": 64.05,
+     "note": "E4",
+     "cents": 5,
+     "beat_in_verse": 14.67
+    }
+   ],
+   "subharmonic_salience_ratio": 0.51,
+   "pyworld_median_midi": 64.08,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 40,
+   "verse": 3,
+   "segment": "L4",
+   "index_in_verse": 13,
+   "start_beats_from_verse_downbeat": 14.14
+  },
+  {
+   "text": "Baba'nın.",
+   "start": 44.56,
+   "end": 45.1,
+   "median_midi": 62.65,
+   "median_note": "D#4",
+   "median_cents": -35,
+   "median_hz": 305.6,
+   "iqr_semitones": 2.5,
+   "frame_share_by_note": {
+    "E4": 0.25,
+    "D3": 0.24,
+    "F4": 0.22
+   },
+   "note_runs": [
+    {
+     "start": 44.589,
+     "dur": 0.18,
+     "midi": 64.85,
+     "note": "F4",
+     "cents": -15,
+     "beat_in_verse": 15.03
+    },
+    {
+     "start": 44.768,
+     "dur": 0.07,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 15.35
+    },
+    {
+     "start": 44.838,
+     "dur": 0.16,
+     "midi": 62.25,
+     "note": "D4",
+     "cents": 25,
+     "beat_in_verse": 15.47
+    },
+    {
+     "start": 44.998,
+     "dur": 0.1,
+     "midi": 49.9,
+     "note": "D3",
+     "cents": -10,
+     "beat_in_verse": 15.75
+    }
+   ],
+   "subharmonic_salience_ratio": 0.53,
+   "pyworld_median_midi": 63.41,
+   "pyworld_note": "D#4",
+   "pyworld_voiced_frames": 46,
+   "verse": 3,
+   "segment": "L4",
+   "index_in_verse": 14,
+   "start_beats_from_verse_downbeat": 14.98
+  },
+  {
+   "text": "Ali",
+   "start": 49.74,
+   "end": 50.2,
+   "median_midi": 62.05,
+   "median_note": "D4",
+   "median_cents": 5,
+   "median_hz": 295.2,
+   "iqr_semitones": 5.3,
+   "frame_share_by_note": {
+    "D4": 0.56,
+    "G4": 0.28,
+    "A4": 0.09
+   },
+   "note_runs": [
+    {
+     "start": 49.767,
+     "dur": 0.239,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 0.09
+    },
+    {
+     "start": 50.006,
+     "dur": 0.14,
+     "midi": 67.25,
+     "note": "G4",
+     "cents": 25,
+     "beat_in_verse": 0.51
+    }
+   ],
+   "subharmonic_salience_ratio": 0.71,
+   "pyworld_median_midi": 62.1,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 43,
+   "verse": 4,
+   "segment": "L1",
+   "index_in_verse": 0,
+   "start_beats_from_verse_downbeat": 0.05
+  },
+  {
+   "text": "Baba'nın",
+   "start": 50.26,
+   "end": 50.78,
+   "median_midi": 69.05,
+   "median_note": "A4",
+   "median_cents": 5,
+   "median_hz": 442.3,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 0.98,
+    "G#4": 0.02
+   },
+   "note_runs": [
+    {
+     "start": 50.286,
+     "dur": 0.489,
+     "midi": 69.05,
+     "note": "A4",
+     "cents": 5,
+     "beat_in_verse": 1.0
+    }
+   ],
+   "subharmonic_salience_ratio": 0.73,
+   "pyworld_median_midi": 64.07,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 50,
+   "verse": 4,
+   "segment": "L1",
+   "index_in_verse": 1,
+   "start_beats_from_verse_downbeat": 0.96
+  },
+  {
+   "text": "bir",
+   "start": 50.84,
+   "end": 51.04,
+   "median_midi": 55.05,
+   "median_note": "G3",
+   "median_cents": 5,
+   "median_hz": 197.0,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "G3": 0.71,
+    "G4": 0.24,
+    "D3": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 50.914,
+     "dur": 0.12,
+     "midi": 55.05,
+     "note": "G3",
+     "cents": 5,
+     "beat_in_verse": 2.1
+    }
+   ],
+   "subharmonic_salience_ratio": 0.15,
+   "pyworld_median_midi": 67.03,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 12,
+   "verse": 4,
+   "segment": "L1",
+   "index_in_verse": 2,
+   "start_beats_from_verse_downbeat": 1.97
+  },
+  {
+   "text": "çiftliği",
+   "start": 51.12,
+   "end": 51.64,
+   "median_midi": 65.05,
+   "median_note": "F4",
+   "median_cents": 5,
+   "median_hz": 351.1,
+   "iqr_semitones": 11.9,
+   "frame_share_by_note": {
+    "G4": 0.31,
+    "G3": 0.29,
+    "F4": 0.16
+   },
+   "note_runs": [
+    {
+     "start": 51.303,
+     "dur": 0.13,
+     "midi": 55.05,
+     "note": "G3",
+     "cents": 5,
+     "beat_in_verse": 2.78
+    },
+    {
+     "start": 51.433,
+     "dur": 0.11,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 3.01
+    },
+    {
+     "start": 51.553,
+     "dur": 0.08,
+     "midi": 64.9,
+     "note": "F4",
+     "cents": -10,
+     "beat_in_verse": 3.22
+    }
+   ],
+   "subharmonic_salience_ratio": 0.52,
+   "pyworld_median_midi": 66.82,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 43,
+   "verse": 4,
+   "segment": "L1",
+   "index_in_verse": 3,
+   "start_beats_from_verse_downbeat": 2.46
+  },
+  {
+   "text": "var,",
+   "start": 51.7,
+   "end": 51.9,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 0.0,
+   "frame_share_by_note": {
+    "E4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 51.722,
+     "dur": 0.17,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 3.52
+    }
+   ],
+   "subharmonic_salience_ratio": 0.47,
+   "pyworld_median_midi": 63.89,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 17,
+   "verse": 4,
+   "segment": "L1",
+   "index_in_verse": 4,
+   "start_beats_from_verse_downbeat": 3.48
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 51.98,
+   "end": 53.02,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 5.1,
+   "frame_share_by_note": {
+    "G4": 0.69,
+    "D4": 0.25,
+    "G3": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 52.022,
+     "dur": 0.259,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 4.04
+    },
+    {
+     "start": 52.311,
+     "dur": 0.15,
+     "midi": 67.15,
+     "note": "G4",
+     "cents": 15,
+     "beat_in_verse": 4.55
+    },
+    {
+     "start": 52.501,
+     "dur": 0.519,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 4.88
+    }
+   ],
+   "subharmonic_salience_ratio": 0.7,
+   "pyworld_median_midi": 66.89,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 89,
+   "verse": 4,
+   "segment": "L2",
+   "index_in_verse": 5,
+   "start_beats_from_verse_downbeat": 3.97
+  },
+  {
+   "text": "horozları",
+   "start": 53.12,
+   "end": 53.94,
+   "median_midi": 64.25,
+   "median_note": "E4",
+   "median_cents": 25,
+   "median_hz": 335.2,
+   "iqr_semitones": 1.0,
+   "frame_share_by_note": {
+    "F4": 0.47,
+    "E4": 0.39,
+    "E3": 0.05
+   },
+   "note_runs": [
+    {
+     "start": 53.149,
+     "dur": 0.249,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.01
+    },
+    {
+     "start": 53.399,
+     "dur": 0.2,
+     "midi": 64.05,
+     "note": "E4",
+     "cents": 5,
+     "beat_in_verse": 6.45
+    },
+    {
+     "start": 53.718,
+     "dur": 0.14,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 7.01
+    },
+    {
+     "start": 53.858,
+     "dur": 0.08,
+     "midi": 64.05,
+     "note": "E4",
+     "cents": 5,
+     "beat_in_verse": 7.25
+    }
+   ],
+   "subharmonic_salience_ratio": 0.59,
+   "pyworld_median_midi": 64.03,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 76,
+   "verse": 4,
+   "segment": "L2",
+   "index_in_verse": 6,
+   "start_beats_from_verse_downbeat": 5.96
+  },
+  {
+   "text": "var.",
+   "start": 54.0,
+   "end": 54.26,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "D4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 54.027,
+     "dur": 0.229,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 7.55
+    }
+   ],
+   "subharmonic_salience_ratio": 0.54,
+   "pyworld_median_midi": 61.92,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 24,
+   "verse": 4,
+   "segment": "L2",
+   "index_in_verse": 7,
+   "start_beats_from_verse_downbeat": 7.5
+  },
+  {
+   "text": "\"Üü,",
+   "start": 54.3,
+   "end": 54.8,
+   "median_midi": 63.15,
+   "median_note": "D#4",
+   "median_cents": 15,
+   "median_hz": 314.6,
+   "iqr_semitones": 5.35,
+   "frame_share_by_note": {
+    "G4": 0.26,
+    "D4": 0.19,
+    "A3": 0.17
+   },
+   "note_runs": [
+    {
+     "start": 54.366,
+     "dur": 0.08,
+     "midi": 57.0,
+     "note": "A3",
+     "cents": 0,
+     "beat_in_verse": 8.14
+    },
+    {
+     "start": 54.446,
+     "dur": 0.11,
+     "midi": 62.55,
+     "note": "D#4",
+     "cents": -45,
+     "beat_in_verse": 8.28
+    },
+    {
+     "start": 54.596,
+     "dur": 0.13,
+     "midi": 67.25,
+     "note": "G4",
+     "cents": 25,
+     "beat_in_verse": 8.55
+    },
+    {
+     "start": 54.726,
+     "dur": 0.07,
+     "midi": 68.85,
+     "note": "A4",
+     "cents": -15,
+     "beat_in_verse": 8.77
+    }
+   ],
+   "subharmonic_salience_ratio": 0.6,
+   "pyworld_median_midi": 63.83,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 48,
+   "verse": 4,
+   "segment": "ses",
+   "index_in_verse": 8,
+   "start_beats_from_verse_downbeat": 8.03
+  },
+  {
+   "text": "üü\"",
+   "start": 54.9,
+   "end": 55.1,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.0,
+   "frame_share_by_note": {
+    "A4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 54.925,
+     "dur": 0.17,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 9.12
+    }
+   ],
+   "subharmonic_salience_ratio": 0.6,
+   "pyworld_median_midi": 68.97,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 18,
+   "verse": 4,
+   "segment": "ses",
+   "index_in_verse": 9,
+   "start_beats_from_verse_downbeat": 9.08
+  },
+  {
+   "text": "diye",
+   "start": 55.44,
+   "end": 55.9,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 12.1,
+   "frame_share_by_note": {
+    "G4": 0.58,
+    "G3": 0.3,
+    "A4": 0.09
+   },
+   "note_runs": [
+    {
+     "start": 55.464,
+     "dur": 0.13,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 10.06
+    },
+    {
+     "start": 55.594,
+     "dur": 0.249,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 10.29
+    }
+   ],
+   "subharmonic_salience_ratio": 0.57,
+   "pyworld_median_midi": 67.06,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 31,
+   "verse": 4,
+   "segment": "diye",
+   "index_in_verse": 10,
+   "start_beats_from_verse_downbeat": 10.02
+  },
+  {
+   "text": "bağırır",
+   "start": 55.98,
+   "end": 56.44,
+   "median_midi": 64.95,
+   "median_note": "F4",
+   "median_cents": -5,
+   "median_hz": 349.1,
+   "iqr_semitones": 2.7,
+   "frame_share_by_note": {
+    "G4": 0.28,
+    "F4": 0.28,
+    "E4": 0.26
+   },
+   "note_runs": [
+    {
+     "start": 56.003,
+     "dur": 0.13,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 11.01
+    },
+    {
+     "start": 56.132,
+     "dur": 0.12,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 11.23
+    },
+    {
+     "start": 56.322,
+     "dur": 0.11,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 11.57
+    }
+   ],
+   "subharmonic_salience_ratio": 0.6,
+   "pyworld_median_midi": 64.94,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 44,
+   "verse": 4,
+   "segment": "diye",
+   "index_in_verse": 11,
+   "start_beats_from_verse_downbeat": 10.97
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 56.52,
+   "end": 57.56,
+   "median_midi": 66.85,
+   "median_note": "G4",
+   "median_cents": -15,
+   "median_hz": 389.6,
+   "iqr_semitones": 5.0,
+   "frame_share_by_note": {
+    "G4": 0.61,
+    "D4": 0.22,
+    "F#4": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 56.601,
+     "dur": 0.22,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 12.05
+    },
+    {
+     "start": 56.851,
+     "dur": 0.519,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 12.49
+    },
+    {
+     "start": 57.4,
+     "dur": 0.16,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 13.45
+    }
+   ],
+   "subharmonic_salience_ratio": 0.68,
+   "pyworld_median_midi": 66.87,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 92,
+   "verse": 4,
+   "segment": "L4",
+   "index_in_verse": 12,
+   "start_beats_from_verse_downbeat": 11.91
+  },
+  {
+   "text": "Ali",
+   "start": 57.7,
+   "end": 58.16,
+   "median_midi": 64.15,
+   "median_note": "E4",
+   "median_cents": 15,
+   "median_hz": 333.3,
+   "iqr_semitones": 1.0,
+   "frame_share_by_note": {
+    "F4": 0.49,
+    "E4": 0.44,
+    "E3": 0.05
+   },
+   "note_runs": [
+    {
+     "start": 57.729,
+     "dur": 0.21,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 14.03
+    },
+    {
+     "start": 57.938,
+     "dur": 0.22,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 14.39
+    }
+   ],
+   "subharmonic_salience_ratio": 0.56,
+   "pyworld_median_midi": 64.88,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 30,
+   "verse": 4,
+   "segment": "L4",
+   "index_in_verse": 13,
+   "start_beats_from_verse_downbeat": 13.98
+  },
+  {
+   "text": "Baba'nın.",
+   "start": 58.26,
+   "end": 58.78,
+   "median_midi": 62.25,
+   "median_note": "D4",
+   "median_cents": 25,
+   "median_hz": 298.7,
+   "iqr_semitones": 2.6,
+   "frame_share_by_note": {
+    "D4": 0.51,
+    "F4": 0.29,
+    "E4": 0.2
+   },
+   "note_runs": [
+    {
+     "start": 58.288,
+     "dur": 0.18,
+     "midi": 64.75,
+     "note": "F4",
+     "cents": -25,
+     "beat_in_verse": 15.01
+    },
+    {
+     "start": 58.527,
+     "dur": 0.249,
+     "midi": 62.05,
+     "note": "D4",
+     "cents": 5,
+     "beat_in_verse": 15.42
+    }
+   ],
+   "subharmonic_salience_ratio": 0.69,
+   "pyworld_median_midi": 63.28,
+   "pyworld_note": "D#4",
+   "pyworld_voiced_frames": 46,
+   "verse": 4,
+   "segment": "L4",
+   "index_in_verse": 14,
+   "start_beats_from_verse_downbeat": 14.96
+  },
+  {
+   "text": "Ali",
+   "start": 63.42,
+   "end": 63.92,
+   "median_midi": 62.05,
+   "median_note": "D4",
+   "median_cents": 5,
+   "median_hz": 295.2,
+   "iqr_semitones": 5.2,
+   "frame_share_by_note": {
+    "D4": 0.55,
+    "G4": 0.3,
+    "A4": 0.09
+   },
+   "note_runs": [
+    {
+     "start": 63.446,
+     "dur": 0.259,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 0.03
+    },
+    {
+     "start": 63.715,
+     "dur": 0.14,
+     "midi": 67.15,
+     "note": "G4",
+     "cents": 15,
+     "beat_in_verse": 0.5
+    }
+   ],
+   "subharmonic_salience_ratio": 0.7,
+   "pyworld_median_midi": 62.27,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 47,
+   "verse": 5,
+   "segment": "L1",
+   "index_in_verse": 0,
+   "start_beats_from_verse_downbeat": -0.01
+  },
+  {
+   "text": "Baba'nın",
+   "start": 63.98,
+   "end": 64.5,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.4,
+   "frame_share_by_note": {
+    "A4": 0.78,
+    "A3": 0.18,
+    "G#4": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 64.005,
+     "dur": 0.1,
+     "midi": 69.15,
+     "note": "A4",
+     "cents": 15,
+     "beat_in_verse": 1.01
+    },
+    {
+     "start": 64.134,
+     "dur": 0.279,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 1.24
+    },
+    {
+     "start": 64.414,
+     "dur": 0.08,
+     "midi": 57.05,
+     "note": "A3",
+     "cents": 5,
+     "beat_in_verse": 1.73
+    }
+   ],
+   "subharmonic_salience_ratio": 0.63,
+   "pyworld_median_midi": 68.09,
+   "pyworld_note": "G#4",
+   "pyworld_voiced_frames": 31,
+   "verse": 5,
+   "segment": "L1",
+   "index_in_verse": 1,
+   "start_beats_from_verse_downbeat": 0.97
+  },
+  {
+   "text": "bir",
+   "start": 64.56,
+   "end": 64.739,
+   "median_midi": 55.05,
+   "median_note": "G3",
+   "median_cents": 5,
+   "median_hz": 197.0,
+   "iqr_semitones": 6.0,
+   "frame_share_by_note": {
+    "G3": 0.67,
+    "G4": 0.27,
+    "C3": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 64.633,
+     "dur": 0.1,
+     "midi": 55.05,
+     "note": "G3",
+     "cents": 5,
+     "beat_in_verse": 2.11
+    }
+   ],
+   "subharmonic_salience_ratio": 0.23,
+   "pyworld_median_midi": 66.97,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 15,
+   "verse": 5,
+   "segment": "L1",
+   "index_in_verse": 2,
+   "start_beats_from_verse_downbeat": 1.98
+  },
+  {
+   "text": "çiftliği",
+   "start": 64.84,
+   "end": 65.34,
+   "median_midi": 65.15,
+   "median_note": "F4",
+   "median_cents": 15,
+   "median_hz": 353.1,
+   "iqr_semitones": 11.8,
+   "frame_share_by_note": {
+    "G3": 0.3,
+    "G4": 0.23,
+    "F4": 0.15
+   },
+   "note_runs": [
+    {
+     "start": 65.032,
+     "dur": 0.12,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.81
+    },
+    {
+     "start": 65.152,
+     "dur": 0.09,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 3.02
+    }
+   ],
+   "subharmonic_salience_ratio": 0.5,
+   "pyworld_median_midi": 66.89,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 48,
+   "verse": 5,
+   "segment": "L1",
+   "index_in_verse": 3,
+   "start_beats_from_verse_downbeat": 2.47
+  },
+  {
+   "text": "var,",
+   "start": 65.42,
+   "end": 65.6,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "E4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 65.441,
+     "dur": 0.15,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 3.52
+    }
+   ],
+   "subharmonic_salience_ratio": 0.48,
+   "pyworld_median_midi": 63.91,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 15,
+   "verse": 5,
+   "segment": "L1",
+   "index_in_verse": 4,
+   "start_beats_from_verse_downbeat": 3.49
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 65.7,
+   "end": 66.72,
+   "median_midi": 66.9,
+   "median_note": "G4",
+   "median_cents": -10,
+   "median_hz": 390.7,
+   "iqr_semitones": 0.6,
+   "frame_share_by_note": {
+    "G4": 0.72,
+    "D4": 0.12,
+    "G3": 0.05
+   },
+   "note_runs": [
+    {
+     "start": 65.751,
+     "dur": 0.08,
+     "midi": 62.05,
+     "note": "D4",
+     "cents": 5,
+     "beat_in_verse": 4.07
+    },
+    {
+     "start": 65.94,
+     "dur": 0.07,
+     "midi": 65.45,
+     "note": "F4",
+     "cents": 45,
+     "beat_in_verse": 4.4
+    },
+    {
+     "start": 66.01,
+     "dur": 0.708,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 4.52
+    }
+   ],
+   "subharmonic_salience_ratio": 0.73,
+   "pyworld_median_midi": 66.91,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 81,
+   "verse": 5,
+   "segment": "L2",
+   "index_in_verse": 5,
+   "start_beats_from_verse_downbeat": 3.98
+  },
+  {
+   "text": "ördekleri",
+   "start": 66.9,
+   "end": 67.66,
+   "median_midi": 64.15,
+   "median_note": "E4",
+   "median_cents": 15,
+   "median_hz": 333.3,
+   "iqr_semitones": 1.2,
+   "frame_share_by_note": {
+    "F4": 0.47,
+    "E4": 0.32,
+    "A3": 0.08
+   },
+   "note_runs": [
+    {
+     "start": 66.928,
+     "dur": 0.17,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 6.13
+    },
+    {
+     "start": 67.127,
+     "dur": 0.18,
+     "midi": 64.15,
+     "note": "E4",
+     "cents": 15,
+     "beat_in_verse": 6.48
+    },
+    {
+     "start": 67.407,
+     "dur": 0.15,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 6.97
+    },
+    {
+     "start": 67.556,
+     "dur": 0.1,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 7.23
+    }
+   ],
+   "subharmonic_salience_ratio": 0.65,
+   "pyworld_median_midi": 64.33,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 67,
+   "verse": 5,
+   "segment": "L2",
+   "index_in_verse": 6,
+   "start_beats_from_verse_downbeat": 6.08
+  },
+  {
+   "text": "var.",
+   "start": 67.72,
+   "end": 67.96,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.0,
+   "frame_share_by_note": {
+    "D4": 0.95,
+    "C#4": 0.05
+   },
+   "note_runs": [
+    {
+     "start": 67.746,
+     "dur": 0.2,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 7.56
+    }
+   ],
+   "subharmonic_salience_ratio": 0.52,
+   "pyworld_median_midi": 61.95,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 21,
+   "verse": 5,
+   "segment": "L2",
+   "index_in_verse": 7,
+   "start_beats_from_verse_downbeat": 7.51
+  },
+  {
+   "text": "\"Vak,",
+   "start": 67.98,
+   "end": 68.42,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.3,
+   "frame_share_by_note": {
+    "D4": 0.8,
+    "D3": 0.17,
+    "D#4": 0.02
+   },
+   "note_runs": [
+    {
+     "start": 68.015,
+     "dur": 0.339,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 8.03
+    }
+   ],
+   "subharmonic_salience_ratio": 0.53,
+   "pyworld_median_midi": 61.97,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 42,
+   "verse": 5,
+   "segment": "ses",
+   "index_in_verse": 8,
+   "start_beats_from_verse_downbeat": 7.97
+  },
+  {
+   "text": "vak\"",
+   "start": 68.58,
+   "end": 69.04,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.15,
+   "frame_share_by_note": {
+    "A4": 0.77,
+    "A3": 0.12,
+    "D4": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 68.604,
+     "dur": 0.299,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 9.06
+    }
+   ],
+   "subharmonic_salience_ratio": 0.53,
+   "pyworld_median_midi": 68.84,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 40,
+   "verse": 5,
+   "segment": "ses",
+   "index_in_verse": 9,
+   "start_beats_from_verse_downbeat": 9.02
+  },
+  {
+   "text": "diye",
+   "start": 69.16,
+   "end": 69.62,
+   "median_midi": 67.05,
+   "median_note": "G4",
+   "median_cents": 5,
+   "median_hz": 394.1,
+   "iqr_semitones": 11.95,
+   "frame_share_by_note": {
+    "G4": 0.49,
+    "G3": 0.35,
+    "A4": 0.12
+   },
+   "note_runs": [
+    {
+     "start": 69.183,
+     "dur": 0.15,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 10.07
+    },
+    {
+     "start": 69.332,
+     "dur": 0.21,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 10.33
+    }
+   ],
+   "subharmonic_salience_ratio": 0.53,
+   "pyworld_median_midi": 67.01,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 31,
+   "verse": 5,
+   "segment": "diye",
+   "index_in_verse": 10,
+   "start_beats_from_verse_downbeat": 10.03
+  },
+  {
+   "text": "bağırır",
+   "start": 69.68,
+   "end": 70.16,
+   "median_midi": 64.95,
+   "median_note": "F4",
+   "median_cents": -5,
+   "median_hz": 349.1,
+   "iqr_semitones": 2.7,
+   "frame_share_by_note": {
+    "G4": 0.31,
+    "F4": 0.29,
+    "E4": 0.29
+   },
+   "note_runs": [
+    {
+     "start": 69.702,
+     "dur": 0.14,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 10.98
+    },
+    {
+     "start": 69.851,
+     "dur": 0.14,
+     "midi": 65.0,
+     "note": "F4",
+     "cents": 0,
+     "beat_in_verse": 11.24
+    },
+    {
+     "start": 69.991,
+     "dur": 0.16,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 11.49
+    }
+   ],
+   "subharmonic_salience_ratio": 0.68,
+   "pyworld_median_midi": 64.99,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 45,
+   "verse": 5,
+   "segment": "diye",
+   "index_in_verse": 11,
+   "start_beats_from_verse_downbeat": 10.94
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 70.26,
+   "end": 71.3,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 4.9,
+   "frame_share_by_note": {
+    "G4": 0.68,
+    "D4": 0.1,
+    "D3": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 70.32,
+     "dur": 0.07,
+     "midi": 62.05,
+     "note": "D4",
+     "cents": 5,
+     "beat_in_verse": 12.06
+    },
+    {
+     "start": 70.58,
+     "dur": 0.718,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 12.52
+    }
+   ],
+   "subharmonic_salience_ratio": 0.68,
+   "pyworld_median_midi": 66.89,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 78,
+   "verse": 5,
+   "segment": "L4",
+   "index_in_verse": 12,
+   "start_beats_from_verse_downbeat": 11.96
+  },
+  {
+   "text": "Ali",
+   "start": 71.48,
+   "end": 71.9,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 1.1,
+   "frame_share_by_note": {
+    "E4": 0.56,
+    "F4": 0.38,
+    "E3": 0.05
+   },
+   "note_runs": [
+    {
+     "start": 71.507,
+     "dur": 0.15,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 14.14
+    },
+    {
+     "start": 71.657,
+     "dur": 0.239,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 14.4
+    }
+   ],
+   "subharmonic_salience_ratio": 0.61,
+   "pyworld_median_midi": 64.24,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 32,
+   "verse": 5,
+   "segment": "L4",
+   "index_in_verse": 13,
+   "start_beats_from_verse_downbeat": 14.09
+  },
+  {
+   "text": "Baba'nın.",
+   "start": 71.98,
+   "end": 72.54,
+   "median_midi": 62.45,
+   "median_note": "D4",
+   "median_cents": 45,
+   "median_hz": 302.1,
+   "iqr_semitones": 2.5,
+   "frame_share_by_note": {
+    "D4": 0.43,
+    "F4": 0.26,
+    "E4": 0.21
+   },
+   "note_runs": [
+    {
+     "start": 72.006,
+     "dur": 0.17,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 15.01
+    },
+    {
+     "start": 72.176,
+     "dur": 0.08,
+     "midi": 63.85,
+     "note": "E4",
+     "cents": -15,
+     "beat_in_verse": 15.31
+    },
+    {
+     "start": 72.256,
+     "dur": 0.249,
+     "midi": 62.05,
+     "note": "D4",
+     "cents": 5,
+     "beat_in_verse": 15.45
+    }
+   ],
+   "subharmonic_salience_ratio": 0.68,
+   "pyworld_median_midi": 63.64,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 43,
+   "verse": 5,
+   "segment": "L4",
+   "index_in_verse": 14,
+   "start_beats_from_verse_downbeat": 14.97
+  },
+  {
+   "text": "Ali",
+   "start": 77.16,
+   "end": 77.64,
+   "median_midi": 62.25,
+   "median_note": "D4",
+   "median_cents": 25,
+   "median_hz": 298.7,
+   "iqr_semitones": 5.3,
+   "frame_share_by_note": {
+    "D4": 0.51,
+    "G4": 0.22,
+    "F#4": 0.11
+   },
+   "note_runs": [
+    {
+     "start": 77.185,
+     "dur": 0.229,
+     "midi": 61.85,
+     "note": "D4",
+     "cents": -15,
+     "beat_in_verse": 0.08
+    },
+    {
+     "start": 77.414,
+     "dur": 0.07,
+     "midi": 66.25,
+     "note": "F#4",
+     "cents": 25,
+     "beat_in_verse": 0.48
+    },
+    {
+     "start": 77.484,
+     "dur": 0.09,
+     "midi": 67.15,
+     "note": "G4",
+     "cents": 15,
+     "beat_in_verse": 0.6
+    }
+   ],
+   "subharmonic_salience_ratio": 0.61,
+   "pyworld_median_midi": 62.94,
+   "pyworld_note": "D#4",
+   "pyworld_voiced_frames": 46,
+   "verse": 6,
+   "segment": "L1",
+   "index_in_verse": 0,
+   "start_beats_from_verse_downbeat": 0.03
+  },
+  {
+   "text": "Baba'nın",
+   "start": 77.7,
+   "end": 78.2,
+   "median_midi": 69.05,
+   "median_note": "A4",
+   "median_cents": 5,
+   "median_hz": 442.3,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 0.87,
+    "A3": 0.09,
+    "G#4": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 77.723,
+     "dur": 0.399,
+     "midi": 69.05,
+     "note": "A4",
+     "cents": 5,
+     "beat_in_verse": 1.02
+    }
+   ],
+   "subharmonic_salience_ratio": 0.62,
+   "pyworld_median_midi": 68.12,
+   "pyworld_note": "G#4",
+   "pyworld_voiced_frames": 48,
+   "verse": 6,
+   "segment": "L1",
+   "index_in_verse": 1,
+   "start_beats_from_verse_downbeat": 0.98
+  },
+  {
+   "text": "bir",
+   "start": 78.26,
+   "end": 78.48,
+   "median_midi": 54.95,
+   "median_note": "G3",
+   "median_cents": -5,
+   "median_hz": 195.9,
+   "iqr_semitones": 5.7,
+   "frame_share_by_note": {
+    "G3": 0.68,
+    "G4": 0.16,
+    "F#4": 0.11
+   },
+   "note_runs": [
+    {
+     "start": 78.342,
+     "dur": 0.13,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.1
+    }
+   ],
+   "subharmonic_salience_ratio": 0.2,
+   "pyworld_median_midi": null,
+   "pyworld_note": null,
+   "pyworld_voiced_frames": 0,
+   "verse": 6,
+   "segment": "L1",
+   "index_in_verse": 2,
+   "start_beats_from_verse_downbeat": 1.96
+  },
+  {
+   "text": "çiftliği",
+   "start": 78.56,
+   "end": 79.08,
+   "median_midi": 65.05,
+   "median_note": "F4",
+   "median_cents": 5,
+   "median_hz": 351.1,
+   "iqr_semitones": 11.9,
+   "frame_share_by_note": {
+    "G3": 0.24,
+    "G4": 0.24,
+    "F4": 0.18
+   },
+   "note_runs": [
+    {
+     "start": 78.581,
+     "dur": 0.07,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.52
+    },
+    {
+     "start": 78.781,
+     "dur": 0.08,
+     "midi": 55.05,
+     "note": "G3",
+     "cents": 5,
+     "beat_in_verse": 2.87
+    },
+    {
+     "start": 78.861,
+     "dur": 0.11,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 3.01
+    },
+    {
+     "start": 78.971,
+     "dur": 0.1,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 3.2
+    }
+   ],
+   "subharmonic_salience_ratio": 0.51,
+   "pyworld_median_midi": 66.87,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 48,
+   "verse": 6,
+   "segment": "L1",
+   "index_in_verse": 3,
+   "start_beats_from_verse_downbeat": 2.48
+  },
+  {
+   "text": "var,",
+   "start": 79.16,
+   "end": 79.32,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "E4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 79.18,
+     "dur": 0.14,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 3.57
+    }
+   ],
+   "subharmonic_salience_ratio": 0.44,
+   "pyworld_median_midi": 63.9,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 13,
+   "verse": 6,
+   "segment": "L1",
+   "index_in_verse": 4,
+   "start_beats_from_verse_downbeat": 3.53
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 79.42,
+   "end": 80.44,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 4.9,
+   "frame_share_by_note": {
+    "G4": 0.7,
+    "D4": 0.24,
+    "G3": 0.03
+   },
+   "note_runs": [
+    {
+     "start": 79.449,
+     "dur": 0.239,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 4.04
+    },
+    {
+     "start": 79.719,
+     "dur": 0.269,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 4.51
+    },
+    {
+     "start": 80.018,
+     "dur": 0.419,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 5.04
+    }
+   ],
+   "subharmonic_salience_ratio": 0.74,
+   "pyworld_median_midi": 66.91,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 77,
+   "verse": 6,
+   "segment": "L2",
+   "index_in_verse": 5,
+   "start_beats_from_verse_downbeat": 3.99
+  },
+  {
+   "text": "köpekleri",
+   "start": 80.54,
+   "end": 81.38,
+   "median_midi": 64.75,
+   "median_note": "F4",
+   "median_cents": -25,
+   "median_hz": 345.1,
+   "iqr_semitones": 1.0,
+   "frame_share_by_note": {
+    "F4": 0.51,
+    "E4": 0.47,
+    "F3": 0.01
+   },
+   "note_runs": [
+    {
+     "start": 80.577,
+     "dur": 0.269,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.01
+    },
+    {
+     "start": 80.846,
+     "dur": 0.279,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 6.48
+    },
+    {
+     "start": 81.126,
+     "dur": 0.14,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 6.97
+    },
+    {
+     "start": 81.265,
+     "dur": 0.11,
+     "midi": 64.15,
+     "note": "E4",
+     "cents": 15,
+     "beat_in_verse": 7.22
+    }
+   ],
+   "subharmonic_salience_ratio": 0.63,
+   "pyworld_median_midi": 64.23,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 81,
+   "verse": 6,
+   "segment": "L2",
+   "index_in_verse": 6,
+   "start_beats_from_verse_downbeat": 5.95
+  },
+  {
+   "text": "var.",
+   "start": 81.44,
+   "end": 81.66,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "D4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 81.465,
+     "dur": 0.19,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 7.57
+    }
+   ],
+   "subharmonic_salience_ratio": 0.43,
+   "pyworld_median_midi": 61.95,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 19,
+   "verse": 6,
+   "segment": "L2",
+   "index_in_verse": 7,
+   "start_beats_from_verse_downbeat": 7.52
+  },
+  {
+   "text": "\"Hav,",
+   "start": 81.7,
+   "end": 82.14,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.3,
+   "frame_share_by_note": {
+    "D4": 0.8,
+    "D3": 0.12,
+    "C#3": 0.02
+   },
+   "note_runs": [
+    {
+     "start": 81.734,
+     "dur": 0.349,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 8.04
+    }
+   ],
+   "subharmonic_salience_ratio": 0.47,
+   "pyworld_median_midi": 62.08,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 42,
+   "verse": 6,
+   "segment": "ses",
+   "index_in_verse": 8,
+   "start_beats_from_verse_downbeat": 7.98
+  },
+  {
+   "text": "hav\"",
+   "start": 82.26,
+   "end": 82.7,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 82.283,
+     "dur": 0.409,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 9.0
+    }
+   ],
+   "subharmonic_salience_ratio": 0.57,
+   "pyworld_median_midi": 68.97,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 40,
+   "verse": 6,
+   "segment": "ses",
+   "index_in_verse": 9,
+   "start_beats_from_verse_downbeat": 8.96
+  },
+  {
+   "text": "diye",
+   "start": 82.86,
+   "end": 83.34,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 0.2,
+   "frame_share_by_note": {
+    "G4": 0.78,
+    "A4": 0.13,
+    "G3": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 82.882,
+     "dur": 0.369,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 10.05
+    },
+    {
+     "start": 83.251,
+     "dur": 0.08,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 10.69
+    }
+   ],
+   "subharmonic_salience_ratio": 0.76,
+   "pyworld_median_midi": 67.08,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 31,
+   "verse": 6,
+   "segment": "diye",
+   "index_in_verse": 10,
+   "start_beats_from_verse_downbeat": 10.01
+  },
+  {
+   "text": "bağırır",
+   "start": 83.4,
+   "end": 83.88,
+   "median_midi": 64.9,
+   "median_note": "F4",
+   "median_cents": -10,
+   "median_hz": 348.1,
+   "iqr_semitones": 2.5,
+   "frame_share_by_note": {
+    "E4": 0.41,
+    "F4": 0.26,
+    "G4": 0.24
+   },
+   "note_runs": [
+    {
+     "start": 83.42,
+     "dur": 0.13,
+     "midi": 66.85,
+     "note": "G4",
+     "cents": -15,
+     "beat_in_verse": 10.99
+    },
+    {
+     "start": 83.55,
+     "dur": 0.14,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 11.22
+    },
+    {
+     "start": 83.69,
+     "dur": 0.19,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 11.46
+    }
+   ],
+   "subharmonic_salience_ratio": 0.58,
+   "pyworld_median_midi": 64.88,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 45,
+   "verse": 6,
+   "segment": "diye",
+   "index_in_verse": 11,
+   "start_beats_from_verse_downbeat": 10.95
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 83.98,
+   "end": 85.02,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 1.0,
+   "frame_share_by_note": {
+    "G4": 0.72,
+    "D4": 0.2,
+    "F#4": 0.05
+   },
+   "note_runs": [
+    {
+     "start": 84.029,
+     "dur": 0.21,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 12.05
+    },
+    {
+     "start": 84.268,
+     "dur": 0.748,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 12.47
+    }
+   ],
+   "subharmonic_salience_ratio": 0.7,
+   "pyworld_median_midi": 66.85,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 100,
+   "verse": 6,
+   "segment": "L4",
+   "index_in_verse": 12,
+   "start_beats_from_verse_downbeat": 11.97
+  },
+  {
+   "text": "Ali",
+   "start": 85.2,
+   "end": 85.64,
+   "median_midi": 64.05,
+   "median_note": "E4",
+   "median_cents": 5,
+   "median_hz": 331.4,
+   "iqr_semitones": 0.9,
+   "frame_share_by_note": {
+    "E4": 0.63,
+    "F4": 0.37
+   },
+   "note_runs": [
+    {
+     "start": 85.226,
+     "dur": 0.17,
+     "midi": 64.85,
+     "note": "F4",
+     "cents": -15,
+     "beat_in_verse": 14.15
+    },
+    {
+     "start": 85.396,
+     "dur": 0.239,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 14.45
+    }
+   ],
+   "subharmonic_salience_ratio": 0.56,
+   "pyworld_median_midi": 64.01,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 42,
+   "verse": 6,
+   "segment": "L4",
+   "index_in_verse": 13,
+   "start_beats_from_verse_downbeat": 14.1
+  },
+  {
+   "text": "Baba'nın.",
+   "start": 85.7,
+   "end": 86.24,
+   "median_midi": 63.85,
+   "median_note": "E4",
+   "median_cents": -15,
+   "median_hz": 327.6,
+   "iqr_semitones": 2.8,
+   "frame_share_by_note": {
+    "D4": 0.39,
+    "F4": 0.27,
+    "E4": 0.25
+   },
+   "note_runs": [
+    {
+     "start": 85.725,
+     "dur": 0.14,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 15.02
+    },
+    {
+     "start": 85.865,
+     "dur": 0.13,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 15.27
+    },
+    {
+     "start": 85.995,
+     "dur": 0.2,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 15.5
+    }
+   ],
+   "subharmonic_salience_ratio": 0.57,
+   "pyworld_median_midi": 63.19,
+   "pyworld_note": "D#4",
+   "pyworld_voiced_frames": 51,
+   "verse": 6,
+   "segment": "L4",
+   "index_in_verse": 14,
+   "start_beats_from_verse_downbeat": 14.98
+  },
+  {
+   "text": "Ali",
+   "start": 90.88,
+   "end": 91.36,
+   "median_midi": 62.15,
+   "median_note": "D4",
+   "median_cents": 15,
+   "median_hz": 296.9,
+   "iqr_semitones": 5.4,
+   "frame_share_by_note": {
+    "D4": 0.53,
+    "G4": 0.27,
+    "A4": 0.09
+   },
+   "note_runs": [
+    {
+     "start": 90.903,
+     "dur": 0.239,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 0.08
+    },
+    {
+     "start": 91.143,
+     "dur": 0.16,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 0.5
+    }
+   ],
+   "subharmonic_salience_ratio": 0.67,
+   "pyworld_median_midi": 62.13,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 44,
+   "verse": 7,
+   "segment": "L1",
+   "index_in_verse": 0,
+   "start_beats_from_verse_downbeat": 0.04
+  },
+  {
+   "text": "Baba'nın",
+   "start": 91.4,
+   "end": 91.92,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 0.94,
+    "A3": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 91.422,
+     "dur": 0.459,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 0.99
+    }
+   ],
+   "subharmonic_salience_ratio": 0.65,
+   "pyworld_median_midi": 68.9,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 32,
+   "verse": 7,
+   "segment": "L1",
+   "index_in_verse": 1,
+   "start_beats_from_verse_downbeat": 0.95
+  },
+  {
+   "text": "bir",
+   "start": 91.98,
+   "end": 92.18,
+   "median_midi": 66.45,
+   "median_note": "F#4",
+   "median_cents": 45,
+   "median_hz": 380.7,
+   "iqr_semitones": 12.0,
+   "frame_share_by_note": {
+    "G4": 0.47,
+    "G3": 0.41,
+    "F#4": 0.12
+   },
+   "note_runs": [
+    {
+     "start": 92.061,
+     "dur": 0.07,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.11
+    }
+   ],
+   "subharmonic_salience_ratio": 0.51,
+   "pyworld_median_midi": 66.82,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 18,
+   "verse": 7,
+   "segment": "L1",
+   "index_in_verse": 2,
+   "start_beats_from_verse_downbeat": 1.97
+  },
+  {
+   "text": "çiftliği",
+   "start": 92.26,
+   "end": 92.8,
+   "median_midi": 67.05,
+   "median_note": "G4",
+   "median_cents": 5,
+   "median_hz": 394.1,
+   "iqr_semitones": 2.77,
+   "frame_share_by_note": {
+    "G4": 0.25,
+    "G#4": 0.19,
+    "A4": 0.15
+   },
+   "note_runs": [
+    {
+     "start": 92.28,
+     "dur": 0.1,
+     "midi": 67.55,
+     "note": "G#4",
+     "cents": -45,
+     "beat_in_verse": 2.49
+    },
+    {
+     "start": 92.38,
+     "dur": 0.12,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 2.67
+    },
+    {
+     "start": 92.5,
+     "dur": 0.08,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 2.88
+    },
+    {
+     "start": 92.58,
+     "dur": 0.12,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 3.02
+    },
+    {
+     "start": 92.719,
+     "dur": 0.08,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 3.26
+    }
+   ],
+   "subharmonic_salience_ratio": 0.65,
+   "pyworld_median_midi": 66.68,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 28,
+   "verse": 7,
+   "segment": "L1",
+   "index_in_verse": 3,
+   "start_beats_from_verse_downbeat": 2.46
+  },
+  {
+   "text": "var,",
+   "start": 92.86,
+   "end": 93.04,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "E4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 92.889,
+     "dur": 0.15,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 3.56
+    }
+   ],
+   "subharmonic_salience_ratio": 0.5,
+   "pyworld_median_midi": 63.93,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 16,
+   "verse": 7,
+   "segment": "L1",
+   "index_in_verse": 4,
+   "start_beats_from_verse_downbeat": 3.51
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 93.12,
+   "end": 94.14,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 2.4,
+   "frame_share_by_note": {
+    "G4": 0.7,
+    "D4": 0.23,
+    "F4": 0.04
+   },
+   "note_runs": [
+    {
+     "start": 93.158,
+     "dur": 0.229,
+     "midi": 62.05,
+     "note": "D4",
+     "cents": 5,
+     "beat_in_verse": 4.03
+    },
+    {
+     "start": 93.438,
+     "dur": 0.698,
+     "midi": 66.95,
+     "note": "G4",
+     "cents": -5,
+     "beat_in_verse": 4.52
+    }
+   ],
+   "subharmonic_salience_ratio": 0.69,
+   "pyworld_median_midi": 66.89,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 100,
+   "verse": 7,
+   "segment": "L2",
+   "index_in_verse": 5,
+   "start_beats_from_verse_downbeat": 3.96
+  },
+  {
+   "text": "kedisi",
+   "start": 94.26,
+   "end": 94.98,
+   "median_midi": 64.95,
+   "median_note": "F4",
+   "median_cents": -5,
+   "median_hz": 349.1,
+   "iqr_semitones": 1.0,
+   "frame_share_by_note": {
+    "F4": 0.52,
+    "E4": 0.41,
+    "F3": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 94.296,
+     "dur": 0.279,
+     "midi": 65.05,
+     "note": "F4",
+     "cents": 5,
+     "beat_in_verse": 6.02
+    },
+    {
+     "start": 94.575,
+     "dur": 0.259,
+     "midi": 64.05,
+     "note": "E4",
+     "cents": 5,
+     "beat_in_verse": 6.51
+    },
+    {
+     "start": 94.874,
+     "dur": 0.09,
+     "midi": 65.15,
+     "note": "F4",
+     "cents": 15,
+     "beat_in_verse": 7.03
+    }
+   ],
+   "subharmonic_salience_ratio": 0.66,
+   "pyworld_median_midi": 64.92,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 70,
+   "verse": 7,
+   "segment": "L2",
+   "index_in_verse": 6,
+   "start_beats_from_verse_downbeat": 5.96
+  },
+  {
+   "text": "var.",
+   "start": 95.12,
+   "end": 95.38,
+   "median_midi": 61.95,
+   "median_note": "D4",
+   "median_cents": -5,
+   "median_hz": 293.5,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "D4": 1.0
+   },
+   "note_runs": [
+    {
+     "start": 95.144,
+     "dur": 0.229,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 7.51
+    }
+   ],
+   "subharmonic_salience_ratio": 0.57,
+   "pyworld_median_midi": 61.92,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 23,
+   "verse": 7,
+   "segment": "L2",
+   "index_in_verse": 7,
+   "start_beats_from_verse_downbeat": 7.46
+  },
+  {
+   "text": "\"Miyav,",
+   "start": 95.4,
+   "end": 95.92,
+   "median_midi": 62.25,
+   "median_note": "D4",
+   "median_cents": 25,
+   "median_hz": 298.7,
+   "iqr_semitones": 4.8,
+   "frame_share_by_note": {
+    "D4": 0.51,
+    "G4": 0.2,
+    "E4": 0.06
+   },
+   "note_runs": [
+    {
+     "start": 95.443,
+     "dur": 0.249,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 8.03
+    },
+    {
+     "start": 95.782,
+     "dur": 0.13,
+     "midi": 67.25,
+     "note": "G4",
+     "cents": 25,
+     "beat_in_verse": 8.62
+    }
+   ],
+   "subharmonic_salience_ratio": 0.62,
+   "pyworld_median_midi": 62.25,
+   "pyworld_note": "D4",
+   "pyworld_voiced_frames": 50,
+   "verse": 7,
+   "segment": "ses",
+   "index_in_verse": 8,
+   "start_beats_from_verse_downbeat": 7.95
+  },
+  {
+   "text": "miyav\"",
+   "start": 96.04,
+   "end": 96.5,
+   "median_midi": 68.95,
+   "median_note": "A4",
+   "median_cents": -5,
+   "median_hz": 439.8,
+   "iqr_semitones": 0.1,
+   "frame_share_by_note": {
+    "A4": 0.93,
+    "A3": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 96.062,
+     "dur": 0.399,
+     "midi": 68.95,
+     "note": "A4",
+     "cents": -5,
+     "beat_in_verse": 9.11
+    }
+   ],
+   "subharmonic_salience_ratio": 0.69,
+   "pyworld_median_midi": 68.86,
+   "pyworld_note": "A4",
+   "pyworld_voiced_frames": 44,
+   "verse": 7,
+   "segment": "ses",
+   "index_in_verse": 9,
+   "start_beats_from_verse_downbeat": 9.07
+  },
+  {
+   "text": "diye",
+   "start": 96.6,
+   "end": 96.96,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 12.1,
+   "frame_share_by_note": {
+    "G4": 0.71,
+    "G3": 0.29
+   },
+   "note_runs": [
+    {
+     "start": 96.62,
+     "dur": 0.1,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 10.09
+    },
+    {
+     "start": 96.72,
+     "dur": 0.239,
+     "midi": 67.0,
+     "note": "G4",
+     "cents": 0,
+     "beat_in_verse": 10.26
+    }
+   ],
+   "subharmonic_salience_ratio": 0.62,
+   "pyworld_median_midi": 67.0,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 21,
+   "verse": 7,
+   "segment": "diye",
+   "index_in_verse": 10,
+   "start_beats_from_verse_downbeat": 10.05
+  },
+  {
+   "text": "bağırır",
+   "start": 97.12,
+   "end": 97.6,
+   "median_midi": 64.85,
+   "median_note": "F4",
+   "median_cents": -15,
+   "median_hz": 347.1,
+   "iqr_semitones": 2.7,
+   "frame_share_by_note": {
+    "E4": 0.38,
+    "F4": 0.33,
+    "G4": 0.27
+   },
+   "note_runs": [
+    {
+     "start": 97.149,
+     "dur": 0.12,
+     "midi": 67.0,
+     "note": "G4",
+     "cents": 0,
+     "beat_in_verse": 11.02
+    },
+    {
+     "start": 97.269,
+     "dur": 0.16,
+     "midi": 64.85,
+     "note": "F4",
+     "cents": -15,
+     "beat_in_verse": 11.23
+    },
+    {
+     "start": 97.429,
+     "dur": 0.17,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 11.51
+    }
+   ],
+   "subharmonic_salience_ratio": 0.64,
+   "pyworld_median_midi": 64.82,
+   "pyworld_note": "F4",
+   "pyworld_voiced_frames": 45,
+   "verse": 7,
+   "segment": "diye",
+   "index_in_verse": 11,
+   "start_beats_from_verse_downbeat": 10.96
+  },
+  {
+   "text": "çiftliğinde",
+   "start": 97.68,
+   "end": 98.74,
+   "median_midi": 66.95,
+   "median_note": "G4",
+   "median_cents": -5,
+   "median_hz": 391.8,
+   "iqr_semitones": 5.1,
+   "frame_share_by_note": {
+    "G4": 0.64,
+    "D4": 0.22,
+    "G3": 0.07
+   },
+   "note_runs": [
+    {
+     "start": 97.738,
+     "dur": 0.229,
+     "midi": 61.95,
+     "note": "D4",
+     "cents": -5,
+     "beat_in_verse": 12.05
+    },
+    {
+     "start": 98.007,
+     "dur": 0.17,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 12.52
+    },
+    {
+     "start": 98.177,
+     "dur": 0.07,
+     "midi": 54.95,
+     "note": "G3",
+     "cents": -5,
+     "beat_in_verse": 12.81
+    },
+    {
+     "start": 98.247,
+     "dur": 0.489,
+     "midi": 67.05,
+     "note": "G4",
+     "cents": 5,
+     "beat_in_verse": 12.94
+    }
+   ],
+   "subharmonic_salience_ratio": 0.66,
+   "pyworld_median_midi": 66.84,
+   "pyworld_note": "G4",
+   "pyworld_voiced_frames": 82,
+   "verse": 7,
+   "segment": "L4",
+   "index_in_verse": 12,
+   "start_beats_from_verse_downbeat": 11.94
+  },
+  {
+   "text": "Ali",
+   "start": 98.92,
+   "end": 99.34,
+   "median_midi": 64.05,
+   "median_note": "E4",
+   "median_cents": 5,
+   "median_hz": 331.4,
+   "iqr_semitones": 0.95,
+   "frame_share_by_note": {
+    "E4": 0.64,
+    "F4": 0.36
+   },
+   "note_runs": [
+    {
+     "start": 98.945,
+     "dur": 0.15,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 14.16
+    },
+    {
+     "start": 99.095,
+     "dur": 0.239,
+     "midi": 63.95,
+     "note": "E4",
+     "cents": -5,
+     "beat_in_verse": 14.42
+    }
+   ],
+   "subharmonic_salience_ratio": 0.6,
+   "pyworld_median_midi": 64.01,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 40,
+   "verse": 7,
+   "segment": "L4",
+   "index_in_verse": 13,
+   "start_beats_from_verse_downbeat": 14.11
+  },
+  {
+   "text": "Baba'nın.",
+   "start": 99.42,
+   "end": 99.96,
+   "median_midi": 63.95,
+   "median_note": "E4",
+   "median_cents": -5,
+   "median_hz": 329.5,
+   "iqr_semitones": 2.5,
+   "frame_share_by_note": {
+    "D4": 0.39,
+    "E4": 0.35,
+    "F4": 0.25
+   },
+   "note_runs": [
+    {
+     "start": 99.444,
+     "dur": 0.13,
+     "midi": 64.95,
+     "note": "F4",
+     "cents": -5,
+     "beat_in_verse": 15.03
+    },
+    {
+     "start": 99.574,
+     "dur": 0.11,
+     "midi": 64.05,
+     "note": "E4",
+     "cents": 5,
+     "beat_in_verse": 15.26
+    },
+    {
+     "start": 99.683,
+     "dur": 0.17,
+     "midi": 62.05,
+     "note": "D4",
+     "cents": 5,
+     "beat_in_verse": 15.45
+    }
+   ],
+   "subharmonic_salience_ratio": 0.63,
+   "pyworld_median_midi": 63.96,
+   "pyworld_note": "E4",
+   "pyworld_voiced_frames": 38,
+   "verse": 7,
+   "segment": "L4",
+   "index_in_verse": 14,
+   "start_beats_from_verse_downbeat": 14.99
+  }
+ ],
+ "consensus_per_word_index": [
+  {
+   "index": 0,
+   "segment": "L1",
+   "text_verse1": "Ali",
+   "median_midi": 62.15,
+   "note": "D4",
+   "per_verse_notes": [
+    "D4",
+    "D4",
+    "D4",
+    "D4",
+    "D4",
+    "D4",
+    "D4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 1,
+   "segment": "L1",
+   "text_verse1": "Baba'nın",
+   "median_midi": 68.95,
+   "note": "A4",
+   "per_verse_notes": [
+    "A4",
+    "A4",
+    "A4",
+    "A4",
+    "A4",
+    "A4",
+    "A4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 2,
+   "segment": "L1",
+   "text_verse1": "bir",
+   "median_midi": 55.05,
+   "note": "G3",
+   "per_verse_notes": [
+    "G3",
+    "G3",
+    "G3",
+    "G3",
+    "G3",
+    "G3",
+    "F#4"
+   ],
+   "agree": 6
+  },
+  {
+   "index": 3,
+   "segment": "L1",
+   "text_verse1": "çiftliği",
+   "median_midi": 65.15,
+   "note": "F4",
+   "per_verse_notes": [
+    "F4",
+    "F4",
+    "F#4",
+    "F4",
+    "F4",
+    "F4",
+    "G4"
+   ],
+   "agree": 5
+  },
+  {
+   "index": 4,
+   "segment": "L1",
+   "text_verse1": "var,",
+   "median_midi": 63.95,
+   "note": "E4",
+   "per_verse_notes": [
+    "E4",
+    "E4",
+    "E4",
+    "E4",
+    "E4",
+    "E4",
+    "E4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 5,
+   "segment": "L2",
+   "text_verse1": "çiftliğinde",
+   "median_midi": 66.95,
+   "note": "G4",
+   "per_verse_notes": [
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 6,
+   "segment": "L2",
+   "text_verse1": "inekleri",
+   "median_midi": 64.25,
+   "note": "E4",
+   "per_verse_notes": [
+    "E4",
+    "E4",
+    "E4",
+    "E4",
+    "E4",
+    "F4",
+    "F4"
+   ],
+   "agree": 5
+  },
+  {
+   "index": 7,
+   "segment": "L2",
+   "text_verse1": "var.",
+   "median_midi": 61.95,
+   "note": "D4",
+   "per_verse_notes": [
+    "D4",
+    "D4",
+    "D4",
+    "D4",
+    "D4",
+    "D4",
+    "D4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 8,
+   "segment": "ses",
+   "text_verse1": "\"Mö,",
+   "median_midi": 61.95,
+   "note": "D4",
+   "per_verse_notes": [
+    "D4",
+    "D4",
+    "D4",
+    "D#4",
+    "D4",
+    "D4",
+    "D4"
+   ],
+   "agree": 6
+  },
+  {
+   "index": 9,
+   "segment": "ses",
+   "text_verse1": "mö\"",
+   "median_midi": 68.95,
+   "note": "A4",
+   "per_verse_notes": [
+    "A4",
+    "A4",
+    "A4",
+    "A4",
+    "A4",
+    "A4",
+    "A4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 10,
+   "segment": "diye",
+   "text_verse1": "diye",
+   "median_midi": 66.95,
+   "note": "G4",
+   "per_verse_notes": [
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 11,
+   "segment": "diye",
+   "text_verse1": "bağırır",
+   "median_midi": 64.9,
+   "note": "F4",
+   "per_verse_notes": [
+    "F4",
+    "F4",
+    "F4",
+    "F4",
+    "F4",
+    "F4",
+    "F4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 12,
+   "segment": "L4",
+   "text_verse1": "çiftliğinde",
+   "median_midi": 66.95,
+   "note": "G4",
+   "per_verse_notes": [
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4",
+    "G4"
+   ],
+   "agree": 7
+  },
+  {
+   "index": 13,
+   "segment": "L4",
+   "text_verse1": "Ali",
+   "median_midi": 64.05,
+   "note": "E4",
+   "per_verse_notes": [
+    "E4",
+    "F4",
+    "E4",
+    "E4",
+    "E4",
+    "E4",
+    "E4"
+   ],
+   "agree": 6
+  },
+  {
+   "index": 14,
+   "segment": "L4",
+   "text_verse1": "Baba'nın.",
+   "median_midi": 62.45,
+   "note": "D4",
+   "per_verse_notes": [
+    "D4",
+    "D4",
+    "D#4",
+    "D4",
+    "D4",
+    "E4",
+    "E4"
+   ],
+   "agree": 4
+  }
+ ],
+ "sung_pitch_class_duration_share": {
+  "C": 0.0,
+  "C#": 0.0,
+  "D": 0.18801123183982416,
+  "D#": 0.0,
+  "E": 0.1629105115370528,
+  "F": 0.1537541203760224,
+  "F#": 0.0017091930167256741,
+  "G": 0.40564033695519475,
+  "G#": 0.002441704309608106,
+  "A": 0.08553290196557195,
+  "A#": 0.0,
+  "B": 0.0
+ },
+ "key_fit_for_new_backing": {
+  "method": "duration-weighted: chord tone 1, scale tone 0.5, avoid note (semitone above a chord tone) 0, outside scale -1; harmony I I IV I per beat for L1/L2/L4 bars, I for diye bagirir",
+  "ranking": [
+   {
+    "key": "C major",
+    "score": 0.709,
+    "chord_tone": 0.521,
+    "scale_tone": 0.386,
+    "avoid": 0.089,
+    "outside": 0.004
+   },
+   {
+    "key": "D minor (original loop key, for reference: i i iv i)",
+    "score": 0.691,
+    "chord_tone": 0.395,
+    "scale_tone": 0.601,
+    "avoid": 0.0,
+    "outside": 0.004
+   },
+   {
+    "key": "F major",
+    "score": 0.612,
+    "chord_tone": 0.236,
+    "scale_tone": 0.759,
+    "avoid": 0.0,
+    "outside": 0.004
+   },
+   {
+    "key": "G major",
+    "score": 0.602,
+    "chord_tone": 0.674,
+    "scale_tone": 0.17,
+    "avoid": 0.0,
+    "outside": 0.156
+   },
+   {
+    "key": "A# major",
+    "score": 0.406,
+    "chord_tone": 0.313,
+    "scale_tone": 0.52,
+    "avoid": 0.0,
+    "outside": 0.167
+   },
+   {
+    "key": "D# major",
+    "score": 0.311,
+    "chord_tone": 0.373,
+    "scale_tone": 0.377,
+    "avoid": 0.0,
+    "outside": 0.25
+   },
+   {
+    "key": "D major",
+    "score": 0.234,
+    "chord_tone": 0.307,
+    "scale_tone": 0.166,
+    "avoid": 0.37,
+    "outside": 0.156
+   },
+   {
+    "key": "G# major",
+    "score": -0.124,
+    "chord_tone": 0.067,
+    "scale_tone": 0.495,
+    "avoid": 0.0,
+    "outside": 0.438
+   },
+   {
+    "key": "A major",
+    "score": -0.349,
+    "chord_tone": 0.169,
+    "scale_tone": 0.084,
+    "avoid": 0.188,
+    "outside": 0.559
+   },
+   {
+    "key": "E major",
+    "score": -0.579,
+    "chord_tone": 0.166,
+    "scale_tone": 0.004,
+    "avoid": 0.083,
+    "outside": 0.747
+   },
+   {
+    "key": "C# major",
+    "score": -0.719,
+    "chord_tone": 0.089,
+    "scale_tone": 0.067,
+    "avoid": 0.002,
+    "outside": 0.842
+   },
+   {
+    "key": "B major",
+    "score": -0.749,
+    "chord_tone": 0.084,
+    "scale_tone": 0.0,
+    "avoid": 0.083,
+    "outside": 0.833
+   },
+   {
+    "key": "F# major",
+    "score": -0.762,
+    "chord_tone": 0.002,
+    "scale_tone": 0.156,
+    "avoid": 0.0,
+    "outside": 0.842
+   }
+  ]
+ }
+}

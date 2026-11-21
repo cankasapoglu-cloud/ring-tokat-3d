@@ -1,0 +1,59 @@
+wrote /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/yeni4/analiz/tempo/tempo.json
+{
+ "bpm": 105.003,
+ "recommended_bpm_for_new_backing": 105.0,
+ "beat_sec": 0.571413,
+ "bar_sec": 2.285653,
+ "beat_sec_at_105_0": 0.571429,
+ "bar_sec_at_105_0": 2.285714,
+ "bpm_note": "machine grid at 105.00 BPM (refined lattice 105.003 +- 0.001 on the decoded mp3; an exact 105.000 grid drifts only 2.7 ms over 100 s). The value 104.96 guessed from the word timestamps was a rounding effect of their 20 ms grid.",
+ "tempo_stable": true,
+ "meter": "4/4; kick on every beat (four on the floor), hats/chord strum on the off-beat eighths; verse = 24 beats = 6 bars",
+ "beat_phase_first_beat_s": 0.0001,
+ "beat_formula": "beat n at phase_first_beat_s + n*beat_sec ; verse v (1..7) downbeat = beat 15 + 24*(v-1)",
+ "verse_downbeats": [
+  8.5713,
+  22.2852,
+  35.9992,
+  49.7131,
+  63.427,
+  77.1409,
+  90.8548
+ ],
+ "verse_spacing_beats": [
+  24,
+  24,
+  24,
+  24,
+  24,
+  24
+ ],
+ "segments_start_on_beat": true,
+ "typical_offset_ms": {
+  "L1": -1.6,
+  "L2": -37.4,
+  "ses": -22.6,
+  "diye": 8.9,
+  "L4": -45.2
+ },
+ "offset_spread_sd_ms": {
+  "L1": 13.0,
+  "L2": 5.9,
+  "ses": 15.8,
+  "diye": 11.1,
+  "L4": 8.3
+ },
+ "statement_segments": "All 35 segments start on their expected beat: L1, L2, ses and L4 on the downbeat of bars 0,1,2,3 of the verse, \"diye bagirir\" on beat 2 of bar 2 (offset 2.0 beats). No pickups. L1 (\"Ali\", vowel) sits within about +-20 ms of the bar line (median -2 ms). L2 and L4 begin with the fricative \"c\" of \"ciftliginde\", whose noise starts 25-45 ms (L2) and 37-62 ms (L4) BEFORE the bar line, so that the vowel lands on the beat. \"diye\" starts on beat 2 of its bar, 0 to +31 ms late (median +9 ms). The sung animal sounds start -37..+16 ms around the bar line (words file only).",
+ "original_key": "D minor",
+ "original_key_confidence": "high for the chord roots and the loop (identical in all 42 bars), medium-high for the chord qualities (Gm and C clear; minor third of Dm and major third of A weak but consistent)",
+ "original_chord_loop": "Dm - C - Gm - A, two beats each, i.e. a 2-bar loop | Dm C | Gm A | that runs three times per verse and restarts on Dm exactly at every verse downbeat",
+ "chords_per_bar": "bar 0: Dm (beats 0-1) C (beats 2-3) | bar 1: Gm (beats 0-1) A (beats 2-3) | bar 2: Dm (beats 0-1) C (beats 2-3) | bar 3: Gm (beats 0-1) A (beats 2-3) | bar 4: Dm (beats 0-1) C (beats 2-3) | bar 5: Gm (beats 0-1) A (beats 2-3)",
+ "tuning_cents_re_A440": 3.7,
+ "tuning_note": "about +2..+6 cents, i.e. standard A=440 within measurement error (bass-register peaks +3.7/+5.5, mid register +1.7, librosa +4)",
+ "sung_pitch_classes": "D E F G A (D4..A4); F natural is sung in every verse (\"bagirir\" G-F-E, the animal word E/F, last line F-E-D). The vocal is NOT the traditional Old MacDonald tune and was composed over D minor harmony.",
+ "key_for_new_backing": "C major",
+ "key_for_new_backing_reason": "The task offered G major or C major. All five sung pitch classes D E F G A are inside C major; in G major the sung F natural (about 15 % of the sung time, present in 7/7 verses) is outside the scale and collides with the F sharp of the V7 chord. Fit score under the planned harmony I I IV I: C major 0.71, F major 0.61, G major 0.60 (D minor original loop key for reference 0.69).",
+ "key_for_new_backing_confidence": "medium-high that C major fits better than G major; MEDIUM that the result is pleasant at all, because the vocal was written over Dm-C-Gm-A: in C major the lines L2 and L4 end on D (= re, not the tonic) and the sung F is a suspended fourth against the E of the C chord. Not checked by ear.",
+ "confidence": "tempo, beat phase and constancy: high. Bar lines at the verse onsets: high (band entry, 24-beat verse period, 2-bar chord loop restarting on the tonic chord there); beat 1 rather than beat 3: medium-high (no drum accent to prove it; harmonic rhythm supports it). Segment offsets: +-10 ms where refined on the mix, +-25 ms where only the words file was available (see refined_reliable). Nothing was checked by ear."
+}
+[{"verse": 1, "L1_end_to_L2_onset_ms": 82, "L2_end_to_ses_onset_ms": 40, "ses_end_to_diye_onset_ms": 340, "diye_end_to_L4_onset_ms": 51, "L4_end_to_next_bar_line_ms": 34}, {"verse": 2, "L1_end_to_L2_onset_ms": 73, "L2_end_to_ses_onset_ms": 0, "ses_end_to_diye_onset_ms": 340, "diye_end_to_L4_onset_ms": 41, "L4_end_to_next_bar_line_ms": 28}, {"verse": 3, "L1_end_to_L2_onset_ms": 84, "L2_end_to_ses_onset_ms": 0, "ses_end_to_diye_onset_ms": 340, "diye_end_to_L4_onset_ms": 59, "L4_end_to_next_bar_line_ms": 42}, {"verse": 4, "L1_end_to_L2_onset_ms": 74, "L2_end_to_ses_onset_ms": 40, "ses_end_to_diye_onset_ms": 340, "diye_end_to_L4_onset_ms": 68, "L4_end_to_next_bar_line_ms": 76}, {"verse": 5, "L1_end_to_L2_onset_ms": 82, "L2_end_to_ses_onset_ms": 20, "ses_end_to_diye_onset_ms": 120, "diye_end_to_L4_onset_ms": 79, "L4_end_to_next_bar_line_ms": 30}, {"verse": 6, "L1_end_to_L2_onset_ms": 63, "L2_end_to_ses_onset_ms": 40, "ses_end_to_diye_onset_ms": 160, "diye_end_to_L4_onset_ms": 69, "L4_end_to_next_bar_line_ms": 44}, {"verse": 7, "L1_end_to_L2_onset_ms": 62, "L2_end_to_ses_onset_ms": 20, "ses_end_to_diye_onset_ms": 100, "diye_end_to_L4_onset_ms": 67, "L4_end_to_next_bar_line_ms": 37}]

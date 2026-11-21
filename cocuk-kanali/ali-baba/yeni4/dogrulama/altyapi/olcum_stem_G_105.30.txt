@@ -1,0 +1,92 @@
+===== key G, 105.3 BPM, bar 2.279202 s (render in /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/yeni4/dogrulama/altyapi/tempo_testi_105.30) =====
+[0] stem alignment by cross-correlation with altyapi: lag 25210 samples (builder formula 25210; pre-roll 25128 + latency 82)
+[0] band render minus sum of the 8 band stems: -49.8 dB relative to the band
+[0] drum stem: first sample above -80 dBFS at 0.39 ms after file start (t=0 should be the downbeat)
+[1] lead_trompet: do = G4; 142 expected note slots, 0 mismatches; pitch error mean -3.4 cents, max |err| 8.2; weakest expected slot -4.0 dB, loudest slot where silence is expected -16.5 dB (rel. to the 97th pct slot level); re-attack depth of repeated notes (dip before the note): min 11.1 dB, median 13.2 dB, n = 42
+       iA    detected per eighth slot (~ = held): 0:G4 1:G4 2:G4 3:D4 4:E4 5:E4 6:D4 7:D4~
+       iANS  detected per eighth slot (~ = held): 0:B4 1:B4 2:A4 3:A4 4:G4 5:G4~ 6:G4~
+       ans   detected per eighth slot (~ = held): 0:B4 1:B4 2:A4 3:A4 4:G4 5:G4~ 6:G4~
+       loudest slots outside the expected notes (dB, bar, kind, slot, dip dB): [(-16.5, 59, 'ans', 7, 2.5), (-16.6, 29, 'ans', 7, 2.6), (-16.6, 11, 'ans', 7, 2.6), (-16.8, 5, 'ans', 7, 2.6), (-16.9, 27, 'ans', 7, 2.5), (-17.1, 61, 'ans', 7, 2.0)]
+       ending bars 62/63 (free, reported only): {62: [(0, 'C5', -0.7), (1, 'E5', 0.1), (2, 'G5', -0.3), (3, 'E5', 0.4), (4, 'D5', -0.4), (5, 'F#5', 0.2), (6, 'A5', -0.1), (7, 'C6', 1.1)], 63: [(0, 'G3', 6.2), (1, 'G3', 4.9), (2, 'G3', 4.8), (3, 'G3', 4.8), (4, 'G3', 5.6), (5, 'G3', -17.4), (6, 'G3', 6.0), (7, 'G3', 4.6)]}
+[1] ezgi_alti_klarnet: do = G5; 196 expected note slots, 0 mismatches; pitch error mean -0.0 cents, max |err| 0.8; weakest expected slot -4.8 dB, loudest slot where silence is expected -17.9 dB (rel. to the 97th pct slot level); re-attack depth of repeated notes (dip before the note): min 9.0 dB, median 15.8 dB, n = 84
+       voc   detected per eighth slot (~ = held): 0:G5 1:G5 2:G5 3:D5 4:E5 5:E5 6:D5 7:D5~
+       fill  detected per eighth slot (~ = held): 4:G5 5:G5 6:G5 7:G5
+       loudest slots outside the expected notes (dB, bar, kind, slot, dip dB): [(-17.9, 35, 'ans', 0, 0.8), (-18.1, 53, 'ans', 0, 0.8), (-19.9, 43, 'ans', 0, 1.3), (-20.1, 7, 'slot', 0, 0.4), (-20.5, 31, 'slot', 0, 1.6), (-20.6, 59, 'ans', 0, 5.1)]
+[1] ezgi_alti_DELIVERED_FILE (clarinet+glockenspiel; lowest strong spectral peak 200-3000 Hz): do = G5; 175 expected note slots, 0 mismatches; pitch error mean +0.4 cents, max |err| 10.3; weakest expected slot -5.2 dB, loudest slot where silence is expected -18.4 dB (rel. to the 97th pct slot level); re-attack depth of repeated notes (dip before the note): min 8.8 dB, median 12.7 dB, n = 84
+       voc   detected per eighth slot (~ = held): 0:G5 1:G5 2:G5 3:D5 4:E5 5:E5 6:D5
+       fill  detected per eighth slot (~ = held): 4:G5 5:G5 6:G5 7:G5
+       strongest partial in the wide band lies N semitones above the detected note {N: count}: {19: 175}; level of the note itself vs the strongest partial: median -7.5 dB, min -9.7 dB
+       loudest slots outside the expected notes (dB, bar, kind, slot, dip dB): [(-18.4, 35, 'ans', 0, 0.9), (-18.6, 53, 'ans', 0, 0.9), (-20.2, 43, 'ans', 0, 1.2), (-20.4, 7, 'slot', 0, 0.4), (-20.7, 31, 'slot', 0, 1.4), (-20.7, 59, 'ans', 0, 4.5)]
+[1] lead_glockenspiel (strongest spectral peak in 500-1500 Hz): do = G5; 104 expected note slots, 29 mismatches; pitch error mean +59.8 cents, max |err| 205.6; weakest expected slot -5.3 dB, loudest slot where silence is expected -26.2 dB (rel. to the 97th pct slot level); re-attack depth of repeated notes (dip before the note): min 11.8 dB, median 14.3 dB, n = 42
+       iA    detected per eighth slot (~ = held): 0:G5 1:G5 2:G5 3:D5 4:E5 5:E5 6:D5
+       iANS  detected per eighth slot (~ = held): 0:B5 1:B5 2:A5/B5 3:A5 4:A5
+       ans   detected per eighth slot (~ = held): 0:B5 1:B5 2:A5/B5 3:A5 4:A5
+       strongest partial in the wide band lies N semitones above the detected note {N: count}: {27: 18, 29: 14, 31: 11, 33: 61}; level of the note itself vs the strongest partial: median -14.7 dB, min -30.2 dB
+       MISMATCHES (bar, slot, detected, cents, level, dip, expectation): [(1, 2, 'B5', 205, -0.2, 13.5, 'expected A5 attack'), (1, 4, 'A5', 206, -3.2, 12.7, 'expected G5 attack'), (3, 4, 'A5', 206, -4.4, 13.1, 'expected G5 attack'), (5, 2, 'B5', 205, -0.0, 12.5, 'expected A5 attack'), (5, 4, 'A5', 206, -3.4, 13.4, 'expected G5 attack'), (11, 2, 'B5', 205, -0.3, 11.8, 'expected A5 attack'), (11, 4, 'A5', 206, -3.7, 13.1, 'expected G5 attack'), (13, 4, 'A5', 206, -2.9, 12.2, 'expected G5 attack'), (19, 2, 'B5', 205, -0.2, 13.0, 'expected A5 attack'), (19, 4, 'A5', 206, -3.3, 12.9, 'expected G5 attack'), (21, 2, 'B5', 205, -0.2, 14.1, 'expected A5 attack'), (21, 4, 'A5', 206, -4.2, 13.1, 'expected G5 attack')]
+       loudest slots outside the expected notes (dB, bar, kind, slot, dip dB): [(-26.2, 13, 'ans', 7, 8.0), (-26.2, 3, 'iANS', 7, 6.8), (-26.4, 35, 'ans', 7, 7.4), (-26.6, 53, 'ans', 7, 7.3), (-26.6, 45, 'ans', 7, 7.1), (-26.9, 51, 'ans', 7, 6.5)]
+       ending bars 62/63 (free, reported only): {62: [(0, 'C6', -1.8), (1, 'E6', -0.4), (2, 'E6', -0.7), (3, 'E6', -0.2), (4, 'E6', 0.6), (5, 'F#6', -0.7), (6, 'F#6', -1.4), (7, 'F#6', -1.0)], 63: [(0, 'D6', 3.1), (1, 'D6', -4.2), (2, 'D6', -13.6), (3, 'D6', -19.1), (4, 'D6', -21.3), (5, 'D6', -24.0), (6, 'F#6', 2.9), (7, 'F#6', -5.0)]}
+[1] ezgi_alti_glockenspiel_hafif (strongest spectral peak in 700-1700 Hz): do = G6; 175 expected note slots, 42 mismatches; pitch error mean +88.3 cents, max |err| 504.3; weakest expected slot -11.8 dB, loudest slot where silence is expected -21.5 dB (rel. to the 97th pct slot level); re-attack depth of repeated notes (dip before the note): min 3.4 dB, median 9.9 dB, n = 84
+       voc   detected per eighth slot (~ = held): 0:G6 1:G6 2:G6 3:G6 4:E6 5:E6 6:E6
+       fill  detected per eighth slot (~ = held): 4:G6 5:G6 6:G6 7:G6
+       strongest partial in the wide band lies N semitones above the detected note {N: count}: {0: 133, 27: 21, 30: 21}; level of the note itself vs the strongest partial: median 0.0 dB, min -14.5 dB
+       MISMATCHES (bar, slot, detected, cents, level, dip, expectation): [(4, 3, 'G6', 504, -2.7, 8.7, 'expected D6 attack'), (4, 6, 'E6', 204, -0.8, 12.6, 'expected D6 attack'), (6, 3, 'G6', 504, -2.8, 11.1, 'expected D6 attack'), (6, 6, 'E6', 204, -0.8, 11.7, 'expected D6 attack'), (10, 3, 'G6', 504, -2.9, 10.5, 'expected D6 attack'), (10, 6, 'E6', 204, -0.3, 11.1, 'expected D6 attack'), (12, 3, 'G6', 504, -2.7, 11.4, 'expected D6 attack'), (12, 6, 'E6', 204, -0.3, 10.8, 'expected D6 attack'), (14, 3, 'G6', 504, -3.1, 8.4, 'expected D6 attack'), (14, 6, 'E6', 204, -0.9, 13.5, 'expected D6 attack'), (18, 3, 'G6', 504, -2.2, 8.5, 'expected D6 attack'), (18, 6, 'E6', 208, -1.1, 15.0, 'expected D6 attack')]
+       loudest slots outside the expected notes (dB, bar, kind, slot, dip dB): [(-21.5, 37, 'ans', 0, 1.2), (-21.5, 51, 'ans', 0, 1.3), (-21.7, 47, 'slot', 0, 1.5), (-22.2, 19, 'ans', 0, 1.3), (-22.3, 55, 'slot', 0, 1.0), (-22.3, 15, 'slot', 0, 1.4)]
+[1] octaves: {'lead_trumpet_do': 'G4', 'lead_glock_do': 'G5', 'glock_minus_trumpet': 12, 'alt_clarinet_do': 'G5', 'alt_glock_do': 'G6', 'alt_glock_minus_clarinet': 12, 'lead_do_pitch_class_is_tonic': True, 'alt_do_pitch_class_is_tonic': True}
+[1] brass stem, lowest strong partial at each lead attack = lead note one octave below: 68/104; exceptions [(1, 0, 'D4', 'B3'), (1, 1, 'B4', 'B3'), (3, 0, 'D4', 'B3'), (3, 1, 'B4', 'B3'), (5, 0, 'B4', 'B3'), (5, 1, 'B4', 'B3')]
+[2] bass stem, detected scale degree (1 = tonic) on each eighth slot per bar kind (all bars of that kind agree unless listed; "-" = no new note):
+    iA    [I I IV I    ] bars  2: 1(G2) 1(G3) 1(G2) 1(G3) 4(C2) 4(C3) 1(G2) 1(G3)
+    iANS  [I V7 I I    ] bars  2: 1(G2) 1(G3) 5(D2) 5(D3) 1(G2) 1(G3) 1(G2) 1(G3)
+    voc   [I I IV I    ] bars 21: 1(G2) 1(G3) 1(G2) 1(G3) 4(C2) 4(C3) 1(G2) 1(G3)
+    ans   [I V7 I I    ] bars 16: 1(G2) 1(G3) 5(D2) 5(D3) 1(G2) 1(G3) 1(G2) 1(G3)
+    slot  [I I I I     ] bars 14: 1(G2) 1(G2) - - 5(D2) 5(D2) - -   <-- on-beat bass note is NOT the chord root at ['beat 2: degree 5']
+    fill  [I I I I     ] bars  7: 1(G2) 1(G2) 5(D2) 5(D2) 5(D2) 1(G3) 1(G2) 1(G3)   <-- on-beat bass note is NOT the chord root at ['beat 1: degree 5', 'beat 2: degree 5']
+    roll  [IV IV V7 V7 ] bars  1: 4(C3) 4(C3) 4(C3) - 5(D3) 5(D3) - -
+    final [I I I I     ] bars  1: 1(G2) 1(G2) 1(G2) 1(G2) 1(G2) - 1(G2) 1(G2)
+    bass level in slot bars (beats 0, 2) vs normal bars: -8.0 dB
+[2] chord per beat by chroma template (I / IV / V7), comp stems (banjo+accordion+piano): 192/193 beats match the task; skipped 63 (no chord instrument / slot bars); mismatches: {roll beat 1: expected IV, detected I: 1x}
+[2] chord per beat by chroma template (I / IV / V7), full altyapi mix: 193/200 beats match the task; skipped 56 (no chord instrument / slot bars); mismatches: {fill beat 1: expected I, detected V7: 7x}
+[3] master gain estimated in a quiet slot bar (delivered / raw band): 7.68 dB
+[3] levels after master gain, dBFS RMS, max over the 7 verses: [chord+melody stems together | drums | bass | whole band | banjo akordeon piyano glockenspiel trompet brass]
+    slot bar 3, first 250 ms     -35.8   -30.1   -28.6   -25.5   -36.4   -58.9   -48.5   -81.0  -152.7  -152.7
+    slot bar 3, 0.25 s .. end    -50.5   -37.5   -35.1   -32.9   -50.4   -82.4   -76.0   -90.4  -152.7  -152.7
+    slot bar 4, whole            -77.1   -35.7   -33.5   -31.5   -77.1  -152.7  -152.7  -116.2  -152.7  -152.7
+    bar 5 beats 0-1              -95.9   -21.5   -24.6   -19.8   -95.9  -152.7  -152.7  -146.0  -152.7  -152.7
+    bar 5 beats 2-3              -23.0   -23.7   -23.0   -18.1   -26.8   -33.6   -28.1  -152.7  -152.7   -31.8
+    normal bar 0                 -23.3   -22.8   -22.5   -18.2   -26.2   -33.5   -28.0   -59.6   -64.9   -56.9
+[3] drum stem per beat (first 150 ms), mean over bars of a kind, dBFS: beats 0 1 2 3
+    voc   <120 Hz       -23.8   -24.6   -24.8   -24.6
+    voc   180-400 Hz    -40.6   -24.2   -41.5   -24.1
+    voc   2-5 kHz       -35.0   -29.1   -38.7   -29.5
+    voc   7-14 kHz      -37.3   -34.8   -40.3   -35.8
+    slot  <120 Hz       -29.4   -35.8   -29.4   -35.8
+    slot  180-400 Hz    -46.3   -52.4   -46.3   -52.4
+    slot  2-5 kHz       -48.7   -53.1   -48.7   -53.1
+    slot  7-14 kHz      -53.5   -54.0   -53.9   -54.0
+    fill  <120 Hz       -25.7   -25.0   -21.4   -24.6
+    fill  180-400 Hz    -29.5   -25.3   -39.1   -24.2
+    fill  2-5 kHz       -38.2   -35.8   -35.8   -29.5
+    fill  7-14 kHz      -45.9   -42.9   -34.4   -35.5
+[3] drum fill: sixteenth slots in beats 0-1 of bar 5 with a new drum hit (of 8), per verse: [8, 8, 8, 8, 8, 8, 8]
+[4] onset minus my grid, ms (10 % rise point | 50 % rise point: median, min, max, n):
+    kick (drums < 150 Hz)              10 %:   +1.4 | 50 %:   +5.9 (  +4.5 ..  +10.4), n = 146
+    drums 2-12 kHz (hat/snare)         10 %:   +0.1 | 50 %:   +1.7 (  -0.1 ..   +4.5), n = 158
+    bass                               10 %:   -9.0 | 50 %:   -8.1 (  -9.3 ..  +13.2), n = 160
+    bass < 250 Hz                      10 %:   -9.9 | 50 %:   -8.7 (  -9.9 ..  +13.7), n = 160
+    banjo                              10 %:   +6.0 | 50 %:  +11.5 (  +4.0 ..  +15.2), n = 96
+    piano (beats 0, 2)                 10 %:   +5.0 | 50 %:   +7.9 (  +6.5 ..   +9.3), n = 23
+    accordion (beats 1, 3)             10 %:  -13.6 | 50 %:   +7.2 (  +2.7 ..   +8.1), n = 80
+    trumpet                            10 %:   +3.0 | 50 %:   +7.6 (  +6.4 ..   +9.6), n = 17
+    brass                              10 %:   -3.3 | 50 %:  +14.1 ( +13.3 ..  +16.5), n = 17
+    glockenspiel                       10 %:   +4.0 | 50 %:   +5.4 (  +4.0 ..   +7.8), n = 33
+    clarinet (under-vocal)             10 %:   -8.1 | 50 %:   +6.7 (  +5.4 ..  +12.2), n = 24
+    light glockenspiel (under-vocal)   10 %:   +4.5 | 50 %:   +6.7 (  +4.8 ..   +8.6), n = 75
+    kick on bar downbeats: first 8 bars +6.82 ms, last 8 bars +5.80 ms (difference = drift over the song -1.02 ms)
+[5] limiter gain reduction (10 ms windows) per bar kind: max dB, share of time > 1 dB, > 3 dB
+    iA    max  1.65 dB, >1 dB   0.9 %, >3 dB   0.0 %
+    iANS  max  3.22 dB, >1 dB   4.4 %, >3 dB   0.7 %
+    voc   max  2.65 dB, >1 dB   4.6 %, >3 dB   0.0 %
+    ans   max  4.16 dB, >1 dB   4.9 %, >3 dB   0.3 %
+    slot  max  0.01 dB, >1 dB   0.0 %, >3 dB   0.0 %
+    fill  max  1.60 dB, >1 dB   0.9 %, >3 dB   0.0 %
+    roll  max  2.25 dB, >1 dB   6.2 %, >3 dB   0.0 %
+    final max  4.42 dB, >1 dB  32.9 %, >3 dB   8.3 %

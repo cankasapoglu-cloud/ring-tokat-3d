@@ -1,0 +1,76 @@
+TUNING: {
+ "instrumental_bars_low_95_275": {
+  "cents": 5.537728192384677,
+  "concentration_R": 0.4019341416088708,
+  "n_peaks": 816,
+  "median_cents_of_peaks_within_30c": 2.027197596616759
+ },
+ "instrumental_bars_mid_275_2000": {
+  "cents": 1.7405470326297565,
+  "concentration_R": 0.3268858197517022,
+  "n_peaks": 5892,
+  "median_cents_of_peaks_within_30c": 0.4228949582397945
+ },
+ "all_bars_low_95_275": {
+  "cents": 3.73008522662562,
+  "concentration_R": 0.3655038286196621,
+  "n_peaks": 2602,
+  "median_cents_of_peaks_within_30c": 0.9619921322411074
+ },
+ "all_bars_mid_275_2000_incl_vocal": {
+  "cents": 1.3473929202515162,
+  "concentration_R": 0.3397495062769905,
+  "n_peaks": 12606,
+  "median_cents_of_peaks_within_30c": 0.5535108069196326
+ },
+ "librosa_estimate_tuning_instrumental_bars_cents": 4.0000000000000036,
+ "librosa_estimate_tuning_whole_song_cents": 4.0000000000000036,
+ "adopted_cents_re_A440": 3.73008522662562,
+ "adopted_A4_hz": 440.94903797743024
+}
+
+PER POSITION in the 24-beat verse (mean of normalised chroma over 7 verses):
+  pos  0 (bar 0 beat 0): low[A:0.61 A#:0.11 D:0.08 G#:0.05] mid_off[G:0.40 A:0.31 G#:0.17 D:0.07] -> D   0.65 (2nd Dm  0.65) votes {'D': 2, 'Dm': 4, 'Gm': 1}
+  pos  1 (bar 0 beat 1): low[A:0.81 D:0.13 A#:0.01 G#:0.01] mid_off[A:0.88 E:0.03 G#:0.03 D:0.02] -> D   0.67 (2nd Dm  0.67) votes {'D': 4, 'Dm': 3}
+  pos  2 (bar 0 beat 2): low[G:0.37 C:0.34 F#:0.11 G#:0.05] mid_off[G#:0.36 G:0.33 A:0.18 E:0.04] -> Cm  0.80 (2nd C   0.80) votes {'C': 4, 'Cm': 3}
+  pos  3 (bar 0 beat 3): low[G:0.57 C:0.36 G#:0.02 E:0.01] mid_off[B:0.52 E:0.40 G#:0.04 G:0.01] -> C   0.80 (2nd Cm  0.80) votes {'C': 4, 'Cm': 3}
+  pos  4 (bar 1 beat 0): low[A#:0.38 A:0.15 G:0.12 B:0.06] mid_off[G:0.93 D:0.03 A:0.01 F:0.01] -> Gm  0.71 (2nd D#  0.67) votes {'Gm': 4, 'D#': 1, 'Dm': 1, 'F#': 1}
+  pos  5 (bar 1 beat 1): low[A#:0.71 G:0.11 F:0.05 A:0.04] mid_off[G:0.91 F#:0.03 D:0.03 F:0.01] -> Gm  0.67 (2nd D#  0.66) votes {'A#': 1, 'Gm': 3, 'D#m': 1, 'D#': 1, 'A#m': 1}
+  pos  6 (bar 1 beat 2): low[A:0.40 C:0.15 E:0.08 A#:0.07] mid_off[E:0.77 B:0.06 D#:0.04 A:0.03] -> Am  0.79 (2nd F   0.76) votes {'Am': 1, 'F': 3, 'A': 2, 'D': 1}
+  pos  7 (bar 1 beat 3): low[A:0.51 E:0.15 F:0.07 D:0.05] mid_off[A:0.46 D:0.43 F#:0.08 C#:0.01] -> Am  0.74 (2nd A   0.73) votes {'A': 2, 'Dm': 1, 'F': 1, 'Am': 3}
+  pos  8 (bar 2 beat 0): low[A:0.40 D:0.19 A#:0.14 G#:0.06] mid_off[G:0.37 D:0.20 A:0.16 G#:0.12] -> Dm  0.77 (2nd D   0.73) votes {'Dm': 5, 'D': 2}
+  pos  9 (bar 2 beat 1): low[A:0.65 A#:0.11 D:0.09 C:0.04] mid_off[A:0.85 E:0.06 D:0.04 F:0.02] -> Dm  0.67 (2nd D   0.65) votes {'F': 2, 'Dm': 4, 'Gm': 1}
+  pos 10 (bar 2 beat 2): low[C:0.46 G:0.35 A#:0.03 B:0.03] mid_off[A:0.46 G:0.28 G#:0.22 E:0.02] -> C   0.82 (2nd Cm  0.81) votes {'C': 7}
+  pos 11 (bar 2 beat 3): low[G:0.61 C:0.34 E:0.01 B:0.01] mid_off[E:0.83 B:0.09 G:0.02 D#:0.02] -> C   0.79 (2nd Cm  0.79) votes {'C': 5, 'Cm': 2}
+  pos 12 (bar 3 beat 0): low[A#:0.44 G:0.16 F:0.07 D:0.06] mid_off[G:0.93 D:0.04 F:0.01 A:0.01] -> Gm  0.79 (2nd D#  0.75) votes {'A#': 2, 'Gm': 4, 'D#': 1}
+  pos 13 (bar 3 beat 1): low[A#:0.72 G:0.14 F:0.03 D:0.03] mid_off[G:0.93 D:0.02 F#:0.01 B:0.01] -> Gm  0.70 (2nd D#  0.68) votes {'A#': 2, 'Gm': 4, 'D#': 1}
+  pos 14 (bar 3 beat 2): low[A:0.72 E:0.05 C:0.04 C#:0.04] mid_off[E:0.77 B:0.12 A:0.02 D:0.02] -> Am  0.64 (2nd A   0.64) votes {'A': 3, 'Am': 1, 'Dm': 1, 'F': 2}
+  pos 15 (bar 3 beat 3): low[A:0.75 E:0.06 F:0.05 C#:0.03] mid_off[D:0.84 A:0.06 E:0.03 C#:0.02] -> A   0.65 (2nd Dm  0.63) votes {'A': 4, 'Dm': 3}
+  pos 16 (bar 4 beat 0): low[A:0.69 D:0.12 A#:0.07 F:0.02] mid_off[A:0.63 D:0.12 E:0.11 F:0.05] -> Dm  0.70 (2nd D   0.67) votes {'Dm': 5, 'Am': 1, 'D': 1}
+  pos 17 (bar 4 beat 1): low[A:0.85 D:0.07 F:0.02 A#:0.01] mid_off[A:0.71 E:0.14 D:0.08 F:0.04] -> Dm  0.65 (2nd D   0.63) votes {'Dm': 6, 'A': 1}
+  pos 18 (bar 4 beat 2): low[C:0.50 G:0.36 F#:0.06 G#:0.02] mid_off[A:0.73 E:0.14 G:0.05 C:0.02] -> Am  0.81 (2nd F   0.74) votes {'Am': 7}
+  pos 19 (bar 4 beat 3): low[G:0.65 C:0.30 F#:0.02 G#:0.01] mid_off[E:0.69 B:0.21 G:0.04 G#:0.03] -> C   0.93 (2nd Em  0.88) votes {'C': 4, 'Em': 3}
+  pos 20 (bar 5 beat 0): low[A#:0.41 G:0.18 A:0.10 D:0.07] mid_off[G:0.74 D:0.17 A:0.02 F:0.02] -> Gm  0.86 (2nd D#  0.74) votes {'Gm': 7}
+  pos 21 (bar 5 beat 1): low[A#:0.71 G:0.15 A:0.07 D:0.03] mid_off[G:0.80 D:0.08 F:0.03 A#:0.03] -> Gm  0.86 (2nd D#  0.81) votes {'Gm': 7}
+  pos 22 (bar 5 beat 2): low[A:0.54 F:0.08 G#:0.07 C#:0.05] mid_off[E:0.67 B:0.21 A:0.03 C#:0.02] -> A   0.82 (2nd Am  0.78) votes {'A': 7}
+  pos 23 (bar 5 beat 3): low[A:0.82 E:0.05 F:0.04 C#:0.03] mid_off[D:0.49 A:0.28 E:0.08 B:0.05] -> Dm  0.79 (2nd D   0.77) votes {'Dm': 6}
+
+CHORD PER HALF BAR (2 beats):
+  bar 0 beats 0-1: D   0.66 (2nd Dm  0.66) | 3rd low maj 0.014 min 0.011 | 3rd mid maj 0.005 min 0.020 | votes {'D': 4, 'Dm': 3}
+  bar 0 beats 2-3: C   0.81 (2nd Cm  0.81) | 3rd low maj 0.009 min 0.007 | 3rd mid maj 0.223 min 0.006 | votes {'C': 4, 'Cm': 3}
+  bar 1 beats 0-1: Gm  0.70 (2nd D#  0.68) | 3rd low maj 0.038 min 0.543 | 3rd mid maj 0.006 min 0.005 | votes {'Gm': 5, 'D#': 1, 'A#m': 1}
+  bar 1 beats 2-3: Am  0.78 (2nd F   0.71) | 3rd low maj 0.027 min 0.093 | 3rd mid maj 0.009 min 0.003 | votes {'Am': 2, 'F': 3, 'A': 2}
+  bar 2 beats 0-1: Dm  0.72 (2nd D   0.69) | 3rd low maj 0.010 min 0.038 | 3rd mid maj 0.016 min 0.033 | votes {'Dm': 4, 'F': 1, 'D': 1, 'Gm': 1}
+  bar 2 beats 2-3: C   0.82 (2nd Cm  0.81) | 3rd low maj 0.013 min 0.003 | 3rd mid maj 0.426 min 0.010 | votes {'C': 7}
+  bar 3 beats 0-1: Gm  0.74 (2nd D#  0.71) | 3rd low maj 0.023 min 0.579 | 3rd mid maj 0.006 min 0.006 | votes {'A#': 1, 'Gm': 5, 'D#': 1}
+  bar 3 beats 2-3: A   0.64 (2nd Am  0.63) | 3rd low maj 0.034 min 0.024 | 3rd mid maj 0.017 min 0.004 | votes {'A': 3, 'Am': 2, 'Dm': 1, 'F': 1}
+  bar 4 beats 0-1: Dm  0.67 (2nd D   0.65) | 3rd low maj 0.009 min 0.019 | 3rd mid maj 0.009 min 0.044 | votes {'Dm': 6, 'A': 1}
+  bar 4 beats 2-3: C   0.89 (2nd Am  0.78) | 3rd low maj 0.003 min 0.002 | 3rd mid maj 0.416 min 0.003 | votes {'C': 6, 'Am': 1}
+  bar 5 beats 0-1: Gm  0.87 (2nd D#  0.78) | 3rd low maj 0.020 min 0.562 | 3rd mid maj 0.019 min 0.017 | votes {'Gm': 7}
+  bar 5 beats 2-3: A   0.77 (2nd Am  0.74) | 3rd low maj 0.040 min 0.012 | 3rd mid maj 0.030 min 0.003 | votes {'A': 6, 'Dm': 1}
+
+KEY (Krumhansl-Schmuckler):
+  instrumental_bars_low+mid: A minor 0.69, A major 0.56, D major 0.50, G major 0.42, C major 0.35   | chroma A:0.34 G:0.19 E:0.12 A#:0.09 D:0.08 C:0.06 B:0.04
+  all_bars_low_band_only_(vocal_free): A minor 0.61, G minor 0.43, F major 0.41, A major 0.31, D minor 0.30   | chroma A:0.34 A#:0.17 G:0.17 C:0.12 D:0.05 F:0.03 G#:0.03
+  all_bars_mid_band_(with_vocal): G major 0.68, E minor 0.65, D major 0.53, C major 0.47, A minor 0.44   | chroma G:0.28 A:0.20 E:0.18 D:0.11 F:0.07 B:0.05 F#:0.03
+  intro_beats_1_14_mid: G# minor 0.69, E major 0.49, G# major 0.24, C# minor 0.19, B major 0.16   | chroma G#:0.17 B:0.10 A:0.10 E:0.09 A#:0.09 G:0.09 D:0.08

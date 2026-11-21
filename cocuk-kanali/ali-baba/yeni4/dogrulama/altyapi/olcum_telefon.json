@@ -1,0 +1,72 @@
+{
+ "G": {
+  "mono_loss_altyapi_db": -0.28737208402954195,
+  "above_300Hz_mono_db": {
+   "bar0": -22.23838479297436,
+   "bar1": -18.12776792775855,
+   "bar2": -22.822801732160553,
+   "slot3": -41.28058051936034,
+   "slot4": -42.87891119689453,
+   "bar5_fill": -29.415409439637283,
+   "bar5_band": -22.327665809116773,
+   "bar6": -23.092106482982125,
+   "bar7": -17.96135809646127
+  },
+  "slot3_after_300ms_above_300Hz_db": -45.089253661358555,
+  "max_sample_jump": {
+   "value_fs": 0.571746826171875,
+   "at_s": 137.50260770975058,
+   "p9999": 0.4022641265868572
+  },
+  "longest_digital_silence_ms": 0.31746031746031744,
+  "longest_digital_silence_at_s": 148.26591836734693,
+  "mono_loss_ezgi_alti_db": -0.07685503978891361,
+  "mono_loss_per_stem_db": {
+   "davul": -0.06,
+   "bas": -0.0,
+   "banjo": -0.55,
+   "akordeon": -0.24,
+   "piyano": -2.75,
+   "glockenspiel": -0.15,
+   "trompet": -0.04,
+   "brass": -0.18,
+   "klarnet": -0.09,
+   "glockenspiel_hafif": -0.02
+  }
+ },
+ "C": {
+  "mono_loss_altyapi_db": -0.23004863807443598,
+  "above_300Hz_mono_db": {
+   "bar0": -23.585025167230015,
+   "bar1": -17.72545191876055,
+   "bar2": -24.504035784294132,
+   "slot3": -42.492746186339424,
+   "slot4": -44.26821134824223,
+   "bar5_fill": -29.26291086374841,
+   "bar5_band": -23.858922075225827,
+   "bar6": -24.271095663320825,
+   "bar7": -17.743500612723803
+  },
+  "slot3_after_300ms_above_300Hz_db": -43.92428988895317,
+  "max_sample_jump": {
+   "value_fs": 0.611328125,
+   "at_s": 62.60988662131519,
+   "p9999": 0.4094967926024822
+  },
+  "longest_digital_silence_ms": 0.272108843537415,
+  "longest_digital_silence_at_s": 148.2666439909297,
+  "mono_loss_ezgi_alti_db": -0.05835687141909318,
+  "mono_loss_per_stem_db": {
+   "davul": -0.06,
+   "bas": -0.0,
+   "banjo": -0.59,
+   "akordeon": -0.23,
+   "piyano": -1.98,
+   "glockenspiel": -0.13,
+   "trompet": -0.04,
+   "brass": -0.18,
+   "klarnet": -0.07,
+   "glockenspiel_hafif": -0.02
+  }
+ }
+}

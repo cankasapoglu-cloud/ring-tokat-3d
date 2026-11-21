@@ -1,0 +1,37 @@
+duration 105.000 s
+A_spectral_flux_fullband global bpm 105.005 period 0.57140 phase 0.5686 score 3.349
+   coarse top5 [(np.float64(105.0), np.float64(3.347)), (np.float64(105.05), np.float64(2.439)), (np.float64(104.95), np.float64(2.426)), (np.float64(105.1), np.float64(1.769)), (np.float64(104.9), np.float64(1.715))]
+   acf {1: {'bpm': 104.99090870368195, 'acf': 0.7988266369246992}, 4: {'bpm': 104.99499776555673, 'acf': 0.787512872919757}, 8: {'bpm': 105.00204935429291, 'acf': 0.7392518622369464}, 24: {'bpm': 105.00096553710259, 'acf': 0.7698001859907676}}
+   win   0.0- 20.0 bpm 105.00 score 3.79 dev-from-global 283.3 ms | acf1 105.00 acf4 104.99 acf8 105.00
+   win  10.0- 30.0 bpm 105.00 score 3.25 dev-from-global -0.5 ms | acf1 105.06 acf4 105.00 acf8 105.00
+   win  20.0- 40.0 bpm 105.00 score 3.45 dev-from-global -0.0 ms | acf1 105.05 acf4 105.02 acf8 105.01
+   win  30.0- 50.0 bpm 105.00 score 3.68 dev-from-global 0.5 ms | acf1 105.04 acf4 105.00 acf8 105.01
+   win  40.0- 60.0 bpm 105.02 score 3.41 dev-from-global 0.4 ms | acf1 105.05 acf4 105.00 acf8 105.02
+   win  50.0- 70.0 bpm 104.98 score 3.39 dev-from-global 284.8 ms | acf1 104.99 acf4 104.98 acf8 105.01
+   win  60.0- 80.0 bpm 105.00 score 3.42 dev-from-global 0.5 ms | acf1 104.96 acf4 105.01 acf8 105.01
+   win  70.0- 90.0 bpm 105.00 score 3.38 dev-from-global 0.9 ms | acf1 104.96 acf4 104.98 acf8 105.00
+   win  80.0-100.0 bpm 105.00 score 3.22 dev-from-global 1.4 ms | acf1 104.94 acf4 105.00 acf8 104.99
+B_lowfreq_40_120Hz global bpm 105.000 period 0.57143 phase 0.0043 score 7.222
+   coarse top5 [(np.float64(105.0), np.float64(7.211)), (np.float64(105.05), np.float64(4.88)), (np.float64(104.95), np.float64(4.825)), (np.float64(105.1), np.float64(3.06)), (np.float64(104.9), np.float64(2.916))]
+   acf {1: {'bpm': 105.01377104776772, 'acf': 0.6887366491572212}, 4: {'bpm': 105.00547911240095, 'acf': 0.6649721831586819}, 8: {'bpm': 105.00443480438793, 'acf': 0.6553633293313034}, 24: {'bpm': 109.56552624907796, 'acf': 0.5938404036599991}}
+   win   0.0- 20.0 bpm 104.94 score 5.28 dev-from-global -0.2 ms | acf1 105.01 acf4 105.00 acf8 105.06
+   win  10.0- 30.0 bpm 105.02 score 7.07 dev-from-global 1.0 ms | acf1 105.12 acf4 105.02 acf8 105.02
+   win  20.0- 40.0 bpm 105.00 score 7.61 dev-from-global -0.0 ms | acf1 105.07 acf4 105.01 acf8 105.00
+   win  30.0- 50.0 bpm 104.98 score 7.78 dev-from-global 0.5 ms | acf1 105.05 acf4 104.98 acf8 104.98
+   win  40.0- 60.0 bpm 105.02 score 7.82 dev-from-global 1.0 ms | acf1 105.07 acf4 105.04 acf8 105.02
+   win  50.0- 70.0 bpm 105.00 score 7.88 dev-from-global -1.4 ms | acf1 105.00 acf4 105.00 acf8 105.02
+   win  60.0- 80.0 bpm 105.00 score 7.96 dev-from-global -1.4 ms | acf1 105.19 acf4 105.00 acf8 105.00
+   win  70.0- 90.0 bpm 105.00 score 8.04 dev-from-global -0.0 ms | acf1 105.08 acf4 105.01 acf8 105.00
+   win  80.0-100.0 bpm 105.00 score 7.52 dev-from-global 1.4 ms | acf1 104.87 acf4 105.07 acf8 105.02
+C_hats_8_16k_flux global bpm 105.005 period 0.57140 phase 0.2814 score 4.055
+   coarse top5 [(np.float64(105.0), np.float64(4.016)), (np.float64(105.05), np.float64(2.689)), (np.float64(104.95), np.float64(2.558)), (np.float64(104.9), np.float64(1.781)), (np.float64(105.1), np.float64(1.71))]
+   acf {1: {'bpm': 104.97880251696614, 'acf': 0.7097329612735854}, 4: {'bpm': 105.00095389962827, 'acf': 0.6915754785098649}, 8: {'bpm': 105.00454743572004, 'acf': 0.6496435924601035}, 24: {'bpm': 105.00362258494155, 'acf': 0.7043734801043801}}
+   win   0.0- 20.0 bpm 105.04 score 4.31 dev-from-global 0.9 ms | acf1 104.97 acf4 105.01 acf8 105.01
+   win  10.0- 30.0 bpm 105.00 score 3.68 dev-from-global -1.9 ms | acf1 105.02 acf4 105.02 acf8 105.02
+   win  20.0- 40.0 bpm 105.00 score 3.97 dev-from-global -1.5 ms | acf1 105.04 acf4 105.01 acf8 105.01
+   win  30.0- 50.0 bpm 105.02 score 4.45 dev-from-global -0.1 ms | acf1 105.01 acf4 105.00 acf8 105.01
+   win  40.0- 60.0 bpm 105.02 score 4.20 dev-from-global -1.0 ms | acf1 105.01 acf4 105.01 acf8 105.02
+   win  50.0- 70.0 bpm 105.00 score 3.86 dev-from-global -1.4 ms | acf1 104.97 acf4 105.00 acf8 105.01
+   win  60.0- 80.0 bpm 105.00 score 3.87 dev-from-global -1.0 ms | acf1 104.96 acf4 105.02 acf8 105.03
+   win  70.0- 90.0 bpm 105.00 score 4.05 dev-from-global -0.5 ms | acf1 104.98 acf4 105.00 acf8 105.00
+   win  80.0-100.0 bpm 104.98 score 3.93 dev-from-global 0.5 ms | acf1 104.99 acf4 105.00 acf8 105.00

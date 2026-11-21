@@ -1,0 +1,139 @@
+
+================ variant G ================
+[1] files, format, duration
+  OK   altyapi_G.wav: 2 ch, 44100 Hz, PCM_16, 6536250 frames = 148.2143 s
+  OK   ezgi_alti_G.wav: 2 ch, 44100 Hz, PCM_16, 6536250 frames = 148.2143 s
+  OK   rehber_G.wav: 2 ch, 44100 Hz, PCM_16, 6536250 frames = 148.2143 s
+  OK   the three files have the same length
+  OK   duration 148.2143 s = zaman json 148.2143 s
+  OK   64 bars, bar 2.285714 s, beat 0.571429 s, BPM 105.0
+  OK   7 verses x 8 bars in zaman json
+  OK   zaman json: verse v starts at bar 4 + 8 v; animal calls on the downbeats of verse bars 3 and 4 (verse 1: 16.0 s, 18.2857 s); "diye bagirir" on beat 2 of verse bar 5 (verse 1: 21.7143 s); intro and ending bar times on the grid
+  OK   harmony per beat of the 8 verse bars as specified: ['I I IV I', 'I V7 I I', 'I I IV I', 'I I I I', 'I I I I', 'I I I I', 'I I IV I', 'I V7 I I'] = ['G G C G', 'G D7 G G', 'G G C G', 'G G G G', 'G G G G', 'G G G G', 'G G C G', 'G D7 G G']
+  OK   ring-out tail after the final hit: 2.500 s (final hit at 145.7143 s, music end 146.2857 s)
+  OK   file ends in silence (last 20 ms peak -69.5 dBFS)
+[2] rehber = altyapi + ezgi_alti
+  OK   max |rehber - (altyapi + ezgi_alti)| = 1.00 LSB (16 bit)
+[3] loudness, peaks
+  OK   altyapi: -14.0 LUFS (ffmpeg ebur128; pyloudnorm -14.01), LRA 15.0, sample peak -1.50 dBFS, true peak -1.12 dBTP (4x) / -1.1 (ffmpeg), samples >= 0.999: 0
+  OK   rehber: -13.6 LUFS (ffmpeg ebur128; pyloudnorm -13.68), LRA 14.9, sample peak -1.50 dBFS, true peak -1.12 dBTP (4x) / -1.1 (ffmpeg), samples >= 0.999: 0
+       ezgi_alti: -21.9 LUFS (ffmpeg ebur128; pyloudnorm -21.90), LRA 6.4, sample peak -13.83 dBFS, true peak -13.72 dBTP (4x) / -13.7 (ffmpeg), samples >= 0.999: 0
+       limiter: max gain reduction 5.29 dB, >0.5 dB during 7.16 % of the time, >2 dB during 0.91 %; largest at [(144.03, 5.3), (145.82, 4.8), (44.01, 4.6), (12.01, 4.6), (117.16, 4.6)] (s, dB)
+[4] beat grid measured in the audio
+  OK   254 beat onsets (6-14 kHz band: hi-hat/snare/tambourine): fitted beat 0.571424 s (nominal 0.571429; => bar 2.28570 s, 105.001 BPM), half-level onset minus grid: median +1.98 ms, min -0.73, max +7.53, residual sd 1.61 ms
+  OK   drum stem, 186 kick hits: fitted beat 0.571425 s, drift over the whole song -0.77 ms, kick first rise minus grid: mean +2.42 ms (first 16 beats +2.92, last 16 +1.92), sd 1.49 ms
+[5] MIDI files vs zaman json
+  OK   altyapi_G.mid: 449 "lead" notes of the json found on the grid in the score MIDI (max deviation 0.150 ms) and in the rendered MIDI at grid minus the documented advance (max deviation 0.150 ms); MIDI tempo 571429 us/beat
+  OK   ezgi_alti_G.mid: 350 "ezgi_alti" notes of the json found on the grid in the score MIDI (max deviation 0.143 ms) and in the rendered MIDI at grid minus the documented advance (max deviation 0.143 ms); MIDI tempo 571429 us/beat
+       documented note advances (ms): {'bas': 22.6, 'akordeon': 22.6, 'klarnet': 16.7, 'brass': 8.3}
+[6] pitch and time of the melody notes, detected in the solo stems
+  OK   lead trompet: 112 notes checked, 112 matched (pitch within 0.3 st and onset within -15..+50 ms); pitch error mean -3.1 cents, max |err| 9.0 cents; half-level onset minus grid: median +8.8 ms, min +1.9, max +12.5
+  OK   lead glockenspiel (+1 oktav): 112 notes checked, 112 matched (pitch within 0.3 st and onset within -10..+30 ms); pitch error mean +3.5 cents, max |err| 8.6 cents; half-level onset minus grid: median +5.7 ms, min +4.3, max +8.3
+        (glockenspiel: pass/fail = expected fundamental present as a spectral peak; the blind "lowest newly appearing partial" estimate agrees for 109 of 112 notes; 2 of the 3 others repeat the pitch of the note just before, which is still ringing)
+  OK   ezgi_alti klarnet: 175 notes checked, 175 matched (pitch within 0.3 st and onset within -15..+50 ms); pitch error mean -0.2 cents, max |err| 3.7 cents; half-level onset minus grid: median +7.8 ms, min +3.7, max +13.2
+  OK   ezgi_alti glockenspiel (+1 oktav): 175 notes checked, 175 matched (pitch within 0.3 st and onset within -10..+30 ms); pitch error mean +5.2 cents, max |err| 5.7 cents; half-level onset minus grid: median +6.0 ms, min -2.2, max +20.0
+        (glockenspiel: pass/fail = expected fundamental present as a spectral peak; the blind "lowest newly appearing partial" estimate agrees for 175 of 175 notes; 0 of the 0 others repeat the pitch of the note just before, which is still ringing)
+  OK   ezgi_alti teslim dosyası (klarnet+glockenspiel karışık; 300-1100 Hz en güçlü tepe): 175 notes checked, 175 matched (pitch within 0.3 st and onset within -20..+50 ms); pitch error mean -0.2 cents, max |err| 3.7 cents; half-level onset minus grid: median +6.5 ms, min +3.8, max +8.7
+  OK   final chords (bar 63, beats 0 and 3): 12 chord notes on trumpet/glockenspiel stems, 12 found as spectral peaks at the expected pitch
+  OK   note names and beats in zaman json match the task: loud answer ['B4', 'B4', 'A4', 'A4', 'G4'] (+glockenspiel ['B5', 'B5', 'A5', 'A5', 'G5']), phrase A under the vocal ['G5', 'G5', 'G5', 'D5', 'E5', 'E5', 'D5'], repeated do under "diye bagirir" 4 x G5 on beats 2, 2.5, 3, 3.5 of verse bar 5, intro phrase A (loud lead) ['G4', 'G4', 'G4', 'D4', 'E4', 'E4', 'D4']; nothing melodic in the slot bars; verse bar kinds ['voc', 'ans', 'voc_cut', 'slot', 'slot', 'fillin', 'voc', 'ansfill']; bars per kind {'intro_a': 2, 'intro_ans': 1, 'intro_ansfill': 1, 'voc': 14, 'ans': 8, 'voc_cut': 7, 'slot': 14, 'fillin': 7, 'ansfill': 7, 'ans2': 1, 'roll': 1, 'final': 1}
+[7] the separately rendered stems add up to the band render (so the stem checks apply to the mix)
+  OK   band render minus sum of 8 stems: -49.9 dB relative to the band
+       delivered altyapi vs gain-only band (difference = limiter action): -21.9 dB, correlation 0.99722
+[8] levels per verse bar (altyapi, dBFS RMS); slot bars 3 and 4 must be at least 8 dB below the normal bars
+       verse 1:  -18.7  -16.3  -19.5  -31.5  -31.5  -19.2  -19.0  -16.0
+       verse 2:  -18.7  -16.4  -19.0  -31.4  -31.5  -19.5  -19.1  -15.9
+       verse 3:  -18.7  -16.5  -19.2  -31.3  -31.5  -19.2  -19.0  -15.7
+       verse 4:  -18.6  -16.7  -19.1  -31.4  -31.6  -19.2  -19.1  -16.0
+       verse 5:  -18.6  -16.2  -19.3  -31.6  -31.5  -19.2  -19.0  -16.1
+       verse 6:  -18.6  -16.4  -19.1  -31.4  -31.6  -19.2  -18.8  -15.6
+       verse 7:  -18.8  -16.6  -19.0  -31.5  -31.6  -19.2  -18.9  -15.8
+  OK   slot bar 3: 13.5..13.7 dB below the mean of the six normal bars [0, 1, 2, 5, 6, 7]; slot bar 4: 13.6..13.9 dB; against the five full-band bars [0, 1, 2, 6, 7]: 13.7 / 13.9 dB (smallest); quietest normal bar minus loudest slot bar: 12.0 dB
+  OK   verse bar 5, beats 0-1 (fill): banjo+accordion+piano+brass+trumpet+glockenspiel stems are 73 dB or more below their own level in beats 2-3; drums+bass make up the whole band there (difference to the 8-stem sum 0.000 dB); altyapi level -19.9 dBFS
+  OK   verse bar 5, beats 2-3 (full groove back): altyapi -18.7 dBFS, i.e. -0.9..+0.2 dB against beats 2-3 of verse bar 0 (-18.4 dBFS); banjo, accordion, piano and brass stems all sound there (quietest of them -41.4 dB raw); beats 2-3 are 12.1 dB or more above the slot bars
+       intro bars: [-16.4, -16.7, -16.6, -15.7]   ending bars: [-16.4, -16.2, -14.6, -13.3]   tail after bar 64: -15.2 dBFS
+       first 250 ms of slot bar 3: -26.0 dBFS, of slot bar 4: -26.4 dBFS (difference = ring-over of bar 2 into the first animal call: +0.4 dB)
+[9] under-vocal stem: default level and audibility proxy
+  OK   ezgi_alti RMS relative to altyapi in the bars where it plays: -7.8 dB (default set to -8.0 dB before limiting); stem level outside its bars: -28.6 dB rel. to its active level
+       stem vs band energy in the third-octave band around each clarinet note (175 notes): median -3.3 dB, 10th pct -10.6, min -14.6; around the glockenspiel octave (2 f0): median +3.9 dB, min -18.0
+       for comparison, the LOUD lead (trumpet+brass+glockenspiel) in the answer bars: RMS -0.7 dB relative to the rest of the band; same third-octave proxy around the trumpet notes: median +6.3 dB
+[9b] stereo/mono: L-R correlation 0.874; mono fold-down (L+R)/2 loudness -14.29 LUFS (stereo -14.01); DC offset -78 dBFS
+[10] raw stem levels (dB RMS over verses 1-2, before master gain)
+       davul -32.4, bas -31.7, banjo -35.7, akordeon -42.7, piyano -37.3, brass -37.4, trompet -37.2, glockenspiel -39.0, klarnet -34.1, glockenspiel_hafif -40.9
+
+================ variant C ================
+[1] files, format, duration
+  OK   altyapi_C.wav: 2 ch, 44100 Hz, PCM_16, 6536250 frames = 148.2143 s
+  OK   ezgi_alti_C.wav: 2 ch, 44100 Hz, PCM_16, 6536250 frames = 148.2143 s
+  OK   rehber_C.wav: 2 ch, 44100 Hz, PCM_16, 6536250 frames = 148.2143 s
+  OK   the three files have the same length
+  OK   duration 148.2143 s = zaman json 148.2143 s
+  OK   64 bars, bar 2.285714 s, beat 0.571429 s, BPM 105.0
+  OK   7 verses x 8 bars in zaman json
+  OK   zaman json: verse v starts at bar 4 + 8 v; animal calls on the downbeats of verse bars 3 and 4 (verse 1: 16.0 s, 18.2857 s); "diye bagirir" on beat 2 of verse bar 5 (verse 1: 21.7143 s); intro and ending bar times on the grid
+  OK   harmony per beat of the 8 verse bars as specified: ['I I IV I', 'I V7 I I', 'I I IV I', 'I I I I', 'I I I I', 'I I I I', 'I I IV I', 'I V7 I I'] = ['C C F C', 'C G7 C C', 'C C F C', 'C C C C', 'C C C C', 'C C C C', 'C C F C', 'C G7 C C']
+  OK   ring-out tail after the final hit: 2.500 s (final hit at 145.7143 s, music end 146.2857 s)
+  OK   file ends in silence (last 20 ms peak -73.4 dBFS)
+[2] rehber = altyapi + ezgi_alti
+  OK   max |rehber - (altyapi + ezgi_alti)| = 1.00 LSB (16 bit)
+[3] loudness, peaks
+  OK   altyapi: -14.0 LUFS (ffmpeg ebur128; pyloudnorm -14.02), LRA 14.5, sample peak -1.70 dBFS, true peak -1.21 dBTP (4x) / -1.2 (ffmpeg), samples >= 0.999: 0
+  OK   rehber: -13.6 LUFS (ffmpeg ebur128; pyloudnorm -13.67), LRA 14.0, sample peak -1.70 dBFS, true peak -1.21 dBTP (4x) / -1.2 (ffmpeg), samples >= 0.999: 0
+       ezgi_alti: -22.3 LUFS (ffmpeg ebur128; pyloudnorm -22.34), LRA 6.3, sample peak -14.18 dBFS, true peak -13.96 dBTP (4x) / -13.9 (ffmpeg), samples >= 0.999: 0
+       limiter: max gain reduction 5.97 dB, >0.5 dB during 8.64 % of the time, >2 dB during 0.85 %; largest at [(145.75, 6.0), (144.05, 4.8), (64.58, 3.3), (82.87, 3.1), (63.44, 3.1)] (s, dB)
+[4] beat grid measured in the audio
+  OK   254 beat onsets (6-14 kHz band: hi-hat/snare/tambourine): fitted beat 0.571425 s (nominal 0.571429; => bar 2.28570 s, 105.001 BPM), half-level onset minus grid: median +2.02 ms, min -0.73, max +8.10, residual sd 1.90 ms
+  OK   drum stem, 186 kick hits: fitted beat 0.571425 s, drift over the whole song -0.77 ms, kick first rise minus grid: mean +2.42 ms (first 16 beats +2.92, last 16 +1.92), sd 1.49 ms
+[5] MIDI files vs zaman json
+  OK   altyapi_C.mid: 449 "lead" notes of the json found on the grid in the score MIDI (max deviation 0.150 ms) and in the rendered MIDI at grid minus the documented advance (max deviation 0.150 ms); MIDI tempo 571429 us/beat
+  OK   ezgi_alti_C.mid: 350 "ezgi_alti" notes of the json found on the grid in the score MIDI (max deviation 0.143 ms) and in the rendered MIDI at grid minus the documented advance (max deviation 0.143 ms); MIDI tempo 571429 us/beat
+       documented note advances (ms): {'bas': 22.6, 'akordeon': 22.6, 'klarnet': 16.7, 'brass': 8.3}
+[6] pitch and time of the melody notes, detected in the solo stems
+  OK   lead trompet: 112 notes checked, 112 matched (pitch within 0.3 st and onset within -15..+50 ms); pitch error mean +2.1 cents, max |err| 6.7 cents; half-level onset minus grid: median +8.8 ms, min +3.2, max +10.9
+  OK   lead glockenspiel (+1 oktav): 112 notes checked, 112 matched (pitch within 0.3 st and onset within -10..+30 ms); pitch error mean +4.8 cents, max |err| 5.4 cents; half-level onset minus grid: median +5.6 ms, min +3.8, max +9.1
+        (glockenspiel: pass/fail = expected fundamental present as a spectral peak; the blind "lowest newly appearing partial" estimate agrees for 112 of 112 notes; 0 of the 0 others repeat the pitch of the note just before, which is still ringing)
+  OK   ezgi_alti klarnet: 175 notes checked, 175 matched (pitch within 0.3 st and onset within -15..+50 ms); pitch error mean -2.1 cents, max |err| 4.0 cents; half-level onset minus grid: median +18.7 ms, min +7.5, max +42.9
+  OK   ezgi_alti glockenspiel (+1 oktav): 175 notes checked, 175 matched (pitch within 0.3 st and onset within -10..+30 ms); pitch error mean +3.7 cents, max |err| 5.9 cents; half-level onset minus grid: median +5.0 ms, min +3.2, max +6.9
+        (glockenspiel: pass/fail = expected fundamental present as a spectral peak; the blind "lowest newly appearing partial" estimate agrees for 175 of 175 notes; 0 of the 0 others repeat the pitch of the note just before, which is still ringing)
+  OK   ezgi_alti teslim dosyası (klarnet+glockenspiel karışık; 300-1100 Hz en güçlü tepe): 175 notes checked, 175 matched (pitch within 0.3 st and onset within -20..+50 ms); pitch error mean -2.1 cents, max |err| 4.0 cents; half-level onset minus grid: median +12.5 ms, min +3.3, max +20.1
+  OK   final chords (bar 63, beats 0 and 3): 12 chord notes on trumpet/glockenspiel stems, 12 found as spectral peaks at the expected pitch
+  OK   note names and beats in zaman json match the task: loud answer ['E5', 'E5', 'D5', 'D5', 'C5'] (+glockenspiel ['E6', 'E6', 'D6', 'D6', 'C6']), phrase A under the vocal ['C5', 'C5', 'C5', 'G4', 'A4', 'A4', 'G4'], repeated do under "diye bagirir" 4 x C5 on beats 2, 2.5, 3, 3.5 of verse bar 5, intro phrase A (loud lead) ['C5', 'C5', 'C5', 'G4', 'A4', 'A4', 'G4']; nothing melodic in the slot bars; verse bar kinds ['voc', 'ans', 'voc_cut', 'slot', 'slot', 'fillin', 'voc', 'ansfill']; bars per kind {'intro_a': 2, 'intro_ans': 1, 'intro_ansfill': 1, 'voc': 14, 'ans': 8, 'voc_cut': 7, 'slot': 14, 'fillin': 7, 'ansfill': 7, 'ans2': 1, 'roll': 1, 'final': 1}
+[7] the separately rendered stems add up to the band render (so the stem checks apply to the mix)
+  OK   band render minus sum of 8 stems: -50.2 dB relative to the band
+       delivered altyapi vs gain-only band (difference = limiter action): -21.4 dB, correlation 0.99707
+[8] levels per verse bar (altyapi, dBFS RMS); slot bars 3 and 4 must be at least 8 dB below the normal bars
+       verse 1:  -18.7  -16.1  -19.4  -30.1  -30.2  -19.3  -19.2  -15.5
+       verse 2:  -18.6  -16.1  -19.3  -30.1  -30.3  -19.1  -18.9  -15.6
+       verse 3:  -18.7  -15.9  -19.0  -30.2  -30.3  -19.1  -18.8  -15.6
+       verse 4:  -18.6  -15.9  -19.1  -30.2  -30.2  -19.1  -19.0  -15.5
+       verse 5:  -18.5  -16.1  -19.2  -30.2  -30.3  -19.2  -18.9  -15.5
+       verse 6:  -18.6  -16.1  -19.1  -30.2  -30.3  -19.1  -19.0  -15.7
+       verse 7:  -18.7  -15.9  -19.1  -30.2  -30.3  -19.2  -18.9  -15.6
+  OK   slot bar 3: 12.4..12.6 dB below the mean of the six normal bars [0, 1, 2, 5, 6, 7]; slot bar 4: 12.5..12.7 dB; against the five full-band bars [0, 1, 2, 6, 7]: 12.6 / 12.7 dB (smallest); quietest normal bar minus loudest slot bar: 10.7 dB
+  OK   verse bar 5, beats 0-1 (fill): banjo+accordion+piano+brass+trumpet+glockenspiel stems are 74 dB or more below their own level in beats 2-3; drums+bass make up the whole band there (difference to the 8-stem sum 0.000 dB); altyapi level -19.3 dBFS
+  OK   verse bar 5, beats 2-3 (full groove back): altyapi -19.0 dBFS, i.e. -0.6..-0.0 dB against beats 2-3 of verse bar 0 (-18.7 dBFS); banjo, accordion, piano and brass stems all sound there (quietest of them -41.1 dB raw); beats 2-3 are 10.8 dB or more above the slot bars
+       intro bars: [-16.2, -15.9, -16.3, -15.6]   ending bars: [-15.8, -15.4, -14.8, -13.5]   tail after bar 64: -16.1 dBFS
+       first 250 ms of slot bar 3: -24.4 dBFS, of slot bar 4: -24.7 dBFS (difference = ring-over of bar 2 into the first animal call: +0.2 dB)
+[9] under-vocal stem: default level and audibility proxy
+  OK   ezgi_alti RMS relative to altyapi in the bars where it plays: -7.7 dB (default set to -8.0 dB before limiting); stem level outside its bars: -28.4 dB rel. to its active level
+       stem vs band energy in the third-octave band around each clarinet note (175 notes): median +1.7 dB, 10th pct -5.6, min -8.9; around the glockenspiel octave (2 f0): median -12.9 dB, min -32.1
+       for comparison, the LOUD lead (trumpet+brass+glockenspiel) in the answer bars: RMS -0.2 dB relative to the rest of the band; same third-octave proxy around the trumpet notes: median +5.8 dB
+[9b] stereo/mono: L-R correlation 0.897; mono fold-down (L+R)/2 loudness -14.28 LUFS (stereo -14.02); DC offset -79 dBFS
+[10] raw stem levels (dB RMS over verses 1-2, before master gain)
+       davul -32.4, bas -30.5, banjo -36.5, akordeon -41.9, piyano -37.3, brass -36.5, trompet -37.0, glockenspiel -37.5, klarnet -34.7, glockenspiel_hafif -42.6
+
+================ G vs C: identical except for transposition ================
+       bas                    411 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [-5, 7]
+       banjo                 1010 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [7]
+       akordeon               850 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [7]
+       piyano                 758 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [-5, 7]
+       glockenspiel           118 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [-5, 7]
+       trompet                118 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [-5, 7]
+       brass                  261 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [-5, 7]
+       davul                 2453 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [0]
+       klarnet                175 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [7]
+       glockenspiel_hafif     175 notes, same times/durations/velocities: True, same scale degrees: True, pitch shifts seen (G minus C): [7]
+  OK   all channels: same rhythm, durations, velocities and scale degrees; only the key (and register per part) differs
+  OK   drum stems of the two variants are bit-identical
+  OK   the two zaman json files have identical times (tempo, bars, verses, every melody note)
+
+RESULT: ALL CHECKS PASSED

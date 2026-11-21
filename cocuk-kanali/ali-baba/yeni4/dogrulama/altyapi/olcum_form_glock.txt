@@ -1,0 +1,30 @@
+[G] blind form (delivered altyapi): bars more than 8 dB below the median bar level: [7, 8, 15, 16, 23, 24, 31, 32, 39, 40, 47, 48, 55, 56]  -> equals verse bars 3 and 4 of 7 verses of 8 bars after a 4-bar intro: True
+[G] (INCONCLUSIVE, >8 kHz is dominated by glockenspiel and trumpet, not by the crash) bars with sustained >8 kHz energy after the downbeat: [1, 3, 5, 11, 13, 19, 21, 27, 29, 35, 37, 43, 45, 51, 53, 59, 60, 61]
+[G] bars 0..63 all carry sound: 64/64; quietest bar -31.6 dBFS, loudest -13.4 dBFS (bar 63)
+[G] glockenspiel: note = semitone (C5..G6) with the largest energy increase at the slot; do = G5; 92/104 as in the task; exceptions [(0, 5, 'F5', 'E5'), (1, 3, 'G#5', 'A5'), (2, 5, 'F5', 'E5'), (5, 3, 'G#5', 'A5'), (19, 3, 'G#5', 'A5'), (21, 3, 'G#5', 'A5')]
+        iA    0:G5 1:G5 2:G5 3:D5 4:E5 5:F5 6:D5
+        iANS  0:B5 1:B5 2:A5 3:A5/G#5 4:G5
+        ans   0:B5 1:B5 2:A5 3:A5/G#5 4:G5
+        ring-over at pitch changes: fundamental of the PREVIOUS note relative to the NEW note in the first 93 ms after the new attack: median +0.1 dB, range -10.4 .. +7.3 dB, previous note louder in 52 % of 42 changes
+[G] glockenspiel_hafif: note = semitone (E5..A#6) with the largest energy increase at the slot; do = G6; 171/175 as in the task; exceptions [(12, 1, 'G#6', 'G6'), (26, 1, 'F#6', 'G6'), (50, 2, 'G#6', 'G6'), (54, 1, 'G#6', 'G6')]
+        voc   0:G6 1:F#6/G#6/G6 2:G#6/G6 3:D6 4:E6 5:E6 6:D6
+        fill  4:G6 5:G6 6:G6 7:G6
+        ring-over at pitch changes: fundamental of the PREVIOUS note relative to the NEW note in the first 93 ms after the new attack: median +5.7 dB, range -18.0 .. +9.6 dB, previous note louder in 67 % of 63 changes
+[G] ending, brass stem, level at the diatonic third above each answer note relative to the strongest partial (note, bar 60 plain, bar 61 harmonised): [('D5', -35.8, -8.0), ('D5', -41.4, -7.0), ('C5', -44.8, -0.4), ('C5', -47.3, -2.3), ('B4', -38.8, -2.9)]
+[G] final bar 63, drum stem: new hits at (beat, level rel. to the loudest drum hit of the song): [(0.0, -3.5), (0.75, -9.1), (1.0, -9.0), (1.25, -8.4), (1.5, -7.7), (1.75, -7.1), (2.0, -6.3), (2.25, -5.8), (2.5, -4.7), (2.75, -3.6), (3.0, 0.0)]
+[C] blind form (delivered altyapi): bars more than 8 dB below the median bar level: [7, 8, 15, 16, 23, 24, 31, 32, 39, 40, 47, 48, 55, 56]  -> equals verse bars 3 and 4 of 7 verses of 8 bars after a 4-bar intro: True
+[C] (INCONCLUSIVE, >8 kHz is dominated by glockenspiel and trumpet, not by the crash) bars with sustained >8 kHz energy after the downbeat: [0, 2]
+[C] bars 0..63 all carry sound: 64/64; quietest bar -30.4 dBFS, loudest -13.7 dBFS (bar 63)
+[C] glockenspiel: note = semitone (C5..G6) with the largest energy increase at the slot; do = C6; 100/104 as in the task; exceptions [(0, 1, 'B5', 'C6'), (2, 2, 'B5', 'C6'), (2, 5, 'G#5', 'A5'), (27, 3, 'C#6', 'D6')]
+        iA    0:C6 1:B5/C6 2:B5/C6 3:G5 4:A5 5:A5/G#5 6:G5
+        iANS  0:E6 1:E6 2:D6 3:D6 4:C6
+        ans   0:E6 1:E6 2:D6 3:C#6/D6 4:C6
+        ring-over at pitch changes: fundamental of the PREVIOUS note relative to the NEW note in the first 93 ms after the new attack: median +3.5 dB, range -12.6 .. +10.6 dB, previous note louder in 90 % of 42 changes
+[C] glockenspiel_hafif: note = semitone (E5..A#6) with the largest energy increase at the slot; do = C6; 144/175 as in the task; exceptions [(4, 5, 'G#5', 'A5'), (6, 5, 'G#5', 'A5'), (9, 5, 'B5', 'C6'), (10, 0, 'B5', 'C6'), (10, 5, 'G#5', 'A5'), (12, 1, 'B5', 'C6')]
+        voc   0:B5/C6 1:B5/C6 2:B5/C6 3:G5 4:A5 5:A5/G#5 6:G5
+        fill  4:C6 5:B5/C6 6:B5/C6 7:C6
+        ring-over at pitch changes: fundamental of the PREVIOUS note relative to the NEW note in the first 93 ms after the new attack: median -0.6 dB, range -14.9 .. +8.7 dB, previous note louder in 41 % of 63 changes
+[C] ending, brass stem, level at the diatonic third above each answer note relative to the strongest partial (note, bar 60 plain, bar 61 harmonised): [('G5', -37.1, -0.3), ('G5', -38.0, 0.0), ('F5', -36.5, -6.6), ('F5', -37.2, -9.3), ('E5', -41.4, -7.8)]
+[C] final bar 63, drum stem: new hits at (beat, level rel. to the loudest drum hit of the song): [(0.0, -3.5), (0.75, -9.1), (1.0, -9.0), (1.25, -8.4), (1.5, -7.7), (1.75, -7.1), (2.0, -6.3), (2.25, -5.8), (2.5, -4.7), (2.75, -3.6), (3.0, 0.0)]
+[G 104.96 BPM] roll bar 62, comp stems, template scores per beat (task: IV IV V7 V7): [{'I': 0.475, 'IV': 0.968, 'V7': 0.308}, {'I': 0.787, 'IV': 0.792, 'V7': 0.245}, {'I': 0.217, 'IV': 0.204, 'V7': 0.909}, {'I': 0.317, 'IV': 0.513, 'V7': 0.814}]
+[G 105.30 BPM] roll bar 62, comp stems, template scores per beat (task: IV IV V7 V7): [{'I': 0.528, 'IV': 0.958, 'V7': 0.254}, {'I': 0.791, 'IV': 0.761, 'V7': 0.186}, {'I': 0.22, 'IV': 0.224, 'V7': 0.907}, {'I': 0.294, 'IV': 0.416, 'V7': 0.858}]

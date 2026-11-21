@@ -1,0 +1,28 @@
+{
+ "bpm": 105.00279777191432,
+ "beat_period_s": 0.5714133458646616,
+ "bar_period_s": 2.2856533834586465,
+ "phase_first_beat_s": 0.00011546052631578948,
+ "series_used": [
+  "low_120_300_on",
+  "mid_300_2000_on",
+  "high_2k_8k_on",
+  "air_8k_16k_on"
+ ],
+ "slope_ms_per_s_vs_105_000": -0.026644736842105273,
+ "slope_bootstrap_sd": 0.007356546778978374,
+ "intercept_ms_vs_phase_0": 0.11546052631578947,
+ "residual_sd_ms": 2.4925019570476623,
+ "bpm_uncertainty": 0.0007724374117927293,
+ "per_series_mean_dev_ms": {
+  "kick_40_120": 25.03634414119288,
+  "low_120_300_on": 1.920812530012703,
+  "mid_300_2000_on": -1.6576875259013586,
+  "high_2k_8k_on": -2.8943750452246095,
+  "air_8k_16k_on": -2.341812536590826,
+  "high_2k_8k_off": -4.5257500707148495,
+  "air_8k_16k_off": -5.144093830376477
+ },
+ "definition": "beat time = steepest rise of the on-beat transient (kick click / attack in the bands 120 Hz-16 kHz); the kick low-frequency body (40-120 Hz) rises about 25 ms later",
+ "drift_of_exact_105_bpm_grid_over_100s_ms": -2.6644736842105274
+}

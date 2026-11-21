@@ -1,0 +1,2397 @@
+{
+ "verses": [
+  {
+   "verse": 1,
+   "onset_beat": 15,
+   "first_downbeat": 8.57131564849624,
+   "bar_downbeats": [
+    8.57131564849624,
+    10.856969031954886,
+    13.142622415413532,
+    15.428275798872178,
+    17.713929182330826,
+    19.999582565789474
+   ],
+   "next_verse_downbeat": 22.285235949248122,
+   "local_attack_minus_lattice_ms": {
+    "low_120_300_ms": 2.999545122649161,
+    "mid_300_2000_ms": -1.2498104677704513
+   },
+   "animal_word": "inekleri"
+  },
+  {
+   "verse": 2,
+   "onset_beat": 39,
+   "first_downbeat": 22.285235949248122,
+   "bar_downbeats": [
+    22.285235949248122,
+    24.570889332706766,
+    26.856542716165414,
+    29.14219609962406,
+    31.427849483082706,
+    33.713502866541354
+   ],
+   "next_verse_downbeat": 35.99915625,
+   "local_attack_minus_lattice_ms": {
+    "low_120_300_ms": 1.9996967484327555,
+    "mid_300_2000_ms": -0.49992418710820274
+   },
+   "animal_word": "koyunları"
+  },
+  {
+   "verse": 3,
+   "onset_beat": 63,
+   "first_downbeat": 35.99915625,
+   "bar_downbeats": [
+    35.99915625,
+    38.28480963345864,
+    40.570463016917294,
+    42.85611640037594,
+    45.14176978383458,
+    47.427423167293234
+   ],
+   "next_verse_downbeat": 49.71307655075188,
+   "local_attack_minus_lattice_ms": {
+    "low_120_300_ms": 4.749279777527815,
+    "mid_300_2000_ms": -0.99984837421635
+   },
+   "animal_word": "atları"
+  },
+  {
+   "verse": 4,
+   "onset_beat": 87,
+   "first_downbeat": 49.71307655075188,
+   "bar_downbeats": [
+    49.71307655075188,
+    51.99872993421052,
+    54.284383317669175,
+    56.57003670112782,
+    58.85569008458646,
+    61.141343468045115
+   ],
+   "next_verse_downbeat": 63.42699685150376,
+   "local_attack_minus_lattice_ms": {
+    "low_120_300_ms": 2.7495830290950596,
+    "mid_300_2000_ms": -0.99984837421635
+   },
+   "animal_word": "horozları"
+  },
+  {
+   "verse": 5,
+   "onset_beat": 111,
+   "first_downbeat": 63.42699685150376,
+   "bar_downbeats": [
+    63.42699685150376,
+    65.71265023496241,
+    67.99830361842105,
+    70.2839570018797,
+    72.56961038533835,
+    74.85526376879699
+   ],
+   "next_verse_downbeat": 77.14091715225564,
+   "local_attack_minus_lattice_ms": {
+    "low_120_300_ms": 4.499317683973714,
+    "mid_300_2000_ms": -0.24996209355410137
+   },
+   "animal_word": "ördekleri"
+  },
+  {
+   "verse": 6,
+   "onset_beat": 135,
+   "first_downbeat": 77.14091715225564,
+   "bar_downbeats": [
+    77.14091715225564,
+    79.42657053571429,
+    81.71222391917293,
+    83.99787730263158,
+    86.28353068609023,
+    88.56918406954887
+   ],
+   "next_verse_downbeat": 90.85483745300752,
+   "local_attack_minus_lattice_ms": {
+    "low_120_300_ms": 3.2495072162032623,
+    "mid_300_2000_ms": -1.2498104677704513
+   },
+   "animal_word": "köpekleri"
+  },
+  {
+   "verse": 7,
+   "onset_beat": 159,
+   "first_downbeat": 90.85483745300752,
+   "bar_downbeats": [
+    90.85483745300752,
+    93.14049083646616,
+    95.42614421992481,
+    97.71179760338346,
+    99.9974509868421,
+    102.28310437030075
+   ],
+   "next_verse_downbeat": 104.5687577537594,
+   "local_attack_minus_lattice_ms": {
+    "low_120_300_ms": 4.499317683973714,
+    "mid_300_2000_ms": -0.24996209355410137
+   },
+   "animal_word": "kedisi"
+  }
+ ],
+ "segments": [
+  {
+   "verse": 1,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 15,
+   "bar_downbeat": 8.5713,
+   "onset_words_file": 8.58,
+   "onset_refined": 8.5738,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 8.5738,
+   "end": 10.74,
+   "offset_sec": 0.0025,
+   "offset_beats": 0.0044,
+   "offset_words_file_sec": 0.0087,
+   "offset_words_file_beats": 0.0152,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 2.5,
+   "deviation_words_file_ms": 8.7,
+   "end_beats_after_bar_downbeat": 3.795,
+   "duration_s": 2.166,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 8.57383219954657,
+     "peak_excess_over_band": 1.0637557032697627,
+     "dip_time": 8.449024943310674,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 8.480952380952415,
+     "peak_excess_over_band": 1.0659849782978457,
+     "dip_time": 8.449024943310674,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 8.58,
+     "end": 9.04,
+     "beats_from_verse_downbeat": 0.015
+    },
+    {
+     "text": "Baba'nın",
+     "start": 9.12,
+     "end": 9.64,
+     "beats_from_verse_downbeat": 0.96
+    },
+    {
+     "text": "bir",
+     "start": 9.7,
+     "end": 9.88,
+     "beats_from_verse_downbeat": 1.975
+    },
+    {
+     "text": "çiftliği",
+     "start": 9.98,
+     "end": 10.5,
+     "beats_from_verse_downbeat": 2.465
+    },
+    {
+     "text": "var,",
+     "start": 10.56,
+     "end": 10.74,
+     "beats_from_verse_downbeat": 3.48
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "L2",
+   "text": "çiftliğinde inekleri var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 19,
+   "bar_downbeat": 10.857,
+   "onset_words_file": 10.84,
+   "onset_refined": 10.8222,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 10.8222,
+   "end": 13.08,
+   "offset_sec": -0.0347,
+   "offset_beats": -0.0608,
+   "offset_words_file_sec": -0.017,
+   "offset_words_file_beats": -0.0297,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -34.7,
+   "deviation_words_file_ms": -17.0,
+   "end_beats_after_bar_downbeat": 3.89,
+   "duration_s": 2.258,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 10.952834467120333,
+     "peak_excess_over_band": 0.4571572319162095,
+     "dip_time": 10.764172335600954,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 10.822222222222301,
+     "peak_excess_over_band": 2.6362241472272676,
+     "dip_time": 10.769977324263088,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 10.84,
+     "end": 11.9,
+     "beats_from_verse_downbeat": 3.97
+    },
+    {
+     "text": "inekleri",
+     "start": 12.06,
+     "end": 12.78,
+     "beats_from_verse_downbeat": 6.105
+    },
+    {
+     "text": "var.",
+     "start": 12.84,
+     "end": 13.08,
+     "beats_from_verse_downbeat": 7.47
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "ses",
+   "text": "\"Mö, mö\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 23,
+   "bar_downbeat": 13.1426,
+   "onset_words_file": 13.12,
+   "onset_refined": 13.0935,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 13.12,
+   "end": 13.94,
+   "offset_sec": -0.0226,
+   "offset_beats": -0.0396,
+   "offset_words_file_sec": -0.0226,
+   "offset_words_file_beats": -0.0396,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -22.6,
+   "deviation_words_file_ms": -22.6,
+   "end_beats_after_bar_downbeat": 1.395,
+   "duration_s": 0.82,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 13.093514739229098,
+     "peak_excess_over_band": 0.6738541894287476,
+     "dip_time": 13.087709750566964,
+     "dip_level_rel_peak": 0.038491705415623974
+    },
+    "cons_2k_7k": {
+     "onset": 13.222675736961596,
+     "peak_excess_over_band": 0.37649874546214296,
+     "dip_time": 13.08625850340143,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Mö,",
+     "start": 13.12,
+     "end": 13.4,
+     "beats_from_verse_downbeat": 7.96
+    },
+    {
+     "text": "mö\"",
+     "start": 13.72,
+     "end": 13.94,
+     "beats_from_verse_downbeat": 9.01
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 23,
+   "bar_downbeat": 13.1426,
+   "onset_words_file": 14.28,
+   "onset_refined": 14.2941,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 14.28,
+   "end": 15.32,
+   "offset_sec": 1.1374,
+   "offset_beats": 1.9905,
+   "offset_words_file_sec": 1.1374,
+   "offset_words_file_beats": 1.9905,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": -5.4,
+   "deviation_words_file_ms": -5.4,
+   "end_beats_after_bar_downbeat": 3.811,
+   "duration_s": 1.04,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 14.294149659864042,
+     "peak_excess_over_band": 0.8775699225688344,
+     "dip_time": 14.231746031746093,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 14.327528344671316,
+     "peak_excess_over_band": 2.383648604990998,
+     "dip_time": 14.236099773242694,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 14.28,
+     "end": 14.76,
+     "beats_from_verse_downbeat": 9.99
+    },
+    {
+     "text": "bağırır",
+     "start": 14.84,
+     "end": 15.32,
+     "beats_from_verse_downbeat": 10.97
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 27,
+   "bar_downbeat": 15.4283,
+   "onset_words_file": 15.4,
+   "onset_refined": 15.3706,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 15.3706,
+   "end": 17.68,
+   "offset_sec": -0.0577,
+   "offset_beats": -0.1009,
+   "offset_words_file_sec": -0.0283,
+   "offset_words_file_beats": -0.0495,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -57.7,
+   "deviation_words_file_ms": -28.3,
+   "end_beats_after_bar_downbeat": 3.941,
+   "duration_s": 2.309,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 15.440272108843649,
+     "peak_excess_over_band": 0.09482101363614764,
+     "dip_time": 15.305306122449016,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 15.370612244898032,
+     "peak_excess_over_band": 2.5236778526765837,
+     "dip_time": 15.338684807256291,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 15.4,
+     "end": 16.46,
+     "beats_from_verse_downbeat": 11.951
+    },
+    {
+     "text": "Ali",
+     "start": 16.64,
+     "end": 17.04,
+     "beats_from_verse_downbeat": 14.121
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 17.1,
+     "end": 17.68,
+     "beats_from_verse_downbeat": 14.926
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 39,
+   "bar_downbeat": 22.2852,
+   "onset_words_file": 22.3,
+   "onset_refined": 22.2764,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 22.2764,
+   "end": 24.46,
+   "offset_sec": -0.0088,
+   "offset_beats": -0.0154,
+   "offset_words_file_sec": 0.0148,
+   "offset_words_file_beats": 0.0258,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -8.8,
+   "deviation_words_file_ms": 14.8,
+   "end_beats_after_bar_downbeat": 3.806,
+   "duration_s": 2.184,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 22.276417233560167,
+     "peak_excess_over_band": 1.0972652439010309,
+     "dip_time": 22.169024943310674,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 22.25029478458056,
+     "peak_excess_over_band": 1.1480193075589795,
+     "dip_time": 22.169024943310674,
+     "dip_level_rel_peak": 0.009330699140475312
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 22.3,
+     "end": 22.76,
+     "beats_from_verse_downbeat": 0.026
+    },
+    {
+     "text": "Baba'nın",
+     "start": 22.84,
+     "end": 23.36,
+     "beats_from_verse_downbeat": 0.971
+    },
+    {
+     "text": "bir",
+     "start": 23.4,
+     "end": 23.6,
+     "beats_from_verse_downbeat": 1.951
+    },
+    {
+     "text": "çiftliği",
+     "start": 23.7,
+     "end": 24.22,
+     "beats_from_verse_downbeat": 2.476
+    },
+    {
+     "text": "var,",
+     "start": 24.26,
+     "end": 24.46,
+     "beats_from_verse_downbeat": 3.456
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "L2",
+   "text": "çiftliğinde koyunları var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 43,
+   "bar_downbeat": 24.5709,
+   "onset_words_file": 24.56,
+   "onset_refined": 24.5335,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 24.5335,
+   "end": 26.82,
+   "offset_sec": -0.0374,
+   "offset_beats": -0.0654,
+   "offset_words_file_sec": -0.0109,
+   "offset_words_file_beats": -0.0191,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -37.4,
+   "deviation_words_file_ms": -10.9,
+   "end_beats_after_bar_downbeat": 3.936,
+   "duration_s": 2.286,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 24.62929705215432,
+     "peak_excess_over_band": 0.41761487703686884,
+     "dip_time": 24.472562358276683,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 24.533514739229098,
+     "peak_excess_over_band": 2.076298571291045,
+     "dip_time": 24.481269841269885,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 24.56,
+     "end": 25.58,
+     "beats_from_verse_downbeat": 3.981
+    },
+    {
+     "text": "koyunları",
+     "start": 25.7,
+     "end": 26.52,
+     "beats_from_verse_downbeat": 5.976
+    },
+    {
+     "text": "var.",
+     "start": 26.58,
+     "end": 26.82,
+     "beats_from_verse_downbeat": 7.516
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "ses",
+   "text": "\"Me, me\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 47,
+   "bar_downbeat": 26.8565,
+   "onset_words_file": 26.82,
+   "onset_refined": 26.8327,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 26.82,
+   "end": 27.66,
+   "offset_sec": -0.0365,
+   "offset_beats": -0.064,
+   "offset_words_file_sec": -0.0365,
+   "offset_words_file_beats": -0.064,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -36.5,
+   "deviation_words_file_ms": -36.5,
+   "end_beats_after_bar_downbeat": 1.406,
+   "duration_s": 0.84,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 26.83269841269851,
+     "peak_excess_over_band": 0.7576478645562779,
+     "dip_time": 26.787709750566965,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 26.88058956916112,
+     "peak_excess_over_band": 2.4791550039152765,
+     "dip_time": 26.810929705215504,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Me,",
+     "start": 26.82,
+     "end": 27.1,
+     "beats_from_verse_downbeat": 7.936
+    },
+    {
+     "text": "me\"",
+     "start": 27.46,
+     "end": 27.66,
+     "beats_from_verse_downbeat": 9.056
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 47,
+   "bar_downbeat": 26.8565,
+   "onset_words_file": 28.0,
+   "onset_refined": 28.0171,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 28.0,
+   "end": 29.06,
+   "offset_sec": 1.1435,
+   "offset_beats": 2.0011,
+   "offset_words_file_sec": 1.1435,
+   "offset_words_file_beats": 2.0011,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 0.6,
+   "deviation_words_file_ms": 0.6,
+   "end_beats_after_bar_downbeat": 3.856,
+   "duration_s": 1.06,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 28.01705215419511,
+     "peak_excess_over_band": 0.719125042259058,
+     "dip_time": 27.951746031746094,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 28.053333333333452,
+     "peak_excess_over_band": 2.5974316214912694,
+     "dip_time": 27.964807256235897,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 28.0,
+     "end": 28.5,
+     "beats_from_verse_downbeat": 10.001
+    },
+    {
+     "text": "bağırır",
+     "start": 28.56,
+     "end": 29.06,
+     "beats_from_verse_downbeat": 10.981
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 51,
+   "bar_downbeat": 29.1422,
+   "onset_words_file": 29.12,
+   "onset_refined": 29.1008,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 29.1008,
+   "end": 31.4,
+   "offset_sec": -0.0414,
+   "offset_beats": -0.0725,
+   "offset_words_file_sec": -0.0222,
+   "offset_words_file_beats": -0.0388,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -41.4,
+   "deviation_words_file_ms": -22.2,
+   "end_beats_after_bar_downbeat": 3.951,
+   "duration_s": 2.299,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 29.154467120181515,
+     "peak_excess_over_band": 0.18620051857982398,
+     "dip_time": 29.044172335600955,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 29.10077097505677,
+     "peak_excess_over_band": 1.630457548645984,
+     "dip_time": 29.080453514739297,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 29.12,
+     "end": 30.2,
+     "beats_from_verse_downbeat": 11.961
+    },
+    {
+     "text": "Ali",
+     "start": 30.36,
+     "end": 30.68,
+     "beats_from_verse_downbeat": 14.131
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 30.84,
+     "end": 31.4,
+     "beats_from_verse_downbeat": 14.971
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 63,
+   "bar_downbeat": 35.9992,
+   "onset_words_file": 36.0,
+   "onset_refined": 35.9837,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 36.0,
+   "end": 38.16,
+   "offset_sec": 0.0008,
+   "offset_beats": 0.0015,
+   "offset_words_file_sec": 0.0008,
+   "offset_words_file_beats": 0.0015,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 0.8,
+   "deviation_words_file_ms": 0.8,
+   "end_beats_after_bar_downbeat": 3.782,
+   "duration_s": 2.16,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 35.98367346938784,
+     "peak_excess_over_band": 0.7233817802148685,
+     "dip_time": 35.86902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 35.99963718820871,
+     "peak_excess_over_band": 0.987954403637532,
+     "dip_time": 35.86902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 36.0,
+     "end": 36.48,
+     "beats_from_verse_downbeat": 0.001
+    },
+    {
+     "text": "Baba'nın",
+     "start": 36.56,
+     "end": 37.06,
+     "beats_from_verse_downbeat": 0.982
+    },
+    {
+     "text": "bir",
+     "start": 37.12,
+     "end": 37.32,
+     "beats_from_verse_downbeat": 1.962
+    },
+    {
+     "text": "çiftliği",
+     "start": 37.4,
+     "end": 37.94,
+     "beats_from_verse_downbeat": 2.452
+    },
+    {
+     "text": "var,",
+     "start": 37.98,
+     "end": 38.16,
+     "beats_from_verse_downbeat": 3.467
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "L2",
+   "text": "çiftliğinde atları var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 67,
+   "bar_downbeat": 38.2848,
+   "onset_words_file": 38.26,
+   "onset_refined": 38.2437,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 38.2437,
+   "end": 40.54,
+   "offset_sec": -0.0411,
+   "offset_beats": -0.072,
+   "offset_words_file_sec": -0.0248,
+   "offset_words_file_beats": -0.0434,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -41.1,
+   "deviation_words_file_ms": -24.8,
+   "end_beats_after_bar_downbeat": 3.947,
+   "duration_s": 2.296,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 38.294467120181515,
+     "peak_excess_over_band": 0.06602770937798338,
+     "dip_time": 38.17546485260775,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 38.243673469387836,
+     "peak_excess_over_band": 1.9037761140039353,
+     "dip_time": 38.17836734693882,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 38.26,
+     "end": 39.32,
+     "beats_from_verse_downbeat": 3.957
+    },
+    {
+     "text": "atları",
+     "start": 39.48,
+     "end": 40.22,
+     "beats_from_verse_downbeat": 6.092
+    },
+    {
+     "text": "var.",
+     "start": 40.28,
+     "end": 40.54,
+     "beats_from_verse_downbeat": 7.492
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "ses",
+   "text": "\"Me, me\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 71,
+   "bar_downbeat": 40.5705,
+   "onset_words_file": 40.54,
+   "onset_refined": 40.573,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 40.54,
+   "end": 41.38,
+   "offset_sec": -0.0305,
+   "offset_beats": -0.0533,
+   "offset_words_file_sec": -0.0305,
+   "offset_words_file_beats": -0.0533,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -30.5,
+   "deviation_words_file_ms": -30.5,
+   "end_beats_after_bar_downbeat": 1.417,
+   "duration_s": 0.84,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 40.57301587301598,
+     "peak_excess_over_band": 0.3956104014188941,
+     "dip_time": 40.5048072562359,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 40.60204081632666,
+     "peak_excess_over_band": 1.7073936319186513,
+     "dip_time": 40.526575963718905,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Me,",
+     "start": 40.54,
+     "end": 40.82,
+     "beats_from_verse_downbeat": 7.947
+    },
+    {
+     "text": "me\"",
+     "start": 41.16,
+     "end": 41.38,
+     "beats_from_verse_downbeat": 9.032
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 71,
+   "bar_downbeat": 40.5705,
+   "onset_words_file": 41.72,
+   "onset_refined": 41.7371,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 41.72,
+   "end": 42.76,
+   "offset_sec": 1.1495,
+   "offset_beats": 2.0117,
+   "offset_words_file_sec": 1.1495,
+   "offset_words_file_beats": 2.0117,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 6.7,
+   "deviation_words_file_ms": 6.7,
+   "end_beats_after_bar_downbeat": 3.832,
+   "duration_s": 1.04,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 41.73705215419511,
+     "peak_excess_over_band": 0.4281253950442514,
+     "dip_time": 41.612244897959215,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 41.74721088435385,
+     "peak_excess_over_band": 1.6313931301681297,
+     "dip_time": 41.667392290249495,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 41.72,
+     "end": 42.2,
+     "beats_from_verse_downbeat": 10.012
+    },
+    {
+     "text": "bağırır",
+     "start": 42.28,
+     "end": 42.76,
+     "beats_from_verse_downbeat": 10.992
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 75,
+   "bar_downbeat": 42.8561,
+   "onset_words_file": 42.84,
+   "onset_refined": 42.8193,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 42.8193,
+   "end": 45.1,
+   "offset_sec": -0.0368,
+   "offset_beats": -0.0644,
+   "offset_words_file_sec": -0.0161,
+   "offset_words_file_beats": -0.0282,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -36.8,
+   "deviation_words_file_ms": -16.1,
+   "end_beats_after_bar_downbeat": 3.927,
+   "duration_s": 2.281,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": null,
+     "peak_excess_over_band": 0.0,
+     "dip_time": 42.73369614512475,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 42.81931972789124,
+     "peak_excess_over_band": 1.1574628139597434,
+     "dip_time": 42.769977324263095,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 42.84,
+     "end": 43.92,
+     "beats_from_verse_downbeat": 11.972
+    },
+    {
+     "text": "Ali",
+     "start": 44.08,
+     "end": 44.5,
+     "beats_from_verse_downbeat": 14.142
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 44.56,
+     "end": 45.1,
+     "beats_from_verse_downbeat": 14.982
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 87,
+   "bar_downbeat": 49.7131,
+   "onset_words_file": 49.74,
+   "onset_refined": 49.7164,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 49.74,
+   "end": 51.9,
+   "offset_sec": 0.0269,
+   "offset_beats": 0.0471,
+   "offset_words_file_sec": 0.0269,
+   "offset_words_file_beats": 0.0471,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 26.9,
+   "deviation_words_file_ms": 26.9,
+   "end_beats_after_bar_downbeat": 3.827,
+   "duration_s": 2.16,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 49.71641723356017,
+     "peak_excess_over_band": 0.9555838664420817,
+     "dip_time": 49.60902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 49.77591836734705,
+     "peak_excess_over_band": 1.258547768217519,
+     "dip_time": 49.60902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 49.74,
+     "end": 50.2,
+     "beats_from_verse_downbeat": 0.047
+    },
+    {
+     "text": "Baba'nın",
+     "start": 50.26,
+     "end": 50.78,
+     "beats_from_verse_downbeat": 0.957
+    },
+    {
+     "text": "bir",
+     "start": 50.84,
+     "end": 51.04,
+     "beats_from_verse_downbeat": 1.972
+    },
+    {
+     "text": "çiftliği",
+     "start": 51.12,
+     "end": 51.64,
+     "beats_from_verse_downbeat": 2.462
+    },
+    {
+     "text": "var,",
+     "start": 51.7,
+     "end": 51.9,
+     "beats_from_verse_downbeat": 3.477
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "L2",
+   "text": "çiftliğinde horozları var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 91,
+   "bar_downbeat": 51.9987,
+   "onset_words_file": 51.98,
+   "onset_refined": 51.9738,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 51.9738,
+   "end": 54.26,
+   "offset_sec": -0.0249,
+   "offset_beats": -0.0436,
+   "offset_words_file_sec": -0.0187,
+   "offset_words_file_beats": -0.0328,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -24.9,
+   "deviation_words_file_ms": -18.7,
+   "end_beats_after_bar_downbeat": 3.957,
+   "duration_s": 2.286,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 52.00575963718831,
+     "peak_excess_over_band": 0.13469508491693916,
+     "dip_time": 51.90997732426309,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 51.97383219954657,
+     "peak_excess_over_band": 1.929218736525029,
+     "dip_time": 51.91433106575969,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 51.98,
+     "end": 53.02,
+     "beats_from_verse_downbeat": 3.967
+    },
+    {
+     "text": "horozları",
+     "start": 53.12,
+     "end": 53.94,
+     "beats_from_verse_downbeat": 5.962
+    },
+    {
+     "text": "var.",
+     "start": 54.0,
+     "end": 54.26,
+     "beats_from_verse_downbeat": 7.502
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "ses",
+   "text": "\"Üü, üü\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 95,
+   "bar_downbeat": 54.2844,
+   "onset_words_file": 54.3,
+   "onset_refined": 54.3461,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 54.3,
+   "end": 55.1,
+   "offset_sec": 0.0156,
+   "offset_beats": 0.0273,
+   "offset_words_file_sec": 0.0156,
+   "offset_words_file_beats": 0.0273,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": 15.6,
+   "deviation_words_file_ms": 15.6,
+   "end_beats_after_bar_downbeat": 1.427,
+   "duration_s": 0.8,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 54.346077097505784,
+     "peak_excess_over_band": 0.1730684270134668,
+     "dip_time": 54.21981859410435,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 54.283673469387836,
+     "peak_excess_over_band": 0.5004717268614681,
+     "dip_time": 54.244489795918426,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Üü,",
+     "start": 54.3,
+     "end": 54.8,
+     "beats_from_verse_downbeat": 8.027
+    },
+    {
+     "text": "üü\"",
+     "start": 54.9,
+     "end": 55.1,
+     "beats_from_verse_downbeat": 9.077
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 95,
+   "bar_downbeat": 54.2844,
+   "onset_words_file": 55.44,
+   "onset_refined": 55.4614,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 55.44,
+   "end": 56.44,
+   "offset_sec": 1.1556,
+   "offset_beats": 2.0224,
+   "offset_words_file_sec": 1.1556,
+   "offset_words_file_beats": 2.0224,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 12.8,
+   "deviation_words_file_ms": 12.8,
+   "end_beats_after_bar_downbeat": 3.772,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 55.46140589569171,
+     "peak_excess_over_band": 0.955750022100424,
+     "dip_time": 55.37433106575969,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 55.45560090702958,
+     "peak_excess_over_band": 3.0840937310845833,
+     "dip_time": 55.375782312925224,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 55.44,
+     "end": 55.9,
+     "beats_from_verse_downbeat": 10.022
+    },
+    {
+     "text": "bağırır",
+     "start": 55.98,
+     "end": 56.44,
+     "beats_from_verse_downbeat": 10.967
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 99,
+   "bar_downbeat": 56.57,
+   "onset_words_file": 56.52,
+   "onset_refined": 56.508,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 56.508,
+   "end": 58.78,
+   "offset_sec": -0.062,
+   "offset_beats": -0.1085,
+   "offset_words_file_sec": -0.05,
+   "offset_words_file_beats": -0.0876,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -62.0,
+   "deviation_words_file_ms": -50.0,
+   "end_beats_after_bar_downbeat": 3.868,
+   "duration_s": 2.272,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 56.57913832199559,
+     "peak_excess_over_band": 0.3031656834632309,
+     "dip_time": 56.45142857142863,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 56.50802721088444,
+     "peak_excess_over_band": 1.3790490494462257,
+     "dip_time": 56.44852607709756,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 56.52,
+     "end": 57.56,
+     "beats_from_verse_downbeat": 11.912
+    },
+    {
+     "text": "Ali",
+     "start": 57.7,
+     "end": 58.16,
+     "beats_from_verse_downbeat": 13.977
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 58.26,
+     "end": 58.78,
+     "beats_from_verse_downbeat": 14.958
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 111,
+   "bar_downbeat": 63.427,
+   "onset_words_file": 63.42,
+   "onset_refined": 63.408,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 63.408,
+   "end": 65.6,
+   "offset_sec": -0.019,
+   "offset_beats": -0.0332,
+   "offset_words_file_sec": -0.007,
+   "offset_words_file_beats": -0.0122,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -19.0,
+   "deviation_words_file_ms": -7.0,
+   "end_beats_after_bar_downbeat": 3.803,
+   "duration_s": 2.192,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 63.40802721088444,
+     "peak_excess_over_band": 1.2040252239205667,
+     "dip_time": 63.28902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 63.405124716553374,
+     "peak_excess_over_band": 1.737471496120439,
+     "dip_time": 63.28902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 63.42,
+     "end": 63.92,
+     "beats_from_verse_downbeat": -0.012
+    },
+    {
+     "text": "Baba'nın",
+     "start": 63.98,
+     "end": 64.5,
+     "beats_from_verse_downbeat": 0.968
+    },
+    {
+     "text": "bir",
+     "start": 64.56,
+     "end": 64.739,
+     "beats_from_verse_downbeat": 1.983
+    },
+    {
+     "text": "çiftliği",
+     "start": 64.84,
+     "end": 65.34,
+     "beats_from_verse_downbeat": 2.473
+    },
+    {
+     "text": "var,",
+     "start": 65.42,
+     "end": 65.6,
+     "beats_from_verse_downbeat": 3.488
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "L2",
+   "text": "çiftliğinde ördekleri var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 115,
+   "bar_downbeat": 65.7127,
+   "onset_words_file": 65.7,
+   "onset_refined": 65.6822,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 65.6822,
+   "end": 67.96,
+   "offset_sec": -0.0304,
+   "offset_beats": -0.0533,
+   "offset_words_file_sec": -0.0127,
+   "offset_words_file_beats": -0.0221,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -30.4,
+   "deviation_words_file_ms": -12.7,
+   "end_beats_after_bar_downbeat": 3.933,
+   "duration_s": 2.278,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 65.77800453514753,
+     "peak_excess_over_band": 0.19258283820047134,
+     "dip_time": 65.61111111111116,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 65.68222222222231,
+     "peak_excess_over_band": 2.189807157088671,
+     "dip_time": 65.61691609977329,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 65.7,
+     "end": 66.72,
+     "beats_from_verse_downbeat": 3.978
+    },
+    {
+     "text": "ördekleri",
+     "start": 66.9,
+     "end": 67.66,
+     "beats_from_verse_downbeat": 6.078
+    },
+    {
+     "text": "var.",
+     "start": 67.72,
+     "end": 67.96,
+     "beats_from_verse_downbeat": 7.513
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "ses",
+   "text": "\"Vak, vak\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 119,
+   "bar_downbeat": 67.9983,
+   "onset_words_file": 67.98,
+   "onset_refined": 68.0333,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 67.98,
+   "end": 69.04,
+   "offset_sec": -0.0183,
+   "offset_beats": -0.032,
+   "offset_words_file_sec": -0.0183,
+   "offset_words_file_beats": -0.032,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -18.3,
+   "deviation_words_file_ms": -18.3,
+   "end_beats_after_bar_downbeat": 1.823,
+   "duration_s": 1.06,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 68.03333333333346,
+     "peak_excess_over_band": 0.9679994599964044,
+     "dip_time": 67.9448072562359,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 68.0696145124718,
+     "peak_excess_over_band": 0.3381914601468542,
+     "dip_time": 67.94770975056697,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Vak,",
+     "start": 67.98,
+     "end": 68.42,
+     "beats_from_verse_downbeat": 7.968
+    },
+    {
+     "text": "vak\"",
+     "start": 68.58,
+     "end": 69.04,
+     "beats_from_verse_downbeat": 9.018
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 119,
+   "bar_downbeat": 67.9983,
+   "onset_words_file": 69.16,
+   "onset_refined": 69.1669,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 69.16,
+   "end": 70.16,
+   "offset_sec": 1.1617,
+   "offset_beats": 2.033,
+   "offset_words_file_sec": 1.1617,
+   "offset_words_file_beats": 2.033,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 18.9,
+   "deviation_words_file_ms": 18.9,
+   "end_beats_after_bar_downbeat": 3.783,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 69.16689342403637,
+     "peak_excess_over_band": 0.6475270189793624,
+     "dip_time": 69.02902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 69.17705215419511,
+     "peak_excess_over_band": 2.365315711713189,
+     "dip_time": 69.02902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 69.16,
+     "end": 69.62,
+     "beats_from_verse_downbeat": 10.033
+    },
+    {
+     "text": "bağırır",
+     "start": 69.68,
+     "end": 70.16,
+     "beats_from_verse_downbeat": 10.943
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 123,
+   "bar_downbeat": 70.284,
+   "onset_words_file": 70.26,
+   "onset_refined": 70.2393,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 70.2393,
+   "end": 72.54,
+   "offset_sec": -0.0446,
+   "offset_beats": -0.0781,
+   "offset_words_file_sec": -0.024,
+   "offset_words_file_beats": -0.0419,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -44.6,
+   "deviation_words_file_ms": -24.0,
+   "end_beats_after_bar_downbeat": 3.948,
+   "duration_s": 2.301,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 70.32929705215433,
+     "peak_excess_over_band": 0.4141531639053134,
+     "dip_time": 70.16675736961456,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 70.23931972789124,
+     "peak_excess_over_band": 2.096116594435205,
+     "dip_time": 70.16820861678009,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 70.26,
+     "end": 71.3,
+     "beats_from_verse_downbeat": 11.958
+    },
+    {
+     "text": "Ali",
+     "start": 71.48,
+     "end": 71.9,
+     "beats_from_verse_downbeat": 14.093
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 71.98,
+     "end": 72.54,
+     "beats_from_verse_downbeat": 14.968
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 135,
+   "bar_downbeat": 77.1409,
+   "onset_words_file": 77.16,
+   "onset_refined": 77.1393,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 77.1393,
+   "end": 79.32,
+   "offset_sec": -0.0016,
+   "offset_beats": -0.0028,
+   "offset_words_file_sec": 0.0191,
+   "offset_words_file_beats": 0.0334,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -1.6,
+   "deviation_words_file_ms": 19.1,
+   "end_beats_after_bar_downbeat": 3.813,
+   "duration_s": 2.181,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 77.13931972789123,
+     "peak_excess_over_band": 1.2399042714225066,
+     "dip_time": 77.02902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 77.21188208616792,
+     "peak_excess_over_band": 1.4194893183704125,
+     "dip_time": 77.02902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 77.16,
+     "end": 77.64,
+     "beats_from_verse_downbeat": 0.033
+    },
+    {
+     "text": "Baba'nın",
+     "start": 77.7,
+     "end": 78.2,
+     "beats_from_verse_downbeat": 0.978
+    },
+    {
+     "text": "bir",
+     "start": 78.26,
+     "end": 78.48,
+     "beats_from_verse_downbeat": 1.958
+    },
+    {
+     "text": "çiftliği",
+     "start": 78.56,
+     "end": 79.08,
+     "beats_from_verse_downbeat": 2.483
+    },
+    {
+     "text": "var,",
+     "start": 79.16,
+     "end": 79.32,
+     "beats_from_verse_downbeat": 3.533
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "L2",
+   "text": "çiftliğinde köpekleri var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 139,
+   "bar_downbeat": 79.4266,
+   "onset_words_file": 79.42,
+   "onset_refined": 79.3834,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 79.3834,
+   "end": 81.66,
+   "offset_sec": -0.0432,
+   "offset_beats": -0.0756,
+   "offset_words_file_sec": -0.0066,
+   "offset_words_file_beats": -0.0115,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -43.2,
+   "deviation_words_file_ms": -6.6,
+   "end_beats_after_bar_downbeat": 3.909,
+   "duration_s": 2.277,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 79.48349206349219,
+     "peak_excess_over_band": 0.4448472335483827,
+     "dip_time": 79.32240362811795,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 79.38335600907037,
+     "peak_excess_over_band": 2.6363415220538067,
+     "dip_time": 79.33401360544222,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 79.42,
+     "end": 80.44,
+     "beats_from_verse_downbeat": 3.989
+    },
+    {
+     "text": "köpekleri",
+     "start": 80.54,
+     "end": 81.38,
+     "beats_from_verse_downbeat": 5.949
+    },
+    {
+     "text": "var.",
+     "start": 81.44,
+     "end": 81.66,
+     "beats_from_verse_downbeat": 7.524
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "ses",
+   "text": "\"Hav, hav\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 143,
+   "bar_downbeat": 81.7122,
+   "onset_words_file": 81.7,
+   "onset_refined": 81.7751,
+   "refined_reliable": false,
+   "refine_band": "cons_2k_7k",
+   "onset": 81.7,
+   "end": 82.7,
+   "offset_sec": -0.0122,
+   "offset_beats": -0.0214,
+   "offset_words_file_sec": -0.0122,
+   "offset_words_file_beats": -0.0214,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -12.2,
+   "deviation_words_file_ms": -12.2,
+   "end_beats_after_bar_downbeat": 1.729,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 81.72430839002278,
+     "peak_excess_over_band": 1.03634692536309,
+     "dip_time": 81.64158730158736,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 81.77510204081646,
+     "peak_excess_over_band": 0.5731064022169734,
+     "dip_time": 81.70834467120191,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Hav,",
+     "start": 81.7,
+     "end": 82.14,
+     "beats_from_verse_downbeat": 7.979
+    },
+    {
+     "text": "hav\"",
+     "start": 82.26,
+     "end": 82.7,
+     "beats_from_verse_downbeat": 8.959
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 143,
+   "bar_downbeat": 81.7122,
+   "onset_words_file": 82.86,
+   "onset_refined": 82.864,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 82.864,
+   "end": 83.88,
+   "offset_sec": 1.1518,
+   "offset_beats": 2.0156,
+   "offset_words_file_sec": 1.1478,
+   "offset_words_file_beats": 2.0087,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 8.9,
+   "deviation_words_file_ms": 4.9,
+   "end_beats_after_bar_downbeat": 3.794,
+   "duration_s": 1.016,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 82.86399092970531,
+     "peak_excess_over_band": 1.2114146933987269,
+     "dip_time": 82.72902494331068,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 82.86253968253978,
+     "peak_excess_over_band": 2.704122227663401,
+     "dip_time": 82.72902494331068,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 82.86,
+     "end": 83.34,
+     "beats_from_verse_downbeat": 10.009
+    },
+    {
+     "text": "bağırır",
+     "start": 83.4,
+     "end": 83.88,
+     "beats_from_verse_downbeat": 10.954
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 147,
+   "bar_downbeat": 83.9979,
+   "onset_words_file": 83.98,
+   "onset_refined": 83.9492,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 83.9492,
+   "end": 86.24,
+   "offset_sec": -0.0487,
+   "offset_beats": -0.0853,
+   "offset_words_file_sec": -0.0179,
+   "offset_words_file_beats": -0.0313,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -48.7,
+   "deviation_words_file_ms": -17.9,
+   "end_beats_after_bar_downbeat": 3.924,
+   "duration_s": 2.291,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 84.01011337868492,
+     "peak_excess_over_band": 0.08971985346223146,
+     "dip_time": 83.88530612244902,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 83.9491609977325,
+     "peak_excess_over_band": 2.3473772598000324,
+     "dip_time": 83.88530612244902,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 83.98,
+     "end": 85.02,
+     "beats_from_verse_downbeat": 11.969
+    },
+    {
+     "text": "Ali",
+     "start": 85.2,
+     "end": 85.64,
+     "beats_from_verse_downbeat": 14.104
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 85.7,
+     "end": 86.24,
+     "beats_from_verse_downbeat": 14.979
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "L1",
+   "text": "Ali Baba'nın bir çiftliği var,",
+   "bar_in_verse": 0,
+   "beat_number_of_bar_downbeat": 159,
+   "bar_downbeat": 90.8548,
+   "onset_words_file": 90.88,
+   "onset_refined": 90.8506,
+   "refined_reliable": true,
+   "refine_band": "vowel_300_3400",
+   "onset": 90.8506,
+   "end": 93.04,
+   "offset_sec": -0.0042,
+   "offset_beats": -0.0074,
+   "offset_words_file_sec": 0.0252,
+   "offset_words_file_beats": 0.044,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -4.2,
+   "deviation_words_file_ms": 25.2,
+   "end_beats_after_bar_downbeat": 3.824,
+   "duration_s": 2.189,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 90.85061224489803,
+     "peak_excess_over_band": 1.0993917679855998,
+     "dip_time": 90.74902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 90.92172335600918,
+     "peak_excess_over_band": 0.9502477485656351,
+     "dip_time": 90.74902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "Ali",
+     "start": 90.88,
+     "end": 91.36,
+     "beats_from_verse_downbeat": 0.044
+    },
+    {
+     "text": "Baba'nın",
+     "start": 91.4,
+     "end": 91.92,
+     "beats_from_verse_downbeat": 0.954
+    },
+    {
+     "text": "bir",
+     "start": 91.98,
+     "end": 92.18,
+     "beats_from_verse_downbeat": 1.969
+    },
+    {
+     "text": "çiftliği",
+     "start": 92.26,
+     "end": 92.8,
+     "beats_from_verse_downbeat": 2.459
+    },
+    {
+     "text": "var,",
+     "start": 92.86,
+     "end": 93.04,
+     "beats_from_verse_downbeat": 3.509
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "L2",
+   "text": "çiftliğinde kedisi var.",
+   "bar_in_verse": 1,
+   "beat_number_of_bar_downbeat": 163,
+   "bar_downbeat": 93.1405,
+   "onset_words_file": 93.12,
+   "onset_refined": 93.1022,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 93.1022,
+   "end": 95.38,
+   "offset_sec": -0.0383,
+   "offset_beats": -0.067,
+   "offset_words_file_sec": -0.0205,
+   "offset_words_file_beats": -0.0359,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -38.3,
+   "deviation_words_file_ms": -20.5,
+   "end_beats_after_bar_downbeat": 3.919,
+   "duration_s": 2.278,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 93.18639455782326,
+     "peak_excess_over_band": 0.016206269077857032,
+     "dip_time": 93.04272108843543,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 93.10222222222231,
+     "peak_excess_over_band": 3.0759640445555347,
+     "dip_time": 93.05142857142863,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 93.12,
+     "end": 94.14,
+     "beats_from_verse_downbeat": 3.964
+    },
+    {
+     "text": "kedisi",
+     "start": 94.26,
+     "end": 94.98,
+     "beats_from_verse_downbeat": 5.959
+    },
+    {
+     "text": "var.",
+     "start": 95.12,
+     "end": 95.38,
+     "beats_from_verse_downbeat": 7.464
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "ses",
+   "text": "\"Miyav, miyav\"",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 167,
+   "bar_downbeat": 95.4261,
+   "onset_words_file": 95.4,
+   "onset_refined": 95.3735,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 95.4,
+   "end": 96.5,
+   "offset_sec": -0.0261,
+   "offset_beats": -0.0458,
+   "offset_words_file_sec": -0.0261,
+   "offset_words_file_beats": -0.0458,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -26.1,
+   "deviation_words_file_ms": -26.1,
+   "end_beats_after_bar_downbeat": 1.879,
+   "duration_s": 1.1,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 95.37351473922911,
+     "peak_excess_over_band": 0.7772844794878501,
+     "dip_time": 95.3648072562359,
+     "dip_level_rel_peak": 0.003342600979438823
+    },
+    "cons_2k_7k": {
+     "onset": 95.46058956916113,
+     "peak_excess_over_band": 0.6255828770887316,
+     "dip_time": 95.36916099773251,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "\"Miyav,",
+     "start": 95.4,
+     "end": 95.92,
+     "beats_from_verse_downbeat": 7.954
+    },
+    {
+     "text": "miyav\"",
+     "start": 96.04,
+     "end": 96.5,
+     "beats_from_verse_downbeat": 9.074
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "diye",
+   "text": "diye bağırır",
+   "bar_in_verse": 2,
+   "beat_number_of_bar_downbeat": 167,
+   "bar_downbeat": 95.4261,
+   "onset_words_file": 96.6,
+   "onset_refined": 96.6098,
+   "refined_reliable": false,
+   "refine_band": "vowel_300_3400",
+   "onset": 96.6,
+   "end": 97.6,
+   "offset_sec": 1.1739,
+   "offset_beats": 2.0543,
+   "offset_words_file_sec": 1.1739,
+   "offset_words_file_beats": 2.0543,
+   "expected_beat_in_bar": 2.0,
+   "deviation_from_expected_beat_ms": 31.0,
+   "deviation_words_file_ms": 31.0,
+   "end_beats_after_bar_downbeat": 3.804,
+   "duration_s": 1.0,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 96.60979591836744,
+     "peak_excess_over_band": 0.7928846355018776,
+     "dip_time": 96.46902494331067,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 96.61560090702957,
+     "peak_excess_over_band": 2.4613120738634104,
+     "dip_time": 96.46902494331067,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "diye",
+     "start": 96.6,
+     "end": 96.96,
+     "beats_from_verse_downbeat": 10.054
+    },
+    {
+     "text": "bağırır",
+     "start": 97.12,
+     "end": 97.6,
+     "beats_from_verse_downbeat": 10.964
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "name": "L4",
+   "text": "çiftliğinde Ali Baba'nın.",
+   "bar_in_verse": 3,
+   "beat_number_of_bar_downbeat": 171,
+   "bar_downbeat": 97.7118,
+   "onset_words_file": 97.68,
+   "onset_refined": 97.6666,
+   "refined_reliable": true,
+   "refine_band": "cons_2k_7k",
+   "onset": 97.6666,
+   "end": 99.96,
+   "offset_sec": -0.0452,
+   "offset_beats": -0.0791,
+   "offset_words_file_sec": -0.0318,
+   "offset_words_file_beats": -0.0556,
+   "expected_beat_in_bar": 0.0,
+   "deviation_from_expected_beat_ms": -45.2,
+   "deviation_words_file_ms": -31.8,
+   "end_beats_after_bar_downbeat": 3.934,
+   "duration_s": 2.293,
+   "refine_detail": {
+    "vowel_300_3400": {
+     "onset": 97.75074829931987,
+     "peak_excess_over_band": 0.18826633252274919,
+     "dip_time": 97.60272108843543,
+     "dip_level_rel_peak": 0.0
+    },
+    "cons_2k_7k": {
+     "onset": 97.66657596371891,
+     "peak_excess_over_band": 2.174492063797742,
+     "dip_time": 97.61142857142863,
+     "dip_level_rel_peak": 0.0
+    }
+   },
+   "words": [
+    {
+     "text": "çiftliğinde",
+     "start": 97.68,
+     "end": 98.74,
+     "beats_from_verse_downbeat": 11.944
+    },
+    {
+     "text": "Ali",
+     "start": 98.92,
+     "end": 99.34,
+     "beats_from_verse_downbeat": 14.114
+    },
+    {
+     "text": "Baba'nın.",
+     "start": 99.42,
+     "end": 99.96,
+     "beats_from_verse_downbeat": 14.989
+    }
+   ]
+  }
+ ],
+ "offset_summary": {
+  "L1": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -0.48571428571428593,
+    "median_ms": -1.6,
+    "sd_ms": 13.024639130885582,
+    "min_ms": -19.0,
+    "max_ms": 26.9
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": 12.642857142857142,
+    "median_ms": 14.8,
+    "sd_ms": 11.643128831185876,
+    "min_ms": -7.0,
+    "max_ms": 26.9
+   },
+   "refined_only": {
+    "n": 5,
+    "mean_ms": -6.219999999998649,
+    "median_ms": -4.199999999997317,
+    "sd_ms": 7.368147664101184,
+    "min_ms": -18.99999999999835,
+    "max_ms": 2.4999999999995026
+   },
+   "n_refined_reliable": 5
+  },
+  "L2": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -35.714285714285715,
+    "median_ms": -37.4,
+    "sd_ms": 5.865012135276345,
+    "min_ms": -43.2,
+    "max_ms": -24.9
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": -15.885714285714286,
+    "median_ms": -17.0,
+    "sd_ms": 5.746409704310676,
+    "min_ms": -24.8,
+    "max_ms": -6.6
+   },
+   "refined_only": {
+    "n": 7,
+    "mean_ms": -35.74285714285885,
+    "median_ms": -37.400000000001654,
+    "sd_ms": 5.8497514337556,
+    "min_ms": -43.199999999998795,
+    "max_ms": -24.900000000002365
+   },
+   "n_refined_reliable": 7
+  },
+  "ses": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -18.657142857142855,
+    "median_ms": -22.6,
+    "sd_ms": 15.788500077394229,
+    "min_ms": -36.5,
+    "max_ms": 15.6
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": -18.657142857142855,
+    "median_ms": -22.6,
+    "sd_ms": 15.788500077394229,
+    "min_ms": -36.5,
+    "max_ms": 15.6
+   },
+   "refined_only": null,
+   "n_refined_reliable": 0
+  },
+  "diye": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": 10.5,
+    "median_ms": 8.9,
+    "sd_ms": 11.109326840864071,
+    "min_ms": -5.4,
+    "max_ms": 31.0
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": 9.928571428571429,
+    "median_ms": 6.7,
+    "sd_ms": 11.27851488269549,
+    "min_ms": -5.4,
+    "max_ms": 31.0
+   },
+   "refined_only": {
+    "n": 1,
+    "mean_ms": 8.97330827068532,
+    "median_ms": 8.97330827068532,
+    "sd_ms": 0.0,
+    "min_ms": 8.97330827068532,
+    "max_ms": 8.97330827068532
+   },
+   "n_refined_reliable": 1
+  },
+  "L4": {
+   "adopted_onset": {
+    "n": 7,
+    "mean_ms": -48.05714285714286,
+    "median_ms": -45.2,
+    "sd_ms": 8.271786323376096,
+    "min_ms": -62.0,
+    "max_ms": -36.8
+   },
+   "words_file": {
+    "n": 7,
+    "mean_ms": -27.185714285714287,
+    "median_ms": -24.0,
+    "sd_ms": 10.604234810601252,
+    "min_ms": -50.0,
+    "max_ms": -16.1
+   },
+   "refined_only": {
+    "n": 7,
+    "mean_ms": -48.07142857142769,
+    "median_ms": -45.199999999994134,
+    "sd_ms": 8.265887608670758,
+    "min_ms": -61.99999999999761,
+    "max_ms": -36.7999999999995
+   },
+   "n_refined_reliable": 7
+  },
+  "all": {
+   "adopted_onset": {
+    "n": 35,
+    "mean_ms": -18.482857142857142,
+    "median_ms": -22.6,
+    "sd_ms": 24.415773422866103,
+    "min_ms": -62.0,
+    "max_ms": 31.0
+   },
+   "words_file": {
+    "n": 35,
+    "mean_ms": -7.831428571428572,
+    "median_ms": -12.2,
+    "sd_ms": 19.742264617943356,
+    "min_ms": -50.0,
+    "max_ms": 31.0
+   },
+   "n_refined_reliable": 20
+  }
+ },
+ "typical_word_positions": [
+  {
+   "index": 0,
+   "text_verse1": "Ali",
+   "median_start_beats": 0.026,
+   "sd_start_beats": 0.02,
+   "median_end_beats": 0.852
+  },
+  {
+   "index": 1,
+   "text_verse1": "Baba'nın",
+   "median_start_beats": 0.968,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 1.867
+  },
+  {
+   "index": 2,
+   "text_verse1": "bir",
+   "median_start_beats": 1.969,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 2.312
+  },
+  {
+   "index": 3,
+   "text_verse1": "çiftliği",
+   "median_start_beats": 2.465,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 3.386
+  },
+  {
+   "index": 4,
+   "text_verse1": "var,",
+   "median_start_beats": 3.48,
+   "sd_start_beats": 0.024,
+   "median_end_beats": 3.806
+  },
+  {
+   "index": 5,
+   "text_verse1": "çiftliğinde",
+   "median_start_beats": 3.97,
+   "sd_start_beats": 0.01,
+   "median_end_beats": 5.774
+  },
+  {
+   "index": 6,
+   "text_verse1": "inekleri",
+   "median_start_beats": 5.976,
+   "sd_start_beats": 0.065,
+   "median_end_beats": 7.397
+  },
+  {
+   "index": 7,
+   "text_verse1": "var.",
+   "median_start_beats": 7.502,
+   "sd_start_beats": 0.021,
+   "median_end_beats": 7.933
+  },
+  {
+   "index": 8,
+   "text_verse1": "\"Mö,",
+   "median_start_beats": 7.96,
+   "sd_start_beats": 0.028,
+   "median_end_beats": 8.738
+  },
+  {
+   "index": 9,
+   "text_verse1": "mö\"",
+   "median_start_beats": 9.032,
+   "sd_start_beats": 0.039,
+   "median_end_beats": 9.427
+  },
+  {
+   "index": 10,
+   "text_verse1": "diye",
+   "median_start_beats": 10.012,
+   "sd_start_beats": 0.02,
+   "median_end_beats": 10.838
+  },
+  {
+   "index": 11,
+   "text_verse1": "bağırır",
+   "median_start_beats": 10.967,
+   "sd_start_beats": 0.015,
+   "median_end_beats": 11.804
+  },
+  {
+   "index": 12,
+   "text_verse1": "çiftliğinde",
+   "median_start_beats": 11.958,
+   "sd_start_beats": 0.019,
+   "median_end_beats": 13.799
+  },
+  {
+   "index": 13,
+   "text_verse1": "Ali",
+   "median_start_beats": 14.114,
+   "sd_start_beats": 0.051,
+   "median_end_beats": 14.828
+  },
+  {
+   "index": 14,
+   "text_verse1": "Baba'nın.",
+   "median_start_beats": 14.971,
+   "sd_start_beats": 0.02,
+   "median_end_beats": 15.934
+  }
+ ],
+ "vocal_only_tempo": {
+  "beat_period_s": 0.5714666574813997,
+  "bpm": 104.99300215420338,
+  "time_of_beat0_s": -0.012715328898175227,
+  "residual_sd_ms": 19.576599844763617,
+  "note": "35 segment onsets of the words file regressed on lattice beat numbers"
+ }
+}
