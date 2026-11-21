@@ -1,0 +1,61 @@
+beat: note(raw peak Hz)  — listed per verse, rel = beats from verse onset
+verse 1 (onset beat 12):
+   rel  0: A 1  54.1Hz | E 2  82.9Hz | A 1  54.7Hz | E 1  82.6Hz
+   rel  4: A 1  54.5Hz | E 2  82.9Hz | A 1  55.0Hz | B 1  61.7Hz
+   rel  8: A 1 109.6Hz | E 2  82.4Hz | A 1 110.1Hz | E 2  82.3Hz
+   rel 12: E 2  82.6Hz | B 1  61.9Hz | A 1 109.2Hz | F 2  83.8Hz
+   rel 16: A 1  56.1Hz | E 1  82.2Hz | A 1  57.4Hz | E 1  81.4Hz
+   rel 20: A 1  58.4Hz | E 1  82.7Hz | A 1  55.8Hz | B 1  61.5Hz
+verse 2 (onset beat 36):
+   rel  0: A 1 110.8Hz | E 2  81.8Hz | A 1  55.4Hz | E 1  81.8Hz
+   rel  4: A 2  54.9Hz | E 2  82.7Hz | A 2  53.8Hz | C 2  64.5Hz
+   rel  8: A 2  55.0Hz | E 2  82.3Hz | A 1  55.2Hz | E 2  82.1Hz
+   rel 12: E 2  82.5Hz | E 1  82.1Hz | A 1  56.0Hz | E 1  83.1Hz
+   rel 16: A 1  55.9Hz | E 1  83.0Hz | A 1  57.2Hz | F#2  36.4Hz
+   rel 20: A 1 111.0Hz | E 2  83.2Hz | A 1  56.5Hz | F 2  51.2Hz
+   rel 24: A 1 110.2Hz | E 2  84.8Hz | A 1  55.5Hz | B 1  61.7Hz
+verse 3 (onset beat 64):
+   rel  0: A 1  55.3Hz | E 2  82.7Hz | A 1 110.3Hz | E 1  82.8Hz
+   rel  4: A 2  55.6Hz | E 2  82.8Hz | A 1 110.6Hz | B 1  62.1Hz
+   rel  8: A 1  55.8Hz | E 2  82.8Hz | A 1  55.3Hz | E 2  82.2Hz
+   rel 12: E 2  81.7Hz | G#1  53.3Hz | A 1  55.3Hz | G 1 100.8Hz
+   rel 16: A 1  54.4Hz | E 1  82.4Hz | A 1  54.2Hz | E 1  82.6Hz
+   rel 20: A 1 109.7Hz | E 1  83.0Hz | A 1  54.1Hz | B 1  62.2Hz
+   rel 24: A 1 110.1Hz | E 1  85.4Hz
+verse 4 (onset beat 90):
+   rel  0: A 1  56.7Hz | E 2  82.9Hz | A 1  56.6Hz | E 2  83.2Hz
+   rel  4: A 1  55.9Hz | E 2  82.9Hz | A 1 111.9Hz | B 1  61.0Hz
+   rel  8: A 1  54.0Hz | E 2  82.3Hz | A 1 110.8Hz | B 1  61.6Hz
+   rel 12: E 2  82.2Hz | G#1  50.6Hz | A 1 110.5Hz | E 2  83.3Hz
+   rel 16: A 1  54.0Hz | E 1  82.1Hz | A 1 109.9Hz | E 1  82.7Hz
+   rel 20: A 1 109.4Hz | E 1  82.2Hz | A 1  55.4Hz | B 1  62.4Hz
+   rel 24: G 1  49.5Hz
+verse 5 (onset beat 115):
+   rel  0: A 1  56.9Hz | E 2  82.3Hz | A 1  54.2Hz | E 2  83.4Hz
+   rel  4: A 1  54.9Hz | E 1  82.5Hz | A 1  55.1Hz | C 2  64.7Hz
+   rel  8: A 1  54.7Hz | E 2  82.4Hz | A 1  54.7Hz | B 1  61.2Hz
+   rel 12: E 2  82.2Hz | G 1  49.5Hz | A 1  54.7Hz | E 1  82.4Hz
+   rel 16: A 1  55.5Hz | E 1  81.9Hz | A 1 111.3Hz | E 1  82.8Hz
+   rel 20: A 1 110.3Hz | E 1  81.6Hz | A 1  56.0Hz | B 1  61.3Hz
+   rel 24: A 1 111.1Hz | E 2  82.6Hz | E 1  81.7Hz | A 1  53.3Hz
+verse 6 (onset beat 143):
+   rel  0: A 1  54.9Hz | E 2  82.0Hz | A 1  55.4Hz | E 1  82.6Hz
+   rel  4: A 1  55.1Hz | E 1  82.8Hz | A 1 110.1Hz | B 1  60.1Hz
+   rel  8: A 1  54.9Hz | E 1  82.4Hz | A 1  54.9Hz | B 1  62.6Hz
+   rel 12: E 2  82.0Hz | G#1  52.9Hz | A 1  55.2Hz | G#1 102.4Hz
+   rel 16: A 1  55.4Hz | E 1  81.4Hz | A 1  55.3Hz | E 1  81.2Hz
+   rel 20: A 1  54.9Hz | E 1  82.5Hz | A 1  56.3Hz | C 2  64.9Hz
+verse 7 (onset beat 167):
+   rel  0: A 1  55.8Hz | E 2  82.1Hz | A 1  55.5Hz | E 2  81.7Hz
+   rel  4: A 1  54.3Hz | E 2  82.0Hz | A 1  55.9Hz | C 2  65.2Hz
+   rel  8: A 1  55.8Hz | E 2  82.9Hz | A 1  55.9Hz | C 2  61.2Hz
+   rel 12: F 1  88.1Hz | E 1  82.5Hz | A 1  55.5Hz | F#2 111.7Hz
+   rel 16: A 1  54.6Hz | E 2  82.1Hz | A 1  55.9Hz | E 1  82.1Hz
+   rel 20: A 1  55.6Hz | E 2  82.1Hz | A 1  55.0Hz | E 2  81.7Hz
+   rel 24: A 1  55.0Hz | E 2  81.8Hz | A 1  55.1Hz | B 1  62.1Hz
+intro:
+   A 2  99.1Hz | A 2 101.0Hz | A 2  46.8Hz | B 2  36.0Hz | A 2 111.3Hz | A 2  98.6Hz | A 2  52.6Hz | G 2  36.0Hz | A 2 107.8Hz | A 2  85.2Hz | D 2  72.6Hz | B 1  59.5Hz
+position 0 {'A': 39, 'E': 6, 'G': 1, 'F': 1}
+position 1 {'E': 41, 'G#': 3, 'B': 1, 'G': 1}
+position 2 {'A': 44, 'E': 1}
+position 3 {'E': 20, 'B': 13, 'C': 5, 'F': 2, 'F#': 2, 'G': 1, 'A': 1, 'G#': 1}

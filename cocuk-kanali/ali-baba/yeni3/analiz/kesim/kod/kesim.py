@@ -87,13 +87,14 @@ def hece_harfleri(kel_hz, soz):
     return out
 
 
-def cukur_merkezi(i, a, b, pay=2.0):
-    """i karesi cevresinde E12 < E12[i]+pay olan bitisik pencerenin ortasi ([a,b] icinde)."""
+def cukur_merkezi(i, a, b, taban, pay=2.0):
+    """i karesi cevresinde (tabana kirpilmis) E12 < E12[i]+pay olan bitisik pencerenin ortasi ([a,b] icinde)."""
+    esik = max(E12[i], taban) + pay
     L = i
-    while L > a and E12[L - 1] < E12[i] + pay:
+    while L > a and E12[L - 1] < esik:
         L -= 1
     R = i
-    while R < b and E12[R + 1] < E12[i] + pay:
+    while R < b and E12[R + 1] < esik:
         R += 1
     return (L + R) // 2, (R - L + 1) * DT
 
@@ -129,18 +130,22 @@ def sinir_bul(sol, sag):
         a, b = fi((vs_j + ve_j) / 2), fi((vs_n + ve_n) / 2)
     unsuz = "".join(s_["harf"] for s_ in sol["coda"]) + "|" + "".join(s_["harf"] for s_ in sag["onset"])
     out = {"consonants": unsuz}
-    iR = a + int(np.argmin(E12[a:b + 1])); ER = E12[iR]
+    sol_a = fi(vs_j - 0.02); sag_b = fi(ve_n + 0.02)
+    # sessizlik tabani: ayrilmis vokal kapili oldugundan kapanislar -60..-100 dB arasinda gezinir;
+    # komsu unlu tepesinin 35 dB altindaki her sey "esit derecede sessiz" sayilir
+    taban = float(min(E12[sol_a:fi(ve_j) + 1].max(), E12[fi(vs_n):sag_b + 1].max()) - 35.0)
+    Ek = lambda i: max(float(E12[i]), taban)
+    iR = a + int(np.argmin(E12[a:b + 1])); ER = Ek(iR)
     adaylar = []
     if sag["onset"]:
         wa = max(a, fi(sag["onset"][-1]["bas"] - 0.025)); wb = min(b, fi(sag["onset"][-1]["bit"] + 0.025))
         if wb > wa:
             iW = wa + int(np.argmin(E12[wa:wb + 1]))
-            if E12[iW] <= ER + 6.0:
+            if Ek(iW) <= ER + 6.0:
                 adaylar.append((iW, wa, wb, "onset"))
     else:
         wa, wb = a, b
     adaylar.append((iR, a, b, "deepest"))
-    sol_a = fi(vs_j - 0.02); sag_b = fi(ve_n + 0.02)
     ayni_unlu_g = (unsuz == "|ğ" and sol["vowel"]["harf"] == sag["vowel"]["harf"])
     if ayni_unlu_g:
         # "li-ği", "li-ğin": yumusak g iki AYNI unlu arasinda -> tek uzun unlu, akustik sinir yok.
@@ -167,7 +172,7 @@ def sinir_bul(sol, sag):
         # gercek cukur derinligi: cukurun iki yanindaki (unlu) tepelerin dusugu - cukur
         derinlik = float(min(E12[sol_a:i0 + 1].max(), E12[i0:sag_b + 1].max()) - E12[i0])
         if derinlik >= 3.0:
-            ic, gen = cukur_merkezi(i0, lo, hi)
+            ic, gen = cukur_merkezi(i0, lo, hi, taban)
             out.update({"t": ic * DT, "kind": "dip", "depth_db": round(derinlik, 1), "where": yer,
                         "low_window_ms": round(gen * 1000, 1), "level_dbfs": round(float(R5[ic]), 1)})
             return out
@@ -243,6 +248,14 @@ for v in range(7):
                 heceler.append(h)
         # sinirlar
         sin = [sinir_bul(heceler[i], heceler[i + 1]) for i in range(len(heceler) - 1)]
+        for i, s_ in enumerate(sin):
+            h0, h1 = heceler[i], heceler[i + 1]
+            if (h0["line"], h0["word_i"]) != (h1["line"], h1["word_i"]):
+                g0, g1 = h0["q"]["json_bit"], h1["q"]["json_bas"]
+                s_["word_boundary"] = True; s_["json_gap"] = [g0, g1]
+                if s_["consonants"] == "|" and s_["kind"] != "dip" and not (g0 <= s_["t"] <= g1):
+                    # kelime sinirinda unlu-unlu gecisi (de|ör): yavas gecis, olcum belirsiz -> yazi dokumunun boslugu icine kirp
+                    s_["t_unclamped"] = round(s_["t"], 4); s_["t"] = float(min(max(s_["t"], g0), g1)); s_["clamped_to_json_gap"] = True
         bas = DZ[v][p["dizeler"][0] - 1]["baslangic"]; bit = DZ[v][p["dizeler"][-1] - 1]["bitis"]
         kenar = [bas] + [s["t"] for s in sin] + [bit]
         assert all(b > a for a, b in zip(kenar[:-1], kenar[1:])), (v + 1, p["dizeler"], kenar)

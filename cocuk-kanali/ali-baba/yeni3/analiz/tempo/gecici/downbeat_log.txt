@@ -1,0 +1,195 @@
+verse onset beats [12, 36, 64, 90, 115, 143, 167] diffs [24 28 26 25 28 24] mod4 [0, 0, 0, 2, 3, 3, 3]
+
+INTRO (beats 0..15):
+  beat  0 t= 0.003 kick 0.08 low 0.24 mid_on 1.38 hi 0.56 | off: mid 1.19 hi 0.82 | bass-top A A#  mid-top E A B
+  beat  1 t= 0.521 kick 0.02 low 0.08 mid_on 0.52 hi 0.17 | off: mid 1.48 hi 1.11 | bass-top A# A  mid-top E A B
+  beat  2 t= 1.038 kick 0.04 low 0.18 mid_on 0.96 hi 0.55 | off: mid 1.12 hi 0.94 | bass-top A B   mid-top E A B
+  beat  3 t= 1.555 kick 0.02 low 0.18 mid_on 0.67 hi 0.42 | off: mid 1.20 hi 0.86 | bass-top B G   mid-top B A G
+  beat  4 t= 2.072 kick 0.05 low 0.27 mid_on 1.16 hi 0.54 | off: mid 1.12 hi 0.98 | bass-top A A#  mid-top E A B
+  beat  5 t= 2.589 kick 0.02 low 0.07 mid_on 0.50 hi 0.13 | off: mid 1.53 hi 0.99 | bass-top A A#  mid-top E A B
+  beat  6 t= 3.107 kick 0.03 low 0.26 mid_on 0.90 hi 0.35 | off: mid 0.86 hi 0.63 | bass-top A A#  mid-top E A B
+  beat  7 t= 3.624 kick 0.01 low 0.27 mid_on 0.86 hi 0.38 | off: mid 1.04 hi 0.89 | bass-top G A   mid-top G D A
+  beat  8 t= 4.141 kick 0.03 low 0.20 mid_on 1.05 hi 0.45 | off: mid 1.04 hi 0.69 | bass-top A A#  mid-top E A B
+  beat  9 t= 4.658 kick 0.03 low 0.12 mid_on 0.47 hi 0.18 | off: mid 1.34 hi 0.89 | bass-top A A#  mid-top E G# B
+  beat 10 t= 5.175 kick 0.87 low 1.10 mid_on 1.22 hi 1.53 | off: mid 1.11 hi 0.73 | bass-top C# G  mid-top E B G#
+  beat 11 t= 5.693 kick 0.42 low 0.35 mid_on 1.19 hi 0.99 | off: mid 1.34 hi 0.74 | bass-top C A#  mid-top G# B E
+  beat 12 t= 6.210 kick 1.02 low 0.79 mid_on 0.76 hi 0.82 | off: mid 0.82 hi 0.65 | bass-top G A   mid-top E A B
+  beat 13 t= 6.727 kick 0.98 low 1.22 mid_on 1.23 hi 0.71 | off: mid 0.98 hi 0.78 | bass-top F G   mid-top E B G#
+  beat 14 t= 7.244 kick 0.93 low 0.85 mid_on 0.83 hi 0.72 | off: mid 1.04 hi 0.46 | bass-top G A   mid-top A E C
+  beat 15 t= 7.762 kick 1.23 low 1.01 mid_on 1.00 hi 0.91 | off: mid 1.02 hi 0.82 | bass-top F G   mid-top B G# E
+
+FOLD relative to verse onset (mean, sem, n) by beat position mod 4
+  bassA      all        p0: 0.666±0.020  p1: 0.331±0.026  p2: 0.729±0.012  p3: 0.538±0.035
+  bassA      vocal_bars p0: 0.630±0.031  p1: 0.364±0.041  p2: 0.749±0.012  p3: 0.539±0.045
+  bassA      gap_bars   p0: 0.720±0.013  p1: 0.279±0.015  p2: 0.696±0.025  p3: 0.536±0.056
+  tonA       all        p0: 0.531±0.020  p1: 0.404±0.017  p2: 0.505±0.016  p3: 0.288±0.016
+  tonA       vocal_bars p0: 0.499±0.024  p1: 0.399±0.023  p2: 0.540±0.018  p3: 0.281±0.024
+  tonA       gap_bars   p0: 0.579±0.033  p1: 0.413±0.025  p2: 0.447±0.026  p3: 0.298±0.015
+  domE       all        p0: 0.422±0.022  p1: 0.534±0.036  p2: 0.325±0.019  p3: 0.592±0.029
+  domE       vocal_bars p0: 0.452±0.031  p1: 0.571±0.037  p2: 0.331±0.021  p3: 0.657±0.029
+  domE       gap_bars   p0: 0.377±0.027  p1: 0.476±0.068  p2: 0.314±0.037  p3: 0.485±0.049
+  colFC      all        p0: 0.075±0.005  p1: 0.091±0.013  p2: 0.150±0.018  p3: 0.065±0.006
+  colFC      vocal_bars p0: 0.078±0.007  p1: 0.078±0.015  p2: 0.179±0.024  p3: 0.055±0.005
+  colFC      gap_bars   p0: 0.070±0.006  p1: 0.112±0.024  p2: 0.101±0.020  p3: 0.080±0.013
+  kick       all        p0: 1.015±0.019  p1: 0.983±0.022  p2: 0.994±0.019  p3: 1.002±0.017
+  kick       vocal_bars p0: 1.030±0.025  p1: 0.987±0.032  p2: 0.956±0.023  p3: 0.993±0.022
+  kick       gap_bars   p0: 0.994±0.028  p1: 0.977±0.025  p2: 1.055±0.028  p3: 1.018±0.027
+  low        all        p0: 0.965±0.020  p1: 0.985±0.025  p2: 0.998±0.021  p3: 0.970±0.024
+  low        vocal_bars p0: 0.926±0.022  p1: 0.955±0.037  p2: 0.955±0.026  p3: 0.925±0.033
+  low        gap_bars   p0: 1.024±0.033  p1: 1.031±0.024  p2: 1.068±0.026  p3: 1.042±0.024
+  hi         all        p0: 1.022±0.040  p1: 0.984±0.036  p2: 0.973±0.033  p3: 1.040±0.031
+  hi         vocal_bars p0: 0.872±0.037  p1: 0.890±0.041  p2: 0.882±0.035  p3: 0.939±0.029
+  hi         gap_bars   p0: 1.242±0.049  p1: 1.130±0.051  p2: 1.123±0.050  p3: 1.207±0.044
+  air        all        p0: 1.051±0.039  p1: 1.016±0.033  p2: 0.924±0.036  p3: 1.041±0.026
+  air        vocal_bars p0: 0.967±0.051  p1: 1.013±0.042  p2: 0.828±0.041  p3: 0.998±0.032
+  air        gap_bars   p0: 1.174±0.048  p1: 1.021±0.051  p2: 1.082±0.045  p3: 1.111±0.038
+  mid_on     all        p0: 1.065±0.033  p1: 0.980±0.036  p2: 1.017±0.029  p3: 0.984±0.039
+  mid_on     vocal_bars p0: 0.979±0.038  p1: 0.891±0.035  p2: 0.982±0.042  p3: 0.864±0.035
+  mid_on     gap_bars   p0: 1.191±0.045  p1: 1.117±0.060  p2: 1.075±0.028  p3: 1.181±0.059
+  low_off    all        p0: 0.937±0.034  p1: 1.038±0.040  p2: 0.912±0.028  p3: 1.153±0.041
+  low_off    vocal_bars p0: 0.908±0.041  p1: 1.032±0.044  p2: 0.870±0.037  p3: 1.143±0.048
+  low_off    gap_bars   p0: 0.981±0.056  p1: 1.046±0.075  p2: 0.983±0.035  p3: 1.169±0.076
+  kick_off   all        p0: 0.974±0.042  p1: 1.318±0.060  p2: 0.970±0.034  p3: 0.903±0.077
+  kick_off   vocal_bars p0: 0.968±0.059  p1: 1.313±0.072  p2: 0.905±0.044  p3: 0.904±0.103
+  kick_off   gap_bars   p0: 0.982±0.059  p1: 1.325±0.104  p2: 1.076±0.042  p3: 0.900±0.115
+  hi_off     all        p0: 0.952±0.027  p1: 0.968±0.039  p2: 1.018±0.036  p3: 1.038±0.038
+  hi_off     vocal_bars p0: 0.855±0.029  p1: 0.888±0.036  p2: 0.922±0.043  p3: 0.920±0.042
+  hi_off     gap_bars   p0: 1.096±0.031  p1: 1.093±0.073  p2: 1.176±0.040  p3: 1.232±0.041
+  air_off    all        p0: 0.961±0.036  p1: 1.001±0.044  p2: 0.985±0.036  p3: 1.080±0.040
+  air_off    vocal_bars p0: 0.891±0.040  p1: 0.949±0.049  p2: 0.884±0.035  p3: 0.986±0.043
+  air_off    gap_bars   p0: 1.065±0.059  p1: 1.082±0.077  p2: 1.152±0.055  p3: 1.235±0.061
+  mid_off    all        p0: 0.987±0.028  p1: 0.915±0.036  p2: 1.007±0.029  p3: 1.010±0.032
+  mid_off    vocal_bars p0: 0.932±0.040  p1: 0.848±0.033  p2: 0.955±0.039  p3: 0.958±0.041
+  mid_off    gap_bars   p0: 1.068±0.029  p1: 1.020±0.069  p2: 1.094±0.034  p3: 1.095±0.043
+  air_energy all        p0: 1.059±0.037  p1: 0.958±0.040  p2: 1.001±0.034  p3: 0.907±0.036
+  air_energy vocal_bars p0: 1.107±0.037  p1: 1.034±0.042  p2: 1.071±0.027  p3: 0.918±0.046
+  air_energy gap_bars   p0: 0.989±0.070  p1: 0.838±0.069  p2: 0.886±0.070  p3: 0.888±0.056
+  verse 1: bass-A share even 0.727 odd 0.438; pairs even>odd 9/12
+  verse 2: bass-A share even 0.699 odd 0.422; pairs even>odd 12/14
+  verse 3: bass-A share even 0.681 odd 0.420; pairs even>odd 10/13
+  verse 4: bass-A share even 0.680 odd 0.433; pairs even>odd 8/12
+  verse 5: bass-A share even 0.671 odd 0.450; pairs even>odd 10/14
+  verse 6: bass-A share even 0.690 odd 0.473; pairs even>odd 9/12
+  verse 7: bass-A share even 0.731 odd 0.403; pairs even>odd 10/14
+  global-number parity (even,odd): [(0.73, 0.44), (0.7, 0.42), (0.68, 0.42), (0.68, 0.43), (0.45, 0.67), (0.47, 0.69), (0.4, 0.73)]
+
+beat-feature self-similarity by lag (beats): {1: -0.145, 2: 0.296, 3: -0.144, 4: 0.329, 5: -0.17, 6: 0.151, 7: -0.154, 8: 0.182, 9: -0.137, 10: 0.109, 11: -0.158, 12: 0.133}
+
+cross-verse alignment (chroma sequence of the 16 vocal beats of verse v vs verse 1, shifted by s beats):
+  verse 2: -4:0.36 -3:-0.19 -2:0.24 -1:-0.24 +0:0.55 +1:-0.22 +2:0.12 +3:-0.24 +4:0.22  -> best +0
+  verse 3: -4:0.28 -3:-0.28 -2:0.17 -1:-0.25 +0:0.54 +1:-0.26 +2:0.13 +3:-0.33 +4:0.22  -> best +0
+  verse 4: -4:0.29 -3:-0.33 -2:0.40 -1:-0.39 +0:0.55 +1:-0.34 +2:0.19 +3:-0.35 +4:0.30  -> best +0
+  verse 5: -4:0.13 -3:-0.26 -2:0.24 -1:-0.40 +0:0.52 +1:-0.25 +2:0.27 +3:-0.23 +4:0.34  -> best +0
+  verse 6: -4:0.27 -3:-0.18 -2:0.28 -1:-0.32 +0:0.46 +1:-0.34 +2:0.19 +3:-0.28 +4:0.23  -> best +0
+  verse 7: -4:0.12 -3:-0.22 -2:0.18 -1:-0.30 +0:0.47 +1:-0.19 +2:0.11 +3:-0.26 +4:0.22  -> best +0
+
+mean mid-chroma (accompaniment) top pitch classes by position mod 4 (relative to verse onset):
+  vocal_bars p0: mid E:0.23 A:0.18 G#:0.12 B:0.11 | bass G:0.23 F:0.16 A#:0.14
+  vocal_bars p1: mid E:0.22 B:0.20 G#:0.15 A:0.12 | bass F:0.24 G:0.20 E:0.11
+  vocal_bars p2: mid A:0.20 E:0.19 F:0.11 C:0.07 | bass G:0.23 A#:0.17 A:0.16
+  vocal_bars p3: mid B:0.34 G#:0.16 E:0.16 A:0.08 | bass G:0.19 F:0.18 C:0.16
+  gap_bars p0: mid E:0.22 A:0.20 C#:0.12 B:0.11 | bass G:0.24 A:0.18 A#:0.16
+  gap_bars p1: mid E:0.22 B:0.18 G:0.12 A:0.09 | bass F:0.25 G:0.19 E:0.11
+  gap_bars p2: mid A:0.17 B:0.14 E:0.12 C#:0.11 | bass G:0.23 A#:0.16 A:0.16
+  gap_bars p3: mid G#:0.18 B:0.18 E:0.13 D#:0.08 | bass G:0.18 C:0.17 F:0.16
+
+GAP listings (rel = beats since verse onset):
+  v1 beat  26 rel 14 (p2) t= 13.451 bassA 0.87 bass-top C  mid-top E A C     kick 0.82 kick_off 0.42 low_off 0.93 mid_on 0.83 mid_off 0.73 hi_off 0.93 air_en 0.73 
+  v1 beat  27 rel 15 (p3) t= 13.968 bassA 0.40 bass-top F  mid-top G A E     kick 1.06 kick_off 1.18 low_off 1.08 mid_on 0.60 mid_off 1.01 hi_off 0.96 air_en 0.72 
+  v1 beat  28 rel 16 (p0) t= 14.485 bassA 0.73 bass-top G  mid-top E A C#    kick 0.85 kick_off 1.07 low_off 1.23 mid_on 0.85 mid_off 0.93 hi_off 1.02 air_en 0.57 
+  v1 beat  29 rel 17 (p1) t= 15.003 bassA 0.27 bass-top F  mid-top E A B     kick 0.88 kick_off 1.19 low_off 1.08 mid_on 0.81 mid_off 1.12 hi_off 1.06 air_en 0.58 
+  v1 beat  30 rel 18 (p2) t= 15.520 bassA 0.72 bass-top G  mid-top A E C#    kick 0.90 kick_off 1.08 low_off 1.02 mid_on 0.89 mid_off 0.91 hi_off 1.01 air_en 0.60 
+  v1 beat  31 rel 19 (p3) t= 16.037 bassA 0.28 bass-top F  mid-top B G# E    kick 0.97 kick_off 0.91 low_off 1.20 mid_on 0.91 mid_off 0.81 hi_off 1.05 air_en 0.61 
+  v1 beat  32 rel 20 (p0) t= 16.554 bassA 0.71 bass-top A# mid-top A E C#    kick 0.78 kick_off 1.68 low_off 0.89 mid_on 0.92 mid_off 0.86 hi_off 0.89 air_en 0.56 
+  v1 beat  33 rel 21 (p1) t= 17.071 bassA 0.32 bass-top F  mid-top E A B     kick 0.91 kick_off 1.27 low_off 0.77 mid_on 0.69 mid_off 0.88 hi_off 0.89 air_en 0.49 
+  v1 beat  34 rel 22 (p2) t= 17.589 bassA 0.74 bass-top G  mid-top E A C#    kick 0.83 kick_off 0.87 low_off 1.02 mid_on 0.99 mid_off 0.82 hi_off 1.11 air_en 0.61 
+  v1 beat  35 rel 23 (p3) t= 18.106 bassA 0.80 bass-top C  mid-top B G# E    kick 0.86 kick_off 0.58 low_off 1.22 mid_on 0.97 mid_off 0.85 hi_off 1.29 air_en 0.70 
+  v1 beat  36 rel 24 (p0) t= 18.623 bassA 0.73 bass-top G  mid-top E A G#    kick 0.97 kick_off 0.91 low_off 0.74 mid_on 1.14 mid_off 0.89 hi_off 0.89 air_en 1.35 <-- next verse onset
+  v1 beat  37 rel 25 (p1) t= 19.140 bassA 0.36 bass-top F  mid-top E G# B    kick 1.03 kick_off 1.16 low_off 0.66 mid_on 0.75 mid_off 0.89 hi_off 0.97 air_en 1.07 
+  v2 beat  50 rel 14 (p2) t= 25.864 bassA 0.82 bass-top C  mid-top A E C     kick 0.98 kick_off 0.80 low_off 0.84 mid_on 0.48 mid_off 1.08 hi_off 0.82 air_en 0.96 
+  v2 beat  51 rel 15 (p3) t= 26.381 bassA 0.22 bass-top F  mid-top B E G     kick 0.90 kick_off 1.44 low_off 1.54 mid_on 0.77 mid_off 1.11 hi_off 1.06 air_en 1.13 
+  v2 beat  52 rel 16 (p0) t= 26.898 bassA 0.85 bass-top G  mid-top E A B     kick 0.97 kick_off 1.16 low_off 1.21 mid_on 1.04 mid_off 1.33 hi_off 0.99 air_en 1.67 
+  v2 beat  53 rel 17 (p1) t= 27.416 bassA 0.31 bass-top F  mid-top G C E     kick 0.81 kick_off 1.36 low_off 1.18 mid_on 0.86 mid_off 1.32 hi_off 1.11 air_en 1.40 
+  v2 beat  54 rel 18 (p2) t= 27.933 bassA 0.74 bass-top G  mid-top B F# E    kick 0.87 kick_off 1.58 low_off 0.67 mid_on 1.00 mid_off 1.11 hi_off 1.24 air_en 1.28 
+  v2 beat  55 rel 19 (p3) t= 28.450 bassA 0.74 bass-top G  mid-top G# B E    kick 0.97 kick_off 0.51 low_off 1.97 mid_on 1.04 mid_off 1.28 hi_off 1.33 air_en 1.15 
+  v2 beat  56 rel 20 (p0) t= 28.967 bassA 0.69 bass-top G  mid-top A E B     kick 0.96 kick_off 1.14 low_off 1.01 mid_on 1.08 mid_off 1.06 hi_off 1.29 air_en 1.24 
+  v2 beat  57 rel 21 (p1) t= 29.485 bassA 0.29 bass-top F  mid-top G C E     kick 1.03 kick_off 1.76 low_off 1.20 mid_on 0.95 mid_off 1.23 hi_off 1.38 air_en 1.19 
+  v2 beat  58 rel 22 (p2) t= 30.002 bassA 0.71 bass-top A# mid-top B F# E    kick 1.10 kick_off 1.14 low_off 1.04 mid_on 1.10 mid_off 1.37 hi_off 1.58 air_en 1.48 
+  v2 beat  59 rel 23 (p3) t= 30.519 bassA 0.63 bass-top G  mid-top G# B D#   kick 1.00 kick_off 0.97 low_off 1.88 mid_on 1.28 mid_off 1.43 hi_off 1.76 air_en 1.51 
+  v2 beat  60 rel 24 (p0) t= 31.036 bassA 0.64 bass-top A  mid-top A E B     kick 0.92 kick_off 0.51 low_off 0.59 mid_on 1.48 mid_off 1.22 hi_off 1.37 air_en 1.43 
+  v2 beat  61 rel 25 (p1) t= 31.553 bassA 0.46 bass-top F  mid-top G C E     kick 1.09 kick_off 0.84 low_off 1.04 mid_on 0.91 mid_off 1.03 hi_off 1.17 air_en 1.11 
+  v2 beat  62 rel 26 (p2) t= 32.071 bassA 0.70 bass-top G  mid-top B E G     kick 1.17 kick_off 0.98 low_off 1.12 mid_on 1.01 mid_off 1.00 hi_off 1.04 air_en 1.21 
+  v2 beat  63 rel 27 (p3) t= 32.588 bassA 0.77 bass-top C  mid-top G# E D#   kick 1.26 kick_off 0.69 low_off 0.87 mid_on 0.68 mid_off 1.03 hi_off 1.13 air_en 1.12 
+  v2 beat  64 rel 28 (p0) t= 33.105 bassA 0.69 bass-top G  mid-top E A G#    kick 1.08 kick_off 1.04 low_off 0.74 mid_on 0.94 mid_off 0.57 hi_off 0.78 air_en 1.29 <-- next verse onset
+  v2 beat  65 rel 29 (p1) t= 33.622 bassA 0.31 bass-top F  mid-top E G# B    kick 1.10 kick_off 1.63 low_off 0.76 mid_on 0.74 mid_off 0.92 hi_off 0.91 air_en 1.12 
+  v3 beat  78 rel 14 (p2) t= 40.346 bassA 0.81 bass-top G  mid-top A E D     kick 1.15 kick_off 1.11 low_off 0.57 mid_on 0.90 mid_off 0.88 hi_off 0.81 air_en 0.81 
+  v3 beat  79 rel 15 (p3) t= 40.863 bassA 0.76 bass-top G  mid-top E B G     kick 1.08 kick_off 0.55 low_off 1.07 mid_on 0.69 mid_off 1.01 hi_off 0.99 air_en 1.00 
+  v3 beat  80 rel 16 (p0) t= 41.380 bassA 0.80 bass-top A  mid-top A E C#    kick 1.00 kick_off 0.78 low_off 0.64 mid_on 1.04 mid_off 0.95 hi_off 0.98 air_en 1.06 
+  v3 beat  81 rel 17 (p1) t= 41.898 bassA 0.22 bass-top F  mid-top A G# E    kick 1.10 kick_off 0.88 low_off 1.00 mid_on 1.11 mid_off 1.02 hi_off 0.89 air_en 0.63 
+  v3 beat  82 rel 18 (p2) t= 42.415 bassA 0.67 bass-top G  mid-top C# A B    kick 1.03 kick_off 0.98 low_off 0.92 mid_on 1.22 mid_off 1.21 hi_off 1.07 air_en 0.60 
+  v3 beat  83 rel 19 (p3) t= 42.932 bassA 0.22 bass-top F  mid-top A B C#    kick 1.03 kick_off 1.55 low_off 1.13 mid_on 1.52 mid_off 1.03 hi_off 1.13 air_en 0.59 
+  v3 beat  84 rel 20 (p0) t= 43.449 bassA 0.67 bass-top G  mid-top C# A B    kick 1.03 kick_off 1.00 low_off 0.88 mid_on 1.47 mid_off 1.12 hi_off 1.00 air_en 0.56 
+  v3 beat  85 rel 21 (p1) t= 43.967 bassA 0.22 bass-top F  mid-top G# G B    kick 1.03 kick_off 1.31 low_off 0.72 mid_on 1.11 mid_off 0.98 hi_off 0.93 air_en 0.49 
+  v3 beat  86 rel 22 (p2) t= 44.484 bassA 0.59 bass-top G  mid-top C# B D    kick 0.96 kick_off 1.13 low_off 1.11 mid_on 0.91 mid_off 1.13 hi_off 1.00 air_en 0.55 
+  v3 beat  87 rel 23 (p3) t= 45.001 bassA 0.61 bass-top C  mid-top D# F# B   kick 0.98 kick_off 0.31 low_off 0.77 mid_on 1.36 mid_off 0.99 hi_off 1.20 air_en 0.82 
+  v3 beat  88 rel 24 (p0) t= 45.518 bassA 0.78 bass-top A  mid-top C# D G    kick 1.00 kick_off 1.00 low_off 0.95 mid_on 1.35 mid_off 1.20 hi_off 1.16 air_en 0.87 
+  v3 beat  89 rel 25 (p1) t= 46.035 bassA 0.38 bass-top G  mid-top G# G F#   kick 0.70 kick_off 0.45 low_off 0.05 mid_on 1.82 mid_off 0.02 hi_off 0.02 air_en 0.42 
+  v3 beat  90 rel 26 (p2) t= 46.553 bassA 0.68 bass-top G  mid-top A E G     kick 1.23 kick_off 1.47 low_off 0.61 mid_on 0.70 mid_off 0.96 hi_off 0.81 air_en 1.02 <-- next verse onset
+  v3 beat  91 rel 27 (p3) t= 47.070 bassA 0.37 bass-top G  mid-top E B G#    kick 0.98 kick_off 1.33 low_off 0.87 mid_on 1.27 mid_off 0.92 hi_off 0.99 air_en 1.04 
+  v4 beat 104 rel 14 (p2) t= 53.794 bassA 0.91 bass-top G  mid-top A E D     kick 0.90 kick_off 0.98 low_off 0.72 mid_on 0.82 mid_off 0.73 hi_off 0.64 air_en 1.04 
+  v4 beat 105 rel 15 (p3) t= 54.311 bassA 0.42 bass-top G  mid-top G# B E    kick 0.92 kick_off 1.42 low_off 0.95 mid_on 0.87 mid_off 0.84 hi_off 0.77 air_en 1.13 
+  v4 beat 106 rel 16 (p0) t= 54.828 bassA 0.73 bass-top G  mid-top E B C#    kick 0.88 kick_off 0.97 low_off 1.02 mid_on 1.23 mid_off 0.94 hi_off 1.05 air_en 1.05 
+  v4 beat 107 rel 17 (p1) t= 55.345 bassA 0.26 bass-top F  mid-top G# F# B   kick 1.05 kick_off 1.00 low_off 1.08 mid_on 1.25 mid_off 0.97 hi_off 1.05 air_en 0.64 
+  v4 beat 108 rel 18 (p2) t= 55.862 bassA 0.71 bass-top G  mid-top C# F# D#  kick 1.21 kick_off 1.12 low_off 0.79 mid_on 1.24 mid_off 0.99 hi_off 1.20 air_en 0.63 
+  v4 beat 109 rel 19 (p3) t= 56.380 bassA 0.23 bass-top F  mid-top F# G D#   kick 1.02 kick_off 0.82 low_off 0.96 mid_on 1.26 mid_off 1.20 hi_off 1.13 air_en 0.61 
+  v4 beat 110 rel 20 (p0) t= 56.897 bassA 0.68 bass-top G  mid-top C# A# G   kick 1.03 kick_off 0.95 low_off 0.61 mid_on 1.18 mid_off 1.12 hi_off 0.98 air_en 0.59 
+  v4 beat 111 rel 21 (p1) t= 57.414 bassA 0.21 bass-top F  mid-top F# A# F   kick 0.98 kick_off 1.06 low_off 1.46 mid_on 1.09 mid_off 0.79 hi_off 0.95 air_en 0.53 
+  v4 beat 112 rel 22 (p2) t= 57.931 bassA 0.59 bass-top G  mid-top C# E A#   kick 1.07 kick_off 1.14 low_off 0.85 mid_on 1.13 mid_off 1.08 hi_off 1.20 air_en 0.59 
+  v4 beat 113 rel 23 (p3) t= 58.449 bassA 0.68 bass-top C  mid-top D# F# B   kick 0.88 kick_off 0.27 low_off 1.10 mid_on 1.19 mid_off 1.13 hi_off 1.24 air_en 0.86 
+  v4 beat 114 rel 24 (p0) t= 58.966 bassA 0.69 bass-top G  mid-top G G# A#   kick 1.08 kick_off 0.67 low_off 1.38 mid_on 1.35 mid_off 1.19 hi_off 1.40 air_en 0.88 
+  v4 beat 115 rel 25 (p1) t= 59.483 bassA 0.67 bass-top G  mid-top A D G#    kick 0.90 kick_off 1.48 low_off 0.88 mid_on 0.73 mid_off 0.87 hi_off 1.06 air_en 1.03 <-- next verse onset
+  v4 beat 116 rel 26 (p2) t= 60.000 bassA 0.31 bass-top F  mid-top E G# A    kick 1.02 kick_off 1.67 low_off 1.12 mid_on 1.23 mid_off 1.05 hi_off 1.03 air_en 1.03 
+  v5 beat 129 rel 14 (p2) t= 66.724 bassA 0.79 bass-top C  mid-top E F A     kick 1.12 kick_off 1.16 low_off 0.73 mid_on 1.27 mid_off 0.98 hi_off 0.94 air_en 1.33 
+  v5 beat 130 rel 15 (p3) t= 67.241 bassA 0.36 bass-top F  mid-top E G# B    kick 0.75 kick_off 1.86 low_off 1.70 mid_on 1.51 mid_off 1.37 hi_off 1.15 air_en 1.70 
+  v5 beat 131 rel 16 (p0) t= 67.758 bassA 0.70 bass-top G  mid-top E A B     kick 0.85 kick_off 1.04 low_off 0.72 mid_on 1.57 mid_off 1.11 hi_off 1.07 air_en 1.27 
+  v5 beat 132 rel 17 (p1) t= 68.276 bassA 0.26 bass-top F  mid-top E B G#    kick 0.95 kick_off 1.03 low_off 1.23 mid_on 1.31 mid_off 1.26 hi_off 1.32 air_en 1.04 
+  v5 beat 133 rel 18 (p2) t= 68.793 bassA 0.76 bass-top G  mid-top F E A     kick 1.15 kick_off 1.04 low_off 0.84 mid_on 1.25 mid_off 1.21 hi_off 1.22 air_en 1.04 
+  v5 beat 134 rel 19 (p3) t= 69.310 bassA 0.27 bass-top F  mid-top B E G#    kick 1.17 kick_off 1.73 low_off 1.07 mid_on 1.26 mid_off 1.32 hi_off 1.03 air_en 0.93 
+  v5 beat 135 rel 20 (p0) t= 69.827 bassA 0.76 bass-top G  mid-top E A B     kick 1.23 kick_off 1.09 low_off 0.83 mid_on 1.11 mid_off 1.14 hi_off 1.02 air_en 1.03 
+  v5 beat 136 rel 21 (p1) t= 70.344 bassA 0.25 bass-top F  mid-top E B G#    kick 1.10 kick_off 1.98 low_off 1.34 mid_on 1.05 mid_off 1.22 hi_off 1.15 air_en 1.01 
+  v5 beat 137 rel 22 (p2) t= 70.862 bassA 0.74 bass-top G  mid-top E F A     kick 1.25 kick_off 1.04 low_off 1.04 mid_on 0.96 mid_off 0.91 hi_off 0.97 air_en 0.86 
+  v5 beat 138 rel 23 (p3) t= 71.379 bassA 0.77 bass-top C  mid-top B E G#    kick 0.98 kick_off 0.48 low_off 0.99 mid_on 0.94 mid_off 0.80 hi_off 1.04 air_en 0.88 
+  v5 beat 139 rel 24 (p0) t= 71.896 bassA 0.76 bass-top G  mid-top E A B     kick 0.99 kick_off 1.25 low_off 1.22 mid_on 1.33 mid_off 1.15 hi_off 1.20 air_en 1.06 
+  v5 beat 140 rel 25 (p1) t= 72.413 bassA 0.30 bass-top F  mid-top E B G#    kick 1.00 kick_off 1.71 low_off 1.29 mid_on 1.21 mid_off 1.21 hi_off 1.42 air_en 1.04 
+  v5 beat 141 rel 26 (p2) t= 72.931 bassA 0.37 bass-top F  mid-top A D G#    kick 1.13 kick_off 1.36 low_off 0.80 mid_on 1.23 mid_off 1.17 hi_off 0.95 air_en 1.29 
+  v5 beat 142 rel 27 (p3) t= 73.448 bassA 0.75 bass-top G  mid-top G C G#    kick 0.86 kick_off 0.72 low_off 1.13 mid_on 1.66 mid_off 1.20 hi_off 1.20 air_en 1.08 
+  v5 beat 143 rel 28 (p0) t= 73.965 bassA 0.69 bass-top G  mid-top A D G#    kick 1.08 kick_off 0.89 low_off 1.20 mid_on 0.99 mid_off 1.15 hi_off 0.83 air_en 1.13 <-- next verse onset
+  v5 beat 144 rel 29 (p1) t= 74.482 bassA 0.29 bass-top F  mid-top A G# B    kick 0.93 kick_off 1.37 low_off 1.05 mid_on 0.91 mid_off 1.04 hi_off 1.14 air_en 1.06 
+  v6 beat 157 rel 14 (p2) t= 81.206 bassA 0.80 bass-top C  mid-top E F A     kick 1.12 kick_off 0.80 low_off 0.68 mid_on 1.02 mid_off 1.15 hi_off 0.92 air_en 1.09 
+  v6 beat 158 rel 15 (p3) t= 81.723 bassA 0.76 bass-top G  mid-top B E G     kick 1.02 kick_off 0.54 low_off 1.32 mid_on 1.05 mid_off 1.07 hi_off 0.67 air_en 1.59 
+  v6 beat 159 rel 16 (p0) t= 82.240 bassA 0.61 bass-top G  mid-top C# A B    kick 1.04 kick_off 0.98 low_off 0.99 mid_on 1.05 mid_off 1.08 hi_off 1.00 air_en 1.11 
+  v6 beat 160 rel 17 (p1) t= 82.758 bassA 0.24 bass-top F  mid-top G# A F#   kick 1.02 kick_off 1.25 low_off 0.93 mid_on 1.09 mid_off 1.20 hi_off 1.32 air_en 0.78 
+  v6 beat 161 rel 18 (p2) t= 83.275 bassA 0.70 bass-top G  mid-top C# A B    kick 0.97 kick_off 0.89 low_off 1.06 mid_on 1.15 mid_off 1.24 hi_off 1.36 air_en 0.73 
+  v6 beat 162 rel 19 (p3) t= 83.792 bassA 0.22 bass-top F  mid-top F# G# A#  kick 1.03 kick_off 1.39 low_off 1.43 mid_on 1.01 mid_off 1.33 hi_off 1.31 air_en 0.68 
+  v6 beat 163 rel 20 (p0) t= 84.309 bassA 0.69 bass-top G  mid-top C# A# G#  kick 1.06 kick_off 1.18 low_off 0.78 mid_on 1.04 mid_off 1.06 hi_off 1.12 air_en 0.61 
+  v6 beat 164 rel 21 (p1) t= 84.826 bassA 0.29 bass-top F  mid-top A F# G#   kick 0.88 kick_off 1.81 low_off 0.74 mid_on 0.90 mid_off 0.72 hi_off 1.10 air_en 0.56 
+  v6 beat 165 rel 22 (p2) t= 85.344 bassA 0.78 bass-top G  mid-top C# A D#   kick 1.11 kick_off 1.03 low_off 1.11 mid_on 0.97 mid_off 1.10 hi_off 1.27 air_en 0.64 
+  v6 beat 166 rel 23 (p3) t= 85.861 bassA 0.72 bass-top C  mid-top A C G#    kick 0.97 kick_off 0.36 low_off 1.09 mid_on 1.02 mid_off 1.13 hi_off 1.28 air_en 0.78 
+  v6 beat 167 rel 24 (p0) t= 86.378 bassA 0.73 bass-top G  mid-top E G# A    kick 1.00 kick_off 0.92 low_off 0.95 mid_on 1.01 mid_off 0.79 hi_off 0.91 air_en 0.88 <-- next verse onset
+  v6 beat 168 rel 25 (p1) t= 86.895 bassA 0.31 bass-top F  mid-top E G# C#   kick 0.82 kick_off 0.97 low_off 0.86 mid_on 0.91 mid_off 1.00 hi_off 1.14 air_en 1.11 
+  v7 beat 181 rel 14 (p2) t= 93.619 bassA 0.69 bass-top C  mid-top B F F#    kick 0.53 kick_off 0.69 low_off 0.37 mid_on 0.69 mid_off 0.50 hi_off 0.38 air_en 0.94 
+  v7 beat 182 rel 15 (p3) t= 94.136 bassA 0.72 bass-top G  mid-top G A E     kick 0.94 kick_off 0.57 low_off 1.11 mid_on 0.72 mid_off 0.42 hi_off 0.42 air_en 1.17 
+  v7 beat 183 rel 16 (p0) t= 94.654 bassA 0.73 bass-top G  mid-top E A B     kick 0.98 kick_off 0.78 low_off 1.37 mid_on 1.00 mid_off 0.92 hi_off 1.03 air_en 1.21 
+  v7 beat 184 rel 17 (p1) t= 95.171 bassA 0.32 bass-top F  mid-top E B G#    kick 1.00 kick_off 1.47 low_off 1.20 mid_on 1.40 mid_off 1.06 hi_off 1.34 air_en 1.14 
+  v7 beat 185 rel 18 (p2) t= 95.688 bassA 0.84 bass-top G  mid-top A D E     kick 1.11 kick_off 1.07 low_off 1.00 mid_on 1.09 mid_off 1.29 hi_off 1.40 air_en 1.04 
+  v7 beat 186 rel 19 (p3) t= 96.205 bassA 0.31 bass-top F  mid-top B E G#    kick 1.18 kick_off 1.77 low_off 1.07 mid_on 1.26 mid_off 1.03 hi_off 1.43 air_en 0.93 
+  v7 beat 187 rel 20 (p0) t= 96.722 bassA 0.76 bass-top G  mid-top E A B     kick 1.30 kick_off 0.73 low_off 1.31 mid_on 1.32 mid_off 0.88 hi_off 1.10 air_en 1.07 
+  v7 beat 188 rel 21 (p1) t= 97.240 bassA 0.20 bass-top F  mid-top E B G#    kick 1.11 kick_off 2.30 low_off 1.33 mid_on 1.36 mid_off 1.24 hi_off 1.28 air_en 1.07 
+  v7 beat 189 rel 22 (p2) t= 97.757 bassA 0.77 bass-top G  mid-top A D C#    kick 1.08 kick_off 1.03 low_off 1.12 mid_on 1.13 mid_off 1.05 hi_off 1.13 air_en 0.94 
+  v7 beat 190 rel 23 (p3) t= 98.274 bassA 0.38 bass-top F  mid-top B G# A    kick 1.17 kick_off 1.25 low_off 1.01 mid_on 1.51 mid_off 1.03 hi_off 1.13 air_en 0.97 
+  v7 beat 191 rel 24 (p0) t= 98.791 bassA 0.70 bass-top G  mid-top E A B     kick 0.95 kick_off 0.67 low_off 1.01 mid_on 1.23 mid_off 1.04 hi_off 1.15 air_en 0.95 
+  v7 beat 192 rel 25 (p1) t= 99.308 bassA 0.23 bass-top F  mid-top E B G#    kick 0.95 kick_off 1.14 low_off 1.19 mid_on 1.18 mid_off 1.08 hi_off 1.28 air_en 0.99 
+  v7 beat 193 rel 26 (p2) t= 99.826 bassA 0.71 bass-top G  mid-top D A E     kick 1.00 kick_off 0.82 low_off 1.22 mid_on 0.98 mid_off 1.03 hi_off 1.24 air_en 0.95 
+  v7 beat 194 rel 27 (p3) t=100.343 bassA 0.74 bass-top C  mid-top B E G#    kick 0.98 kick_off 0.99 low_off 0.98 mid_on 1.22 mid_off 1.01 hi_off 1.27 air_en 0.87 
+  v7 beat 195 rel 28 (p0) t=100.860 bassA 0.16 bass-top F  mid-top G# F B    kick 1.17 kick_off 1.45 low_off 1.08 mid_on 0.98 mid_off 0.95 hi_off 0.63 air_en 1.05 <-- next verse onset
+  v7 beat 196 rel 29 (p1) t=101.377 bassA 0.09 bass-top F  mid-top F A D     kick 0.90 kick_off 1.99 low_off 0.73 mid_on 0.98 mid_off 0.68 hi_off 0.84 air_en 1.15 

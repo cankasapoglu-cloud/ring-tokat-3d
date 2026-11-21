@@ -1,0 +1,3482 @@
+{
+ "about": "Tempo-grid analysis of dinle_2 (full mix + isolated vocal). All times in seconds. Unless stated otherwise, times are on the timeline of dinle_2_vokal.wav.",
+ "inputs": {
+  "mix": "dinle_2.mp3 (decoded with ffmpeg to 44.1 kHz mono)",
+  "vocal": "dinle_2_vokal.wav",
+  "words": "dinle_2_words.json"
+ },
+ "summary": {
+  "bpm": 116.015,
+  "bpm_note": "on the timeline of dinle_2_vokal.wav (the file the lines are cut from); 116.006 on the decoded dinle_2.mp3; use 116.0 for the new backing",
+  "bpm_mix_timeline": 116.0061,
+  "recommended_bpm_for_new_backing": 116.0,
+  "beat_sec": 0.517174,
+  "bar_sec": 2.068694,
+  "beat_sec_at_116_0": 0.517241,
+  "bar_sec_at_116_0": 2.068966,
+  "tempo_stable": true,
+  "meter": "4/4 at 116 (drum loop is a 1-beat boom-chick; harmonic unit 4 beats)",
+  "lines_start_on_downbeat": true,
+  "typical_offset_beats": -0.0333,
+  "typical_offset_ms": -17.2,
+  "offset_spread": {
+   "acoustic_onset": {
+    "n": 28,
+    "mean_ms": -17.689285714285713,
+    "median_ms": -17.2,
+    "sd_ms": 14.191581732262685,
+    "min_ms": -41.099999999999994,
+    "max_ms": 13.700000000000001,
+    "median_beats": -0.03325508360089128,
+    "mean_beats": -0.03420108577143158,
+    "sd_beats": 0.027438502147399832,
+    "min_beats": -0.07946418232538555,
+    "max_beats": 0.026488060775128518
+   },
+   "vowel_onset": {
+    "n": 28,
+    "mean_ms": 9.514285714285714,
+    "median_ms": 3.2500000000000004,
+    "sd_ms": 19.08766742216156,
+    "min_ms": -18.9,
+    "max_ms": 54.800000000000004,
+    "median_beats": 0.006283664052493992,
+    "mean_beats": 0.01839525388554285,
+    "sd_beats": 0.03690476603895299,
+    "min_beats": -0.036541923259118904,
+    "max_beats": 0.10595224310051407
+   },
+   "per_line_type": {
+    "acoustic_onset_line1": {
+     "n": 7,
+     "mean_ms": -7.257142857142857,
+     "median_ms": -8.0,
+     "sd_ms": 7.829401242082552,
+     "min_ms": -21.5,
+     "max_ms": 1.1,
+     "median_beats": -0.015467480744600595,
+     "mean_beats": -0.01403121467545911,
+     "sd_beats": 0.01513763911920798,
+     "min_beats": -0.0415688545011141,
+     "max_beats": 0.002126778602382582
+    },
+    "vowel_onset_line1": {
+     "n": 7,
+     "mean_ms": -2.6142857142857143,
+     "median_ms": -3.0,
+     "sd_ms": 5.91310087050457,
+     "min_ms": -12.5,
+     "max_ms": 3.5,
+     "median_beats": -0.005800305279225223,
+     "mean_beats": -0.0050545517433248375,
+     "sd_beats": 0.011432596731926306,
+     "min_beats": -0.02416793866343843,
+     "max_beats": 0.00676702282576276
+    },
+    "acoustic_onset_line2": {
+     "n": 7,
+     "mean_ms": -34.24285714285715,
+     "median_ms": -34.0,
+     "sd_ms": 3.035268874886892,
+     "min_ms": -38.5,
+     "max_ms": -30.8,
+     "median_beats": -0.06573679316455253,
+     "mean_beats": -0.06620634168715647,
+     "sd_beats": 0.005868495359624814,
+     "min_beats": -0.07443725108339036,
+     "max_beats": -0.05954980086671229
+    },
+    "vowel_onset_line2": {
+     "n": 7,
+     "mean_ms": 37.18571428571428,
+     "median_ms": 38.0,
+     "sd_ms": 10.054754857185491,
+     "min_ms": 26.1,
+     "max_ms": 54.800000000000004,
+     "median_beats": 0.07347053353685282,
+     "mean_beats": 0.0718961649610631,
+     "sd_beats": 0.019440215893149485,
+     "min_beats": 0.05046265592925944,
+     "max_beats": 0.10595224310051407
+    },
+    "acoustic_onset_line3": {
+     "n": 7,
+     "mean_ms": -18.114285714285714,
+     "median_ms": -18.2,
+     "sd_ms": 16.607370710162456,
+     "min_ms": -41.099999999999994,
+     "max_ms": 13.700000000000001,
+     "median_beats": -0.03518851869396635,
+     "mean_beats": -0.03502279568598849,
+     "sd_beats": 0.03210927333473521,
+     "min_beats": -0.07946418232538555,
+     "max_beats": 0.026488060775128518
+    },
+    "vowel_onset_line3": {
+     "n": 7,
+     "mean_ms": 5.257142857142857,
+     "median_ms": 5.5,
+     "sd_ms": 12.763862678522926,
+     "min_ms": -12.0,
+     "max_ms": 21.5,
+     "median_beats": 0.010633893011912908,
+     "mean_beats": 0.010164344489308962,
+     "sd_beats": 0.02467810002584744,
+     "min_beats": -0.023201221116900893,
+     "max_beats": 0.0415688545011141
+    },
+    "acoustic_onset_line4": {
+     "n": 7,
+     "mean_ms": -11.14285714285714,
+     "median_ms": -12.3,
+     "sd_ms": 7.944779657707557,
+     "min_ms": -21.2,
+     "max_ms": 1.2,
+     "median_beats": -0.023781251644823413,
+     "mean_beats": -0.02154399103712225,
+     "sd_beats": 0.015360715796960769,
+     "min_beats": -0.04098882397319158,
+     "max_beats": 0.002320122111690089
+    },
+    "vowel_onset_line4": {
+     "n": 7,
+     "mean_ms": -1.7714285714285718,
+     "median_ms": 1.2,
+     "sd_ms": 10.288944598566994,
+     "min_ms": -18.9,
+     "max_ms": 8.4,
+     "median_beats": 0.002320122111690089,
+     "mean_beats": -0.0034249421648758467,
+     "sd_beats": 0.019893006557574658,
+     "min_beats": -0.036541923259118904,
+     "max_beats": 0.016240854781830624
+    }
+   }
+  },
+  "statement": "All 28 lines start ON the downbeat, none is a pickup. The first sound of a line (including consonants like \"Ç\", \"K\") begins on average 18 ms before the downbeat (range -41..+14 ms, SD 14 ms = 0.03 beat); the first vowel is reached on average 9 ms after it (median +3 ms, range -19..+55 ms). Line 2 (\"Çiftliğinde\") has the largest spread between the two: consonant 34 ms early, vowel 37 ms late. A half-beat pickup would be -259 ms.",
+  "placement_recipe": "To keep the same feel on a new 116 BPM backing: for each line (or the L3+L4 chunk) put the sample at time `downbeat` of dinle_2_vokal.wav exactly on the new bar line, i.e. new_time = new_bar_start + (t - downbeat). Start the cut at least 60 ms before the downbeat (earliest sound is 41 ms early); `quietest_point_before_line` gives a clean cut point before L1, L2 and L3 (dip of -41 dB or deeper); L3->L4 is legato (dip only -11..-27 dB) and should stay one chunk.",
+  "confidence": "beat grid/tempo and \"on the beat, no pickup\": high. Bar-level choice (line start = beat 1, not beat 3): medium-high. Nothing was checked by ear."
+ },
+ "tempo": {
+  "search_range_bpm": [
+   110,
+   122
+  ],
+  "method_A_fullband_spectral_flux": {
+   "description": "onset envelope = half-wave rectified log-magnitude spectral flux 30 Hz-16 kHz (hop 5.8 ms); tempo/phase = (BPM, phase) maximising the mean envelope on the beat grid; autocorrelation as a second read-out",
+   "global_grid_search": {
+    "bpm": 116.00499999999928,
+    "beat_period_s": 0.5172190853842539,
+    "phase_first_beat_s": 0.2569070298694006,
+    "score": 4.276822242406511,
+    "coarse_top5": [
+     {
+      "bpm": 115.99999999999966,
+      "score": 4.214563240995519
+     },
+     {
+      "bpm": 116.04999999999966,
+      "score": 2.896748086238869
+     },
+     {
+      "bpm": 115.94999999999966,
+      "score": 2.549757495996063
+     },
+     {
+      "bpm": 116.09999999999965,
+      "score": 1.9149520378533518
+     },
+     {
+      "bpm": 115.89999999999966,
+      "score": 1.8408205137486797
+     }
+    ]
+   },
+   "autocorrelation_bpm_at_1_4_8_16_beats": {
+    "1": {
+     "bpm": 115.99913370701277,
+     "acf": 0.8663004341432566
+    },
+    "4": {
+     "bpm": 116.00382041851388,
+     "acf": 0.8113840969096467
+    },
+    "8": {
+     "bpm": 116.00010026943241,
+     "acf": 0.7725257852987024
+    },
+    "16": {
+     "bpm": 116.00578422209524,
+     "acf": 0.7182631322999499
+    }
+   },
+   "windows_20s": [
+    {
+     "t0": 0.0,
+     "t1": 20.0,
+     "bpm": 115.99999999999946,
+     "score": 4.469842255242377,
+     "beat_near_centre_s": 10.084913793103494,
+     "dev_from_global_grid_ms": 0.8441409332700656,
+     "acf_bpm_1beat": 115.97564191575266,
+     "acf_bpm_4beat": 115.99994963555176,
+     "acf_bpm_8beat": 115.99843715564427
+    },
+    {
+     "t0": 10.0,
+     "t1": 30.0,
+     "bpm": 116.01999999999946,
+     "score": 4.189041595623599,
+     "beat_near_centre_s": 19.912515083606323,
+     "dev_from_global_grid_ms": 1.2828091352767301,
+     "acf_bpm_1beat": 116.0098842985118,
+     "acf_bpm_4beat": 116.01354609022638,
+     "acf_bpm_8beat": 116.01047531511199
+    },
+    {
+     "t0": 20.0,
+     "t1": 40.0,
+     "bpm": 115.99999999999946,
+     "score": 4.133510603413894,
+     "beat_near_centre_s": 30.256896551724182,
+     "dev_from_global_grid_ms": 1.2825695680586668,
+     "acf_bpm_1beat": 116.02276578155629,
+     "acf_bpm_4beat": 115.99770246901497,
+     "acf_bpm_8beat": 116.0000544549477
+    },
+    {
+     "t0": 30.0,
+     "t1": 50.0,
+     "bpm": 115.99999999999946,
+     "score": 4.342535397242643,
+     "beat_near_centre_s": 40.08362068965522,
+     "dev_from_global_grid_ms": 0.8440851982692288,
+     "acf_bpm_1beat": 116.02946963289531,
+     "acf_bpm_4beat": 116.00788566718164,
+     "acf_bpm_8beat": 116.00627864004751
+    },
+    {
+     "t0": 40.0,
+     "t1": 60.0,
+     "bpm": 115.99999999999946,
+     "score": 4.624046106030307,
+     "beat_near_centre_s": 49.91034482758625,
+     "dev_from_global_grid_ms": 0.405600828476238,
+     "acf_bpm_1beat": 116.00522350284736,
+     "acf_bpm_4beat": 116.02266578437997,
+     "acf_bpm_8beat": 116.01572091241961
+    },
+    {
+     "t0": 50.0,
+     "t1": 70.0,
+     "bpm": 115.99999999999946,
+     "score": 4.397236013567254,
+     "beat_near_centre_s": 60.25431034482764,
+     "dev_from_global_grid_ms": -0.010589615214773307,
+     "acf_bpm_1beat": 115.99776911596678,
+     "acf_bpm_4beat": 116.00695485378108,
+     "acf_bpm_8beat": 116.0066260548368
+    },
+    {
+     "t0": 60.0,
+     "t1": 80.0,
+     "bpm": 115.99999999999946,
+     "score": 4.200412330989662,
+     "beat_near_centre_s": 70.08232758620694,
+     "dev_from_global_grid_ms": 0.8440294632754974,
+     "acf_bpm_1beat": 115.99900303824066,
+     "acf_bpm_4beat": 116.01186994894724,
+     "acf_bpm_8beat": 116.0006218334491
+    },
+    {
+     "t0": 70.0,
+     "t1": 90.0,
+     "bpm": 116.01999999999946,
+     "score": 4.510972624938276,
+     "beat_near_centre_s": 79.9086364419928,
+     "dev_from_global_grid_ms": -0.00973705169432515,
+     "acf_bpm_1beat": 116.00414049498558,
+     "acf_bpm_4beat": 116.01509942045352,
+     "acf_bpm_8beat": 116.00688197133522
+    },
+    {
+     "t0": 80.0,
+     "t1": 100.0,
+     "bpm": 115.99999999999946,
+     "score": 4.3941088246152695,
+     "beat_near_centre_s": 90.25301724137935,
+     "dev_from_global_grid_ms": -0.010645350215610083,
+     "acf_bpm_1beat": 116.00054500954529,
+     "acf_bpm_4beat": 116.00398643725777,
+     "acf_bpm_8beat": 116.00594856123023
+    }
+   ],
+   "fine_search_step_0p001": {
+    "bpm": 116.00800000000028,
+    "score": 4.275432805792533
+   }
+  },
+  "method_B_kick_lowfreq_40_120Hz": {
+   "description": "kick/bass band 40-120 Hz amplitude envelope, log-rise half-wave rectified; same grid search and autocorrelation",
+   "global_grid_search": {
+    "bpm": 115.99999999999929,
+    "beat_period_s": 0.517241379310348,
+    "phase_first_beat_s": 0.004741379310341798,
+    "score": 7.868737619053046,
+    "coarse_top5": [
+     {
+      "bpm": 115.99999999999966,
+      "score": 7.845608246989913
+     },
+     {
+      "bpm": 116.04999999999966,
+      "score": 5.531691343346104
+     },
+     {
+      "bpm": 115.94999999999966,
+      "score": 5.453010691389064
+     },
+     {
+      "bpm": 115.89999999999966,
+      "score": 3.418009058136781
+     },
+     {
+      "bpm": 116.09999999999965,
+      "score": 3.362524479041962
+     }
+    ]
+   },
+   "autocorrelation_bpm_at_1_4_8_16_beats": {
+    "1": {
+     "bpm": 115.95866071020433,
+     "acf": 0.7881263993873111
+    },
+    "4": {
+     "bpm": 115.99335999803242,
+     "acf": 0.7614270652758722
+    },
+    "8": {
+     "bpm": 115.9980617286051,
+     "acf": 0.7459328107910035
+    },
+    "16": {
+     "bpm": 116.00170433462053,
+     "acf": 0.7253185164140141
+    }
+   },
+   "windows_20s": [
+    {
+     "t0": 0.0,
+     "t1": 20.0,
+     "bpm": 116.01999999999946,
+     "score": 6.636612322641442,
+     "beat_near_centre_s": 9.832356490260347,
+     "dev_from_global_grid_ms": 0.02890405339345259,
+     "acf_bpm_1beat": 115.90544176971054,
+     "acf_bpm_4beat": 115.96982488673018,
+     "acf_bpm_8beat": 116.00802831508902
+    },
+    {
+     "t0": 10.0,
+     "t1": 30.0,
+     "bpm": 115.97999999999946,
+     "score": 8.144276203644191,
+     "beat_near_centre_s": 20.1771857216762,
+     "dev_from_global_grid_ms": 0.030549262286572176,
+     "acf_bpm_1beat": 115.93605732095318,
+     "acf_bpm_4beat": 115.994465824942,
+     "acf_bpm_8beat": 116.00544441512871
+    },
+    {
+     "t0": 20.0,
+     "t1": 40.0,
+     "bpm": 115.99999999999946,
+     "score": 8.206814339962634,
+     "beat_near_centre_s": 30.006034482758665,
+     "dev_from_global_grid_ms": 1.2931034481404313,
+     "acf_bpm_1beat": 115.9572454297701,
+     "acf_bpm_4beat": 116.02262717654092,
+     "acf_bpm_8beat": 116.01283862539651
+    },
+    {
+     "t0": 30.0,
+     "t1": 50.0,
+     "bpm": 115.99999999999946,
+     "score": 8.292110780155246,
+     "beat_near_centre_s": 39.83405172413798,
+     "dev_from_global_grid_ms": 1.7241379308464144,
+     "acf_bpm_1beat": 115.9650362331092,
+     "acf_bpm_4beat": 116.01403578965794,
+     "acf_bpm_8beat": 115.99711609587379
+    },
+    {
+     "t0": 40.0,
+     "t1": 60.0,
+     "bpm": 116.03999999999945,
+     "score": 8.209539652237705,
+     "beat_near_centre_s": 50.17709410548092,
+     "dev_from_global_grid_ms": -0.06106693317303735,
+     "acf_bpm_1beat": 116.05374045765245,
+     "acf_bpm_4beat": 116.05532358742073,
+     "acf_bpm_8beat": 116.0116621941522
+    },
+    {
+     "t0": 50.0,
+     "t1": 70.0,
+     "bpm": 115.97999999999946,
+     "score": 8.210615501119245,
+     "beat_near_centre_s": 60.003879979306824,
+     "dev_from_global_grid_ms": -0.861400003879409,
+     "acf_bpm_1beat": 116.02122616046867,
+     "acf_bpm_4beat": 116.00017660286277,
+     "acf_bpm_8beat": 115.98799208091411
+    },
+    {
+     "t0": 60.0,
+     "t1": 80.0,
+     "bpm": 115.99999999999946,
+     "score": 8.556333831246468,
+     "beat_near_centre_s": 69.83146551724143,
+     "dev_from_global_grid_ms": -0.8620689658953018,
+     "acf_bpm_1beat": 116.05777606350513,
+     "acf_bpm_4beat": 116.00094081658445,
+     "acf_bpm_8beat": 116.00714242571918
+    },
+    {
+     "t0": 70.0,
+     "t1": 90.0,
+     "bpm": 115.99999999999946,
+     "score": 8.920829940110165,
+     "beat_near_centre_s": 80.17672413793109,
+     "dev_from_global_grid_ms": -0.43103448319209425,
+     "acf_bpm_1beat": 116.06624776031086,
+     "acf_bpm_4beat": 115.99304442034575,
+     "acf_bpm_8beat": 116.00225430141957
+    },
+    {
+     "t0": 80.0,
+     "t1": 100.0,
+     "bpm": 115.97999999999946,
+     "score": 8.134819476135386,
+     "beat_near_centre_s": 90.00517330574243,
+     "dev_from_global_grid_ms": 0.43192643153905363,
+     "acf_bpm_1beat": 116.03316037409517,
+     "acf_bpm_4beat": 115.9693990909341,
+     "acf_bpm_8beat": 115.98854136161683
+    }
+   ],
+   "fine_search_step_0p001": {
+    "bpm": 116.00100000000025,
+    "score": 8.231510680362833
+   }
+  },
+  "third_opinion_librosa_beat_track": {
+   "tempo_bpm": 116.13412921348315,
+   "median_inter_beat_s": 0.5166439909297083,
+   "n_beats": 207,
+   "beat_phase_circular_mean_s": 0.2743711971249563,
+   "phase_concentration_R": 0.9024650982485017,
+   "note": "librosa quantises to its 5.8 ms hop (89 frames = 0.51664 s = 116.13 BPM); like method A it locks to the OFF-beat eighth (phase about 0.274 s = half a beat + ~15 ms)"
+  },
+  "per_window_summary": {
+   "window_s": 20,
+   "hop_s": 10,
+   "bpm_min_A": 115.99999999999946,
+   "bpm_max_A": 116.01999999999946,
+   "bpm_min_B": 115.97999999999946,
+   "bpm_max_B": 116.03999999999945,
+   "max_abs_phase_dev_from_global_grid_ms_A": 1.2828091352767301,
+   "max_abs_phase_dev_from_global_grid_ms_B": 1.7241379308464144,
+   "note": "window search step 0.02 BPM; a 20 s window resolves about +-0.03 BPM"
+  },
+  "fine_drift_check": {
+   "description": "10 s windows every 5 s: position (ms) of the steepest rise of full-rate band envelopes folded over an exact 116.000 BPM beat; a straight line = constant tempo slightly different from 116.000",
+   "window_centres_s": [
+    11.0,
+    16.0,
+    21.0,
+    26.0,
+    31.0,
+    36.0,
+    41.0,
+    46.0,
+    51.0,
+    56.0,
+    61.0,
+    66.0,
+    71.0,
+    76.0,
+    81.0,
+    86.0,
+    91.0,
+    96.0
+   ],
+   "bands": {
+    "kick_40_120": {
+     "dev_ms": [
+      49.27,
+      48.77,
+      48.52,
+      49.27,
+      42.77,
+      49.27,
+      43.77,
+      44.52,
+      27.01,
+      28.01,
+      23.26,
+      49.52,
+      49.27,
+      25.26,
+      45.02,
+      44.52,
+      43.02,
+      45.27
+     ],
+     "slope_ms_per_s": -0.09178689993410753,
+     "theil_sen_slope_ms_per_s": -0.061567192895146894,
+     "intercept_ms": 46.93020829741185,
+     "resid_sd_ms": 8.639148556782391,
+     "implied_bpm": 116.01064825776292,
+     "implied_bpm_theil_sen": 116.00714223410314,
+     "mean_dev_ms": 42.0196091509371
+    },
+    "low_120_300": {
+     "dev_ms": [
+      7.5,
+      6.25,
+      6.5,
+      6.75,
+      7.0,
+      7.25,
+      7.75,
+      7.75,
+      7.0,
+      7.75,
+      7.75,
+      5.25,
+      5.5,
+      6.0,
+      6.0,
+      6.0,
+      2.75,
+      3.5
+     ],
+     "slope_ms_per_s": -0.034742735464372336,
+     "theil_sen_slope_ms_per_s": -0.022232597434357338,
+     "intercept_ms": 8.208921989532504,
+     "resid_sd_ms": 1.0489147071999452,
+     "implied_bpm": 116.00403029733742,
+     "implied_bpm_theil_sen": 116.00257903864112,
+     "mean_dev_ms": 6.350185642188586
+    },
+    "air_8k_16k_on": {
+     "dev_ms": [
+      2.25,
+      0.0,
+      0.25,
+      0.5,
+      2.0,
+      2.25,
+      0.75,
+      0.25,
+      -0.25,
+      -1.0,
+      -0.75,
+      -0.75,
+      -1.25,
+      -1.5,
+      -3.25,
+      -3.0,
+      -3.0,
+      -3.25
+     ],
+     "slope_ms_per_s": -0.059728595738898965,
+     "theil_sen_slope_ms_per_s": -0.06002801307276706,
+     "intercept_ms": 2.653560309568608,
+     "resid_sd_ms": 0.8078134276897114,
+     "implied_bpm": 116.00692893096102,
+     "implied_bpm_theil_sen": 116.00696366753156,
+     "mean_dev_ms": -0.5419195624624858
+    },
+    "mid_300_2000_off": {
+     "dev_ms": [
+      2.25,
+      0.0,
+      0.25,
+      1.0,
+      1.0,
+      -0.25,
+      0.0,
+      0.0,
+      2.0,
+      -1.75,
+      -1.75,
+      -1.75,
+      -3.0,
+      -1.75,
+      -2.25,
+      -2.25,
+      -2.25,
+      -4.0
+     ],
+     "slope_ms_per_s": -0.05575357251340624,
+     "theil_sen_slope_ms_per_s": -0.055025678650036935,
+     "intercept_ms": 2.1768844724717473,
+     "resid_sd_ms": 0.8926156278226809,
+     "implied_bpm": 116.00646777501312,
+     "implied_bpm_theil_sen": 116.00638332997046,
+     "mean_dev_ms": -0.8059316569954863
+    },
+    "high_2k_8k_off": {
+     "dev_ms": [
+      0.0,
+      -0.25,
+      -0.5,
+      0.25,
+      0.25,
+      0.75,
+      -0.5,
+      -0.5,
+      0.0,
+      -2.25,
+      -2.0,
+      -2.0,
+      -2.25,
+      -2.25,
+      -2.5,
+      -2.75,
+      -3.0,
+      -4.0
+     ],
+     "slope_ms_per_s": -0.04677105249735726,
+     "theil_sen_slope_ms_per_s": -0.05002334422730496,
+     "intercept_ms": 1.1960862093400646,
+     "resid_sd_ms": 0.5941204462489151,
+     "implied_bpm": 116.00542569585521,
+     "implied_bpm_theil_sen": 116.00580299821574,
+     "mean_dev_ms": -1.306165099268548
+    },
+    "air_8k_16k_off": {
+     "dev_ms": [
+      0.25,
+      0.0,
+      -0.25,
+      -0.5,
+      -0.5,
+      0.5,
+      -0.25,
+      -0.25,
+      0.25,
+      -0.75,
+      -2.25,
+      -1.75,
+      -1.75,
+      -2.25,
+      -3.5,
+      -3.25,
+      -3.5,
+      -3.5
+     ],
+     "slope_ms_per_s": -0.04837138652320518,
+     "theil_sen_slope_ms_per_s": -0.05002334422730126,
+     "intercept_ms": 1.2955994531194042,
+     "resid_sd_ms": 0.6168182958437844,
+     "implied_bpm": 116.00561135226559,
+     "implied_bpm_theil_sen": 116.00580299821574,
+     "mean_dev_ms": -1.2922697258720726
+    }
+   }
+  },
+  "refined_lattice_mix_timeline": {
+   "bpm": 116.00610558450445,
+   "beat_period_s": 0.5172141560798548,
+   "bar_period_s": 2.068856624319419,
+   "phase_first_beat_s": 0.0033296783625731004,
+   "slope_ms_per_s_vs_116_000": -0.05263157894736841,
+   "slope_bootstrap_sd": 0.005385788979329131,
+   "intercept_ms_vs_phase_0_0015": 1.8296783625731003,
+   "residual_sd_ms": 0.8188371225514608,
+   "bpm_uncertainty": 0.0006247515216021792,
+   "definition": "beat time = steepest rise of the high-frequency transient of the on-beat hit (hats 8-16 kHz) / of the off-beat \"chick\" minus half a beat; the kick low-frequency body (120-300 Hz) rises about 6 ms later",
+   "drift_of_exact_116_bpm_grid_over_100s_ms": -5.263157894736841
+  },
+  "vocal_only": {
+   "from_vowel_onsets": {
+    "beat_period_s": 0.5171895013929858,
+    "bpm": 116.01163565462454,
+    "bpm_se": 0.015741874392526188,
+    "residual_sd_ms": 19.437169007529835
+   },
+   "from_acoustic_onsets": {
+    "beat_period_s": 0.5171726395593098,
+    "bpm": 116.01541808384692,
+    "bpm_se": 0.011720134242441274,
+    "residual_sd_ms": 14.470409963554069
+   },
+   "note": "onsets of the 28 lines (vocal-stem timeline) regressed on the lattice beat numbers; uses the mix only for the integer beat numbers",
+   "within_verse_L1_to_L4_spacing": {
+    "beat_period_s_per_verse": [
+     0.51773,
+     0.51694,
+     0.51611,
+     0.51823,
+     0.51628,
+     0.51608,
+     0.51657
+    ],
+    "mean_beat_period_s": 0.5168499999999999,
+    "bpm": 116.08783979878109,
+    "bpm_sd_between_verses": 0.18883467579518903
+   }
+  },
+  "result": {
+   "bpm_mix_timeline": 116.00610558450445,
+   "bpm_vocal_stem_timeline": 116.01519872972666,
+   "beat_period_s_mix": 0.5172141560798548,
+   "beat_period_s_vocal_stem": 0.517173617396271,
+   "tempo_stable": true,
+   "statement": "Tempo is constant (machine grid). Mix: 116.006 BPM; the isolated-vocal file runs 78 ppm faster than the decoded mix, so on the vocal file the same grid is 116.015 BPM. Both round to 116.0; the difference from exactly 116.000 is 5 ms (mix) / 13 ms (vocal file) over 100 s and less than 1 ms inside one 2-bar chunk."
+  }
+ },
+ "beat_phase": {
+  "lattice_mix_timeline": {
+   "formula": "beat n at phase_first_beat_s + n*beat_period_s",
+   "phase_first_beat_s": 0.0033296783625731004,
+   "beat_period_s": 0.5172141560798548
+  },
+  "lattice_vocal_stem_timeline": {
+   "formula": "t_vocal = t_mix - (lag_ms_at_t0 + lag_slope_ms_per_s*t_mix)/1000",
+   "phase_first_beat_s": 0.007581033706264988,
+   "beat_period_s": 0.517173617396271
+  },
+  "method_A_phase_s": 0.2569070298694006,
+  "method_B_phase_s": 0.004741379310341798,
+  "methods_compared": {
+   "difference_s": 0.2521656505590588,
+   "half_beat_s": 0.2586070780399274,
+   "eighth_note_lattice_disagreement_ms": -6.441427480868567,
+   "statement": "The two methods agree on the eighth-note lattice within about 6 ms but choose different halves: full-band flux (A) and librosa lock to the off-beat eighth, the kick band (B) to the on-beat eighth."
+  },
+  "half_beat_question": {
+   "observation": "Drum/accompaniment pattern is \"boom-chick\": kick + bass note + hat on one eighth, chord strum/\"chick\" (300 Hz-8 kHz) + hat on the other eighth.",
+   "fullband_flux_offbeat_over_onbeat": 1.149985058096088,
+   "kick_env_onbeat_over_offbeat": 16.48793896870819,
+   "kick_every_beat": {
+    "beats_checked": 183,
+    "beats_with_kick_rise_above_quarter_of_median": 182,
+    "weakest_beats": [
+     {
+      "beat": 180,
+      "t": 93.102,
+      "rel": 0.09
+     },
+     {
+      "beat": 181,
+      "t": 93.619,
+      "rel": 0.38
+     },
+     {
+      "beat": 182,
+      "t": 94.136,
+      "rel": 0.46
+     },
+     {
+      "beat": 89,
+      "t": 46.035,
+      "rel": 0.57
+     }
+    ]
+   },
+   "band_attack_position_inside_beat_ms_coarse_116_000_fold": {
+    "kick_40_120": {
+     "peak_phase_s": 0.06152871339958648,
+     "max_rise_phase_s": 0.027512839325018343,
+     "half_rise_phase_s": 0.01956513039418397,
+     "peak_over_mean": 4.212492754407148,
+     "second_rise_phase_s": 0.23661041819515774,
+     "second_rise_rel": 0.161526001017396
+    },
+    "low_120_300": {
+     "peak_phase_s": 0.01350630294137264,
+     "max_rise_phase_s": 0.008503968518642033,
+     "half_rise_phase_s": 0.007559527779630509,
+     "peak_over_mean": 5.20764223050713,
+     "second_rise_phase_s": 0.26762489161608755,
+     "second_rise_rel": 0.3095374405721272
+    },
+    "mid_300_2000": {
+     "peak_phase_s": 0.26362302407790306,
+     "max_rise_phase_s": 0.25862068965517243,
+     "half_rise_phase_s": 0.2576762489161609,
+     "peak_over_mean": 2.3218493480908866,
+     "second_rise_phase_s": 0.002501167211365304,
+     "second_rise_rel": 0.7413960201265226
+    },
+    "high_2k_8k": {
+     "peak_phase_s": 0.2616220903088108,
+     "max_rise_phase_s": 0.25862068965517243,
+     "half_rise_phase_s": 0.2576762489161609,
+     "peak_over_mean": 2.859205353810747,
+     "second_rise_phase_s": 0.0005002334422730608,
+     "second_rise_rel": 0.49163109979079117
+    },
+    "air_8k_16k": {
+     "peak_phase_s": 0.005502567865003668,
+     "max_rise_phase_s": 0.0015007003268191824,
+     "half_rise_phase_s": 0.5167971720136064,
+     "peak_over_mean": 3.175815589649562,
+     "second_rise_phase_s": 0.25862068965517243,
+     "second_rise_rel": 0.9687620126504035
+    }
+   },
+   "decision": "beat = the kick/bass eighth",
+   "reasons": [
+    "kick drum sounds on every one of these eighths (four on the floor) and the bass notes change there (root/fifth)",
+    "the file itself starts on that eighth (first transient at t = 0.00 s) and the intro accents fall on it",
+    "all 28 sung lines begin within -41..+14 ms of such an eighth; with the opposite choice every line and almost every stressed syllable would be syncopated by exactly half a beat",
+    "full-band onset methods prefer the other eighth only because the mid/high \"chick\" has more spectral flux than the kick"
+   ],
+   "confidence": "high"
+  },
+  "per_verse_local_phase_check": [
+   {
+    "verse": 1,
+    "window_mix_timeline": [
+     5.175,
+     15.52
+    ],
+    "methodA_fullband_flux_phase_minus_lattice_plus_half_beat_ms": -2.6,
+    "methodB_kick_phase_minus_lattice_ms": 3.9,
+    "hat_8_16k_steepest_rise_minus_lattice_ms": 1.0
+   },
+   {
+    "verse": 2,
+    "window_mix_timeline": [
+     17.589,
+     27.933
+    ],
+    "methodA_fullband_flux_phase_minus_lattice_plus_half_beat_ms": -3.9,
+    "methodB_kick_phase_minus_lattice_ms": 3.9,
+    "hat_8_16k_steepest_rise_minus_lattice_ms": 0.5
+   },
+   {
+    "verse": 3,
+    "window_mix_timeline": [
+     32.071,
+     42.415
+    ],
+    "methodA_fullband_flux_phase_minus_lattice_plus_half_beat_ms": -3.0,
+    "methodB_kick_phase_minus_lattice_ms": 5.6,
+    "hat_8_16k_steepest_rise_minus_lattice_ms": 2.0
+   },
+   {
+    "verse": 4,
+    "window_mix_timeline": [
+     45.518,
+     55.862
+    ],
+    "methodA_fullband_flux_phase_minus_lattice_plus_half_beat_ms": -3.4,
+    "methodB_kick_phase_minus_lattice_ms": 1.7,
+    "hat_8_16k_steepest_rise_minus_lattice_ms": 0.5
+   },
+   {
+    "verse": 5,
+    "window_mix_timeline": [
+     58.449,
+     68.793
+    ],
+    "methodA_fullband_flux_phase_minus_lattice_plus_half_beat_ms": -4.3,
+    "methodB_kick_phase_minus_lattice_ms": 4.3,
+    "hat_8_16k_steepest_rise_minus_lattice_ms": 0.5
+   },
+   {
+    "verse": 6,
+    "window_mix_timeline": [
+     72.931,
+     83.275
+    ],
+    "methodA_fullband_flux_phase_minus_lattice_plus_half_beat_ms": -3.9,
+    "methodB_kick_phase_minus_lattice_ms": 5.2,
+    "hat_8_16k_steepest_rise_minus_lattice_ms": 0.5
+   },
+   {
+    "verse": 7,
+    "window_mix_timeline": [
+     85.344,
+     95.688
+    ],
+    "methodA_fullband_flux_phase_minus_lattice_plus_half_beat_ms": -3.9,
+    "methodB_kick_phase_minus_lattice_ms": 6.9,
+    "hat_8_16k_steepest_rise_minus_lattice_ms": 0.0
+   }
+  ],
+  "per_verse_note": "Deviation (ms) of three local estimates from the global lattice in a 20-beat window around each verse. Hats and kick stay within +-7 ms and show no trend, so one global lattice is valid at every verse; only the BAR phase changes between verses."
+ },
+ "timeline_alignment_mix_vs_vocal_stem": {
+  "statement": "The isolated vocal is not sample-locked to the decoded mp3: waveform correlation is weak (phase not preserved), and its events drift from about 4 ms later than the mix at the start to about 4 ms earlier at the end (78 ppm). Measured with two envelope/spectrogram correlations per sung line; a straight line fits within about 1.5 ms. Downbeats are converted with this line.",
+  "model": {
+   "lag_ms_at_t0": -4.2516163202641435,
+   "lag_slope_ms_per_s": 0.07837891346794573,
+   "envelope_method": {
+    "intercept_ms": -3.6937231473397296,
+    "slope_ms_per_s": 0.07280080904004263
+   },
+   "spectro_method": {
+    "intercept_ms": 4149809.0,
+    "slope_ms_per_s": 4228308.0
+   },
+   "formula": "t_vocal = t_mix - (lag_ms_at_t0 + lag_slope_ms_per_s * t_mix)/1000"
+  },
+  "envelope_method_per_line": [
+   {
+    "verse": 1,
+    "line": 1,
+    "lag_ms": -0.41,
+    "corr": 0.803
+   },
+   {
+    "verse": 1,
+    "line": 2,
+    "lag_ms": -2.58,
+    "corr": 0.847
+   },
+   {
+    "verse": 1,
+    "line": 3,
+    "lag_ms": -2.89,
+    "corr": 0.864
+   },
+   {
+    "verse": 1,
+    "line": 4,
+    "lag_ms": -5.16,
+    "corr": 0.779
+   },
+   {
+    "verse": 2,
+    "line": 1,
+    "lag_ms": -2.76,
+    "corr": 0.711
+   },
+   {
+    "verse": 2,
+    "line": 2,
+    "lag_ms": 0.02,
+    "corr": 0.758
+   },
+   {
+    "verse": 2,
+    "line": 3,
+    "lag_ms": -2.1,
+    "corr": 0.881
+   },
+   {
+    "verse": 2,
+    "line": 4,
+    "lag_ms": -4.03,
+    "corr": 0.767
+   },
+   {
+    "verse": 3,
+    "line": 1,
+    "lag_ms": -2.75,
+    "corr": 0.829
+   },
+   {
+    "verse": 3,
+    "line": 2,
+    "lag_ms": -0.09,
+    "corr": 0.797
+   },
+   {
+    "verse": 3,
+    "line": 3,
+    "lag_ms": -0.73,
+    "corr": 0.858
+   },
+   {
+    "verse": 3,
+    "line": 4,
+    "lag_ms": -1.46,
+    "corr": 0.899
+   },
+   {
+    "verse": 4,
+    "line": 1,
+    "lag_ms": 0.02,
+    "corr": 0.907
+   },
+   {
+    "verse": 4,
+    "line": 2,
+    "lag_ms": 0.25,
+    "corr": 0.782
+   },
+   {
+    "verse": 4,
+    "line": 3,
+    "lag_ms": -1.24,
+    "corr": 0.896
+   },
+   {
+    "verse": 4,
+    "line": 4,
+    "lag_ms": -1.12,
+    "corr": 0.644
+   },
+   {
+    "verse": 5,
+    "line": 1,
+    "lag_ms": -0.01,
+    "corr": 0.762
+   },
+   {
+    "verse": 5,
+    "line": 2,
+    "lag_ms": 0.75,
+    "corr": 0.775
+   },
+   {
+    "verse": 5,
+    "line": 3,
+    "lag_ms": 0.06,
+    "corr": 0.824
+   },
+   {
+    "verse": 5,
+    "line": 4,
+    "lag_ms": 3.64,
+    "corr": 0.634
+   },
+   {
+    "verse": 6,
+    "line": 1,
+    "lag_ms": 3.11,
+    "corr": 0.661
+   },
+   {
+    "verse": 6,
+    "line": 2,
+    "lag_ms": 1.18,
+    "corr": 0.805
+   },
+   {
+    "verse": 6,
+    "line": 3,
+    "lag_ms": 1.9,
+    "corr": 0.85
+   },
+   {
+    "verse": 6,
+    "line": 4,
+    "lag_ms": 2.71,
+    "corr": 0.752
+   },
+   {
+    "verse": 7,
+    "line": 1,
+    "lag_ms": 2.36,
+    "corr": 0.8
+   },
+   {
+    "verse": 7,
+    "line": 2,
+    "lag_ms": 0.97,
+    "corr": 0.742
+   },
+   {
+    "verse": 7,
+    "line": 3,
+    "lag_ms": 4.16,
+    "corr": 0.803
+   },
+   {
+    "verse": 7,
+    "line": 4,
+    "lag_ms": 3.51,
+    "corr": 0.867
+   }
+  ],
+  "spectro_method_per_line": [
+   {
+    "verse": 1,
+    "line": 1,
+    "lag_ms": -2.73
+   },
+   {
+    "verse": 1,
+    "line": 2,
+    "lag_ms": -4.79
+   },
+   {
+    "verse": 1,
+    "line": 3,
+    "lag_ms": -4.48
+   },
+   {
+    "verse": 1,
+    "line": 4,
+    "lag_ms": -5.98
+   },
+   {
+    "verse": 2,
+    "line": 1,
+    "lag_ms": -1.85
+   },
+   {
+    "verse": 2,
+    "line": 2,
+    "lag_ms": -3.47
+   },
+   {
+    "verse": 2,
+    "line": 3,
+    "lag_ms": -2.11
+   },
+   {
+    "verse": 2,
+    "line": 4,
+    "lag_ms": -2.17
+   },
+   {
+    "verse": 3,
+    "line": 1,
+    "lag_ms": -2.28
+   },
+   {
+    "verse": 3,
+    "line": 2,
+    "lag_ms": -5.78
+   },
+   {
+    "verse": 3,
+    "line": 3,
+    "lag_ms": -1.67
+   },
+   {
+    "verse": 3,
+    "line": 4,
+    "lag_ms": 3.45
+   },
+   {
+    "verse": 4,
+    "line": 1,
+    "lag_ms": -2.23
+   },
+   {
+    "verse": 4,
+    "line": 2,
+    "lag_ms": -2.36
+   },
+   {
+    "verse": 4,
+    "line": 3,
+    "lag_ms": 1.52
+   },
+   {
+    "verse": 4,
+    "line": 4,
+    "lag_ms": -0.83
+   },
+   {
+    "verse": 5,
+    "line": 1,
+    "lag_ms": -1.18
+   },
+   {
+    "verse": 5,
+    "line": 2,
+    "lag_ms": 0.59
+   },
+   {
+    "verse": 5,
+    "line": 3,
+    "lag_ms": 1.95
+   },
+   {
+    "verse": 5,
+    "line": 4,
+    "lag_ms": 2.38
+   },
+   {
+    "verse": 6,
+    "line": 1,
+    "lag_ms": -0.04
+   },
+   {
+    "verse": 6,
+    "line": 2,
+    "lag_ms": 2.04
+   },
+   {
+    "verse": 6,
+    "line": 3,
+    "lag_ms": 0.74
+   },
+   {
+    "verse": 6,
+    "line": 4,
+    "lag_ms": 3.09
+   },
+   {
+    "verse": 7,
+    "line": 1,
+    "lag_ms": 0.76
+   },
+   {
+    "verse": 7,
+    "line": 2,
+    "lag_ms": 0.56
+   },
+   {
+    "verse": 7,
+    "line": 3,
+    "lag_ms": 4.83
+   },
+   {
+    "verse": 7,
+    "line": 4,
+    "lag_ms": 3.55
+   }
+  ],
+  "waveform_correlation_median_abs": 0.22338442607566517,
+  "uncertainty_ms": 2
+ },
+ "downbeat": {
+  "bars_are": "4 beats (2.069 s); the original has an irregular number of beats between verses, so the bar phase is anchored per verse",
+  "verse_onset_beat_numbers": [
+   12,
+   36,
+   64,
+   90,
+   115,
+   143,
+   167
+  ],
+  "verse_onset_beat_spacing": [
+   24,
+   28,
+   26,
+   25,
+   28,
+   24
+  ],
+  "verse_onset_beat_mod4_on_one_global_4_grid": [
+   0,
+   0,
+   0,
+   2,
+   3,
+   3,
+   3
+  ],
+  "hypotheses": [
+   {
+    "id": "H0",
+    "statement": "each sung line starts ON the downbeat of its bar (line onset beat = beat 1)",
+    "line_offset_beats": "about -0.03 (acoustic) / +0.01 (vowel)",
+    "verdict": "RECOMMENDED"
+   },
+   {
+    "id": "H2",
+    "statement": "bar lines lie two beats later: each line starts on beat 3 of the previous bar (half-bar pickup)",
+    "line_offset_beats": "about -2.03",
+    "verdict": "not supported; cannot be excluded by drum accents alone (the drum loop repeats every beat)"
+   },
+   {
+    "id": "H1/H3",
+    "statement": "bar lines one beat earlier or later (line starts on beat 2 or 4)",
+    "verdict": "rejected: bass root (A) is on the line-onset beat and two beats later, the fifth (E) on the beats between, in all 7 verses"
+   },
+   {
+    "id": "H_half",
+    "statement": "the beat is the \"chick\" eighth and lines are half-beat pickups",
+    "verdict": "rejected, see beat_phase.half_beat_question"
+   }
+  ],
+  "recommended": "H0",
+  "evidence": {
+   "E1_intro": {
+    "text": "The file starts with a 4-beat guitar/banjo pattern that repeats from t=0: strongest on-beat attacks on beats 0, 4, 8, a chord colour change (G) on beats 3 and 7, drums enter with a 2-beat fill on beats 10-11, and verse 1 starts on beat 12 = 3 bars after the start.",
+    "onbeat_mid_attack_strength_beats_0_to_11": [
+     1.38,
+     0.52,
+     0.96,
+     0.67,
+     1.16,
+     0.5,
+     0.9,
+     0.86,
+     1.05,
+     0.47,
+     1.22,
+     1.19
+    ],
+    "accompaniment_top_pitch_classes_beats_0_to_11": [
+     "E A B",
+     "E A B",
+     "E A B",
+     "B A G",
+     "E A B",
+     "E A B",
+     "E A B",
+     "G D A",
+     "E A B",
+     "E G# B",
+     "E B G#",
+     "G# B E"
+    ],
+    "kick_strength_beats_8_to_13": [
+     0.03,
+     0.03,
+     0.87,
+     0.42,
+     1.02,
+     0.98
+    ]
+   },
+   "E2_bass_pattern": {
+    "text": "Bass per beat, counted from each verse onset: position 0 = A (root), 1 = E (fifth), 2 = A, 3 = E or a turnaround note (B or C leading back to A). The turnaround note occurs only on position 3, i.e. on the last beat before a line-onset-type beat.",
+    "bass_pitch_class_counts_by_position": {
+     "0": {
+      "A": 39,
+      "E": 6,
+      "G": 1,
+      "F": 1
+     },
+     "1": {
+      "E": 41,
+      "B": 1,
+      "G#": 3,
+      "G": 1
+     },
+     "2": {
+      "A": 44,
+      "E": 1
+     },
+     "3": {
+      "E": 20,
+      "B": 13,
+      "F": 2,
+      "C": 5,
+      "F#": 2,
+      "G": 1,
+      "A": 1,
+      "G#": 1
+     }
+    },
+    "turnaround_B_or_C_count_by_position": {
+     "0": 0,
+     "1": 1,
+     "2": 0,
+     "3": 18
+    },
+    "beats_counted_by_position": {
+     "0": 47,
+     "1": 46,
+     "2": 45,
+     "3": 45
+    },
+    "bassA_share_by_position": [
+     0.666,
+     0.331,
+     0.729,
+     0.538
+    ]
+   },
+   "E3_harmony": {
+    "text": "Accompaniment chroma by position: tonic colour strongest on position 0, dominant (E major triad) strongest on position 3, extra colour tones (F, C) on position 2. The only real chord change inside a verse (to the dominant) happens at the start of line 4 (position 12 = a line onset).",
+    "tonic_share_by_position": [
+     0.531,
+     0.404,
+     0.505,
+     0.288
+    ],
+    "dominant_share_by_position": [
+     0.422,
+     0.534,
+     0.325,
+     0.592
+    ],
+    "F_C_colour_share_by_position": [
+     0.075,
+     0.091,
+     0.15,
+     0.065
+    ]
+   },
+   "E4_same_alignment_in_all_verses": {
+    "text": "The 16-beat chroma sequence under the vocal of verses 2-7 matches verse 1 best at shift 0 beats (not at +-2 or +-4): the accompaniment is locked to the sung lines identically in every verse.",
+    "best_shift_per_verse": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "similarity_at_shift_0": [
+     0.55,
+     0.54,
+     0.55,
+     0.52,
+     0.46,
+     0.47
+    ],
+    "best_other_shift_similarity": [
+     0.36,
+     0.28,
+     0.4,
+     0.34,
+     0.28,
+     0.22
+    ]
+   },
+   "E5_structure_between_verses": {
+    "text": "After line 4 the band continues in 4-beat groups that start exactly where line 4 ends (bass A E A E | A E A B ...). In every gap the turnaround note (bass B or C) falls on beat 23 or 27 counted from the verse onset, i.e. on the 4th beat of such a group. In 3 of the 6 verse-to-verse transitions (1->2, 2->3, 6->7, and again before the tag after verse 7) the next verse starts on the very next beat. The other three are where the irregular beat counts come from: an inserted 2-beat break before verse 4 (everything stops on the off-beat at 46.30 s), one extra beat before verse 5, and one more full 4-beat bar before verse 6. So the irregular bars are in the instrumental gaps, not inside the sung verses, and each verse restarts the 4-beat pattern on its first sung beat.",
+    "original_bar_map": [
+     {
+      "verse": 1,
+      "onset_beat_number": 12,
+      "onset_beat_mod4_on_a_global_4_grid": 0,
+      "beats_until_next_verse": 24,
+      "gap_beats_after_L4": 8,
+      "gap_bars": 2.0,
+      "bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset": [
+       "A E A E",
+       "A E A B",
+       "A E A E",
+       "E B A F",
+       "A E A E",
+       "A E A B"
+      ],
+      "turnaround_note_positions_in_gap_beats_from_verse_onset": [
+       23
+      ],
+      "beats_between_last_turnaround_and_next_verse_onset": 0
+     },
+     {
+      "verse": 2,
+      "onset_beat_number": 36,
+      "onset_beat_mod4_on_a_global_4_grid": 0,
+      "beats_until_next_verse": 28,
+      "gap_beats_after_L4": 12,
+      "gap_bars": 3.0,
+      "bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset": [
+       "A E A E",
+       "A E A C",
+       "A E A E",
+       "E E A E",
+       "A E A F#",
+       "A E A F",
+       "A E A B"
+      ],
+      "turnaround_note_positions_in_gap_beats_from_verse_onset": [
+       27
+      ],
+      "beats_between_last_turnaround_and_next_verse_onset": 0
+     },
+     {
+      "verse": 3,
+      "onset_beat_number": 64,
+      "onset_beat_mod4_on_a_global_4_grid": 0,
+      "beats_until_next_verse": 26,
+      "gap_beats_after_L4": 10,
+      "gap_bars": 2.5,
+      "bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset": [
+       "A E A E",
+       "A E A B",
+       "A E A E",
+       "E G# A G",
+       "A E A E",
+       "A E A B",
+       "A E"
+      ],
+      "turnaround_note_positions_in_gap_beats_from_verse_onset": [
+       23
+      ],
+      "beats_between_last_turnaround_and_next_verse_onset": 2
+     },
+     {
+      "verse": 4,
+      "onset_beat_number": 90,
+      "onset_beat_mod4_on_a_global_4_grid": 2,
+      "beats_until_next_verse": 25,
+      "gap_beats_after_L4": 9,
+      "gap_bars": 2.25,
+      "bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset": [
+       "A E A E",
+       "A E A B",
+       "A E A B",
+       "E G# A E",
+       "A E A E",
+       "A E A B",
+       "G"
+      ],
+      "turnaround_note_positions_in_gap_beats_from_verse_onset": [
+       23
+      ],
+      "beats_between_last_turnaround_and_next_verse_onset": 1
+     },
+     {
+      "verse": 5,
+      "onset_beat_number": 115,
+      "onset_beat_mod4_on_a_global_4_grid": 3,
+      "beats_until_next_verse": 28,
+      "gap_beats_after_L4": 12,
+      "gap_bars": 3.0,
+      "bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset": [
+       "A E A E",
+       "A E A C",
+       "A E A B",
+       "E G A E",
+       "A E A E",
+       "A E A B",
+       "A E E A"
+      ],
+      "turnaround_note_positions_in_gap_beats_from_verse_onset": [
+       23
+      ],
+      "beats_between_last_turnaround_and_next_verse_onset": 4
+     },
+     {
+      "verse": 6,
+      "onset_beat_number": 143,
+      "onset_beat_mod4_on_a_global_4_grid": 3,
+      "beats_until_next_verse": 24,
+      "gap_beats_after_L4": 8,
+      "gap_bars": 2.0,
+      "bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset": [
+       "A E A E",
+       "A E A B",
+       "A E A B",
+       "E G# A G#",
+       "A E A E",
+       "A E A C"
+      ],
+      "turnaround_note_positions_in_gap_beats_from_verse_onset": [
+       23
+      ],
+      "beats_between_last_turnaround_and_next_verse_onset": 0
+     },
+     {
+      "verse": 7,
+      "onset_beat_number": 167,
+      "onset_beat_mod4_on_a_global_4_grid": 3,
+      "beats_until_next_verse": 28,
+      "gap_beats_after_L4": 12,
+      "gap_bars": 3.0,
+      "bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset": [
+       "A E A E",
+       "A E A C",
+       "A E A C",
+       "F E A F#",
+       "A E A E",
+       "A E A E",
+       "A E A B"
+      ],
+      "turnaround_note_positions_in_gap_beats_from_verse_onset": [
+       27
+      ],
+      "beats_between_last_turnaround_and_next_verse_onset": 0
+     }
+    ],
+    "break_before_verse4": {
+     "beat": 89,
+     "t": 46.035,
+     "offbeat_mid_flux_rel": 0.02,
+     "offbeat_high_flux_rel": 0.02
+    }
+   },
+   "E6_periodicity": {
+    "text": "Beat-feature self-similarity is higher at lag 4 than at lag 2 and at lag 8 than at lag 6: a 4-beat unit exists.",
+    "selfsim_by_lag_beats": {
+     "1": -0.145,
+     "2": 0.296,
+     "3": -0.144,
+     "4": 0.329,
+     "5": -0.17,
+     "6": 0.151,
+     "7": -0.154,
+     "8": 0.182,
+     "9": -0.137,
+     "10": 0.109,
+     "11": -0.158,
+     "12": 0.133
+    }
+   },
+   "E7_weak_or_neutral": {
+    "text": "Drum accents do not separate H0 from H2: kick and hats repeat every beat. Small 4-beat cues: off-beat low-frequency hit after position 1, slightly more cymbal energy on position 0, slightly more low-band pickup after position 3.",
+    "offbeat_kick_flux_by_position": [
+     0.974,
+     1.318,
+     0.97,
+     0.903
+    ],
+    "cymbal_energy_by_position": [
+     1.059,
+     0.958,
+     1.001,
+     0.907
+    ],
+    "offbeat_low_flux_by_position": [
+     0.937,
+     1.038,
+     0.912,
+     1.153
+    ]
+   },
+   "E8_lyrics": {
+    "text": "Judgement, not measurement: every line is a closed unit that starts with a syllable exactly on a beat and ends on/after the 4th beat (L1: syllables on 0, 0.5, 1.5, 1.9, 3.0; L4: 0, 1, 2, 3). With H0 that is \"one line = one bar\", which is also how Old MacDonald is phrased; with H2 every line would straddle a bar line.",
+    "typical_word_positions_beats": {
+     "L1": {
+      "n_verses_used": 7,
+      "words": [
+       "Ali",
+       "Baba'nın",
+       "bir",
+       "çiftliği",
+       "var."
+      ],
+      "median_beats": [
+       -0.015,
+       0.495,
+       1.514,
+       1.906,
+       3.01
+      ]
+     },
+     "L2": {
+      "n_verses_used": 5,
+      "words": [
+       "Çiftliğinde",
+       "inekleri",
+       "var."
+      ],
+      "median_beats": [
+       -0.066,
+       1.741,
+       2.993
+      ]
+     },
+     "L3": {
+      "n_verses_used": 7,
+      "words": [
+       "İnekler",
+       "nasıl",
+       "bağırır?"
+      ],
+      "median_beats": [
+       -0.035,
+       1.501,
+       2.505
+      ]
+     },
+     "L4": {
+      "n_verses_used": 7,
+      "words": [
+       "Dinle",
+       "bak,",
+       "dinle",
+       "bak."
+      ],
+      "median_beats": [
+       -0.024,
+       1.002,
+       2.001,
+       2.973
+      ]
+     }
+    }
+   }
+  },
+  "confidence": {
+   "beat_lattice_and_tempo": "high",
+   "line_onsets_are_on_a_strong_beat_not_pickups": "high",
+   "that_strong_beat_is_beat_1_rather_than_beat_3": "medium-high (harmonic and structural evidence, all pointing the same way; no drum-accent proof; not checked by ear)"
+  },
+  "practical_consequence": "For re-placing the lines it does not matter whether H0 or H2 is true: the line onset sits on a root-bass beat in both, and the new form puts each line at the start of a bar. Use the downbeat times given per line."
+ },
+ "onset_definitions": {
+  "onset": "acoustic start of the first syllable in the isolated vocal: first spectral-flux peak (512-sample window, 0.73 ms hop, 90 Hz-8 kHz) after the energy dip that precedes the word; includes initial consonants. Agrees with a plain -20 dB envelope threshold within 6 ms (mean +3 ms) on the 19 lines preceded by silence.",
+  "vowel_onset": "first time after `onset` at which the voiced band (90-1200 Hz, 5 ms RMS) is within 6 dB of the first-syllable peak; a proxy for the perceived attack",
+  "downbeat": "time of the bar line the line belongs to (hypothesis H0), on the vocal-file timeline; downbeat_mix_timeline is the same instant on the decoded mp3",
+  "offset": "offset_sec = onset - downbeat; offset_beats = offset_sec / beat period; negative = before the downbeat",
+  "accuracy": "onset about +-5 ms for vowel-initial lines, +-10 ms for consonant-initial and legato (L4) lines; downbeat about +-3 ms relative to the drum transients plus +-2 ms timeline conversion"
+ },
+ "lines": [
+  {
+   "verse": 1,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 6.2,
+   "onset": 6.1922,
+   "vowel_onset": 6.2012,
+   "onset_env20_check": 6.19,
+   "beat_number_on_lattice": 12,
+   "downbeat_mix_timeline": 6.2099,
+   "downbeat": 6.2137,
+   "offset_sec": -0.0215,
+   "offset_beats": -0.0416,
+   "vowel_offset_sec": -0.0125,
+   "vowel_offset_beats": -0.0241,
+   "words_file_offset_sec": -0.0137,
+   "kick_at_downbeat_rel_strength": 1.42,
+   "kick_rise_peak_minus_lattice_ms": 13.0,
+   "quietest_point_before_line": 6.1708,
+   "quietest_level_db_re_line_peak": -80.2,
+   "last_word_end_from_words_file": 8.06,
+   "sound_end_minus40dB": 8.2245,
+   "sound_end_beats_after_downbeat": 3.888,
+   "alt_H2_downbeat": 7.2481,
+   "alt_H2_offset_beats": -2.0416,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 6.2,
+     "end_words_file": 6.42,
+     "beats_words_file": -0.026,
+     "onset_refined": 6.1922,
+     "beats_refined": -0.042
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 6.46,
+     "end_words_file": 6.94,
+     "beats_words_file": 0.476,
+     "onset_refined": 6.479,
+     "beats_refined": 0.513
+    },
+    {
+     "text": "bir",
+     "start_words_file": 6.98,
+     "end_words_file": 7.14,
+     "beats_words_file": 1.482,
+     "onset_refined": 6.9968,
+     "beats_refined": 1.514
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 7.22,
+     "end_words_file": 7.72,
+     "beats_words_file": 1.946,
+     "onset_refined": 7.1831,
+     "beats_refined": 1.874
+    },
+    {
+     "text": "var.",
+     "start_words_file": 7.78,
+     "end_words_file": 8.06,
+     "beats_words_file": 3.028,
+     "onset_refined": 7.7979,
+     "beats_refined": 3.063
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde inekleri var.",
+   "word_start_from_words_file": 8.26,
+   "onset": 8.2515,
+   "vowel_onset": 8.3245,
+   "onset_env20_check": 8.2468,
+   "beat_number_on_lattice": 16,
+   "downbeat_mix_timeline": 8.2788,
+   "downbeat": 8.2824,
+   "offset_sec": -0.0308,
+   "offset_beats": -0.0596,
+   "vowel_offset_sec": 0.0421,
+   "vowel_offset_beats": 0.0814,
+   "words_file_offset_sec": -0.0224,
+   "kick_at_downbeat_rel_strength": 1.4,
+   "kick_rise_peak_minus_lattice_ms": 5.0,
+   "quietest_point_before_line": 8.2342,
+   "quietest_level_db_re_line_peak": -41.2,
+   "last_word_end_from_words_file": 10.14,
+   "sound_end_minus40dB": 10.35,
+   "sound_end_beats_after_downbeat": 3.998,
+   "alt_H2_downbeat": 9.3168,
+   "alt_H2_offset_beats": -2.0596,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 8.26,
+     "end_words_file": 9.16,
+     "beats_words_file": -0.043,
+     "onset_refined": 8.2515,
+     "beats_refined": -0.06
+    },
+    {
+     "text": "inekleri",
+     "start_words_file": 9.22,
+     "end_words_file": 9.78,
+     "beats_words_file": 1.813,
+     "onset_refined": 9.191,
+     "beats_refined": 1.757
+    },
+    {
+     "text": "var.",
+     "start_words_file": 9.86,
+     "end_words_file": 10.14,
+     "beats_words_file": 3.05,
+     "onset_refined": 9.8447,
+     "beats_refined": 3.021
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "line": 3,
+   "first_word": "İnekler",
+   "text": "İnekler nasıl bağırır?",
+   "word_start_from_words_file": 10.38,
+   "onset": 10.3358,
+   "vowel_onset": 10.349,
+   "onset_env20_check": 10.3324,
+   "beat_number_on_lattice": 20,
+   "downbeat_mix_timeline": 10.3476,
+   "downbeat": 10.3511,
+   "offset_sec": -0.0153,
+   "offset_beats": -0.0295,
+   "vowel_offset_sec": -0.0021,
+   "vowel_offset_beats": -0.0041,
+   "words_file_offset_sec": 0.0289,
+   "kick_at_downbeat_rel_strength": 1.62,
+   "kick_rise_peak_minus_lattice_ms": -3.1,
+   "quietest_point_before_line": 10.3203,
+   "quietest_level_db_re_line_peak": -51.7,
+   "last_word_end_from_words_file": 12.3,
+   "sound_end_minus40dB": 12.37,
+   "sound_end_beats_after_downbeat": 3.903,
+   "alt_H2_downbeat": 11.3855,
+   "alt_H2_offset_beats": -2.0295,
+   "words": [
+    {
+     "text": "İnekler",
+     "start_words_file": 10.38,
+     "end_words_file": 11.06,
+     "beats_words_file": 0.056,
+     "onset_refined": 10.3358,
+     "beats_refined": -0.03
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 11.1,
+     "end_words_file": 11.58,
+     "beats_words_file": 1.448,
+     "onset_refined": 11.1334,
+     "beats_refined": 1.512
+    },
+    {
+     "text": "bağırır?",
+     "start_words_file": 11.62,
+     "end_words_file": 12.3,
+     "beats_words_file": 2.453,
+     "onset_refined": 11.6429,
+     "beats_refined": 2.498
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 12.4,
+   "onset": 12.405,
+   "vowel_onset": 12.4282,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 24,
+   "downbeat_mix_timeline": 12.4165,
+   "downbeat": 12.4197,
+   "offset_sec": -0.0148,
+   "offset_beats": -0.0285,
+   "vowel_offset_sec": 0.0084,
+   "vowel_offset_beats": 0.0163,
+   "words_file_offset_sec": -0.0197,
+   "kick_at_downbeat_rel_strength": 1.35,
+   "kick_rise_peak_minus_lattice_ms": 0.4,
+   "quietest_point_before_line": 12.3738,
+   "quietest_level_db_re_line_peak": -11.7,
+   "last_word_end_from_words_file": 14.46,
+   "sound_end_minus40dB": 14.5336,
+   "sound_end_beats_after_downbeat": 4.087,
+   "alt_H2_downbeat": 13.4542,
+   "alt_H2_offset_beats": -2.0285,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 12.4,
+     "end_words_file": 12.84,
+     "beats_words_file": -0.038,
+     "onset_refined": 12.405,
+     "beats_refined": -0.028
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 12.92,
+     "end_words_file": 13.36,
+     "beats_words_file": 0.967,
+     "onset_refined": 12.9497,
+     "beats_refined": 1.025
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 13.46,
+     "end_words_file": 13.86,
+     "beats_words_file": 2.011,
+     "onset_refined": 13.447,
+     "beats_refined": 1.986
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 13.96,
+     "end_words_file": 14.46,
+     "beats_words_file": 2.978,
+     "onset_refined": 13.9724,
+     "beats_refined": 3.002
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 18.62,
+   "onset": 18.6226,
+   "vowel_onset": 18.6294,
+   "onset_env20_check": 18.617,
+   "beat_number_on_lattice": 36,
+   "downbeat_mix_timeline": 18.623,
+   "downbeat": 18.6258,
+   "offset_sec": -0.0033,
+   "offset_beats": -0.0063,
+   "vowel_offset_sec": 0.0035,
+   "vowel_offset_beats": 0.0068,
+   "words_file_offset_sec": -0.0058,
+   "kick_at_downbeat_rel_strength": 1.57,
+   "kick_rise_peak_minus_lattice_ms": 5.2,
+   "quietest_point_before_line": 18.4226,
+   "quietest_level_db_re_line_peak": -80.1,
+   "last_word_end_from_words_file": 20.48,
+   "sound_end_minus40dB": 20.4585,
+   "sound_end_beats_after_downbeat": 3.543,
+   "alt_H2_downbeat": 19.6603,
+   "alt_H2_offset_beats": -2.0063,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 18.62,
+     "end_words_file": 18.82,
+     "beats_words_file": -0.011,
+     "onset_refined": 18.6226,
+     "beats_refined": -0.006
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 18.86,
+     "end_words_file": 19.34,
+     "beats_words_file": 0.453,
+     "onset_refined": 18.8818,
+     "beats_refined": 0.495
+    },
+    {
+     "text": "bir",
+     "start_words_file": 19.38,
+     "end_words_file": 19.56,
+     "beats_words_file": 1.458,
+     "onset_refined": 19.3995,
+     "beats_refined": 1.496
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 19.64,
+     "end_words_file": 20.14,
+     "beats_words_file": 1.961,
+     "onset_refined": 19.619,
+     "beats_refined": 1.92
+    },
+    {
+     "text": "var.",
+     "start_words_file": 20.2,
+     "end_words_file": 20.48,
+     "beats_words_file": 3.044,
+     "onset_refined": 20.1949,
+     "beats_refined": 3.034
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde koyunları var.",
+   "word_start_from_words_file": 20.68,
+   "onset": 20.6585,
+   "vowel_onset": 20.7209,
+   "onset_env20_check": 20.6549,
+   "beat_number_on_lattice": 40,
+   "downbeat_mix_timeline": 20.6919,
+   "downbeat": 20.6945,
+   "offset_sec": -0.036,
+   "offset_beats": -0.0697,
+   "vowel_offset_sec": 0.0264,
+   "vowel_offset_beats": 0.051,
+   "words_file_offset_sec": -0.0145,
+   "kick_at_downbeat_rel_strength": 1.46,
+   "kick_rise_peak_minus_lattice_ms": 2.9,
+   "quietest_point_before_line": 20.6314,
+   "quietest_level_db_re_line_peak": -81.0,
+   "last_word_end_from_words_file": 22.54,
+   "sound_end_minus40dB": 22.5326,
+   "sound_end_beats_after_downbeat": 3.554,
+   "alt_H2_downbeat": 21.729,
+   "alt_H2_offset_beats": -2.0697,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 20.68,
+     "end_words_file": 21.52,
+     "beats_words_file": -0.028,
+     "onset_refined": 20.6585,
+     "beats_refined": -0.07
+    },
+    {
+     "text": "koyunları",
+     "start_words_file": 21.58,
+     "end_words_file": 22.2,
+     "beats_words_file": 1.712,
+     "onset_refined": 21.586,
+     "beats_refined": 1.724
+    },
+    {
+     "text": "var.",
+     "start_words_file": 22.26,
+     "end_words_file": 22.54,
+     "beats_words_file": 3.027,
+     "onset_refined": 22.2378,
+     "beats_refined": 2.984
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 3,
+   "first_word": "Koyunlar",
+   "text": "Koyunlar nasıl meler?",
+   "word_start_from_words_file": 22.74,
+   "onset": 22.7359,
+   "vowel_onset": 22.7773,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 44,
+   "downbeat_mix_timeline": 22.7608,
+   "downbeat": 22.7632,
+   "offset_sec": -0.0273,
+   "offset_beats": -0.0528,
+   "vowel_offset_sec": 0.0141,
+   "vowel_offset_beats": 0.0273,
+   "words_file_offset_sec": -0.0232,
+   "kick_at_downbeat_rel_strength": 1.64,
+   "kick_rise_peak_minus_lattice_ms": 6.4,
+   "quietest_point_before_line": 22.7147,
+   "quietest_level_db_re_line_peak": -86.0,
+   "last_word_end_from_words_file": 24.74,
+   "sound_end_minus40dB": 24.79,
+   "sound_end_beats_after_downbeat": 3.919,
+   "alt_H2_downbeat": 23.7976,
+   "alt_H2_offset_beats": -2.0528,
+   "words": [
+    {
+     "text": "Koyunlar",
+     "start_words_file": 22.74,
+     "end_words_file": 23.44,
+     "beats_words_file": -0.045,
+     "onset_refined": 22.7359,
+     "beats_refined": -0.053
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 23.52,
+     "end_words_file": 23.98,
+     "beats_words_file": 1.463,
+     "onset_refined": 23.5576,
+     "beats_refined": 1.536
+    },
+    {
+     "text": "meler?",
+     "start_words_file": 24.04,
+     "end_words_file": 24.74,
+     "beats_words_file": 2.469,
+     "onset_refined": 24.0589,
+     "beats_refined": 2.505
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 24.82,
+   "onset": 24.8259,
+   "vowel_onset": 24.8349,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 48,
+   "downbeat_mix_timeline": 24.8296,
+   "downbeat": 24.8319,
+   "offset_sec": -0.006,
+   "offset_beats": -0.0116,
+   "vowel_offset_sec": 0.003,
+   "vowel_offset_beats": 0.0058,
+   "words_file_offset_sec": -0.0119,
+   "kick_at_downbeat_rel_strength": 1.76,
+   "kick_rise_peak_minus_lattice_ms": 4.1,
+   "quietest_point_before_line": 24.7485,
+   "quietest_level_db_re_line_peak": -14.1,
+   "last_word_end_from_words_file": 26.74,
+   "sound_end_minus40dB": 26.7677,
+   "sound_end_beats_after_downbeat": 3.743,
+   "alt_H2_downbeat": 25.8663,
+   "alt_H2_offset_beats": -2.0116,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 24.82,
+     "end_words_file": 25.24,
+     "beats_words_file": -0.023,
+     "onset_refined": 24.8259,
+     "beats_refined": -0.012
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 25.34,
+     "end_words_file": 25.76,
+     "beats_words_file": 0.982,
+     "onset_refined": 25.3509,
+     "beats_refined": 1.004
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 25.88,
+     "end_words_file": 26.28,
+     "beats_words_file": 2.026,
+     "onset_refined": 25.8677,
+     "beats_refined": 2.003
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 26.38,
+     "end_words_file": 26.74,
+     "beats_words_file": 2.993,
+     "onset_refined": 26.3887,
+     "beats_refined": 3.01
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 33.12,
+   "onset": 33.1072,
+   "vowel_onset": 33.1095,
+   "onset_env20_check": 33.1043,
+   "beat_number_on_lattice": 64,
+   "downbeat_mix_timeline": 33.105,
+   "downbeat": 33.1067,
+   "offset_sec": 0.0005,
+   "offset_beats": 0.0011,
+   "vowel_offset_sec": 0.0028,
+   "vowel_offset_beats": 0.0053,
+   "words_file_offset_sec": 0.0133,
+   "kick_at_downbeat_rel_strength": 1.58,
+   "kick_rise_peak_minus_lattice_ms": 12.4,
+   "quietest_point_before_line": 33.0712,
+   "quietest_level_db_re_line_peak": -95.9,
+   "last_word_end_from_words_file": 34.96,
+   "sound_end_minus40dB": 35.0892,
+   "sound_end_beats_after_downbeat": 3.833,
+   "alt_H2_downbeat": 34.1411,
+   "alt_H2_offset_beats": -1.9989,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 33.12,
+     "end_words_file": 33.3,
+     "beats_words_file": 0.026,
+     "onset_refined": 33.1072,
+     "beats_refined": 0.001
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 33.34,
+     "end_words_file": 33.82,
+     "beats_words_file": 0.451,
+     "onset_refined": 33.3507,
+     "beats_refined": 0.472
+    },
+    {
+     "text": "bir",
+     "start_words_file": 33.86,
+     "end_words_file": 34.04,
+     "beats_words_file": 1.456,
+     "onset_refined": 33.8853,
+     "beats_refined": 1.505
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 34.12,
+     "end_words_file": 34.6,
+     "beats_words_file": 1.959,
+     "onset_refined": 34.0978,
+     "beats_refined": 1.916
+    },
+    {
+     "text": "var.",
+     "start_words_file": 34.64,
+     "end_words_file": 34.96,
+     "beats_words_file": 2.965,
+     "onset_refined": 34.6497,
+     "beats_refined": 2.983
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde bir de atı var.",
+   "word_start_from_words_file": 35.16,
+   "onset": 35.1369,
+   "vowel_onset": 35.2015,
+   "onset_env20_check": 35.1389,
+   "beat_number_on_lattice": 68,
+   "downbeat_mix_timeline": 35.1739,
+   "downbeat": 35.1754,
+   "offset_sec": -0.0385,
+   "offset_beats": -0.0744,
+   "vowel_offset_sec": 0.0261,
+   "vowel_offset_beats": 0.0505,
+   "words_file_offset_sec": -0.0154,
+   "kick_at_downbeat_rel_strength": 1.36,
+   "kick_rise_peak_minus_lattice_ms": 4.3,
+   "quietest_point_before_line": 35.1252,
+   "quietest_level_db_re_line_peak": -59.6,
+   "last_word_end_from_words_file": 37.08,
+   "sound_end_minus40dB": 37.23,
+   "sound_end_beats_after_downbeat": 3.972,
+   "alt_H2_downbeat": 36.2098,
+   "alt_H2_offset_beats": -2.0744,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 35.16,
+     "end_words_file": 36.04,
+     "beats_words_file": -0.03,
+     "onset_refined": 35.1369,
+     "beats_refined": -0.074
+    },
+    {
+     "text": "bir",
+     "start_words_file": 36.08,
+     "end_words_file": 36.28,
+     "beats_words_file": 1.749,
+     "onset_refined": 36.0896,
+     "beats_refined": 1.768
+    },
+    {
+     "text": "de",
+     "start_words_file": 36.32,
+     "end_words_file": 36.42,
+     "beats_words_file": 2.213,
+     "onset_refined": 36.3362,
+     "beats_refined": 2.244
+    },
+    {
+     "text": "atı",
+     "start_words_file": 36.48,
+     "end_words_file": 36.7,
+     "beats_words_file": 2.522,
+     "onset_refined": 36.4498,
+     "beats_refined": 2.464
+    },
+    {
+     "text": "var.",
+     "start_words_file": 36.74,
+     "end_words_file": 37.08,
+     "beats_words_file": 3.025,
+     "onset_refined": 36.725,
+     "beats_refined": 2.996
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 3,
+   "first_word": "Atı",
+   "text": "Atı nasıl kişner?",
+   "word_start_from_words_file": 37.26,
+   "onset": 37.2279,
+   "vowel_onset": 37.232,
+   "onset_env20_check": 37.2252,
+   "beat_number_on_lattice": 72,
+   "downbeat_mix_timeline": 37.2427,
+   "downbeat": 37.2441,
+   "offset_sec": -0.0162,
+   "offset_beats": -0.0313,
+   "vowel_offset_sec": -0.012,
+   "vowel_offset_beats": -0.0233,
+   "words_file_offset_sec": 0.0159,
+   "kick_at_downbeat_rel_strength": 1.53,
+   "kick_rise_peak_minus_lattice_ms": 2.1,
+   "quietest_point_before_line": 37.2035,
+   "quietest_level_db_re_line_peak": -72.1,
+   "last_word_end_from_words_file": 39.22,
+   "sound_end_minus40dB": 39.27,
+   "sound_end_beats_after_downbeat": 3.917,
+   "alt_H2_downbeat": 38.2785,
+   "alt_H2_offset_beats": -2.0313,
+   "words": [
+    {
+     "text": "Atı",
+     "start_words_file": 37.26,
+     "end_words_file": 37.74,
+     "beats_words_file": 0.031,
+     "onset_refined": 37.2279,
+     "beats_refined": -0.031
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 37.98,
+     "end_words_file": 38.44,
+     "beats_words_file": 1.423,
+     "onset_refined": 38.0106,
+     "beats_refined": 1.482
+    },
+    {
+     "text": "kişner?",
+     "start_words_file": 38.52,
+     "end_words_file": 39.22,
+     "beats_words_file": 2.467,
+     "onset_refined": 38.5146,
+     "beats_refined": 2.456
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 39.3,
+   "onset": 39.3005,
+   "vowel_onset": 39.3212,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 76,
+   "downbeat_mix_timeline": 39.3116,
+   "downbeat": 39.3128,
+   "offset_sec": -0.0123,
+   "offset_beats": -0.0238,
+   "vowel_offset_sec": 0.0084,
+   "vowel_offset_beats": 0.0163,
+   "words_file_offset_sec": -0.0128,
+   "kick_at_downbeat_rel_strength": 1.73,
+   "kick_rise_peak_minus_lattice_ms": 5.6,
+   "quietest_point_before_line": 39.2914,
+   "quietest_level_db_re_line_peak": -14.6,
+   "last_word_end_from_words_file": 41.1,
+   "sound_end_minus40dB": 41.5934,
+   "sound_end_beats_after_downbeat": 4.409,
+   "alt_H2_downbeat": 40.3472,
+   "alt_H2_offset_beats": -2.0238,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 39.3,
+     "end_words_file": 39.72,
+     "beats_words_file": -0.025,
+     "onset_refined": 39.3005,
+     "beats_refined": -0.024
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 39.82,
+     "end_words_file": 40.24,
+     "beats_words_file": 0.981,
+     "onset_refined": 39.8309,
+     "beats_refined": 1.002
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 40.36,
+     "end_words_file": 40.76,
+     "beats_words_file": 2.025,
+     "onset_refined": 40.3491,
+     "beats_refined": 2.004
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 40.84,
+     "end_words_file": 41.1,
+     "beats_words_file": 2.953,
+     "onset_refined": 40.8504,
+     "beats_refined": 2.973
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 46.56,
+   "onset": 46.5417,
+   "vowel_onset": 46.5502,
+   "onset_env20_check": 46.5387,
+   "beat_number_on_lattice": 90,
+   "downbeat_mix_timeline": 46.5526,
+   "downbeat": 46.5532,
+   "offset_sec": -0.0115,
+   "offset_beats": -0.0222,
+   "vowel_offset_sec": -0.003,
+   "vowel_offset_beats": -0.0058,
+   "words_file_offset_sec": 0.0068,
+   "kick_at_downbeat_rel_strength": 1.36,
+   "kick_rise_peak_minus_lattice_ms": 3.4,
+   "quietest_point_before_line": 46.5044,
+   "quietest_level_db_re_line_peak": -79.3,
+   "last_word_end_from_words_file": 48.4,
+   "sound_end_minus40dB": 48.5352,
+   "sound_end_beats_after_downbeat": 3.832,
+   "alt_H2_downbeat": 47.5876,
+   "alt_H2_offset_beats": -2.0222,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 46.56,
+     "end_words_file": 46.76,
+     "beats_words_file": 0.013,
+     "onset_refined": 46.5417,
+     "beats_refined": -0.022
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 46.8,
+     "end_words_file": 47.26,
+     "beats_words_file": 0.477,
+     "onset_refined": 46.8088,
+     "beats_refined": 0.494
+    },
+    {
+     "text": "bir",
+     "start_words_file": 47.3,
+     "end_words_file": 47.48,
+     "beats_words_file": 1.444,
+     "onset_refined": 47.3448,
+     "beats_refined": 1.53
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 47.56,
+     "end_words_file": 48.04,
+     "beats_words_file": 1.947,
+     "onset_refined": 47.5389,
+     "beats_refined": 1.906
+    },
+    {
+     "text": "var.",
+     "start_words_file": 48.1,
+     "end_words_file": 48.4,
+     "beats_words_file": 2.991,
+     "onset_refined": 48.0966,
+     "beats_refined": 2.984
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde horozları var.",
+   "word_start_from_words_file": 48.6,
+   "onset": 48.5879,
+   "vowel_onset": 48.6544,
+   "onset_env20_check": 48.5848,
+   "beat_number_on_lattice": 94,
+   "downbeat_mix_timeline": 48.6215,
+   "downbeat": 48.6219,
+   "offset_sec": -0.034,
+   "offset_beats": -0.0657,
+   "vowel_offset_sec": 0.0325,
+   "vowel_offset_beats": 0.0628,
+   "words_file_offset_sec": -0.0219,
+   "kick_at_downbeat_rel_strength": 1.67,
+   "kick_rise_peak_minus_lattice_ms": 12.7,
+   "quietest_point_before_line": 48.5754,
+   "quietest_level_db_re_line_peak": -50.7,
+   "last_word_end_from_words_file": 50.5,
+   "sound_end_minus40dB": 50.67,
+   "sound_end_beats_after_downbeat": 3.96,
+   "alt_H2_downbeat": 49.6563,
+   "alt_H2_offset_beats": -2.0657,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 48.6,
+     "end_words_file": 49.46,
+     "beats_words_file": -0.042,
+     "onset_refined": 48.5879,
+     "beats_refined": -0.066
+    },
+    {
+     "text": "horozları",
+     "start_words_file": 49.52,
+     "end_words_file": 50.14,
+     "beats_words_file": 1.736,
+     "onset_refined": 49.5091,
+     "beats_refined": 1.715
+    },
+    {
+     "text": "var.",
+     "start_words_file": 50.2,
+     "end_words_file": 50.5,
+     "beats_words_file": 3.051,
+     "onset_refined": 50.1876,
+     "beats_refined": 3.027
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 3,
+   "first_word": "Horozlar",
+   "text": "Horozlar nasıl öter?",
+   "word_start_from_words_file": 50.7,
+   "onset": 50.7043,
+   "vowel_onset": 50.7074,
+   "onset_env20_check": 50.7013,
+   "beat_number_on_lattice": 98,
+   "downbeat_mix_timeline": 50.6903,
+   "downbeat": 50.6906,
+   "offset_sec": 0.0137,
+   "offset_beats": 0.0264,
+   "vowel_offset_sec": 0.0168,
+   "vowel_offset_beats": 0.0325,
+   "words_file_offset_sec": 0.0094,
+   "kick_at_downbeat_rel_strength": 1.48,
+   "kick_rise_peak_minus_lattice_ms": 4.6,
+   "quietest_point_before_line": 50.6564,
+   "quietest_level_db_re_line_peak": -44.6,
+   "last_word_end_from_words_file": 52.66,
+   "sound_end_minus40dB": 52.71,
+   "sound_end_beats_after_downbeat": 3.904,
+   "alt_H2_downbeat": 51.725,
+   "alt_H2_offset_beats": -1.9736,
+   "words": [
+    {
+     "text": "Horozlar",
+     "start_words_file": 50.7,
+     "end_words_file": 51.4,
+     "beats_words_file": 0.018,
+     "onset_refined": 50.7043,
+     "beats_refined": 0.026
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 51.48,
+     "end_words_file": 51.96,
+     "beats_words_file": 1.526,
+     "onset_refined": 51.4868,
+     "beats_refined": 1.539
+    },
+    {
+     "text": "öter?",
+     "start_words_file": 52.02,
+     "end_words_file": 52.66,
+     "beats_words_file": 2.57,
+     "onset_refined": 51.9909,
+     "beats_refined": 2.514
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 52.74,
+   "onset": 52.7605,
+   "vowel_onset": 52.7605,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 102,
+   "downbeat_mix_timeline": 52.7592,
+   "downbeat": 52.7593,
+   "offset_sec": 0.0012,
+   "offset_beats": 0.0023,
+   "vowel_offset_sec": 0.0012,
+   "vowel_offset_beats": 0.0022,
+   "words_file_offset_sec": -0.0193,
+   "kick_at_downbeat_rel_strength": 1.29,
+   "kick_rise_peak_minus_lattice_ms": -3.4,
+   "quietest_point_before_line": 52.7129,
+   "quietest_level_db_re_line_peak": -11.1,
+   "last_word_end_from_words_file": 54.8,
+   "sound_end_minus40dB": 54.6637,
+   "sound_end_beats_after_downbeat": 3.682,
+   "alt_H2_downbeat": 53.7937,
+   "alt_H2_offset_beats": -1.9977,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 52.74,
+     "end_words_file": 53.16,
+     "beats_words_file": -0.037,
+     "onset_refined": 52.7605,
+     "beats_refined": 0.002
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 53.26,
+     "end_words_file": 53.68,
+     "beats_words_file": 0.968,
+     "onset_refined": 53.2788,
+     "beats_refined": 1.004
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 53.8,
+     "end_words_file": 54.2,
+     "beats_words_file": 2.012,
+     "onset_refined": 53.8082,
+     "beats_refined": 2.028
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 54.3,
+     "end_words_file": 54.8,
+     "beats_words_file": 2.979,
+     "onset_refined": 54.3067,
+     "beats_refined": 2.992
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 59.48,
+   "onset": 59.4744,
+   "vowel_onset": 59.4763,
+   "onset_env20_check": 59.4716,
+   "beat_number_on_lattice": 115,
+   "downbeat_mix_timeline": 59.483,
+   "downbeat": 59.4825,
+   "offset_sec": -0.0081,
+   "offset_beats": -0.0158,
+   "vowel_offset_sec": -0.0062,
+   "vowel_offset_beats": -0.012,
+   "words_file_offset_sec": -0.0025,
+   "kick_at_downbeat_rel_strength": 1.56,
+   "kick_rise_peak_minus_lattice_ms": 6.6,
+   "quietest_point_before_line": 59.4214,
+   "quietest_level_db_re_line_peak": -79.3,
+   "last_word_end_from_words_file": 61.36,
+   "sound_end_minus40dB": 61.51,
+   "sound_end_beats_after_downbeat": 3.92,
+   "alt_H2_downbeat": 60.517,
+   "alt_H2_offset_beats": -2.0158,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 59.48,
+     "end_words_file": 59.68,
+     "beats_words_file": -0.005,
+     "onset_refined": 59.4744,
+     "beats_refined": -0.016
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 59.72,
+     "end_words_file": 60.2,
+     "beats_words_file": 0.459,
+     "onset_refined": 59.7436,
+     "beats_refined": 0.505
+    },
+    {
+     "text": "bir",
+     "start_words_file": 60.24,
+     "end_words_file": 60.4,
+     "beats_words_file": 1.465,
+     "onset_refined": 60.2639,
+     "beats_refined": 1.511
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 60.48,
+     "end_words_file": 60.98,
+     "beats_words_file": 1.929,
+     "onset_refined": 60.4689,
+     "beats_refined": 1.907
+    },
+    {
+     "text": "var.",
+     "start_words_file": 61.02,
+     "end_words_file": 61.36,
+     "beats_words_file": 2.973,
+     "onset_refined": 61.0393,
+     "beats_refined": 3.01
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde ördekleri var.",
+   "word_start_from_words_file": 61.54,
+   "onset": 61.5143,
+   "vowel_onset": 61.5893,
+   "onset_env20_check": 61.5105,
+   "beat_number_on_lattice": 119,
+   "downbeat_mix_timeline": 61.5518,
+   "downbeat": 61.5512,
+   "offset_sec": -0.037,
+   "offset_beats": -0.0715,
+   "vowel_offset_sec": 0.038,
+   "vowel_offset_beats": 0.0735,
+   "words_file_offset_sec": -0.0112,
+   "kick_at_downbeat_rel_strength": 1.6,
+   "kick_rise_peak_minus_lattice_ms": 4.3,
+   "quietest_point_before_line": 61.4914,
+   "quietest_level_db_re_line_peak": -58.7,
+   "last_word_end_from_words_file": 63.4,
+   "sound_end_minus40dB": 63.63,
+   "sound_end_beats_after_downbeat": 4.019,
+   "alt_H2_downbeat": 62.5857,
+   "alt_H2_offset_beats": -2.0715,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 61.54,
+     "end_words_file": 62.34,
+     "beats_words_file": -0.022,
+     "onset_refined": 61.5143,
+     "beats_refined": -0.071
+    },
+    {
+     "text": "ördekleri",
+     "start_words_file": 62.42,
+     "end_words_file": 63.06,
+     "beats_words_file": 1.68,
+     "onset_refined": 62.4519,
+     "beats_refined": 1.741
+    },
+    {
+     "text": "var.",
+     "start_words_file": 63.1,
+     "end_words_file": 63.4,
+     "beats_words_file": 2.995,
+     "onset_refined": 63.0993,
+     "beats_refined": 2.993
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 3,
+   "first_word": "Ördekler",
+   "text": "Ördekler nasıl bağırır?",
+   "word_start_from_words_file": 63.66,
+   "onset": 63.6017,
+   "vowel_onset": 63.6129,
+   "onset_env20_check": 63.5979,
+   "beat_number_on_lattice": 123,
+   "downbeat_mix_timeline": 63.6207,
+   "downbeat": 63.6199,
+   "offset_sec": -0.0182,
+   "offset_beats": -0.0352,
+   "vowel_offset_sec": -0.007,
+   "vowel_offset_beats": -0.0136,
+   "words_file_offset_sec": 0.0401,
+   "kick_at_downbeat_rel_strength": 1.71,
+   "kick_rise_peak_minus_lattice_ms": 2.0,
+   "quietest_point_before_line": 63.5786,
+   "quietest_level_db_re_line_peak": -56.0,
+   "last_word_end_from_words_file": 65.58,
+   "sound_end_minus40dB": 65.63,
+   "sound_end_beats_after_downbeat": 3.886,
+   "alt_H2_downbeat": 64.6544,
+   "alt_H2_offset_beats": -2.0352,
+   "words": [
+    {
+     "text": "Ördekler",
+     "start_words_file": 63.66,
+     "end_words_file": 64.319,
+     "beats_words_file": 0.078,
+     "onset_refined": 63.6017,
+     "beats_refined": -0.035
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 64.379,
+     "end_words_file": 64.86,
+     "beats_words_file": 1.468,
+     "onset_refined": 64.3774,
+     "beats_refined": 1.465
+    },
+    {
+     "text": "bağırır?",
+     "start_words_file": 64.9,
+     "end_words_file": 65.58,
+     "beats_words_file": 2.475,
+     "onset_refined": 64.9222,
+     "beats_refined": 2.518
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 65.66,
+   "onset": 65.6698,
+   "vowel_onset": 65.6698,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 127,
+   "downbeat_mix_timeline": 65.6895,
+   "downbeat": 65.6886,
+   "offset_sec": -0.0188,
+   "offset_beats": -0.0364,
+   "vowel_offset_sec": -0.0189,
+   "vowel_offset_beats": -0.0365,
+   "words_file_offset_sec": -0.0286,
+   "kick_at_downbeat_rel_strength": 2.54,
+   "kick_rise_peak_minus_lattice_ms": -46.7,
+   "quietest_point_before_line": 65.6645,
+   "quietest_level_db_re_line_peak": -14.2,
+   "last_word_end_from_words_file": 67.58,
+   "sound_end_minus40dB": 67.5782,
+   "sound_end_beats_after_downbeat": 3.653,
+   "alt_H2_downbeat": 66.7231,
+   "alt_H2_offset_beats": -2.0364,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 65.66,
+     "end_words_file": 66.1,
+     "beats_words_file": -0.055,
+     "onset_refined": 65.6698,
+     "beats_refined": -0.036
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 66.18,
+     "end_words_file": 66.6,
+     "beats_words_file": 0.95,
+     "onset_refined": 66.1887,
+     "beats_refined": 0.967
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 66.7,
+     "end_words_file": 67.12,
+     "beats_words_file": 1.955,
+     "onset_refined": 66.7084,
+     "beats_refined": 1.972
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 67.22,
+     "end_words_file": 67.58,
+     "beats_words_file": 2.961,
+     "onset_refined": 67.2231,
+     "beats_refined": 2.967
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 73.96,
+   "onset": 73.9554,
+   "vowel_onset": 73.9581,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 143,
+   "downbeat_mix_timeline": 73.965,
+   "downbeat": 73.9634,
+   "offset_sec": -0.008,
+   "offset_beats": -0.0155,
+   "vowel_offset_sec": -0.0053,
+   "vowel_offset_beats": -0.0102,
+   "words_file_offset_sec": -0.0034,
+   "kick_at_downbeat_rel_strength": 1.54,
+   "kick_rise_peak_minus_lattice_ms": 8.0,
+   "quietest_point_before_line": 73.9381,
+   "quietest_level_db_re_line_peak": -126.6,
+   "last_word_end_from_words_file": 75.82,
+   "sound_end_minus40dB": 75.99,
+   "sound_end_beats_after_downbeat": 3.918,
+   "alt_H2_downbeat": 74.9978,
+   "alt_H2_offset_beats": -2.0155,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 73.96,
+     "end_words_file": 74.16,
+     "beats_words_file": -0.007,
+     "onset_refined": 73.9554,
+     "beats_refined": -0.015
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 74.2,
+     "end_words_file": 74.68,
+     "beats_words_file": 0.457,
+     "onset_refined": 74.2221,
+     "beats_refined": 0.5
+    },
+    {
+     "text": "bir",
+     "start_words_file": 74.72,
+     "end_words_file": 74.9,
+     "beats_words_file": 1.463,
+     "onset_refined": 74.7464,
+     "beats_refined": 1.514
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 74.98,
+     "end_words_file": 75.44,
+     "beats_words_file": 1.966,
+     "onset_refined": 74.9444,
+     "beats_refined": 1.897
+    },
+    {
+     "text": "var.",
+     "start_words_file": 75.5,
+     "end_words_file": 75.82,
+     "beats_words_file": 2.971,
+     "onset_refined": 75.508,
+     "beats_refined": 2.986
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde ördekleri var.",
+   "word_start_from_words_file": 76.02,
+   "onset": 75.9995,
+   "vowel_onset": 76.0725,
+   "onset_env20_check": 75.9939,
+   "beat_number_on_lattice": 147,
+   "downbeat_mix_timeline": 76.0338,
+   "downbeat": 76.0321,
+   "offset_sec": -0.0326,
+   "offset_beats": -0.0631,
+   "vowel_offset_sec": 0.0404,
+   "vowel_offset_beats": 0.0781,
+   "words_file_offset_sec": -0.0121,
+   "kick_at_downbeat_rel_strength": 1.59,
+   "kick_rise_peak_minus_lattice_ms": 5.7,
+   "quietest_point_before_line": 75.9742,
+   "quietest_level_db_re_line_peak": -70.0,
+   "last_word_end_from_words_file": 77.9,
+   "sound_end_minus40dB": 78.0119,
+   "sound_end_beats_after_downbeat": 3.828,
+   "alt_H2_downbeat": 77.0665,
+   "alt_H2_offset_beats": -2.0631,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 76.02,
+     "end_words_file": 76.8,
+     "beats_words_file": -0.023,
+     "onset_refined": 75.9995,
+     "beats_refined": -0.063
+    },
+    {
+     "text": "ördekleri",
+     "start_words_file": 76.9,
+     "end_words_file": 77.54,
+     "beats_words_file": 1.678,
+     "onset_refined": 76.9512,
+     "beats_refined": 1.777
+    },
+    {
+     "text": "var.",
+     "start_words_file": 77.6,
+     "end_words_file": 77.9,
+     "beats_words_file": 3.031,
+     "onset_refined": 77.5803,
+     "beats_refined": 2.993
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 3,
+   "first_word": "Köpekler",
+   "text": "Köpekler nasıl havlar?",
+   "word_start_from_words_file": 78.08,
+   "onset": 78.0597,
+   "vowel_onset": 78.1063,
+   "onset_env20_check": 78.0595,
+   "beat_number_on_lattice": 151,
+   "downbeat_mix_timeline": 78.1027,
+   "downbeat": 78.1008,
+   "offset_sec": -0.0411,
+   "offset_beats": -0.0795,
+   "vowel_offset_sec": 0.0055,
+   "vowel_offset_beats": 0.0106,
+   "words_file_offset_sec": -0.0208,
+   "kick_at_downbeat_rel_strength": 1.54,
+   "kick_rise_peak_minus_lattice_ms": 9.3,
+   "quietest_point_before_line": 78.0231,
+   "quietest_level_db_re_line_peak": -58.4,
+   "last_word_end_from_words_file": 80.06,
+   "sound_end_minus40dB": 80.13,
+   "sound_end_beats_after_downbeat": 3.923,
+   "alt_H2_downbeat": 79.1352,
+   "alt_H2_offset_beats": -2.0795,
+   "words": [
+    {
+     "text": "Köpekler",
+     "start_words_file": 78.08,
+     "end_words_file": 78.8,
+     "beats_words_file": -0.04,
+     "onset_refined": 78.0597,
+     "beats_refined": -0.079
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 78.86,
+     "end_words_file": 79.34,
+     "beats_words_file": 1.468,
+     "onset_refined": 78.877,
+     "beats_refined": 1.501
+    },
+    {
+     "text": "havlar?",
+     "start_words_file": 79.4,
+     "end_words_file": 80.06,
+     "beats_words_file": 2.512,
+     "onset_refined": 79.3999,
+     "beats_refined": 2.512
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 80.16,
+   "onset": 80.1483,
+   "vowel_onset": 80.1576,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 155,
+   "downbeat_mix_timeline": 80.1715,
+   "downbeat": 80.1695,
+   "offset_sec": -0.0212,
+   "offset_beats": -0.0409,
+   "vowel_offset_sec": -0.0119,
+   "vowel_offset_beats": -0.023,
+   "words_file_offset_sec": -0.0095,
+   "kick_at_downbeat_rel_strength": 1.74,
+   "kick_rise_peak_minus_lattice_ms": 7.0,
+   "quietest_point_before_line": 80.1446,
+   "quietest_level_db_re_line_peak": -26.9,
+   "last_word_end_from_words_file": 82.2,
+   "sound_end_minus40dB": 82.1767,
+   "sound_end_beats_after_downbeat": 3.881,
+   "alt_H2_downbeat": 81.2039,
+   "alt_H2_offset_beats": -2.0409,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 80.16,
+     "end_words_file": 80.58,
+     "beats_words_file": -0.018,
+     "onset_refined": 80.1483,
+     "beats_refined": -0.041
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 80.66,
+     "end_words_file": 81.08,
+     "beats_words_file": 0.948,
+     "onset_refined": 80.6814,
+     "beats_refined": 0.99
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 81.2,
+     "end_words_file": 81.6,
+     "beats_words_file": 1.992,
+     "onset_refined": 81.2043,
+     "beats_refined": 2.001
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 81.7,
+     "end_words_file": 82.2,
+     "beats_words_file": 2.959,
+     "onset_refined": 81.705,
+     "beats_refined": 2.969
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 86.4,
+   "onset": 86.3767,
+   "vowel_onset": 86.3779,
+   "onset_env20_check": 86.3711,
+   "beat_number_on_lattice": 167,
+   "downbeat_mix_timeline": 86.3781,
+   "downbeat": 86.3756,
+   "offset_sec": 0.0011,
+   "offset_beats": 0.0021,
+   "vowel_offset_sec": 0.0024,
+   "vowel_offset_beats": 0.0046,
+   "words_file_offset_sec": 0.0244,
+   "kick_at_downbeat_rel_strength": 1.53,
+   "kick_rise_peak_minus_lattice_ms": 5.9,
+   "quietest_point_before_line": 86.2955,
+   "quietest_level_db_re_line_peak": -75.7,
+   "last_word_end_from_words_file": 88.22,
+   "sound_end_minus40dB": 88.41,
+   "sound_end_beats_after_downbeat": 3.933,
+   "alt_H2_downbeat": 87.41,
+   "alt_H2_offset_beats": -1.9979,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 86.4,
+     "end_words_file": 86.58,
+     "beats_words_file": 0.047,
+     "onset_refined": 86.3767,
+     "beats_refined": 0.002
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 86.62,
+     "end_words_file": 87.08,
+     "beats_words_file": 0.473,
+     "onset_refined": 86.6235,
+     "beats_refined": 0.479
+    },
+    {
+     "text": "bir",
+     "start_words_file": 87.14,
+     "end_words_file": 87.3,
+     "beats_words_file": 1.478,
+     "onset_refined": 87.1688,
+     "beats_refined": 1.534
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 87.4,
+     "end_words_file": 87.88,
+     "beats_words_file": 1.981,
+     "onset_refined": 87.359,
+     "beats_refined": 1.901
+    },
+    {
+     "text": "var.",
+     "start_words_file": 87.96,
+     "end_words_file": 88.22,
+     "beats_words_file": 3.063,
+     "onset_refined": 87.9564,
+     "beats_refined": 3.056
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde bir kedisi var.",
+   "word_start_from_words_file": 88.44,
+   "onset": 88.4134,
+   "vowel_onset": 88.4991,
+   "onset_env20_check": 88.4103,
+   "beat_number_on_lattice": 171,
+   "downbeat_mix_timeline": 88.447,
+   "downbeat": 88.4443,
+   "offset_sec": -0.0308,
+   "offset_beats": -0.0596,
+   "vowel_offset_sec": 0.0548,
+   "vowel_offset_beats": 0.106,
+   "words_file_offset_sec": -0.0043,
+   "kick_at_downbeat_rel_strength": 1.21,
+   "kick_rise_peak_minus_lattice_ms": 9.5,
+   "quietest_point_before_line": 88.392,
+   "quietest_level_db_re_line_peak": -59.1,
+   "last_word_end_from_words_file": 90.3,
+   "sound_end_minus40dB": 90.4571,
+   "sound_end_beats_after_downbeat": 3.892,
+   "alt_H2_downbeat": 89.4787,
+   "alt_H2_offset_beats": -2.0596,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 88.44,
+     "end_words_file": 89.18,
+     "beats_words_file": -0.008,
+     "onset_refined": 88.4134,
+     "beats_refined": -0.06
+    },
+    {
+     "text": "bir",
+     "start_words_file": 89.22,
+     "end_words_file": 89.38,
+     "beats_words_file": 1.5,
+     "onset_refined": 89.2301,
+     "beats_refined": 1.519
+    },
+    {
+     "text": "kedisi",
+     "start_words_file": 89.5,
+     "end_words_file": 89.92,
+     "beats_words_file": 2.041,
+     "onset_refined": 89.4568,
+     "beats_refined": 1.958
+    },
+    {
+     "text": "var.",
+     "start_words_file": 90.02,
+     "end_words_file": 90.3,
+     "beats_words_file": 3.047,
+     "onset_refined": 90.0126,
+     "beats_refined": 3.032
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 3,
+   "first_word": "Kedisi",
+   "text": "Kedisi nasıl miyavlar?",
+   "word_start_from_words_file": 90.5,
+   "onset": 90.4905,
+   "vowel_onset": 90.5344,
+   "onset_env20_check": 90.4894,
+   "beat_number_on_lattice": 175,
+   "downbeat_mix_timeline": 90.5158,
+   "downbeat": 90.513,
+   "offset_sec": -0.0224,
+   "offset_beats": -0.0434,
+   "vowel_offset_sec": 0.0215,
+   "vowel_offset_beats": 0.0415,
+   "words_file_offset_sec": -0.013,
+   "kick_at_downbeat_rel_strength": 1.63,
+   "kick_rise_peak_minus_lattice_ms": 7.2,
+   "quietest_point_before_line": 90.3505,
+   "quietest_level_db_re_line_peak": -55.2,
+   "last_word_end_from_words_file": 92.48,
+   "sound_end_minus40dB": 92.53,
+   "sound_end_beats_after_downbeat": 3.9,
+   "alt_H2_downbeat": 91.5474,
+   "alt_H2_offset_beats": -2.0434,
+   "words": [
+    {
+     "text": "Kedisi",
+     "start_words_file": 90.5,
+     "end_words_file": 90.94,
+     "beats_words_file": -0.025,
+     "onset_refined": 90.4905,
+     "beats_refined": -0.044
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 91.02,
+     "end_words_file": 91.46,
+     "beats_words_file": 0.98,
+     "onset_refined": 91.0402,
+     "beats_refined": 1.019
+    },
+    {
+     "text": "miyavlar?",
+     "start_words_file": 91.56,
+     "end_words_file": 92.48,
+     "beats_words_file": 2.024,
+     "onset_refined": 91.567,
+     "beats_refined": 2.038
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 92.56,
+   "onset": 92.5756,
+   "vowel_onset": 92.5791,
+   "onset_env20_check": null,
+   "beat_number_on_lattice": 179,
+   "downbeat_mix_timeline": 92.5847,
+   "downbeat": 92.5817,
+   "offset_sec": -0.0061,
+   "offset_beats": -0.0117,
+   "vowel_offset_sec": -0.0026,
+   "vowel_offset_beats": -0.005,
+   "words_file_offset_sec": -0.0217,
+   "kick_at_downbeat_rel_strength": 2.12,
+   "kick_rise_peak_minus_lattice_ms": 10.7,
+   "quietest_point_before_line": 92.568,
+   "quietest_level_db_re_line_peak": -19.2,
+   "last_word_end_from_words_file": 94.38,
+   "sound_end_minus40dB": 94.5899,
+   "sound_end_beats_after_downbeat": 3.883,
+   "alt_H2_downbeat": 93.6161,
+   "alt_H2_offset_beats": -2.0117,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 92.56,
+     "end_words_file": 92.98,
+     "beats_words_file": -0.042,
+     "onset_refined": 92.5756,
+     "beats_refined": -0.012
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 93.08,
+     "end_words_file": 93.5,
+     "beats_words_file": 0.963,
+     "onset_refined": 93.0985,
+     "beats_refined": 0.999
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 93.62,
+     "end_words_file": 94.02,
+     "beats_words_file": 2.007,
+     "onset_refined": 93.609,
+     "beats_refined": 1.986
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 94.1,
+     "end_words_file": 94.38,
+     "beats_words_file": 2.936,
+     "onset_refined": 94.1163,
+     "beats_refined": 2.967
+    }
+   ]
+  }
+ ],
+ "line_rhythm_typical_word_positions_beats": {
+  "L1": {
+   "n_verses_used": 7,
+   "words": [
+    "Ali",
+    "Baba'nın",
+    "bir",
+    "çiftliği",
+    "var."
+   ],
+   "median_beats": [
+    -0.015,
+    0.495,
+    1.514,
+    1.906,
+    3.01
+   ]
+  },
+  "L2": {
+   "n_verses_used": 5,
+   "words": [
+    "Çiftliğinde",
+    "inekleri",
+    "var."
+   ],
+   "median_beats": [
+    -0.066,
+    1.741,
+    2.993
+   ]
+  },
+  "L3": {
+   "n_verses_used": 7,
+   "words": [
+    "İnekler",
+    "nasıl",
+    "bağırır?"
+   ],
+   "median_beats": [
+    -0.035,
+    1.501,
+    2.505
+   ]
+  },
+  "L4": {
+   "n_verses_used": 7,
+   "words": [
+    "Dinle",
+    "bak,",
+    "dinle",
+    "bak."
+   ],
+   "median_beats": [
+    -0.024,
+    1.002,
+    2.001,
+    2.973
+   ]
+  }
+ },
+ "side_observation_for_the_arranger": {
+  "note": "Not part of this task, reported because it was measured: the ORIGINAL accompaniment is centred on A, not C. Bass alternates A (root) / E (fifth) every beat, chords are A(m) and E; under line 4 the bass goes E E A. The reciting tone E4 is therefore the fifth of A in the original, and the final C4 its minor third. This does not change the timing results.",
+  "bass_pitch_class_counts_by_position_from_verse_onset": {
+   "0": {
+    "A": 39,
+    "E": 6,
+    "G": 1,
+    "F": 1
+   },
+   "1": {
+    "E": 41,
+    "B": 1,
+    "G#": 3,
+    "G": 1
+   },
+   "2": {
+    "A": 44,
+    "E": 1
+   },
+   "3": {
+    "E": 20,
+    "B": 13,
+    "F": 2,
+    "C": 5,
+    "F#": 2,
+    "G": 1,
+    "A": 1,
+    "G#": 1
+   }
+  }
+ },
+ "extra_repeats_not_used": {
+  "note": "the two extra \"Dinle bak, dinle bak\" after verse 7 start on lattice beats 195 and 207 (about 100.86 s and 107.07 s on the mix timeline); not analysed further"
+ },
+ "not_verified": "No listening was possible. Everything above is measurement. In particular the bar-level decision (H0 vs H2) and the claim that the placement \"feels\" the same are not verified by ear.",
+ "reproduce": "run kod/run_all.sh (scripts 00..15); detailed intermediate results are in the other *.json files of this folder"
+}

@@ -1,0 +1,30 @@
+vocal stem overall: peak -10.1 dB, median -35.8 dB, 5th pct -90.6 dB
+28 lines
+v1 L1 'Ali        ' word   6.20 grid   6.208 | floor  -91.7 dB @-0.039 pk -12.3 | broadband -30:-0.018 -20:-0.017 -10:-0.016 -6:-0.010 | voiced -20:-0.017 -10:-0.015 -6:-0.009 maxslope:-0.017 | hi-band pk -24.5
+v1 L2 'Çiftliğinde' word   8.26 grid   8.277 | floor  -53.0 dB @-0.043 pk -12.8 | broadband -30:-0.036 -20:-0.030 -10:-0.018 -6:+0.048 | voiced -20:+0.042 -10:+0.045 -6:+0.048 maxslope:+0.044 | hi-band pk -20.1
+v1 L3 'İnekler    ' word  10.38 grid  10.346 | floor  -62.4 dB @-0.026 pk -12.6 | broadband -30:-0.017 -20:-0.014 -10:-0.006 -6:+0.002 | voiced -20:-0.014 -10:-0.006 -6:+0.003 maxslope:-0.015 | hi-band pk -21.3
+v1 L4 'Dinle      ' word  12.40 grid  12.415 | floor  -23.8 dB @-0.041 pk -13.8 | broadband -30:-0.041 -20:-0.041 -10:-0.041 -6:+0.012 | voiced -20:-0.041 -10:-0.041 -6:+0.013 maxslope:+0.016 | hi-band pk -23.7
+v2 L1 'Ali        ' word  18.62 grid  18.622 | floor  -93.4 dB @-0.203 pk -12.8 | broadband -30:-0.014 -20:-0.005 -10:+0.001 -6:+0.006 | voiced -20:-0.004 -10:+0.001 -6:+0.006 maxslope:-0.016 | hi-band pk -22.6
+v2 L2 'Çiftliğinde' word  20.68 grid  20.691 | floor  -93.4 dB @-0.061 pk -14.5 | broadband -30:-0.039 -20:-0.036 -10:-0.027 -6:+0.031 | voiced -20:+0.023 -10:+0.027 -6:+0.030 maxslope:+0.190 | hi-band pk -22.0
+v2 L3 'Koyunlar   ' word  22.74 grid  22.760 | floor  -97.5 dB @-0.046 pk -14.1 | broadband -30:-0.027 -20:-0.027 -10:-0.021 -6:+0.018 | voiced -20:-0.026 -10:+0.015 -6:+0.018 maxslope:-0.029 | hi-band pk -25.0
+v2 L4 'Dinle      ' word  24.82 grid  24.829 | floor  -26.0 dB @-0.080 pk -15.4 | broadband -30:-0.080 -20:-0.080 -10:-0.067 -6:+0.007 | voiced -20:-0.136 -10:-0.135 -6:-0.118 maxslope:-0.133 | hi-band pk -24.1
+v3 L1 'Ali        ' word  33.12 grid  33.105 | floor -104.8 dB @-0.033 pk -10.3 | broadband -30:-0.002 -20:-0.000 -10:+0.001 -6:+0.004 | voiced -20:-0.000 -10:+0.002 -6:+0.004 maxslope:-0.004 | hi-band pk -23.5
+v3 L2 'Çiftliğinde' word  35.16 grid  35.174 | floor  -70.9 dB @-0.049 pk -12.8 | broadband -30:-0.039 -20:-0.035 -10:-0.031 -6:+0.027 | voiced -20:+0.021 -10:+0.025 -6:+0.027 maxslope:+0.172 | hi-band pk -20.7
+v3 L3 'Atı        ' word  37.26 grid  37.243 | floor  -83.4 dB @-0.037 pk -12.6 | broadband -30:-0.027 -20:-0.017 -10:-0.014 -6:-0.011 | voiced -20:-0.016 -10:-0.013 -6:-0.011 maxslope:-0.031 | hi-band pk -25.1
+v3 L4 'Dinle      ' word  39.30 grid  39.312 | floor  -27.3 dB @-0.020 pk -14.1 | broadband -30:-0.020 -20:-0.020 -10:-0.010 -6:+0.007 | voiced -20:-0.007 -10:+0.002 -6:+0.011 maxslope:+0.004 | hi-band pk -24.4
+v4 L1 'Ali        ' word  46.56 grid  46.553 | floor  -91.6 dB @-0.049 pk -12.9 | broadband -30:-0.018 -20:-0.014 -10:-0.007 -6:-0.002 | voiced -20:-0.014 -10:-0.006 -6:+0.001 maxslope:-0.016 | hi-band pk -24.3
+v4 L2 'Çiftliğinde' word  48.60 grid  48.622 | floor  -62.9 dB @-0.047 pk -16.4 | broadband -30:-0.039 -20:-0.037 -10:-0.029 -6:-0.018 | voiced -20:+0.027 -10:+0.029 -6:+0.031 maxslope:+0.029 | hi-band pk -20.3
+v4 L3 'Horozlar   ' word  50.70 grid  50.691 | floor  -57.9 dB @-0.036 pk -14.2 | broadband -30:-0.020 -20:+0.011 -10:+0.014 -6:+0.016 | voiced -20:+0.011 -10:+0.014 -6:+0.016 maxslope:+0.010 | hi-band pk -30.2
+v4 L4 'Dinle      ' word  52.74 grid  52.760 | floor  -26.1 dB @-0.043 pk -16.6 | broadband -30:-0.043 -20:-0.043 -10:-0.043 -6:-0.004 | voiced -20:-0.082 -10:-0.082 -6:-0.006 maxslope:-0.198 | hi-band pk -26.8
+v5 L1 'Ali        ' word  59.48 grid  59.484 | floor  -92.1 dB @-0.062 pk -13.6 | broadband -30:-0.013 -20:-0.012 -10:-0.010 -6:-0.008 | voiced -20:-0.012 -10:-0.010 -6:-0.008 maxslope:-0.013 | hi-band pk -22.5
+v5 L2 'Çiftliğinde' word  61.54 grid  61.553 | floor  -72.1 dB @-0.058 pk -14.9 | broadband -30:-0.046 -20:-0.042 -10:-0.036 -6:-0.030 | voiced -20:+0.030 -10:+0.033 -6:+0.036 maxslope:+0.028 | hi-band pk -17.9
+v5 L3 'Ördekler   ' word  63.66 grid  63.622 | floor  -68.2 dB @-0.044 pk -14.2 | broadband -30:-0.027 -20:-0.024 -10:-0.021 -6:-0.011 | voiced -20:-0.024 -10:-0.020 -6:-0.011 maxslope:-0.031 | hi-band pk -24.1
+v5 L4 'Dinle      ' word  65.66 grid  65.691 | floor  -24.2 dB @-0.028 pk -14.6 | broadband -30:-0.028 -20:-0.028 -10:-0.028 -6:-0.023 | voiced -20:-0.026 -10:-0.025 -6:-0.022 maxslope:-0.020 | hi-band pk -24.1
+v6 L1 'Ali        ' word  73.96 grid  73.967 | floor -140.0 dB @-0.028 pk -15.0 | broadband -30:-0.014 -20:-0.014 -10:-0.012 -6:-0.009 | voiced -20:-0.014 -10:-0.011 -6:-0.008 maxslope:-0.016 | hi-band pk -24.5
+v6 L2 'Çiftliğinde' word  76.02 grid  76.036 | floor  -82.8 dB @-0.062 pk -16.6 | broadband -30:-0.046 -20:-0.042 -10:-0.036 -6:-0.030 | voiced -20:+0.031 -10:+0.034 -6:+0.036 maxslope:-0.179 | hi-band pk -19.8
+v6 L3 'Köpekler   ' word  78.08 grid  78.105 | floor  -71.4 dB @-0.082 pk -13.3 | broadband -30:-0.048 -20:-0.045 -10:-0.004 -6:+0.001 | voiced -20:-0.008 -10:-0.003 -6:-0.000 maxslope:-0.049 | hi-band pk -27.9
+v6 L4 'Dinle      ' word  80.16 grid  80.174 | floor  -39.5 dB @-0.030 pk -16.3 | broadband -30:-0.030 -20:-0.027 -10:-0.019 -6:-0.018 | voiced -20:-0.021 -10:-0.018 -6:-0.017 maxslope:-0.023 | hi-band pk -26.5
+v7 L1 'Ali        ' word  86.40 grid  86.381 | floor  -90.7 dB @-0.089 pk -15.6 | broadband -30:-0.014 -20:-0.009 -10:-0.006 -6:-0.003 | voiced -20:-0.007 -10:-0.005 -6:-0.003 maxslope:-0.010 | hi-band pk -27.8
+v7 L2 'Çiftliğinde' word  88.44 grid  88.450 | floor  -74.4 dB @-0.058 pk -17.3 | broadband -30:-0.043 -20:-0.039 -10:-0.032 -6:+0.048 | voiced -20:+0.043 -10:+0.047 -6:+0.048 maxslope:-0.043 | hi-band pk -23.6
+v7 L3 'Kedisi     ' word  90.50 grid  90.519 | floor  -69.8 dB @-0.168 pk -17.8 | broadband -30:-0.033 -20:-0.029 -10:+0.013 -6:+0.015 | voiced -20:+0.009 -10:+0.013 -6:+0.015 maxslope:+0.008 | hi-band pk -26.3
+v7 L4 'Dinle      ' word  92.56 grid  92.588 | floor  -33.4 dB @-0.020 pk -18.5 | broadband -30:-0.020 -20:-0.020 -10:-0.012 -6:-0.008 | voiced -20:-0.020 -10:-0.012 -6:-0.009 maxslope:-0.012 | hi-band pk -30.0

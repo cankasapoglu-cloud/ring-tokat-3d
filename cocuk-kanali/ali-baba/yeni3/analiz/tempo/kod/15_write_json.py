@@ -76,8 +76,12 @@ for i,vb in enumerate(VB):
     end=VB[i+1] if i+1<len(VB) else vb+28
     bars=[seq(b,min(b+4,end)) for b in range(vb,end,4)]
     gap=end-vb-16
+    turns=[b-vb for b in range(vb+16,end) if rows[b]['pc'] in ('B','C')]
+    last_turn=turns[-1] if turns else None
     barmap.append(dict(verse=i+1,onset_beat_number=vb,onset_beat_mod4_on_a_global_4_grid=vb%4,beats_until_next_verse=end-vb,gap_beats_after_L4=gap,gap_bars=gap/4,
-                       bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset=bars))
+                       bass_pitch_class_per_beat_in_4_beat_groups_from_verse_onset=bars,
+                       turnaround_note_positions_in_gap_beats_from_verse_onset=turns,
+                       beats_between_last_turnaround_and_next_verse_onset=(end-vb-1-last_turn) if last_turn is not None else None))
 pcs=bn['pc_by_position_mod4']
 turn={p:int(pcs[str(p)].get('B',0)+pcs[str(p)].get('C',0)) for p in range(4)}
 tot={p:int(sum(pcs[str(p)].values())) for p in range(4)}
@@ -108,7 +112,7 @@ downbeat=dict(
         best_shift_per_verse=[c['best_shift'] for c in de['cross_verse_alignment_vs_verse1']],
         similarity_at_shift_0=[round(c['sim_by_shift']['0'],2) for c in de['cross_verse_alignment_vs_verse1']],
         best_other_shift_similarity=[round(max(v for k,v in c['sim_by_shift'].items() if k!='0'),2) for c in de['cross_verse_alignment_vs_verse1']]),
-    E5_structure_between_verses=dict(text='After line 4 the band continues in 4-beat groups that start exactly where line 4 ends, and a turnaround bar-end (bass B/C, no off-beat kick) sits on the last beat before the next verse in 4 of 6 transitions. The two irregular transitions are an inserted 2-beat break before verse 4 (everything stops on the off-beat at 46.30 s) and one extra beat before verse 5. So the irregular bars are in the instrumental gaps, not inside the sung verses.',
+    E5_structure_between_verses=dict(text='After line 4 the band continues in 4-beat groups that start exactly where line 4 ends (bass A E A E | A E A B ...). In every gap the turnaround note (bass B or C) falls on beat 23 or 27 counted from the verse onset, i.e. on the 4th beat of such a group. In 3 of the 6 verse-to-verse transitions (1->2, 2->3, 6->7, and again before the tag after verse 7) the next verse starts on the very next beat. The other three are where the irregular beat counts come from: an inserted 2-beat break before verse 4 (everything stops on the off-beat at 46.30 s), one extra beat before verse 5, and one more full 4-beat bar before verse 6. So the irregular bars are in the instrumental gaps, not inside the sung verses, and each verse restarts the 4-beat pattern on its first sung beat.',
         original_bar_map=barmap,break_before_verse4=dict(beat=89,t=round(brk['t'],3),offbeat_mid_flux_rel=round(brk['mid_off'],2),offbeat_high_flux_rel=round(brk['hi_off'],2))),
     E6_periodicity=dict(text='Beat-feature self-similarity is higher at lag 4 than at lag 2 and at lag 8 than at lag 6: a 4-beat unit exists.',selfsim_by_lag_beats={k:round(v,3) for k,v in de['beat_feature_selfsim_by_lag'].items()}),
     E7_weak_or_neutral=dict(text='Drum accents do not separate H0 from H2: kick and hats repeat every beat. Small 4-beat cues: off-beat low-frequency hit after position 1, slightly more cymbal energy on position 0, slightly more low-band pickup after position 3.',
@@ -153,6 +157,8 @@ out=dict(
      accuracy='onset about +-5 ms for vowel-initial lines, +-10 ms for consonant-initial and legato (L4) lines; downbeat about +-3 ms relative to the drum transients plus +-2 ms timeline conversion'),
   lines=lines,
   line_rhythm_typical_word_positions_beats=l3['typical_word_positions'],
+  side_observation_for_the_arranger=dict(note='Not part of this task, reported because it was measured: the ORIGINAL accompaniment is centred on A, not C. Bass alternates A (root) / E (fifth) every beat, chords are A(m) and E; under line 4 the bass goes E E A. The reciting tone E4 is therefore the fifth of A in the original, and the final C4 its minor third. This does not change the timing results.',
+       bass_pitch_class_counts_by_position_from_verse_onset=pcs),
   extra_repeats_not_used=dict(note='the two extra "Dinle bak, dinle bak" after verse 7 start on lattice beats 195 and 207 (about 100.86 s and 107.07 s on the mix timeline); not analysed further'),
   not_verified='No listening was possible. Everything above is measurement. In particular the bar-level decision (H0 vs H2) and the claim that the placement "feels" the same are not verified by ear.',
   reproduce='run kod/run_all.sh (scripts 00..15); detailed intermediate results are in the other *.json files of this folder')
