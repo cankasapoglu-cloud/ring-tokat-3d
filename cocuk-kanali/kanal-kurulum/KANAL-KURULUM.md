@@ -489,14 +489,26 @@ beş küçük maymun, sayma şarkısı, geri sayım, sayılar şarkısı, maymun
 Başlık:
 
 ```
-Balon Şarkısı | Çocuklar İçin Renkler Şarkısı | DuDeK Stüdyo
+Renkler Şarkısı | Balonlar, Kırmızı Mavi Sarı Yeşil | DuDeK Stüdyo
 ```
 
-Açıklama (sözsüz hâli):
+Açıklama:
 
 ```
 Pıtır renkli balonlarla kırmızı, mavi, sarı ve yeşili tanıtıyor; renk adları ekranda büyük harflerle görünür.
 3-7 yaş için, 50 saniye.
+
+ŞARKI SÖZLERİ
+
+Kırmızı balon uçuyor, uçuyor, uçuyor
+Mavi balon uçuyor, gökyüzüne doğru
+Sarı balon uçuyor, uçuyor, uçuyor
+Yeşil balon uçuyor, hep birlikte
+
+Balonlar, balonlar, rengarenk balonlar
+El sallayın çocuklar, uçuyor balonlar
+Balonlar, balonlar, rengarenk balonlar
+El sallayın çocuklar, uçuyor balonlar
 
 DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
@@ -511,7 +523,7 @@ balon şarkısı, renkler şarkısı, renkleri öğreniyorum, renkler, kırmız�
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/balon-sarkisi/kapak.jpg`. Pıtır'ın büyük, sevinçli yüzü; arkada renkli balonlar. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Renkler Şarkısı" yazısı eklemek.
 - **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - DuDeK Stüdyo.
-- **Eksik:** Bu şarkının sözleri hiçbir dosyada yazılı değil; uydurmadık. Bu yüzden açıklama sözsüz verildi. Üç yol var: sözleri siz yazıp gönderirsiniz, ekleriz; ya da izin verirseniz şarkı yazıya döktürülür (bu araç ücretlidir, size sormadan çalıştırılmaz); ya da sözsüz yüklenir, sözler sonra eklenir.
+- **Sözler:** 22 Kasım 2026'da kayıt yazıya dökülerek çıkarıldı (makine dökümü); dört renk birer kez söyleniyor.
 
 ### 3.6 El Yıkama Şarkısı
 
