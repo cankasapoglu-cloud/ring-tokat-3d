@@ -14,7 +14,7 @@
 import argparse, json, os, subprocess, sys
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np, mido, soundfile as sf, pyloudnorm
-from scipy.ndimage import minimum_filter1d, uniform_filter1d
+from scipy.ndimage import minimum_filter1d, maximum_filter1d, uniform_filter1d
 from scipy.signal import resample_poly
 
 ap = argparse.ArgumentParser()
@@ -260,10 +260,12 @@ try:
     _release = njit(_release)
 except Exception as ex_:
     print('numba not available, slow limiter loop:', ex_)
-def limiter(x, ceil, look_s=0.003, rel_s=0.080):
-    """Look-ahead peak limiter. Returns (y, gain); |y| <= ceil is guaranteed. Does nothing where |x| <= ceil."""
+def limiter(x, ceil, head=None, look_s=0.003, rel_s=0.080):
+    """Look-ahead peak limiter. Returns (y, gain); |y| <= ceil - head is guaranteed (head: per-sample headroom to
+    leave free, here the peak envelope of the under-vocal stem). Does nothing where |x| is already below that."""
     pk = np.abs(x).max(1)
-    g = np.minimum(1.0, ceil / np.maximum(pk, 1e-12))
+    lim = ceil if head is None else ceil - head
+    g = np.minimum(1.0, lim / np.maximum(pk, 1e-12))
     if g.min() >= 1.0: return x.copy(), g
     L = int(look_s * sr) // 2 * 2
     gm = minimum_filter1d(g, size=L + 1, origin=-(L // 2), mode='nearest')      # min over [n, n+L]: gain needed soon
@@ -280,18 +282,25 @@ while True:
     CEIL = 10 ** (ceil_db / 20)
     g = 10 ** (-9 / 20) / np.percentile(np.abs(band), 99.9)
     for it in range(12):
-        y, gr = limiter(band * g, CEIL); L = meter.integrated_loudness(fade(y))
+        # the band is limited to (ceiling - peak envelope of the stem), so that altyapi + ezgi_alti never exceeds the ceiling
+        head = maximum_filter1d(np.abs(alt * g).max(1), size=int(0.02 * sr), mode='nearest')
+        y, gr = limiter(band * g, CEIL, head); L = meter.integrated_loudness(fade(y))
         if abs(L - A.lufs) < 0.02: break
         g *= 10 ** ((A.lufs - L) / 20)
     a_out = fade(y); s_out = fade(alt * g)
-    r_sum = a_out + s_out
-    r_out, gr_r = limiter(r_sum, CEIL)
+    r_out = a_out + s_out                      # rehber is the exact sum; no second limiter
+    assert np.abs(r_out).max() <= CEIL * (1 + 1e-9) and np.abs(a_out).max() <= CEIL * (1 + 1e-9)
     tp = max(truepeak(a_out), truepeak(r_out))
     if db(tp) <= -1.05 or ceil_db < -3: break
     ceil_db -= 0.2
+gr_db = -db(gr); top = np.argsort(gr_db)[::-1]; worst = []
+for i in top:
+    if all(abs(i - j) > sr // 2 for j in worst): worst.append(int(i))
+    if len(worst) == 5: break
 print(f'[{NAME}] key {KEY}: master gain {g:.3f} ({db(g):.2f} dB), limiter ceiling {ceil_db:.1f} dBFS, altyapi {L:.2f} LUFS, '
-      f'max gain reduction {-db(gr.min()):.2f} dB, time with >0.5 dB reduction {100 * (gr < 10 ** (-0.5 / 20)).mean():.2f} %, '
-      f'true peak {db(tp):.2f} dBTP, stem factor {ks:.3f}, rehber limited samples {(gr_r < 1).sum()}')
+      f'max gain reduction {gr_db.max():.2f} dB, time with >0.5 dB reduction {100 * (gr_db > 0.5).mean():.2f} %, >2 dB {100 * (gr_db > 2).mean():.2f} %, '
+      f'true peak {db(tp):.2f} dBTP, stem factor {ks:.3f}')
+print(f'[{NAME}] largest gain reductions at (s, bar, dB):', [(round(i / sr, 2), int(i / sr / BAR), round(float(gr_db[i]), 1)) for i in worst])
 wr(f'{O}/altyapi_{NAME}.wav', a_out); wr(f'{O}/ezgi_alti_{NAME}.wav', s_out); wr(f'{O}/rehber_{NAME}.wav', r_out)
 
 # ---- zaman_<name>.json ---------------------------------------------------------------------------------------
@@ -366,7 +375,8 @@ json.dump(Z, open(f'{O}/zaman_{NAME}.json', 'w'), ensure_ascii=False, indent=1)
 # ---- data for the verification script ------------------------------------------------------------------------
 json.dump({'name': NAME, 'key': KEY, 'bpm': BPM, 'BEAT': BEAT, 'BAR': BAR, 'BEAT_MIDI': BEAT_MIDI, 'TOTAL': TOTAL, 'INTRO': INTRO, 'VB': VB, 'NV': NV,
            'END': END, 'N': N, 'sr': sr, 'CUT': CUT, 'LAT': LAT, 'gain': g, 'ceil_db': ceil_db, 'ks': ks, 'alt_db': A.ezgi_alti_db,
-           'max_gr_db': float(-db(gr.min())), 'gr_frac_gt_0p5db': float((gr < 10 ** (-0.5 / 20)).mean()), 'rehber_limited_samples': int((gr_r < 1).sum()),
+           'max_gr_db': float(gr_db.max()), 'gr_frac_gt_0p5db': float((gr_db > 0.5).mean()), 'gr_frac_gt_2db': float((gr_db > 2).mean()),
+           'gr_worst': [(i / sr, float(gr_db[i])) for i in worst],
            'bars': [(list(ch), kind, k, vb) for ch, kind, k, vb in bars], 'mel': mel, 'chn': {str(c): n for c, n in CHN.items()},
            'events': {CHN[c]: sorted(ev.get(c, [])) for c in BAND + ALT},
            'AS': AS, 'LEAD_DO': LEAD_DO, 'ALT_DO': ALT_DO, 'ROOT': ROOT, 'FIFTH': FIFTH, 'CH': CH},
