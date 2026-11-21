@@ -1,0 +1,285 @@
+{
+ "aciklama": "Projedeki sarkilarin enerji gostergeleri. Grup = dosya adindaki uretim niyeti (dinleyici puani degil).",
+ "zaman": "2026-11-21 15:53",
+ "ozet": {
+  "coskulu": {
+   "puan": {
+    "en_az": 66.0,
+    "en_cok": 79.0,
+    "n": 6
+   },
+   "coca_cosku": {
+    "en_az": 0.089,
+    "en_cok": 0.22,
+    "n": 6
+   },
+   "ced_coskulu_eksi_sakin": {
+    "en_az": 0.085,
+    "en_cok": 0.198,
+    "n": 6
+   },
+   "ced_ninni": {
+    "en_az": 0.0,
+    "en_cok": 0.0,
+    "n": 6
+   },
+   "olay_yogunlugu_sn": {
+    "en_az": 4.03,
+    "en_cok": 5.46,
+    "n": 6
+   }
+  },
+  "yavas": {
+   "puan": {
+    "en_az": 52.0,
+    "en_cok": 61.0,
+    "n": 3
+   },
+   "coca_cosku": {
+    "en_az": -0.098,
+    "en_cok": -0.078,
+    "n": 3
+   },
+   "ced_coskulu_eksi_sakin": {
+    "en_az": 0.053,
+    "en_cok": 0.137,
+    "n": 3
+   },
+   "ced_ninni": {
+    "en_az": 0.023,
+    "en_cok": 0.044,
+    "n": 3
+   },
+   "olay_yogunlugu_sn": {
+    "en_az": 3.82,
+    "en_cok": 4.49,
+    "n": 3
+   }
+  },
+  "diger": {
+   "puan": {
+    "en_az": 69.0,
+    "en_cok": 74.0,
+    "n": 5
+   },
+   "coca_cosku": {
+    "en_az": -0.063,
+    "en_cok": 0.179,
+    "n": 5
+   },
+   "ced_coskulu_eksi_sakin": {
+    "en_az": 0.047,
+    "en_cok": 0.166,
+    "n": 5
+   },
+   "ced_ninni": {
+    "en_az": 0.0,
+    "en_cok": 0.027,
+    "n": 5
+   },
+   "olay_yogunlugu_sn": {
+    "en_az": 4.24,
+    "en_cok": 4.93,
+    "n": 5
+   }
+  }
+ },
+ "satirlar": [
+  {
+   "grup": "coskulu",
+   "dosya": "ali-baba/coskulu_1.mp3",
+   "puan": 67.0,
+   "tempo_bpm": 116.0,
+   "olay_yogunlugu_sn": 4.11,
+   "nabiz_netligi": 0.855,
+   "vurmali_armonik_db": -0.47,
+   "spektral_aki_ort": 1.61,
+   "parlaklik_agirlik_merkezi_hz": 2267.0,
+   "ced_coskulu_eksi_sakin": 0.198,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.22
+  },
+  {
+   "grup": "coskulu",
+   "dosya": "ali-baba/coskulu_2.mp3",
+   "puan": 66.0,
+   "tempo_bpm": 116.0,
+   "olay_yogunlugu_sn": 4.62,
+   "nabiz_netligi": 0.761,
+   "vurmali_armonik_db": -4.25,
+   "spektral_aki_ort": 1.585,
+   "parlaklik_agirlik_merkezi_hz": 2097.0,
+   "ced_coskulu_eksi_sakin": 0.141,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.133
+  },
+  {
+   "grup": "coskulu",
+   "dosya": "el-yikama/coskulu_1.mp3",
+   "puan": 72.0,
+   "tempo_bpm": 118.4,
+   "olay_yogunlugu_sn": 4.03,
+   "nabiz_netligi": 0.741,
+   "vurmali_armonik_db": 1.58,
+   "spektral_aki_ort": 1.763,
+   "parlaklik_agirlik_merkezi_hz": 2834.0,
+   "ced_coskulu_eksi_sakin": 0.101,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.099
+  },
+  {
+   "grup": "coskulu",
+   "dosya": "el-yikama/coskulu_2.mp3",
+   "puan": 77.0,
+   "tempo_bpm": 117.8,
+   "olay_yogunlugu_sn": 5.13,
+   "nabiz_netligi": 0.68,
+   "vurmali_armonik_db": -3.33,
+   "spektral_aki_ort": 1.791,
+   "parlaklik_agirlik_merkezi_hz": 2916.0,
+   "ced_coskulu_eksi_sakin": 0.085,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.089
+  },
+  {
+   "grup": "coskulu",
+   "dosya": "parmak-ailesi/coskulu_1.mp3",
+   "puan": 79.0,
+   "tempo_bpm": 112.1,
+   "olay_yogunlugu_sn": 5.46,
+   "nabiz_netligi": 0.771,
+   "vurmali_armonik_db": -1.77,
+   "spektral_aki_ort": 1.94,
+   "parlaklik_agirlik_merkezi_hz": 2290.0,
+   "ced_coskulu_eksi_sakin": 0.198,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.105
+  },
+  {
+   "grup": "coskulu",
+   "dosya": "parmak-ailesi/coskulu_2.mp3",
+   "puan": 79.0,
+   "tempo_bpm": 112.1,
+   "olay_yogunlugu_sn": 5.33,
+   "nabiz_netligi": 0.754,
+   "vurmali_armonik_db": 0.27,
+   "spektral_aki_ort": 1.955,
+   "parlaklik_agirlik_merkezi_hz": 2402.0,
+   "ced_coskulu_eksi_sakin": 0.086,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.172
+  },
+  {
+   "grup": "yavas",
+   "dosya": "parmak-ailesi/yavas_2.mp3",
+   "puan": 52.0,
+   "tempo_bpm": 155.8,
+   "olay_yogunlugu_sn": 3.82,
+   "nabiz_netligi": 0.539,
+   "vurmali_armonik_db": -9.72,
+   "spektral_aki_ort": 1.804,
+   "parlaklik_agirlik_merkezi_hz": 1804.0,
+   "ced_coskulu_eksi_sakin": 0.079,
+   "ced_ninni": 0.044,
+   "coca_cosku": -0.078
+  },
+  {
+   "grup": "yavas",
+   "dosya": "pitirin-ailesi/yavas_1.mp3",
+   "puan": 61.0,
+   "tempo_bpm": 160.1,
+   "olay_yogunlugu_sn": 4.35,
+   "nabiz_netligi": 0.749,
+   "vurmali_armonik_db": -6.68,
+   "spektral_aki_ort": 1.863,
+   "parlaklik_agirlik_merkezi_hz": 1592.0,
+   "ced_coskulu_eksi_sakin": 0.137,
+   "ced_ninni": 0.029,
+   "coca_cosku": -0.098
+  },
+  {
+   "grup": "yavas",
+   "dosya": "pitirin-ailesi/yavas_2.mp3",
+   "puan": 58.0,
+   "tempo_bpm": 160.0,
+   "olay_yogunlugu_sn": 4.49,
+   "nabiz_netligi": 0.684,
+   "vurmali_armonik_db": -9.83,
+   "spektral_aki_ort": 1.612,
+   "parlaklik_agirlik_merkezi_hz": 2145.0,
+   "ced_coskulu_eksi_sakin": 0.053,
+   "ced_ninni": 0.023,
+   "coca_cosku": -0.086
+  },
+  {
+   "grup": "diger",
+   "dosya": "ali-baba/sarki.mp3",
+   "puan": 74.0,
+   "tempo_bpm": 104.9,
+   "olay_yogunlugu_sn": 4.92,
+   "nabiz_netligi": 0.552,
+   "vurmali_armonik_db": -1.06,
+   "spektral_aki_ort": 1.796,
+   "parlaklik_agirlik_merkezi_hz": 2565.0,
+   "ced_coskulu_eksi_sakin": 0.101,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.128
+  },
+  {
+   "grup": "diger",
+   "dosya": "ali-baba/dinle_2.mp3",
+   "puan": 73.0,
+   "tempo_bpm": 116.0,
+   "olay_yogunlugu_sn": 4.24,
+   "nabiz_netligi": 0.825,
+   "vurmali_armonik_db": 0.83,
+   "spektral_aki_ort": 1.857,
+   "parlaklik_agirlik_merkezi_hz": 2684.0,
+   "ced_coskulu_eksi_sakin": 0.142,
+   "ced_ninni": 0.0,
+   "coca_cosku": 0.179
+  },
+  {
+   "grup": "diger",
+   "dosya": "el-yikama/sarki_1.mp3",
+   "puan": 71.0,
+   "tempo_bpm": 160.2,
+   "olay_yogunlugu_sn": 4.93,
+   "nabiz_netligi": 0.667,
+   "vurmali_armonik_db": -5.26,
+   "spektral_aki_ort": 1.753,
+   "parlaklik_agirlik_merkezi_hz": 2539.0,
+   "ced_coskulu_eksi_sakin": 0.143,
+   "ced_ninni": 0.027,
+   "coca_cosku": -0.045
+  },
+  {
+   "grup": "diger",
+   "dosya": "parmak-ailesi/sarki_2.mp3",
+   "puan": 73.0,
+   "tempo_bpm": 100.1,
+   "olay_yogunlugu_sn": 4.54,
+   "nabiz_netligi": 0.748,
+   "vurmali_armonik_db": 0.06,
+   "spektral_aki_ort": 1.973,
+   "parlaklik_agirlik_merkezi_hz": 2124.0,
+   "ced_coskulu_eksi_sakin": 0.047,
+   "ced_ninni": 0.001,
+   "coca_cosku": 0.059
+  },
+  {
+   "grup": "diger",
+   "dosya": "balon-sarkisi/sarki.mp3",
+   "puan": 69.0,
+   "tempo_bpm": 110.5,
+   "olay_yogunlugu_sn": 4.47,
+   "nabiz_netligi": 0.668,
+   "vurmali_armonik_db": -3.96,
+   "spektral_aki_ort": 1.825,
+   "parlaklik_agirlik_merkezi_hz": 2241.0,
+   "ced_coskulu_eksi_sakin": 0.166,
+   "ced_ninni": 0.014,
+   "coca_cosku": -0.063
+  }
+ ]
+}

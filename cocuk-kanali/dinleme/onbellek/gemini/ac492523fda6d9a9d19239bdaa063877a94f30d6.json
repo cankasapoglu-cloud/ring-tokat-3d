@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "DUYDUGUM: Kayıtta Türkçe bir çocuk şarkısı söylenmektedir. Şarkıyı yetişkin bir kadın vokalist seslendirmekte olup altyapıda ukulele ve vurmalı çalgılar duyulmaktadır. Şarkıda hayvan sesleri sorulmasına rağmen arka planda hiçbir hayvan efekti kullanılmamıştır.\nSOZLER: Ali Baba'nın bir çiftliği var Çiftliğinde inekleri var İnekler nasıl bağırır Dinle bak dinle bak Ali Baba'nın bir çiftliği var Çiftliğinde koyunları var Koyunlar nasıl meler Dinle bak dinle bak Ali Baba'nın bir çiftliği var Çiftliğinde bir de atı var Atı nasıl kişner Dinle bak dinle bak Ali Baba'nın bir çiftliği var Çiftliğinde horozları var Horozlar nasıl öter Dinle bak dinle bak Ali Baba'nın bir çiftliği var Çiftliğinde ördekleri var Ördekler nasıl bağırır Dinle bak dinle bak Ali Baba'nın bir çiftliği var Çiftliğinde ördekleri var Köpekler nasıl havlar Dinle bak dinle bak Ali Baba'nın bir çiftliği var Çiftliğinde bir kedisi var Kedisi nasıl miyavlar Dinle bak dinle bak Dinle bak dinle bak Dinle bak dinle bak\nSES: doğal insan sesi | Vokalist herhangi bir efekt uygulanmamış berrak ve doğal bir kadın sesiyle şarkıyı söylemektedir.\nAKORT: müzikle uyumlu | Vokalistin detone olduğu bir bölüm bulunmamakta, akort altyapıyla uyum sergilemektedir.\nRITIM: ritme oturuyor | Vokalist arka plandaki ukulele ve tempo vuruşlarına tam zamanlamayla eşlik etmektedir.\nENERJI: canlı | Şarkının temposu ve vokal sunumu neşeli, dinamik ve canlı bir yapıya sahiptir.\nTELAFFUZ: doğal Türkçe | Sözcükler son derece net, düzgün ve ana dili Türkçe olan bir konuşmacının doğallığıyla telaffuz edilmektedir.\nSARKI_MI: ezgiyle söylüyor | Vokalist şarkı boyunca melodiyi tam tonlarıyla ezgisel olarak seslendirmektedir.\nDENGE: dengeli | Vokal ile arkadaki enstrüman altyapısının ses düzeyi birbiriyle uyumlu ve dengelidir.\nTUHAF: 01:16 - köpekler kıtasında yanlışlıkla \"çiftliğinde ördekleri var\" denmesi\nOZET: Kaydın en belirgin kusuru, 01:16'da köpekler kıtası söylenirken yanlışlıkla \"ördekleri var\" denilerek söz hatası yapılmasıdır.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "dinle_2.mp3"
+ ],
+ "bas": null,
+ "sure": 110.12,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 15:56:34"
+}

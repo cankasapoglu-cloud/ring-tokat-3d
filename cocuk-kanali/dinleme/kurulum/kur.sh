@@ -1,8 +1,7 @@
 #!/bin/bash
 # dinleme/kurulum/kur.sh : "Claude'un kulak yerine kullandigi" olcum araclarini SIFIR bir konteynere yeniden kurar.
 #
-#   bash cocuk-kanali/dinleme/kurulum/kur.sh          # temel takim (yaklasik 1,3 GB agirlik, 2-5 dakika)
-#   bash cocuk-kanali/dinleme/kurulum/kur.sh --tam    # + yerel Whisper (564 MB) ve SingMOS-Pro (1,27 GB)
+#   bash cocuk-kanali/dinleme/kurulum/kur.sh          # yaklasik 1,3 GB agirlik indirir, 2-5 dakika
 #
 # Kurallar:
 #  - Sistemde ZATEN kurulu olan hicbir paketin surumunu degistirmez: once "pip freeze" ile kisit dosyasi
@@ -12,9 +11,8 @@
 #  - Agirliklar depoya yazilmaz: $DINLEME_MODELLER (varsayilan ~/.cache/dinleme/modeller).
 #  - Yeniden calistirmak zararsizdir (var olan dosyayi yeniden indirmez).
 set -u
-TAM=0; [ "${1:-}" = "--tam" ] && TAM=1
 M="${DINLEME_MODELLER:-$HOME/.cache/dinleme/modeller}"
-ESKI=/tmp/dinleme-a2/modeller          # arastirma asamasinda indirilenler (varsa oradan kopyalanir, yoksa indirilir)
+ESKI="${DINLEME_ESKI:-/tmp/dinleme-a2/modeller}"   # arastirma asamasinda indirilenler (varsa oradan kopyalanir, yoksa indirilir)
 KISIT="$(mktemp /tmp/dinleme-kisit.XXXXXX)"
 mkdir -p "$M"
 hata=0
@@ -26,16 +24,12 @@ pip install --quiet -c "$KISIT" \
     ai-edge-litert==2.4.0 sentencepiece==0.2.3 essentia==2.1b6.dev1389 pyloudnorm 2>&1 | grep -v "WARNING: Running pip as the 'root'" || true
 # Distill-MOS: agirliklari tekerin icinde; "transformers" bagimliligi gerekmez, o yuzden --no-deps
 pip install --quiet --no-deps -c "$KISIT" distillmos==0.9.1 xls-r-sqa==0.1.0 2>&1 | grep -v "WARNING: Running pip as the 'root'" || true
-[ $TAM = 1 ] && { pip install --quiet --no-deps -c "$KISIT" s3prl==0.4.18 2>&1 | grep -v "WARNING: Running pip" || true; }
 
 echo "== 2/4 kaynak kodu (torch.hub burada calismaz: codeload.github.com 403 verir, o yuzden git clone)"
 if [ ! -d "$M/repolar/SpeechMOS/speechmos" ]; then
   mkdir -p "$M/repolar"
   git clone --quiet https://github.com/tarepan/SpeechMOS.git "$M/repolar/SpeechMOS" \
     && git -C "$M/repolar/SpeechMOS" checkout --quiet ed25eacbfa42b99156c36ebec67a733b5dbb9b79 || { echo "HATA SpeechMOS deposu"; hata=1; }
-fi
-if [ $TAM = 1 ] && [ ! -d "$M/repolar/SingMOS/singmos" ]; then
-  git clone --quiet --depth 1 --branch v1.1.2 https://github.com/South-Twilight/SingMOS.git "$M/repolar/SingMOS" || { echo "HATA SingMOS deposu"; hata=1; }
 fi
 
 echo "== 3/4 model agirliklari -> $M"
@@ -58,14 +52,13 @@ dl $G/tarepan/SpeechMOS/releases/download/v1.0.0/utmos22_strong_step7459_v1.pt "
 for f in audio_preprocessor.tflite music_encoder.tflite text_encoder.tflite spm.model; do
   dl https://storage.googleapis.com/magenta-rt-public/magenta-rt-2/resources/musiccoca/$f "$M/musiccoca/$f" "$ESKI/musiccoca/$f"
 done
-if [ $TAM = 1 ]; then
-  # yerel Whisper turbo (ONNX, 564 MB): kredisiz, sinirsiz ama sarkida gurultulu doküm
-  dl $G/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-turbo.tar.bz2 "$M/whisper/turbo.tar.bz2"
-  [ -s "$M/whisper/sherpa-onnx-whisper-turbo/turbo-tokens.txt" ] || tar xjf "$M/whisper/turbo.tar.bz2" -C "$M/whisper" || hata=1
-  # SingMOS-Pro (1,27 GB): sarki sesi icin "dogallik" tahmini (kaba alarm)
-  dl $G/South-Twilight/SingMOS/releases/download/ckpt_v3/ft_wav2vec2_large_ll60k_mdf_p1_200epochs_all_192epochs.pth \
-     "$M/singmos/ft_wav2vec2_large_ll60k_mdf_p1_200epochs_all_192epochs.pth" "$ESKI/singmos/ft_wav2vec2_large_ll60k_mdf_p1_200epochs_all_192epochs.pth"
-fi
+# Vokal/altyapi ayirma modeli (audio-separator; 67 MB). Yoksa github.com/TRvlvr/model_repo surumlerinden iner.
+AS="${AUDIO_SEPARATOR_MODEL_DIR:-/tmp/audio-separator-models}"
+if [ -s "$AS/UVR-MDX-NET-Voc_FT.onnx" ]; then echo "  var   $AS/UVR-MDX-NET-Voc_FT.onnx"
+elif command -v audio-separator >/dev/null; then
+  audio-separator --download_model_only -m UVR-MDX-NET-Voc_FT.onnx --log_level warning >/dev/null 2>&1 \
+    && echo "  indi  $AS/UVR-MDX-NET-Voc_FT.onnx" || { echo "  HATA  UVR-MDX-NET-Voc_FT.onnx indirilemedi (--ayir calismaz)"; hata=1; }
+else echo "  HATA  audio-separator kurulu degil: pip install audio-separator (--ayir icin gerekli)"; hata=1; fi
 
 echo "== 4/4 denetim (eski paketler bozulmadi mi, yeniler aciliyor mu)"
 python3 - <<'EOF' || hata=1

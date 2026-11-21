@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "DUYDUGUM: Türkçe olan bu kayıtta bir kadın vokal şarkı söylemektedir. Arka planda neşeli ve tempolu enstrümantal müzik ile inek ve koyun sesi efektleri duyulmaktadır.\nSOZLER: Ali Babanın bir çiftliği var Çiftliğinde inekleri var Möö möö diye bağırır Çiftliğinde Ali Babanın Ali Babanın bir çiftliği var Çiftliğinde koyunları var Mee mee diye bağırır Çiftliğinde Ali Babanın Ali Babanın bir çiftliği va-\nSES: doğal insan sesi | Şarkıyı söyleyen kadın vokal tamamen doğal bir insan sesine sahiptir.\nAKORT: müzikle uyumlu | Vokal melodiye tam uyum sağlamakta ve detone olmamaktadır.\nRITIM: ritme oturuyor | Şarkı boyunca müzikli altyapının temposuna başarıyla uyulmaktadır.\nENERJI: canlı | Çocuk şarkısına uygun şekilde hareketli, neşeli ve canlı bir anlatım vardır.\nTELAFFUZ: doğal Türkçe | Sözcükler net, açık ve doğal bir Türkçe aksanıyla telaffuz edilmektedir.\nSARKI_MI: ezgiyle söylüyor | Vokalist şarkının melodisini takip ederek belirgin bir ezgiyle söylemektedir.\nDENGE: dengeli | Vokal sesi, arka plandaki enstrümanlar ve hayvan efekti sesleriyle uyumlu bir dengededir.\nTUHAF: 00:47 - Şarkı son cümlesini tamamlayamadan aniden kesilmektedir.\nOZET: Kaydın en belirgin kusuru, şarkının son kelimesini tamamlayamadan 00:47'de aniden kesilmesidir.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "ali-baba-ilk-ses-onizleme.mp3"
+ ],
+ "bas": null,
+ "sure": 48.0,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 15:58:43"
+}

@@ -1,0 +1,32 @@
+{
+ "aciklama": "ElevenLabs Scribe cagri defteri. Kredi tahmini: sure_sn / 60 * 330. Bu calismanin siniri 8000 kredi.",
+ "kayitlar": [
+  {
+   "zaman": "2026-11-21 14:38:00",
+   "dosya": "ornek_alibaba_hayvanli_15-45s.mp3",
+   "ozet": "a6643be48ec3fa60",
+   "model": "scribe_v1",
+   "sure_sn": 30.04,
+   "tahmini_kredi": 165.2,
+   "not": "arastirma-1 asamasinda yapilan tek cagri"
+  },
+  {
+   "zaman": "2026-11-21 15:40:57",
+   "dosya": "dinle_2.mp3",
+   "ozet": "25bfd4984538765b",
+   "model": "scribe_v1",
+   "sure_sn": 110.12,
+   "tahmini_kredi": 605.7
+  },
+  {
+   "zaman": "2026-11-21 15:51:03",
+   "dosya": "ornek_kita1.mp3",
+   "ozet": "7f885c4a83b674dc",
+   "model": "scribe_v1",
+   "sure_sn": 27.3,
+   "tahmini_kredi": 150.2
+  }
+ ],
+ "toplam_tahmini_kredi": 921.1,
+ "sinir": 8000
+}

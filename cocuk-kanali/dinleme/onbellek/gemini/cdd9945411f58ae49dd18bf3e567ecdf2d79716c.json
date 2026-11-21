@@ -1,0 +1,13 @@
+{
+ "tamam": true,
+ "yanit": "1. **B** - B'deki vokal gerçek bir çocuğun doğal ses tonunu taşırken, A'daki ses son derece yapay ve robotiktir.\n2. **B** - B'de şarkıcı müziğin melodisine ve tonuna tam uyum sağlarken, A'daki vokal tonlamaları dijital ve müzikle uyumsuzdur.\n3. **B** - B'deki vokal vurguları ve zamanlama müziğin ritmiyle doğal bir akış içindeyken, A'da mekanik ve duraksamalıdır.\n4. **B** - B'deki çocuk sesi duygusu, neşesi ve \"dinle bak\" eklemeleriyle çok daha coşkulu ve enerjiktir.\n5. **B** - B'deki telaffuz ve Türkçe vurguları doğal bir şarkı söyleme akışına sahipken, A'da kelimeler yapay ve sentetik duyulmaktadır.\n6. **B** - B sevimli ve doğal anlatımıyla çok daha başarılı bir çocuk şarkısıdır; A'daki en belirgin kusur 0:10. saniyede vokalin başlamasıyla belirginleşen robotik ve mekanik ses tınısıdır.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "yeni45.mp3",
+  "eski41.mp3"
+ ],
+ "bas": null,
+ "sure": null,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 15:59:51"
+}

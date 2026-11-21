@@ -5,7 +5,8 @@ For every 5 ms frame of the separated vocal that is (a) voiced, (b) loud enough 
 syllable of kesim.json (the sung animal sounds and the excised extra nucleus of verse 3 "atlari" are not kept),
 store: verse, line, source time, pitch (MIDI, pyworld harvest), the dio/stonemask pitch (cross-check), and its
 position in the NEW song form (beats from the downbeat of the verse; the placement shift of its piece from
-kesim.json is applied, nothing is time-stretched).
+kesim.json is applied, nothing is time-stretched), and the NOTE it belongs to (kesim.json syllable.notes: the stable
+note plateaus partition each syllable in time, so every voiced frame, glides included, belongs to exactly one note).
 
 Pitch tracker and gate are the ones of yeni4/analiz/kesim/kod (ozellik.py, zarf.py, perde.py), re-implemented here
 so that nothing is written outside this folder:
@@ -77,10 +78,14 @@ for v, V in enumerate(K["verses"]):
                 hist_check[ln][int(round(midi_h[k])) % 12] += FP
             # frames that survive the cut of the piece (inside cut_in .. cut_out)
             inside = (th[idx] >= P["cut_in"]) & (th[idx] < P["cut_out"])
+            nts = S["notes"]
+            assert abs(nts[0]["start"] - S["start"]) < 1e-6 and abs(nts[-1]["end"] - S["end"]) < 1e-6, "notes do not partition the syllable"
             for k in idx[g & inside]:
                 pos = (th[k] + shift - verse_bar0) / BEAT              # beats from the verse downbeat (new form)
+                nm_ = [N["midi"] for N in nts if N["start"] - 1e-9 <= th[k] < N["end"] + 1e-9]
+                assert len(nm_) >= 1, (v, ln, S["text"], th[k])
                 rows.append((v, LINES.index(ln), si, th[k], th[k] + shift, pos, midi_h[k],
-                             midi_d[k] if np.isfinite(midi_d[k]) else -1.0))
+                             midi_d[k] if np.isfinite(midi_d[k]) else -1.0, nm_[0]))
             for N in S["notes"]:
                 syl_rows.append((v, LINES.index(ln), si, N["start"], N["end"], N["midi"],
                                  (N["start"] + shift - verse_bar0) / BEAT, (N["end"] + shift - verse_bar0) / BEAT,
@@ -89,7 +94,7 @@ for v, V in enumerate(K["verses"]):
 rows = np.array(rows); syl_rows = np.array(syl_rows)
 np.savez_compressed(KARELER, verse=rows[:, 0].astype(int), line=rows[:, 1].astype(int), syl=rows[:, 2].astype(int),
                     t_src=rows[:, 3], t_new=rows[:, 4], pos=rows[:, 5], midi=rows[:, 6], midi_dio=rows[:, 7],
-                    notes=syl_rows, sung_rms_dbfs=SUNG)
+                    note_midi=rows[:, 8], notes=syl_rows, sung_rms_dbfs=SUNG)
 
 # ---- checks -------------------------------------------------------------------------------------------------
 ref = K["notes_table"]["pitch_class_histogram_all_voiced_frames"]
@@ -107,6 +112,10 @@ for li, ln in enumerate(LINES):
     m = rows[:, 1] == li
     b0 = LINE_BAR[ln] * 4
     print("  %-4s %.2f s; position in its bar: %.2f .. %.2f beats" % (ln, m.sum() * FP, rows[m, 5].min() - b0, rows[m, 5].max() - b0))
+pcf = np.round(rows[:, 6]).astype(int) % 12; pcn = np.round(rows[:, 8]).astype(int) % 12
+print("pitch-class shares, per-frame rounding :", " ".join("%s %.1f%%" % (NOTE[i], 100 * np.mean(pcf == i)) for i in range(12) if np.mean(pcf == i) > 0.0005))
+print("pitch-class shares, note of the frame  :", " ".join("%s %.1f%%" % (NOTE[i], 100 * np.mean(pcn == i)) for i in range(12) if np.mean(pcn == i) > 0.0005))
+print("frames whose own pitch rounds to the pitch class of their note: %.1f %%" % (100 * np.mean(pcf == pcn)))
 dd = rows[:, 7] > 0
 print("dio/stonemask agrees within 0.5 semitone on %.1f %% of the frames where both are voiced (%.1f %% of all frames)"
       % (100 * np.mean(np.abs(rows[dd, 6] - rows[dd, 7]) < 0.5), 100 * dd.mean()))

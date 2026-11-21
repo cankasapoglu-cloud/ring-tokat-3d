@@ -1,0 +1,168 @@
+== 1) DOSYA BICIMI ==
+  [GECTI] mono, 44.1 kHz, PCM_24 -- 1 kanal, 44100 Hz, PCM_24
+  [GECTI] uzunluk = 0.100 + 64 olcu + 2.5 s -- 6565860 ornek = 148.885714 s (beklenen 6565860)
+  [GECTI] tepe -3 dBFS (tek genel kazanc) -- tepe -3.0000 dBFS, genel kazanc +0.8692 dB
+== 2) 7 x 3 PARCA, SIRA, ORTUSME ==
+  [GECTI] 21 parca (7 kita x 3)
+  [GECTI] hedef olculer: P1 -> kita olcusu 0, P2 -> 2, P3 -> 5 (kita v = olcu 4 + 8 v) -- [4, 6, 9, 12, 14, 17, 20, 22, 25, 28, 30, 33, 36, 38, 41, 44, 46, 49, 52, 54, 57]
+  [GECTI] olcu cizgileri: t(n) = 0.100 + n * 2.285714 s
+  [GECTI] parcalar zaman sirasinda, ORTUSME YOK -- 22 alt parca; en dar aralik 197.3 ms (3. kita onarim boslugu), sonraki en dar 2.035 s
+  [GECTI] WAV'daki sesli kosular = yerlesim.json'daki alt parcalar (sinirlar parcanin icinde, en cok 1 ms) -- 22 kosu (5 ms'den uzun sifir araliklariyla ayrilmis); sinir farki en cok 15 ornek (gecisin ilk/son ornekleri 24 bitte tam sifira yuvarlanir)
+  [GECTI] parcalarin disinda TAM dijital sessizlik -- parca disi ornek 4075516, sifir olmayan 0
+== 3) PERDE / SURE ISLEMI YOK: her alt parca = kaynak x gecis penceresi x genel kazanc ==
+  [GECTI] butun alt parcalar kaynakla ornek-ornek ayni -- en buyuk fark 1.19e-07 (= 1.00 x 24-bit adimi); ic bolgelerde en dusuk ilinti 1.000000000
+  [GECTI] capraz ilinti gecikmesi her alt parcanin iki yarisinda da 0 ornek -- olculen gecikmeler: [0]
+== 4) YERLESIM: hedef = hedef_olcu_basi + (kaynak - kaynak_olcu_basi) ==
+  [GECTI] butun parcalar olcu cizgisine gore yerinde (tam sayili ornek yuvarlamasi) -- en buyuk sapma 0.0106 ms (yarim ornek = 0.0113 ms)
+== 5) KESIM KENARLARI (her alt parcanin iki ucu) ==
+  kenar                     | kaynak 5 ms RMS (gecissiz) | ciktida en distaki 2 ms / 1 ms (parca RMS'ine gore) | ilk-son ornek | >6 kHz enerji: cikti - kaynak
+  K1_P1                      giris gecis 24.0 ms |  -47.1 dBFS |  -70.7 dB /  -81.3 dB |  -240.0 dBFS |  -4.0 dB 
+  K1_P1                      cikis gecis 30.0 ms |  -39.4 dBFS |  -69.1 dB /  -75.5 dB |  -240.0 dBFS |  -7.2 dB 
+  K1_P2                      giris gecis 12.0 ms |  -39.9 dBFS |  -49.8 dB /  -62.6 dB |  -138.5 dBFS |  -0.8 dB 
+  K1_P2                      cikis gecis 30.0 ms |  -21.2 dBFS |  -47.2 dB /  -63.8 dB |  -138.5 dBFS |  -3.0 dB 
+  K1_P3                      giris gecis 15.0 ms |  -37.4 dBFS |  -55.8 dB /  -66.6 dB |  -240.0 dBFS |  -1.1 dB 
+  K1_P3                      cikis gecis 60.0 ms |  -47.4 dBFS |  -87.9 dB / -104.2 dB |  -240.0 dBFS |  -0.6 dB 
+  K2_P1                      giris gecis 30.0 ms |  -56.9 dBFS |  -81.6 dB /  -98.2 dB |  -240.0 dBFS |  -1.5 dB 
+  K2_P1                      cikis gecis 30.0 ms |  -38.1 dBFS |  -67.4 dB /  -81.7 dB |  -240.0 dBFS |  -2.7 dB 
+  K2_P2                      giris gecis 12.0 ms |  -36.5 dBFS |  -49.6 dB /  -58.5 dB |  -138.5 dBFS |  -0.4 dB 
+  K2_P2                      cikis gecis 30.0 ms |  -20.8 dBFS |  -44.3 dB /  -61.9 dB |  -138.5 dBFS |  -1.7 dB 
+  K2_P3                      giris gecis 15.0 ms |  -32.6 dBFS |  -45.6 dB /  -60.2 dB |  -240.0 dBFS |  -3.7 dB 
+  K2_P3                      cikis gecis 46.0 ms |  -46.9 dBFS |  -77.3 dB /  -94.3 dB |  -240.0 dBFS |  -4.8 dB 
+  K3_P1                      giris gecis 30.0 ms |  -50.4 dBFS |  -77.5 dB /  -85.0 dB |  -240.0 dBFS |  -2.2 dB 
+  K3_P1                      cikis gecis 30.0 ms |  -38.4 dBFS |  -63.6 dB /  -73.5 dB |  -138.5 dBFS |  -3.0 dB 
+  K3_P2_a(ciftliginde at)    giris gecis 12.0 ms |  -37.4 dBFS |  -49.3 dB /  -57.2 dB |  -138.5 dBFS |  -0.4 dB 
+  K3_P2_a(ciftliginde at)    cikis gecis 15.0 ms |  -39.8 dBFS |  -53.6 dB /  -66.8 dB |  -240.0 dBFS |  -1.2 dB 
+  K3_P2_b(lari var)          giris gecis 30.0 ms |  -21.0 dBFS |  -49.0 dB /  -60.1 dB |  -240.0 dBFS |  -4.9 dB 
+  K3_P2_b(lari var)          cikis gecis 30.0 ms |  -24.4 dBFS |  -48.4 dB /  -67.9 dB |  -240.0 dBFS |  -3.4 dB 
+  K3_P3                      giris gecis 15.0 ms |  -36.4 dBFS |  -53.9 dB /  -59.4 dB |  -138.5 dBFS |  -0.7 dB 
+  K3_P3                      cikis gecis 36.0 ms |  -49.2 dBFS |  -75.0 dB /  -87.2 dB |  -138.5 dBFS |  -5.4 dB 
+  K4_P1                      giris gecis 30.0 ms |  -65.2 dBFS |  -95.7 dB / -101.0 dB |  -240.0 dBFS |  -1.6 dB 
+  K4_P1                      cikis gecis 30.0 ms |  -40.1 dBFS |  -65.7 dB /  -81.8 dB |  -138.5 dBFS |  -1.8 dB 
+  K4_P2                      giris gecis 12.0 ms |  -39.8 dBFS |  -50.0 dB /  -62.3 dB |  -138.5 dBFS |  -0.6 dB 
+  K4_P2                      cikis gecis 30.0 ms |  -34.8 dBFS |  -65.7 dB /  -79.2 dB |  -138.5 dBFS |  -0.6 dB 
+  K4_P3                      giris gecis 13.0 ms |  -46.6 dBFS |  -57.4 dB /  -68.9 dB |  -138.5 dBFS |  -1.0 dB 
+  K4_P3                      cikis gecis 60.0 ms |  -52.6 dBFS |  -93.0 dB / -100.2 dB |  -240.0 dBFS |  -3.3 dB 
+  K5_P1                      giris gecis 30.0 ms |  -67.0 dBFS |  -95.7 dB / -107.5 dB |  -240.0 dBFS |  -2.2 dB 
+  K5_P1                      cikis gecis 29.0 ms |  -41.2 dBFS |  -70.0 dB /  -82.4 dB |  -138.5 dBFS |  -4.1 dB 
+  K5_P2                      giris gecis 12.0 ms |  -41.2 dBFS |  -51.9 dB /  -60.5 dB |  -138.5 dBFS |  -0.8 dB 
+  K5_P2                      cikis gecis 30.0 ms |  -40.3 dBFS |  -72.4 dB /  -77.6 dB |  -138.5 dBFS |  -1.5 dB 
+  K5_P3                      giris gecis 15.0 ms |  -45.8 dBFS |  -59.5 dB /  -71.4 dB |  -240.0 dBFS |  -0.9 dB 
+  K5_P3                      cikis gecis 60.0 ms |  -44.0 dBFS |  -85.4 dB /  -91.8 dB |  -240.0 dBFS |  -3.3 dB 
+  K6_P1                      giris gecis 30.0 ms |  -53.2 dBFS |  -80.9 dB /  -96.0 dB |  -240.0 dBFS |  -2.7 dB 
+  K6_P1                      cikis gecis 30.0 ms |  -32.9 dBFS |  -61.4 dB /  -71.6 dB |  -240.0 dBFS |  -1.6 dB 
+  K6_P2                      giris gecis 12.0 ms |  -32.8 dBFS |  -40.6 dB /  -61.8 dB |  -240.0 dBFS |  -0.5 dB 
+  K6_P2                      cikis gecis 30.0 ms |  -24.8 dBFS |  -53.2 dB /  -68.1 dB |  -138.5 dBFS |  -1.7 dB 
+  K6_P3                      giris gecis 15.0 ms |  -42.0 dBFS |  -57.2 dB /  -68.9 dB |  -240.0 dBFS |  -3.1 dB 
+  K6_P3                      cikis gecis 60.0 ms |  -45.7 dBFS |  -85.1 dB / -104.5 dB |  -240.0 dBFS |  -2.4 dB 
+  K7_P1                      giris gecis 30.0 ms |  -59.6 dBFS |  -90.6 dB / -104.4 dB |  -240.0 dBFS |  -2.9 dB 
+  K7_P1                      cikis gecis 30.0 ms |  -37.2 dBFS |  -67.7 dB /  -80.2 dB |  -138.5 dBFS |  -3.0 dB 
+  K7_P2                      giris gecis 12.0 ms |  -35.7 dBFS |  -49.5 dB /  -59.4 dB |  -240.0 dBFS |  -0.6 dB 
+  K7_P2                      cikis gecis 30.0 ms |  -20.4 dBFS |  -50.2 dB /  -64.9 dB |  -138.5 dBFS |  -1.6 dB 
+  K7_P3                      giris gecis 15.0 ms |  -36.8 dBFS |  -53.0 dB /  -63.1 dB |  -138.5 dBFS |  -1.2 dB 
+  K7_P3                      cikis gecis 60.0 ms |  -50.8 dBFS |  -92.1 dB / -100.5 dB |  -138.5 dBFS |  -2.0 dB 
+  [GECTI] her kesim kenarinda enerji parca RMS'inin en az 40 dB altinda (en distaki 2 ms) ya da gurultu tabaninda -- 44 kenar; en kotusu -40.6 dB (2 ms), 1 ms penceresiyle en kotusu -57.2 dB
+  [GECTI] gecisler tiklama uretmiyor (gecis penceresi +-5 ms'de >6 kHz enerji ciktida kaynaktakinden fazla degil) -- en buyuk fark -0.40 dB
+  not: L2 sonlarinda kaynak, kesim aninda YUKSEK duzeydedir ([-21.2, -20.8, -24.4, -34.8, -40.3, -24.8, -20.4] dBFS): 'var' soylenen hayvan sesine araliksiz baglanir; kenar enerjisi gecisle sifira iner.
+== 6) L2 SONU: soylenen hayvan sesi TAMAMEN gitti mi ==
+  kita | kesimden sonraki 300 ms (cikti) | 'diye'ye kadar sessizlik | kaynakta ayni 300 ms | bagimsiz F2 dususu - var_end (en dik dusus) | bagimsiz hayvan sesi baslangici - kesim | kesimden once kalan hayvan sesi (bagimsiz olcute gore) | 'var' kaybi | 'var' suresi L2 (yari genlik) / L1 | -3 -> -15 dB dusus L2 (kesilmis) / L1 (dogal)
+  K1 (nasal) | TAM SIFIR (0 ornek) | 5.763 s, sifir olmayan 0 | -18.7 dBFS (taban + 45 dB) | -1.9 ms (+2.7 ms) | -1.9 ms | 1.9 ms, 10 ms'ye esdeger -73.5 dBFS = var RMS -56.2 dB, tepe -58.5 dBFS | -0.20 dB | 247 / 227 ms | 11.4 / 27.3 ms
+  K2 (nasal) | TAM SIFIR (0 ornek) | 5.787 s, sifir olmayan 0 | -19.0 dBFS (taban + 45 dB) | -2.0 ms (+5.6 ms) | -2.0 ms | 2.0 ms, 10 ms'ye esdeger -70.0 dBFS = var RMS -53.2 dB, tepe -55.1 dBFS | -0.24 dB | 203 / 237 ms | 27.5 / 19.5 ms
+  K3 (nasal) | TAM SIFIR (0 ornek) | 5.771 s, sifir olmayan 0 | -20.8 dBFS (taban + 43 dB) | -3.5 ms (-5.7 ms) | -3.5 ms | 3.5 ms, 10 ms'ye esdeger -64.7 dBFS = var RMS -45.6 dB, tepe -50.2 dBFS | -0.17 dB | 227 / 239 ms | 14.0 / 25.1 ms
+  K4 (pause) | TAM SIFIR (0 ornek) | 5.742 s, sifir olmayan 0 | -22.7 dBFS (taban + 41 dB) | -2.4 ms (-1.9 ms) | +2.2 ms (aradaki cukur -39.8 dBFS) | 0.0 ms | -0.00 dB | 250 / 230 ms | 7.7 / 16.2 ms
+  K5 (pause) | TAM SIFIR (0 ornek) | 5.702 s, sifir olmayan 0 | -18.1 dBFS (taban + 46 dB) | -1.3 ms (+23.0 ms) | +12.0 ms (aradaki cukur -41.1 dBFS) | 0.0 ms | -0.00 dB | 247 / 239 ms | 45.0 / 17.2 ms
+  K6 (frica) | TAM SIFIR (0 ornek) | 5.737 s, sifir olmayan 0 | -18.1 dBFS (taban + 46 dB) | -2.0 ms (-1.7 ms) | -2.0 ms | 2.0 ms, 10 ms'ye esdeger -78.9 dBFS = var RMS -61.5 dB, tepe -62.5 dBFS | -0.19 dB | 219 / 206 ms | 16.8 / 23.2 ms
+  K7 (nasal) | TAM SIFIR (0 ornek) | 5.791 s, sifir olmayan 0 | -18.4 dBFS (taban + 45 dB) | -2.1 ms (-28.2 ms) | -2.1 ms | 2.1 ms, 10 ms'ye esdeger -75.3 dBFS = var RMS -58.6 dB, tepe -61.2 dBFS | -0.16 dB | 235 / 210 ms | 14.0 / 15.5 ms
+  [GECTI] her L2 kesiminden sonraki 300 ms TAM dijital sessizlik (gurultu tabaninin da altinda) -- kaynakta ayni 300 ms: [-18.7, -19.0, -20.8, -22.7, -18.1, -18.1, -18.4] dBFS; stem gurultu tabani -63.8 dBFS
+  [GECTI] L2 kesiminden 'diye' girisine kadar hic ses yok (soylenen hayvan sesi tamamen cikarildi) -- sessizlik [5.7629, 5.787, 5.7709, 5.7421, 5.7017, 5.737, 5.7907] s
+  [GECTI] kesimden ONCE kalan olasi hayvan sesi artigi (bagimsiz baslangic olcutune gore) 'var' RMS'inin en az 40 dB altinda -- en kotusu -45.6 dB (10 ms'ye esdeger RMS); bagimsiz hayvan sesi baslangici - kesim: [-1.9, -2.0, -3.5, 2.2, 12.0, -2.0, -2.1] ms (eksi = kesimden once)
+  [GECTI] segmentasyonun var_end'i bagimsiz F2 olcutuyle tutarli (+-5 ms) -- bagimsiz - var_end: [-1.9, -2.0, -3.5, -2.4, -1.3, -2.0, -2.1] ms
+  [GECTI] 'var' duyulur bicimde kisalmadi: enerji kaybi 0.5 dB'den az -- kayip [-0.2, -0.24, -0.17, -0.0, -0.0, -0.19, -0.16] dB
+  [GECTI] kesilmis L2 'var' (yari genlik noktasina kadar) bu sarkicinin en kisa dogal L1 'var,'indan kisa degil (5 ms pay) -- L2 [247.2, 203.2, 227.3, 250.1, 246.6, 219.3, 235.4] ms; dogal L1 [227.5, 237.5, 239.5, 229.5, 239.4, 205.5, 209.5] ms (en kisa 206)
+  bilgi: kesilmis 5 L2 sonunda -3 -> -15 dB dusus [11.4, 27.5, 14.0, 16.8, 14.0] ms; bu sarkicinin DOGAL kelime sonlari (7 x L1 'var,' + aralikli K4, K5 L2) [27.3, 19.5, 25.1, 16.2, 17.2, 23.2, 15.5, 7.7, 45.0] ms (aralik 7.7 - 45.0)
+  [GECTI] kesilmis L2 sonlarinin dusus hizi sarkicinin kendi dogal kelime sonlarinin araliginda -- kesilmis 11.4 - 27.5 ms (medyan 14.0); dogal 7.7 - 45.0 ms (medyan 19.5)
+== 6b) 'DIYE' GIRISI: soylenen hayvan sesinin sonundan bir sey kaldi mi ==
+  K1 kesim 14.2745 (hayvan sesi sonundan +40.8 ms sonra), gecis 15.0 ms | pencere ici ham -35.9 dBFS, gecisle -39.1 dBFS (soylenen RMS -20.2 dB) | 'diye' basindan once giren: 10 ms'ye esdeger -35.1 dBFS (-16.2 dB) | atilan hayvan sesinin son 100 ms'si -16.5 dBFS
+  K2 kesim 27.9953 (hayvan sesi sonundan +42.8 ms sonra), gecis 15.0 ms | pencere ici ham -32.5 dBFS, gecisle -37.4 dBFS (soylenen RMS -18.5 dB) | 'diye' basindan once giren: 10 ms'ye esdeger -33.4 dBFS (-14.5 dB) | atilan hayvan sesinin son 100 ms'si -18.9 dBFS
+  K3 kesim 41.7082 (hayvan sesi sonundan +18.9 ms sonra), gecis 15.0 ms | pencere ici ham -37.9 dBFS, gecisle -41.2 dBFS (soylenen RMS -22.3 dB) | 'diye' basindan once giren: 10 ms'ye esdeger -37.7 dBFS (-18.8 dB) | atilan hayvan sesinin son 100 ms'si -21.5 dBFS
+  K4 kesim 55.4250 (hayvan sesi sonundan +7.0 ms sonra), gecis 13.0 ms | pencere ici ham -41.9 dBFS, gecisle -45.9 dBFS (soylenen RMS -27.0 dB) | 'diye' basindan once giren: 10 ms'ye esdeger -42.6 dBFS (-23.7 dB) | atilan hayvan sesinin son 100 ms'si -19.3 dBFS
+  K5 kesim 69.1019 (hayvan sesi sonundan +28.9 ms sonra), gecis 15.0 ms | pencere ici ham -45.6 dBFS, gecisle -50.1 dBFS (soylenen RMS -31.2 dB) | 'diye' basindan once giren: 10 ms'ye esdeger -47.4 dBFS (-28.5 dB) | atilan hayvan sesinin son 100 ms'si -20.9 dBFS
+  K6 kesim 82.8048 (hayvan sesi sonundan +38.9 ms sonra), gecis 15.0 ms | pencere ici ham -39.1 dBFS, gecisle -42.5 dBFS (soylenen RMS -23.6 dB) | 'diye' basindan once giren: 10 ms'ye esdeger -38.8 dBFS (-19.8 dB) | atilan hayvan sesinin son 100 ms'si -20.7 dBFS
+  K7 kesim 96.5735 (hayvan sesi sonundan +84.8 ms sonra), gecis 15.0 ms | pencere ici ham -34.7 dBFS, gecisle -37.3 dBFS (soylenen RMS -18.3 dB) | 'diye' basindan once giren: 10 ms'ye esdeger -33.8 dBFS (-14.9 dB) | atilan hayvan sesinin son 100 ms'si -19.7 dBFS
+  [GECTI] 'diye' kesimi soylenen hayvan sesinin bitisinden SONRA -- kesim - hayvan sesi sonu: [40.8, 42.8, 18.9, 7.0, 28.9, 38.9, 84.8] ms
+  [GECTI] 'diye'den once giren artik, bu stemin dize ICINDEKI siradan durak kapanislarindan yuksek degil (ust ceyrek -32.8 dBFS) -- gecis penceresi (gecisle) [-39.1, -37.4, -41.2, -45.9, -50.1, -42.5, -37.3] dBFS; dize ici kapanislar medyan -38.2, ceyrekler [-41.5, -32.8] dBFS
+== 7) BASLANGIC ANLARI: olculen - amaclanan ==
+  olcu: tempo analizinin tanimi (bant zarfinin ilk hecenin tepesinin %25'ine ulastigi ilk an; unlu baslangiclari 300-3400 Hz, 'c' baslangiclari 2-7 kHz), burada CIKTI dosyasinda olculdu.
+  kita dize | olcu vurus | olculen baslangic - vurus (cikti) | tempo analizi (mix) - vurus | OLCULEN - AMACLANAN | kesim 'start' - vurus | cikti - (kaynak + kaydirma)
+  K1 L1   |  4  0.0 |   -3.7 ms |   +2.5 ms   |   -6.2 ms |  -14.7 ms | +0.000 ms
+  K1 L2   |  6  0.0 |  -34.1 ms |  -34.8 ms   |   +0.6 ms |  -35.6 ms | +0.000 ms
+  K1 diye |  9  2.0 |   +8.4 ms |   -5.5 ms * |  +13.9 ms |   +6.0 ms | +0.000 ms
+  K1 L4   | 10  0.0 |  -60.4 ms |  -57.7 ms   |   -2.7 ms |  -67.2 ms | +0.000 ms
+  K2 L1   | 12  0.0 |  -12.9 ms |   -8.8 ms   |   -4.0 ms |  -23.8 ms | +0.000 ms
+  K2 L2   | 14  0.0 |  -40.0 ms |  -37.4 ms   |   -2.6 ms |  -38.7 ms | +0.000 ms
+  K2 diye | 17  2.0 |  +16.4 ms |   +0.6 ms * |  +15.8 ms |  +12.9 ms | +0.000 ms
+  K2 L4   | 18  0.0 |  -43.0 ms |  -41.5 ms   |   -1.5 ms |  -40.4 ms | +0.000 ms
+  K3 L1   | 20  0.0 |  -20.3 ms |   +0.8 ms * |  -21.1 ms |  -68.9 ms | +0.000 ms
+  K3 L2   | 22  0.0 |  -42.5 ms |  -41.1 ms   |   -1.4 ms |  -41.7 ms | +0.000 ms
+  K3 diye | 25  2.0 |  +15.5 ms |   +6.7 ms * |   +8.8 ms |  +11.9 ms | +0.000 ms
+  K3 L4   | 26  0.0 |  -40.3 ms |  -36.9 ms   |   -3.4 ms |  -25.5 ms | +0.000 ms
+  K4 L1   | 28  0.0 |   -4.1 ms |  +26.9 ms * |  -31.0 ms |  -81.9 ms | +0.000 ms
+  K4 L2   | 30  0.0 |  -26.4 ms |  -24.9 ms   |   -1.5 ms |  -28.8 ms | +0.000 ms
+  K4 diye | 33  2.0 |  +21.7 ms |  +12.8 ms * |   +8.9 ms |  +12.8 ms | +0.000 ms
+  K4 L4   | 34  0.0 |  -67.0 ms |  -62.1 ms   |   -4.9 ms |  -68.5 ms | +0.000 ms
+  K5 L1   | 36  0.0 |  -22.5 ms |  -19.0 ms   |   -3.5 ms |  -39.1 ms | +0.000 ms
+  K5 L2   | 38  0.0 |  -30.2 ms |  -30.5 ms   |   +0.2 ms |  -40.0 ms | +0.000 ms
+  K5 diye | 41  2.0 |  +14.5 ms |  +18.8 ms * |   -4.4 ms |  -22.3 ms | +0.000 ms
+  K5 L4   | 42  0.0 |  -45.6 ms |  -44.7 ms   |   -0.9 ms |  -49.6 ms | +0.000 ms
+  K6 L1   | 44  0.0 |  -14.5 ms |   -1.6 ms   |  -12.9 ms |  -34.1 ms | +0.000 ms
+  K6 L2   | 46  0.0 |  -43.5 ms |  -43.2 ms   |   -0.4 ms |  -41.0 ms | +0.000 ms
+  K6 diye | 49  2.0 |   +1.1 ms |   +8.9 ms   |   -7.9 ms |  -33.3 ms | +0.000 ms
+  K6 L4   | 50  0.0 |  -49.1 ms |  -48.7 ms   |   -0.4 ms |  -50.7 ms | -0.000 ms
+  K7 L1   | 52  0.0 |   -5.8 ms |   -4.2 ms   |   -1.6 ms |  -25.2 ms | +0.000 ms
+  K7 L2   | 54  0.0 |  -39.4 ms |  -38.3 ms   |   -1.1 ms |  -38.1 ms | +0.000 ms
+  K7 diye | 57  2.0 |  +28.3 ms |  +31.0 ms * |   -2.7 ms |  +21.5 ms | +0.000 ms
+  K7 L4   | 58  0.0 |  -47.1 ms |  -45.3 ms   |   -1.8 ms |  -47.9 ms | +0.000 ms
+  (* = tempo analizinde bu baslangic inceltilemedi; 20 ms'lik sozcuk dosyasi izgarasindan, +-25 ms)
+  [GECTI] yerlestirme ve gecisler baslangiclari kaydirmadi: ciktida olculen = kaynakta olculen + kaydirma -- en buyuk fark 0.000 ms (28 dize)
+  [GECTI] olculen baslangiclar amaclanan anlarda (tempo analizinin mix uzerinde buldugu baslangic + kaydirma; inceltilmis olanlar +-15 ms) -- inceltilmis 20 dize: en buyuk |hata| 12.9 ms, medyan -1.7 ms | 28 dizenin tumu: en buyuk |hata| 31.0 ms, medyan -1.7 ms
+  [GECTI] hicbir dize yanlis vurusta degil (tum hatalar onaltilik notanin yarisindan kucuk: 71 ms)
+  L1   olculen baslangic - vurus: medyan -12.9 ms, aralik -22.5 .. -3.7 ms  (tempo analizinin mix'te buldugu tipik deger: -1.6 ms)
+  L2   olculen baslangic - vurus: medyan -39.4 ms, aralik -43.5 .. -26.4 ms  (tempo analizinin mix'te buldugu tipik deger: -37.4 ms)
+  diye olculen baslangic - vurus: medyan +15.5 ms, aralik +1.1 .. +28.3 ms  (tempo analizinin mix'te buldugu tipik deger: +8.9 ms)
+  L4   olculen baslangic - vurus: medyan -47.1 ms, aralik -67.0 .. -40.3 ms  (tempo analizinin mix'te buldugu tipik deger: -45.2 ms)
+== 8) 3. KITA ONARIMI: 'atlari' ==
+  [GECTI] onarim listede (kesim.json dort cekirdek buldu)
+  [GECTI] iki alt parca AYNI kaydirmayla yerlesti ('lari var' 0 ms kaydi, 'var' zamaninda) -- kaydirma 533650 ornek
+  [GECTI] kesip atma araligi kesim.json onerisiyle ayni -- atilan 39.7537 - 39.9660 s (yari genlik noktasi); cikis gecisi 15.0 ms, giris gecisi 30.0 ms
+  [GECTI] aradaki bosluk tam dijital sessizlik -- 197.3 ms
+  cekirdek tepeleri (300-3400 Hz zarfi, 6 dB belirginlik): ONCE 4: [39.4352, 39.775, 40.0396, 40.2086] | SONRA 3: [39.4352, 40.0396, 40.2086] (kaynak zamanina cevrilmis)
+  [GECTI] onarimdan sonra kelimede 3 cekirdek (once daha fazla) -- once 4, sonra 3
+  sureler: kelime araligi 904.0 ms (degismedi) | -45 dBFS ustu ses: once 904 ms, sonra 695 ms | 'at' 391.1 ms + sus 212.4 ms + 'lari' 300.4 ms | 'a' bitisi -> /l/ yari genlik: 386 ms (icinde /t/ patlamasi)
+  ek yeri (a) cikis: kaynak son 15 ms -38.4 dBFS (soylenen RMS -19.5 dB); son 2 ms'de en buyuk ornek adimi 0.0003
+  ek yeri (b) giris: /l/ icinde, kaynak duzeyi -20.6 dBFS; ilk 2 ms'de en buyuk ornek adimi 0.0001 (parca ici %99 adim 0.068)
+  perde: 'at' unlusu 65.05 | kalan /l/ 64.50 | 'la' 65.09 MIDI; susun icinde otumlu cerceve: 0
+  [GECTI] ek yerlerinde sicrama yok (kenar adimi parca ici %99 adimin altinda) -- cikis 0.0003, giris 0.0001, parca ici 0.068
+  [GECTI] atilan cekirdekten ses kalmadi (susun icinde otumlu cerceve yok)
+  [GECTI] 'at' ve 'la' ayni notada (F4), kalan /l/ 'la'ya 1 yarim sesten az kayarak baglaniyor -- 65.05 / 64.50 / 65.09
+  [GECTI] 'var' zamaninda: hedef = kaynak + parca kaydirmasi (0 ms ek kayma) -- 'var' hece basi vurus 3.468 (izgara yuvasi 3.5), cekirdek basi vurus 3.510
+== 9) HECELER ==
+  [GECTI] 28 dize, 229 korunan hece -- 28 dize, 229 hece
+  [GECTI] duz hece tablosu (syllables_flat) ic ice kayitlarla ayni -- 229 satir
+  [GECTI] hece metinleri beklenen sozlerle ayni (3. kita: 'at la rı', fazladan hece yok)
+  [GECTI] heceler kendi parcasinin icinde, sirali; cekirdekleri atilan aralikta degil
+  [GECTI] hece hedef zamani = kaynak zamani + parca kaydirmasi
+  [GECTI] her hecede metin, kaynak/hedef bas-son, medyan MIDI, bas/orta/son perde var
+  [GECTI] hece vurus yuvalari forma uygun (L1: olcu 0; diye: olcu 5 vurus 2-3.5; L4: olcu 6)
+  [GECTI] ciktida olculen hece perdesi = yerlesim.json'daki ozgun perde (perde islemi yok, tablo sesle hizali) -- 228 hece olculdu; |fark| medyan 0.004, %95 0.03, en buyuk 0.18 yarim ses; 0.3'u asan 0: []
+  ozgun perde araligi: MIDI 58.27 .. 69.17
+== 10) GERCEK HAYVAN SESI YUVALARI ==
+  K1 inek   1. ses 16.0600 s (olcu 7 cizgisi - 40 ms), L2 kesimi ile arasi +19.6 ms | 2. ses 18.3457 s | 'diye' vokali 21.8033 s (2. ses icin 3.458 s bos)
+  K2 koyun  1. ses 34.3457 s (olcu 15 cizgisi - 40 ms), L2 kesimi ile arasi +36.8 ms | 2. ses 36.6314 s | 'diye' vokali 40.0959 s (2. ses icin 3.465 s bos)
+  K3 at     1. ses 52.6314 s (olcu 23 cizgisi - 40 ms), L2 kesimi ile arasi +21.7 ms | 2. ses 54.9171 s | 'diye' vokali 58.3806 s (2. ses icin 3.463 s bos)
+  K4 horoz  1. ses 70.9171 s (olcu 31 cizgisi - 40 ms), L2 kesimi ile arasi -10.0 ms | 2. ses 73.2029 s | 'diye' vokali 76.6692 s (2. ses icin 3.466 s bos)
+  K5 ördek  1. ses 89.2029 s (olcu 39 cizgisi - 40 ms), L2 kesimi ile arasi -13.3 ms | 2. ses 91.4886 s | 'diye' vokali 94.9179 s (2. ses icin 3.429 s bos)
+  K6 köpek  1. ses 107.4886 s (olcu 47 cizgisi - 40 ms), L2 kesimi ile arasi +33.0 ms | 2. ses 109.7743 s | 'diye' vokali 113.1926 s (2. ses icin 3.418 s bos)
+  K7 kedi   1. ses 125.7743 s (olcu 55 cizgisi - 40 ms), L2 kesimi ile arasi +31.9 ms | 2. ses 128.0600 s | 'diye' vokali 131.5331 s (2. ses icin 3.473 s bos)
+  [GECTI] 2. hayvan sesi (en cok 1.85 s) 'diye' vokalinden once biter -- en dar pencere 3.418 s
+
+== OZET: butun kontroller GECTI ==
+Kulakla DOGRULANMADI: gecislerin duyulmadigi, L2 sonlarinin (5 kitada tam duzeyde kesim) kirpik duyulmadigi, 3. kitadaki 'at' + sus + 'lari'nin dogal durdugu.

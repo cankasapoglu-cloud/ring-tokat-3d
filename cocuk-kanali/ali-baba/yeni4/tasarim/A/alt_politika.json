@@ -1,0 +1,70 @@
+{
+ "about": "Numbers behind the under-vocal policy of the 'dogal' version (key C). Shares are fractions of the voiced sung time (44.85 s), note mode.",
+ "tune_under_the_voice": {
+  "what": "the soft Old MacDonald tune of the existing builder (clarinet C5 C5 C5 G4 A4 A4 G4 in bars 0, 2, 6; repeated C5 on beats 2-3 of bar 5)",
+  "voice_against_tune": {
+   "share_of_sung_time_by_interval_between_voice_and_tune": {
+    "same note (unison / octave)": 0.0839,
+    "semitone / major 7th": 0.0022,
+    "whole tone / minor 7th": 0.2055,
+    "minor 3rd / major 6th": 0.1157,
+    "major 3rd / minor 6th": 0.099,
+    "4th / 5th": 0.4341,
+    "tritone": 0.0,
+    "no tune note sounding": 0.0595
+   },
+   "different_note_than_the_voice": 0.8565,
+   "a_second_or_seventh_apart (interval class 1 or 2)": 0.2077,
+   "of_which_in_runs_over_150ms": 0.1108,
+   "runs_over_150ms": 20,
+   "a_second_apart_in_the_same_octave": 0.1426,
+   "where": "beats 1.5-2 (voice A4 over tune G4) and beats 2-3.2 (voice G4 under tune A4): the two lines swap the notes G and A in the same octave"
+  },
+  "tune_against_chords": {
+   "tune_against_the_plain_harmony (I I IV I | I)": {
+    "chord_tone": 1.0,
+    "clash": 0.0
+   },
+   "tune_against_the_chosen_harmony (I IV I I | V V V V | I I | V V V V)": {
+    "chord_tone": 0.5361,
+    "clash": 0.2141
+   },
+   "note": "share of the tune's own sounding time; clash = a semitone from a chord tone or a tritone from the root. In bars 2 and 6 the tune's three 'do' (C) sit a semitone above the third (B) of the dominant."
+  }
+ },
+ "one_semitone_from_a_sounding_note": {
+  "none (chords, bass, drums only) - chosen harmony, dominant without the seventh": {
+   "one_semitone_from_a_sounding_note": 0.0447,
+   "in_runs_over_150ms": 0.0109
+  },
+  "none - same harmony with the seventh in the band (V7)": {
+   "one_semitone_from_a_sounding_note": 0.1329,
+   "in_runs_over_150ms": 0.0515
+  },
+  "soft pad: root + fifth of every chord": {
+   "one_semitone_from_a_sounding_note": 0.0469,
+   "in_runs_over_150ms": 0.0109
+  },
+  "soft pad: full triads (dominant without its seventh)": {
+   "one_semitone_from_a_sounding_note": 0.0488,
+   "in_runs_over_150ms": 0.0109
+  },
+  "soft pad: full chords with the seventh on the dominant": {
+   "one_semitone_from_a_sounding_note": 0.1516,
+   "in_runs_over_150ms": 0.072
+  },
+  "none - plain baseline harmony (I I IV I | I)": {
+   "one_semitone_from_a_sounding_note": 0.1441,
+   "in_runs_over_150ms": 0.0719
+  },
+  "soft pad: full triads - plain baseline harmony": {
+   "one_semitone_from_a_sounding_note": 0.1498,
+   "in_runs_over_150ms": 0.0756
+  },
+  "soft Old MacDonald tune under the voice (existing stem) - chosen harmony": {
+   "one_semitone_from_a_sounding_note": 0.0469,
+   "in_runs_over_150ms": 0.0109
+  }
+ },
+ "definition": "one_semitone_from_a_sounding_note = share of the sung time during which a band / pad / tune note one semitone away in pitch class sounds (band: note-on .. note-off + 30 ms from the band model; pad: held through every beat of the vocal stretches)."
+}

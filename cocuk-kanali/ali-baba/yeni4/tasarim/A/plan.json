@@ -1,0 +1,1330 @@
+{
+ "designer": "A (sade: only I, IV, V7; close to the traditional harmony)",
+ "version": "dogal (the vocal exactly as sung; no pitch or time processing)",
+ "key": "C major",
+ "tonic": "C",
+ "chords_of_the_key": {
+  "I": "C (C E G)",
+  "IV": "F (F A C)",
+  "V7": "G7 (G B D F)"
+ },
+ "harmony_plan": {
+  "same_plan_for_all_7_verses": true,
+  "degrees_per_beat": {
+   "bar_0_L1": [
+    "I",
+    "IV",
+    "I",
+    "I"
+   ],
+   "bar_2_L2": [
+    "V7",
+    "V7",
+    "V7",
+    "V7"
+   ],
+   "bar_5_diye_bagirir": [
+    "I",
+    "I",
+    "I",
+    "I"
+   ],
+   "bar_6_L4": [
+    "V7",
+    "V7",
+    "V7",
+    "V7"
+   ]
+  },
+  "chord_names_per_beat": {
+   "bar_0_L1": [
+    "C",
+    "F",
+    "C",
+    "C"
+   ],
+   "bar_2_L2": [
+    "G7",
+    "G7",
+    "G7",
+    "G7"
+   ],
+   "bar_5_diye_bagirir": [
+    "C",
+    "C",
+    "C",
+    "C"
+   ],
+   "bar_6_L4": [
+    "G7",
+    "G7",
+    "G7",
+    "G7"
+   ]
+  },
+  "band_plays_per_beat": {
+   "bar_0_L1": [
+    "C",
+    "F",
+    "C",
+    "C"
+   ],
+   "bar_2_L2": [
+    "G",
+    "G",
+    "G",
+    "G"
+   ],
+   "bar_5_diye_bagirir": [
+    "C",
+    "C",
+    "C",
+    "C"
+   ],
+   "bar_6_L4": [
+    "G",
+    "G",
+    "G",
+    "G"
+   ]
+  },
+  "in_words": "Bar 0 (L1): C on beat 0, F on beat 1 (under 'Baba'nin', where the singer holds A), C on beats 2-3. Bar 2 (L2) and bar 6 (L4): the dominant G for the whole bar. Bar 5: C (beats 0-1 drum fill, beats 2-3 'diye bagirir'). Everything else stays as built: bars 1 and 7 = C G7 C C (loud answer), bars 3-4 = C (animal calls), intro and ending unchanged.",
+  "dominant_under_the_vocal": {
+   "rule": "In bars 2 and 6 the band plays the dominant WITHOUT its seventh (G B D, no F). The singer sings that seventh herself (F on beats 2 and 3) and sings E right next to it; with F in the band the sung E lies one semitone from a sounding band note. The loud answers (bars 1, 7), the intro and the ending keep the full V7.",
+   "fallback": "If the builder cannot voice it, play V7 as usual: the harmony is the same; the measured cost is listed under metrics.dominant_seventh_in_the_band."
+  },
+  "bar_5_beats_0_1": "unchanged: drum fill with bass on I (fixed by the form)",
+  "fixed_by_the_form": {
+   "bars_1_and_7": [
+    "I",
+    "V7",
+    "I",
+    "I"
+   ],
+   "bars_3_and_4": [
+    "I",
+    "I",
+    "I",
+    "I"
+   ]
+  },
+  "verse_bar_to_song_bar": "verse v (0..6), bar b (0..7) = song bar 4 + 8 v + b; downbeat at 0.100 + bar * 2.285714 s"
+ },
+ "notes_for_the_builder_key_C": {
+  "I": {
+   "banjo_chord": "C3 E3 G3",
+   "piano_accordion_chord": "C4 E4 G4",
+   "bass_root": "C2",
+   "bass_fifth": "G2"
+  },
+  "IV": {
+   "banjo_chord": "C3 F3 A3",
+   "piano_accordion_chord": "C4 F4 A4",
+   "bass_root": "F2",
+   "bass_fifth": "C2"
+  },
+  "V7_answers_intro_ending_unchanged": {
+   "banjo_chord": "B2 D3 F3 G3",
+   "piano_accordion_chord": "B3 D4 F4 G4",
+   "bass_root": "G2"
+  },
+  "V_under_the_vocal_bars_2_and_6": {
+   "banjo_chord": "B2 D3 G3",
+   "piano_accordion_chord": "B3 D4 G4",
+   "banjo_roll_8_eighths": "G3 B3 D3 B3 G3 B3 D3 B3",
+   "bass_root": "G2",
+   "bass_fifth": "D2"
+  },
+  "in_build_py_terms": "the arrangement is written in G and moved by AS (C: -7). Add CH['V'] = [54, 57, 62] (V7 without 60), ROLL['V'] = [62, 66, 57, 66, 62, 66, 57, 66] (the V7 roll with its seventh on beat 1 replaced), DEG['V'] = 7; verse bars: 0 -> ['I','IV','I','I'], 2 and 6 -> ['V','V','V','V'], 5 -> ['I','I','I','I']; no alt_notes() in the vocal bars.",
+  "oom_pah_pattern_the_plan_relies_on": "as in build.py groove(): beats 0 and 2 = bass + root octaves + one banjo note only; the full chord sounds on every off-beat (piano, accordion) and on beats 1 and 3 (accordion, banjo). Checked note for note against midi/altyapi_C.mid.",
+  "optional_refinement_low_priority": {
+   "what": "in bars 2 and 6 keep the bass on the root G on beat 2 (the builder plays the fifth D there when beats 0-2 share a chord)",
+   "why": "the 5th harmonic of the bass D2 lies at F#4, one semitone above the F the singer holds on that beat",
+   "measured_on_rendered_audio_beat_2_of_bars_2_and_6": {
+    "with_the_fifth_D": {
+     "mean_power_db_re_one_strummed_chord_note": -6.9,
+     "share_of_sung_time_above_-6_db": 0.3365,
+     "of_which_in_runs_over_150ms": 0.0,
+     "runs_over_150ms": 0
+    },
+    "with_the_root_G": {
+     "mean_power_db_re_one_strummed_chord_note": -10.5,
+     "share_of_sung_time_above_-6_db": 0.0967,
+     "of_which_in_runs_over_150ms": 0.0,
+     "runs_over_150ms": 0
+    }
+   }
+  }
+ },
+ "under_vocal_policy": {
+  "policy": "none",
+  "meaning": "Under the vocal (bars 0, 2, 6 and beats 2-3 of bar 5) the band plays chords, bass and drums only. No clarinet / glockenspiel tune (the ezgi_alti stem is not used in 'dogal'), no pad, no counter-line. The Old MacDonald tune is heard only in the intro, the loud answers and the ending.",
+  "why_no_tune": {
+   "voice_and_tune_on_a_different_note": 0.8565,
+   "a_second_or_seventh_apart": 0.2077,
+   "a_second_apart_in_the_same_octave": 0.1426,
+   "tune_against_the_chosen_chords": {
+    "chord_tone": 0.5361,
+    "clash": 0.2141
+   },
+   "text": "shares of the sung time: the soft tune would sound a different note than the voice most of the time (two melodies, what the user rejected), and the tune does not fit the chords that support the voice (its 'do do do' lies a semitone above the third of the dominant in bars 2 and 6)."
+  },
+  "why_no_pad": {
+   "share_of_sung_time_one_semitone_from_a_sounding_note": {
+    "none (chords, bass, drums only) - chosen harmony, dominant without the seventh": {
+     "one_semitone_from_a_sounding_note": 0.0447,
+     "in_runs_over_150ms": 0.0109
+    },
+    "none - same harmony with the seventh in the band (V7)": {
+     "one_semitone_from_a_sounding_note": 0.1329,
+     "in_runs_over_150ms": 0.0515
+    },
+    "soft pad: root + fifth of every chord": {
+     "one_semitone_from_a_sounding_note": 0.0469,
+     "in_runs_over_150ms": 0.0109
+    },
+    "soft pad: full triads (dominant without its seventh)": {
+     "one_semitone_from_a_sounding_note": 0.0488,
+     "in_runs_over_150ms": 0.0109
+    },
+    "soft pad: full chords with the seventh on the dominant": {
+     "one_semitone_from_a_sounding_note": 0.1516,
+     "in_runs_over_150ms": 0.072
+    },
+    "soft Old MacDonald tune under the voice (existing stem) - chosen harmony": {
+     "one_semitone_from_a_sounding_note": 0.0469,
+     "in_runs_over_150ms": 0.0109
+    }
+   },
+   "text": "A pad adds nothing the oom-pah does not already state (the chord is struck on every off-beat and on beats 1 and 3) and does not lower the semitone exposure; a pad that holds the dominant seventh would triple it."
+  },
+  "allowed_fallback_if_the_mix_step_finds_the_vocal_bars_too_thin": "a very soft sustained pad of root + fifth, or of the plain triads (never the seventh of the dominant, never a moving line)"
+ },
+ "metrics": {
+  "units": "fractions of the voiced sung time (44.85 s in 7 verses), note mode; definitions in olcum.json",
+  "chosen_plan_as_the_band_plays_it": {
+   "all_sung_frames": {
+    "chord_tone": 0.6857,
+    "scale_non_chord": 0.3101,
+    "outside_scale": 0.0041,
+    "clash_any": 0.0488,
+    "clash_sustained": 0.0109,
+    "clash_sustained_strict": 0.0109,
+    "consonant_non_chord": 0.2654,
+    "sustained_clash_runs": 3,
+    "sounding_semitone": 0.0447,
+    "sounding_semitone_sustained": 0.0109
+   },
+   "per_line": {
+    "L1": {
+     "chord_tone": 0.7632,
+     "scale_non_chord": 0.2368,
+     "outside_scale": 0.0,
+     "clash_any": 0.075,
+     "clash_sustained": 0.0121,
+     "clash_sustained_strict": 0.0121,
+     "consonant_non_chord": 0.1618,
+     "sustained_clash_runs": 1,
+     "sounding_semitone": 0.075,
+     "sounding_semitone_sustained": 0.0121
+    },
+    "L2": {
+     "chord_tone": 0.6256,
+     "scale_non_chord": 0.3744,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3744,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    "diye": {
+     "chord_tone": 0.8193,
+     "scale_non_chord": 0.1807,
+     "outside_scale": 0.0,
+     "clash_any": 0.1561,
+     "clash_sustained": 0.05,
+     "clash_sustained_strict": 0.05,
+     "consonant_non_chord": 0.0246,
+     "sustained_clash_runs": 2,
+     "sounding_semitone": 0.1561,
+     "sounding_semitone_sustained": 0.05
+    },
+    "L4": {
+     "chord_tone": 0.5978,
+     "scale_non_chord": 0.3879,
+     "outside_scale": 0.0143,
+     "clash_any": 0.0143,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3879,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    }
+   },
+   "frame_mode": {
+    "chord_tone": 0.5887,
+    "scale_non_chord": 0.3099,
+    "outside_scale": 0.1013,
+    "clash_any": 0.1404,
+    "clash_sustained": 0.0357,
+    "clash_sustained_strict": 0.0035,
+    "consonant_non_chord": 0.2707,
+    "sustained_clash_runs": 10,
+    "sounding_semitone": 0.1245,
+    "sounding_semitone_sustained": 0.0357
+   },
+   "chord_changes_40ms_early": {
+    "chord_tone": 0.6825,
+    "scale_non_chord": 0.3134,
+    "outside_scale": 0.0041,
+    "clash_any": 0.0488,
+    "clash_sustained": 0.0109,
+    "clash_sustained_strict": 0.0109,
+    "consonant_non_chord": 0.2687,
+    "sustained_clash_runs": 3
+   },
+   "per_verse": [
+    {
+     "chord_tone": 0.7054,
+     "scale_non_chord": 0.2946,
+     "outside_scale": 0.0,
+     "clash_any": 0.0438,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.2508,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0438,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.683,
+     "scale_non_chord": 0.317,
+     "outside_scale": 0.0,
+     "clash_any": 0.0452,
+     "clash_sustained": 0.0264,
+     "clash_sustained_strict": 0.0264,
+     "consonant_non_chord": 0.2718,
+     "sustained_clash_runs": 1,
+     "sounding_semitone": 0.0452,
+     "sounding_semitone_sustained": 0.0264
+    },
+    {
+     "chord_tone": 0.6866,
+     "scale_non_chord": 0.2975,
+     "outside_scale": 0.0159,
+     "clash_any": 0.0597,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.2538,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0438,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.6713,
+     "scale_non_chord": 0.3287,
+     "outside_scale": 0.0,
+     "clash_any": 0.046,
+     "clash_sustained": 0.0249,
+     "clash_sustained_strict": 0.0249,
+     "consonant_non_chord": 0.2827,
+     "sustained_clash_runs": 1,
+     "sounding_semitone": 0.046,
+     "sounding_semitone_sustained": 0.0249
+    },
+    {
+     "chord_tone": 0.6833,
+     "scale_non_chord": 0.3167,
+     "outside_scale": 0.0,
+     "clash_any": 0.0469,
+     "clash_sustained": 0.0238,
+     "clash_sustained_strict": 0.0238,
+     "consonant_non_chord": 0.2698,
+     "sustained_clash_runs": 1,
+     "sounding_semitone": 0.0469,
+     "sounding_semitone_sustained": 0.0238
+    },
+    {
+     "chord_tone": 0.6884,
+     "scale_non_chord": 0.3116,
+     "outside_scale": 0.0,
+     "clash_any": 0.0408,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.2708,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0408,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.6819,
+     "scale_non_chord": 0.3042,
+     "outside_scale": 0.0139,
+     "clash_any": 0.0604,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.2577,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0465,
+     "sounding_semitone_sustained": 0.0
+    }
+   ],
+   "L2_per_verse": [
+    {
+     "chord_tone": 0.6277,
+     "scale_non_chord": 0.3723,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3723,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.5703,
+     "scale_non_chord": 0.4297,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.4297,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.7072,
+     "scale_non_chord": 0.2928,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.2928,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.5967,
+     "scale_non_chord": 0.4033,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.4033,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.6177,
+     "scale_non_chord": 0.3823,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3823,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.621,
+     "scale_non_chord": 0.379,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.379,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.6536,
+     "scale_non_chord": 0.3464,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3464,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    }
+   ],
+   "remaining_sustained_clash_runs": [
+    {
+     "verse": 2,
+     "bar": 5,
+     "beat_from": 3.21,
+     "beat_to": 3.51,
+     "ms": 175,
+     "sung": "F",
+     "chord": "C"
+    },
+    {
+     "verse": 4,
+     "bar": 5,
+     "beat_from": 3.22,
+     "beat_to": 3.5,
+     "ms": 160,
+     "sung": "F",
+     "chord": "C"
+    },
+    {
+     "verse": 5,
+     "bar": 0,
+     "beat_from": 3.18,
+     "beat_to": 3.45,
+     "ms": 155,
+     "sung": "F",
+     "chord": "C"
+    }
+   ]
+  },
+  "chosen_plan_read_as_V7 (the sung F counted as the chord seventh; the E 'clash' is against a seventh the band does not play)": {
+   "all_sung_frames": {
+    "chord_tone": 0.7986,
+    "scale_non_chord": 0.1973,
+    "outside_scale": 0.0041,
+    "clash_any": 0.1516,
+    "clash_sustained": 0.072,
+    "clash_sustained_strict": 0.0696,
+    "consonant_non_chord": 0.0498,
+    "sustained_clash_runs": 15,
+    "sounding_semitone": 0.1329,
+    "sounding_semitone_sustained": 0.0515
+   },
+   "per_line": {
+    "L1": {
+     "chord_tone": 0.7632,
+     "scale_non_chord": 0.2368,
+     "outside_scale": 0.0,
+     "clash_any": 0.075,
+     "clash_sustained": 0.0121,
+     "clash_sustained_strict": 0.0121,
+     "consonant_non_chord": 0.1618,
+     "sustained_clash_runs": 1,
+     "sounding_semitone": 0.075,
+     "sounding_semitone_sustained": 0.0121
+    },
+    "L2": {
+     "chord_tone": 0.834,
+     "scale_non_chord": 0.166,
+     "outside_scale": 0.0,
+     "clash_any": 0.166,
+     "clash_sustained": 0.0739,
+     "clash_sustained_strict": 0.0735,
+     "consonant_non_chord": 0.0,
+     "sustained_clash_runs": 4,
+     "sounding_semitone": 0.1462,
+     "sounding_semitone_sustained": 0.0428
+    },
+    "diye": {
+     "chord_tone": 0.8193,
+     "scale_non_chord": 0.1807,
+     "outside_scale": 0.0,
+     "clash_any": 0.1561,
+     "clash_sustained": 0.05,
+     "clash_sustained_strict": 0.05,
+     "consonant_non_chord": 0.0246,
+     "sustained_clash_runs": 2,
+     "sounding_semitone": 0.1561,
+     "sounding_semitone_sustained": 0.05
+    },
+    "L4": {
+     "chord_tone": 0.7889,
+     "scale_non_chord": 0.1968,
+     "outside_scale": 0.0143,
+     "clash_any": 0.2111,
+     "clash_sustained": 0.1406,
+     "clash_sustained_strict": 0.1325,
+     "consonant_non_chord": 0.0,
+     "sustained_clash_runs": 8,
+     "sounding_semitone": 0.1653,
+     "sounding_semitone_sustained": 0.0994
+    }
+   }
+  },
+  "plain_baseline_C (I I IV I | I I IV I | I I | I I IV I)": {
+   "all_sung_frames": {
+    "chord_tone": 0.5795,
+    "scale_non_chord": 0.4164,
+    "outside_scale": 0.0041,
+    "clash_any": 0.1484,
+    "clash_sustained": 0.0756,
+    "clash_sustained_strict": 0.069,
+    "consonant_non_chord": 0.2702,
+    "sustained_clash_runs": 14,
+    "sounding_semitone": 0.1441,
+    "sounding_semitone_sustained": 0.0719
+   },
+   "per_line": {
+    "L1": {
+     "chord_tone": 0.313,
+     "scale_non_chord": 0.687,
+     "outside_scale": 0.0,
+     "clash_any": 0.075,
+     "clash_sustained": 0.0121,
+     "clash_sustained_strict": 0.0121,
+     "consonant_non_chord": 0.612,
+     "sustained_clash_runs": 1,
+     "sounding_semitone": 0.075,
+     "sounding_semitone_sustained": 0.0121
+    },
+    "L2": {
+     "chord_tone": 0.6486,
+     "scale_non_chord": 0.3514,
+     "outside_scale": 0.0,
+     "clash_any": 0.1741,
+     "clash_sustained": 0.0844,
+     "clash_sustained_strict": 0.084,
+     "consonant_non_chord": 0.1773,
+     "sustained_clash_runs": 4,
+     "sounding_semitone": 0.1664,
+     "sounding_semitone_sustained": 0.0707
+    },
+    "diye": {
+     "chord_tone": 0.8193,
+     "scale_non_chord": 0.1807,
+     "outside_scale": 0.0,
+     "clash_any": 0.1561,
+     "clash_sustained": 0.05,
+     "clash_sustained_strict": 0.05,
+     "consonant_non_chord": 0.0246,
+     "sustained_clash_runs": 2,
+     "sounding_semitone": 0.1561,
+     "sounding_semitone_sustained": 0.05
+    },
+    "L4": {
+     "chord_tone": 0.6525,
+     "scale_non_chord": 0.3332,
+     "outside_scale": 0.0143,
+     "clash_any": 0.1922,
+     "clash_sustained": 0.1429,
+     "clash_sustained_strict": 0.1206,
+     "consonant_non_chord": 0.1487,
+     "sustained_clash_runs": 7,
+     "sounding_semitone": 0.1849,
+     "sounding_semitone_sustained": 0.1433
+    }
+   }
+  },
+  "original_d_minor_loop_reference (Dm Dm C C | Gm Gm A A | C C | Gm Gm A A)": {
+   "all_sung_frames": {
+    "chord_tone": 0.7271,
+    "scale_non_chord": 0.2729,
+    "outside_scale": 0.0,
+    "clash_any": 0.2262,
+    "clash_sustained": 0.1585,
+    "clash_sustained_strict": 0.1573,
+    "consonant_non_chord": 0.0467,
+    "sustained_clash_runs": 33
+   },
+   "per_line": {
+    "L1": {
+     "chord_tone": 0.7839,
+     "scale_non_chord": 0.2161,
+     "outside_scale": 0.0,
+     "clash_any": 0.0813,
+     "clash_sustained": 0.0121,
+     "clash_sustained_strict": 0.0121,
+     "consonant_non_chord": 0.1348,
+     "sustained_clash_runs": 1
+    },
+    "L2": {
+     "chord_tone": 0.6611,
+     "scale_non_chord": 0.3389,
+     "outside_scale": 0.0,
+     "clash_any": 0.3316,
+     "clash_sustained": 0.2775,
+     "clash_sustained_strict": 0.2746,
+     "consonant_non_chord": 0.0073,
+     "sustained_clash_runs": 16
+    },
+    "diye": {
+     "chord_tone": 0.8193,
+     "scale_non_chord": 0.1807,
+     "outside_scale": 0.0,
+     "clash_any": 0.1561,
+     "clash_sustained": 0.05,
+     "clash_sustained_strict": 0.05,
+     "consonant_non_chord": 0.0246,
+     "sustained_clash_runs": 2
+    },
+    "L4": {
+     "chord_tone": 0.6864,
+     "scale_non_chord": 0.3136,
+     "outside_scale": 0.0,
+     "clash_any": 0.3047,
+     "clash_sustained": 0.2454,
+     "clash_sustained_strict": 0.2438,
+     "consonant_non_chord": 0.0089,
+     "sustained_clash_runs": 14
+    }
+   }
+  },
+  "chosen_against_baseline_in_points": {
+   "chord_tone": 10.6,
+   "chord_tone_if_read_as_V7": 21.9,
+   "clash_any": -10.0,
+   "clash_sustained": -6.5,
+   "sustained_clash_runs_in_the_song": [
+    3,
+    14
+   ],
+   "sounding_semitone": -9.9,
+   "sounding_semitone_sustained": -6.1,
+   "outside_scale": 0.0
+  },
+  "dominant_seventh_in_the_band (same harmony, V7 voiced with F)": {
+   "all_sung_frames": {
+    "chord_tone": 0.7986,
+    "scale_non_chord": 0.1973,
+    "outside_scale": 0.0041,
+    "clash_any": 0.1516,
+    "clash_sustained": 0.072,
+    "clash_sustained_strict": 0.0696,
+    "consonant_non_chord": 0.0498,
+    "sustained_clash_runs": 15,
+    "sounding_semitone": 0.1329,
+    "sounding_semitone_sustained": 0.0515
+   }
+  },
+  "rendered_audio_check": {
+   "what": "Audio check on rendered band audio (pitched accompaniment only, FluidSynth, settings of build.py): how much band energy lies one semitone from the sung pitch while the voice sings. rub level = power in the two semitone bands (+-50 cents) next to the sung pitch, same octave, in dB relative to one chord note of a strum (peak of the E4 band in the first off-beat strum of the verse). Shares are fractions of the sung time of the named stretch; runs follow the 150 ms rule of olcum.json. L2_and_L4_whole_bars = verse bars 2 and 6; beat_2_only = beat position 1.9 .. 2.95 of those bars (F on the beat, E on the off-beat); beat_3_only = 2.95 .. 4.0 (F E D). The semitone bands also catch the attack noise of every strum, so levels below about -12 dB are not evidence of a sounding note; the -6 dB rows are the robust ones.",
+   "all_sung_frames": {
+    "chosen": {
+     "mean_power_db_re_one_strummed_chord_note": -5.6,
+     "share_of_sung_time_above_-6_db": 0.2386,
+     "of_which_in_runs_over_150ms": 0.0,
+     "runs_over_150ms": 0
+    },
+    "chosen_with_seventh_in_the_band": {
+     "mean_power_db_re_one_strummed_chord_note": -4.5,
+     "share_of_sung_time_above_-6_db": 0.307,
+     "of_which_in_runs_over_150ms": 0.0242,
+     "runs_over_150ms": 5
+    },
+    "plain_baseline": {
+     "mean_power_db_re_one_strummed_chord_note": 1.0,
+     "share_of_sung_time_above_-6_db": 0.2425,
+     "of_which_in_runs_over_150ms": 0.0621,
+     "runs_over_150ms": 11
+    }
+   },
+   "bars_2_and_6": {
+    "chosen": {
+     "mean_power_db_re_one_strummed_chord_note": -4.7,
+     "share_of_sung_time_above_-6_db": 0.2674,
+     "of_which_in_runs_over_150ms": 0.0,
+     "runs_over_150ms": 0
+    },
+    "chosen_with_seventh_in_the_band": {
+     "mean_power_db_re_one_strummed_chord_note": -3.3,
+     "share_of_sung_time_above_-6_db": 0.3884,
+     "of_which_in_runs_over_150ms": 0.0428,
+     "runs_over_150ms": 5
+    },
+    "plain_baseline": {
+     "mean_power_db_re_one_strummed_chord_note": 3.2,
+     "share_of_sung_time_above_-6_db": 0.2851,
+     "of_which_in_runs_over_150ms": 0.1098,
+     "runs_over_150ms": 11
+    }
+   },
+   "beat_2_of_bars_2_and_6": {
+    "chosen": {
+     "mean_power_db_re_one_strummed_chord_note": -6.9,
+     "share_of_sung_time_above_-6_db": 0.3365,
+     "of_which_in_runs_over_150ms": 0.0,
+     "runs_over_150ms": 0
+    },
+    "chosen_with_seventh_in_the_band": {
+     "mean_power_db_re_one_strummed_chord_note": -4.9,
+     "share_of_sung_time_above_-6_db": 0.5436,
+     "of_which_in_runs_over_150ms": 0.0,
+     "runs_over_150ms": 0
+    },
+    "plain_baseline": {
+     "mean_power_db_re_one_strummed_chord_note": 9.0,
+     "share_of_sung_time_above_-6_db": 0.5092,
+     "of_which_in_runs_over_150ms": 0.4157,
+     "runs_over_150ms": 11
+    }
+   },
+   "caveat": "the semitone bands also catch overtones of consonant band notes (for example the third of a chord under a sung root) and the attack noise of every strum; only the large differences and the runs above -6 dB are meaningful."
+  }
+ },
+ "key_comparison": {
+  "about": "best plan per key from I, IV, V7 (J = chord_tone - 2 * (clash_sustained + outside_scale)); C is first for weights 1, 2 and 4",
+  "per_key": {
+   "C": {
+    "plain_baseline": {
+     "chord_tone": 0.5795,
+     "scale_non_chord": 0.4164,
+     "outside_scale": 0.0041,
+     "clash_any": 0.1484,
+     "clash_sustained": 0.0756,
+     "clash_sustained_strict": 0.069,
+     "consonant_non_chord": 0.2702,
+     "sustained_clash_runs": 14,
+     "sounding_semitone": 0.1441,
+     "sounding_semitone_sustained": 0.0719
+    },
+    "best_free_per_beat": {
+     "bars": {
+      "0": [
+       "V7",
+       "IV",
+       "I",
+       "I"
+      ],
+      "2": [
+       "V7",
+       "V7",
+       "V7",
+       "V7"
+      ],
+      "5": [
+       "I",
+       "I"
+      ],
+      "6": [
+       "V7",
+       "V7",
+       "V7",
+       "V7"
+      ]
+     },
+     "chord_tone": 0.8376,
+     "scale_non_chord": 0.1583,
+     "outside_scale": 0.0041,
+     "clash_any": 0.1516,
+     "clash_sustained": 0.072,
+     "clash_sustained_strict": 0.0696,
+     "consonant_non_chord": 0.0108,
+     "sustained_clash_runs": 15,
+     "sounding_semitone": 0.1329,
+     "sounding_semitone_sustained": 0.0515
+    },
+    "best_sade_shape": {
+     "bars": {
+      "0": [
+       "I",
+       "IV",
+       "I",
+       "I"
+      ],
+      "2": [
+       "V7",
+       "V7",
+       "V7",
+       "V7"
+      ],
+      "5": [
+       "I",
+       "I"
+      ],
+      "6": [
+       "V7",
+       "V7",
+       "V7",
+       "V7"
+      ]
+     },
+     "chord_tone": 0.7986,
+     "scale_non_chord": 0.1973,
+     "outside_scale": 0.0041,
+     "clash_any": 0.1516,
+     "clash_sustained": 0.072,
+     "clash_sustained_strict": 0.0696,
+     "consonant_non_chord": 0.0498,
+     "sustained_clash_runs": 15,
+     "sounding_semitone": 0.1329,
+     "sounding_semitone_sustained": 0.0515
+    }
+   },
+   "F": {
+    "plain_baseline": {
+     "chord_tone": 0.2457,
+     "scale_non_chord": 0.7521,
+     "outside_scale": 0.0022,
+     "clash_any": 0.169,
+     "clash_sustained": 0.1232,
+     "clash_sustained_strict": 0.1206,
+     "consonant_non_chord": 0.5853,
+     "sustained_clash_runs": 26,
+     "sounding_semitone": 0.1581,
+     "sounding_semitone_sustained": 0.1084
+    },
+    "best_free_per_beat": {
+     "bars": {
+      "0": [
+       "IV",
+       "I",
+       "V7",
+       "V7"
+      ],
+      "2": [
+       "V7",
+       "V7",
+       "IV",
+       "IV"
+      ],
+      "5": [
+       "V7",
+       "V7"
+      ],
+      "6": [
+       "V7",
+       "V7",
+       "V7",
+       "V7"
+      ]
+     },
+     "chord_tone": 0.7456,
+     "scale_non_chord": 0.2522,
+     "outside_scale": 0.0022,
+     "clash_any": 0.1582,
+     "clash_sustained": 0.0717,
+     "clash_sustained_strict": 0.0709,
+     "consonant_non_chord": 0.0962,
+     "sustained_clash_runs": 14,
+     "sounding_semitone": 0.1156,
+     "sounding_semitone_sustained": 0.025
+    },
+    "best_sade_shape": {
+     "bars": {
+      "0": [
+       "I",
+       "I",
+       "V7",
+       "V7"
+      ],
+      "2": [
+       "V7",
+       "V7",
+       "I",
+       "IV"
+      ],
+      "5": [
+       "V7",
+       "V7"
+      ],
+      "6": [
+       "V7",
+       "V7",
+       "V7",
+       "V7"
+      ]
+     },
+     "chord_tone": 0.711,
+     "scale_non_chord": 0.2867,
+     "outside_scale": 0.0022,
+     "clash_any": 0.1537,
+     "clash_sustained": 0.0717,
+     "clash_sustained_strict": 0.0709,
+     "consonant_non_chord": 0.1352,
+     "sustained_clash_runs": 14,
+     "sounding_semitone": 0.1153,
+     "sounding_semitone_sustained": 0.0313
+    }
+   },
+   "G": {
+    "plain_baseline": {
+     "chord_tone": 0.6487,
+     "scale_non_chord": 0.1896,
+     "outside_scale": 0.1616,
+     "clash_any": 0.0789,
+     "clash_sustained": 0.0667,
+     "clash_sustained_strict": 0.0661,
+     "consonant_non_chord": 0.1896,
+     "sustained_clash_runs": 13,
+     "sounding_semitone": 0.0792,
+     "sounding_semitone_sustained": 0.0673
+    },
+    "best_free_per_beat": {
+     "bars": {
+      "0": [
+       "I",
+       "V7",
+       "IV",
+       "IV"
+      ],
+      "2": [
+       "I",
+       "I",
+       "I",
+       "I"
+      ],
+      "5": [
+       "IV",
+       "IV"
+      ],
+      "6": [
+       "I",
+       "I",
+       "I",
+       "I"
+      ]
+     },
+     "chord_tone": 0.7265,
+     "scale_non_chord": 0.1118,
+     "outside_scale": 0.1616,
+     "clash_any": 0.0497,
+     "clash_sustained": 0.0109,
+     "clash_sustained_strict": 0.0109,
+     "consonant_non_chord": 0.1109,
+     "sustained_clash_runs": 3,
+     "sounding_semitone": 0.0482,
+     "sounding_semitone_sustained": 0.0109
+    },
+    "best_sade_shape": {
+     "bars": {
+      "0": [
+       "I",
+       "V7",
+       "I",
+       "IV"
+      ],
+      "2": [
+       "I",
+       "I",
+       "I",
+       "I"
+      ],
+      "5": [
+       "IV",
+       "IV"
+      ],
+      "6": [
+       "I",
+       "I",
+       "I",
+       "I"
+      ]
+     },
+     "chord_tone": 0.7265,
+     "scale_non_chord": 0.1118,
+     "outside_scale": 0.1616,
+     "clash_any": 0.0497,
+     "clash_sustained": 0.0109,
+     "clash_sustained_strict": 0.0109,
+     "consonant_non_chord": 0.1109,
+     "sustained_clash_runs": 3,
+     "sounding_semitone": 0.0482,
+     "sounding_semitone_sustained": 0.0109
+    }
+   }
+  },
+  "score_by_weight": {
+   "1.0": {
+    "free": {
+     "C": 0.7614,
+     "F": 0.6717,
+     "G": 0.554
+    },
+    "sade": {
+     "C": 0.7224,
+     "F": 0.6371,
+     "G": 0.554
+    }
+   },
+   "2.0": {
+    "free": {
+     "C": 0.6853,
+     "F": 0.5978,
+     "G": 0.3814
+    },
+    "sade": {
+     "C": 0.6463,
+     "F": 0.5633,
+     "G": 0.3814
+    }
+   },
+   "4.0": {
+    "free": {
+     "C": 0.533,
+     "F": 0.4501,
+     "G": 0.0374
+    },
+    "sade": {
+     "C": 0.494,
+     "F": 0.4155,
+     "G": 0.0374
+    }
+   }
+  },
+  "why_C": "All five sung pitch classes (D E F G A) are in C major; in G major the sung F natural is outside the scale for 16 % of the sung time and sits a semitone below the F sharp of the band's V7. F major has no clash advantage and fewer chord tones. The G triad that carries lines 2 and 4 without any clash is the tonic of G but the dominant of C: in C the loud answer of bar 7 resolves it."
+ },
+ "alternatives_measured": {
+  "B  : I IV I I | I I V7 V7 | I I | I I V7 V7": {
+   "bars": {
+    "0": [
+     "I",
+     "IV",
+     "I",
+     "I"
+    ],
+    "2": [
+     "I",
+     "I",
+     "V7",
+     "V7"
+    ],
+    "5": [
+     "I",
+     "I"
+    ],
+    "6": [
+     "I",
+     "I",
+     "V7",
+     "V7"
+    ]
+   },
+   "chord_tone": 0.7712,
+   "scale_non_chord": 0.2246,
+   "outside_scale": 0.0041,
+   "clash_any": 0.1543,
+   "clash_sustained": 0.072,
+   "clash_sustained_strict": 0.0696,
+   "consonant_non_chord": 0.0726,
+   "sustained_clash_runs": 15,
+   "sounding_semitone": 0.1351,
+   "sounding_semitone_sustained": 0.0515
+  },
+  "B* : I IV I I | I I V V | I I | I I V V  (B without the seventh in the band)": {
+   "bars": {
+    "0": [
+     "I",
+     "IV",
+     "I",
+     "I"
+    ],
+    "2": [
+     "I",
+     "I",
+     "V",
+     "V"
+    ],
+    "5": [
+     "I",
+     "I"
+    ],
+    "6": [
+     "I",
+     "I",
+     "V",
+     "V"
+    ]
+   },
+   "chord_tone": 0.663,
+   "scale_non_chord": 0.3329,
+   "outside_scale": 0.0041,
+   "clash_any": 0.0515,
+   "clash_sustained": 0.0109,
+   "clash_sustained_strict": 0.0109,
+   "consonant_non_chord": 0.2836,
+   "sustained_clash_runs": 3,
+   "sounding_semitone": 0.0469,
+   "sounding_semitone_sustained": 0.0109
+  },
+  "C  : I IV I I | I I I V7 | I I | I I I V7": {
+   "bars": {
+    "0": [
+     "I",
+     "IV",
+     "I",
+     "I"
+    ],
+    "2": [
+     "I",
+     "I",
+     "I",
+     "V7"
+    ],
+    "5": [
+     "I",
+     "I"
+    ],
+    "6": [
+     "I",
+     "I",
+     "I",
+     "V7"
+    ]
+   },
+   "chord_tone": 0.7599,
+   "scale_non_chord": 0.236,
+   "outside_scale": 0.0041,
+   "clash_any": 0.1657,
+   "clash_sustained": 0.0889,
+   "clash_sustained_strict": 0.0876,
+   "consonant_non_chord": 0.0726,
+   "sustained_clash_runs": 18,
+   "sounding_semitone": 0.0865,
+   "sounding_semitone_sustained": 0.0144
+  },
+  "C* : I IV I I | I I I V | I I | I I I V  (C without the seventh in the band)": {
+   "bars": {
+    "0": [
+     "I",
+     "IV",
+     "I",
+     "I"
+    ],
+    "2": [
+     "I",
+     "I",
+     "I",
+     "V"
+    ],
+    "5": [
+     "I",
+     "I"
+    ],
+    "6": [
+     "I",
+     "I",
+     "I",
+     "V"
+    ]
+   },
+   "chord_tone": 0.7264,
+   "scale_non_chord": 0.2695,
+   "outside_scale": 0.0041,
+   "clash_any": 0.1263,
+   "clash_sustained": 0.0854,
+   "clash_sustained_strict": 0.0842,
+   "consonant_non_chord": 0.1454,
+   "sustained_clash_runs": 17,
+   "sounding_semitone": 0.0469,
+   "sounding_semitone_sustained": 0.0109
+  },
+  "D  : I IV I I | I I IV V7 | I I | I I IV V7": {
+   "bars": {
+    "0": [
+     "I",
+     "IV",
+     "I",
+     "I"
+    ],
+    "2": [
+     "I",
+     "I",
+     "IV",
+     "V7"
+    ],
+    "5": [
+     "I",
+     "I"
+    ],
+    "6": [
+     "I",
+     "I",
+     "IV",
+     "V7"
+    ]
+   },
+   "chord_tone": 0.7712,
+   "scale_non_chord": 0.2246,
+   "outside_scale": 0.0041,
+   "clash_any": 0.1543,
+   "clash_sustained": 0.072,
+   "clash_sustained_strict": 0.0696,
+   "consonant_non_chord": 0.0726,
+   "sustained_clash_runs": 15,
+   "sounding_semitone": 0.1491,
+   "sounding_semitone_sustained": 0.0711
+  },
+  "E* : V IV I I | V V V V | I I | V V V V  (as A*, but the verse opens on the dominant: breaks T1 and T2)": {
+   "bars": {
+    "0": [
+     "V",
+     "IV",
+     "I",
+     "I"
+    ],
+    "2": [
+     "V",
+     "V",
+     "V",
+     "V"
+    ],
+    "5": [
+     "I",
+     "I"
+    ],
+    "6": [
+     "V",
+     "V",
+     "V",
+     "V"
+    ]
+   },
+   "chord_tone": 0.7247,
+   "scale_non_chord": 0.2711,
+   "outside_scale": 0.0041,
+   "clash_any": 0.0488,
+   "clash_sustained": 0.0109,
+   "clash_sustained_strict": 0.0109,
+   "consonant_non_chord": 0.2264,
+   "sustained_clash_runs": 3,
+   "sounding_semitone": 0.0447,
+   "sounding_semitone_sustained": 0.0109
+  }
+ },
+ "how_the_plan_was_chosen": {
+  "step_1": "Every I / IV / V7 choice per beat was measured for each vocal bar in C, F and G (adaylar.json). Ranking J = chord_tone - 2 * (clash_sustained + outside_scale); shape rules: the verse opens on I, the dominant never moves to IV, bar 6 ends on the dominant or I. Result in C: I IV I I | V7 V7 V7 V7 | I I | V7 V7 V7 V7.",
+  "step_2": "Voicing of the dominant under the vocal, decided by what really sounds (band model checked against the builder's MIDI, and rendered audio): without the seventh.",
+  "cross_check": "The same search with the chords as played (I, IV and the dominant triad) gives the same bars: I IV I I | V V V V | I I | V V V V.",
+  "robustness": {
+   "task_chord_set_I_IV_V7": {
+    "0": "18 of 18",
+    "2": "17 of 18",
+    "5": "18 of 18",
+    "6": "11 of 18"
+   },
+   "chords_as_played_I_IV_V": {
+    "0": "17 of 18",
+    "2": "14 of 18",
+    "5": "14 of 18",
+    "6": "18 of 18"
+   }
+  },
+  "robustness_note": "18 readings: note mode, frame mode, a second pitch tracker, chord changes 40 ms early, each verse left out, each verse alone. With V7 symbols beat 2 of bar 6 flips between V7 and I in 7 readings: F and E are equally long there and one of them is a semitone from the chord whichever of the two is chosen. Played without the seventh the dominant has no semitone relation to either note, and bar 6 is the same in 18 of 18."
+ },
+ "reasoning": [
+  "The sung melody is not the Old MacDonald tune: its notes are D E F G A, G alone is 45 % of the sung time. Under the plain harmony I I IV I only 58 % of the sung time is on chord tones.",
+  "Line 1 (D G | A A A | G G G F | E): the singer holds A on beat 1 and G on beat 2, the opposite of the traditional bar (IV on beat 2). Moving IV one beat earlier (I IV I I) raises the chord-tone share of the line from 31 % to 76 %. The line ends on E (mi over I); the loud answer that follows starts on the same note.",
+  "Lines 2 and 4 (D G G G | F E F E D) outline the dominant: D and G are its fifth and root, F its seventh, E a sixth above it. On the G triad no sung note is a semitone from a chord tone. Every chord that contains E (I) or F (IV, V7) puts the other note a semitone away for half a beat; the plain baseline does that with IV on beat 2.",
+  "'diye bagirir' (G G G F E) stays on I: G and E are chord tones, the F is a passing note of about 150 ms.",
+  "Bar 6 on the dominant leads into the loud answer of bar 7 (I V7 I I); bar 2 on the dominant resolves to the I of the animal-call bars.",
+  "One plan serves all verses: the animal words differ only in detail (verse 3 after the repair: F F E D; verse 7: F E F-E D) and line 2 has no sustained clash in any verse.",
+  "The original band of v2_2 (D minor loop), measured the same way, has 15.8 % sustained clash (33 runs); the chosen plan has 1.1 % (3 runs)."
+ ],
+ "trade_offs_stated_plainly": [
+  "As played (no seventh in the band) the band doubles fewer of the sung notes in bars 2 and 6 than the baseline does (chord tones 62.6 / 59.8 % against 64.9 / 65.2 %): the F and E of the animal word and of 'Ali Baba'nin' float above the G triad as seventh and sixth. That is the price of having no semitone there.",
+  "Bars 2 and 6 leave the traditional I I IV I completely; the plan stays inside I, IV and the dominant, one chord per bar there.",
+  "The first sung note of every verse (D, about 0.2 s) is a ninth over C: not a chord tone, no semitone neighbour. Opening the verse on the dominant instead (alternative E*) would make it a chord tone (+3.9 points of chord-tone share) but starts each verse on V and moves V to IV.",
+  "Three sustained clash runs remain in the whole song (the passing F of 'ciftligi' / 'bagirir' against the E of the I chord, 155-175 ms)."
+ ],
+ "not_verified_by_ear": "Nobody listened. Verified by code: the frame table reproduces kesim.json, the band model reproduces the builder's MIDI, the tune model reproduces the stem's MIDI, and 07_dogrula.py recomputes the numbers of this file by a separate route. Unverified by ear: that the seventh and sixth above the G triad feel supported, that a whole bar of dominant under lines 2 and 4 feels natural, that the ninth on the first note of each verse is unobtrusive, and whether dropping the seventh is audible at all.",
+ "files": {
+  "all_candidates": "adaylar.json",
+  "measurements": "olcum.json",
+  "audio_check": "ses_olcumu.json",
+  "under_vocal_numbers": "alt_politika.json",
+  "verification": "dogrulama.txt",
+  "scripts": "kod/ (kod/calistir.sh reruns everything)"
+ }
+}

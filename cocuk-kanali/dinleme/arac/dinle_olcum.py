@@ -188,15 +188,15 @@ def temel(yol, x, sr):
         yo = float(10 * np.log10(((yan ** 2).sum() + 1e-20) / ((orta ** 2).sum() + 1e-20)))
         st = {"sol_sag_korelasyon": yuv(kor, 3), "denge_db_sol_eksi_sag": yuv(denge, 2), "yan_orta_db": yuv(yo, 1)}
         if kor > 0.9995:
-            st["yorum"] = "iki kanal ayni (cift mono): stereo genislik yok, sorun degil"
+            st["yorum"] = "iki kanal aynı (çift mono): stereo genişlik yok, sorun değil"
         elif kor < 0.0:
-            st["yorum"] = "UYARI: kanallar ters fazli; telefonda (tek hoparlor) ses zayiflar"
+            st["yorum"] = "UYARI: kanallar ters fazlı; telefonda (tek hoparlör) ses zayıflar"
         elif kor < 0.3:
-            st["yorum"] = "cok genis stereo: tek hoparlorde bazi sesler zayiflayabilir"
+            st["yorum"] = "çok geniş stereo: tek hoparlörde bazı sesler zayıflayabilir"
         else:
-            st["yorum"] = "olagan stereo"
+            st["yorum"] = "olağan stereo"
         if abs(denge) > 3:
-            st["yorum"] += "; UYARI: ses bir tarafa yatik (%.1f dB)" % denge
+            st["yorum"] += "; UYARI: ses bir tarafa yatık (%.1f dB)" % denge
         c["stereo"] = st
     else:
         c["stereo"] = {"yorum": "tek kanal (mono) dosya"}
@@ -251,8 +251,10 @@ def enerji(y, paket=None, bpm=None, ilk_vurus=None):
     aktif_sure = max(1e-3, aktif.mean() * sure)
     c = {}
     tempo, vurus = vurus_izgarasi(oenv, bpm, ilk_vurus, sure)
+    if len(vurus) > 8 and not bpm:
+        tempo = 60.0 / ((vurus[-1] - vurus[0]) / (len(vurus) - 1))       # ortalama vurus araligindan (cerceve nicemlemesinden etkilenmez)
     c["tempo_bpm"] = yuv(tempo, 1)
-    c["tempo_kaynagi"] = "kullanici verdi (--bpm)" if bpm else "otomatik tahmin (yari/cift tempo hatasi yapabilir)"
+    c["tempo_kaynagi"] = "kullanıcı verdi (--bpm)" if bpm else "otomatik tahmin; yarı/çift tempo hatası yapabilir"
     c["vurus_sayisi"] = int(len(vurus))
     # nabiz netligi: vurus egri oz-iliskisinin vurus araligindaki tepesi
     o = oenv - oenv.mean()
@@ -292,7 +294,9 @@ def enerji(y, paket=None, bpm=None, ilk_vurus=None):
     frek = librosa.fft_frequencies(sr=SR, n_fft=NFFT)
     guc = (S ** 2)
     top = guc.sum()
-    c["parlaklik_agirlik_merkezi_hz"] = yuv(float((frek[:, None] * guc).sum() / (top + 1e-12)), 0)
+    mrk = (frek[:, None] * S).sum(axis=0) / (S.sum(axis=0) + 1e-12)
+    am = aktif[:len(mrk)] if len(aktif) >= len(mrk) else np.ones(len(mrk), bool)
+    c["parlaklik_agirlik_merkezi_hz"] = yuv(float(np.median(mrk[am])) if am.any() else float(np.median(mrk)), 0)
     c["tiz_payi_4khz_ustu_db"] = yuv(10 * np.log10(guc[frek >= 4000].sum() / (top + 1e-12) + 1e-12), 1)
     c["bas_payi_150hz_alti_db"] = yuv(10 * np.log10(guc[frek <= 150].sum() / (top + 1e-12) + 1e-12), 1)
     # kisa sureli duzey oynakligi (3 sn pencere)
@@ -312,7 +316,7 @@ def enerji(y, paket=None, bpm=None, ilk_vurus=None):
                     "olay_sn": yuv(float(((on >= t0) & (on < t0 + adim)).sum() / adim), 2), "aki": yuv(float(oenv[m].mean()), 3)})
     c["bolumler_5sn"] = bol
     c["enerji_puani"] = enerji_puani(c)
-    egri = {"oenv": oenv, "rms_db": rdb, "vurus": vurus, "olaylar": on}
+    egri = {"oenv": oenv, "rms_db": rdb, "vurus": vurus, "olaylar": on, "tempo": tempo}
     return c, egri
 
 
@@ -392,8 +396,8 @@ def duzey_zaman(v, a, f0_sesli_zaman=None):
         c["vokalin_gomuldugu_yerler"] = [{"bas": yuv(t[a_], 1), "son": yuv(t[min(b_, len(t) - 1)], 1)} for a_, b_ in kosular(gomuk)
                                          if (b_ - a_) * HOP / SR >= 1.0][:15]
         m = c["vokal_eksi_altyapi_db_medyan"]
-        c["denge_yorumu"] = ("vokal altyapinin belirgin altinda (gomuk olabilir)" if m < -6 else
-                             "vokal altyapinin cok ustunde (altyapi zayif kalabilir)" if m > 9 else "vokal-altyapi dengesi olagan aralikta")
+        c["denge_yorumu"] = ("Vokal altyapının belirgin altında (gömük olabilir)" if m < -6 else
+                             "Vokal altyapının çok üstünde (altyapı zayıf kalabilir)" if m > 9 else "Vokal-altyapı dengesi olağan aralıkta")
     # vokal bolumleri (0,6 sn'den kisa bosluklar birlestirilir)
     kapali = ndi.binary_closing(aktif, structure=np.ones(max(1, int(0.6 * SR / HOP))))
     c["vokal_bolumleri"] = [{"bas": yuv(t[a_], 2), "son": yuv(t[min(b_, len(t) - 1)], 2)} for a_, b_ in kosular(kapali) if (b_ - a_) * HOP / SR >= 0.3][:80]
@@ -446,40 +450,125 @@ def _akor_sablonlari():
     return np.array(T), ad
 
 
+def yerel_tonlar(C, t, r, pencere=24.0, adim=3.0):
+    """Kromadan zaman icinde ton (ton degisimini yakalamak icin). Donus: parca listesi [{bas, son, tonik, mod, r, ...}]."""
+    sure = float(t[-1]) if len(t) else 0.0
+    w = (r / (r.max() + 1e-12))[None, :]
+    Cw = C * w
+    anahtar = [(k, mod) for k in range(12) for mod in ("major", "minor")]
+    prof = np.array([np.roll(KS_MAJ if mod == "major" else KS_MIN, k) for k, mod in anahtar])
+    prof = (prof - prof.mean(axis=1, keepdims=True)) / prof.std(axis=1, keepdims=True)
+
+    def kor(pch):
+        if pch.sum() <= 0:
+            return np.zeros(24)
+        z = (pch - pch.mean()) / (pch.std() + 1e-12)
+        return prof @ z / 12.0
+
+    def ozet(m):
+        R = kor(Cw[:, m].sum(axis=1))
+        sira = np.argsort(-R)
+        k0 = sira[0]
+        g0 = gam(*anahtar[k0])
+        farkli = [R[j] for j in sira[1:] if gam(*anahtar[j]) != g0]
+        return R, int(k0), float(R[k0]), float(farkli[0]) if farkli else 0.0
+
+    if sure <= pencere * 1.5:
+        R, k0, r0, r1 = ozet(np.ones(len(t), bool))
+        yol, merkez = [k0], [sure / 2]
+    else:
+        merkez = list(np.arange(pencere / 2, sure - pencere / 2 + adim, adim))
+        Rs = np.array([kor(Cw[:, (t >= m - pencere / 2) & (t < m + pencere / 2)].sum(axis=1)) for m in merkez])
+        logB = Rs.T * 22.0
+        ceza = 7.0
+        skor = logB[:, 0].copy()
+        geri = np.zeros(logB.shape, int)
+        for j in range(1, logB.shape[1]):
+            gecis = skor[None, :] - ceza * (1 - np.eye(24))
+            geri[:, j] = gecis.argmax(axis=1)
+            skor = gecis.max(axis=1) + logB[:, j]
+        yol = [int(skor.argmax())]
+        for j in range(logB.shape[1] - 1, 0, -1):
+            yol.append(int(geri[yol[-1], j]))
+        yol = yol[::-1]
+    # parcalar + sinir inceltme
+    parca = []
+    for j, k in enumerate(yol):
+        if parca and parca[-1]["k"] == k:
+            parca[-1]["son_m"] = merkez[j]
+        else:
+            parca.append({"k": k, "bas_m": merkez[j], "son_m": merkez[j]})
+    Cn = C / (C.sum(axis=0, keepdims=True) + 1e-9)
+    sinirlar = [0.0]
+    for i in range(1, len(parca)):
+        A, B = gam(*anahtar[parca[i - 1]["k"]]), gam(*anahtar[parca[i]["k"]])
+        lo, hi = parca[i - 1]["son_m"] - pencere / 2, parca[i]["bas_m"] + pencere / 2
+        m = (t >= lo) & (t <= hi)
+        if m.sum() < 4 or A == B:
+            sinirlar.append((parca[i - 1]["son_m"] + parca[i]["bas_m"]) / 2)
+            continue
+        sA = Cn[sorted(A)][:, m].sum(axis=0)
+        sB = Cn[sorted(B)][:, m].sum(axis=0)
+        kaz = np.cumsum(sA - sB)                       # siniri j'den sonra koymanin kazanci
+        sinirlar.append(float(t[m][int(np.argmax(kaz))]))
+    sinirlar.append(sure + HOP / SR)
+    cikti = []
+    for i, pc_ in enumerate(parca):
+        bas, son = sinirlar[i], sinirlar[i + 1]
+        m = (t >= bas) & (t < son)
+        if m.sum() < 2:
+            continue
+        R, k0, r0, r1 = ozet(m)
+        tonik, mod = anahtar[pc_["k"]]
+        cikti.append({"bas": yuv(bas, 1), "son": yuv(min(son, sure), 1), "tonik": int(tonik), "mod": mod, "ton": ton_adi_tr(tonik, mod),
+                      "r": yuv(float(R[pc_["k"]]), 2), "farkli_gamli_ikinci_r": yuv(r1, 2),
+                      "belirsiz": bool(R[pc_["k"]] < 0.6 or (R[pc_["k"]] - r1) < 0.06)})
+    return cikti
+
+
 def akor_ve_ton(a, a44=None, paket=None, vurus=None):
-    """a: altyapi (ya da karisim) tek kanal SR. Donus: sozluk + egriler (kroma, akor parcalari)."""
+    """a: altyapi (ya da karisim) tek kanal SR. Donus: sozluk + egriler (kroma, akor parcalari, ton parcalari)."""
     paket = paket or spektrum_paketi(a)
     yh = librosa.istft(paket["H"] * np.exp(1j * np.angle(paket["D"])), hop_length=HOP, length=len(a))
     akort = float(librosa.estimate_tuning(y=yh, sr=SR))                    # yarim sesin kesri (-0.5..0.5)
-    C = librosa.feature.chroma_cqt(y=yh, sr=SR, hop_length=HOP, tuning=akort, bins_per_octave=36)
+    C = librosa.feature.chroma_cqt(y=yh, sr=SR, hop_length=HOP, tuning=akort, bins_per_octave=36,
+                                   fmin=librosa.note_to_hz("C2"), n_octaves=5)
     t = librosa.times_like(C, sr=SR, hop_length=HOP)
     r = rms_egri(a)[:C.shape[1]]
+    if len(r) < C.shape[1]:
+        r = np.pad(r, (0, C.shape[1] - len(r)))
     c = {"akort_kaymasi_cent": yuv(akort * 100, 1),
          "akort_aciklama": "Altyapinin 440 Hz izgarasindan sapmasi. Vokal cent olcumleri bu izgaraya gore yapilir."}
-    # ton: essentia + kendi KS hesabimiz
-    agirlik = (r / (r.max() + 1e-12))[None, :]
-    pch = (C * agirlik).sum(axis=1)
-    ks = ks_ton(pch)
-    ton = None
-    if ks:
-        c["ton_ks"] = {"ton": ton_adi_tr(ks[0], ks[1]), "r": yuv(ks[2], 3), "ikinci_r": yuv(ks[3], 3)}
-        ton = (ks[0], ks[1])
+    # ton: zaman icinde (ton degisimi yakalanir) + essentia capraz denetimi
+    tonlar = yerel_tonlar(C, t, r)
     try:
         import essentia
         essentia.log.infoActive = False
         essentia.log.warningActive = False
         import essentia.standard as es
         sinyal = a44 if a44 is not None else librosa.resample(a, orig_sr=SR, target_sr=44100)
-        k_, olcek, guc = es.KeyExtractor(profileType="edma", sampleRate=44100)(np.ascontiguousarray(sinyal, dtype=np.float32))
-        tonik = ADLAR.index(ES_AD.get(k_, k_))
-        c["ton_essentia"] = {"ton": ton_adi_tr(tonik, olcek), "guven": yuv(guc, 2)}
-        c["ton_iki_yontem_ayni"] = bool(ton == (tonik, olcek))
-        ton = (tonik, olcek)
+        for tp in tonlar:
+            parca = sinyal[int(tp["bas"] * 44100):int(tp["son"] * 44100)]
+            if len(parca) < 44100 * 8:
+                continue
+            k_, olcek, guc = es.KeyExtractor(profileType="edma", sampleRate=44100)(np.ascontiguousarray(parca, dtype=np.float32))
+            tonik = ADLAR.index(ES_AD.get(k_, k_))
+            tp["essentia"] = ton_adi_tr(tonik, olcek)
+            tp["essentia_ayni_gam"] = bool(gam(tonik, olcek) == gam(tp["tonik"], tp["mod"]))
+            if not tp["essentia_ayni_gam"]:
+                tp["belirsiz"] = True
     except Exception as e:
-        c["ton_essentia"] = {"hata": str(e)[:120]}
-    if ton:
-        c["ton"] = ton_adi_tr(*ton)
-        c["tonik"], c["mod"] = int(ton[0]), ton[1]
+        c["essentia_hata"] = str(e)[:120]
+    c["ton_parcalari"] = tonlar
+    if tonlar:
+        ana = max(tonlar, key=lambda x: x["son"] - x["bas"])
+        c["ton"] = ana["ton"]
+        c["tonik"], c["mod"] = ana["tonik"], ana["mod"]
+        c["ton_belirsiz"] = bool(any(x["belirsiz"] for x in tonlar))
+        c["ton_degisimi_var"] = bool(len({(x["tonik"], x["mod"]) for x in tonlar}) > 1)
+        c["ton_aciklama"] = ("Ton, kromanin Krumhansl profilleriyle iliskisinden (24 sn'lik pencereler) bulunur; essentia ile capraz denetlenir. "
+                             "'belirsiz' ise (iliski zayif ya da iki yontem farkli gam buluyor) gam ici / gam disi oranlarina guvenmeyin; "
+                             "etiketsiz 'armonik destek' olcusune bakin.")
     # akorlar: vurus-esli kroma + ucsesli sablonlar + Viterbi yumusatma
     if vurus is None or len(vurus) < 8:
         sinir = np.arange(0, C.shape[1], max(1, int(0.5 * SR / HOP)))
@@ -493,9 +582,9 @@ def akor_ve_ton(a, a44=None, paket=None, vurus=None):
     T, adlar = _akor_sablonlari()
     Cn = Cb / (np.linalg.norm(Cb, axis=0, keepdims=True) + 1e-9)
     benz = (T @ Cn)                                                       # [24, parca]
-    logB = benz * 14.0
+    logB = benz * 25.0
     n_d, n_p = logB.shape
-    kal, deg = math.log(0.65), math.log(0.35 / (n_d - 1))
+    kal, deg = math.log(0.5), math.log(0.5 / (n_d - 1))
     skor = logB[:, 0].copy()
     geri = np.zeros((n_d, n_p), int)
     for j in range(1, n_p):
@@ -527,9 +616,9 @@ def akor_ve_ton(a, a44=None, paket=None, vurus=None):
     c["akor_sureleri_sn"] = {k: yuv(v, 1) for k, v in sorted(sayim.items(), key=lambda kv: -kv[1])[:8]}
     g = [p["guven"] for p in parcalar if p["akor"] != "-"]
     c["akor_guveni_ort"] = yuv(float(np.mean(g)) if g else 0.0, 2)
-    c["akor_aciklama"] = ("Akorlar yalnizca majör/minör ucsesli sablonlarla tahmin edilir (7'li vb. yok). Guven 0,75'in altindaysa "
+    c["akor_aciklama"] = ("Akorlar yalnizca majör/minör ucsesli sablonlarla tahmin edilir (7'li vb. yok). Ortalama guven 0,75'in altindaysa "
                           "akor adlari supheli: 'akor sesi' oranlarini ona gore okuyun.")
-    return c, {"kroma": C, "kroma_t": t, "akorlar": parcalar, "akort": akort, "yh": yh}
+    return c, {"kroma": C, "kroma_t": t, "akorlar": parcalar, "akort": akort, "tonlar": tonlar}
 
 
 # ----------------------------------------------------------------------------------------------------------
@@ -676,11 +765,16 @@ def perde_ozeti(t, midi, sesli, notalar):
 def vokal_uyum(t, midi, sesli, notalar, altyapi, akor_egri):
     """Vokal altyapiyla uyumlu mu? altyapi: akor_ve_ton() sozlugu. midi: altyapinin akort izgarasina gore duzeltilmis."""
     c = {}
-    if not notalar or altyapi.get("tonik") is None:
-        return {"not": "uyum olculemedi (nota ya da altyapi tonu yok)"}
-    tonik, mod = altyapi["tonik"], altyapi["mod"]
-    olcek = gam(tonik, mod)
+    tonlar = akor_egri.get("tonlar") or []
+    if not notalar or not tonlar:
+        return {"not": "uyum olculemedi (nota ya da altyapi tonu yok)"}, {}
+    tb = np.array([x["bas"] for x in tonlar])
+    gamlar = [gam(x["tonik"], x["mod"]) for x in tonlar]
+
+    def gam_i(zaman):
+        return np.clip(np.searchsorted(tb, zaman, side="right") - 1, 0, len(tonlar) - 1)
     cek = np.concatenate([n["cekirdek"] for n in notalar])
+    tc = t[cek]
     pc = np.mod(np.round(midi[cek]).astype(int), 12)
     sap = (midi[cek] - np.round(midi[cek])) * 100
     c["cent_sapma_medyan_mutlak"] = yuv(float(np.median(np.abs(sap))), 1)
@@ -692,44 +786,42 @@ def vokal_uyum(t, midi, sesli, notalar, altyapi, akor_egri):
     c["perde_izgaraya_yapisma_R"] = yuv(float(np.abs(z)), 2)
     c["izgara_aciklama"] = ("R: sarki perdelerinin yarim ses izgarasina ne kadar siki toplandigi (0-1). Cok yuksek (>0,9) + cok duz notalar "
                             "= sert otomatik akort / sentez izlenimi. Dusuk (<0,4) = perdeler izgaraya oturmuyor (detone).")
-    c["gam_ici_sure_orani"] = yuv(float(np.isin(pc, list(olcek)).mean()), 3)
-    # ton kaydirma denemesi: vokali k yarim ses kaydirsak gama daha mi iyi oturur?
-    kay = {k: float(np.isin((pc + k) % 12, list(olcek)).mean()) for k in range(-6, 6)}
-    eniyi = max(kay, key=lambda k: (kay[k], -abs(k)))
-    c["ton_kaydirma_denemesi"] = {"sifir_kaydirma": yuv(kay[0], 3), "en_iyi_kaydirma_yarim_ses": int(eniyi), "en_iyi_oran": yuv(kay[eniyi], 3)}
-    # akor sesleri
-    akorlar = akor_egri["akorlar"]
-    bas = np.array([a["bas"] for a in akorlar])
-    tc = t[cek]
-    ai = np.clip(np.searchsorted(bas, tc, side="right") - 1, 0, len(akorlar) - 1)
-    sinif = np.zeros(len(cek), int)                       # 0 akor sesi, 1 gam ici (akor disi), 2 gam disi, 3 akor yok
-    for i in range(len(cek)):
-        ak = akorlar[ai[i]]
-        if ak["akor"] == "-":
-            sinif[i] = 3 if pc[i] in olcek else 2
-        elif pc[i] in ak["sesler"]:
-            sinif[i] = 0
-        elif pc[i] in olcek:
-            sinif[i] = 1
-        else:
-            sinif[i] = 2
-    d = sinif != 3
-    if d.any():
-        c["akor_sesi_sure_orani"] = yuv(float((sinif[d] == 0).mean()), 3)
-        c["gam_ici_akor_disi_orani"] = yuv(float((sinif[d] == 1).mean()), 3)
-        c["gam_disi_orani"] = yuv(float((sinif[d] == 2).mean()), 3)
-    # armonik destek (kendi kendini kalibre eden): sarki perdesinin sinifinda altyapi kromasi ne kadar guclu?
+    gi = gam_i(tc)
+    gam_ici = np.array([pc[i] in gamlar[gi[i]] for i in range(len(cek))])
+    c["gam_ici_sure_orani"] = yuv(float(gam_ici.mean()), 3)
+    c["gam_guvenilir_mi"] = not any(x["belirsiz"] for x in tonlar)
+    # etiketsiz ton kaydirma denemesi: vokali k yarim ses kaydirsak altyapinin kromasina daha mi iyi oturur?
     C = akor_egri["kroma"]
     Cn = C / (C.max(axis=0, keepdims=True) + 1e-9)
     ci = np.clip((tc * SR / HOP).astype(int), 0, C.shape[1] - 1)
-
-    def destek(k):
-        return float(Cn[(pc + k) % 12, ci].mean())
-    s0, sp, sm = destek(0), destek(1), destek(-1)
-    c["armonik_destek"] = {"gercek": yuv(s0, 3), "yarim_ses_yukari": yuv(sp, 3), "yarim_ses_asagi": yuv(sm, 3), "fark": yuv(s0 - (sp + sm) / 2, 3),
+    des = {k: float(Cn[(pc + k) % 12, ci].mean()) for k in range(-6, 6)}
+    sirali = sorted(des, key=lambda k: -des[k])
+    c["armonik_destek"] = {"gercek": yuv(des[0], 3), "yarim_ses_yukari": yuv(des[1], 3), "yarim_ses_asagi": yuv(des[-1], 3),
+                           "fark": yuv(des[0] - (des[1] + des[-1]) / 2, 3),
                            "aciklama": "Vokalin soyledigi ses sinifinda altyapinin ne kadar enerjisi var; ayni olcu vokal yarim ses kaydirilmis "
                                        "gibi yeniden hesaplanir. Fark belirgin arti ise (>+0,05) vokal altyapiyla ayni armonide; sifir/eksi ise "
-                                       "'iki ayri sarki ust uste' riski."}
+                                       "'iki ayri sarki ust uste' riski. Ton etiketi gerektirmez."}
+    c["ton_kaydirma_denemesi"] = {"destek_kaydirmaya_gore": {("%+d" % k): yuv(des[k], 3) for k in range(-6, 6)},
+                                  "en_iyi_kaydirma_yarim_ses": int(sirali[0]), "sifir_kacinci": int(sirali.index(0) + 1),
+                                  "aciklama": "Vokal -6..+5 yarim ses kaydirilmis gibi armonik destek. En iyi deger 0 kaydirmada olmali. "
+                                              "+5/-5/+7 (dortlu/besli) komsu tonlar oldugu icin 0'a yakin cikabilir; +-1, +-2 ya da +-6 en iyiyse "
+                                              "vokal baska tonda soyluyor olabilir."}
+    # akor sesleri
+    akorlar = akor_egri["akorlar"]
+    bas = np.array([a["bas"] for a in akorlar])
+    ai = np.clip(np.searchsorted(bas, tc, side="right") - 1, 0, len(akorlar) - 1)
+    sinif = np.zeros(len(cek), int)                       # 0 akor sesi, 1 gam ici (akor disi), 2 gam disi
+    for i in range(len(cek)):
+        ak = akorlar[ai[i]]
+        if ak["akor"] != "-" and pc[i] in ak["sesler"]:
+            sinif[i] = 0
+        elif gam_ici[i]:
+            sinif[i] = 1
+        else:
+            sinif[i] = 2
+    c["akor_sesi_sure_orani"] = yuv(float((sinif == 0).mean()), 3)
+    c["gam_ici_akor_disi_orani"] = yuv(float((sinif == 1).mean()), 3)
+    c["gam_disi_orani"] = yuv(float((sinif == 2).mean()), 3)
     # cakisan uzun notalar
     cak = []
     for n in notalar:
@@ -738,12 +830,11 @@ def vokal_uyum(t, midi, sesli, notalar, altyapi, akor_egri):
         p = int(round(n["midi"])) % 12
         orta = (n["bas"] + n["son"]) / 2
         ak = akorlar[int(np.clip(np.searchsorted(bas, orta, side="right") - 1, 0, len(akorlar) - 1))]
-        if ak["akor"] == "-":
-            continue
+        olcek = gamlar[int(gam_i(orta))]
         tur = None
-        if p not in olcek:
+        if p not in olcek and not (ak["akor"] != "-" and p in ak["sesler"]):
             tur = "gam disi"
-        elif p not in ak["sesler"] and n["sure"] >= 0.45 and any(((p - s) % 12) in (1, 11) for s in ak["sesler"]):
+        elif ak["akor"] != "-" and p not in ak["sesler"] and n["sure"] >= 0.45 and any(((p - s_) % 12) in (1, 11) for s_ in ak["sesler"]):
             tur = "akor sesine yarim ses komsu"
         if abs(n["cent"]) > 35 and n["sure"] >= 0.4:
             tur = (tur + " + " if tur else "") + "%+.0f cent detone" % n["cent"]
@@ -758,11 +849,35 @@ def vokal_uyum(t, midi, sesli, notalar, altyapi, akor_egri):
 # ----------------------------------------------------------------------------------------------------------
 # f) ritim
 # ----------------------------------------------------------------------------------------------------------
+RITIM_HOP = 256          # 11,6 ms
+VURUS_GECIKMESI = 0.040  # sn. librosa vurus izleyicisi vurusu gercek yerinden ~40 ms SONRA isaretliyor (dogrula.py: vuruslari bilinen
+                         # altyapida 36-49 ms olculdu). Otomatik izgara bu kadar geri cekilir. Malzemeye gore +-20 ms oynayabilir.
+
+
+def ince_vurus_egri(y):
+    return librosa.onset.onset_strength(y=y, sr=SR, hop_length=RITIM_HOP, n_mels=96, fmax=8000)
+
+
+def ince_vurus_izgarasi(y, bpm=None, ilk_vurus=None):
+    """Altyapidan vurus izgarasi (11,6 ms adim). Vokal baslangiclari ayni yontemle bulundugu icin algilama gecikmeleri birbirini goturur."""
+    if bpm and ilk_vurus is not None:
+        return float(bpm), np.arange(ilk_vurus, len(y) / SR, 60.0 / bpm), "verilen tempo ve ilk vuruş"
+    o = ince_vurus_egri(y)
+    try:
+        tempo, kare = librosa.beat.beat_track(onset_envelope=o, sr=SR, hop_length=RITIM_HOP, bpm=bpm, tightness=100, trim=False)
+        v = librosa.frames_to_time(kare, sr=SR, hop_length=RITIM_HOP) - VURUS_GECIKMESI
+        tempo = float(np.atleast_1d(tempo)[0])
+        if len(v) > 8 and not bpm:
+            tempo = 60.0 / ((v[-1] - v[0]) / (len(v) - 1))
+        return tempo, v, "otomatik (altyapıdan)" if not bpm else "verilen tempo, otomatik faz"
+    except Exception:
+        return 0.0, np.array([]), "bulunamadi"
+
+
 def vokal_baslangiclari(v, aktif_t=None, aktif=None):
     """Vokalde hece/nota baslangiclari (spektral aki tepeleri), 11,6 ms adimla."""
-    hop = 256
-    o = librosa.onset.onset_strength(y=v, sr=SR, hop_length=hop, n_mels=96, fmax=8000)
-    on = librosa.onset.onset_detect(onset_envelope=o, sr=SR, hop_length=hop, units="time", backtrack=False, delta=0.12, wait=4)
+    o = ince_vurus_egri(v)
+    on = librosa.onset.onset_detect(onset_envelope=o, sr=SR, hop_length=RITIM_HOP, units="time", backtrack=False, delta=0.12, wait=4)
     if aktif_t is not None and aktif is not None and len(on):
         on = on[np.interp(on, aktif_t, aktif.astype(float)) > 0.5]
     return on, o
@@ -800,9 +915,11 @@ def ritim(baslangic, vurus, tempo):
     R = c["sekizlik"]["sikilik_R"]
     rast = 1.0 / math.sqrt(len(b))
     c["rastgele_beklenen_R"] = yuv(rast, 2)
-    c["yorum"] = ("vokal baslangiclari sekizlik izgaraya siki oturuyor" if R >= 0.55 else
-                  "vokal izgaraya orta derecede oturuyor (serbest/konusur gibi soyleyis ya da olcum gurultusu)" if R >= 0.3 else
-                  "vokal baslangiclari izgarayla iliskisiz gorunuyor (ritme oturmuyor YA DA vurus izgarasi yanlis bulundu)")
+    c["kalibrasyon"] = ("dogrula.py denetimleri: notalari tam vurusta yapay sarkici R=0,65 (olcumun tavani), +-90 ms rastgele kaydirilmis "
+                        "ayni sarkici R=0,15; 70 ms gec soyleyen: R ayni, ortalama kayma +75 ms.")
+    c["yorum"] = ("Vokal başlangıçları sekizlik ızgaraya sıkı oturuyor" if R >= 0.55 else
+                  "Vokal ızgaraya orta derecede oturuyor (serbest / konuşur gibi söyleyiş ya da ölçüm gürültüsü)" if R >= 0.3 else
+                  "Vokal başlangıçları ızgarayla ilişkisiz görünüyor (ritme oturmuyor YA DA vuruş ızgarası yanlış bulundu)")
     c["aciklama"] = ("R: 0-1; baslangiclarin vurus icindeki konumlarinin ne kadar ayni yerde toplandigi. 'ortalama_kayma' sabit bir erken/gec "
                      "soylemeyi gosterir (+ gec). Vurus izgarasi otomatik bulunduysa 20-30 ms'lik sabit kayma olcum hatasi olabilir; "
                      "gercek tempo --bpm ile verilirse daha guvenilir olur.")
@@ -824,7 +941,7 @@ def yapaylik(v, t, midi, sesli, notalar, uyum=None, perde=None):
         c["nota_ici_oynaklik_cent_medyan"] = yuv(float(np.median(st)), 1)
         c["cok_duz_nota_orani"] = yuv(float((st < 5).mean()), 2)
         if np.median(st) < 6:
-            isaret.append("notalarin ici cok duz (medyan %.1f cent): sert akort duzeltme / vokoder ile sabitlenmis perde izlenimi" % np.median(st))
+            isaret.append("notaların içi çok düz (medyan %.1f cent): sert akort düzeltme / vokoderle sabitlenmiş perde izlenimi" % np.median(st))
     # 2) basamakli (nicemlenmis) perde gecisleri: komsu notalar arasi gecis suresi
     gecis = []
     for a, b in zip(notalar[:-1], notalar[1:]):
@@ -836,12 +953,12 @@ def yapaylik(v, t, midi, sesli, notalar, uyum=None, perde=None):
         c["bagli_gecis_sayisi"] = len(g)
         c["bagli_gecis_suresi_ms_medyan"] = yuv(float(np.median(g)), 0)
         c["ani_gecis_orani_35ms_alti"] = yuv(float((g < 35).mean()), 2)
-        if (g < 35).mean() > 0.6:
-            isaret.append("bagli notalar arasi gecislerin cogu ani (%d ms medyan): basamakli perde, insan sesi genelde 50-150 ms'de kayar" % np.median(g))
+        if np.median(g) <= 20:      # dogrula.py: gercek vokalde 32 ms, yarim seslere yapistirilmis vokalde 16 ms olculdu (olcum adimi 16 ms)
+            isaret.append("bağlı notalar arası geçişler ani (%d ms medyan; aynı ölçümle doğal vokalde ~32 ms): basamaklı perde" % np.median(g))
     if uyum and uyum.get("perde_izgaraya_yapisma_R") is not None:
         c["perde_izgaraya_yapisma_R"] = uyum["perde_izgaraya_yapisma_R"]
         if uyum["perde_izgaraya_yapisma_R"] > 0.9 and uz and np.median([n["ic_std_cent"] for n in uz]) < 8:
-            isaret.append("perdeler yarim ses izgarasina asiri siki yapismis (R=%.2f): nicemlenmis perde" % uyum["perde_izgaraya_yapisma_R"])
+            isaret.append("perdeler yarım ses ızgarasına aşırı sıkı yapışmış (R=%.2f): nicemlenmiş (cetvelle çizilmiş) perde" % uyum["perde_izgaraya_yapisma_R"])
     # 3) vibrato
     vb = [n for n in notalar if n["vibrato"]]
     if len(vb) >= 4:
@@ -853,7 +970,7 @@ def yapaylik(v, t, midi, sesli, notalar, uyum=None, perde=None):
             gn = np.array([x["genlik_cent"] for x in var])
             c["vibrato_hiz_yayilimi_hz"] = yuv(float(np.std(hz)), 2)
             if len(var) >= 4 and np.std(hz) < 0.15 and np.std(gn) < 3:
-                isaret.append("vibrato her notada ayni hiz ve genislikte (%.1f Hz): makineyle eklenmis titresim izlenimi" % np.median(hz))
+                isaret.append("vibrato her notada aynı hız ve genişlikte (%.1f Hz): makineyle eklenmiş titreşim izlenimi" % np.median(hz))
     # spektral olcumler
     hop = 256
     D = np.abs(librosa.stft(v, n_fft=1024, hop_length=hop))
@@ -875,8 +992,8 @@ def yapaylik(v, t, midi, sesli, notalar, uyum=None, perde=None):
     if ses_i.sum() > 10:
         c["sesli_cercevelerde_ardisik_benzerlik_medyan"] = yuv(float(np.median(benz[ses_i & akt])) if (ses_i & akt).any() else None, 4)
         c["donmus_sure_orani"] = yuv(float(sum(b - a for a, b in ks) / max(1, (ses_i & akt).sum())), 3)
-        if c["donmus_sure_orani"] and c["donmus_sure_orani"] > 0.25:
-            isaret.append("sesli surenin %%%d'i 'donmus' unlu (spektrum 0,45 sn'den uzun hic degismiyor): zaman esnetme / vokoder tutmasi izlenimi"
+        if c["donmus_sure_orani"] and c["donmus_sure_orani"] > 0.10:
+            isaret.append("sesli sürenin %%%d kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi"
                           % (100 * c["donmus_sure_orani"]))
     # 5) unsuz (tiz) enerjisi: sessiz unsuz cercevelerinde 4 kHz ustu
     tiz = (D[frek >= 4000] ** 2).sum(axis=0)
@@ -887,14 +1004,14 @@ def yapaylik(v, t, midi, sesli, notalar, uyum=None, perde=None):
         c["unsuzlerde_tiz_payi_db"] = yuv(float(10 * np.log10(tiz[unsuz].sum() / tum[unsuz].sum() + 1e-12)), 1)
         c["unlulerde_tiz_payi_db"] = yuv(float(10 * np.log10(tiz[ses_i & akt].sum() / tum[ses_i & akt].sum() + 1e-12)), 1)
         if c["unsuzlerde_tiz_payi_db"] < -14:
-            isaret.append("unsuzlerde (s, ş, ç, t, k) tiz enerji zayif (%.0f dB): boguk / 'ağzı kapalı' artikulasyon izlenimi" % c["unsuzlerde_tiz_payi_db"])
+            isaret.append("ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (%.0f dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi" % c["unsuzlerde_tiz_payi_db"])
     P = (D ** 2).mean(axis=1)
     Pd = 10 * np.log10(P / (P.max() + 1e-30) + 1e-30)
     Pd = ndi.uniform_filter1d(Pd, 7)
     ust = frek[np.where(Pd > -60)[0][-1]] if (Pd > -60).any() else 0
     c["vokal_ust_frekans_hz"] = int(ust)
     if ust < 7000:
-        isaret.append("vokalin enerjisi %d Hz'de bitiyor: bant sinirli (telefon / dusuk kaliteli sentez) tini" % ust)
+        isaret.append("vokalin enerjisi %d Hz'de bitiyor: bant sınırlı (telefon / düşük kaliteli sentez) tını" % ust)
     # 6) tiz doku titresimi: tutulan unlulerde 4-8 kHz bandinin zaman icindeki degisim katsayisi
     bant = (frek >= 4000) & (frek <= 8000)
     if (ses_i & akt).sum() > 40:
@@ -918,7 +1035,12 @@ def yapaylik(v, t, midi, sesli, notalar, uyum=None, perde=None):
         oranlar.append(10 * np.log10((ust_b + 1e-12) / (alt_b + 1e-12)))
     if oranlar:
         c["zarf_titremesi_db"] = yuv(float(np.median(oranlar)), 1)
-        c["zarf_titremesi_aciklama"] = "Tutulan seslerde 15-40 Hz genlik titresiminin 1-15 Hz'e orani (dB). Yuksek = puruzlu/titrek (esnetme artigi olabilir)."
+        c["zarf_titremesi_aciklama"] = ("Tutulan seslerde 15-40 Hz genlik titresiminin 1-15 Hz'e orani (dB). dogrula.py'de: ayrilmis dogal vokal -9..-11, "
+                                        "esnetilmis vokal -14, konusma sentezi -16, vokoderle ezgiye oturtulmus (reddedilen) vokal -21. Yani COK DUSUK deger "
+                                        "asiri puruzsuz/duragan ses demek olabilir; tek basina karar verdirmez.")
     c["isaretler"] = isaret
     c["isaret_sayisi"] = len(isaret)
+    c["neyi_yakalar"] = ("dogrula.py denetimlerinde YAKALANAN: perdesi yarim seslere yapistirilmis vokal (duzluk + izgaraya yapisma), 4 kHz'de kesilmis "
+                         "vokal (tiz eksigi), hecelerı vokoderle uzatilmis vokal (donmus unlu). YAKALANMAYAN: perdesi degistirilmeden vokoderden "
+                         "gecirilmis vokal, 1,6-1,8 kat esnetilmis vokal, konusma sentezi. 'Isaret yok' = 'dogal' DEGILDIR.")
     return c

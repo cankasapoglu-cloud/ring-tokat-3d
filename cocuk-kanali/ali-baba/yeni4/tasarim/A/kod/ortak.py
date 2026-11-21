@@ -37,7 +37,8 @@ VOCAL_BEATS = {0: [0, 1, 2, 3], 2: [0, 1, 2, 3], 5: [2, 3], 6: [0, 1, 2, 3]}
 
 # ---- chords -----------------------------------------------------------------------------------------------
 # degree -> (root offset from the tonic, chord-tone offsets from the tonic)
-DEGREE = {"I": (0, (0, 4, 7)), "IV": (5, (5, 9, 0)), "V7": (7, (7, 11, 2, 5))}
+# "V" = the dominant as a plain triad (the V7 of the task with its seventh left out of the band)
+DEGREE = {"I": (0, (0, 4, 7)), "IV": (5, (5, 9, 0)), "V7": (7, (7, 11, 2, 5)), "V": (7, (7, 11, 2))}
 MAJOR_SCALE = (0, 2, 4, 5, 7, 9, 11)
 
 

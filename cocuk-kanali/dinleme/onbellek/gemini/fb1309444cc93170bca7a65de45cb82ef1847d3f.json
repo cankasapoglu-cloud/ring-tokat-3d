@@ -1,0 +1,13 @@
+{
+ "tamam": true,
+ "yanit": "1. **B** – B'deki şarkıcının sesi dijital bozulmalar içermeyen doğal bir sese sahipken A'daki vokal son derece robotik ve yapaydır.\n2. **B** – B'de vokal fon müziğiyle tam bir akort ve melodi uyumu içindeyken A'da şarkıcı sık sık detone olmaktadır.\n3. **B** – B'deki vokal temposuna ve vuruşlara tam otururken A'daki ritim takibi daha sarsak ve geriden gelmektedir.\n4. **B** – B parçası canlı temposu ve neşeli vokal anlatımıyla çok daha coşkulu ve enerjiktir.\n5. **B** – B'de Türkçe kelimeler net ve doğru telaffuz edilirken A'da yapay vokal nedeniyle sözler bozuk ve anlaşılması zordur.\n6. **B** – Çocuklar için ritmik ve doğru akortlu yapısıyla B çok daha iyidir; A'daki en belirgin kusur 00:09 - 00:16 saniyeleri arasında vokal sesin şiddetli şekilde detone olup melodiden kaymasıdır.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "eski41.mp3",
+  "yeni45.mp3"
+ ],
+ "bas": null,
+ "sure": null,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 16:00:55"
+}

@@ -1,0 +1,38 @@
+{
+ "voiced_sung_s": 44.85,
+ "kesim_json_total_s": 44.85,
+ "largest_pitch_class_difference_to_kesim_json_s": 0.0,
+ "pitch_class_share_note_mode": {
+  "C#": 0.0022,
+  "D": 0.1328,
+  "E": 0.1649,
+  "F": 0.1575,
+  "G": 0.4525,
+  "A": 0.0882,
+  "A#": 0.0019
+ },
+ "pitch_class_share_frame_mode": {
+  "C": 0.0031,
+  "C#": 0.0097,
+  "D": 0.1317,
+  "D#": 0.0204,
+  "E": 0.1583,
+  "F": 0.1418,
+  "F#": 0.035,
+  "G": 0.371,
+  "G#": 0.0338,
+  "A": 0.0912,
+  "A#": 0.0025,
+  "B": 0.0016
+ },
+ "frames_whose_own_pitch_rounds_to_their_note": 0.8312,
+ "placed_vocal_cross_check": {
+  "placed_file_checked": true,
+  "frames_of_the_table_voiced_in_the_placed_file": 0.9999,
+  "frames_within_half_a_semitone_of_the_placed_file": 0.9948,
+  "median_abs_pitch_difference_semitones": 0.008,
+  "gated_frames_of_the_placed_file": 8972,
+  "of_which_not_in_the_table": 5,
+  "note": "the table is built from the SOURCE stem + the placement shifts of kesim.json; this compares it with an independent pitch track of vokal_dogal.wav at the same destination times (frame grids differ by up to 2.5 ms; fades change the gate at the edges)"
+ }
+}

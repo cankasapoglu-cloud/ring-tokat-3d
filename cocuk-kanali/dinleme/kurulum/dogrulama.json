@@ -1,0 +1,296 @@
+{
+ "uyum_ve_ritim": {
+  "bilinen": {
+   "tempo_bpm": 134,
+   "ton": "Sol majör (G); 5. kıtadan itibaren La majör (A)",
+   "ton_degisimi_sn": 85.97
+  },
+  "bulunan": {
+   "tempo_bpm": 133.95,
+   "ton_parcalari": [
+    [
+     0.0,
+     85.3,
+     "Sol majör (G major)",
+     false
+    ],
+    [
+     85.3,
+     154.7,
+     "La majör (A major)",
+     false
+    ]
+   ],
+   "akor_sureleri": {
+    "G": 65.3,
+    "A": 56.7,
+    "D": 16.6,
+    "C": 12.1,
+    "E": 3.1
+   }
+  },
+  "denetimler": [
+   {
+    "denetim": "kusursuz (tam yerinde, tam akortlu)",
+    "nota_sayisi": 197,
+    "gercek_nota_sayisi": 227,
+    "armonik_destek_farki": 0.484,
+    "en_iyi_kaydirma": 0,
+    "gam_ici": 1.0,
+    "akor_sesi": 0.956,
+    "cent_medyan": 1.8,
+    "vokal_akort_kaymasi_cent": -2.3,
+    "cakisan_uzun_nota": 0,
+    "ritim_R_otomatik_izgara": 0.64,
+    "kayma_ms_otomatik_izgara": 6.0,
+    "ritim_R_gercek_izgara": 0.65,
+    "kayma_ms_gercek_izgara": 4.0,
+    "yuzde_40ms_gercek_izgara": 88.0
+   },
+   {
+    "denetim": "yarim ses yukari (yanlis ton)",
+    "nota_sayisi": 166,
+    "gercek_nota_sayisi": 227,
+    "armonik_destek_farki": -0.266,
+    "en_iyi_kaydirma": -1,
+    "gam_ici": 0.0,
+    "akor_sesi": 0.0,
+    "cent_medyan": 3.3,
+    "vokal_akort_kaymasi_cent": -3.1,
+    "cakisan_uzun_nota": 66,
+    "ritim_R_otomatik_izgara": 0.6,
+    "kayma_ms_otomatik_izgara": 9.0,
+    "ritim_R_gercek_izgara": 0.6,
+    "kayma_ms_gercek_izgara": 8.0,
+    "yuzde_40ms_gercek_izgara": 86.0
+   },
+   {
+    "denetim": "iki yarim ses asagi (yanlis ton)",
+    "nota_sayisi": 214,
+    "gercek_nota_sayisi": 227,
+    "armonik_destek_farki": -0.051,
+    "en_iyi_kaydirma": 2,
+    "gam_ici": 0.555,
+    "akor_sesi": 0.029,
+    "cent_medyan": 1.5,
+    "vokal_akort_kaymasi_cent": -1.5,
+    "cakisan_uzun_nota": 53,
+    "ritim_R_otomatik_izgara": 0.55,
+    "kayma_ms_otomatik_izgara": -3.0,
+    "ritim_R_gercek_izgara": 0.56,
+    "kayma_ms_gercek_izgara": -4.0,
+    "yuzde_40ms_gercek_izgara": 79.0
+   },
+   {
+    "denetim": "40 cent tiz (detone)",
+    "nota_sayisi": 179,
+    "gercek_nota_sayisi": 227,
+    "armonik_destek_farki": 0.493,
+    "en_iyi_kaydirma": 0,
+    "gam_ici": 0.999,
+    "akor_sesi": 0.959,
+    "cent_medyan": 37.4,
+    "vokal_akort_kaymasi_cent": 37.0,
+    "cakisan_uzun_nota": 113,
+    "ritim_R_otomatik_izgara": 0.68,
+    "kayma_ms_otomatik_izgara": 14.0,
+    "ritim_R_gercek_izgara": 0.69,
+    "kayma_ms_gercek_izgara": 12.0,
+    "yuzde_40ms_gercek_izgara": 89.0
+   },
+   {
+    "denetim": "70 ms gec",
+    "nota_sayisi": 199,
+    "gercek_nota_sayisi": 227,
+    "armonik_destek_farki": 0.475,
+    "en_iyi_kaydirma": 0,
+    "gam_ici": 1.0,
+    "akor_sesi": 0.98,
+    "cent_medyan": 1.8,
+    "vokal_akort_kaymasi_cent": -2.4,
+    "cakisan_uzun_nota": 0,
+    "ritim_R_otomatik_izgara": 0.64,
+    "kayma_ms_otomatik_izgara": 77.0,
+    "ritim_R_gercek_izgara": 0.65,
+    "kayma_ms_gercek_izgara": 75.0,
+    "yuzde_40ms_gercek_izgara": 27.0
+   },
+   {
+    "denetim": "rastgele +-90 ms zamanlama",
+    "nota_sayisi": 184,
+    "gercek_nota_sayisi": 227,
+    "armonik_destek_farki": 0.477,
+    "en_iyi_kaydirma": 0,
+    "gam_ici": 1.0,
+    "akor_sesi": 0.953,
+    "cent_medyan": 1.9,
+    "vokal_akort_kaymasi_cent": -2.4,
+    "cakisan_uzun_nota": 0,
+    "ritim_R_otomatik_izgara": 0.15,
+    "kayma_ms_otomatik_izgara": 10.0,
+    "ritim_R_gercek_izgara": 0.15,
+    "kayma_ms_gercek_izgara": 10.0,
+    "yuzde_40ms_gercek_izgara": 42.0
+   }
+  ]
+ },
+ "yapaylik": {
+  "kaynak": "/root/.cache/dinleme/kanallar/25bfd4984538765b/ham/dinle_2_(Vocals)_UVR-MDX-NET-Voc_FT.wav",
+  "denetimler": {
+   "asil": {
+    "nota_ici_oynaklik_cent_medyan": 11.8,
+    "cok_duz_nota_orani": 0.03,
+    "bagli_gecis_suresi_ms_medyan": 32.0,
+    "perde_izgaraya_yapisma_R": 0.6220628348241338,
+    "vibratolu_uzun_nota_orani": 0.17,
+    "donmus_unlu_sayisi_045sn_ustu": 0,
+    "donmus_sure_orani": 0.0,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9816,
+    "unsuzlerde_tiz_payi_db": -10.9,
+    "vokal_ust_frekans_hz": 10723,
+    "tiz_doku_degisim_katsayisi": 1.32,
+    "zarf_titremesi_db": -9.3,
+    "isaret_sayisi": 0,
+    "isaretler": []
+   },
+   "WORLD yeniden sentez (perde ayni)": {
+    "nota_ici_oynaklik_cent_medyan": 12.6,
+    "cok_duz_nota_orani": 0.0,
+    "bagli_gecis_suresi_ms_medyan": 32.0,
+    "perde_izgaraya_yapisma_R": 0.54852883019174,
+    "vibratolu_uzun_nota_orani": 0.18,
+    "donmus_unlu_sayisi_045sn_ustu": 0,
+    "donmus_sure_orani": 0.0,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9753,
+    "unsuzlerde_tiz_payi_db": -10.0,
+    "vokal_ust_frekans_hz": 10938,
+    "tiz_doku_degisim_katsayisi": 1.37,
+    "zarf_titremesi_db": -9.9,
+    "isaret_sayisi": 0,
+    "isaretler": []
+   },
+   "perde yarim seslere yapistirilmis (sert akort)": {
+    "nota_ici_oynaklik_cent_medyan": 5.4,
+    "cok_duz_nota_orani": 0.44,
+    "bagli_gecis_suresi_ms_medyan": 16.0,
+    "perde_izgaraya_yapisma_R": 0.9003804540742361,
+    "vibratolu_uzun_nota_orani": 0.0,
+    "donmus_unlu_sayisi_045sn_ustu": 0,
+    "donmus_sure_orani": 0.0,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9781,
+    "unsuzlerde_tiz_payi_db": -10.5,
+    "vokal_ust_frekans_hz": 10895,
+    "tiz_doku_degisim_katsayisi": 1.3,
+    "zarf_titremesi_db": -9.7,
+    "isaret_sayisi": 3,
+    "isaretler": [
+     "notaların içi çok düz (medyan 5.4 cent): sert akort düzeltme / vokoderle sabitlenmiş perde izlenimi",
+     "bağlı notalar arası geçişler ani (16 ms medyan; aynı ölçümle doğal vokalde ~32 ms): basamaklı perde",
+     "perdeler yarım ses ızgarasına aşırı sıkı yapışmış (R=0.90): nicemlenmiş (cetvelle çizilmiş) perde"
+    ]
+   },
+   "1,6 kat esnetilmis (faz vokoderi)": {
+    "nota_ici_oynaklik_cent_medyan": 6.6,
+    "cok_duz_nota_orani": 0.25,
+    "bagli_gecis_suresi_ms_medyan": null,
+    "perde_izgaraya_yapisma_R": 0.7873171053964744,
+    "vibratolu_uzun_nota_orani": 0.06,
+    "donmus_unlu_sayisi_045sn_ustu": 1,
+    "donmus_sure_orani": 0.021,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9868,
+    "unsuzlerde_tiz_payi_db": -12.0,
+    "vokal_ust_frekans_hz": 10723,
+    "tiz_doku_degisim_katsayisi": 1.26,
+    "zarf_titremesi_db": -13.7,
+    "isaret_sayisi": 0,
+    "isaretler": []
+   },
+   "WORLD ile 1,8 kat esnetilmis (cerceve tekrari)": {
+    "nota_ici_oynaklik_cent_medyan": 12.4,
+    "cok_duz_nota_orani": 0.01,
+    "bagli_gecis_suresi_ms_medyan": 32.0,
+    "perde_izgaraya_yapisma_R": 0.52685087504059,
+    "vibratolu_uzun_nota_orani": 0.31,
+    "donmus_unlu_sayisi_045sn_ustu": 0,
+    "donmus_sure_orani": 0.0,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9848,
+    "unsuzlerde_tiz_payi_db": -8.8,
+    "vokal_ust_frekans_hz": 10917,
+    "tiz_doku_degisim_katsayisi": 1.47,
+    "zarf_titremesi_db": -14.3,
+    "isaret_sayisi": 0,
+    "isaretler": []
+   },
+   "4 kHz'de kesilmis (boguk)": {
+    "nota_ici_oynaklik_cent_medyan": 12.3,
+    "cok_duz_nota_orani": 0.0,
+    "bagli_gecis_suresi_ms_medyan": 32.0,
+    "perde_izgaraya_yapisma_R": 0.624784144617126,
+    "vibratolu_uzun_nota_orani": 0.18,
+    "donmus_unlu_sayisi_045sn_ustu": 7,
+    "donmus_sure_orani": 0.193,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9955,
+    "unsuzlerde_tiz_payi_db": -27.0,
+    "vokal_ust_frekans_hz": 4737,
+    "tiz_doku_degisim_katsayisi": 1.08,
+    "zarf_titremesi_db": -9.9,
+    "isaret_sayisi": 3,
+    "isaretler": [
+     "sesli sürenin %19 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi",
+     "ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-27 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi",
+     "vokalin enerjisi 4737 Hz'de bitiyor: bant sınırlı (telefon / düşük kaliteli sentez) tını"
+    ]
+   },
+   "EK: kita1_ham.wav": {
+    "nota_ici_oynaklik_cent_medyan": 8.9,
+    "cok_duz_nota_orani": 0.0,
+    "bagli_gecis_suresi_ms_medyan": null,
+    "perde_izgaraya_yapisma_R": 0.8209105645184096,
+    "vibratolu_uzun_nota_orani": 0.25,
+    "donmus_unlu_sayisi_045sn_ustu": 3,
+    "donmus_sure_orani": 0.186,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9914,
+    "unsuzlerde_tiz_payi_db": -2.3,
+    "vokal_ust_frekans_hz": 10594,
+    "tiz_doku_degisim_katsayisi": 1.82,
+    "zarf_titremesi_db": -20.8,
+    "isaret_sayisi": 1,
+    "isaretler": [
+     "sesli sürenin %18 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi"
+    ]
+   },
+   "EK: tts_kita1.wav": {
+    "nota_ici_oynaklik_cent_medyan": 9.1,
+    "cok_duz_nota_orani": 0.0,
+    "bagli_gecis_suresi_ms_medyan": null,
+    "perde_izgaraya_yapisma_R": 0.21097842050074994,
+    "vibratolu_uzun_nota_orani": null,
+    "donmus_unlu_sayisi_045sn_ustu": 0,
+    "donmus_sure_orani": 0.0,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9667,
+    "unsuzlerde_tiz_payi_db": -9.0,
+    "vokal_ust_frekans_hz": 10594,
+    "tiz_doku_degisim_katsayisi": 1.46,
+    "zarf_titremesi_db": -16.3,
+    "isaret_sayisi": 0,
+    "isaretler": []
+   },
+   "EK: vokal_dogal.wav": {
+    "nota_ici_oynaklik_cent_medyan": 14.9,
+    "cok_duz_nota_orani": 0.04,
+    "bagli_gecis_suresi_ms_medyan": null,
+    "perde_izgaraya_yapisma_R": 0.3416887652492769,
+    "vibratolu_uzun_nota_orani": 0.1,
+    "donmus_unlu_sayisi_045sn_ustu": 0,
+    "donmus_sure_orani": 0.0,
+    "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9818,
+    "unsuzlerde_tiz_payi_db": -10.7,
+    "vokal_ust_frekans_hz": 10702,
+    "tiz_doku_degisim_katsayisi": 1.5,
+    "zarf_titremesi_db": -11.2,
+    "isaret_sayisi": 0,
+    "isaretler": []
+   }
+  }
+ }
+}

@@ -1,0 +1,36 @@
+A. exact recomputation from the frame table (8970 frames = 44.85 s)
+PASS  chosen plan as played    chord tone 0.6857, non-chord 0.3101, outside 0.0041, clash any 0.0488, sustained 0.0109 (3 runs)  | plan.json differs by at most 0.00004
+PASS  chosen plan as played    the three exclusive shares sum to 1
+PASS  chosen plan read as V7   chord tone 0.7986, non-chord 0.1973, outside 0.0041, clash any 0.1516, sustained 0.0720 (15 runs)  | plan.json differs by at most 0.00005
+PASS  chosen plan read as V7   the three exclusive shares sum to 1
+PASS  plain baseline C         chord tone 0.5795, non-chord 0.4164, outside 0.0041, clash any 0.1484, sustained 0.0756 (14 runs)  | plan.json differs by at most 0.00002
+PASS  plain baseline C         the three exclusive shares sum to 1
+B. second route: syllable notes of kesim.json weighted by duration x voiced ratio (approximate; tolerance 3 points)
+PASS  chosen plan as played    chord tone 0.674 (plan.json 0.686), clash any 0.048 (plan.json 0.049)
+PASS  chosen plan read as V7   chord tone 0.788 (plan.json 0.799), clash any 0.150 (plan.json 0.152)
+PASS  plain baseline C         chord tone 0.576 (plan.json 0.580), clash any 0.150 (plan.json 0.148)
+PASS  second route also ranks the chosen plan above the baseline in chord-tone share (0.674 > 0.576)
+C. the plan
+PASS  key is C major
+PASS  only I, IV and V7 are used as chord symbols: {'bar_0_L1': 'I IV I I', 'bar_2_L2': 'V7 V7 V7 V7', 'bar_5_diye_bagirir': 'I I I I', 'bar_6_L4': 'V7 V7 V7 V7'}
+PASS  four vocal bars, four beats each
+PASS  bar 6 ends on V7, so the loud answer of bar 7 arrives on I
+PASS  the verse opens on I
+PASS  bar 5 beats 0-1 stay on I (drum fill)
+PASS  the dominant never moves to IV anywhere in the verse
+PASS  chord names match the degrees in C
+PASS  band_plays_per_beat = the same chords with the dominant as a plain triad in bars 2 and 6
+PASS  the dominant under the vocal contains no F: B2 D3 G3 B3 D4 G4 G3 B3 D3 B3 G3 B3 D3 B3 G2 D2
+PASS  it contains exactly the pitch classes G, B, D
+PASS  the V7 of the answers keeps its seventh
+PASS  under-vocal policy: none
+PASS  one plan for all verses: line 2 (animal word) has no sustained clash in any of the 7 verses
+D. semitone coincidences recomputed from the MIDI rendered for the audio check
+PASS  share of the sung time one semitone from a sounding band note: 0.0447 from the MIDI (438 notes), 0.0447 in plan.json
+PASS  the rendered MIDI has no F in verse bars 2 and 6
+PASS  the rendered MIDI keeps the F of V7 in the answer bar
+E. the form
+PASS  every sung frame lies in its own bar: L1 -0.04..3.84, L2 8.04..11.91, diye 22.01..23.83, L4 24.03..27.91 beats from the verse downbeat
+PASS  voiced sung time 44.85 s
+
+29 checks, 0 failed.  Nothing was listened to; these checks concern numbers and structure only.
