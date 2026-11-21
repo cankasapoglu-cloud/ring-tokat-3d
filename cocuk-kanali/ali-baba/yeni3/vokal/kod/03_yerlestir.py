@@ -36,8 +36,9 @@ KO_PATLAMA = 78.0575        # K6 L3 'Kö' /k/ patlamasinin basladigi an
 KO_KAYNAK_BAS = 78.0400     # 'Kö' parcasinin kaynak baslangici: patlamadan onceki sessizligin ici (-66..-76 dBFS)
 KO_GIRIS = 0.008            # bu parcanin giris gecisi (sessizlikte)
 K_KAPANIS = 0.020           # 'pek' ile 'le' arasinda birakilan /k/ kapanisi (dogal ornekler: de|ko 20 ms, nek|le 24 ms)
-DE_SONUM = 0.025            # 'de' unlusunun sonumlemesi (kesim onerisi 15-25 ms)
-DE_BOSLUK = 0.013           # 'de' sonumlemesinin bitisi ile 'Kö' patlamasi arasi (kapanis sessizligi)
+DE_D_PATLAMA = 76.698       # K6 L2 'de' hecesinin /d/ patlamasi (unlu 76.713'te tam duzeye cikar)
+DE_SONUM = 0.022            # 'de' unlusunun sonumlemesi (kesim onerisi 15-25 ms)
+DE_BOSLUK = 0.018           # 'de' sonumlemesinin bitisi ile 'Kö' patlamasi arasi (kapanis sessizligi; dogal ornek K2 'de|ko': 20 ms)
 EK_GECIS = 0.008            # /k/ kapanisi icindeki capraz gecis (istenen 5-10 ms)
 EK_ORTA_PATLAMADAN_ONCE = 0.0099   # capraz gecisin ortasi, 'le' patlamasindan (closure_end) bu kadar once
 # (b) L4 <- verici kitanin L4'u
@@ -242,11 +243,13 @@ def main():
                             hh = dict(k, text="kö", word="köpekleri", word_index=h["word_index"], index_in_word=0)
                             hh["_src"] = "K6 L3"; hh["_tip"] = "kopek"
                             hh["start"] = q["t_de"] - q["dP"] / SR           # 'de' bitisine bitisik (kapanis sessizligi dahil)
+                            hh["_not"] = "K6 L3 'Köpekler'den; basinda %.0f ms'lik /k/ kapanis sessizligi var; D4'te soylenmis (perde duzeltilmedi)" % (DE_BOSLUK * 1000)
                         elif h["text"] == "dek":
                             k = l3s["pek"]
                             hh = dict(k, text="pek", word="köpekleri", word_index=h["word_index"], index_in_word=1)
                             hh["_src"] = "K6 L3"; hh["_tip"] = "kopek"
                             hh["end"] = q["t_ek"] - q["dP"] / SR
+                            hh["_not"] = "K6 L3 'Köpekler'den; sonu /k/ kapanisinin icindeki capraz gecisin ortasi"
                         elif h["text"] == "de" and h["word"] == "Çiftliğinde":
                             hh["end"] = q["t_de"]
                             hh["core_end"] = min(hh["core_end"], q["t_de"] - DE_SONUM)
@@ -352,8 +355,10 @@ def main():
             vowel_onset_old_or_beats=R((76.8374 - d2) / BEAT, 3), vowel_onset_new_ko_beats=R((78.1045 + q["dP"] / SR - d2) / BEAT, 3),
             vowel_onset_old_dek_beats=R((77.0828 - d2) / BEAT, 3), vowel_onset_new_pek_beats=R((78.3759 + q["dP"] / SR - d2) / BEAT, 3),
             pek_vowel_later_than_dek_ms=R((78.3759 + q["dP"] / SR - 77.0828) * 1000, 1),
-            de_d_burst_to_k_burst_ms=R((q["t_pat"] - 76.698) * 1000, 1),
-            de_note="'de' is shorter than sung (was 140 ms up to the 'ö'; now about 79 ms of sound + closure) because the inserted /k/ closure + burst + aspiration need about 60 ms before the vowel"),
+            de_d_burst_to_k_burst_ms=R((q["t_pat"] - DE_D_PATLAMA) * 1000, 1),
+            de_sound_ms=R((q["t_de"] - DE_D_PATLAMA) * 1000, 1),
+            de_note="'de' is shorter than sung (it ran for 140 ms straight into the 'ö'; now %.0f ms of sound, then the closure) because the inserted /k/ closure + burst + aspiration need about 65 ms before the vowel; natural reference: verse 2 'de|ko' has about 55 ms of full vowel and a 20 ms closure"
+                    % ((q["t_de"] - DE_D_PATLAMA) * 1000)),
         pitch=dict(ko_midi=62.06, pek_midi=63.89, neighbours_midi=dict(de=63.98, le=65.04),
                    note="'kö' was sung on D4 (it is the first syllable of line 3), about 1.9 semitones below the E4 around it. NOT corrected here (no pitch processing in this step)."),
         word_duration=dict(old_ordekleri_sec=R(L2["syllables"][7]["end"] - 76.8374, 4), new_kopekleri_sec=R(L2["syllables"][7]["end"] - q["t_pat"], 4),
@@ -419,7 +424,7 @@ def main():
                   verse_start_sec=[R((INTRO + KITA_OLCU * i) * BAR) for i in range(N_KITA)],
                   bars_in_verse={"0": "vocal L1", "1": "instrumental answer", "2": "vocal L2", "3": "instrumental answer", "4": "vocal L3", "5": "vocal L4", "6": "animal call 1", "7": "animal call 2"}),
         audio=dict(file="vokal_dogal.wav", channels=1, sample_rate=SR, subtype="PCM_16",
-                   global_gain_db=R(20 * np.log10(kazanc), 3), peak_dbfs_target=TEPE_DBFS, peak_before_gain_dbfs=R(20 * np.log10(tepe), 3),
+                   global_gain_db=R(20 * np.log10(kazanc), 3), global_gain_linear=float(kazanc), peak_dbfs_target=TEPE_DBFS, peak_before_gain_dbfs=R(20 * np.log10(tepe), 3),
                    per_line_gain="none", silence="exact digital zero outside the placed chunks",
                    processing="cut + raised-cosine fades + integer-sample shift; one global gain; no pitch shift, no time stretch, no resampling"),
         placement_rule=dict(
@@ -428,6 +433,16 @@ def main():
             why="the tempo analysis rates the grid as high confidence (phase deviation at most 1.7 ms) and all 28 lines as on-the-beat; mapping bar line to bar line reproduces each line's measured offset exactly and does not depend on the onset detector, so no onset-detection noise enters the placement. The per-line-number median offset was therefore not used.",
             l3_l4="L3+L4 is one chunk anchored on L3's bar line; L4 lands on the next bar line because the source tempo equals the destination tempo (bar-to-bar difference at most 0.1 ms, from the 4-decimal rounding of the downbeats)",
             fades="chunk edges: 15-30 ms raised cosine. Where the quiet gap between two sung lines is wider than 15 ms the fade lies inside it; where the gap is narrower the 15 ms fade is centred on the gap (see chunks[].fade_*.rule and leak/loss)"),
+        summary=dict(
+            lines=len(lines_out), syllables=sum(len(l["syllables"]) for l in lines_out), chunks=len(chunks_out), pieces=len(parcalar),
+            repairs=[r["id"] for r in repairs], first_vocal_sample_sec=chunks_out[0]["dest_in"], last_vocal_sample_sec=chunks_out[-1]["dest_out"],
+            verses=[dict(
+                verse=vv + 1, animal=K["verses"][vv]["animal"], start_bar=INTRO + KITA_OLCU * vv,
+                bar_downbeats_sec=[R((INTRO + KITA_OLCU * vv + i) * BAR) for i in range(KITA_OLCU)],
+                l4_sound_end_after_bar6_downbeat_ms=R((lines_out[4 * vv + 3]["dest_sound_end"] - (INTRO + KITA_OLCU * vv + 6) * BAR) * 1000, 1),
+                vocal_chunk_end_after_bar6_downbeat_ms=R((lines_out[4 * vv + 3]["dest_out"] - (INTRO + KITA_OLCU * vv + 6) * BAR) * 1000, 1))
+                for vv in range(N_KITA)],
+            note="l4_sound_end_after_bar6_downbeat_ms = how far the sung sound of line 4 (down to sung RMS - 45 dB) reaches into the first animal-call bar; vocal_chunk_end... = where the faded tail reaches digital silence"),
         lines=lines_out, chunks=chunks_out, repairs=repairs,
         options=dict(k3_after_sound_kept=K3_EK_SES_KALSIN))
     with open(CIKTI_JSON, "w", encoding="utf8") as f:

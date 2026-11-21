@@ -12,7 +12,8 @@
   [GECTI] hece hedef zamani = kaynak + dizenin kaydirmasi (K6 L2 haric, o parca parca)
   [GECTI] her hecede ozgun MIDI perdesi var
 == 3) ISLEM YOK KANITI: yerlesen ses = kaynak ornekleri x tek kazanc, tam sayili kaydirma ==
-  [KALDI] gecis disi butun ornekler kaynakla birebir (en buyuk fark 2.00 LSB, 2571652 ornek karsilastirildi)
+  [GECTI] gecis disi butun ornekler kaynakla birebir: sabit tam sayili kaydirma, tek kazanc (en buyuk fark 0.00 LSB, 2571564 ornek)
+  [GECTI] yerlesim.json'daki 24 parcadan yeniden kurulan ses dosyayla birebir (gecisler dahil) -- en buyuk fark 0 LSB
      tek genel kazanc: -0.626 dB (kazanc oncesi tepe -2.374 dBFS); dize basina kazanc yok
   [GECTI] tepe ornegi dogal kaynak ornegi (ortusme toplami degil) -- K1_L3+4 icinde, kaynak 10.8143 s, kaynak degeri 0.7609
 == 4) PARCALAR ARASI ORTUSME / SESSIZLIK ==
@@ -86,11 +87,14 @@
   [GECTI] capraz korelasyon: her dize amaclanan konumda (0 ornek sapma) -- en buyuk sapma 0 ornek
 == 7) 6. KITA ONARIMLARI ==
    (a) L2 'köpekleri':
-  [KALDI]     'de' -> kapanis -> 'kö' birlesiminde ornek sicramasi < 0.05 -- en buyuk |fark| 0.12833 (tam olcek); dizenin dogal en buyuk ornek farki 0.3126
-  [GECTI]     'pek' | 'le' capraz gecisinde ornek sicramasi < 0.05 -- en buyuk |fark| 0.001312
-     kapanis duzeyleri (kaynak olceginde): 'de' ile 'kö' arasi -60.1 dBFS, 'pek' ile 'le' arasi (capraz gecis) -76.4 dBFS
+  [GECTI]     'de' | 'kö' birlesiminde (kapanis icinde) ornek sicramasi < 0.05 -- en buyuk |fark| 0.00473 (tam olcek)
+  [GECTI]     'de' sonumlemesi + 'kö' girisi dogal sinyalin kendi ornek farkini asan sicrama eklemiyor (< 0.05) -- duzenlemenin ekledigi en buyuk fazlalik 0.00031; dizenin dogal en buyuk ornek farki 0.3126
+  [GECTI]     'pek' | 'le' capraz gecisinde ornek sicramasi < 0.05 -- en buyuk |fark| 0.001312, eklenen fazlalik 0.000029
+     kapanis duzeyleri (kaynak olceginde): 'de' ile 'kö' arasi -64.9 dBFS, 'pek' ile 'le' arasi (capraz gecis) -76.4 dBFS
   [GECTI]     iki ek de sessiz /k/ kapanisinin icinde (< -55 dBFS)
-     hece cekirdekleri (yerlesmis dosyada olculdu; RMS kaynak olceginde): de -14.0 dBFS, MIDI 64.17 (json 63.98), cekirdek 43 ms; kö -14.8 dBFS, MIDI 61.99 (json 62.06), cekirdek 154 ms; pek -16.6 dBFS, MIDI 63.86 (json 63.89), cekirdek 78 ms; le -17.5 dBFS, MIDI 65.04 (json 65.04), cekirdek 120 ms
+     olculen kapanis sureleri (-55 dBFS alti): 'de'|'kö' 18.5 ms, 'pek'|'le' 20.2 ms (dogal ornekler: K2 'de|ko' 20.0, K1 'nek|le' 23.9, K6 'dek|le' 35.9, K6 'pek|ler' 45.9 ms)
+  [GECTI]     kapanis sureleri dogal aralikta (8-50 ms)
+     hece cekirdekleri (yerlesmis dosyada olculdu; RMS kaynak olceginde): de -14.0 dBFS, MIDI 64.17 (json 63.98), cekirdek 41 ms; kö -14.8 dBFS, MIDI 61.99 (json 62.06), cekirdek 154 ms; pek -16.6 dBFS, MIDI 63.86 (json 63.89), cekirdek 78 ms; le -17.5 dBFS, MIDI 65.04 (json 65.04), cekirdek 120 ms
   [GECTI]     'de'|'kö' iki yaninda RMS benzer (fark < 3 dB) -- fark -0.8 dB
   [GECTI]     'pek'|'le' iki yaninda RMS benzer (fark < 3 dB) -- fark -0.9 dB
   [GECTI]     'pek'|'le' iki yaninda perde benzer (fark < 1.5 yarim ses) -- pek 63.86 -> le 65.04 (ozgun 'dek' 63.99 -> 'le' 65.04)
@@ -98,9 +102,9 @@
   [GECTI]     olculen perdeler json'daki ozgun perdelerle ayni (+-0.3 yarim ses): perde degismedi
   [GECTI]     'leri var' ozgun yerinde (kayma 0) -- 'var' unlu baslangici olcu icinde 3.019 vurus (diger kitalarda 2.996-3.053)
      vurus konumlari (unlu baslangici): de 1.287, kö 1.557 (ozgun 'ör' 1.557), pek 2.082 (ozgun 'dek' 2.032; diger kitalarda 2. hece 1.919-2.046), le 2.456, ri 2.738, var 3.019
-     kelime suresi: ozgun 'ördekleri' 0.7263 s, yeni 'köpekleri' 0.7734 s (/k/ patlamasi unluden 47 ms once basladigi icin); 'de' hecesi 80 ms (ozgun 140 ms)
+     kelime suresi: ozgun 'ördekleri' 0.7263 s, yeni 'köpekleri' 0.7734 s (/k/ patlamasi unluden 47 ms once basladigi icin); 'de' hecesi 75 ms (ozgun 140 ms)
    (b) L4 <- 1. kitanin L4'u:
-  [GECTI]     L3 | verici L4 capraz gecisinde ornek sicramasi < 0.05 -- en buyuk |fark| 0.01974
+  [GECTI]     L3 | verici L4 capraz gecisinde ornek sicramasi < 0.05 -- en buyuk |fark| 0.01974, eklenen fazlalik 0.00010
      gecisin 30 ms oncesi (K6 /r/ mirildanmasi) -27.7 dBFS, ortasi (10 ms) -25.5 dBFS, 30 ms sonrasi (verici /d/ kapanisi) -21.6 dBFS
      perde: gecis oncesi mirildanma MIDI 58.32 (sesli oran 1.00), sonrasi 56.8 (sesli oran 1.00)
      hece cekirdekleri: 'lar' -15.8 dBFS MIDI 63.42 -> 'Din' -14.8 dBFS MIDI 61.82
@@ -116,5 +120,5 @@
   [GECTI] fazladan sesin hedefteki yeri tam sessiz -- 53.7925-53.9941 s (olcu 6'nin basi 53.7861 s)
   [GECTI] son 'bak'in unlusu eksiksiz (kesim sessiz /k/ kapanisinin icinde) -- kaynak kesim 41.3171; unlu sonu 41.2463; ek ses 41.3879
 
-SONUC: KALAN KONTROLLER: gecis disi butun ornekler kaynakla birebir (en buyuk fark 2.00 LSB, 2571652 ornek karsilastirildi);     'de' -> kapanis -> 'kö' birlesiminde ornek sicramasi < 0.05
+SONUC: TUM KONTROLLER GECTI
 Not: bunlarin hepsi olcumdur; ses kulakla DINLENMEDI. 'de|kö' eki ile L3|L4 ekinin kulaga dogal gelip gelmedigi dogrulanmadi.

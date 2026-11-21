@@ -50,8 +50,7 @@ def main():
     y = yi.astype(np.float64) / 32768.0
     F = Y["form"]
     BAR, BEAT = 240.0 / F["bpm"], 60.0 / F["bpm"]
-    g = 10 ** (Y["audio"]["global_gain_db"] / 20.0)
-    g = 10 ** (-3.0 / 20.0) / (10 ** (Y["audio"]["peak_before_gain_dbfs"] / 20.0)) if False else g
+    g = Y["audio"]["global_gain_linear"]
     lines, chunks = Y["lines"], Y["chunks"]
     S = lambda t: int(round(t * SR))
 
@@ -120,7 +119,19 @@ def main():
         fark = np.abs(seg_k - seg_y)[tek]
         en_fark = max(en_fark, float(fark.max()) * 32768.0)
         ic_ornek += int(tek.sum())
-    kontrol("gecis disi butun ornekler kaynakla birebir (en buyuk fark %.2f LSB, %d ornek karsilastirildi)" % (en_fark, ic_ornek), en_fark <= 1.0)
+    kontrol("gecis disi butun ornekler kaynakla birebir: sabit tam sayili kaydirma, tek kazanc (en buyuk fark %.2f LSB, %d ornek)" % (en_fark, ic_ornek), en_fark < 0.5)
+    # yerlesim.json'daki parca listesinden bagimsiz yeniden kurulum: gecisler dahil HER ornek ayni mi?
+    z = np.zeros(len(y))
+    for p in parcalar:
+        a, b, d = p["src_in_sample"], p["src_out_sample"], p["dest_in_sample"]
+        env = np.ones(b - a)
+        if p["fade_in_samples"]:
+            env[:p["fade_in_samples"]] = kos_yuksel(p["fade_in_samples"])
+        if p["fade_out_samples"]:
+            env[len(env) - p["fade_out_samples"]:] *= kos_alcal(p["fade_out_samples"])
+        z[d:d + (b - a)] += x[a:b] * env
+    yk = np.abs(np.round(z * g * 32768.0) - yi.astype(np.float64)).max()
+    kontrol("yerlesim.json'daki %d parcadan yeniden kurulan ses dosyayla birebir (gecisler dahil)" % len(parcalar), yk <= 1.0, "en buyuk fark %.0f LSB" % yk)
     kazanclar = sorted(set(round(Y["audio"]["global_gain_db"], 3) for _ in parcalar))
     yaz("     tek genel kazanc: %.3f dB (kazanc oncesi tepe %.3f dBFS); dize basina kazanc yok" % (Y["audio"]["global_gain_db"], Y["audio"]["peak_before_gain_dbfs"]))
     # tepe nerede? kaynakta ayni ornek tepe mi?
@@ -294,6 +305,19 @@ def main():
         a, b = S(t0), S(t1)
         return float(np.max(np.abs(np.diff(y[a:b]))))
 
+    def ek_fazlasi(t0, t1):
+        """Duzenlemenin EKLEDIGI ornek sicramasi: |dy| - (o noktayi orten parcalarin ham kaynak ornek farklarinin toplami) en buyugu.
+        Bir gecis kazanci <= 1 oldugu icin dogal sinyalin kendi ornek farkini asan kisim ancak ekten gelebilir."""
+        a, b = S(t0), S(t1)
+        dogal_fark = np.zeros(b - a - 1)
+        for p in parcalar:
+            lo, hi = max(a, p["dest_in_sample"]), min(b, p["dest_out_sample"])
+            if hi - lo < 2:
+                continue
+            sa = p["src_in_sample"] + (lo - p["dest_in_sample"])
+            dogal_fark[lo - a:hi - a - 1] += np.abs(np.diff(x[sa:sa + (hi - lo)])) * g
+        return float(np.max(np.abs(np.diff(y[a:b])) - dogal_fark))
+
     L2 = [L for L in lines if L["verse"] == 6 and L["line"] == 2][0]
     L3 = [L for L in lines if L["verse"] == 6 and L["line"] == 3][0]
     L4 = [L for L in lines if L["verse"] == 6 and L["line"] == 4][0]
@@ -305,16 +329,37 @@ def main():
     # --- (a) ek yerleri
     t_dek = ra["de_fade_out"]["src_to"] + sh2                    # 'de' sonumlemesinin bitisi = 'kö' parcasinin girisi
     t_ek = ra["splice"]["centre_dest_time"]
-    j1 = sicrama(t_dek - 0.030, t_dek + 0.012)
+    t_pat = ra["kopek_source"]["k_burst_in_line2_time"] + sh2   # 'Kö' patlamasi (hedef)
+    j1 = sicrama(t_dek - 0.003, t_pat - 0.002)                   # 'de' sonumu bitti -> kapanis -> patlamadan hemen once
+    j1f = ek_fazlasi(t_dek - 0.035, t_pat + 0.005)               # sonumleme + kapanis + patlama: duzenlemenin ekledigi sicrama
     j2 = sicrama(t_ek - 0.008, t_ek + 0.008)
+    j2f = ek_fazlasi(t_ek - 0.012, t_ek + 0.012)
     dogal = sicrama(L2["dest_sound_start"], L2["dest_sound_end"])
     yaz("   (a) L2 'köpekleri':")
-    kontrol("    'de' -> kapanis -> 'kö' birlesiminde ornek sicramasi < 0.05", j1 < 0.05, "en buyuk |fark| %.5f (tam olcek); dizenin dogal en buyuk ornek farki %.4f" % (j1, dogal))
-    kontrol("    'pek' | 'le' capraz gecisinde ornek sicramasi < 0.05", j2 < 0.05, "en buyuk |fark| %.6f" % j2)
+    kontrol("    'de' | 'kö' birlesiminde (kapanis icinde) ornek sicramasi < 0.05", j1 < 0.05, "en buyuk |fark| %.5f (tam olcek)" % j1)
+    kontrol("    'de' sonumlemesi + 'kö' girisi dogal sinyalin kendi ornek farkini asan sicrama eklemiyor (< 0.05)", j1f < 0.05,
+            "duzenlemenin ekledigi en buyuk fazlalik %.5f; dizenin dogal en buyuk ornek farki %.4f" % (j1f, dogal))
+    kontrol("    'pek' | 'le' capraz gecisinde ornek sicramasi < 0.05", j2 < 0.05, "en buyuk |fark| %.6f, eklenen fazlalik %.6f" % (j2, j2f))
     lv_k1 = db(np.sqrt(np.mean(y[S(t_dek + 0.001):S(t_dek + 0.010)] ** 2))) - Y["audio"]["global_gain_db"]
     lv_k2 = db(np.sqrt(np.mean(y[S(t_ek - 0.004):S(t_ek + 0.004)] ** 2))) - Y["audio"]["global_gain_db"]
     yaz("     kapanis duzeyleri (kaynak olceginde): 'de' ile 'kö' arasi %.1f dBFS, 'pek' ile 'le' arasi (capraz gecis) %.1f dBFS" % (lv_k1, lv_k2))
     kontrol("    iki ek de sessiz /k/ kapanisinin icinde (< -55 dBFS)", lv_k1 < -55 and lv_k2 < -55)
+    # kapanis sureleri: 1 ms RMS'in (kaynak olceginde) -55 dBFS altinda kaldigi kesintisiz sure
+    e1 = zarf(y / g, 1.0)
+
+    def kapanis_ms(tc, esik=-55.0):
+        i = S(tc)
+        lim = 10 ** (esik / 20.0)
+        a = i
+        while a > 0 and e1[a - 1] < lim:
+            a -= 1
+        b = i
+        while b < len(e1) - 1 and e1[b + 1] < lim:
+            b += 1
+        return (b - a) / SR * 1000.0
+    kp1, kp2 = kapanis_ms(t_dek + 0.004), kapanis_ms(t_ek)
+    yaz("     olculen kapanis sureleri (-55 dBFS alti): 'de'|'kö' %.1f ms, 'pek'|'le' %.1f ms (dogal ornekler: K2 'de|ko' 20.0, K1 'nek|le' 23.9, K6 'dek|le' 35.9, K6 'pek|ler' 45.9 ms)" % (kp1, kp2))
+    kontrol("    kapanis sureleri dogal aralikta (8-50 ms)", 8.0 <= kp1 <= 50.0 and 8.0 <= kp2 <= 50.0)
     # RMS ve perde: iki yan
     def cek(h):
         return h["dest_core_start"], h["dest_core_end"]
@@ -341,8 +386,10 @@ def main():
            L2["syllables"][7]["vowel_onset_beats_in_bar"], var["vowel_onset_beats_in_bar"]))
     yaz("     kelime suresi: ozgun 'ördekleri' %.4f s, yeni 'köpekleri' %.4f s (/k/ patlamasi unluden 47 ms once basladigi icin); 'de' hecesi %.0f ms (ozgun 140 ms)"
         % (ra["word_duration"]["old_ordekleri_sec"], ra["word_duration"]["new_kopekleri_sec"], (de["dest_end"] - de["dest_start"]) * 1000))
-    sonuc["repair_K6_L2"] = dict(max_sample_jump_de_ko=round(j1, 5), max_sample_jump_pek_le=round(j2, 6), natural_max_sample_diff_in_line=round(dogal, 4),
-                                 closure_level_de_ko_dbfs=round(lv_k1, 1), closure_level_pek_le_dbfs=round(lv_k2, 1), syllables=olc,
+    sonuc["repair_K6_L2"] = dict(max_sample_jump_de_ko=round(j1, 5), edit_induced_jump_de_ko=round(j1f, 5), max_sample_jump_pek_le=round(j2, 6),
+                                 edit_induced_jump_pek_le=round(j2f, 6), natural_max_sample_diff_in_line=round(dogal, 4),
+                                 closure_level_de_ko_dbfs=round(lv_k1, 1), closure_level_pek_le_dbfs=round(lv_k2, 1),
+                                 closure_ms_de_ko=round(kp1, 1), closure_ms_pek_le=round(kp2, 1), syllables=olc,
                                  pitch_step_de_to_ko_semitones=round(pd, 2), tail_shift_ms=0.0,
                                  vowel_onset_beats=dict(de=de["vowel_onset_beats_in_bar"], ko=ko["vowel_onset_beats_in_bar"], pek=pek["vowel_onset_beats_in_bar"],
                                                         le=le["vowel_onset_beats_in_bar"], var=var["vowel_onset_beats_in_bar"]))
@@ -350,8 +397,9 @@ def main():
     rb = [r for r in Y["repairs"] if r["id"].startswith("K6_L4")][0]
     tj = rb["crossfade"]["centre_dest_time"]
     j3 = sicrama(tj - 0.010, tj + 0.010)
+    j3f = ek_fazlasi(tj - 0.012, tj + 0.012)
     yaz("   (b) L4 <- %d. kitanin L4'u:" % rb["donor_verse"])
-    kontrol("    L3 | verici L4 capraz gecisinde ornek sicramasi < 0.05", j3 < 0.05, "en buyuk |fark| %.5f" % j3)
+    kontrol("    L3 | verici L4 capraz gecisinde ornek sicramasi < 0.05", j3 < 0.05, "en buyuk |fark| %.5f, eklenen fazlalik %.5f" % (j3, j3f))
     lar, din = L3["syllables"][-1], L4["syllables"][0]
     r_once = db(np.sqrt(np.mean(y[S(tj - 0.035):S(tj - 0.005)] ** 2))) - Y["audio"]["global_gain_db"]
     r_sonra = db(np.sqrt(np.mean(y[S(tj + 0.005):S(tj + 0.035)] ** 2))) - Y["audio"]["global_gain_db"]
@@ -389,7 +437,7 @@ def main():
     # K6'nin kendi L4'u dosyada yok mu? (kendi /d/ patlamasi ve sonrasi kullanilmadi)
     c6 = [c for c in chunks if c["id"] == "K6_L3+4"][0]
     kontrol("    K6'nin kendi L4'unden ornek kullanilmadi", c6["pieces"][0]["src_out"] <= 80.1481, "K6 parcasi kaynakta %.4f s'de bitiyor (kendi /d/ patlamasi 80.150)" % c6["pieces"][0]["src_out"])
-    sonuc["repair_K6_L4"] = dict(max_sample_jump=round(j3, 5), rms_before_dbfs=round(r_once, 1), rms_centre_dbfs=round(r_orta, 1), rms_after_dbfs=round(r_sonra, 1),
+    sonuc["repair_K6_L4"] = dict(max_sample_jump=round(j3, 5), edit_induced_jump=round(j3f, 5), rms_before_dbfs=round(r_once, 1), rms_centre_dbfs=round(r_orta, 1), rms_after_dbfs=round(r_sonra, 1),
                                  murmur_midi_before=None if m_once is None else round(m_once, 2), murmur_midi_after=None if m_sonra is None else round(m_sonra, 2),
                                  lar_midi=round(m_lar, 2), din_midi=round(m_din, 2), lar_rms_dbfs=round(e_lar, 1), din_rms_dbfs=round(e_din, 1),
                                  final_bak_midi=round(m_bak, 2), natural_L3last_to_L4first=[dict(verse=q[0], from_midi=q[1], to_midi=q[2]) for q in dg])

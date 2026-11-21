@@ -8,8 +8,8 @@
   "peak_dbfs": -3.0
  },
  "identity": {
-  "max_abs_diff_lsb": 2.0,
-  "samples_compared": 2571652,
+  "max_abs_diff_lsb": 0.0,
+  "samples_compared": 2571564,
   "global_gain_db": -0.626
  },
  "overlap": {
@@ -349,7 +349,7 @@
     "line": 4,
     "intended_onset": 35.16186,
     "measured_onset": 35.16188,
-    "error_ms": 0.024,
+    "error_ms": 0.023,
     "intended_vowel_onset": 35.17086,
     "measured_vowel_onset": 35.17086,
     "vowel_error_ms": 0.002,
@@ -547,7 +547,7 @@
     "line": 2,
     "intended_onset": 111.67877,
     "measured_onset": 111.6788,
-    "error_ms": 0.03,
+    "error_ms": 0.029,
     "intended_vowel_onset": 111.76447,
     "measured_vowel_onset": 111.76449,
     "vowel_error_ms": 0.02,
@@ -558,7 +558,7 @@
     "line": 3,
     "intended_onset": 115.8246,
     "measured_onset": 115.82467,
-    "error_ms": 0.067,
+    "error_ms": 0.066,
     "intended_vowel_onset": 115.8685,
     "measured_vowel_onset": 115.86855,
     "vowel_error_ms": 0.049,
@@ -578,16 +578,20 @@
   ]
  },
  "repair_K6_L2": {
-  "max_sample_jump_de_ko": 0.12833,
+  "max_sample_jump_de_ko": 0.00473,
+  "edit_induced_jump_de_ko": 0.00031,
   "max_sample_jump_pek_le": 0.001312,
+  "edit_induced_jump_pek_le": 2.9e-05,
   "natural_max_sample_diff_in_line": 0.3126,
-  "closure_level_de_ko_dbfs": -60.1,
+  "closure_level_de_ko_dbfs": -64.9,
   "closure_level_pek_le_dbfs": -76.4,
+  "closure_ms_de_ko": 18.5,
+  "closure_ms_pek_le": 20.2,
   "syllables": {
    "de": {
     "rms_dbfs": -14.0,
     "midi": 64.17,
-    "core_ms": 43.0,
+    "core_ms": 41.0,
     "json_midi": 63.98
    },
    "kö": {
@@ -621,6 +625,7 @@
  },
  "repair_K6_L4": {
   "max_sample_jump": 0.01974,
+  "edit_induced_jump": 0.0001,
   "rms_before_dbfs": -27.7,
   "rms_centre_dbfs": -25.5,
   "rms_after_dbfs": -21.6,
@@ -669,9 +674,6 @@
    }
   ]
  },
- "all_passed": false,
- "failed": [
-  "gecis disi butun ornekler kaynakla birebir (en buyuk fark 2.00 LSB, 2571652 ornek karsilastirildi)",
-  "    'de' -> kapanis -> 'kö' birlesiminde ornek sicramasi < 0.05"
- ]
+ "all_passed": true,
+ "failed": []
 }

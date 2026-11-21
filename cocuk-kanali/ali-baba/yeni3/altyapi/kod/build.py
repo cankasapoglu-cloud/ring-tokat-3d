@@ -24,7 +24,7 @@ ap.add_argument('--name', default=None, help='variant name used in file names (d
 ap.add_argument('--out', required=True)
 ap.add_argument('--work', required=True)
 ap.add_argument('--lufs', type=float, default=-14.0, help='integrated loudness target of altyapi_<name>.wav')
-ap.add_argument('--ezgi-alti-db', type=float, default=-11.0,
+ap.add_argument('--ezgi-alti-db', type=float, default=-10.0,
                 help='default level of the under-vocal stem: its RMS relative to the band RMS in the bars where it plays')
 ap.add_argument('--tail', type=float, default=2.5, help='seconds of ring-out kept after the final hit')
 A = ap.parse_args()
@@ -82,10 +82,13 @@ BASS, BANJO, ACC, PNO, GLK, TPT, BRS, CLA, GLK2, DR = 0, 1, 2, 3, 4, 5, 6, 7, 8,
 CHN = {BASS: 'bas', BANJO: 'banjo', ACC: 'akordeon', PNO: 'piyano', GLK: 'glockenspiel', TPT: 'trompet', BRS: 'brass', CLA: 'klarnet',
        GLK2: 'glockenspiel_hafif', DR: 'davul'}
 PROG = {BASS: 33, BANJO: 105, ACC: 21, PNO: 1, GLK: 9, TPT: 56, BRS: 61, CLA: 71, GLK2: 9}
-VOL = {BASS: 113, BANJO: 104, ACC: 86, PNO: 100, GLK: 120, TPT: 116, BRS: 102, CLA: 112, GLK2: 100, DR: 124}
+VOL = {BASS: 113, BANJO: 104, ACC: 86, PNO: 100, GLK: 120, TPT: 116, BRS: 102, CLA: 112, GLK2: 112, DR: 124}
 PAN = {BASS: 64, BANJO: 36, ACC: 94, PNO: 54, GLK: 78, TPT: 60, BRS: 70, CLA: 64, GLK2: 64}
 REV = {DR: 18, BASS: 8}
 BAND = [BASS, BANJO, ACC, PNO, GLK, TPT, BRS, DR]; ALT = [CLA, GLK2]
+# Negative track delay (in MIDI ticks, 1 tick = beat/480 = 1.08 ms) for patches whose sound starts late (measured in olcum_gecikme.py):
+# the finger bass has ~22 ms of quiet pre-attack before the pluck, accordion / clarinet / brass section swell slowly.
+ADV = {BASS: 19, ACC: 19, CLA: 14, BRS: 7}
 
 mel = []   # melody note list for zaman_<name>.json and for the verification
 def M(part, ch, bi, bt, dur, n, v, mono=True):
@@ -156,14 +159,14 @@ for bi, (ch, kind, k, vb) in enumerate(bars):
     if kind == 'intro_a': groove(b0, ch, k, 'fillS'); lead_phraseA(bi)
     elif kind == 'intro_ans': groove(b0, ch, k, 'full'); lead_answer(bi)
     elif kind == 'intro_ansfill': groove(b0, ch, k, 'fillB'); lead_answer(bi)
-    elif kind == 'voc': groove(b0, ch, k, 'fillS'); alt_notes(bi, ALT_PHA, 100, 90, 78)
+    elif kind == 'voc': groove(b0, ch, k, 'fillS'); alt_notes(bi, ALT_PHA, 100, 90, 92)
     elif kind in ('ans', 'ans2'): groove(b0, ch, k, 'full'); lead_answer(bi, hi=(kind == 'ans2'))
-    elif kind == 'voc3': groove(b0, ch, k, 'full', stab=True); alt_notes(bi, ALT_DOREP, 88, 78, 66)
-    elif kind == 'voc4': groove(b0, ch, k, 'cut'); alt_notes(bi, ALT_ANS, 100, 90, 78)
+    elif kind == 'voc3': groove(b0, ch, k, 'full', stab=True); alt_notes(bi, ALT_DOREP, 88, 78, 80)
+    elif kind == 'voc4': groove(b0, ch, k, 'cut'); alt_notes(bi, ALT_ANS, 100, 90, 92)
     elif kind in ('slot', 'slot2'):                                                        # animal call: thin texture
-        add(BASS, b0, .9, ROOT['I'], 84); add(BASS, b0 + 2, .9, FIFTH['I'], 78)
+        add(BASS, b0, .9, ROOT['I'], 80); add(BASS, b0 + 2, .9, FIFTH['I'], 74)
         for bt in range(4):
-            add(DR, b0 + bt, .2, 36, 92 if bt in (0, 2) else 66)
+            add(DR, b0 + bt, .2, 36, 88 if bt in (0, 2) else 62)
             add(DR, b0 + bt, .1, 42, 56); add(DR, b0 + bt + .5, .1, 42, 38)
         if kind == 'slot2':                                                                # snare pickup back into the band
             add(DR, b0 + 3.5, .1, 38, 96); add(DR, b0 + 3.75, .1, 38, 118); add(DR, b0 + 3.75, .1, 45, 100)
@@ -204,6 +207,7 @@ N = int(round((FINAL_HIT + A.tail) * sr))
 END_BEAT = PRE + TOTAL * 4 + 12            # keep FluidSynth rendering past the tail
 
 def write(path, chans, pre=PRE):
+    # pre > 0: render version (pre-roll + track-delay compensation); pre = 0: plain score on the grid (kept in midi/)
     mid = mido.MidiFile(ticks_per_beat=TPB); tr = mido.MidiTrack(); mid.tracks.append(tr)
     msgs = [(0, 0, mido.MetaMessage('set_tempo', tempo=TEMPO_US))]
     for c in chans:
@@ -212,9 +216,10 @@ def write(path, chans, pre=PRE):
             msgs.append((0, 1, mido.Message('control_change', channel=c, control=10, value=PAN[c])))
         msgs.append((0, 1, mido.Message('control_change', channel=c, control=7, value=VOL[c])))
         msgs.append((0, 1, mido.Message('control_change', channel=c, control=91, value=REV.get(c, 40))))
+        adv = ADV.get(c, 0) if pre else 0
         for (b, dur, n, v) in ev.get(c, []):
-            msgs.append((round((pre + b) * TPB), 3, mido.Message('note_on', channel=c, note=n, velocity=v)))
-            msgs.append((round((pre + b + dur) * TPB), 2, mido.Message('note_off', channel=c, note=n, velocity=0)))
+            msgs.append((round((pre + b) * TPB) - adv, 3, mido.Message('note_on', channel=c, note=n, velocity=v)))
+            msgs.append((round((pre + b + dur) * TPB) - adv, 2, mido.Message('note_off', channel=c, note=n, velocity=0)))
     if pre: msgs.append((round(END_BEAT * TPB), 4, mido.Message('control_change', channel=15, control=7, value=100)))
     msgs.sort(key=lambda m: (m[0], m[1])); t = 0
     for (tk, _, m) in msgs: tr.append(m.copy(time=tk - t)); t = tk
@@ -225,7 +230,9 @@ CUT = int(round(PRE * BEAT_MIDI * sr)) + LAT
 def rd(p):
     x, r = sf.read(p, dtype='float64'); assert r == sr and x.shape[1] == 2
     x = x[CUT:]
-    return x[:N] if len(x) >= N else np.vstack([x, np.zeros((N - len(x), 2))])
+    x = x[:N].copy() if len(x) >= N else np.vstack([x, np.zeros((N - len(x), 2))])
+    x[:44] *= np.linspace(0, 1, 44)[:, None]        # 1 ms fade-in (only pre-attack noise lives there)
+    return x
 def wr(p, x):
     assert np.abs(x).max() < 1.0
     sf.write(p, x, sr, subtype='PCM_16')
@@ -334,6 +341,9 @@ Z = {'baslik': "Ali Baba'nın Çiftliği", 'varyant': NAME, 'ezgi': 'Old MacDona
      'ana_kazanc': {'kazanc_dB': R(db(g)), 'limiter_tavan_dBFS': ceil_db, 'hedef_LUFS_altyapi': A.lufs,
                     'ezgi_alti_varsayilan_seviye_dB': A.ezgi_alti_db,
                     'ezgi_alti_seviye_notu': 'ezgi_alti RMS değeri, çaldığı ölçülerde (kıta ö0, ö2, ö4, ö5) orkestra RMS değerine göre bu kadar dB'},
+     'gecikme_telafisi': {'aciklama': 'Sesi geç açılan enstrümanların notaları ızgaradan bu kadar ms ÖNCE tetiklenir (negatif iz gecikmesi); '
+                                      'json içindeki nota zamanları ızgara (hedef) zamanlarıdır. midi/ klasöründeki dosyalar telafisiz, ızgara üzerindedir.',
+                          'one_alma_ms': {CHN[c]: round(1000 * t * BEAT / TPB, 1) for c, t in ADV.items()}},
      'tonlama': {'lead_do': nm(LEAD_DO), 'ezgi_alti_do': nm(ALT_DO), 'eslik_kaydirma_yarim_ses_(G_referans)': AS,
                  'bas_kokleri': {CHNAME[c]: nm(ROOT[c]) for c in DEG}, 'akor_dizilimleri': {CHNAME[c]: [nm(n) for n in CH[c]] for c in DEG},
                  'yuksek_cevap': [nm(LEAD_DO + iv) for iv, _, _ in ANS], 'yuksek_cevap_glockenspiel': [nm(LEAD_DO + iv + 12) for iv, _, _ in ANS],
@@ -379,6 +389,6 @@ json.dump({'name': NAME, 'key': KEY, 'bpm': BPM, 'BEAT': BEAT, 'BAR': BAR, 'BEAT
            'gr_worst': [(i / sr, float(gr_db[i])) for i in worst],
            'bars': [(list(ch), kind, k, vb) for ch, kind, k, vb in bars], 'mel': mel, 'chn': {str(c): n for c, n in CHN.items()},
            'events': {CHN[c]: sorted(ev.get(c, [])) for c in BAND + ALT},
-           'AS': AS, 'LEAD_DO': LEAD_DO, 'ALT_DO': ALT_DO, 'ROOT': ROOT, 'FIFTH': FIFTH, 'CH': CH},
+           'adv_ticks': {CHN[c]: t for c, t in ADV.items()}, 'TPB': TPB, 'PRE': PRE, 'TEMPO_US': TEMPO_US, 'AS': AS, 'LEAD_DO': LEAD_DO, 'ALT_DO': ALT_DO, 'ROOT': ROOT, 'FIFTH': FIFTH, 'CH': CH},
           open(f'{S}/meta.json', 'w'), ensure_ascii=False)
 print(f'[{NAME}] bars {TOTAL}, bar {BAR:.5f} s, music end {TOTAL * BAR:.3f} s, final hit {FINAL_HIT:.3f} s, file {N / sr:.3f} s')

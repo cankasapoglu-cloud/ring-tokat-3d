@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Kesif (yalniz okur): kesim noktalarinin cevresindeki duzey profilleri.
 Cikti: ekrana tablo. Hicbir dosya yazmaz."""
-import json, os, numpy as np, soundfile as sf
+import sys, json, os, numpy as np, soundfile as sf
 
 A = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 x, sr = sf.read(os.path.join(A, "dinle_2_vokal.wav"), dtype="float64")
@@ -28,7 +28,24 @@ def profil(tc, yari=0.040, adim=0.002):
     return " ".join(out)
 
 
+def ince(t0, t1, adim=0.001):
+    """1 ms RMS zarfi, ms ms (onarim noktalarindaki anlari okumak icin)."""
+    n = int(round(0.001 * sr))
+    out = []
+    t = t0
+    while t < t1 - 1e-9:
+        i = int(round(t * sr))
+        out.append("%.3f:%4.0f" % (t, db(np.sqrt(np.mean(x[i - n // 2:i - n // 2 + n] ** 2)))))
+        t += adim
+    return " ".join(out)
+
+
 if __name__ == "__main__":
+    if "ince" in sys.argv:
+        for ad, a, b in (("K6 L3 'Kö' patlamasi", 78.020, 78.115), ("K6 L3 /p/ kapanisi", 78.26, 78.385), ("K6 L3 /k/ kapanisi", 78.455, 78.55),
+                         ("K6 L2 'de'", 76.685, 76.80), ("K6 L2 /k/ kapanisi", 77.17, 77.26), ("K6 L3|L4", 80.10, 80.165), ("K1 L3|L4", 12.36, 12.44)):
+            print(ad); print(ince(a, b))
+        sys.exit(0)
     print("2 ms RMS profili, kesim noktasinin -40..+40 ms cevresi (dBFS); '|' = kesim ani")
     for v in K["verses"]:
         for c in v["chunks"]:

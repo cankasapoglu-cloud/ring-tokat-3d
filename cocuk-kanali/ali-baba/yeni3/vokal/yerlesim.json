@@ -72,6 +72,7 @@
   "sample_rate": 44100,
   "subtype": "PCM_16",
   "global_gain_db": -0.626,
+  "global_gain_linear": 0.930412203212587,
   "peak_dbfs_target": -3.0,
   "peak_before_gain_dbfs": -2.374,
   "per_line_gain": "none",
@@ -84,6 +85,141 @@
   "why": "the tempo analysis rates the grid as high confidence (phase deviation at most 1.7 ms) and all 28 lines as on-the-beat; mapping bar line to bar line reproduces each line's measured offset exactly and does not depend on the onset detector, so no onset-detection noise enters the placement. The per-line-number median offset was therefore not used.",
   "l3_l4": "L3+L4 is one chunk anchored on L3's bar line; L4 lands on the next bar line because the source tempo equals the destination tempo (bar-to-bar difference at most 0.1 ms, from the 4-decimal rounding of the downbeats)",
   "fades": "chunk edges: 15-30 ms raised cosine. Where the quiet gap between two sung lines is wider than 15 ms the fade lies inside it; where the gap is narrower the 15 ms fade is centred on the gap (see chunks[].fade_*.rule and leak/loss)"
+ },
+ "summary": {
+  "lines": 28,
+  "syllables": 226,
+  "chunks": 21,
+  "pieces": 24,
+  "repairs": [
+   "K6_L2_kopekleri",
+   "K6_L4_verici_K1",
+   "K3_L4_ek_ses"
+  ],
+  "first_vocal_sample_sec": 8.21909,
+  "last_vocal_sample_sec": 120.3702,
+  "verses": [
+   {
+    "verse": 1,
+    "animal": "inek",
+    "start_bar": 4,
+    "bar_downbeats_sec": [
+     8.27479,
+     10.34349,
+     12.41219,
+     14.48089,
+     16.54958,
+     18.61828,
+     20.68698,
+     22.75568
+    ],
+    "l4_sound_end_after_bar6_downbeat_ms": 72.4,
+    "vocal_chunk_end_after_bar6_downbeat_ms": 405.7
+   },
+   {
+    "verse": 2,
+    "animal": "koyun",
+    "start_bar": 12,
+    "bar_downbeats_sec": [
+     24.82438,
+     26.89307,
+     28.96177,
+     31.03047,
+     33.09917,
+     35.16787,
+     37.23656,
+     39.30526
+    ],
+    "l4_sound_end_after_bar6_downbeat_ms": -111.5,
+    "vocal_chunk_end_after_bar6_downbeat_ms": -61.6
+   },
+   {
+    "verse": 3,
+    "animal": "at",
+    "start_bar": 20,
+    "bar_downbeats_sec": [
+     41.37396,
+     43.44266,
+     45.51136,
+     47.58005,
+     49.64875,
+     51.71745,
+     53.78615,
+     55.85485
+    ],
+    "l4_sound_end_after_bar6_downbeat_ms": -135.2,
+    "vocal_chunk_end_after_bar6_downbeat_ms": -64.4
+   },
+   {
+    "verse": 4,
+    "animal": "horoz",
+    "start_bar": 28,
+    "bar_downbeats_sec": [
+     57.92354,
+     59.99224,
+     62.06094,
+     64.12964,
+     66.19834,
+     68.26703,
+     70.33573,
+     72.40443
+    ],
+    "l4_sound_end_after_bar6_downbeat_ms": -116.2,
+    "vocal_chunk_end_after_bar6_downbeat_ms": -52.4
+   },
+   {
+    "verse": 5,
+    "animal": "ördek",
+    "start_bar": 36,
+    "bar_downbeats_sec": [
+     74.47313,
+     76.54183,
+     78.61052,
+     80.67922,
+     82.74792,
+     84.81662,
+     86.88532,
+     88.95401
+    ],
+    "l4_sound_end_after_bar6_downbeat_ms": -160.9,
+    "vocal_chunk_end_after_bar6_downbeat_ms": -91.0
+   },
+   {
+    "verse": 6,
+    "animal": "köpek",
+    "start_bar": 44,
+    "bar_downbeats_sec": [
+     91.02271,
+     93.09141,
+     95.16011,
+     97.22881,
+     99.2975,
+     101.3662,
+     103.4349,
+     105.5036
+    ],
+    "l4_sound_end_after_bar6_downbeat_ms": 72.5,
+    "vocal_chunk_end_after_bar6_downbeat_ms": 405.8
+   },
+   {
+    "verse": 7,
+    "animal": "kedi",
+    "start_bar": 52,
+    "bar_downbeats_sec": [
+     107.5723,
+     109.64099,
+     111.70969,
+     113.77839,
+     115.84709,
+     117.91579,
+     119.98448,
+     122.05318
+    ],
+    "l4_sound_end_after_bar6_downbeat_ms": -11.5,
+    "vocal_chunk_end_after_bar6_downbeat_ms": 385.7
+   }
+  ],
+  "note": "l4_sound_end_after_bar6_downbeat_ms = how far the sung sound of line 4 (down to sung RMS - 45 dB) reaches into the first animal-call bar; vocal_chunk_end... = where the faded tail reaches digital silence"
  },
  "lines": [
   {
@@ -5057,16 +5193,16 @@
      "text": "de",
      "word": "Çiftliğinde",
      "src_start": 76.6977,
-     "src_end": 76.7773,
+     "src_end": 76.7723,
      "dest_start": 95.8257,
-     "dest_end": 95.9053,
+     "dest_end": 95.9003,
      "src_vowel_onset": 76.6977,
      "dest_vowel_onset": 95.8257,
      "vowel_onset_beats_in_bar": 1.287,
      "src_core_start": 76.7097,
-     "src_core_end": 76.7523,
+     "src_core_end": 76.7503,
      "dest_core_start": 95.8377,
-     "dest_core_end": 95.8803,
+     "dest_core_end": 95.8783,
      "midi": 63.98,
      "midi_all_voiced": 63.96,
      "note": "E4",
@@ -5074,15 +5210,15 @@
      "voiced_ratio": 1.0,
      "boundary_flag": false,
      "src_line": "K6 L2",
-     "note_text": "sonu kisaltildi: unlu 25 ms'lik sonumleme ile /k/ kapanisina baglandi"
+     "note_text": "sonu kisaltildi: unlu 22 ms'lik sonumleme ile /k/ kapanisina baglandi"
     },
     {
      "index": 4,
      "text": "kö",
      "word": "köpekleri",
-     "src_start": 78.0445,
+     "src_start": 78.0395,
      "src_end": 78.316,
-     "dest_start": 95.9053,
+     "dest_start": 95.9003,
      "dest_end": 96.1768,
      "src_vowel_onset": 78.1045,
      "dest_vowel_onset": 95.9653,
@@ -5098,7 +5234,7 @@
      "voiced_ratio": 1.0,
      "boundary_flag": false,
      "src_line": "K6 L3",
-     "note_text": null
+     "note_text": "K6 L3 'Köpekler'den; basinda 18 ms'lik /k/ kapanis sessizligi var; D4'te soylenmis (perde duzeltilmedi)"
     },
     {
      "index": 5,
@@ -5122,7 +5258,7 @@
      "voiced_ratio": 1.0,
      "boundary_flag": false,
      "src_line": "K6 L3",
-     "note_text": null
+     "note_text": "K6 L3 'Köpekler'den; sonu /k/ kapanisinin icindeki capraz gecisin ortasi"
     },
     {
      "index": 6,
@@ -7409,15 +7545,15 @@
     {
      "label": "K6_L2_a(Ciftliginde)",
      "src_in_sample": 3350378,
-     "src_out_sample": 3385878,
+     "src_out_sample": 3385658,
      "dest_in_sample": 4193923,
-     "dest_out_sample": 4229423,
+     "dest_out_sample": 4229203,
      "fade_in_samples": 662,
-     "fade_out_samples": 1102,
+     "fade_out_samples": 970,
      "src_in": 75.97229,
-     "src_out": 76.77728,
+     "src_out": 76.77229,
      "dest_in": 95.10029,
-     "dest_out": 95.90528
+     "dest_out": 95.90029
     },
     {
      "label": "K6_L2_b(kopek<-K6_L3)",
@@ -7691,15 +7827,15 @@
     {
      "label": "K6_L2_a(Ciftliginde)",
      "src_in_sample": 3350378,
-     "src_out_sample": 3385878,
+     "src_out_sample": 3385658,
      "dest_in_sample": 4193923,
-     "dest_out_sample": 4229423,
+     "dest_out_sample": 4229203,
      "fade_in_samples": 662,
-     "fade_out_samples": 1102,
+     "fade_out_samples": 970,
      "src_in": 75.97229,
-     "src_out": 76.77728,
+     "src_out": 76.77229,
      "dest_in": 95.10029,
-     "dest_out": 95.90528
+     "dest_out": 95.90029
     },
     {
      "label": "K6_L2_b(kopek<-K6_L3)",
@@ -7729,9 +7865,9 @@
     }
    ],
    "de_fade_out": {
-    "src_from": 76.7523,
-    "src_to": 76.7773,
-    "ms": 25.0,
+    "src_from": 76.7503,
+    "src_to": 76.7723,
+    "ms": 22.0,
     "note": "'de' ran straight into 'ör' (vowel to vowel); its vowel is faded out here to form the /k/ closure"
    },
    "kopek_source": {
@@ -7742,7 +7878,7 @@
     "k_burst_in_line2_time": 76.7903,
     "shift_into_line2_sec": -1.26721
    },
-   "silence_before_k_burst_ms": 13.0,
+   "silence_before_k_burst_ms": 18.0,
    "splice": {
     "where": "inside the /k/ closure between 'pek' and 'le'",
     "crossfade_ms": 8.0,
@@ -7762,7 +7898,8 @@
     "vowel_onset_new_pek_beats": 2.082,
     "pek_vowel_later_than_dek_ms": 25.9,
     "de_d_burst_to_k_burst_ms": 92.3,
-    "de_note": "'de' is shorter than sung (was 140 ms up to the 'ö'; now about 79 ms of sound + closure) because the inserted /k/ closure + burst + aspiration need about 60 ms before the vowel"
+    "de_sound_ms": 74.3,
+    "de_note": "'de' is shorter than sung (it ran for 140 ms straight into the 'ö'; now 74 ms of sound, then the closure) because the inserted /k/ closure + burst + aspiration need about 65 ms before the vowel; natural reference: verse 2 'de|ko' has about 55 ms of full vowel and a 20 ms closure"
    },
    "pitch": {
     "ko_midi": 62.06,

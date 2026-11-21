@@ -25,11 +25,20 @@
   "not": "altyapi = ezgi_alti HARİÇ tam orkestra (giriş, ö1/ö3 cevapları ve bitişteki yüksek lead dahil). rehber = altyapi + ezgi_alti. ezgi_alti doğrusal (limitersiz) ve altyapi ile aynı ana kazançta; miks seviyesi serbestçe değiştirilebilir."
  },
  "ana_kazanc": {
-  "kazanc_dB": 7.5929,
+  "kazanc_dB": 7.5137,
   "limiter_tavan_dBFS": -1.5,
   "hedef_LUFS_altyapi": -14.0,
-  "ezgi_alti_varsayilan_seviye_dB": -11.0,
+  "ezgi_alti_varsayilan_seviye_dB": -10.0,
   "ezgi_alti_seviye_notu": "ezgi_alti RMS değeri, çaldığı ölçülerde (kıta ö0, ö2, ö4, ö5) orkestra RMS değerine göre bu kadar dB"
+ },
+ "gecikme_telafisi": {
+  "aciklama": "Sesi geç açılan enstrümanların notaları ızgaradan bu kadar ms ÖNCE tetiklenir (negatif iz gecikmesi); json içindeki nota zamanları ızgara (hedef) zamanlarıdır. midi/ klasöründeki dosyalar telafisiz, ızgara üzerindedir.",
+  "one_alma_ms": {
+   "bas": 20.5,
+   "akordeon": 20.5,
+   "klarnet": 15.1,
+   "brass": 7.5
+  }
  },
  "tonlama": {
   "lead_do": "G4",
@@ -3984,7 +3993,7 @@
    "nota": "G6",
    "baslangic": 8.2748,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -4014,7 +4023,7 @@
    "nota": "G6",
    "baslangic": 8.5334,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -4044,7 +4053,7 @@
    "nota": "G6",
    "baslangic": 8.792,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -4074,7 +4083,7 @@
    "nota": "D6",
    "baslangic": 9.0506,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -4104,7 +4113,7 @@
    "nota": "E6",
    "baslangic": 9.3091,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -4134,7 +4143,7 @@
    "nota": "E6",
    "baslangic": 9.5677,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -4164,7 +4173,7 @@
    "nota": "D6",
    "baslangic": 9.8263,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -4494,7 +4503,7 @@
    "nota": "G6",
    "baslangic": 12.4122,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -4524,7 +4533,7 @@
    "nota": "G6",
    "baslangic": 12.6708,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -4554,7 +4563,7 @@
    "nota": "G6",
    "baslangic": 12.9294,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -4584,7 +4593,7 @@
    "nota": "D6",
    "baslangic": 13.1879,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -4614,7 +4623,7 @@
    "nota": "E6",
    "baslangic": 13.4465,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -4644,7 +4653,7 @@
    "nota": "E6",
    "baslangic": 13.7051,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -4674,7 +4683,7 @@
    "nota": "D6",
    "baslangic": 13.9637,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5004,7 +5013,7 @@
    "nota": "G6",
    "baslangic": 16.5496,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -5034,7 +5043,7 @@
    "nota": "G6",
    "baslangic": 16.8082,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -5064,7 +5073,7 @@
    "nota": "G6",
    "baslangic": 17.0668,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -5094,7 +5103,7 @@
    "nota": "G6",
    "baslangic": 17.3253,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -5124,7 +5133,7 @@
    "nota": "G6",
    "baslangic": 17.5839,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -5154,7 +5163,7 @@
    "nota": "G6",
    "baslangic": 17.8425,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -5184,7 +5193,7 @@
    "nota": "G6",
    "baslangic": 18.1011,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -5214,7 +5223,7 @@
    "nota": "G6",
    "baslangic": 18.3597,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -5244,7 +5253,7 @@
    "nota": "B6",
    "baslangic": 18.6183,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5274,7 +5283,7 @@
    "nota": "B6",
    "baslangic": 18.8769,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -5304,7 +5313,7 @@
    "nota": "A6",
    "baslangic": 19.1355,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5334,7 +5343,7 @@
    "nota": "A6",
    "baslangic": 19.394,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -5364,7 +5373,7 @@
    "nota": "G6",
    "baslangic": 19.6526,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5394,7 +5403,7 @@
    "nota": "G6",
    "baslangic": 24.8244,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5424,7 +5433,7 @@
    "nota": "G6",
    "baslangic": 25.083,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -5454,7 +5463,7 @@
    "nota": "G6",
    "baslangic": 25.3416,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5484,7 +5493,7 @@
    "nota": "D6",
    "baslangic": 25.6001,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -5514,7 +5523,7 @@
    "nota": "E6",
    "baslangic": 25.8587,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5544,7 +5553,7 @@
    "nota": "E6",
    "baslangic": 26.1173,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -5574,7 +5583,7 @@
    "nota": "D6",
    "baslangic": 26.3759,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5904,7 +5913,7 @@
    "nota": "G6",
    "baslangic": 28.9618,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5934,7 +5943,7 @@
    "nota": "G6",
    "baslangic": 29.2204,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -5964,7 +5973,7 @@
    "nota": "G6",
    "baslangic": 29.4789,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -5994,7 +6003,7 @@
    "nota": "D6",
    "baslangic": 29.7375,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -6024,7 +6033,7 @@
    "nota": "E6",
    "baslangic": 29.9961,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6054,7 +6063,7 @@
    "nota": "E6",
    "baslangic": 30.2547,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -6084,7 +6093,7 @@
    "nota": "D6",
    "baslangic": 30.5133,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6414,7 +6423,7 @@
    "nota": "G6",
    "baslangic": 33.0992,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -6444,7 +6453,7 @@
    "nota": "G6",
    "baslangic": 33.3578,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -6474,7 +6483,7 @@
    "nota": "G6",
    "baslangic": 33.6163,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -6504,7 +6513,7 @@
    "nota": "G6",
    "baslangic": 33.8749,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -6534,7 +6543,7 @@
    "nota": "G6",
    "baslangic": 34.1335,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -6564,7 +6573,7 @@
    "nota": "G6",
    "baslangic": 34.3921,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -6594,7 +6603,7 @@
    "nota": "G6",
    "baslangic": 34.6507,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -6624,7 +6633,7 @@
    "nota": "G6",
    "baslangic": 34.9093,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -6654,7 +6663,7 @@
    "nota": "B6",
    "baslangic": 35.1679,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6684,7 +6693,7 @@
    "nota": "B6",
    "baslangic": 35.4265,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -6714,7 +6723,7 @@
    "nota": "A6",
    "baslangic": 35.685,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6744,7 +6753,7 @@
    "nota": "A6",
    "baslangic": 35.9436,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -6774,7 +6783,7 @@
    "nota": "G6",
    "baslangic": 36.2022,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6804,7 +6813,7 @@
    "nota": "G6",
    "baslangic": 41.374,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6834,7 +6843,7 @@
    "nota": "G6",
    "baslangic": 41.6325,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -6864,7 +6873,7 @@
    "nota": "G6",
    "baslangic": 41.8911,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6894,7 +6903,7 @@
    "nota": "D6",
    "baslangic": 42.1497,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -6924,7 +6933,7 @@
    "nota": "E6",
    "baslangic": 42.4083,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -6954,7 +6963,7 @@
    "nota": "E6",
    "baslangic": 42.6669,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -6984,7 +6993,7 @@
    "nota": "D6",
    "baslangic": 42.9255,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -7314,7 +7323,7 @@
    "nota": "G6",
    "baslangic": 45.5114,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -7344,7 +7353,7 @@
    "nota": "G6",
    "baslangic": 45.7699,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -7374,7 +7383,7 @@
    "nota": "G6",
    "baslangic": 46.0285,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -7404,7 +7413,7 @@
    "nota": "D6",
    "baslangic": 46.2871,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -7434,7 +7443,7 @@
    "nota": "E6",
    "baslangic": 46.5457,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -7464,7 +7473,7 @@
    "nota": "E6",
    "baslangic": 46.8043,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -7494,7 +7503,7 @@
    "nota": "D6",
    "baslangic": 47.0629,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -7824,7 +7833,7 @@
    "nota": "G6",
    "baslangic": 49.6488,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -7854,7 +7863,7 @@
    "nota": "G6",
    "baslangic": 49.9073,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -7884,7 +7893,7 @@
    "nota": "G6",
    "baslangic": 50.1659,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -7914,7 +7923,7 @@
    "nota": "G6",
    "baslangic": 50.4245,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -7944,7 +7953,7 @@
    "nota": "G6",
    "baslangic": 50.6831,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -7974,7 +7983,7 @@
    "nota": "G6",
    "baslangic": 50.9417,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -8004,7 +8013,7 @@
    "nota": "G6",
    "baslangic": 51.2003,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -8034,7 +8043,7 @@
    "nota": "G6",
    "baslangic": 51.4589,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -8064,7 +8073,7 @@
    "nota": "B6",
    "baslangic": 51.7175,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8094,7 +8103,7 @@
    "nota": "B6",
    "baslangic": 51.976,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8124,7 +8133,7 @@
    "nota": "A6",
    "baslangic": 52.2346,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8154,7 +8163,7 @@
    "nota": "A6",
    "baslangic": 52.4932,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8184,7 +8193,7 @@
    "nota": "G6",
    "baslangic": 52.7518,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8214,7 +8223,7 @@
    "nota": "G6",
    "baslangic": 57.9235,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8244,7 +8253,7 @@
    "nota": "G6",
    "baslangic": 58.1821,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8274,7 +8283,7 @@
    "nota": "G6",
    "baslangic": 58.4407,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8304,7 +8313,7 @@
    "nota": "D6",
    "baslangic": 58.6993,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8334,7 +8343,7 @@
    "nota": "E6",
    "baslangic": 58.9579,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8364,7 +8373,7 @@
    "nota": "E6",
    "baslangic": 59.2165,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8394,7 +8403,7 @@
    "nota": "D6",
    "baslangic": 59.4751,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8724,7 +8733,7 @@
    "nota": "G6",
    "baslangic": 62.0609,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8754,7 +8763,7 @@
    "nota": "G6",
    "baslangic": 62.3195,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8784,7 +8793,7 @@
    "nota": "G6",
    "baslangic": 62.5781,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8814,7 +8823,7 @@
    "nota": "D6",
    "baslangic": 62.8367,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8844,7 +8853,7 @@
    "nota": "E6",
    "baslangic": 63.0953,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -8874,7 +8883,7 @@
    "nota": "E6",
    "baslangic": 63.3539,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -8904,7 +8913,7 @@
    "nota": "D6",
    "baslangic": 63.6125,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -9234,7 +9243,7 @@
    "nota": "G6",
    "baslangic": 66.1983,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -9264,7 +9273,7 @@
    "nota": "G6",
    "baslangic": 66.4569,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -9294,7 +9303,7 @@
    "nota": "G6",
    "baslangic": 66.7155,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -9324,7 +9333,7 @@
    "nota": "G6",
    "baslangic": 66.9741,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -9354,7 +9363,7 @@
    "nota": "G6",
    "baslangic": 67.2327,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -9384,7 +9393,7 @@
    "nota": "G6",
    "baslangic": 67.4913,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -9414,7 +9423,7 @@
    "nota": "G6",
    "baslangic": 67.7499,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -9444,7 +9453,7 @@
    "nota": "G6",
    "baslangic": 68.0084,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -9474,7 +9483,7 @@
    "nota": "B6",
    "baslangic": 68.267,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -9504,7 +9513,7 @@
    "nota": "B6",
    "baslangic": 68.5256,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -9534,7 +9543,7 @@
    "nota": "A6",
    "baslangic": 68.7842,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -9564,7 +9573,7 @@
    "nota": "A6",
    "baslangic": 69.0428,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -9594,7 +9603,7 @@
    "nota": "G6",
    "baslangic": 69.3014,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -9624,7 +9633,7 @@
    "nota": "G6",
    "baslangic": 74.4731,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -9654,7 +9663,7 @@
    "nota": "G6",
    "baslangic": 74.7317,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -9684,7 +9693,7 @@
    "nota": "G6",
    "baslangic": 74.9903,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -9714,7 +9723,7 @@
    "nota": "D6",
    "baslangic": 75.2489,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -9744,7 +9753,7 @@
    "nota": "E6",
    "baslangic": 75.5075,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -9774,7 +9783,7 @@
    "nota": "E6",
    "baslangic": 75.7661,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -9804,7 +9813,7 @@
    "nota": "D6",
    "baslangic": 76.0247,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -10134,7 +10143,7 @@
    "nota": "G6",
    "baslangic": 78.6105,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -10164,7 +10173,7 @@
    "nota": "G6",
    "baslangic": 78.8691,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -10194,7 +10203,7 @@
    "nota": "G6",
    "baslangic": 79.1277,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -10224,7 +10233,7 @@
    "nota": "D6",
    "baslangic": 79.3863,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -10254,7 +10263,7 @@
    "nota": "E6",
    "baslangic": 79.6449,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -10284,7 +10293,7 @@
    "nota": "E6",
    "baslangic": 79.9035,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -10314,7 +10323,7 @@
    "nota": "D6",
    "baslangic": 80.162,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -10644,7 +10653,7 @@
    "nota": "G6",
    "baslangic": 82.7479,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -10674,7 +10683,7 @@
    "nota": "G6",
    "baslangic": 83.0065,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -10704,7 +10713,7 @@
    "nota": "G6",
    "baslangic": 83.2651,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -10734,7 +10743,7 @@
    "nota": "G6",
    "baslangic": 83.5237,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -10764,7 +10773,7 @@
    "nota": "G6",
    "baslangic": 83.7823,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -10794,7 +10803,7 @@
    "nota": "G6",
    "baslangic": 84.0409,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -10824,7 +10833,7 @@
    "nota": "G6",
    "baslangic": 84.2994,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -10854,7 +10863,7 @@
    "nota": "G6",
    "baslangic": 84.558,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -10884,7 +10893,7 @@
    "nota": "B6",
    "baslangic": 84.8166,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -10914,7 +10923,7 @@
    "nota": "B6",
    "baslangic": 85.0752,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -10944,7 +10953,7 @@
    "nota": "A6",
    "baslangic": 85.3338,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -10974,7 +10983,7 @@
    "nota": "A6",
    "baslangic": 85.5924,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -11004,7 +11013,7 @@
    "nota": "G6",
    "baslangic": 85.851,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11034,7 +11043,7 @@
    "nota": "G6",
    "baslangic": 91.0227,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11064,7 +11073,7 @@
    "nota": "G6",
    "baslangic": 91.2813,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -11094,7 +11103,7 @@
    "nota": "G6",
    "baslangic": 91.5399,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11124,7 +11133,7 @@
    "nota": "D6",
    "baslangic": 91.7985,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -11154,7 +11163,7 @@
    "nota": "E6",
    "baslangic": 92.0571,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11184,7 +11193,7 @@
    "nota": "E6",
    "baslangic": 92.3156,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -11214,7 +11223,7 @@
    "nota": "D6",
    "baslangic": 92.5742,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11544,7 +11553,7 @@
    "nota": "G6",
    "baslangic": 95.1601,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11574,7 +11583,7 @@
    "nota": "G6",
    "baslangic": 95.4187,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -11604,7 +11613,7 @@
    "nota": "G6",
    "baslangic": 95.6773,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11634,7 +11643,7 @@
    "nota": "D6",
    "baslangic": 95.9359,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -11664,7 +11673,7 @@
    "nota": "E6",
    "baslangic": 96.1945,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -11694,7 +11703,7 @@
    "nota": "E6",
    "baslangic": 96.453,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -11724,7 +11733,7 @@
    "nota": "D6",
    "baslangic": 96.7116,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12054,7 +12063,7 @@
    "nota": "G6",
    "baslangic": 99.2975,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -12084,7 +12093,7 @@
    "nota": "G6",
    "baslangic": 99.5561,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -12114,7 +12123,7 @@
    "nota": "G6",
    "baslangic": 99.8147,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -12144,7 +12153,7 @@
    "nota": "G6",
    "baslangic": 100.0733,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -12174,7 +12183,7 @@
    "nota": "G6",
    "baslangic": 100.3319,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -12204,7 +12213,7 @@
    "nota": "G6",
    "baslangic": 100.5904,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -12234,7 +12243,7 @@
    "nota": "G6",
    "baslangic": 100.849,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -12264,7 +12273,7 @@
    "nota": "G6",
    "baslangic": 101.1076,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -12294,7 +12303,7 @@
    "nota": "B6",
    "baslangic": 101.3662,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12324,7 +12333,7 @@
    "nota": "B6",
    "baslangic": 101.6248,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -12354,7 +12363,7 @@
    "nota": "A6",
    "baslangic": 101.8834,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12384,7 +12393,7 @@
    "nota": "A6",
    "baslangic": 102.142,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -12414,7 +12423,7 @@
    "nota": "G6",
    "baslangic": 102.4006,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12444,7 +12453,7 @@
    "nota": "G6",
    "baslangic": 107.5723,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12474,7 +12483,7 @@
    "nota": "G6",
    "baslangic": 107.8309,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -12504,7 +12513,7 @@
    "nota": "G6",
    "baslangic": 108.0895,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12534,7 +12543,7 @@
    "nota": "D6",
    "baslangic": 108.3481,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -12564,7 +12573,7 @@
    "nota": "E6",
    "baslangic": 108.6066,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12594,7 +12603,7 @@
    "nota": "E6",
    "baslangic": 108.8652,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -12624,7 +12633,7 @@
    "nota": "D6",
    "baslangic": 109.1238,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12954,7 +12963,7 @@
    "nota": "G6",
    "baslangic": 111.7097,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -12984,7 +12993,7 @@
    "nota": "G6",
    "baslangic": 111.9683,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -13014,7 +13023,7 @@
    "nota": "G6",
    "baslangic": 112.2269,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -13044,7 +13053,7 @@
    "nota": "D6",
    "baslangic": 112.4855,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -13074,7 +13083,7 @@
    "nota": "E6",
    "baslangic": 112.744,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -13104,7 +13113,7 @@
    "nota": "E6",
    "baslangic": 113.0026,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -13134,7 +13143,7 @@
    "nota": "D6",
    "baslangic": 113.2612,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -13464,7 +13473,7 @@
    "nota": "G6",
    "baslangic": 115.8471,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -13494,7 +13503,7 @@
    "nota": "G6",
    "baslangic": 116.1057,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -13524,7 +13533,7 @@
    "nota": "G6",
    "baslangic": 116.3643,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -13554,7 +13563,7 @@
    "nota": "G6",
    "baslangic": 116.6229,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -13584,7 +13593,7 @@
    "nota": "G6",
    "baslangic": 116.8814,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -13614,7 +13623,7 @@
    "nota": "G6",
    "baslangic": 117.14,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -13644,7 +13653,7 @@
    "nota": "G6",
    "baslangic": 117.3986,
    "sure": 0.2276,
-   "hiz": 66,
+   "hiz": 80,
    "tek_ses": true
   },
   {
@@ -13674,7 +13683,7 @@
    "nota": "G6",
    "baslangic": 117.6572,
    "sure": 0.2276,
-   "hiz": 56,
+   "hiz": 70,
    "tek_ses": true
   },
   {
@@ -13704,7 +13713,7 @@
    "nota": "B6",
    "baslangic": 117.9158,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -13734,7 +13743,7 @@
    "nota": "B6",
    "baslangic": 118.1744,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -13764,7 +13773,7 @@
    "nota": "A6",
    "baslangic": 118.433,
    "sure": 0.2379,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {
@@ -13794,7 +13803,7 @@
    "nota": "A6",
    "baslangic": 118.6915,
    "sure": 0.2379,
-   "hiz": 68,
+   "hiz": 82,
    "tek_ses": true
   },
   {
@@ -13824,7 +13833,7 @@
    "nota": "G6",
    "baslangic": 118.9501,
    "sure": 0.2586,
-   "hiz": 78,
+   "hiz": 92,
    "tek_ses": true
   },
   {

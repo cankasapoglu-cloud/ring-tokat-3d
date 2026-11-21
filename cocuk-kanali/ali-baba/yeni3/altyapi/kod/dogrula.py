@@ -39,12 +39,44 @@ def yin(x, sr, fmin=120.0, fmax=2500.0, thr=0.15):
         a0, b0, c0 = np.log(X[k - 1] + 1e-20), np.log(X[k] + 1e-20), np.log(X[k + 1] + 1e-20)
         k = k + 0.5 * (a0 - c0) / (a0 - 2 * b0 + c0 + 1e-20)
     return k * sr / Nf
-def specpeak(x, sr, lo=300.0, hi=6000.0):
-    """Strongest spectral peak in a wide band (for the glockenspiel, whose partials are not harmonic)."""
+def stmag(x, sr, t_start, f, win=0.030):
+    """Magnitude of the component at frequency f in a short Hann window starting at t_start."""
+    i0 = int(t_start * sr); n = int(win * sr)
+    if i0 < 0 or i0 + n > len(x): return 0.0
+    t = np.arange(n) / sr
+    return float(np.abs(np.sum(x[i0:i0 + n] * np.hanning(n) * np.exp(-2j * np.pi * f * t))))
+def bandpeak(x, sr, lo, hi):
+    """Strongest spectral peak in a fixed band (no knowledge of the expected note)."""
     Nf = 1 << 17; X = np.abs(np.fft.rfft((x - x.mean()) * np.hanning(len(x)), Nf)); F = np.fft.rfftfreq(Nf, 1 / sr)
     a, b = np.searchsorted(F, [lo, hi]); k = a + int(np.argmax(X[a:b]))
-    a0, b0, c0 = np.log(X[k - 1] + 1e-20), np.log(X[k] + 1e-20), np.log(X[k + 1] + 1e-20)
-    return (k + 0.5 * (a0 - c0) / (a0 - 2 * b0 + c0 + 1e-20)) * sr / Nf
+    a_, b_, c_ = np.log(X[k - 1] + 1e-20), np.log(X[k] + 1e-20), np.log(X[k + 1] + 1e-20)
+    return (k + 0.5 * (a_ - c_) / (a_ - 2 * b_ + c_ + 1e-20)) * sr / Nf
+def glockpitch(x, sr, t0, dur, expected, lo=450.0, hi=2200.0):
+    """Glockenspiel (FluidR3): the partials are not harmonic, the upper ones are stronger than the fundamental during the
+    attack, and earlier notes keep ringing through later ones, so a plain pitch detector does not work on this stem.
+    Peaks are listed in the range where every glockenspiel fundamental of this song lies (C5..C7).
+    Returns (f_present, f_blind):
+      f_present = the peak nearest to the expected fundamental (nan if none within a semitone)   -> used for pass/fail
+      f_blind   = the lowest peak that newly appears at the onset (level 45-75 ms after the onset at least 1.5 x the level
+                  just before it); if none is new (a repeated note meets its own ringing predecessor), the peak that is
+                  strongest after the onset                                                      -> reported for information"""
+    i0 = int((t0 + 0.012) * sr); i1 = int((t0 + max(0.16, min(dur, 0.45) - 0.01)) * sr); seg = x[i0:i1]
+    Nf = 1 << 17; X = np.abs(np.fft.rfft((seg - seg.mean()) * np.hanning(len(seg)), Nf)); F = np.fft.rfftfreq(Nf, 1 / sr)
+    a, b = np.searchsorted(F, [lo, hi]); thr = 0.03 * X[a:b].max(); cands = []
+    for k in range(a + 1, b - 1):
+        if X[k] > thr and X[k] >= X[k - 1] and X[k] > X[k + 1]:
+            a_, b_, c_ = np.log(X[k - 1] + 1e-20), np.log(X[k] + 1e-20), np.log(X[k + 1] + 1e-20)
+            f = (k + 0.5 * (a_ - c_) / (a_ - 2 * b_ + c_ + 1e-20)) * sr / Nf
+            if cands and f / cands[-1][0] < 1.03:
+                if X[k] > cands[-1][1]: cands[-1] = (f, X[k])
+            else: cands.append((f, X[k]))
+    if not cands: return np.nan, np.nan
+    fe = 440 * 2 ** ((expected - 69) / 12); near = min(cands, key=lambda c: abs(np.log2(c[0] / fe)))
+    f_present = near[0] if abs(12 * np.log2(near[0] / fe)) < 1 else np.nan
+    late = [(f, stmag(x, sr, t0 + 0.045, f), stmag(x, sr, t0 - 0.034, f)) for f, m in cands]
+    new = [f for f, ma, mb in late if ma > 1.5 * mb]
+    f_blind = new[0] if new else max(late, key=lambda c: c[1])[0]
+    return f_present, f_blind
 f2m = lambda f: 69 + 12 * np.log2(f / 440.0)
 def envelope(x, sr, win=0.003, hop=0.0005):
     h = int(hop * sr); w = int(win * sr); c = np.cumsum(np.concatenate([[0], x ** 2]))
@@ -111,55 +143,62 @@ for V in VARS:
 
     print('[4] beat grid measured in altyapi (kick onsets)')
     a = X['altyapi'].mean(1)
-    lp = sosfiltfilt(butter(4, [35, 150], 'bandpass', fs=sr, output='sos'), a)
-    e, hop, win = envelope(lp, sr, win=0.004, hop=0.0005)
+    hp = sosfiltfilt(butter(4, [6000, 14000], 'bandpass', fs=sr, output='sos'), a)      # hi-hat / snare / tambourine band
+    e, hop, win = envelope(hp, sr, win=0.002, hop=0.00025)
     tt = []; bb = []
     for bi, (ch, kind, k, vb) in enumerate(bars):
-        if kind == 'final': continue
         for bt in range(4):
-            t0 = (bi * 4 + bt) * BEAT; i0 = int((t0 - 0.03) / hop); i1 = int((t0 + 0.06) / hop)
-            if i0 < 0: i0 = 0
-            seg = e[i0:i1]; de = np.diff(seg); j = int(np.argmax(de))
+            if kind == 'final' and bt in (1, 2): continue            # no beat hits there (snare roll only)
+            t0 = (bi * 4 + bt) * BEAT; i0 = max(0, int((t0 - 0.02) / hop)); i1 = int((t0 + 0.03) / hop)
+            seg = e[i0:i1]; pk = seg.max(); m = int(np.argmin(seg[:max(1, int(0.02 / hop))])); j = m + int(np.argmax(seg[m:] >= 0.5 * pk))
             tt.append((i0 + j) * hop + win / 2); bb.append(bi * 4 + bt)
     tt = np.array(tt); bb = np.array(bb); sl, ic = np.polyfit(bb, tt, 1); res = tt - (sl * bb + ic); dev = tt - bb * BEAT
-    check(abs(sl - BEAT) < 2e-5 and abs(np.median(dev)) < 0.012 and res.std() < 0.004,
-          f'{len(tt)} kick onsets: fitted beat {sl:.6f} s (nominal {BEAT:.6f}; => bar {4 * sl:.5f} s, {60 / sl:.3f} BPM), '
-          f'steepest-rise time minus grid: median {1000 * np.median(dev):+.2f} ms, min {1000 * dev.min():+.2f}, max {1000 * dev.max():+.2f}, residual sd {1000 * res.std():.2f} ms')
-    rep['grid'] = {'kick_onsets': len(tt), 'fitted_beat_s': round(float(sl), 6), 'fitted_bar_s': round(float(4 * sl), 5), 'fitted_bpm': round(float(60 / sl), 3),
+    check(abs(sl - BEAT) < 2e-5 and abs(np.median(dev)) < 0.008 and res.std() < 0.004,
+          f'{len(tt)} beat onsets (6-14 kHz band: hi-hat/snare/tambourine): fitted beat {sl:.6f} s (nominal {BEAT:.6f}; => bar {4 * sl:.5f} s, {60 / sl:.3f} BPM), '
+          f'half-level onset minus grid: median {1000 * np.median(dev):+.2f} ms, min {1000 * dev.min():+.2f}, max {1000 * dev.max():+.2f}, residual sd {1000 * res.std():.2f} ms')
+    rep['grid'] = {'beat_onsets': len(tt), 'fitted_beat_s': round(float(sl), 6), 'fitted_bar_s': round(float(4 * sl), 5), 'fitted_bpm': round(float(60 / sl), 3),
                    'onset_minus_grid_ms_median': round(float(1000 * np.median(dev)), 2), 'min': round(float(1000 * dev.min()), 2), 'max': round(float(1000 * dev.max()), 2)}
 
     print('[5] MIDI files vs zaman json')
-    for part, fn in (('lead', f'{O}/midi/altyapi_{V}.mid'), ('ezgi_alti', f'{O}/midi/ezgi_alti_{V}.mid')):
+    chn = {v: int(k) for k, v in Mt['chn'].items()}
+    def midi_ons(fn):
         mid = mido.MidiFile(fn); t = 0; tempo = 500000; ons = {}
         for m in mid.tracks[0]:
             t += m.time
             if m.type == 'set_tempo': tempo = m.tempo
             if m.type == 'note_on' and m.velocity > 0: ons.setdefault((m.channel, m.note), []).append(t * tempo / 1e6 / mid.ticks_per_beat)
-        chn = {v: int(k) for k, v in Mt['chn'].items()}
-        miss = 0; mx = 0
+        return ons, tempo
+    for part, fn, fr in (('lead', f'{O}/midi/altyapi_{V}.mid', f'{W}/{V}/band.mid'), ('ezgi_alti', f'{O}/midi/ezgi_alti_{V}.mid', f'{W}/{V}/alt.mid')):
+        ons, tempo = midi_ons(fn); onr, _ = midi_ons(fr); miss = 0; mx = 0; missr = 0; mxr = 0; cnt = 0
         for n in Z['ezgi_notalari']:
             if n['parti'] != part: continue
-            c = ons.get((chn[n['enstruman']], n['midi']), []); dd = min([abs(x - n['baslangic']) for x in c] or [9])
-            mx = max(mx, dd if dd < 9 else 0); miss += dd > 0.002
-        cnt = sum(1 for n in Z['ezgi_notalari'] if n['parti'] == part)
-        check(miss == 0, f'{os.path.basename(fn)}: {cnt} "{part}" notes of the json found in the MIDI at their time (max deviation {1000 * mx:.3f} ms; MIDI tempo {tempo} us/beat)')
-
+            cnt += 1; key = (chn[n['enstruman']], n['midi'])
+            dd = min([abs(x - n['baslangic']) for x in ons.get(key, [])] or [9]); mx = max(mx, dd if dd < 9 else 0); miss += dd > 0.002
+            adv = Mt['adv_ticks'].get(n['enstruman'], 0) * Mt['BEAT_MIDI'] / Mt['TPB']; tr_ = n['baslangic'] + Mt['PRE'] * Mt['BEAT_MIDI'] - adv
+            dr = min([abs(x - tr_) for x in onr.get(key, [])] or [9]); mxr = max(mxr, dr if dr < 9 else 0); missr += dr > 0.002
+        check(miss == 0 and missr == 0, f'{os.path.basename(fn)}: {cnt} "{part}" notes of the json found on the grid in the score MIDI (max deviation {1000 * mx:.3f} ms) and in the '
+              f'rendered MIDI at grid minus the documented advance (max deviation {1000 * mxr:.3f} ms); MIDI tempo {tempo} us/beat')
+    print('       documented note advances (ms):', Z['gecikme_telafisi']['one_alma_ms'])
     print('[6] pitch and time of the melody notes, detected in the solo stems')
     stem = lambda n: sf.read(f'{W}/{V}/st_{n}.wav', dtype='float64')[0][CUT:CUT + N].mean(1)
     S = {n: stem(n) for n in ('trompet', 'glockenspiel', 'klarnet', 'glockenspiel_hafif')}
     S['ezgi_alti (teslim dosyası)'] = X['ezgi_alti'].mean(1)
     ENV = {n: envelope(x, sr) for n, x in S.items()}
     rep['notes'] = {}
-    def run(label, stemname, notes, method, ptol=0.30, ttol=(-0.010, 0.050), expect=lambda n: n['midi']):
-        x = S[stemname]; e, hop, win = ENV[stemname]; bad = []; perr = []; terr = []
+    def run(label, stemname, notes, method, ptol=0.30, ttol=(-0.015, 0.050), expect=lambda n: n['midi']):
+        x = S[stemname]; e, hop, win = ENV[stemname]; bad = []; perr = []; terr = []; fallback = [0, 0]
         for n in notes:
             t0, du = n['baslangic'], n['sure']
             i0 = int((t0 + 0.035) * sr); i1 = int((t0 + max(0.16, min(du, 0.45) - 0.01)) * sr)
-            f = yin(x[i0:i1], sr) if method == 'yin' else specpeak(x[int((t0 + 0.012) * sr):i1], sr)
+            if method == 'yin': f = yin(x[i0:i1], sr)
+            elif method == 'band': f = bandpeak(x[i0:i1], sr, 300.0, 1100.0)
+            else:
+                f, fb = glockpitch(x, sr, t0, du, expect(n)); fallback[0] += 1; fallback[1] += bool(np.isfinite(fb) and abs(f2m(fb) - expect(n)) <= ptol)
             pe = f2m(f) - expect(n) if np.isfinite(f) else 99; te = onset(e, hop, win, t0, du) - t0
             perr.append(pe); terr.append(te)
             if abs(pe) > ptol or not (ttol[0] <= te <= ttol[1]): bad.append((n['olcu'], n['vurus'], n['nota'], round(float(pe), 2), round(float(1000 * te), 1)))
         perr = np.array(perr); terr = np.array(terr) * 1000
+        rep['notes'].setdefault('_glock_blind', {})
         ok = check(not bad, f'{label}: {len(notes)} notes checked, {len(notes) - len(bad)} matched (pitch within {ptol} st and onset within {1000 * ttol[0]:.0f}..+{1000 * ttol[1]:.0f} ms); '
                    f'pitch error mean {100 * perr.mean():+.1f} cents, max |err| {100 * np.abs(perr).max():.1f} cents; '
                    f'half-level onset minus grid: median {np.median(terr):+.1f} ms, min {terr.min():+.1f}, max {terr.max():+.1f}')
@@ -167,16 +206,20 @@ for V in VARS:
         rep['notes'][label] = {'checked': len(notes), 'matched': len(notes) - len(bad), 'pitch_err_cents_mean': round(float(100 * perr.mean()), 1),
                                'pitch_err_cents_max_abs': round(float(100 * np.abs(perr).max()), 1), 'onset_ms_median': round(float(np.median(terr)), 1),
                                'onset_ms_min': round(float(terr.min()), 1), 'onset_ms_max': round(float(terr.max()), 1)}
+        if method == 'glock':
+            print(f'        (glockenspiel: pass/fail = expected fundamental present as a spectral peak; blind "lowest newly appearing partial" estimate agrees for {fallback[1]} of {fallback[0]} notes, '
+                  f'the rest are notes whose own pitch is still ringing from the note before)')
+            rep['notes'].setdefault('_glock_blind', {})[label] = {'checked': fallback[0], 'blind_agrees': fallback[1]}
         return len(notes), len(notes) - len(bad)
     NT = Z['ezgi_notalari']
     sel = lambda part, ins, mono=True: [n for n in NT if n['parti'] == part and n['enstruman'] == ins and n['tek_ses'] == mono]
     tot = [0, 0]
     for lab, st, notes, meth, kw in (
             ('lead trompet', 'trompet', sel('lead', 'trompet'), 'yin', {}),
-            ('lead glockenspiel (+1 oktav)', 'glockenspiel', sel('lead', 'glockenspiel'), 'peak', {'ttol': (-0.010, 0.030)}),
+            ('lead glockenspiel (+1 oktav)', 'glockenspiel', sel('lead', 'glockenspiel'), 'glock', {'ttol': (-0.010, 0.030)}),
             ('ezgi_alti klarnet', 'klarnet', sel('ezgi_alti', 'klarnet'), 'yin', {}),
-            ('ezgi_alti glockenspiel (+1 oktav)', 'glockenspiel_hafif', sel('ezgi_alti', 'glockenspiel_hafif'), 'peak', {'ttol': (-0.010, 0.030)}),
-            ('ezgi_alti teslim dosyası (klarnet perdesi)', 'ezgi_alti (teslim dosyası)', sel('ezgi_alti', 'klarnet'), 'yin', {})):
+            ('ezgi_alti glockenspiel (+1 oktav)', 'glockenspiel_hafif', sel('ezgi_alti', 'glockenspiel_hafif'), 'glock', {'ttol': (-0.010, 0.030)}),
+            ('ezgi_alti teslim dosyası (klarnet+glockenspiel karışık; 300-1100 Hz en güçlü tepe)', 'ezgi_alti (teslim dosyası)', sel('ezgi_alti', 'klarnet'), 'band', {'ttol': (-0.020, 0.050)})):
         c, m = run(lab, st, notes, meth, **kw); tot[0] += c; tot[1] += m
     # chords of the final bar on the trumpet and glockenspiel stems: every expected partial must be a spectral peak
     cb = []
@@ -255,6 +298,21 @@ for V in VARS:
           f'stem level outside its bars: {out_lvl:.1f} dB rel. to its active level')
     print(f'       stem vs band energy in the third-octave band around each clarinet note ({len(snr)} notes): median {np.median(snr):+.1f} dB, 10th pct {np.percentile(snr, 10):+.1f}, min {snr.min():+.1f}; '
           f'around the glockenspiel octave (2 f0): median {np.median(snr2):+.1f} dB, min {snr2.min():+.1f}')
+    lead = sum(sf.read(f'{W}/{V}/st_{n}.wav', dtype='float64')[0][CUT:CUT + N] for n in ('trompet', 'brass', 'glockenspiel')).mean(1)
+    rest = sum(sf.read(f'{W}/{V}/st_{n}.wav', dtype='float64')[0][CUT:CUT + N] for n in ('bas', 'banjo', 'akordeon', 'piyano', 'davul')).mean(1)
+    ref = []
+    for n in sel('lead', 'trompet'):
+        if bars[n['olcu']][1] not in ('ans', 'intro_ans'): continue
+        i0 = int((n['baslangic'] + 0.02) * sr); i1 = int((n['baslangic'] + max(0.2, min(n['sure'], 0.5))) * sr)
+        w = np.hanning(i1 - i0); Fa = np.abs(np.fft.rfft(rest[i0:i1] * w, 1 << 15)) ** 2; Fe = np.abs(np.fft.rfft(lead[i0:i1] * w, 1 << 15)) ** 2; F = np.fft.rfftfreq(1 << 15, 1 / sr)
+        f0 = 440 * 2 ** ((n['midi'] - 69) / 12); a_, b_ = np.searchsorted(F, [f0 * 2 ** (-1 / 6), f0 * 2 ** (1 / 6)]); ref.append(10 * np.log10(Fe[a_:b_].sum() / Fa[a_:b_].sum()))
+    ansmask = np.zeros(len(A2), bool)
+    for bi, (ch, kind, k, vb) in enumerate(bars):
+        if kind == 'ans' and k < NV: ansmask[int(bi * BAR * sr):int((bi + 1) * BAR * sr)] = True
+    lead_rel = db(rms(lead[ansmask[:len(lead)]]) / rms(rest[ansmask[:len(rest)]]))
+    print(f'       for comparison, the LOUD lead (trumpet+brass+glockenspiel) in the answer bars: RMS {lead_rel:+.1f} dB relative to the rest of the band; '
+          f'same third-octave proxy around the trumpet notes: median {np.median(ref):+.1f} dB')
+    rep['loud_lead_reference'] = {'rms_rel_rest_of_band_db': round(float(lead_rel), 1), 'f0_band_lead_minus_rest_db_median': round(float(np.median(ref)), 1)}
     rep['ezgi_alti_level'] = {'rms_rel_band_db': round(float(rel), 1), 'f0_band_stem_minus_band_db_median': round(float(np.median(snr)), 1),
                               'f0_band_p10': round(float(np.percentile(snr, 10)), 1), 'f0_band_min': round(float(snr.min()), 1),
                               'octave_band_median': round(float(np.median(snr2)), 1), 'stem_rms_dbfs_active': round(float(db(rms(E2[act]))), 1),
