@@ -1,3 +1,4 @@
+"""Tani araci (ciktiya girmez): hece cekirdekleri ve sinirlarinin dokumu / 7 kitanin yan yana tablosu."""
 import numpy as np, sys
 import hece
 from zarf import *
@@ -8,7 +9,7 @@ kita = kitalari_esle(kelimeleri_oku()); vd = kita_vuruslari()
 DZ, SEV = dizeleri_bul(kita)
 hece.SUNG = SEV["soylenen_rms_dbfs"]
 voi = np.interp(t, th, (f0h > 0).astype(float)) > 0.5
-hece.VOIG = voi & (db_ham > hece.SUNG - 25.0)
+hece.VOIG = voi & (ELOW8 > hece.SUNG - 11.0)          # kesim.py ile ayni kapi
 K = {"dip": "d", "spectral": "s", "pitch_step": "p", "grid": "G"}
 for adlar in (["L1"], ["L2"], ["diye", "L4"]):
     rows = []

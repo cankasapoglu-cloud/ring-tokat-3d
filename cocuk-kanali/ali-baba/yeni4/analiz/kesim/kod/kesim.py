@@ -10,7 +10,10 @@ Icerik
   3) 3. kita "atları" denetimi + diger kelimelerin taramasi
   4) soylenen notalarin tablosu (dize basina, vurus basina, perde sinifi dagilimlari)
   5) gurultu tabani
-yeni3/analiz/kesim/kod/kesim.py'den uyarlandi (harf-HMM'i yerine vurus izgarasi sablonu: bkz. izgara.py)."""
+yeni3/analiz/kesim/kod/kesim.py'den uyarlandi (harf-HMM'i yerine vurus izgarasi sablonu: bkz. izgara.py).
+Moduller: ortak.py (yollar, sozler, heceleme) | ozellik.py (zarflar, f0 -> ara/ozellik.npz) | zarf.py (ortak zarflar) |
+dize.py (bolum sinirlari, zor kesimler) | izgara.py (vurus sablonu) | hece.py (cekirdek + hece siniri kurallari) |
+perde.py (perde, nota platolari) | atlari.py ('atları' olcumu, fazla hece dedektoru, spektral zarf karsilastirmasi)."""
 import os, json, collections, numpy as np
 import hece, perde, atlari
 from zarf import (z, x, fs, t, DT, fi, E12, E30, ELOW8, F2B, EHI, R5, th, f0h, f0s, FP, midi, db_ham, nota_adi, NOTA, r4, r1, r2)
@@ -250,6 +253,8 @@ for v in range(7):
                                      "low_band_minus_high_band_db": round(a_["first50ms_low_minus_hi_db"], 1),
                                      "voiced_ratio_until_animal_vowel": round(a_["between_voiced_ratio"], 2)},
         "var_end_before_next_bar_line_ms": round((vdb + 2 * BAR_OLC - var_bit) * 1000, 1),
+        "silence_between_cut_out_and_real_animal_call_ms": round((vdb + 2 * BAR_OLC - 0.040 - onerilen["cut_out"]) * 1000, 1),
+        "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
         "recommended": dict(onerilen, shape="raised cosine (cos^2), gain 1 at fade_start, 0 at cut_out", why=oneri_not,
                             margin_cut_out_to_animal_vowel_ms=round((a_["animal_vowel_onset"] - onerilen["cut_out"]) * 1000, 1),
                             margin_cut_out_to_animal_sound_start_ms=round((a_["animal_sound_start"] - onerilen["cut_out"]) * 1000, 1)),
@@ -291,8 +296,8 @@ for v in range(7):
     # ---------------------------------------------------------------- parcalar
     L1e, L2s = dz["L1"]["bitis"], dz["L2"]["baslangic"]
     p1_in = dz["L1"]["kesim_giris"]; p1_fin = float(min(30, round((dz["L1"]["baslangic"] - p1_in) * 1000)))
-    p1_out = min(L2s - 0.004, L1e + 0.030); p1_fout = float(min(30, round((p1_out - (L1e - 0.005)) * 1000)))
     p2_in = max(L1e + 0.004, L2s - 0.014); p2_fin = float(max(3, round((L2s - 0.002 - p2_in) * 1000)))
+    p1_out = min(L1e + 0.030, p2_in); p1_fout = float(min(30, round((p1_out - (L1e - 0.005)) * 1000)))
     p2_out = onerilen["cut_out"]; p2_fout = onerilen["fade_ms"]
     e4 = dz["L4"]["bitis"]; p3_out = e4 + 0.03
     p3_fout = float(np.clip(round((p3_out - dz["L4"]["govde_bitis"]) * 1000), 20, 60))
@@ -419,7 +424,7 @@ def uzlasi(ad):
         ps_ = [round(float(q_), 2) for q_ in np.median(pp_, axis=0)] if len(pp_) else [None] * 4
         out.append({"slot": etiket, "beat_in_bar": SLOT_VURUS[ad][si] - 4 * SRC_BAR[ad], "notes": list(en),
                     "median_f0_midi": ps_[0], "median_pitch_start_mid_end_midi": ps_[1:],
-                    "glide": None if ps_[1] is None or abs(ps_[3] - ps_[1]) < 0.7 else "%s -> %s" % (nota_adi(ps_[1]), nota_adi(ps_[3])),
+                    "glide": None if ps_[1] is None or abs(ps_[3] - ps_[1]) < 0.7 else "%.1f -> %.1f (%+.1f st)" % (ps_[1], ps_[3], ps_[3] - ps_[1]),
                     "median_midi": [round(float(m_), 2) for m_ in mid], "median_duration_beats": [round(float(s_), 3) for s_ in sur],
                     "verses_agreeing": "%d/%d" % (say, len(gir)),
                     "other_readings": [{"verse": g_[0], "syllable": g_[1], "notes": g_[2]} for g_ in gir if tuple(g_[2]) != en]})
@@ -626,16 +631,27 @@ atlari_check = {
 # ---------------- butun kelimelerin taramasi (fazla / eksik hece)
 tarama = []
 for (vv, ad, wd) in tum_kelime:
-    hs = [h for h in verses[vv - 1]["H"][ad] if h["word"] == wd["text"] and h["q"]["json_bas"] == wd["json_start"]]
     sy = [sd for (v2, a2_, sd) in tum_hece if v2 == vv and a2_ == ad and sd["word"] == wd["text"] and wd["start"] - 1e-3 <= sd["start"] <= wd["end"] + 1e-3]
     kept = [s_ for s_ in sy if s_["kept"]]
-    eksik = [s_["text"] for s_ in kept if s_["voiced_ratio"] < 0.3 or (s_["core_end"] - s_["core_start"]) < 0.03]
-    grid_sap = [round((s_["core_start"] - s_["t_expected"]) * 1000) for s_ in kept]
-    tarama.append({"verse": vv, "line": ad, "word": wd["text"], "expected": wd["syllables_expected"], "nuclei_on_grid_slots": wd["syllable_nuclei_sung"],
+    eksik = [s_["text"] for s_ in kept if s_["voiced_ratio"] * s_["duration"] < 0.04 or (s_["core_end"] - s_["core_start"]) < 0.03]
+    # fazla hece dedektoru: BEKLENEN yazimdaki her hece araliginda iki ayri unlu tepesi var mi
+    # (3. kita 'atları'nda beklenen "la" = atilacak cekirdek + "la"; sinir, 't' salinimindan sonra otumun basladigi andir)
+    araliklar = []; i_ = 0
+    while i_ < len(sy):
+        if sy[i_]["excise"] and i_ + 1 < len(sy):
+            araliklar.append((sy[i_ + 1]["text"], sy[i_]["start"], sy[i_ + 1]["end"])); i_ += 2
+        else:
+            araliklar.append((sy[i_]["text"], sy[i_]["start"], sy[i_]["end"])); i_ += 1
+    fazla = []
+    for (tx, a0, b0) in araliklar:
+        r_ = atlari.iki_unlu_tepesi(a0, b0)
+        if r_:
+            fazla.append(dict(r_, syllable=tx, interval=[r4(a0), r4(b0)]))
+    tarama.append({"verse": vv, "line": ad, "word": wd["text"], "expected": wd["syllables_expected"],
                    "blind_envelope_peaks": wd["blind_check"]["nuclei_detected"],
                    "syllables_with_weak_or_missing_nucleus": eksik,
-                   "extra_syllable": wd["syllable_nuclei_sung"] > wd["syllables_expected"],
-                   "missing_syllable": bool(eksik) or wd["syllable_nuclei_sung"] < wd["syllables_expected"]})
+                   "two_vowel_peaks_inside_one_expected_syllable": fazla,
+                   "extra_syllable": bool(fazla), "missing_syllable": bool(eksik)})
 # tekrarlanan kelimelerde hece suresi tutarliligi
 tutar = {}
 for ad in SAKLANAN:
@@ -655,10 +671,14 @@ for ad in SAKLANAN:
         tutar["%s %d %s" % (ad, si, etiket)] = {"median_ms": round(med), "min_ms": round(min(sur)), "max_ms": round(max(sur)),
                                                 "max_abs_dev_ms": round(max(abs(s_ - med) for s_ in sur))}
 syllable_scan = {
-    "method": "For every kept word: (1) each expected syllable has a voiced nucleus at its beat-grid slot (voiced ratio >= 0.3, core >= 30 ms); "
-              "(2) no additional nucleus between the slots (verse 3 'atları' is the only word where one was found); "
-              "(3) blind envelope peak count (no grid) as an independent cross-check; (4) syllable durations of the repeated words across the 7 verses.",
+    "method": "For every kept word, against the EXPECTED syllable list: (1) missing syllable = an expected syllable without a voiced nucleus at its beat-grid slot "
+              "(less than 40 ms voiced or a core shorter than 30 ms); (2) extra syllable = two separate vowel peaks inside the interval of ONE expected syllable "
+              "(vowel-like frames: voiced, 1-3.4 kHz band within 10 dB of the interval maximum and 4-12 kHz band above -55 dBFS; two runs of >= 40 ms separated by "
+              ">= 30 ms of voiced sound in which the 1-3.4 kHz band drops >= 8 dB, i.e. vowel - sonorant consonant - vowel); (3) blind envelope peak count (no grid) "
+              "as an independent cross-check; (4) syllable durations of the repeated words across the 7 verses.",
+    "words_checked": len(tarama),
     "words_with_extra_syllable": [{"verse": t_["verse"], "line": t_["line"], "word": t_["word"]} for t_ in tarama if t_["extra_syllable"]],
+    "extra_syllable_evidence": [dict(e_, verse=t_["verse"], line=t_["line"], word=t_["word"]) for t_ in tarama for e_ in t_["two_vowel_peaks_inside_one_expected_syllable"]],
     "words_with_missing_syllable": [{"verse": t_["verse"], "line": t_["line"], "word": t_["word"], "syllables": t_["syllables_with_weak_or_missing_nucleus"]}
                                     for t_ in tarama if t_["missing_syllable"]],
     "blind_count_mismatches": [{"verse": t_["verse"], "line": t_["line"], "word": t_["word"], "expected": t_["expected"], "blind": t_["blind_envelope_peaks"]}
@@ -786,7 +806,22 @@ out = collections.OrderedDict([
         ("features", "10 ms and 5 ms RMS, band envelopes 100-1000 / 300-3400 / 1000-3400 / 4000-12000 Hz, log-mel flux, pyworld harvest f0 (cross-check dio+stonemask)"),
         ("nuclei", "expected vowel onsets from the beat grid template (izgara.py: every syllable sits on the sixteenth-note grid of the 105 BPM machine tempo); "
                    "the nucleus is the envelope peak near the expected place. The self-trained letter HMM of the earlier take was tried and discarded (unreliable on this take)."),
-        ("boundary_kinds", hece.__doc__.split("SINIR")[1].strip() if "SINIR" in hece.__doc__ else ""),
+        ("boundary_kinds", collections.OrderedDict([
+            ("dip / deepest", "a dip of at least 3 dB in the 300-3400 Hz envelope (12 ms) between the two nuclei; the boundary is the centre of the dip (middle of the consonant / closure)"),
+            ("dip / last_low", "coda + onset consonants: the last low region before the next syllable's onset"),
+            ("dip / closure_after_sonorant", "coda n, m, l, r + stop onset (nın|bir, ğin|de, bir|çift, ör|dek, rır|çift): the closure, i.e. the lowest 5 ms RMS before the next vowel "
+                                             "(for b, d only within -50 .. +30 ms of the expected vowel onset)"),
+            ("dip / voicing_onset", "voiceless coda (t, k, ... , z) + liquid onset (çift|li, nek|le, roz|la): the instant voicing starts after the burst / frication"),
+            ("dip / fricative_onset", "vowel + s (di|si): the instant the previous vowel ends"),
+            ("dip / glottal", "vowel | vowel across a word boundary with a glottal dip of at least 4 dB (de|i, de|A)"),
+            ("spectral / nasal_release", "nasal coda + liquid onset (yun|la): the instant the nasal ends (rise of the 1-3.4 kHz band / positive spectral flux)"),
+            ("spectral / glide_*", "the y glide (ko|yun, di|ye): F2 peak or two-segment fit of the log-mel spectrum"),
+            ("spectral / two_segment_fit", "no dip but different vowels (ba|ğı): the instant that best splits the log-mel spectrum into two constant parts"),
+            ("pitch_step", "no dip and no spectral change (same vowel across 'ğ': li|ği) but the note changes: the instant f0 crosses the midpoint between the two notes"),
+            ("grid (FLAG)", "no acoustic mark at all (same vowel, same pitch: li|ğin; or a weak glide more than 70 ms off the grid: di|ye in two verses): "
+                            "the boundary is put on the expected beat-grid position of the next syllable and the word is flagged"),
+            ("splice", "verse 3 'atları' only: end of the excision range inside the sustained l"),
+        ])),
         ("hard_cut_a", "end of 'var' = first instant after the vowel where the 1-3.4 kHz band has fallen 12 dB below its peak in the vowel and stays there >= 20 ms "
                        "(cross-check: steepest 10 ms fall). What follows is classified from the next 50 ms: pause (>= 30 ms below sung RMS - 12 dB), nasal murmur "
                        "(voiced, energy only below 1 kHz), fricative."),

@@ -28,7 +28,20 @@
  "method": {
   "features": "10 ms and 5 ms RMS, band envelopes 100-1000 / 300-3400 / 1000-3400 / 4000-12000 Hz, log-mel flux, pyworld harvest f0 (cross-check dio+stonemask)",
   "nuclei": "expected vowel onsets from the beat grid template (izgara.py: every syllable sits on the sixteenth-note grid of the 105 BPM machine tempo); the nucleus is the envelope peak near the expected place. The self-trained letter HMM of the earlier take was tried and discarded (unreliable on this take).",
-  "boundary_kinds": "LARI (yalniz sesten).  yeni3/analiz/kesim/kod/kesim.py'deki sinir_bul'un\nv2_2 sozlerine gore genisletilmis hali.\n\nCEKIRDEK: izgara.py'nin bekledigi unlu baslangicinin cevresindeki pencerede ([t_exp - 40 ms, sonraki t_exp - 40 ms])\n          sesli karelerde 300-3400 Hz zarfinin (30 ms) tepesi; cevresinde tepe - 6 dB ustunde kalan sesli bolge.",
+  "boundary_kinds": {
+   "dip / deepest": "a dip of at least 3 dB in the 300-3400 Hz envelope (12 ms) between the two nuclei; the boundary is the centre of the dip (middle of the consonant / closure)",
+   "dip / last_low": "coda + onset consonants: the last low region before the next syllable's onset",
+   "dip / closure_after_sonorant": "coda n, m, l, r + stop onset (nın|bir, ğin|de, bir|çift, ör|dek, rır|çift): the closure, i.e. the lowest 5 ms RMS before the next vowel (for b, d only within -50 .. +30 ms of the expected vowel onset)",
+   "dip / voicing_onset": "voiceless coda (t, k, ... , z) + liquid onset (çift|li, nek|le, roz|la): the instant voicing starts after the burst / frication",
+   "dip / fricative_onset": "vowel + s (di|si): the instant the previous vowel ends",
+   "dip / glottal": "vowel | vowel across a word boundary with a glottal dip of at least 4 dB (de|i, de|A)",
+   "spectral / nasal_release": "nasal coda + liquid onset (yun|la): the instant the nasal ends (rise of the 1-3.4 kHz band / positive spectral flux)",
+   "spectral / glide_*": "the y glide (ko|yun, di|ye): F2 peak or two-segment fit of the log-mel spectrum",
+   "spectral / two_segment_fit": "no dip but different vowels (ba|ğı): the instant that best splits the log-mel spectrum into two constant parts",
+   "pitch_step": "no dip and no spectral change (same vowel across 'ğ': li|ği) but the note changes: the instant f0 crosses the midpoint between the two notes",
+   "grid (FLAG)": "no acoustic mark at all (same vowel, same pitch: li|ğin; or a weak glide more than 70 ms off the grid: di|ye in two verses): the boundary is put on the expected beat-grid position of the next syllable and the word is flagged",
+   "splice": "verse 3 'atları' only: end of the excision range inside the sustained l"
+  },
   "hard_cut_a": "end of 'var' = first instant after the vowel where the 1-3.4 kHz band has fallen 12 dB below its peak in the vowel and stays there >= 20 ms (cross-check: steepest 10 ms fall). What follows is classified from the next 50 ms: pause (>= 30 ms below sung RMS - 12 dB), nasal murmur (voiced, energy only below 1 kHz), fricative.",
   "hard_cut_b": "deepest point of the 10 ms RMS between the body of the second sung animal sound and the /d/ burst of 'diye'; the fade-in ends 2 ms before the level rises 6 dB above that dip."
  },
@@ -205,9 +218,9 @@
    "removed_ms": 212.4
   },
   "note_sequence_consensus": {
-   "L1": "A: D4(0.51) | li: G4(0.51) [glide G4 -> A4] | Ba: A4(0.26) | ba: A4(0.24) | nın: A4(0.55) | bir: G4(0.40) | çift: G4(0.58) [glide G4 -> G#4] | li: G4(0.24) | ği: F4(0.25) | var: E4(0.40)",
+   "L1": "A: D4(0.51) | li: G4(0.51) [glide 66.5 -> 69.0 (+2.5 st)] | Ba: A4(0.26) | ba: A4(0.24) | nın: A4(0.55) | bir: G4(0.40) | çift: G4(0.58) [glide 66.7 -> 68.5 (+1.7 st)] | li: G4(0.24) | ği: F4(0.25) | var: E4(0.40)",
    "L2": "çift: D4(0.50) | li: G4(0.57) | ğin: G4(0.48) | de: G4(0.43) | h1: F4(0.52) | h2: E4(0.51) | h3: F4(0.29) | h4: E4(0.25) | var: D4(0.42)",
-   "diye": "di: G4(0.50) | ye: G4(0.40) [glide G4 -> A4] | ba: G4(0.30) [glide G4 -> G4] | ğı: F4(0.27) [glide F4 -> F4] | rır: E4(0.40)",
+   "diye": "di: G4(0.50) | ye: G4(0.40) [glide 67.0 -> 69.1 (+2.1 st)] | ba: G4(0.30) [glide 67.5 -> 66.6 (-0.8 st)] | ğı: F4(0.27) [glide 65.5 -> 64.7 (-0.8 st)] | rır: E4(0.40)",
    "L4": "çift: D4(0.55) | li: G4(0.58) | ğin: G4(0.47) | de: G4(0.45) | A: F4(0.50) | li: E4(0.48) | Ba: F4(0.29) | ba: E4(0.28) | nın: D4(0.55)"
   },
   "pitch_classes_overall_share": {
@@ -2922,6 +2935,8 @@
       "voiced_ratio_until_animal_vowel": 1.0
      },
      "var_end_before_next_bar_line_ms": 59.5,
+     "silence_between_cut_out_and_real_animal_call_ms": 19.5,
+     "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
      "recommended": {
       "fade_start": 13.0581,
       "cut_out": 13.0831,
@@ -5885,6 +5900,8 @@
       "voiced_ratio_until_animal_vowel": 1.0
      },
      "var_end_before_next_bar_line_ms": 76.7,
+     "silence_between_cut_out_and_real_animal_call_ms": 36.7,
+     "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
      "recommended": {
       "fade_start": 26.7548,
       "cut_out": 26.7798,
@@ -8904,6 +8921,8 @@
       "voiced_ratio_until_animal_vowel": 1.0
      },
      "var_end_before_next_bar_line_ms": 61.7,
+     "silence_between_cut_out_and_real_animal_call_ms": 21.7,
+     "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
      "recommended": {
       "fade_start": 40.4838,
       "cut_out": 40.5088,
@@ -11915,6 +11934,8 @@
       "voiced_ratio_until_animal_vowel": 0.06
      },
      "var_end_before_next_bar_line_ms": 55.0,
+     "silence_between_cut_out_and_real_animal_call_ms": -10.0,
+     "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
      "recommended": {
       "fade_start": 54.2244,
       "cut_out": 54.2544,
@@ -14894,6 +14915,8 @@
       "voiced_ratio_until_animal_vowel": 1.0
      },
      "var_end_before_next_bar_line_ms": 51.6,
+     "silence_between_cut_out_and_real_animal_call_ms": -13.4,
+     "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
      "recommended": {
       "fade_start": 67.9417,
       "cut_out": 67.9717,
@@ -15067,10 +15090,10 @@
      "start": 63.3879,
      "strong_onset": 63.4019,
      "end": 65.6348,
-     "cut_out": 65.6648,
-     "fade_out_ms": 30.0,
+     "cut_out": 65.6587,
+     "fade_out_ms": 29.0,
      "level_at_cut_in_dbfs": -67.9,
-     "level_at_cut_out_dbfs": -38.4,
+     "level_at_cut_out_dbfs": -40.5,
      "cut_out_note": "'var,' is followed after 38 ms by the 'ç' of line 2: the fade-out must end before 65.6727",
      "breath_before": null,
      "placement": {
@@ -15082,7 +15105,7 @@
       "note": "target time = source time + shift_s (105.000 BPM form, 0.100 s lead-in, verse v at bar 4 + 8 v); no time-stretch"
      },
      "fade_shape": "raised cosine",
-     "duration_cut": 2.3327
+     "duration_cut": 2.3266
     },
     {
      "piece": 2,
@@ -17849,6 +17872,8 @@
       "voiced_ratio_until_animal_vowel": 1.0
      },
      "var_end_before_next_bar_line_ms": 72.9,
+     "silence_between_cut_out_and_real_animal_call_ms": 32.9,
+     "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
      "recommended": {
       "fade_start": 81.6143,
       "cut_out": 81.6393,
@@ -20752,6 +20777,8 @@
       "voiced_ratio_until_animal_vowel": 1.0
      },
      "var_end_before_next_bar_line_ms": 71.8,
+     "silence_between_cut_out_and_real_animal_call_ms": 31.8,
+     "silence_note": "in the new form the real animal call starts 40 ms before the next bar line; a negative value means the faded tail overlaps its start",
      "recommended": {
       "fade_start": 95.3293,
       "cut_out": 95.3543,
@@ -21914,7 +21941,8 @@
   "not_verified_by_ear": "The verdict rests on measurements (timing, level, spectrum, pitch). Whether the repaired word sounds natural was not checked by listening."
  },
  "syllable_scan": {
-  "method": "For every kept word: (1) each expected syllable has a voiced nucleus at its beat-grid slot (voiced ratio >= 0.3, core >= 30 ms); (2) no additional nucleus between the slots (verse 3 'atları' is the only word where one was found); (3) blind envelope peak count (no grid) as an independent cross-check; (4) syllable durations of the repeated words across the 7 verses.",
+  "method": "For every kept word, against the EXPECTED syllable list: (1) missing syllable = an expected syllable without a voiced nucleus at its beat-grid slot (less than 40 ms voiced or a core shorter than 30 ms); (2) extra syllable = two separate vowel peaks inside the interval of ONE expected syllable (vowel-like frames: voiced, 1-3.4 kHz band within 10 dB of the interval maximum and 4-12 kHz band above -55 dBFS; two runs of >= 40 ms separated by >= 30 ms of voiced sound in which the 1-3.4 kHz band drops >= 8 dB, i.e. vowel - sonorant consonant - vowel); (3) blind envelope peak count (no grid) as an independent cross-check; (4) syllable durations of the repeated words across the 7 verses.",
+  "words_checked": 91,
   "words_with_extra_syllable": [
    {
     "verse": 3,
@@ -21922,80 +21950,29 @@
     "word": "atları"
    }
   ],
-  "words_with_missing_syllable": [
+  "extra_syllable_evidence": [
    {
-    "verse": 1,
-    "line": "L4",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 2,
-    "line": "L4",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 4,
+    "first_vowel_peak": [
+     39.7676,
+     39.8454
+    ],
+    "second_vowel_peak": [
+     40.019,
+     40.1128
+    ],
+    "dip_between_db": 18.4,
+    "dip_between_ms": 173.6,
+    "syllable": "la",
+    "interval": [
+     39.7537,
+     40.1408
+    ],
+    "verse": 3,
     "line": "L2",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 5,
-    "line": "L2",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 5,
-    "line": "L4",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 6,
-    "line": "L2",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 6,
-    "line": "L4",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 7,
-    "line": "L2",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
-   },
-   {
-    "verse": 7,
-    "line": "L4",
-    "word": "çiftliğinde",
-    "syllables": [
-     "çift"
-    ]
+    "word": "atları"
    }
   ],
+  "words_with_missing_syllable": [],
   "blind_count_mismatches": [
    {
     "verse": 1,
@@ -22405,9 +22382,9 @@
     "line": "L1",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22416,9 +22393,9 @@
     "line": "L1",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22427,9 +22404,9 @@
     "line": "L1",
     "word": "bir",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22438,9 +22415,9 @@
     "line": "L1",
     "word": "çiftliği",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22449,9 +22426,9 @@
     "line": "L1",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22460,9 +22437,9 @@
     "line": "L2",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22471,9 +22448,9 @@
     "line": "L2",
     "word": "inekleri",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22482,9 +22459,9 @@
     "line": "L2",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22493,9 +22470,9 @@
     "line": "diye",
     "word": "diye",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22504,9 +22481,9 @@
     "line": "diye",
     "word": "bağırır",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22515,22 +22492,20 @@
     "line": "L4",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 1,
     "line": "L4",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22539,9 +22514,9 @@
     "line": "L4",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22550,9 +22525,9 @@
     "line": "L1",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22561,9 +22536,9 @@
     "line": "L1",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22572,9 +22547,9 @@
     "line": "L1",
     "word": "bir",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22583,9 +22558,9 @@
     "line": "L1",
     "word": "çiftliği",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22594,9 +22569,9 @@
     "line": "L1",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22605,9 +22580,9 @@
     "line": "L2",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22616,9 +22591,9 @@
     "line": "L2",
     "word": "koyunları",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22627,9 +22602,9 @@
     "line": "L2",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22638,9 +22613,9 @@
     "line": "diye",
     "word": "diye",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22649,9 +22624,9 @@
     "line": "diye",
     "word": "bağırır",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22660,22 +22635,20 @@
     "line": "L4",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 2,
     "line": "L4",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22684,9 +22657,9 @@
     "line": "L4",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22695,9 +22668,9 @@
     "line": "L1",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22706,9 +22679,9 @@
     "line": "L1",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22717,9 +22690,9 @@
     "line": "L1",
     "word": "bir",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22728,9 +22701,9 @@
     "line": "L1",
     "word": "çiftliği",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22739,9 +22712,9 @@
     "line": "L1",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22750,9 +22723,9 @@
     "line": "L2",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22761,9 +22734,27 @@
     "line": "L2",
     "word": "atları",
     "expected": 3,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 5,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [
+     {
+      "first_vowel_peak": [
+       39.7676,
+       39.8454
+      ],
+      "second_vowel_peak": [
+       40.019,
+       40.1128
+      ],
+      "dip_between_db": 18.4,
+      "dip_between_ms": 173.6,
+      "syllable": "la",
+      "interval": [
+       39.7537,
+       40.1408
+      ]
+     }
+    ],
     "extra_syllable": true,
     "missing_syllable": false
    },
@@ -22772,9 +22763,9 @@
     "line": "L2",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22783,9 +22774,9 @@
     "line": "diye",
     "word": "diye",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22794,9 +22785,9 @@
     "line": "diye",
     "word": "bağırır",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22805,9 +22796,9 @@
     "line": "L4",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 6,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22816,9 +22807,9 @@
     "line": "L4",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22827,9 +22818,9 @@
     "line": "L4",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22838,9 +22829,9 @@
     "line": "L1",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22849,9 +22840,9 @@
     "line": "L1",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22860,9 +22851,9 @@
     "line": "L1",
     "word": "bir",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22871,9 +22862,9 @@
     "line": "L1",
     "word": "çiftliği",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22882,9 +22873,9 @@
     "line": "L1",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22893,22 +22884,20 @@
     "line": "L2",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 3,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 4,
     "line": "L2",
     "word": "horozları",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22917,9 +22906,9 @@
     "line": "L2",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22928,9 +22917,9 @@
     "line": "diye",
     "word": "diye",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22939,9 +22928,9 @@
     "line": "diye",
     "word": "bağırır",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22950,9 +22939,9 @@
     "line": "L4",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22961,9 +22950,9 @@
     "line": "L4",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22972,9 +22961,9 @@
     "line": "L4",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22983,9 +22972,9 @@
     "line": "L1",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -22994,9 +22983,9 @@
     "line": "L1",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23005,9 +22994,9 @@
     "line": "L1",
     "word": "bir",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23016,9 +23005,9 @@
     "line": "L1",
     "word": "çiftliği",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23027,9 +23016,9 @@
     "line": "L1",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23038,22 +23027,20 @@
     "line": "L2",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 5,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 5,
     "line": "L2",
     "word": "ördekleri",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23062,9 +23049,9 @@
     "line": "L2",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23073,9 +23060,9 @@
     "line": "diye",
     "word": "diye",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23084,9 +23071,9 @@
     "line": "diye",
     "word": "bağırır",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23095,22 +23082,20 @@
     "line": "L4",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 5,
     "line": "L4",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23119,9 +23104,9 @@
     "line": "L4",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23130,9 +23115,9 @@
     "line": "L1",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23141,9 +23126,9 @@
     "line": "L1",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23152,9 +23137,9 @@
     "line": "L1",
     "word": "bir",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23163,9 +23148,9 @@
     "line": "L1",
     "word": "çiftliği",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23174,9 +23159,9 @@
     "line": "L1",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23185,22 +23170,20 @@
     "line": "L2",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 6,
     "line": "L2",
     "word": "köpekleri",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 6,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23209,9 +23192,9 @@
     "line": "L2",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23220,9 +23203,9 @@
     "line": "diye",
     "word": "diye",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23231,9 +23214,9 @@
     "line": "diye",
     "word": "bağırır",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23242,22 +23225,20 @@
     "line": "L4",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 6,
     "line": "L4",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23266,9 +23247,9 @@
     "line": "L4",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23277,9 +23258,9 @@
     "line": "L1",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23288,9 +23269,9 @@
     "line": "L1",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23299,9 +23280,9 @@
     "line": "L1",
     "word": "bir",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23310,9 +23291,9 @@
     "line": "L1",
     "word": "çiftliği",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 4,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23321,9 +23302,9 @@
     "line": "L1",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23332,22 +23313,20 @@
     "line": "L2",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 3,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 7,
     "line": "L2",
     "word": "kedisi",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23356,9 +23335,9 @@
     "line": "L2",
     "word": "var",
     "expected": 1,
-    "nuclei_on_grid_slots": 1,
     "blind_envelope_peaks": 1,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23367,9 +23346,9 @@
     "line": "diye",
     "word": "diye",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23378,9 +23357,9 @@
     "line": "diye",
     "word": "bağırır",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 2,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23389,22 +23368,20 @@
     "line": "L4",
     "word": "çiftliğinde",
     "expected": 4,
-    "nuclei_on_grid_slots": 4,
     "blind_envelope_peaks": 4,
-    "syllables_with_weak_or_missing_nucleus": [
-     "çift"
-    ],
+    "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
-    "missing_syllable": true
+    "missing_syllable": false
    },
    {
     "verse": 7,
     "line": "L4",
     "word": "Ali",
     "expected": 2,
-    "nuclei_on_grid_slots": 2,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    },
@@ -23413,9 +23390,9 @@
     "line": "L4",
     "word": "Baba'nın",
     "expected": 3,
-    "nuclei_on_grid_slots": 3,
     "blind_envelope_peaks": 3,
     "syllables_with_weak_or_missing_nucleus": [],
+    "two_vowel_peaks_inside_one_expected_syllable": [],
     "extra_syllable": false,
     "missing_syllable": false
    }
@@ -23460,7 +23437,7 @@
       67.19,
       69.03
      ],
-     "glide": "G4 -> A4",
+     "glide": "66.5 -> 69.0 (+2.5 st)",
      "median_midi": [
       67.12
      ],
@@ -23595,7 +23572,7 @@
       67.22,
       68.46
      ],
-     "glide": "G4 -> G#4",
+     "glide": "66.7 -> 68.5 (+1.7 st)",
      "median_midi": [
       67.17
      ],
@@ -23916,7 +23893,7 @@
       67.43,
       69.1
      ],
-     "glide": "G4 -> A4",
+     "glide": "67.0 -> 69.1 (+2.1 st)",
      "median_midi": [
       67.05
      ],
@@ -23955,7 +23932,7 @@
       67.01,
       66.62
      ],
-     "glide": "G4 -> G4",
+     "glide": "67.5 -> 66.6 (-0.8 st)",
      "median_midi": [
       67.0
      ],
@@ -23977,7 +23954,7 @@
       64.96,
       64.7
      ],
-     "glide": "F4 -> F4",
+     "glide": "65.5 -> 64.7 (-0.8 st)",
      "median_midi": [
       64.97
      ],
@@ -24236,9 +24213,9 @@
    ]
   },
   "consensus_text": {
-   "L1": "A: D4(0.51) | li: G4(0.51) [glide G4 -> A4] | Ba: A4(0.26) | ba: A4(0.24) | nın: A4(0.55) | bir: G4(0.40) | çift: G4(0.58) [glide G4 -> G#4] | li: G4(0.24) | ği: F4(0.25) | var: E4(0.40)",
+   "L1": "A: D4(0.51) | li: G4(0.51) [glide 66.5 -> 69.0 (+2.5 st)] | Ba: A4(0.26) | ba: A4(0.24) | nın: A4(0.55) | bir: G4(0.40) | çift: G4(0.58) [glide 66.7 -> 68.5 (+1.7 st)] | li: G4(0.24) | ği: F4(0.25) | var: E4(0.40)",
    "L2": "çift: D4(0.50) | li: G4(0.57) | ğin: G4(0.48) | de: G4(0.43) | h1: F4(0.52) | h2: E4(0.51) | h3: F4(0.29) | h4: E4(0.25) | var: D4(0.42)",
-   "diye": "di: G4(0.50) | ye: G4(0.40) [glide G4 -> A4] | ba: G4(0.30) [glide G4 -> G4] | ğı: F4(0.27) [glide F4 -> F4] | rır: E4(0.40)",
+   "diye": "di: G4(0.50) | ye: G4(0.40) [glide 67.0 -> 69.1 (+2.1 st)] | ba: G4(0.30) [glide 67.5 -> 66.6 (-0.8 st)] | ğı: F4(0.27) [glide 65.5 -> 64.7 (-0.8 st)] | rır: E4(0.40)",
    "L4": "çift: D4(0.55) | li: G4(0.58) | ğin: G4(0.47) | de: G4(0.45) | A: F4(0.50) | li: E4(0.48) | Ba: F4(0.29) | ba: E4(0.28) | nın: D4(0.55)"
   },
   "pitch_outliers": [
@@ -24795,7 +24772,7 @@
    {
     "verse": 5,
     "L1_cut_in": -67.9,
-    "L1_cut_out": -38.4,
+    "L1_cut_out": -40.5,
     "L2_cut_in": -40.5,
     "L2_join_var_to_animal": -40.2,
     "diye_cut_in": -46.1,

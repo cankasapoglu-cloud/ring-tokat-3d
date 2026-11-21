@@ -1,0 +1,78 @@
+== 1) YAPI ==
+kita 7, saklanan bolum 28 (7 x 4), parca 21, kelime 91, saklanan hece 229, atilacak cekirdek 1
+
+== 2) ZAMAN TUTARLILIGI ==
+en kisa saklanan hece: 98 ms (K7 L4 ba)
+kelime baslangici - yazi dokumu: ortanca -28 ms, %5-%95 [-100, +11] ms, en buyuk |sapma| 117 ms (K3 L2 atları)
+
+== 3) KESIM NOKTALARI: +-3 ms RMS (dBFS), ham WAV ==
+K1  L1: giris 8.533 (-47 dB) cikis 10.806 (-39 dB) | L2: giris 10.807 (-40 dB) cikis 13.083 [nasal_murmur, sonumleme 25 ms, bosluk 0 ms] | diye+L4: giris 14.274 (-38 dB, bosluk 58 ms) cikis 17.866 (-48 dB)
+K2  L1: giris 22.227 (-57 dB) cikis 24.512 (-37 dB) | L2: giris 24.518 (-37 dB) cikis 26.780 [nasal_murmur, sonumleme 25 ms, bosluk 0 ms] | diye+L4: giris 27.995 (-33 dB, bosluk 60 ms) cikis 31.405 (-47 dB)
+K3  L1: giris 35.886 (-50 dB) cikis 38.223 (-39 dB) | L2: giris 38.229 (-37 dB) cikis 40.509 [nasal_murmur, sonumleme 25 ms, bosluk 0 ms] | diye+L4: giris 41.708 (-36 dB, bosluk 36 ms) cikis 45.139 (-49 dB)
+K4  L1: giris 49.579 (-65 dB) cikis 51.948 (-40 dB) | L2: giris 51.956 (-40 dB) cikis 54.254 [pause, sonumleme 30 ms, bosluk 68 ms] | diye+L4: giris 55.425 (-46 dB, bosluk 22 ms) cikis 58.912 (-51 dB)
+K5  L1: giris 63.332 (-67 dB) cikis 65.659 (-41 dB) | L2: giris 65.659 (-41 dB) cikis 67.972 [pause, sonumleme 30 ms, bosluk 58 ms] | diye+L4: giris 69.102 (-46 dB, bosluk 46 ms) cikis 72.727 (-44 dB)
+K6  L1: giris 77.047 (-53 dB) cikis 79.356 (-33 dB) | L2: giris 79.372 (-33 dB) cikis 81.639 [fricative, sonumleme 25 ms, bosluk 0 ms] | diye+L4: giris 82.805 (-42 dB, bosluk 56 ms) cikis 86.304 (-46 dB)
+K7  L1: giris 90.770 (-59 dB) cikis 93.081 (-37 dB) | L2: giris 93.088 (-36 dB) cikis 95.354 [nasal_murmur, sonumleme 25 ms, bosluk 0 ms] | diye+L4: giris 96.573 (-37 dB, bosluk 102 ms) cikis 100.027 (-51 dB)
+
+== 4) HAYVAN SESI GERCEKTEN GIDIYOR MU (onerilen kesimler uygulaninca) ==
+K1  atilan hayvan sesi 13.083-14.274 (1191 ms, ham RMS -16.6 dBFS) | L2'de var_end'den sonra kalan: yok | diye onunde kalan (17 ms): RMS -37.4 dBFS = soylenen -18.5 dB, tepe -24.6 dBFS
+K2  atilan hayvan sesi 26.780-27.995 (1215 ms, ham RMS -17.7 dBFS) | L2'de var_end'den sonra kalan: yok | diye onunde kalan (17 ms): RMS -35.7 dBFS = soylenen -16.8 dB, tepe -22.1 dBFS
+K3  atilan hayvan sesi 40.509-41.708 (1199 ms, ham RMS -19.8 dBFS) | L2'de var_end'den sonra kalan: yok | diye onunde kalan (17 ms): RMS -39.9 dBFS = soylenen -21.0 dB, tepe -26.8 dBFS
+K4  atilan hayvan sesi 54.229-55.425 (1196 ms, ham RMS -18.8 dBFS) | L2'de var_end'den sonra kalan: 25 ms, RMS -33.8 dBFS (soylenen -14.8 dB) [duraklama: 'var'in kendi sonmesi] | diye onunde kalan (15 ms): RMS -44.4 dBFS = soylenen -25.4 dB, tepe -31.9 dBFS
+K5  atilan hayvan sesi 67.947-69.102 (1155 ms, ham RMS -20.1 dBFS) | L2'de var_end'den sonra kalan: 25 ms, RMS -35.2 dBFS (soylenen -16.3 dB) [duraklama: 'var'in kendi sonmesi] | diye onunde kalan (17 ms): RMS -49.6 dBFS = soylenen -30.7 dB, tepe -36.8 dBFS
+K6  atilan hayvan sesi 81.639-82.805 (1165 ms, ham RMS -18.8 dBFS) | L2'de var_end'den sonra kalan: yok | diye onunde kalan (17 ms): RMS -41.1 dBFS = soylenen -22.1 dB, tepe -30.2 dBFS
+K7  atilan hayvan sesi 95.354-96.573 (1219 ms, ham RMS -18.9 dBFS) | L2'de var_end'den sonra kalan: yok | diye onunde kalan (17 ms): RMS -36.1 dBFS = soylenen -17.2 dB, tepe -23.2 dBFS
+ornek/: L2_sonlari_7_kita.wav (her kitanin L2 parcasinin son 1.2 s'si), diye_baslari_7_kita.wav (3. parcanin ilk 1.5 s'si): onerilen kesim + sonumleme uygulanmis, 16 bit; DINLENMEDI
+
+== 5) HECE SINIRLARI: UNLU ORTASINDA SINIR VAR MI (ham WAV, bagimsiz olcum) ==
+sinir sayisi (dize ici): 202 -> {'sessiz_ya_da_kapanis': 39, 'sesli_cukur': 128, 'spektral_gecis': 3, 'perde_adimi': 14, 'izgara_FLAG': 16, 'ek_yeri': 2}
+sesli cukurlarin derinligi (300-3400 Hz, dB): ortanca 12.3, en sig 3.0
+izgaraya konan (FLAG) sinirlar: K1 L2 li|ğin, K1 L4 li|ğin, K2 L2 li|ğin, K2 L4 li|ğin, K3 L2 li|ğin, K3 L4 li|ğin, K4 L2 li|ğin, K4 diye di|ye, K4 L4 li|ğin, K5 L2 li|ğin, K5 L4 li|ğin, K6 L2 li|ğin, K6 L4 li|ğin, K7 L2 li|ğin, K7 diye di|ye, K7 L4 li|ğin
+
+== 6) PERDE: hece cekirdegi, pyworld (json) ile bagimsiz otokorelasyon ==
+karsilastirilan hece 230; fark (yarim ses): ortanca -0.005, |fark| ortanca 0.025, %95 0.12, en buyuk 12.01 (K2 diye ğı); |fark| > 0.5: 3
+   fark -12.01: K2 diye ğı | json (harvest) 64.96, dio 64.95 -> basit otokorelasyonun oktav hatasi (harvest ve dio ayni perdeyi veriyor)
+   fark -11.98: K6 L2 ğin | json (harvest) 66.99, dio 66.99 -> basit otokorelasyonun oktav hatasi (harvest ve dio ayni perdeyi veriyor)
+   fark -12.00: K6 L4 de | json (harvest) 67.02, dio 67.02 -> basit otokorelasyonun oktav hatasi (harvest ve dio ayni perdeyi veriyor)
+harvest - dio(stonemask) cekirdek ortancasi farki: |fark| ortanca 0.010, en buyuk 0.46 yarim ses; > 0.3: 2 / 230
+L1        8.1 s  D 17.8%  E 14.9%  F 6.0%  G 28.5%  A 32.7%
+L2        9.2 s  D 16.8%  E 14.1%  F 20.1%  G 48.8%
+diye      4.8 s  E 19.8%  F 12.0%  G 66.0%  A 2.0%
+L4        9.8 s  D 15.6%  E 17.7%  F 18.4%  G 47.2%  A# 0.7%
+overall  31.8 s  D 14.2%  E 16.3%  F 14.8%  G 45.7%  A 8.6%
+L1   : A: D4(0.51) | li: G4(0.51) [glide 66.5 -> 69.0 (+2.5 st)] | Ba: A4(0.26) | ba: A4(0.24) | nın: A4(0.55) | bir: G4(0.40) | çift: G4(0.58) [glide 66.7 -> 68.5 (+1.7 st)] | li: G4(0.24) | ği: F4(0.25) | var: E4(0.40)
+L2   : çift: D4(0.50) | li: G4(0.57) | ğin: G4(0.48) | de: G4(0.43) | h1: F4(0.52) | h2: E4(0.51) | h3: F4(0.29) | h4: E4(0.25) | var: D4(0.42)
+diye : di: G4(0.50) | ye: G4(0.40) [glide 67.0 -> 69.1 (+2.1 st)] | ba: G4(0.30) [glide 67.5 -> 66.6 (-0.8 st)] | ğı: F4(0.27) [glide 65.5 -> 64.7 (-0.8 st)] | rır: E4(0.40)
+L4   : çift: D4(0.55) | li: G4(0.58) | ğin: G4(0.47) | de: G4(0.45) | A: F4(0.50) | li: E4(0.48) | Ba: F4(0.29) | ba: E4(0.28) | nın: D4(0.55)
+akort (plato karelerinin ortanca sapmasi): +1.5 cent
+perde sapanlari: K7 L1 nın G4 (-1.84); K7 L2 si E4 (-0.51); K7 L4 çift A#3 (-3.64)
+
+== 7) 3. KITA 'atları' ==
+FOUR syllable nuclei were sung (a - tı - la - rı), not three (at - la - rı): the user's impression 'atıları' is confirmed.
+t patlamasi (39.664) ile 'la'nin a'si (40.021) arasinda sesli ve guclu (> soylenen - 8 dB) sure: 265 ms (json: 261 ms; diger unsuz+l+unlu: en cok 50 ms)
+kesip atma 39.7537 - 39.9660 (212 ms): bastaki an +-2 ms RMS -39.8 dBFS, tepe -30.7 dBFS | sondaki an +-2 ms RMS -20.9 dBFS (sesli l'nin icinde: 10 ms giris sonumlemesi gerekir)
+kalan parcalar: 'at' 39.362-39.754 (391 ms), 'ları' 39.966-40.267 (300 ms); 'ları'nin ilk 40 ms'sinde perde 64.26 (otokor 0.99)
+ornek/: K3_L2_ham.wav, K3_L2_onarilmis_A_bosluklu.wav (onerilen; zamanlama ayni), K3_L2_onarilmis_B_bosluk_kapatilmis.wav (212 ms kisa; onerilmez) -- DINLENMEDI
+diger kelimelerde fazla hece: [(3, 'atları')] | eksik hece: []
+
+== 8) YENI BICIMDE YERLER (105.000 BPM, 0.100 s on bosluk; zaman uzatma yok) ==
+K1  baslangiclar (olcu / vurus cizgisine gore): L1 -5 ms, L2 -36 ms, diye +10 ms, L4 -67 ms | L2 kesimi ile gercek hayvan sesi (olcu cizgisi - 40 ms) arasi +20 ms | parca 3 sonu, 7. olcu cizgisinden +151 ms
+K2  baslangiclar (olcu / vurus cizgisine gore): L1 -14 ms, L2 -39 ms, diye +15 ms, L4 -40 ms | L2 kesimi ile gercek hayvan sesi (olcu cizgisi - 40 ms) arasi +37 ms | parca 3 sonu, 7. olcu cizgisinden -23 ms
+K3  baslangiclar (olcu / vurus cizgisine gore): L1 -21 ms, L2 -42 ms, diye +16 ms, L4 -26 ms | L2 kesimi ile gercek hayvan sesi (olcu cizgisi - 40 ms) arasi +22 ms | parca 3 sonu, 7. olcu cizgisinden -2 ms
+K4  baslangiclar (olcu / vurus cizgisine gore): L1 -6 ms, L2 -29 ms, diye +21 ms, L4 -69 ms | L2 kesimi ile gercek hayvan sesi (olcu cizgisi - 40 ms) arasi -10 ms | parca 3 sonu, 7. olcu cizgisinden +56 ms
+K5  baslangiclar (olcu / vurus cizgisine gore): L1 -25 ms, L2 -40 ms, diye +14 ms, L4 -50 ms | L2 kesimi ile gercek hayvan sesi (olcu cizgisi - 40 ms) arasi -13 ms | parca 3 sonu, 7. olcu cizgisinden +157 ms
+K6  baslangiclar (olcu / vurus cizgisine gore): L1 -16 ms, L2 -41 ms, diye +3 ms, L4 -51 ms | L2 kesimi ile gercek hayvan sesi (olcu cizgisi - 40 ms) arasi +33 ms | parca 3 sonu, 7. olcu cizgisinden +20 ms
+K7  baslangiclar (olcu / vurus cizgisine gore): L1 -7 ms, L2 -38 ms, diye +28 ms, L4 -48 ms | L2 kesimi ile gercek hayvan sesi (olcu cizgisi - 40 ms) arasi +32 ms | parca 3 sonu, 7. olcu cizgisinden +29 ms
+
+== 9) GURULTU TABANI (ham WAV) ==
+kitalar arasi (eski bandin sizintisi) RMS -63.8 dBFS, soylenen RMS -18.9 dBFS -> -44.9 dB (json: -44.9)
+bosluklar (dBFS): -75.0, -66.7, -63.3, -65.7, -66.1, -65.1, -56.7, -69.6 | L4 kesiminden sonraki ilk 1 s: -55.2, -41.6, -53.9, -54.7, -55.9, -48.7, -54.3
+dize ici patlamali kapanislari (76 adet): ortanca -38.2 dBFS, ceyrekler [-41.5, -32.8], en yuksek -20.5 dBFS
+
+== 10) BAYRAKLAR ==
+bayrakli kelime: 17 -> {'boundary on the beat grid: li|ğin (one vowel, one pitch)': 14, 'lyric deviation (extra syllable)': 1, 'boundary on the beat grid: di|ye': 2}
+kor zarf tepesi sayimi tutmayan kelime: 32 (bunlar orantili BOLUNMEDI; cekirdekler vurus izgarasindan, sinirlar sesten bulundu)
+sinir turleri: {'dip/deepest': 98, 'dip/closure_after_sonorant': 36, 'dip/voicing_onset': 25, 'pitch_step/f0_crosses_midpoint': 7, 'grid/expected_onset_on_beat_grid': 16, 'dip/glottal': 10, 'spectral/glide_two_segment_fit': 5, 'spectral/two_segment_fit': 7, 'spectral/glide_f2_peak': 1, 'spectral/nasal_release': 1, 'dip/quiet_instant_after_t_release': 1, 'splice/inside_sustained_l': 1, 'dip/fricative_onset': 1}
+
+SONUC: TUM KONTROLLER GECTI
+Not: bu kontroller olcumdur; hicbir ses kulakla dinlenmedi.

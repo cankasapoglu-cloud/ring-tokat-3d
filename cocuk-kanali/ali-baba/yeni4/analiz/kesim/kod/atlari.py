@@ -148,6 +148,40 @@ def ornek_topla(verses_ic, haric=None):
     return orn
 
 
+def iki_unlu_tepesi(a, b, dip_db=8.0, min_tepe=0.04, min_cukur=0.03):
+    """FAZLA HECE DEDEKTORU (yazimdan bagimsiz): tek hecelik bir aralikta IKI ayri unlu tepesi var mi?
+    "Unlu gibi" kare: sesli-guclu (100-1000 Hz zarfi, aralik tepesinin 12 dB icinde) VE 1-3.4 kHz zarfi araligin en yuksek
+    degerinin 10 dB icinde VE 4-12 kHz zarfi > -55 dBFS (genizsilerde bu bant -55 .. -68 dBFS'e duser, unlulerde -35 .. -50).
+    En az 40 ms suren iki boyle kosu, arada en az 30 ms suren ve 1-3.4 kHz bandi en az 8 dB dusen SESLI bir bolgeyle
+    ayriliyorsa (unlu - akici unsuz - unlu) aralikta iki cekirdek vardir."""
+    ia, ib = fi(a), fi(b)
+    f2 = F2B[ia:ib + 1]; lo = ELOW8[ia:ib + 1]; hi = EHI[ia:ib + 1]
+    ses = lo > lo.max() - 12.0
+    if ses.sum() * DT < 0.1:
+        return None
+    mx = f2[ses].max()
+    ust = ses & (f2 >= mx - 10.0) & (hi > -55.0)
+    kos = []; i = 0; n = len(ust)
+    while i < n:
+        if ust[i]:
+            j = i
+            while j < n and ust[j]:
+                j += 1
+            if (j - i) * DT >= min_tepe:
+                kos.append((i, j))
+            i = j
+        else:
+            i += 1
+    for (a1, b1), (a2, b2) in zip(kos[:-1], kos[1:]):
+        ara = f2[b1:a2]
+        if len(ara) * DT >= min_cukur and np.all(ses[b1:a2]) and min(f2[a1:b1].max(), f2[a2:b2].max()) - ara.min() >= dip_db:
+            return {"first_vowel_peak": [round((ia + a1) * DT, 4), round((ia + b1) * DT, 4)],
+                    "second_vowel_peak": [round((ia + a2) * DT, 4), round((ia + b2) * DT, 4)],
+                    "dip_between_db": round(float(min(f2[a1:b1].max(), f2[a2:b2].max()) - ara.min()), 1),
+                    "dip_between_ms": round(len(ara) * DT * 1000, 1)}
+    return None
+
+
 def otum_baslangici(a_lim, nuc):
     """nuc'ten geriye: 100-1000 Hz zarfinin (tepe - 12 dB) altina inip >= 20 ms orada kaldigi yer -> otumun basladigi an."""
     ipk = fi(nuc); a = fi(a_lim)

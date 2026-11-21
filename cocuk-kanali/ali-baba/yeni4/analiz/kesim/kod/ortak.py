@@ -120,6 +120,11 @@ def kita_vuruslari():
 
 
 def ozellik():
+    """ara/ozellik.npz onbellegini yukler; yoksa ozellik.py'yi calistirip uretir (yaklasik 20 s)."""
+    if not os.path.exists(OZELLIK):
+        import subprocess, sys
+        subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "ozellik.py")], check=True,
+                       stdout=subprocess.DEVNULL)
     return np.load(OZELLIK)
 
 

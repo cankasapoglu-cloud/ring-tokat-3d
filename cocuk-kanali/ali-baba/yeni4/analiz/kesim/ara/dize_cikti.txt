@@ -1,0 +1,51 @@
+{'soylenen_rms_dbfs': -18.91302032856636, 'esik_dbfs': -63.91302032856636}
+K1 vurus 8.5713
+  L1   bas 8.557 (guclu 8.567, vurusa gore -5 ms) giris 8.533 (-47 dB) | bit 10.776 cikis 10.797 (-39 dB, esik alti 46 ms) | nefes 8.12-8.55 tepe -35
+  L2   bas 10.821 (cubuga gore -36 ms) | bit(t_close) 13.083 [dik 13.085] cukur 13.088 -21.8 dB | ara nasal_murmur 78 ms ort -19.8 min -21.8 sesli 1.00 sessiz 0 ms | hayvan unlu 13.162
+       ilk 50 ms: ort -19.8 dB, alcak-F2 18.5 dB, alcak-yuksek 38.9 dB | hayvan sesi basi 13.083
+  ses  bas 13.083 govde bit 14.232 bit 14.234
+  diye giris 14.267 (cukur 14.276 -37.5 dB, esik alti 58 ms) bas 14.292 guclu 14.296 (2. vurusa gore +10 ms) bosluk 64 ms | bit 15.339
+  L4   bas 15.361 (cubuga gore -67 ms; cukur 15.355 -43.0 dB) | govde bit 17.694 kuyruk 17.835 cikis 17.865 (-48 dB; sonraki 300 ms -50 dB)
+K2 vurus 22.2852
+  L1   bas 22.261 (guclu 22.271, vurusa gore -14 ms) giris 22.227 (-57 dB) | bit 24.482 cikis 24.503 (-36 dB, esik alti 50 ms) | nefes 22.10-22.25 tepe -46
+  L2   bas 24.532 (cubuga gore -39 ms) | bit(t_close) 26.780 [dik 26.782] cukur 26.791 -27.0 dB | ara nasal_murmur 91 ms ort -20.9 min -27.0 sesli 1.00 sessiz 0 ms | hayvan unlu 26.871
+       ilk 50 ms: ort -22.7 dB, alcak-F2 16.2 dB, alcak-yuksek 32.4 dB | hayvan sesi basi 26.780
+  ses  bas 26.780 govde bit 27.950 bit 27.952
+  diye giris 27.976 (cukur 27.976 -36.6 dB, esik alti 60 ms) bas 28.012 guclu 28.014 (2. vurusa gore +15 ms) bosluk 64 ms | bit 29.074
+  L4   bas 29.102 (cubuga gore -40 ms; cukur 29.092 -38.5 dB) | govde bit 31.359 kuyruk 31.375 cikis 31.405 (-46 dB; sonraki 300 ms -36 dB)
+       ek ses: {'start': np.float64(31.449), 'end': np.float64(31.596), 'peak_dbfs': -30.834, 'voiced_ratio': 0.433, 'gap_after_word_ms': np.float64(73.832), 'decayed_at': np.float64(31.634)}
+K3 vurus 35.9992
+  L1   bas 35.930 (guclu 35.978, vurusa gore -21 ms) giris 35.886 (-50 dB) | bit 38.193 cikis 38.216 (-37 dB, esik alti 50 ms) | nefes 35.76-35.92 tepe -44
+  L2   bas 38.243 (cubuga gore -42 ms) | bit(t_close) 40.509 [dik 40.505] cukur 40.514 -24.9 dB | ara nasal_murmur 81 ms ort -23.3 min -26.0 sesli 1.00 sessiz 0 ms | hayvan unlu 40.590
+       ilk 50 ms: ort -24.0 dB, alcak-F2 14.1 dB, alcak-yuksek 33.9 dB | hayvan sesi basi 40.509
+  ses  bas 40.509 govde bit 41.667 bit 41.689
+  diye giris 41.713 (cukur 41.713 -38.7 dB, esik alti 36 ms) bas 41.725 guclu 41.729 (2. vurusa gore +16 ms) bosluk 62 ms | bit 42.767
+  L4   bas 42.831 (cubuga gore -26 ms; cukur 42.801 -35.8 dB) | govde bit 45.103 kuyruk 45.109 cikis 45.139 (-49 dB; sonraki 300 ms -49 dB)
+K4 vurus 49.7131
+  L1   bas 49.631 (guclu 49.707, vurusa gore -6 ms) giris 49.579 (-65 dB) | bit 51.918 cikis 51.941 (-39 dB, esik alti 52 ms) | nefes -
+  L2   bas 51.970 (cubuga gore -29 ms) | bit(t_close) 54.229 [dik 54.230] cukur 54.249 -38.7 dB | ara pause 89 ms ort -30.6 min -38.7 sesli 0.06 sessiz 68 ms | hayvan unlu 54.319
+       ilk 50 ms: ort -33.4 dB, alcak-F2 2.4 dB, alcak-yuksek 20.5 dB | hayvan sesi basi 54.307
+  ses  bas 54.307 govde bit 55.384 bit 55.418
+  diye giris 55.424 (cukur 55.424 -46.2 dB, esik alti 22 ms) bas 55.440 guclu 55.448 (2. vurusa gore +21 ms) bosluk 64 ms | bit 56.464
+  L4   bas 56.502 (cubuga gore -69 ms; cukur 56.476 -44.3 dB) | govde bit 58.822 kuyruk 58.882 cikis 58.912 (-52 dB; sonraki 300 ms -50 dB)
+K5 vurus 63.4270
+  L1   bas 63.388 (guclu 63.402, vurusa gore -25 ms) giris 63.332 (-66 dB) | bit 65.635 cikis 65.654 (-41 dB, esik alti 38 ms) | nefes -
+  L2   bas 65.673 (cubuga gore -40 ms) | bit(t_close) 67.947 [dik 67.957] cukur 67.968 -40.2 dB | ara pause 71 ms ort -32.7 min -40.2 sesli 1.00 sessiz 58 ms | hayvan unlu 68.017
+       ilk 50 ms: ort -35.9 dB, alcak-F2 5.0 dB, alcak-yuksek 19.9 dB | hayvan sesi basi 68.015
+  ses  bas 68.015 govde bit 68.929 bit 69.073
+  diye giris 69.098 (cukur 69.099 -46.7 dB, esik alti 46 ms) bas 69.119 guclu 69.155 (2. vurusa gore +14 ms) bosluk 225 ms | bit 70.186
+  L4   bas 70.234 (cubuga gore -50 ms; cukur 70.208 -45.7 dB) | govde bit 72.549 kuyruk 72.697 cikis 72.727 (-44 dB; sonraki 300 ms -52 dB)
+K6 vurus 77.1409
+  L1   bas 77.107 (guclu 77.125, vurusa gore -16 ms) giris 77.047 (-52 dB) | bit 79.326 cikis 79.366 (-34 dB, esik alti 60 ms) | nefes -
+  L2   bas 79.386 (cubuga gore -41 ms) | bit(t_close) 81.639 [dik 81.637] cukur 81.650 -25.8 dB | ara fricative 83 ms ort -25.0 min -28.0 sesli 1.00 sessiz 0 ms | hayvan unlu 81.722
+       ilk 50 ms: ort -24.8 dB, alcak-F2 4.7 dB, alcak-yuksek 14.9 dB | hayvan sesi basi 81.639
+  ses  bas 81.639 govde bit 82.724 bit 82.766
+  diye giris 82.797 (cukur 82.798 -43.4 dB, esik alti 56 ms) bas 82.822 guclu 82.858 (2. vurusa gore +3 ms) bosluk 134 ms | bit 83.901
+  L4   bas 83.947 (cubuga gore -51 ms; cukur 83.939 -40.4 dB) | govde bit 86.204 kuyruk 86.274 cikis 86.304 (-46 dB; sonraki 300 ms -46 dB)
+K7 vurus 90.8548
+  L1   bas 90.830 (guclu 90.848, vurusa gore -7 ms) giris 90.770 (-60 dB) | bit 93.051 cikis 93.082 (-37 dB, esik alti 52 ms) | nefes -
+  L2   bas 93.102 (cubuga gore -38 ms) | bit(t_close) 95.354 [dik 95.360] cukur 95.365 -23.3 dB | ara nasal_murmur 90 ms ort -18.6 min -23.3 sesli 1.00 sessiz 0 ms | hayvan unlu 95.444
+       ilk 50 ms: ort -18.7 dB, alcak-F2 17.4 dB, alcak-yuksek 31.1 dB | hayvan sesi basi 95.354
+  ses  bas 95.354 govde bit 96.483 bit 96.489
+  diye giris 96.543 (cukur 96.561 -37.1 dB, esik alti 102 ms) bas 96.590 guclu 96.596 (2. vurusa gore +27 ms) bosluk 114 ms | bit 97.620
+  L4   bas 97.664 (cubuga gore -48 ms; cukur 97.648 -42.4 dB) | govde bit 99.871 kuyruk 99.997 cikis 100.027 (-50 dB; sonraki 300 ms -49 dB)
