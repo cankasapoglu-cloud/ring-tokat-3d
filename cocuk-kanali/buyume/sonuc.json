@@ -1,0 +1,464 @@
+{
+ "plan": {
+  "yol": "/home/user/ring-tokat-3d/cocuk-kanali/buyume/BUYUME-PLANI.md",
+  "asistan_isleri": [
+   {
+    "sira": 1,
+    "is": "Upload package: one folder the owner's files are sent from, so the wrong cut is never uploaded (ali-baba holds 9 mp4 variants; only ali-babanin-ciftligi-kisa.mp4 is the upload file).",
+    "teslim": "/home/user/ring-tokat-3d/cocuk-kanali/buyume/yukleme-paketi/ with 7 numbered mp4s (1920x1080), 7 matching 1280x720 JPG thumbnails under 2 MB, and one Turkish text file per video (title, description, 10 tags, playlist, settings). First three videos (El Yıkama, Kedi Ailesi/Pıtır'ın Ailesi, Ali Baba or Beş Küçük Maymun) before day 1; the rest before day 8. Does not exist yet.",
+    "dayanak": "[denetim-k11] [denetim-k10] local file audit. No web page was fetched in this step; the whole plan rests on the research and audit handed to me."
+   },
+   {
+    "sira": 2,
+    "is": "New titles, description first lines and 10 tags for all seven videos, carried into the package text files. Note: the setup guide was updated while I worked (channel now open as 'DuDeK Stüdyo', handle @DuDeKStudio, 70 occurrences of 'DuDeK', none of 'Dudek'), so the plan writes titles ending '| DuDeK Stüdyo'; the keyword research wrote 'Dudek Stüdyo' (same character count, 63-70 chars).",
+    "teslim": "Seven title/description/tag blocks in Turkish (see basliklar). Description first line rewritten for videos 1, 2, 5, 7 to contain the lead phrase; '5 Küçük Maymun' with the digit once in video 4. Conditional title for Balon: if colours are not sung again in the second half, middle part becomes 'Kırmızı Mavi Sarı Yeşil' (71 chars). Needs the owner to type the Balon lyrics.",
+    "dayanak": "[kurallar-12] official page read (keywords early, accurate titles); [kelimeler-5..11] search-result data of 2026-11-21 (crowding only, search volume not measured); [kelimeler-18] tags play a minimal role (memory); [kurallar-7] title must promise only what is shown (search summary); [denetim-v5]."
+   },
+   {
+    "sira": 3,
+    "is": "Thumbnails in one consistent style for all seven: text-free, main character large, one subject. Whether lettering helps is unproven and marked 'denenecek, kanıt yok' in the plan; to be judged from click-through rate after four weeks.",
+    "teslim": "Seven 1280x720 JPGs under 2 MB. Ready as is: Ali Baba (ali-baba/kapak.jpg), Beş Küçük Maymun (bes-kucuk-maymun/kapak.jpg). To make: Kedi Ailesi (crop of the hug scene at about 1:16 of the 1080p video), El Yıkama (from el-yikama/kare/04_avuc.png), Otobüs (otobus-sarkisi/kare/02_kanca_b.png converted to JPG), Renkler/Balon (crop of the opening frame with exactly the four taught colours), Parmak Ailesi (text-free frame). Old Balon kapak.jpg and the lettered Parmak kapak.jpg stay as swap options.",
+    "dayanak": "[kurallar-12] official page read (simple, readable across devices; thumbnails can be refreshed later without losing views); [denetim-k8] [denetim-k9] [denetim-v2] [denetim-v3] [denetim-v5] [denetim-v6] [denetim-v7] frames viewed at 168x94."
+   },
+   {
+    "sira": 4,
+    "is": "Two free re-exports (ffmpeg/Python from a copy of kurgu.py, no credits), needed before the compilation on day 22: Balon/Renkler with the title moved off the balloons and the YEŞİL label held 4 s like the other colours; Parmak Ailesi second version with the instrumental intro cut from about 9 s to about 4 s.",
+    "teslim": "balon-sarkisi re-export mp4 (1920x1080, 24 fps) and a short-intro Parmak Ailesi mp4, both written into the upload package, originals untouched. Which Parmak version goes up as the single is decided from the first videos' retention graphs (day 21); marked 'denenecek, kanıt yok'.",
+    "dayanak": "[denetim-v5] [denetim-v3] frame and timing-file audit (audio not listened to); [kurallar-7] quality principle on deceptively educational titles (search summary, not the page itself)."
+   },
+   {
+    "sira": 5,
+    "is": "One compilation of all seven songs. Target length 10.5 to 11 minutes: that is what the stock allows (songs total 9 min 35 s) and it clears the 10-minute line the keyword research used for a long video. The research does not establish a best length; the plan says so.",
+    "teslim": "One mp4, 1920x1080, 24 fps, audio resampled to 48 kHz, peaks limited to -1 dBTP, each title card cut to about 2 s, a short Pıtır opening and link scenes between songs built from existing pictures (free), opening with Otobüs; plus its own 1280x720 JPG thumbnail and text file. Proposed title (not keyword-tested): 'Çocuk Şarkıları Derlemesi | 7 Şarkı Bir Arada | DuDeK Stüdyo'. Scheduled for day 22. If Ali Baba is held back the total is 7:43 and the compilation waits for Banyo.",
+    "dayanak": "[kurallar-14] watch-hour arithmetic on thresholds known only from search summaries (8,000 h is about 480,000 views at 1 min per view or about 60,000 at 8 min; illustrative assumptions); [kurallar-8] compilations must add something and stay a minority (search summary); [denetim-k2] [denetim-k3] [denetim-k7]. New figure computed by me in this step from kanit-arama-sonuclari.csv, tagged [kelimeler-ek]: of 651 unique page-one videos 149 are 10 min or longer; 62 of those are 10-15 min, 48 are 15-30, 22 are 30-60, 17 over 60; median 16.4 min. Deviation from the audit: it suggested the compilation after all singles (week 6); I placed it in week 4 so long-form watch time starts earlier, and the plan marks that ordering as our choice without evidence."
+   },
+   {
+    "sira": 6,
+    "is": "Next songs in priority order from the keyword research: Banyo, Alfabe (29 harf), Meyve ve Sebzeler, Gezegenler, Sayılar. This reverses the content list (which schedules Gezegenler and Sayılar first) and each song costs about 40,000 credits, so it is an owner decision. Naming: 'Alfabe Şarkısı' not 'Harfler Şarkısı'; never 'Pazar Şarkısı' or 'Pazara Gidelim'.",
+    "teslim": "For Banyo: lyrics, title, tag list and scene list in Turkish for approval; no paid generation before the owner says yes. ICERIK-LISTESI.md is unchanged.",
+    "dayanak": "[kelimeler-12] banyo şarkısı: a 1:42 song from a 2.26K-subscriber channel is #1 with 3.1M views in 10 months; [kelimeler-13] 29 harf şarkısı: 6 small channels in the top 10; [kelimeler-14]; [kelimeler-15] [kelimeler-16] locked by 1M+ channels. Single logged-out snapshot of 2026-11-21."
+   },
+   {
+    "sira": 7,
+    "is": "Re-render the finished 10 min 04 s long episode with the dropped programme name 'Pıtır ile Öğren' removed, as the second long video.",
+    "teslim": "uzun-01-3d episode re-rendered under the DuDeK Stüdyo name, with thumbnail and text file; planned for day 43. If the old name is also spoken and needs paid voice generation, the owner is asked first. I did not view this video.",
+    "dayanak": "[denetim-k4] (from the setup document, not viewed); [kurallar-14] watch hours come from long videos (arithmetic, thresholds from search summaries)."
+   },
+   {
+    "sira": 8,
+    "is": "Bring the existing documents in line with the plan (not done in this step because existing files must not be modified): KANAL-KURULUM.md still carries the old titles, tags, day-one set (Ali Baba, Pıtır'ın Ailesi, Parmak) and 'two fixed days a week'.",
+    "teslim": "Updated KANAL-KURULUM.md section 3 and step 9-10 (new titles, order, one video a week); channel description sentence 'Her hafta iki yeni video' changed to 'Her hafta yeni bir video'; KANAL-STRATEJISI.md section 7 '4.000 saat' changed to 8.000 and the 'two Shorts a week' row removed. The plan states it supersedes these until then.",
+    "dayanak": "[denetim-k5] stock cannot carry two uploads a week; [kurallar-14] February 2027 threshold (search summaries only); [kurallar-11] Shorts unproven for made-for-kids (weak basis)."
+   },
+   {
+    "sira": 9,
+    "is": "Shorts only as a small experiment, marked 'denenecek, kanıt yok': not part of the first four weeks, only if the owner wants it.",
+    "teslim": "Two vertical 9:16 cuts (El Yıkama and Renkler/Balon, the two that survive a centre crop), offered after day 28 and judged from Studio numbers two weeks later.",
+    "dayanak": "[kurallar-11] no official source found that made-for-kids Shorts get distribution or appear in YouTube Kids; Shorts views do not count toward watch hours (search summary); [denetim-k12]."
+   },
+   {
+    "sira": 10,
+    "is": "Weekly reading of the owner's three Studio screenshots (watch time in hours, impressions click-through rate per video, traffic sources) and a four-week re-run of the same 55 searches to see whether our videos reached page one.",
+    "teslim": "A short Turkish reply after each weekly screenshot saying what changes (thumbnail swap for the lowest click-through video after four weeks, title middle part, production order, Parmak intro version); a re-run of araclar/cek.py, ayikla.py, analiz.py around day 28 for 'el yıkama şarkısı', 'kedi ailesi şarkısı', 'ali babanın çiftliği hayvan sesleri'. The 'a few hundred impressions before deciding' cut-off is my own rule of thumb and is marked as such.",
+    "dayanak": "[kurallar-12] official page read (track click-through rate; thumbnails and metadata can be revamped without losing views); [kurallar-3] [kurallar-4] (levers partly memory/inference, so the traffic-source report is the evidence); [denetim-k15]; [kelimeler-1] [kelimeler-3]."
+   }
+  ],
+  "yukleme_takvimi": [
+   "Before day 1 (owner, once): finish remaining setup steps (phone verification for custom thumbnails, set channel as made for kids, description and keywords), turn on two-step verification, and send three answers: decision on the Ali Baba lyrics question, a listening check of El Yıkama, typed lyrics of Balon Şarkısı. Day and clock time are the owner's choice (no evidence for any particular day); example dates assume a start on Tuesday 24 November 2026.",
+   "Day 1 (Tue 24 Nov): upload three videos: El Yıkama Şarkısı, Kedi Ailesi Şarkısı (Pıtır'ın Ailesi), Ali Baba'nın Çiftliği (Beş Küçük Maymun instead if the lyrics decision is open). Add all to the 'Tüm Şarkılar' playlist; if a made-for-kids video cannot be added to a playlist, stop and tell the assistant.",
+   "Day 2 (Wed 25 Nov): look at the channel from another phone (videos, thumbnails, playlist visible); share the playlist link rather than a single video link with family (marked 'denenecek, kanıt yok').",
+   "Days 3-6: no upload.",
+   "Day 7 (Mon 30 Nov): send screenshots of the three numbers.",
+   "Day 8 (Tue 1 Dec): upload Otobüs Şarkısı; install YouTube Kids, search the channel name and one video title under the two youngest settings, report the result (no re-upload if absent).",
+   "Days 9-13: no upload.",
+   "Day 14 (Mon 7 Dec): send screenshots.",
+   "Day 15 (Tue 8 Dec): upload Beş Küçük Maymun (Renkler/Balon Şarkısı if Maymun already went up on day 1).",
+   "Days 16-20: no upload.",
+   "Day 21 (Mon 14 Dec): send screenshots plus the audience-retention graph of El Yıkama and Kedi Ailesi (first 10 seconds).",
+   "Day 22 (Tue 15 Dec): upload the compilation (about 10.5-11 min); if Ali Baba is still held back, upload the next single instead.",
+   "Days 23-27: no upload.",
+   "Day 28 (Mon 21 Dec): send screenshots; the assistant writes the four-week review.",
+   "After week 4: day 29 (Tue 22 Dec) Renkler/Balon Şarkısı re-export, day 36 (Tue 29 Dec) Parmak Ailesi, day 43 (Tue 5 Jan 2027) renamed long episode, then Banyo Şarkısı if approved. Three videos on day one and the compilation in week 4 are our choices without evidence and are labelled so in the plan; one upload a week rests on the stock count and on YouTube prescribing no frequency."
+  ],
+  "basliklar": [
+   {
+    "video": "6. El Yıkama Şarkısı (day 1)",
+    "baslik": "El Yıkama Şarkısı | Okul Öncesi Temizlik Şarkısı | DuDeK Stüdyo",
+    "etiketler": [
+     "el yıkama şarkısı",
+     "el yıkama şarkısı okul öncesi",
+     "ellerini yıka şarkısı",
+     "ellerimi yıkıyorum",
+     "temizlik şarkısı",
+     "el yıkama",
+     "hijyen şarkısı",
+     "çocuk şarkıları",
+     "okul öncesi şarkılar",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "2. Pıtır'ın Ailesi (day 1)",
+    "baslik": "Kedi Ailesi Şarkısı | Pıtır'ın Ailesi, Aile Üyeleri | DuDeK Stüdyo",
+    "etiketler": [
+     "kedi ailesi şarkısı",
+     "aile şarkısı",
+     "aile üyeleri şarkısı",
+     "aile bireyleri şarkısı",
+     "bebek kedi miyav miyav",
+     "kedi şarkısı",
+     "anne baba nine dede",
+     "çocuk şarkıları",
+     "bebek şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "1. Ali Baba'nın Çiftliği (day 1, if the owner clears the lyrics question)",
+    "baslik": "Ali Baba'nın Çiftliği | Hayvan Sesleri, Çiftlik Şarkısı | DuDeK Stüdyo",
+    "etiketler": [
+     "ali babanın çiftliği",
+     "ali baba'nın çiftliği",
+     "ali babanın bir çiftliği var",
+     "hayvan sesleri",
+     "hayvan sesleri şarkısı",
+     "çiftlik hayvanları şarkısı",
+     "çiftlik şarkısı",
+     "çocuk şarkıları",
+     "bebek şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "7. Otobüs Şarkısı (day 8)",
+    "baslik": "Otobüs Şarkısı | Tekerlekler Dönüyor, Korna Ötüyor | DuDeK Stüdyo",
+    "etiketler": [
+     "otobüs şarkısı",
+     "otobüsün tekerleği",
+     "otobüsün tekerlekleri dönüyor",
+     "tekerlekler dönüyor",
+     "taşıtlar şarkısı",
+     "taşıtlar",
+     "otobüs çizgi film",
+     "çocuk şarkıları",
+     "bebek şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "4. Beş Küçük Maymun (day 15, or day 1 as the Ali Baba replacement)",
+    "baslik": "Beş Küçük Maymun Yatakta Zıplıyor | Sayma Şarkısı | DuDeK Stüdyo",
+    "etiketler": [
+     "beş küçük maymun",
+     "5 küçük maymun",
+     "beş küçük maymun yatakta zıplıyor",
+     "beş küçük maymun şarkısı",
+     "maymun şarkısı",
+     "sayma şarkısı",
+     "geri sayım şarkısı",
+     "çocuk şarkıları",
+     "bebek şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "Compilation of all seven songs (day 22; title not keyword-tested, tags are my proposal, not from the research)",
+    "baslik": "Çocuk Şarkıları Derlemesi | 7 Şarkı Bir Arada | DuDeK Stüdyo",
+    "etiketler": [
+     "çocuk şarkıları",
+     "çocuk şarkıları derlemesi",
+     "bebek şarkıları",
+     "okul öncesi şarkılar",
+     "ali babanın çiftliği",
+     "parmak ailesi",
+     "otobüs şarkısı",
+     "el yıkama şarkısı",
+     "renkler şarkısı",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "5. Balon Şarkısı (day 29, after re-export; if colours are not sung again in the second half use 'Renkler Şarkısı | Balon Şarkısı, Kırmızı Mavi Sarı Yeşil | DuDeK Stüdyo')",
+    "baslik": "Renkler Şarkısı | Balon Şarkısı, Renkleri Öğreniyorum | DuDeK Stüdyo",
+    "etiketler": [
+     "renkler şarkısı",
+     "balon şarkısı",
+     "renkleri öğreniyorum",
+     "renkli balonlar şarkısı",
+     "renkler şarkısı okul öncesi",
+     "kırmızı sarı mavi yeşil",
+     "balonlar",
+     "çocuk şarkıları",
+     "okul öncesi şarkılar",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "3. Parmak Ailesi (day 36)",
+    "baslik": "Parmak Ailesi Şarkısı | Baba Parmak, Kedi Parmak Ailesi | DuDeK Stüdyo",
+    "etiketler": [
+     "parmak ailesi şarkısı",
+     "parmak ailesi",
+     "baba parmak",
+     "baba parmak nerdesin",
+     "bebek parmak",
+     "kedi parmak ailesi",
+     "parmak oyunu",
+     "çocuk şarkıları",
+     "bebek şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "Planned 1: Banyo (first in the proposed production order, owner approval needed)",
+    "baslik": "Banyo Şarkısı | Banyo Zamanı, Yıkanma Şarkısı | DuDeK Stüdyo",
+    "etiketler": [
+     "banyo şarkısı",
+     "banyo zamanı şarkısı",
+     "yıkanma şarkısı",
+     "banyo yapıyorum",
+     "banyo zamanı",
+     "bebek banyo şarkısı",
+     "temizlik şarkısı",
+     "bebek şarkıları",
+     "çocuk şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "Planned 2: Alfabe (renamed from Harfler)",
+    "baslik": "Alfabe Şarkısı | 29 Harf | Türkçe ABC Şarkısı | DuDeK Stüdyo",
+    "etiketler": [
+     "alfabe şarkısı",
+     "29 harf şarkısı",
+     "türkçe alfabe şarkısı",
+     "abc şarkısı türkçe",
+     "harfler şarkısı",
+     "harfleri öğreniyorum",
+     "alfabe",
+     "okul öncesi şarkılar",
+     "çocuk şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "Planned 3: Meyve ve Sebzeler (renamed from Pazar/Meyveler)",
+    "baslik": "Meyve ve Sebzeler Şarkısı | Pazarda Neler Var? | DuDeK Stüdyo",
+    "etiketler": [
+     "meyve ve sebzeler şarkısı",
+     "sebzeler şarkısı",
+     "meyveler şarkısı",
+     "meyve sebze şarkısı",
+     "meyveleri öğreniyorum",
+     "sebzeleri öğreniyorum",
+     "pazar şarkısı",
+     "pazarda neler var",
+     "çocuk şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "Planned 4: Gezegenler (moved toward the end of the queue)",
+    "baslik": "Gezegenler Şarkısı | Çocuklar İçin Güneş Sistemi | DuDeK Stüdyo",
+    "etiketler": [
+     "gezegenler şarkısı",
+     "gezegenler",
+     "güneş sistemi şarkısı",
+     "güneş sistemi",
+     "çocuklar için gezegenler",
+     "gezegenleri öğreniyorum",
+     "uzay şarkısı",
+     "8 gezegen",
+     "çocuk şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   },
+   {
+    "video": "Planned 5: Sayılar 1-10 (last in the queue)",
+    "baslik": "1'den 10'a Kadar Sayılar Şarkısı | Saymayı Öğreniyorum | DuDeK Stüdyo",
+    "etiketler": [
+     "1'den 10'a kadar sayılar",
+     "sayılar şarkısı",
+     "sayıları öğreniyorum",
+     "1den 10a kadar sayılar",
+     "saymayı öğreniyorum",
+     "sayma şarkısı",
+     "sayılar",
+     "okul öncesi şarkılar",
+     "çocuk şarkıları",
+     "DuDeK Stüdyo"
+    ]
+   }
+  ]
+ },
+ "elestiri": {
+  "degisiklikler": [
+   "FILE EDITED: /home/user/ring-tokat-3d/cocuk-kanali/buyume/BUYUME-PLANI.md (only file changed; 16.7 KB -> 23.6 KB, still Turkish, no names or e-mail addresses). No other file was touched, git was not run, no paid API was called. Overall verdict before editing: the plan was already cautious and most recommendations carried a source tag; the problems were (a) several sentences worded as facts although their tag pointed to a snippet or memory, (b) two factual errors, (c) a few missing rule-related cautions, (d) phone-feasibility gaps.",
+   "VERDICT PER RECOMMENDATION (basis). Supported by something read or measured: accurate keyword-first titles and simple thumbnails (read: youtube.com/creators/grow/optimize-your-content/); no notifications/comments so no launch-day tactics (read: youtube.com/myfamily/); two-step verification and channel review before admission (read: youtube.com/creators/earn/overview/ and /howyoutubeworks/our-policies/); thumbnail/title refresh keeps views (read, same creators page); production order Banyo > Alfabe > Meyve-Sebze > Gezegenler > Sayilar and upload order with El Yikama first (measured search-page data, single snapshot); compilation length arithmetic 9 min 35 s / 7 min 43 s and long episode 10 min 04 s (I re-measured: 575.1 s, 463.5 s, 603.6 s). Supported only by snippet or memory: end screens/cards/watermark/save-to-playlist off (snippet, support.google.com/youtube/answer/9632097); quality principles and 'deceptively educational' (snippet, answer/10774223); inauthentic-content rule (snippet, answer/1311392 and press); 8,000-hour threshold from 1 Feb 2027 (snippet, blog.youtube post); AI disclosure not reducing reach and cartoon exemption (snippet, answer/14328491); no application for YouTube Kids (snippet, answer/10938174); Shorts not counting to watch hours (snippet, answer/72851); phone verification for custom thumbnails, 1280x720/2 MB thumbnail spec, 'legal duty' of the audience setting, fake-engagement consequences (memory). Unsupported (now labelled as assumption/experiment in the plan): 'watch hours come from long videos', three videos on day one, compilation in week 4, same weekday every week, fast opening helps retention, sharing the playlist link, text-free thumbnails, Shorts trial.",
+   "Header: added three lines: the plan was re-read sceptically on the same day; any basis marked (O-umlaut = snippet) or (H = memory) is not confirmed fact; no step in the plan is a guarantee of views, subscribers or income.",
+   "Section 1.1 (algorithm claim stated as fact): 'views come from search, Up next, our playlists and YouTube Kids' rewritten as 'these are the remaining routes; we do not know how much each brings; the Studio traffic-source number will answer it'. Separated what was read (comments, notifications off) from what is snippet-only (end screens, cards). Added a fact found in the already-saved read text /home/user/ring-tokat-3d/cocuk-kanali/buyume/arastirma-kurallar/kaynak-metinler/myfamily.txt line 12 (page https://www.youtube.com/myfamily/, also re-read today at https://www.youtube.com/kids/): 'All kid accounts have default protections, like autoplay being off', so Up next does not start by itself for every viewer. New legend entry 'kurallar-ek'.",
+   "Section 1.2-1.3: added that 'few people search there' is our inference (search volume was not measured) and that the data is one logged-out, one-day snapshot; added that several of the small-channel success examples are 5-7 minute videos (5:20, 6:49) while ours are 1-2 minutes.",
+   "Section 1.4 (unrealistic-promise guard): marked the 8,000-hour figure as snippet-only, to be confirmed on the official page before applying; added that reaching the threshold is not acceptance because YouTube reviews each channel (read) and refuses template-like mass-produced channels (snippet); added that personalised ads are off on kids videos (read) so income per view is expected to be lower (inference).",
+   "Section 1.5: added to the 'could not verify' list: whether YouTube Kids is offered in Turkiye, where some settings sit on a phone; noted that support.google.com was tried again during this review (3 URLs, curl, no response) and www.youtubekids.com also did not answer.",
+   "Section 2.2 titles: added the measured caveat that exact query wording in the title is not shown to decide ranking (33% of small-channel top-10 titles vs 23% of big-channel titles), so it is done only because it is free. Tightened the 'Renkler' condition: if the song does not sing colour names at all, the title must start with 'Balon Sarkisi' and must not say 'Renkler Sarkisi' or 'Renkleri Ogreniyorum' (lyrics are still unknown to the assistant). Added a line recording what I checked: bus lyrics file contains 'teker donuyor' and 'korna' (/home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/sozler.txt), monkey lyrics contain 'yatakta zipliyor' and count 5 to 1, the Parmak Ailesi frame at 30 s shows kitten puppets on fingers (so 'Kedi Parmak Ailesi' is honest); sung audio was not verified.",
+   "Section 2.3: thumbnail spec '1280x720, under 2 MB' marked as from memory.",
+   "Section 2.5 compilation: 'watch hours come from the long video' softened to an assumption to be measured; the 1-minute and 8-minute viewing times in the example are now called assumptions and it says we do not know how much of a 10-minute video small children watch. Added contradicting evidence from the research that was missing: only 8% of small-channel top-10 rows are long compilations versus 31% for 1M+ channels, so no search traffic should be expected for the compilation. Corrected a misleading number: the plan said the biggest group is 10-15 minutes; I recounted the CSV (651 unique videos: 321 under 3 min, 116 at 3-5, 65 at 5-10, 62 at 10-15, 48 at 15-30, 22 at 30-60, 17 over 60) and the text now says 321 are under 3 minutes and 10-15 minutes is only the largest group among the long ones. Added: no second compilation from the same seven songs (repetitive-content rule, snippet).",
+   "Section 2.6: added that the Banyo result is a single example, that it is unknown whether those views came from search or suggestions, and that the order only answers 'which topic is less locked'.",
+   "Section 2.7 long episode: added a quality gate: an episode that claims to teach must really teach and is not uploaded until the owner has watched it end to end (quality principles, snippet).",
+   "Section 2.8: added one more correction for KANAL-STRATEJISI.md: the sentence 'irregular publishing harms more than quality' (line 13) has no official basis; the read pages say channel quality is considered in recommendations and only ask for a schedule that suits the creator.",
+   "Section 2.9 Shorts: 'do not count toward watch hours' marked snippet-only; added that it is unknown whether made-for-kids Shorts are distributed in the feed or in YouTube Kids or lead viewers to long videos.",
+   "Section 3 prerequisites (phone feasibility): phone-verification-for-thumbnails marked as memory; added that channel-level settings may not exist in the phone app and the fallback is studio.youtube.com in the browser as 'desktop site' (as the setup guide says; untested). 'YouTube treats unintelligible audio as low quality' now prefixed 'according to a search summary'. Ali Baba item: added that the lyrics' copyright status is unverified, that the project's own content rule says 'not used until verified', and that a copyright claim is possible; decision left to the owner.",
+   "Section 3 upload routine: kept 'answer Yes to the AI question' (matches the setup guide's cautious choice) but added its real basis: it is our safe preference because the music is AI-generated and some scenes may look real; the obligation concerns realistic content (read: https://www.youtube.com/howyoutubeworks/ai/), the cartoon exemption and 'no reach penalty' are snippet-only; if the question does not appear on the phone, leave the video Private and write to the assistant. Added: choose the playlist in YouTube Studio's video details because the viewer-side Save button does not work on kids videos (snippet); skip the tag box if it is not found on the phone; leave the video Private if anything looks or sounds wrong.",
+   "Section 3 calendar: 'upload on the same day every week [kurallar-12]' corrected: the read page only says a schedule that is right and sustainable for you; same weekday is now stated as our convenience preference. Day 2: share the playlist link once. Day 8 YouTube Kids check: now 'try to install' (availability in Turkiye unverified, skip if not in the store), needs a parent account and child profile, and a no-show after one week proves nothing and nothing should be changed; re-check on day 28; 'no application' marked snippet-only. Day 21: retention graph may not appear with few views, then skip. Weekdays for all eight example dates were checked with the date command and are correct.",
+   "Section 3 reasons, factual error fixed: 'El Yikama is our only song with four small channels in the top 10' was wrong (kanit-sorgu-ozeti.csv: 'aile uyeleri sarkisi' has 8, 'aile sarkisi cocuk' 5, 'aile sarkisi' 4 for the Kedi Ailesi video); now says it holds for the song's own-name search and that the Kedi Ailesi side phrases are even emptier but with very low views. 'Fast opening' reason for the bus song marked unproven. 'A single-video playlist does not carry a session' reworded to the plain fact that it has no next video.",
+   "Section 4 measurement: 'second compilation' now only after new songs exist; thumbnail test changes one thing at a time (title only at the next measurement); small differences between two videos are not evidence; retention decision is postponed if the graph is not shown.",
+   "Section 5 'will not do': (1) added sub-for-sub and asking relatives to loop videos to the bought-views item, basis marked memory; (2) misleading thumbnails/titles consequence marked snippet-only; (3) split a wrongly reasoned item: 'delete and re-upload' is now justified only by the read fact that thumbnails/titles change in place without losing views, while the repetitive-content rule (snippet, channel-level penalty) is attached to near-duplicate and template videos; (4) 'made for kids is a legal obligation [kurallar-1]' softened: no read page contains that statement (I grepped the saved texts), now marked as memory; (5) NEW item: no brands, toys, product promotion or paid collaborations (read: paid placements must follow the kids ad policy, youtube.com/myfamily/; excluded from YouTube Kids per snippet); (6) NEW item: never ask children for names, photos, drawings or messages (memory; children's personal data), subscribe request only in the description and addressed to parents; (7) AI item now distinguishes read ('YouTube may label it itself') from snippet ('disclosure does not reduce reach').",
+   "Legend: kurallar-1 and kurallar-2 now list exactly which features each covers and with what basis; kurallar-13 extended to 'thresholds and channel review'; added 'kurallar-ek' (autoplay sentence, read) and a note that the duration counts were recomputed during the review."
+  ],
+  "kalan_riskler": [
+   "Help Center facts remain unverified. support.google.com, blog.youtube and www.youtubekids.com were unreachable again in this review, so the full disabled-feature list, the kids quality principles, the inauthentic-content rule, the 1 February 2027 threshold (8,000 hours), the AI-disclosure exemptions and whether AI-generated music itself requires disclosure are known only from search summaries or memory. They should be read on the official pages once those hosts are allowed, and certainly before any Partner Programme application.",
+   "Whether YouTube Kids is offered in Turkiye, and whether the channel will be included, is unverified (memory only). The day-8 check may simply not be possible.",
+   "Ali Baba'nin Ciftligi: the copyright status of the Turkish lyrics is unverified (the setup guide notes sources attributing them to a composer who died in 1977, which would still be inside the protection period if true). The plan schedules it on day 1 if the owner decides so; that contradicts the project's own rule in ICERIK-LISTESI.md and could bring a copyright claim. This is the largest rule risk in the launch set and is an owner decision.",
+   "Commercial-use terms of the AI music, image and video tools were not checked in this review; if a plan does not grant commercial rights, monetisation could be affected.",
+   "Nobody has confirmed how the songs sound. The assistant cannot hear; the Balon song's lyrics are unknown, so its 'Renkler Sarkisi' title is conditional; El Yikama intelligibility is unchecked. The quality rule aimed at unintelligible auto-generated audio is exactly the failure this could hit. The plan relies on the owner listening to every video before making it public.",
+   "Inauthentic / mass-produced content risk stays real and vague: an AI-made 3D kitten nursery-rhyme channel in a niche where several small channels recently published near-identical kitten-family songs. Mitigations in the plan (own scenes per song, one compilation, linking scenes) are reasonable but there is no way to test them before a programme review.",
+   "No lever in the plan is proven to raise views for this channel. Search is mostly closed for the seven songs, the compilation is not expected to rank, playlist and Up next effects are assumptions, and autoplay is off by default for kid accounts. Near-zero views for the first weeks are a likely outcome; the first real evidence is the day-28 review.",
+   "Phone feasibility is untested: channel-level made-for-kids setting, channel keywords, the AI question, tags and playlist selection may not all exist in the YouTube Studio phone app; the fallback (studio.youtube.com as desktop site in the phone browser) is from memory and was not tried. The retention graph and per-video click-through rate may also not display at very low view counts.",
+   "The audit tags in the plan (denetim-k1...k15, v1...v7) could not be traced to a written report: /home/user/ring-tokat-3d/cocuk-kanali/buyume/denetim contains only olcum.csv, frames and tools. I confirmed durations and one frame, but claims such as 'the Parmak Ailesi song starts at second 9' and 'the bus title disappears at 3.6 s' (first cut in olcum.csv is at 3.92 s) are unverified by me.",
+   "The setup guide /home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/KANAL-KURULUM.md still contains the old seven titles, the old upload order and 'two videos a week', and KANAL-STRATEJISI.md still says 4,000 hours and two Shorts a week. I was not allowed to modify existing files other than the plan, so until the assistant updates them the owner could follow the wrong document.",
+   "Calendar pressure: the example start is Tuesday 24 November, but the upload package, the new description lines and tags, and five of seven thumbnails do not exist yet, and three owner answers are prerequisites. The start date will probably slip; the plan now says the whole calendar shifts with it.",
+   "The keyword evidence is a single logged-out snapshot from a server on 21 November 2026; results on a Turkish phone are personalised and the 'winnable' labels are a heuristic, not a YouTube metric. Search volume was never measured.",
+   "The plan grew by about 40% through the added caveats; it is still phone-readable but less short. If the owner finds it too long, sections 1 and 5 are the ones to condense, not the source labels.",
+   "The owner's request says the assistant will manage the channel; in practice the assistant cannot sign in to YouTube, so every upload, setting and measurement depends on the owner pressing buttons and sending screenshots."
+  ]
+ },
+ "denetim": {
+  "videolar": [
+   {
+    "video": "1. Ali Baba'nın Çiftliği — /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/ali-babanin-ciftligi-kisa.mp4",
+    "sure": "1:52 (111.67 s by ffprobe; 1920x1080, 24 fps, -14.3 LUFS)",
+    "ilk_saniyeler": "Visually strong, but the selling point is absent. Seen in extracted frames: frame 0 is black, a 0.35 s fade-in follows, and at 0.5 s the picture is complete: Pıtır and the waving farmer at the farm gate with a red barn, the title lettering fading in across the top. At 2.5 s it is the same shot with the title full; the lettering runs over the farmer's hat. The title is gone before 5.0 s. No animal is on screen in the first 3 seconds; the cows appear by about 12 s, and the first real animal sound is at 14.7 s (sarki_hayvanli_zaman.json). The gate shot returns before the verses (4 of my 8 timeline samples).",
+    "kapak": "Ready and usable as is: /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/kapak.jpg (1280x720, 0.12 MB JPG). Pıtır laughing between two black-and-white cows with the red barn behind; still reads as a farm at 168x94. No text. Second option in the same folder: kapak-7.jpg (Pıtır between two foals, eyes open).",
+    "baslik_onerisi": "Ali Baba'nın Çiftliği | Hayvan Sesleri, Çiftlik Şarkısı | Dudek Stüdyo",
+    "degisecekler": [
+     "Title: the current one already starts with the searched phrase; only the middle part changes, to the research wording. Take the 10 tags from buyume/arastirma-kelimeler/oneriler-baslik-etiket.csv.",
+     "Description first line: it now starts 'Pıtır ve Ali Baba çiftliği geziyor' and contains none of the loose phrases. Rewrite it to include 'Ali Babanın bir çiftliği var' (no apostrophe) and 'hayvan sesleri'.",
+     "Owner decision still open: who owns the Turkish lyrics (KANAL-KURULUM.md section 4.4). This video is slot 1 on day one and one of only two with a search opening. If it is held back, Beş Küçük Maymun takes its day-one place and the compilation shrinks to 7:43.",
+     "The folder holds 9 mp4 variants; only ali-babanin-ciftligi-kisa.mp4 (74 MB) is the upload file. Hand it to the owner under a numbered name so the wrong cut is not uploaded.",
+     "No re-edit needed for the single upload. In the compilation copy, shorten the 4.5 s title card to about 2 s.",
+     "AI question: the animals are plush-style 3D cartoon, not photorealistic (seen in frames), so the realism rule is not triggered by the picture. The setup document's 'Yes' because of the AI music can stay."
+    ]
+   },
+   {
+    "video": "2. Pıtır'ın Ailesi — /home/user/ring-tokat-3d/cocuk-kanali/pitirin-ailesi/pitirin-ailesi.mp4",
+    "sure": "1:24 (84.08 s; 1920x1080, 24 fps, -14.3 LUFS)",
+    "ilk_saniyeler": "Strong. After a 0.4 s fade from black, the frame at 0.5 s shows all five cats (grandfather, grandmother, baby, father, mother) in a row waving in front of a cottage, large and bright. At 2.5 s it is the same shot with the title 'Pıtır'ın Ailesi' full at the bottom, not covering any face. The title stays until 5.8 s (kurgu.py) and the first cut is at 6.1 s. The timeline shows a different scene for each family member, with ANNE and DEDE labels seen on screen. It ends by returning to the family shot with the title from 78.8 s and a 0.65 s fade-out.",
+    "kapak": "No finished thumbnail. The named candidate /home/user/ring-tokat-3d/cocuk-kanali/pitirin-ailesi/kare/13_kucak.png (five cats hugging) is 1280x720 but a 1.87 MB PNG, right under the 2 MB phone limit quoted in the setup document. The group fills only the middle 60% of the width, so faces are tiny at 168x94. Build a new one: take the hug scene from the 1080p video at about 1:16 (before the title returns at 78.8 s), crop a 1280x720 window around the group so no upscaling is needed, and save as JPG.",
+    "baslik_onerisi": "Kedi Ailesi Şarkısı | Pıtır'ın Ailesi, Aile Üyeleri | Dudek Stüdyo",
+    "degisecekler": [
+     "Title: the current one starts with 'Pıtır'ın Ailesi', which nobody searches. This is the biggest title change of the seven. 'Aile Üyeleri' is honest: each member has a scene and a name label.",
+     "Description first line: start with 'Kedi ailesi şarkısı: bebek kedi, anne, baba, nine ve dede…' instead of 'Pıtır'ın ailesiyle tanışın'. Swap in the new tag list.",
+     "Produce the cropped JPG thumbnail described above. If lettering is added, write 'Kedi Ailesi', not 'Pıtır'ın Ailesi'.",
+     "The lyrics in the description are a machine transcript. The owner should listen once and correct the repeat counts of miyav / hop / tık / ho.",
+     "Compilation copy: shorten the 5.8 s title card to about 2 s and drop the repeated end title."
+    ]
+   },
+   {
+    "video": "3. Parmak Ailesi — /home/user/ring-tokat-3d/cocuk-kanali/parmak-ailesi/parmak-ailesi.mp4",
+    "sure": "1:20 (80.00 s; 1920x1080, 24 fps, -14.5 LUFS, true peak -0.4 dBFS)",
+    "ilk_saniyeler": "Weakest opening of the seven; the problem is pacing, not the picture. At 0.5 s: a hand on a plain blue background with five cat finger puppets and the title fading in at the bottom. At 2.5 s and 5.0 s it is the same composition, with only the puppets' mouths moving. The title card stays until 8.0 s (kurgu.py) and no cut was detected in the first 15 s. Singing starts at about 9 s. That figure comes from the timing file of an alternate take, because the take actually used (coskulu_1.mp3) has none. The whole video stays on the blue backdrop, alternating the hand shot with single-puppet close-ups labelled BABA, ABİ, ABLA, so it is also the least varied.",
+    "kapak": "Ready and usable as is: /home/user/ring-tokat-3d/cocuk-kanali/parmak-ailesi/kapak.jpg (1280x720, 0.09 MB JPG). Hand with five cat puppets on blue, with 'Parmak Ailesi' lettering that is still legible at 168x94. It is the only one of the seven with text baked in, and it is almost identical to the opening frame.",
+    "baslik_onerisi": "Parmak Ailesi Şarkısı | Baba Parmak, Kedi Parmak Ailesi | Dudek Stüdyo",
+    "degisecekler": [
+     "Title: the current one starts with the searched phrase. The research wording is safe: I checked the frames and the fingers do carry cat puppets. They are on a human-looking hand, not on Pıtır's paw as ICERIK-LISTESI.md says.",
+     "Move it off day one. The research expects no search traffic for this video and it has the slowest start; give its day-one slot to El Yıkama Şarkısı.",
+     "Make a new export with the instrumental intro cut from about 9 s to about 4 s (ffmpeg, cut on a bar line, no credits). At minimum use the short intro in the compilation copy. Whether the single needs it is decided from the Studio retention graph, not assumed.",
+     "Tags: use the research list, which adds 'baba parmak', 'baba parmak nerdesin' and 'kedi parmak ailesi'."
+    ]
+   },
+   {
+    "video": "4. Beş Küçük Maymun — /home/user/ring-tokat-3d/cocuk-kanali/bes-kucuk-maymun/bes-kucuk-maymun.mp4",
+    "sure": "1:24 (83.92 s; 1920x1080, 24 fps, -14.9 LUFS)",
+    "ilk_saniyeler": "Strong. At 0.5 s: five monkeys in star pyjamas standing in a row on a bed facing the camera, with the title fading in at the bottom. At 2.5 s it is the same shot with the title full. The first cut is at 4.4 s, and at 5.0 s all five are mid-jump with a large red '5'. The timeline is varied: owl doctor on the phone, fallen monkey, mother monkey, sleeping monkeys at night. The ending is calm, with a 1 s fade-out.",
+    "kapak": "Ready and usable as is: /home/user/ring-tokat-3d/cocuk-kanali/bes-kucuk-maymun/kapak.jpg (1280x720, 0.11 MB JPG). Five monkeys jumping on the bed with a big red 5; reads clearly at 168x94. There is no Pıtır in the thumbnail or anywhere in the frames I sampled; it is the only video without the mascot.",
+    "baslik_onerisi": "Beş Küçük Maymun Yatakta Zıplıyor | Sayma Şarkısı | Dudek Stüdyo",
+    "degisecekler": [
+     "Title: the current one starts with the searched phrase; extend it to the full long-tail phrase as the research proposes.",
+     "Write '5 Küçük Maymun' with the digit once in the first description line; the current number-one result for this query uses the digit.",
+     "Optional, free: each digit 5-4-3-2-1 is on screen for only 2.1 s (kurgu.py). Since the title says 'Sayma Şarkısı', a later export could hold each digit for about 4 s.",
+     "No re-edit needed for upload. If Ali Baba is held back, this is the natural day-one replacement."
+    ]
+   },
+   {
+    "video": "5. Balon Şarkısı (colours) — /home/user/ring-tokat-3d/cocuk-kanali/balon-sarkisi/balon-sarkisi.mp4",
+    "sure": "0:50 (50.00 s; 1920x1080, 24 fps, -14.2 LUFS)",
+    "ilk_saniyeler": "Visually strong, slow for its length. At 0.5 s: Pıtır in a meadow holding four balloons (red, blue, yellow, green) under bunting. At 2.5 s the camera has pushed in and the title 'Balon Şarkısı' sits across the top, directly over the balloon bunch, hiding the subject of the song; at 5.0 s it is still over the balloons. The title stays until 7.6 s and the first colour label (KIRMIZI) appears at 8.7 s, which is 17% of a 50-second video. Label times in kurgu.py: red 4.2 s, blue 4.05 s, yellow 4.3 s, green only 2.1 s. After 23.9 s there are no colour labels for the remaining 26 s.",
+    "kapak": "Ready: /home/user/ring-tokat-3d/cocuk-kanali/balon-sarkisi/kapak.jpg (1280x720, 0.07 MB JPG). Pıtır's face fills the frame, the strongest face of the set, but the balloons are blurred and pastel and include orange, pink and purple, which the song does not teach. Once the title leads with 'Renkler Şarkısı', a better match is the opening shot with exactly the four taught colours: a 1280x720 crop of the 1080p frame at about 0.5 s (same picture as kare/01.png) around Pıtır and the balloons. Keep kapak.jpg as the swap option.",
+    "baslik_onerisi": "Renkler Şarkısı | Balon Şarkısı, Renkleri Öğreniyorum | Dudek Stüdyo",
+    "degisecekler": [
+     "Title: swap the order so 'Renkler Şarkısı' leads. Condition: the video teaches four colours in about 15 s. If the second half does not repeat the colour names, use the narrower 'Renkler Şarkısı | Balon Şarkısı, Kırmızı Mavi Sarı Yeşil | Dudek Stüdyo' so the title promises only what is shown.",
+     "The lyrics exist in no file, so the description has none and I could not check sung words against the labels. The owner should listen once (50 s) and type the lyrics; the colour tag must list only colours actually sung.",
+     "Free re-export from a copy of kurgu.py: move the title to the bottom (y 930 as in the other videos) so it stops covering the balloons, and give YEŞİL the same 4 s as the other colours. If the colours are sung again after 0:24, show the labels again; the PNGs are in balon-sarkisi/yazi/.",
+     "Compilation copy: cut the 7.6 s title card to about 2 s.",
+     "Description first line: start with 'Renkler şarkısı: kırmızı, mavi, sarı, yeşil balonlar…'."
+    ]
+   },
+   {
+    "video": "6. El Yıkama Şarkısı — /home/user/ring-tokat-3d/cocuk-kanali/el-yikama/el-yikama-sarkisi.mp4",
+    "sure": "1:10 (70.00 s; 1920x1080, 24 fps, -14.1 LUFS, true peak -0.2 dBFS)",
+    "ilk_saniyeler": "Strong, and the clearest story opening of the seven. At 0.5 s: Pıtır on a stool at the sink in a blue-tiled bathroom, holding two muddy paws up to the camera, so the problem is shown in the first second. At 2.5 s it is the same shot with the title full at the bottom, not covering him. At 5.0 s a side angle shows him rubbing the dirty paws. The title stays until 7.5 s. The timeline shows the steps in order (tap, soap, foam, rinse, towel, sparkling paws) with sound-word labels. The video bitrate is 1.56 Mbps against 3.7 to 5.3 for the others; a full-resolution crop compared with Ali Baba showed no visible softness (same CRF 21), so no re-export is needed.",
+    "kapak": "No finished thumbnail. The named candidate el-yikama/kare/09_temiz.png (1280x720, 1.29 MB PNG) shows clean sparkling paws, but nothing in it says washing: no water, soap or foam. Better source: /home/user/ring-tokat-3d/cocuk-kanali/el-yikama/kare/04_avuc.png, with Pıtır's face large, paws covered in foam and the sink behind. It says hand washing at a glance and the mascot is bigger. Convert it to JPG at 1280x720.",
+    "baslik_onerisi": "El Yıkama Şarkısı | Okul Öncesi Temizlik Şarkısı | Dudek Stüdyo",
+    "degisecekler": [
+     "Title: already starts with the searched phrase; only 'Çocuklar İçin' becomes 'Okul Öncesi'.",
+     "Move it from the 3rd publishing day to day one. Per the research this is the only one of the seven whose search page has small channels in the top 10 (4 of them).",
+     "Make the JPG thumbnail from 04_avuc.png before upload. This is the video most likely to be shown in search, so its thumbnail matters most.",
+     "The project's audio tool flagged a possible vocal-versus-backing mismatch (machine estimate, setup document 3.6). I measured loudness only and cannot listen, so the owner's ear decides before upload.",
+     "Compilation copy: trim the 7.5 s title card to about 2 s. Optionally limit the peak to -1 dBTP in that copy."
+    ]
+   },
+   {
+    "video": "7. Otobüs Şarkısı (Pıtır'ın Otobüsü) — /home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/otobus-sarkisi.mp4",
+    "sure": "1:35 (95.46 s; 1920x1080, 24 fps, -14.3 LUFS)",
+    "ilk_saniyeler": "Strongest opening of the seven. At 0.5 s: a yellow bus on a country road with Pıtır in a driver's cap at the wheel and a pig, a rabbit and a puppy waving from the windows; the title 'Pıtır'ın Otobüsü' fades in at the top, over the bus roof only. At 2.5 s it is the same shot with the title full. The title is off at 3.6 s, the first cut is at 3.9 s, and 'BİN BİN BİN' appears at 4.1 s with Pıtır at the bus door. Cuts follow at 7.6, 11.2 and 15.0 s. It ends on the title card from 92.2 s with a 1 s fade-out.",
+    "kapak": "Usable after conversion: /home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/kare/02_kanca_b.png (1280x720, but a 1.42 MB PNG; save as JPG). Yellow bus with Pıtır driving and three friends at the windows; the bus reads instantly at 168x94. No text. Face-forward alternative for a later swap: kare/10_korna.png (Pıtır large at the wheel, friends behind).",
+    "baslik_onerisi": "Otobüs Şarkısı | Tekerlekler Dönüyor, Korna Ötüyor | Dudek Stüdyo",
+    "degisecekler": [
+     "Title: the current one starts with the searched phrase, but its second part 'Pıtır'ın Otobüsü' is a name nobody searches. The proposed wording paraphrases our lyrics ('teker dönüyor', 'Pıtır kornaya bastı') and both things are shown, so it is honest.",
+     "The research rates this search page hopeless. Its job is the compilation and playlists; with its fast start it is a good opener for both.",
+     "Convert the thumbnail to JPG.",
+     "Owner listening check from the setup document: 'nereden' at 0:51 may sound like 'neden'.",
+     "The tag 'otobüsün tekerleği' names the traditional song; the owner can drop it if it feels like borrowing."
+    ]
+   }
+  ],
+  "kanal_eksikleri": [
+   "Basis for everything here: local files only, no web pages opened. Durations, resolution and loudness were measured with ffprobe/ffmpeg; frames at 0.0, 0.5, 2.5, 5.0 s, the last second and eight timeline points per video were extracted and viewed. I could not listen to any audio, so lyric intelligibility is unchecked. Evidence is in /home/user/ring-tokat-3d/cocuk-kanali/buyume/denetim/ (olcum.csv, sayfalar/*.jpg, kareler/, araclar/). No existing file was changed.",
+   "Compilation: none exists anywhere in the project. The seven songs total 9 min 35 s, 25 s under the 10-minute mark the research used for a long compilation; without Ali Baba it is 7:43. All seven are 1920x1080 at 24 fps and within -14.1 to -14.9 LUFS, so they join without re-levelling; only the audio sample rates differ (96, 48 and 44.1 kHz) and should be resampled to 48 kHz.",
+   "Compilation content: the seven title cards alone add up to about 41 s (3.6 to 8.0 s each). Cut each to about 2 s and add a short Pıtır greeting and link scenes so it passes 10 minutes and is more than a re-cut. Publish it after the singles, as 1 video of 8.",
+   "Second long video is blocked: /home/user/ring-tokat-3d/cocuk-kanali/uzun-01-3d/pitir-ile-ogren-01-3d.mp4 is 10 min 04 s and finished. According to the setup document (item 28) its scenes show the dropped programme name 'Pıtır ile Öğren'; I did not view it. It needs a re-render with the new name before it can be uploaded.",
+   "Upload rhythm: the plan (3 videos on day one, then two a week) uses up all seven videos in two weeks, and nothing else is finished; each new song costs about 40,000 credits. The channel description promises 'Her hafta iki yeni video'. A rhythm the stock can carry is 3 on day one, then one a week: four more weeks of singles, the compilation in week 5, the renamed long episode in week 6, with Banyo Şarkısı in production meanwhile. Change the description sentence to one new video a week.",
+   "Day-one set: currently Ali Baba, Pıtır'ın Ailesi, Parmak Ailesi. Recommended: Ali Baba (if the owner clears the lyrics question), El Yıkama and Pıtır'ın Ailesi, with Parmak Ailesi moved later. If Ali Baba is held, Beş Küçük Maymun replaces it.",
+   "Playlists: six are written in the setup document and none exists yet. Lists 5 (Temizlik) and 6 (Taşıtlar) would hold one video each, which cannot carry a session; open them when a second video exists (Banyo for list 5). Do not put Parmak (9 s intro) or Balon (8.7 s intro) first in the main list; Otobüs or Ali Baba are better openers. Whether a made-for-kids video can be added to the channel's own playlist is still untested (setup document item 10); try it with the first upload.",
+   "Thumbnails: 4 of 7 are ready JPGs (Ali Baba, Parmak, Maymun, Balon). Otobüs has a usable frame but as a 1.42 MB PNG. Pıtır'ın Ailesi and El Yıkama have no finished thumbnail, only raw PNG frames of 1.87 and 1.29 MB. Custom thumbnails also need the phone verification in setup step 4.",
+   "Thumbnail consistency: only Parmak Ailesi has lettering; the other six have none. The research has no evidence either way. I suggest staying text-free for now and revisiting from Studio click-through after 2 to 4 weeks, since thumbnails can be swapped later.",
+   "Upload texts are not assembled: KANAL-KURULUM.md section 3 still has the old titles and tags. The new ones exist only in buyume/arastirma-kelimeler/oneriler-baslik-etiket.csv, and the description first lines of videos 1, 2, 5 and 7 do not contain the lead phrase. Balon Şarkısı has no lyrics at all.",
+   "No upload-ready package: the owner uploads from a phone, but the files sit in production folders next to many variants (9 mp4s in ali-baba, 2 in otobus-sarkisi). One folder is needed with seven numbered mp4s, seven matching 1280x720 JPG thumbnails under 2 MB and one text file per video.",
+   "Shorts: no vertical file exists, and the research says not to build on them (unproven for made-for-kids, and Shorts views do not count toward watch hours). If a two- or three-clip experiment is run after the first two weeks, El Yıkama and Balon are the ones that survive a 9:16 centre crop; the others would lose characters.",
+   "Channel trailer: none. Whether the trailer slot works on a made-for-kids channel is not covered by the research and I did not verify it. Do not spend production on a trailer now; put the 'Tüm Şarkılar' playlist at the top of the channel home, and later the compilation.",
+   "Template risk: low on what I saw. The seven use seven different settings and different casts. The shared elements are the rainbow bubble-letter title card, a 0.4 s fade from black and a fade-out, which is a recurring format rather than a template. Ali Baba, Pıtır'ın Ailesi and Otobüs also end by repeating the title card.",
+   "No measurement plan: two weeks after the first uploads, read Studio traffic sources and the first 10 seconds of the retention graphs for Parmak Ailesi and Balon Şarkısı before deciding on intro trims.",
+   "Kanal sahibi için kısa not (Türkçe): Yedi videonun hepsinin ilk saniyesi görüntü olarak iyi: parlak, karakterler hemen görünüyor, siyah ekran yarım saniyeden kısa. En güçlü açılış Otobüs ve El Yıkama'da; en yavaş açılış Parmak Ailesi'nde (yaklaşık 9 saniye şarkı başlamıyor) ve Balon Şarkısı'nda (ilk renk 8,7. saniyede, başlık yazısı balonların üstünü kapatıyor). Dört videonun kapağı hazır; Otobüs'ünki yalnız dosya türü değişince hazır olur; Pıtır'ın Ailesi ve El Yıkama için kapak yapılması gerekiyor. Başlıklarda en büyük değişiklik Pıtır'ın Ailesi, Balon ve Otobüs'te. Kanalda henüz derleme videosu yok; yedi şarkı toplam 9 dakika 35 saniye ediyor. Elimizdeki yedi video haftada iki yüklemeyle iki haftada biter; bu yüzden ilk gün üç video, sonra haftada bir video öneriyorum. Sizden beklenen kararlar: Ali Baba'nın sözleri konusu, El Yıkama'yı bir kez dinlemek, Balon Şarkısı'nın sözlerini yazıp göndermek."
+  ]
+ },
+ "arastirma_ozetleri": [
+  {
+   "konu": "kurallar",
+   "ozet": "Scope and limits. Only www.youtube.com was reachable from this session (with curl; WebFetch could not resolve it). support.google.com, blog.youtube, services.google.com and all news sites failed, so Help Center wording, the July 2026 inauthentic-content clarification and the February 2027 Partner Programme change are known only through search summaries and should be confirmed once support.google.com and blog.youtube are allowed in the session's network settings. Nine official pages were read in full and their text is saved in /home/user/ring-tokat-3d/cocuk-kanali/buyume/arastirma-kurallar/kaynak-metinler/ (index: /home/user/ring-tokat-3d/cocuk-kanali/buyume/arastirma-kurallar/kaynak-metinler/KAYNAKLAR.txt). No existing file was changed.\n\nWhat is established. (1) Made for kids removes comments, notifications and personalised ads (read), and per the Help Center summary also end screens, cards, watermark, miniplayer, save-to-playlist, Super Chat and community posts. (2) What remains is search, Up next beside other kids' videos, the channel's own playlists, the YouTube Kids app and long TV/tablet sessions. (3) YouTube states that kids quality principles feed the recommendation system and that all made-for-kids content in YouTube Kids must meet them (read); the Help Center summary adds that low-quality kids channels can be recommended less, removed from YouTube Kids and suspended from the Partner Programme. There is no application for YouTube Kids. (4) AI use is allowed and disclosure does not reduce reach; disclosure is mandatory only for realistic-looking content, and YouTube may label videos itself (read). The real risk for an AI-made kids channel is the 'mass-produced / template / repetitive' monetisation rule and the quality principle on incoherent auto-generated videos. (5) Official advice on titles, thumbnails and schedule is modest: accurate titles with keywords early, simple readable thumbnails, a sustainable schedule (read). (6) Thresholds: 500 subscribers + 3 uploads + 3,000 hours for the early tier (read, but of little use to a kids channel); ad revenue needs 1,000 subscribers + 4,000 hours now and, per the announcement summaries, 8,000 hours for applications from 1 February 2027.\n\nNot established. Whether made-for-kids Shorts appear in YouTube Kids or get normal Shorts-feed distribution; whether YouTube Kids is offered in Türkiye (I believe so, unverified); whether thumbnail testing works on made-for-kids videos; the exact 'active channel' figures in the 2027 terms.\n\nPoints where the existing plan needs correcting: KANAL-STRATEJISI.md section 7 quotes 4,000 hours (plan for 8,000); section 2 schedules two Shorts a week for discovery (unproven, and Shorts views do not count toward watch hours).\n\nKanal sahibi için kısa not (Türkçe): Çocuk kanalında yorum, bildirim, bitiş ekranı ve kart yoktur; izlenme aramadan, \"sıradaki video\" önerilerinden, kendi oynatma listelerimizden ve YouTube Kids uygulamasından gelir. YouTube çocuk içeriğinde kaliteyi açıkça ölçüyor: sözleri anlaşılır, görüntüsü şarkıyla uyumlu, başlığı verdiği sözü tutan videolar öne çıkıyor; birbirinin kopyası gibi duran, özensiz toplu üretim videolar hem önerilmiyor hem para kazanma programına alınmıyor. Yapay zekâ kullanmak yasak değil ve bunu açıkça yazmak izlenmeyi düşürmüyor. Para kazanma eşiği 1 Şubat 2027'den itibaren büyük olasılıkla 1.000 abone ve 8.000 saat izlenme olacak; bu yüzden ilk yıl gelir beklemeden, her videoyu yüklemeden önce dinleyip izleyerek, haftada iki video gibi sürdürülebilir bir düzenle ilerlemek en doğru yol."
+  },
+  {
+   "konu": "kelimeler",
+   "ozet": "Keyword and title research is done for all 12 videos, with one caveat up front: it measures how crowded page one is today, not how often a phrase is searched (autocomplete is blocked, so search volume is unknown).\n\nI fetched 55 Turkish search pages once, logged out, on 2026-11-21 (1,019 video rows, 307 channels, subscriber counts for 279). Titles, tags and the plain-language notes for the owner are in Turkish in `oneriler-baslik-etiket.csv`; the evidence is in `kanit-sorgu-ozeti.csv` and `kanit-arama-sonuclari.csv`, all in `/home/user/ring-tokat-3d/cocuk-kanali/buyume/arastirma-kelimeler/`.\n\n- **Hopeless head phrases for a new channel:** parmak ailesi (şarkısı), baba parmak şarkısı, otobüs şarkısı, otobüsün tekerlekleri dönüyor, hayvan sesleri şarkısı, gezegenler şarkısı, güneş sistemi şarkısı, alfabe şarkısı alone, harfler şarkısı, sayılar şarkısı, sayıları öğreniyorum, sayma şarkısı, pazara gidelim şarkısı. Medians run from 5M to 28M views with no or almost no small channels in the top 10.\n- **Winnable or loose phrases:** el yıkama şarkısı (4 channels under 10K subscribers in the top 10), ali babanın çiftliği hayvan sesleri, ali babanın bir çiftliği var, kedi ailesi şarkısı, aile şarkısı çocuk, aile üyeleri şarkısı, 29 harf şarkısı, banyo şarkısı. Medium: renkler şarkısı, çiftlik hayvanları şarkısı, sebzeler şarkısı, abc şarkısı türkçe.\n- **The catch:** where page one is weak, the small videos that rank there also have few views (often 2K to 30K after most of a year), so those phrases probably bring little traffic. Search will add only a little for the seven existing songs; that inference is mine, not measured.\n- **The exception:** \"banyo şarkısı\", where a 1:42 song from a 2.26K-subscriber channel is #1 with 3.1M views in 10 months.\n- **Production order (owner decision):** on this evidence Banyo should come first, then Alfabe with \"29 harf\", then Meyve ve Sebzeler, with Gezegenler and Sayılar last. The content list currently schedules Gezegenler and Sayılar next month; I did not change it.\n- **Naming:** use \"Alfabe Şarkısı\" instead of \"Harfler Şarkısı\", and avoid \"Pazar Şarkısı\" and \"Pazara Gidelim\".\n- **Title changes for the seven finished videos:** the largest are Pıtır'ın Ailesi (lead with \"Kedi Ailesi Şarkısı\"), Balon Şarkısı (lead with \"Renkler Şarkısı\") and Otobüs (drop \"Pıtır'ın Otobüsü\" for words from our lyrics). The other four change slightly.\n\nAll 12 proposed titles pass a script check: 60 to 70 characters, start with the primary phrase, end with \"| Dudek Stüdyo\", exactly 10 tags. The existing titles in `kanal-kurulum/KANAL-KURULUM.md` are untouched, so the new ones still have to be carried over; descriptions were not rewritten.\n\nNot verified: I did not watch the videos, so \"Kedi Parmak\" in the Parmak Ailesi title holds only if the kitten's paw is really shown. The tag and title-length guidance is from memory, not re-read today."
+  }
+ ]
+}
