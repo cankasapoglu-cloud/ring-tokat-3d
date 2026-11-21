@@ -141,7 +141,7 @@ for V in VARS:
     rep['limiter'] = {'max_gain_reduction_db': round(Mt['max_gr_db'], 2), 'time_over_0p5db_pct': round(100 * Mt['gr_frac_gt_0p5db'], 2),
                       'time_over_2db_pct': round(100 * Mt['gr_frac_gt_2db'], 2), 'master_gain_db': round(float(db(Mt['gain'])), 2), 'ceiling_dbfs': Mt['ceil_db']}
 
-    print('[4] beat grid measured in altyapi (kick onsets)')
+    print('[4] beat grid measured in the audio')
     a = X['altyapi'].mean(1)
     hp = sosfiltfilt(butter(4, [6000, 14000], 'bandpass', fs=sr, output='sos'), a)      # hi-hat / snare / tambourine band
     e, hop, win = envelope(hp, sr, win=0.002, hop=0.00025)
@@ -159,6 +159,18 @@ for V in VARS:
     rep['grid'] = {'beat_onsets': len(tt), 'fitted_beat_s': round(float(sl), 6), 'fitted_bar_s': round(float(4 * sl), 5), 'fitted_bpm': round(float(60 / sl), 3),
                    'onset_minus_grid_ms_median': round(float(1000 * np.median(dev)), 2), 'min': round(float(1000 * dev.min()), 2), 'max': round(float(1000 * dev.max()), 2)}
 
+    # second measurement on the solo drum stem: first rise of the kick (no other instrument in the way)
+    dstem = sf.read(f'{W}/{V}/st_davul.wav', dtype='float64')[0][CUT:CUT + N].mean(1); t2 = []; b2 = []
+    for bi, (ch, kind, k, vb) in enumerate(bars):
+        if kind in ('final', 'roll', 'intro_ansfill'): continue
+        for bt in range(4):
+            if kind in ('voc', 'intro_a') and bt == 3: continue          # tom fill there
+            t0 = (bi * 4 + bt) * BEAT; i0 = max(0, int((t0 - 0.005) * sr)); seg = np.abs(dstem[i0:int((t0 + 0.03) * sr)])
+            t2.append((i0 + int(np.argmax(seg >= 0.25 * seg.max()))) / sr); b2.append(bi * 4 + bt)
+    t2 = np.array(t2); b2 = np.array(b2); sl2, ic2 = np.polyfit(b2, t2, 1); dv2 = 1000 * (t2 - b2 * BEAT)
+    check(abs((sl2 - BEAT) * b2.max()) < 0.002, f'drum stem, {len(t2)} kick hits: fitted beat {sl2:.6f} s, drift over the whole song {1000 * (sl2 - BEAT) * b2.max():+.2f} ms, '
+          f'kick first rise minus grid: mean {dv2.mean():+.2f} ms (first 16 beats {dv2[:16].mean():+.2f}, last 16 {dv2[-16:].mean():+.2f}), sd {dv2.std():.2f} ms')
+    rep['grid'].update(kick_stem_fitted_beat_s=round(float(sl2), 6), drift_whole_song_ms=round(float(1000 * (sl2 - BEAT) * b2.max()), 2), kick_rise_minus_grid_ms_mean=round(float(dv2.mean()), 2))
     print('[5] MIDI files vs zaman json')
     chn = {v: int(k) for k, v in Mt['chn'].items()}
     def midi_ons(fn):
@@ -186,14 +198,16 @@ for V in VARS:
     ENV = {n: envelope(x, sr) for n, x in S.items()}
     rep['notes'] = {}
     def run(label, stemname, notes, method, ptol=0.30, ttol=(-0.015, 0.050), expect=lambda n: n['midi']):
-        x = S[stemname]; e, hop, win = ENV[stemname]; bad = []; perr = []; terr = []; fallback = [0, 0]
+        x = S[stemname]; e, hop, win = ENV[stemname]; bad = []; perr = []; terr = []; fallback = [0, 0, 0]
         for n in notes:
             t0, du = n['baslangic'], n['sure']
             i0 = int((t0 + 0.035) * sr); i1 = int((t0 + max(0.16, min(du, 0.45) - 0.01)) * sr)
             if method == 'yin': f = yin(x[i0:i1], sr)
             elif method == 'band': f = bandpeak(x[i0:i1], sr, 300.0, 1100.0)
             else:
-                f, fb = glockpitch(x, sr, t0, du, expect(n)); fallback[0] += 1; fallback[1] += bool(np.isfinite(fb) and abs(f2m(fb) - expect(n)) <= ptol)
+                f, fb = glockpitch(x, sr, t0, du, expect(n)); agree = bool(np.isfinite(fb) and abs(f2m(fb) - expect(n)) <= ptol)
+                prev = [m for m in notes if 0 < t0 - m['baslangic'] < 0.7 * BEAT]              # the note just before (an eighth earlier)
+                fallback[0] += 1; fallback[1] += agree; fallback[2] += (not agree) and any(m['midi'] == n['midi'] for m in prev)
             pe = f2m(f) - expect(n) if np.isfinite(f) else 99; te = onset(e, hop, win, t0, du) - t0
             perr.append(pe); terr.append(te)
             if abs(pe) > ptol or not (ttol[0] <= te <= ttol[1]): bad.append((n['olcu'], n['vurus'], n['nota'], round(float(pe), 2), round(float(1000 * te), 1)))
@@ -207,9 +221,9 @@ for V in VARS:
                                'pitch_err_cents_max_abs': round(float(100 * np.abs(perr).max()), 1), 'onset_ms_median': round(float(np.median(terr)), 1),
                                'onset_ms_min': round(float(terr.min()), 1), 'onset_ms_max': round(float(terr.max()), 1)}
         if method == 'glock':
-            print(f'        (glockenspiel: pass/fail = expected fundamental present as a spectral peak; blind "lowest newly appearing partial" estimate agrees for {fallback[1]} of {fallback[0]} notes, '
-                  f'the rest are notes whose own pitch is still ringing from the note before)')
-            rep['notes'].setdefault('_glock_blind', {})[label] = {'checked': fallback[0], 'blind_agrees': fallback[1]}
+            print(f'        (glockenspiel: pass/fail = expected fundamental present as a spectral peak; the blind "lowest newly appearing partial" estimate agrees for {fallback[1]} of {fallback[0]} notes; '
+                  f'{fallback[2]} of the {fallback[0] - fallback[1]} others repeat the pitch of the note just before, which is still ringing)')
+            rep['notes'].setdefault('_glock_blind', {})[label] = {'checked': fallback[0], 'blind_agrees': fallback[1], 'disagree_but_repeated_pitch': fallback[2]}
         return len(notes), len(notes) - len(bad)
     NT = Z['ezgi_notalari']
     sel = lambda part, ins, mono=True: [n for n in NT if n['parti'] == part and n['enstruman'] == ins and n['tek_ses'] == mono]
@@ -277,7 +291,16 @@ for V in VARS:
                    'bar7_max': round(float(d7.max()), 1), 'bar7_before_pickup_min': round(float((normal - t7).min()), 1),
                    'quietest_normal_minus_loudest_slot_db_min': round(float(dq.min()), 1),
                    'normal_bars_dbfs_mean': round(float(normal.mean()), 1), 'slot_bars_dbfs_mean': round(float(tab[:, 6:].mean()), 1)}
-    # the tail of bar 5 must not ring into the slot: level in the first 150 ms of bar 6 vs the same span of bar 7
+    oth = {}
+    for nme, i0b, nb in (('intro', 0, INTRO), ('ending', INTRO + NV * VB, Mt['END'])):
+        oth[nme] = [round(float(db(rms(A2[int((i0b + i) * BAR * sr):int((i0b + i + 1) * BAR * sr)]))), 1) for i in range(nb)]
+    tl = db(rms(A2[int(TOTAL * BAR * sr):])); print(f'       intro bars: {oth["intro"]}   ending bars: {oth["ending"]}   tail after bar 64: {tl:.1f} dBFS')
+    # does the band of bar 5 ring into the animal slot? level of the first 250 ms of bar 6 against the same span of bar 7
+    h6 = np.array([db(rms(A2[int((INTRO + k * VB + 6) * BAR * sr):int(((INTRO + k * VB + 6) * BAR + 0.25) * sr)])) for k in range(NV)])
+    h7 = np.array([db(rms(A2[int((INTRO + k * VB + 7) * BAR * sr):int(((INTRO + k * VB + 7) * BAR + 0.25) * sr)])) for k in range(NV)])
+    print(f'       first 250 ms of slot bar 6: {h6.mean():.1f} dBFS, of slot bar 7: {h7.mean():.1f} dBFS (difference = ring-over of bar 5: {(h6 - h7).mean():+.1f} dB)')
+    rep['slot_head'] = {'bar6_first_250ms_dbfs': round(float(h6.mean()), 1), 'bar7_first_250ms_dbfs': round(float(h7.mean()), 1)}
+    rep['intro_ending_bars_dbfs'] = oth
     print('[9] under-vocal stem: default level and audibility proxy')
     act = np.zeros(len(A2), bool); sil = np.ones(len(A2), bool)
     for bi, (ch, kind, k, vb) in enumerate(bars):
@@ -317,6 +340,10 @@ for V in VARS:
                               'f0_band_p10': round(float(np.percentile(snr, 10)), 1), 'f0_band_min': round(float(snr.min()), 1),
                               'octave_band_median': round(float(np.median(snr2)), 1), 'stem_rms_dbfs_active': round(float(db(rms(E2[act]))), 1),
                               'stem_peak_dbfs': round(float(db(np.abs(E2).max())), 1)}
+    Lc, Rc = X['altyapi'][:, 0], X['altyapi'][:, 1]; cc = float(np.corrcoef(Lc, Rc)[0, 1]); mono = meter.integrated_loudness(np.repeat(X['altyapi'].mean(1)[:, None], 2, 1))
+    dc = np.abs(X['altyapi'].mean(0)).max()
+    print(f'[9b] stereo/mono: L-R correlation {cc:.3f}; mono fold-down (L+R)/2 loudness {mono:.2f} LUFS (stereo {rep["altyapi"]["lufs_pyloudnorm"]}); DC offset {db(dc):.0f} dBFS')
+    rep['mono'] = {'lr_correlation': round(cc, 3), 'mono_fold_down_lufs': round(float(mono), 2)}
     print('[10] raw stem levels (dB RMS over verses 1-2, before master gain)')
     lv = {}
     for nme in ('davul', 'bas', 'banjo', 'akordeon', 'piyano', 'brass', 'trompet', 'glockenspiel', 'klarnet', 'glockenspiel_hafif'):

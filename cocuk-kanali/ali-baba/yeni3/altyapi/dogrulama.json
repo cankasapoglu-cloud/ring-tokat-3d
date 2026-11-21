@@ -17,28 +17,28 @@
    "clipped_samples": 0
   },
   "rehber": {
-   "lufs_ffmpeg": -13.7,
-   "lufs_pyloudnorm": -13.79,
-   "lra": 10.8,
+   "lufs_ffmpeg": -13.6,
+   "lufs_pyloudnorm": -13.66,
+   "lra": 10.6,
    "sample_peak_dbfs": -1.5,
    "true_peak_dbtp_4x": -1.15,
    "true_peak_ffmpeg": -1.2,
    "clipped_samples": 0
   },
   "ezgi_alti": {
-   "lufs_ffmpeg": -24.3,
-   "lufs_pyloudnorm": -24.36,
+   "lufs_ffmpeg": -22.3,
+   "lufs_pyloudnorm": -22.35,
    "lra": 6.4,
-   "sample_peak_dbfs": -15.61,
-   "true_peak_dbtp_4x": -15.56,
-   "true_peak_ffmpeg": -15.6,
+   "sample_peak_dbfs": -13.6,
+   "true_peak_dbtp_4x": -13.56,
+   "true_peak_ffmpeg": -13.6,
    "clipped_samples": 0
   },
   "limiter": {
-   "max_gain_reduction_db": 5.29,
-   "time_over_0p5db_pct": 2.69,
-   "time_over_2db_pct": 0.28,
-   "master_gain_db": 7.12,
+   "max_gain_reduction_db": 5.3,
+   "time_over_0p5db_pct": 3.08,
+   "time_over_2db_pct": 0.33,
+   "master_gain_db": 7.13,
    "ceiling_dbfs": -1.5
   },
   "grid": {
@@ -48,17 +48,22 @@
    "fitted_bpm": 116.016,
    "onset_minus_grid_ms_median": 2.11,
    "min": -17.39,
-   "max": 9.0
+   "max": 9.0,
+   "kick_stem_fitted_beat_s": 0.517173,
+   "drift_whole_song_ms": -0.36,
+   "kick_rise_minus_grid_ms_mean": 2.58
   },
   "notes": {
    "_glock_blind": {
     "lead glockenspiel (+1 oktav)": {
      "checked": 112,
-     "blind_agrees": 103
+     "blind_agrees": 103,
+     "disagree_but_repeated_pitch": 8
     },
     "ezgi_alti glockenspiel (+1 oktav)": {
      "checked": 189,
-     "blind_agrees": 189
+     "blind_agrees": 189,
+     "disagree_but_repeated_pitch": 0
     }
    },
    "lead trompet": {
@@ -116,10 +121,10 @@
    "matched": 803
   },
   "stems_sum_residual_db": -53.1,
-  "limiter_difference_db": -25.5,
+  "limiter_difference_db": -25.2,
   "slot": {
    "bar6_below_normal_db_min": 12.6,
-   "bar6_max": 13.0,
+   "bar6_max": 12.9,
    "bar7_below_normal_db_min": 10.1,
    "bar7_max": 10.3,
    "bar7_before_pickup_min": 12.3,
@@ -127,18 +132,40 @@
    "normal_bars_dbfs_mean": -17.7,
    "slot_bars_dbfs_mean": -29.2
   },
+  "slot_head": {
+   "bar6_first_250ms_dbfs": -24.8,
+   "bar7_first_250ms_dbfs": -25.3
+  },
+  "intro_ending_bars_dbfs": {
+   "intro": [
+    -16.1,
+    -16.1,
+    -16.2,
+    -15.5
+   ],
+   "ending": [
+    -16.0,
+    -15.3,
+    -14.9,
+    -13.6
+   ]
+  },
   "loud_lead_reference": {
    "rms_rel_rest_of_band_db": -0.0,
    "f0_band_lead_minus_rest_db_median": 3.5
   },
   "ezgi_alti_level": {
-   "rms_rel_band_db": -10.0,
-   "f0_band_stem_minus_band_db_median": -0.9,
-   "f0_band_p10": -10.1,
-   "f0_band_min": -19.3,
-   "octave_band_median": -13.0,
-   "stem_rms_dbfs_active": -28.8,
-   "stem_peak_dbfs": -15.6
+   "rms_rel_band_db": -7.9,
+   "f0_band_stem_minus_band_db_median": 1.1,
+   "f0_band_p10": -8.1,
+   "f0_band_min": -17.3,
+   "octave_band_median": -11.0,
+   "stem_rms_dbfs_active": -26.8,
+   "stem_peak_dbfs": -13.6
+  },
+  "mono": {
+   "lr_correlation": 0.894,
+   "mono_fold_down_lufs": -14.28
   },
   "raw_stem_levels_db": {
    "davul": -32.9,
@@ -171,28 +198,28 @@
    "clipped_samples": 0
   },
   "rehber": {
-   "lufs_ffmpeg": -13.7,
-   "lufs_pyloudnorm": -13.74,
-   "lra": 10.5,
+   "lufs_ffmpeg": -13.5,
+   "lufs_pyloudnorm": -13.59,
+   "lra": 10.2,
    "sample_peak_dbfs": -1.5,
    "true_peak_dbtp_4x": -1.07,
    "true_peak_ffmpeg": -1.1,
    "clipped_samples": 0
   },
   "ezgi_alti": {
-   "lufs_ffmpeg": -23.8,
-   "lufs_pyloudnorm": -23.79,
+   "lufs_ffmpeg": -21.7,
+   "lufs_pyloudnorm": -21.77,
    "lra": 5.7,
-   "sample_peak_dbfs": -15.48,
-   "true_peak_dbtp_4x": -15.07,
-   "true_peak_ffmpeg": -15.1,
+   "sample_peak_dbfs": -13.46,
+   "true_peak_dbtp_4x": -13.04,
+   "true_peak_ffmpeg": -13.1,
    "clipped_samples": 0
   },
   "limiter": {
-   "max_gain_reduction_db": 5.99,
-   "time_over_0p5db_pct": 5.72,
-   "time_over_2db_pct": 0.64,
-   "master_gain_db": 7.51,
+   "max_gain_reduction_db": 6.01,
+   "time_over_0p5db_pct": 6.69,
+   "time_over_2db_pct": 0.75,
+   "master_gain_db": 7.53,
    "ceiling_dbfs": -1.5
   },
   "grid": {
@@ -202,17 +229,22 @@
    "fitted_bpm": 116.016,
    "onset_minus_grid_ms_median": 1.99,
    "min": -8.76,
-   "max": 7.73
+   "max": 7.73,
+   "kick_stem_fitted_beat_s": 0.517173,
+   "drift_whole_song_ms": -0.36,
+   "kick_rise_minus_grid_ms_mean": 2.58
   },
   "notes": {
    "_glock_blind": {
     "lead glockenspiel (+1 oktav)": {
      "checked": 112,
-     "blind_agrees": 103
+     "blind_agrees": 103,
+     "disagree_but_repeated_pitch": 8
     },
     "ezgi_alti glockenspiel (+1 oktav)": {
      "checked": 189,
-     "blind_agrees": 188
+     "blind_agrees": 188,
+     "disagree_but_repeated_pitch": 1
     }
    },
    "lead trompet": {
@@ -270,29 +302,51 @@
    "matched": 803
   },
   "stems_sum_residual_db": -53.0,
-  "limiter_difference_db": -22.5,
+  "limiter_difference_db": -22.1,
   "slot": {
    "bar6_below_normal_db_min": 13.4,
    "bar6_max": 13.7,
    "bar7_below_normal_db_min": 10.1,
-   "bar7_max": 10.5,
+   "bar7_max": 10.4,
    "bar7_before_pickup_min": 13.0,
-   "quietest_normal_minus_loudest_slot_db_min": 8.6,
-   "normal_bars_dbfs_mean": -17.8,
-   "slot_bars_dbfs_mean": -29.8
+   "quietest_normal_minus_loudest_slot_db_min": 8.5,
+   "normal_bars_dbfs_mean": -17.9,
+   "slot_bars_dbfs_mean": -29.7
+  },
+  "slot_head": {
+   "bar6_first_250ms_dbfs": -26.2,
+   "bar7_first_250ms_dbfs": -26.9
+  },
+  "intro_ending_bars_dbfs": {
+   "intro": [
+    -16.4,
+    -16.5,
+    -16.5,
+    -15.8
+   ],
+   "ending": [
+    -16.4,
+    -16.0,
+    -14.6,
+    -13.3
+   ]
   },
   "loud_lead_reference": {
    "rms_rel_rest_of_band_db": -0.4,
    "f0_band_lead_minus_rest_db_median": 9.4
   },
   "ezgi_alti_level": {
-   "rms_rel_band_db": -9.9,
-   "f0_band_stem_minus_band_db_median": -6.9,
-   "f0_band_p10": -12.9,
-   "f0_band_min": -19.1,
-   "octave_band_median": 0.8,
-   "stem_rms_dbfs_active": -28.7,
-   "stem_peak_dbfs": -15.5
+   "rms_rel_band_db": -7.8,
+   "f0_band_stem_minus_band_db_median": -4.9,
+   "f0_band_p10": -10.9,
+   "f0_band_min": -17.1,
+   "octave_band_median": 2.8,
+   "stem_rms_dbfs_active": -26.7,
+   "stem_peak_dbfs": -13.5
+  },
+  "mono": {
+   "lr_correlation": 0.867,
+   "mono_fold_down_lufs": -14.31
   },
   "raw_stem_levels_db": {
    "davul": -32.9,

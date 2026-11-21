@@ -1,0 +1,113 @@
+{
+ "A_dunya_tam": {
+  "L4 (+7)": {
+   "n": 41,
+   "harmonic_dev_from_original_envelope_db": 1.37,
+   "fundamental_dev_db": 0.39,
+   "zigzag_db": 6.65,
+   "zigzag_original_db": 5.21
+  },
+  "L3 (+3)": {
+   "n": 51,
+   "harmonic_dev_from_original_envelope_db": 1.3,
+   "fundamental_dev_db": 0.61,
+   "zigzag_db": 5.46,
+   "zigzag_original_db": 5.12
+  },
+  "L1/L2 up": {
+   "n": 63,
+   "harmonic_dev_from_original_envelope_db": 1.39,
+   "fundamental_dev_db": 0.82,
+   "zigzag_db": 5.5,
+   "zigzag_original_db": 5.11
+  },
+  "L1/L2 down": {
+   "n": 51,
+   "harmonic_dev_from_original_envelope_db": 1.12,
+   "fundamental_dev_db": 0.44,
+   "zigzag_db": 3.73,
+   "zigzag_original_db": 4.77
+  },
+  "all": {
+   "n": 206,
+   "harmonic_dev_from_original_envelope_db": 1.3,
+   "fundamental_dev_db": 0.59,
+   "zigzag_db": 5.28,
+   "zigzag_original_db": 5.05
+  }
+ },
+ "B_dunya_karma": {
+  "L4 (+7)": {
+   "n": 41,
+   "harmonic_dev_from_original_envelope_db": 1.37,
+   "fundamental_dev_db": 0.39,
+   "zigzag_db": 6.65,
+   "zigzag_original_db": 5.21
+  },
+  "L3 (+3)": {
+   "n": 51,
+   "harmonic_dev_from_original_envelope_db": 1.3,
+   "fundamental_dev_db": 0.61,
+   "zigzag_db": 5.46,
+   "zigzag_original_db": 5.12
+  },
+  "L1/L2 up": {
+   "n": 63,
+   "harmonic_dev_from_original_envelope_db": 1.39,
+   "fundamental_dev_db": 0.82,
+   "zigzag_db": 5.51,
+   "zigzag_original_db": 5.11
+  },
+  "L1/L2 down": {
+   "n": 51,
+   "harmonic_dev_from_original_envelope_db": 1.13,
+   "fundamental_dev_db": 0.43,
+   "zigzag_db": 3.73,
+   "zigzag_original_db": 4.77
+  },
+  "all": {
+   "n": 206,
+   "harmonic_dev_from_original_envelope_db": 1.3,
+   "fundamental_dev_db": 0.59,
+   "zigzag_db": 5.28,
+   "zigzag_original_db": 5.05
+  }
+ },
+ "C_psola": {
+  "L4 (+7)": {
+   "n": 41,
+   "harmonic_dev_from_original_envelope_db": 2.46,
+   "fundamental_dev_db": 0.74,
+   "zigzag_db": 6.84,
+   "zigzag_original_db": 5.21
+  },
+  "L3 (+3)": {
+   "n": 51,
+   "harmonic_dev_from_original_envelope_db": 2.02,
+   "fundamental_dev_db": 1.02,
+   "zigzag_db": 5.37,
+   "zigzag_original_db": 5.12
+  },
+  "L1/L2 up": {
+   "n": 63,
+   "harmonic_dev_from_original_envelope_db": 2.12,
+   "fundamental_dev_db": 0.58,
+   "zigzag_db": 5.2,
+   "zigzag_original_db": 5.11
+  },
+  "L1/L2 down": {
+   "n": 51,
+   "harmonic_dev_from_original_envelope_db": 1.9,
+   "fundamental_dev_db": 0.47,
+   "zigzag_db": 4.07,
+   "zigzag_original_db": 4.77
+  },
+  "all": {
+   "n": 206,
+   "harmonic_dev_from_original_envelope_db": 2.11,
+   "fundamental_dev_db": 0.69,
+   "zigzag_db": 5.29,
+   "zigzag_original_db": 5.05
+  }
+ }
+}

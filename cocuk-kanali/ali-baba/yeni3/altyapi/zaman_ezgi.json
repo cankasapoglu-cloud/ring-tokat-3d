@@ -25,10 +25,10 @@
   "not": "altyapi = ezgi_alti HARİÇ tam orkestra (giriş, ö1/ö3 cevapları ve bitişteki yüksek lead dahil). rehber = altyapi + ezgi_alti. ezgi_alti doğrusal (limitersiz) ve altyapi ile aynı ana kazançta; miks seviyesi serbestçe değiştirilebilir."
  },
  "ana_kazanc": {
-  "kazanc_dB": 7.5137,
+  "kazanc_dB": 7.5341,
   "limiter_tavan_dBFS": -1.5,
   "hedef_LUFS_altyapi": -14.0,
-  "ezgi_alti_varsayilan_seviye_dB": -10.0,
+  "ezgi_alti_varsayilan_seviye_dB": -8.0,
   "ezgi_alti_seviye_notu": "ezgi_alti RMS değeri, çaldığı ölçülerde (kıta ö0, ö2, ö4, ö5) orkestra RMS değerine göre bu kadar dB"
  },
  "gecikme_telafisi": {
@@ -49,7 +49,7 @@
    "C": "C2",
    "D7": "D2"
   },
-  "akor_dizilimleri": {
+  "akor_dizilimleri_banjo_(piyano_akordeon_bir_oktav_ustu)": {
    "G": [
     "G3",
     "B3",

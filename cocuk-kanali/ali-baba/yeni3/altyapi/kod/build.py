@@ -24,7 +24,7 @@ ap.add_argument('--name', default=None, help='variant name used in file names (d
 ap.add_argument('--out', required=True)
 ap.add_argument('--work', required=True)
 ap.add_argument('--lufs', type=float, default=-14.0, help='integrated loudness target of altyapi_<name>.wav')
-ap.add_argument('--ezgi-alti-db', type=float, default=-10.0,
+ap.add_argument('--ezgi-alti-db', type=float, default=-8.0,
                 help='default level of the under-vocal stem: its RMS relative to the band RMS in the bars where it plays')
 ap.add_argument('--tail', type=float, default=2.5, help='seconds of ring-out kept after the final hit')
 A = ap.parse_args()
@@ -345,7 +345,7 @@ Z = {'baslik': "Ali Baba'nın Çiftliği", 'varyant': NAME, 'ezgi': 'Old MacDona
                                       'json içindeki nota zamanları ızgara (hedef) zamanlarıdır. midi/ klasöründeki dosyalar telafisiz, ızgara üzerindedir.',
                           'one_alma_ms': {CHN[c]: round(1000 * t * BEAT / TPB, 1) for c, t in ADV.items()}},
      'tonlama': {'lead_do': nm(LEAD_DO), 'ezgi_alti_do': nm(ALT_DO), 'eslik_kaydirma_yarim_ses_(G_referans)': AS,
-                 'bas_kokleri': {CHNAME[c]: nm(ROOT[c]) for c in DEG}, 'akor_dizilimleri': {CHNAME[c]: [nm(n) for n in CH[c]] for c in DEG},
+                 'bas_kokleri': {CHNAME[c]: nm(ROOT[c]) for c in DEG}, 'akor_dizilimleri_banjo_(piyano_akordeon_bir_oktav_ustu)': {CHNAME[c]: [nm(n) for n in CH[c]] for c in DEG},
                  'yuksek_cevap': [nm(LEAD_DO + iv) for iv, _, _ in ANS], 'yuksek_cevap_glockenspiel': [nm(LEAD_DO + iv + 12) for iv, _, _ in ANS],
                  'vokal_alti_A_cumlesi': [nm(ALT_DO + iv) for iv, _, _ in PHA], 'vokal_alti_tekrarli_do': nm(ALT_DO),
                  'vokal_alti_yumusak_cevap': [nm(ALT_DO + iv) for iv, _, _ in ANS],
