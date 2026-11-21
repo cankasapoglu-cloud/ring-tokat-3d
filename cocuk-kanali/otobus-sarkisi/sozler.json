@@ -1,0 +1,122 @@
+{
+ "baslik": "Pıtır'ın Otobüsü (Otobüs Şarkısı)",
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Bin bin bin, otobüse bin!",
+    "Pıtır şoför, haydi yola!"
+   ],
+   "sure_ms": 7400,
+   "gorsel": "Şoför şapkalı Pıtır direksiyonda, patisiyle çocukları otobüse çağırıyor.",
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Hop hop hop, durağa geldik,",
+    "Pıtır kapıyı açtı!",
+    "Hop hop hop, hepimiz bindik,",
+    "Hazırız, haydi Pıtır!"
+   ],
+   "sure_ms": 14800,
+   "gorsel": "Otobüs durakta, kapı açılıyor; çocuklar hop hop zıplayarak biniyor."
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Fır fır fır, teker dönüyor,",
+    "Pıtır direksiyonda!",
+    "Fır fır fır, hızlanıyoruz,",
+    "Yollar bizi bekliyor!"
+   ],
+   "sure_ms": 14800,
+   "gorsel": "Dönen tekerleklere yakın plan; otobüs yolda ilerliyor, Pıtır direksiyonda."
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Bin bin bin, otobüse bin!",
+    "Pıtır şoför, haydi yola!"
+   ],
+   "sure_ms": 7400,
+   "gorsel": "Şoför şapkalı Pıtır direksiyonda, patisiyle çocukları otobüse çağırıyor.",
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Düt düt düt, bu ses nereden?",
+    "Pıtır kornaya bastı!",
+    "Düt düt düt, herkes duyuyor,",
+    "Yol verin, geliyoruz!"
+   ],
+   "sure_ms": 14800,
+   "gorsel": "Pıtır patisiyle kornaya basıyor, yoldaki ördekler kenara çekiliyor."
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "Şıp şıp şıp, yağmur yağıyor,",
+    "Silecek sağa sola!",
+    "Şıp şıp şıp, Pıtır gülüyor,",
+    "Yağmur bizi durdurmaz!"
+   ],
+   "sure_ms": 14800,
+   "gorsel": "Yağmurlu ön camda silecek sağa sola gidiyor, Pıtır camın arkasında gülüyor."
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Bin bin bin, otobüse bin!",
+    "Pıtır şoför, haydi yola!"
+   ],
+   "sure_ms": 7400,
+   "gorsel": "Şoför şapkalı Pıtır direksiyonda, patisiyle çocukları otobüse çağırıyor.",
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Otobüs durdu, hoşça kal Pıtır!",
+    "Güle güle, güle güle!"
+   ],
+   "sure_ms": 8000,
+   "gorsel": "Otobüs durakta duruyor; inen çocuklar el sallıyor, Pıtır kapıdan patisini sallıyor."
+  }
+ ],
+ "not": "Sözler özgündür; bilinen otobüs şarkısının sözü ve ezgisi kullanılmaz. Kıtalar 8/7/8/7, nakarat 8/8 hece."
+}

@@ -1,0 +1,176 @@
+{
+ "model_id": "music_v2_5",
+ "composition_plan": {
+  "chunks": [
+   {
+    "text": "[Instrumental Intro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "ukulele, hand claps, tambourine, bouncy bass, live drums",
+     "glockenspiel",
+     "kids choir on the chorus",
+     "sing-along, danceable, bouncy",
+     "great production quality"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nBin bin bin, otobüse bin!\nPıtır şoför, haydi yola!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 1]\nHop hop hop, durağa geldik,\nPıtır kapıyı açtı!\nHop hop hop, hepimiz bindik,\nHazırız, haydi Pıtır!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 2]\nFır fır fır, teker dönüyor,\nPıtır direksiyonda!\nFır fır fır, hızlanıyoruz,\nYollar bizi bekliyor!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nBin bin bin, otobüse bin!\nPıtır şoför, haydi yola!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 3]\nDüt düt düt, bu ses nereden?\nPıtır kornaya bastı!\nDüt düt düt, herkes duyuyor,\nYol verin, geliyoruz!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 4]\nŞıp şıp şıp, yağmur yağıyor,\nSilecek sağa sola!\nŞıp şıp şıp, Pıtır gülüyor,\nYağmur bizi durdurmaz!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nBin bin bin, otobüse bin!\nPıtır şoför, haydi yola!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Outro Verse]\nOtobüs durdu, hoşça kal Pıtır!\nGüle güle, güle güle!",
+    "duration_ms": 8000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Instrumental Outro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "short happy ending, final hit"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   }
+  ]
+ },
+ "with_timestamps": true
+}

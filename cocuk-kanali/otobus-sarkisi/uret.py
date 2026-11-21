@@ -21,7 +21,7 @@ poz, neg = STILLER[STIL]
 chunks = [{"text": "[Instrumental Intro]", "duration_ms": S.get("giris_ms", 4000), "positive_styles": poz, "negative_styles": neg}]
 for b in S["bolumler"]:
     chunks.append({"text": f"[{b['etiket']}]\n" + "\n".join(b["satirlar"]), "duration_ms": b["sure_ms"],
-                   "positive_styles": poz[:4] + b.get("stiller", []), "negative_styles": neg})
+                   "positive_styles": poz[:4] + b.get("stiller_" + STIL, []), "negative_styles": neg})
 chunks.append({"text": "[Instrumental Outro]", "duration_ms": S.get("bitis_ms", 3000), "positive_styles": [("kısa, neşeli bitiş, son vuruş" if STIL == "tr" else "short happy ending, final hit")], "negative_styles": neg})
 istek = {"model_id": S.get("model", "music_v2_5"), "composition_plan": {"chunks": chunks}, "with_timestamps": True}
 if TOHUM is not None: istek["seed"] = TOHUM

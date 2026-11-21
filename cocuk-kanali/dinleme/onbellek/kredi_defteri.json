@@ -113,8 +113,24 @@
    "model": "scribe_v1",
    "sure_sn": 17.8,
    "tahmini_kredi": 97.9
+  },
+  {
+   "zaman": "2026-11-21 19:16:48",
+   "dosya": "deneme_1.mp3",
+   "ozet": "2270b9ba2b7d1671",
+   "model": "scribe_v1",
+   "sure_sn": 95.42,
+   "tahmini_kredi": 524.8
+  },
+  {
+   "zaman": "2026-11-21 19:17:08",
+   "dosya": "deneme_2.mp3",
+   "ozet": "f019b6d8d33088b8",
+   "model": "scribe_v1",
+   "sure_sn": 95.42,
+   "tahmini_kredi": 524.8
   }
  ],
- "toplam_tahmini_kredi": 6921.3,
+ "toplam_tahmini_kredi": 7970.9,
  "sinir": 8000
 }

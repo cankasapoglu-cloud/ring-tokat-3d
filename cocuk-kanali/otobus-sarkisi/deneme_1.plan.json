@@ -1,0 +1,166 @@
+{
+ "model_id": "music_v2_5",
+ "composition_plan": {
+  "chunks": [
+   {
+    "text": "[Instrumental Intro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz",
+     "ukulele, alkış, tef, zıplayan bas, canlı davul",
+     "glockenspiel",
+     "nakaratta çocuk korosu",
+     "zıplatan, dans ettiren, birlikte söylenen",
+     "yüksek prodüksiyon kalitesi"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Chorus]\nBin bin bin, otobüse bin!\nPıtır şoför, haydi yola!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz",
+     "çocuk korosu hep birlikte bağırarak söyler",
+     "alkışlı"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Verse 1]\nHop hop hop, durağa geldik,\nPıtır kapıyı açtı!\nHop hop hop, hepimiz bindik,\nHazırız, haydi Pıtır!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Verse 2]\nFır fır fır, teker dönüyor,\nPıtır direksiyonda!\nFır fır fır, hızlanıyoruz,\nYollar bizi bekliyor!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Chorus]\nBin bin bin, otobüse bin!\nPıtır şoför, haydi yola!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz",
+     "çocuk korosu hep birlikte bağırarak söyler",
+     "alkışlı"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Verse 3]\nDüt düt düt, bu ses nereden?\nPıtır kornaya bastı!\nDüt düt düt, herkes duyuyor,\nYol verin, geliyoruz!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Verse 4]\nŞıp şıp şıp, yağmur yağıyor,\nSilecek sağa sola!\nŞıp şıp şıp, Pıtır gülüyor,\nYağmur bizi durdurmaz!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Chorus]\nBin bin bin, otobüse bin!\nPıtır şoför, haydi yola!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz",
+     "çocuk korosu hep birlikte bağırarak söyler",
+     "alkışlı"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Outro Verse]\nOtobüs durdu, hoşça kal Pıtır!\nGüle güle, güle güle!",
+    "duration_ms": 8000,
+    "positive_styles": [
+     "coşkulu Türkçe çocuk şarkısı",
+     "hızlı tempo, dakikada 130 vuruş",
+     "neşeli ve enerjik kadın vokal",
+     "net ve doğal Türkçe telaffuz"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   },
+   {
+    "text": "[Instrumental Outro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "kısa, neşeli bitiş, son vuruş"
+    ],
+    "negative_styles": [
+     "ninni",
+     "yavaş",
+     "hüzünlü"
+    ]
+   }
+  ]
+ },
+ "with_timestamps": true
+}
