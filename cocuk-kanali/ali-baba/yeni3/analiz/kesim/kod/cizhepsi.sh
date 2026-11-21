@@ -6,8 +6,6 @@ python3 - <<'PY'
 import json, os, subprocess, sys
 K = os.path.dirname(os.getcwd())
 kj = os.path.join(K, "kesim.json")
-if not os.path.exists(kj):
-    kj = os.path.join(K, "ara", "kesim_ham.json")
 d = json.load(open(kj, encoding="utf8"))
 for v in d["verses"]:
     L = v["lines"]

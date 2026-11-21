@@ -1,0 +1,30 @@
+K-agirlik saglamasi: 997 Hz 0 dBFS sinus = -3.05 LUFS (beklenen -3.01)
+
+dosya     sure   tepe  gTepe ilkOrn |  b-30  b-25  b-20 | sonOrn  son10  kapOnc |   rmsYB    kwYB LUFS-I | kaynFark bitis
+inek_1   1.106  -1.89  -1.88 0.0000 | 0.002 0.009 0.017 | 0.0000  -77.4   -29.4 |  -13.35  -12.69 -13.16 |    -89.2 dogal (30 ms kapanis)
+inek_2   1.103  -2.47  -2.44 0.0000 | 0.005 0.011 0.017 | 0.0000  -71.5   -20.3 |  -13.46  -12.69 -13.13 |    -88.6 dogal (30 ms kapanis)
+koyun_1  1.312  -1.02  -1.00 0.0000 | 0.002 0.006 0.017 | 0.0000  -69.0   -39.1 |  -14.64  -12.69 -13.68 |    -88.0 dogal (30 ms kapanis)
+koyun_2  1.312  -1.02  -1.00 0.0000 | 0.002 0.006 0.017 | 0.0000  -69.0   -39.1 |  -14.64  -12.69 -13.68 |    -88.0 dogal (30 ms kapanis)
+at_1     1.850  -1.64  -1.57 0.0000 | 0.000 0.003 0.017 | 0.0000  -67.9   -26.8 |  -14.92  -12.69 -13.59 |    -89.6 dogal (40 ms kapanis)
+at_2     1.850  -1.64  -1.57 0.0000 | 0.000 0.003 0.017 | 0.0000  -67.9   -26.8 |  -14.92  -12.69 -13.59 |    -89.6 dogal (40 ms kapanis)
+horoz_1  1.850  -6.26  -6.23 0.0000 | 0.010 0.012 0.013 | 0.0000  -67.8    -7.1 |  -14.84  -12.69 -13.95 |    -91.3 FADE 200 ms
+horoz_2  1.850  -6.26  -6.23 0.0000 | 0.010 0.012 0.013 | 0.0000  -67.8    -7.1 |  -14.84  -12.69 -13.95 |    -91.3 FADE 200 ms
+ordek_1  1.317  -1.73  -1.69 0.0000 | 0.004 0.010 0.018 | 0.0000  -67.4   -38.1 |  -15.73  -12.69 -16.01 |    -88.0 dogal (30 ms kapanis)
+ordek_2  1.331  -2.41  -2.23 0.0000 | 0.009 0.011 0.017 | 0.0000  -70.8   -37.1 |  -15.67  -12.69 -16.74 |    -89.1 dogal (30 ms kapanis)
+kopek_1  0.751  -2.24  -2.24 0.0000 | 0.009 0.012 0.014 | 0.0000  -67.3   -37.0 |  -13.07  -12.69 -17.70 |    -89.6 dogal (30 ms kapanis)
+kopek_2  0.804  -2.18  -2.18 0.0000 | 0.012 0.012 0.013 | 0.0000  -72.4   -39.2 |  -13.16  -12.69 -18.67 |    -88.4 dogal (30 ms kapanis)
+kedi_1   0.766  -3.90  -3.87 0.0000 | 0.009 0.012 0.014 | 0.0000  -53.5   -35.9 |  -14.34  -12.69 -15.37 |    -90.0 dogal (30 ms kapanis)
+kedi_2   0.700  -3.63  -3.59 0.0000 | 0.009 0.012 0.013 | 0.0000  -59.5   -29.6 |  -15.89  -12.69 -14.83 |    -88.7 dogal (30 ms kapanis)
+
+Duzey yayilimi (14 dosya): K-agirlikli yuksek-bolum RMS -12.69..-12.69 (fark 0.00 dB) | duz RMS -15.89..-13.07 (fark 2.82 dB) | butunlesik LUFS -18.67..-13.13 (fark 5.54 dB) | tepe -6.26..-1.02 dBFS
+
+Ciftler:
+  inek   iki FARKLI cagri (kirpma [0.9468, 2.0524] / [3.9689, 5.0715], dalga korelasyonu -0.025)
+  koyun  AYNI cagri iki kez (kirpma [1.1194, 2.4315] / [1.1194, 2.4315], dalga korelasyonu 1.000)
+  at     AYNI cagri iki kez (kirpma [0.0558, 1.9058] / [0.0558, 1.9058], dalga korelasyonu 1.000)
+  horoz  AYNI cagri iki kez (kirpma [0.1057, 1.9557] / [0.1057, 1.9557], dalga korelasyonu 1.000)
+  ordek  iki FARKLI cagri (kirpma [0.3811, 1.6982] / [1.9715, 3.3026], dalga korelasyonu 0.003)
+  kopek  iki FARKLI cagri (kirpma [0.0828, 0.8342] / [1.8837, 2.688], dalga korelasyonu 0.002)
+  kedi   iki FARKLI cagri (kirpma [0.006, 0.7723] / [1.8318, 2.5323], dalga korelasyonu -0.011)
+
+SONUC: TUM ZORUNLU DENETIMLER GECTI

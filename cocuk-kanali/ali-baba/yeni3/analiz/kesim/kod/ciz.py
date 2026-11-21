@@ -38,8 +38,6 @@ for q in w:
             x.axvline(q["start"], color="cyan", lw=0.8, ls="--"); x.axvline(q["end"], color="cyan", lw=0.8, ls=":")
         ax[0].text(max(q["start"], a), 41, q["text"], color="blue", fontsize=10, va="bottom", clip_on=False) if q["start"] < b - 0.05 else None
 kj = os.path.join(K, "kesim.json")
-if not os.path.exists(kj):
-    kj = os.path.join(K, "ara", "kesim_ham.json")
 if os.path.exists(kj) and "--ham" not in sys.argv:
     kd = json.load(open(kj, encoding="utf8"))
     RENK = {"dip": "white", "spectral": "cyan", "midpoint": "red", "model": "orange"}

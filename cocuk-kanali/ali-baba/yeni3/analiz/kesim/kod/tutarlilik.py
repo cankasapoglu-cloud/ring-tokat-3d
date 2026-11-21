@@ -4,8 +4,6 @@ Ayni sozler 7 kez soylendigi icin sureler benzer olmali; ortancadan cok sapan he
 import os, json, sys, numpy as np
 K = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 kj = os.path.join(K, "kesim.json")
-if not os.path.exists(kj) or "--ham" in sys.argv:
-    kj = os.path.join(K, "ara", "kesim_ham.json")
 d = json.load(open(kj, encoding="utf8"))
 
 
@@ -16,7 +14,7 @@ def tablo(ad, secici):
     n = len(rows[0]); ad_ = [s["text"] for s in rows[0]]
     D = np.array([[s["end"] - s["start"] for s in r] for r in rows]) * 1000
     O = np.array([[s["start"] - r[0]["start"] for s in r] for r in rows]) * 1000
-    M = np.array([[s["f0_core_midi"] if s["f0_core_midi"] is not None else np.nan for s in r] for r in rows])
+    M = np.array([[s["f0_midi"] if s["f0_midi"] is not None else np.nan for s in r] for r in rows])
     med = np.median(D, 0)
     print("\n== %s: hece sureleri (ms) ==" % ad)
     print("      " + " ".join("%6s" % a for a in ad_))

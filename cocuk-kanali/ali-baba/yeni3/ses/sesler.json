@@ -1,0 +1,774 @@
+{
+ "aciklama": "Ali Baba'nın Çiftliği - yeni3: her hayvan için 2 çağrı; her çağrı kendi ölçüsüne (~2.07 sn) oturur.",
+ "ornekleme_hz": 44100,
+ "kanal": 1,
+ "bicim": "WAV PCM 16 bit mono",
+ "en_uzun_sure_sn": 1.85,
+ "islem": "yalnız kırpma + sabit kazanç + fade (zaman/perde değişikliği, sıkıştırma, limitleme, filtre YOK)",
+ "duzey_esitleme": {
+  "olcu": "yüksek bölüm = 50 ms RMS zarfında en yüksek değerin 10 dB altına kadar olan kareler; K-ağırlıklı (BS.1770 süzgeci) RMS eşitlendi",
+  "hedef_K_agirlikli_dB": -12.69,
+  "tepe_siniri_dBFS": -1.0,
+  "tepe_olcusu": "örnek tepesi ile 4x aşırı örneklenmiş (gerçek) tepenin büyüğü; en yüksek dosya tam sınırda, diğerleri altında"
+ },
+ "alanlar": {
+  "kirpma_sn": "kaynak dosyada [başlangıç, bitiş] saniye",
+  "kirpma_ornek": "aynı aralık örnek numarası olarak (44100 Hz, mono indirgenmiş kaynak); çıktı = kaynak[örnekler] x 10^(kazanc_dB/20), yalnız baş/son fade farklı",
+  "ses_baslangici_sn": "çıktı dosyasında sesin başladığı an (zarf tepe-25 dB eşiğini geçer); <= 0.020 olmalı",
+  "vurgu_sn": "çıktı dosyasında zarfın tepenin 6 dB altına ilk ulaştığı an (yumuşak başlayan seslerde asıl vurgu buradadır)",
+  "ic_baslangiclar_sn": "çağrı içindeki ayrı seslerin (vak/hav, hece) başlangıçları (tepe-20 dB)",
+  "sonu_fade": "true = çağrı 1.85 sn sınırına sığmadığı için sonu fade-out ile kısaltıldı",
+  "bayraklar": "basit spektral istatistiklerle işaretlenen olası hayvan-dışı içerik (kulakla doğrulanmadı)"
+ },
+ "dosyalar": {
+  "inek_1.wav": {
+   "hayvan": "inek",
+   "cagri_no": 1,
+   "kaynak_dosya": "yeni/ses/alternatif/inek_2.mp3",
+   "kirpma_sn": [
+    0.9468,
+    2.0524
+   ],
+   "kirpma_ornek": [
+    41754,
+    90511
+   ],
+   "sure_sn": 1.106,
+   "tepe_dBFS": -1.89,
+   "gercek_tepe_4x_dBTP": -1.88,
+   "rms_yuksek_bolum_dBFS": -13.35,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -11.7,
+   "en_yuksek_200ms_K_agirlikli_dB": -10.79,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -13.52,
+   "yuksek_bolum_suresi_sn": 0.92,
+   "kazanc_dB": -4.3933,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.009,
+   "vurgu_sn": 0.182,
+   "ic_baslangiclar_sn": [
+    0.016
+   ],
+   "ic_bitisler_sn": [
+    1.037
+   ],
+   "dogal_uzunluk_sn": 1.067,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -50.8,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -49.0,
+   "spektral": {
+    "duzluk_medyan": 0.001,
+    "agirlik_merkezi_hz": 986,
+    "baskin_tepe_medyan_hz": 924,
+    "sabit_ton_en_uzun_sn": 0.163,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.02,
+    "sessizlik_orani": 0.018
+   },
+   "bayraklar": [],
+   "notlar": [
+    "birinci möö",
+    "doğal bitiş: zarf eşiğin (-46 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  },
+  "inek_2.wav": {
+   "hayvan": "inek",
+   "cagri_no": 2,
+   "kaynak_dosya": "yeni/ses/alternatif/inek_2.mp3",
+   "kirpma_sn": [
+    3.9689,
+    5.0715
+   ],
+   "kirpma_ornek": [
+    175030,
+    223655
+   ],
+   "sure_sn": 1.103,
+   "tepe_dBFS": -2.47,
+   "gercek_tepe_4x_dBTP": -2.44,
+   "rms_yuksek_bolum_dBFS": -13.46,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -11.66,
+   "en_yuksek_200ms_K_agirlikli_dB": -10.55,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -13.61,
+   "yuksek_bolum_suresi_sn": 0.965,
+   "kazanc_dB": -4.646,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.011,
+   "vurgu_sn": 0.298,
+   "ic_baslangiclar_sn": [
+    0.017
+   ],
+   "ic_bitisler_sn": [
+    1.05
+   ],
+   "dogal_uzunluk_sn": 1.062,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -50.3,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -48.6,
+   "spektral": {
+    "duzluk_medyan": 0.001,
+    "agirlik_merkezi_hz": 991,
+    "baskin_tepe_medyan_hz": 934,
+    "sabit_ton_en_uzun_sn": 0.134,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.015,
+    "sessizlik_orani": 0.014
+   },
+   "bayraklar": [],
+   "notlar": [
+    "ikinci (farklı) möö, aynı kayıt",
+    "doğal bitiş: zarf eşiğin (-46 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  },
+  "koyun_1.wav": {
+   "hayvan": "koyun",
+   "cagri_no": 1,
+   "kaynak_dosya": "yeni/ses/alternatif/koyun_1.mp3",
+   "kirpma_sn": [
+    1.1194,
+    2.4315
+   ],
+   "kirpma_ornek": [
+    49366,
+    107231
+   ],
+   "sure_sn": 1.312,
+   "tepe_dBFS": -1.02,
+   "gercek_tepe_4x_dBTP": -1.0,
+   "rms_yuksek_bolum_dBFS": -14.64,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -11.64,
+   "en_yuksek_200ms_K_agirlikli_dB": -10.06,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -14.69,
+   "yuksek_bolum_suresi_sn": 1.035,
+   "kazanc_dB": -1.8652,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.006,
+   "vurgu_sn": 0.152,
+   "ic_baslangiclar_sn": [
+    0.012
+   ],
+   "ic_bitisler_sn": [
+    1.179
+   ],
+   "dogal_uzunluk_sn": 1.28,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -45.2,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -34.6,
+   "spektral": {
+    "duzluk_medyan": 0.017,
+    "agirlik_merkezi_hz": 1426,
+    "baskin_tepe_medyan_hz": 688,
+    "sabit_ton_en_uzun_sn": 0.099,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.015,
+    "sessizlik_orani": 0.011
+   },
+   "bayraklar": [
+    "uğultu: kaynakta 150 Hz altı uğultu var; tam bant zemin yüksek bölümün 35 dB altında (150 Hz üstünde 45 dB altında). Çağrının kendi enerjisinin 100 Hz altındaki payı çok küçük (ölçülen: toplamın 27-41 dB altı); istenirse miks sırasında ~120 Hz yüksek geçiren süzgeçle temizlenebilir"
+   ],
+   "notlar": [
+    "meleme (kayıtta tek meleme var)",
+    "doğal bitiş: zarf eşiğin (-49 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  },
+  "koyun_2.wav": {
+   "hayvan": "koyun",
+   "cagri_no": 2,
+   "kaynak_dosya": "yeni/ses/alternatif/koyun_1.mp3",
+   "kirpma_sn": [
+    1.1194,
+    2.4315
+   ],
+   "kirpma_ornek": [
+    49366,
+    107231
+   ],
+   "sure_sn": 1.312,
+   "tepe_dBFS": -1.02,
+   "gercek_tepe_4x_dBTP": -1.0,
+   "rms_yuksek_bolum_dBFS": -14.64,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -11.64,
+   "en_yuksek_200ms_K_agirlikli_dB": -10.06,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -14.69,
+   "yuksek_bolum_suresi_sn": 1.035,
+   "kazanc_dB": -1.8652,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.006,
+   "vurgu_sn": 0.152,
+   "ic_baslangiclar_sn": [
+    0.012
+   ],
+   "ic_bitisler_sn": [
+    1.179
+   ],
+   "dogal_uzunluk_sn": 1.28,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -45.2,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -34.6,
+   "spektral": {
+    "duzluk_medyan": 0.017,
+    "agirlik_merkezi_hz": 1426,
+    "baskin_tepe_medyan_hz": 688,
+    "sabit_ton_en_uzun_sn": 0.099,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.015,
+    "sessizlik_orani": 0.011
+   },
+   "bayraklar": [
+    "uğultu: kaynakta 150 Hz altı uğultu var; tam bant zemin yüksek bölümün 35 dB altında (150 Hz üstünde 45 dB altında). Çağrının kendi enerjisinin 100 Hz altındaki payı çok küçük (ölçülen: toplamın 27-41 dB altı); istenirse miks sırasında ~120 Hz yüksek geçiren süzgeçle temizlenebilir"
+   ],
+   "notlar": [
+    "aynı meleme tekrar (kayıtta tek meleme var)",
+    "doğal bitiş: zarf eşiğin (-49 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  },
+  "at_1.wav": {
+   "hayvan": "at",
+   "cagri_no": 1,
+   "kaynak_dosya": "yeni/ses/alternatif/at_4.mp3",
+   "kirpma_sn": [
+    0.0558,
+    1.9058
+   ],
+   "kirpma_ornek": [
+    2462,
+    84047
+   ],
+   "sure_sn": 1.85,
+   "tepe_dBFS": -1.64,
+   "gercek_tepe_4x_dBTP": -1.57,
+   "rms_yuksek_bolum_dBFS": -14.92,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -12.13,
+   "en_yuksek_200ms_K_agirlikli_dB": -11.13,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -15.15,
+   "yuksek_bolum_suresi_sn": 1.62,
+   "kazanc_dB": -1.9632,
+   "sonu_fade": false,
+   "bitis_turu": "doğal düşüş + 40 ms kapanış",
+   "fade_in_ms": 5,
+   "fade_out_ms": 40,
+   "ses_baslangici_sn": 0.003,
+   "vurgu_sn": 0.201,
+   "ic_baslangiclar_sn": [
+    0.017
+   ],
+   "ic_bitisler_sn": [
+    1.776
+   ],
+   "dogal_uzunluk_sn": 1.905,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -49.9,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -45.5,
+   "spektral": {
+    "duzluk_medyan": 0.037,
+    "agirlik_merkezi_hz": 1620,
+    "baskin_tepe_medyan_hz": 994,
+    "sabit_ton_en_uzun_sn": 0.139,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.01,
+    "sessizlik_orani": 0.005
+   },
+   "bayraklar": [],
+   "notlar": [
+    "kişneme (kayıtta tek kişneme var)",
+    "doğal düşüş 1.85 sn içinde tamamlanıyor (yüksek bölüm 1.77 sn'de bitiyor); yalnız tepeye göre -36 dB ve altındaki 51 ms'lik kuyruk dışarıda kaldı, son 40 ms yumuşatıldı"
+   ]
+  },
+  "at_2.wav": {
+   "hayvan": "at",
+   "cagri_no": 2,
+   "kaynak_dosya": "yeni/ses/alternatif/at_4.mp3",
+   "kirpma_sn": [
+    0.0558,
+    1.9058
+   ],
+   "kirpma_ornek": [
+    2462,
+    84047
+   ],
+   "sure_sn": 1.85,
+   "tepe_dBFS": -1.64,
+   "gercek_tepe_4x_dBTP": -1.57,
+   "rms_yuksek_bolum_dBFS": -14.92,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -12.13,
+   "en_yuksek_200ms_K_agirlikli_dB": -11.13,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -15.15,
+   "yuksek_bolum_suresi_sn": 1.62,
+   "kazanc_dB": -1.9632,
+   "sonu_fade": false,
+   "bitis_turu": "doğal düşüş + 40 ms kapanış",
+   "fade_in_ms": 5,
+   "fade_out_ms": 40,
+   "ses_baslangici_sn": 0.003,
+   "vurgu_sn": 0.201,
+   "ic_baslangiclar_sn": [
+    0.017
+   ],
+   "ic_bitisler_sn": [
+    1.776
+   ],
+   "dogal_uzunluk_sn": 1.905,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -49.9,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -45.5,
+   "spektral": {
+    "duzluk_medyan": 0.037,
+    "agirlik_merkezi_hz": 1620,
+    "baskin_tepe_medyan_hz": 994,
+    "sabit_ton_en_uzun_sn": 0.139,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.01,
+    "sessizlik_orani": 0.005
+   },
+   "bayraklar": [],
+   "notlar": [
+    "aynı kişneme tekrar (kayıtta tek kişneme var)",
+    "doğal düşüş 1.85 sn içinde tamamlanıyor (yüksek bölüm 1.77 sn'de bitiyor); yalnız tepeye göre -36 dB ve altındaki 51 ms'lik kuyruk dışarıda kaldı, son 40 ms yumuşatıldı"
+   ]
+  },
+  "horoz_1.wav": {
+   "hayvan": "horoz",
+   "cagri_no": 1,
+   "kaynak_dosya": "yeni/ses/alternatif/horoz_4.mp3",
+   "kirpma_sn": [
+    0.1057,
+    1.9557
+   ],
+   "kirpma_ornek": [
+    4663,
+    86248
+   ],
+   "sure_sn": 1.85,
+   "tepe_dBFS": -6.26,
+   "gercek_tepe_4x_dBTP": -6.23,
+   "rms_yuksek_bolum_dBFS": -14.84,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -11.42,
+   "en_yuksek_200ms_K_agirlikli_dB": -10.35,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -14.84,
+   "yuksek_bolum_suresi_sn": 1.495,
+   "kazanc_dB": -4.7244,
+   "sonu_fade": true,
+   "bitis_turu": "fade-out",
+   "fade_in_ms": 5,
+   "fade_out_ms": 200,
+   "ses_baslangici_sn": 0.012,
+   "vurgu_sn": 0.3,
+   "ic_baslangiclar_sn": [
+    0.013
+   ],
+   "ic_bitisler_sn": [
+    1.753
+   ],
+   "dogal_uzunluk_sn": 1.981,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -44.2,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -41.1,
+   "spektral": {
+    "duzluk_medyan": 0.0,
+    "agirlik_merkezi_hz": 1460,
+    "baskin_tepe_medyan_hz": 1472,
+    "sabit_ton_en_uzun_sn": 0.319,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.015,
+    "sessizlik_orani": 0.008
+   },
+   "bayraklar": [],
+   "notlar": [
+    "ötüş (kayıtta tek ötüş var)",
+    "doğal uzunluk 1.99 sn (1.85 sn sınırını aşıyor): son 200 ms fade-out; kaynağın son 143 ms'si kesildi (kesim noktasında düzey tepeye göre -7 dB)",
+    "tam (kırpılmamış) doğal uzunluk için dosya 2.02 sn olurdu; istenirse 03_kes.py içinde MAKS büyütülerek yeniden üretilebilir"
+   ]
+  },
+  "horoz_2.wav": {
+   "hayvan": "horoz",
+   "cagri_no": 2,
+   "kaynak_dosya": "yeni/ses/alternatif/horoz_4.mp3",
+   "kirpma_sn": [
+    0.1057,
+    1.9557
+   ],
+   "kirpma_ornek": [
+    4663,
+    86248
+   ],
+   "sure_sn": 1.85,
+   "tepe_dBFS": -6.26,
+   "gercek_tepe_4x_dBTP": -6.23,
+   "rms_yuksek_bolum_dBFS": -14.84,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -11.42,
+   "en_yuksek_200ms_K_agirlikli_dB": -10.35,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -14.84,
+   "yuksek_bolum_suresi_sn": 1.495,
+   "kazanc_dB": -4.7244,
+   "sonu_fade": true,
+   "bitis_turu": "fade-out",
+   "fade_in_ms": 5,
+   "fade_out_ms": 200,
+   "ses_baslangici_sn": 0.012,
+   "vurgu_sn": 0.3,
+   "ic_baslangiclar_sn": [
+    0.013
+   ],
+   "ic_bitisler_sn": [
+    1.753
+   ],
+   "dogal_uzunluk_sn": 1.981,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -44.2,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -41.1,
+   "spektral": {
+    "duzluk_medyan": 0.0,
+    "agirlik_merkezi_hz": 1460,
+    "baskin_tepe_medyan_hz": 1472,
+    "sabit_ton_en_uzun_sn": 0.319,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.015,
+    "sessizlik_orani": 0.008
+   },
+   "bayraklar": [],
+   "notlar": [
+    "aynı ötüş tekrar (kayıtta tek ötüş var)",
+    "doğal uzunluk 1.99 sn (1.85 sn sınırını aşıyor): son 200 ms fade-out; kaynağın son 143 ms'si kesildi (kesim noktasında düzey tepeye göre -7 dB)",
+    "tam (kırpılmamış) doğal uzunluk için dosya 2.02 sn olurdu; istenirse 03_kes.py içinde MAKS büyütülerek yeniden üretilebilir"
+   ]
+  },
+  "ordek_1.wav": {
+   "hayvan": "ordek",
+   "cagri_no": 1,
+   "kaynak_dosya": "yeni/ses/alternatif/ordek_2.mp3",
+   "kirpma_sn": [
+    0.3811,
+    1.6982
+   ],
+   "kirpma_ornek": [
+    16806,
+    74891
+   ],
+   "sure_sn": 1.317,
+   "tepe_dBFS": -1.73,
+   "gercek_tepe_4x_dBTP": -1.69,
+   "rms_yuksek_bolum_dBFS": -15.73,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -14.16,
+   "en_yuksek_200ms_K_agirlikli_dB": -11.12,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -15.92,
+   "yuksek_bolum_suresi_sn": 0.555,
+   "kazanc_dB": -2.2746,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.01,
+   "vurgu_sn": 0.081,
+   "ic_baslangiclar_sn": [
+    0.017,
+    0.811
+   ],
+   "ic_bitisler_sn": [
+    0.359,
+    1.155
+   ],
+   "dogal_uzunluk_sn": 1.278,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -46.5,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -44.3,
+   "spektral": {
+    "duzluk_medyan": 0.023,
+    "agirlik_merkezi_hz": 2050,
+    "baskin_tepe_medyan_hz": 1935,
+    "sabit_ton_en_uzun_sn": 0.07,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.04,
+    "sessizlik_orani": 0.109
+   },
+   "bayraklar": [],
+   "notlar": [
+    "vak vak: 1. ve 2. vaklama",
+    "doğal bitiş: zarf eşiğin (-50 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  },
+  "ordek_2.wav": {
+   "hayvan": "ordek",
+   "cagri_no": 2,
+   "kaynak_dosya": "yeni/ses/alternatif/ordek_2.mp3",
+   "kirpma_sn": [
+    1.9715,
+    3.3026
+   ],
+   "kirpma_ornek": [
+    86942,
+    145643
+   ],
+   "sure_sn": 1.331,
+   "tepe_dBFS": -2.41,
+   "gercek_tepe_4x_dBTP": -2.23,
+   "rms_yuksek_bolum_dBFS": -15.67,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -15.22,
+   "en_yuksek_200ms_K_agirlikli_dB": -11.76,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -15.86,
+   "yuksek_bolum_suresi_sn": 0.515,
+   "kazanc_dB": -2.8201,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.011,
+   "vurgu_sn": 0.045,
+   "ic_baslangiclar_sn": [
+    0.017,
+    0.841
+   ],
+   "ic_bitisler_sn": [
+    0.345,
+    1.145
+   ],
+   "dogal_uzunluk_sn": 1.291,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -43.7,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -41.2,
+   "spektral": {
+    "duzluk_medyan": 0.031,
+    "agirlik_merkezi_hz": 2086,
+    "baskin_tepe_medyan_hz": 1941,
+    "sabit_ton_en_uzun_sn": 0.041,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.12,
+    "sessizlik_orani": 0.127
+   },
+   "bayraklar": [],
+   "notlar": [
+    "vak vak: 3. ve 4. vaklama (farklı çift, aynı kayıt)",
+    "doğal bitiş: zarf eşiğin (-50 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  },
+  "kopek_1.wav": {
+   "hayvan": "kopek",
+   "cagri_no": 1,
+   "kaynak_dosya": "yeni/ses/alternatif/kopek_1.mp3",
+   "kirpma_sn": [
+    0.0828,
+    0.8342
+   ],
+   "kirpma_ornek": [
+    3651,
+    36787
+   ],
+   "sure_sn": 0.751,
+   "tepe_dBFS": -2.24,
+   "gercek_tepe_4x_dBTP": -2.24,
+   "rms_yuksek_bolum_dBFS": -13.07,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -17.49,
+   "en_yuksek_200ms_K_agirlikli_dB": -13.79,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -13.12,
+   "yuksek_bolum_suresi_sn": 0.31,
+   "kazanc_dB": -0.6629,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.012,
+   "vurgu_sn": 0.028,
+   "ic_baslangiclar_sn": [
+    0.014,
+    0.421
+   ],
+   "ic_bitisler_sn": [
+    0.168,
+    0.6
+   ],
+   "dogal_uzunluk_sn": 0.709,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -57.8,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -53.7,
+   "spektral": {
+    "duzluk_medyan": 0.001,
+    "agirlik_merkezi_hz": 642,
+    "baskin_tepe_medyan_hz": 475,
+    "sabit_ton_en_uzun_sn": 0.023,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.02,
+    "sessizlik_orani": 0.026
+   },
+   "bayraklar": [],
+   "notlar": [
+    "hav hav: 1. ve 2. havlama",
+    "doğal bitiş: zarf eşiğin (-49 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma",
+    "kısa patlamalı ses: yüksek-bölüm RMS'i diğerleriyle eşit, ama 200 ms pencerede en yüksek düzeyi ortancadan 2.8 dB düşük (400 ms anlık düzeyde -17.5 LUFS). Mikste zayıf kalırsa +1..+3 dB verilebilir; tepe payı 2.2 dB"
+   ]
+  },
+  "kopek_2.wav": {
+   "hayvan": "kopek",
+   "cagri_no": 2,
+   "kaynak_dosya": "yeni/ses/alternatif/kopek_1.mp3",
+   "kirpma_sn": [
+    1.8837,
+    2.688
+   ],
+   "kirpma_ornek": [
+    83071,
+    118539
+   ],
+   "sure_sn": 0.804,
+   "tepe_dBFS": -2.18,
+   "gercek_tepe_4x_dBTP": -2.18,
+   "rms_yuksek_bolum_dBFS": -13.16,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -17.34,
+   "en_yuksek_200ms_K_agirlikli_dB": -13.64,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -13.19,
+   "yuksek_bolum_suresi_sn": 0.285,
+   "kazanc_dB": -0.9787,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.012,
+   "vurgu_sn": 0.028,
+   "ic_baslangiclar_sn": [
+    0.013,
+    0.476
+   ],
+   "ic_bitisler_sn": [
+    0.185,
+    0.633
+   ],
+   "dogal_uzunluk_sn": 0.762,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -58.4,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -54.4,
+   "spektral": {
+    "duzluk_medyan": 0.003,
+    "agirlik_merkezi_hz": 678,
+    "baskin_tepe_medyan_hz": 479,
+    "sabit_ton_en_uzun_sn": 0.041,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.075,
+    "sessizlik_orani": 0.117
+   },
+   "bayraklar": [],
+   "notlar": [
+    "hav hav: 3. ve 4. havlama (farklı çift, aynı kayıt)",
+    "doğal bitiş: zarf eşiğin (-49 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma",
+    "kısa patlamalı ses: yüksek-bölüm RMS'i diğerleriyle eşit, ama 200 ms pencerede en yüksek düzeyi ortancadan 2.7 dB düşük (400 ms anlık düzeyde -17.3 LUFS). Mikste zayıf kalırsa +1..+3 dB verilebilir; tepe payı 2.2 dB"
+   ]
+  },
+  "kedi_1.wav": {
+   "hayvan": "kedi",
+   "cagri_no": 1,
+   "kaynak_dosya": "yeni/ses/alternatif/kedi_1.mp3",
+   "kirpma_sn": [
+    0.006,
+    0.7723
+   ],
+   "kirpma_ornek": [
+    263,
+    34059
+   ],
+   "sure_sn": 0.766,
+   "tepe_dBFS": -3.9,
+   "gercek_tepe_4x_dBTP": -3.87,
+   "rms_yuksek_bolum_dBFS": -14.34,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -14.31,
+   "en_yuksek_200ms_K_agirlikli_dB": -11.35,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -14.35,
+   "yuksek_bolum_suresi_sn": 0.275,
+   "kazanc_dB": 6.3064,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.012,
+   "vurgu_sn": 0.402,
+   "ic_baslangiclar_sn": [
+    0.014
+   ],
+   "ic_bitisler_sn": [
+    0.652
+   ],
+   "dogal_uzunluk_sn": 0.724,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -39.1,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -32.1,
+   "spektral": {
+    "duzluk_medyan": 0.005,
+    "agirlik_merkezi_hz": 1510,
+    "baskin_tepe_medyan_hz": 1450,
+    "sabit_ton_en_uzun_sn": 0.058,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.01,
+    "sessizlik_orani": 0.013
+   },
+   "bayraklar": [
+    "uğultu: kaynakta 150 Hz altı uğultu var; tam bant zemin yüksek bölümün 32 dB altında (150 Hz üstünde 39 dB altında). Çağrının kendi enerjisinin 100 Hz altındaki payı çok küçük (ölçülen: toplamın 27-41 dB altı); istenirse miks sırasında ~120 Hz yüksek geçiren süzgeçle temizlenebilir"
+   ],
+   "notlar": [
+    "birinci miyav",
+    "doğal bitiş: zarf eşiğin (-55 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  },
+  "kedi_2.wav": {
+   "hayvan": "kedi",
+   "cagri_no": 2,
+   "kaynak_dosya": "yeni/ses/alternatif/kedi_1.mp3",
+   "kirpma_sn": [
+    1.8318,
+    2.5323
+   ],
+   "kirpma_ornek": [
+    80783,
+    111675
+   ],
+   "sure_sn": 0.7,
+   "tepe_dBFS": -3.63,
+   "gercek_tepe_4x_dBTP": -3.59,
+   "rms_yuksek_bolum_dBFS": -15.89,
+   "rms_yuksek_bolum_K_agirlikli_dB": -12.69,
+   "anlik_maks_LUFS": -12.9,
+   "en_yuksek_200ms_K_agirlikli_dB": -10.61,
+   "rms_telefon_bandi_300_8000Hz_dBFS": -15.91,
+   "yuksek_bolum_suresi_sn": 0.51,
+   "kazanc_dB": 10.1063,
+   "sonu_fade": false,
+   "bitis_turu": "doğal bitiş",
+   "fade_in_ms": 5,
+   "fade_out_ms": 30,
+   "ses_baslangici_sn": 0.012,
+   "vurgu_sn": 0.034,
+   "ic_baslangiclar_sn": [
+    0.013
+   ],
+   "ic_bitisler_sn": [
+    0.666
+   ],
+   "dogal_uzunluk_sn": 0.659,
+   "arka_plan_150Hz_ustu_yuksek_bolume_gore_dB": -32.9,
+   "arka_plan_tam_bant_yuksek_bolume_gore_dB": -25.0,
+   "spektral": {
+    "duzluk_medyan": 0.005,
+    "agirlik_merkezi_hz": 1667,
+    "baskin_tepe_medyan_hz": 1581,
+    "sabit_ton_en_uzun_sn": 0.116,
+    "genisbant_gurultu_en_uzun_sn": 0.0,
+    "sessizlik_en_uzun_sn": 0.0,
+    "sessizlik_orani": 0.0
+   },
+   "bayraklar": [
+    "arka-plan: kaynakta çağrının hemen yanındaki zemin (150 Hz üstü) yüksek bölümün yalnız 33 dB altında (hışırtı/ortam sesi duyulabilir)",
+    "uğultu: kaynakta 150 Hz altı uğultu var; tam bant zemin yüksek bölümün 25 dB altında (150 Hz üstünde 33 dB altında). Çağrının kendi enerjisinin 100 Hz altındaki payı çok küçük (ölçülen: toplamın 27-41 dB altı); istenirse miks sırasında ~120 Hz yüksek geçiren süzgeçle temizlenebilir"
+   ],
+   "notlar": [
+    "ikinci (farklı) miyav, aynı kayıt",
+    "doğal bitiş: zarf eşiğin (-53 dBFS, kaynakta) altına düştükten sonra 30 ms yumuşatma"
+   ]
+  }
+ }
+}

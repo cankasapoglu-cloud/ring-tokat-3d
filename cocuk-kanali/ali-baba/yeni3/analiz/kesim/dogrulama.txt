@@ -1,0 +1,73 @@
+== 1) YAPI ==
+kita 7, dize 28, kelime 108, hece 226
+
+== 2) ZAMAN TUTARLILIGI ==
+en kisa hece: 90 ms (K7 L3 di)
+kelime siniri - yazi dokumu boslugu: 80 sinirin 66'i boslugun icinde; disarida kalanlarin en buyuk 5 sapmasi:
+   26 ms  K4 L1 Baba'nın|bir t=47.326 bosluk=[47.26,47.30]
+   24 ms  K7 L4 bak|dinle t=93.476 bosluk=[93.50,93.62]
+   15 ms  K5 L1 Baba'nın|bir t=60.255 bosluk=[60.20,60.24]
+   15 ms  K3 L1 Baba'nın|bir t=33.875 bosluk=[33.82,33.86]
+   14 ms  K6 L1 Baba'nın|bir t=74.734 bosluk=[74.68,74.72]
+
+== 3) KESIM NOKTALARI: +-3 ms RMS (dBFS), ham WAV ==
+K1  L1: giris 6.158 (-91 dB) cikis 8.226 (-51 dB) | L2: giris 8.226 (-51 dB) cikis 10.319 (-63 dB) | L3+4: giris 10.319 (-63 dB) cikis 14.894 (-86 dB) |
+K2  L1: giris 18.576 (-83 dB) cikis 20.623 (-91 dB) | L2: giris 20.623 (-91 dB) cikis 22.674 (-90 dB) | L3+4: giris 22.674 (-90 dB) cikis 26.839 (-87 dB) |
+K3  L1: giris 33.071 (-108 dB) cikis 35.122 (-70 dB) | L2: giris 35.122 (-70 dB) cikis 37.202 (-84 dB) | L3+4: giris 37.202 (-84 dB) cikis 41.703 (-88 dB) |
+K4  L1: giris 46.494 (-91 dB) cikis 48.563 (-62 dB) | L2: giris 48.563 (-62 dB) cikis 50.656 (-59 dB) | L3+4: giris 50.656 (-59 dB) cikis 54.776 (-93 dB) |
+K5  L1: giris 59.403 (-91 dB) cikis 61.495 (-72 dB) | L2: giris 61.495 (-72 dB) cikis 63.578 (-72 dB) | L3+4: giris 63.578 (-72 dB) cikis 67.666 (-91 dB) |
+K6  L1: giris 73.922 (-91 dB) cikis 75.973 (-82 dB) | L2: giris 75.973 (-82 dB) cikis 78.033 (-68 dB) | L3+4: giris 78.033 (-68 dB) cikis 82.293 (-87 dB) |
+K7  L1: giris 86.316 (-91 dB) cikis 88.394 (-74 dB) | L2: giris 88.394 (-74 dB) cikis 90.343 (-65 dB) | L3+4: giris 90.343 (-65 dB) cikis 95.036 (-86 dB) |
+L3|L4 ic sinirlarinin duzeyi (kesim noktasi DEGIL): K1 -23 dB, K2 -25 dB, K3 -28 dB, K4 -26 dB, K5 -22 dB, K6 -37 dB, K7 -29 dB
+
+== 4) PERDE (hece cekirdegi ortancasi, MIDI; E4=64 D4=62 C4=60) ==
+K1  L1 ort 63.99 [61.8..65.0] | L2 ort 63.95 [63.6..65.1] | L3 ort 63.94 [62.8..64.8] | L4 ort 61.84 [60.1..63.5] |
+K2  L1 ort 63.97 [62.3..65.0] | L2 ort 63.78 [63.5..65.2] | L3 ort 63.95 [63.6..64.4] | L4 ort 61.75 [60.1..63.8] |
+K3  L1 ort 64.06 [62.0..65.4] | L2 ort 64.23 [63.9..64.4] | L3 ort 63.83 [63.2..65.2] | L4 ort 61.76 [59.9..63.8] |
+K4  L1 ort 64.08 [61.8..65.0] | L2 ort 64.04 [63.7..64.7] | L3 ort 63.85 [62.1..64.9] | L4 ort 61.89 [60.0..63.9] |
+K5  L1 ort 64.10 [62.1..65.2] | L2 ort 64.06 [63.8..64.5] | L3 ort 63.88 [62.2..64.8] | L4 ort 61.91 [59.9..64.2] |
+K6  L1 ort 64.00 [61.6..65.2] | L2 ort 63.99 [63.9..65.0] | L3 ort 63.80 [62.1..64.1] | L4 ort 62.13 [60.2..63.5] |
+K7  L1 ort 63.87 [62.6..65.3] | L2 ort 64.22 [63.9..65.1] | L3 ort 63.80 [62.8..64.3] | L4 ort 61.97 [59.6..64.2] |
+harvest - dio(stonemask) cekirdek ortancasi farki: ortanca 0.020, en buyuk 0.91 yarim ses (K3 L2 a)
+K1 L1 yeniden olcum (yalniz o dize uzerinde harvest): en buyuk fark 0.118 yarim ses
+L4 son 'bak' perdeleri: K1 C4+6 cent, K2 C4+6 cent, K3 C4-15 cent, K4 C4+1 cent, K5 C4+28 cent, K6 D4+11 cent, K7 C4-41 cent
+
+== 5) BAYRAKLAR ==
+kuralla konan sinir (FLAG): 14 kelime, 28 hece -> ['Çiftliğinde', 'çiftliği']
+sinir turleri: {'dip': 164, 'midpoint': 14, 'spectral': 27}
+kor tepe sayimi tutmayan kelime: 29 (bunlar orantili bolunmedi; hizalama destekli olcutlerle bolundu)
+
+== 6) GURULTU TABANI (ham WAV) ==
+bosluk RMS -86.4 dBFS, soylenen RMS -18.0 dBFS -> -68.4 dB (json: -68.4)
+bosluklarin ortanca RMS'i -90.3 dBFS (16 bit 1 LSB = -90.3 dBFS); en gurultulu bosluk -80.1 dBFS, tepe -54.3 dBFS
+dize ici otumsuz kapanislar (34 adet): ortanca -61.0 dBFS, ceyrekler [-74.4, -51.8], en yuksek -36.9 dBFS
+son kelimeden sonra sonme suresi (ms): [375.1, 203.5, 578.7, 217.6, 179.6, 327.2, 365.2]
+
+== 7) 6. KITA ONARIMI ==
+Köpekler   kapanis 78.4916-78.5375 (46 ms), ek ani 78.5146, +-2 ms RMS -75.6 dBFS, +-2 ms tepe -68.0 dBFS
+ördekleri  kapanis 77.2085-77.2444 (36 ms), ek ani 77.2265, +-2 ms RMS -73.8 dBFS, +-2 ms tepe -66.8 dBFS
+'köpek' parcasi 0.468 s, MIDI 62.08 | 'ördek' parcasi 0.389 s, MIDI 63.82 | sure farki +79 ms
+   hece perdeleri: Kö 62.06, pek 63.89, ör 63.95, dek 63.99
+on kesim (de|ör) 76.8374: duzey -16.9 dBFS (sessiz DEGIL, kisa sonumleme gerekir)
+   ek 'kapanis->Kö': +-2 ms tepe -60.8 dBFS, ornekler arasi sicrama 0.00076
+   ek 'köpe->k+leri': +-2 ms tepe -68.0 dBFS, ornekler arasi sicrama 0.00006
+   deneme dosyasi: ornek/k6_l2_kopekleri_deneme.wav  (2.192 s; asil L2 parcasi 2.059 s)  -- DINLENMEDI
+L4 vericisi: K1 (puanlar: K1 3.49, K2 3.89, K4 3.99, K5 6.05, K7 6.39, K3 3.95 (uygun degil))
+   deneme dosyasi: ornek/k6_l3_l4_verici_k1_deneme.wav (4.623 s; asil L3+L4 parcasi 4.260 s; 10 ms capraz gecis) -- DINLENMEDI
+   K1 L4: kelime MIDI [62.09, 61.72, 60.22, 59.98] | sure 2.183 s | ort. hece tepesi -13.8 dBFS | fazladan ses: False
+   K2 L4: kelime MIDI [61.76, 61.47, 60.15, 59.95] | sure 1.974 s | ort. hece tepesi -14.4 dBFS | fazladan ses: False
+   K3 L4: kelime MIDI [62.05, 61.71, 60.56, 59.77] | sure 2.337 s | ort. hece tepesi -14.6 dBFS | fazladan ses: True
+   K4 L4: kelime MIDI [62.02, 60.75, 60.03, 59.96] | sure 1.994 s | ort. hece tepesi -17.0 dBFS | fazladan ses: False
+   K5 L4: kelime MIDI [62.0, 62.06, 59.86, 59.75] | sure 1.958 s | ort. hece tepesi -12.2 dBFS | fazladan ses: False
+   K6 L4: kelime MIDI [62.32, 62.03, 60.57, 62.11] | sure 2.077 s | ort. hece tepesi -15.2 dBFS | fazladan ses: False
+   K7 L4: kelime MIDI [62.26, 61.98, 60.24, 59.59] | sure 2.091 s | ort. hece tepesi -17.1 dBFS | fazladan ses: False
+K3 L4 fazladan ses 41.388-41.590 s (MIDI 58.59, tepe -19.3 dBFS); ondan onceki temiz kesim 41.3171 (+-3 ms RMS -64.7 dBFS)
+
+== 8) TEKRAR EDEN DIZELERDE HECE SURESI TUTARLILIGI (7 kita) ==
+L1           ortanca sure (ms): [116, 132, 142, 120, 285, 198, 259, 184, 114, 469] | ortancadan en buyuk sapma (ms): [36, 38, 16, 18, 22, 10, 52, 52, 18, 179]
+L4           ortanca sure (ms): [297, 216, 509, 311, 230] | ortancadan en buyuk sapma (ms): [18, 34, 82, 94, 40]
+Çiftliğinde  ortanca sure (ms): [250, 200, 329, 134] | ortancadan en buyuk sapma (ms): [58, 58, 72, 72]
+L4 unlu baslangiclari (ilk heceye gore, ms) ortanca [0, 265, 521, 1050, 1301, 1553], yayilim (en buyuk-en kucuk) [0, 12, 6, 92, 12, 20]
+
+SONUC: TUM KONTROLLER GECTI
+Not: bu kontroller olcumdur; ses kulakla dinlenmedi.
