@@ -1,0 +1,318 @@
+{
+ "model": "eleven_text_to_sound_v3",
+ "flow_id": "qdvipqwtDeWv5QJDVnRV",
+ "kredi_toplam": 476,
+ "kredi_not": "7 çağrı x 4 varyasyon x ~16,67 kredi (çağrı başına 68). Seçilmeyen varyasyonlar ses/alternatif/ içinde.",
+ "sesler": {
+  "inek": {
+   "dosya": "ses/inek.mp3",
+   "kaynak_varyasyon": "inek_2",
+   "prompt": "A real cow mooing twice, clear and close, farm recording",
+   "sure_sn": 6.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.96,
+     1.98
+    ],
+    [
+     3.98,
+     5.02
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.96,
+    5.02
+   ],
+   "kirpma_sn": [
+    [
+     0.9,
+     2.06
+    ]
+   ],
+   "kirpilmis_dosya": "ses/kirpilmis/inek.wav",
+   "kirpilmis_sure_sn": 1.16,
+   "demo_yerlesim_sn": [
+    19.42,
+    20.58
+   ],
+   "bosluk_sn": [
+    19.048,
+    20.952
+   ],
+   "kita": 1,
+   "demo_seviye": {
+    "ses_rms_dBFS": -15.6,
+    "altyapi_bosluk_rms_dBFS": -30.8,
+    "fark_dB": 15.3
+   }
+  },
+  "koyun": {
+   "dosya": "ses/koyun.mp3",
+   "kaynak_varyasyon": "koyun_1",
+   "prompt": "A real sheep bleating twice (baa, baa), clear and close",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     1.13,
+     2.3
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    1.13,
+    2.3
+   ],
+   "kirpma_sn": [
+    [
+     1.07,
+     2.36
+    ]
+   ],
+   "kirpilmis_dosya": "ses/kirpilmis/koyun.wav",
+   "kirpilmis_sure_sn": 1.29,
+   "demo_yerlesim_sn": [
+    38.402,
+    39.692
+   ],
+   "bosluk_sn": [
+    38.095,
+    40.0
+   ],
+   "kita": 2,
+   "demo_seviye": {
+    "ses_rms_dBFS": -16.0,
+    "altyapi_bosluk_rms_dBFS": -30.8,
+    "fark_dB": 14.8
+   }
+  },
+  "at": {
+   "dosya": "ses/at.mp3",
+   "kaynak_varyasyon": "at_4",
+   "prompt": "A real horse neighing (whinny) once, clear and close",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.07,
+     1.83
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.07,
+    1.83
+   ],
+   "kirpma_sn": [
+    [
+     0.02,
+     1.9
+    ]
+   ],
+   "kirpilmis_dosya": "ses/kirpilmis/at.wav",
+   "kirpilmis_sure_sn": 1.88,
+   "demo_yerlesim_sn": [
+    57.156,
+    59.036
+   ],
+   "bosluk_sn": [
+    57.143,
+    59.048
+   ],
+   "kita": 3,
+   "demo_seviye": {
+    "ses_rms_dBFS": -15.4,
+    "altyapi_bosluk_rms_dBFS": -30.9,
+    "fark_dB": 15.5
+   }
+  },
+  "horoz": {
+   "dosya": "ses/horoz.mp3",
+   "kaynak_varyasyon": "horoz_4",
+   "prompt": "A real rooster crowing once (cock-a-doodle-doo), clear and close",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.12,
+     0.3
+    ],
+    [
+     0.39,
+     2.06
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.12,
+    2.06
+   ],
+   "kirpma_sn": [
+    [
+     0.07,
+     2.1
+    ]
+   ],
+   "kirpilmis_dosya": "ses/kirpilmis/horoz.wav",
+   "kirpilmis_sure_sn": 2.03,
+   "demo_yerlesim_sn": [
+    76.095,
+    78.125
+   ],
+   "bosluk_sn": [
+    76.19,
+    78.095
+   ],
+   "kita": 4,
+   "demo_seviye": {
+    "ses_rms_dBFS": -15.4,
+    "altyapi_bosluk_rms_dBFS": -30.8,
+    "fark_dB": 15.4
+   }
+  },
+  "ordek": {
+   "dosya": "ses/ordek.mp3",
+   "kaynak_varyasyon": "ordek_2",
+   "prompt": "A real duck quacking three times, clear and close",
+   "sure_sn": 5.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.4,
+     0.74
+    ],
+    [
+     1.19,
+     1.54
+    ],
+    [
+     1.99,
+     2.32
+    ],
+    [
+     2.81,
+     3.12
+    ],
+    [
+     3.55,
+     3.86
+    ],
+    [
+     4.31,
+     4.6
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.4,
+    4.6
+   ],
+   "kirpma_sn": [
+    [
+     0.35,
+     2.38
+    ]
+   ],
+   "kirpilmis_dosya": "ses/kirpilmis/ordek.wav",
+   "kirpilmis_sure_sn": 2.03,
+   "demo_yerlesim_sn": [
+    95.143,
+    97.173
+   ],
+   "bosluk_sn": [
+    95.238,
+    97.143
+   ],
+   "kita": 5,
+   "demo_seviye": {
+    "ses_rms_dBFS": -19.2,
+    "altyapi_bosluk_rms_dBFS": -30.8,
+    "fark_dB": 11.6
+   }
+  },
+  "kopek": {
+   "dosya": "ses/kopek.mp3",
+   "kaynak_varyasyon": "kopek_2",
+   "prompt": "A friendly dog barking twice, clear and close",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.1,
+     0.25
+    ],
+    [
+     1.51,
+     1.7
+    ],
+    [
+     2.13,
+     2.33
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.1,
+    2.33
+   ],
+   "kirpma_sn": [
+    [
+     1.46,
+     2.39
+    ]
+   ],
+   "kirpilmis_dosya": "ses/kirpilmis/kopek.wav",
+   "kirpilmis_sure_sn": 0.93,
+   "demo_yerlesim_sn": [
+    114.773,
+    115.703
+   ],
+   "bosluk_sn": [
+    114.286,
+    116.19
+   ],
+   "kita": 6,
+   "demo_seviye": {
+    "ses_rms_dBFS": -18.8,
+    "altyapi_bosluk_rms_dBFS": -30.9,
+    "fark_dB": 12.1
+   }
+  },
+  "kedi": {
+   "dosya": "ses/kedi.mp3",
+   "kaynak_varyasyon": "kedi_1",
+   "prompt": "A real cat meowing twice, cute, clear and close",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.02,
+     0.66
+    ],
+    [
+     1.85,
+     2.4
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.02,
+    2.4
+   ],
+   "kirpma_sn": [
+    [
+     0.0,
+     0.72
+    ],
+    [
+     1.8,
+     2.46
+    ]
+   ],
+   "kirpilmis_dosya": "ses/kirpilmis/kedi.wav",
+   "kirpilmis_sure_sn": 1.5,
+   "demo_yerlesim_sn": [
+    133.536,
+    135.036
+   ],
+   "bosluk_sn": [
+    133.333,
+    135.238
+   ],
+   "kita": 7,
+   "demo_seviye": {
+    "ses_rms_dBFS": -16.9,
+    "altyapi_bosluk_rms_dBFS": -30.8,
+    "fark_dB": 13.9
+   }
+  }
+ }
+}
