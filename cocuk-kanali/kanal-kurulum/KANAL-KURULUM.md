@@ -297,6 +297,10 @@ Ali Baba'nın bir çiftliği var
 (kedi sesi) diye bağırır
 Çiftliğinde Ali Baba'nın
 
+Söz: Mustafa Erdoğan Çaplı
+Ezgi: Old MacDonald Had a Farm (anonim)
+Düzenleme, kayıt ve çizimler: DuDeK Stüdyo
+
 DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
 #DuDeKStüdyo #çocukşarkıları #bebekşarkıları
@@ -675,6 +679,8 @@ Bu hukuki görüş değildir. Karar sizindir.
 1. Olduğu gibi yüklersiniz; riski bilerek.
 2. Bu videoyu bekletirsiniz. İlk gün onun yerine Beş Küçük Maymun yüklenir. Kesin cevap için bir telif avukatına ya da müzik eseri sahiplerinin meslek birliğine (örneğin MESAM) sorulabilir.
 3. Aynı ezgiye yeni, bize ait sözler yazılır ve video yeniden seslendirilir. Bu ücretli ses üretimi gerektirir; siz istemeden yapılmaz.
+
+**Kanal sahibinin kararı (22 Kasım 2026):** video, açıklamasında söz sahibi belirtilerek yüklenir: "Söz: Mustafa Erdoğan Çaplı". Ad yazmak izin almış olmak anlamına gelmez; telif talebi yine de gelebilir. Gelirse video silinmeden önce Claude'a haber verin.
 
 ### 4.5 Telif eşleşmesi (Content ID) yine de gelebilir
 
