@@ -1,0 +1,122 @@
+{
+ "parmak-ailesi__coskulu_1": {
+  "karar": "begendi",
+  "gerekce": "parmak ailesi için seçilen coşkulu kayıt (beş ad da doğru)",
+  "dokum": "Scribe (onbellek)",
+  "vokal_f0_medyan_hz": 330,
+  "parmak_r_vekili_db": {
+   "n": 11,
+   "medyan": 4.7,
+   "p25": 2.9,
+   "p75": 5.0
+  },
+  "buradayim_son_unlu_on_art_db": {
+   "n": 11,
+   "medyan": 12.5,
+   "p25": 8.7,
+   "p75": 14.1
+  },
+  "sozcuk_suresi_sn": {
+   "buradayım": [
+    0.52,
+    0.15,
+    11
+   ],
+   "neredesin": [
+    0.72,
+    0.2,
+    5
+   ],
+   "merhaba": [
+    0.64,
+    0.13,
+    6
+   ],
+   "parmak": [
+    0.56,
+    0.05,
+    11
+   ]
+  }
+ },
+ "parmak-ailesi__duzgun_1": {
+  "karar": "reddetti",
+  "gerekce": "'çok kötü söylüyor, Türkçe konuşan bir İngiliz gibi' (yabancı aksan)",
+  "dokum": "eski *_words.json",
+  "vokal_f0_medyan_hz": 391,
+  "parmak_r_vekili_db": {
+   "n": 11,
+   "medyan": 5.1,
+   "p25": 4.8,
+   "p75": 6.1
+  },
+  "buradayim_son_unlu_on_art_db": {
+   "n": 9,
+   "medyan": 3.9,
+   "p25": 1.1,
+   "p75": 5.5
+  },
+  "sozcuk_suresi_sn": {
+   "buradayım": [
+    1.44,
+    0.01,
+    9
+   ],
+   "neredesin": [
+    1.14,
+    0.32,
+    5
+   ],
+   "merhaba": [
+    1.87,
+    0.02,
+    4
+   ],
+   "parmak": [
+    0.68,
+    0.06,
+    11
+   ]
+  }
+ },
+ "parmak-ailesi__yavas_2": {
+  "karar": "reddetti",
+  "gerekce": "sözler yanlış (3. kıtada 'anne parmak') ve 'ninni gibi söylüyor, coşku yok'",
+  "dokum": "eski *_words.json",
+  "vokal_f0_medyan_hz": 290,
+  "parmak_r_vekili_db": {
+   "n": 11,
+   "medyan": 2.7,
+   "p25": 2.2,
+   "p75": 4.5
+  },
+  "buradayim_son_unlu_on_art_db": {
+   "n": 10,
+   "medyan": 16.1,
+   "p25": 12.7,
+   "p75": 18.5
+  },
+  "sozcuk_suresi_sn": {
+   "buradayım": [
+    1.06,
+    0.02,
+    10
+   ],
+   "neredesin": [
+    1.54,
+    0.05,
+    5
+   ],
+   "merhaba": [
+    1.1,
+    0.18,
+    5
+   ],
+   "parmak": [
+    0.64,
+    0.06,
+    11
+   ]
+  }
+ }
+}
