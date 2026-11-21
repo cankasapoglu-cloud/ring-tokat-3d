@@ -1,0 +1,161 @@
+{
+ "el-yikama__coskulu_2": {
+  "cakisan": 1,
+  "hayvan_olayi_icinde": 0,
+  "hayvan_olayi_sayisi": 0,
+  "zamanlar": [
+   [
+    8.8,
+    "F#4",
+    "akor sesine yarim ses komsu"
+   ]
+  ]
+ },
+ "ali-baba__demo_altyapi_sesli": {
+  "cakisan": 3,
+  "hayvan_olayi_icinde": 0,
+  "hayvan_olayi_sayisi": 0,
+  "zamanlar": [
+   [
+    18.16,
+    "E3",
+    "-40 cent detone"
+   ],
+   [
+    20.06,
+    "E3",
+    "-36 cent detone"
+   ],
+   [
+    137.94,
+    "G5",
+    "gam disi"
+   ]
+  ]
+ },
+ "ali-baba__ornek_kita1": {
+  "cakisan": 2,
+  "hayvan_olayi_icinde": 2,
+  "hayvan_olayi_sayisi": 1,
+  "zamanlar": [
+   [
+    18.21,
+    "E3",
+    "-43 cent detone"
+   ],
+   [
+    20.06,
+    "E3",
+    "-39 cent detone"
+   ]
+  ]
+ },
+ "ali-baba__sarki_birlesik": {
+  "cakisan": 3,
+  "hayvan_olayi_icinde": 3,
+  "hayvan_olayi_sayisi": 7,
+  "zamanlar": [
+   [
+    21.74,
+    "E3",
+    "-40 cent detone"
+   ],
+   [
+    23.65,
+    "E3",
+    "-37 cent detone"
+   ],
+   [
+    141.52,
+    "G5",
+    "gam disi"
+   ]
+  ]
+ },
+ "ali-baba__dogal_onizleme": {
+  "cakisan": 4,
+  "hayvan_olayi_icinde": 2,
+  "hayvan_olayi_sayisi": 7,
+  "zamanlar": [
+   [
+    20.91,
+    "E3",
+    "akor sesine yarim ses komsu + -37 cent detone"
+   ],
+   [
+    71.28,
+    "F#5",
+    "gam disi"
+   ],
+   [
+    73.34,
+    "F#5",
+    "gam disi"
+   ],
+   [
+    122.05,
+    "G5",
+    "+38 cent detone"
+   ]
+  ]
+ },
+ "parmak-ailesi__duzgun_1": {
+  "cakisan": 8,
+  "hayvan_olayi_icinde": 0,
+  "hayvan_olayi_sayisi": 0,
+  "zamanlar": [
+   [
+    13.12,
+    "F4",
+    "gam disi"
+   ],
+   [
+    14.7,
+    "F4",
+    "gam disi"
+   ],
+   [
+    29.33,
+    "C4",
+    "akor sesine yarim ses komsu"
+   ],
+   [
+    31.55,
+    "F4",
+    "gam disi"
+   ],
+   [
+    33.1,
+    "F4",
+    "gam disi"
+   ],
+   [
+    35.47,
+    "C4",
+    "akor sesine yarim ses komsu"
+   ],
+   [
+    45.39,
+    "F4",
+    "gam disi"
+   ],
+   [
+    46.99,
+    "F4",
+    "gam disi"
+   ]
+  ]
+ },
+ "el-yikama__sarki_1": {
+  "cakisan": 1,
+  "hayvan_olayi_icinde": 0,
+  "hayvan_olayi_sayisi": 0,
+  "zamanlar": [
+   [
+    59.12,
+    "E4",
+    "akor sesine yarim ses komsu"
+   ]
+  ]
+ }
+}

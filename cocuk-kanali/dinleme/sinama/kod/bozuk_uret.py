@@ -436,6 +436,12 @@ def main():
         mp3_yaz("b05_tik", y)
         return {"tur": "kusur", "no": 5, "kusur": "her 3 saniyede bir tik (0,18 ms, genlik 0,9; %d adet)" % len(z), "tik_zamanlari": z}
     yap("b05_tik", b05)
+
+    def b05b():
+        y, z = tik_ekle(karis(V), genlik=0.3)
+        mp3_yaz("b05b_tik_kisik", y)
+        return {"tur": "kusur", "no": 5, "kusur": "her 3 saniyede bir KISIK tik (0,18 ms, genlik 0,3; %d adet): tam olcege dayanmaz" % len(z), "tik_zamanlari": z}
+    yap("b05b_tik_kisik", b05b)
     # ---- 6) vokal duzeyi
     for ad, dbv in (("b06a_vokal_eksi6", -6.0), ("b06b_vokal_arti6", 6.0)):
         def f(dbv=dbv, ad=ad):

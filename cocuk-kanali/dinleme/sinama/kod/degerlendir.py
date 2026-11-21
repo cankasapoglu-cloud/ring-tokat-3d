@@ -4,13 +4,17 @@ hesaplar; her bozuk surumde hangi olcunun gurultunun kac kati oynadigini ve arac
 
 Cikti: dinleme/sinama/sinama.json  (sinama.md bu sayilardan elle yazilir; tablolar: sinama_tablolar.md)
 
-KARAR KURALLARI (kosulardan ONCE yazildi; sonuclara gore degistirilmedi)
+KARAR KURALLARI (kosulardan ONCE yazildi. Sonuclar gorulunce TEK duzeltme yapildi, asagida (*) ile isaretli)
 - Gurultu: kusursuz 5 kopya {asil, yeniden kodlanmis MP3, WAV, yeniden karisim, 1 dB kisik + 23 ms kaydirilmis} arasinda olcunun
   en buyuk - en kucuk degeri (aralik). Aralik 0 cikarsa olcunun yazim cozunurlugu taban alinir.
 - Fark: bozuk surum - taban (n3_yeniden_karisim; butun bozuk surumler ondan turetildi).
 - Kat: |fark| / gurultu.
-- "TEK RAPORLA YAKALANDI": aracin kendi ozetinde, kusurla ILGILI satirin durumu tabandakinden kotu (iyi/bilgi -> dikkat/sorun, dikkat -> sorun)
-  ya da ilgili turde yeni bir 'sorun' kaydi var. Claude tek dosyayi olcup raporu okudugunda gorecegi sey budur.
+- "TEK RAPORLA YAKALANDI": aracin kendi ozetinde, kusurla ILGILI satirin durumu kusursuz 5 kopyanin HEPSINDEKINDEN kotu
+  (iyi/bilgi -> dikkat/sorun, dikkat -> sorun) ya da ilgili turde, kusursuz kopyalarin hicbirinde olmayan sayida 'sorun' kaydi var.
+  Claude tek dosyayi olcup raporu okudugunda gorecegi sey budur.
+  (*) Ilk yazimda olcut "tabandakinden kotu" idi. 'Tepe' satiri asil kayitta zaten 'dikkat' (+0,5 dBTP), yeniden kodlanmis kopyalarda ise
+  yok (0,0 dBTP); vokale dokunan hemen her islem tepeyi 0'in ustune itip bu satiri yeniden cikariyor. Bunu "yakalandi" saymak yanlis olurdu;
+  olcut "kusursuz kopyalarin en kotusunden de kotu" olarak duzeltildi. Baska kural degismedi.
 - "KARSILASTIRMAYLA YAKALANDI": kusur icin ONCEDEN secilmis olculerden en az biri gurultunun 3 katindan fazla oynadi (kat >= 3).
   Yani yalniz iyi bilinen bir surumle yan yana olculurse gorulur.
 - "KACTI": ikisi de degil.
@@ -111,6 +115,8 @@ KUSUR = [
      "olcu": ["yapay_isaret", "oynaklik", "cok_duz", "gecis_ms", "vibrato", "izgara_R", "gecis"], "sorun": [], "denetim": "b04k_world_kontrol"},
     {"no": "5", "ad": "b05_tik", "kusur": "Her 3 saniyede bir tık (36 adet)", "satir": ["Kırpılma", "Tepe"],
      "olcu": ["tepe", "tam_olcek", "tepe_faktoru"], "sorun": ["kırpılma / sessizlik"]},
+    {"no": "5b", "ad": "b05b_tik_kisik", "kusur": "Her 3 saniyede bir kısık tık (36 adet, genlik 0,3)", "satir": ["Kırpılma", "Tepe"],
+     "olcu": ["tepe", "tam_olcek", "tepe_faktoru"], "sorun": ["kırpılma / sessizlik"]},
     {"no": "6a", "ad": "b06a_vokal_eksi6", "kusur": "Vokal 6 dB kısık", "satir": ["Vokal / altyapı dengesi"], "olcu": ["denge"], "sorun": ["gömük vokal"]},
     {"no": "6b", "ad": "b06b_vokal_arti6", "kusur": "Vokal 6 dB fazla açık", "satir": ["Vokal / altyapı dengesi"], "olcu": ["denge"], "sorun": []},
     {"no": "7", "ad": "b07_satir_sonu_kesik", "kusur": "Her satırın son sözcüğü 150 ms erken kesilmiş", "satir": ["Sözler"],
@@ -190,13 +196,20 @@ def main():
             fark[k] = {"taban": b, "bozuk": a, "fark": yuv(a - b, 4), "gurultu": g, "kat": yuv(abs(a - b) / g, 1)}
         # ozet satirlari
         kotulesen, hepsi = [], []
+        # karsilastirma kumesi: ayirma yolunda kusursuz 5 kopyanin hepsi; kanalli yolda yalniz kanalli taban
+        kume = [a for a in GURULTU_KUMESI if a in OZ] if taban == TABAN else [taban]
         for konu in set(OZ[ad]) | set(OZ[taban]):
-            d0, d1 = OZ[taban].get(konu), OZ[ad].get(konu)
-            if d1 is not None and SIRA.get(d1, 0) > SIRA.get(d0 or "iyi", 0):
-                hepsi.append({"konu": konu, "taban": d0, "bozuk": d1})
+            d1 = OZ[ad].get(konu)
+            en_kotu = max((OZ[a].get(konu) or "iyi" for a in kume), key=lambda d: SIRA.get(d, 0))
+            if d1 is not None and SIRA.get(d1, 0) > SIRA.get(en_kotu, 0):
+                hepsi.append({"konu": konu, "kusursuz_kopyalarin_en_kotusu": en_kotu if any(OZ[a].get(konu) for a in kume) else None, "bozuk": d1})
                 if konu in kusur["satir"]:
-                    kotulesen.append({"konu": konu, "taban": d0, "bozuk": d1})
-        st0, st1 = sorun_turleri(RJ[taban]), sorun_turleri(RJ[ad])
+                    kotulesen.append({"konu": konu, "kusursuz_kopyalarin_en_kotusu": en_kotu if any(OZ[a].get(konu) for a in kume) else None, "bozuk": d1})
+        st1 = sorun_turleri(RJ[ad])
+        st0 = {}
+        for a in kume:
+            for t, n_ in sorun_turleri(RJ[a]).items():
+                st0[t] = max(st0.get(t, 0), n_)
         yeni_sorun = {t: st1.get(t, 0) - st0.get(t, 0) for t in kusur["sorun"] if st1.get(t, 0) > st0.get(t, 0)}
         ilgili = {k: fark[k] for k in kusur["olcu"] if k in fark}
         en_iyi = max(ilgili.items(), key=lambda kv: kv[1]["kat"]) if ilgili else None

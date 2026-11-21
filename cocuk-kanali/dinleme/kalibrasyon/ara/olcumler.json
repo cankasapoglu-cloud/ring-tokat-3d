@@ -1795,6 +1795,241 @@
   "calisma_sn": 290.6
  },
  {
+  "ad": "ali-baba__coskulu_2",
+  "yol": "ali-baba/coskulu_2.mp3",
+  "karar": "reddetti",
+  "gerekce": "'çok kötü; koyun hâlâ mö diyor'; çok uzun (3-3,5 dk)",
+  "boyut": [
+   "sozler",
+   "sure"
+  ],
+  "sarki": "ali-baba",
+  "hatalar": [],
+  "sure_sn": 186.0,
+  "lufs": -12.3,
+  "tepe_dbtp": -0.2,
+  "enerji_puani": 66.0,
+  "tempo_bpm": 116.0,
+  "olay_sn": 4.62,
+  "nabiz": 0.761,
+  "vurmali_armonik_db": -4.25,
+  "aki": 1.585,
+  "parlaklik_hz": 2097.0,
+  "duzey_oynakligi_db": 1.17,
+  "coca_cosku": 0.133,
+  "coca_tempo": 0.076,
+  "coca_kalite": 0.113,
+  "coca_sarki_var": 0.181,
+  "ced_ninni": 0.0,
+  "ced_coskulu_eksi_sakin": 0.141,
+  "ced_mutlu": 0.119,
+  "ced_heyecanli": 0.016,
+  "ced_yumusak": 0.005,
+  "ced_cocuk": 0.118,
+  "ced_hayvan": {},
+  "vokal_eksi_altyapi_db": -4.3,
+  "vokalli_oran": 0.403,
+  "sizinti_db": -40.2,
+  "gomuk_yer": 2,
+  "ton": "Do majör (C major)",
+  "ton_belirsiz": false,
+  "akor_guveni": 0.72,
+  "ton_degisimi": false,
+  "destek_fark": 0.121,
+  "destek_gercek": 0.348,
+  "en_iyi_kaydirma": -4,
+  "sifir_kacinci": 4,
+  "gam_ici": 0.987,
+  "gam_guvenilir": true,
+  "akor_sesi": 0.624,
+  "gam_disi": 0.013,
+  "cent_medyan": 11.2,
+  "yuzde_25cent": 83.1,
+  "cakisan": 0,
+  "uzun_nota": 24,
+  "cakisan_oran": 0.0,
+  "ritim_R": 0.37,
+  "ritim_kayma_ms": 34.0,
+  "ritim_40ms": 44.0,
+  "ritim_tempo": 116.0,
+  "ritim_R16": 0.2,
+  "nota_sayisi": 164,
+  "ses_araligi_ys": 5.4,
+  "medyan_hz": 325.0,
+  "pyin_uyum": 95.7,
+  "sesli_cerceve": 0.215,
+  "nota_suresi_medyan": 0.18,
+  "gecis_cerceve_orani": 0.15,
+  "kayan_nota_orani": 0.29,
+  "alttan_giris_orani": 0.0,
+  "ani_gecis_orani": 0.67,
+  "uzun_nota_035": 16,
+  "y_nota_ici_oynaklik_cent_medyan": 12.6,
+  "y_cok_duz_nota_orani": 0.03,
+  "y_perde_izgaraya_yapisma_R": 0.55,
+  "y_vibratolu_uzun_nota_orani": 0.25,
+  "y_donmus_unlu_sayisi_045sn_ustu": 0,
+  "y_donmus_sure_orani": 0.0,
+  "y_unsuzlerde_tiz_payi_db": -12.0,
+  "y_vokal_ust_frekans_hz": 10723,
+  "y_tiz_doku_degisim_katsayisi": 1.34,
+  "y_zarf_titremesi_db": -12.9,
+  "y_isaret_sayisi": 0,
+  "y_isaretler": [],
+  "y_bagli_gecis_suresi_ms_medyan": 32.0,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9826,
+  "dnsmos": 2.35,
+  "nisqa": 2.49,
+  "distillmos": 2.76,
+  "utmos22": 1.58,
+  "nisqa_kesintisizlik": 4.13,
+  "nisqa_renk": 3.4,
+  "v_sarki": 0.041,
+  "v_konusma": 0.293,
+  "v_sentetik_sarki": 0.011,
+  "v_konusma_sentezi": 0.011,
+  "v_kadin": 0.035,
+  "v_cocuk": 0.008,
+  "dokum_kaynagi": "onbellek",
+  "dil_olasiligi": 1.0,
+  "wer": 0.139,
+  "wer_kucuksuz": 0.13,
+  "degisik": 8,
+  "eksik": 0,
+  "fazla": 7,
+  "beklenen_sozcuk": 108,
+  "yanlis_sozcukler": [
+   [
+    "Me",
+    "\"Mö",
+    37.22
+   ],
+   [
+    "me",
+    "mö\"",
+    37.76
+   ],
+   [
+    "iha",
+    "ihan",
+    66.26
+   ],
+   [
+    "üü",
+    "ü\"",
+    91.66
+   ],
+   [
+    "kedileri",
+    "köpekleri",
+    170.68
+   ],
+   [
+    "Miyav",
+    "\"Hav",
+    171.7
+   ],
+   [
+    "miyav",
+    "hav\"",
+    172.22
+   ],
+   [
+    "miyavlar",
+    "havlar",
+    173.0
+   ]
+  ],
+  "eksik_sozcukler": [],
+  "fazla_sozcukler": [
+   [
+    "ha",
+    65.68
+   ],
+   [
+    "ha\"",
+    66.72
+   ],
+   [
+    "var.",
+    173.56
+   ],
+   [
+    "\"Hav",
+    173.78
+   ],
+   [
+    "hav\"",
+    174.3
+   ],
+   [
+    "diye",
+    174.72
+   ],
+   [
+    "havlar",
+    175.08
+   ]
+  ],
+  "hece_sn_soz_ici": 4.86,
+  "hece_sn_obek_medyan": 4.05,
+  "hece_sn_en_hizli": 4.25,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 1,
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    1.26
+   ],
+   [
+    "[müzik]",
+    17.04
+   ],
+   [
+    "[müzik]",
+    41.88
+   ],
+   [
+    "[müzik]",
+    70.74
+   ],
+   [
+    "[müzik]",
+    95.58
+   ],
+   [
+    "[müzik]",
+    122.46
+   ],
+   [
+    "[müzik]",
+    149.46
+   ],
+   [
+    "[müzik]",
+    178.44
+   ]
+  ],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Enerji / coşku": "iyi",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "sorun",
+   "Gam içi söyleme": "iyi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "iyi",
+   "Ritme oturma": "dikkat",
+   "Yapaylık işaretleri (vekil)": "bilgi",
+   "Sözler": "dikkat",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "söz hatası": 15,
+   "gömük vokal": 2
+  },
+  "calisma_sn": 498.6
+ },
+ {
   "ad": "parmak-ailesi__duzgun_1",
   "yol": "parmak-ailesi/duzgun_1.mp3",
   "karar": "reddetti",

@@ -92,6 +92,27 @@ def main():
     tepe, _ = ss.find_peaks(d, height=0.2, distance=SR)
     R["b05_tik"] = {"bulunan_tik_sayisi": int(len(tepe)), "ilk_zamanlar_sn": [round(float(x) / SR, 2) for x in tepe[:5]], "tik_tepe_genligi_medyan": round(float(np.median(d[tepe])), 2),
                     "karisimin_tepe_genligi": round(float(np.abs(M0).max()), 2), "beklenen": "36 tik, 2,37 sn'den baslayarak 3 sn arayla"}
+    # 5b) kisik tik + her iki tik icin "duyulurluk" olcusu: tik aninda 6-16 kHz bandinda, ayni andaki muzige gore kac dB fazlalik var
+    sos = ss.butter(6, [6000 / (SR / 2), 16000 / (SR / 2)], btype="band", output="sos")
+    zamanlar = json.load(open(os.path.join(b.SINAMA, "bozuklar.json"), encoding="utf8"))["b05_tik"]["tik_zamanlari"]
+
+    def tiz_fazlalik(M):
+        hm, h0 = ss.sosfilt(sos, M.mean(axis=1)), ss.sosfilt(sos, M0[:len(M)].mean(axis=1))
+        f = []
+        for t in zamanlar:
+            i = int(t * SR)
+            f.append(db(hm[i - 110:i + 330]) - db(h0[i - 110:i + 330]))            # 10 ms pencere
+        return round(float(np.median(f)), 1), round(float(np.min(f)), 1)
+    med, enaz = tiz_fazlalik(coz(os.path.join(b.CIKTI, "b05_tik.mp3")))
+    R["b05_tik"].update({"tik_aninda_6_16khz_fazlalik_db_medyan": med, "en_az": enaz})
+    if os.path.exists(os.path.join(b.CIKTI, "b05b_tik_kisik.mp3")):
+        M = coz(os.path.join(b.CIKTI, "b05b_tik_kisik.mp3"))
+        d = np.abs((M - M0[:len(M)]).mean(axis=1))
+        tepe, _ = ss.find_peaks(d, height=0.07, distance=SR)
+        med, enaz = tiz_fazlalik(M)
+        R["b05b_tik_kisik"] = {"bulunan_tik_sayisi": int(len(tepe)), "tik_tepe_genligi_medyan": round(float(np.median(d[tepe])), 2),
+                               "tik_aninda_6_16khz_fazlalik_db_medyan": med, "en_az": enaz,
+                               "yorum": "tik aninda tiz bantta muzigin 10 dB'den fazla ustune cikan bir patlama, kulaklikta 'cit' diye duyulur"}
     # 6) duzey
     v, _ = sf.read(os.path.join(K, "b06a_vokal_eksi6_vokal.wav"), always_2d=True)
     R["b06a_vokal_eksi6"] = {"vokal_duzey_farki_db": round(db(v) - db(V0), 2), "beklenen": -6.0}

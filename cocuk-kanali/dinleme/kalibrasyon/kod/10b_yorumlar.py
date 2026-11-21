@@ -120,7 +120,8 @@ Y["DOGALLIK_YORUM"] = "\n".join([
     "hepsi reddedilmiş, yavaş dönemin kayıtları: sakin, seyrek altyapılı kayıtta ses \"temiz konuşma\"ya daha çok benziyor. **Bu puanlar kullanıcının zevkiyle ters düşüyor; iyi/kötü notu olarak kullanılmamalı.**"
     % (s(m(A + "ornek_kita1", "utmos22"), 2), s(m(A + "sarki_birlesik", "utmos22"), 2), ar([A + "v2_2", A + "dinle_2", E + "coskulu_2", P + "coskulu_1"], "utmos22", 2),
        ", ".join("`%s` %s%s" % (KISA(a), s(v, 2), "" if [x for x in SET if x["ad"] == a][0]["karar"] == "reddetti" else " (BEĞENİLDİ)") for v, a in sorted([(m(a, "utmos22"), a) for a in VOKALLI if m(a, "utmos22") is not None], reverse=True)[:4])),
-    "- CED'in \"sentetik şarkı\" ve \"konuşma sentezleyici\" etiketleri: ayırmıyor (hepsi 0,06'nın altında; işlenmiş vokallerde daha yüksek değil).",
+    "- CED'in \"sentetik şarkı\" ve \"konuşma sentezleyici\" etiketleri: ayırmıyor (sentetik şarkı: işlenmiş vokallerde %s ve %s, doğal kayıtlarda %s)."
+    % (s(m(A + "ornek_kita1", "v_sentetik_sarki"), 3), s(m(A + "sarki_birlesik", "v_sentetik_sarki"), 3), ar(DOGAL, "v_sentetik_sarki", 3)),
     "",
     "Sonuç: araç \"bu vokal bozulmuş\" yargısını **sözlerin anlaşılmazlığı üzerinden** veriyor, sesin tınısı üzerinden değil. Sözleri anlaşılır kalan ama yapay tınlayan bir vokal bu sayılardan temiz çıkar.",
 ])
@@ -158,7 +159,8 @@ for k, ad_, n_, isr, kucuk_kotu in (("yuzde_25cent", "±25 cent içinde", 0, Fal
     if v0 is None or not vs:
         continue
     temiz = (v0 < min(vs)) if kucuk_kotu else (v0 > max(vs))
-    ayiranlar.append("%s: ön dinleme %s%s, öteki %d kayıt %s%s%s" % (ad_, "%" if k == "yuzde_25cent" else "", s(v0, n_, isr), N_OTEKI, "%" if k == "yuzde_25cent" else "", ar(OTEKI16, k, n_, isr), "" if temiz else " (örtüşüyor)"))
+    yz = "%" if k == "yuzde_25cent" else ""
+    ayiranlar.append("%s: ön dinleme %s%s, öteki %d kayıt %s%s … %s%s%s" % (ad_, yz, s(v0, n_, isr), N_OTEKI, yz, s(min(vs), n_, isr), yz, s(max(vs), n_, isr), "" if temiz else " (örtüşüyor)"))
 Y["UYUM_YORUM"] = "\n".join([
     "Reddedilen ön dinlemede vokal, beğenilen `dinle_2`'nin vokalinin **hiç işlenmemiş** hâli; değişen yalnızca orkestra. Yani bu çift, \"vokal iyi ama orkestrayla olmamış\" yargısı için neredeyse deney gibi.",
     "",
@@ -174,9 +176,9 @@ Y["UYUM_YORUM"] = "\n".join([
     "",
     "**Tek kayda bakınca aracın armoni hükmü tutmuyor:**",
     "",
-    "- \"En iyi kaydırma 0 olmalı\" denetimi ön dinlemeye **sorun** diyor (%s). Ama beğenilen `el-yikama/coskulu_2` de aynı sonucu alıyor (%s; destek %s). Ayrıca %s kayıtta en iyi kaydırma 0 değil."
+    "- \"En iyi kaydırma 0 olmalı\" denetimi ön dinlemeye **sorun** diyor (%s). Ama beğenilen `el-yikama/coskulu_2` de aynı sonucu alıyor (%s; destek %s). En iyi kaydırması 0 olmayan başka kayıtlar da var: %s."
     % (s(m(A + "dogal_onizleme", "en_iyi_kaydirma"), 0, True), s(m(E + "coskulu_2", "en_iyi_kaydirma"), 0, True), s(m(E + "coskulu_2", "destek_gercek"), 2),
-       ", ".join("`%s` (%s)" % (KISA(a), s(m(a, "en_iyi_kaydirma"), 0, True)) for a in kaydirma_sifir_degil)),
+       ", ".join("`%s` (%s)" % (KISA(a), s(m(a, "en_iyi_kaydirma"), 0, True)) for a in kaydirma_sifir_degil if a != E + "coskulu_2")),
     "- Nedeni: ölçü, vokalin söylediği seste orkestranın ne kadar enerjisi olduğuna bakıyor. Vokal akorun üçlüsünde ya da beşlisinde duruyorsa (kök ses yerine), tamamen uyumlu olsa bile \"kaydırsak daha iyi\" çıkıyor.",
     "- \"Gam içi söyleme\" ön dinlemede %s ile **iyi** diyor; armoni kuramı açısından vokal gerçekten gamın içinde. Kullanıcının \"olmamış\" dediği şey kuramsal uyumsuzluk değil."
     % s(m(A + "dogal_onizleme", "gam_ici"), 0, yuzde=True),
@@ -188,8 +190,8 @@ Y["UYUM_YORUM"] = "\n".join([
     "Bunların hepsi aynı şeyi söylüyor: **ayırıcı bu karışımdan temiz bir vokal çıkaramıyor.** Gerçek kanallarla ölçünce (yukarıdaki tablo) vokalin kendisi sağlam. Demek ki aracın yakaladığı şey dolaylı bir belirti: "
     "vokalin yerinde, onunla yarışan başka bir ezgi sesi var (vokalin altına konan klarnet) ve makine ikisini ayıramıyor. Bu, kullanıcının \"altta başka ezgi çalıyor, olmamış\" demesiyle uyumlu; ama tek örnek.",
     "",
-    "Ritim ölçüsü bu boyutta işe yaramadı: ön dinleme R %s, beğenilen `dinle_2` %s; doğal ve kusursuz kabul edilen `el-yikama/sarki_1` ise %s (vuruş ızgarası yanlış bulunmuş)."
-    % (s(m(A + "dogal_onizleme", "ritim_R"), 2), s(m(A + "dinle_2", "ritim_R"), 2), s(m(E + "sarki_1", "ritim_R"), 2)),
+    "Ritim ölçüsü bu boyutta işe yaramadı: ön dinleme R %s, beğenilen `dinle_2` %s. Ritmi için hiçbir şikâyet olmayan `el-yikama/sarki_1` %s, `pitirin-ailesi/yavas_2` %s çıktı (vuruş ızgarası yanlış bulunmuş olmalı)."
+    % (s(m(A + "dogal_onizleme", "ritim_R"), 2), s(m(A + "dinle_2", "ritim_R"), 2), s(m(E + "sarki_1", "ritim_R"), 2), s(m(PI, "ritim_R"), 2)),
 ])
 
 # ------------------------------------------------------------------------------------------------ AKSAN
@@ -204,7 +206,7 @@ Y["AKSAN_YORUM"] = "\n".join([
     "Altı Parmak Ailesi kaydı aynı sözleri söylüyor; ikisi (`duzgun_1`, `duzgun_2`) \"Türkçe konuşan bir İngiliz gibi\" diye reddedildi. **Hiçbir sayı bu ikisini ötekilerden ayırmıyor:**",
     "",
     "- **Sözcük hata oranı:** aksanlı iki kayıt %s; öteki dördü %s. Scribe aksanlı söyleneni de doğru yazıyor." % (ar(AKS, "wer", 0, yuzde=True), ar(DIG, "wer", 0, yuzde=True)),
-    "- **Scribe'ın güveni:** `duzgun_2` ortalama logprob %s; seçilen kayıt %s. Fark yok. Dil olasılığı hepsinde 1,00 (Türkçe)." % (s(lp(P + "duzgun_2"), 3, True), s(lp(P + "coskulu_1"), 3, True)),
+    "- **Scribe'ın güveni:** `duzgun_2` ortalama logprob %s; seçilen kayıt %s. Fark yok. Dil olasılığı, bu çalışmada dökümü alınan kayıtların hepsinde 1,00 (Türkçe)." % (s(lp(P + "duzgun_2"), 3, True), s(lp(P + "coskulu_1"), 3, True)),
     "- **Kalite tahminleri:** aksanlı iki kayıt birbirine bile benzemiyor (NISQA %s ve %s)." % (s(m(P + "duzgun_1", "nisqa"), 2), s(m(P + "duzgun_2", "nisqa"), 2)),
     "- **İki fonetik deney** (araç dışı; aynı sözcükler kayıtlar arasında karşılaştırıldı): \"parmak\"taki r'nin İngiliz r'sine benzeyip benzemediği (aksanlılar %s dB, ötekiler %s dB) ve "
     "\"buradayım\"ın son ünlüsünün \"ı\" mı \"i\" mi olduğu (aksanlılar %s dB, ötekiler %s dB). İkisinde de aksanlı kayıtlar ötekilerin aralığının içinde. Ayrıca ikinci ölçü sözcüğün süresinden etkileniyor; güvenilmez."
@@ -248,8 +250,8 @@ Y["SURE_YORUM"] = ("\"Çok uzun\" denen iki kayıt %s sn; kabul edilen dört şa
 Y["EZGI_YORUM"] = "\n".join([
     "Kullanıcı `v2_2` ve `dinle_2` için \"ezgi bilinen Ali Baba ezgisi değil\" dedi. **Araç bunu ölçmüyor;** yalnızca vokalin kendi orkestrasıyla uyumuna bakıyor, ve ikisi de kendi orkestrasıyla uyumlu çıkıyor.",
     "",
-    "Tek dolaylı ipucu: `v2_2`'nin altyapı tonu **%s** bulundu. Bilinen ezgi majör; minör bir kayıt o ezgi olamaz. `dinle_2`'de ton belirsiz çıktığı için aynı ipucu yok. "
-    "Gerçek denetim için vokalin nota dizisini bilinen ezginin notalarıyla karşılaştırmak gerekir; notalar depoda hazır (`ali-baba/yeni/zaman.json`), araçta böyle bir adım yok." % (m(A + "v2_2", "ton") or "?"),
+    "Tek dolaylı ipucu: `v2_2`'nin altyapı tonu **%s** bulundu. Bilinen ezgi majör; ton doğru bulunduysa bu kayıt o ezgi olamaz (ama ton bulma majör / minör ayrımında yanılabiliyor). `dinle_2`'de ton belirsiz çıktığı için aynı ipucu yok. "
+    "Gerçek denetim için vokalin nota dizisini bilinen ezginin notalarıyla karşılaştırmak gerekir; notalar depoda hazır (`ali-baba/yeni3/altyapi/zaman_dogal.json` içinde `ezgi_notalari`), araçta böyle bir adım yok." % (m(A + "v2_2", "ton") or "?"),
 ])
 
 # ------------------------------------------------------------------------------------------------ ESIKLER
@@ -266,11 +268,11 @@ if ec and ec.get("temiz_bosluk"):
                      dayanak="coşkulu denen %d kayıt %s; ninni denen %d kayıt %s" % (len(COS), ar(COS, "coca_cosku", 2, True), len(NIN), ar(NIN, "coca_cosku", 2, True)), n="%d + %d" % (len(COS), len(NIN)),
                      nott="`v2_2` (%s) arada kalıyor" % s(m(A + "v2_2", "coca_cosku"), 2, True)))
 if en_ and en_.get("temiz_bosluk"):
-    ESIK.append(dict(boyut="Enerji", kural="CED \"ninni\" olasılığı **≥ %s → ninni yanında**; **≤ %s → değil**" % (s(en_["bosluk"][1], 3), s(en_["bosluk"][0], 3)),
+    ESIK.append(dict(boyut="Enerji", kural="CED \"ninni\" olasılığı **≥ 0,01 → ninni yanına kayıyor** (boşluğun ortası; ninni denenlerin hepsi ≥ %s, coşkulu denenlerin hepsi %s)" % (s(en_["bosluk"][1], 3), s(en_["bosluk"][0], 3)),
                      dayanak="coşkulu %s; ninni %s" % (ar(COS, "ced_ninni", 3), ar(NIN, "ced_ninni", 3)), n="%d + %d" % (len(COS), len(NIN)), nott="iki gösterge birlikte aynı yanı gösteriyorsa güvenilir; biri yetmez"))
 ESIK.append(dict(boyut="Sözler", kural="Her kıtanın anahtar sözcüğü (aile adı, hayvan adı, söylenen hayvan sesi) beklenenle aynı değilse **ele**",
                  dayanak="kullanıcının söylediği yanlış ad hatalarının ikisi de bu yolla bulundu; sözcük hata oranı ayırmıyor", n="2 + 3", nott="eşik değil, kural; tek hecelik seslerde döküm yanılabiliyor"))
-ESIK.append(dict(boyut="Anlaşılırlık (işlenmiş vokal)", kural="Sözcük hata oranı **≥ %%30 → makine sözleri anlamıyor**, vokal bozulmuş olabilir",
+ESIK.append(dict(boyut="Anlaşılırlık (işlenmiş vokal)", kural="Sözcük hata oranı **≥ %30 → makine sözleri anlamıyor**, vokal bozulmuş olabilir",
                  dayanak="işlenmemiş kayıtlar en çok %s; aynı vokal başka orkestrada %s; işlenmiş iki vokal %s ve %s"
                  % (s(wer_dogal_max, 1, yuzde=True), s(m(A + "dogal_onizleme", "wer"), 1, yuzde=True), s(m(A + "sarki_birlesik", "wer"), 1, yuzde=True), s(m(A + "ornek_kita1", "wer"), 1, yuzde=True)),
                  n="%d + 2" % len(DOGAL), nott="%%30, %s ile %s arasındaki boşluğun içinde bir değer; altında kalmak \"doğal\" demek değil" % (s(m(A + "dogal_onizleme", "wer"), 0, yuzde=True), s(m(A + "sarki_birlesik", "wer"), 0, yuzde=True))))
@@ -297,13 +299,15 @@ Y["OZET_SATIRI_YORUM"] = "\n".join([
     % ("%d ile %d arası" % (min(say(a) for a in BEG), max(say(a) for a in BEG)), "%d ile %d arası" % (min(say(a) for a in RED), max(say(a) for a in RED)), say(P + "duzgun_2"), say(P + "coskulu_1")),
     "- **Beğenilen kayıtlarda yanlış alarmlar:** `el-yikama/coskulu_2`'de \"aynı armonide mi: sorun\"; `parmak/coskulu_1`'de \"ünsüzlerde tiz zayıf\" ve \"söyleyiş hızı\"; üç beğenilen kayıtta \"ritme oturma: dikkat\" (R %s)."
     % ar([A + "dinle_2", E + "coskulu_2", P + "coskulu_1"], "ritim_R", 2),
-    "- **Doğru yerde öten satırlar:** \"Sözler\" (işlenmiş iki vokalde ve ön dinlemede ✗), \"Enerji\" (ninni denen üç kayıtta !), \"Vokal / altyapı dengesi\" ve \"Akort\" (yalnızca ön dinlemede).",
-    "- **Hiç işe yaramayan satır:** \"Ritme oturma\". Beğenilen ve reddedilen kayıtlar arasında R değerleri tamamen karışık; doğal bir kayıtta R %s çıktı." % s(m(E + "sarki_1", "ritim_R"), 2),
+    "- **Doğru yerde öten satırlar:** \"Sözler\" (işlenmiş iki vokalde ve ön dinlemede ✗), \"Enerji\" (ninni denen üç kayıtta !), \"Vokal / altyapı dengesi\" ve \"Akort\" (vokalli kayıtlar içinde yalnızca ön dinlemede).",
+    "- Beğenilen çalgısal altyapı (`demo_altyapi_sesli`) %d uyarı alıyor; hepsi hayvan seslerinin vokal sanılmasından." % say(A + "demo_altyapi_sesli"),
+    "- **Hiç işe yaramayan satır:** \"Ritme oturma\". Beğenilen ve reddedilen kayıtlar arasında R değerleri tamamen karışık; ritmi için şikâyet olmayan iki kayıtta R %s ve %s çıktı." % (s(m(E + "sarki_1", "ritim_R"), 2), s(m(PI, "ritim_R"), 2)),
 ])
 
 # ------------------------------------------------------------------------------------------------ PANOLAR
 Y["PANO_YORUM"] = "\n".join([
-    "Yedi kaydın panolarına Read aracıyla baktım (üç beğenilen, dört reddedilen). Resim, özet sayıların söylemediği dört şeyi gösterdi:",
+    "Dokuz kaydın panolarına Read aracıyla baktım (dört beğenilen: `v2_2`, `dinle_2`, `parmak/coskulu_1`, `demo_altyapi_sesli`; beş reddedilen: `ornek_kita1`, `sarki_birlesik`, `dogal-onizleme`, `duzgun_1`, `parmak/yavas_2`). "
+    "Resim, özet sayıların söylemediği dört şeyi gösterdi:",
     "",
     "1. **Merdiven gibi perde (`sarki_birlesik`, perde panosu).** Vokal çizgisi cetvelle çizilmiş yatay çubuklar; notadan notaya dik basamakla iniyor; birkaç hece tek düz çizginin üstünde. "
     "Aynı vokalin özgün hâlinde (`dinle_2`) çizgi kıvrımlı, notalar kısa, geçişler eğik. Sayılar bunu kaçırdı (nota içi oynaklık %s cent, \"çok düz\" uyarısı yok); göz hemen görüyor. "
@@ -312,7 +316,8 @@ Y["PANO_YORUM"] = "\n".join([
     "`dinle_2`'de aynı mavi noktalar koyu bir şeridin tam üstünde. Özet satırı \"gam içi %s, iyi\" diyordu; resim \"şarkıcı orkestranın çalmadığı yerde söylüyor\" diyor. "
     "Üst şeritte bir şey daha görünüyor: `dinle_2`'de orkestra tek akorda duruyor, ön dinlemede her ölçüde akor değişiyor ama vokal hep aynı seste kalıyor." % s(m(A + "dogal_onizleme", "gam_ici"), 0, yuzde=True),
     "3. **\"Çakışan nota\" dediği şey hayvan sesi (`ornek_kita1`, `dogal-onizleme`, `sarki_birlesik`).** Genel panoda turuncu \"[inek sesi]\" şeridinin altında, aşağı doğru kayan geniş bir harmonik yığını var; "
-    "perde panosunda tam orada pes, −40 centlik kırmızı X'li iki \"nota\". Araç ineği detone şarkıcı sanıyor. Sayıya bakınca \"2 çakışan nota\" bir vokal kusuru gibi; resme bakınca değil.",
+    "perde panosunda tam orada pes, −40 centlik kırmızı X'li iki \"nota\". Araç ineği detone şarkıcı sanıyor. Sayıya bakınca \"2 çakışan nota\" bir vokal kusuru gibi; resme bakınca değil. "
+    "Çalgısal `demo_altyapi_sesli`'nin genel bakışında \"vokal var\" şeridi yalnızca yedi hayvan sesinin olduğu yerde dolu: dosyada şarkıcı olmadığı bir bakışta anlaşılıyor, oysa özet tablosu bu dosyaya da akort ve yapaylık uyarıları yazıyor.",
     "4. **Ninni ile coşkulu arasındaki fark tek bakışta (`parmak/yavas_2` karşısında `parmak/coskulu_1`, genel bakış).** MusicCoCa çubukları birinde baştan sona kırmızı (eksi), ötekinde baştan sona mavi. "
     "Spektrogramda coşkulu kayıt baştan aşağı sık dikey çizgilerle dolu (vurmalılar); ninni gibi olanda yatay bantlar ve altta toplanmış enerji var. Düzey şeridinde ninni kaydında altyapı vokal girince geri çekiliyor. "
     "`yavas_2`'nin \"donmuş ünlü\" satırındaki 11 kırmızı işaret her dizenin sonuna düzenli diziliyor: bunlar işlem artığı değil, uzatılan dize sonları.",
@@ -334,11 +339,14 @@ Y["_gorsel_json"] = [
 KUS = [
     ("Enerji özet satırı", "\"ninni/sakin\" uyarısı hareketlilik puanı < 62 olunca tek başına ötüyor; MusicCoCa'sı açıkça artı olan kayıtlarda yanlış uyarı (%s)." % ", ".join("`%s`" % kisa(a) for a in yanlis_uyari),
      "Uyarıyı MusicCoCa < 0 ya da CED ninni ≥ 0,02 koşuluna bağlamak; puanı yalnızca bilgi olarak yazmak."),
-    ("Hayvan sesleri vokal sanılıyor", "Ayırıcı gerçek hayvan seslerini vokal kanalına koyuyor; araç bunları nota sayıp \"çakışan / detone nota\" ve geniş ses aralığı raporluyor "
-     "(`ornek_kita1` 2/12, `dogal-onizleme` 4/31, `sarki_birlesik` 3/99; çalgısal `demo_altyapi_sesli`'de bütün \"vokal\" ölçümleri hayvan sesi).",
+    ("Hayvan sesleri vokal sanılıyor", "Ayırıcı gerçek hayvan seslerini vokal kanalına koyuyor; araç bunları nota sayıp \"çakışan / detone nota\" ve geniş ses aralığı raporluyor. "
+     "`ornek_kita1`'de işaretlenen 2 notanın 2'si, `sarki_birlesik`'te 3'ün 3'ü Scribe'ın hayvan sesi aralığının içinde; `dogal-onizleme`'de 4'ün en az 2'si (öteki ikisi horoz sesinin yerinde). "
+     "Çalgısal `demo_altyapi_sesli`'de bütün \"vokal\" ölçümleri (donmuş ünlü %26, 3 çakışan nota) hayvan sesi.",
      "Scribe'ın ses olayı aralıklarını ([inek sesi] …) ya da CED'in hayvan pencerelerini nota analizinden çıkarmak; vokalsiz dosyada vokal bölümlerini hiç yazmamak."),
     ("\"Aynı armonide mi\" denetimi", "Beğenilen `el-yikama/coskulu_2`'ye \"sorun\" diyor (en iyi kaydırma %s). Vokal akorun kökünde değil üçlüsünde / beşlisinde durunca yanlış alarm." % s(m(E + "coskulu_2", "en_iyi_kaydirma"), 0, True),
      "Hükmü kaydırma sırasına değil, akor sesi oranına ve gam dışı orana bağlamak; ya da yalnızca ±1, ±2, ±6 kaydırmayı sorun saymak (şimdi −4 de sorun sayılıyor)."),
+    ("Ton belirsizken de çakışan nota hükmü", "`duzgun_1`'de 8 uzun nota işaretlendi (6'sı \"gam dışı\" Fa); araç aynı raporda tonun belirsiz olduğunu (Sol majör?) söylüyor, vokalin kendi dağılımı Do majör gösteriyor. Hüküm \"sorun\" çıkıyor.",
+     "Ton belirsizse \"gam dışı\" notaları hükme katmamak (gam içi oranında olduğu gibi)."),
     ("Donmuş ünlü uyarısı", "Doğal ama yavaş söylenen kayıtlarda ötüyor (%s). Metni \"zaman esnetme / vokoder izlenimi\" diyor." % (", ".join("`%s` %s" % (KISA(a), s(v, 0, yuzde=True)) for v, a in yuksek_donmus) or "–"),
      "Eşiği hece hızına göre ayarlamak ya da metni \"uzun tutulan ünlüler\" diye yumuşatmak."),
     ("\"Ünsüzlerde tiz zayıf\" uyarısı", "−14 dB eşiği doğal kayıtların ortasında: beğenilen `parmak/coskulu_1` %s dB." % s(m(P + "coskulu_1", "y_unsuzlerde_tiz_payi_db"), 1, True), "Eşiği düşürmek ya da uyarıyı kaldırmak."),

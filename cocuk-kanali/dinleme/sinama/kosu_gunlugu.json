@@ -145,5 +145,27 @@
   "dinle_sn": 67.3,
   "donus": 0,
   "zaman": "17:04:24"
+ },
+ "b04_duz_perde": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b04_duz_perde.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 179.2,
+  "dinle_sn": 99.0,
+  "donus": 0,
+  "zaman": "17:09:02"
+ },
+ "b05_tik": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b05_tik.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 265.2,
+  "dinle_sn": 93.7,
+  "donus": 0,
+  "zaman": "17:15:01"
  }
 }

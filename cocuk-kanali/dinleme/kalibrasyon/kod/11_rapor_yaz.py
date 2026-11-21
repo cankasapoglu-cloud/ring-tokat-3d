@@ -55,8 +55,14 @@ def kita(ad, i, alan):
 
 
 def unlu(ad, hayvan):
-    u = [r["bant_1800_2800_eksi_1200_1800_db"] for r in UT.get(ad, []) if r["hayvan"] == hayvan]
-    return (sum(u) / len(u)) if u else None
+    """Soylenen hayvan sesi hecelerinin unlu tinisi (dB), hece hece: '+4,4 / +3,2' (o hayvanin ILK kitasi)."""
+    k = (SD.get(ad) or {}).get("kitalar") or []
+    aday = [x for x in k if x.get("hayvan") == hayvan]
+    if not aday or not aday[0].get("ses_zamani"):
+        return "–"
+    z0, z1 = aday[0]["ses_zamani"]
+    u = [r["bant_1800_2800_eksi_1200_1800_db"] for r in UT.get(ad, []) if z0 - 0.01 <= r["bas"] <= z1]
+    return " / ".join(s(v, 1, True) for v in u) if u else "–"
 
 
 DOGAL = [A + "v2_2", A + "dinle_2", E + "coskulu_2", P + "coskulu_1", A + "coskulu_1", A + "coskulu_2", P + "duzgun_1", P + "duzgun_2", P + "turkce_2", P + "yavas_2", "pitirin-ailesi__yavas_2",
@@ -77,9 +83,9 @@ def sz(ad):
 
 
 ANA = {
- A + "v2_2": (lambda a: "%s. Kıta denetimi: at kıtasında söylenen ses **\"%s\"** (koyunun sesi): bulundu. Koyun kıtasında döküm \"%s\" yazıyor, ünlü ölçümü de \"e\" yanında (%s dB; ineğin \"mö\"sü %s dB): "
+ A + "v2_2": (lambda a: "%s. Kıta denetimi: at kıtasında söylenen ses **\"%s\"** (koyunun sesi): bulundu. Koyun kıtasında döküm \"%s\" yazıyor, ünlü ölçümü de \"e\" yanında (iki hece %s dB; ineğin \"mö\"sü %s dB): "
               "koyun için söylenen bulunamadı. \"atıları\": döküm \"atları\" yazıyor, bulunamadı. Söyleyiş: yapaylık işareti yok, akort %s cent, çakışan nota %s/%s. Ezgi: ölçülmüyor."
-              % (sz(a), kita(a, 2, "soylenen_ses"), kita(a, 1, "soylenen_ses"), s(unlu(a, "koyun"), 1, True), s(unlu(a, "inek"), 1, True), s(m(a, "cent_medyan"), 1), s(m(a, "cakisan")), s(m(a, "uzun_nota"))),
+              % (sz(a), kita(a, 2, "soylenen_ses"), kita(a, 1, "soylenen_ses"), unlu(a, "koyun"), unlu(a, "inek"), s(m(a, "cent_medyan"), 1), s(m(a, "cakisan")), s(m(a, "uzun_nota"))),
               "kısmen", "Dört şikâyetten biri bulundu (at). Beğenilen söyleyişle çelişen bir uyarı yok."),
  A + "dinle_2": (lambda a: "Yapaylık işareti yok; akort %s cent; aynı armonide (en iyi kaydırma %s); %s. Araç, kullanıcının söylemediği gerçek bir söz hatası buldu (76,9. sn: \"köpekleri\" yerine \"ördekleri\"). Ezgi: ölçülmüyor."
                  % (s(m(a, "cent_medyan"), 1), s(m(a, "en_iyi_kaydirma"), 0, True), sz(a)),
@@ -89,7 +95,7 @@ ANA = {
  P + "coskulu_1": (lambda a: en(a) + "; beş kıtada beş ad da doğru (%s). (Yanlış alarmlar: \"ünsüzlerde tiz zayıf\" ve \"söyleyiş hızı\" uyarıları.)" % sz(a),
                    "evet", "Coşku ve adlar seçimle uyumlu."),
  A + "demo_altyapi_sesli": (lambda a: en(a) + "; özet satırı: \"%s\". Vokal yok; ayırıcı hayvan seslerini \"vokal\" kanalına koyuyor." % {"iyi": "coşkulu yana yakın", "dikkat": "ninni/sakin uyarısı", "bilgi": "yorum yok"}.get((m(a, "ozet") or {}).get("Enerji / coşku"), "–"),
-                            "kısmen", "MusicCoCa coşkulu yanda; ama hareketlilik puanı düşük kaldığı için aracın özet satırı beğenilen altyapıya yanlış uyarı veriyor."),
+                            "evet", "MusicCoCa ve CED coşkulu yanda. Hareketlilik puanı düşük kaldığı için aracın kendi özet satırı \"coşkulu\" diyemiyor; vokal olmadığı hâlde hayvan seslerine vokal uyarıları veriyor."),
  A + "ornek_kita1": (lambda a: "%s (Scribe \"Maliboku yeşil boya…\" duyuyor; sözcüklerin %s kadarında emin değil); donmuş ünlü %s." % (sz(a), s(((SD.get(a) or {}).get("guven") or {}).get("oran_-0.3_alti"), 0, yuzde=True), s(m(a, "y_donmus_sure_orani"), 0, yuzde=True)),
                      "evet", "\"Sözler çok kötü çıktı\" yargısının tam karşılığı: makine tek sözcüğü bile tanımıyor."),
  A + "sarki_birlesik": (lambda a: "%s (aynı vokalin işlenmemiş hâli dinle_2'de %s); donmuş ünlü %s; panoda perde merdiven basamağı gibi. Kalite tahminleri (DNSMOS %s, UTMOS %s) doğal kayıtlardan farksız."
@@ -98,12 +104,12 @@ ANA = {
  A + "dogal_onizleme": (lambda a: "Aynı vokal dinle_2'de: vokal − altyapı %s dB, ±25 cent içinde %%%s, %s. Burada: %s dB, %%%s, %s; \"aynı armonide mi\" satırı sorun (en iyi kaydırma %s)."
                         % (s(m(A + "dinle_2", "vokal_eksi_altyapi_db"), 1, True), s(m(A + "dinle_2", "yuzde_25cent"), 0), sz(A + "dinle_2"), s(m(a, "vokal_eksi_altyapi_db"), 1, True), s(m(a, "yuzde_25cent"), 0), sz(a), s(m(a, "en_iyi_kaydirma"), 0, True)),
                         "kısmen", "dinle_2 ile yan yana konunca fark çok açık. Tek başına bakınca armoni sayıları ayırmıyor (beğenilen bir kayıt aynı değeri alıyor); ayıran, ayırıcının vokali temiz çıkaramaması."),
- A + "coskulu_1": (lambda a: "Süre %s. %s. Koyun kıtasında döküm \"%s\" yazıyor; ünlü ölçümü %s dB (ineğin \"mö\"sü %s dB). Ayrıca horoz kıtasında bozuk dize bulundu (\"diye gümler. Ben balta grupu var\")."
-                   % (sure_yaz(a), sz(a), kita(a, 1, "soylenen_ses"), s(unlu(a, "koyun"), 1, True), s(unlu(a, "inek"), 1, True)),
-                   "kısmen", "\"Çok uzun\" ve bozuk dize bulundu; \"koyun mö diyor\" dökümde görünmüyor."),
- A + "coskulu_2": (lambda a: "Süre %s. %s. Koyun kıtasında söylenen ses **\"%s\"**: bulundu (ünlü ölçümü %s dB; ineğinki %s dB). Ayrıca son kıtada kedi yerine yine köpek söyleniyor."
-                   % (sure_yaz(a), sz(a), kita(a, 1, "soylenen_ses"), s(unlu(a, "koyun"), 1, True), s(unlu(a, "inek"), 1, True)),
-                   "evet", "İki şikâyet de (koyunun sesi, süre) sayıda görünüyor."),
+ A + "coskulu_1": (lambda a: "Süre %s. %s. Koyun kıtasında döküm \"%s\" yazıyor; ünlü ölçümü iki hecede %s dB (ineğin \"mö\"sü %s dB). Ayrıca horoz kıtasında bozuk dize bulundu (\"diye gümler. Ben balta grupu var\")."
+                   % (sure_yaz(a), sz(a), kita(a, 1, "soylenen_ses"), unlu(a, "koyun"), unlu(a, "inek")),
+                   "kısmen", "\"Çok uzun\" ve bozuk bir dize bulundu; \"koyun mö diyor\" dökümde görünmüyor."),
+ A + "coskulu_2": (lambda a: "Süre %s. %s. Koyun kıtasında dökümde söylenen ses **\"%s\"**: bulundu. (Ünlü ölçümü kararsız: iki hece %s dB; ineğinki %s dB.) Ayrıca son kıtada kedi yerine yine köpek söyleniyor."
+                   % (sure_yaz(a), sz(a), kita(a, 1, "soylenen_ses"), unlu(a, "koyun"), unlu(a, "inek")),
+                   "evet", "İki şikâyet de (koyunun sesi, süre) görünüyor."),
  P + "duzgun_1": (lambda a: "%s; hece hızı %s/sn; kalite tahminleri ve yapaylık vekilleri öteki kayıtlarla aynı aralıkta. Araç başka şeyler buldu: 5. kıtada \"bebek\" yerine \"abla\", bir \"Merhaba\" yerine \"Merengim\"; enerji satırı \"ninni/sakin\"."
                   % (sz(a), s(m(a, "hece_sn_obek_medyan"), 1)),
                   "hayır", "Aksanın ölçülebilir bir izi yok. Bulunanlar başka kusurlar."),
@@ -198,7 +204,8 @@ for b in BOYUTLAR:
 ek("")
 ek("Üç şey akılda kalsın:")
 ek("")
-ek("1. **En güçlü kulak, sözleri yazdırmak.** Kullanıcının reddettiği 12 kaydın 7'sinde gerekçe ya da gerekçenin bir parçası dökümde açıkça görünüyor.")
+ek("1. **En güçlü kulak, sözleri yazdırmak.** Kullanıcının reddettiği 12 kaydın 5'inde gerekçe dökümde açıkça görünüyor (yanlış aile adı, yanlış hayvan sesi, hiç anlaşılmayan sözler); "
+   "ikisinde daha döküm başka bir kusuru gösteriyor.")
 ek("2. **\"Sorun bulunmadı\" beğenilecek demek değil.** Aksan yüzünden reddedilen `duzgun_2` araçtan neredeyse temiz çıkıyor.")
 ek("3. **Tek kayda not vermek yerine iki kaydı yan yana ölçmek** çok daha güvenilir. Aynı vokalin üç hâli (özgün, başka orkestrada, esnetilmiş) yan yana konunca farklar apaçık; tek tek bakınca eşikler tutmuyor.")
 ek("")

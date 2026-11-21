@@ -2,7 +2,7 @@
 
 _21.11.2026 · dinle.py 1.0 · kullanıcının kulağıyla yargıladığı 17 kayıt (5 beğenilen, 12 reddedilen)_
 
-> **Eksik:** şu kayıtların ölçümü bu sürüm yazılırken bitmemişti: ali-baba__coskulu_1, ali-baba__coskulu_2.
+> **Eksik:** şu kayıtların ölçümü bu sürüm yazılırken bitmemişti: ali-baba__coskulu_1.
 
 Claude sesi duyamıyor. Dinleme takımı (`dinleme/arac/dinle.py`) sesi sayıya, metne ve resme çeviriyor. Burada o takımı tek gerçek ölçüye, kullanıcının kendi kulağıyla verdiği kararlara vurduk: araç her kararı **doğru boyutta** açıklayabiliyor mu?
 
@@ -23,7 +23,7 @@ Claude sesi duyamıyor. Dinleme takımı (`dinleme/arac/dinle.py`) sesi sayıya,
 
 Üç şey akılda kalsın:
 
-1. **En güçlü kulak, sözleri yazdırmak.** Kullanıcının reddettiği 12 kaydın 7'sinde gerekçe ya da gerekçenin bir parçası dökümde açıkça görünüyor.
+1. **En güçlü kulak, sözleri yazdırmak.** Kullanıcının reddettiği 12 kaydın 5'inde gerekçe dökümde açıkça görünüyor (yanlış aile adı, yanlış hayvan sesi, hiç anlaşılmayan sözler); ikisinde daha döküm başka bir kusuru gösteriyor.
 2. **"Sorun bulunmadı" beğenilecek demek değil.** Aksan yüzünden reddedilen `duzgun_2` araçtan neredeyse temiz çıkıyor.
 3. **Tek kayda not vermek yerine iki kaydı yan yana ölçmek** çok daha güvenilir. Aynı vokalin üç hâli (özgün, başka orkestrada, esnetilmiş) yan yana konunca farklar apaçık; tek tek bakınca eşikler tutmuyor.
 
@@ -40,16 +40,16 @@ Claude sesi duyamıyor. Dinleme takımı (`dinleme/arac/dinle.py`) sesi sayıya,
 
 | Kayıt | Kullanıcının kararı ve gerekçesi | Aracın o boyutta gördüğü | Araç kararı açıklıyor mu |
 |---|---|---|---|
-| `ali-baba/v2_2` | **Beğendi**: söyleyiş iyi; ama söylenen hayvan sesleri yanlış (koyun ve at), bir sözcük bozuk ('atıları'), ezgi bilinen ezgi değil | sözcük hata oranı %4,7. Kıta denetimi: at kıtasında söylenen ses **"Me me"** (koyunun sesi): bulundu. Koyun kıtasında döküm "Me me" yazıyor, ünlü ölçümü de "e" yanında (+3,8 dB; ineğin "mö"sü -8,4 dB): koyun için söylenen bulunamadı. "atıları": döküm "atları" yazıyor, bulunamadı. Söyleyiş: yapaylık işareti yok, akort 8,1 cent, çakışan nota 0/40. Ezgi: ölçülmüyor. | **Kısmen.** Dört şikâyetten biri bulundu (at). Beğenilen söyleyişle çelişen bir uyarı yok. |
+| `ali-baba/v2_2` | **Beğendi**: söyleyiş iyi; ama söylenen hayvan sesleri yanlış (koyun ve at), bir sözcük bozuk ('atıları'), ezgi bilinen ezgi değil | sözcük hata oranı %4,7. Kıta denetimi: at kıtasında söylenen ses **"Me me"** (koyunun sesi): bulundu. Koyun kıtasında döküm "Me me" yazıyor, ünlü ölçümü de "e" yanında (iki hece +4,4 / +3,2 dB; ineğin "mö"sü -11,0 / -5,8 dB): koyun için söylenen bulunamadı. "atıları": döküm "atları" yazıyor, bulunamadı. Söyleyiş: yapaylık işareti yok, akort 8,1 cent, çakışan nota 0/40. Ezgi: ölçülmüyor. | **Kısmen.** Dört şikâyetten biri bulundu (at). Beğenilen söyleyişle çelişen bir uyarı yok. |
 | `ali-baba/dinle_2` | **Beğendi**: 'ikincisi daha güzel', 'bu seslendirme uygun'; ezgi yine bilinen ezgi değil | Yapaylık işareti yok; akort 8,8 cent; aynı armonide (en iyi kaydırma +0); sözcük hata oranı %8,3. Araç, kullanıcının söylemediği gerçek bir söz hatası buldu (76,9. sn: "köpekleri" yerine "ördekleri"). Ezgi: ölçülmüyor. | **Kısmen.** Beğeniyle çelişen uyarı yok; ama "daha güzel"i gösteren bir sayı da yok. Ezgi karşılaştırması yok. |
 | `el-yikama/coskulu_2` | **Beğendi**: el yıkama şarkısı için seçilen coşkulu kayıt | MusicCoCa coşku farkı +0,09, CED 'ninni' 0,000, hareketlilik puanı 77; özet satırı "coşkulu yana yakın". (Ayrıca "aynı armonide mi" satırı **sorun** diyor: en iyi kaydırma -4; beğenilen kayıtta yanlış alarm.) | **Evet.** Coşku göstergeleri seçimle uyumlu. |
 | `parmak-ailesi/coskulu_1` | **Beğendi**: parmak ailesi için seçilen coşkulu kayıt (beş ad da doğru) | MusicCoCa coşku farkı +0,10, CED 'ninni' 0,000, hareketlilik puanı 79; beş kıtada beş ad da doğru (sözcük hata oranı %4,0). (Yanlış alarmlar: "ünsüzlerde tiz zayıf" ve "söyleyiş hızı" uyarıları.) | **Evet.** Coşku ve adlar seçimle uyumlu. |
-| `ali-baba/yeni/demo_altyapi_sesli` | **Beğendi**: çalgısal altyapı (klarnet ezgisi + gerçek hayvan sesleri): 'olmuş' (daha coşkulu istendikten sonra) | MusicCoCa coşku farkı +0,26, CED 'ninni' 0,000, hareketlilik puanı 64; özet satırı: "yorum yok". Vokal yok; ayırıcı hayvan seslerini "vokal" kanalına koyuyor. | **Kısmen.** MusicCoCa coşkulu yanda; ama hareketlilik puanı düşük kaldığı için aracın özet satırı beğenilen altyapıya yanlış uyarı veriyor. |
+| `ali-baba/yeni/demo_altyapi_sesli` | **Beğendi**: çalgısal altyapı (klarnet ezgisi + gerçek hayvan sesleri): 'olmuş' (daha coşkulu istendikten sonra) | MusicCoCa coşku farkı +0,26, CED 'ninni' 0,000, hareketlilik puanı 64; özet satırı: "yorum yok". Vokal yok; ayırıcı hayvan seslerini "vokal" kanalına koyuyor. | **Evet.** MusicCoCa ve CED coşkulu yanda. Hareketlilik puanı düşük kaldığı için aracın kendi özet satırı "coşkulu" diyemiyor; vokal olmadığı hâlde hayvan seslerine vokal uyarıları veriyor. |
 | `ali-baba/yeni/vokal/ornek_kita1` | **Reddetti**: konuşma sentezi vokoderle ezgiye oturtuldu: 'sözler çok kötü çıktı' | sözcük hata oranı %100,0 (Scribe "Maliboku yeşil boya…" duyuyor; sözcüklerin %70 kadarında emin değil); donmuş ünlü %31. | **Evet.** "Sözler çok kötü çıktı" yargısının tam karşılığı: makine tek sözcüğü bile tanımıyor. |
 | `ali-baba/yeni2/sarki_birlesik` | **Reddetti**: yapay vokal iki katına esnetilip perdesi ezgiye düzlendi; kullanıcı ardından doğal söyleyişi istedi (yapay duyuldu) | sözcük hata oranı %48,1 (aynı vokalin işlenmemiş hâli dinle_2'de %8,3); donmuş ünlü %20; panoda perde merdiven basamağı gibi. Kalite tahminleri (DNSMOS 2,39, UTMOS 1,34) doğal kayıtlardan farksız. | **Evet.** Sözlerin anlaşılmaz hâle gelmesi ve panodaki görüntü yargıyı açıklıyor; "yapaylık" sayıları tek başına yetmezdi. |
 | `ali-baba/yeni3/onizleme/ali-baba-dogal-onizleme` | **Reddetti**: doğal yapay vokal (kendi ezgisi) altta başka ezgi çalan orkestranın üstüne kondu: 'olmamış' | Aynı vokal dinle_2'de: vokal − altyapı -3,4 dB, ±25 cent içinde %88, sözcük hata oranı %8,3. Burada: -13,0 dB, %68, sözcük hata oranı %19,4; "aynı armonide mi" satırı sorun (en iyi kaydırma -4). | **Kısmen.** dinle_2 ile yan yana konunca fark çok açık. Tek başına bakınca armoni sayıları ayırmıyor (beğenilen bir kayıt aynı değeri alıyor); ayıran, ayırıcının vokali temiz çıkaramaması. |
 | ali-baba/coskulu_1 | **Reddetti**: 'çok kötü; koyun hâlâ mö diyor'; çok uzun (3-3,5 dk) | (ölçüm tamamlanmadı) | – |
-| ali-baba/coskulu_2 | **Reddetti**: 'çok kötü; koyun hâlâ mö diyor'; çok uzun (3-3,5 dk) | (ölçüm tamamlanmadı) | – |
+| `ali-baba/coskulu_2` | **Reddetti**: 'çok kötü; koyun hâlâ mö diyor'; çok uzun (3-3,5 dk) | Süre 186 sn (3:06). sözcük hata oranı %13,9. Koyun kıtasında dökümde söylenen ses **"Mö mö"**: bulundu. (Ünlü ölçümü kararsız: iki hece +5,1 / -4,5 dB; ineğinki -8,7 / -8,5 dB.) Ayrıca son kıtada kedi yerine yine köpek söyleniyor. | **Evet.** İki şikâyet de (koyunun sesi, süre) görünüyor. |
 | `parmak-ailesi/duzgun_1` | **Reddetti**: 'çok kötü söylüyor, Türkçe konuşan bir İngiliz gibi' (yabancı aksan) | sözcük hata oranı %8,0; hece hızı 2,4/sn; kalite tahminleri ve yapaylık vekilleri öteki kayıtlarla aynı aralıkta. Araç başka şeyler buldu: 5. kıtada "bebek" yerine "abla", bir "Merhaba" yerine "Merengim"; enerji satırı "ninni/sakin". | **Hayır.** Aksanın ölçülebilir bir izi yok. Bulunanlar başka kusurlar. |
 | `parmak-ailesi/duzgun_2` | **Reddetti**: 'çok kötü söylüyor, Türkçe konuşan bir İngiliz gibi' (yabancı aksan) | sözcük hata oranı %4,0; Scribe ortalama güveni -0,007 (seçilen kayıtta -0,004); beş ad doğru; hece hızı 2,6/sn. | **Hayır.** Makine sözleri kusursuz ve emin biçimde yazıyor; aksanı gösteren hiçbir sayı yok. Tek fark yavaşlık. |
 | `parmak-ailesi/turkce_2` | **Reddetti**: sözler yanlış (3. kıtada 'abi parmak' yerine 'anne parmak') | sözcük hata oranı %10,0. Kıta denetimi: 3. kıtada **"anne parmak, anne parmak"** (olması gereken "abi"): bulundu. | **Evet.** Kullanıcının söylediği hata, saniyesiyle bulundu. |
@@ -58,7 +58,7 @@ Claude sesi duyamıyor. Dinleme takımı (`dinleme/arac/dinle.py`) sesi sayıya,
 | `el-yikama/sarki_1` | **Reddetti**: yavaş, sakin kayıt: 'ninni gibi, coşku yok' dönemi | MusicCoCa coşku farkı -0,04, CED 'ninni' 0,027, hareketlilik puanı 71; özet satırı "ninni/sakin". (Hareketlilik puanı tek başına yanıltırdı: seçilen coşkulu kayıt 77, bu 71.) | **Evet.** MusicCoCa ve CED "ninni" yargıyla aynı yanda; hareketlilik puanı değil. |
 | `parmak-ailesi/sarki_2` | **Reddetti**: 'sözler çok hızlı geçiyor' | Hece hızı 4,8/sn (öbek medyanı), kıtadan kıtaya 10,2 sn: altı kaydın en hızlısı. Ama seçilen kayıt 4,6/sn ile hemen yanında ve aracın "çok hızlı" uyarısını o alıyor, bu değil. | **Kısmen.** Sıralama doğru (en hızlısı bu), ama fark ölçüm hatası kadar küçük; araç çizgiyi çekemiyor. |
 
-Toplam: 8 kayıtta **evet**, 5 kayıtta **kısmen**, 2 kayıtta **hayır** (ikisi de aksan).
+Toplam: 10 kayıtta **evet**, 4 kayıtta **kısmen**, 2 kayıtta **hayır** (ikisi de aksan).
 
 ## Boyut boyut
 
@@ -76,6 +76,7 @@ Her boyutta soru aynı: kullanıcının olumlu ve olumsuz dediği kayıtların s
 | ali-baba/yeni/vokal/ornek_kita1 | reddetti | bu çalışma | %100,0 | 10 / 3 / 0 | %70 | – |
 | ali-baba/yeni2/sarki_birlesik | reddetti | bu çalışma | %48,1 | 42 / 10 / 0 | %7 | – |
 | ali-baba/yeni3/…/dogal-onizleme | reddetti | bu çalışma | %19,4 | 20 / 1 / 0 | %4 | – |
+| ali-baba/coskulu_2 | reddetti | bu çalışma | %13,9 | 8 / 0 / 7 | %3 | inek: Mö mö; koyun: Mö mö ✗; at: İha ha ihan ha; horoz: Ü ürü ü; ördek: Vak vak; köpek: Hav hav; köpek: Hav hav |
 | parmak-ailesi/duzgun_1 | reddetti | eski dosya | %8,0 | 3 / 1 / 0 | ölçülemedi | 1. baba+baba; 2. anne+anne; 3. abi+abi; 4. abla+abla; 5. abla+abla ✗ |
 | parmak-ailesi/duzgun_2 | reddetti | bu çalışma | %4,0 | 2 / 0 / 0 | %0 | 1. baba+baba; 2. anne+anne; 3. abi+abi; 4. abla+abla; 5. bebek+bebek |
 | parmak-ailesi/turkce_2 | reddetti | bu çalışma | %10,0 | 2 / 0 / 3 | %2 | 1. baba+baba; 2. anne+anne; 3. anne+anne ✗; 4. abla+abla; 5. bebek+bebek |
@@ -100,15 +101,15 @@ Her boyutta soru aynı: kullanıcının olumlu ve olumsuz dediği kayıtların s
 
 Söylenen hayvan sesleri (döküm + ünlü tınısı deneyi; "ö" gibi yuvarlak ünlüde 1,8–2,8 kHz bandı zayıf, yani sayı eksi; "e"de artı):
 
-| Kayıt | Kıta başı | Kıtanın hayvanı | Dökümde söylenen ses | Hayvana uyuyor mu (döküme göre) | Ünlü tınısı: 1,8–2,8 kHz eksi 1,2–1,8 kHz (dB) |
+| Kayıt | Kıta başı | Kıtanın hayvanı | Dökümde söylenen ses | Hayvana uyuyor mu (döküme göre) | Ünlü tınısı, hece hece: 1,8–2,8 kHz eksi 1,2–1,8 kHz (dB) |
 |---|---|---|---|---|---|
-| ali-baba/v2_2 | 9. sn | inek | Mö mö | uyuyor | -8,4 |
-| ali-baba/v2_2 | 22. sn | koyun | Me me | uyuyor | +3,8 |
-| ali-baba/v2_2 | 36. sn | at | Me me | **uymuyor** | +2,1 |
-| ali-baba/v2_2 | 50. sn | horoz | Üü üü | uyuyor | +5,0 |
-| ali-baba/v2_2 | 63. sn | ördek | Vak vak | uyuyor | -18,6 |
-| ali-baba/v2_2 | 77. sn | köpek | Hav hav | uyuyor | -17,9 |
-| ali-baba/v2_2 | 91. sn | kedi | Miyav miyav | uyuyor | -3,3 |
+| ali-baba/v2_2 | 9. sn | inek | Mö mö | uyuyor | -11,0 / -5,8 |
+| ali-baba/v2_2 | 22. sn | koyun | Me me | uyuyor | +4,4 / +3,2 |
+| ali-baba/v2_2 | 36. sn | at | Me me | **uymuyor** | +2,0 / +2,2 |
+| ali-baba/v2_2 | 50. sn | horoz | Üü üü | uyuyor | +7,2 / +2,8 |
+| ali-baba/v2_2 | 63. sn | ördek | Vak vak | uyuyor | -18,0 / -19,1 |
+| ali-baba/v2_2 | 77. sn | köpek | Hav hav | uyuyor | -18,1 / -17,7 |
+| ali-baba/v2_2 | 91. sn | kedi | Miyav miyav | uyuyor | -3,7 / -2,9 |
 | ali-baba/coskulu_1 | 8. sn | inek | Mö mö | uyuyor | – |
 | ali-baba/coskulu_1 | 41. sn | koyun | Me me | uyuyor | – |
 | ali-baba/coskulu_1 | 74. sn | at | İha iha | uyuyor | – |
@@ -116,13 +117,13 @@ Söylenen hayvan sesleri (döküm + ünlü tınısı deneyi; "ö" gibi yuvarlak 
 | ali-baba/coskulu_1 | 134. sn | ördek | Vak vak | uyuyor | – |
 | ali-baba/coskulu_1 | 170. sn | köpek | Hav hav | uyuyor | – |
 | ali-baba/coskulu_1 | 203. sn | kedi | Miyav miyav | uyuyor | – |
-| ali-baba/coskulu_2 | 8. sn | inek | Mö mö | uyuyor | – |
-| ali-baba/coskulu_2 | 33. sn | koyun | Mö mö | **uymuyor** | – |
-| ali-baba/coskulu_2 | 60. sn | at | İha ha ihan ha | uyuyor | – |
-| ali-baba/coskulu_2 | 87. sn | horoz | Ü ürü ü | uyuyor | – |
-| ali-baba/coskulu_2 | 114. sn | ördek | Vak vak | uyuyor | – |
-| ali-baba/coskulu_2 | 141. sn | köpek | Hav hav | uyuyor | – |
-| ali-baba/coskulu_2 | 168. sn | köpek | Hav hav | uyuyor | – |
+| ali-baba/coskulu_2 | 8. sn | inek | Mö mö | uyuyor | -8,7 / -8,5 |
+| ali-baba/coskulu_2 | 33. sn | koyun | Mö mö | **uymuyor** | +5,1 / -4,5 |
+| ali-baba/coskulu_2 | 60. sn | at | İha ha ihan ha | uyuyor | -8,9 / -18,4 / -9,8 / -18,8 |
+| ali-baba/coskulu_2 | 87. sn | horoz | Ü ürü ü | uyuyor | +10,0 / +13,4 / +13,9 |
+| ali-baba/coskulu_2 | 114. sn | ördek | Vak vak | uyuyor | -17,3 / -18,1 |
+| ali-baba/coskulu_2 | 141. sn | köpek | Hav hav | uyuyor | -13,4 / -19,8 |
+| ali-baba/coskulu_2 | 168. sn | köpek | Hav hav | uyuyor | -12,8 / -16,9 |
 
 **Sözcük hata oranı karar vermeye yaramıyor.** Beğenilen kayıtlar %4,0 … %8,3 arasında; söz hatası yüzünden reddedilenler (`turkce_2`, `yavas_2`) %10,0 ve %6,0. Yani tek bir yanlış aile adı %4-10'luk bir orana sığıyor, sonda fazladan söylenen sekiz sözcük de (`dinle_2`). Kullanıcı ilkini affetmiyor, ikincisini fark etmiyor bile. **Eşik önermiyorum;** öneri bir kural: her kıtanın anahtar sözcüğü (aile adı, hayvan adı, hayvan sesi) beklenenle aynı mı? Biri bile tutmuyorsa kayıt kullanıcıya gitmeden elenir.
 
@@ -138,6 +139,7 @@ Tek kaba eşik temiz: makinenin sözleri **hiç anlayamadığı** kayıtlar (aş
 | ali-baba/yeni/vokal/ornek_kita1 | yargı yok (reddetti) | 59 | +0,28 | 0,000 | 4,1 | -6,3 | 2464 | 4,5 | ninni/sakin uyarısı |
 | ali-baba/yeni2/sarki_birlesik | yargı yok (reddetti) | 62 | +0,25 | 0,000 | 4,0 | -5,0 | 2554 | 3,3 | yorum yok |
 | ali-baba/dinle_2 | yargı yok (beğendi) | 73 | +0,18 | 0,000 | 4,2 | +0,8 | 2684 | 3,9 | coşkulu yana yakın |
+| ali-baba/coskulu_2 | yargı yok (reddetti) | 66 | +0,13 | 0,000 | 4,6 | -4,2 | 2097 | 4,0 | coşkulu yana yakın |
 | ali-baba/yeni3/…/dogal-onizleme | yargı yok (reddetti) | 56 | +0,13 | 0,000 | 3,5 | -5,0 | 2429 | 4,7 | ninni/sakin uyarısı |
 | parmak-ailesi/sarki_2 | yargı yok (reddetti) | 73 | +0,06 | 0,001 | 4,5 | +0,1 | 2124 | 4,8 | yorum yok |
 | ali-baba/v2_2 | yargı yok (beğendi) | 75 | +0,01 | 0,000 | 4,7 | +0,9 | 2397 | 3,9 | yorum yok |
@@ -150,9 +152,9 @@ Tek kaba eşik temiz: makinenin sözleri **hiç anlayamadığı** kayıtlar (aş
 
 Kullanıcının coşku üstüne açıkça konuştuğu altı kayıt var (üç "coşkulu / olmuş", üç "ninni gibi"):
 
-- **MusicCoCa coşku farkı** — coşkulu: coskulu_2 +0,09, coskulu_1 +0,10, demo_altyapi_sesli +0,26 · ninni: yavas_2 -0,08, yavas_2 -0,09, sarki_1 -0,04 → **temiz boşluk** (-0,04 ile +0,09 arası boş).
-- **CED "ninni" olasılığı** — coşkulu: coskulu_2 0,000, coskulu_1 0,000, demo_altyapi_sesli 0,000 · ninni: yavas_2 0,044, yavas_2 0,023, sarki_1 0,027 → **temiz boşluk** (0,000 ile 0,023 arası boş).
-- **Hareketlilik puanı** — coşkulu: coskulu_2 77, coskulu_1 79, demo_altyapi_sesli 64 · ninni: yavas_2 52, yavas_2 58, sarki_1 71 → **örtüşüyor**.
+- **MusicCoCa coşku farkı** — coşkulu: el-yikama/coskulu_2 +0,09, parmak/coskulu_1 +0,10, ali-baba/demo_altyapi_sesli +0,26 · ninni: parmak/yavas_2 -0,08, pitirin/yavas_2 -0,09, el-yikama/sarki_1 -0,04 → **temiz boşluk** (-0,04 ile +0,09 arası boş).
+- **CED "ninni" olasılığı** — coşkulu: el-yikama/coskulu_2 0,000, parmak/coskulu_1 0,000, ali-baba/demo_altyapi_sesli 0,000 · ninni: parmak/yavas_2 0,044, pitirin/yavas_2 0,023, el-yikama/sarki_1 0,027 → **temiz boşluk** (0,000 ile 0,023 arası boş).
+- **Hareketlilik puanı** — coşkulu: el-yikama/coskulu_2 77, parmak/coskulu_1 79, ali-baba/demo_altyapi_sesli 64 · ninni: parmak/yavas_2 52, pitirin/yavas_2 58, el-yikama/sarki_1 71 → **örtüşüyor**.
 
 **MusicCoCa coşku farkı ve CED "ninni" olasılığı kullanıcının yargısını temiz ayırıyor;** iki şarkıda da aynı şarkının coşkulu ve ninni gibi kaydı doğru yana düşüyor (El Yıkama: +0,09 karşısında -0,04; Parmak Ailesi: +0,10 karşısında -0,08).
 
@@ -175,6 +177,7 @@ Neyi söylemez: bu göstergeler müziğin türünü ve hareketini tanıyor; şar
 | el-yikama/coskulu_2 | doğal yapay şarkıcı | beğendi | %4 | %0 | 11,8 | 0,63 | -11,7 | 1,16 | -9,5 | yok | 2,45 | 2,67 | 3,19 | 1,31 |
 | parmak-ailesi/coskulu_1 | doğal yapay şarkıcı | beğendi | %4 | %0 | 11,5 | 0,68 | -10,8 | 1,49 | -16,1 | ünsüzlerde | 2,47 | 2,31 | 2,98 | 1,52 |
 | ali-baba/yeni3/…/dogal-onizleme | doğal (dinle_2'nin vokali, başka orkestrada) | reddetti | %19 | %5 | 14,6 | 0,28 | -14,4 | 2,42 | -16,0 | ünsüzlerde | 2,56 | 2,76 | 2,97 | 1,43 |
+| ali-baba/coskulu_2 | doğal yapay şarkıcı | reddetti | %14 | %0 | 12,6 | 0,55 | -12,9 | 1,34 | -12,0 | yok | 2,35 | 2,49 | 2,76 | 1,58 |
 | parmak-ailesi/duzgun_1 | doğal yapay şarkıcı | reddetti | %8 | %0 | 9,1 | 0,74 | -12,0 | 1,07 | -14,1 | ünsüzlerde | 2,51 | 1,93 | 3,29 | 1,30 |
 | parmak-ailesi/duzgun_2 | doğal yapay şarkıcı | reddetti | %4 | %0 | 11,2 | 0,59 | -12,5 | 1,13 | -10,6 | yok | 2,76 | 3,67 | 3,91 | 1,95 |
 | parmak-ailesi/turkce_2 | doğal yapay şarkıcı | reddetti | %10 | %3 | 9,1 | 0,78 | -13,8 | 1,45 | -10,7 | yok | 2,63 | 3,37 | 3,89 | 2,00 |
@@ -188,18 +191,18 @@ Burada üç kayıt **aynı vokalden** geliyor, bu yüzden karşılaştırma temi
 
 **Temiz ayıran tek sayı: makine sözleri anlıyor mu.**
 
-- İşlenmemiş 11 yapay şarkıcı kaydında sözcük hata oranı %0,0 … %10,0. Aynı vokal başka orkestrada %19,4. İşlenmiş iki vokalde %48,1 ve %100,0.
+- İşlenmemiş 12 yapay şarkıcı kaydında sözcük hata oranı %0,0 … %13,9. Aynı vokal başka orkestrada %19,4. İşlenmiş iki vokalde %48,1 ve %100,0.
 - `dinle_2` → `sarki_birlesik`: aynı ses, aynı sözler; esnetme ve perde düzleme hata oranını %8,3'ten %48,1'e çıkarıyor. Scribe "Ali Baba'nın" yerine "Ülke'nin", "dinle bak" yerine "iner ya" duyuyor.
 - Scribe'ın emin olmadığı sözcüklerin oranı da aynı yönde (%7 ve %70; doğal kayıtlarda en çok %3,7), ama boşluk dar; eşik önermiyorum.
 
 **Aracın "yapaylık" vekilleri ayırmıyor.**
 
 - **Donmuş ünlü:** işlenmiş iki vokali yakalıyor (%20 ve %31), ama doğal kayıtlardan `parmak-ailesi/yavas_2` (%19) de aynı uyarıyı alıyor. Bunlar yavaş, uzun tutulan notalarla söylenen kayıtlar; uyarı "zaman esnetme / vokoder izlenimi" diyor, oysa ölçtüğü şey uzun tutulan ünlü. Aynı vokalin iki hâli arasında işe yarıyor (`dinle_2` %0 → `sarki_birlesik` %20), tek kayda hüküm olarak yaramıyor.
-- **Nota içi oynaklık, ızgaraya yapışma, vibrato:** örtüşüyor. `sarki_birlesik`'in perdesi panoda cetvelle çizilmiş gibi, ama oynaklığı 10,6 cent (doğal kayıtlar 9,1 … 11,8). Ayrılmış kanaldaki artıklar düz perdeye sahte bir titreme ekliyor.
+- **Nota içi oynaklık, ızgaraya yapışma, vibrato:** örtüşüyor. `sarki_birlesik`'in perdesi panoda cetvelle çizilmiş gibi, ama oynaklığı 10,6 cent (doğal kayıtlar 9,1 … 12,6). Ayrılmış kanaldaki artıklar düz perdeye sahte bir titreme ekliyor.
 - **"Ünsüzlerde tiz zayıf" uyarısı:** beğenilen `parmak/coskulu_1` de alıyor (-16,1 dB; eşik −14). Yanlış alarm.
 - **Tiz doku:** işlenmiş vokallerde yüksek (2,03, 2,42), ama hiç işlenmemiş vokalin başka orkestradaki hâlinde de 2,42. Sesi değil, ayırma artığını ölçüyor.
-- **Konuşma-kalitesi tahminleri (DNSMOS, NISQA, Distill-MOS, UTMOS22):** hiç ayırmıyor. İşlenmiş vokaller UTMOS 1,48 ve 1,34; beğenilen dört kayıt 1,31 … 1,52. Üstelik en yüksek puanları "ninni gibi" diye reddedilen kayıtlar alıyor (UTMOS 1,30 … 2,15; NISQA 1,76 … 3,71): sakin, seyrek altyapılı kayıtta ses "temiz konuşma"ya daha çok benziyor. **Bu puanlar kullanıcının zevkiyle ters düşüyor; iyi/kötü notu olarak kullanılmamalı.**
-- CED'in "sentetik şarkı" ve "konuşma sentezleyici" etiketleri: ayırmıyor (hepsi 0,06'nın altında; işlenmiş vokallerde daha yüksek değil).
+- **Konuşma-kalitesi tahminleri (DNSMOS, NISQA, Distill-MOS, UTMOS22):** hiç ayırmıyor. İşlenmiş vokaller UTMOS 1,48 ve 1,34; beğenilen dört kayıt 1,31 … 1,52. Üstelik en yüksek UTMOS'u alan dört kayıt (`parmak-ailesi/yavas_2` 2,15, `parmak-ailesi/turkce_2` 2,00, `parmak-ailesi/duzgun_2` 1,95, `el-yikama/sarki_1` 1,85) hepsi reddedilmiş, yavaş dönemin kayıtları: sakin, seyrek altyapılı kayıtta ses "temiz konuşma"ya daha çok benziyor. **Bu puanlar kullanıcının zevkiyle ters düşüyor; iyi/kötü notu olarak kullanılmamalı.**
+- CED'in "sentetik şarkı" ve "konuşma sentezleyici" etiketleri: ayırmıyor (sentetik şarkı: işlenmiş vokallerde 0,002 ve 0,021, doğal kayıtlarda 0,011 … 0,054).
 
 Sonuç: araç "bu vokal bozulmuş" yargısını **sözlerin anlaşılmazlığı üzerinden** veriyor, sesin tınısı üzerinden değil. Sözleri anlaşılır kalan ama yapay tınlayan bir vokal bu sayılardan temiz çıkar.
 
@@ -231,6 +234,7 @@ Otomatik ayırmanın payı (aynı kayıt, gerçek kanallarla yeniden):
 | parmak-ailesi/coskulu_1 | beğendi | +0 | 0,56 | +0,27 | %100 | %92 | 9,2 | 0 / 13 | 0,39 | -1,6 | -21 | iyi |
 | ali-baba/yeni/vokal/ornek_kita1 | reddetti | +0 | 0,69 | +0,49 | %95 | %86 | 9,8 | 2 / 12 | 0,19 | -3,8 | -44 | iyi |
 | ali-baba/yeni2/sarki_birlesik | reddetti | +0 | 0,65 | +0,49 | %99 | %91 | 8,4 | 3 / 99 | 0,41 | -5,9 | -13 | iyi |
+| ali-baba/coskulu_2 | reddetti | -4 | 0,35 | +0,12 | %99 | %83 | 11,2 | 0 / 24 | 0,37 | -4,3 | -40 | sorun |
 | parmak-ailesi/duzgun_1 | reddetti | +0 | 0,37 | +0,28 | %90 (ton belirsiz) | %94 | 7,1 | 8 / 59 | 0,72 | +4,4 | -51 | iyi |
 | parmak-ailesi/duzgun_2 | reddetti | +5 | 0,27 | +0,19 | %98 | %85 | 8,5 | 0 / 30 | 0,64 | +4,7 | -15 | dikkat |
 | parmak-ailesi/turkce_2 | reddetti | +5 | 0,21 | +0,07 | %83 (ton belirsiz) | %94 | 5,4 | 0 / 35 | 0,48 | +1,7 | -48 | dikkat |
@@ -254,20 +258,20 @@ Reddedilen ön dinlemede vokal, beğenilen `dinle_2`'nin vokalinin **hiç işlen
 
 **Tek kayda bakınca aracın armoni hükmü tutmuyor:**
 
-- "En iyi kaydırma 0 olmalı" denetimi ön dinlemeye **sorun** diyor (-4). Ama beğenilen `el-yikama/coskulu_2` de aynı sonucu alıyor (-4; destek 0,34). Ayrıca `el-yikama/coskulu_2` (-4), `parmak-ailesi/duzgun_2` (+5), `parmak-ailesi/turkce_2` (+5), `parmak-ailesi/yavas_2` (+5) kayıtta en iyi kaydırma 0 değil.
+- "En iyi kaydırma 0 olmalı" denetimi ön dinlemeye **sorun** diyor (-4). Ama beğenilen `el-yikama/coskulu_2` de aynı sonucu alıyor (-4; destek 0,34). En iyi kaydırması 0 olmayan başka kayıtlar da var: `ali-baba/coskulu_2` (-4), `parmak-ailesi/duzgun_2` (+5), `parmak-ailesi/turkce_2` (+5), `parmak-ailesi/yavas_2` (+5).
 - Nedeni: ölçü, vokalin söylediği seste orkestranın ne kadar enerjisi olduğuna bakıyor. Vokal akorun üçlüsünde ya da beşlisinde duruyorsa (kök ses yerine), tamamen uyumlu olsa bile "kaydırsak daha iyi" çıkıyor.
 - "Gam içi söyleme" ön dinlemede %91 ile **iyi** diyor; armoni kuramı açısından vokal gerçekten gamın içinde. Kullanıcının "olmamış" dediği şey kuramsal uyumsuzluk değil.
 
-**Ön dinlemeyi öteki 13 vokalli kayıttan ayıran sayılar var, ama armoni sayıları değil:**
+**Ön dinlemeyi öteki 14 vokalli kayıttan ayıran sayılar var, ama armoni sayıları değil:**
 
-- ±25 cent içinde: ön dinleme %68, öteki 13 kayıt %85 … 94.
-- ızgaraya yapışma R: ön dinleme 0,28, öteki 13 kayıt 0,59 … 0,78.
-- vokal − altyapı dB: ön dinleme -13,0, öteki 13 kayıt -5,9 … +5,7.
-- CED'in vokal kanalına "konuşma" demesi: ön dinleme 0,43, öteki 13 kayıt 0,01 … 0,20.
+- ±25 cent içinde: ön dinleme %68, öteki 14 kayıt %83 … %94.
+- ızgaraya yapışma R: ön dinleme 0,28, öteki 14 kayıt 0,55 … 0,78.
+- vokal − altyapı dB: ön dinleme -13,0, öteki 14 kayıt -5,9 … +5,7.
+- CED'in vokal kanalına "konuşma" demesi: ön dinleme 0,43, öteki 14 kayıt 0,01 … 0,29.
 
 Bunların hepsi aynı şeyi söylüyor: **ayırıcı bu karışımdan temiz bir vokal çıkaramıyor.** Gerçek kanallarla ölçünce (yukarıdaki tablo) vokalin kendisi sağlam. Demek ki aracın yakaladığı şey dolaylı bir belirti: vokalin yerinde, onunla yarışan başka bir ezgi sesi var (vokalin altına konan klarnet) ve makine ikisini ayıramıyor. Bu, kullanıcının "altta başka ezgi çalıyor, olmamış" demesiyle uyumlu; ama tek örnek.
 
-Ritim ölçüsü bu boyutta işe yaramadı: ön dinleme R 0,34, beğenilen `dinle_2` 0,36; doğal ve kusursuz kabul edilen `el-yikama/sarki_1` ise 0,07 (vuruş ızgarası yanlış bulunmuş).
+Ritim ölçüsü bu boyutta işe yaramadı: ön dinleme R 0,34, beğenilen `dinle_2` 0,36. Ritmi için hiçbir şikâyet olmayan `el-yikama/sarki_1` 0,07, `pitirin-ailesi/yavas_2` 0,14 çıktı (vuruş ızgarası yanlış bulunmuş olmalı).
 
 ### 5. Aksan: "Türkçe konuşan bir İngiliz gibi"
 
@@ -283,7 +287,7 @@ Ritim ölçüsü bu boyutta işe yaramadı: ön dinleme R 0,34, beğenilen `dinl
 Altı Parmak Ailesi kaydı aynı sözleri söylüyor; ikisi (`duzgun_1`, `duzgun_2`) "Türkçe konuşan bir İngiliz gibi" diye reddedildi. **Hiçbir sayı bu ikisini ötekilerden ayırmıyor:**
 
 - **Sözcük hata oranı:** aksanlı iki kayıt %4 … %8; öteki dördü %2 … %10. Scribe aksanlı söyleneni de doğru yazıyor.
-- **Scribe'ın güveni:** `duzgun_2` ortalama logprob -0,007; seçilen kayıt -0,004. Fark yok. Dil olasılığı hepsinde 1,00 (Türkçe).
+- **Scribe'ın güveni:** `duzgun_2` ortalama logprob -0,007; seçilen kayıt -0,004. Fark yok. Dil olasılığı, bu çalışmada dökümü alınan kayıtların hepsinde 1,00 (Türkçe).
 - **Kalite tahminleri:** aksanlı iki kayıt birbirine bile benzemiyor (NISQA 1,93 ve 3,67).
 - **İki fonetik deney** (araç dışı; aynı sözcükler kayıtlar arasında karşılaştırıldı): "parmak"taki r'nin İngiliz r'sine benzeyip benzemediği (aksanlılar +2,7 … +5,1 dB, ötekiler +2,7 … +5,3 dB) ve "buradayım"ın son ünlüsünün "ı" mı "i" mi olduğu (aksanlılar +0,3 … +3,9 dB, ötekiler -9,1 … +16,1 dB). İkisinde de aksanlı kayıtlar ötekilerin aralığının içinde. Ayrıca ikinci ölçü sözcüğün süresinden etkileniyor; güvenilmez.
 - **Ortak ölçülebilir tek özellik yavaşlık:** "buradayım" sözcüğü aksanlı iki kayıtta 1,42 … 1,44 sn sürüyor, öteki dördünde 0,52 … 1,06 sn; hece hızı da en düşük ikisi (2,4 … 2,6/sn). Bu bir tempo ölçüsü; yavaş ama düzgün Türkçeyle söylenen bir kayıt da aynı sayıyı verir. **Aksan dedektörü olarak önermiyorum.**
@@ -313,24 +317,24 @@ Sonuç: **aksan için tek hakem hâlâ kullanıcının kulağı.** Araç bu konu
 
 ### 7. Süre
 
-"Çok uzun" denen iki kayıt – sn; kabul edilen dört şarkı 70 … 110 sn; "olmuş" denen yedi kıtalık altyapı 155 sn. Arada temiz boşluk var (155 ile 0 sn arası). Doğrudan ölçüm; araç süreyi yazıyor ama uyarı vermiyor.
+"Çok uzun" denen iki kayıt 186 sn; kabul edilen dört şarkı 70 … 110 sn; "olmuş" denen yedi kıtalık altyapı 155 sn. Arada temiz boşluk var (155 ile 186 sn arası). Doğrudan ölçüm; araç süreyi yazıyor ama uyarı vermiyor.
 
 ### 8. Ezgi bilinen ezgi mi
 
 Kullanıcı `v2_2` ve `dinle_2` için "ezgi bilinen Ali Baba ezgisi değil" dedi. **Araç bunu ölçmüyor;** yalnızca vokalin kendi orkestrasıyla uyumuna bakıyor, ve ikisi de kendi orkestrasıyla uyumlu çıkıyor.
 
-Tek dolaylı ipucu: `v2_2`'nin altyapı tonu **Re minör (D minor)** bulundu. Bilinen ezgi majör; minör bir kayıt o ezgi olamaz. `dinle_2`'de ton belirsiz çıktığı için aynı ipucu yok. Gerçek denetim için vokalin nota dizisini bilinen ezginin notalarıyla karşılaştırmak gerekir; notalar depoda hazır (`ali-baba/yeni/zaman.json`), araçta böyle bir adım yok.
+Tek dolaylı ipucu: `v2_2`'nin altyapı tonu **Re minör (D minor)** bulundu. Bilinen ezgi majör; ton doğru bulunduysa bu kayıt o ezgi olamaz (ama ton bulma majör / minör ayrımında yanılabiliyor). `dinle_2`'de ton belirsiz çıktığı için aynı ipucu yok. Gerçek denetim için vokalin nota dizisini bilinen ezginin notalarıyla karşılaştırmak gerekir; notalar depoda hazır (`ali-baba/yeni3/altyapi/zaman_dogal.json` içinde `ezgi_notalari`), araçta böyle bir adım yok.
 
 ## Önerilen karar eşikleri (yalnızca boşluğun temiz olduğu yerlerde)
 
 | Boyut | Kural | Dayanak | Örnek sayısı (olumlu + olumsuz) | Not |
 |---|---|---|---|---|
 | Enerji | MusicCoCa coşku farkı **≥ +0,09 → coşkulu yanda**; **≤ -0,04 → ninni yanında**; arası kararsız | coşkulu denen 3 kayıt +0,09 … +0,26; ninni denen 3 kayıt -0,09 … -0,04 | 3 + 3 | `v2_2` (+0,01) arada kalıyor |
-| Enerji | CED "ninni" olasılığı **≥ 0,023 → ninni yanında**; **≤ 0,000 → değil** | coşkulu 0,000; ninni 0,023 … 0,044 | 3 + 3 | iki gösterge birlikte aynı yanı gösteriyorsa güvenilir; biri yetmez |
+| Enerji | CED "ninni" olasılığı **≥ 0,01 → ninni yanına kayıyor** (boşluğun ortası; ninni denenlerin hepsi ≥ 0,023, coşkulu denenlerin hepsi 0,000) | coşkulu 0,000; ninni 0,023 … 0,044 | 3 + 3 | iki gösterge birlikte aynı yanı gösteriyorsa güvenilir; biri yetmez |
 | Sözler | Her kıtanın anahtar sözcüğü (aile adı, hayvan adı, söylenen hayvan sesi) beklenenle aynı değilse **ele** | kullanıcının söylediği yanlış ad hatalarının ikisi de bu yolla bulundu; sözcük hata oranı ayırmıyor | 2 + 3 | eşik değil, kural; tek hecelik seslerde döküm yanılabiliyor |
-| Anlaşılırlık (işlenmiş vokal) | Sözcük hata oranı **≥ %%30 → makine sözleri anlamıyor**, vokal bozulmuş olabilir | işlenmemiş kayıtlar en çok %10,0; aynı vokal başka orkestrada %19,4; işlenmiş iki vokal %48,1 ve %100,0 | 11 + 2 | %30, %19 ile %48 arasındaki boşluğun içinde bir değer; altında kalmak "doğal" demek değil |
-| Süre | **180 sn'den uzun → "çok uzun" uyarısı** | reddedilen – sn; kabul edilen en uzun 155 sn | 5 + 2 | kullanıcının sözü: "3-3,5 dakika çok uzun" |
-| Uyum (geçici, tek örnek) | `--ayir` sonrası **vokal − altyapı < −8 dB** ve **±25 cent içinde < %75** birlikteyse: vokal karışımda kayboluyor, kullanıcıya göndermeden önce bak | ön dinleme -13,0 dB ve %68; öteki vokalli kayıtlar en kötü -5,9 dB ve %85 | 13 + 1 | **tek olumsuz örnek**; armoniyi değil ayırıcının zorlanmasını ölçüyor |
+| Anlaşılırlık (işlenmiş vokal) | Sözcük hata oranı **≥ %30 → makine sözleri anlamıyor**, vokal bozulmuş olabilir | işlenmemiş kayıtlar en çok %13,9; aynı vokal başka orkestrada %19,4; işlenmiş iki vokal %48,1 ve %100,0 | 12 + 2 | %30, %19 ile %48 arasındaki boşluğun içinde bir değer; altında kalmak "doğal" demek değil |
+| Süre | **180 sn'den uzun → "çok uzun" uyarısı** | reddedilen 186 sn; kabul edilen en uzun 155 sn | 5 + 2 | kullanıcının sözü: "3-3,5 dakika çok uzun" |
+| Uyum (geçici, tek örnek) | `--ayir` sonrası **vokal − altyapı < −8 dB** ve **±25 cent içinde < %75** birlikteyse: vokal karışımda kayboluyor, kullanıcıya göndermeden önce bak | ön dinleme -13,0 dB ve %68; öteki vokalli kayıtlar en kötü -5,9 dB ve %83 | 14 + 1 | **tek olumsuz örnek**; armoniyi değil ayırıcının zorlanmasını ölçüyor |
 
 **Eşik önermediğim yerler** (boşluk temiz değil): hareketlilik puanı; küçük sözcük hata oranları (%30'un altı); donmuş ünlü oranı ve öteki yapaylık vekilleri; konuşma-kalitesi tahminleri; armonik destek ve "en iyi kaydırma"; ritim sıkılığı; hece hızı; aksanla ilgili her şey.
 
@@ -348,6 +352,7 @@ Tek dolaylı ipucu: `v2_2`'nin altyapı tonu **Re minör (D minor)** bulundu. Bi
 | ali-baba/yeni/vokal/ornek_kita1 | reddetti | ! | ✓ | ✓ | ✓ | ✓ | ! | ✗ | ! | ✗ | · | 5 |
 | ali-baba/yeni2/sarki_birlesik | reddetti | · | ✓ | ✓ | ✓ | ✓ | ! | ! | ! | ✗ | ! | 5 |
 | ali-baba/yeni3/…/dogal-onizleme | reddetti | ! | ! | ✗ | ✓ | ! | ✗ | ! | ! | ✗ | · | 8 |
+| ali-baba/coskulu_2 | reddetti | ✓ | ✓ | ✗ | ✓ | ✓ | ✓ | ! | · | ! | · | 3 |
 | parmak-ailesi/duzgun_1 | reddetti | ! | ✓ | ✓ | · | ✓ | ✗ | ✓ | ! | ! | · | 4 |
 | parmak-ailesi/duzgun_2 | reddetti | ! | ✓ | ! | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | 2 |
 | parmak-ailesi/turkce_2 | reddetti | ! | ✓ | ! | · | ✓ | ✓ | ! | · | ! | · | 4 |
@@ -358,16 +363,17 @@ Tek dolaylı ipucu: `v2_2`'nin altyapı tonu **Re minör (D minor)** bulundu. Bi
 
 - **Uyarı sayısı bir kalite notu değil.** Beğenilen dört şarkıda 0 ile 3 arası uyarı var; reddedilen on iki kayıtta 2 ile 8 arası. Örtüşüyor: aksan yüzünden reddedilen `duzgun_2` 2 uyarıyla, seçilen `parmak/coskulu_1` 3 uyarıyla çıkıyor.
 - **Beğenilen kayıtlarda yanlış alarmlar:** `el-yikama/coskulu_2`'de "aynı armonide mi: sorun"; `parmak/coskulu_1`'de "ünsüzlerde tiz zayıf" ve "söyleyiş hızı"; üç beğenilen kayıtta "ritme oturma: dikkat" (R 0,36 … 0,43).
-- **Doğru yerde öten satırlar:** "Sözler" (işlenmiş iki vokalde ve ön dinlemede ✗), "Enerji" (ninni denen üç kayıtta !), "Vokal / altyapı dengesi" ve "Akort" (yalnızca ön dinlemede).
-- **Hiç işe yaramayan satır:** "Ritme oturma". Beğenilen ve reddedilen kayıtlar arasında R değerleri tamamen karışık; doğal bir kayıtta R 0,07 çıktı.
+- **Doğru yerde öten satırlar:** "Sözler" (işlenmiş iki vokalde ve ön dinlemede ✗), "Enerji" (ninni denen üç kayıtta !), "Vokal / altyapı dengesi" ve "Akort" (vokalli kayıtlar içinde yalnızca ön dinlemede).
+- Beğenilen çalgısal altyapı (`demo_altyapi_sesli`) 6 uyarı alıyor; hepsi hayvan seslerinin vokal sanılmasından.
+- **Hiç işe yaramayan satır:** "Ritme oturma". Beğenilen ve reddedilen kayıtlar arasında R değerleri tamamen karışık; ritmi için şikâyet olmayan iki kayıtta R 0,07 ve 0,14 çıktı.
 
 ## Panolara bakınca: resim, sayının söylemediğini söylüyor mu?
 
-Yedi kaydın panolarına Read aracıyla baktım (üç beğenilen, dört reddedilen). Resim, özet sayıların söylemediği dört şeyi gösterdi:
+Dokuz kaydın panolarına Read aracıyla baktım (dört beğenilen: `v2_2`, `dinle_2`, `parmak/coskulu_1`, `demo_altyapi_sesli`; beş reddedilen: `ornek_kita1`, `sarki_birlesik`, `dogal-onizleme`, `duzgun_1`, `parmak/yavas_2`). Resim, özet sayıların söylemediği dört şeyi gösterdi:
 
 1. **Merdiven gibi perde (`sarki_birlesik`, perde panosu).** Vokal çizgisi cetvelle çizilmiş yatay çubuklar; notadan notaya dik basamakla iniyor; birkaç hece tek düz çizginin üstünde. Aynı vokalin özgün hâlinde (`dinle_2`) çizgi kıvrımlı, notalar kısa, geçişler eğik. Sayılar bunu kaçırdı (nota içi oynaklık 10,6 cent, "çok düz" uyarısı yok); göz hemen görüyor. `ornek_kita1`'de aynı görüntü var: düz çubuklar, aralarında geçiş yok.
 2. **Vokal orkestranın boş bıraktığı seste (`dogal-onizleme`, perde panosunun en alt şeridi).** Mavi noktalar (vokalin söylediği ses: Mi) beyaz, boş bir satırda duruyor; orkestranın koyu şeritleri Do, Sol ve Fa'da. `dinle_2`'de aynı mavi noktalar koyu bir şeridin tam üstünde. Özet satırı "gam içi %91, iyi" diyordu; resim "şarkıcı orkestranın çalmadığı yerde söylüyor" diyor. Üst şeritte bir şey daha görünüyor: `dinle_2`'de orkestra tek akorda duruyor, ön dinlemede her ölçüde akor değişiyor ama vokal hep aynı seste kalıyor.
-3. **"Çakışan nota" dediği şey hayvan sesi (`ornek_kita1`, `dogal-onizleme`, `sarki_birlesik`).** Genel panoda turuncu "[inek sesi]" şeridinin altında, aşağı doğru kayan geniş bir harmonik yığını var; perde panosunda tam orada pes, −40 centlik kırmızı X'li iki "nota". Araç ineği detone şarkıcı sanıyor. Sayıya bakınca "2 çakışan nota" bir vokal kusuru gibi; resme bakınca değil.
+3. **"Çakışan nota" dediği şey hayvan sesi (`ornek_kita1`, `dogal-onizleme`, `sarki_birlesik`).** Genel panoda turuncu "[inek sesi]" şeridinin altında, aşağı doğru kayan geniş bir harmonik yığını var; perde panosunda tam orada pes, −40 centlik kırmızı X'li iki "nota". Araç ineği detone şarkıcı sanıyor. Sayıya bakınca "2 çakışan nota" bir vokal kusuru gibi; resme bakınca değil. Çalgısal `demo_altyapi_sesli`'nin genel bakışında "vokal var" şeridi yalnızca yedi hayvan sesinin olduğu yerde dolu: dosyada şarkıcı olmadığı bir bakışta anlaşılıyor, oysa özet tablosu bu dosyaya da akort ve yapaylık uyarıları yazıyor.
 4. **Ninni ile coşkulu arasındaki fark tek bakışta (`parmak/yavas_2` karşısında `parmak/coskulu_1`, genel bakış).** MusicCoCa çubukları birinde baştan sona kırmızı (eksi), ötekinde baştan sona mavi. Spektrogramda coşkulu kayıt baştan aşağı sık dikey çizgilerle dolu (vurmalılar); ninni gibi olanda yatay bantlar ve altta toplanmış enerji var. Düzey şeridinde ninni kaydında altyapı vokal girince geri çekiliyor. `yavas_2`'nin "donmuş ünlü" satırındaki 11 kırmızı işaret her dizenin sonuna düzenli diziliyor: bunlar işlem artığı değil, uzatılan dize sonları.
 
 Resmin **göstermediği**: aksan. `duzgun_1` ile `coskulu_1`'in panoları yan yana konunca görülen tek fark, `duzgun_1`'de sözcüklerin iki üç kat uzun, kaygan ve ünsüzlerin silik olması; bu yavaş söyleyişin resmi, aksanın değil. "atıları" gibi tek hecelik bir bozukluk da panoda seçilmiyor.
@@ -379,8 +385,9 @@ Sonuç: **görsel kanal gerçek bilgi ekliyor**, özellikle doğallık ve uyum b
 | Konu | Görülen | Öneri |
 |---|---|---|
 | Enerji özet satırı | "ninni/sakin" uyarısı hareketlilik puanı < 62 olunca tek başına ötüyor; MusicCoCa'sı açıkça artı olan kayıtlarda yanlış uyarı (`ornek_kita1`, `dogal_onizleme`). | Uyarıyı MusicCoCa < 0 ya da CED ninni ≥ 0,02 koşuluna bağlamak; puanı yalnızca bilgi olarak yazmak. |
-| Hayvan sesleri vokal sanılıyor | Ayırıcı gerçek hayvan seslerini vokal kanalına koyuyor; araç bunları nota sayıp "çakışan / detone nota" ve geniş ses aralığı raporluyor (`ornek_kita1` 2/12, `dogal-onizleme` 4/31, `sarki_birlesik` 3/99; çalgısal `demo_altyapi_sesli`'de bütün "vokal" ölçümleri hayvan sesi). | Scribe'ın ses olayı aralıklarını ([inek sesi] …) ya da CED'in hayvan pencerelerini nota analizinden çıkarmak; vokalsiz dosyada vokal bölümlerini hiç yazmamak. |
+| Hayvan sesleri vokal sanılıyor | Ayırıcı gerçek hayvan seslerini vokal kanalına koyuyor; araç bunları nota sayıp "çakışan / detone nota" ve geniş ses aralığı raporluyor. `ornek_kita1`'de işaretlenen 2 notanın 2'si, `sarki_birlesik`'te 3'ün 3'ü Scribe'ın hayvan sesi aralığının içinde; `dogal-onizleme`'de 4'ün en az 2'si (öteki ikisi horoz sesinin yerinde). Çalgısal `demo_altyapi_sesli`'de bütün "vokal" ölçümleri (donmuş ünlü %26, 3 çakışan nota) hayvan sesi. | Scribe'ın ses olayı aralıklarını ([inek sesi] …) ya da CED'in hayvan pencerelerini nota analizinden çıkarmak; vokalsiz dosyada vokal bölümlerini hiç yazmamak. |
 | "Aynı armonide mi" denetimi | Beğenilen `el-yikama/coskulu_2`'ye "sorun" diyor (en iyi kaydırma -4). Vokal akorun kökünde değil üçlüsünde / beşlisinde durunca yanlış alarm. | Hükmü kaydırma sırasına değil, akor sesi oranına ve gam dışı orana bağlamak; ya da yalnızca ±1, ±2, ±6 kaydırmayı sorun saymak (şimdi −4 de sorun sayılıyor). |
+| Ton belirsizken de çakışan nota hükmü | `duzgun_1`'de 8 uzun nota işaretlendi (6'sı "gam dışı" Fa); araç aynı raporda tonun belirsiz olduğunu (Sol majör?) söylüyor, vokalin kendi dağılımı Do majör gösteriyor. Hüküm "sorun" çıkıyor. | Ton belirsizse "gam dışı" notaları hükme katmamak (gam içi oranında olduğu gibi). |
 | Donmuş ünlü uyarısı | Doğal ama yavaş söylenen kayıtlarda ötüyor (`parmak-ailesi/yavas_2` %19). Metni "zaman esnetme / vokoder izlenimi" diyor. | Eşiği hece hızına göre ayarlamak ya da metni "uzun tutulan ünlüler" diye yumuşatmak. |
 | "Ünsüzlerde tiz zayıf" uyarısı | −14 dB eşiği doğal kayıtların ortasında: beğenilen `parmak/coskulu_1` -16,1 dB. | Eşiği düşürmek ya da uyarıyı kaldırmak. |
 | Söyleyiş hızı uyarısı | Tek bir bir saniyelik öbek 6,5 hece/sn'yi geçince bütün kayda "dikkat" diyor; beğenilen kayıt uyarı alıyor, "çok hızlı" denen almıyor. | En hızlı tek öbek yerine medyanı ve kıta aralığını kullanmak. |

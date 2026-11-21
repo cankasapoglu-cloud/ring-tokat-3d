@@ -1,0 +1,188 @@
+
+### TEMEL + ENERJI
+ad                             karar          sure       lufs       puan        bpm    olay/sn      nabiz    vur/arm        aki     parlak       coca  cocatempo      ninni    cos-sak
+ali-baba__v2_2                 begendi         105      -13.2         75        105       4.74       0.71        0.9       1.88       2397       0.01      -0.06      0.000      0.168
+ali-baba__dinle_2              begendi         110      -12.4         73        116       4.24       0.82        0.8       1.86       2684       0.18       0.07      0.000      0.142
+el-yikama__coskulu_2           begendi          70      -11.5         77        118       5.13       0.68       -3.3       1.79       2916       0.09      -0.05      0.000      0.085
+parmak-ailesi__coskulu_1       begendi          80      -12.6         79        112       5.46       0.77       -1.8       1.94       2290       0.10      -0.05      0.000      0.198
+ali-baba__demo_altyapi_sesli   begendi         155      -13.0         64        134       4.18       0.58       -4.6       1.50       2491       0.26       0.09      0.000      0.028
+ali-baba__ornek_kita1          reddetti         27      -14.6         59        134       4.06       0.58       -6.3       1.43       2464       0.28       0.08      0.000      0.011
+ali-baba__sarki_birlesik       reddetti        155      -14.0         62        134       3.98       0.58       -5.0       1.49       2554       0.25       0.09      0.000      0.026
+ali-baba__dogal_onizleme       reddetti        134      -14.3         56        116       3.47       0.52       -5.0       1.48       2429       0.13      -0.04      0.000      0.019
+ali-baba__coskulu_2            reddetti        186      -12.3         66        116       4.62       0.76       -4.2       1.58       2097       0.13       0.08      0.000      0.141
+parmak-ailesi__duzgun_1        reddetti         91      -12.1         52        156       4.24       0.52       -9.8       1.58       2043      -0.05       0.04      0.016     -0.001
+parmak-ailesi__duzgun_2        reddetti         95      -15.4         46        156       3.45       0.46       -8.3       1.62       1829      -0.10      -0.02      0.025      0.004
+parmak-ailesi__turkce_2        reddetti         95      -13.0         66        160       4.36       0.68       -3.6       1.81       1894      -0.03      -0.02      0.007      0.188
+parmak-ailesi__yavas_2         reddetti         95      -14.4         52        156       3.82       0.54       -9.7       1.80       1804      -0.08       0.01      0.044      0.079
+pitirin-ailesi__yavas_2        reddetti        185      -11.7         58        160       4.49       0.68       -9.8       1.61       2145      -0.09      -0.03      0.023      0.053
+el-yikama__sarki_1             reddetti         75      -13.1         71        160       4.93       0.67       -5.3       1.75       2539      -0.04      -0.05      0.027      0.143
+parmak-ailesi__sarki_2         reddetti         65      -13.9         73        100       4.54       0.75        0.1       1.97       2124       0.06      -0.03      0.001      0.047
+
+### UYUM + RITIM
+ad                             karar        v-a dB    vokalli    sizinti     destek     kaydir   0 sirasi     gamici     gamguv    akorses    gamdisi       cent       %25c    cakisan       uzun         R8      kayma    akorguv
+ali-baba__v2_2                 begendi         0.8       0.64        -46       0.31          0          1       0.99          E       0.61       0.01        8.1         91          0         40       0.57         21       0.79
+ali-baba__dinle_2              begendi        -3.4       0.58        -21       0.26          0          1       0.86          H       0.70       0.11        8.8         88          0         25       0.36         26       0.68
+el-yikama__coskulu_2           begendi        -2.6       0.65        -17       0.13         -4          6       1.00          E       0.63       0.00        8.6         87          1         24       0.43         29       0.70
+parmak-ailesi__coskulu_1       begendi        -1.6       0.47        -21       0.27          0          1       1.00          E       0.81       0.00        9.2         92          0         13       0.39          2       0.74
+ali-baba__demo_altyapi_sesli   begendi         9.4       0.13        -16       0.30          0          1       0.79          E       0.41       0.21       23.7         52          3          7       0.43         13       0.80
+ali-baba__ornek_kita1          reddetti       -3.8       0.46        -44       0.49          0          1       0.95          E       0.86       0.05        9.8         86          2         12       0.19         46       0.79
+ali-baba__sarki_birlesik       reddetti       -5.9       0.63        -13       0.49          0          1       0.99          E       0.95       0.01        8.4         91          3         99       0.41         29       0.80
+ali-baba__dogal_onizleme       reddetti      -13.0       0.60        -15       0.14         -4          3       0.91          E       0.67       0.08       17.0         68          4         31       0.34          4       0.78
+ali-baba__coskulu_2            reddetti       -4.3       0.40        -40       0.12         -4          4       0.99          E       0.62       0.01       11.2         83          0         24       0.37         34       0.72
+parmak-ailesi__duzgun_1        reddetti        4.4       0.66        -51       0.28          0          1       0.90          H       0.52       0.10        7.1         94          8         59       0.72         25       0.80
+parmak-ailesi__duzgun_2        reddetti        4.7       0.60        -15       0.19          5          2       0.98          E       0.62       0.02        8.5         85          0         30       0.64         39       0.76
+parmak-ailesi__turkce_2        reddetti        1.7       0.57        -48       0.07          5          5       0.83          H       0.56       0.08        5.4         94          0         35       0.48         28       0.78
+parmak-ailesi__yavas_2         reddetti        5.7       0.60        -49       0.31          5          2       0.99          E       0.81       0.01        6.6         92          0         40       0.49         17       0.77
+pitirin-ailesi__yavas_2        reddetti        2.7       0.37        -23       0.51          0          1       0.99          E       0.76       0.01        9.6         87          0         41       0.14         61       0.90
+el-yikama__sarki_1             reddetti        1.2       0.75        -52       0.17          0          1       1.00          E       0.55       0.00        6.3         94          1         49       0.07         42       0.81
+parmak-ailesi__sarki_2         reddetti       -0.1       0.49        -42       0.37          0          1       1.00          E       0.76       0.00        8.0         94          0          8       0.45         30       0.78
+
+### DOGALLIK
+ad                             karar         oynak        duz    izgaraR       vibr    donmus#    donmus%   unsuztiz      ustHz    tizdoku       zarf     isaret     dnsmos      nisqa    distill      utmos    v_sarki    v_konus     v_sent
+ali-baba__v2_2                 begendi        11.3       0.04       0.69       0.06          0      0.000      -11.2      10702       1.31      -13.3          0       2.68       3.33       3.94       1.44       0.14       0.03      0.029
+ali-baba__dinle_2              begendi        11.1       0.03       0.67       0.15          0      0.000      -11.1      10723       1.42       -9.1          0       2.71       2.88       3.41       1.49       0.08       0.07      0.021
+el-yikama__coskulu_2           begendi        11.8       0.00       0.63       0.29          0      0.000       -9.5      10766       1.16      -11.7          0       2.45       2.67       3.19       1.31       0.11       0.07      0.026
+parmak-ailesi__coskulu_1       begendi        11.5       0.00       0.68       0.10          0      0.000      -16.1      10723       1.49      -10.8          1       2.47       2.31       2.98       1.52       0.10       0.20      0.017
+ali-baba__demo_altyapi_sesli   begendi        11.3       0.11       0.15       0.00          2      0.260      -18.0      10723       1.60      -11.1          2       2.02       1.43       1.79       1.44       0.00       0.02      0.000
+ali-baba__ornek_kita1          reddetti        9.8       0.00       0.62       0.27          4      0.310       -9.2      10615       2.03      -19.8          1       2.50       2.87       3.00       1.48       0.08       0.03      0.002
+ali-baba__sarki_birlesik       reddetti       10.6       0.08       0.66       0.08         21      0.204      -15.4      10745       2.42      -14.8          2       2.39       2.76       3.19       1.34       0.07       0.07      0.021
+ali-baba__dogal_onizleme       reddetti       14.6       0.01       0.28       0.08          3      0.049      -16.0      10723       2.42      -14.4          1       2.56       2.76       2.97       1.43       0.02       0.43      0.002
+ali-baba__coskulu_2            reddetti       12.6       0.03       0.55       0.25          0      0.000      -12.0      10723       1.34      -12.9          0       2.35       2.49       2.76       1.58       0.04       0.29      0.011
+parmak-ailesi__duzgun_1        reddetti        9.1       0.05       0.74       0.06          0      0.000      -14.1      10745       1.07      -12.0          1       2.51       1.93       3.29       1.30       0.07       0.02      0.054
+parmak-ailesi__duzgun_2        reddetti       11.2       0.00       0.59       0.56          0      0.000      -10.6      10766       1.13      -12.5          0       2.76       3.67       3.91       1.95       0.10       0.01      0.029
+parmak-ailesi__turkce_2        reddetti        9.1       0.11       0.78       0.08          2      0.030      -10.7      10723       1.45      -13.8          0       2.63       3.37       3.89       2.00       0.09       0.07      0.044
+parmak-ailesi__yavas_2         reddetti        9.9       0.02       0.74       0.12         11      0.187       -9.8      10723       1.28      -13.5          1       2.82       3.71       3.80       2.15       0.06       0.01      0.039
+pitirin-ailesi__yavas_2        reddetti        9.1       0.08       0.64       0.00          0      0.000      -11.9      10766       1.01      -13.2          0       2.21       1.76       2.71       1.30       0.11       0.02      0.052
+el-yikama__sarki_1             reddetti       10.1       0.01       0.76       0.17          2      0.036       -4.0      10766       1.13      -14.5          0       2.55       3.56       3.53       1.85       0.04       0.01      0.050
+parmak-ailesi__sarki_2         reddetti       10.3       0.04       0.75       0.00          0      0.000      -16.2      10745       1.11      -13.6          1       2.50       2.29       3.12       1.50       0.07       0.12      0.034
+
+### SOZLER
+ad                             karar           WER   WERkucuk    degisik      eksik      fazla       bekl    hece/sn    obekmed    enhizli  hizliobek   dusukguv       dilp
+ali-baba__v2_2                 begendi       0.047      0.038          4          1          0        106       4.64       3.85       4.09          0          0          -
+ali-baba__dinle_2              begendi       0.083      0.074          1          0          8        108       4.73       3.88       4.14          0          0       1.00
+el-yikama__coskulu_2           begendi       0.043      0.043          0          0          2         46       3.28       2.68       3.11          0          0       1.00
+parmak-ailesi__coskulu_1       begendi       0.040      0.040          0          0          2         50       5.36       4.57       6.60          1          0       1.00
+ali-baba__demo_altyapi_sesli   begendi           -          -          -          -          -          -          -          -          -          0          0          -
+ali-baba__ornek_kita1          reddetti      1.000      1.000         10          3          0         13       4.15       4.55       5.88          0          5       1.00
+ali-baba__sarki_birlesik       reddetti      0.481      0.481         42         10          0        108       4.07       3.30       6.90          1          3       1.00
+ali-baba__dogal_onizleme       reddetti      0.194      0.120         20          1          0        108       4.18       4.69       5.56          0          2       1.00
+ali-baba__coskulu_2            reddetti      0.139      0.130          8          0          7        108       4.86       4.05       4.25          0          1       1.00
+parmak-ailesi__duzgun_1        reddetti      0.080      0.080          3          1          0         50       2.68       2.39       2.98          0          0          -
+parmak-ailesi__duzgun_2        reddetti      0.040      0.040          2          0          0         50       3.08       2.63       3.11          0          0       1.00
+parmak-ailesi__turkce_2        reddetti      0.100      0.100          2          0          3         50       3.71       3.39       3.88          0          0       1.00
+parmak-ailesi__yavas_2         reddetti      0.060      0.040          3          0          0         50       3.43       2.96       3.62          0          0          -
+pitirin-ailesi__yavas_2        reddetti      0.054      0.054          0          3          1         74       2.59       2.25       2.78          0          0          -
+el-yikama__sarki_1             reddetti      0.000      0.000          0          0          0         46       2.66       2.35       3.05          0          0          -
+parmak-ailesi__sarki_2         reddetti      0.023      0.023          0          1          0         44       5.15       4.79       4.89          0          0          -
+
+ ali-baba__v2_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Tepe': 'dikkat', 'Enerji / coşku': 'bilgi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'iyi', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'iyi', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: [('İha', '"Me,', 40.54), ('iha', 'me"', 41.16), ('ürü', '"Üü,', 54.3), ('kedileri', 'kedisi', 94.26)]
+    eksik: [('Ü', 54.0)]
+    fazla: []
+    ton: Re minör (D minor)  | CED hayvan: {} | ses olaylari: []
+
+ ali-baba__dinle_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Tepe': 'dikkat', 'Enerji / coşku': 'iyi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'bilgi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: [('köpekleri', 'ördekleri', 76.88)]
+    eksik: []
+    fazla: [('Dinle', 100.84), ('bak,', 101.36), ('dinle', 101.88), ('bak.', 102.38), ('Dinle', 107.04), ('bak,', 107.56), ('dinle', 108.08), ('bak.', 108.58)]
+    ton: La majör (A major) belirsiz | CED hayvan: {} | ses olaylari: [('[müzik]', 2.04), ('[müzik]', 14.46), ('[müzik]', 26.88), ('[müzik]', 41.24), ('[müzik]', 54.8), ('[müzik]', 67.74), ('[müzik]', 82.22), ('[müzik]', 94.5), ('[müzik]', 102.9)]
+
+ el-yikama__coskulu_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'iyi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'sorun', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'dikkat', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'iyi', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: []
+    eksik: []
+    fazla: [('Köpük', 47.04), ('köpük.', 47.56)]
+    ton: Re majör (D major)  | CED hayvan: {'Animal': 0.002} | ses olaylari: [('[müzik]', 1.24), ('[müzik]', 23.86), ('[müzik]', 64.54)]
+
+ parmak-ailesi__coskulu_1 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Tepe': 'dikkat', 'Enerji / coşku': 'iyi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'dikkat', 'Sözler': 'iyi', 'Söyleyiş hızı': 'dikkat'}
+    isaretler: ["ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-16 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"]
+    yanlis: []
+    eksik: []
+    fazla: [('Buradayım,', 41.78), ('merhaba.', 42.32)]
+    ton: Do majör (C major)  | CED hayvan: {} | ses olaylari: [('[neşeli müzik]', 0.0), ('[neşeli müzik]', 13.64), ('[neşeli müzik]', 25.96), ('[neşeli müzik]', 43.1), ('[neşeli müzik]', 51.68), ('[neşeli müzik]', 66.66), ('[neşeli müzik biter]', 77.6)]
+
+ ali-baba__demo_altyapi_sesli | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'bilgi', 'Vokal / altyapı dengesi': 'dikkat', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'dikkat', 'Akort (detone mi)': 'dikkat', 'Çakışan uzun notalar': 'sorun', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'dikkat'}
+    isaretler: ["sesli sürenin %26 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi", "ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-18 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"]
+    yanlis: []
+    eksik: []
+    fazla: []
+    ton: Sol majör (G major)  | CED hayvan: {'Animal': 0.116, 'Cattle, bovinae': 0.111, 'Moo': 0.111, 'Sheep': 0.05, 'Bleat': 0.054, 'Goat': 0.01, 'Horse': 0.07, 'Neigh, whinny': 0.089, 'Chicken, rooster': 0.037, 'Crowing, cock-a-doodle-doo': 0.033, 'Duck': 0.02, 'Quack': 0.05, 'Dog': 0.023, 'Bark': 0.015, 'Cat': 0.032, 'Meow': 0.04, 'Bird': 0.004} | ses olaylari: []
+
+ ali-baba__ornek_kita1 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'dikkat', 'Ritme oturma': 'sorun', 'Yapaylık işaretleri (vekil)': 'dikkat', 'Sözler': 'sorun', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: ["sesli sürenin %31 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi"]
+    yanlis: [('Ali', 'Maliboku', 7.18), ('çiftliği', 'yeşil', 9.12), ('var', 'boya.', 9.62), ('Çiftliğinde', 'Çimdikle', 12.58), ('inekleri', 'inek', 14.38), ('var', 'yürü.', 15.04), ('diye', 'Bir', 21.48), ('bağırır', 'yağıdır', 21.74), ('Çiftliğinde', 'çimdikle', 23.34), ('Ali', 'maliboku', 25.06)]
+    eksik: [("Baba'nın", 7.18), ('bir', 7.18), ("Baba'nın", 25.06)]
+    fazla: []
+    ton: Sol majör (G major)  | CED hayvan: {'Animal': 0.001, 'Cattle, bovinae': 0.591, 'Moo': 0.587} | ses olaylari: [('[müzik]', 0.0), ('[inek sesi]', 15.64)]
+
+ ali-baba__sarki_birlesik | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'bilgi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'dikkat', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'dikkat', 'Sözler': 'sorun', 'Söyleyiş hızı': 'dikkat'}
+    isaretler: ["sesli sürenin %20 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi", "ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-15 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"]
+    yanlis: [('Ali', "Ülke'nin", 7.66), ('bağırır', 'ulur?', 19.0), ('Dinle', 'İner', 19.74), ('bak', 'ya,', 20.1), ('dinle', 'iner', 20.64), ('bak', 'ya.', 21.54), ('Ali', "Ülke'nin", 27.3), ('Dinle', 'İner', 39.44), ('bak', 'ya,', 39.62), ('dinle', 'iner', 40.34), ('bak', 'ya.', 41.3), ('Ali', "Ülke'nin", 47.88)]
+    eksik: [("Baba'nın", 7.66), ("Baba'nın", 27.3), ("Baba'nın", 47.88), ('bir', 51.92), ('de', 51.92), ("Baba'nın", 68.7), ("Baba'nın", 86.4), ("Baba'nın", 105.64), ("Baba'nın", 132.48), ('bir', 135.2)]
+    fazla: []
+    ton: Sol majör (G major)  | CED hayvan: {'Animal': 0.076, 'Cattle, bovinae': 0.055, 'Moo': 0.055, 'Sheep': 0.026, 'Bleat': 0.024, 'Goat': 0.007, 'Horse': 0.027, 'Neigh, whinny': 0.034, 'Chicken, rooster': 0.032, 'Crowing, cock-a-doodle-doo': 0.034, 'Duck': 0.022, 'Quack': 0.05, 'Dog': 0.022, 'Bark': 0.013, 'Cat': 0.029, 'Meow': 0.031, 'Bird': 0.003} | ses olaylari: [('[müzik]', 0.0), ('[inek sesi]', 21.92), ('[koyun sesi]', 42.36), ('[at sesi]', 60.66), ('[horoz sesi]', 81.46), ('[ördek sesi]', 100.06), ('[köpek sesi]', 119.98), ('[tilki sesi]', 140.26), ('[müzik]', 151.76)]
+
+ ali-baba__dogal_onizleme | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'dikkat', 'Vokal altyapıyla aynı armonide mi': 'sorun', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'dikkat', 'Çakışan uzun notalar': 'sorun', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'dikkat', 'Sözler': 'sorun', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: ["ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-16 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"]
+    yanlis: [('Ali', 'Anne', 8.26), ("Baba'nın", 'babamın', 8.76), ('bağırır', 'böğürür?', 17.88), ('Ali', 'Anne', 22.74), ("Baba'nın", 'babamın', 23.82), ('meler', 'meleyor?', 34.38), ('Ali', 'Anne', 39.38), ("Baba'nın", 'babamın', 39.38), ('Atı', 'Atlar', 49.62), ('Ali', 'Anne', 57.9), ("Baba'nın", 'babamın', 58.86), ('Ali', 'Anne', 72.76)]
+    eksik: [('bir', 115.82)]
+    fazla: []
+    ton: Do majör (C major)  | CED hayvan: {'Animal': 0.099, 'Cattle, bovinae': 0.06, 'Moo': 0.061, 'Sheep': 0.051, 'Bleat': 0.059, 'Goat': 0.013, 'Horse': 0.039, 'Neigh, whinny': 0.051, 'Chicken, rooster': 0.044, 'Crowing, cock-a-doodle-doo': 0.038, 'Duck': 0.027, 'Quack': 0.061, 'Dog': 0.025, 'Bark': 0.009, 'Cat': 0.041, 'Meow': 0.042, 'Bird': 0.004} | ses olaylari: [('[müzik]', 0.0), ('[inek sesi]', 20.66), ('[koyun sesi]', 37.3), ('[at sesi]', 53.5), ('[horoz sesi]', 72.36), ('[ördek sesi]', 85.82), ('[köpek sesi]', 103.8), ('[kedi sesi]', 120.48), ('[müzik]', 128.24)]
+
+ ali-baba__coskulu_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'iyi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'sorun', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: [('Me', '"Mö', 37.22), ('me', 'mö"', 37.76), ('iha', 'ihan', 66.26), ('üü', 'ü"', 91.66), ('kedileri', 'köpekleri', 170.68), ('Miyav', '"Hav', 171.7), ('miyav', 'hav"', 172.22), ('miyavlar', 'havlar', 173.0)]
+    eksik: []
+    fazla: [('ha', 65.68), ('ha"', 66.72), ('var.', 173.56), ('"Hav', 173.78), ('hav"', 174.3), ('diye', 174.72), ('havlar', 175.08)]
+    ton: Do majör (C major)  | CED hayvan: {} | ses olaylari: [('[müzik]', 1.26), ('[müzik]', 17.04), ('[müzik]', 41.88), ('[müzik]', 70.74), ('[müzik]', 95.58), ('[müzik]', 122.46), ('[müzik]', 149.46), ('[müzik]', 178.44)]
+
+ parmak-ailesi__duzgun_1 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'bilgi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'sorun', 'Ritme oturma': 'iyi', 'Yapaylık işaretleri (vekil)': 'dikkat', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: ["ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-14 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"]
+    yanlis: [('Merhaba', 'Merengim.', 33.82), ('Bebek', 'Abla', 72.38), ('bebek', 'abla', 73.92)]
+    eksik: [('Buradayım', 75.36)]
+    fazla: []
+    ton: Sol majör (G major) belirsiz | CED hayvan: {'Animal': 0.001} | ses olaylari: []
+
+ parmak-ailesi__duzgun_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'dikkat', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'iyi', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'iyi', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: [('buradayım', 'Merhaba.', 32.68), ('Merhaba', 'Neredesin?', 34.1)]
+    eksik: []
+    fazla: []
+    ton: Do majör (C major)  | CED hayvan: {} | ses olaylari: [('[müzik]', 2.26), ('[müzik]', 17.28), ('[müzik]', 35.62), ('[müzik]', 47.66), ('[müzik]', 64.96), ('[müzik]', 81.88), ('[müzik]', 93.34)]
+
+ parmak-ailesi__turkce_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Tepe': 'dikkat', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'dikkat', 'Gam içi söyleme': 'bilgi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: [('Abi', 'Anne', 36.38), ('abi', 'anne', 39.36)]
+    eksik: []
+    fazla: [('Buradayım,', 48.36), ('buradayım.', 49.48), ('Merhaba.', 50.98)]
+    ton: Do majör (C major) belirsiz | CED hayvan: {} | ses olaylari: [('[neşeli müzik]', 0.92), ('[neşeli müzik]', 61.08), ('[neşeli müzik]', 89.8)]
+
+ parmak-ailesi__yavas_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'dikkat', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'dikkat', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: ["sesli sürenin %18 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi"]
+    yanlis: [('Abi', 'Anne', 37.54), ('Abla', 'Able', 52.96), ('abla', 'abi', 54.14)]
+    eksik: []
+    fazla: []
+    ton: Do majör (C major)  | CED hayvan: {} | ses olaylari: []
+
+ pitirin-ailesi__yavas_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Tepe': 'dikkat', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'sorun', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'dikkat', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: []
+    eksik: [('miyav', 8.58), ('hop', 74.96), ('ho', 146.68)]
+    fazla: [('tık.', 118.5)]
+    ton: Do majör (C major)  | CED hayvan: {} | ses olaylari: []
+
+ el-yikama__sarki_1 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Tepe': 'dikkat', 'Enerji / coşku': 'dikkat', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'dikkat', 'Ritme oturma': 'sorun', 'Yapaylık işaretleri (vekil)': 'bilgi', 'Sözler': 'iyi', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: []
+    yanlis: []
+    eksik: []
+    fazla: []
+    ton: Do majör (C major)  | CED hayvan: {} | ses olaylari: []
+
+ parmak-ailesi__sarki_2 | hatalar: [] | ozet: {'Ses yüksekliği': 'iyi', 'Enerji / coşku': 'bilgi', 'Vokal / altyapı dengesi': 'iyi', 'Vokal altyapıyla aynı armonide mi': 'iyi', 'Gam içi söyleme': 'iyi', 'Akort (detone mi)': 'iyi', 'Çakışan uzun notalar': 'iyi', 'Ritme oturma': 'dikkat', 'Yapaylık işaretleri (vekil)': 'dikkat', 'Sözler': 'iyi', 'Söyleyiş hızı': 'bilgi'}
+    isaretler: ["ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-16 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"]
+    yanlis: []
+    eksik: [('bebek', 50.44)]
+    fazla: []
+    ton: Do majör (C major)  | CED hayvan: {} | ses olaylari: []

@@ -103,9 +103,9 @@ sat = []
 for a in ("ali-baba__v2_2", "ali-baba__coskulu_1", "ali-baba__coskulu_2"):
     for k in (SD.get(a) or {}).get("kitalar", []):
         u = [r for r in UT.get(a, []) if k.get("ses_zamani") and k["ses_zamani"][0] - 0.01 <= r["bas"] <= k["ses_zamani"][1]]
-        bant = (sum(r["bant_1800_2800_eksi_1200_1800_db"] for r in u) / len(u)) if u else None
-        sat.append([KISA[a], "%s. sn" % s(k["bas_sn"], 0), k["hayvan"] or "?", k["soylenen_ses"] or "–", "uyuyor" if k["ses_hayvana_uyuyor"] else "**uymuyor**", s(bant, 1, True)])
-T["hayvan_sesi"] = tablo(["Kayıt", "Kıta başı", "Kıtanın hayvanı", "Dökümde söylenen ses", "Hayvana uyuyor mu (döküme göre)", "Ünlü tınısı: 1,8–2,8 kHz eksi 1,2–1,8 kHz (dB)"], sat)
+        bant = " / ".join(s(r["bant_1800_2800_eksi_1200_1800_db"], 1, True) for r in u) if u else "–"
+        sat.append([KISA[a], "%s. sn" % s(k["bas_sn"], 0), k["hayvan"] or "?", k["soylenen_ses"] or "–", "uyuyor" if k["ses_hayvana_uyuyor"] else "**uymuyor**", bant])
+T["hayvan_sesi"] = tablo(["Kayıt", "Kıta başı", "Kıtanın hayvanı", "Dökümde söylenen ses", "Hayvana uyuyor mu (döküme göre)", "Ünlü tınısı, hece hece: 1,8–2,8 kHz eksi 1,2–1,8 kHz (dB)"], sat)
 # gercek kanallar
 if GK:
     sat = []
