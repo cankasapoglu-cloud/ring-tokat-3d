@@ -1,0 +1,21 @@
+Algorithm-based recommendations on YouTube – How YouTube works
+YouTube's recommendation system connects billions of people around the world to content that uniquely inspires, teaches and entertains. Given that everyone has unique viewing habits, the core job of recommendations is to meet user needs by helping people find the videos that they want to watch and that will give them value.
+At the highest level, our recommendations system is designed to anticipate and meet a user's needs to drive value through relevant and satisfying viewing experiences. Understanding a user's viewing behaviour, likes, dislikes, subscriptions and feedback, including from satisfaction surveys, helps us do this most effectively. And just like on Search, we also consider the reputation and the quality of a channel to determine how, when and to whom the content can be surfaced to, and use external evaluators to help us understand how an average viewer might perceive the content to ensure that users have a high-quality experience.
+We also know that not everyone wants to always be logged in or to share their information with us, so we've built controls that help people decide how much data they want to provide. Users can always pause, edit or delete their YouTube search and watch history whenever they want.
+You can find recommendations at work in two main places on YouTube:
+A user's homepage is what you see when you first open YouTube – when a user is logged in, it displays a mixture of personalised recommendations, subscriptions and the latest news and information.
+This appears when you're watching a video and suggests additional content based on what you're currently watching, alongside other videos that we think you may be interested in
+How YouTube Elevates High-Quality Information
+For topics where accuracy and high quality are key — like news, personal finance and medical and scientific information — we elevate high-quality voices using a variety of tools. Here's how it may look:
+Search results are prioritised to provide the best search results for the user based on relevance, engagement and quality. These three elements are given differing importance based on the type of search.
+Video suggestions appear in watch next, guiding users to new content based on their watch history, broader viewer trends and current video topics.
+When a major breaking news event happens, the breaking news shelf appears directly on the homepage, featuring relevant videos related to a specific breaking news topic.
+When searching for a news topic, the news shelf appears near the top of the results, with relevant videos from high-quality sources.
+When searching for a specific health topic, the health content shelf will highlight videos from high-quality sources.
+Play silent looping video Pause silent looping video
+How YouTube Provides Additional Context
+To provide additional context about certain events, topics and publishers, we use information panels across YouTube, which may look like:
+Government or public funding for news publishers
+Information panels on the video watch page make it easier for users to assess an organisation's background.
+We require that creators disclose realistic content that is made with altered or synthetic media, including content made with gen AI, and then labels appear on the video or in its description.
+Managing recommendations and search results

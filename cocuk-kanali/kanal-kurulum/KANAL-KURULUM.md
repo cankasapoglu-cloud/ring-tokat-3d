@@ -1,8 +1,8 @@
 # Dudek Stüdyo: YouTube Kanalı Kurulum Rehberi
 
-Program: **Pıtır ile Öğren** · Hazırlanma: 21 Kasım 2026
+Kanal: **Dudek Stüdyo** (tek marka) · Kapaktaki alt yazı: **Pıtır ile Çocuk Şarkıları** · Hazırlanma: 21 Kasım 2026
 
-> **Ad kesinleşti (21 Kasım 2026):** kanalın adı **Dudek Stüdyo**, programın adı **Pıtır ile Öğren**. Kapakta ikisi de yazıyor.
+> **Ad kesinleşti (21 Kasım 2026):** kanalın adı **Dudek Stüdyo** ve tek marka budur; ayrı bir program adı yok. Eski program adı "Pıtır ile Öğren" bırakıldı, çünkü YouTube'da bu adı birebir kullanan iki kanal var (4.6). Pıtır, kedi yavrusunun adı olarak kalıyor; şarkılar ve videolar değişmedi. Kapakta büyük yazı "Dudek Stüdyo", altındaki etikette "Pıtır ile Çocuk Şarkıları" yazıyor. Bu alt yazı bir program adı değildir; kanalda ne olduğunu anlatır.
 
 ## Okumadan önce
 
@@ -26,11 +26,14 @@ Kısa sözlük:
 
 Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, birlikte bakarız.
 
-1. **Ad kesin.** Kanal adı Dudek Stüdyo, program adı Pıtır ile Öğren. Bu adım tamam.
+1. **Ad kesin.** Kanal adı Dudek Stüdyo; tek marka budur, ayrı bir program adı yok. Bu adım tamam.
 
-2. **Kanalı açın.** Telefonun tarayıcısında (Chrome ya da Safari) ya da bilgisayarda youtube.com'a girin, Google hesabınızla oturum açın. Profil resminize dokunun, kanal listenizi açın, yeni kanal oluşturma seçeneğine dokunun (?). Bu yol kanalı kendi adınızla değil, stüdyo adıyla açar (?). YouTube uygulamasından değil, tarayıcıdan yapılır (?).
+2. **Kanalı açın.** Bu Google hesabında eski bir kişisel kanalınız zaten var. İki yol var; birini seçin.
+   - **A yolu: ayrı, yeni bir kanal açmak (önerilen).** Eski kanalla yorum yazdıysanız ya da orada kişisel videolarınız varsa bu yolu seçin. Kişisel izleriniz çocuk kanalına karışmaz; eski kanalınız olduğu gibi kalır. Telefonun tarayıcısında (Chrome ya da Safari) ya da bilgisayarda youtube.com/channel_switcher adresine girin (?), Google hesabınızla oturum açın, "Kanal oluştur" seçeneğine dokunun (?). Adres açılmazsa youtube.com'da profil resminize dokunun, kanal listenizi açın, yeni kanal oluşturma seçeneğini arayın (?). Bu yol kanalı kendi adınızla değil, stüdyo adıyla açar (?). YouTube uygulamasından değil, tarayıcıdan yapılır (?).
+   - **B yolu: eski kanalın adını değiştirmek.** Eski kanal boşsa ve onunla hiç yorum yazmadıysanız bu da olur. YouTube uygulamasında "Kanalı düzenle" ekranını açın; Ad, Herkese açık kullanıcı adı (yani tanıtıcı) ve Açıklama alanlarını bu rehberdeki yazılarla değiştirin. Sonra "Tüm aboneliklerimi gizli tut" seçeneğini açın; böylece kişisel abonelikleriniz kanalda görünmez.
+   - Kanalın eski olması, YouTube'un kanalı kapatmasına karşı bir koruma sağlamaz; B yolunu yalnız kanal eski diye seçmeyin.
 
-3. **Ad ve tanıtıcıyı yazın.** Kanal adı: `Dudek Stüdyo`. Tanıtıcı için sırayla deneyin: `@dudekstudyo`, `@dudekstudio`, `@dudekcocuk`. Boş olup olmadığını yalnız siz, yazarken görürsünüz. Türkçe harf (ü, ö, ı, ş) kullanmayın (?). Sonra "Kanal oluştur" düğmesine basın.
+3. **Ad ve tanıtıcıyı yazın.** Kanal adı: `Dudek Stüdyo`. Tanıtıcı için sırayla deneyin: `@dudekstudyo`, `@dudekstudio`, `@dudekcocuk`. 21 Kasım 2026'da YouTube'un herkese açık sayfalarına baktık: `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. Kesin olarak ancak siz, tanıtıcıyı YouTube'un içinde yazarken görürsünüz. Türkçe harf (ü, ö, ı, ş) kullanmayın (?). A yolunda sonra "Kanal oluştur" düğmesine basın; B yolunda yazdıklarınızı kaydedin.
 
 4. **Telefon numaranızı doğrulayın.** YouTube Studio > Ayarlar > Kanal > Özellik uygunluğu > Orta düzey özellikler > Telefon numarasını doğrula. Kod SMS ya da sesli aramayla gelir; kodu yalnız YouTube'un ekranına yazın. Bunu yapmadan videolara kendi küçük resminizi koyamazsınız. Bir telefon numarası yılda en çok 2 kanal için kullanılabilir.
 
@@ -42,7 +45,7 @@ Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, 
 
 7. **Açıklamayı ve anahtar kelimeleri yapıştırın.** İkisi de 2. bölümde hazır. Açıklama "Özelleştirme" bölümündeki açıklama kutusuna (?), anahtar kelimeler Ayarlar > Kanal > Temel bilgiler altındaki kutuya (?) yapıştırılır. Açıklamaya e-posta adresi yazmayın.
 
-8. **Oynatma listelerini açın.** Beş listenin adı ve açıklaması 2. bölümde. En önemlisi "Tüm Şarkılar" listesidir. İlk videoyu yüklerken listeye eklemeyi deneyin: çocuklara özel video kendi listenize eklenebiliyor mu, o an görürsünüz (?).
+8. **Oynatma listelerini açın.** Altı listenin adı ve açıklaması 2. bölümde. En önemlisi "Tüm Şarkılar" listesidir. İlk videoyu yüklerken listeye eklemeyi deneyin: çocuklara özel video kendi listenize eklenebiliyor mu, o an görürsünüz (?).
 
 9. **İlk videoları yükleyin.** İlk gün üç video birden: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi. Yazılar ve işaretlenecek ayarlar 3. bölümde. Ali Baba'yı yüklemeden önce 4.4'teki notu okuyun; karar sizin.
 
@@ -76,21 +79,21 @@ Tanıtıcı (ilki doluysa sıradakini deneyin):
 @dudekcocuk
 ```
 
-- Karar vermeden önce YouTube'da adı bir kez aratın: aynı ya da benzer adı kullanan başka kanal var mı? Bunu biz kontrol edemedik.
-- Düşünmeniz için ikinci seçenek: kanal adını "Pıtır ile Öğren - Dudek Stüdyo" yapmak. Artısı: ebeveyn programı adından tanır. Eksisi: ad uzar, ileride ikinci bir program açarsanız dar gelir.
+- 21 Kasım 2026'da baktık: YouTube'da kanal aramasının ilk sayfasında "Dudek Stüdyo" adında bir kanal görülmedi. `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
+- Kanal adına başka bir söz eklemeyin; tek marka "Dudek Stüdyo"dur.
 
 ### 2.2 Slogan (tek satır)
 
 Tek satırlık tanıtım gereken her yerde kullanılır.
 
 ```
-Pıtır ile şarkı söyleyerek öğren! 3-7 yaş çocuklar için Türkçe çocuk şarkıları.
+Pıtır'la birlikte söyle! 3-7 yaş çocuklar için Türkçe çocuk şarkıları.
 ```
 
 ### 2.3 Kanal açıklaması
 
 ```
-Pıtır ile Öğren, 3-7 yaş arası çocuklar için hazırlanan Türkçe şarkı ve öğrenme videolarının kanalıdır. Videoları Dudek Stüdyo hazırlar.
+Dudek Stüdyo, 3-7 yaş arası çocuklar için Türkçe şarkı ve öğrenme videoları hazırlar.
 
 Turuncu kedi yavrusu Pıtır, çocuklarla birlikte şarkı söyler. Şarkılarla renkleri, saymayı, hayvanları ve seslerini, aile üyelerini ve el yıkama gibi günlük alışkanlıkları tanırız.
 
@@ -680,11 +683,13 @@ Content ID, YouTube'un yüklenen videoları kayıtlı eserlerle otomatik karşı
 - Kanal henüz para kazanmadığı için asıl risk gelir kaybı değildir; videonun engellenmesi ya da videoda başkası adına reklam çıkmasıdır (?).
 - Üretim kayıtları (ses dosyaları, çalışma dosyaları) proje klasöründe duruyor. Silinmemeli; kaydın bize ait olduğunu gösterir.
 
-### 4.6 Aynı adı kullanan başka kanallar
+### 4.6 Program adı neden bırakıldı: aynı adı kullanan başka kanallar
 
-21 Kasım 2026'da YouTube aramasında (oturum açmadan, ilk sayfa) şunlar görüldü: "Pıtır ile Öğren" adını birebir kullanan iki küçük kanal (10 ve 388 abone), "Pıtır Kedi" adında kedili şarkılar yapan bir kanal ve adında "Pıtır" geçen pek çok küçük kanal. "Dudek Stüdyo" adında Türkçe bir kanal görülmedi.
+İlk planda kanalın bir de program adı vardı: "Pıtır ile Öğren". 21 Kasım 2026'da YouTube aramasında (oturum açmadan, ilk sayfa) şunlar görüldü: bu adı birebir kullanan iki küçük kanal (10 ve 388 abone), "Pıtır Kedi" adında kedili şarkılar yapan bir kanal ve adında "Pıtır" geçen pek çok küçük kanal. Aynı adı taşıyan kanallarla karışmamak için program adı bırakıldı; tek marka Dudek Stüdyo oldu.
 
-Kanalımızın adı Dudek Stüdyo olduğu için karışmayız; yine de "Pıtır ile Öğren" yazan biri önce o kanalları görebilir. Bu yüzden her açıklamanın sonunda "Bir Dudek Stüdyo yapımıdır" cümlesi duruyor ve kapakta, profilde hep aynı Pıtır kullanılıyor. Program adını ileride değiştirmek isterseniz yalnız yazılar değişir, videolar aynı kalır. Bu adların marka tescili sorgulanmadı.
+Aynı gün "Dudek Stüdyo" adına da bakıldı. Kanal aramasının ilk sayfasında bu adda bir kanal görülmedi; `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi. Yani ad ve bu iki tanıtıcı 21 Kasım 2026'da kullanılmıyor görünüyordu. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
+
+Pıtır, kedi yavrusunun adı olarak kalıyor: şarkılarda ve videolarda geçiyor, onlar değişmedi. Yazılarda "Pıtır" yalnız kediyi anlatmak için geçer ("Pıtır ile Çocuk Şarkıları" gibi); marka olarak her yerde "Dudek Stüdyo" yazar. Kapakta ve profilde hep aynı Pıtır kullanılıyor. Bu adların marka tescili sorgulanmadı.
 
 ---
 
@@ -694,9 +699,9 @@ Buradaki hiçbir madde kesin değildir. Sebep hep aynı: resmî sayfalar açıla
 
 ### A. Ekranda görünce netleşecekler (menü yolları)
 
-1. **Kanal açma yolu.** Tarayıcıdan açma adımları özetle uyumlu. Menülerin tam adı hafızadan. Kanal listesini açtığı düşünülen youtube.com/channel_switcher adresi de hafızadan. YouTube uygulamasından kanal açma adımları için hiçbir dayanak bulamadık.
+1. **Kanal açma yolu (A yolu).** Tarayıcıdan açma adımları özetle uyumlu. Menülerin tam adı ("Kanal oluştur" dahil) hafızadan. Kanal listesini açtığı düşünülen youtube.com/channel_switcher adresi de hafızadan. YouTube uygulamasından yeni kanal açma adımları için hiçbir dayanak bulamadık.
 2. **Stüdyo adına kanal (Marka Hesabı).** Marka Hesabı, kanalın kişisel adınız yerine stüdyo adıyla durmasını sağlayan hesap türüdür. Bu yolun onu açtığı ve sonradan başka yöneticiler eklenebildiği özetle uyumlu; okunamadı.
-3. **Tanıtıcı.** Türkçe harf kabul ediliyor mu, bilmiyoruz. Önerdiğimiz adlar boş mu, bilmiyoruz. Özetle uyumlu kurallar: 3-30 karakter; harf ve rakam; alt çizgi, tire, nokta olabilir ama başta ve sonda olamaz.
+3. **Tanıtıcı.** Türkçe harf kabul ediliyor mu, bilmiyoruz. Önerdiğimiz adlardan `@dudekstudyo` ve `@dudekstudio` 21 Kasım 2026'da herkese açık sayfalarda "bulunamadı" verdi, yani boş görünüyorlar; kesin olarak ancak YouTube'un içinde yazınca belli olur. Özetle uyumlu kurallar: 3-30 karakter; harf ve rakam; alt çizgi, tire, nokta olabilir ama başta ve sonda olamaz.
 4. **Adı ve tanıtıcıyı sonradan değiştirme.** Özetlere göre ikisi de 14 günde en çok 2 kez değiştirilebilir. Yani yazım hatası sonradan düzeltilebilir; ama okuyamadık.
 5. **"Çocuklara özel" kanal ayarının yolu.** Bilgisayar yolu özetle uyumlu. Telefondaki YouTube Studio uygulamasında bu ayar var mı, bulamadık.
 6. **Telefon doğrulaması.** youtube.com/verify adresinin aynı yere götürdüğü hafızadan. Menü yolu 1. bölümde yazılı.
@@ -727,7 +732,7 @@ Buradaki hiçbir madde kesin değildir. Sebep hep aynı: resmî sayfalar açıla
 25. **Pıtır'ın Ailesi sözleri** makine dökümü; ses tekrarlarının sayısı bir fazla ya da bir eksik olabilir.
 26. **El Yıkama Şarkısı'nda** ses uyumu sorusu; makine tahmini, karar kulağınızın.
 27. **Kapak ve profil görselleri** YouTube'a yüklenip denenmedi. Kırpmaların hepsi bilgisayarda benzetimle kontrol edildi.
-28. **Eski kalan belgeler** (dokunmadık): strateji belgesinde "4.000 saat" yazıyor. İçerik listesinde Parmak Ailesi ve Beş Küçük Maymun hâlâ "Sırada" görünüyor; Ali Baba satırında yalnız melodinin anonim olduğu yazıyor, sözlerden söz edilmiyor.
+28. **Eski kalan belgeler** (dokunmadık): strateji belgesinde "4.000 saat" yazıyor. İçerik listesinde Parmak Ailesi ve Beş Küçük Maymun hâlâ "Sırada" görünüyor; Ali Baba satırında yalnız melodinin anonim olduğu yazıyor, sözlerden söz edilmiyor. Bu belgelerde, araştırma notlarında ve kanal-kurulum klasöründeki hazırlık notlarında bırakılan eski program adı da hâlâ yazıyor; geçerli olan bu rehberdir. Uzun bölüm taslağının sahne dosyaları eski program adını ekrana yazıyor; o bölüm yayınlanmadan önce düzeltilmelidir (yüklenecek yedi video bundan etkilenmez).
 
 **Bunlar nasıl kesinleşir:** Bir sonraki çalışmada Claude'un internet izinlerine support.google.com ve blog.youtube adresleri eklenirse resmî sayfalar okunur, maddeler tek tek doğrulanır.
 
@@ -746,29 +751,30 @@ Hepsi şu klasörde: `/home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel
 
 Ne var üstlerinde:
 
-- **Kapak:** Pıtır solda el sallıyor. Sağında büyük renkli "Pıtır ile Öğren", altında beyaz etiket içinde "Dudek Stüdyo". Üçü de ortadaki dar şeridin içinde; telefonda yalnız bu şerit görünür. Balonlar ve güneş kenarlarda; bilgisayarda ve televizyonda görünür.
+- **Kapak:** Pıtır solda el sallıyor. Sağında büyük renkli "Dudek Stüdyo" yazısı, altında beyaz etiket içinde "Pıtır ile Çocuk Şarkıları". Üçü de ortadaki dar şeridin içinde; telefonda yalnız bu şerit görünür. Balonlar ve güneş kenarlarda; bilgisayarda ve televizyonda görünür.
 - **Profil:** Pıtır'ın gülen yüzü, mavi zemin, yazı yok.
 
-### Adı değiştirip yeniden üretmek
+### Kapaktaki yazıları değiştirip yeniden üretmek
 
-Siz yapmak zorunda değilsiniz. Claude'a "adı şöyle yap: ..." yazmanız yeter. Yapılan iş şudur:
+Siz yapmak zorunda değilsiniz. Claude'a "kapaktaki yazıyı şöyle yap: ..." yazmanız yeter. Kapağın şimdiki hâlini veren komut şudur:
 
 ```
 cd /home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel
-python3 uret.py "Yeni Ad"
+python3 uret.py "Pıtır ile Çocuk Şarkıları" "Dudek Stüdyo"
 ```
 
-Program adını da değiştirmek için iki ad birlikte verilir:
+Sıra önemlidir: ilk yazı beyaz etiketin içine, ikinci yazı büyük renkli başlığa gider. Yazıları değiştirmek için aynı sırayla iki yeni yazı verilir:
 
 ```
-python3 uret.py "Yeni Ad" "Yeni Program Adı"
+python3 uret.py "Etiketteki Yazı" "Büyük Yazı"
 ```
 
+- İki yazı her zaman birlikte verilir. Komut yazısız ya da tek yazıyla çalıştırılırsa program kendi içinde kayıtlı eski yazıları kullanır ve bırakılan program adı kapağa geri gelir.
 - Yaklaşık 10 saniye sürer. İnternet ya da ücretli bir servis kullanmaz.
 - Aynı adlı dosyaların üzerine yazar; eski görseller gider.
-- Uzun adlarda yazı kendiliğinden küçülüp aynı şeride sığar.
+- Uzun yazılarda yazı kendiliğinden küçülüp aynı şeride sığar.
 
-Ad değişirse yazılarda da dört yer değişir: kanal adı, tanıtıcı, kanal açıklamasındaki "Videoları Dudek Stüdyo hazırlar." cümlesi ve video altı yazısındaki "Bir Dudek Stüdyo yapımıdır." cümlesi. Bu son cümle 3. bölümdeki altı açıklamanın hepsinde geçiyor.
+Kanal adı değişirse yazılarda da şu yerler değişir: kanal adı ve tanıtıcı (2.1), kanal açıklamasının ilk cümlesi (2.3), anahtar kelimeler (2.4), video altı yazısının ilk satırı ile #DudekStüdyo etiketi (2.5) ve oynatma listesi adları (2.6). 3. bölümdeki yedi videonun her birinde de başlık, açıklamanın son satırları, etiket listesi ve liste adları değişir.
 
 ### Bilinen zayıf yanlar
 

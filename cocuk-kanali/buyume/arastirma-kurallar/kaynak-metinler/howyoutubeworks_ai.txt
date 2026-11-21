@@ -1,0 +1,37 @@
+How Creators Use AI for Content Creation - How YouTube Works - How YouTube Works
+From its earliest days, YouTube has enabled millions of creators to share their voices, connect with global audiences, and build thriving businesses. We're excited about the opportunity for AI to unlock new forms of creativity and make the everyday work of creation easier.
+While we lean into AI’s potential, we also want to make sure we have the right protections and guardrails in place.
+Millions of creators have built sustainable businesses on YouTube since the platform transformed video for people all over the world. What does that mean for the creator economy that blossomed from this revolution?
+Learn More about the Future of Tech & Creativity
+The sky’s the limit for creators, who are now:
+Employing writers, editors, and videographers
+Producing top-quality content that entertains and inspires billions
+Lifting up the next generation of creator success stories
+New AI-powered tools are making content creation more seamless and efficient, so creators can dedicate more time to the parts of the process that they want to invest in — and it will continue to evolve in the months and years to come.
+of creators are already using Gen AI tools
+How YouTube is Empowering Human Creativity
+Our goal is to empower human creativity , not replace it. AI is the next creative revolution and we’re excited for how it will help viewers experience YouTube in new ways.
+It’s already allowing creators to innovate across formats and create fresh and relevant content — and we’re focused on providing helpful features and opening doors for communities across the globe.
+of creators currently using Gen AI are using it for creative support
+Play silent looping video Pause silent looping video
+lets creators easily translate their videos and reach new audiences.
+lets creators turn their wildest ideas into AI-generated backgrounds in Shorts with a simple prompt.
+help creators along every step of the creative process, with the Inspiration Tab in YouTube Studio powered by AI to help curate video ideas, titles and thumbnail suggestions for creators.
+How YouTube is Approaching AI Responsibly
+While we lean in to AI’s potential, we want to make sure we have the right protections and guardrails in place. Our policies and products aim to protect and empower creatives in the AI age and keep the YouTube community safe.
+As always, our Community Guidelines define the rules of the road for all content — including AI-generated content — on YouTube. We also have specific policies that guide how we treat AI content, including disclosure requirements and labeling.
+To help keep viewers informed about the content they're viewing, we require creators to disclose if AI was used to edit or generate realistic content in their videos. Labels for photorealistic and meaningfully altered AI content may appear on the video player for Shorts, or directly below the video for long-form videos. For other types of AI content, the label will appear in the video's description (e.g., minor edits like beauty filters, animated characters, etc.). If a creator doesn’t disclose their use of AI, but our systems detect it, we may automatically apply a label. Creators can manage these labels in YouTube Studio, but they cannot remove them if there is a high degree of confidence it was made with AI.
+We’ve also made updates to our privacy standards that make it possible to request the removal of AI-generated or other synthetic or altered content that simulates an identifiable individual, including their face or voice, using our privacy request process. Not all content will be removed from YouTube, and we consider a variety of factors when evaluating these requests. This could include whether the content is parody or satire, whether the person making the request can be uniquely identified, or whether it features a public official or well-known individual, in which case there may be a higher bar.
+of creators want guidelines for responsibly posting Gen AI content to social media and video platforms
+How AI-powered Content Moderation works
+YouTube has always used a combination of people and machine learning technologies to enforce our Community Guidelines. In our systems, AI classifiers help detect potentially violative content at scale, and reviewers work to confirm whether content has actually crossed policy lines. AI is continuously increasing both the speed and accuracy of our content moderation systems.
+We also work with other companies across the technology and media industries to establish commitments and standards that support broader responsibility around Gen AI, including the Tech Accord on Deceptive AI Election Content , and C2PA .
+At YouTube, we're committed to ensuring our creators and partners thrive in this evolving landscape. This means equipping them with the tools they need to harness AI's creative potential while maintaining control over how their likeness, including their face and voice, is represented.
+To achieve this, we've developed likeness management technology, including new synthetic-singing identification technology within Content ID that we’re piloting with partners to automatically detect and manage AI-generated content on YouTube that simulates their singing voices.
+Likeness detection is an industry-first tool that works similarly to Content ID, but for likeness. It looks for a participant's likeness in AI-generated content, and if a match is found—like a deepfake of their face—the individual can review the content and request removal if it violates our privacy guidelines .
+As always, we’ll continue to evolve and iterate to ensure we are balancing the tremendous benefits this technology offers with the continued safety of our community.
+Our approach to responsible AI innovation
+AI & Creators: The future of Tech and Creativity
+Our principles for partnering with the music industry on AI technology
+Tools to protect creators and artists
+Partnering with Creative Artists Agency on the next generation of responsible AI tools for talent

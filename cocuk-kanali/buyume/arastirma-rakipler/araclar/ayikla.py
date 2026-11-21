@@ -44,6 +44,7 @@ def goruntuleme_sayi(t):
     s = t.lower().replace("\xa0", " ")
     if "görüntüleme yok" in s:
         return 0
+    s = s.replace("milyon", "mn").replace("milyar", "mr").replace(" bin", " b")
     m = re.search(r"([\d.,]+)\s*(mr|mn|b)?\b", s)
     if not m:
         return ""
@@ -65,16 +66,17 @@ def sure_saniye(t):
     return s
 
 
-BIRIM_AY = {"yıl": 12.0, "ay": 1.0, "hafta": 0.23, "gün": 1 / 30.4, "saat": 1 / 730.0, "dakika": 0.0}
+BIRIM_AY = {"yıl": 12.0, "ay": 1.0, "hafta": 0.23, "gün": 1 / 30.4, "saat": 1 / 730.0, "sa.": 1 / 730.0,
+            "dakika": 0.0, "dk.": 0.0}
 
 
 def yas_ay(t):
     if not t:
         return ""
-    m = re.search(r"(\d+)\s*(yıl|ay|hafta|gün|saat|dakika)", t.lower())
+    m = re.search(r"(\d+)\s*(yıl|ay|hafta|gün|saat|sa\.|dakika|dk\.)", t.lower())
     if not m:
         return ""
-    return round(int(m.group(1)) * BIRIM_AY[m.group(2)], 2)
+    return round(int(m.group(1)) * BIRIM_AY[m.group(2)], 3)
 
 
 def video_satiri(v, raf):
@@ -114,6 +116,74 @@ def video_satiri(v, raf):
         "rozet": rozet,
         "kanal_rozeti": dogr,
     }
+
+
+def bul_hepsi(n, anahtar, acc):
+    if isinstance(n, list):
+        for x in n:
+            bul_hepsi(x, anahtar, acc)
+    elif isinstance(n, dict):
+        for k, v in n.items():
+            if k == anahtar:
+                acc.append(v)
+            else:
+                bul_hepsi(v, anahtar, acc)
+    return acc
+
+
+def lockup_satiri(v, raf):
+    """Yeni arayuz (lockupViewModel). Goruntuleme sayisi burada yuvarlanmis gelir ('93 Mn')."""
+    r = {k: "" for k in ALANLAR}
+    ct = v.get("contentType", "")
+    r["tur"] = "video" if ct.endswith("VIDEO") else ("oynatma_listesi" if "PLAYLIST" in ct or "PODCAST" in ct else ct)
+    r["raf"] = raf
+    r["video_id"] = v.get("contentId", "")
+    md = (v.get("metadata") or {}).get("lockupMetadataViewModel", {})
+    r["baslik"] = (md.get("title") or {}).get("content", "")
+    satirlar = ((md.get("metadata") or {}).get("contentMetadataViewModel") or {}).get("metadataRows") or []
+    for row in satirlar:
+        for part in row.get("metadataParts") or []:
+            if "avatarStack" in part:
+                r["kanal"] = (((part["avatarStack"].get("avatarStackViewModel") or {}).get("text")) or {}).get("content", "")
+                if (part.get("icon") or {}).get("name", "").startswith("CHECK") or (part.get("icon") or {}).get("name", "") == "AUDIO_BADGE":
+                    r["kanal_rozeti"] = (part.get("icon") or {}).get("accessibilityLabel", "")
+                ids = [x for x in bul_hepsi(part, "browseId", []) if isinstance(x, str) and x.startswith("UC")]
+                if ids:
+                    r["kanal_id"] = ids[0]
+                urls = [x for x in bul_hepsi(part, "canonicalBaseUrl", []) if isinstance(x, str)]
+                if urls:
+                    r["kanal_url"] = urls[0]
+                continue
+            t = (part.get("text") or {}).get("content", "")
+            a = part.get("accessibilityLabel", "") or t
+            if not t:
+                continue
+            if "görüntüleme" in a.lower() or (part.get("leadingIcon") or {}).get("name", "").startswith("PLAY"):
+                if not r["goruntuleme_metni"]:
+                    r["goruntuleme_metni"] = a
+                    r["goruntuleme_sayi"] = goruntuleme_sayi(a)
+            elif "önce" in t.lower():
+                if not r["yas_metni"]:
+                    r["yas_metni"] = t
+                    r["yas_ay"] = yas_ay(t)
+            elif r["tur"] != "video" and not r["sure_metni"] and re.search(r"\d", t):
+                r["sure_metni"] = t
+    if not r["kanal"]:
+        # bazi duzenlerde kanal duz metin olarak ilk parcada olur
+        for row in satirlar:
+            for part in row.get("metadataParts") or []:
+                t = (part.get("text") or {}).get("content", "")
+                if t and "görüntüleme" not in t and "önce" not in t and not r["kanal"] and row.get("lockupContentMetadataRowExtension", {}).get("contentType", "").endswith("BYLINE"):
+                    r["kanal"] = t
+    for b in bul_hepsi(v.get("contentImage") or {}, "thumbnailBadgeViewModel", []):
+        t = b.get("text", "")
+        if t and (re.match(r"^\d+(:\d+)+$", t) or not r["sure_metni"]):
+            r["sure_metni"] = t
+            r["sure_saniye"] = sure_saniye(t)
+            if re.match(r"^\d+(:\d+)+$", t):
+                break
+    r["rozet"] = "yeni-arayuz(yuvarlak sayi)"
+    return r
 
 
 def bos(tur, baslik, raf, **kw):
@@ -162,13 +232,7 @@ def yuru(n, raf, out, sayac):
             out.append(bos("oynatma_listesi", metin(v.get("title")), raf, kanal=metin(v.get("longBylineText") or v.get("shortBylineText")),
                            sure_metni=metin(v.get("videoCountText") or v.get("videoCountShortText"))))
         elif k == "lockupViewModel":
-            t = ""
-            try:
-                t = v["metadata"]["lockupMetadataViewModel"]["title"]["content"]
-            except Exception:
-                pass
-            out.append(bos("oynatma_listesi", t, raf, video_id=v.get("contentId", ""),
-                           rozet=v.get("contentType", "")))
+            out.append(lockup_satiri(v, raf))
         elif k in ("shelfRenderer", "reelShelfRenderer", "richShelfRenderer", "horizontalCardListRenderer"):
             alt = metin(v.get("title")) or (metin((v.get("header") or {}).get("richListHeaderRenderer", {}).get("title")))
             yuru(v, alt or k, out, sayac)
@@ -189,6 +253,8 @@ def yuru(n, raf, out, sayac):
 
 def main():
     kaynak, cikti = sys.argv[1], sys.argv[2]
+    if len(sys.argv) > 3:
+        SORGULAR.update(json.load(open(sys.argv[3], encoding="utf-8")))
     tum = []
     for yol in sorted(glob.glob(os.path.join(kaynak, "*.html"))):
         ad = os.path.splitext(os.path.basename(yol))[0]

@@ -1,0 +1,12 @@
+Bu klasordeki metinler 21 Kasim 2026'da dogrudan sayfanin kendisinden indirilip duz metne cevrildi (sayfa okundu).
+support.google.com, blog.youtube, services.google.com ve haber siteleri bu oturumdan ERISILEMEDI; onlardaki bilgiler yalnizca arama ozeti veya hafizaya dayanir.
+
+howyoutubeworks_kids-and-teens.txt        https://www.youtube.com/howyoutubeworks/kids-and-teens/
+howyoutubeworks_youth-principles.txt      https://www.youtube.com/howyoutubeworks/kids-and-teens/youth-principles/
+howyoutubeworks_recommendations.txt       https://www.youtube.com/howyoutubeworks/recommendations/
+howyoutubeworks_ai.txt                    https://www.youtube.com/howyoutubeworks/ai/
+howyoutubeworks_our-policies.txt          https://www.youtube.com/howyoutubeworks/our-policies/
+creators_earn-overview.txt                https://www.youtube.com/creators/earn/overview/
+creators_grow-optimize-your-content.txt   https://www.youtube.com/creators/grow/optimize-your-content/
+creators_create-shorts.txt                https://www.youtube.com/creators/create/shorts/
+myfamily.txt                              https://www.youtube.com/myfamily/
