@@ -5,7 +5,9 @@
   "resp": {
    "status_code": 0,
    "status_msg": "success"
-  }
+  },
+  "status": "done",
+  "file_id": "465868667515149"
  },
  "01_kanca_a": {
   "prompt": "The kitten in the bus doorway waves his raised paw energetically back and forth in a welcoming gesture and bounces lightly on his feet, smiling. Lively, smooth 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
@@ -13,7 +15,9 @@
   "resp": {
    "status_code": 0,
    "status_msg": "success"
-  }
+  },
+  "status": "done",
+  "file_id": "465865757860149"
  },
  "04_kapi": {
   "prompt": "The kitten pushes the red lever with his paw, the bus door finishes folding open, and he beckons with his other paw, nodding and smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
@@ -21,7 +25,9 @@
   "resp": {
    "status_code": 0,
    "status_msg": "success"
-  }
+  },
+  "status": "done",
+  "file_id": "465870283354307"
  },
  "03_durak": {
   "prompt": "The bunny, the puppy and the piglet hop up and down happily in place, landing and jumping again in rhythm. In the background the yellow bus rolls slowly closer. Lively, bouncy 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
@@ -29,6 +35,128 @@
   "resp": {
    "status_code": 0,
    "status_msg": "success"
-  }
+  },
+  "status": "done",
+  "file_id": "465870648918209"
+ },
+ "05_icerde": {
+  "prompt": "The bunny, the puppy and the piglet cheer, raising and lowering their arms and bouncing in their seats. The kitten nods and gives a little wave with one paw. Lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465870669443264",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465869703889097"
+ },
+ "06_teker": {
+  "prompt": "The two big wheels spin fast and steadily, the road and the roadside grass rush past, small dust puffs trail behind the wheels, and the bus body bounces very slightly. Energetic 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465869780246728",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465864568803640"
+ },
+ "07_direksiyon": {
+  "prompt": "The kitten turns the big steering wheel a little to the left and a little to the right, bouncing in his seat with excitement; the bunny, the puppy and the piglet sway along behind him. Lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465865408041266",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465866230915427"
+ },
+ "08_yol": {
+  "prompt": "The yellow bus drives steadily along the winding road, bouncing gently; clouds drift across the sky and the flowers sway in the breeze. Smooth, cheerful 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465869227065612",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465869055361362"
+ },
+ "09_ordekler": {
+  "prompt": "The mother duck and the three ducklings turn their heads left and right, looking around in surprise, and flap their little wings once or twice. The bus behind them stays still. Lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465869386232016",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465864253071678"
+ },
+ "10_korna": {
+  "prompt": "The kitten presses the big red horn button with his paw three times in rhythm, his ears twitching and his body bouncing with each press, grinning. Lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465868408332562",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465865400291691"
+ },
+ "11_yolver": {
+  "prompt": "The yellow bus drives past along the road with turning wheels; the mother duck and the ducklings wave their wings, and the friends in the bus windows wave back. Cheerful 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465870234861891",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465865400291692"
+ },
+ "12_yagmur": {
+  "prompt": "Rain falls steadily, drops splash on the roof of the bus and on the road, the bus rolls gently forward, and the kitten behind the windshield laughs. Lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465867308548445",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465866055557485"
+ },
+ "13_silecek": {
+  "prompt": "The two windshield wipers sweep left and right across the wet glass, clearing the raindrops; the kitten's eyes and head follow the wipers from side to side and he giggles. Lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465870914158853",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465868371530011"
+ },
+ "14_gokkusagi": {
+  "prompt": "The yellow bus drives through the puddle and water splashes up on both sides; the rainbow shines behind, the last raindrops fall, and the friends at the windows cheer. Energetic 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465870285836558",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465866780221664"
+ },
+ "15_veda": {
+  "prompt": "The bunny, the puppy and the piglet wave goodbye energetically toward the bus, bouncing a little; the kitten in the driver's seat waves back with one paw. Warm, cheerful 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465867843317988",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465866285801786"
+ },
+ "16_guleguler": {
+  "prompt": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open, his tail swaying. Gentle, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465872454652171",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "465872020529481"
  }
 }
