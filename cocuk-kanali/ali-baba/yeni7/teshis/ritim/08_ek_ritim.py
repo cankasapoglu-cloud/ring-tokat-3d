@@ -2,6 +2,8 @@
 """Soru 4 (başka ritmik etkenler), iki tarafta aynı ölçüm:
  a) salınım (swing): vuruş arası sekizliğin vuruş içindeki yeri (%50 = düz), orkestra ve vokal
  b) orkestranın ölçü içi vuruş deseni: söylenen ölçülerde 16'lık yuvalara düşen vuruş gücü (pes / orta / tiz bant)
+    UYARI: bu ölçümün "onaltılık" sayıları GÜVENİLİR DEĞİL (log zarfın küçük dalgalanmalarını da topluyor; 09_alt_bolunme.py ile bitmiş
+    karışımda doğrulanamadı: REF onaltılık/sekizlik = 0.01). Yalnız "vuruş arası sekizlik / vuruş" oranı iki yöntemde de aynı yöne çıktı.
  c) hece uzunlukları ve ezgi notası uzunlukları
  d) dize sonu: son hecenin bitişinden sonra vokal düzeyi ne kadar hızlı düşüyor (kuyruk)
  e) vokalin altındaki ezginin (ezgi_alti) karışımdaki düzeyi (duyulur mu?)

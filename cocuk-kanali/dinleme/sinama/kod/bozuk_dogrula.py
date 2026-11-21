@@ -92,27 +92,34 @@ def main():
     tepe, _ = ss.find_peaks(d, height=0.2, distance=SR)
     R["b05_tik"] = {"bulunan_tik_sayisi": int(len(tepe)), "ilk_zamanlar_sn": [round(float(x) / SR, 2) for x in tepe[:5]], "tik_tepe_genligi_medyan": round(float(np.median(d[tepe])), 2),
                     "karisimin_tepe_genligi": round(float(np.abs(M0).max()), 2), "beklenen": "36 tik, 2,37 sn'den baslayarak 3 sn arayla"}
-    # 5b) kisik tik + her iki tik icin "duyulurluk" olcusu: tik aninda 6-16 kHz bandinda, ayni andaki muzige gore kac dB fazlalik var
-    sos = ss.butter(6, [6000 / (SR / 2), 16000 / (SR / 2)], btype="band", output="sos")
+    # 5) tiklarin "duyulurluk" olcusu: tik aninda en yuksek kisa sureli (2 ms) duzeyin, ayni yerde tabandaki duzeye orani (dB);
+    #    hem butun bantta hem 6-16 kHz'de. Kaba kural: 10 dB'yi asan bir patlama 'cit' diye duyulur; 3 dB'nin altinda muzik onu orter.
     zamanlar = json.load(open(os.path.join(b.SINAMA, "bozuklar.json"), encoding="utf8"))["b05_tik"]["tik_zamanlari"]
 
-    def tiz_fazlalik(M):
-        hm, h0 = ss.sosfilt(sos, M.mean(axis=1)), ss.sosfilt(sos, M0[:len(M)].mean(axis=1))
+    def fazlalik(M, lo, hi, w=0.002):
+        sos = ss.butter(6, [lo / (SR / 2), hi / (SR / 2)], btype="band", output="sos")
+        hm, h0 = ss.sosfiltfilt(sos, M.mean(axis=1)), ss.sosfiltfilt(sos, M0[:len(M)].mean(axis=1))
+        n_ = int(w * SR)
         f = []
         for t in zamanlar:
             i = int(t * SR)
-            f.append(db(hm[i - 110:i + 330]) - db(h0[i - 110:i + 330]))            # 10 ms pencere
-        return round(float(np.median(f)), 1), round(float(np.min(f)), 1)
-    med, enaz = tiz_fazlalik(coz(os.path.join(b.CIKTI, "b05_tik.mp3")))
-    R["b05_tik"].update({"tik_aninda_6_16khz_fazlalik_db_medyan": med, "en_az": enaz})
-    if os.path.exists(os.path.join(b.CIKTI, "b05b_tik_kisik.mp3")):
-        M = coz(os.path.join(b.CIKTI, "b05b_tik_kisik.mp3"))
-        d = np.abs((M - M0[:len(M)]).mean(axis=1))
-        tepe, _ = ss.find_peaks(d, height=0.07, distance=SR)
-        med, enaz = tiz_fazlalik(M)
-        R["b05b_tik_kisik"] = {"bulunan_tik_sayisi": int(len(tepe)), "tik_tepe_genligi_medyan": round(float(np.median(d[tepe])), 2),
-                               "tik_aninda_6_16khz_fazlalik_db_medyan": med, "en_az": enaz,
-                               "yorum": "tik aninda tiz bantta muzigin 10 dB'den fazla ustune cikan bir patlama, kulaklikta 'cit' diye duyulur"}
+            seg = slice(i - n_, i + 4 * n_)
+            e1 = np.convolve(hm[seg] ** 2, np.ones(n_) / n_, "valid").max()
+            e0 = np.convolve(h0[seg] ** 2, np.ones(n_) / n_, "valid").max()
+            f.append(10 * np.log10(e1 / e0))
+        return {"medyan_db": round(float(np.median(f)), 1), "10_db_ustu": "%d / %d" % (sum(x >= 10 for x in f), len(f)), "3_db_alti": "%d / %d" % (sum(x < 3 for x in f), len(f))}
+    for ad in ("b05_tik", "b05b_tik_kisik", "b05c_citirti"):
+        if not os.path.exists(os.path.join(b.CIKTI, ad + ".mp3")):
+            continue
+        M = coz(os.path.join(b.CIKTI, ad + ".mp3"))
+        R.setdefault(ad, {})
+        R[ad]["tik_aninda_2ms_duzey_fazlaligi_butun_bant"] = fazlalik(M, 30, 20000)
+        R[ad]["tik_aninda_2ms_duzey_fazlaligi_6_16khz"] = fazlalik(M, 6000, 16000)
+    R["b05_tik"]["duyulurluk_yorumu"] = "tiz bantta cogu yerde belirgin (medyan ~13 dB), butun bantta muzigin icinde kayboluyor: kulaklikta ince 'tik', hoparlorde kacabilir"
+    if "b05b_tik_kisik" in R:
+        R["b05b_tik_kisik"]["duyulurluk_yorumu"] = "cogu yerde muzik orter: duyulurlugu SUPHELI, sayima katilmadi"
+    if "b05c_citirti" in R:
+        R["b05c_citirti"]["duyulurluk_yorumu"] = "butun bantta muzigin belirgin ustunde: suphe goturmez sekilde duyulur"
     # 6) duzey
     v, _ = sf.read(os.path.join(K, "b06a_vokal_eksi6_vokal.wav"), always_2d=True)
     R["b06a_vokal_eksi6"] = {"vokal_duzey_farki_db": round(db(v) - db(V0), 2), "beklenen": -6.0}

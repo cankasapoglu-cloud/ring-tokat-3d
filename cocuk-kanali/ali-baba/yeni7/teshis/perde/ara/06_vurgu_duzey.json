@@ -1,0 +1,86 @@
+{
+ "a_perde_gurluk_tini": {
+  "ozgun_perde~duzey_r": 0.39,
+  "ozgun_perde~duzey_egim_dB/yarim_ses": 0.4,
+  "ozgun_perde~parlaklik_r": 0.15,
+  "ozgun_perde~parlaklik_egim_dB/yarim_ses": 0.4,
+  "yeni_perde~duzey_r_(psola)": 0.04,
+  "yeni_perde~duzey_egim": 0.05,
+  "yeni_perde~parlaklik_r_(psola)": 0.05,
+  "yeni_perde~parlaklik_egim": 0.14
+ },
+ "a_nota_bazli": {
+  "G4_do": {
+   "hece": 126,
+   "duzey_ort_dB": -18.5,
+   "parlaklik_ort_dB": -10.4,
+   "ozgun_perde_ort": 66.23
+  },
+  "E4_la": {
+   "hece": 61,
+   "duzey_ort_dB": -18.7,
+   "parlaklik_ort_dB": -9.2,
+   "ozgun_perde_ort": 65.09
+  },
+  "D4_sol": {
+   "hece": 42,
+   "duzey_ort_dB": -18.7,
+   "parlaklik_ort_dB": -12.0,
+   "ozgun_perde_ort": 64.18
+  },
+  "ozgunde_G4_soylenenler": {
+   "hece": 89,
+   "duzey_ort_dB": -17.9,
+   "parlaklik_ort_dB": -8.4
+  },
+  "ozgunde_D4_soylenenler": {
+   "hece": 34,
+   "duzey_ort_dB": -20.4,
+   "parlaklik_ort_dB": -13.2
+  }
+ },
+ "b_satir_basi": {
+  "satir_basi_(L1,L2,L4 ilk hece; yeni ezgide 1. vuruştaki 'do')": {
+   "hece": 21,
+   "duzey_ort_dB": -22.4,
+   "sesli_ms_ortanca": 170.0,
+   "hnr_sonra_ortanca": 14.7,
+   "jitter_sonra_ortanca": 0.81,
+   "kaydirma_ort": 5.18,
+   "parlaklik_ort_dB": -9.7
+  },
+  "diger_heceler": {
+   "hece": 208,
+   "duzey_ort_dB": -18.2,
+   "sesli_ms_ortanca": 230.0,
+   "hnr_sonra_ortanca": 17.4,
+   "jitter_sonra_ortanca": 0.62,
+   "kaydirma_ort": -0.81,
+   "parlaklik_ort_dB": -10.4
+  },
+  "ayni_notadaki_(G4)_diger_heceler": {
+   "hece": 105,
+   "duzey_ort_dB": -17.7,
+   "sesli_ms_ortanca": 260.0,
+   "hnr_sonra_ortanca": 18.1,
+   "jitter_sonra_ortanca": 0.6,
+   "kaydirma_ort": -0.11,
+   "parlaklik_ort_dB": -10.6
+  }
+ },
+ "c_duzey_reddedilen": {
+  "vokal_orkestra_farki_dB_(04_karisim.py hedefi)": 8.5,
+  "ezgi_alti - orkestra (söylenen karelerde, geniş bant) dB": -11.6,
+  "ezgi_alti - vokal dB (yaklaşık)": -20.4,
+  "ezgi_alti - orkestra 550-850 Hz (klarnetin temel bölgesi) dB": -11.6,
+  "soylenen_kare_sn": 52.0
+ },
+ "c_duzey_referans": {
+  "vokal - orkestra dB (ayrılmış stemler, söylenen hecelerde)": 1.0,
+  "soylenen_kare_sn": 51.9
+ },
+ "d_sizinti": {
+  "200Hz_alti - tum_bant dB (söylenen hecelerde)": -45.2,
+  "kiyaslama": "yerlesim.json: kıtalar arasında (vokal yokken) stem artığı söylenen düzeyin -44.9 dB altında"
+ }
+}

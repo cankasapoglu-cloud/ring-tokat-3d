@@ -442,6 +442,26 @@ def main():
         mp3_yaz("b05b_tik_kisik", y)
         return {"tur": "kusur", "no": 5, "kusur": "her 3 saniyede bir KISIK tik (0,18 ms, genlik 0,3; %d adet): tam olcege dayanmaz" % len(z), "tik_zamanlari": z}
     yap("b05b_tik_kisik", b05b)
+
+    def b05c():
+        # 5 ms'lik genis bantli citirti (tampon kopmasi / bozuk ek yeri gibi): suphe goturmeyecek kadar duyulur
+        M = karis(V).copy()
+        rng = np.random.default_rng(5)
+        n = int(0.005 * SR)
+        zarf_ = np.ones(n)
+        k = int(0.0005 * SR)
+        zarf_[:k] = np.linspace(0, 1, k)
+        zarf_[-k:] = np.linspace(1, 0, k)
+        z, t = [], 2.37
+        while t < len(M) / SR - 1.0:
+            i = int(t * SR)
+            d = 0.8 * rng.uniform(-1, 1, n) * zarf_
+            M[i:i + n] += d[:, None]
+            z.append(round(t, 2))
+            t += 3.0
+        mp3_yaz("b05c_citirti", M)
+        return {"tur": "kusur", "no": 5, "kusur": "her 3 saniyede bir 5 ms'lik genis bantli citirti (tepe 0,8; %d adet)" % len(z), "tik_zamanlari": z}
+    yap("b05c_citirti", b05c)
     # ---- 6) vokal duzeyi
     for ad, dbv in (("b06a_vokal_eksi6", -6.0), ("b06b_vokal_arti6", 6.0)):
         def f(dbv=dbv, ad=ad):

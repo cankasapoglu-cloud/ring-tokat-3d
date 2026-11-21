@@ -119,10 +119,10 @@
   "arg": [
    "--ayir"
   ],
-  "ayirma_sn": 164.0,
-  "dinle_sn": 91.3,
+  "ayirma_sn": 106.6,
+  "dinle_sn": 56.5,
   "donus": 0,
-  "zaman": "16:56:18"
+  "zaman": "17:48:06"
  },
  "b03b_esnetme_20": {
   "grup": "kusur",
@@ -130,10 +130,10 @@
   "arg": [
    "--ayir"
   ],
-  "ayirma_sn": 167.2,
-  "dinle_sn": 72.5,
+  "ayirma_sn": 102.5,
+  "dinle_sn": 60.6,
   "donus": 0,
-  "zaman": "17:00:18"
+  "zaman": "17:50:49"
  },
  "b04k_world_kontrol": {
   "grup": "kusur",
@@ -453,5 +453,16 @@
   "dinle_sn": 23.0,
   "donus": 0,
   "zaman": "17:45:18"
+ },
+ "b05b_tik_kisik": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b05b_tik_kisik.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 127.3,
+  "dinle_sn": 61.6,
+  "donus": 0,
+  "zaman": "17:54:01"
  }
 }

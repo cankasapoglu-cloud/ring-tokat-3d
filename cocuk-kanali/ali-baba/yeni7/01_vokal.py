@@ -16,8 +16,11 @@ from parselmouth.praat import call
 D = os.path.dirname(os.path.abspath(__file__)); A = os.path.dirname(D)
 ap = argparse.ArgumentParser()
 ap.add_argument("--do", type=int, default=67); ap.add_argument("--zaman", default=os.path.join(D, "altyapi", "zaman_G.json"))
-ap.add_argument("--cikti", default=os.path.join(D, "vokal.wav")); ap.add_argument("--yalniz-tablo", action="store_true")
+ap.add_argument("--cikti", default=None); ap.add_argument("--yalniz-tablo", action="store_true")
+ap.add_argument("--ezgi", default="om", choices=["om", "turk"], help="om = Old MacDonald; turk = Türkiye'de bilinen Ali Baba ezgisi")
+ap.add_argument("--ad", default=None, help="dosya eki (varsayılan: om -> yok, turk -> _T)")
 P = ap.parse_args()
+EK = P.ad if P.ad is not None else ("" if P.ezgi == "om" else "_T"); P.cikti = P.cikti or os.path.join(D, f"vokal{EK}.wav")
 Y = json.load(open(os.path.join(A, "yeni4", "vokal", "yerlesim.json"), encoding="utf8")); Z = json.load(open(P.zaman, encoding="utf8"))
 x, fs = sf.read(os.path.join(A, "yeni4", "vokal", "vokal_dogal.wav")); x = x.astype(np.float64); BEAT = Z["vurus_sn"]
 N = int(round(Z["dosya_suresi_sn"] * fs)); FP = 5.0
@@ -31,6 +34,9 @@ for p in Y["pieces"]:
 
 # ---- hedef notalar ------------------------------------------------------------------------------------------------
 DESEN = {"L1": [0, 0, 0, 0, -5, -3, -3, -5, -5, -5], "diye": [-3, -3, -5, -5, -5], "L4": [4, 4, 2, 2, 0, 0, 0, 0, 0]}
+# Türkiye'de bilinen ezgi (do'ya göre yarım ses): sol, do do do mi | re do si, do re || re re re fa | mi re do re mi || (hayvan sesi) la sol fa mi fa || fa mi re do re sol | mi re do
+DESEN_T = {"L1": [-5, 0, 0, 0, 4, 2, 0, -1, 0, 2], "diye": [9, 7, 5, 4, 5], "L4": [5, 4, 2, 0, 2, 7, 4, 2, 0]}
+def l2_deseni(n): return ([4, 4, 2, 2] + [0] * (n - 4)) if P.ezgi == "om" else ([2, 2, 2, 5] + ([4, 2, 0, 2, 4] if n == 9 else [4, 0, 2, 4]))
 def zamana_gore(line, t):                                                 # t: ölçü başından (ya da "diye" başından) vuruş cinsinden
     if line == "L1": return 0 if t < 1.5 else (-5 if t < 2 else (-3 if t < 3 else -5))
     if line == "diye": return -3 if t < 1 else -5
@@ -41,18 +47,19 @@ heceler, uyusmayan = [], []
 for (v, line), hs in grup.items():
     hs.sort(key=lambda s: s["index"]); ob = Z["kitalar"][v - 1]["olcu_baslangiclari"]
     bas = {"L1": ob[0], "L2": ob[1], "diye": ob[3], "L4": ob[4]}[line]
-    desen = DESEN.get(line) if line != "L2" else [4, 4, 2, 2] + [0] * (len(hs) - 4)
+    desen = (DESEN if P.ezgi == "om" else DESEN_T).get(line) if line != "L2" else l2_deseni(len(hs))
     assert len(desen) == len(hs), (v, line, len(hs))
     for s, iv in zip(hs, desen):
         k = kayma[s["piece"]] / fs; t0, t1 = s["dest_start"] + k, s["dest_end"] + k
         zg = zamana_gore(line, (t0 + 0.3 * (t1 - t0) - bas) / BEAT)
-        if zg != iv: uyusmayan.append((v, line, s["text"], round((t0 - bas) / BEAT, 2), iv, zg))
+        if P.ezgi == "om" and zg != iv: uyusmayan.append((v, line, s["text"], round((t0 - bas) / BEAT, 2), iv, zg))
         heceler.append({"kita": v, "satir": line, "hece": s["text"], "parca": s["piece"], "t0": round(t0, 4), "t1": round(t1, 4),
                         "ozgun_midi": s["midi"], "hedef_midi": P.do + iv, "kayma_yarim_ses": round(P.do + iv - s["midi"], 2)})
 print("hece %d; dizilişle zaman kuralı uyuşmayan: %d %s" % (len(heceler), len(uyusmayan), uyusmayan[:8]))
-for do in range(62, 70):
+for do in range(60, 70):
     k = np.array([do - P.do + h["kayma_yarim_ses"] for h in heceler]); w = np.array([h["t1"] - h["t0"] for h in heceler])
     print("  do=%d: ağırlıklı ort |kayma| %.2f, en çok %.1f, 5 yarım sesten fazla hece %d%s" % (do, (np.abs(k) * w).sum() / w.sum(), np.abs(k).max(), (np.abs(k) > 5).sum(), "   <-- seçilen" if do == P.do else ""))
+json.dump({"do": P.do, "ezgi": P.ezgi, "vurus_sn": BEAT, "heceler": heceler}, open(os.path.join(D, f"heceler{EK}.json"), "w", encoding="utf8"), ensure_ascii=False, indent=0)
 if P.yalniz_tablo: raise SystemExit
 
 # ---- PSOLA: her parça kendi tamponunda işlenir (komşu parçalar birbirine karışmasın) -----------------------------
@@ -85,5 +92,5 @@ for p in Y["pieces"]:
         if m.sum() > 3: h["olculen_sent"] = round(float((69 + 12 * np.log2(np.median(f1[m]) / 440) - h["hedef_midi"]) * 100), 1); sapma.append(abs(h["olculen_sent"]))
 tepe = np.abs(cikti).max(); cikti *= 10 ** (-3 / 20) / tepe
 sf.write(P.cikti, cikti, fs, subtype="PCM_24")
-json.dump({"do": P.do, "vurus_sn": BEAT, "heceler": heceler}, open(os.path.join(D, "heceler.json"), "w", encoding="utf8"), ensure_ascii=False, indent=0)
+json.dump({"do": P.do, "ezgi": P.ezgi, "vurus_sn": BEAT, "heceler": heceler}, open(os.path.join(D, f"heceler{EK}.json"), "w", encoding="utf8"), ensure_ascii=False, indent=0)
 e = np.array(sapma); print("%s | hedeften |sapma|: ortanca %.0f, %%90 %.0f, en çok %.0f sent; 50 sentten fazla %d / %d hece" % (os.path.basename(P.cikti), np.median(e), np.percentile(e, 90), e.max(), (e > 50).sum(), len(e)))

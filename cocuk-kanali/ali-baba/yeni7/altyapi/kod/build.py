@@ -34,6 +34,8 @@ ap.add_argument('--lufs', type=float, default=-14.0, help='integrated loudness t
 ap.add_argument('--ezgi-alti-db', type=float, default=-8.0,
                 help='default level of the under-vocal stem: its RMS relative to the band RMS in the bars where it plays')
 ap.add_argument('--tail', type=float, default=2.5, help='seconds of ring-out kept after the final hit')
+ap.add_argument('--ezgi', default='om', choices=['om', 'turk'], help="om = Old MacDonald; turk = the tune known in Turkey (sol, do do do mi | re do si, do re ...)")
+ap.add_argument('--hece-json', default=None, help='heceler*.json of 01_vokal.py: the under-vocal stem then doubles the singer syllable by syllable (same times, one octave above)')
 A = ap.parse_args()
 KEY = A.key[:1].upper() + A.key[1:]
 NAME = A.name or KEY.replace('#', 's')
@@ -57,6 +59,9 @@ d = (TON - 7) % 12
 AS = d if d <= 3 else d - 12               # accompaniment (banjo, piano, accordion, brass chords, fanfare): G -> C = -7
 LEAD_DO = 65 + (TON - 5) % 12              # loud lead "do" in F4..E5:  G -> G4 (67),  C -> C5 (72)
 ALT_DO = 69 + (TON - 9) % 12               # under-vocal "do" in A4..G#5: C -> C5 (72), G -> G5 (79)
+TURK = A.ezgi == 'turk'
+if TURK: LEAD_DO = 60 + TON if TON <= 7 else 48 + TON     # the Turkish tune spans sol, .. la: keep the trumpet in a comfortable octave
+HECE = json.load(open(A.hece_json, encoding='utf8'))['heceler'] if A.hece_json else None
 DEG = {'I': 0, 'IV': 5, 'V7': 7}
 CH = {k: [n + AS for n in v] for k, v in {'I': [55, 59, 62], 'IV': [55, 60, 64], 'V7': [54, 57, 60, 62]}.items()}
 ROLL = {k: [n + AS for n in v] for k, v in {'I': [62, 67, 59, 67, 62, 67, 59, 67], 'IV': [64, 67, 60, 67, 64, 67, 60, 67],
@@ -71,12 +76,13 @@ VERSES = [('inek', 'çiftliğinde inekleri var', 'Mö, mö'), ('koyun', 'çiftli
           ('ördek', 'çiftliğinde ördekleri var', 'Vak, vak'), ('köpek', 'çiftliğinde köpekleri var', 'Hav, hav'),
           ('kedi', 'çiftliğinde kedisi var', 'Miyav, miyav')]
 INTRO = 2; VB = 7; NV = 7; END = 4; TOTAL = INTRO + VB * NV + END
-PA = ['I', 'I', 'IV', 'I']; AN = ['I', 'V7', 'I', 'I']; II = ['I'] * 4
+PA = ['I', 'I', 'IV', 'I']; AN = ['I', 'V7', 'I', 'I']; II = ['I'] * 4; DY = ['IV', 'I']; L4C = AN
+if TURK: PA = ['I', 'I', 'V7', 'V7']; AN = ['V7', 'V7', 'I', 'I']; DY = ['IV', 'IV']; L4C = ['V7', 'V7', 'V7', 'I']     # L4C follows the singer: 'Ba-ba-nın' (mi re do) starts on beat 3
 # bars: (chord per beat, kind, verse index (-1 intro, NV ending), bar inside its section)
 bars = [(PA, 'intro_a', -1, 0), (AN, 'intro_ansfill', -1, 1)]
 for k in range(NV):
-    bars += [(PA, 'voc', k, 0), (AN, 'voc2_cut', k, 1), (II, 'slot', k, 2), (['IV', 'I'], 'diye', k, 3),
-             (AN, 'voc2', k, 4), (PA, 'inter_a', k, 5), (AN, 'ansfill', k, 6)]
+    bars += [(PA, 'voc', k, 0), (AN, 'voc2_cut', k, 1), (II, 'slot', k, 2), (DY, 'diye', k, 3),
+             (L4C, 'voc2', k, 4), (PA, 'inter_a', k, 5), (AN, 'ansfill', k, 6)]
 bars += [(AN, 'ans', NV, 0), (AN, 'ans2', NV, 1), (['IV', 'IV', 'V7', 'V7'], 'roll', NV, 2), (II, 'final', NV, 3)]
 assert len(bars) == TOTAL
 B0 = [0]
@@ -118,8 +124,13 @@ def M(part, ch, bi, bt, dur, n, v, mono=True):
 
 PHA = [(0, 0, .42), (0, .5, .42), (0, 1, .42), (-5, 1.5, .42), (-3, 2, .42), (-3, 2.5, .42), (-5, 3, .9)]   # do do do sol, la, la, sol,
 ANS = [(4, 0, .42), (4, .5, .42), (2, 1, .42), (2, 1.5, .42), (0, 2, 1.5)]                                 # mi mi re re do
+if TURK:   # one sung line = one bar here (the printed score has two bars per line): 1 beat = two quarter notes of the score
+    PHA = [(-5, -.25, .22), (0, 0, .42), (0, .5, .42), (0, 1, .42), (4, 1.5, .42), (2, 2, .22), (0, 2.25, .22), (-1, 2.5, .22), (0, 2.75, .22), (2, 3, .9)]   # sol, | do do do mi | re do si, do re
+    ANS = [(5, 0, .22), (4, .25, .22), (2, .5, .22), (0, .75, .22), (2, 1, .42), (7, 1.5, .42), (4, 2, .42), (2, 2.5, .42), (0, 3, .9)]                 # fa mi re do re sol | mi re do
+T3 = {0: 4, 2: 3, 4: 3, 5: 4, 7: 4, 9: 3, 11: 3}                         # diatonic third above each scale degree
 def lead_phraseA(bi):
     for i, (iv, bt, dur) in enumerate(PHA):
+        if bi == 0 and bt < 0: continue                     # no pick-up before the very first bar
         n = LEAD_DO + iv; v = 120 if bt in (0, 1, 2, 3) else 112
         M('lead', TPT, bi, bt, dur, n, v); M('lead', GLK, bi, bt, dur, n + 12, 116)
         M('lead', BRS, bi, bt, dur, n, v - 12, mono=False); M('lead', BRS, bi, bt, dur, n - 12, v - 18, mono=False)
@@ -128,9 +139,10 @@ def lead_answer(bi, hi=False):
         n = LEAD_DO + iv; v = 122 if i in (0, 2, 4) else 112
         M('lead', TPT, bi, bt, dur, n, v); M('lead', GLK, bi, bt, dur, n + 12, 118)
         M('lead', BRS, bi, bt, dur, n, v - 10, mono=False); M('lead', BRS, bi, bt, dur, n - 12, v - 14, mono=False)
-        if hi: M('lead', BRS, bi, bt, dur, n + (4 if iv == 0 else 3), v - 16, mono=False)   # diatonic third above (sol sol fa fa mi)
+        if hi: M('lead', BRS, bi, bt, dur, n + T3[iv % 12], v - 16, mono=False)   # diatonic third above (sol sol fa fa mi)
     add(DR, B0[bi], .2, 55, 104)                                                            # splash on the answer
 def alt_notes(bi, notes, v_on, v_off, vg):
+    if HECE: return                                     # the stem is written from the singer's own syllables below
     for (iv, bt, dur) in notes:
         n = ALT_DO + iv; on = float(bt).is_integer()
         M('ezgi_alti', CLA, bi, bt, dur, n, v_on if on else v_off)
@@ -229,6 +241,11 @@ for bi, (ch, kind, k, vb) in enumerate(bars):
             add(PNO, b0 + bt, dur, ROOT['I'] + 12, 112)
             for n in (79, 83, 86):                                                         # final I chord (root, third, fifth)
                 M('lead', TPT, bi, bt, dur, n + AS, 122, mono=False); M('lead', GLK, bi, bt, dur, n + AS + 12, 118, mono=False)
+if HECE:   # under-vocal stem = the singer's own notes at the singer's own times (clarinet one octave above, light glockenspiel two)
+    for i, h in enumerate(HECE):
+        son = min(h['t1'], HECE[i + 1]['t0']) if i + 1 < len(HECE) and HECE[i + 1]['t0'] - h['t1'] < 0.08 else h['t1']
+        bb = h['t0'] / BEAT; dur = max(.12, (son - h['t0']) / BEAT * .96); n = int(round(h['hedef_midi'])) + 12
+        add(CLA, bb, dur, n, 98); add(GLK2, bb, min(dur, .5), n + 12, 84)
 # crashes at section starts
 add(DR, 0, .2, 49, 112)
 for k in range(NV): add(DR, B0[INTRO + k * VB], .2, 49, 116); add(DR, B0[INTRO + k * VB], .2, 57, 96)
@@ -357,7 +374,7 @@ for m in sorted(mel, key=lambda m: (m['olcu'], m['vurus'], m['kanal'], m['midi']
                   'midi': m['midi'], 'nota': m['nota'], 'baslangic': R(bt0(m['olcu']) + m['vurus'] * BEAT), 'sure': R(m['sure_vurus'] * BEAT),
                   'hiz': m['hiz'], 'tek_ses': m['tek_ses']})
 KEYTR = {'C': 'Do majör (C)', 'G': 'Sol majör (G)'}.get(KEY, KEY + ' majör')
-Z = {'baslik': "Ali Baba'nın Çiftliği", 'varyant': NAME, 'ezgi': 'Old MacDonald Had a Farm (geleneksel, kamu malı), çift hızda: her ölçüde bir cümle',
+Z = {'baslik': "Ali Baba'nın Çiftliği", 'varyant': NAME, 'ezgi': ('Türkiye\'de bilinen Ali Baba\'nın Çiftliği ezgisi: sol, do do do mi | re do si, do re || re re re fa | mi re do re mi || la sol fa mi fa || fa mi re do re sol | mi re do' if TURK else 'Old MacDonald Had a Farm (geleneksel, kamu malı), çift hızda: her ölçüde bir cümle'), 'ezgi_turu': A.ezgi, 'vokal_alti': 'şarkıcının heceleriyle aynı anda, bir oktav üstten klarnet' if HECE else 'ızgarada klarnet',
      'ton': KEYTR, 'do': KEY, 'olcu': '4/4; her kıtada "diye bağırır" 2/4 ölçüdür', 'tempo_bpm': BPM, 'vurus_sn': round(BEAT, 6), 'olcu_sn': round(BAR, 6),
      'toplam_olcu': TOTAL, 'toplam_vurus': TOTAL_BEATS, 'muzik_bitis_sn': R(TOTAL_BEATS * BEAT), 'son_vurus_sn': R(FINAL_HIT), 'dosya_suresi_sn': R(N / sr),
      'kuyruk_sn': A.tail, 'ornekleme_hz': sr, 'olcu_baslangiclari_sn': [R(bt0(i)) for i in range(TOTAL + 1)],

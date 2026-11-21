@@ -39,7 +39,7 @@ def kosular():
     for ad in ("n3_yeniden_karisim", "n1_yeniden_kodlama", "n2_wav", "n4_kisik_kaydirilmis"):
         K.append(("gurultu", ad, s(ad), ["--ayir"]))
     for ad in ("b01a_detone_50c", "b01b_detone_100c", "b02a_gec_ceyrek", "b02b_gec_yarim", "b03a_esnetme_15", "b03b_esnetme_20",
-               "b04k_world_kontrol", "b04_duz_perde", "b05_tik", "b05b_tik_kisik", "b06a_vokal_eksi6", "b06b_vokal_arti6", "b07_satir_sonu_kesik",
+               "b04k_world_kontrol", "b04_duz_perde", "b05_tik", "b05b_tik_kisik", "b05c_citirti", "b06a_vokal_eksi6", "b06b_vokal_arti6", "b07_satir_sonu_kesik",
                "b08_yanlis_satir", "b09_tempo_80", "b10_alcak_geciren_4k"):
         K.append(("kusur", ad, s(ad), ["--ayir"]))
     K.append(("ikinci", "e1_el_yikama_coskulu_2", os.path.join(KANAL, "el-yikama", "coskulu_2.mp3"), ["--ayir", "--sozler", SOZ_EL]))

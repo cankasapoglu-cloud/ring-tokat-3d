@@ -1,0 +1,55 @@
+{
+ "tanim": "Soru 4 ek: tiz bantta (2-16 kHz) ritmin alt bölünmesi. Dört BİTMİŞ karışımda aynı ölçüm (vokal dahil tam karışım, 20.-80. saniye):\nvuruşlar librosa ile bulunur (tempo 80-160 aralığına katlanır); her vuruş 4 onaltılığa bölünür; her yuvanın çevresindeki (+-25 ms) tiz bant yükselişi toplanır.\nonaltilik/sekizlik = (yuva 1 + yuva 3) / (yuva 0 + yuva 2);  vurus_arasi/vurus = yuva 2 / yuva 0  (vuruş fazı yarım vuruş kayarsa bu ikinci oran tersine döner; ilki dönmez).",
+ "RED_reddedilen": {
+  "tempo_bpm": 105.0,
+  "vurus_kaynagi": "bilinen ızgara",
+  "vurus_sayisi": 100,
+  "yuva_gucu_0_1_2_3": [
+   2.17,
+   0.22,
+   0.65,
+   0.54
+  ],
+  "onaltilik_bolu_sekizlik": 0.27,
+  "vurus_arasi_bolu_vurus": 0.3
+ },
+ "REF_v2_2": {
+  "tempo_bpm": 105.0,
+  "vurus_kaynagi": "bilinen ızgara",
+  "vurus_sayisi": 100,
+  "yuva_gucu_0_1_2_3": [
+   1.76,
+   0.06,
+   4.17,
+   0.0
+  ],
+  "onaltilik_bolu_sekizlik": 0.01,
+  "vurus_arasi_bolu_vurus": 2.37
+ },
+ "ONAY_el_yikama_coskulu_2": {
+  "tempo_bpm": 118.1,
+  "vurus_kaynagi": "librosa",
+  "vurus_sayisi": 90,
+  "yuva_gucu_0_1_2_3": [
+   8.65,
+   2.07,
+   6.58,
+   0.53
+  ],
+  "onaltilik_bolu_sekizlik": 0.17,
+  "vurus_arasi_bolu_vurus": 0.76
+ },
+ "ONAY_parmak_ailesi_coskulu_1": {
+  "tempo_bpm": 111.7,
+  "vurus_kaynagi": "librosa",
+  "vurus_sayisi": 101,
+  "yuva_gucu_0_1_2_3": [
+   13.97,
+   0.24,
+   6.84,
+   1.68
+  ],
+  "onaltilik_bolu_sekizlik": 0.09,
+  "vurus_arasi_bolu_vurus": 0.49
+ }
+}

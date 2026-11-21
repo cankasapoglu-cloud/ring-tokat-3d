@@ -1,0 +1,1531 @@
+{
+ "ne": "Dinleme takiminin (dinleme/arac/dinle.py 1.0) karsi sinamasi: kabul edilmis bir kayda TEK bilinen kusur eklenip aracin fark edip etmedigine bakildi.",
+ "tarih": "2026-11-21",
+ "uyari": "Kusurlari Claude duyamadi; her kusurun varligi aractan bagimsiz olcumlerle dogrulandi (bozuk_dogrulama.json). 'Dinleyici fark eder' yargisi varsayimdir.",
+ "yontem": {
+  "kaynak": "cocuk-kanali/ali-baba/dinle_2.mp3 ve onun UVR-MDX-NET-Voc_FT ile ayrilmis vokal/altyapi kanallari (toplamlari asil dosyayi -42 dB artikla verir)",
+  "taban": "n3_yeniden_karisim (kanallarin toplami, 192 kb/sn MP3); butun bozuk surumler bundan tek degisiklikle turetildi",
+  "ana_yol": "dinle.py <bozuk.mp3> --ayir  (bitmis dosya; arac vokali kendisi ayirir)",
+  "ikinci_yol": "dinle.py <bozuk.mp3> --vokal <bozuk vokal kanali> --altyapi <altyapi kanali> --hizli  (kanallar elde)",
+  "sozler": "ucretli Scribe dokumu yalniz 22,5 sn'lik iki kisa parcada (7 ve 8 numarali kusurlar) ve 18 sn'lik bir kuru parcada yapildi (kredi siniri)",
+  "karar_kurallari": "(kosulardan ONCE yazildi. Sonuclar gorulunce TEK duzeltme yapildi, asagida (*) ile isaretli)\n- Gurultu: kusursuz 5 kopya {asil, yeniden kodlanmis MP3, WAV, yeniden karisim, 1 dB kisik + 23 ms kaydirilmis} arasinda olcunun\n  en buyuk - en kucuk degeri (aralik). Aralik 0 cikarsa olcunun yazim cozunurlugu taban alinir.\n- Fark: bozuk surum - taban (n3_yeniden_karisim; butun bozuk surumler ondan turetildi).\n- Kat: |fark| / gurultu.\n- \"TEK RAPORLA YAKALANDI\": aracin kendi ozetinde, kusurla ILGILI satirin durumu kusursuz 5 kopyanin HEPSINDEKINDEN kotu\n  (iyi/bilgi -> dikkat/sorun, dikkat -> sorun) ya da ilgili turde, kusursuz kopyalarin hicbirinde olmayan sayida 'sorun' kaydi var.\n  Claude tek dosyayi olcup raporu okudugunda gorecegi sey budur.\n  (*) Ilk yazimda olcut \"tabandakinden kotu\" idi. 'Tepe' satiri asil kayitta zaten 'dikkat' (+0,5 dBTP), yeniden kodlanmis kopyalarda ise\n  yok (0,0 dBTP); vokale dokunan hemen her islem tepeyi 0'in ustune itip bu satiri yeniden cikariyor. Bunu \"yakalandi\" saymak yanlis olurdu;\n  olcut \"kusursuz kopyalarin en kotusunden de kotu\" olarak duzeltildi. Baska kural degismedi.\n- \"KARSILASTIRMAYLA YAKALANDI\": kusur icin ONCEDEN secilmis olculerden en az biri gurultunun 3 katindan fazla oynadi (kat >= 3).\n  Yani yalniz iyi bilinen bir surumle yan yana olculurse gorulur.\n- \"KACTI\": ikisi de degil."
+ },
+ "tekrar_calistirma": "Ayni dosya iki kez olculdu: 320 sayisal alanin hepsi birebir ayni (yalniz calisma sureleri farkli). Arac belirlenimci.",
+ "gurultu": {
+  "lufs": {
+   "ad": "ses yüksekliği (LUFS)",
+   "aralik": 1.3,
+   "gurultu": 1.3,
+   "degerler": {
+    "00_asil_a": -12.4,
+    "n1_yeniden_kodlama": -12.7,
+    "n2_wav": -12.4,
+    "n3_yeniden_karisim": -12.7,
+    "n4_kisik_kaydirilmis": -13.7
+   }
+  },
+  "tepe": {
+   "ad": "gerçek tepe (dBTP)",
+   "aralik": 1.2,
+   "gurultu": 1.2,
+   "degerler": {
+    "00_asil_a": 0.5,
+    "n1_yeniden_kodlama": -0.1,
+    "n2_wav": 0.3,
+    "n3_yeniden_karisim": 0.0,
+    "n4_kisik_kaydirilmis": -0.7
+   }
+  },
+  "tepe_faktoru": {
+   "ad": "tepe faktörü (dB)",
+   "aralik": 0.3,
+   "gurultu": 0.3,
+   "degerler": {
+    "00_asil_a": 15.2,
+    "n1_yeniden_kodlama": 14.9,
+    "n2_wav": 14.9,
+    "n3_yeniden_karisim": 14.9,
+    "n4_kisik_kaydirilmis": 15.1
+   }
+  },
+  "lra": {
+   "ad": "ses yüksekliği aralığı (LU)",
+   "aralik": 0.1,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": 3.1,
+    "n1_yeniden_kodlama": 3.1,
+    "n2_wav": 3.1,
+    "n3_yeniden_karisim": 3.0,
+    "n4_kisik_kaydirilmis": 3.0
+   }
+  },
+  "tam_olcek": {
+   "ad": "tam ölçekteki örnek sayısı",
+   "aralik": 2.0,
+   "gurultu": 2.0,
+   "degerler": {
+    "00_asil_a": 2,
+    "n1_yeniden_kodlama": 0,
+    "n2_wav": 2,
+    "n3_yeniden_karisim": 0,
+    "n4_kisik_kaydirilmis": 0
+   }
+  },
+  "ust_frekans": {
+   "ad": "üst frekans sınırı (Hz)",
+   "aralik": 75.0,
+   "gurultu": 75.0,
+   "degerler": {
+    "00_asil_a": 18744,
+    "n1_yeniden_kodlama": 18744,
+    "n2_wav": 18744,
+    "n3_yeniden_karisim": 18755,
+    "n4_kisik_kaydirilmis": 18680
+   }
+  },
+  "tempo": {
+   "ad": "tempo (BPM)",
+   "aralik": 0.1,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": 116.0,
+    "n1_yeniden_kodlama": 116.0,
+    "n2_wav": 116.0,
+    "n3_yeniden_karisim": 116.0,
+    "n4_kisik_kaydirilmis": 115.9
+   }
+  },
+  "nabiz": {
+   "ad": "nabız netliği",
+   "aralik": 0.002,
+   "gurultu": 0.005,
+   "degerler": {
+    "00_asil_a": 0.825,
+    "n1_yeniden_kodlama": 0.825,
+    "n2_wav": 0.825,
+    "n3_yeniden_karisim": 0.825,
+    "n4_kisik_kaydirilmis": 0.823
+   }
+  },
+  "olay": {
+   "ad": "olay yoğunluğu (1/sn)",
+   "aralik": 0.01,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 4.24,
+    "n1_yeniden_kodlama": 4.25,
+    "n2_wav": 4.24,
+    "n3_yeniden_karisim": 4.24,
+    "n4_kisik_kaydirilmis": 4.25
+   }
+  },
+  "aki": {
+   "ad": "spektral akı",
+   "aralik": 0.003,
+   "gurultu": 0.005,
+   "degerler": {
+    "00_asil_a": 1.857,
+    "n1_yeniden_kodlama": 1.86,
+    "n2_wav": 1.857,
+    "n3_yeniden_karisim": 1.859,
+    "n4_kisik_kaydirilmis": 1.86
+   }
+  },
+  "vurmali": {
+   "ad": "vurmalı/armonik (dB)",
+   "aralik": 0.05,
+   "gurultu": 0.05,
+   "degerler": {
+    "00_asil_a": 0.83,
+    "n1_yeniden_kodlama": 0.83,
+    "n2_wav": 0.83,
+    "n3_yeniden_karisim": 0.86,
+    "n4_kisik_kaydirilmis": 0.88
+   }
+  },
+  "parlaklik": {
+   "ad": "parlaklık (Hz)",
+   "aralik": 15.0,
+   "gurultu": 15.0,
+   "degerler": {
+    "00_asil_a": 2684.0,
+    "n1_yeniden_kodlama": 2681.0,
+    "n2_wav": 2684.0,
+    "n3_yeniden_karisim": 2682.0,
+    "n4_kisik_kaydirilmis": 2696.0
+   }
+  },
+  "tiz_payi": {
+   "ad": "4 kHz üstü pay (dB)",
+   "aralik": 0.1,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": -16.4,
+    "n1_yeniden_kodlama": -16.5,
+    "n2_wav": -16.4,
+    "n3_yeniden_karisim": -16.5,
+    "n4_kisik_kaydirilmis": -16.4
+   }
+  },
+  "puan": {
+   "ad": "hareketlilik puanı (0-100)",
+   "aralik": 1.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 73.0,
+    "n1_yeniden_kodlama": 74.0,
+    "n2_wav": 73.0,
+    "n3_yeniden_karisim": 73.0,
+    "n4_kisik_kaydirilmis": 74.0
+   }
+  },
+  "coca": {
+   "ad": "MusicCoCa coşku farkı",
+   "aralik": 0.009,
+   "gurultu": 0.009,
+   "degerler": {
+    "00_asil_a": 0.179,
+    "n1_yeniden_kodlama": 0.18,
+    "n2_wav": 0.179,
+    "n3_yeniden_karisim": 0.179,
+    "n4_kisik_kaydirilmis": 0.171
+   }
+  },
+  "coca_tempo": {
+   "ad": "MusicCoCa hızlı-yavaş farkı",
+   "aralik": 0.01,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.073,
+    "n1_yeniden_kodlama": 0.077,
+    "n2_wav": 0.073,
+    "n3_yeniden_karisim": 0.076,
+    "n4_kisik_kaydirilmis": 0.067
+   }
+  },
+  "coca_kalite": {
+   "ad": "MusicCoCa kayıt kalitesi farkı",
+   "aralik": 0.002,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.263,
+    "n1_yeniden_kodlama": 0.264,
+    "n2_wav": 0.263,
+    "n3_yeniden_karisim": 0.263,
+    "n4_kisik_kaydirilmis": 0.265
+   }
+  },
+  "ninni": {
+   "ad": "CED ninni olasılığı",
+   "aralik": 0.0,
+   "gurultu": 0.001,
+   "degerler": {
+    "00_asil_a": 0.0,
+    "n1_yeniden_kodlama": 0.0,
+    "n2_wav": 0.0,
+    "n3_yeniden_karisim": 0.0,
+    "n4_kisik_kaydirilmis": 0.0
+   }
+  },
+  "ced_cosku": {
+   "ad": "CED coşkulu - sakin",
+   "aralik": 0.014,
+   "gurultu": 0.014,
+   "degerler": {
+    "00_asil_a": 0.142,
+    "n1_yeniden_kodlama": 0.141,
+    "n2_wav": 0.142,
+    "n3_yeniden_karisim": 0.14,
+    "n4_kisik_kaydirilmis": 0.128
+   }
+  },
+  "denge": {
+   "ad": "vokal - altyapı (dB)",
+   "aralik": 1.5,
+   "gurultu": 1.5,
+   "degerler": {
+    "00_asil_a": -3.4,
+    "n1_yeniden_kodlama": -4.0,
+    "n2_wav": -3.7,
+    "n3_yeniden_karisim": -4.1,
+    "n4_kisik_kaydirilmis": -4.9
+   }
+  },
+  "vokalli": {
+   "ad": "vokalli süre oranı",
+   "aralik": 0.002,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.581,
+    "n1_yeniden_kodlama": 0.581,
+    "n2_wav": 0.581,
+    "n3_yeniden_karisim": 0.58,
+    "n4_kisik_kaydirilmis": 0.579
+   }
+  },
+  "sizinti": {
+   "ad": "vokal kanalına sızıntı (dB)",
+   "aralik": 22.8,
+   "gurultu": 22.8,
+   "degerler": {
+    "00_asil_a": -21.0,
+    "n1_yeniden_kodlama": -21.7,
+    "n2_wav": -21.3,
+    "n3_yeniden_karisim": -22.0,
+    "n4_kisik_kaydirilmis": -43.8
+   }
+  },
+  "destek": {
+   "ad": "armonik destek farkı",
+   "aralik": 0.041,
+   "gurultu": 0.041,
+   "degerler": {
+    "00_asil_a": 0.26,
+    "n1_yeniden_kodlama": 0.25,
+    "n2_wav": 0.249,
+    "n3_yeniden_karisim": 0.249,
+    "n4_kisik_kaydirilmis": 0.29
+   }
+  },
+  "kaydirma": {
+   "ad": "en iyi kaydırma (yarım ses)",
+   "aralik": 0.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 0,
+    "n1_yeniden_kodlama": 0,
+    "n2_wav": 0,
+    "n3_yeniden_karisim": 0,
+    "n4_kisik_kaydirilmis": 0
+   }
+  },
+  "cent": {
+   "ad": "notaya uzaklık medyan (cent)",
+   "aralik": 0.4,
+   "gurultu": 0.4,
+   "degerler": {
+    "00_asil_a": 8.8,
+    "n1_yeniden_kodlama": 8.8,
+    "n2_wav": 9.0,
+    "n3_yeniden_karisim": 9.0,
+    "n4_kisik_kaydirilmis": 8.6
+   }
+  },
+  "cent_isaretli": {
+   "ad": "notaya uzaklık ortalama, işaretli (cent)",
+   "aralik": 0.1,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": -4.7,
+    "n1_yeniden_kodlama": -4.8,
+    "n2_wav": -4.8,
+    "n3_yeniden_karisim": -4.7,
+    "n4_kisik_kaydirilmis": -4.8
+   }
+  },
+  "y25": {
+   "ad": "±25 cent içinde (%)",
+   "aralik": 0.7,
+   "gurultu": 0.7,
+   "degerler": {
+    "00_asil_a": 88.4,
+    "n1_yeniden_kodlama": 88.9,
+    "n2_wav": 88.5,
+    "n3_yeniden_karisim": 88.4,
+    "n4_kisik_kaydirilmis": 89.1
+   }
+  },
+  "akort_kaymasi": {
+   "ad": "vokalin genel akort kayması (cent)",
+   "aralik": 0.1,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": -5.0,
+    "n1_yeniden_kodlama": -4.9,
+    "n2_wav": -5.0,
+    "n3_yeniden_karisim": -4.9,
+    "n4_kisik_kaydirilmis": -4.9
+   }
+  },
+  "izgara_R": {
+   "ad": "perde ızgarasına yapışma R",
+   "aralik": 0.02,
+   "gurultu": 0.02,
+   "degerler": {
+    "00_asil_a": 0.67,
+    "n1_yeniden_kodlama": 0.67,
+    "n2_wav": 0.67,
+    "n3_yeniden_karisim": 0.66,
+    "n4_kisik_kaydirilmis": 0.68
+   }
+  },
+  "gam_ici": {
+   "ad": "gam içi süre oranı",
+   "aralik": 0.01,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.858,
+    "n1_yeniden_kodlama": 0.868,
+    "n2_wav": 0.859,
+    "n3_yeniden_karisim": 0.862,
+    "n4_kisik_kaydirilmis": 0.859
+   }
+  },
+  "akor_sesi": {
+   "ad": "akor sesi süre oranı",
+   "aralik": 0.007,
+   "gurultu": 0.007,
+   "degerler": {
+    "00_asil_a": 0.704,
+    "n1_yeniden_kodlama": 0.711,
+    "n2_wav": 0.704,
+    "n3_yeniden_karisim": 0.711,
+    "n4_kisik_kaydirilmis": 0.711
+   }
+  },
+  "cakisan": {
+   "ad": "çakışan uzun nota sayısı",
+   "aralik": 0.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 0,
+    "n1_yeniden_kodlama": 0,
+    "n2_wav": 0,
+    "n3_yeniden_karisim": 0,
+    "n4_kisik_kaydirilmis": 0
+   }
+  },
+  "ritim_R": {
+   "ad": "ritim sıkılığı R (sekizlik)",
+   "aralik": 0.04,
+   "gurultu": 0.04,
+   "degerler": {
+    "00_asil_a": 0.36,
+    "n1_yeniden_kodlama": 0.37,
+    "n2_wav": 0.36,
+    "n3_yeniden_karisim": 0.37,
+    "n4_kisik_kaydirilmis": 0.4
+   }
+  },
+  "ritim_kayma": {
+   "ad": "ortalama kayma, sekizlik (ms)",
+   "aralik": 2.0,
+   "gurultu": 2.0,
+   "degerler": {
+    "00_asil_a": 26.0,
+    "n1_yeniden_kodlama": 24.0,
+    "n2_wav": 26.0,
+    "n3_yeniden_karisim": 24.0,
+    "n4_kisik_kaydirilmis": 25.0
+   }
+  },
+  "ritim_40": {
+   "ad": "40 ms içinde (%)",
+   "aralik": 2.0,
+   "gurultu": 2.0,
+   "degerler": {
+    "00_asil_a": 48.0,
+    "n1_yeniden_kodlama": 50.0,
+    "n2_wav": 48.0,
+    "n3_yeniden_karisim": 49.0,
+    "n4_kisik_kaydirilmis": 50.0
+   }
+  },
+  "ritim16_R": {
+   "ad": "ritim sıkılığı R (onaltılık)",
+   "aralik": 0.04,
+   "gurultu": 0.04,
+   "degerler": {
+    "00_asil_a": 0.36,
+    "n1_yeniden_kodlama": 0.4,
+    "n2_wav": 0.36,
+    "n3_yeniden_karisim": 0.38,
+    "n4_kisik_kaydirilmis": 0.38
+   }
+  },
+  "ritim16_kayma": {
+   "ad": "ortalama kayma, onaltılık (ms)",
+   "aralik": 1.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 31.0,
+    "n1_yeniden_kodlama": 30.0,
+    "n2_wav": 30.0,
+    "n3_yeniden_karisim": 30.0,
+    "n4_kisik_kaydirilmis": 30.0
+   }
+  },
+  "baslangic": {
+   "ad": "vokal başlangıç sayısı",
+   "aralik": 8.0,
+   "gurultu": 8.0,
+   "degerler": {
+    "00_asil_a": 201,
+    "n1_yeniden_kodlama": 200,
+    "n2_wav": 201,
+    "n3_yeniden_karisim": 203,
+    "n4_kisik_kaydirilmis": 195
+   }
+  },
+  "nota_sayisi": {
+   "ad": "nota sayısı",
+   "aralik": 4.0,
+   "gurultu": 4.0,
+   "degerler": {
+    "00_asil_a": 128,
+    "n1_yeniden_kodlama": 131,
+    "n2_wav": 128,
+    "n3_yeniden_karisim": 127,
+    "n4_kisik_kaydirilmis": 130
+   }
+  },
+  "nota_suresi": {
+   "ad": "nota süresi medyan (sn)",
+   "aralik": 0.01,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.18,
+    "n1_yeniden_kodlama": 0.18,
+    "n2_wav": 0.19,
+    "n3_yeniden_karisim": 0.19,
+    "n4_kisik_kaydirilmis": 0.18
+   }
+  },
+  "oynaklik": {
+   "ad": "nota içi oynaklık (cent)",
+   "aralik": 0.8,
+   "gurultu": 0.8,
+   "degerler": {
+    "00_asil_a": 11.1,
+    "n1_yeniden_kodlama": 10.8,
+    "n2_wav": 11.2,
+    "n3_yeniden_karisim": 11.6,
+    "n4_kisik_kaydirilmis": 11.2
+   }
+  },
+  "cok_duz": {
+   "ad": "çok düz nota oranı",
+   "aralik": 0.03,
+   "gurultu": 0.03,
+   "degerler": {
+    "00_asil_a": 0.03,
+    "n1_yeniden_kodlama": 0.03,
+    "n2_wav": 0.02,
+    "n3_yeniden_karisim": 0.03,
+    "n4_kisik_kaydirilmis": 0.05
+   }
+  },
+  "vibrato": {
+   "ad": "vibratolu uzun nota oranı",
+   "aralik": 0.04,
+   "gurultu": 0.04,
+   "degerler": {
+    "00_asil_a": 0.15,
+    "n1_yeniden_kodlama": 0.16,
+    "n2_wav": 0.15,
+    "n3_yeniden_karisim": 0.15,
+    "n4_kisik_kaydirilmis": 0.19
+   }
+  },
+  "gecis": {
+   "ad": "geçiş çerçevesi oranı",
+   "aralik": 0.01,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.18,
+    "n1_yeniden_kodlama": 0.17,
+    "n2_wav": 0.18,
+    "n3_yeniden_karisim": 0.17,
+    "n4_kisik_kaydirilmis": 0.18
+   }
+  },
+  "sesli_oran": {
+   "ad": "perdeli çerçeve oranı",
+   "aralik": 0.006,
+   "gurultu": 0.006,
+   "degerler": {
+    "00_asil_a": 0.307,
+    "n1_yeniden_kodlama": 0.303,
+    "n2_wav": 0.307,
+    "n3_yeniden_karisim": 0.302,
+    "n4_kisik_kaydirilmis": 0.301
+   }
+  },
+  "pyin_uyum": {
+   "ad": "iki perde izleyicinin uyumu (%)",
+   "aralik": 0.4,
+   "gurultu": 0.4,
+   "degerler": {
+    "00_asil_a": 93.6,
+    "n1_yeniden_kodlama": 93.9,
+    "n2_wav": 93.6,
+    "n3_yeniden_karisim": 94.0,
+    "n4_kisik_kaydirilmis": 93.7
+   }
+  },
+  "yapay_isaret": {
+   "ad": "yapaylık işareti sayısı",
+   "aralik": 0.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 0,
+    "n1_yeniden_kodlama": 0,
+    "n2_wav": 0,
+    "n3_yeniden_karisim": 0,
+    "n4_kisik_kaydirilmis": 0
+   }
+  },
+  "gecis_ms": {
+   "ad": "bağlı geçiş süresi (ms)",
+   "aralik": 0.0,
+   "gurultu": 16.0,
+   "degerler": {
+    "00_asil_a": 32.0,
+    "n1_yeniden_kodlama": 32.0,
+    "n2_wav": 32.0,
+    "n3_yeniden_karisim": 32.0,
+    "n4_kisik_kaydirilmis": 32.0
+   }
+  },
+  "donmus": {
+   "ad": "donmuş ünlü süre oranı",
+   "aralik": 0.0,
+   "gurultu": 0.005,
+   "degerler": {
+    "00_asil_a": 0.0,
+    "n1_yeniden_kodlama": 0.0,
+    "n2_wav": 0.0,
+    "n3_yeniden_karisim": 0.0,
+    "n4_kisik_kaydirilmis": 0.0
+   }
+  },
+  "benzerlik": {
+   "ad": "ardışık çerçeve benzerliği",
+   "aralik": 0.0004,
+   "gurultu": 0.0005,
+   "degerler": {
+    "00_asil_a": 0.9827,
+    "n1_yeniden_kodlama": 0.9827,
+    "n2_wav": 0.9827,
+    "n3_yeniden_karisim": 0.9825,
+    "n4_kisik_kaydirilmis": 0.9829
+   }
+  },
+  "unsuz_tiz": {
+   "ad": "ünsüzlerde tiz payı (dB)",
+   "aralik": 0.2,
+   "gurultu": 0.2,
+   "degerler": {
+    "00_asil_a": -11.1,
+    "n1_yeniden_kodlama": -11.3,
+    "n2_wav": -11.1,
+    "n3_yeniden_karisim": -11.3,
+    "n4_kisik_kaydirilmis": -11.2
+   }
+  },
+  "vokal_ust": {
+   "ad": "vokalin üst frekansı (Hz)",
+   "aralik": 0.0,
+   "gurultu": 50.0,
+   "degerler": {
+    "00_asil_a": 10723,
+    "n1_yeniden_kodlama": 10723,
+    "n2_wav": 10723,
+    "n3_yeniden_karisim": 10723,
+    "n4_kisik_kaydirilmis": 10723
+   }
+  },
+  "tiz_doku": {
+   "ad": "tiz doku değişim katsayısı",
+   "aralik": 0.03,
+   "gurultu": 0.03,
+   "degerler": {
+    "00_asil_a": 1.42,
+    "n1_yeniden_kodlama": 1.43,
+    "n2_wav": 1.42,
+    "n3_yeniden_karisim": 1.43,
+    "n4_kisik_kaydirilmis": 1.4
+   }
+  },
+  "zarf": {
+   "ad": "zarf titremesi (dB)",
+   "aralik": 0.6,
+   "gurultu": 0.6,
+   "degerler": {
+    "00_asil_a": -9.1,
+    "n1_yeniden_kodlama": -8.8,
+    "n2_wav": -9.0,
+    "n3_yeniden_karisim": -8.7,
+    "n4_kisik_kaydirilmis": -9.3
+   }
+  },
+  "dnsmos": {
+   "ad": "DNSMOS",
+   "aralik": 0.07,
+   "gurultu": 0.07,
+   "degerler": {
+    "00_asil_a": 2.71,
+    "n1_yeniden_kodlama": 2.73,
+    "n2_wav": 2.71,
+    "n3_yeniden_karisim": 2.71,
+    "n4_kisik_kaydirilmis": 2.66
+   }
+  },
+  "nisqa": {
+   "ad": "NISQA",
+   "aralik": 0.07,
+   "gurultu": 0.07,
+   "degerler": {
+    "00_asil_a": 2.88,
+    "n1_yeniden_kodlama": 2.93,
+    "n2_wav": 2.89,
+    "n3_yeniden_karisim": 2.94,
+    "n4_kisik_kaydirilmis": 2.87
+   }
+  },
+  "nisqa_kes": {
+   "ad": "NISQA kesintisizlik",
+   "aralik": 0.06,
+   "gurultu": 0.06,
+   "degerler": {
+    "00_asil_a": 4.41,
+    "n1_yeniden_kodlama": 4.43,
+    "n2_wav": 4.42,
+    "n3_yeniden_karisim": 4.42,
+    "n4_kisik_kaydirilmis": 4.37
+   }
+  },
+  "nisqa_renk": {
+   "ad": "NISQA renklenmezlik",
+   "aralik": 0.15,
+   "gurultu": 0.15,
+   "degerler": {
+    "00_asil_a": 3.42,
+    "n1_yeniden_kodlama": 3.43,
+    "n2_wav": 3.43,
+    "n3_yeniden_karisim": 3.42,
+    "n4_kisik_kaydirilmis": 3.28
+   }
+  },
+  "distillmos": {
+   "ad": "Distill-MOS",
+   "aralik": 0.03,
+   "gurultu": 0.03,
+   "degerler": {
+    "00_asil_a": 3.41,
+    "n1_yeniden_kodlama": 3.42,
+    "n2_wav": 3.42,
+    "n3_yeniden_karisim": 3.42,
+    "n4_kisik_kaydirilmis": 3.39
+   }
+  },
+  "utmos": {
+   "ad": "UTMOS22",
+   "aralik": 0.01,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 1.49,
+    "n1_yeniden_kodlama": 1.49,
+    "n2_wav": 1.49,
+    "n3_yeniden_karisim": 1.49,
+    "n4_kisik_kaydirilmis": 1.48
+   }
+  },
+  "ced_sarki": {
+   "ad": "CED (vokal) şarkı olasılığı",
+   "aralik": 0.001,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.079,
+    "n1_yeniden_kodlama": 0.079,
+    "n2_wav": 0.079,
+    "n3_yeniden_karisim": 0.078,
+    "n4_kisik_kaydirilmis": 0.079
+   }
+  },
+  "ced_sentetik": {
+   "ad": "CED (vokal) sentetik şarkı olasılığı",
+   "aralik": 0.0,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.021,
+    "n1_yeniden_kodlama": 0.021,
+    "n2_wav": 0.021,
+    "n3_yeniden_karisim": 0.021,
+    "n4_kisik_kaydirilmis": 0.021
+   }
+  }
+ },
+ "tespit_tablosu": [
+  {
+   "no": "1a",
+   "kusur": "Vokal 50 cent tiz (detone)",
+   "dosya": "b01a_detone_50c",
+   "sonuc": "tek raporla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "Akort (detone mi): iyi → sorun; Çakışan uzun notalar: iyi → sorun",
+   "olcu": "notaya uzaklık medyan (cent)",
+   "taban": 9.0,
+   "bozuk": 41.8,
+   "fark": 32.8,
+   "gurultu": 0.4,
+   "kat": 82.0,
+   "ikinci_olcu": {
+    "olcu": "±25 cent içinde (%)",
+    "taban": 88.4,
+    "bozuk": 12.0,
+    "fark": -76.4,
+    "gurultu": 0.7,
+    "kat": 109.1
+   },
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": "tek raporla yakalandı",
+   "sayima_dahil": true,
+   "not": "Araç 'Akort' satırını ❌ yaptı ve 14 uzun notayı tek tek detone diye işaretledi. Ölçtüğü kayma +46 cent (gerçek: +50)."
+  },
+  {
+   "no": "1b",
+   "kusur": "Vokal 100 cent (yarım ses) tiz",
+   "dosya": "b01b_detone_100c",
+   "sonuc": "tek raporla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "Vokal altyapıyla aynı armonide mi: iyi → sorun; Çakışan uzun notalar: iyi → sorun",
+   "olcu": "armonik destek farkı",
+   "taban": 0.249,
+   "bozuk": -0.056,
+   "fark": -0.305,
+   "gurultu": 0.041,
+   "kat": 7.4,
+   "ikinci_olcu": {
+    "olcu": "çakışan uzun nota sayısı",
+    "taban": 0,
+    "bozuk": 21,
+    "fark": 21.0,
+    "gurultu": 1.0,
+    "kat": 21.0
+   },
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": true,
+   "not": "Tam yarım ses kayınca 'Akort' satırı ✅ kalır (notalar yine ızgaraya oturuyor); kusuru 'aynı armonide mi' satırı yakaladı: destek eksiye döndü, 'en iyi kaydırma −1' çıktı, 21 uzun nota çakışıyor."
+  },
+  {
+   "no": "2a",
+   "kusur": "Vokal çeyrek vuruş (129 ms) geç",
+   "dosya": "b02a_gec_ceyrek",
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "ortalama kayma, sekizlik (ms)",
+   "taban": 24.0,
+   "bozuk": -109.0,
+   "fark": -133.0,
+   "gurultu": 2.0,
+   "kat": 66.5,
+   "ikinci_olcu": {
+    "olcu": "40 ms içinde (%)",
+    "taban": 49.0,
+    "bozuk": 6.0,
+    "fark": -43.0,
+    "gurultu": 2.0,
+    "kat": 21.5
+   },
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": "yalnız karşılaştırmayla yakalandı",
+   "sayima_dahil": true,
+   "not": "Araç satıra ✅ 'iyi' yazdı, çünkü durum yalnız sıkılığa (R) bakıyor ve R arttı. Aynı satırdaki sayı ise kusuru gösteriyor: başlangıçların yalnız %6'sı ızgaraya 40 ms içinde, kayma −109 ms. Yön yanlış: 129 ms geç olan vokal 'erken' görünüyor (yarım sekizlik kayma, ileri mi geri mi ayırt edilemez)."
+  },
+  {
+   "no": "2b",
+   "kusur": "Vokal yarım vuruş (259 ms) geç",
+   "dosya": "b02b_gec_yarim",
+   "sonuc": "kaçtı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "ortalama kayma, sekizlik (ms)",
+   "taban": 24.0,
+   "bozuk": 22.0,
+   "fark": -2.0,
+   "gurultu": 2.0,
+   "kat": 1.0,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": "kaçtı",
+   "sayima_dahil": true,
+   "not": "Hiçbir ritim sayısı oynamadı. Araç başlangıçları sekizlik ızgaraya göre ölçer; tam bir sekizlik (yarım vuruş) kayan vokal yine ızgaranın üstüne düşer. Kanallar elde olsa da sonuç aynı."
+  },
+  {
+   "no": "3a",
+   "kusur": "Vokal 1,5 kat vokoder esnetmesi dokusunda (süre ve perde aynı)",
+   "dosya": "b03a_esnetme_15",
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "zarf titremesi (dB)",
+   "taban": -8.7,
+   "bozuk": -14.2,
+   "fark": -5.5,
+   "gurultu": 0.6,
+   "kat": 9.2,
+   "ikinci_olcu": {
+    "olcu": "Distill-MOS",
+    "taban": 3.42,
+    "bozuk": 3.09,
+    "fark": -0.33,
+    "gurultu": 0.03,
+    "kat": 11.0
+   },
+   "ilgisiz_kotulesen_satirlar": [
+    "Kırpılma"
+   ],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": true,
+   "not": "Yapaylık satırı 'işaret yok' dedi. Karşılaştırınca: zarf titremesi ve konuşma-kalitesi tahminleri (Distill-MOS, UTMOS22) belirgin düştü. Kuru vokalde de aynı (aşağıda)."
+  },
+  {
+   "no": "3b",
+   "kusur": "Vokal 2 kat vokoder esnetmesi dokusunda (süre ve perde aynı)",
+   "dosya": "b03b_esnetme_20",
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "zarf titremesi (dB)",
+   "taban": -8.7,
+   "bozuk": -12.9,
+   "fark": -4.2,
+   "gurultu": 0.6,
+   "kat": 7.0,
+   "ikinci_olcu": {
+    "olcu": "Distill-MOS",
+    "taban": 3.42,
+    "bozuk": 3.07,
+    "fark": -0.35,
+    "gurultu": 0.03,
+    "kat": 11.7
+   },
+   "ilgisiz_kotulesen_satirlar": [
+    "Kırpılma"
+   ],
+   "kanallar_elde_yolu": "tek raporla yakalandı",
+   "sayima_dahil": true,
+   "not": "3a ile aynı. Kanallar elde verilince araç 1 yapaylık işareti verdi (ama 'basamaklı perde' diye, yani doğru satır, yanlış gerekçe)."
+  },
+  {
+   "no": "4",
+   "kusur": "Vokalin perdesi hece başına düzleştirilmiş (otomatik akort benzeri)",
+   "dosya": "b04_duz_perde",
+   "sonuc": "tek raporla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "Yapaylık işaretleri (vekil): bilgi → dikkat",
+   "olcu": "çok düz nota oranı",
+   "taban": 0.03,
+   "bozuk": 0.41,
+   "fark": 0.38,
+   "gurultu": 0.03,
+   "kat": 12.7,
+   "ikinci_olcu": {
+    "olcu": "nota içi oynaklık (cent)",
+    "taban": 11.6,
+    "bozuk": 5.6,
+    "fark": -6.0,
+    "gurultu": 0.8,
+    "kat": 7.5
+   },
+   "ilgisiz_kotulesen_satirlar": [
+    "Kırpılma",
+    "Ritme oturma",
+    "Çakışan uzun notalar"
+   ],
+   "kanallar_elde_yolu": "tek raporla yakalandı",
+   "sayima_dahil": true,
+   "not": "2 yapaylık işareti: 'notaların içi çok düz' ve 'geçişler ani'. Aynı vokoderden perdeye dokunmadan geçirilen denetim sürümünde işaret çıkmadı; yani yakalanan şey düzleştirme, vokoder değil."
+  },
+  {
+   "no": "5",
+   "kusur": "Her 3 saniyede bir tık (36 adet)",
+   "dosya": "b05_tik",
+   "sonuc": "kaçtı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "gerçek tepe (dBTP)",
+   "taban": 0.0,
+   "bozuk": 0.9,
+   "fark": 0.9,
+   "gurultu": 1.2,
+   "kat": 0.8,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": true,
+   "not": "Hiçbir sayı oynamadı, panoda da görünmüyor (asıl ve tıklı panolar yan yana aynı). 'Tepe' satırı çıktı ama o satır asıl kayıtta da var; tıkla ilgisi yok. Not: bu tık çok kısa (0,18 ms); tiz bantta çoğu yerde müziğin 12 dB üstünde, bütün bantta müziğin içinde kayboluyor."
+  },
+  {
+   "no": "6a",
+   "kusur": "Vokal 6 dB kısık",
+   "dosya": "b06a_vokal_eksi6",
+   "sonuc": "tek raporla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "Vokal / altyapı dengesi: iyi → dikkat",
+   "olcu": "vokal - altyapı (dB)",
+   "taban": -4.1,
+   "bozuk": -9.8,
+   "fark": -5.7,
+   "gurultu": 1.5,
+   "kat": 3.8,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": "tek raporla yakalandı",
+   "sayima_dahil": true,
+   "not": "Araç ölçtü: vokal altyapının 9,8 dB altında (tabanda 4,1); eşik −6. Ayrıca 5 yerde 'gömük vokal' diye zaman verdi."
+  },
+  {
+   "no": "6b",
+   "kusur": "Vokal 6 dB fazla açık",
+   "dosya": "b06b_vokal_arti6",
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "vokal - altyapı (dB)",
+   "taban": -4.1,
+   "bozuk": 2.5,
+   "fark": 6.6,
+   "gurultu": 1.5,
+   "kat": 4.4,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [
+    "Kırpılma"
+   ],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": true,
+   "not": "Araç farkı doğru ölçtü (+6,6 dB; gerçek +6) ama 'çok açık' eşiği +9 dB olduğu için satır ✅ kaldı."
+  },
+  {
+   "no": "7",
+   "kusur": "Her satırın son sözcüğü 150 ms erken kesilmiş",
+   "dosya": "b07_satir_sonu_kesik",
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "guc": "zayıf",
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "vokalli süre oranı",
+   "taban": 0.58,
+   "bozuk": 0.571,
+   "fark": -0.009,
+   "gurultu": 0.002,
+   "kat": 4.5,
+   "ikinci_olcu": {
+    "olcu": "perdeli çerçeve oranı",
+    "taban": 0.302,
+    "bozuk": 0.277,
+    "fark": -0.025,
+    "gurultu": 0.006,
+    "kat": 4.2
+   },
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": "yalnız karşılaştırmayla yakalandı",
+   "sayima_dahil": true,
+   "not": "Scribe kesik sözcükleri tamamlayıp doğru yazdı ('va' → 'var', 'ba' → 'bak'): sözcük hata oranı %0, düşük güvenli sözcük yok. Tek iz: vokalli süre oranı %58,0 → %57,1 ve perdeli çerçeve oranı; gürültünün 4 katı kadar, kusurun ne olduğunu söylemeyen küçük oynamalar. Panoda, asıl sürümle yan yana bakılırsa satır aralarındaki boşluklar görülüyor."
+  },
+  {
+   "no": "8",
+   "kusur": "Bir satırın yerine başka satır söyleniyor (yanlış söz)",
+   "dosya": "b08_yanlis_satir",
+   "sonuc": "tek raporla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "Sözler: iyi → dikkat (kısa parçada, Scribe ile)",
+   "olcu": "sözcük hata oranı",
+   "taban": 0.0,
+   "bozuk": 0.067,
+   "fark": 0.067,
+   "gurultu": null,
+   "kat": null,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": true,
+   "not": "Sözler satırı ⚠️ oldu: iki yanlış sözcük, yeri ve kendisiyle ('Koyunlar' yerine 'İnekler', 'meler' yerine 'bağırır'). Yalnız söz dosyası + ücretli döküm varsa çalışır; onlarsız hiçbir sayı oynamaz (ezgi aynı)."
+  },
+  {
+   "no": "9",
+   "kusur": "Bütün şarkı %80 tempoya yavaşlatılmış (enerji düşük)",
+   "dosya": "b09_tempo_80",
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "tempo (BPM)",
+   "taban": 116.0,
+   "bozuk": 92.8,
+   "fark": -23.2,
+   "gurultu": 0.1,
+   "kat": 232.0,
+   "ikinci_olcu": {
+    "olcu": "MusicCoCa coşku farkı",
+    "taban": 0.179,
+    "bozuk": 0.093,
+    "fark": -0.086,
+    "gurultu": 0.009,
+    "kat": 9.6
+   },
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": true,
+   "not": "Tempo 116 → 93 BPM diye doğru ölçüldü ama Enerji satırı ✅ 'coşkulu yana yakın' kaldı (hareketlilik 69, eşik 62; MusicCoCa +0,09, eşik 0)."
+  },
+  {
+   "no": "10",
+   "kusur": "Bütün karışım 4 kHz'de kesilmiş (boğuk)",
+   "dosya": "b10_alcak_geciren_4k",
+   "sonuc": "tek raporla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "Yapaylık işaretleri (vekil): bilgi → dikkat; Enerji / coşku: iyi → dikkat",
+   "olcu": "üst frekans sınırı (Hz)",
+   "taban": 18755,
+   "bozuk": 5189,
+   "fark": -13566.0,
+   "gurultu": 75.0,
+   "kat": 180.9,
+   "ikinci_olcu": {
+    "olcu": "ünsüzlerde tiz payı (dB)",
+    "taban": -11.3,
+    "bozuk": -26.5,
+    "fark": -15.2,
+    "gurultu": 0.2,
+    "kat": 76.0
+   },
+   "ilgisiz_kotulesen_satirlar": [
+    "Çakışan uzun notalar"
+   ],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": true,
+   "not": "2 yapaylık işareti (ünsüzlerde tiz yok; vokalin enerjisi 4,8 kHz'de bitiyor) ve Enerji satırı ⚠️. Dosyanın üst frekans sınırı 18,8 → 5,2 kHz."
+  }
+ ],
+ "sayim_gorevdeki_14_surum": {
+  "tek raporla yakalandı": 6,
+  "yalnız karşılaştırmayla yakalandı": 6,
+  "kaçtı": 2
+ },
+ "kanallar_elde_yolu": {
+  "1a": {
+   "sonuc": "tek raporla yakalandı",
+   "olculer": {
+    "cent": {
+     "taban": 8.8,
+     "bozuk": 41.7,
+     "fark": 32.9,
+     "gurultu": 0.4,
+     "kat": 82.3
+    },
+    "y25": {
+     "taban": 88.4,
+     "bozuk": 11.5,
+     "fark": -76.9,
+     "gurultu": 0.7,
+     "kat": 109.9
+    },
+    "akort_kaymasi": {
+     "taban": -5.0,
+     "bozuk": 45.9,
+     "fark": 50.9,
+     "gurultu": 1.0,
+     "kat": 50.9
+    },
+    "cent_isaretli": {
+     "taban": -4.7,
+     "bozuk": 9.9,
+     "fark": 14.6,
+     "gurultu": 0.1,
+     "kat": 146.0
+    },
+    "destek": {
+     "taban": 0.26,
+     "bozuk": 0.129,
+     "fark": -0.131,
+     "gurultu": 0.041,
+     "kat": 3.2
+    },
+    "cakisan": {
+     "taban": 0,
+     "bozuk": 10,
+     "fark": 10.0,
+     "gurultu": 1.0,
+     "kat": 10.0
+    }
+   }
+  },
+  "2a": {
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "olculer": {
+    "ritim_kayma": {
+     "taban": 26.0,
+     "bozuk": -104.0,
+     "fark": -130.0,
+     "gurultu": 2.0,
+     "kat": 65.0
+    },
+    "ritim_R": {
+     "taban": 0.36,
+     "bozuk": 0.37,
+     "fark": 0.01,
+     "gurultu": 0.04,
+     "kat": 0.3
+    },
+    "ritim_40": {
+     "taban": 48.0,
+     "bozuk": 16.0,
+     "fark": -32.0,
+     "gurultu": 2.0,
+     "kat": 16.0
+    },
+    "ritim16_kayma": {
+     "taban": 31.0,
+     "bozuk": 30.0,
+     "fark": -1.0,
+     "gurultu": 1.0,
+     "kat": 1.0
+    },
+    "ritim16_R": {
+     "taban": 0.36,
+     "bozuk": 0.36,
+     "fark": 0.0,
+     "gurultu": 0.04,
+     "kat": 0.0
+    }
+   }
+  },
+  "2b": {
+   "sonuc": "kaçtı",
+   "olculer": {
+    "ritim_kayma": {
+     "taban": 26.0,
+     "bozuk": 26.0,
+     "fark": 0.0,
+     "gurultu": 2.0,
+     "kat": 0.0
+    },
+    "ritim_R": {
+     "taban": 0.36,
+     "bozuk": 0.38,
+     "fark": 0.02,
+     "gurultu": 0.04,
+     "kat": 0.5
+    },
+    "ritim_40": {
+     "taban": 48.0,
+     "bozuk": 48.0,
+     "fark": 0.0,
+     "gurultu": 2.0,
+     "kat": 0.0
+    },
+    "ritim16_kayma": {
+     "taban": 31.0,
+     "bozuk": 30.0,
+     "fark": -1.0,
+     "gurultu": 1.0,
+     "kat": 1.0
+    },
+    "ritim16_R": {
+     "taban": 0.36,
+     "bozuk": 0.34,
+     "fark": -0.02,
+     "gurultu": 0.04,
+     "kat": 0.5
+    }
+   }
+  },
+  "3b": {
+   "sonuc": "tek raporla yakalandı",
+   "olculer": {
+    "yapay_isaret": {
+     "taban": 0,
+     "bozuk": 1,
+     "fark": 1.0,
+     "gurultu": 1.0,
+     "kat": 1.0
+    },
+    "donmus": {
+     "taban": 0.0,
+     "bozuk": 0.0,
+     "fark": 0.0,
+     "gurultu": 0.005,
+     "kat": 0.0
+    },
+    "benzerlik": {
+     "taban": 0.9827,
+     "bozuk": 0.9833,
+     "fark": 0.0006,
+     "gurultu": 0.0005,
+     "kat": 1.2
+    },
+    "zarf": {
+     "taban": -9.1,
+     "bozuk": -14.6,
+     "fark": -5.5,
+     "gurultu": 0.6,
+     "kat": 9.2
+    },
+    "tiz_doku": {
+     "taban": 1.42,
+     "bozuk": 1.37,
+     "fark": -0.05,
+     "gurultu": 0.03,
+     "kat": 1.7
+    },
+    "unsuz_tiz": {
+     "taban": -11.1,
+     "bozuk": -12.6,
+     "fark": -1.5,
+     "gurultu": 0.2,
+     "kat": 7.5
+    }
+   }
+  },
+  "4": {
+   "sonuc": "tek raporla yakalandı",
+   "olculer": {
+    "yapay_isaret": {
+     "taban": 0,
+     "bozuk": 2,
+     "fark": 2.0,
+     "gurultu": 1.0,
+     "kat": 2.0
+    },
+    "oynaklik": {
+     "taban": 11.1,
+     "bozuk": 5.3,
+     "fark": -5.8,
+     "gurultu": 0.8,
+     "kat": 7.2
+    },
+    "cok_duz": {
+     "taban": 0.03,
+     "bozuk": 0.47,
+     "fark": 0.44,
+     "gurultu": 0.03,
+     "kat": 14.7
+    },
+    "gecis_ms": {
+     "taban": 32.0,
+     "bozuk": 16.0,
+     "fark": -16.0,
+     "gurultu": 16.0,
+     "kat": 1.0
+    },
+    "vibrato": {
+     "taban": 0.15,
+     "bozuk": 0.0,
+     "fark": -0.15,
+     "gurultu": 0.04,
+     "kat": 3.8
+    },
+    "izgara_R": {
+     "taban": 0.67,
+     "bozuk": 0.76,
+     "fark": 0.09,
+     "gurultu": 0.02,
+     "kat": 4.5
+    },
+    "gecis": {
+     "taban": 0.18,
+     "bozuk": 0.11,
+     "fark": -0.07,
+     "gurultu": 0.01,
+     "kat": 7.0
+    }
+   }
+  },
+  "6a": {
+   "sonuc": "tek raporla yakalandı",
+   "olculer": {
+    "denge": {
+     "taban": -3.4,
+     "bozuk": -9.4,
+     "fark": -6.0,
+     "gurultu": 1.5,
+     "kat": 4.0
+    }
+   }
+  },
+  "7": {
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "olculer": {
+    "vokalli": {
+     "taban": 0.581,
+     "bozuk": 0.573,
+     "fark": -0.008,
+     "gurultu": 0.002,
+     "kat": 4.0
+    },
+    "sesli_oran": {
+     "taban": 0.307,
+     "bozuk": 0.28,
+     "fark": -0.027,
+     "gurultu": 0.006,
+     "kat": 4.5
+    }
+   }
+  }
+ },
+ "kuru_vokalde_esnetme": {
+  "olculer": {
+   "k00_kuru_vokal": {
+    "yapay_isaret": 0,
+    "zarf": -9.1,
+    "benzerlik": 0.9827,
+    "donmus": 0.0,
+    "dnsmos": 2.72,
+    "nisqa": 2.88,
+    "distillmos": 3.41,
+    "utmos": 1.49,
+    "oynaklik": 11.2,
+    "ced_sentetik": 0.021
+   },
+   "k03a_kuru_esnetme_15": {
+    "yapay_isaret": 0,
+    "zarf": -14.5,
+    "benzerlik": 0.9872,
+    "donmus": 0.0,
+    "dnsmos": 2.15,
+    "nisqa": 2.47,
+    "distillmos": 2.61,
+    "utmos": 1.35,
+    "oynaklik": 8.2,
+    "ced_sentetik": 0.057
+   },
+   "k03b_kuru_esnetme_20": {
+    "yapay_isaret": 0,
+    "zarf": -16.6,
+    "benzerlik": 0.9908,
+    "donmus": 0.03,
+    "dnsmos": 2.42,
+    "nisqa": 3.06,
+    "distillmos": 3.17,
+    "utmos": 1.38,
+    "oynaklik": 9.5,
+    "ced_sentetik": 0.078
+   }
+  },
+  "scribe_2_kat_esnetilmis_1_kita": {
+   "dosya": "k13b_kita1_esnetme_20",
+   "duyulan": "Ali Baba'nın bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl bağırır dinle bak, dinle bak",
+   "sozcuk_hata_orani": null,
+   "yanlis": null,
+   "eksik": null,
+   "fazla": null,
+   "dusuk_guvenli": [],
+   "hece_sn": 2.03,
+   "kredi": 97.9,
+   "sozler_satiri": null
+  }
+ },
+ "soz_denetimi_kisa_parcalar": {
+  "c07_satir_sonu_kesik": {
+   "dosya": "c07_satir_sonu_kesik_kita12",
+   "duyulan": "Ali Baba'nın bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl bağırır? Dinle bak. Dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde koyunları var. Koyunlar nasıl meler? Dinle bak, dinle bak.",
+   "sozcuk_hata_orani": 0.0,
+   "yanlis": [],
+   "eksik": [],
+   "fazla": [],
+   "dusuk_guvenli": [],
+   "hece_sn": 4.07,
+   "kredi": 123.8,
+   "sozler_satiri": "iyi"
+  },
+  "c08_yanlis_satir": {
+   "dosya": "c08_yanlis_satir_kita12",
+   "duyulan": "Ali Baba'nın bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl bağırır dinle bak, dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde koyunları var. İnekler nasıl bağırır dinle bak, dinle bak.",
+   "sozcuk_hata_orani": 0.067,
+   "yanlis": [
+    {
+     "beklenen": "Koyunlar",
+     "duyulan": "İnekler",
+     "zaman": 17.8,
+     "satir": 9,
+     "benzerlik": 0.4,
+     "tur": "başka sözcük"
+    },
+    {
+     "beklenen": "meler",
+     "duyulan": "bağırır",
+     "zaman": 19.08,
+     "satir": 9,
+     "benzerlik": 0.17,
+     "tur": "başka sözcük"
+    }
+   ],
+   "eksik": [],
+   "fazla": [],
+   "dusuk_guvenli": [],
+   "hece_sn": 4.06,
+   "kredi": 123.8,
+   "sozler_satiri": "dikkat"
+  }
+ },
+ "yanlis_alarmlar": {
+  "asil_dinle_2": [
+   {
+    "durum": "dikkat",
+    "konu": "Tepe",
+    "bulgu": "gerçek tepe 0 dBTP'nin üstünde (0,5): bazı cihazlarda cızırtı yapabilir; -1 dBTP'ye indirin."
+   },
+   {
+    "durum": "dikkat",
+    "konu": "Ritme oturma",
+    "bulgu": "sıkılık R=0,36 (ölçümün tavanı ≈0,65; rastgele ≈0,15); başlangıçların %48 kadarı en yakın sekizliğe 40 ms içinde; ortalama kayma +26 ms (+ geç). Vokal ızgaraya orta derecede oturuyor (serbest / konuşur gibi söyleyiş ya da ölçüm gürültüsü) (vuruş ızgarası: otomatik (altyapıdan))."
+   },
+   {
+    "durum": "dikkat",
+    "konu": "Sözler",
+    "bulgu": "sözcük hata oranı %8,3 (108 beklenen sözcükten 1 farklı, 0 eksik, 8 fazla); küçük ek/harf farkları sayılmazsa %7,4."
+   }
+  ],
+  "ikinci_el_yikama_coskulu_2": [
+   {
+    "durum": "sorun",
+    "konu": "Vokal altyapıyla aynı armonide mi",
+    "bulgu": "armonik destek farkı +0,132 (artı = uyumlu); en iyi kaydırma -4 yarım ses (0 olmalı)."
+   },
+   {
+    "durum": "dikkat",
+    "konu": "Çakışan uzun notalar",
+    "bulgu": "1 / 24 uzun nota (0,3 sn üstü) altyapıyla çakışıyor ya da detone."
+   },
+   {
+    "durum": "dikkat",
+    "konu": "Ritme oturma",
+    "bulgu": "sıkılık R=0,43 (ölçümün tavanı ≈0,65; rastgele ≈0,15); başlangıçların %61 kadarı en yakın sekizliğe 40 ms içinde; ortalama kayma +29 ms (+ geç). Vokal ızgaraya orta derecede oturuyor (serbest / konuşur gibi söyleyiş ya da ölçüm gürültüsü) (vuruş ızgarası: otomatik (altyapıdan))."
+   }
+  ]
+ },
+ "kredi": {
+  "bu_sinamanin_harcadigi": 345.5,
+  "cagrilar": [
+   {
+    "zaman": "2026-11-21 17:40:55",
+    "dosya": "c07_satir_sonu_kesik_kita12.mp3",
+    "ozet": "b903473015d17b69",
+    "model": "scribe_v1",
+    "sure_sn": 22.5,
+    "tahmini_kredi": 123.8
+   },
+   {
+    "zaman": "2026-11-21 17:41:45",
+    "dosya": "c08_yanlis_satir_kita12.mp3",
+    "ozet": "412b2302d4d3be7a",
+    "model": "scribe_v1",
+    "sure_sn": 22.5,
+    "tahmini_kredi": 123.8
+   },
+   {
+    "zaman": "2026-11-21 17:41:50",
+    "dosya": "k13b_kita1_esnetme_20.wav",
+    "ozet": "695c4be4590eb84f",
+    "model": "scribe_v1",
+    "sure_sn": 17.8,
+    "tahmini_kredi": 97.9
+   }
+  ],
+  "defter_toplami": 6921.3,
+  "sinir": 8000
+ }
+}

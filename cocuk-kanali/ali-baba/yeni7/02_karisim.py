@@ -13,8 +13,8 @@ D = os.path.dirname(os.path.abspath(__file__)); A = os.path.dirname(D)
 VOK = sys.argv[1] if len(sys.argv) > 1 else os.path.join(D, "vokal.wav"); CIK = sys.argv[2] if len(sys.argv) > 2 else os.path.join(D, "sarki.mp3")
 E = lambda k, v: float(os.environ.get(k, v))
 VU, EZ, YD, YS, HD = E("VOKAL_USTU_DB", 7.0), E("EZGI_DB", -3.0), E("YANKI_DB", -15.0), E("YANKI_SN", 0.75), E("HAYVAN_DB", -1.0)
-Z = json.load(open(os.path.join(D, "altyapi", "zaman_G.json"), encoding="utf8")); BEAT = Z["vurus_sn"]
-b, fs = sf.read(os.path.join(D, "altyapi", "altyapi_G.wav")); e, _ = sf.read(os.path.join(D, "altyapi", "ezgi_alti_G.wav")); v, fv = sf.read(VOK); assert fs == fv == 44100
+AD = os.environ.get("AD", "G"); Z = json.load(open(os.path.join(D, "altyapi", f"zaman_{AD}.json"), encoding="utf8")); BEAT = Z["vurus_sn"]
+b, fs = sf.read(os.path.join(D, "altyapi", f"altyapi_{AD}.wav")); e, _ = sf.read(os.path.join(D, "altyapi", f"ezgi_alti_{AD}.wav")); v, fv = sf.read(VOK); assert fs == fv == 44100
 n = len(b); v = np.pad(v, (0, max(0, n - len(v))))[:n]; band = b + e * 10 ** (EZ / 20)
 db = lambda x: 10 * np.log10(np.mean(np.square(x)) + 1e-12)
 T = os.path.join(D, "_gecici_")

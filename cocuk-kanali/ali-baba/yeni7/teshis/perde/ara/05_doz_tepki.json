@@ -1,0 +1,309 @@
+{
+ "hece": 185,
+ "aciklama": "fark = kaydırılmış - kaydırmasız yeniden sentez (aynı hece), ortanca [p25..p75]",
+ "egri": {
+  "-9": {
+   "hnr_fark_db": [
+    -2.06,
+    -2.53,
+    -1.51
+   ],
+   "jitter_fark": [
+    0.03,
+    -0.08,
+    0.18
+   ],
+   "shimmer_fark": [
+    0.73,
+    0.15,
+    1.27
+   ],
+   "cpp_fark_db": [
+    2.71,
+    1.72,
+    3.53
+   ],
+   "hnr_ortanca": 15.76,
+   "jitter_ortanca": 0.54,
+   "shimmer_ortanca": 5.43,
+   "cpp_ortanca": 25.37,
+   "hnr_3dB_dusen_hece_%": 14.6
+  },
+  "-7": {
+   "hnr_fark_db": [
+    -1.7,
+    -2.32,
+    -1.16
+   ],
+   "jitter_fark": [
+    0.06,
+    -0.04,
+    0.22
+   ],
+   "shimmer_fark": [
+    0.56,
+    0.02,
+    0.92
+   ],
+   "cpp_fark_db": [
+    2.1,
+    1.18,
+    2.89
+   ],
+   "hnr_ortanca": 16.02,
+   "jitter_ortanca": 0.6,
+   "shimmer_ortanca": 5.24,
+   "cpp_ortanca": 24.77,
+   "hnr_3dB_dusen_hece_%": 7.6
+  },
+  "-5": {
+   "hnr_fark_db": [
+    -1.32,
+    -1.92,
+    -0.78
+   ],
+   "jitter_fark": [
+    0.11,
+    -0.01,
+    0.25
+   ],
+   "shimmer_fark": [
+    0.38,
+    -0.04,
+    0.68
+   ],
+   "cpp_fark_db": [
+    1.43,
+    0.53,
+    2.44
+   ],
+   "hnr_ortanca": 16.59,
+   "jitter_ortanca": 0.63,
+   "shimmer_ortanca": 5.11,
+   "cpp_ortanca": 24.28,
+   "hnr_3dB_dusen_hece_%": 5.4
+  },
+  "-3": {
+   "hnr_fark_db": [
+    -0.71,
+    -1.32,
+    -0.25
+   ],
+   "jitter_fark": [
+    0.13,
+    0.04,
+    0.26
+   ],
+   "shimmer_fark": [
+    0.22,
+    -0.06,
+    0.46
+   ],
+   "cpp_fark_db": [
+    0.98,
+    0.32,
+    1.76
+   ],
+   "hnr_ortanca": 17.02,
+   "jitter_ortanca": 0.65,
+   "shimmer_ortanca": 4.82,
+   "cpp_ortanca": 24.07,
+   "hnr_3dB_dusen_hece_%": 0.0
+  },
+  "-1": {
+   "hnr_fark_db": [
+    0.07,
+    -0.33,
+    0.45
+   ],
+   "jitter_fark": [
+    0.15,
+    0.06,
+    0.26
+   ],
+   "shimmer_fark": [
+    0.08,
+    -0.11,
+    0.2
+   ],
+   "cpp_fark_db": [
+    0.82,
+    0.15,
+    1.5
+   ],
+   "hnr_ortanca": 17.76,
+   "jitter_ortanca": 0.73,
+   "shimmer_ortanca": 4.65,
+   "cpp_ortanca": 23.7,
+   "hnr_3dB_dusen_hece_%": 0.0
+  },
+  "0": {
+   "hnr_fark_db": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "jitter_fark": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "shimmer_fark": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "cpp_fark_db": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "hnr_ortanca": 17.74,
+   "jitter_ortanca": 0.56,
+   "shimmer_ortanca": 4.75,
+   "cpp_ortanca": 22.6,
+   "hnr_3dB_dusen_hece_%": 0.0
+  },
+  "1": {
+   "hnr_fark_db": [
+    0.76,
+    0.34,
+    1.25
+   ],
+   "jitter_fark": [
+    0.15,
+    0.05,
+    0.26
+   ],
+   "shimmer_fark": [
+    -0.21,
+    -0.36,
+    -0.09
+   ],
+   "cpp_fark_db": [
+    1.61,
+    0.75,
+    2.66
+   ],
+   "hnr_ortanca": 18.66,
+   "jitter_ortanca": 0.72,
+   "shimmer_ortanca": 4.53,
+   "cpp_ortanca": 24.31,
+   "hnr_3dB_dusen_hece_%": 0.0
+  },
+  "3": {
+   "hnr_fark_db": [
+    1.02,
+    0.4,
+    1.52
+   ],
+   "jitter_fark": [
+    0.16,
+    0.07,
+    0.26
+   ],
+   "shimmer_fark": [
+    -0.5,
+    -0.85,
+    -0.28
+   ],
+   "cpp_fark_db": [
+    1.18,
+    0.55,
+    1.83
+   ],
+   "hnr_ortanca": 18.71,
+   "jitter_ortanca": 0.72,
+   "shimmer_ortanca": 4.23,
+   "cpp_ortanca": 23.98,
+   "hnr_3dB_dusen_hece_%": 0.0
+  },
+  "5": {
+   "hnr_fark_db": [
+    1.15,
+    0.3,
+    1.93
+   ],
+   "jitter_fark": [
+    0.27,
+    0.14,
+    0.4
+   ],
+   "shimmer_fark": [
+    -0.77,
+    -1.4,
+    -0.46
+   ],
+   "cpp_fark_db": [
+    1.46,
+    0.11,
+    2.45
+   ],
+   "hnr_ortanca": 18.78,
+   "jitter_ortanca": 0.83,
+   "shimmer_ortanca": 3.87,
+   "cpp_ortanca": 23.95,
+   "hnr_3dB_dusen_hece_%": 0.0
+  },
+  "7": {
+   "hnr_fark_db": [
+    1.41,
+    0.57,
+    2.48
+   ],
+   "jitter_fark": [
+    0.34,
+    0.21,
+    0.48
+   ],
+   "shimmer_fark": [
+    -1.03,
+    -1.83,
+    -0.66
+   ],
+   "cpp_fark_db": [
+    1.43,
+    0.45,
+    2.41
+   ],
+   "hnr_ortanca": 19.28,
+   "jitter_ortanca": 0.89,
+   "shimmer_ortanca": 3.66,
+   "cpp_ortanca": 24.14,
+   "hnr_3dB_dusen_hece_%": 0.0
+  },
+  "9": {
+   "hnr_fark_db": [
+    1.96,
+    0.59,
+    2.73
+   ],
+   "jitter_fark": [
+    0.39,
+    0.26,
+    0.58
+   ],
+   "shimmer_fark": [
+    -1.33,
+    -2.14,
+    -0.85
+   ],
+   "cpp_fark_db": [
+    1.27,
+    0.21,
+    2.01
+   ],
+   "hnr_ortanca": 19.54,
+   "jitter_ortanca": 0.98,
+   "shimmer_ortanca": 3.45,
+   "cpp_ortanca": 23.62,
+   "hnr_3dB_dusen_hece_%": 0.5
+  }
+ },
+ "islenmemis_ortanca": {
+  "hnr": 18.49,
+  "jitter": 0.32,
+  "shimmer": 4.74,
+  "cpp": 22.83
+ }
+}
