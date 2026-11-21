@@ -11,6 +11,7 @@ CIKTI = os.path.join(D, sys.argv[2] if len(sys.argv) > 2 else "ali-babanin-ciftl
 Z = json.load(open(sys.argv[3] if len(sys.argv) > 3 else os.path.join(D, "yeni7", "altyapi", "zaman_G.json"), encoding="utf8"))
 FPS, KLIP_SN = 24, 4.94
 SON, K, BIT, B = Z["dosya_suresi_sn"], Z["kitalar"], Z["bitis"]["baslangic"], Z["olcu_sn"]
+SIKI = Z["form"].get("bicim") == "siki"
 # kıta sırası: (yazı adı, tanıtım klibi, ses klibi, dans klibi)
 KITA = [("inek", 2, 3, 4), ("koyun", 5, 6, 7), ("at", 16, 17, 18), ("horoz", 19, 20, 21),
         ("ordek", 8, 9, 10), ("kopek", 11, 12, 13), ("kedi", 14, 15, None)]
@@ -21,6 +22,13 @@ for k, (ad, ks, kses, kd) in enumerate(KITA):
     v = K[k]; s2, h1, dy, s4 = v["satir2"]["baslangic"], v["hayvan_sesi"]["ses1_baslangic"], v["diye_bagirir"]["baslangic"], v["satir4"]["baslangic"]
     a0, a1 = v["ara"]["baslangic"], v["ara"]["bitis"]; orta = (a0 + a1) / 2
     sahne.append((ks, s2, h1, 0, "duz"))                                        # hayvan tanıtılır
+    if SIKI:                                                                    # sıkı biçim: iki kısa hayvan sesi ile "diye bağırır" aynı ölçüde
+        sahne.append((kses, h1, s4, 0, "duz"))                                  # hayvan sesi + "diye bağırır": ses klibi
+        if kd: sahne.append((kd, s4, orta, 0, "duz"))                           # "çiftliğinde Ali Baba'nın" + aranın ilk ölçüsü: dans
+        else: sahne.append((ks, s4, a0, 2.5, "duz")); sahne.append((kses, a0, orta, 2.4, "yaklas"))
+        sonraki = K[k + 1]["satir2"]["baslangic"] if k < len(KITA) - 1 else BIT
+        sahne.append((1, orta, sonraki, 0, "yaklas" if k % 2 else "uzaklas"))
+        yazi.append((ad, s2 + 0.1, s4 - 0.1, 120)); continue
     sahne.append((kses, h1, dy, 0, "duz"))                                      # gerçek hayvan sesi (iki kez)
     if kd:
         sahne.append((kd, dy, a0, 0, "duz"))                                    # "diye bağırır çiftliğinde Ali Baba'nın": dans
