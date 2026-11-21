@@ -1,0 +1,12 @@
+{
+ "aciklama": "Claude Code Read aracinin PNG'leri modele kac piksel olarak ulastirdigi (2026-11-21, bu oturumda olculdu; arac her resimde 'original WxH, displayed at WxH' bildirdi).",
+ "olcumler": [
+  {"dosya": "okuma_2576x1449.png", "asil": [2576, 1449], "gosterilen": [2000, 1125]},
+  {"dosya": "olcek_3000x700.png",  "asil": [3000, 700],  "gosterilen": [2000, 467]},
+  {"dosya": "olcek_1200x2400.png", "asil": [1200, 2400], "gosterilen": [1000, 2000]},
+  {"dosya": "olcek_2000x2000.png", "asil": [2000, 2000], "gosterilen": [1932, 1932]},
+  {"dosya": "okuma_1456x819.png",  "asil": [1456, 819],  "gosterilen": [1456, 819]},
+  {"dosya": "pano (2000x1125)",    "asil": [2000, 1125], "gosterilen": [2000, 1125]}
+ ],
+ "sonuc": "Uzun kenar en cok 2000 piksel VE toplam yaklasik 3.75 megapiksel (4784 gorsel jeton). Onerilen tuval: 2000x1125 (yaklasik 2950 gorsel jeton)."
+}

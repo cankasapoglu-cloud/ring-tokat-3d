@@ -1,0 +1,62 @@
+{
+ "satirlar": [
+  {
+   "panel": "T1",
+   "dogru": "duz_perde",
+   "tahmin": "duz_perde",
+   "guven": "emin",
+   "isabet": true
+  },
+  {
+   "panel": "T2",
+   "dogru": "formant15",
+   "tahmin": "formant15",
+   "guven": "dusuk",
+   "isabet": true
+  },
+  {
+   "panel": "T3",
+   "dogru": "vizilti",
+   "tahmin": "ham",
+   "guven": "dusuk",
+   "isabet": false
+  },
+  {
+   "panel": "T4",
+   "dogru": "ham",
+   "tahmin": "world",
+   "guven": "dusuk",
+   "isabet": false
+  },
+  {
+   "panel": "T5",
+   "dogru": "formant15",
+   "tahmin": "formant15",
+   "guven": "dusuk",
+   "isabet": true
+  },
+  {
+   "panel": "T6",
+   "dogru": "vizilti",
+   "tahmin": "world",
+   "guven": "dusuk",
+   "isabet": false
+  },
+  {
+   "panel": "T7",
+   "dogru": "world",
+   "tahmin": "ham",
+   "guven": "dusuk",
+   "isabet": false
+  },
+  {
+   "panel": "T8",
+   "dogru": "duz_perde",
+   "tahmin": "duz_perde",
+   "guven": "emin",
+   "isabet": true
+  }
+ ],
+ "toplam_dogru": 4,
+ "n": 8
+}

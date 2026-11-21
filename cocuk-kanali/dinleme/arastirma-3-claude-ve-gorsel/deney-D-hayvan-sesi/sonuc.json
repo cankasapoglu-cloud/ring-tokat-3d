@@ -1,0 +1,14 @@
+{
+ "dogru": 24,
+ "toplam": 24,
+ "sinif_bazinda": {
+  "at": "2/2",
+  "horoz": "3/3",
+  "inek": "4/4",
+  "kedi": "4/4",
+  "kopek": "3/3",
+  "koyun": "4/4",
+  "ordek": "4/4"
+ },
+ "yanlislar": {}
+}

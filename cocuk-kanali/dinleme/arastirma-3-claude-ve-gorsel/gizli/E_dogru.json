@@ -1,0 +1,34 @@
+{
+ "T1": {
+  "islem": "duz_perde",
+  "kesit_bas_sn": 100.0
+ },
+ "T2": {
+  "islem": "formant15",
+  "kesit_bas_sn": 51.0
+ },
+ "T3": {
+  "islem": "vizilti",
+  "kesit_bas_sn": 34.0
+ },
+ "T4": {
+  "islem": "ham",
+  "kesit_bas_sn": 84.5
+ },
+ "T5": {
+  "islem": "formant15",
+  "kesit_bas_sn": 67.0
+ },
+ "T6": {
+  "islem": "vizilti",
+  "kesit_bas_sn": 116.0
+ },
+ "T7": {
+  "islem": "world",
+  "kesit_bas_sn": 82.5
+ },
+ "T8": {
+  "islem": "duz_perde",
+  "kesit_bas_sn": 83.0
+ }
+}
