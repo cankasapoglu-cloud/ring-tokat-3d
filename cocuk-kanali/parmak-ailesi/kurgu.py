@@ -3,21 +3,23 @@
 Zamanlar şarkının yazıya dökümünden (sarki_2_words.json) alındı."""
 import subprocess, os
 D = os.path.dirname(os.path.abspath(__file__))
-FPS, SON = 24, 89.0
-# Şarkı: sarki_son.mp3 = turkce_2.mp3'ün 46.4-52.4 sn arası (3. kıtada fazladan tekrar edilen cevap) kesilmiş hali.
-Q = [6.34, 21.38, 36.38, 46.86, 61.86]      # soru başlangıçları
-A = [12.36, 27.36, 42.36, 51.36, 67.86]     # "Buradayım" başlangıçları
+FPS, SON = 24, 80.0
+# Şarkı: coskulu_2.mp3 (hareketli sürüm). Zamanlar yazıya dökümden.
+Q = [8.54, 21.46, 34.32, 47.18, 64.28]      # soru başlangıçları
+A = [12.86, 25.70, 38.60, 51.46, 68.58]     # "Buradayım" başlangıçları
 KUKLA = ["baba", "anne", "abi", "abla", "bebek"]
-VEDA = 75.38
-SAHNE = [("kare", 0, 1.8, 0), ("aile_selam", 1.8, Q[0], 0)]
+VEDA = 72.56
+SAHNE = [("kare", 0, 3.0, 0), ("aile_selam", 3.0, Q[0], 0)]
 for k in range(5):
     sonraki = Q[k + 1] if k < 4 else VEDA
-    kb = min(A[k] + 5.3, sonraki)
+    kb = min(A[k] + 5.0, sonraki)
     SAHNE += [("aile_ara1" if k % 2 == 0 else "aile_ara2", Q[k], A[k], 0), (KUKLA[k], A[k], kb, 0)]
-    if sonraki - kb > 0.5:
+    if sonraki - kb > 5.5:
+        SAHNE += [("aile_dans", kb, kb + 4.0, 0), ("aile_selam", kb + 4.0, sonraki, 0)]
+    elif sonraki - kb > 0.5:
         SAHNE.append(("aile_dans", kb, sonraki, 0))
-SAHNE += [("aile_veda", VEDA, 81.2, 0), ("aile_selam", 81.2, SON, 0)]
-YAZI = [("baslik", 0.4, 6.3, 930)] + [(KUKLA[k], A[k], min(A[k] + 5.1, (Q[k + 1] if k < 4 else VEDA) - 0.1), 120) for k in range(5)]
+SAHNE += [("aile_veda", VEDA, 77.2, 0), ("aile_selam", 77.2, SON, 0)]
+YAZI = [("baslik", 0.4, 8.0, 930)] + [(KUKLA[k], A[k], min(A[k] + 4.8, (Q[k + 1] if k < 4 else VEDA) - 0.1), 120) for k in range(5)]
 
 
 def sure(f):
@@ -50,7 +52,7 @@ for k, (ad, t0, t1, y) in enumerate(YAZI):
     filtre.append(f"[{son}][y{k}]overlay=0:{y - 190}:enable='between(t,{t0},{t1})'[o{k}]")
     son = f"o{k}"
 filtre.append(f"[{son}]fade=in:st=0:d=0.4,fade=out:st={SON - 0.7:.2f}:d=0.7[v]")
-girdi += ["-i", os.path.join(D, "sarki_son.mp3")]
+girdi += ["-i", os.path.join(D, "coskulu_2.mp3")]
 cikti = os.path.join(D, "parmak-ailesi.mp4")
 subprocess.run(["ffmpeg", "-y", "-v", "error", *girdi, "-filter_complex", ";".join(filtre),
                 "-map", "[v]", "-map", f"{n + len(YAZI)}:a", "-af", f"loudnorm=I=-15:TP=-1.5,afade=in:d=0.3,afade=out:st={SON - 1:.2f}:d=1",
