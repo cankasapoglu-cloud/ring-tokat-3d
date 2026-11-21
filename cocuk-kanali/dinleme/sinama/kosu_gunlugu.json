@@ -68,5 +68,38 @@
   "dinle_sn": 72.0,
   "donus": 0,
   "zaman": "16:33:00"
+ },
+ "b01a_detone_50c": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b01a_detone_50c.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 145.8,
+  "dinle_sn": 88.9,
+  "donus": 0,
+  "zaman": "16:36:55"
+ },
+ "b01b_detone_100c": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b01b_detone_100c.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 256.8,
+  "dinle_sn": 96.8,
+  "donus": 0,
+  "zaman": "16:42:48"
+ },
+ "b02a_gec_ceyrek": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b02a_gec_ceyrek.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 222.9,
+  "dinle_sn": 83.6,
+  "donus": 0,
+  "zaman": "16:47:55"
  }
 }

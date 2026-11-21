@@ -44,6 +44,8 @@ def topla(s):
     # perde + dogallik
     m["nota_sayisi"] = g("perde.nota_sayisi"); m["ses_araligi_ys"] = g("perde.ses_araligi.yarim_ses"); m["medyan_hz"] = g("perde.ses_araligi.medyan_hz"); m["pyin_uyum"] = g("perde.izleme.pyin_ile_uyum_yuzde_50cent")
     m["sesli_cerceve"] = g("perde.izleme.sesli_cerceve_orani")
+    m["nota_suresi_medyan"] = g("perde.nota_suresi_medyan_sn"); m["gecis_cerceve_orani"] = g("perde.gecis_cerceve_orani"); m["kayan_nota_orani"] = g("perde.kayan_nota_orani")
+    m["alttan_giris_orani"] = g("perde.alttan_giris_orani"); m["ani_gecis_orani"] = g("dogallik_vekilleri.ani_gecis_orani_35ms_alti"); m["uzun_nota_035"] = g("perde.uzun_nota_sayisi_035sn_ustu")
     for k_ in ("nota_ici_oynaklik_cent_medyan", "cok_duz_nota_orani", "perde_izgaraya_yapisma_R", "vibratolu_uzun_nota_orani", "donmus_unlu_sayisi_045sn_ustu", "donmus_sure_orani",
                "unsuzlerde_tiz_payi_db", "vokal_ust_frekans_hz", "tiz_doku_degisim_katsayisi", "zarf_titremesi_db", "isaret_sayisi", "isaretler", "bagli_gecis_suresi_ms_medyan",
                "sesli_cercevelerde_ardisik_benzerlik_medyan"):

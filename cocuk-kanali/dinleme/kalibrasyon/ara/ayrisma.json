@@ -7,6 +7,10 @@
     "ad": "hareketlilik puani (0-100)",
     "olumlu": [
      [
+      "coskulu_2",
+      77.0
+     ],
+     [
       "coskulu_1",
       79.0
      ]
@@ -15,25 +19,33 @@
      [
       "yavas_2",
       52.0
+     ],
+     [
+      "sarki_1",
+      71.0
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     52.0,
-     79.0
+     71.0,
+     77.0
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 27.0,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 65.5
+    "bosluk_genisligi": 6.0,
+    "bosluk_orani": 0.22,
+    "esik_adayi": 74.0
    },
    {
     "olcu": "coca_cosku",
     "ad": "MusicCoCa cosku farki",
     "olumlu": [
+     [
+      "coskulu_2",
+      0.089
+     ],
      [
       "coskulu_1",
       0.105
@@ -43,25 +55,33 @@
      [
       "yavas_2",
       -0.078
+     ],
+     [
+      "sarki_1",
+      -0.045
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     -0.078,
-     0.105
+     -0.045,
+     0.089
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.183,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.0135
+    "bosluk_genisligi": 0.134,
+    "bosluk_orani": 0.73,
+    "esik_adayi": 0.022
    },
    {
     "olcu": "coca_tempo",
     "ad": "MusicCoCa tempo farki",
     "olumlu": [
+     [
+      "coskulu_2",
+      -0.052
+     ],
      [
       "coskulu_1",
       -0.053
@@ -71,25 +91,27 @@
      [
       "yavas_2",
       0.012
+     ],
+     [
+      "sarki_1",
+      -0.053
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
-    "yon": "olumlu dusuk",
-    "bosluk": [
-     -0.053,
-     0.012
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.065,
-    "bosluk_orani": 1.0,
-    "esik_adayi": -0.0205
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "ced_ninni",
     "ad": "CED 'ninni' olasiligi",
     "olumlu": [
+     [
+      "coskulu_2",
+      0.0
+     ],
      [
       "coskulu_1",
       0.0
@@ -99,25 +121,33 @@
      [
       "yavas_2",
       0.044
+     ],
+     [
+      "sarki_1",
+      0.027
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
      0.0,
-     0.044
+     0.027
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.044,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.022
+    "bosluk_genisligi": 0.027,
+    "bosluk_orani": 0.61,
+    "esik_adayi": 0.0135
    },
    {
     "olcu": "ced_coskulu_eksi_sakin",
     "ad": "CED coskulu-sakin",
     "olumlu": [
+     [
+      "coskulu_2",
+      0.085
+     ],
      [
       "coskulu_1",
       0.198
@@ -127,25 +157,27 @@
      [
       "yavas_2",
       0.079
+     ],
+     [
+      "sarki_1",
+      0.143
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     0.079,
-     0.198
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.119,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.1385
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "ced_yumusak",
     "ad": "CED 'Tender music'",
     "olumlu": [
+     [
+      "coskulu_2",
+      0.001
+     ],
      [
       "coskulu_1",
       0.0
@@ -155,25 +187,33 @@
      [
       "yavas_2",
       0.028
+     ],
+     [
+      "sarki_1",
+      0.045
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
-     0.0,
+     0.001,
      0.028
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.028,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.014
+    "bosluk_genisligi": 0.027,
+    "bosluk_orani": 0.6,
+    "esik_adayi": 0.0145
    },
    {
     "olcu": "ced_mutlu",
     "ad": "CED 'Happy music'",
     "olumlu": [
+     [
+      "coskulu_2",
+      0.051
+     ],
      [
       "coskulu_1",
       0.158
@@ -183,25 +223,27 @@
      [
       "yavas_2",
       0.151
+     ],
+     [
+      "sarki_1",
+      0.21
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     0.151,
-     0.158
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.007,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.1545
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "olay_sn",
     "ad": "olay yogunlugu /sn",
     "olumlu": [
+     [
+      "coskulu_2",
+      5.13
+     ],
      [
       "coskulu_1",
       5.46
@@ -211,25 +253,33 @@
      [
       "yavas_2",
       3.82
+     ],
+     [
+      "sarki_1",
+      4.93
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     3.82,
-     5.46
+     4.93,
+     5.13
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 1.64,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 4.64
+    "bosluk_genisligi": 0.2,
+    "bosluk_orani": 0.12,
+    "esik_adayi": 5.03
    },
    {
     "olcu": "nabiz",
     "ad": "nabiz netligi",
     "olumlu": [
+     [
+      "coskulu_2",
+      0.68
+     ],
      [
       "coskulu_1",
       0.771
@@ -239,25 +289,33 @@
      [
       "yavas_2",
       0.539
+     ],
+     [
+      "sarki_1",
+      0.667
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     0.539,
-     0.771
+     0.667,
+     0.68
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.232,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.655
+    "bosluk_genisligi": 0.013,
+    "bosluk_orani": 0.06,
+    "esik_adayi": 0.6735
    },
    {
     "olcu": "vurmali_armonik_db",
     "ad": "vurmali/armonik dB",
     "olumlu": [
+     [
+      "coskulu_2",
+      -3.33
+     ],
      [
       "coskulu_1",
       -1.77
@@ -267,25 +325,33 @@
      [
       "yavas_2",
       -9.72
+     ],
+     [
+      "sarki_1",
+      -5.26
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     -9.72,
-     -1.77
+     -5.26,
+     -3.33
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 7.95,
-    "bosluk_orani": 1.0,
-    "esik_adayi": -5.745
+    "bosluk_genisligi": 1.93,
+    "bosluk_orani": 0.24,
+    "esik_adayi": -4.295
    },
    {
     "olcu": "aki",
     "ad": "spektral aki",
     "olumlu": [
+     [
+      "coskulu_2",
+      1.791
+     ],
      [
       "coskulu_1",
       1.94
@@ -295,25 +361,27 @@
      [
       "yavas_2",
       1.804
+     ],
+     [
+      "sarki_1",
+      1.753
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     1.804,
-     1.94
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.136,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 1.872
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "parlaklik_hz",
     "ad": "parlaklik Hz",
     "olumlu": [
+     [
+      "coskulu_2",
+      2916.0
+     ],
      [
       "coskulu_1",
       2290.0
@@ -323,25 +391,27 @@
      [
       "yavas_2",
       1804.0
+     ],
+     [
+      "sarki_1",
+      2539.0
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     1804.0,
-     2290.0
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 486.0,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 2047.0
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "tempo_bpm",
     "ad": "tempo BPM (otomatik)",
     "olumlu": [
+     [
+      "coskulu_2",
+      117.8
+     ],
      [
       "coskulu_1",
       112.1
@@ -351,25 +421,33 @@
      [
       "yavas_2",
       155.8
+     ],
+     [
+      "sarki_1",
+      160.2
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
-     112.1,
+     117.8,
      155.8
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 43.7,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 133.95
+    "bosluk_genisligi": 38.0,
+    "bosluk_orani": 0.79,
+    "esik_adayi": 136.8
    },
    {
     "olcu": "hece_sn_obek_medyan",
     "ad": "hece/sn (obek medyani)",
     "olumlu": [
+     [
+      "coskulu_2",
+      2.68
+     ],
      [
       "coskulu_1",
       4.57
@@ -379,25 +457,27 @@
      [
       "yavas_2",
       2.96
+     ],
+     [
+      "sarki_1",
+      2.35
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     2.96,
-     4.57
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 1.61,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 3.765
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "hece_sn_soz_ici",
     "ad": "hece/sn (soz ici)",
     "olumlu": [
+     [
+      "coskulu_2",
+      3.28
+     ],
      [
       "coskulu_1",
       5.36
@@ -407,20 +487,18 @@
      [
       "yavas_2",
       3.43
+     ],
+     [
+      "sarki_1",
+      2.66
      ]
     ],
     "diger": [],
-    "n_olumlu": 1,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     3.43,
-     5.36
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 1.93,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 4.395
+    "n_olumlu": 2,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    }
   ]
  },
@@ -440,6 +518,10 @@
       0.083
      ],
      [
+      "coskulu_2",
+      0.043
+     ],
+     [
       "coskulu_1",
       0.04
      ]
@@ -448,6 +530,10 @@
      [
       "ornek_kita1",
       1.0
+     ],
+     [
+      "sarki_birlesik",
+      0.481
      ]
     ],
     "diger": [
@@ -458,19 +544,23 @@
      [
       "yavas_2",
       0.06
+     ],
+     [
+      "sarki_1",
+      0.0
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
      0.083,
-     1.0
+     0.481
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.917,
-    "bosluk_orani": 0.96,
-    "esik_adayi": 0.5415,
+    "bosluk_genisligi": 0.398,
+    "bosluk_orani": 0.41,
+    "esik_adayi": 0.282,
     "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": []
    },
@@ -483,6 +573,10 @@
       0.0
      ],
      [
+      "coskulu_2",
+      0.0
+     ],
+     [
       "coskulu_1",
       0.0
      ]
@@ -491,20 +585,24 @@
      [
       "ornek_kita1",
       0.7
+     ],
+     [
+      "sarki_birlesik",
+      0.071
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
-    "n_olumsuz": 1,
+    "n_olumlu": 3,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
      0.0,
-     0.7
+     0.071
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.7,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.35
+    "bosluk_genisligi": 0.071,
+    "bosluk_orani": 0.1,
+    "esik_adayi": 0.0355
    },
    {
     "olcu": "logprob_ort",
@@ -515,6 +613,10 @@
       -0.001
      ],
      [
+      "coskulu_2",
+      -0.004
+     ],
+     [
       "coskulu_1",
       -0.004
      ]
@@ -523,20 +625,24 @@
      [
       "ornek_kita1",
       -0.588
+     ],
+     [
+      "sarki_birlesik",
+      -0.053
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
-    "n_olumsuz": 1,
+    "n_olumlu": 3,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     -0.588,
+     -0.053,
      -0.004
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.584,
-    "bosluk_orani": 0.99,
-    "esik_adayi": -0.296
+    "bosluk_genisligi": 0.049,
+    "bosluk_orani": 0.08,
+    "esik_adayi": -0.0285
    },
    {
     "olcu": "y_donmus_sure_orani",
@@ -551,6 +657,10 @@
       0.0
      ],
      [
+      "coskulu_2",
+      0.0
+     ],
+     [
       "coskulu_1",
       0.0
      ]
@@ -559,6 +669,10 @@
      [
       "ornek_kita1",
       0.31
+     ],
+     [
+      "sarki_birlesik",
+      0.204
      ]
     ],
     "diger": [
@@ -569,21 +683,26 @@
      [
       "yavas_2",
       0.187
+     ],
+     [
+      "sarki_1",
+      0.036
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
      0.0,
-     0.31
+     0.204
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.31,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.155,
+    "bosluk_genisligi": 0.204,
+    "bosluk_orani": 0.66,
+    "esik_adayi": 0.102,
     "diger_bosluk_icinde": [
-     "yavas_2"
+     "yavas_2",
+     "sarki_1"
     ],
     "diger_olumsuz_tarafta": []
    },
@@ -600,6 +719,10 @@
       11.1
      ],
      [
+      "coskulu_2",
+      11.8
+     ],
+     [
       "coskulu_1",
       11.5
      ]
@@ -608,6 +731,10 @@
      [
       "ornek_kita1",
       9.8
+     ],
+     [
+      "sarki_birlesik",
+      10.6
      ]
     ],
     "diger": [
@@ -618,24 +745,28 @@
      [
       "yavas_2",
       9.9
+     ],
+     [
+      "sarki_1",
+      10.1
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     9.8,
+     10.6,
      11.1
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 1.3,
-    "bosluk_orani": 0.76,
-    "esik_adayi": 10.45,
-    "diger_bosluk_icinde": [
-     "yavas_2"
-    ],
+    "bosluk_genisligi": 0.5,
+    "bosluk_orani": 0.25,
+    "esik_adayi": 10.85,
+    "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": [
-     "duzgun_1"
+     "duzgun_1",
+     "yavas_2",
+     "sarki_1"
     ]
    },
    {
@@ -651,6 +782,10 @@
       0.03
      ],
      [
+      "coskulu_2",
+      0.0
+     ],
+     [
       "coskulu_1",
       0.0
      ]
@@ -659,6 +794,10 @@
      [
       "ornek_kita1",
       0.0
+     ],
+     [
+      "sarki_birlesik",
+      0.08
      ]
     ],
     "diger": [
@@ -669,10 +808,14 @@
      [
       "yavas_2",
       0.02
+     ],
+     [
+      "sarki_1",
+      0.01
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -690,6 +833,10 @@
       0.67
      ],
      [
+      "coskulu_2",
+      0.63
+     ],
+     [
       "coskulu_1",
       0.68
      ]
@@ -698,6 +845,10 @@
      [
       "ornek_kita1",
       0.62
+     ],
+     [
+      "sarki_birlesik",
+      0.66
      ]
     ],
     "diger": [
@@ -708,21 +859,17 @@
      [
       "yavas_2",
       0.74
+     ],
+     [
+      "sarki_1",
+      0.76
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     0.62,
-     0.67
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.05,
-    "bosluk_orani": 0.71,
-    "esik_adayi": 0.645,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "y_vibratolu_uzun_nota_orani",
@@ -737,6 +884,10 @@
       0.15
      ],
      [
+      "coskulu_2",
+      0.29
+     ],
+     [
       "coskulu_1",
       0.1
      ]
@@ -745,6 +896,10 @@
      [
       "ornek_kita1",
       0.27
+     ],
+     [
+      "sarki_birlesik",
+      0.08
      ]
     ],
     "diger": [
@@ -755,21 +910,17 @@
      [
       "yavas_2",
       0.12
+     ],
+     [
+      "sarki_1",
+      0.17
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
-    "yon": "olumlu dusuk",
-    "bosluk": [
-     0.15,
-     0.27
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.12,
-    "bosluk_orani": 0.57,
-    "esik_adayi": 0.21,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "y_zarf_titremesi_db",
@@ -784,6 +935,10 @@
       -9.1
      ],
      [
+      "coskulu_2",
+      -11.7
+     ],
+     [
       "coskulu_1",
       -10.8
      ]
@@ -792,6 +947,10 @@
      [
       "ornek_kita1",
       -19.8
+     ],
+     [
+      "sarki_birlesik",
+      -14.8
      ]
     ],
     "diger": [
@@ -802,21 +961,26 @@
      [
       "yavas_2",
       -13.5
+     ],
+     [
+      "sarki_1",
+      -14.5
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
-     -19.8,
+     -14.8,
      -13.3
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 6.5,
-    "bosluk_orani": 0.61,
-    "esik_adayi": -16.55,
+    "bosluk_genisligi": 1.5,
+    "bosluk_orani": 0.14,
+    "esik_adayi": -14.05,
     "diger_bosluk_icinde": [
-     "yavas_2"
+     "yavas_2",
+     "sarki_1"
     ],
     "diger_olumsuz_tarafta": []
    },
@@ -833,6 +997,10 @@
       1.42
      ],
      [
+      "coskulu_2",
+      1.16
+     ],
+     [
       "coskulu_1",
       1.49
      ]
@@ -841,6 +1009,10 @@
      [
       "ornek_kita1",
       2.03
+     ],
+     [
+      "sarki_birlesik",
+      2.42
      ]
     ],
     "diger": [
@@ -851,10 +1023,14 @@
      [
       "yavas_2",
       1.28
+     ],
+     [
+      "sarki_1",
+      1.13
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
      1.49,
@@ -862,7 +1038,7 @@
     ],
     "temiz_bosluk": true,
     "bosluk_genisligi": 0.54,
-    "bosluk_orani": 0.75,
+    "bosluk_orani": 0.43,
     "esik_adayi": 1.76,
     "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": []
@@ -880,6 +1056,10 @@
       -11.1
      ],
      [
+      "coskulu_2",
+      -9.5
+     ],
+     [
       "coskulu_1",
       -16.1
      ]
@@ -888,6 +1068,10 @@
      [
       "ornek_kita1",
       -9.2
+     ],
+     [
+      "sarki_birlesik",
+      -15.4
      ]
     ],
     "diger": [
@@ -898,23 +1082,17 @@
      [
       "yavas_2",
       -9.8
+     ],
+     [
+      "sarki_1",
+      -4.0
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
-    "yon": "olumlu dusuk",
-    "bosluk": [
-     -11.1,
-     -9.2
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 1.9,
-    "bosluk_orani": 0.28,
-    "esik_adayi": -10.15,
-    "diger_bosluk_icinde": [
-     "yavas_2"
-    ],
-    "diger_olumsuz_tarafta": []
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "y_bagli_gecis_suresi_ms_medyan",
@@ -929,15 +1107,27 @@
       32.0
      ]
     ],
-    "olumsuz": [],
+    "olumsuz": [
+     [
+      "sarki_birlesik",
+      32.0
+     ]
+    ],
     "diger": [
      [
       "yavas_2",
       32.0
+     ],
+     [
+      "sarki_1",
+      32.0
      ]
     ],
     "n_olumlu": 2,
-    "n_olumsuz": 0
+    "n_olumsuz": 1,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "y_sesli_cercevelerde_ardisik_benzerlik_medyan",
@@ -952,6 +1142,10 @@
       0.9827
      ],
      [
+      "coskulu_2",
+      0.9813
+     ],
+     [
       "coskulu_1",
       0.9836
      ]
@@ -960,6 +1154,10 @@
      [
       "ornek_kita1",
       0.9916
+     ],
+     [
+      "sarki_birlesik",
+      0.9922
      ]
     ],
     "diger": [
@@ -970,10 +1168,14 @@
      [
       "yavas_2",
       0.9898
+     ],
+     [
+      "sarki_1",
+      0.9878
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": "olumlu dusuk",
     "bosluk": [
      0.9854,
@@ -981,10 +1183,11 @@
     ],
     "temiz_bosluk": true,
     "bosluk_genisligi": 0.0062,
-    "bosluk_orani": 0.7,
+    "bosluk_orani": 0.57,
     "esik_adayi": 0.9885,
     "diger_bosluk_icinde": [
-     "yavas_2"
+     "yavas_2",
+     "sarki_1"
     ],
     "diger_olumsuz_tarafta": []
    },
@@ -1001,6 +1204,10 @@
       0
      ],
      [
+      "coskulu_2",
+      0
+     ],
+     [
       "coskulu_1",
       1
      ]
@@ -1009,6 +1216,10 @@
      [
       "ornek_kita1",
       1
+     ],
+     [
+      "sarki_birlesik",
+      2
      ]
     ],
     "diger": [
@@ -1019,10 +1230,14 @@
      [
       "yavas_2",
       1
+     ],
+     [
+      "sarki_1",
+      0
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -1040,6 +1255,10 @@
       2.71
      ],
      [
+      "coskulu_2",
+      2.45
+     ],
+     [
       "coskulu_1",
       2.47
      ]
@@ -1048,6 +1267,10 @@
      [
       "ornek_kita1",
       2.5
+     ],
+     [
+      "sarki_birlesik",
+      2.39
      ]
     ],
     "diger": [
@@ -1058,10 +1281,14 @@
      [
       "yavas_2",
       2.82
+     ],
+     [
+      "sarki_1",
+      2.55
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -1079,6 +1306,10 @@
       2.88
      ],
      [
+      "coskulu_2",
+      2.67
+     ],
+     [
       "coskulu_1",
       2.31
      ]
@@ -1087,6 +1318,10 @@
      [
       "ornek_kita1",
       2.87
+     ],
+     [
+      "sarki_birlesik",
+      2.76
      ]
     ],
     "diger": [
@@ -1097,10 +1332,14 @@
      [
       "yavas_2",
       3.71
+     ],
+     [
+      "sarki_1",
+      3.56
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -1118,6 +1357,10 @@
       4.41
      ],
      [
+      "coskulu_2",
+      4.11
+     ],
+     [
       "coskulu_1",
       3.93
      ]
@@ -1126,6 +1369,10 @@
      [
       "ornek_kita1",
       4.15
+     ],
+     [
+      "sarki_birlesik",
+      4.1
      ]
     ],
     "diger": [
@@ -1136,10 +1383,14 @@
      [
       "yavas_2",
       4.49
+     ],
+     [
+      "sarki_1",
+      4.34
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -1157,6 +1408,10 @@
       3.41
      ],
      [
+      "coskulu_2",
+      3.19
+     ],
+     [
       "coskulu_1",
       2.98
      ]
@@ -1165,6 +1420,10 @@
      [
       "ornek_kita1",
       3.0
+     ],
+     [
+      "sarki_birlesik",
+      3.19
      ]
     ],
     "diger": [
@@ -1175,10 +1434,14 @@
      [
       "yavas_2",
       3.8
+     ],
+     [
+      "sarki_1",
+      3.53
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -1196,6 +1459,10 @@
       1.49
      ],
      [
+      "coskulu_2",
+      1.31
+     ],
+     [
       "coskulu_1",
       1.52
      ]
@@ -1204,6 +1471,10 @@
      [
       "ornek_kita1",
       1.48
+     ],
+     [
+      "sarki_birlesik",
+      1.34
      ]
     ],
     "diger": [
@@ -1214,10 +1485,14 @@
      [
       "yavas_2",
       2.15
+     ],
+     [
+      "sarki_1",
+      1.85
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -1235,6 +1510,10 @@
       0.079
      ],
      [
+      "coskulu_2",
+      0.113
+     ],
+     [
       "coskulu_1",
       0.102
      ]
@@ -1243,6 +1522,10 @@
      [
       "ornek_kita1",
       0.084
+     ],
+     [
+      "sarki_birlesik",
+      0.068
      ]
     ],
     "diger": [
@@ -1253,10 +1536,14 @@
      [
       "yavas_2",
       0.055
+     ],
+     [
+      "sarki_1",
+      0.041
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": null,
     "bosluk": null,
     "temiz_bosluk": false
@@ -1274,6 +1561,10 @@
       0.067
      ],
      [
+      "coskulu_2",
+      0.072
+     ],
+     [
       "coskulu_1",
       0.2
      ]
@@ -1282,6 +1573,10 @@
      [
       "ornek_kita1",
       0.027
+     ],
+     [
+      "sarki_birlesik",
+      0.072
      ]
     ],
     "diger": [
@@ -1292,24 +1587,17 @@
      [
       "yavas_2",
       0.013
+     ],
+     [
+      "sarki_1",
+      0.008
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     0.027,
-     0.03
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.003,
-    "bosluk_orani": 0.02,
-    "esik_adayi": 0.0285,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": [
-     "duzgun_1",
-     "yavas_2"
-    ]
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "v_sentetik_sarki",
@@ -1324,6 +1612,10 @@
       0.021
      ],
      [
+      "coskulu_2",
+      0.026
+     ],
+     [
       "coskulu_1",
       0.017
      ]
@@ -1332,6 +1624,10 @@
      [
       "ornek_kita1",
       0.002
+     ],
+     [
+      "sarki_birlesik",
+      0.021
      ]
     ],
     "diger": [
@@ -1342,21 +1638,17 @@
      [
       "yavas_2",
       0.039
+     ],
+     [
+      "sarki_1",
+      0.05
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     0.002,
-     0.017
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.015,
-    "bosluk_orani": 0.56,
-    "esik_adayi": 0.0095,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "v_konusma_sentezi",
@@ -1371,6 +1663,10 @@
       0.005
      ],
      [
+      "coskulu_2",
+      0.002
+     ],
+     [
       "coskulu_1",
       0.008
      ]
@@ -1378,6 +1674,10 @@
     "olumsuz": [
      [
       "ornek_kita1",
+      0.0
+     ],
+     [
+      "sarki_birlesik",
       0.0
      ]
     ],
@@ -1389,10 +1689,14 @@
      [
       "yavas_2",
       0.001
+     ],
+     [
+      "sarki_1",
+      0.0
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
     "yon": "olumlu yuksek",
     "bosluk": [
      0.0,
@@ -1403,7 +1707,9 @@
     "bosluk_orani": 0.12,
     "esik_adayi": 0.0005,
     "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "diger_olumsuz_tarafta": [
+     "sarki_1"
+    ]
    },
    {
     "olcu": "ritim_R",
@@ -1418,6 +1724,10 @@
       0.36
      ],
      [
+      "coskulu_2",
+      0.43
+     ],
+     [
       "coskulu_1",
       0.39
      ]
@@ -1426,6 +1736,10 @@
      [
       "ornek_kita1",
       0.19
+     ],
+     [
+      "sarki_birlesik",
+      0.41
      ]
     ],
     "diger": [
@@ -1436,21 +1750,17 @@
      [
       "yavas_2",
       0.49
+     ],
+     [
+      "sarki_1",
+      0.07
      ]
     ],
-    "n_olumlu": 3,
-    "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     0.19,
-     0.36
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.17,
-    "bosluk_orani": 0.45,
-    "esik_adayi": 0.275,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "vokalli_nota_sn",
@@ -1465,6 +1775,10 @@
       2.000633950883186
      ],
      [
+      "coskulu_2",
+      1.4968082764692934
+     ],
+     [
       "coskulu_1",
       1.4989293361884368
      ]
@@ -1473,6 +1787,10 @@
      [
       "ornek_kita1",
       1.4491003501992512
+     ],
+     [
+      "sarki_birlesik",
+      1.4589321890373368
      ]
     ],
     "diger": [
@@ -1483,20 +1801,308 @@
      [
       "yavas_2",
       1.9090988703038796
+     ],
+     [
+      "sarki_1",
+      1.7647058823529411
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": "olumlu yuksek",
+    "bosluk": [
+     1.4589321890373368,
+     1.4968082764692934
+    ],
+    "temiz_bosluk": true,
+    "bosluk_genisligi": 0.0379,
+    "bosluk_orani": 0.04,
+    "esik_adayi": 1.4779,
+    "diger_bosluk_icinde": [],
+    "diger_olumsuz_tarafta": []
+   },
+   {
+    "olcu": "nota_suresi_medyan",
+    "ad": "nota suresi medyani sn",
+    "olumlu": [
+     [
+      "v2_2",
+      0.19
+     ],
+     [
+      "dinle_2",
+      0.18
+     ],
+     [
+      "coskulu_2",
+      0.22
+     ],
+     [
+      "coskulu_1",
+      0.19
+     ]
+    ],
+    "olumsuz": [
+     [
+      "ornek_kita1",
+      0.42
+     ],
+     [
+      "sarki_birlesik",
+      0.4
+     ]
+    ],
+    "diger": [
+     [
+      "duzgun_1",
+      0.38
+     ],
+     [
+      "yavas_2",
+      0.22
+     ],
+     [
+      "sarki_1",
+      0.29
+     ]
+    ],
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": "olumlu dusuk",
+    "bosluk": [
+     0.22,
+     0.4
+    ],
+    "temiz_bosluk": true,
+    "bosluk_genisligi": 0.18,
+    "bosluk_orani": 0.75,
+    "esik_adayi": 0.31,
+    "diger_bosluk_icinde": [
+     "duzgun_1",
+     "sarki_1"
+    ],
+    "diger_olumsuz_tarafta": []
+   },
+   {
+    "olcu": "gecis_cerceve_orani",
+    "ad": "gecis cercevesi orani",
+    "olumlu": [
+     [
+      "v2_2",
+      0.13
+     ],
+     [
+      "dinle_2",
+      0.18
+     ],
+     [
+      "coskulu_2",
+      0.13
+     ],
+     [
+      "coskulu_1",
+      0.15
+     ]
+    ],
+    "olumsuz": [
+     [
+      "ornek_kita1",
+      0.03
+     ],
+     [
+      "sarki_birlesik",
+      0.03
+     ]
+    ],
+    "diger": [
+     [
+      "duzgun_1",
+      0.05
+     ],
+     [
+      "yavas_2",
+      0.08
+     ],
+     [
+      "sarki_1",
+      0.05
+     ]
+    ],
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": "olumlu yuksek",
+    "bosluk": [
+     0.03,
+     0.13
+    ],
+    "temiz_bosluk": true,
+    "bosluk_genisligi": 0.1,
+    "bosluk_orani": 0.67,
+    "esik_adayi": 0.08,
+    "diger_bosluk_icinde": [
+     "duzgun_1",
+     "yavas_2",
+     "sarki_1"
+    ],
+    "diger_olumsuz_tarafta": []
+   },
+   {
+    "olcu": "kayan_nota_orani",
+    "ad": "kayan nota orani",
+    "olumlu": [
+     [
+      "v2_2",
+      0.03
+     ],
+     [
+      "dinle_2",
+      0.12
+     ],
+     [
+      "coskulu_2",
+      0.31
+     ],
+     [
+      "coskulu_1",
+      0.08
+     ]
+    ],
+    "olumsuz": [
+     [
+      "ornek_kita1",
+      0.0
+     ],
+     [
+      "sarki_birlesik",
+      0.14
+     ]
+    ],
+    "diger": [
+     [
+      "duzgun_1",
+      0.11
+     ],
+     [
+      "yavas_2",
+      0.05
+     ],
+     [
+      "sarki_1",
+      0.06
+     ]
+    ],
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
+   },
+   {
+    "olcu": "ani_gecis_orani",
+    "ad": "ani gecis orani (35 ms alti)",
+    "olumlu": [
+     [
+      "v2_2",
+      0.88
+     ],
+     [
+      "dinle_2",
+      0.93
+     ]
+    ],
+    "olumsuz": [
+     [
+      "sarki_birlesik",
+      0.83
+     ]
+    ],
+    "diger": [
+     [
+      "yavas_2",
+      0.6
+     ],
+     [
+      "sarki_1",
+      0.93
+     ]
+    ],
+    "n_olumlu": 2,
     "n_olumsuz": 1,
     "yon": "olumlu yuksek",
     "bosluk": [
-     1.4491003501992512,
-     1.4989293361884368
+     0.83,
+     0.88
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.0498,
-    "bosluk_orani": 0.05,
-    "esik_adayi": 1.474,
+    "bosluk_genisligi": 0.05,
+    "bosluk_orani": 0.5,
+    "esik_adayi": 0.855,
     "diger_bosluk_icinde": [],
+    "diger_olumsuz_tarafta": [
+     "yavas_2"
+    ]
+   },
+   {
+    "olcu": "uzun_nota_orani",
+    "ad": "uzun nota (0,35 sn ustu) orani",
+    "olumlu": [
+     [
+      "v2_2",
+      0.20958083832335328
+     ],
+     [
+      "dinle_2",
+      0.15625
+     ],
+     [
+      "coskulu_2",
+      0.25
+     ],
+     [
+      "coskulu_1",
+      0.17857142857142858
+     ]
+    ],
+    "olumsuz": [
+     [
+      "ornek_kita1",
+      0.6111111111111112
+     ],
+     [
+      "sarki_birlesik",
+      0.5915492957746479
+     ]
+    ],
+    "diger": [
+     [
+      "duzgun_1",
+      0.5360824742268041
+     ],
+     [
+      "yavas_2",
+      0.29357798165137616
+     ],
+     [
+      "sarki_1",
+      0.35353535353535354
+     ]
+    ],
+    "n_olumlu": 4,
+    "n_olumsuz": 2,
+    "yon": "olumlu dusuk",
+    "bosluk": [
+     0.25,
+     0.5915492957746479
+    ],
+    "temiz_bosluk": true,
+    "bosluk_genisligi": 0.3415,
+    "bosluk_orani": 0.75,
+    "esik_adayi": 0.4208,
+    "diger_bosluk_icinde": [
+     "duzgun_1",
+     "yavas_2",
+     "sarki_1"
+    ],
     "diger_olumsuz_tarafta": []
    }
   ]
@@ -1515,6 +2121,10 @@
      [
       "dinle_2",
       0
+     ],
+     [
+      "coskulu_2",
+      -4
      ],
      [
       "coskulu_1",
@@ -1537,23 +2147,23 @@
       5
      ],
      [
+      "sarki_1",
+      0
+     ],
+     [
       "ornek_kita1",
+      0
+     ],
+     [
+      "sarki_birlesik",
       0
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     -4.0,
-     0.0
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 4.0,
-    "bosluk_orani": 1.0,
-    "esik_adayi": -2.0,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "sifir_kacinci",
@@ -1566,6 +2176,10 @@
      [
       "dinle_2",
       1
+     ],
+     [
+      "coskulu_2",
+      6
      ],
      [
       "coskulu_1",
@@ -1588,25 +2202,23 @@
       2
      ],
      [
+      "sarki_1",
+      1
+     ],
+     [
       "ornek_kita1",
+      1
+     ],
+     [
+      "sarki_birlesik",
       1
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
-    "yon": "olumlu dusuk",
-    "bosluk": [
-     1.0,
-     3.0
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 2.0,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 2.0,
-    "diger_bosluk_icinde": [
-     "yavas_2"
-    ],
-    "diger_olumsuz_tarafta": []
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "destek_gercek",
@@ -1619,6 +2231,10 @@
      [
       "dinle_2",
       0.65
+     ],
+     [
+      "coskulu_2",
+      0.336
      ],
      [
       "coskulu_1",
@@ -1641,25 +2257,30 @@
       0.389
      ],
      [
+      "sarki_1",
+      0.367
+     ],
+     [
       "ornek_kita1",
       0.688
+     ],
+     [
+      "sarki_birlesik",
+      0.65
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu yuksek",
     "bosluk": [
      0.281,
-     0.559
+     0.336
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.278,
-    "bosluk_orani": 0.75,
-    "esik_adayi": 0.42,
-    "diger_bosluk_icinde": [
-     "duzgun_1",
-     "yavas_2"
-    ],
+    "bosluk_genisligi": 0.055,
+    "bosluk_orani": 0.15,
+    "esik_adayi": 0.3085,
+    "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": []
    },
    {
@@ -1673,6 +2294,10 @@
      [
       "dinle_2",
       0.26
+     ],
+     [
+      "coskulu_2",
+      0.132
      ],
      [
       "coskulu_1",
@@ -1695,23 +2320,23 @@
       0.313
      ],
      [
+      "sarki_1",
+      0.172
+     ],
+     [
       "ornek_kita1",
       0.495
+     ],
+     [
+      "sarki_birlesik",
+      0.49
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
-    "yon": "olumlu yuksek",
-    "bosluk": [
-     0.141,
-     0.26
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 0.119,
-    "bosluk_orani": 0.7,
-    "esik_adayi": 0.2005,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "gam_ici",
@@ -1724,6 +2349,10 @@
      [
       "dinle_2",
       0.858
+     ],
+     [
+      "coskulu_2",
+      0.996
      ],
      [
       "coskulu_1",
@@ -1746,11 +2375,19 @@
       0.991
      ],
      [
+      "sarki_1",
+      0.998
+     ],
+     [
       "ornek_kita1",
       0.953
+     ],
+     [
+      "sarki_birlesik",
+      0.988
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": null,
     "bosluk": null,
@@ -1767,6 +2404,10 @@
      [
       "dinle_2",
       0.704
+     ],
+     [
+      "coskulu_2",
+      0.628
      ],
      [
       "coskulu_1",
@@ -1789,11 +2430,19 @@
       0.813
      ],
      [
+      "sarki_1",
+      0.548
+     ],
+     [
       "ornek_kita1",
       0.862
+     ],
+     [
+      "sarki_birlesik",
+      0.955
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": null,
     "bosluk": null,
@@ -1810,6 +2459,10 @@
      [
       "dinle_2",
       0.107
+     ],
+     [
+      "coskulu_2",
+      0.003
      ],
      [
       "coskulu_1",
@@ -1832,11 +2485,19 @@
       0.009
      ],
      [
+      "sarki_1",
+      0.002
+     ],
+     [
       "ornek_kita1",
       0.047
+     ],
+     [
+      "sarki_birlesik",
+      0.012
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": null,
     "bosluk": null,
@@ -1853,6 +2514,10 @@
      [
       "dinle_2",
       8.8
+     ],
+     [
+      "coskulu_2",
+      8.6
      ],
      [
       "coskulu_1",
@@ -1875,11 +2540,19 @@
       6.6
      ],
      [
+      "sarki_1",
+      6.3
+     ],
+     [
       "ornek_kita1",
       9.8
+     ],
+     [
+      "sarki_birlesik",
+      8.4
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu dusuk",
     "bosluk": [
@@ -1908,6 +2581,10 @@
       88.4
      ],
      [
+      "coskulu_2",
+      86.9
+     ],
+     [
       "coskulu_1",
       92.5
      ]
@@ -1928,21 +2605,29 @@
       91.5
      ],
      [
+      "sarki_1",
+      93.6
+     ],
+     [
       "ornek_kita1",
       85.5
+     ],
+     [
+      "sarki_birlesik",
+      91.0
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu yuksek",
     "bosluk": [
      68.1,
-     88.4
+     86.9
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 20.3,
-    "bosluk_orani": 0.83,
-    "esik_adayi": 78.25,
+    "bosluk_genisligi": 18.8,
+    "bosluk_orani": 0.77,
+    "esik_adayi": 77.5,
     "diger_bosluk_icinde": [
      "ornek_kita1"
     ],
@@ -1959,6 +2644,10 @@
      [
       "dinle_2",
       0.67
+     ],
+     [
+      "coskulu_2",
+      0.63
      ],
      [
       "coskulu_1",
@@ -1981,21 +2670,29 @@
       0.74
      ],
      [
+      "sarki_1",
+      0.76
+     ],
+     [
       "ornek_kita1",
       0.62
+     ],
+     [
+      "sarki_birlesik",
+      0.66
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu yuksek",
     "bosluk": [
      0.28,
-     0.67
+     0.63
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.39,
-    "bosluk_orani": 0.95,
-    "esik_adayi": 0.475,
+    "bosluk_genisligi": 0.35,
+    "bosluk_orani": 0.85,
+    "esik_adayi": 0.455,
     "diger_bosluk_icinde": [
      "ornek_kita1"
     ],
@@ -2012,6 +2709,10 @@
      [
       "dinle_2",
       0.0
+     ],
+     [
+      "coskulu_2",
+      0.041666666666666664
      ],
      [
       "coskulu_1",
@@ -2034,21 +2735,29 @@
       0.0
      ],
      [
+      "sarki_1",
+      0.02040816326530612
+     ],
+     [
       "ornek_kita1",
       0.16666666666666666
+     ],
+     [
+      "sarki_birlesik",
+      0.030303030303030304
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu dusuk",
     "bosluk": [
-     0.0,
+     0.041666666666666664,
      0.12903225806451613
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 0.129,
-    "bosluk_orani": 1.0,
-    "esik_adayi": 0.0645,
+    "bosluk_genisligi": 0.0874,
+    "bosluk_orani": 0.68,
+    "esik_adayi": 0.0853,
     "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": [
      "duzgun_1",
@@ -2066,6 +2775,10 @@
      [
       "dinle_2",
       0.36
+     ],
+     [
+      "coskulu_2",
+      0.43
      ],
      [
       "coskulu_1",
@@ -2088,11 +2801,19 @@
       0.49
      ],
      [
+      "sarki_1",
+      0.07
+     ],
+     [
       "ornek_kita1",
       0.19
+     ],
+     [
+      "sarki_birlesik",
+      0.41
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu yuksek",
     "bosluk": [
@@ -2105,6 +2826,7 @@
     "esik_adayi": 0.35,
     "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": [
+     "sarki_1",
      "ornek_kita1"
     ]
    },
@@ -2119,6 +2841,10 @@
      [
       "dinle_2",
       48.0
+     ],
+     [
+      "coskulu_2",
+      61.0
      ],
      [
       "coskulu_1",
@@ -2141,25 +2867,23 @@
       43.0
      ],
      [
+      "sarki_1",
+      44.0
+     ],
+     [
       "ornek_kita1",
       52.0
+     ],
+     [
+      "sarki_birlesik",
+      55.0
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
-    "yon": "olumlu dusuk",
-    "bosluk": [
-     55.0,
-     57.0
-    ],
-    "temiz_bosluk": true,
-    "bosluk_genisligi": 2.0,
-    "bosluk_orani": 0.22,
-    "esik_adayi": 56.0,
-    "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": [
-     "duzgun_1"
-    ]
+    "yon": null,
+    "bosluk": null,
+    "temiz_bosluk": false
    },
    {
     "olcu": "vokal_eksi_altyapi_db",
@@ -2172,6 +2896,10 @@
      [
       "dinle_2",
       -3.4
+     ],
+     [
+      "coskulu_2",
+      -2.6
      ],
      [
       "coskulu_1",
@@ -2194,11 +2922,19 @@
       5.7
      ],
      [
+      "sarki_1",
+      1.2
+     ],
+     [
       "ornek_kita1",
       -3.8
+     ],
+     [
+      "sarki_birlesik",
+      -5.9
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu yuksek",
     "bosluk": [
@@ -2210,7 +2946,8 @@
     "bosluk_orani": 0.7,
     "esik_adayi": -8.2,
     "diger_bosluk_icinde": [
-     "ornek_kita1"
+     "ornek_kita1",
+     "sarki_birlesik"
     ],
     "diger_olumsuz_tarafta": []
    },
@@ -2225,6 +2962,10 @@
      [
       "dinle_2",
       -21.0
+     ],
+     [
+      "coskulu_2",
+      -17.3
      ],
      [
       "coskulu_1",
@@ -2247,23 +2988,33 @@
       -49.1
      ],
      [
+      "sarki_1",
+      -51.6
+     ],
+     [
       "ornek_kita1",
       -43.5
+     ],
+     [
+      "sarki_birlesik",
+      -13.2
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu dusuk",
     "bosluk": [
-     -20.6,
+     -17.3,
      -14.6
     ],
     "temiz_bosluk": true,
-    "bosluk_genisligi": 6.0,
-    "bosluk_orani": 0.19,
-    "esik_adayi": -17.6,
+    "bosluk_genisligi": 2.7,
+    "bosluk_orani": 0.09,
+    "esik_adayi": -15.95,
     "diger_bosluk_icinde": [],
-    "diger_olumsuz_tarafta": []
+    "diger_olumsuz_tarafta": [
+     "sarki_birlesik"
+    ]
    },
    {
     "olcu": "wer",
@@ -2276,6 +3027,10 @@
      [
       "dinle_2",
       0.083
+     ],
+     [
+      "coskulu_2",
+      0.043
      ],
      [
       "coskulu_1",
@@ -2298,11 +3053,19 @@
       0.06
      ],
      [
+      "sarki_1",
+      0.0
+     ],
+     [
       "ornek_kita1",
       1.0
+     ],
+     [
+      "sarki_birlesik",
+      0.481
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu dusuk",
     "bosluk": [
@@ -2315,7 +3078,8 @@
     "esik_adayi": 0.1385,
     "diger_bosluk_icinde": [],
     "diger_olumsuz_tarafta": [
-     "ornek_kita1"
+     "ornek_kita1",
+     "sarki_birlesik"
     ]
    },
    {
@@ -2329,6 +3093,10 @@
      [
       "dinle_2",
       0.079
+     ],
+     [
+      "coskulu_2",
+      0.113
      ],
      [
       "coskulu_1",
@@ -2351,11 +3119,19 @@
       0.055
      ],
      [
+      "sarki_1",
+      0.041
+     ],
+     [
       "ornek_kita1",
       0.084
+     ],
+     [
+      "sarki_birlesik",
+      0.068
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu yuksek",
     "bosluk": [
@@ -2368,7 +3144,9 @@
     "esik_adayi": 0.0485,
     "diger_bosluk_icinde": [
      "duzgun_1",
-     "yavas_2"
+     "yavas_2",
+     "sarki_1",
+     "sarki_birlesik"
     ],
     "diger_olumsuz_tarafta": []
    },
@@ -2383,6 +3161,10 @@
      [
       "dinle_2",
       0.067
+     ],
+     [
+      "coskulu_2",
+      0.072
      ],
      [
       "coskulu_1",
@@ -2405,11 +3187,19 @@
       0.013
      ],
      [
+      "sarki_1",
+      0.008
+     ],
+     [
       "ornek_kita1",
       0.027
+     ],
+     [
+      "sarki_birlesik",
+      0.072
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu dusuk",
     "bosluk": [
@@ -2436,6 +3226,10 @@
       5.0
      ],
      [
+      "coskulu_2",
+      7.0
+     ],
+     [
       "coskulu_1",
       10.2
      ]
@@ -2456,11 +3250,19 @@
       4.2
      ],
      [
+      "sarki_1",
+      7.9
+     ],
+     [
       "ornek_kita1",
       15.7
+     ],
+     [
+      "sarki_birlesik",
+      16.1
      ]
     ],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 1,
     "yon": "olumlu dusuk",
     "bosluk": [
@@ -2472,7 +3274,8 @@
     "bosluk_orani": 0.76,
     "esik_adayi": 18.5,
     "diger_bosluk_icinde": [
-     "ornek_kita1"
+     "ornek_kita1",
+     "sarki_birlesik"
     ],
     "diger_olumsuz_tarafta": []
    }
@@ -2508,6 +3311,14 @@
      [
       "dinle_2",
       0.083
+     ],
+     [
+      "coskulu_2",
+      0.043
+     ],
+     [
+      "sarki_1",
+      0.0
      ]
     ],
     "n_olumlu": 1,
@@ -2523,7 +3334,8 @@
     "esik_adayi": 0.06,
     "diger_bosluk_icinde": [
      "yavas_2",
-     "v2_2"
+     "v2_2",
+     "coskulu_2"
     ],
     "diger_olumsuz_tarafta": [
      "dinle_2"
@@ -2543,6 +3355,10 @@
      [
       "dinle_2",
       -0.001
+     ],
+     [
+      "coskulu_2",
+      -0.004
      ]
     ],
     "n_olumlu": 1,
@@ -2562,6 +3378,10 @@
      [
       "dinle_2",
       0.0
+     ],
+     [
+      "coskulu_2",
+      0.0
      ]
     ],
     "n_olumlu": 1,
@@ -2580,6 +3400,10 @@
     "diger": [
      [
       "dinle_2",
+      1.0
+     ],
+     [
+      "coskulu_2",
       1.0
      ]
     ],
@@ -2613,6 +3437,14 @@
      [
       "dinle_2",
       2.71
+     ],
+     [
+      "coskulu_2",
+      2.45
+     ],
+     [
+      "sarki_1",
+      2.55
      ]
     ],
     "n_olumlu": 1,
@@ -2630,7 +3462,8 @@
     "diger_olumsuz_tarafta": [
      "yavas_2",
      "v2_2",
-     "dinle_2"
+     "dinle_2",
+     "sarki_1"
     ]
    },
    {
@@ -2660,6 +3493,14 @@
      [
       "dinle_2",
       2.88
+     ],
+     [
+      "coskulu_2",
+      2.67
+     ],
+     [
+      "sarki_1",
+      3.56
      ]
     ],
     "n_olumlu": 1,
@@ -2703,6 +3544,14 @@
      [
       "dinle_2",
       3.41
+     ],
+     [
+      "coskulu_2",
+      3.19
+     ],
+     [
+      "sarki_1",
+      3.53
      ]
     ],
     "n_olumlu": 1,
@@ -2716,11 +3565,14 @@
     "bosluk_genisligi": 0.31,
     "bosluk_orani": 1.0,
     "esik_adayi": 3.135,
-    "diger_bosluk_icinde": [],
+    "diger_bosluk_icinde": [
+     "coskulu_2"
+    ],
     "diger_olumsuz_tarafta": [
      "yavas_2",
      "v2_2",
-     "dinle_2"
+     "dinle_2",
+     "sarki_1"
     ]
    },
    {
@@ -2750,6 +3602,14 @@
      [
       "dinle_2",
       1.49
+     ],
+     [
+      "coskulu_2",
+      1.31
+     ],
+     [
+      "sarki_1",
+      1.85
      ]
     ],
     "n_olumlu": 1,
@@ -2765,7 +3625,8 @@
     "esik_adayi": 1.41,
     "diger_bosluk_icinde": [
      "v2_2",
-     "dinle_2"
+     "dinle_2",
+     "coskulu_2"
     ],
     "diger_olumsuz_tarafta": []
    },
@@ -2796,6 +3657,14 @@
      [
       "dinle_2",
       0.067
+     ],
+     [
+      "coskulu_2",
+      0.072
+     ],
+     [
+      "sarki_1",
+      0.008
      ]
     ],
     "n_olumlu": 1,
@@ -2811,10 +3680,12 @@
     "esik_adayi": 0.109,
     "diger_bosluk_icinde": [
      "v2_2",
-     "dinle_2"
+     "dinle_2",
+     "coskulu_2"
     ],
     "diger_olumsuz_tarafta": [
-     "yavas_2"
+     "yavas_2",
+     "sarki_1"
     ]
    },
    {
@@ -2844,6 +3715,14 @@
      [
       "dinle_2",
       -11.1
+     ],
+     [
+      "coskulu_2",
+      -9.5
+     ],
+     [
+      "sarki_1",
+      -4.0
      ]
     ],
     "n_olumlu": 1,
@@ -2861,7 +3740,9 @@
     "diger_olumsuz_tarafta": [
      "yavas_2",
      "v2_2",
-     "dinle_2"
+     "dinle_2",
+     "coskulu_2",
+     "sarki_1"
     ]
    },
    {
@@ -2891,6 +3772,14 @@
      [
       "dinle_2",
       3.88
+     ],
+     [
+      "coskulu_2",
+      2.68
+     ],
+     [
+      "sarki_1",
+      2.35
      ]
     ],
     "n_olumlu": 1,
@@ -2907,9 +3796,12 @@
     "diger_bosluk_icinde": [
      "yavas_2",
      "v2_2",
-     "dinle_2"
+     "dinle_2",
+     "coskulu_2"
     ],
-    "diger_olumsuz_tarafta": []
+    "diger_olumsuz_tarafta": [
+     "sarki_1"
+    ]
    },
    {
     "olcu": "y_isaret_sayisi",
@@ -2937,6 +3829,14 @@
      ],
      [
       "dinle_2",
+      0
+     ],
+     [
+      "coskulu_2",
+      0
+     ],
+     [
+      "sarki_1",
       0
      ]
     ],
@@ -3130,13 +4030,17 @@
       110.12
      ],
      [
+      "coskulu_2",
+      70.0
+     ],
+     [
       "coskulu_1",
       80.0
      ]
     ],
     "olumsuz": [],
     "diger": [],
-    "n_olumlu": 3,
+    "n_olumlu": 4,
     "n_olumsuz": 0
    }
   ]
@@ -3151,6 +4055,10 @@
      [
       "coskulu_1",
       0.04
+     ],
+     [
+      "coskulu_2",
+      0.043
      ],
      [
       "dinle_2",
@@ -3172,7 +4080,7 @@
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
+    "n_olumlu": 3,
     "n_olumsuz": 3,
     "yon": null,
     "bosluk": null,
@@ -3185,6 +4093,10 @@
      [
       "coskulu_1",
       0.04
+     ],
+     [
+      "coskulu_2",
+      0.043
      ],
      [
       "dinle_2",
@@ -3206,7 +4118,7 @@
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
+    "n_olumlu": 3,
     "n_olumsuz": 3,
     "yon": null,
     "bosluk": null,
@@ -3218,6 +4130,10 @@
     "olumlu": [
      [
       "coskulu_1",
+      0
+     ],
+     [
+      "coskulu_2",
       0
      ],
      [
@@ -3240,7 +4156,7 @@
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
+    "n_olumlu": 3,
     "n_olumsuz": 3,
     "yon": "olumlu dusuk",
     "bosluk": [
@@ -3258,6 +4174,10 @@
     "olumlu": [
      [
       "coskulu_1",
+      0
+     ],
+     [
+      "coskulu_2",
       0
      ],
      [
@@ -3280,7 +4200,7 @@
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
+    "n_olumlu": 3,
     "n_olumsuz": 3,
     "yon": null,
     "bosluk": null,
@@ -3292,6 +4212,10 @@
     "olumlu": [
      [
       "coskulu_1",
+      2
+     ],
+     [
+      "coskulu_2",
       2
      ],
      [
@@ -3314,7 +4238,7 @@
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
+    "n_olumlu": 3,
     "n_olumsuz": 3,
     "yon": "olumlu yuksek",
     "bosluk": [
@@ -3335,6 +4259,10 @@
       0.0
      ],
      [
+      "coskulu_2",
+      0.0
+     ],
+     [
       "dinle_2",
       0.0
      ]
@@ -3346,7 +4274,7 @@
      ]
     ],
     "diger": [],
-    "n_olumlu": 2,
+    "n_olumlu": 3,
     "n_olumsuz": 1,
     "yon": "olumlu dusuk",
     "bosluk": [

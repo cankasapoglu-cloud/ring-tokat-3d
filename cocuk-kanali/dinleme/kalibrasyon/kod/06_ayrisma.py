@@ -11,6 +11,7 @@ SD = json.load(open(os.path.join(KAL, "ara", "soz_denetimi.json"), encoding="utf
 for ad, m in M.items():
     g = (SD.get(ad) or {}).get("guven") or {}
     m["logprob_ort"] = g.get("ortalama_logprob"); m["logprob_dusuk_oran"] = g.get("oran_-0.3_alti")
+    m["uzun_nota_orani"] = (m["uzun_nota_035"] / m["nota_sayisi"]) if m.get("nota_sayisi") and m.get("uzun_nota_035") is not None else None
     m["vokalli_nota_sn"] = (m["nota_sayisi"] / (m["sure_sn"] * m["vokalli_oran"])) if m.get("nota_sayisi") and m.get("vokalli_oran") else None
 
 P = "parmak-ailesi__"; A = "ali-baba__"; E = "el-yikama__"
@@ -27,7 +28,7 @@ BOYUT = {
  "dogallik": dict(
     aciklama="olumlu = sesi begenilen / uygun bulunan dogal yapay sarkici kayitlari; olumsuz = vokoderle ezgiye oturtulmus ve esnetilip perdesi duzlenmis vokaller. 'diger' = islenmemis ama baska nedenle reddedilmis yapay sarkici kayitlari (bunlar da 'dogal' tarafta kalmali)",
     olumlu=[A + "v2_2", A + "dinle_2", E + "coskulu_2", P + "coskulu_1"], olumsuz=[A + "ornek_kita1", A + "sarki_birlesik"],
-    diger=[x for x in DOGAL_YZ if x not in (A + "v2_2", A + "dinle_2", E + "coskulu_2", P + "coskulu_1")],
+    diger=[x for x in DOGAL_YZ if x not in (A + "v2_2", A + "dinle_2", E + "coskulu_2", P + "coskulu_1")] + [A + "dogal_onizleme"],   # onizleme: ISLENMEMIS dogal vokal, baska orkestrada
     olculer=[("wer", "sozcuk hata orani"), ("logprob_dusuk_oran", "Scribe'in emin olmadigi sozcuk orani (logprob<-0,3)"), ("logprob_ort", "Scribe ortalama logprob"),
              ("y_donmus_sure_orani", "donmus unlu sure orani"), ("y_nota_ici_oynaklik_cent_medyan", "nota ici oynaklik (cent)"), ("y_cok_duz_nota_orani", "cok duz nota orani"),
              ("y_perde_izgaraya_yapisma_R", "perde izgaraya yapisma R"), ("y_vibratolu_uzun_nota_orani", "vibratolu uzun nota orani"), ("y_zarf_titremesi_db", "zarf titremesi dB"),
@@ -35,7 +36,9 @@ BOYUT = {
              ("y_sesli_cercevelerde_ardisik_benzerlik_medyan", "ardisik cerceve benzerligi"), ("y_isaret_sayisi", "yapaylik isareti sayisi"),
              ("dnsmos", "DNSMOS"), ("nisqa", "NISQA"), ("nisqa_kesintisizlik", "NISQA kesintisizlik"), ("distillmos", "Distill-MOS"), ("utmos22", "UTMOS22"),
              ("v_sarki", "CED vokal: Singing"), ("v_konusma", "CED vokal: Speech"), ("v_sentetik_sarki", "CED vokal: Synthetic singing"), ("v_konusma_sentezi", "CED vokal: Speech synthesizer"),
-             ("ritim_R", "ritim sikiligi R"), ("vokalli_nota_sn", "vokalli saniye basina bulunan nota")]),
+             ("ritim_R", "ritim sikiligi R"), ("vokalli_nota_sn", "vokalli saniye basina bulunan nota"),
+             ("nota_suresi_medyan", "nota suresi medyani sn"), ("gecis_cerceve_orani", "gecis cercevesi orani"), ("kayan_nota_orani", "kayan nota orani"), ("ani_gecis_orani", "ani gecis orani (35 ms alti)"),
+             ("uzun_nota_orani", "uzun nota (0,35 sn ustu) orani")]),
  "uyum": dict(
     aciklama="olumlu = sarkici ve orkestrasi birlikte uretilmis, kabul edilmis kayitlar; olumsuz = dogal vokalin baska ezgi calan orkestranin ustune kondugu on dinleme ('olmamis'). 'diger' = birlikte uretilmis ama baska nedenle reddedilmis kayitlar (bunlar da 'uyumlu' tarafta kalmali)",
     olumlu=[A + "v2_2", A + "dinle_2", E + "coskulu_2", P + "coskulu_1"], olumsuz=[A + "dogal_onizleme"],
