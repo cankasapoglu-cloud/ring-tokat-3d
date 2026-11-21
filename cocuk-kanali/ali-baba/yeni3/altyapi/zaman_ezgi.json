@@ -25,7 +25,7 @@
   "not": "altyapi = ezgi_alti HARİÇ tam orkestra (giriş, ö1/ö3 cevapları ve bitişteki yüksek lead dahil). rehber = altyapi + ezgi_alti. ezgi_alti doğrusal (limitersiz) ve altyapi ile aynı ana kazançta; miks seviyesi serbestçe değiştirilebilir."
  },
  "ana_kazanc": {
-  "kazanc_dB": 7.5774,
+  "kazanc_dB": 7.5929,
   "limiter_tavan_dBFS": -1.5,
   "hedef_LUFS_altyapi": -14.0,
   "ezgi_alti_varsayilan_seviye_dB": -11.0,
