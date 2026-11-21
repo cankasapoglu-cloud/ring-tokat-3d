@@ -1,6 +1,6 @@
 ALİ BABA'NIN ÇİFTLİĞİ
 (Ezgi: Old MacDonald Had a Farm — geleneksel)
-Sol majör, 4/4, 126 BPM. Giriş 4 ölçü, her kıta 10 ölçü, bitiş 4 ölçü.
+Sol majör, 4/4, 126 BPM. Giriş 4 ölçü, her kıta 11 ölçü, bitiş 4 ölçü.
 
 [Giriş — 4 ölçü müzik]
 
@@ -9,61 +9,61 @@ Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde inekleri var
    (müzik cevabı)
-[inek sesi]
+[inek sesi] [inek sesi]   (2 ölçü, iki kez)
 diye bağırır
 Çiftliğinde Ali Baba'nın
 
-2. KITA — koyun  (26.67 sn)
+2. KITA — koyun  (28.57 sn)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde koyunları var
    (müzik cevabı)
-[koyun sesi]
+[koyun sesi] [koyun sesi]   (2 ölçü, iki kez)
 diye meler
 Çiftliğinde Ali Baba'nın
 
-3. KITA — at  (45.71 sn)
+3. KITA — at  (49.52 sn)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde bir de atı var
    (müzik cevabı)
-[at sesi]
+[at sesi] [at sesi]   (2 ölçü, iki kez)
 diye kişner
 Çiftliğinde Ali Baba'nın
 
-4. KITA — horoz  (64.76 sn)
+4. KITA — horoz  (70.48 sn)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde horozları var
    (müzik cevabı)
-[horoz sesi]
+[horoz sesi] [horoz sesi]   (2 ölçü, iki kez)
 diye öter
 Çiftliğinde Ali Baba'nın
 
-5. KITA — ördek  (83.81 sn)
+5. KITA — ördek  (91.43 sn)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde ördekleri var
    (müzik cevabı)
-[ördek sesi]
+[ördek sesi] [ördek sesi]   (2 ölçü, iki kez)
 diye bağırır
 Çiftliğinde Ali Baba'nın
 
-6. KITA — köpek  (102.86 sn)
+6. KITA — köpek  (112.38 sn)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde köpekleri var
    (müzik cevabı)
-[köpek sesi]
+[köpek sesi] [köpek sesi]   (2 ölçü, iki kez)
 diye havlar
 Çiftliğinde Ali Baba'nın
 
-7. KITA — kedi  (121.90 sn)
+7. KITA — kedi  (133.33 sn)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde bir kedisi var
    (müzik cevabı)
-[kedi sesi]
+[kedi sesi] [kedi sesi]   (2 ölçü, iki kez)
 diye miyavlar
 Çiftliğinde Ali Baba'nın
 

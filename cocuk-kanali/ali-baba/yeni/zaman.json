@@ -6,14 +6,14 @@
  "tempo_bpm": 126,
  "vurus_sn": 0.476,
  "olcu_sn": 1.905,
- "toplam_olcu": 78,
- "muzik_bitis_sn": 148.571,
- "dosya_suresi_sn": 151.071,
+ "toplam_olcu": 85,
+ "muzik_bitis_sn": 161.905,
+ "dosya_suresi_sn": 164.405,
  "sayim_ofseti_sn": 1.905,
  "not": "Tüm zamanlar altyapi.wav / rehber.wav / demo başlangıcına göredir. rehber_sayimli.mp3 için her zamana sayim_ofseti_sn ekleyin.",
  "form": {
   "giris_olcu": 4,
-  "kita_olcu": 10,
+  "kita_olcu": 11,
   "kita_sayisi": 7,
   "bitis_olcu": 4,
   "kita_ici": [
@@ -21,9 +21,9 @@
    "ö3: enstrümantal cevap (Si Si La La Sol)",
    "ö4-5: satır 2",
    "ö6: enstrümantal cevap",
-   "ö7: HAYVAN SESİ boşluğu (yalnız hafif davul+bas)",
-   "ö8: \"diye ...\"",
-   "ö9-10: satır 3"
+   "ö7-8: HAYVAN SESİ boşluğu, 2 ölçü, her ölçüde bir ses (yalnız hafif davul+bas)",
+   "ö9: \"diye ...\"",
+   "ö10-11: satır 3"
   ]
  },
  "giris": {
@@ -31,8 +31,8 @@
   "bitis": 7.619
  },
  "bitis": {
-  "baslangic": 140.952,
-  "son_akor": 146.667
+  "baslangic": 154.286,
+  "son_akor": 160.0
  },
  "kitalar": [
   {
@@ -59,19 +59,21 @@
    },
    "hayvan_sesi": {
     "baslangic": 19.048,
-    "bitis": 20.952
+    "bitis": 22.857,
+    "ses1_baslangic": 19.048,
+    "ses2_baslangic": 20.952
    },
    "diye": {
     "soz": "diye bağırır",
-    "baslangic": 20.952,
-    "bitis": 22.857
+    "baslangic": 22.857,
+    "bitis": 24.762
    },
    "satir3": {
     "soz": "Çiftliğinde Ali Baba'nın",
-    "baslangic": 22.857,
-    "bitis": 26.667
+    "baslangic": 24.762,
+    "bitis": 28.571
    },
-   "bitis": 26.667,
+   "bitis": 28.571,
    "notalar": [
     {
      "satir": 1,
@@ -230,7 +232,7 @@
      "hece": "di",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 20.952,
+     "baslangic": 22.857,
      "sure": 0.238
     },
     {
@@ -238,7 +240,7 @@
      "hece": "ye",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 21.19,
+     "baslangic": 23.095,
      "sure": 0.238
     },
     {
@@ -246,7 +248,7 @@
      "hece": "ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 21.429,
+     "baslangic": 23.333,
      "sure": 0.238
     },
     {
@@ -254,7 +256,7 @@
      "hece": "ğı",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 21.667,
+     "baslangic": 23.571,
      "sure": 0.238
     },
     {
@@ -262,7 +264,7 @@
      "hece": "rır",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 21.905,
+     "baslangic": 23.81,
      "sure": 0.714
     },
     {
@@ -270,7 +272,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 22.857,
+     "baslangic": 24.762,
      "sure": 0.476
     },
     {
@@ -278,7 +280,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 23.333,
+     "baslangic": 25.238,
      "sure": 0.238
     },
     {
@@ -286,7 +288,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 23.571,
+     "baslangic": 25.476,
      "sure": 0.238
     },
     {
@@ -294,7 +296,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 23.81,
+     "baslangic": 25.714,
      "sure": 0.476
     },
     {
@@ -302,7 +304,7 @@
      "hece": "A",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 24.286,
+     "baslangic": 26.19,
      "sure": 0.476
     },
     {
@@ -310,7 +312,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 24.762,
+     "baslangic": 26.667,
      "sure": 0.476
     },
     {
@@ -318,7 +320,7 @@
      "hece": "Ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 25.238,
+     "baslangic": 27.143,
      "sure": 0.238
     },
     {
@@ -326,7 +328,7 @@
      "hece": "ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 25.476,
+     "baslangic": 27.381,
      "sure": 0.238
     },
     {
@@ -334,7 +336,7 @@
      "hece": "nın",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 25.714,
+     "baslangic": 27.619,
      "sure": 0.952
     }
    ]
@@ -342,47 +344,49 @@
   {
    "kita": 2,
    "hayvan": "koyun",
-   "baslangic": 26.667,
+   "baslangic": 28.571,
    "satir1": {
     "soz": "Ali Baba'nın bir çiftliği var",
-    "baslangic": 26.667,
-    "bitis": 30.476
+    "baslangic": 28.571,
+    "bitis": 32.381
    },
    "cevap1": {
-    "baslangic": 30.476,
-    "bitis": 32.381
+    "baslangic": 32.381,
+    "bitis": 34.286
    },
    "satir2": {
     "soz": "Çiftliğinde koyunları var",
-    "baslangic": 32.381,
-    "bitis": 36.19
-   },
-   "cevap2": {
-    "baslangic": 36.19,
+    "baslangic": 34.286,
     "bitis": 38.095
    },
-   "hayvan_sesi": {
+   "cevap2": {
     "baslangic": 38.095,
     "bitis": 40.0
    },
+   "hayvan_sesi": {
+    "baslangic": 40.0,
+    "bitis": 43.81,
+    "ses1_baslangic": 40.0,
+    "ses2_baslangic": 41.905
+   },
    "diye": {
     "soz": "diye meler",
-    "baslangic": 40.0,
-    "bitis": 41.905
+    "baslangic": 43.81,
+    "bitis": 45.714
    },
    "satir3": {
     "soz": "Çiftliğinde Ali Baba'nın",
-    "baslangic": 41.905,
-    "bitis": 45.714
+    "baslangic": 45.714,
+    "bitis": 49.524
    },
-   "bitis": 45.714,
+   "bitis": 49.524,
    "notalar": [
     {
      "satir": 1,
      "hece": "A",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 26.667,
+     "baslangic": 28.571,
      "sure": 0.238
     },
     {
@@ -390,7 +394,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 26.905,
+     "baslangic": 28.81,
      "sure": 0.238
     },
     {
@@ -398,7 +402,7 @@
      "hece": "Ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 27.143,
+     "baslangic": 29.048,
      "sure": 0.238
     },
     {
@@ -406,7 +410,7 @@
      "hece": "ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 27.381,
+     "baslangic": 29.286,
      "sure": 0.238
     },
     {
@@ -414,7 +418,7 @@
      "hece": "nın",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 27.619,
+     "baslangic": 29.524,
      "sure": 0.476
     },
     {
@@ -422,7 +426,7 @@
      "hece": "bir",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 28.095,
+     "baslangic": 30.0,
      "sure": 0.476
     },
     {
@@ -430,7 +434,7 @@
      "hece": "çift",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 28.571,
+     "baslangic": 30.476,
      "sure": 0.476
     },
     {
@@ -438,7 +442,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 29.048,
+     "baslangic": 30.952,
      "sure": 0.238
     },
     {
@@ -446,7 +450,7 @@
      "hece": "ği",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 29.286,
+     "baslangic": 31.19,
      "sure": 0.238
     },
     {
@@ -454,7 +458,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 29.524,
+     "baslangic": 31.429,
      "sure": 0.952
     },
     {
@@ -462,7 +466,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 32.381,
+     "baslangic": 34.286,
      "sure": 0.476
     },
     {
@@ -470,7 +474,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 32.857,
+     "baslangic": 34.762,
      "sure": 0.238
     },
     {
@@ -478,7 +482,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 33.095,
+     "baslangic": 35.0,
      "sure": 0.238
     },
     {
@@ -486,7 +490,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 33.333,
+     "baslangic": 35.238,
      "sure": 0.476
     },
     {
@@ -494,7 +498,7 @@
      "hece": "ko",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 33.81,
+     "baslangic": 35.714,
      "sure": 0.476
     },
     {
@@ -502,7 +506,7 @@
      "hece": "yun",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 34.286,
+     "baslangic": 36.19,
      "sure": 0.476
     },
     {
@@ -510,7 +514,7 @@
      "hece": "la",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 34.762,
+     "baslangic": 36.667,
      "sure": 0.238
     },
     {
@@ -518,7 +522,7 @@
      "hece": "rı",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 35.0,
+     "baslangic": 36.905,
      "sure": 0.238
     },
     {
@@ -526,7 +530,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 35.238,
+     "baslangic": 37.143,
      "sure": 0.952
     },
     {
@@ -534,7 +538,7 @@
      "hece": "di",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 40.0,
+     "baslangic": 43.81,
      "sure": 0.238
     },
     {
@@ -542,7 +546,7 @@
      "hece": "ye",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 40.238,
+     "baslangic": 44.048,
      "sure": 0.238
     },
     {
@@ -550,7 +554,7 @@
      "hece": "me",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 40.476,
+     "baslangic": 44.286,
      "sure": 0.476
     },
     {
@@ -558,7 +562,7 @@
      "hece": "ler",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 40.952,
+     "baslangic": 44.762,
      "sure": 0.714
     },
     {
@@ -566,7 +570,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 41.905,
+     "baslangic": 45.714,
      "sure": 0.476
     },
     {
@@ -574,7 +578,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 42.381,
+     "baslangic": 46.19,
      "sure": 0.238
     },
     {
@@ -582,7 +586,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 42.619,
+     "baslangic": 46.429,
      "sure": 0.238
     },
     {
@@ -590,7 +594,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 42.857,
+     "baslangic": 46.667,
      "sure": 0.476
     },
     {
@@ -598,7 +602,7 @@
      "hece": "A",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 43.333,
+     "baslangic": 47.143,
      "sure": 0.476
     },
     {
@@ -606,7 +610,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 43.81,
+     "baslangic": 47.619,
      "sure": 0.476
     },
     {
@@ -614,7 +618,7 @@
      "hece": "Ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 44.286,
+     "baslangic": 48.095,
      "sure": 0.238
     },
     {
@@ -622,7 +626,7 @@
      "hece": "ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 44.524,
+     "baslangic": 48.333,
      "sure": 0.238
     },
     {
@@ -630,7 +634,7 @@
      "hece": "nın",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 44.762,
+     "baslangic": 48.571,
      "sure": 0.952
     }
    ]
@@ -638,47 +642,49 @@
   {
    "kita": 3,
    "hayvan": "at",
-   "baslangic": 45.714,
+   "baslangic": 49.524,
    "satir1": {
     "soz": "Ali Baba'nın bir çiftliği var",
-    "baslangic": 45.714,
-    "bitis": 49.524
+    "baslangic": 49.524,
+    "bitis": 53.333
    },
    "cevap1": {
-    "baslangic": 49.524,
-    "bitis": 51.429
+    "baslangic": 53.333,
+    "bitis": 55.238
    },
    "satir2": {
     "soz": "Çiftliğinde bir de atı var",
-    "baslangic": 51.429,
-    "bitis": 55.238
-   },
-   "cevap2": {
     "baslangic": 55.238,
-    "bitis": 57.143
-   },
-   "hayvan_sesi": {
-    "baslangic": 57.143,
     "bitis": 59.048
    },
-   "diye": {
-    "soz": "diye kişner",
+   "cevap2": {
     "baslangic": 59.048,
     "bitis": 60.952
    },
+   "hayvan_sesi": {
+    "baslangic": 60.952,
+    "bitis": 64.762,
+    "ses1_baslangic": 60.952,
+    "ses2_baslangic": 62.857
+   },
+   "diye": {
+    "soz": "diye kişner",
+    "baslangic": 64.762,
+    "bitis": 66.667
+   },
    "satir3": {
     "soz": "Çiftliğinde Ali Baba'nın",
-    "baslangic": 60.952,
-    "bitis": 64.762
+    "baslangic": 66.667,
+    "bitis": 70.476
    },
-   "bitis": 64.762,
+   "bitis": 70.476,
    "notalar": [
     {
      "satir": 1,
      "hece": "A",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 45.714,
+     "baslangic": 49.524,
      "sure": 0.238
     },
     {
@@ -686,7 +692,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 45.952,
+     "baslangic": 49.762,
      "sure": 0.238
     },
     {
@@ -694,7 +700,7 @@
      "hece": "Ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 46.19,
+     "baslangic": 50.0,
      "sure": 0.238
     },
     {
@@ -702,7 +708,7 @@
      "hece": "ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 46.429,
+     "baslangic": 50.238,
      "sure": 0.238
     },
     {
@@ -710,7 +716,7 @@
      "hece": "nın",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 46.667,
+     "baslangic": 50.476,
      "sure": 0.476
     },
     {
@@ -718,7 +724,7 @@
      "hece": "bir",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 47.143,
+     "baslangic": 50.952,
      "sure": 0.476
     },
     {
@@ -726,7 +732,7 @@
      "hece": "çift",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 47.619,
+     "baslangic": 51.429,
      "sure": 0.476
     },
     {
@@ -734,7 +740,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 48.095,
+     "baslangic": 51.905,
      "sure": 0.238
     },
     {
@@ -742,7 +748,7 @@
      "hece": "ği",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 48.333,
+     "baslangic": 52.143,
      "sure": 0.238
     },
     {
@@ -750,7 +756,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 48.571,
+     "baslangic": 52.381,
      "sure": 0.952
     },
     {
@@ -758,7 +764,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 51.429,
+     "baslangic": 55.238,
      "sure": 0.476
     },
     {
@@ -766,7 +772,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 51.905,
+     "baslangic": 55.714,
      "sure": 0.238
     },
     {
@@ -774,7 +780,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 52.143,
+     "baslangic": 55.952,
      "sure": 0.238
     },
     {
@@ -782,7 +788,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 52.381,
+     "baslangic": 56.19,
      "sure": 0.476
     },
     {
@@ -790,7 +796,7 @@
      "hece": "bir",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 52.857,
+     "baslangic": 56.667,
      "sure": 0.476
     },
     {
@@ -798,7 +804,7 @@
      "hece": "de",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 53.333,
+     "baslangic": 57.143,
      "sure": 0.476
     },
     {
@@ -806,7 +812,7 @@
      "hece": "a",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 53.81,
+     "baslangic": 57.619,
      "sure": 0.238
     },
     {
@@ -814,7 +820,7 @@
      "hece": "tı",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 54.048,
+     "baslangic": 57.857,
      "sure": 0.238
     },
     {
@@ -822,7 +828,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 54.286,
+     "baslangic": 58.095,
      "sure": 0.952
     },
     {
@@ -830,7 +836,7 @@
      "hece": "di",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 59.048,
+     "baslangic": 64.762,
      "sure": 0.238
     },
     {
@@ -838,7 +844,7 @@
      "hece": "ye",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 59.286,
+     "baslangic": 65.0,
      "sure": 0.238
     },
     {
@@ -846,7 +852,7 @@
      "hece": "kiş",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 59.524,
+     "baslangic": 65.238,
      "sure": 0.476
     },
     {
@@ -854,7 +860,7 @@
      "hece": "ner",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 60.0,
+     "baslangic": 65.714,
      "sure": 0.714
     },
     {
@@ -862,7 +868,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 60.952,
+     "baslangic": 66.667,
      "sure": 0.476
     },
     {
@@ -870,7 +876,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 61.429,
+     "baslangic": 67.143,
      "sure": 0.238
     },
     {
@@ -878,7 +884,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 61.667,
+     "baslangic": 67.381,
      "sure": 0.238
     },
     {
@@ -886,7 +892,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 61.905,
+     "baslangic": 67.619,
      "sure": 0.476
     },
     {
@@ -894,7 +900,7 @@
      "hece": "A",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 62.381,
+     "baslangic": 68.095,
      "sure": 0.476
     },
     {
@@ -902,7 +908,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 62.857,
+     "baslangic": 68.571,
      "sure": 0.476
     },
     {
@@ -910,7 +916,7 @@
      "hece": "Ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 63.333,
+     "baslangic": 69.048,
      "sure": 0.238
     },
     {
@@ -918,7 +924,7 @@
      "hece": "ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 63.571,
+     "baslangic": 69.286,
      "sure": 0.238
     },
     {
@@ -926,7 +932,7 @@
      "hece": "nın",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 63.81,
+     "baslangic": 69.524,
      "sure": 0.952
     }
    ]
@@ -934,47 +940,49 @@
   {
    "kita": 4,
    "hayvan": "horoz",
-   "baslangic": 64.762,
+   "baslangic": 70.476,
    "satir1": {
     "soz": "Ali Baba'nın bir çiftliği var",
-    "baslangic": 64.762,
-    "bitis": 68.571
-   },
-   "cevap1": {
-    "baslangic": 68.571,
-    "bitis": 70.476
-   },
-   "satir2": {
-    "soz": "Çiftliğinde horozları var",
     "baslangic": 70.476,
     "bitis": 74.286
    },
-   "cevap2": {
+   "cevap1": {
     "baslangic": 74.286,
     "bitis": 76.19
    },
-   "hayvan_sesi": {
+   "satir2": {
+    "soz": "Çiftliğinde horozları var",
     "baslangic": 76.19,
-    "bitis": 78.095
+    "bitis": 80.0
+   },
+   "cevap2": {
+    "baslangic": 80.0,
+    "bitis": 81.905
+   },
+   "hayvan_sesi": {
+    "baslangic": 81.905,
+    "bitis": 85.714,
+    "ses1_baslangic": 81.905,
+    "ses2_baslangic": 83.81
    },
    "diye": {
     "soz": "diye öter",
-    "baslangic": 78.095,
-    "bitis": 80.0
+    "baslangic": 85.714,
+    "bitis": 87.619
    },
    "satir3": {
     "soz": "Çiftliğinde Ali Baba'nın",
-    "baslangic": 80.0,
-    "bitis": 83.81
+    "baslangic": 87.619,
+    "bitis": 91.429
    },
-   "bitis": 83.81,
+   "bitis": 91.429,
    "notalar": [
     {
      "satir": 1,
      "hece": "A",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 64.762,
+     "baslangic": 70.476,
      "sure": 0.238
     },
     {
@@ -982,7 +990,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 65.0,
+     "baslangic": 70.714,
      "sure": 0.238
     },
     {
@@ -990,7 +998,7 @@
      "hece": "Ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 65.238,
+     "baslangic": 70.952,
      "sure": 0.238
     },
     {
@@ -998,7 +1006,7 @@
      "hece": "ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 65.476,
+     "baslangic": 71.19,
      "sure": 0.238
     },
     {
@@ -1006,7 +1014,7 @@
      "hece": "nın",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 65.714,
+     "baslangic": 71.429,
      "sure": 0.476
     },
     {
@@ -1014,7 +1022,7 @@
      "hece": "bir",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 66.19,
+     "baslangic": 71.905,
      "sure": 0.476
     },
     {
@@ -1022,7 +1030,7 @@
      "hece": "çift",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 66.667,
+     "baslangic": 72.381,
      "sure": 0.476
     },
     {
@@ -1030,7 +1038,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 67.143,
+     "baslangic": 72.857,
      "sure": 0.238
     },
     {
@@ -1038,83 +1046,11 @@
      "hece": "ği",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 67.381,
-     "sure": 0.238
-    },
-    {
-     "satir": 1,
-     "hece": "var",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 67.619,
-     "sure": 0.952
-    },
-    {
-     "satir": 2,
-     "hece": "Çift",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 70.476,
-     "sure": 0.476
-    },
-    {
-     "satir": 2,
-     "hece": "li",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 70.952,
-     "sure": 0.238
-    },
-    {
-     "satir": 2,
-     "hece": "ğin",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 71.19,
-     "sure": 0.238
-    },
-    {
-     "satir": 2,
-     "hece": "de",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 71.429,
-     "sure": 0.476
-    },
-    {
-     "satir": 2,
-     "hece": "ho",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 71.905,
-     "sure": 0.476
-    },
-    {
-     "satir": 2,
-     "hece": "roz",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 72.381,
-     "sure": 0.476
-    },
-    {
-     "satir": 2,
-     "hece": "la",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 72.857,
-     "sure": 0.238
-    },
-    {
-     "satir": 2,
-     "hece": "rı",
-     "nota": "E4",
-     "midi": 64,
      "baslangic": 73.095,
      "sure": 0.238
     },
     {
-     "satir": 2,
+     "satir": 1,
      "hece": "var",
      "nota": "D4",
      "midi": 62,
@@ -1122,11 +1058,83 @@
      "sure": 0.952
     },
     {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 76.19,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 76.667,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 76.905,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 77.143,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "ho",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 77.619,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "roz",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 78.095,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "la",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 78.571,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "rı",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 78.81,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 79.048,
+     "sure": 0.952
+    },
+    {
      "satir": "diye",
      "hece": "di",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 78.095,
+     "baslangic": 85.714,
      "sure": 0.238
     },
     {
@@ -1134,7 +1142,7 @@
      "hece": "ye",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 78.333,
+     "baslangic": 85.952,
      "sure": 0.238
     },
     {
@@ -1142,7 +1150,7 @@
      "hece": "ö",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 78.571,
+     "baslangic": 86.19,
      "sure": 0.476
     },
     {
@@ -1150,7 +1158,7 @@
      "hece": "ter",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 79.048,
+     "baslangic": 86.667,
      "sure": 0.714
     },
     {
@@ -1158,7 +1166,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 80.0,
+     "baslangic": 87.619,
      "sure": 0.476
     },
     {
@@ -1166,7 +1174,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 80.476,
+     "baslangic": 88.095,
      "sure": 0.238
     },
     {
@@ -1174,7 +1182,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 80.714,
+     "baslangic": 88.333,
      "sure": 0.238
     },
     {
@@ -1182,7 +1190,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 80.952,
+     "baslangic": 88.571,
      "sure": 0.476
     },
     {
@@ -1190,7 +1198,7 @@
      "hece": "A",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 81.429,
+     "baslangic": 89.048,
      "sure": 0.476
     },
     {
@@ -1198,7 +1206,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 81.905,
+     "baslangic": 89.524,
      "sure": 0.476
     },
     {
@@ -1206,7 +1214,7 @@
      "hece": "Ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 82.381,
+     "baslangic": 90.0,
      "sure": 0.238
     },
     {
@@ -1214,7 +1222,7 @@
      "hece": "ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 82.619,
+     "baslangic": 90.238,
      "sure": 0.238
     },
     {
@@ -1222,7 +1230,7 @@
      "hece": "nın",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 82.857,
+     "baslangic": 90.476,
      "sure": 0.952
     }
    ]
@@ -1230,47 +1238,49 @@
   {
    "kita": 5,
    "hayvan": "ördek",
-   "baslangic": 83.81,
+   "baslangic": 91.429,
    "satir1": {
     "soz": "Ali Baba'nın bir çiftliği var",
-    "baslangic": 83.81,
-    "bitis": 87.619
-   },
-   "cevap1": {
-    "baslangic": 87.619,
-    "bitis": 89.524
-   },
-   "satir2": {
-    "soz": "Çiftliğinde ördekleri var",
-    "baslangic": 89.524,
-    "bitis": 93.333
-   },
-   "cevap2": {
-    "baslangic": 93.333,
+    "baslangic": 91.429,
     "bitis": 95.238
    },
-   "hayvan_sesi": {
+   "cevap1": {
     "baslangic": 95.238,
     "bitis": 97.143
    },
+   "satir2": {
+    "soz": "Çiftliğinde ördekleri var",
+    "baslangic": 97.143,
+    "bitis": 100.952
+   },
+   "cevap2": {
+    "baslangic": 100.952,
+    "bitis": 102.857
+   },
+   "hayvan_sesi": {
+    "baslangic": 102.857,
+    "bitis": 106.667,
+    "ses1_baslangic": 102.857,
+    "ses2_baslangic": 104.762
+   },
    "diye": {
     "soz": "diye bağırır",
-    "baslangic": 97.143,
-    "bitis": 99.048
+    "baslangic": 106.667,
+    "bitis": 108.571
    },
    "satir3": {
     "soz": "Çiftliğinde Ali Baba'nın",
-    "baslangic": 99.048,
-    "bitis": 102.857
+    "baslangic": 108.571,
+    "bitis": 112.381
    },
-   "bitis": 102.857,
+   "bitis": 112.381,
    "notalar": [
     {
      "satir": 1,
      "hece": "A",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 83.81,
+     "baslangic": 91.429,
      "sure": 0.238
     },
     {
@@ -1278,7 +1288,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 84.048,
+     "baslangic": 91.667,
      "sure": 0.238
     },
     {
@@ -1286,7 +1296,7 @@
      "hece": "Ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 84.286,
+     "baslangic": 91.905,
      "sure": 0.238
     },
     {
@@ -1294,7 +1304,7 @@
      "hece": "ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 84.524,
+     "baslangic": 92.143,
      "sure": 0.238
     },
     {
@@ -1302,7 +1312,7 @@
      "hece": "nın",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 84.762,
+     "baslangic": 92.381,
      "sure": 0.476
     },
     {
@@ -1310,7 +1320,7 @@
      "hece": "bir",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 85.238,
+     "baslangic": 92.857,
      "sure": 0.476
     },
     {
@@ -1318,7 +1328,7 @@
      "hece": "çift",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 85.714,
+     "baslangic": 93.333,
      "sure": 0.476
     },
     {
@@ -1326,7 +1336,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 86.19,
+     "baslangic": 93.81,
      "sure": 0.238
     },
     {
@@ -1334,7 +1344,7 @@
      "hece": "ği",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 86.429,
+     "baslangic": 94.048,
      "sure": 0.238
     },
     {
@@ -1342,7 +1352,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 86.667,
+     "baslangic": 94.286,
      "sure": 0.952
     },
     {
@@ -1350,7 +1360,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 89.524,
+     "baslangic": 97.143,
      "sure": 0.476
     },
     {
@@ -1358,7 +1368,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 90.0,
+     "baslangic": 97.619,
      "sure": 0.238
     },
     {
@@ -1366,7 +1376,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 90.238,
+     "baslangic": 97.857,
      "sure": 0.238
     },
     {
@@ -1374,7 +1384,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 90.476,
+     "baslangic": 98.095,
      "sure": 0.476
     },
     {
@@ -1382,7 +1392,7 @@
      "hece": "ör",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 90.952,
+     "baslangic": 98.571,
      "sure": 0.476
     },
     {
@@ -1390,7 +1400,7 @@
      "hece": "dek",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 91.429,
+     "baslangic": 99.048,
      "sure": 0.476
     },
     {
@@ -1398,7 +1408,7 @@
      "hece": "le",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 91.905,
+     "baslangic": 99.524,
      "sure": 0.238
     },
     {
@@ -1406,7 +1416,7 @@
      "hece": "ri",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 92.143,
+     "baslangic": 99.762,
      "sure": 0.238
     },
     {
@@ -1414,7 +1424,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 92.381,
+     "baslangic": 100.0,
      "sure": 0.952
     },
     {
@@ -1422,7 +1432,7 @@
      "hece": "di",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 97.143,
+     "baslangic": 106.667,
      "sure": 0.238
     },
     {
@@ -1430,7 +1440,7 @@
      "hece": "ye",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 97.381,
+     "baslangic": 106.905,
      "sure": 0.238
     },
     {
@@ -1438,7 +1448,7 @@
      "hece": "ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 97.619,
+     "baslangic": 107.143,
      "sure": 0.238
     },
     {
@@ -1446,7 +1456,7 @@
      "hece": "ğı",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 97.857,
+     "baslangic": 107.381,
      "sure": 0.238
     },
     {
@@ -1454,203 +1464,11 @@
      "hece": "rır",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 98.095,
+     "baslangic": 107.619,
      "sure": 0.714
     },
     {
      "satir": 3,
-     "hece": "Çift",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 99.048,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "li",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 99.524,
-     "sure": 0.238
-    },
-    {
-     "satir": 3,
-     "hece": "ğin",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 99.762,
-     "sure": 0.238
-    },
-    {
-     "satir": 3,
-     "hece": "de",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 100.0,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "A",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 100.476,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "li",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 100.952,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "Ba",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 101.429,
-     "sure": 0.238
-    },
-    {
-     "satir": 3,
-     "hece": "ba",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 101.667,
-     "sure": 0.238
-    },
-    {
-     "satir": 3,
-     "hece": "nın",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 101.905,
-     "sure": 0.952
-    }
-   ]
-  },
-  {
-   "kita": 6,
-   "hayvan": "köpek",
-   "baslangic": 102.857,
-   "satir1": {
-    "soz": "Ali Baba'nın bir çiftliği var",
-    "baslangic": 102.857,
-    "bitis": 106.667
-   },
-   "cevap1": {
-    "baslangic": 106.667,
-    "bitis": 108.571
-   },
-   "satir2": {
-    "soz": "Çiftliğinde köpekleri var",
-    "baslangic": 108.571,
-    "bitis": 112.381
-   },
-   "cevap2": {
-    "baslangic": 112.381,
-    "bitis": 114.286
-   },
-   "hayvan_sesi": {
-    "baslangic": 114.286,
-    "bitis": 116.19
-   },
-   "diye": {
-    "soz": "diye havlar",
-    "baslangic": 116.19,
-    "bitis": 118.095
-   },
-   "satir3": {
-    "soz": "Çiftliğinde Ali Baba'nın",
-    "baslangic": 118.095,
-    "bitis": 121.905
-   },
-   "bitis": 121.905,
-   "notalar": [
-    {
-     "satir": 1,
-     "hece": "A",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 102.857,
-     "sure": 0.238
-    },
-    {
-     "satir": 1,
-     "hece": "li",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 103.095,
-     "sure": 0.238
-    },
-    {
-     "satir": 1,
-     "hece": "Ba",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 103.333,
-     "sure": 0.238
-    },
-    {
-     "satir": 1,
-     "hece": "ba",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 103.571,
-     "sure": 0.238
-    },
-    {
-     "satir": 1,
-     "hece": "nın",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 103.81,
-     "sure": 0.476
-    },
-    {
-     "satir": 1,
-     "hece": "bir",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 104.286,
-     "sure": 0.476
-    },
-    {
-     "satir": 1,
-     "hece": "çift",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 104.762,
-     "sure": 0.476
-    },
-    {
-     "satir": 1,
-     "hece": "li",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 105.238,
-     "sure": 0.238
-    },
-    {
-     "satir": 1,
-     "hece": "ği",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 105.476,
-     "sure": 0.238
-    },
-    {
-     "satir": 1,
-     "hece": "var",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 105.714,
-     "sure": 0.952
-    },
-    {
-     "satir": 2,
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
@@ -1658,7 +1476,7 @@
      "sure": 0.476
     },
     {
-     "satir": 2,
+     "satir": 3,
      "hece": "li",
      "nota": "G4",
      "midi": 67,
@@ -1666,7 +1484,7 @@
      "sure": 0.238
     },
     {
-     "satir": 2,
+     "satir": 3,
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
@@ -1674,7 +1492,7 @@
      "sure": 0.238
     },
     {
-     "satir": 2,
+     "satir": 3,
      "hece": "de",
      "nota": "G4",
      "midi": 67,
@@ -1682,195 +1500,93 @@
      "sure": 0.476
     },
     {
-     "satir": 2,
-     "hece": "kö",
+     "satir": 3,
+     "hece": "A",
      "nota": "D4",
      "midi": 62,
      "baslangic": 110.0,
      "sure": 0.476
     },
     {
-     "satir": 2,
-     "hece": "pek",
+     "satir": 3,
+     "hece": "li",
      "nota": "E4",
      "midi": 64,
      "baslangic": 110.476,
      "sure": 0.476
     },
     {
-     "satir": 2,
-     "hece": "le",
+     "satir": 3,
+     "hece": "Ba",
      "nota": "E4",
      "midi": 64,
      "baslangic": 110.952,
      "sure": 0.238
     },
     {
-     "satir": 2,
-     "hece": "ri",
+     "satir": 3,
+     "hece": "ba",
      "nota": "E4",
      "midi": 64,
      "baslangic": 111.19,
      "sure": 0.238
     },
     {
-     "satir": 2,
-     "hece": "var",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 111.429,
-     "sure": 0.952
-    },
-    {
-     "satir": "diye",
-     "hece": "di",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 116.19,
-     "sure": 0.238
-    },
-    {
-     "satir": "diye",
-     "hece": "ye",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 116.429,
-     "sure": 0.238
-    },
-    {
-     "satir": "diye",
-     "hece": "hav",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 116.667,
-     "sure": 0.476
-    },
-    {
-     "satir": "diye",
-     "hece": "lar",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 117.143,
-     "sure": 0.714
-    },
-    {
-     "satir": 3,
-     "hece": "Çift",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 118.095,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "li",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 118.571,
-     "sure": 0.238
-    },
-    {
-     "satir": 3,
-     "hece": "ğin",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 118.81,
-     "sure": 0.238
-    },
-    {
-     "satir": 3,
-     "hece": "de",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 119.048,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "A",
-     "nota": "D4",
-     "midi": 62,
-     "baslangic": 119.524,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "li",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 120.0,
-     "sure": 0.476
-    },
-    {
-     "satir": 3,
-     "hece": "Ba",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 120.476,
-     "sure": 0.238
-    },
-    {
-     "satir": 3,
-     "hece": "ba",
-     "nota": "E4",
-     "midi": 64,
-     "baslangic": 120.714,
-     "sure": 0.238
-    },
-    {
      "satir": 3,
      "hece": "nın",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 120.952,
+     "baslangic": 111.429,
      "sure": 0.952
     }
    ]
   },
   {
-   "kita": 7,
-   "hayvan": "kedi",
-   "baslangic": 121.905,
+   "kita": 6,
+   "hayvan": "köpek",
+   "baslangic": 112.381,
    "satir1": {
     "soz": "Ali Baba'nın bir çiftliği var",
-    "baslangic": 121.905,
-    "bitis": 125.714
+    "baslangic": 112.381,
+    "bitis": 116.19
    },
    "cevap1": {
-    "baslangic": 125.714,
-    "bitis": 127.619
+    "baslangic": 116.19,
+    "bitis": 118.095
    },
    "satir2": {
-    "soz": "Çiftliğinde bir kedisi var",
-    "baslangic": 127.619,
-    "bitis": 131.429
+    "soz": "Çiftliğinde köpekleri var",
+    "baslangic": 118.095,
+    "bitis": 121.905
    },
    "cevap2": {
-    "baslangic": 131.429,
-    "bitis": 133.333
+    "baslangic": 121.905,
+    "bitis": 123.81
    },
    "hayvan_sesi": {
-    "baslangic": 133.333,
-    "bitis": 135.238
+    "baslangic": 123.81,
+    "bitis": 127.619,
+    "ses1_baslangic": 123.81,
+    "ses2_baslangic": 125.714
    },
    "diye": {
-    "soz": "diye miyavlar",
-    "baslangic": 135.238,
-    "bitis": 137.143
+    "soz": "diye havlar",
+    "baslangic": 127.619,
+    "bitis": 129.524
    },
    "satir3": {
     "soz": "Çiftliğinde Ali Baba'nın",
-    "baslangic": 137.143,
-    "bitis": 140.952
+    "baslangic": 129.524,
+    "bitis": 133.333
    },
-   "bitis": 140.952,
+   "bitis": 133.333,
    "notalar": [
     {
      "satir": 1,
      "hece": "A",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 121.905,
+     "baslangic": 112.381,
      "sure": 0.238
     },
     {
@@ -1878,7 +1594,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 122.143,
+     "baslangic": 112.619,
      "sure": 0.238
     },
     {
@@ -1886,7 +1602,7 @@
      "hece": "Ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 122.381,
+     "baslangic": 112.857,
      "sure": 0.238
     },
     {
@@ -1894,7 +1610,7 @@
      "hece": "ba",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 122.619,
+     "baslangic": 113.095,
      "sure": 0.238
     },
     {
@@ -1902,7 +1618,7 @@
      "hece": "nın",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 122.857,
+     "baslangic": 113.333,
      "sure": 0.476
     },
     {
@@ -1910,7 +1626,7 @@
      "hece": "bir",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 123.333,
+     "baslangic": 113.81,
      "sure": 0.476
     },
     {
@@ -1918,7 +1634,7 @@
      "hece": "çift",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 123.81,
+     "baslangic": 114.286,
      "sure": 0.476
     },
     {
@@ -1926,7 +1642,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 124.286,
+     "baslangic": 114.762,
      "sure": 0.238
     },
     {
@@ -1934,7 +1650,7 @@
      "hece": "ği",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 124.524,
+     "baslangic": 115.0,
      "sure": 0.238
     },
     {
@@ -1942,7 +1658,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 124.762,
+     "baslangic": 115.238,
      "sure": 0.952
     },
     {
@@ -1950,7 +1666,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 127.619,
+     "baslangic": 118.095,
      "sure": 0.476
     },
     {
@@ -1958,7 +1674,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 128.095,
+     "baslangic": 118.571,
      "sure": 0.238
     },
     {
@@ -1966,7 +1682,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 128.333,
+     "baslangic": 118.81,
      "sure": 0.238
     },
     {
@@ -1974,39 +1690,39 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 128.571,
+     "baslangic": 119.048,
      "sure": 0.476
     },
     {
      "satir": 2,
-     "hece": "bir",
+     "hece": "kö",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 129.048,
+     "baslangic": 119.524,
      "sure": 0.476
     },
     {
      "satir": 2,
-     "hece": "ke",
+     "hece": "pek",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 129.524,
+     "baslangic": 120.0,
      "sure": 0.476
     },
     {
      "satir": 2,
-     "hece": "di",
+     "hece": "le",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 130.0,
+     "baslangic": 120.476,
      "sure": 0.238
     },
     {
      "satir": 2,
-     "hece": "si",
+     "hece": "ri",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 130.238,
+     "baslangic": 120.714,
      "sure": 0.238
     },
     {
@@ -2014,7 +1730,7 @@
      "hece": "var",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 130.476,
+     "baslangic": 120.952,
      "sure": 0.952
     },
     {
@@ -2022,7 +1738,7 @@
      "hece": "di",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 135.238,
+     "baslangic": 127.619,
      "sure": 0.238
     },
     {
@@ -2030,31 +1746,23 @@
      "hece": "ye",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 135.476,
+     "baslangic": 127.857,
      "sure": 0.238
     },
     {
      "satir": "diye",
-     "hece": "mi",
+     "hece": "hav",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 135.714,
-     "sure": 0.238
-    },
-    {
-     "satir": "diye",
-     "hece": "yav",
-     "nota": "G4",
-     "midi": 67,
-     "baslangic": 135.952,
-     "sure": 0.238
+     "baslangic": 128.095,
+     "sure": 0.476
     },
     {
      "satir": "diye",
      "hece": "lar",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 136.19,
+     "baslangic": 128.571,
      "sure": 0.714
     },
     {
@@ -2062,7 +1770,7 @@
      "hece": "Çift",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 137.143,
+     "baslangic": 129.524,
      "sure": 0.476
     },
     {
@@ -2070,7 +1778,7 @@
      "hece": "li",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 137.619,
+     "baslangic": 130.0,
      "sure": 0.238
     },
     {
@@ -2078,7 +1786,7 @@
      "hece": "ğin",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 137.857,
+     "baslangic": 130.238,
      "sure": 0.238
     },
     {
@@ -2086,7 +1794,7 @@
      "hece": "de",
      "nota": "G4",
      "midi": 67,
-     "baslangic": 138.095,
+     "baslangic": 130.476,
      "sure": 0.476
     },
     {
@@ -2094,7 +1802,7 @@
      "hece": "A",
      "nota": "D4",
      "midi": 62,
-     "baslangic": 138.571,
+     "baslangic": 130.952,
      "sure": 0.476
     },
     {
@@ -2102,7 +1810,7 @@
      "hece": "li",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 139.048,
+     "baslangic": 131.429,
      "sure": 0.476
     },
     {
@@ -2110,7 +1818,7 @@
      "hece": "Ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 139.524,
+     "baslangic": 131.905,
      "sure": 0.238
     },
     {
@@ -2118,7 +1826,7 @@
      "hece": "ba",
      "nota": "E4",
      "midi": 64,
-     "baslangic": 139.762,
+     "baslangic": 132.143,
      "sure": 0.238
     },
     {
@@ -2126,7 +1834,313 @@
      "hece": "nın",
      "nota": "D4",
      "midi": 62,
+     "baslangic": 132.381,
+     "sure": 0.952
+    }
+   ]
+  },
+  {
+   "kita": 7,
+   "hayvan": "kedi",
+   "baslangic": 133.333,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 133.333,
+    "bitis": 137.143
+   },
+   "cevap1": {
+    "baslangic": 137.143,
+    "bitis": 139.048
+   },
+   "satir2": {
+    "soz": "Çiftliğinde bir kedisi var",
+    "baslangic": 139.048,
+    "bitis": 142.857
+   },
+   "cevap2": {
+    "baslangic": 142.857,
+    "bitis": 144.762
+   },
+   "hayvan_sesi": {
+    "baslangic": 144.762,
+    "bitis": 148.571,
+    "ses1_baslangic": 144.762,
+    "ses2_baslangic": 146.667
+   },
+   "diye": {
+    "soz": "diye miyavlar",
+    "baslangic": 148.571,
+    "bitis": 150.476
+   },
+   "satir3": {
+    "soz": "Çiftliğinde Ali Baba'nın",
+    "baslangic": 150.476,
+    "bitis": 154.286
+   },
+   "bitis": 154.286,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 133.333,
+     "sure": 0.238
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 133.571,
+     "sure": 0.238
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 133.81,
+     "sure": 0.238
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 134.048,
+     "sure": 0.238
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 134.286,
+     "sure": 0.476
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 134.762,
+     "sure": 0.476
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 135.238,
+     "sure": 0.476
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 135.714,
+     "sure": 0.238
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 135.952,
+     "sure": 0.238
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 136.19,
+     "sure": 0.952
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 139.048,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 139.524,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 139.762,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "G4",
+     "midi": 67,
      "baslangic": 140.0,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "bir",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 140.476,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "ke",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 140.952,
+     "sure": 0.476
+    },
+    {
+     "satir": 2,
+     "hece": "di",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 141.429,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "si",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 141.667,
+     "sure": 0.238
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 141.905,
+     "sure": 0.952
+    },
+    {
+     "satir": "diye",
+     "hece": "di",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 148.571,
+     "sure": 0.238
+    },
+    {
+     "satir": "diye",
+     "hece": "ye",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 148.81,
+     "sure": 0.238
+    },
+    {
+     "satir": "diye",
+     "hece": "mi",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 149.048,
+     "sure": 0.238
+    },
+    {
+     "satir": "diye",
+     "hece": "yav",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 149.286,
+     "sure": 0.238
+    },
+    {
+     "satir": "diye",
+     "hece": "lar",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 149.524,
+     "sure": 0.714
+    },
+    {
+     "satir": 3,
+     "hece": "Çift",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 150.476,
+     "sure": 0.476
+    },
+    {
+     "satir": 3,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 150.952,
+     "sure": 0.238
+    },
+    {
+     "satir": 3,
+     "hece": "ğin",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 151.19,
+     "sure": 0.238
+    },
+    {
+     "satir": 3,
+     "hece": "de",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 151.429,
+     "sure": 0.476
+    },
+    {
+     "satir": 3,
+     "hece": "A",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 151.905,
+     "sure": 0.476
+    },
+    {
+     "satir": 3,
+     "hece": "li",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 152.381,
+     "sure": 0.476
+    },
+    {
+     "satir": 3,
+     "hece": "Ba",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 152.857,
+     "sure": 0.238
+    },
+    {
+     "satir": 3,
+     "hece": "ba",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 153.095,
+     "sure": 0.238
+    },
+    {
+     "satir": 3,
+     "hece": "nın",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 153.333,
      "sure": 0.952
     }
    ]
