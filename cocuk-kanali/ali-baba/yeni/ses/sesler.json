@@ -25,8 +25,8 @@
    "aciklama": "iki farklı möö (aynı kayıt)",
    "kita": 1,
    "bosluk_sn": [
-    19.048,
-    22.857
+    17.91,
+    21.493
    ],
    "cagrilar": [
     {
@@ -37,11 +37,11 @@
      "dosya": "ses/kirpilmis/inek_1.wav",
      "sure_sn": 1.16,
      "yerlesim_sn": [
-      19.028,
-      20.188
+      17.87,
+      19.03
      ],
-     "rms_dBFS": -15.6,
-     "altyapidan_fark_dB": 15.8
+     "rms_dBFS": -13.9,
+     "altyapidan_fark_dB": 14.0
     },
     {
      "kirpma_sn": [
@@ -51,11 +51,11 @@
      "dosya": "ses/kirpilmis/inek_2.wav",
      "sure_sn": 1.18,
      "yerlesim_sn": [
-      20.933,
-      22.113
+      19.661,
+      20.841
      ],
-     "rms_dBFS": -15.5,
-     "altyapidan_fark_dB": 15.8
+     "rms_dBFS": -13.5,
+     "altyapidan_fark_dB": 14.4
     }
    ]
   },
@@ -76,8 +76,8 @@
    "aciklama": "aynı meleme iki kez",
    "kita": 2,
    "bosluk_sn": [
-    40.0,
-    43.81
+    37.612,
+    41.194
    ],
    "cagrilar": [
     {
@@ -88,11 +88,11 @@
      "dosya": "ses/kirpilmis/koyun_1.wav",
      "sure_sn": 1.29,
      "yerlesim_sn": [
-      39.98,
-      41.27
+      37.572,
+      38.862
      ],
      "rms_dBFS": -16.0,
-     "altyapidan_fark_dB": 15.3
+     "altyapidan_fark_dB": 11.9
     },
     {
      "kirpma_sn": [
@@ -102,11 +102,11 @@
      "dosya": "ses/kirpilmis/koyun_2.wav",
      "sure_sn": 1.29,
      "yerlesim_sn": [
-      41.885,
-      43.175
+      39.363,
+      40.653
      ],
      "rms_dBFS": -16.0,
-     "altyapidan_fark_dB": 15.3
+     "altyapidan_fark_dB": 11.9
     }
    ]
   },
@@ -127,8 +127,8 @@
    "aciklama": "aynı kişneme iki kez, sonu 1,7 sn'de fade ile kısaltıldı",
    "kita": 3,
    "bosluk_sn": [
-    60.952,
-    64.762
+    57.313,
+    60.896
    ],
    "cagrilar": [
     {
@@ -139,11 +139,11 @@
      "dosya": "ses/kirpilmis/at_1.wav",
      "sure_sn": 1.7,
      "yerlesim_sn": [
-      60.932,
-      62.632
+      57.273,
+      58.973
      ],
-     "rms_dBFS": -15.3,
-     "altyapidan_fark_dB": 16.1
+     "rms_dBFS": -15.2,
+     "altyapidan_fark_dB": 12.7
     },
     {
      "kirpma_sn": [
@@ -153,11 +153,11 @@
      "dosya": "ses/kirpilmis/at_2.wav",
      "sure_sn": 1.7,
      "yerlesim_sn": [
-      62.837,
-      64.537
+      59.064,
+      60.764
      ],
-     "rms_dBFS": -15.3,
-     "altyapidan_fark_dB": 16.1
+     "rms_dBFS": -15.2,
+     "altyapidan_fark_dB": 12.7
     }
    ]
   },
@@ -182,8 +182,8 @@
    "aciklama": "aynı ötüş iki kez, sonu 1,7 sn'de fade ile kısaltıldı",
    "kita": 4,
    "bosluk_sn": [
-    81.905,
-    85.714
+    77.015,
+    80.597
    ],
    "cagrilar": [
     {
@@ -194,11 +194,11 @@
      "dosya": "ses/kirpilmis/horoz_1.wav",
      "sure_sn": 1.7,
      "yerlesim_sn": [
-      81.885,
-      83.585
+      76.975,
+      78.675
      ],
-     "rms_dBFS": -15.5,
-     "altyapidan_fark_dB": 15.8
+     "rms_dBFS": -13.5,
+     "altyapidan_fark_dB": 14.5
     },
     {
      "kirpma_sn": [
@@ -208,11 +208,11 @@
      "dosya": "ses/kirpilmis/horoz_2.wav",
      "sure_sn": 1.7,
      "yerlesim_sn": [
-      83.79,
-      85.49
+      78.766,
+      80.466
      ],
-     "rms_dBFS": -15.5,
-     "altyapidan_fark_dB": 15.8
+     "rms_dBFS": -13.5,
+     "altyapidan_fark_dB": 14.5
     }
    ]
   },
@@ -253,8 +253,8 @@
    "aciklama": "vak vak + vak vak: 1-2. ve 3-4. vaklamalar",
    "kita": 5,
    "bosluk_sn": [
-    102.857,
-    106.667
+    96.716,
+    100.299
    ],
    "cagrilar": [
     {
@@ -265,11 +265,11 @@
      "dosya": "ses/kirpilmis/ordek_1.wav",
      "sure_sn": 1.25,
      "yerlesim_sn": [
-      102.837,
-      104.087
+      96.676,
+      97.926
      ],
      "rms_dBFS": -18.9,
-     "altyapidan_fark_dB": 12.4
+     "altyapidan_fark_dB": 8.4
     },
     {
      "kirpma_sn": [
@@ -279,11 +279,11 @@
      "dosya": "ses/kirpilmis/ordek_2.wav",
      "sure_sn": 1.24,
      "yerlesim_sn": [
-      104.742,
-      105.982
+      98.467,
+      99.707
      ],
      "rms_dBFS": -18.5,
-     "altyapidan_fark_dB": 12.9
+     "altyapidan_fark_dB": 8.8
     }
    ]
   },
@@ -316,8 +316,8 @@
    "aciklama": "hav hav + hav hav: 1-2. ve 3-4. havlamalar",
    "kita": 6,
    "bosluk_sn": [
-    123.81,
-    127.619
+    116.418,
+    120.0
    ],
    "cagrilar": [
     {
@@ -328,11 +328,11 @@
      "dosya": "ses/kirpilmis/kopek_1.wav",
      "sure_sn": 0.72,
      "yerlesim_sn": [
-      123.79,
-      124.51
+      116.378,
+      117.098
      ],
-     "rms_dBFS": -18.4,
-     "altyapidan_fark_dB": 13.0
+     "rms_dBFS": -16.4,
+     "altyapidan_fark_dB": 11.1
     },
     {
      "kirpma_sn": [
@@ -342,11 +342,11 @@
      "dosya": "ses/kirpilmis/kopek_2.wav",
      "sure_sn": 0.75,
      "yerlesim_sn": [
-      125.695,
-      126.445
+      118.169,
+      118.919
      ],
-     "rms_dBFS": -18.6,
-     "altyapidan_fark_dB": 12.8
+     "rms_dBFS": -16.6,
+     "altyapidan_fark_dB": 10.9
     }
    ]
   },
@@ -371,8 +371,8 @@
    "aciklama": "iki farklı miyav (aynı kayıt)",
    "kita": 7,
    "bosluk_sn": [
-    144.762,
-    148.571
+    136.119,
+    139.701
    ],
    "cagrilar": [
     {
@@ -383,11 +383,11 @@
      "dosya": "ses/kirpilmis/kedi_1.wav",
      "sure_sn": 0.72,
      "yerlesim_sn": [
-      144.742,
-      145.462
+      136.079,
+      136.799
      ],
-     "rms_dBFS": -15.9,
-     "altyapidan_fark_dB": 15.4
+     "rms_dBFS": -15.4,
+     "altyapidan_fark_dB": 12.0
     },
     {
      "kirpma_sn": [
@@ -397,11 +397,11 @@
      "dosya": "ses/kirpilmis/kedi_2.wav",
      "sure_sn": 0.66,
      "yerlesim_sn": [
-      146.647,
-      147.307
+      137.87,
+      138.53
      ],
-     "rms_dBFS": -15.6,
-     "altyapidan_fark_dB": 15.7
+     "rms_dBFS": -14.8,
+     "altyapidan_fark_dB": 12.6
     }
    ]
   }

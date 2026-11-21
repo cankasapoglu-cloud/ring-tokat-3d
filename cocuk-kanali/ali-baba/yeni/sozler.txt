@@ -1,10 +1,11 @@
 ALİ BABA'NIN ÇİFTLİĞİ
 (Ezgi: Old MacDonald Had a Farm — geleneksel)
-Sol majör, 4/4, 126 BPM. Giriş 4 ölçü, her kıta 11 ölçü, bitiş 4 ölçü.
+4/4, 134 BPM. Sol majör; 5. kıtadan itibaren bir tam ses yukarı (La majör).
+Giriş 4 ölçü, her kıta 11 ölçü, bitiş 4 ölçü.
 
 [Giriş — 4 ölçü müzik]
 
-1. KITA — inek  (7.62 sn)
+1. KITA — inek  (7.16 sn, G majör)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde inekleri var
@@ -13,7 +14,7 @@ Ali Baba'nın bir çiftliği var
 diye bağırır
 Çiftliğinde Ali Baba'nın
 
-2. KITA — koyun  (28.57 sn)
+2. KITA — koyun  (26.87 sn, G majör)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde koyunları var
@@ -22,7 +23,7 @@ Ali Baba'nın bir çiftliği var
 diye meler
 Çiftliğinde Ali Baba'nın
 
-3. KITA — at  (49.52 sn)
+3. KITA — at  (46.57 sn, G majör)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde bir de atı var
@@ -31,7 +32,7 @@ Ali Baba'nın bir çiftliği var
 diye kişner
 Çiftliğinde Ali Baba'nın
 
-4. KITA — horoz  (70.48 sn)
+4. KITA — horoz  (66.27 sn, G majör)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde horozları var
@@ -40,7 +41,7 @@ Ali Baba'nın bir çiftliği var
 diye öter
 Çiftliğinde Ali Baba'nın
 
-5. KITA — ördek  (91.43 sn)
+5. KITA — ördek  (85.97 sn, A majör)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde ördekleri var
@@ -49,7 +50,7 @@ Ali Baba'nın bir çiftliği var
 diye bağırır
 Çiftliğinde Ali Baba'nın
 
-6. KITA — köpek  (112.38 sn)
+6. KITA — köpek  (105.67 sn, A majör)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde köpekleri var
@@ -58,7 +59,7 @@ Ali Baba'nın bir çiftliği var
 diye havlar
 Çiftliğinde Ali Baba'nın
 
-7. KITA — kedi  (133.33 sn)
+7. KITA — kedi  (125.37 sn, A majör)
 Ali Baba'nın bir çiftliği var
    (müzik cevabı)
 Çiftliğinde bir kedisi var
@@ -67,4 +68,4 @@ Ali Baba'nın bir çiftliği var
 diye miyavlar
 Çiftliğinde Ali Baba'nın
 
-[Bitiş — 4 ölçü müzik, "ta-da"]
+[Bitiş — 4 ölçü müzik: cevap x2, trampet fanfarı + davul rulosu, final vuruşu]
