@@ -66,26 +66,28 @@ def regions():
     """Time regions on the mix timeline.
     sung_words : word intervals of the words file (all 105 words, incl. the sung animal sounds)
     sung_bars  : the 4 sung bars of every verse
-    inst       : purely instrumental stretches, with safety margins against the voice tail:
-                 intro 0.30 .. first sung onset - 0.20 s; per verse bar 4 + 0.50 s .. next verse downbeat - 0.15 s;
-                 outro: last sung bar end + 0.50 s .. 104.5 s
+    inst       : purely instrumental stretches, with safety margins against the voice:
+                 intro 0.30 s .. first verse downbeat - 0.70 s; per verse: end of sung bar 3 + 0.50 s .. next verse
+                 downbeat - 0.70 s; outro: end of the last sung bar + 0.50 s .. 104.5 s
     tails      : the first 0.5 s after the last sung bar of every verse (voice release / reverb tail)
+    pre        : the 0.70 .. 0.05 s before every verse downbeat (the singer's breath intake sits here: it is voice,
+                 not bleed, so it is kept out of 'inst' and reported separately)
     """
     w = load_words()
     sung_words = [(x['start'], x['end']) for x in w]
-    sung_bars, inst, tails = [], [], []
-    first_on = min(s['onset'] for s in TEMPO['segments'])
-    inst.append((0.30, first_on - 0.20))
+    sung_bars, inst, tails, pre = [], [], [], []
+    inst.append((0.30, VERSE_DB[0] - 0.70))
     for i, d in enumerate(VERSE_DB):
         sung_bars.append((d, d + 4 * BAR))
+        pre.append((d - 0.70, d - 0.05))
         end = VERSE_DB[i + 1] if i + 1 < len(VERSE_DB) else None
         a = d + 4 * BAR
         tails.append((a, a + 0.5))
         if end is not None:
-            inst.append((a + 0.5, end - 0.15))
+            inst.append((a + 0.5, end - 0.70))
         else:
             inst.append((a + 0.5, DUR - 0.5))
-    return dict(sung_words=sung_words, sung_bars=sung_bars, inst=inst, tails=tails)
+    return dict(sung_words=sung_words, sung_bars=sung_bars, inst=inst, tails=tails, pre=pre)
 
 
 def mask_from(intervals, n, sr=SR):
