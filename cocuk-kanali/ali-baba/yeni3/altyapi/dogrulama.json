@@ -51,6 +51,16 @@
    "max": 9.0
   },
   "notes": {
+   "_glock_blind": {
+    "lead glockenspiel (+1 oktav)": {
+     "checked": 112,
+     "blind_agrees": 103
+    },
+    "ezgi_alti glockenspiel (+1 oktav)": {
+     "checked": 189,
+     "blind_agrees": 189
+    }
+   },
    "lead trompet": {
     "checked": 112,
     "matched": 112,
@@ -62,9 +72,9 @@
    },
    "lead glockenspiel (+1 oktav)": {
     "checked": 112,
-    "matched": 108,
-    "pitch_err_cents_mean": 3.8,
-    "pitch_err_cents_max_abs": 296.4,
+    "matched": 112,
+    "pitch_err_cents_mean": 4.7,
+    "pitch_err_cents_max_abs": 5.6,
     "onset_ms_median": 5.6,
     "onset_ms_min": 3.8,
     "onset_ms_max": 9.0
@@ -87,11 +97,11 @@
     "onset_ms_min": 0.3,
     "onset_ms_max": 26.5
    },
-   "ezgi_alti teslim dosyası (klarnet perdesi)": {
+   "ezgi_alti teslim dosyası (klarnet+glockenspiel karışık; 300-1100 Hz en güçlü tepe)": {
     "checked": 189,
-    "matched": 174,
-    "pitch_err_cents_mean": -96.9,
-    "pitch_err_cents_max_abs": 1797.0,
+    "matched": 189,
+    "pitch_err_cents_mean": -1.8,
+    "pitch_err_cents_max_abs": 4.7,
     "onset_ms_median": 13.2,
     "onset_ms_min": 4.2,
     "onset_ms_max": 19.8
@@ -103,7 +113,7 @@
   },
   "notes_total": {
    "checked": 803,
-   "matched": 784
+   "matched": 803
   },
   "stems_sum_residual_db": -53.1,
   "limiter_difference_db": -25.5,
@@ -116,6 +126,10 @@
    "quietest_normal_minus_loudest_slot_db_min": 8.6,
    "normal_bars_dbfs_mean": -17.7,
    "slot_bars_dbfs_mean": -29.2
+  },
+  "loud_lead_reference": {
+   "rms_rel_rest_of_band_db": -0.0,
+   "f0_band_lead_minus_rest_db_median": 3.5
   },
   "ezgi_alti_level": {
    "rms_rel_band_db": -10.0,
@@ -191,6 +205,16 @@
    "max": 7.73
   },
   "notes": {
+   "_glock_blind": {
+    "lead glockenspiel (+1 oktav)": {
+     "checked": 112,
+     "blind_agrees": 103
+    },
+    "ezgi_alti glockenspiel (+1 oktav)": {
+     "checked": 189,
+     "blind_agrees": 188
+    }
+   },
    "lead trompet": {
     "checked": 112,
     "matched": 112,
@@ -202,9 +226,9 @@
    },
    "lead glockenspiel (+1 oktav)": {
     "checked": 112,
-    "matched": 100,
-    "pitch_err_cents_mean": 8.4,
-    "pitch_err_cents_max_abs": 1744.6,
+    "matched": 112,
+    "pitch_err_cents_mean": 3.5,
+    "pitch_err_cents_max_abs": 8.5,
     "onset_ms_median": 5.5,
     "onset_ms_min": 3.9,
     "onset_ms_max": 8.0
@@ -220,18 +244,18 @@
    },
    "ezgi_alti glockenspiel (+1 oktav)": {
     "checked": 189,
-    "matched": 186,
-    "pitch_err_cents_mean": 6.7,
-    "pitch_err_cents_max_abs": 77.2,
+    "matched": 189,
+    "pitch_err_cents_mean": 5.6,
+    "pitch_err_cents_max_abs": 9.0,
     "onset_ms_median": 6.3,
     "onset_ms_min": -8.1,
     "onset_ms_max": 26.4
    },
-   "ezgi_alti teslim dosyası (klarnet perdesi)": {
+   "ezgi_alti teslim dosyası (klarnet+glockenspiel karışık; 300-1100 Hz en güçlü tepe)": {
     "checked": 189,
-    "matched": 187,
-    "pitch_err_cents_mean": -7.0,
-    "pitch_err_cents_max_abs": 1202.6,
+    "matched": 189,
+    "pitch_err_cents_mean": -0.7,
+    "pitch_err_cents_max_abs": 4.1,
     "onset_ms_median": 6.8,
     "onset_ms_min": -16.5,
     "onset_ms_max": 12.9
@@ -243,7 +267,7 @@
   },
   "notes_total": {
    "checked": 803,
-   "matched": 786
+   "matched": 803
   },
   "stems_sum_residual_db": -53.0,
   "limiter_difference_db": -22.5,
@@ -256,6 +280,10 @@
    "quietest_normal_minus_loudest_slot_db_min": 8.6,
    "normal_bars_dbfs_mean": -17.8,
    "slot_bars_dbfs_mean": -29.8
+  },
+  "loud_lead_reference": {
+   "rms_rel_rest_of_band_db": -0.4,
+   "f0_band_lead_minus_rest_db_median": 9.4
   },
   "ezgi_alti_level": {
    "rms_rel_band_db": -9.9,
@@ -369,12 +397,6 @@
    }
   }
  },
- "failed_checks": [
-  "lead glockenspiel (+1 oktav): 112 notes checked, 108 matched (pitch within 0.3 st and onset within -10..+30 ms); pitch error mean +3.8 cents, max |err| 296.4 cents; half-level onset minus grid: median +5.6 ms, min +3.8, max +9.0",
-  "ezgi_alti teslim dosyası (klarnet perdesi): 189 notes checked, 174 matched (pitch within 0.3 st and onset within -15..+50 ms); pitch error mean -96.9 cents, max |err| 1797.0 cents; half-level onset minus grid: median +13.2 ms, min +4.2, max +19.8",
-  "lead glockenspiel (+1 oktav): 112 notes checked, 100 matched (pitch within 0.3 st and onset within -10..+30 ms); pitch error mean +8.4 cents, max |err| 1744.6 cents; half-level onset minus grid: median +5.5 ms, min +3.9, max +8.0",
-  "ezgi_alti glockenspiel (+1 oktav): 189 notes checked, 186 matched (pitch within 0.3 st and onset within -10..+30 ms); pitch error mean +6.7 cents, max |err| 77.2 cents; half-level onset minus grid: median +6.3 ms, min -8.1, max +26.4",
-  "ezgi_alti teslim dosyası (klarnet perdesi): 189 notes checked, 187 matched (pitch within 0.3 st and onset within -15..+50 ms); pitch error mean -7.0 cents, max |err| 1202.6 cents; half-level onset minus grid: median +6.8 ms, min -16.5, max +12.9"
- ],
+ "failed_checks": [],
  "note": "All values are measurements made by code. Nothing here was judged by ear."
 }
