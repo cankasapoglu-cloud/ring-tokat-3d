@@ -1,0 +1,34 @@
+{
+ "02_kanca_b": {
+  "prompt": "The yellow bus drives forward along the road with a gentle bouncy motion, its wheels turning. The kitten holds the steering wheel and smiles; the bunny, the puppy and the piglet wave from the windows. Clouds drift slowly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465870367220033",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ },
+ "01_kanca_a": {
+  "prompt": "The kitten in the bus doorway waves his raised paw energetically back and forth in a welcoming gesture and bounces lightly on his feet, smiling. Lively, smooth 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465865552892216",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ },
+ "04_kapi": {
+  "prompt": "The kitten pushes the red lever with his paw, the bus door finishes folding open, and he beckons with his other paw, nodding and smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465869206094152",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ },
+ "03_durak": {
+  "prompt": "The bunny, the puppy and the piglet hop up and down happily in place, landing and jumping again in rhythm. In the background the yellow bus rolls slowly closer. Lively, bouncy 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "465868706476370",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ }
+}

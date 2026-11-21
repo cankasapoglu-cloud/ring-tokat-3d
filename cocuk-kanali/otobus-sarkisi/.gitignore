@@ -1,0 +1,4 @@
+# geçici istek dosyaları
+klip/_*.json
+kare/_*.json
+*.yanit.bin
