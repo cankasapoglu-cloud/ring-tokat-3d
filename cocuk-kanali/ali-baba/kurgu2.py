@@ -8,7 +8,7 @@ AD = sys.argv[1] if len(sys.argv) > 1 else "v2_1"
 FPS = 24
 # kıta sırası: (yazı adı, sunum klibi, ses klibi, dans klibi)
 KITA = [("inek", 2, 3, 4), ("koyun", 5, 6, 7), ("at", 16, 17, 18), ("horoz", 19, 20, 21),
-        ("ordek", 8, 9, 10), ("kopek", 11, 12, 13), ("kedi", 14, 15, None)]
+        ("ordek", 8, 9, 10), ("kopek", 11, 12, 13), ("kedi", 14, 15, 1)]   # kapanışta giriş sahnesi yeniden kullanılır
 
 
 def sure(f):
