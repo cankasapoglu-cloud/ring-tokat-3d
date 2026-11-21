@@ -1,4 +1,4 @@
-# yeniden üretilebilen büyük ara dosyalar (altyapi/kod/build.py, 02_karisim.py)
-altyapi/rehber_G.wav
+# yeniden üretilebilen büyük ara dosyalar (altyapi/kod/build.py, 01_vokal.py, 02_karisim.py)
+altyapi/rehber_*.wav
 *_islenmis.wav
 _gecici_*

@@ -464,5 +464,27 @@
   "dinle_sn": 61.6,
   "donus": 0,
   "zaman": "17:54:01"
+ },
+ "b05c_citirti": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b05c_citirti.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 109.8,
+  "dinle_sn": 62.0,
+  "donus": 0,
+  "zaman": "17:56:58"
+ },
+ "b05d_citirti_kisik_dosya": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b05d_citirti_kisik_dosya.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 115.1,
+  "dinle_sn": 60.3,
+  "donus": 0,
+  "zaman": "18:00:32"
  }
 }

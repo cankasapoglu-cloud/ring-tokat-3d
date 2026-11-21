@@ -790,7 +790,7 @@
    "dosya": "b01b_detone_100c",
    "sonuc": "tek raporla yakalandı",
    "guc": null,
-   "aracin_ozet_satiri": "Vokal altyapıyla aynı armonide mi: iyi → sorun; Çakışan uzun notalar: iyi → sorun",
+   "aracin_ozet_satiri": "Çakışan uzun notalar: iyi → sorun; Vokal altyapıyla aynı armonide mi: iyi → sorun",
    "olcu": "armonik destek farkı",
    "taban": 0.249,
    "bozuk": -0.056,
@@ -961,6 +961,66 @@
    "not": "Hiçbir sayı oynamadı, panoda da görünmüyor (asıl ve tıklı panolar yan yana aynı). 'Tepe' satırı çıktı ama o satır asıl kayıtta da var; tıkla ilgisi yok. Not: bu tık çok kısa (0,18 ms); tiz bantta çoğu yerde müziğin 12 dB üstünde, bütün bantta müziğin içinde kayboluyor."
   },
   {
+   "no": "5b",
+   "kusur": "Her 3 saniyede bir kısık tık (36 adet, genlik 0,3)",
+   "dosya": "b05b_tik_kisik",
+   "sonuc": "kaçtı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "gerçek tepe (dBTP)",
+   "taban": 0.0,
+   "bozuk": 0.1,
+   "fark": 0.1,
+   "gurultu": 1.2,
+   "kat": 0.1,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": false,
+   "not": "Ek deneme. Kısık tık: çoğu yerde müzik örter, duyulup duyulmadığı şüpheli; kaçması aracın suçu sayılmaz."
+  },
+  {
+   "no": "5c",
+   "kusur": "Her 3 saniyede bir 5 ms'lik çıtırtı (36 adet, tepe 0,8)",
+   "dosya": "b05c_citirti",
+   "sonuc": "tek raporla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "Kırpılma: yok → sorun",
+   "olcu": "tam ölçekteki örnek sayısı",
+   "taban": 0,
+   "bozuk": 100,
+   "fark": 100.0,
+   "gurultu": 2.0,
+   "kat": 50.0,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": false,
+   "not": "Ek deneme. Şüphe götürmeyecek kadar duyulur çıtırtı (5 ms, tiz bantta müziğin 27 dB üstünde, 36 kez). Araç 'Kırpılma' satırını ❌ yaptı ve 36 çıtırtıdan 3'ünün saniyesini verdi; ama yalnızca çıtırtı dosyayı tam ölçeğin üstüne ittiği için (aşağıdaki 5d'ye bakın)."
+  },
+  {
+   "no": "5d",
+   "kusur": "Aynı çıtırtı, bütün dosya 6 dB kısık (tam ölçeğe dayanmıyor)",
+   "dosya": "b05d_citirti_kisik_dosya",
+   "sonuc": "yalnız karşılaştırmayla yakalandı",
+   "guc": null,
+   "aracin_ozet_satiri": "ilgili satır değişmedi",
+   "olcu": "tepe faktörü (dB)",
+   "taban": 14.9,
+   "bozuk": 18.4,
+   "fark": 3.5,
+   "gurultu": 0.3,
+   "kat": 11.7,
+   "ikinci_olcu": null,
+   "ilgisiz_kotulesen_satirlar": [
+    "Ses yüksekliği",
+    "Vokal / altyapı dengesi"
+   ],
+   "kanallar_elde_yolu": null,
+   "sayima_dahil": false,
+   "not": "Ek deneme. 5c'nin aynısı, bütün dosya 6 dB kısılmış: çıtırtı müziğe göre aynı yükseklikte ama hiçbir örnek tam ölçeğe dayanmıyor. İlgili satırların hiçbiri oynamadı; yalnız tepe faktörü arttı. Yani araç çıtırtıyı değil kırpılmayı görüyor."
+  },
+  {
    "no": "6a",
    "kusur": "Vokal 6 dB kısık",
    "dosya": "b06a_vokal_eksi6",
@@ -1077,7 +1137,7 @@
    "dosya": "b10_alcak_geciren_4k",
    "sonuc": "tek raporla yakalandı",
    "guc": null,
-   "aracin_ozet_satiri": "Yapaylık işaretleri (vekil): bilgi → dikkat; Enerji / coşku: iyi → dikkat",
+   "aracin_ozet_satiri": "Enerji / coşku: iyi → dikkat; Yapaylık işaretleri (vekil): bilgi → dikkat",
    "olcu": "üst frekans sınırı (Hz)",
    "taban": 18755,
    "bozuk": 5189,
@@ -1497,6 +1557,37 @@
    }
   ]
  },
+ "kor_noktalar": [
+  "Yarım vuruş (bir sekizlik) geç ya da erken vokal: ritim ölçüsü sekizlik ızgaraya göre çalıştığı için hiç oynamaz; kanallar elde olsa da aynı.",
+  "Çeyrek vuruş geç vokal: 'Ritme oturma' satırı ✅ kalır (durum yalnız sıkılığa bakar); kayma sayısı görünür ama yönü belirsizdir.",
+  "Tık / çıtırtı: doğrudan arayan ölçü yok; yalnız dosyayı tam ölçeğin üstüne iterse 'Kırpılma' olarak görünür. Panolarda da seçilmiyor.",
+  "Sözcük sonu kesikleri: Scribe eksik sesi tamamlayıp doğru sözcüğü yazar (hata oranı %0). Yalnız küçük, adı konamayan oynamalar kalır.",
+  "Vokoderle esnetme dokusu: yapaylık satırı susar (karışımda da kuru vokalde de); yalnız aynı vokalin iyi haliyle karşılaştırınca zarf titremesi ve kalite tahminleri düşer.",
+  "Yavaşlatılmış şarkı (%80 tempo): Enerji satırı ✅ kalır; tempo sayısı doğru ama neye göre yavaş olduğunu araç bilmez.",
+  "Fazla açık vokal (+6 dB): fark doğru ölçülür, eşik (+9 dB) aşılmadığı için uyarı çıkmaz.",
+  "Yanlış söz: yalnız beklenen söz dosyası ve ücretli döküm varsa görülür (110 sn'lik şarkı ≈ 606 kredi).",
+  "Vokal/altyapı dengesi ölçüsü (--ayir yolunda) dosyanın tepe düzeyine duyarlı: aynı karışımda −0,8 … −6,8 dB arasında değerler çıktı.",
+  "Kabul edilmiş kayıtlarda yanlış alarm: 'Ritme oturma' ikisinde de ⚠️; 'aynı armonide mi' El Yıkama'da ❌ (en iyi kaydırma −4); 'Tepe' 0 dBTP çevresinde yanıp sönüyor.",
+  "Sınanamayanlar: yabancı aksan, sesin hoşluğu, 'ninni gibi' hissi. Bunlar için kodla kusur üretilemedi; araç da zaten ölçemediğini söylüyor."
+ ],
+ "araca_oneriler": [
+  "Ritim satırının durumuna kaymayı kat: |ortalama kayma| ≥ 60 ms ya da '40 ms içinde' < %25 ise ⚠️ (kabul edilmiş iki kayıtta +26/+29 ms ve %48/%61; çeyrek vuruş geç sürümde −109 ms ve %6).",
+  "R 0,30–0,55 arasını 'bilgi' yap: kabul edilmiş iki kayıt da (0,36 ve 0,43) bu aralıkta ve ⚠️ alıyor.",
+  "Yarım vuruş kaymaları için ızgara yetmez: üretim planındaki satır başlangıç saniyeleri ile Scribe'ın sözcük saniyelerini karşılaştır (plan elde olduğunda).",
+  "Tık dedektörü ekle: 6–16 kHz bandında 2 ms'lik pencerelerde çevresinin 10 dB'den fazla üstüne çıkan tekil patlamaları say ve saniyelerini yaz.",
+  "Sözcük sonu kesikleri için: vokal kanalında düzeyin 10 ms içinde 30 dB'den fazla düştüğü 'dik bitişleri' say; panoda satır aralarını işaretle.",
+  "Tempo için hedef ver: --bpm ile verilen hedef tempodan %5'ten fazla sapma varsa ⚠️.",
+  "'Aynı armonide mi' satırında ❌ için iki koşulu birlikte ara: destek farkı ≤ +0,05 VE en iyi kaydırma 0 değil. Destek açıkça artıyken (+0,13) tek başına kaydırma ❌ yapmasın.",
+  "Denge ölçüsünü ayırıcının kanal başına tepe normalleştirmesinden bağımsız kıl (kanalları karışıma en küçük kareyle oturtup öyle ölç) ya da belirsizliği ±3 dB diye yaz.",
+  "Esnetme / yapaylık için mutlak eşik önerilemiyor: zarf titremesi kabul edilmiş El Yıkama'da −11,7 dB, esnetilmiş sürümlerde −12,9 … −14,2 dB; UTMOS22 El Yıkama'da 1,31, esnetilmişlerde 1,28–1,30. Yalnız aynı vokalin iki hali karşılaştırılmalı."
+ ],
+ "sinamanin_yan_etkileri": [
+  "Asıl kayıt zaten tam ölçeğe dayanıyor (+0,5 dBTP). Vokale dokunan işlemler tepeleri biraz oynattığı için 3a, 3b, 4 ve 6b sürümlerinde ilgisiz 'Kırpılma' ❌ satırı, birçok sürümde 'Tepe' ⚠️ satırı çıktı. Bunlar yakalama sayılmadı.",
+  "Detone sürümlerinde perde kaydırma vokali 0,6 dB kıstı (ölçüm gürültüsü içinde).",
+  "Esnetmenin ilk denemesinde vokal 5–7 dB kısılmıştı; araç bunu denge satırında ⚠️ ile gösterdi. Tek kusur kalsın diye düzey eşitlenip yeniden ölçüldü; ilk raporlar raporlar_eski/ altında.",
+  "6a ve 6b'de karışımın genel düzeyi tabanla eşitlendi (yalnız vokal/altyapı oranı değişsin diye).",
+  "Karar kuralında bir düzeltme yapıldı ('Tepe' satırı yüzünden); degerlendir.py başında yazılı."
+ ],
  "kredi": {
   "bu_sinamanin_harcadigi": 345.5,
   "cagrilar": [

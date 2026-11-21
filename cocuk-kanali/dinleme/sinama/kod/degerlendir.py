@@ -119,6 +119,8 @@ KUSUR = [
      "olcu": ["tepe", "tam_olcek", "tepe_faktoru"], "sorun": ["kırpılma / sessizlik"]},
     {"no": "5c", "ad": "b05c_citirti", "kusur": "Her 3 saniyede bir 5 ms'lik çıtırtı (36 adet, tepe 0,8)", "satir": ["Kırpılma", "Tepe"],
      "olcu": ["tepe", "tam_olcek", "tepe_faktoru"], "sorun": ["kırpılma / sessizlik"]},
+    {"no": "5d", "ad": "b05d_citirti_kisik_dosya", "kusur": "Aynı çıtırtı, bütün dosya 6 dB kısık (tam ölçeğe dayanmıyor)", "satir": ["Kırpılma", "Tepe"],
+     "olcu": ["tepe", "tam_olcek", "tepe_faktoru"], "sorun": ["kırpılma / sessizlik"]},
     {"no": "6a", "ad": "b06a_vokal_eksi6", "kusur": "Vokal 6 dB kısık", "satir": ["Vokal / altyapı dengesi"], "olcu": ["denge"], "sorun": ["gömük vokal"]},
     {"no": "6b", "ad": "b06b_vokal_arti6", "kusur": "Vokal 6 dB fazla açık", "satir": ["Vokal / altyapı dengesi"], "olcu": ["denge"], "sorun": []},
     {"no": "7", "ad": "b07_satir_sonu_kesik", "kusur": "Her satırın son sözcüğü 150 ms erken kesilmiş", "satir": ["Sözler"],

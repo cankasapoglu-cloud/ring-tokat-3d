@@ -2041,6 +2041,178 @@
    "hatalar": [],
    "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx, önbellekten)"
   },
+  "b05c_citirti": {
+   "olculer": {
+    "lufs": -12.6,
+    "tepe": 4.4,
+    "tepe_faktoru": 18.7,
+    "lra": 3.0,
+    "tam_olcek": 100,
+    "ust_frekans": 18981,
+    "tempo": 116.0,
+    "nabiz": 0.792,
+    "olay": 4.41,
+    "aki": 1.887,
+    "vurmali": 0.9,
+    "parlaklik": 2694.0,
+    "tiz_payi": -16.1,
+    "puan": 75.0,
+    "coca": 0.178,
+    "coca_tempo": 0.075,
+    "coca_kalite": 0.273,
+    "ninni": 0.0,
+    "ced_cosku": 0.129,
+    "denge": -0.8,
+    "vokalli": 0.579,
+    "sizinti": -17.8,
+    "destek": 0.493,
+    "kaydirma": 0,
+    "cent": 8.3,
+    "cent_isaretli": -3.7,
+    "y25": 88.9,
+    "akort_kaymasi": -3.7,
+    "izgara_R": 0.67,
+    "gam_ici": 0.761,
+    "akor_sesi": 0.724,
+    "cakisan": 0,
+    "ritim_R": 0.36,
+    "ritim_kayma": 29.0,
+    "ritim_40": 48.0,
+    "ritim16_R": 0.32,
+    "ritim16_kayma": 31.0,
+    "baslangic": 202,
+    "nota_sayisi": 125,
+    "nota_suresi": 0.19,
+    "oynaklik": 10.9,
+    "cok_duz": 0.03,
+    "vibrato": 0.2,
+    "gecis": 0.18,
+    "sesli_oran": 0.301,
+    "pyin_uyum": 93.9,
+    "yapay_isaret": 0,
+    "gecis_ms": 32.0,
+    "donmus": 0.0,
+    "benzerlik": 0.9824,
+    "unsuz_tiz": -11.4,
+    "vokal_ust": 10723,
+    "tiz_doku": 1.42,
+    "zarf": -8.9,
+    "dnsmos": 2.65,
+    "nisqa": 2.79,
+    "nisqa_kes": 4.42,
+    "nisqa_renk": 3.37,
+    "distillmos": 3.36,
+    "utmos": 1.49,
+    "ced_sarki": 0.079,
+    "ced_sentetik": 0.022,
+    "wer": null,
+    "hece": null,
+    "sorun_sayisi": 3
+   },
+   "ozet": {
+    "Ses yüksekliği": "iyi",
+    "Tepe": "dikkat",
+    "Kırpılma": "sorun",
+    "Enerji / coşku": "iyi",
+    "Vokal / altyapı dengesi": "iyi",
+    "Vokal altyapıyla aynı armonide mi": "iyi",
+    "Gam içi söyleme": "bilgi",
+    "Akort (detone mi)": "iyi",
+    "Çakışan uzun notalar": "iyi",
+    "Ritme oturma": "dikkat",
+    "Yapaylık işaretleri (vekil)": "bilgi"
+   },
+   "sorun_turleri": {
+    "kırpılma / sessizlik": 3
+   },
+   "hatalar": [],
+   "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx, önbellekten)"
+  },
+  "b05d_citirti_kisik_dosya": {
+   "olculer": {
+    "lufs": -18.7,
+    "tepe": -1.9,
+    "tepe_faktoru": 18.4,
+    "lra": 3.0,
+    "tam_olcek": 0,
+    "ust_frekans": 18981,
+    "tempo": 116.0,
+    "nabiz": 0.792,
+    "olay": 4.42,
+    "aki": 1.89,
+    "vurmali": 0.9,
+    "parlaklik": 2693.0,
+    "tiz_payi": -16.1,
+    "puan": 75.0,
+    "coca": 0.181,
+    "coca_tempo": 0.097,
+    "coca_kalite": 0.289,
+    "ninni": 0.0,
+    "ced_cosku": 0.095,
+    "denge": -6.8,
+    "vokalli": 0.574,
+    "sizinti": -24.2,
+    "destek": 0.397,
+    "kaydirma": 0,
+    "cent": 8.8,
+    "cent_isaretli": -4.6,
+    "y25": 88.8,
+    "akort_kaymasi": -4.9,
+    "izgara_R": 0.67,
+    "gam_ici": 0.88,
+    "akor_sesi": 0.758,
+    "cakisan": 0,
+    "ritim_R": 0.38,
+    "ritim_kayma": 27.0,
+    "ritim_40": 49.0,
+    "ritim16_R": 0.32,
+    "ritim16_kayma": 31.0,
+    "baslangic": 199,
+    "nota_sayisi": 118,
+    "nota_suresi": 0.19,
+    "oynaklik": 11.0,
+    "cok_duz": 0.04,
+    "vibrato": 0.2,
+    "gecis": 0.17,
+    "sesli_oran": 0.283,
+    "pyin_uyum": 95.1,
+    "yapay_isaret": 0,
+    "gecis_ms": 32.0,
+    "donmus": 0.0,
+    "benzerlik": 0.983,
+    "unsuz_tiz": -11.7,
+    "vokal_ust": 10723,
+    "tiz_doku": 1.4,
+    "zarf": -9.4,
+    "dnsmos": 2.64,
+    "nisqa": 2.69,
+    "nisqa_kes": 4.11,
+    "nisqa_renk": 2.89,
+    "distillmos": 3.35,
+    "utmos": 1.49,
+    "ced_sarki": 0.077,
+    "ced_sentetik": 0.018,
+    "wer": null,
+    "hece": null,
+    "sorun_sayisi": 2
+   },
+   "ozet": {
+    "Ses yüksekliği": "dikkat",
+    "Enerji / coşku": "iyi",
+    "Vokal / altyapı dengesi": "dikkat",
+    "Vokal altyapıyla aynı armonide mi": "iyi",
+    "Gam içi söyleme": "bilgi",
+    "Akort (detone mi)": "iyi",
+    "Çakışan uzun notalar": "iyi",
+    "Ritme oturma": "dikkat",
+    "Yapaylık işaretleri (vekil)": "bilgi"
+   },
+   "sorun_turleri": {
+    "gömük vokal": 2
+   },
+   "hatalar": [],
+   "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx, önbellekten)"
+  },
   "b06a_vokal_eksi6": {
    "olculer": {
     "lufs": -13.1,
@@ -4649,24 +4821,24 @@
     "karar": "tek raporla yakalandı",
     "kotulesen_ilgili_satirlar": [
      {
-      "konu": "Vokal altyapıyla aynı armonide mi",
+      "konu": "Çakışan uzun notalar",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      },
      {
-      "konu": "Çakışan uzun notalar",
+      "konu": "Vokal altyapıyla aynı armonide mi",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      }
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Vokal altyapıyla aynı armonide mi",
+      "konu": "Çakışan uzun notalar",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      },
      {
-      "konu": "Çakışan uzun notalar",
+      "konu": "Vokal altyapıyla aynı armonide mi",
       "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "sorun"
      }
@@ -5882,14 +6054,14 @@
       "bozuk": "dikkat"
      },
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
-      "bozuk": "dikkat"
-     },
-     {
       "konu": "Kırpılma",
       "kusursuz_kopyalarin_en_kotusu": null,
       "bozuk": "sorun"
+     },
+     {
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "bozuk": "dikkat"
      }
     ],
     "yeni_ilgili_sorunlar": {},
@@ -6075,14 +6247,14 @@
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
-      "bozuk": "dikkat"
-     },
-     {
       "konu": "Kırpılma",
       "kusursuz_kopyalarin_en_kotusu": null,
       "bozuk": "sorun"
+     },
+     {
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "bozuk": "dikkat"
      },
      {
       "konu": "Ritme oturma",
@@ -6477,14 +6649,14 @@
       "bozuk": "dikkat"
      },
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
-      "bozuk": "dikkat"
-     },
-     {
       "konu": "Kırpılma",
       "kusursuz_kopyalarin_en_kotusu": null,
       "bozuk": "sorun"
+     },
+     {
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "bozuk": "dikkat"
      },
      {
       "konu": "Ritme oturma",
@@ -6766,7 +6938,309 @@
    "no": "5c",
    "ad": "b05c_citirti",
    "kusur": "Her 3 saniyede bir 5 ms'lik çıtırtı (36 adet, tepe 0,8)",
-   "ayirma_yolu": null
+   "ayirma_yolu": {
+    "tek_raporla": true,
+    "karsilastirmayla": true,
+    "karar": "tek raporla yakalandı",
+    "kotulesen_ilgili_satirlar": [
+     {
+      "konu": "Kırpılma",
+      "kusursuz_kopyalarin_en_kotusu": null,
+      "bozuk": "sorun"
+     }
+    ],
+    "kotulesen_butun_satirlar": [
+     {
+      "konu": "Kırpılma",
+      "kusursuz_kopyalarin_en_kotusu": null,
+      "bozuk": "sorun"
+     }
+    ],
+    "yeni_ilgili_sorunlar": {
+     "kırpılma / sessizlik": 3
+    },
+    "ilgili_olculer": {
+     "tepe": {
+      "taban": 0.0,
+      "bozuk": 4.4,
+      "fark": 4.4,
+      "gurultu": 1.2,
+      "kat": 3.7
+     },
+     "tam_olcek": {
+      "taban": 0,
+      "bozuk": 100,
+      "fark": 100.0,
+      "gurultu": 2.0,
+      "kat": 50.0
+     },
+     "tepe_faktoru": {
+      "taban": 14.9,
+      "bozuk": 18.7,
+      "fark": 3.8,
+      "gurultu": 0.3,
+      "kat": 12.7
+     }
+    },
+    "en_cok_oynayan_ilgili_olcu": {
+     "olcu": "tam_olcek",
+     "ad": "tam ölçekteki örnek sayısı",
+     "taban": 0,
+     "bozuk": 100,
+     "fark": 100.0,
+     "gurultu": 2.0,
+     "kat": 50.0
+    },
+    "ilgili_olmayan_ama_3_kat_oynayanlar": [
+     {
+      "olcu": "olay",
+      "ad": "olay yoğunluğu (1/sn)",
+      "taban": 4.24,
+      "bozuk": 4.41,
+      "fark": 0.17,
+      "gurultu": 0.01,
+      "kat": 17.0
+     },
+     {
+      "olcu": "gam_ici",
+      "ad": "gam içi süre oranı",
+      "taban": 0.862,
+      "bozuk": 0.761,
+      "fark": -0.101,
+      "gurultu": 0.01,
+      "kat": 10.1
+     },
+     {
+      "olcu": "cent_isaretli",
+      "ad": "notaya uzaklık ortalama, işaretli (cent)",
+      "taban": -4.7,
+      "bozuk": -3.7,
+      "fark": 1.0,
+      "gurultu": 0.1,
+      "kat": 10.0
+     },
+     {
+      "olcu": "nabiz",
+      "ad": "nabız netliği",
+      "taban": 0.825,
+      "bozuk": 0.792,
+      "fark": -0.033,
+      "gurultu": 0.005,
+      "kat": 6.6
+     },
+     {
+      "olcu": "destek",
+      "ad": "armonik destek farkı",
+      "taban": 0.249,
+      "bozuk": 0.493,
+      "fark": 0.244,
+      "gurultu": 0.041,
+      "kat": 6.0
+     },
+     {
+      "olcu": "aki",
+      "ad": "spektral akı",
+      "taban": 1.859,
+      "bozuk": 1.887,
+      "fark": 0.028,
+      "gurultu": 0.005,
+      "kat": 5.6
+     },
+     {
+      "olcu": "coca_kalite",
+      "ad": "MusicCoCa kayıt kalitesi farkı",
+      "taban": 0.263,
+      "bozuk": 0.273,
+      "fark": 0.01,
+      "gurultu": 0.002,
+      "kat": 5.0
+     },
+     {
+      "olcu": "tiz_payi",
+      "ad": "4 kHz üstü pay (dB)",
+      "taban": -16.5,
+      "bozuk": -16.1,
+      "fark": 0.4,
+      "gurultu": 0.1,
+      "kat": 4.0
+     },
+     {
+      "olcu": "ust_frekans",
+      "ad": "üst frekans sınırı (Hz)",
+      "taban": 18755,
+      "bozuk": 18981,
+      "fark": 226.0,
+      "gurultu": 75.0,
+      "kat": 3.0
+     }
+    ]
+   }
+  },
+  {
+   "no": "5d",
+   "ad": "b05d_citirti_kisik_dosya",
+   "kusur": "Aynı çıtırtı, bütün dosya 6 dB kısık (tam ölçeğe dayanmıyor)",
+   "ayirma_yolu": {
+    "tek_raporla": false,
+    "karsilastirmayla": true,
+    "karar": "yalnız karşılaştırmayla yakalandı",
+    "kotulesen_ilgili_satirlar": [],
+    "kotulesen_butun_satirlar": [
+     {
+      "konu": "Ses yüksekliği",
+      "kusursuz_kopyalarin_en_kotusu": "iyi",
+      "bozuk": "dikkat"
+     },
+     {
+      "konu": "Vokal / altyapı dengesi",
+      "kusursuz_kopyalarin_en_kotusu": "iyi",
+      "bozuk": "dikkat"
+     }
+    ],
+    "yeni_ilgili_sorunlar": {},
+    "ilgili_olculer": {
+     "tepe": {
+      "taban": 0.0,
+      "bozuk": -1.9,
+      "fark": -1.9,
+      "gurultu": 1.2,
+      "kat": 1.6
+     },
+     "tam_olcek": {
+      "taban": 0,
+      "bozuk": 0,
+      "fark": 0.0,
+      "gurultu": 2.0,
+      "kat": 0.0
+     },
+     "tepe_faktoru": {
+      "taban": 14.9,
+      "bozuk": 18.4,
+      "fark": 3.5,
+      "gurultu": 0.3,
+      "kat": 11.7
+     }
+    },
+    "en_cok_oynayan_ilgili_olcu": {
+     "olcu": "tepe_faktoru",
+     "ad": "tepe faktörü (dB)",
+     "taban": 14.9,
+     "bozuk": 18.4,
+     "fark": 3.5,
+     "gurultu": 0.3,
+     "kat": 11.7
+    },
+    "ilgili_olmayan_ama_3_kat_oynayanlar": [
+     {
+      "olcu": "olay",
+      "ad": "olay yoğunluğu (1/sn)",
+      "taban": 4.24,
+      "bozuk": 4.42,
+      "fark": 0.18,
+      "gurultu": 0.01,
+      "kat": 18.0
+     },
+     {
+      "olcu": "coca_kalite",
+      "ad": "MusicCoCa kayıt kalitesi farkı",
+      "taban": 0.263,
+      "bozuk": 0.289,
+      "fark": 0.026,
+      "gurultu": 0.002,
+      "kat": 13.0
+     },
+     {
+      "olcu": "akor_sesi",
+      "ad": "akor sesi süre oranı",
+      "taban": 0.711,
+      "bozuk": 0.758,
+      "fark": 0.047,
+      "gurultu": 0.007,
+      "kat": 6.7
+     },
+     {
+      "olcu": "nabiz",
+      "ad": "nabız netliği",
+      "taban": 0.825,
+      "bozuk": 0.792,
+      "fark": -0.033,
+      "gurultu": 0.005,
+      "kat": 6.6
+     },
+     {
+      "olcu": "aki",
+      "ad": "spektral akı",
+      "taban": 1.859,
+      "bozuk": 1.89,
+      "fark": 0.031,
+      "gurultu": 0.005,
+      "kat": 6.2
+     },
+     {
+      "olcu": "nisqa_kes",
+      "ad": "NISQA kesintisizlik",
+      "taban": 4.42,
+      "bozuk": 4.11,
+      "fark": -0.31,
+      "gurultu": 0.06,
+      "kat": 5.2
+     },
+     {
+      "olcu": "lufs",
+      "ad": "ses yüksekliği (LUFS)",
+      "taban": -12.7,
+      "bozuk": -18.7,
+      "fark": -6.0,
+      "gurultu": 1.3,
+      "kat": 4.6
+     },
+     {
+      "olcu": "tiz_payi",
+      "ad": "4 kHz üstü pay (dB)",
+      "taban": -16.5,
+      "bozuk": -16.1,
+      "fark": 0.4,
+      "gurultu": 0.1,
+      "kat": 4.0
+     },
+     {
+      "olcu": "destek",
+      "ad": "armonik destek farkı",
+      "taban": 0.249,
+      "bozuk": 0.397,
+      "fark": 0.148,
+      "gurultu": 0.041,
+      "kat": 3.6
+     },
+     {
+      "olcu": "nisqa",
+      "ad": "NISQA",
+      "taban": 2.94,
+      "bozuk": 2.69,
+      "fark": -0.25,
+      "gurultu": 0.07,
+      "kat": 3.6
+     },
+     {
+      "olcu": "nisqa_renk",
+      "ad": "NISQA renklenmezlik",
+      "taban": 3.42,
+      "bozuk": 2.89,
+      "fark": -0.53,
+      "gurultu": 0.15,
+      "kat": 3.5
+     },
+     {
+      "olcu": "ced_cosku",
+      "ad": "CED coşkulu - sakin",
+      "taban": 0.14,
+      "bozuk": 0.095,
+      "fark": -0.045,
+      "gurultu": 0.014,
+      "kat": 3.2
+     }
+    ]
+   }
   },
   {
    "no": "6a",
@@ -7582,25 +8056,25 @@
     "karar": "tek raporla yakalandı",
     "kotulesen_ilgili_satirlar": [
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "konu": "Enerji / coşku",
+      "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "dikkat"
      },
      {
-      "konu": "Enerji / coşku",
-      "kusursuz_kopyalarin_en_kotusu": "iyi",
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
       "bozuk": "dikkat"
      }
     ],
     "kotulesen_butun_satirlar": [
      {
-      "konu": "Yapaylık işaretleri (vekil)",
-      "kusursuz_kopyalarin_en_kotusu": "bilgi",
+      "konu": "Enerji / coşku",
+      "kusursuz_kopyalarin_en_kotusu": "iyi",
       "bozuk": "dikkat"
      },
      {
-      "konu": "Enerji / coşku",
-      "kusursuz_kopyalarin_en_kotusu": "iyi",
+      "konu": "Yapaylık işaretleri (vekil)",
+      "kusursuz_kopyalarin_en_kotusu": "bilgi",
       "bozuk": "dikkat"
      },
      {

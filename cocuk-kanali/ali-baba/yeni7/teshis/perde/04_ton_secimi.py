@@ -53,4 +53,30 @@ print("\n satır bazında ortalama |k| (hangi satır hangi tonu istiyor):")
 for satir in ("L1", "L2", "diye", "L4"):
     m = np.array([s["line"] == satir for s in S]); r = [(float(np.abs(T + der[m] - og[m]).mean()), T) for T in range(60, 72)]; r.sort()
     print("   %-5s en iyi: %s" % (satir, ", ".join("%s %.2f" % (ad(T), v) for v, T in r[:3])), "| en kötü: %s %.2f" % (ad(r[-1][1]), r[-1][0]))
+# ---- EK 1: ölçülen doz-tepki eğrisiyle (05_doz_tepki.py) ağırlıklı kıyas: aşağı kaydırma HNR düşürüyor, yukarı kaydırma düşürmüyor ----
+dz = os.path.join(ARA, "05_doz_tepki.json")
+if os.path.exists(dz):
+    E = json.load(open(dz, encoding="utf8"))["egri"]; xs = sorted(int(k) for k in E); hn = [E[str(k)]["hnr_fark_db"][0] for k in xs]; ji = [E[str(k)]["jitter_fark"][0] for k in xs]
+    print("\n EK 1 - doz-tepki ile tahmin (hece başına ortalama; -9..+9 dışı uç değerde sabitlenir):")
+    cik["doz_tepki_tahmini"] = []
+    for T in range(60, 72):
+        k = T + der - og; d = {"do": ad(T), "tahmini_HNR_degisimi_dB_ort": round(float(np.interp(k, xs, hn).mean()), 2), "HNR_1dB+_dusecek_hece": int((np.interp(k, xs, hn) <= -1.0).sum()), "tahmini_jitter_artisi_ort": round(float(np.interp(k, xs, ji).mean()), 3),
+                                 "egri_disi_hece_(|k|>9)": int((np.abs(k) > 9).sum())}
+        cik["doz_tepki_tahmini"].append(d); print("   %-4s HNR %+5.2f dB (1 dB+ düşecek hece %3d)  jitter %+5.3f  eğri dışı (|k|>9) %d" % (d["do"], d["tahmini_HNR_degisimi_dB_ort"], d["HNR_1dB+_dusecek_hece"], d["tahmini_jitter_artisi_ort"], d["egri_disi_hece_(|k|>9)"]))
+# ---- EK 2: satır başı hecesi (L1, L2, L4'ün ilk hecesi: özgün kayıtta D4 civarı, kısa ve zayıf) 'sol,' (do-5) olarak bırakılırsa ----
+print("\n EK 2 - satır başı hecesi 'sol,' (do-5) bırakılırsa (ezgide küçük değişiklik: do->sol, / mi->sol,; akor I'in sesi):")
+bas = np.array([s["index"] == 0 and s["line"] in ("L1", "L2", "L4") for s in S]); cik["satir_basi_sol"] = []
+for T in range(60, 72):
+    d2 = der.copy(); d2[bas] = -5; k = T + d2 - og; a = np.abs(k)
+    d = {"do": ad(T), "ortalama_mutlak": round(float(a.mean()), 2), "hece_3.5_ustu": int((a >= 3.5).sum()), "hece_5.5_ustu": int((a >= 5.5).sum()), "en_cok_yukari": round(float(k.max()), 2), "en_cok_asagi": round(float(k.min()), 2), "asagi_3.5_ustu": int((k <= -3.5).sum())}
+    cik["satir_basi_sol"].append(d); print("   %-4s ort|k| %.2f  |k|>=3.5: %3d  |k|>=5.5: %3d  en çok %+.2f / %+.2f  aşağı<=-3.5: %d" % (d["do"], d["ortalama_mutlak"], d["hece_3.5_ustu"], d["hece_5.5_ustu"], d["en_cok_yukari"], d["en_cok_asagi"], d["asagi_3.5_ustu"]))
+# ---- EK 3: Türkiye'de bilinen ezgi (yeni7/01_vokal.py DESEN_T ile aynı eşleme) için ton taraması ----
+DT = {"L1": [-5, 0, 0, 0, 4, 2, 0, -1, 0, 2], "diye": [9, 7, 5, 4, 5], "L4": [5, 4, 2, 0, 2, 7, 4, 2, 0]}
+def l2t(n): return [2, 2, 2, 5] + ([4, 2, 0, 2, 4] if n == 9 else [4, 0, 2, 4])
+dert = np.array([(l2t(sayi[(s["verse"], "L2")]) if s["line"] == "L2" else DT[s["line"]])[s["index"]] for s in S])
+print("\n EK 3 - Türkiye'de bilinen ezgi (yeni7/01_vokal.py --ezgi turk eşlemesi) için aynı tarama:"); cik["turk_ezgisi"] = []
+for T in range(55, 72):
+    k = T + dert - og; a = np.abs(k)
+    d = {"do_midi": T, "do": ad(T), "ortalama_mutlak": round(float(a.mean()), 2), "p90": round(float(np.percentile(a, 90)), 2), "hece_3.5_ustu": int((a >= 3.5).sum()), "hece_5.5_ustu": int((a >= 5.5).sum()), "en_cok_yukari": round(float(k.max()), 2), "en_cok_asagi": round(float(k.min()), 2)}
+    cik["turk_ezgisi"].append(d); print("   %-4s ort|k| %.2f  p90 %.2f  |k|>=3.5: %3d  |k|>=5.5: %3d  en çok %+.2f / %+.2f" % (d["do"], d["ortalama_mutlak"], d["p90"], d["hece_3.5_ustu"], d["hece_5.5_ustu"], d["en_cok_yukari"], d["en_cok_asagi"]))
 json.dump(cik, open(os.path.join(ARA, "04_ton_secimi.json"), "w", encoding="utf8"), ensure_ascii=False, indent=1)

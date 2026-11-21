@@ -35,6 +35,7 @@ ap.add_argument('--ezgi-alti-db', type=float, default=-8.0,
                 help='default level of the under-vocal stem: its RMS relative to the band RMS in the bars where it plays')
 ap.add_argument('--tail', type=float, default=2.5, help='seconds of ring-out kept after the final hit')
 ap.add_argument('--ezgi', default='om', choices=['om', 'turk'], help="om = Old MacDonald; turk = the tune known in Turkey (sol, do do do mi | re do si, do re ...)")
+ap.add_argument('--bicim', default='genis', choices=['genis', 'siki'], help='genis: animal bar of 4 beats + 2/4 bar "diye bagirir"; siki: as the song is sung, two short calls on beats 0 and 1 and "diye bagirir" on beats 2-3 of the same bar')
 ap.add_argument('--hece-json', default=None, help='heceler*.json of 01_vokal.py: the under-vocal stem then doubles the singer syllable by syllable (same times, one octave above)')
 A = ap.parse_args()
 KEY = A.key[:1].upper() + A.key[1:]
@@ -75,14 +76,17 @@ VERSES = [('inek', 'çiftliğinde inekleri var', 'Mö, mö'), ('koyun', 'çiftli
           ('at', 'çiftliğinde atları var', 'Me, me'), ('horoz', 'çiftliğinde horozları var', 'Üü, üü'),
           ('ördek', 'çiftliğinde ördekleri var', 'Vak, vak'), ('köpek', 'çiftliğinde köpekleri var', 'Hav, hav'),
           ('kedi', 'çiftliğinde kedisi var', 'Miyav, miyav')]
-INTRO = 2; VB = 7; NV = 7; END = 4; TOTAL = INTRO + VB * NV + END
+SIKI = A.bicim == 'siki'
+INTRO = 2; VB = 6 if SIKI else 7; NV = 7; END = 4; TOTAL = INTRO + VB * NV + END
 PA = ['I', 'I', 'IV', 'I']; AN = ['I', 'V7', 'I', 'I']; II = ['I'] * 4; DY = ['IV', 'I']; L4C = AN
 if TURK: PA = ['I', 'I', 'V7', 'V7']; AN = ['V7', 'V7', 'I', 'I']; DY = ['IV', 'IV']; L4C = ['V7', 'V7', 'V7', 'I']     # L4C follows the singer: 'Ba-ba-nın' (mi re do) starts on beat 3
 # bars: (chord per beat, kind, verse index (-1 intro, NV ending), bar inside its section)
 bars = [(PA, 'intro_a', -1, 0), (AN, 'intro_ansfill', -1, 1)]
+SD = ['I', 'I', 'IV', 'IV'] if TURK else PA            # siki: two calls (beats 0, 1) + "diye bagirir" (beats 2-3) in one bar
 for k in range(NV):
-    bars += [(PA, 'voc', k, 0), (AN, 'voc2_cut', k, 1), (II, 'slot', k, 2), (DY, 'diye', k, 3),
-             (L4C, 'voc2', k, 4), (PA, 'inter_a', k, 5), (AN, 'ansfill', k, 6)]
+    if SIKI: bars += [(PA, 'voc', k, 0), (AN, 'voc2_cut', k, 1), (SD, 'slotdiye', k, 2), (L4C, 'voc2', k, 3), (PA, 'inter_a', k, 4), (AN, 'ansfill', k, 5)]
+    else: bars += [(PA, 'voc', k, 0), (AN, 'voc2_cut', k, 1), (II, 'slot', k, 2), (DY, 'diye', k, 3),
+                   (L4C, 'voc2', k, 4), (PA, 'inter_a', k, 5), (AN, 'ansfill', k, 6)]
 bars += [(AN, 'ans', NV, 0), (AN, 'ans2', NV, 1), (['IV', 'IV', 'V7', 'V7'], 'roll', NV, 2), (II, 'final', NV, 3)]
 assert len(bars) == TOTAL
 B0 = [0]
@@ -100,7 +104,8 @@ ROLE.update({'voc': 'vokal satır 1 + alttan A cümlesi (ezgi_alti)', 'voc2_cut'
              'slot': 'İKİ GERÇEK HAYVAN SESİ: vuruş 0 ve vuruş 2 (ince doku: kick + hafif hi-hat + yumuşak bas)',
              'diye': '2/4 ölçü: tam orkestra + vokal "diye bağırır" + alttan la la sol (ezgi_alti)',
              'voc2': 'vokal satır 4 + alttan "mi mi re re do" (ezgi_alti)', 'inter_a': 'ara: A cümlesi (lead: trompet+brass+glockenspiel)'})
-SLOT_BAR = 2; DIYE_BAR = 3; ALT_KINDS = ('voc', 'voc2', 'voc2_cut', 'diye')      # bars where the under-vocal stem plays
+ROLE['slotdiye'] = 'vuruş 0 ve 1: iki kısa GERÇEK HAYVAN SESİ; vuruş 2-3: vokal "diye bağırır" (orkestra kesintisiz çalar)'
+SLOT_BAR = 2; DIYE_BAR = 2 if SIKI else 3; ALT_KINDS = ('voc', 'voc2', 'voc2_cut', 'diye', 'slotdiye')      # bars where the under-vocal stem plays
 
 ev = {}
 def add(ch, b, dur, n, v): ev.setdefault(ch, []).append((b, dur, int(n), int(min(127, v))))
@@ -195,6 +200,7 @@ for bi, (ch, kind, k, vb) in enumerate(bars):
     elif kind == 'voc': groove(b0, ch, k, 'full'); alt_notes(bi, ALT_PHA, 100, 90, 92)
     elif kind == 'voc2_cut': groove(b0, ch, k, 'cut'); alt_notes(bi, ALT_ANS, 100, 90, 92)     # no ringing open hat before the animal slot
     elif kind == 'voc2': groove(b0, ch, k, 'fillS'); alt_notes(bi, ALT_ANS, 100, 90, 92)
+    elif kind == 'slotdiye': groove(b0, ch, k, 'full')
     elif kind == 'diye': groove(b0, ch, k, 'full', stab=True, beats=(0, 1)); add(DR, b0, .2, 55, 96); alt_notes(bi, ALT_DIYE, 96, 86, 88)
     elif kind in ('ans', 'ans2'): groove(b0, ch, k, 'full'); lead_answer(bi, hi=(kind == 'ans2'))
     elif kind == 'ansfill': groove(b0, ch, k, 'fillB'); lead_answer(bi)                       # big fill into the next verse (as intro -> verse 1)
@@ -390,16 +396,20 @@ Z = {'baslik': "Ali Baba'nın Çiftliği", 'varyant': NAME, 'ezgi': ('Türkiye\'
                            'ö5-ö6 (8 vuruş): çalgı arası: ezgiyi trompetler çalar, sonunda kıtaya davul geçişi']},
      'giris': {'baslangic': 0.0, 'bitis': R(bt0(INTRO)), 'olculer': [barinfo(i) for i in range(INTRO)]},
      'kitalar': []}
+YER = ({'s1': (0, 0), 's2': (1, 0), 'h1': (2, 0), 'h2': (2, 1), 'diye': (2, 2), 's4': (3, 0), 'ara': (4, 0)} if SIKI else
+       {'s1': (0, 0), 's2': (1, 0), 'h1': (2, 0), 'h2': (2, 2), 'diye': (3, 0), 's4': (4, 0), 'ara': (5, 0)})      # (bar in verse, beat)
+Z['form']['bicim'] = A.bicim
+if SIKI: Z['olcu'] = '4/4'; Z['form']['kita_ici'] = ['ö0: vokal satır 1', 'ö1: vokal satır 2', 'ö2: vuruş 0 ve 1 iki kısa gerçek hayvan sesi, vuruş 2-3 vokal "diye bağırır"', 'ö3: vokal satır 4', 'ö4-ö5: çalgı arası']
 for k in range(NV):
-    an, l2, syl = VERSES[k]; v0 = INTRO + k * VB; t = lambda i, b=0: R(bt0(v0 + i) + b * BEAT)
-    Z['kitalar'].append({'kita': k + 1, 'hayvan': an, 'ilk_olcu': v0, 'baslangic': t(0), 'bitis': t(VB),
-        'olcu_baslangiclari': [t(i) for i in range(VB + 1)],
-        'satir1': {'soz': "Ali Baba'nın bir çiftliği var", 'baslangic': t(0), 'bitis': t(1)},
-        'satir2': {'soz': l2, 'baslangic': t(1), 'bitis': t(2)},
-        'hayvan_sesi': {'ses1_baslangic': t(2), 'ses2_baslangic': t(2, 2), 'bitis': t(3), 'ses_basina_yer_sn': R(2 * BEAT)},
-        'diye_bagirir': {'soz': 'diye bağırır', 'baslangic': t(3), 'bitis': t(4)},
-        'satir4': {'soz': "çiftliğinde Ali Baba'nın", 'baslangic': t(4), 'bitis': t(5)},
-        'ara': {'baslangic': t(5), 'bitis': t(7)},
+    an, l2, syl = VERSES[k]; v0 = INTRO + k * VB; t = lambda ad: R(bt0(v0 + YER[ad][0]) + YER[ad][1] * BEAT)
+    Z['kitalar'].append({'kita': k + 1, 'hayvan': an, 'ilk_olcu': v0, 'baslangic': t('s1'), 'bitis': R(bt0(v0 + VB)),
+        'olcu_baslangiclari': [R(bt0(v0 + i)) for i in range(VB + 1)],
+        'satir1': {'soz': "Ali Baba'nın bir çiftliği var", 'baslangic': t('s1'), 'bitis': t('s2')},
+        'satir2': {'soz': l2, 'baslangic': t('s2'), 'bitis': t('h1')},
+        'hayvan_sesi': {'ses1_baslangic': t('h1'), 'ses2_baslangic': t('h2'), 'bitis': t('diye'), 'ses_basina_yer_sn': R((1 if SIKI else 2) * BEAT)},
+        'diye_bagirir': {'soz': 'diye bağırır', 'baslangic': t('diye'), 'bitis': t('s4')},
+        'satir4': {'soz': "çiftliğinde Ali Baba'nın", 'baslangic': t('s4'), 'bitis': t('ara')},
+        'ara': {'baslangic': t('ara'), 'bitis': R(bt0(v0 + VB))},
         'olculer': [barinfo(v0 + i) for i in range(VB)]})
 e0 = INTRO + NV * VB
 Z['bitis'] = {'baslangic': R(bt0(e0)), 'muzik_bitis': R(TOTAL_BEATS * BEAT), 'son_vurus': R(FINAL_HIT), 'olculer': [barinfo(e0 + i) for i in range(END)]}

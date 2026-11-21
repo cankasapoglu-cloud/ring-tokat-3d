@@ -18,6 +18,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--do", type=int, default=67); ap.add_argument("--zaman", default=os.path.join(D, "altyapi", "zaman_G.json"))
 ap.add_argument("--cikti", default=None); ap.add_argument("--yalniz-tablo", action="store_true")
 ap.add_argument("--ezgi", default="om", choices=["om", "turk"], help="om = Old MacDonald; turk = Türkiye'de bilinen Ali Baba ezgisi")
+ap.add_argument("--ikame", default="", help="örn. K2_P1=K1_P1: 2. kıtanın 1. satırı yerine 1. kıtanın aynı sözlü satırı kullanılır")
 ap.add_argument("--ad", default=None, help="dosya eki (varsayılan: om -> yok, turk -> _T)")
 P = ap.parse_args()
 EK = P.ad if P.ad is not None else ("" if P.ezgi == "om" else "_T"); P.cikti = P.cikti or os.path.join(D, f"vokal{EK}.wav")
@@ -26,11 +27,11 @@ x, fs = sf.read(os.path.join(A, "yeni4", "vokal", "vokal_dogal.wav")); x = x.ast
 N = int(round(Z["dosya_suresi_sn"] * fs)); FP = 5.0
 
 # ---- yerleşim: her parçanın eski ölçü başı yeni ölçü başına taşınır --------------------------------------------
-kayma = {}
+IKAME = dict(a.split("=") for a in P.ikame.split(",") if a); PARCA = {p["id"]: p for p in Y["pieces"]}; kayma = {}; kaynak = {}
 for p in Y["pieces"]:
-    ob = Z["kitalar"][p["verse"] - 1]["olcu_baslangiclari"]
-    yeni = {1: ob[0], 2: ob[1], 3: ob[3] - 2 * BEAT}[p["piece"]]          # P3 "diye" ile başlar: eski ölçünün 2. vuruşu = yeni 2/4 ölçünün başı
-    kayma[p["id"]] = int(round((yeni - p["dest_bar_downbeat"]) * fs))
+    K = Z["kitalar"][p["verse"] - 1]; src = PARCA[IKAME.get(p["id"], p["id"])]; assert src["piece"] == p["piece"]; kaynak[p["id"]] = src
+    yeni = {1: K["satir1"]["baslangic"], 2: K["satir2"]["baslangic"], 3: K["diye_bagirir"]["baslangic"] - 2 * BEAT}[p["piece"]]          # P3 "diye" ile başlar: eski ölçünün 2. vuruşu = yeni 2/4 ölçünün başı
+    kayma[p["id"]] = int(round((yeni - src["dest_bar_downbeat"]) * fs))
 
 # ---- hedef notalar ------------------------------------------------------------------------------------------------
 DESEN = {"L1": [0, 0, 0, 0, -5, -3, -3, -5, -5, -5], "diye": [-3, -3, -5, -5, -5], "L4": [4, 4, 2, 2, 0, 0, 0, 0, 0]}
@@ -42,18 +43,20 @@ def zamana_gore(line, t):                                                 # t: �
     if line == "diye": return -3 if t < 1 else -5
     return 4 if t < 1 else (2 if t < 2 else 0)
 grup = {}
-for s in Y["syllables_flat"]: grup.setdefault((s["verse"], s["line"]), []).append(s)
+for p in Y["pieces"]:
+    for s in Y["syllables_flat"]:
+        if s["piece"] == kaynak[p["id"]]["id"]: grup.setdefault((p["verse"], s["line"], p["id"]), []).append(s)
 heceler, uyusmayan = [], []
-for (v, line), hs in grup.items():
-    hs.sort(key=lambda s: s["index"]); ob = Z["kitalar"][v - 1]["olcu_baslangiclari"]
-    bas = {"L1": ob[0], "L2": ob[1], "diye": ob[3], "L4": ob[4]}[line]
+for (v, line, pid), hs in grup.items():
+    hs.sort(key=lambda s: s["index"]); K = Z["kitalar"][v - 1]
+    bas = {"L1": K["satir1"]["baslangic"], "L2": K["satir2"]["baslangic"], "diye": K["diye_bagirir"]["baslangic"], "L4": K["satir4"]["baslangic"]}[line]
     desen = (DESEN if P.ezgi == "om" else DESEN_T).get(line) if line != "L2" else l2_deseni(len(hs))
     assert len(desen) == len(hs), (v, line, len(hs))
     for s, iv in zip(hs, desen):
-        k = kayma[s["piece"]] / fs; t0, t1 = s["dest_start"] + k, s["dest_end"] + k
+        k = kayma[pid] / fs; t0, t1 = s["dest_start"] + k, s["dest_end"] + k
         zg = zamana_gore(line, (t0 + 0.3 * (t1 - t0) - bas) / BEAT)
         if P.ezgi == "om" and zg != iv: uyusmayan.append((v, line, s["text"], round((t0 - bas) / BEAT, 2), iv, zg))
-        heceler.append({"kita": v, "satir": line, "hece": s["text"], "parca": s["piece"], "t0": round(t0, 4), "t1": round(t1, 4),
+        heceler.append({"kita": v, "satir": line, "hece": s["text"], "parca": pid, "t0": round(t0, 4), "t1": round(t1, 4),
                         "ozgun_midi": s["midi"], "hedef_midi": P.do + iv, "kayma_yarim_ses": round(P.do + iv - s["midi"], 2)})
 print("hece %d; dizilişle zaman kuralı uyuşmayan: %d %s" % (len(heceler), len(uyusmayan), uyusmayan[:8]))
 for do in range(60, 70):
@@ -65,8 +68,8 @@ if P.yalniz_tablo: raise SystemExit
 # ---- PSOLA: her parça kendi tamponunda işlenir (komşu parçalar birbirine karışmasın) -----------------------------
 cikti = np.zeros(N); sapma = []; dolgu = int(0.06 * fs)
 for p in Y["pieces"]:
-    ham = x[p["dest_in_sample"]:p["dest_out_sample"]]; seg = np.concatenate([np.zeros(dolgu), ham, np.zeros(dolgu)])
-    a = p["dest_in_sample"] + kayma[p["id"]] - dolgu                      # tamponun yeni zaman çizgisindeki ilk örneği
+    src = kaynak[p["id"]]; ham = x[src["dest_in_sample"]:src["dest_out_sample"]]; seg = np.concatenate([np.zeros(dolgu), ham, np.zeros(dolgu)])
+    a = src["dest_in_sample"] + kayma[p["id"]] - dolgu                      # tamponun yeni zaman çizgisindeki ilk örneği
     f0, t = pw.harvest(seg, fs, f0_floor=150, f0_ceil=720, frame_period=FP); f0 = pw.stonemask(seg, f0, t, fs)
     ta = t + a / fs; sesli = f0 > 0; lf = np.where(sesli, np.log2(np.maximum(f0, 1e-6)), np.nan)
     w = int(0.12 / (FP / 1000)) | 1; yavas = lf.copy()

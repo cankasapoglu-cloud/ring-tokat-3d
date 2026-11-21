@@ -28,14 +28,18 @@ w = int(0.05 * fs); env = np.sqrt(np.convolve(vz ** 2, np.ones(w) / w, "same"));
 zemin = band.mean(axis=1); vz *= 10 ** ((db(zemin[sesli]) + VU - db(vz[sesli])) / 20)
 
 # ---- gerçek hayvan sesleri: etkin bölüm kesilir, 2 vuruşa (1,14 sn) sığmayan hafifçe hızlandırılır ------------------
-SIRA = ["inek", "koyun", "at", "horoz", "ordek", "kopek", "kedi"]; YER = 2 * BEAT; hay = np.zeros(n); kayit = []
+SIRA = ["inek", "koyun", "at", "horoz", "ordek", "kopek", "kedi"]; YER = Z["kitalar"][0]["hayvan_sesi"]["ses_basina_yer_sn"]; hay = np.zeros(n); kayit = []
 def hazirla(ad):
     s, r = sf.read(os.path.join(A, "yeni3", "ses", ad + ".wav")); s = s if s.ndim == 1 else s.mean(axis=1); assert r == fs
     ev = np.sqrt(np.convolve(s ** 2, np.ones(w) / w, "same")); et = np.where(ev > ev.max() * 10 ** (-20 / 20))[0]
-    a0, b0 = max(0, et[0] - int(0.03 * fs)), min(len(s), et[-1] + int(0.06 * fs)); s = s[a0:b0]; sure = len(s) / fs; hiz = 1.0
-    if sure > YER - 0.04:
-        hiz = min(1.35, sure / (YER - 0.06)); sf.write(T + "h0.wav", s, fs, subtype="FLOAT"); ff(T + "h0.wav", f"atempo={hiz:.4f}", T + "h1.wav"); s, _ = sf.read(T + "h1.wav")
-    m = int((YER + 0.02) * fs)
+    son = et[-1]
+    if YER < 0.8:                                                           # sıkı biçim: yalnız ilk kesintisiz ses (örn. tek "vak")
+        kop = np.where(np.diff(et) > int(0.10 * fs))[0]
+        if len(kop) and (et[kop[0]] - et[0]) / fs >= 0.22: son = et[kop[0]]
+    a0, b0 = max(0, et[0] - int(0.03 * fs)), min(len(s), son + int(0.06 * fs)); s = s[a0:b0]; sure = len(s) / fs; hiz = 1.0
+    if sure > YER + 0.05:
+        hiz = min(1.35, sure / (YER + 0.03)); sf.write(T + "h0.wav", s, fs, subtype="FLOAT"); ff(T + "h0.wav", f"atempo={hiz:.4f}", T + "h1.wav"); s, _ = sf.read(T + "h1.wav")
+    m = int((YER + 0.06) * fs)
     if len(s) > m: s = s[:m].copy(); f = int(0.14 * fs); s[-f:] *= np.cos(np.linspace(0, np.pi / 2, f)) ** 2
     f = int(0.008 * fs); s[:f] *= np.linspace(0, 1, f)
     ev = np.sqrt(np.convolve(s ** 2, np.ones(w) / w, "same")); yuk = ev > ev.max() * 10 ** (-10 / 20)
@@ -72,7 +76,7 @@ sf.write(os.path.splitext(CIK)[0] + "_altyapi_islenmis.wav", band, fs, subtype="
 # ---- denetim: BİTMİŞ mp3 üzerinde -----------------------------------------------------------------------------------
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", CIK, T + "k.wav"], check=True); km, _ = sf.read(T + "k.wav"); kmo = km.mean(axis=1)[:n]
 ara = np.zeros(n, bool)
-for k in range(7): o = Z["kitalar"][k]["olcu_baslangiclari"]; ara[int(o[5] * fs):int(o[7] * fs)] = True
+for k in range(7): o = Z["kitalar"][k]["ara"]; ara[int(o["baslangic"] * fs):int(o["bitis"] * fs)] = True
 print("vokal orkestranın %.1f dB üstünde (söylenen karelerde); bitmiş karışım: söylenen %.1f dB, çalgı arası %.1f dB (fark %.1f); vokal ile ilişki %.2f"
       % (db(vz[sesli]) - db(zemin[sesli]), db(kmo[sesli]), db(kmo[ara]), db(kmo[sesli]) - db(kmo[ara]), np.corrcoef(kmo[sesli], vz[sesli])[0, 1]))
 print("%s: %.2f sn, %.1f LUFS, gerçek tepe %.1f dBTP" % (os.path.basename(CIK), len(km) / fs, olc.integrated_loudness(km), tp(km)))

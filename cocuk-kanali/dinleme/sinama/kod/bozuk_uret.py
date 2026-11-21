@@ -459,9 +459,15 @@ def main():
             M[i:i + n] += d[:, None]
             z.append(round(t, 2))
             t += 3.0
-        mp3_yaz("b05c_citirti", M)
-        return {"tur": "kusur", "no": 5, "kusur": "her 3 saniyede bir 5 ms'lik genis bantli citirti (tepe 0,8; %d adet)" % len(z), "tik_zamanlari": z}
+        if ad5 == "b05d_citirti_kisik_dosya":
+            M = M * 0.5                                    # butun dosya 6 dB kisik: citirti/muzik orani AYNI, ama hicbir ornek tam olcege dayanmaz
+        mp3_yaz(ad5, M)
+        return {"tur": "kusur", "no": 5, "kusur": "her 3 saniyede bir 5 ms'lik genis bantli citirti (tepe 0,8; %d adet)%s" % (
+            len(z), "; butun dosya 6 dB kisilmis (tam olcege dayanmasin diye)" if ad5.startswith("b05d") else ""), "tik_zamanlari": z}
+    ad5 = "b05c_citirti"
     yap("b05c_citirti", b05c)
+    ad5 = "b05d_citirti_kisik_dosya"
+    yap("b05d_citirti_kisik_dosya", b05c)
     # ---- 6) vokal duzeyi
     for ad, dbv in (("b06a_vokal_eksi6", -6.0), ("b06b_vokal_arti6", 6.0)):
         def f(dbv=dbv, ad=ad):
