@@ -218,7 +218,7 @@ Sonra açılacaklar: "Uzun Bölümler - Pıtır ile Öğren" (ilk uzun bölüm y
 | 4 | Beş Küçük Maymun | 1:24 | 1. yayın günü |
 | 5 | Balon Şarkısı | 0:50 | 2. yayın günü |
 | 6 | El Yıkama Şarkısı | 1:10 | 3. yayın günü |
-| 7 | Otobüs Şarkısı (Pıtır'ın Otobüsü) | 1:35 | 4. yayın günü (klibi onaylayınca) |
+| 7 | Otobüs Şarkısı (Pıtır'ın Otobüsü) | 1:35 | 4. yayın günü |
 
 İlk gün üç video birden yüklenir, çünkü boş kanal izlenmez. Ali Baba'yı bekletmeye karar verirseniz (4.4) ilk gün onun yerine Beş Küçük Maymun yüklenir.
 
@@ -555,7 +555,7 @@ el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller 
 
 - **Dosya:** `/home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/otobus-sarkisi.mp4` (adında "720p" yazmayan)
 - **Süre:** 1 dakika 35 saniye · **Ne zaman:** 4. yayın günü
-- **Durum:** Şarkıyı onayladınız; klip onayınızı bekliyor.
+- **Durum:** Şarkı ve klip onaylandı.
 
 Başlık:
 
