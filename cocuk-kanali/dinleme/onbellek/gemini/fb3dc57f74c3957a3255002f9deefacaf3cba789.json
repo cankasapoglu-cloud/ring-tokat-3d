@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "DUYDUGUM: Türkçe olarak söylenen çocuk şarkısında yetişkin bir kadın vokal yer alıyor. Tempolu müzik altyapısına gitar ile vurmalı çalgıların yanı sıra inek, koyun ve at ses efektleri eşlik ediyor.\nSOZLER: Ali Babanın bir çiftliği var çiftliğinde inekleri var möö möö diye bağırır çiftliğinde Ali Babanın Ali Babanın bir çiftliği var çiftliğinde koyunları var mee mee diye bağırır çiftliğinde Ali Babanın Ali Babanın bir çiftliği var çiftliğinde atları var diye bağırır çiftliğinde Ali Babanın\nSES: doğal insan sesi | Vokal sesi yapay bir efekt uygulanmamış net bir yetişkin kadın sesidir.\nAKORT: müzikle uyumlu | Şarkıcı arka plandaki melodiye tam uyumlu ve detonesiz bir biçimde söylüyor.\nRITIM: ritme oturuyor | Vokal ve enstrümanlar şarkı boyunca temposunu ve ritmini bozmadan ilerliyor.\nENERJI: canlı | Şarkı hareketli ritmi ve neşeli yapısıyla canlı bir tempiye sahiptir.\nTELAFFUZ: doğal Türkçe | Şarkıcı kelimeleri net ve akıcı bir doğal Türkçe telaffuzuyla seslendiriyor.\nSARKI_MI: ezgiyle söylüyor | Şarkıcı sözleri konuşma tonunda değil tamamen belirlenmiş bir melodiye bağlı kalarak söylüyor.\nDENGE: dengeli | Vokal yüksekliği, arka plan müziği ve hayvan ses efektleri birbiriyle uyumlu ve dengelidir.\nTUHAF: yok\nOZET: Kayıtta dikkat çeken belirgin bir teknik ya da müzikal kusur bulunmamaktadır.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "sarki_duzeltilmis.mp3"
+ ],
+ "bas": 0.0,
+ "sure": 63.0,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 16:35:46"
+}

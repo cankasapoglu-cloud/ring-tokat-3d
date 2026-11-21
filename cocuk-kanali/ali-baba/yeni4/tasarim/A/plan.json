@@ -94,6 +94,57 @@
    "fallback": "If the builder cannot voice it, play V7 as usual: the harmony is the same; the measured cost is listed under metrics.dominant_seventh_in_the_band."
   },
   "bar_5_beats_0_1": "unchanged: drum fill with bass on I (fixed by the form)",
+  "verse_8_bars_as_the_band_plays_them": [
+   [
+    "I",
+    "IV",
+    "I",
+    "I"
+   ],
+   [
+    "I",
+    "V7",
+    "I",
+    "I"
+   ],
+   [
+    "V",
+    "V",
+    "V",
+    "V"
+   ],
+   [
+    "I",
+    "I",
+    "I",
+    "I"
+   ],
+   [
+    "I",
+    "I",
+    "I",
+    "I"
+   ],
+   [
+    "I",
+    "I",
+    "I",
+    "I"
+   ],
+   [
+    "V",
+    "V",
+    "V",
+    "V"
+   ],
+   [
+    "I",
+    "V7",
+    "I",
+    "I"
+   ]
+  ],
+  "legend": "V7 = G7 with its seventh (answers, intro, ending); V = the same dominant played without the seventh (G B D), used only under the vocal in bars 2 and 6",
   "fixed_by_the_form": {
    "bars_1_and_7": [
     "I",
@@ -459,6 +510,93 @@
      "sounding_semitone_sustained": 0.0
     }
    ],
+   "L4_per_verse": [
+    {
+     "chord_tone": 0.6337,
+     "scale_non_chord": 0.3663,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3663,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.6074,
+     "scale_non_chord": 0.3926,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3926,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.5749,
+     "scale_non_chord": 0.3717,
+     "outside_scale": 0.0535,
+     "clash_any": 0.0535,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3717,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.6264,
+     "scale_non_chord": 0.3736,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3736,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.6026,
+     "scale_non_chord": 0.3974,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3974,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.5833,
+     "scale_non_chord": 0.4167,
+     "outside_scale": 0.0,
+     "clash_any": 0.0,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.4167,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    },
+    {
+     "chord_tone": 0.5549,
+     "scale_non_chord": 0.3972,
+     "outside_scale": 0.0479,
+     "clash_any": 0.0479,
+     "clash_sustained": 0.0,
+     "clash_sustained_strict": 0.0,
+     "consonant_non_chord": 0.3972,
+     "sustained_clash_runs": 0,
+     "sounding_semitone": 0.0,
+     "sounding_semitone_sustained": 0.0
+    }
+   ],
+   "pitch_outliers_that_no_chord_can_fix": "verse 7 line 4 'cift' is sung on A#3 (80 ms vowel) and verse 3 line 4 'cift' sags to C#4: together the outside-scale share of line 4 (kesim.json: pitch_outliers)",
    "remaining_sustained_clash_runs": [
     {
      "verse": 2,
@@ -759,6 +897,133 @@
      "of_which_in_runs_over_150ms": 0.4157,
      "runs_over_150ms": 11
     }
+   },
+   "where_the_chosen_plan_still_measures_rub": {
+    "about": "the 12 largest contributions to the sung time with rub above -6 dB in the chosen plan. Only rows where a band note of the neighbouring pitch class is really struck are semitone coincidences; the others are overtones of consonant notes (the 5th harmonic of the bass D2 = F#4 under a sung F, the 3rd harmonic of B2 = F#4 under a sung G) and attack noise.",
+    "share_above_-6_db": 0.2386,
+    "of_which_real_struck_notes_in_the_top_12": 0.0365,
+    "rows": [
+     {
+      "bar": 2,
+      "half_beat_from": 2.0,
+      "sung": "F",
+      "seconds_above_-6_db": 0.96,
+      "share_of_all_sung_time": 0.0215,
+      "band_energy_is": "a semitone above the voice (F#)",
+      "band_notes_struck_there": "D2 G3 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 6,
+      "half_beat_from": 2.0,
+      "sung": "F",
+      "seconds_above_-6_db": 0.86,
+      "share_of_all_sung_time": 0.0192,
+      "band_energy_is": "a semitone above the voice (F#)",
+      "band_notes_struck_there": "D2 G3 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 5,
+      "half_beat_from": 3.0,
+      "sung": "F",
+      "seconds_above_-6_db": 0.85,
+      "share_of_all_sung_time": 0.0191,
+      "band_energy_is": "a semitone below the voice (E)",
+      "band_notes_struck_there": "C2 C3 E3 G3 C4 E4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": true
+     },
+     {
+      "bar": 0,
+      "half_beat_from": 3.0,
+      "sung": "F",
+      "seconds_above_-6_db": 0.78,
+      "share_of_all_sung_time": 0.0174,
+      "band_energy_is": "a semitone below the voice (E)",
+      "band_notes_struck_there": "C2 C3 E3 G3 C4 E4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": true
+     },
+     {
+      "bar": 6,
+      "half_beat_from": 1.0,
+      "sung": "G",
+      "seconds_above_-6_db": 0.62,
+      "share_of_all_sung_time": 0.0139,
+      "band_energy_is": "a semitone below the voice (F#)",
+      "band_notes_struck_there": "G2 B2 D3 G3 B3 D4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 2,
+      "half_beat_from": 1.0,
+      "sung": "G",
+      "seconds_above_-6_db": 0.6,
+      "share_of_all_sung_time": 0.0134,
+      "band_energy_is": "a semitone below the voice (F#)",
+      "band_notes_struck_there": "G2 B2 D3 G3 B3 D4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 2,
+      "half_beat_from": 3.0,
+      "sung": "F",
+      "seconds_above_-6_db": 0.59,
+      "share_of_all_sung_time": 0.0133,
+      "band_energy_is": "a semitone above the voice (F#)",
+      "band_notes_struck_there": "G2 B2 D3 G3 B3 D4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 6,
+      "half_beat_from": 3.0,
+      "sung": "F",
+      "seconds_above_-6_db": 0.57,
+      "share_of_all_sung_time": 0.0127,
+      "band_energy_is": "a semitone above the voice (F#)",
+      "band_notes_struck_there": "G2 B2 D3 G3 B3 D4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 0,
+      "half_beat_from": 1.0,
+      "sung": "A",
+      "seconds_above_-6_db": 0.45,
+      "share_of_all_sung_time": 0.01,
+      "band_energy_is": "a semitone above the voice (A#)",
+      "band_notes_struck_there": "F2 C3 F3 A3 C4 F4 A4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 0,
+      "half_beat_from": 0.0,
+      "sung": "D",
+      "seconds_above_-6_db": 0.36,
+      "share_of_all_sung_time": 0.008,
+      "band_energy_is": "a semitone below the voice (C#)",
+      "band_notes_struck_there": "C2 C3 G3 C4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 6,
+      "half_beat_from": 0.5,
+      "sung": "G",
+      "seconds_above_-6_db": 0.35,
+      "share_of_all_sung_time": 0.0079,
+      "band_energy_is": "a semitone above the voice (G#)",
+      "band_notes_struck_there": "G3 B3 D4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     },
+     {
+      "bar": 2,
+      "half_beat_from": 1.0,
+      "sung": "G",
+      "seconds_above_-6_db": 0.33,
+      "share_of_all_sung_time": 0.0074,
+      "band_energy_is": "a semitone above the voice (G#)",
+      "band_notes_struck_there": "G2 B2 D3 G3 B3 D4 G4",
+      "a_band_note_of_that_pitch_class_is_struck": false
+     }
+    ]
    },
    "caveat": "the semitone bands also catch overtones of consonant band notes (for example the third of a chord under a sung root) and the attack noise of every strum; only the large differences and the runs above -6 dB are meaningful."
   }
@@ -1301,11 +1566,11 @@
     "6": "18 of 18"
    }
   },
-  "robustness_note": "18 readings: note mode, frame mode, a second pitch tracker, chord changes 40 ms early, each verse left out, each verse alone. With V7 symbols beat 2 of bar 6 flips between V7 and I in 7 readings: F and E are equally long there and one of them is a semitone from the chord whichever of the two is chosen. Played without the seventh the dominant has no semitone relation to either note, and bar 6 is the same in 18 of 18."
+  "robustness_note": "18 readings: note mode, frame mode, a second pitch tracker, chord changes 40 ms early, each verse left out, each verse alone. With V7 symbols beat 2 of bar 6 flips between V7 and I in 7 readings: F and E are equally long there and one of them is a semitone from the chord whichever of the two is chosen. Played without the seventh the dominant has no semitone relation to either note, and bar 6 is the same in 18 of 18. In the as-played search the deviating readings of bar 2 (single verses and one leave-out) put IV on beat 2, which the rendered audio shows to be the loudest rub of all candidates; the deviating readings of bar 5 (frame mode, two single verses) put the dominant under 'diye bagirir', which removes the passing-F clash but ends the phrase on a non-chord tone."
  },
  "reasoning": [
   "The sung melody is not the Old MacDonald tune: its notes are D E F G A, G alone is 45 % of the sung time. Under the plain harmony I I IV I only 58 % of the sung time is on chord tones.",
-  "Line 1 (D G | A A A | G G G F | E): the singer holds A on beat 1 and G on beat 2, the opposite of the traditional bar (IV on beat 2). Moving IV one beat earlier (I IV I I) raises the chord-tone share of the line from 31 % to 76 %. The line ends on E (mi over I); the loud answer that follows starts on the same note.",
+  "Line 1 (beat by beat: D G | A A A | G G | G F E): the singer holds A on beat 1 and G on beat 2; the traditional bar has its IV on beat 2, one beat late for her. Moving IV one beat earlier (I IV I I) raises the chord-tone share of the line from 31 % to 76 %. The line ends on E (mi over I); the loud answer that follows starts on the same note.",
   "Lines 2 and 4 (D G G G | F E F E D) outline the dominant: D and G are its fifth and root, F its seventh, E a sixth above it. On the G triad no sung note is a semitone from a chord tone. Every chord that contains E (I) or F (IV, V7) puts the other note a semitone away for half a beat; the plain baseline does that with IV on beat 2.",
   "'diye bagirir' (G G G F E) stays on I: G and E are chord tones, the F is a passing note of about 150 ms.",
   "Bar 6 on the dominant leads into the loud answer of bar 7 (I V7 I I); bar 2 on the dominant resolves to the I of the animal-call bars.",

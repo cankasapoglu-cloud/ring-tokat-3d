@@ -1,0 +1,1369 @@
+{
+ "ali-baba__v2_2": {
+  "dokum_kaynagi": "eski *_words.json",
+  "sozcuk": 105,
+  "metin": "Ali Baba'nın bir çiftliği var, çiftliğinde inekleri var. \"Mö, mö\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var, çiftliğinde koyunları var. \"Me, me\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var, çiftliğinde atları var. \"Me, me\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var, çiftliğinde horozları var. \"Üü, üü\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var, çiftliğinde ördekleri var. \"Vak, vak\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var, çiftliğinde köpekleri var. \"Hav, hav\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var, çiftliğinde kedisi var. \"Miyav, miyav\" diye bağırır çiftliğinde Ali Baba'nın.",
+  "ses_olaylari": [],
+  "dil_olasiligi": null,
+  "guven": null,
+  "kitalar": [
+   {
+    "bas_sn": 8.6,
+    "hayvan": "inek",
+    "soylenen_ses": "Mö mö",
+    "ses_zamani": [
+     13.12,
+     13.94
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "inek"
+    ],
+    "ses_logprob": []
+   },
+   {
+    "bas_sn": 22.3,
+    "hayvan": "koyun",
+    "soylenen_ses": "Me me",
+    "ses_zamani": [
+     26.82,
+     27.66
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "koyun"
+    ],
+    "ses_logprob": []
+   },
+   {
+    "bas_sn": 36.0,
+    "hayvan": "at",
+    "soylenen_ses": "Me me",
+    "ses_zamani": [
+     40.54,
+     41.38
+    ],
+    "ses_hayvana_uyuyor": false,
+    "ses_hangi_hayvanin": [
+     "koyun"
+    ],
+    "ses_logprob": []
+   },
+   {
+    "bas_sn": 49.7,
+    "hayvan": "horoz",
+    "soylenen_ses": "Üü üü",
+    "ses_zamani": [
+     54.3,
+     55.1
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "horoz"
+    ],
+    "ses_logprob": []
+   },
+   {
+    "bas_sn": 63.4,
+    "hayvan": "ördek",
+    "soylenen_ses": "Vak vak",
+    "ses_zamani": [
+     67.98,
+     69.04
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "ördek"
+    ],
+    "ses_logprob": []
+   },
+   {
+    "bas_sn": 77.2,
+    "hayvan": "köpek",
+    "soylenen_ses": "Hav hav",
+    "ses_zamani": [
+     81.7,
+     82.7
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "köpek"
+    ],
+    "ses_logprob": []
+   },
+   {
+    "bas_sn": 90.9,
+    "hayvan": "kedi",
+    "soylenen_ses": "Miyav miyav",
+    "ses_zamani": [
+     95.4,
+     96.5
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "kedi"
+    ],
+    "ses_logprob": []
+   }
+  ]
+ },
+ "ali-baba__dinle_2": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 116,
+  "metin": "Ali Baba'nın bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl bağırır? Dinle bak, dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde koyunları var. Koyunlar nasıl meler? Dinle bak, dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde bir de atı var. Atı nasıl kişner? Dinle bak, dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde horozları var. Horozlar nasıl öter? Dinle bak, dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde ördekleri var. Ördekler nasıl bağırır? Dinle bak, dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde ördekleri var. Köpekler nasıl havlar? Dinle bak, dinle bak. Ali Baba'nın bir çiftliği var. Çiftliğinde bir kedisi var. Kedisi nasıl miyavlar? Dinle bak, dinle bak. Dinle bak, dinle bak. Dinle bak, dinle bak.",
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    2.0
+   ],
+   [
+    "[müzik]",
+    14.5
+   ],
+   [
+    "[müzik]",
+    26.9
+   ],
+   [
+    "[müzik]",
+    41.2
+   ],
+   [
+    "[müzik]",
+    54.8
+   ],
+   [
+    "[müzik]",
+    67.7
+   ],
+   [
+    "[müzik]",
+    82.2
+   ],
+   [
+    "[müzik]",
+    94.5
+   ],
+   [
+    "[müzik]",
+    102.9
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 116,
+   "ortalama_logprob": -0.001,
+   "medyan": -0.0,
+   "en_dusuk": -0.08,
+   "oran_-0.1_alti": 0.0,
+   "oran_-0.3_alti": 0.0,
+   "en_dusuk_5": [
+    [
+     -0.08,
+     "Baba'nın",
+     6.5
+    ],
+    [
+     -0.04,
+     "meler?",
+     24.0
+    ],
+    [
+     -0.01,
+     "miyavlar?",
+     91.6
+    ],
+    [
+     -0.0,
+     "Ali",
+     6.2
+    ],
+    [
+     -0.0,
+     "Ali",
+     18.6
+    ]
+   ]
+  }
+ },
+ "el-yikama__coskulu_2": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 48,
+  "metin": "Ellerim kirlendi. Hadi yıkayalım. Musluğu açalım. Şır şır şır. Sabunu alalım. Köpük köpük. Avuçları ovalım. Fış fış fış. Parmak aralarını unutmayalım. Elin üstünü de ovalım. Fış fış fış. Köpük köpük. Suyla durulayalım. Şıp şıp şıp. Havluyla kurulayalım. Pat pat pat. Ellerim tertemiz pırıl pırıl. Mikroplara güle güle yaşasın.",
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    1.2
+   ],
+   [
+    "[müzik]",
+    23.9
+   ],
+   [
+    "[müzik]",
+    64.5
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 48,
+   "ortalama_logprob": -0.004,
+   "medyan": -0.0,
+   "en_dusuk": -0.04,
+   "oran_-0.1_alti": 0.0,
+   "oran_-0.3_alti": 0.0,
+   "en_dusuk_5": [
+    [
+     -0.04,
+     "durulayalım.",
+     49.3
+    ],
+    [
+     -0.03,
+     "Fış",
+     34.6
+    ],
+    [
+     -0.03,
+     "ovalım.",
+     42.2
+    ],
+    [
+     -0.03,
+     "pırıl",
+     58.7
+    ],
+    [
+     -0.02,
+     "kurulayalım.",
+     53.6
+    ]
+   ]
+  }
+ },
+ "parmak-ailesi__coskulu_1": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 52,
+  "metin": "Baba parmak, baba parmak, neredesin? Buradayım, buradayım, merhaba. Anne parmak, anne parmak, neredesin? Buradayım, buradayım, merhaba. Abi parmak, abi parmak, neredesin? Buradayım, buradayım, merhaba. Buradayım, merhaba. Abla parmak, abla parmak, neredesin? Buradayım, buradayım, merhaba. Bebek parmak, bebek parmak, neredesin? Buradayım, buradayım, merhaba. Parmak ailesi hep birlikte el sallıyor, el sallıyor. Hoşça kal.",
+  "ses_olaylari": [
+   [
+    "[neşeli müzik]",
+    0.0
+   ],
+   [
+    "[neşeli müzik]",
+    13.6
+   ],
+   [
+    "[neşeli müzik]",
+    26.0
+   ],
+   [
+    "[neşeli müzik]",
+    43.1
+   ],
+   [
+    "[neşeli müzik]",
+    51.7
+   ],
+   [
+    "[neşeli müzik]",
+    66.7
+   ],
+   [
+    "[neşeli müzik biter]",
+    77.6
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 52,
+   "ortalama_logprob": -0.004,
+   "medyan": -0.0,
+   "en_dusuk": -0.06,
+   "oran_-0.1_alti": 0.0,
+   "oran_-0.3_alti": 0.0,
+   "en_dusuk_5": [
+    [
+     -0.06,
+     "buradayım,",
+     12.3
+    ],
+    [
+     -0.05,
+     "Baba",
+     8.5
+    ],
+    [
+     -0.03,
+     "kal.",
+     77.1
+    ],
+    [
+     -0.02,
+     "ailesi",
+     73.4
+    ],
+    [
+     -0.01,
+     "neredesin?",
+     10.7
+    ]
+   ]
+  },
+  "kitalar": [
+   {
+    "bas_sn": 8.5,
+    "adlar": [
+     "baba",
+     "baba"
+    ],
+    "beklenen": "baba",
+    "dogru": true
+   },
+   {
+    "bas_sn": 20.4,
+    "adlar": [
+     "anne",
+     "anne"
+    ],
+    "beklenen": "anne",
+    "dogru": true
+   },
+   {
+    "bas_sn": 34.3,
+    "adlar": [
+     "abi",
+     "abi"
+    ],
+    "beklenen": "abi",
+    "dogru": true
+   },
+   {
+    "bas_sn": 45.1,
+    "adlar": [
+     "abla",
+     "abla"
+    ],
+    "beklenen": "abla",
+    "dogru": true
+   },
+   {
+    "bas_sn": 60.0,
+    "adlar": [
+     "bebek",
+     "bebek"
+    ],
+    "beklenen": "bebek",
+    "dogru": true
+   }
+  ]
+ },
+ "ali-baba__demo_altyapi_sesli": {
+  "dokum": "yok"
+ },
+ "ali-baba__ornek_kita1": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 10,
+  "metin": "Maliboku yeşil boya. Çimdikle inek yürü. Bir yağıdır çimdikle maliboku",
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    0.0
+   ],
+   [
+    "[inek sesi]",
+    15.6
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 10,
+   "ortalama_logprob": -0.588,
+   "medyan": -0.528,
+   "en_dusuk": -1.8,
+   "oran_-0.1_alti": 0.8,
+   "oran_-0.3_alti": 0.7,
+   "en_dusuk_5": [
+    [
+     -1.8,
+     "Maliboku",
+     7.2
+    ],
+    [
+     -1.03,
+     "yağıdır",
+     21.7
+    ],
+    [
+     -0.68,
+     "inek",
+     14.4
+    ],
+    [
+     -0.64,
+     "Bir",
+     21.5
+    ],
+    [
+     -0.63,
+     "Çimdikle",
+     12.6
+    ]
+   ]
+  }
+ },
+ "ali-baba__sarki_birlesik": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 98,
+  "metin": "Ülke'nin bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl ulur? İner ya, iner ya. Ülke'nin bir çiftliği var. Çiftliğinde koyunları var. Koyunlar nasıl meler? İner ya, iner ya. Ülke'nin bir çiftliği var. Çiftliğinde atlar var. Atlar nasıl kişner? İner ya, iner ya. Ülke'nin bir çiftliği var. Çiftliğinde horozları var. Horozlar nasıl öter? İner ya, iner ya. Ülke'nin bir çiftliği var. Çiftliğinde ördekleri var. Ördekler nasıl ulur? İner ya, iner ya. Ülke'nin bir çiftliği var. Çiftliğinde köpekleri var. Köpekler nasıl havlar? İner ya, iner ya. Ülke'nin bir çiftliği var. Çiftliğinde tilkisi var. Tilsikiler nasıl ulur? İner ya, iner ya.",
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    0.0
+   ],
+   [
+    "[inek sesi]",
+    21.9
+   ],
+   [
+    "[koyun sesi]",
+    42.4
+   ],
+   [
+    "[at sesi]",
+    60.7
+   ],
+   [
+    "[horoz sesi]",
+    81.5
+   ],
+   [
+    "[ördek sesi]",
+    100.1
+   ],
+   [
+    "[köpek sesi]",
+    120.0
+   ],
+   [
+    "[tilki sesi]",
+    140.3
+   ],
+   [
+    "[müzik]",
+    151.8
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 98,
+   "ortalama_logprob": -0.053,
+   "medyan": -0.0,
+   "en_dusuk": -1.08,
+   "oran_-0.1_alti": 0.102,
+   "oran_-0.3_alti": 0.071,
+   "en_dusuk_5": [
+    [
+     -1.08,
+     "ulur?",
+     19.0
+    ],
+    [
+     -0.77,
+     "tilkisi",
+     136.1
+    ],
+    [
+     -0.65,
+     "İner",
+     19.7
+    ],
+    [
+     -0.51,
+     "Ülke'nin",
+     7.7
+    ],
+    [
+     -0.46,
+     "atlar",
+     54.2
+    ]
+   ]
+  }
+ },
+ "ali-baba__dogal_onizleme": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 107,
+  "metin": "Anne babamın bir çiftliği var. Çiftliğinde inekleri var. İnekler nasıl böğürür? Dinle bak, dinle bak. Anne babamın bir çiftliği var. Çiftliğinde koyunları var. Koyunlar nasıl meleyor? Dinle bak, dinle bak. Anne babamın bir çiftliği var. Çiftliğinde bir de atı var. Atlar nasıl kişner? Dinle bak, dinle bak. Anne babamın bir çiftliği var. Çiftliğinde horozları var. Horozlar nasıl öter? Dinle bak, dinle bak. Anne babamın bir çiftliği var. Çiftliğinde ördekleri var. Ördekler nasıl gagalar? Dinle bak, dinle bak. Anne babamın bir çiftliği var. Çiftliğinde köpekleri var. Köpekler nasıl havlar? Dinle bak, dinle bak. Anne babamın bir çiftliği var. Çiftliğinde kedileri var. Kediler nasıl miyavlar? Dinle bak, dinle bak.",
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    0.0
+   ],
+   [
+    "[inek sesi]",
+    20.7
+   ],
+   [
+    "[koyun sesi]",
+    37.3
+   ],
+   [
+    "[at sesi]",
+    53.5
+   ],
+   [
+    "[horoz sesi]",
+    72.4
+   ],
+   [
+    "[ördek sesi]",
+    85.8
+   ],
+   [
+    "[köpek sesi]",
+    103.8
+   ],
+   [
+    "[kedi sesi]",
+    120.5
+   ],
+   [
+    "[müzik]",
+    128.2
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 107,
+   "ortalama_logprob": -0.034,
+   "medyan": -0.0,
+   "en_dusuk": -0.88,
+   "oran_-0.1_alti": 0.084,
+   "oran_-0.3_alti": 0.037,
+   "en_dusuk_5": [
+    [
+     -0.88,
+     "Anne",
+     8.3
+    ],
+    [
+     -0.62,
+     "nasıl",
+     83.5
+    ],
+    [
+     -0.45,
+     "böğürür?",
+     17.9
+    ],
+    [
+     -0.32,
+     "meleyor?",
+     34.4
+    ],
+    [
+     -0.24,
+     "Çiftliğinde",
+     78.6
+    ]
+   ]
+  }
+ },
+ "ali-baba__coskulu_1": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 110,
+  "metin": "Ali Baba'nın bir çiftliği var, çiftliğinde inekleri var. \"Mö, mö\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var, çiftliğinde koyunları var. \"Me, me\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde de atı var. \"İha, iha\" diye kişner çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde horozları var. \"Üü, üü\" diye gümler. Ben balta grupu var. Ali Baba'nın bir çiftliği var. Çiftliğinde ördekleri var. \"Vak, vak\" diye bağırmak, \"vak\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde köpekleri var. \"Hav, hav\" diye havlar çiftlikte Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde kedileri var. \"Miyav, miyav\" diye miyavlar çiftlikte Ali Baba'nın.",
+  "ses_olaylari": [
+   [
+    "[hareketli melodi]",
+    1.5
+   ],
+   [
+    "[hareketli melodi]",
+    16.5
+   ],
+   [
+    "[hareketli melodi]",
+    49.6
+   ],
+   [
+    "[hareketli melodi]",
+    82.7
+   ],
+   [
+    "[hareketli melodi]",
+    115.3
+   ],
+   [
+    "[hareketli melodi]",
+    144.8
+   ],
+   [
+    "[hareketli melodi]",
+    177.4
+   ],
+   [
+    "[hareketli melodi]",
+    210.1
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 110,
+   "ortalama_logprob": -0.042,
+   "medyan": -0.0,
+   "en_dusuk": -1.49,
+   "oran_-0.1_alti": 0.082,
+   "oran_-0.3_alti": 0.045,
+   "en_dusuk_5": [
+    [
+     -1.49,
+     "balta",
+     114.2
+    ],
+    [
+     -0.55,
+     "gümler.",
+     113.0
+    ],
+    [
+     -0.52,
+     "grupu",
+     114.5
+    ],
+    [
+     -0.33,
+     "\"Mö,",
+     12.4
+    ],
+    [
+     -0.3,
+     "var.",
+     114.8
+    ]
+   ]
+  },
+  "kitalar": [
+   {
+    "bas_sn": 8.3,
+    "hayvan": "inek",
+    "soylenen_ses": "Mö mö",
+    "ses_zamani": [
+     12.38,
+     13.14
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "inek"
+    ],
+    "ses_logprob": [
+     -0.33,
+     -0.0
+    ]
+   },
+   {
+    "bas_sn": 41.4,
+    "hayvan": "koyun",
+    "soylenen_ses": "Me me",
+    "ses_zamani": [
+     45.48,
+     46.26
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "koyun"
+    ],
+    "ses_logprob": [
+     -0.08,
+     -0.0
+    ]
+   },
+   {
+    "bas_sn": 74.5,
+    "hayvan": "at",
+    "soylenen_ses": "İha iha",
+    "ses_zamani": [
+     78.6,
+     79.52
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "at"
+    ],
+    "ses_logprob": [
+     -0.16,
+     -0.07
+    ]
+   },
+   {
+    "bas_sn": 107.8,
+    "hayvan": "horoz",
+    "soylenen_ses": "Üü üü",
+    "ses_zamani": [
+     111.7,
+     112.68
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "horoz"
+    ],
+    "ses_logprob": [
+     -0.1,
+     -0.05
+    ]
+   },
+   {
+    "bas_sn": 134.5,
+    "hayvan": "ördek",
+    "soylenen_ses": "Vak vak",
+    "ses_zamani": [
+     138.6,
+     139.58
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "ördek"
+    ],
+    "ses_logprob": [
+     -0.01,
+     -0.01
+    ]
+   },
+   {
+    "bas_sn": 169.6,
+    "hayvan": "köpek",
+    "soylenen_ses": "Hav hav",
+    "ses_zamani": [
+     173.76,
+     174.76
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "köpek"
+    ],
+    "ses_logprob": [
+     -0.0,
+     -0.0
+    ]
+   },
+   {
+    "bas_sn": 202.7,
+    "hayvan": "kedi",
+    "soylenen_ses": "Miyav miyav",
+    "ses_zamani": [
+     206.86,
+     207.64
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "kedi"
+    ],
+    "ses_logprob": [
+     -0.01,
+     -0.0
+    ]
+   }
+  ]
+ },
+ "ali-baba__coskulu_2": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 115,
+  "metin": "Ali Baba'nın bir çiftliği var. Çiftliğinde inekleri var. \"Mö mö\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde koyunları var. \"Mö mö\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde bir de atı var. \"İha ha ihan ha\" diye kişner çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde horozları var. \"Ü ürü ü\" diye öter çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde ördekleri var. \"Vak vak\" diye bağırır çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde köpekleri var. \"Hav hav\" diye havlar çiftliğinde Ali Baba'nın. Ali Baba'nın bir çiftliği var. Çiftliğinde köpekleri var. \"Hav hav\" diye havlar var. \"Hav hav\" diye havlar çiftliğinde Ali Baba'nın.",
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    1.3
+   ],
+   [
+    "[müzik]",
+    17.0
+   ],
+   [
+    "[müzik]",
+    41.9
+   ],
+   [
+    "[müzik]",
+    70.7
+   ],
+   [
+    "[müzik]",
+    95.6
+   ],
+   [
+    "[müzik]",
+    122.5
+   ],
+   [
+    "[müzik]",
+    149.5
+   ],
+   [
+    "[müzik]",
+    178.4
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 115,
+   "ortalama_logprob": -0.02,
+   "medyan": -0.0,
+   "en_dusuk": -0.93,
+   "oran_-0.1_alti": 0.026,
+   "oran_-0.3_alti": 0.026,
+   "en_dusuk_5": [
+    [
+     -0.93,
+     "ihan",
+     66.3
+    ],
+    [
+     -0.47,
+     "\"İha",
+     65.2
+    ],
+    [
+     -0.46,
+     "mö\"",
+     12.9
+    ],
+    [
+     -0.09,
+     "Baba'nın",
+     8.5
+    ],
+    [
+     -0.06,
+     "\"Mö",
+     12.4
+    ]
+   ]
+  },
+  "kitalar": [
+   {
+    "bas_sn": 8.3,
+    "hayvan": "inek",
+    "soylenen_ses": "Mö mö",
+    "ses_zamani": [
+     12.4,
+     13.16
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "inek"
+    ],
+    "ses_logprob": [
+     -0.06,
+     -0.46
+    ]
+   },
+   {
+    "bas_sn": 33.1,
+    "hayvan": "koyun",
+    "soylenen_ses": "Mö mö",
+    "ses_zamani": [
+     37.22,
+     38.0
+    ],
+    "ses_hayvana_uyuyor": false,
+    "ses_hangi_hayvanin": [
+     "inek"
+    ],
+    "ses_logprob": [
+     -0.03,
+     -0.0
+    ]
+   },
+   {
+    "bas_sn": 60.1,
+    "hayvan": "at",
+    "soylenen_ses": "İha ha ihan ha",
+    "ses_zamani": [
+     65.16,
+     67.08
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "at"
+    ],
+    "ses_logprob": [
+     -0.47,
+     -0.04,
+     -0.93,
+     -0.01
+    ]
+   },
+   {
+    "bas_sn": 86.9,
+    "hayvan": "horoz",
+    "soylenen_ses": "Ü ürü ü",
+    "ses_zamani": [
+     91.08,
+     91.78
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "horoz"
+    ],
+    "ses_logprob": [
+     -0.02,
+     -0.0,
+     -0.03
+    ]
+   },
+   {
+    "bas_sn": 113.8,
+    "hayvan": "ördek",
+    "soylenen_ses": "Vak vak",
+    "ses_zamani": [
+     117.92,
+     118.72
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "ördek"
+    ],
+    "ses_logprob": [
+     -0.01,
+     -0.0
+    ]
+   },
+   {
+    "bas_sn": 140.7,
+    "hayvan": "köpek",
+    "soylenen_ses": "Hav hav",
+    "ses_zamani": [
+     144.82,
+     145.54
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "köpek"
+    ],
+    "ses_logprob": [
+     -0.0,
+     -0.0
+    ]
+   },
+   {
+    "bas_sn": 167.6,
+    "hayvan": "köpek",
+    "soylenen_ses": "Hav hav",
+    "ses_zamani": [
+     171.7,
+     172.48
+    ],
+    "ses_hayvana_uyuyor": true,
+    "ses_hangi_hayvanin": [
+     "köpek"
+    ],
+    "ses_logprob": [
+     -0.0,
+     -0.0
+    ]
+   }
+  ]
+ },
+ "parmak-ailesi__duzgun_1": {
+  "dokum_kaynagi": "eski *_words.json",
+  "sozcuk": 49,
+  "metin": "Baba parmak, baba parmak. Neredesin? Buradayım, buradayım. Merhaba. Anne parmak, anne parmak. Neredesin? Buradayım, buradayım. Merengim. Abi parmak, abi parmak. Neredesin? Buradayım, buradayım. Merhaba. Abla parmak, abla parmak. Neredesin? Buradayım, buradayım. Merhaba. Abla parmak, abla parmak. Neredesin? Buradayım. Merhaba. Parmak ailesi hep birlikte el sallıyor, el sallıyor. Hoşça kal.",
+  "ses_olaylari": [],
+  "dil_olasiligi": null,
+  "guven": null,
+  "kitalar": [
+   {
+    "bas_sn": 6.1,
+    "adlar": [
+     "baba",
+     "baba"
+    ],
+    "beklenen": "baba",
+    "dogru": true
+   },
+   {
+    "bas_sn": 24.6,
+    "adlar": [
+     "anne",
+     "anne"
+    ],
+    "beklenen": "anne",
+    "dogru": true
+   },
+   {
+    "bas_sn": 40.0,
+    "adlar": [
+     "abi",
+     "abi"
+    ],
+    "beklenen": "abi",
+    "dogru": true
+   },
+   {
+    "bas_sn": 55.5,
+    "adlar": [
+     "abla",
+     "abla"
+    ],
+    "beklenen": "abla",
+    "dogru": true
+   },
+   {
+    "bas_sn": 72.4,
+    "adlar": [
+     "abla",
+     "abla"
+    ],
+    "beklenen": "bebek",
+    "dogru": false
+   }
+  ]
+ },
+ "parmak-ailesi__duzgun_2": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 50,
+  "metin": "Baba parmak, baba parmak. Neredesin? Buradayım, buradayım. Merhaba. Anne parmak, anne parmak. Neredesin? Buradayım. Merhaba. Neredesin? Abi parmak, abi parmak. Neredesin? Buradayım, buradayım. Merhaba. Abla parmak, abla parmak. Neredesin? Buradayım, buradayım. Merhaba. Bebek parmak, bebek parmak. Neredesin? Buradayım, buradayım. Merhaba. Parmak ailesi hep birlikte el sallıyor, el sallıyor. Hoşça kal.",
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    2.3
+   ],
+   [
+    "[müzik]",
+    17.3
+   ],
+   [
+    "[müzik]",
+    35.6
+   ],
+   [
+    "[müzik]",
+    47.7
+   ],
+   [
+    "[müzik]",
+    65.0
+   ],
+   [
+    "[müzik]",
+    81.9
+   ],
+   [
+    "[müzik]",
+    93.3
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 50,
+   "ortalama_logprob": -0.007,
+   "medyan": -0.0,
+   "en_dusuk": -0.11,
+   "oran_-0.1_alti": 0.02,
+   "oran_-0.3_alti": 0.0,
+   "en_dusuk_5": [
+    [
+     -0.11,
+     "el",
+     89.6
+    ],
+    [
+     -0.07,
+     "Baba",
+     6.5
+    ],
+    [
+     -0.06,
+     "parmak.",
+     8.8
+    ],
+    [
+     -0.05,
+     "ailesi",
+     87.3
+    ],
+    [
+     -0.02,
+     "parmak,",
+     25.7
+    ]
+   ]
+  },
+  "kitalar": [
+   {
+    "bas_sn": 6.5,
+    "adlar": [
+     "baba",
+     "baba"
+    ],
+    "beklenen": "baba",
+    "dogru": true
+   },
+   {
+    "bas_sn": 25.0,
+    "adlar": [
+     "anne",
+     "anne"
+    ],
+    "beklenen": "anne",
+    "dogru": true
+   },
+   {
+    "bas_sn": 38.8,
+    "adlar": [
+     "abi",
+     "abi"
+    ],
+    "beklenen": "abi",
+    "dogru": true
+   },
+   {
+    "bas_sn": 55.8,
+    "adlar": [
+     "abla",
+     "abla"
+    ],
+    "beklenen": "abla",
+    "dogru": true
+   },
+   {
+    "bas_sn": 72.7,
+    "adlar": [
+     "bebek",
+     "bebek"
+    ],
+    "beklenen": "bebek",
+    "dogru": true
+   }
+  ]
+ },
+ "parmak-ailesi__turkce_2": {
+  "dokum_kaynagi": "Scribe (onbellek)",
+  "sozcuk": 53,
+  "metin": "Baba parmak, baba parmak neredesin? Buradayım, buradayım. Merhaba. Anne parmak, anne parmak neredesin? Buradayım, buradayım. Merhaba. Anne parmak, anne parmak neredesin? Buradayım, buradayım. Merhaba. Buradayım, buradayım. Merhaba. Abla parmak, abla parmak neredesin? Buradayım, buradayım. Merhaba. Bebek parmak, bebek parmak neredesin? Buradayım, buradayım. Merhaba. Parmak ailesi hep birlikte el sallıyor, el sallıyor. Hoşça kal.",
+  "ses_olaylari": [
+   [
+    "[neşeli müzik]",
+    0.9
+   ],
+   [
+    "[neşeli müzik]",
+    61.1
+   ],
+   [
+    "[neşeli müzik]",
+    89.8
+   ]
+  ],
+  "dil_olasiligi": 1.0,
+  "guven": {
+   "sozcuk": 53,
+   "ortalama_logprob": -0.01,
+   "medyan": -0.0,
+   "en_dusuk": -0.43,
+   "oran_-0.1_alti": 0.019,
+   "oran_-0.3_alti": 0.019,
+   "en_dusuk_5": [
+    [
+     -0.43,
+     "Anne",
+     21.4
+    ],
+    [
+     -0.03,
+     "parmak,",
+     6.7
+    ],
+    [
+     -0.02,
+     "neredesin?",
+     10.5
+    ],
+    [
+     -0.01,
+     "Anne",
+     36.4
+    ],
+    [
+     -0.01,
+     "Buradayım,",
+     12.4
+    ]
+   ]
+  },
+  "kitalar": [
+   {
+    "bas_sn": 6.3,
+    "adlar": [
+     "baba",
+     "baba"
+    ],
+    "beklenen": "baba",
+    "dogru": true
+   },
+   {
+    "bas_sn": 21.4,
+    "adlar": [
+     "anne",
+     "anne"
+    ],
+    "beklenen": "anne",
+    "dogru": true
+   },
+   {
+    "bas_sn": 36.4,
+    "adlar": [
+     "anne",
+     "anne"
+    ],
+    "beklenen": "abi",
+    "dogru": false
+   },
+   {
+    "bas_sn": 52.9,
+    "adlar": [
+     "abla",
+     "abla"
+    ],
+    "beklenen": "abla",
+    "dogru": true
+   },
+   {
+    "bas_sn": 67.9,
+    "adlar": [
+     "bebek",
+     "bebek"
+    ],
+    "beklenen": "bebek",
+    "dogru": true
+   }
+  ]
+ },
+ "parmak-ailesi__yavas_2": {
+  "dokum_kaynagi": "eski *_words.json",
+  "sozcuk": 50,
+  "metin": "Baba parmak, baba parmak neredesin? Buradayım, buradayım. Merhaba. Anne parmak, anne parmak neredesin? Buradayım, buradayım. Merhaba. Anne parmak, abi parmak neredesin? Buradayım, buradayım. Merhaba. Able parmak, abi parmak neredesin? Buradayım, buradayım. Merhaba. Bebek parmak, bebek parmak neredesin? Buradayım, buradayım. Merhaba. Parmak ailesi hep birlikte el sallıyor, el sallıyor. Hoşça kal.",
+  "ses_olaylari": [],
+  "dil_olasiligi": null,
+  "guven": null,
+  "kitalar": [
+   {
+    "bas_sn": 6.7,
+    "adlar": [
+     "baba",
+     "baba"
+    ],
+    "beklenen": "baba",
+    "dogru": true
+   },
+   {
+    "bas_sn": 22.1,
+    "adlar": [
+     "anne",
+     "anne"
+    ],
+    "beklenen": "anne",
+    "dogru": true
+   },
+   {
+    "bas_sn": 37.5,
+    "adlar": [
+     "anne",
+     "abi"
+    ],
+    "beklenen": "abi",
+    "dogru": false
+   },
+   {
+    "bas_sn": 53.0,
+    "adlar": [
+     "able",
+     "abi"
+    ],
+    "beklenen": "abla",
+    "dogru": false
+   },
+   {
+    "bas_sn": 68.3,
+    "adlar": [
+     "bebek",
+     "bebek"
+    ],
+    "beklenen": "bebek",
+    "dogru": true
+   }
+  ]
+ },
+ "pitirin-ailesi__yavas_2": {
+  "dokum_kaynagi": "eski *_words.json",
+  "sozcuk": 72,
+  "metin": "Bebek kedi zıp zıp zıplar miyav miyav. Bebek kedi zıp zıp zıplar miyav. Anne kedi sımsıkı sarılır mır mır mır. Anne kedi sımsıkı sarılır mır. Baba kedi havaya kaldırır hop hop. Baba kedi havaya kaldırır hop. Nine kedi örgü örer tık tık tık. Nine kedi örgü örer tık tık. Dede kedi masal okur ho ho ho. Dede kedi masal okur. Hep birlikte dans ederiz la la la. Biz kocaman bir aileyiz yaşasın!",
+  "ses_olaylari": [],
+  "dil_olasiligi": null,
+  "guven": null
+ },
+ "el-yikama__sarki_1": {
+  "dokum_kaynagi": "eski *_words.json",
+  "sozcuk": 46,
+  "metin": "Ellerim kirlendi. Hadi yıkayalım. Musluğu açalım. Şır şır şır. Sabunu alalım. Köpük köpük. Avuçları ovalım. Fış fış fış. Parmak aralarını unutmayalım. Elin üstünü de ovalım. Fış fış fış. Suyla durulayalım. Şıp şıp şıp. Havluyla kurulayalım. Pat pat pat. Ellerim tertemiz, pırıl pırıl. Mikroplara güle güle. Yaşasın.",
+  "ses_olaylari": [],
+  "dil_olasiligi": null,
+  "guven": null
+ },
+ "parmak-ailesi__sarki_2": {
+  "dokum_kaynagi": "eski *_words.json",
+  "sozcuk": 43,
+  "metin": "Baba parmak, baba parmak neredesin? Buradayım, buradayım. Merhaba. Anne parmak, anne parmak neredesin? Buradayım, buradayım. Merhaba. Abi parmak, abi parmak neredesin? Buradayım, buradayım. Merhaba. Abla parmak, abla parmak neredesin? Buradayım, buradayım. Merhaba. Bebek parmak, parmak neredesin? Buradayım, buradayım. Merhaba. Parmak ailesi hep birlikte.",
+  "ses_olaylari": [],
+  "dil_olasiligi": null,
+  "guven": null,
+  "kitalar": [
+   {
+    "bas_sn": 9.3,
+    "adlar": [
+     "baba",
+     "baba"
+    ],
+    "beklenen": "baba",
+    "dogru": true
+   },
+   {
+    "bas_sn": 18.9,
+    "adlar": [
+     "anne",
+     "anne"
+    ],
+    "beklenen": "anne",
+    "dogru": true
+   },
+   {
+    "bas_sn": 28.5,
+    "adlar": [
+     "abi",
+     "abi"
+    ],
+    "beklenen": "abi",
+    "dogru": true
+   },
+   {
+    "bas_sn": 39.6,
+    "adlar": [
+     "abla",
+     "abla"
+    ],
+    "beklenen": "abla",
+    "dogru": true
+   },
+   {
+    "bas_sn": 50.1,
+    "adlar": [
+     "bebek"
+    ],
+    "beklenen": "bebek",
+    "dogru": false
+   }
+  ]
+ }
+}

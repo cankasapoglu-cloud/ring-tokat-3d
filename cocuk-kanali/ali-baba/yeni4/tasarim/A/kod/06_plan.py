@@ -176,11 +176,14 @@ plan = {
         "robustness": {k: v["readings_agreeing_with_primary_per_bar"] for k, v in O["robustness_of_the_chosen_bars"].items() if k != "about"},
         "robustness_note": "18 readings: note mode, frame mode, a second pitch tracker, chord changes 40 ms early, each verse left out, each verse alone. "
                            "With V7 symbols beat 2 of bar 6 flips between V7 and I in 7 readings: F and E are equally long there and one of them is a semitone from the "
-                           "chord whichever of the two is chosen. Played without the seventh the dominant has no semitone relation to either note, and bar 6 is the same in 18 of 18.",
+                           "chord whichever of the two is chosen. Played without the seventh the dominant has no semitone relation to either note, and bar 6 is the same in 18 of 18. "
+                           "In the as-played search the deviating readings of bar 2 (single verses and one leave-out) put IV on beat 2, which the rendered audio shows to be the "
+                           "loudest rub of all candidates; the deviating readings of bar 5 (frame mode, two single verses) put the dominant under 'diye bagirir', "
+                           "which removes the passing-F clash but ends the phrase on a non-chord tone.",
     },
     "reasoning": [
         "The sung melody is not the Old MacDonald tune: its notes are D E F G A, G alone is 45 % of the sung time. Under the plain harmony I I IV I only 58 % of the sung time is on chord tones.",
-        "Line 1 (D G | A A A | G G G F | E): the singer holds A on beat 1 and G on beat 2, the opposite of the traditional bar (IV on beat 2). Moving IV one beat earlier (I IV I I) raises the chord-tone share of the line from "
+        "Line 1 (beat by beat: D G | A A A | G G | G F E): the singer holds A on beat 1 and G on beat 2; the traditional bar has its IV on beat 2, one beat late for her. Moving IV one beat earlier (I IV I I) raises the chord-tone share of the line from "
         + "%.0f %% to %.0f %%. The line ends on E (mi over I); the loud answer that follows starts on the same note." % (100 * BASE["per_line"]["L1"]["chord_tone"], 100 * CH["per_line"]["L1"]["chord_tone"]),
         "Lines 2 and 4 (D G G G | F E F E D) outline the dominant: D and G are its fifth and root, F its seventh, E a sixth above it. On the G triad no sung note is a semitone from a chord tone. "
         "Every chord that contains E (I) or F (IV, V7) puts the other note a semitone away for half a beat; the plain baseline does that with IV on beat 2.",

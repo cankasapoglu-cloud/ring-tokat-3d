@@ -1,0 +1,1313 @@
+[
+ {
+  "ad": "ali-baba__v2_2",
+  "yol": "ali-baba/v2_2.mp3",
+  "karar": "begendi",
+  "gerekce": "söyleyiş iyi; ama söylenen hayvan sesleri yanlış (koyun ve at), bir sözcük bozuk ('atıları'), ezgi bilinen ezgi değil",
+  "boyut": [
+   "sozler",
+   "dogallik"
+  ],
+  "sarki": "ali-baba",
+  "hatalar": [],
+  "sure_sn": 105.0,
+  "lufs": -13.2,
+  "tepe_dbtp": 0.1,
+  "enerji_puani": 75.0,
+  "tempo_bpm": 105.0,
+  "olay_sn": 4.74,
+  "nabiz": 0.715,
+  "vurmali_armonik_db": 0.92,
+  "aki": 1.881,
+  "parlaklik_hz": 2397.0,
+  "duzey_oynakligi_db": 3.17,
+  "coca_cosku": 0.015,
+  "coca_tempo": -0.058,
+  "coca_kalite": 0.157,
+  "coca_sarki_var": 0.226,
+  "ced_ninni": 0.0,
+  "ced_coskulu_eksi_sakin": 0.168,
+  "ced_mutlu": 0.158,
+  "ced_heyecanli": 0.023,
+  "ced_yumusak": 0.013,
+  "ced_cocuk": 0.184,
+  "ced_hayvan": {},
+  "vokal_eksi_altyapi_db": 0.8,
+  "vokalli_oran": 0.638,
+  "sizinti_db": -46.0,
+  "gomuk_yer": 0,
+  "ton": "Re minör (D minor)",
+  "ton_belirsiz": false,
+  "akor_guveni": 0.79,
+  "ton_degisimi": false,
+  "destek_fark": 0.311,
+  "destek_gercek": 0.566,
+  "en_iyi_kaydirma": 0,
+  "sifir_kacinci": 1,
+  "gam_ici": 0.995,
+  "gam_guvenilir": true,
+  "akor_sesi": 0.608,
+  "gam_disi": 0.005,
+  "cent_medyan": 8.1,
+  "yuzde_25cent": 90.6,
+  "cakisan": 0,
+  "uzun_nota": 40,
+  "cakisan_oran": 0.0,
+  "ritim_R": 0.57,
+  "ritim_kayma_ms": 21.0,
+  "ritim_40ms": 55.0,
+  "ritim_tempo": 105.0,
+  "ritim_R16": 0.44,
+  "nota_sayisi": 167,
+  "ses_araligi_ys": 7.2,
+  "medyan_hz": 389.0,
+  "pyin_uyum": 95.1,
+  "sesli_cerceve": 0.439,
+  "y_nota_ici_oynaklik_cent_medyan": 11.3,
+  "y_cok_duz_nota_orani": 0.04,
+  "y_perde_izgaraya_yapisma_R": 0.69,
+  "y_vibratolu_uzun_nota_orani": 0.06,
+  "y_donmus_unlu_sayisi_045sn_ustu": 0,
+  "y_donmus_sure_orani": 0.0,
+  "y_unsuzlerde_tiz_payi_db": -11.2,
+  "y_vokal_ust_frekans_hz": 10702,
+  "y_tiz_doku_degisim_katsayisi": 1.31,
+  "y_zarf_titremesi_db": -13.3,
+  "y_isaret_sayisi": 0,
+  "y_isaretler": [],
+  "y_bagli_gecis_suresi_ms_medyan": 32.0,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9854,
+  "dnsmos": 2.68,
+  "nisqa": 3.33,
+  "distillmos": 3.94,
+  "utmos22": 1.44,
+  "nisqa_kesintisizlik": 4.32,
+  "nisqa_renk": 3.55,
+  "v_sarki": 0.136,
+  "v_konusma": 0.03,
+  "v_sentetik_sarki": 0.029,
+  "v_konusma_sentezi": 0.001,
+  "v_kadin": 0.075,
+  "v_cocuk": 0.004,
+  "dokum_kaynagi": "mevcut *_words.json (yeniden dokum alinmadi; sozcuk guveni yok)",
+  "dil_olasiligi": null,
+  "wer": 0.047,
+  "wer_kucuksuz": 0.038,
+  "degisik": 4,
+  "eksik": 1,
+  "fazla": 0,
+  "beklenen_sozcuk": 106,
+  "yanlis_sozcukler": [
+   [
+    "İha",
+    "\"Me,",
+    40.54
+   ],
+   [
+    "iha",
+    "me\"",
+    41.16
+   ],
+   [
+    "ürü",
+    "\"Üü,",
+    54.3
+   ],
+   [
+    "kedileri",
+    "kedisi",
+    94.26
+   ]
+  ],
+  "eksik_sozcukler": [
+   [
+    "Ü",
+    54.0
+   ]
+  ],
+  "fazla_sozcukler": [],
+  "hece_sn_soz_ici": 4.64,
+  "hece_sn_obek_medyan": 3.85,
+  "hece_sn_en_hizli": 4.09,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 0,
+  "ses_olaylari": [],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Tepe": "dikkat",
+   "Enerji / coşku": "bilgi",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "iyi",
+   "Gam içi söyleme": "iyi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "iyi",
+   "Ritme oturma": "iyi",
+   "Yapaylık işaretleri (vekil)": "bilgi",
+   "Sözler": "iyi",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "söz hatası": 5
+  },
+  "calisma_sn": 169.5
+ },
+ {
+  "ad": "ali-baba__dinle_2",
+  "yol": "ali-baba/dinle_2.mp3",
+  "karar": "begendi",
+  "gerekce": "'ikincisi daha güzel', 'bu seslendirme uygun'; ezgi yine bilinen ezgi değil",
+  "boyut": [
+   "dogallik",
+   "sozler"
+  ],
+  "sarki": "ali-baba",
+  "hatalar": [],
+  "sure_sn": 110.12,
+  "lufs": -12.4,
+  "tepe_dbtp": 0.5,
+  "enerji_puani": 73.0,
+  "tempo_bpm": 116.0,
+  "olay_sn": 4.24,
+  "nabiz": 0.825,
+  "vurmali_armonik_db": 0.83,
+  "aki": 1.857,
+  "parlaklik_hz": 2684.0,
+  "duzey_oynakligi_db": 1.67,
+  "coca_cosku": 0.179,
+  "coca_tempo": 0.073,
+  "coca_kalite": 0.263,
+  "coca_sarki_var": 0.218,
+  "ced_ninni": 0.0,
+  "ced_coskulu_eksi_sakin": 0.142,
+  "ced_mutlu": 0.074,
+  "ced_heyecanli": 0.059,
+  "ced_yumusak": 0.0,
+  "ced_cocuk": 0.016,
+  "ced_hayvan": {},
+  "vokal_eksi_altyapi_db": -3.4,
+  "vokalli_oran": 0.581,
+  "sizinti_db": -21.0,
+  "gomuk_yer": 0,
+  "ton": "La majör (A major)",
+  "ton_belirsiz": true,
+  "akor_guveni": 0.68,
+  "ton_degisimi": false,
+  "destek_fark": 0.26,
+  "destek_gercek": 0.65,
+  "en_iyi_kaydirma": 0,
+  "sifir_kacinci": 1,
+  "gam_ici": 0.858,
+  "gam_guvenilir": false,
+  "akor_sesi": 0.704,
+  "gam_disi": 0.107,
+  "cent_medyan": 8.8,
+  "yuzde_25cent": 88.4,
+  "cakisan": 0,
+  "uzun_nota": 25,
+  "cakisan_oran": 0.0,
+  "ritim_R": 0.36,
+  "ritim_kayma_ms": 26.0,
+  "ritim_40ms": 48.0,
+  "ritim_tempo": 115.9,
+  "ritim_R16": 0.36,
+  "nota_sayisi": 128,
+  "ses_araligi_ys": 5.0,
+  "medyan_hz": 328.0,
+  "pyin_uyum": 93.6,
+  "sesli_cerceve": 0.307,
+  "y_nota_ici_oynaklik_cent_medyan": 11.1,
+  "y_cok_duz_nota_orani": 0.03,
+  "y_perde_izgaraya_yapisma_R": 0.67,
+  "y_vibratolu_uzun_nota_orani": 0.15,
+  "y_donmus_unlu_sayisi_045sn_ustu": 0,
+  "y_donmus_sure_orani": 0.0,
+  "y_unsuzlerde_tiz_payi_db": -11.1,
+  "y_vokal_ust_frekans_hz": 10723,
+  "y_tiz_doku_degisim_katsayisi": 1.42,
+  "y_zarf_titremesi_db": -9.1,
+  "y_isaret_sayisi": 0,
+  "y_isaretler": [],
+  "y_bagli_gecis_suresi_ms_medyan": 32.0,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9827,
+  "dnsmos": 2.71,
+  "nisqa": 2.88,
+  "distillmos": 3.41,
+  "utmos22": 1.49,
+  "nisqa_kesintisizlik": 4.41,
+  "nisqa_renk": 3.42,
+  "v_sarki": 0.079,
+  "v_konusma": 0.067,
+  "v_sentetik_sarki": 0.021,
+  "v_konusma_sentezi": 0.005,
+  "v_kadin": 0.032,
+  "v_cocuk": 0.002,
+  "dokum_kaynagi": "onbellek",
+  "dil_olasiligi": 1.0,
+  "wer": 0.083,
+  "wer_kucuksuz": 0.074,
+  "degisik": 1,
+  "eksik": 0,
+  "fazla": 8,
+  "beklenen_sozcuk": 108,
+  "yanlis_sozcukler": [
+   [
+    "köpekleri",
+    "ördekleri",
+    76.88
+   ]
+  ],
+  "eksik_sozcukler": [],
+  "fazla_sozcukler": [
+   [
+    "Dinle",
+    100.84
+   ],
+   [
+    "bak,",
+    101.36
+   ],
+   [
+    "dinle",
+    101.88
+   ],
+   [
+    "bak.",
+    102.38
+   ],
+   [
+    "Dinle",
+    107.04
+   ],
+   [
+    "bak,",
+    107.56
+   ],
+   [
+    "dinle",
+    108.08
+   ],
+   [
+    "bak.",
+    108.58
+   ]
+  ],
+  "hece_sn_soz_ici": 4.73,
+  "hece_sn_obek_medyan": 3.88,
+  "hece_sn_en_hizli": 4.14,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 0,
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    2.04
+   ],
+   [
+    "[müzik]",
+    14.46
+   ],
+   [
+    "[müzik]",
+    26.88
+   ],
+   [
+    "[müzik]",
+    41.24
+   ],
+   [
+    "[müzik]",
+    54.8
+   ],
+   [
+    "[müzik]",
+    67.74
+   ],
+   [
+    "[müzik]",
+    82.22
+   ],
+   [
+    "[müzik]",
+    94.5
+   ],
+   [
+    "[müzik]",
+    102.9
+   ]
+  ],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Tepe": "dikkat",
+   "Enerji / coşku": "iyi",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "iyi",
+   "Gam içi söyleme": "bilgi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "iyi",
+   "Ritme oturma": "dikkat",
+   "Yapaylık işaretleri (vekil)": "bilgi",
+   "Sözler": "dikkat",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "söz hatası": 9
+  },
+  "calisma_sn": 64.8
+ },
+ {
+  "ad": "parmak-ailesi__coskulu_1",
+  "yol": "parmak-ailesi/coskulu_1.mp3",
+  "karar": "begendi",
+  "gerekce": "parmak ailesi için seçilen coşkulu kayıt (beş ad da doğru)",
+  "boyut": [
+   "enerji",
+   "sozler",
+   "aksan"
+  ],
+  "sarki": "parmak-ailesi",
+  "hatalar": [],
+  "sure_sn": 80.0,
+  "lufs": -12.6,
+  "tepe_dbtp": 0.3,
+  "enerji_puani": 79.0,
+  "tempo_bpm": 112.1,
+  "olay_sn": 5.46,
+  "nabiz": 0.771,
+  "vurmali_armonik_db": -1.77,
+  "aki": 1.94,
+  "parlaklik_hz": 2290.0,
+  "duzey_oynakligi_db": 1.95,
+  "coca_cosku": 0.105,
+  "coca_tempo": -0.053,
+  "coca_kalite": 0.148,
+  "coca_sarki_var": 0.246,
+  "ced_ninni": 0.0,
+  "ced_coskulu_eksi_sakin": 0.198,
+  "ced_mutlu": 0.158,
+  "ced_heyecanli": 0.035,
+  "ced_yumusak": 0.0,
+  "ced_cocuk": 0.137,
+  "ced_hayvan": {},
+  "vokal_eksi_altyapi_db": -1.6,
+  "vokalli_oran": 0.467,
+  "sizinti_db": -20.6,
+  "gomuk_yer": 0,
+  "ton": "Do majör (C major)",
+  "ton_belirsiz": false,
+  "akor_guveni": 0.74,
+  "ton_degisimi": false,
+  "destek_fark": 0.273,
+  "destek_gercek": 0.559,
+  "en_iyi_kaydirma": 0,
+  "sifir_kacinci": 1,
+  "gam_ici": 0.999,
+  "gam_guvenilir": true,
+  "akor_sesi": 0.807,
+  "gam_disi": 0.001,
+  "cent_medyan": 9.2,
+  "yuzde_25cent": 92.5,
+  "cakisan": 0,
+  "uzun_nota": 13,
+  "cakisan_oran": 0.0,
+  "ritim_R": 0.39,
+  "ritim_kayma_ms": 2.0,
+  "ritim_40ms": 50.0,
+  "ritim_tempo": 112.1,
+  "ritim_R16": 0.35,
+  "nota_sayisi": 56,
+  "ses_araligi_ys": 10.2,
+  "medyan_hz": 328.0,
+  "pyin_uyum": 94.3,
+  "sesli_cerceve": 0.179,
+  "y_nota_ici_oynaklik_cent_medyan": 11.5,
+  "y_cok_duz_nota_orani": 0.0,
+  "y_perde_izgaraya_yapisma_R": 0.68,
+  "y_vibratolu_uzun_nota_orani": 0.1,
+  "y_donmus_unlu_sayisi_045sn_ustu": 0,
+  "y_donmus_sure_orani": 0.0,
+  "y_unsuzlerde_tiz_payi_db": -16.1,
+  "y_vokal_ust_frekans_hz": 10723,
+  "y_tiz_doku_degisim_katsayisi": 1.49,
+  "y_zarf_titremesi_db": -10.8,
+  "y_isaret_sayisi": 1,
+  "y_isaretler": [
+   "ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-16 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"
+  ],
+  "y_bagli_gecis_suresi_ms_medyan": null,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9836,
+  "dnsmos": 2.47,
+  "nisqa": 2.31,
+  "distillmos": 2.98,
+  "utmos22": 1.52,
+  "nisqa_kesintisizlik": 3.93,
+  "nisqa_renk": 3.18,
+  "v_sarki": 0.102,
+  "v_konusma": 0.2,
+  "v_sentetik_sarki": 0.017,
+  "v_konusma_sentezi": 0.008,
+  "v_kadin": 0.023,
+  "v_cocuk": 0.001,
+  "dokum_kaynagi": "onbellek",
+  "dil_olasiligi": 1.0,
+  "wer": 0.04,
+  "wer_kucuksuz": 0.04,
+  "degisik": 0,
+  "eksik": 0,
+  "fazla": 2,
+  "beklenen_sozcuk": 50,
+  "yanlis_sozcukler": [],
+  "eksik_sozcukler": [],
+  "fazla_sozcukler": [
+   [
+    "Buradayım,",
+    41.78
+   ],
+   [
+    "merhaba.",
+    42.32
+   ]
+  ],
+  "hece_sn_soz_ici": 5.36,
+  "hece_sn_obek_medyan": 4.57,
+  "hece_sn_en_hizli": 6.6,
+  "cok_hizli_obek": 1,
+  "dusuk_guvenli": 0,
+  "ses_olaylari": [
+   [
+    "[neşeli müzik]",
+    0.0
+   ],
+   [
+    "[neşeli müzik]",
+    13.64
+   ],
+   [
+    "[neşeli müzik]",
+    25.96
+   ],
+   [
+    "[neşeli müzik]",
+    43.1
+   ],
+   [
+    "[neşeli müzik]",
+    51.68
+   ],
+   [
+    "[neşeli müzik]",
+    66.66
+   ],
+   [
+    "[neşeli müzik biter]",
+    77.6
+   ]
+  ],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Tepe": "dikkat",
+   "Enerji / coşku": "iyi",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "iyi",
+   "Gam içi söyleme": "iyi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "iyi",
+   "Ritme oturma": "dikkat",
+   "Yapaylık işaretleri (vekil)": "dikkat",
+   "Sözler": "iyi",
+   "Söyleyiş hızı": "dikkat"
+  },
+  "sorun_sayisi": {
+   "söz hatası": 2
+  },
+  "calisma_sn": 172.6
+ },
+ {
+  "ad": "ali-baba__ornek_kita1",
+  "yol": "ali-baba/yeni/vokal/ornek_kita1.mp3",
+  "karar": "reddetti",
+  "gerekce": "konuşma sentezi vokoderle ezgiye oturtuldu: 'sözler çok kötü çıktı'",
+  "boyut": [
+   "dogallik",
+   "sozler"
+  ],
+  "sarki": "ali-baba",
+  "hatalar": [],
+  "sure_sn": 27.3,
+  "lufs": -14.6,
+  "tepe_dbtp": -1.4,
+  "enerji_puani": 59.0,
+  "tempo_bpm": 134.5,
+  "olay_sn": 4.06,
+  "nabiz": 0.579,
+  "vurmali_armonik_db": -6.28,
+  "aki": 1.43,
+  "parlaklik_hz": 2464.0,
+  "duzey_oynakligi_db": 0.53,
+  "coca_cosku": 0.278,
+  "coca_tempo": 0.082,
+  "coca_kalite": 0.007,
+  "coca_sarki_var": 0.136,
+  "ced_ninni": 0.0,
+  "ced_coskulu_eksi_sakin": 0.011,
+  "ced_mutlu": 0.01,
+  "ced_heyecanli": 0.0,
+  "ced_yumusak": 0.0,
+  "ced_cocuk": 0.12,
+  "ced_hayvan": {
+   "Animal": 0.001,
+   "Cattle, bovinae": 0.591,
+   "Moo": 0.587
+  },
+  "vokal_eksi_altyapi_db": -3.8,
+  "vokalli_oran": 0.455,
+  "sizinti_db": -43.5,
+  "gomuk_yer": 0,
+  "ton": "Sol majör (G major)",
+  "ton_belirsiz": false,
+  "akor_guveni": 0.79,
+  "ton_degisimi": false,
+  "destek_fark": 0.495,
+  "destek_gercek": 0.688,
+  "en_iyi_kaydirma": 0,
+  "sifir_kacinci": 1,
+  "gam_ici": 0.953,
+  "gam_guvenilir": true,
+  "akor_sesi": 0.862,
+  "gam_disi": 0.047,
+  "cent_medyan": 9.8,
+  "yuzde_25cent": 85.5,
+  "cakisan": 2,
+  "uzun_nota": 12,
+  "cakisan_oran": 0.16666666666666666,
+  "ritim_R": 0.19,
+  "ritim_kayma_ms": 46.0,
+  "ritim_40ms": 52.0,
+  "ritim_tempo": 134.4,
+  "ritim_R16": 0.4,
+  "nota_sayisi": 18,
+  "ses_araligi_ys": 15.7,
+  "medyan_hz": 330.0,
+  "pyin_uyum": 98.9,
+  "sesli_cerceve": 0.258,
+  "y_nota_ici_oynaklik_cent_medyan": 9.8,
+  "y_cok_duz_nota_orani": 0.0,
+  "y_perde_izgaraya_yapisma_R": 0.62,
+  "y_vibratolu_uzun_nota_orani": 0.27,
+  "y_donmus_unlu_sayisi_045sn_ustu": 4,
+  "y_donmus_sure_orani": 0.31,
+  "y_unsuzlerde_tiz_payi_db": -9.2,
+  "y_vokal_ust_frekans_hz": 10615,
+  "y_tiz_doku_degisim_katsayisi": 2.03,
+  "y_zarf_titremesi_db": -19.8,
+  "y_isaret_sayisi": 1,
+  "y_isaretler": [
+   "sesli sürenin %31 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi"
+  ],
+  "y_bagli_gecis_suresi_ms_medyan": null,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9916,
+  "dnsmos": 2.5,
+  "nisqa": 2.87,
+  "distillmos": 3.0,
+  "utmos22": 1.48,
+  "nisqa_kesintisizlik": 4.15,
+  "nisqa_renk": 3.5,
+  "v_sarki": 0.084,
+  "v_konusma": 0.027,
+  "v_sentetik_sarki": 0.002,
+  "v_konusma_sentezi": 0.0,
+  "v_kadin": 0.019,
+  "v_cocuk": 0.002,
+  "dokum_kaynagi": "onbellek",
+  "dil_olasiligi": 1.0,
+  "wer": 1.0,
+  "wer_kucuksuz": 1.0,
+  "degisik": 10,
+  "eksik": 3,
+  "fazla": 0,
+  "beklenen_sozcuk": 13,
+  "yanlis_sozcukler": [
+   [
+    "Ali",
+    "Maliboku",
+    7.18
+   ],
+   [
+    "çiftliği",
+    "yeşil",
+    9.12
+   ],
+   [
+    "var",
+    "boya.",
+    9.62
+   ],
+   [
+    "Çiftliğinde",
+    "Çimdikle",
+    12.58
+   ],
+   [
+    "inekleri",
+    "inek",
+    14.38
+   ],
+   [
+    "var",
+    "yürü.",
+    15.04
+   ],
+   [
+    "diye",
+    "Bir",
+    21.48
+   ],
+   [
+    "bağırır",
+    "yağıdır",
+    21.74
+   ],
+   [
+    "Çiftliğinde",
+    "çimdikle",
+    23.34
+   ],
+   [
+    "Ali",
+    "maliboku",
+    25.06
+   ]
+  ],
+  "eksik_sozcukler": [
+   [
+    "Baba'nın",
+    7.18
+   ],
+   [
+    "bir",
+    7.18
+   ],
+   [
+    "Baba'nın",
+    25.06
+   ]
+  ],
+  "fazla_sozcukler": [],
+  "hece_sn_soz_ici": 4.15,
+  "hece_sn_obek_medyan": 4.55,
+  "hece_sn_en_hizli": 5.88,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 5,
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    0.0
+   ],
+   [
+    "[inek sesi]",
+    15.64
+   ]
+  ],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Enerji / coşku": "dikkat",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "iyi",
+   "Gam içi söyleme": "iyi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "dikkat",
+   "Ritme oturma": "sorun",
+   "Yapaylık işaretleri (vekil)": "dikkat",
+   "Sözler": "sorun",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "söz hatası": 13,
+   "donmuş ünlü": 4,
+   "çakışan / detone nota": 2
+  },
+  "calisma_sn": 71.7
+ },
+ {
+  "ad": "ali-baba__dogal_onizleme",
+  "yol": "ali-baba/yeni3/onizleme/ali-baba-dogal-onizleme.mp3",
+  "karar": "reddetti",
+  "gerekce": "doğal yapay vokal (kendi ezgisi) altta başka ezgi çalan orkestranın üstüne kondu: 'olmamış'",
+  "boyut": [
+   "uyum"
+  ],
+  "sarki": "ali-baba",
+  "hatalar": [],
+  "sure_sn": 134.38,
+  "lufs": -14.3,
+  "tepe_dbtp": -1.6,
+  "enerji_puani": 56.0,
+  "tempo_bpm": 116.2,
+  "olay_sn": 3.47,
+  "nabiz": 0.518,
+  "vurmali_armonik_db": -4.97,
+  "aki": 1.476,
+  "parlaklik_hz": 2429.0,
+  "duzey_oynakligi_db": 1.48,
+  "coca_cosku": 0.132,
+  "coca_tempo": -0.04,
+  "coca_kalite": 0.1,
+  "coca_sarki_var": 0.066,
+  "ced_ninni": 0.0,
+  "ced_coskulu_eksi_sakin": 0.019,
+  "ced_mutlu": 0.011,
+  "ced_heyecanli": 0.003,
+  "ced_yumusak": 0.001,
+  "ced_cocuk": 0.077,
+  "ced_hayvan": {
+   "Animal": 0.099,
+   "Cattle, bovinae": 0.06,
+   "Moo": 0.061,
+   "Sheep": 0.051,
+   "Bleat": 0.059,
+   "Goat": 0.013,
+   "Horse": 0.039,
+   "Neigh, whinny": 0.051,
+   "Chicken, rooster": 0.044,
+   "Crowing, cock-a-doodle-doo": 0.038,
+   "Duck": 0.027,
+   "Quack": 0.061,
+   "Dog": 0.025,
+   "Bark": 0.009,
+   "Cat": 0.041,
+   "Meow": 0.042,
+   "Bird": 0.004
+  },
+  "vokal_eksi_altyapi_db": -13.0,
+  "vokalli_oran": 0.597,
+  "sizinti_db": -14.6,
+  "gomuk_yer": 15,
+  "ton": "Do majör (C major)",
+  "ton_belirsiz": false,
+  "akor_guveni": 0.78,
+  "ton_degisimi": false,
+  "destek_fark": 0.141,
+  "destek_gercek": 0.281,
+  "en_iyi_kaydirma": -4,
+  "sifir_kacinci": 3,
+  "gam_ici": 0.911,
+  "gam_guvenilir": true,
+  "akor_sesi": 0.671,
+  "gam_disi": 0.084,
+  "cent_medyan": 17.0,
+  "yuzde_25cent": 68.1,
+  "cakisan": 4,
+  "uzun_nota": 31,
+  "cakisan_oran": 0.12903225806451613,
+  "ritim_R": 0.34,
+  "ritim_kayma_ms": 4.0,
+  "ritim_40ms": 57.0,
+  "ritim_tempo": 116.1,
+  "ritim_R16": 0.35,
+  "nota_sayisi": 138,
+  "ses_araligi_ys": 26.8,
+  "medyan_hz": 328.0,
+  "pyin_uyum": 95.3,
+  "sesli_cerceve": 0.279,
+  "y_nota_ici_oynaklik_cent_medyan": 14.6,
+  "y_cok_duz_nota_orani": 0.01,
+  "y_perde_izgaraya_yapisma_R": 0.28,
+  "y_vibratolu_uzun_nota_orani": 0.08,
+  "y_donmus_unlu_sayisi_045sn_ustu": 3,
+  "y_donmus_sure_orani": 0.049,
+  "y_unsuzlerde_tiz_payi_db": -16.0,
+  "y_vokal_ust_frekans_hz": 10723,
+  "y_tiz_doku_degisim_katsayisi": 2.42,
+  "y_zarf_titremesi_db": -14.4,
+  "y_isaret_sayisi": 1,
+  "y_isaretler": [
+   "ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-16 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"
+  ],
+  "y_bagli_gecis_suresi_ms_medyan": 32.0,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9848,
+  "dnsmos": 2.56,
+  "nisqa": 2.76,
+  "distillmos": 2.97,
+  "utmos22": 1.43,
+  "nisqa_kesintisizlik": 3.92,
+  "nisqa_renk": 2.87,
+  "v_sarki": 0.018,
+  "v_konusma": 0.435,
+  "v_sentetik_sarki": 0.002,
+  "v_konusma_sentezi": 0.005,
+  "v_kadin": 0.057,
+  "v_cocuk": 0.004,
+  "dokum_kaynagi": "onbellek",
+  "dil_olasiligi": 1.0,
+  "wer": 0.194,
+  "wer_kucuksuz": 0.12,
+  "degisik": 20,
+  "eksik": 1,
+  "fazla": 0,
+  "beklenen_sozcuk": 108,
+  "yanlis_sozcukler": [
+   [
+    "Ali",
+    "Anne",
+    8.26
+   ],
+   [
+    "Baba'nın",
+    "babamın",
+    8.76
+   ],
+   [
+    "bağırır",
+    "böğürür?",
+    17.88
+   ],
+   [
+    "Ali",
+    "Anne",
+    22.74
+   ],
+   [
+    "Baba'nın",
+    "babamın",
+    23.82
+   ],
+   [
+    "meler",
+    "meleyor?",
+    34.38
+   ],
+   [
+    "Ali",
+    "Anne",
+    39.38
+   ],
+   [
+    "Baba'nın",
+    "babamın",
+    39.38
+   ],
+   [
+    "Atı",
+    "Atlar",
+    49.62
+   ],
+   [
+    "Ali",
+    "Anne",
+    57.9
+   ],
+   [
+    "Baba'nın",
+    "babamın",
+    58.86
+   ],
+   [
+    "Ali",
+    "Anne",
+    72.76
+   ],
+   [
+    "Baba'nın",
+    "babamın",
+    72.8
+   ],
+   [
+    "bağırır",
+    "gagalar?",
+    84.06
+   ],
+   [
+    "Ali",
+    "Anne",
+    88.92
+   ],
+   [
+    "Baba'nın",
+    "babamın",
+    88.92
+   ],
+   [
+    "Ali",
+    "Anne",
+    105.48
+   ],
+   [
+    "Baba'nın",
+    "babamın",
+    108.56
+   ],
+   [
+    "kedisi",
+    "kedileri",
+    116.34
+   ],
+   [
+    "Kedisi",
+    "Kediler",
+    117.1
+   ]
+  ],
+  "eksik_sozcukler": [
+   [
+    "bir",
+    115.82
+   ]
+  ],
+  "fazla_sozcukler": [],
+  "hece_sn_soz_ici": 4.18,
+  "hece_sn_obek_medyan": 4.69,
+  "hece_sn_en_hizli": 5.56,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 2,
+  "ses_olaylari": [
+   [
+    "[müzik]",
+    0.0
+   ],
+   [
+    "[inek sesi]",
+    20.66
+   ],
+   [
+    "[koyun sesi]",
+    37.3
+   ],
+   [
+    "[at sesi]",
+    53.5
+   ],
+   [
+    "[horoz sesi]",
+    72.36
+   ],
+   [
+    "[ördek sesi]",
+    85.82
+   ],
+   [
+    "[köpek sesi]",
+    103.8
+   ],
+   [
+    "[kedi sesi]",
+    120.48
+   ],
+   [
+    "[müzik]",
+    128.24
+   ]
+  ],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Enerji / coşku": "dikkat",
+   "Vokal / altyapı dengesi": "dikkat",
+   "Vokal altyapıyla aynı armonide mi": "sorun",
+   "Gam içi söyleme": "iyi",
+   "Akort (detone mi)": "dikkat",
+   "Çakışan uzun notalar": "sorun",
+   "Ritme oturma": "dikkat",
+   "Yapaylık işaretleri (vekil)": "dikkat",
+   "Sözler": "sorun",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "gömük vokal": 15,
+   "söz hatası": 21,
+   "çakışan / detone nota": 4,
+   "donmuş ünlü": 3
+  },
+  "calisma_sn": 290.6
+ },
+ {
+  "ad": "parmak-ailesi__duzgun_1",
+  "yol": "parmak-ailesi/duzgun_1.mp3",
+  "karar": "reddetti",
+  "gerekce": "'çok kötü söylüyor, Türkçe konuşan bir İngiliz gibi' (yabancı aksan)",
+  "boyut": [
+   "aksan"
+  ],
+  "sarki": "parmak-ailesi",
+  "hatalar": [],
+  "sure_sn": 91.0,
+  "lufs": -12.1,
+  "tepe_dbtp": -0.2,
+  "enerji_puani": 52.0,
+  "tempo_bpm": 156.0,
+  "olay_sn": 4.24,
+  "nabiz": 0.517,
+  "vurmali_armonik_db": -9.85,
+  "aki": 1.576,
+  "parlaklik_hz": 2043.0,
+  "duzey_oynakligi_db": 1.14,
+  "coca_cosku": -0.051,
+  "coca_tempo": 0.035,
+  "coca_kalite": 0.104,
+  "coca_sarki_var": 0.24,
+  "ced_ninni": 0.016,
+  "ced_coskulu_eksi_sakin": -0.001,
+  "ced_mutlu": 0.017,
+  "ced_heyecanli": 0.0,
+  "ced_yumusak": 0.001,
+  "ced_cocuk": 0.339,
+  "ced_hayvan": {
+   "Animal": 0.001
+  },
+  "vokal_eksi_altyapi_db": 4.4,
+  "vokalli_oran": 0.66,
+  "sizinti_db": -51.4,
+  "gomuk_yer": 0,
+  "ton": "Sol majör (G major)",
+  "ton_belirsiz": true,
+  "akor_guveni": 0.8,
+  "ton_degisimi": true,
+  "destek_fark": 0.275,
+  "destek_gercek": 0.367,
+  "en_iyi_kaydirma": 0,
+  "sifir_kacinci": 1,
+  "gam_ici": 0.895,
+  "gam_guvenilir": false,
+  "akor_sesi": 0.52,
+  "gam_disi": 0.105,
+  "cent_medyan": 7.1,
+  "yuzde_25cent": 93.8,
+  "cakisan": 8,
+  "uzun_nota": 59,
+  "cakisan_oran": 0.13559322033898305,
+  "ritim_R": 0.72,
+  "ritim_kayma_ms": 25.0,
+  "ritim_40ms": 76.0,
+  "ritim_tempo": 156.4,
+  "ritim_R16": 0.37,
+  "nota_sayisi": 97,
+  "ses_araligi_ys": 7.2,
+  "medyan_hz": 329.0,
+  "pyin_uyum": 99.0,
+  "sesli_cerceve": 0.436,
+  "y_nota_ici_oynaklik_cent_medyan": 9.1,
+  "y_cok_duz_nota_orani": 0.05,
+  "y_perde_izgaraya_yapisma_R": 0.74,
+  "y_vibratolu_uzun_nota_orani": 0.06,
+  "y_donmus_unlu_sayisi_045sn_ustu": 0,
+  "y_donmus_sure_orani": 0.0,
+  "y_unsuzlerde_tiz_payi_db": -14.1,
+  "y_vokal_ust_frekans_hz": 10745,
+  "y_tiz_doku_degisim_katsayisi": 1.07,
+  "y_zarf_titremesi_db": -12.0,
+  "y_isaret_sayisi": 1,
+  "y_isaretler": [
+   "ünsüzlerde (s, ş, ç, t, k) tiz enerji zayıf (-14 dB): boğuk / 'ağzı kapalı' söyleyiş izlenimi"
+  ],
+  "y_bagli_gecis_suresi_ms_medyan": null,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9823,
+  "dnsmos": 2.51,
+  "nisqa": 1.93,
+  "distillmos": 3.29,
+  "utmos22": 1.3,
+  "nisqa_kesintisizlik": 3.54,
+  "nisqa_renk": 2.89,
+  "v_sarki": 0.073,
+  "v_konusma": 0.018,
+  "v_sentetik_sarki": 0.054,
+  "v_konusma_sentezi": 0.001,
+  "v_kadin": 0.053,
+  "v_cocuk": 0.064,
+  "dokum_kaynagi": "mevcut *_words.json (yeniden dokum alinmadi; sozcuk guveni yok)",
+  "dil_olasiligi": null,
+  "wer": 0.08,
+  "wer_kucuksuz": 0.08,
+  "degisik": 3,
+  "eksik": 1,
+  "fazla": 0,
+  "beklenen_sozcuk": 50,
+  "yanlis_sozcukler": [
+   [
+    "Merhaba",
+    "Merengim.",
+    33.82
+   ],
+   [
+    "Bebek",
+    "Abla",
+    72.38
+   ],
+   [
+    "bebek",
+    "abla",
+    73.92
+   ]
+  ],
+  "eksik_sozcukler": [
+   [
+    "Buradayım",
+    75.36
+   ]
+  ],
+  "fazla_sozcukler": [],
+  "hece_sn_soz_ici": 2.68,
+  "hece_sn_obek_medyan": 2.39,
+  "hece_sn_en_hizli": 2.98,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 0,
+  "ses_olaylari": [],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Enerji / coşku": "dikkat",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "iyi",
+   "Gam içi söyleme": "bilgi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "sorun",
+   "Ritme oturma": "iyi",
+   "Yapaylık işaretleri (vekil)": "dikkat",
+   "Sözler": "dikkat",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "çakışan / detone nota": 8,
+   "söz hatası": 4
+  },
+  "calisma_sn": 198.4
+ },
+ {
+  "ad": "parmak-ailesi__yavas_2",
+  "yol": "parmak-ailesi/yavas_2.mp3",
+  "karar": "reddetti",
+  "gerekce": "sözler yanlış (3. kıtada 'anne parmak') ve 'ninni gibi söylüyor, coşku yok'",
+  "boyut": [
+   "sozler",
+   "enerji"
+  ],
+  "sarki": "parmak-ailesi",
+  "hatalar": [],
+  "sure_sn": 95.0,
+  "lufs": -14.4,
+  "tepe_dbtp": -0.5,
+  "enerji_puani": 52.0,
+  "tempo_bpm": 155.8,
+  "olay_sn": 3.82,
+  "nabiz": 0.539,
+  "vurmali_armonik_db": -9.72,
+  "aki": 1.804,
+  "parlaklik_hz": 1804.0,
+  "duzey_oynakligi_db": 3.13,
+  "coca_cosku": -0.078,
+  "coca_tempo": 0.012,
+  "coca_kalite": 0.067,
+  "coca_sarki_var": 0.222,
+  "ced_ninni": 0.044,
+  "ced_coskulu_eksi_sakin": 0.079,
+  "ced_mutlu": 0.151,
+  "ced_heyecanli": 0.0,
+  "ced_yumusak": 0.028,
+  "ced_cocuk": 0.284,
+  "ced_hayvan": {},
+  "vokal_eksi_altyapi_db": 5.7,
+  "vokalli_oran": 0.601,
+  "sizinti_db": -49.1,
+  "gomuk_yer": 0,
+  "ton": "Do majör (C major)",
+  "ton_belirsiz": false,
+  "akor_guveni": 0.77,
+  "ton_degisimi": false,
+  "destek_fark": 0.313,
+  "destek_gercek": 0.389,
+  "en_iyi_kaydirma": 5,
+  "sifir_kacinci": 2,
+  "gam_ici": 0.991,
+  "gam_guvenilir": true,
+  "akor_sesi": 0.813,
+  "gam_disi": 0.009,
+  "cent_medyan": 6.6,
+  "yuzde_25cent": 91.5,
+  "cakisan": 0,
+  "uzun_nota": 40,
+  "cakisan_oran": 0.0,
+  "ritim_R": 0.49,
+  "ritim_kayma_ms": 17.0,
+  "ritim_40ms": 43.0,
+  "ritim_tempo": 78.3,
+  "ritim_R16": 0.58,
+  "nota_sayisi": 109,
+  "ses_araligi_ys": 4.2,
+  "medyan_hz": 293.0,
+  "pyin_uyum": 97.8,
+  "sesli_cerceve": 0.413,
+  "y_nota_ici_oynaklik_cent_medyan": 9.9,
+  "y_cok_duz_nota_orani": 0.02,
+  "y_perde_izgaraya_yapisma_R": 0.74,
+  "y_vibratolu_uzun_nota_orani": 0.12,
+  "y_donmus_unlu_sayisi_045sn_ustu": 11,
+  "y_donmus_sure_orani": 0.187,
+  "y_unsuzlerde_tiz_payi_db": -9.8,
+  "y_vokal_ust_frekans_hz": 10723,
+  "y_tiz_doku_degisim_katsayisi": 1.28,
+  "y_zarf_titremesi_db": -13.5,
+  "y_isaret_sayisi": 1,
+  "y_isaretler": [
+   "sesli sürenin %18 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi"
+  ],
+  "y_bagli_gecis_suresi_ms_medyan": 32.0,
+  "y_sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9898,
+  "dnsmos": 2.82,
+  "nisqa": 3.71,
+  "distillmos": 3.8,
+  "utmos22": 2.15,
+  "nisqa_kesintisizlik": 4.49,
+  "nisqa_renk": 3.94,
+  "v_sarki": 0.055,
+  "v_konusma": 0.013,
+  "v_sentetik_sarki": 0.039,
+  "v_konusma_sentezi": 0.001,
+  "v_kadin": 0.112,
+  "v_cocuk": 0.005,
+  "dokum_kaynagi": "mevcut *_words.json (yeniden dokum alinmadi; sozcuk guveni yok)",
+  "dil_olasiligi": null,
+  "wer": 0.06,
+  "wer_kucuksuz": 0.04,
+  "degisik": 3,
+  "eksik": 0,
+  "fazla": 0,
+  "beklenen_sozcuk": 50,
+  "yanlis_sozcukler": [
+   [
+    "Abi",
+    "Anne",
+    37.54
+   ],
+   [
+    "Abla",
+    "Able",
+    52.96
+   ],
+   [
+    "abla",
+    "abi",
+    54.14
+   ]
+  ],
+  "eksik_sozcukler": [],
+  "fazla_sozcukler": [],
+  "hece_sn_soz_ici": 3.43,
+  "hece_sn_obek_medyan": 2.96,
+  "hece_sn_en_hizli": 3.62,
+  "cok_hizli_obek": 0,
+  "dusuk_guvenli": 0,
+  "ses_olaylari": [],
+  "ozet": {
+   "Ses yüksekliği": "iyi",
+   "Enerji / coşku": "dikkat",
+   "Vokal / altyapı dengesi": "iyi",
+   "Vokal altyapıyla aynı armonide mi": "dikkat",
+   "Gam içi söyleme": "iyi",
+   "Akort (detone mi)": "iyi",
+   "Çakışan uzun notalar": "iyi",
+   "Ritme oturma": "dikkat",
+   "Yapaylık işaretleri (vekil)": "dikkat",
+   "Sözler": "dikkat",
+   "Söyleyiş hızı": "bilgi"
+  },
+  "sorun_sayisi": {
+   "donmuş ünlü": 11,
+   "söz hatası": 3
+  },
+  "calisma_sn": 185.3
+ }
+]

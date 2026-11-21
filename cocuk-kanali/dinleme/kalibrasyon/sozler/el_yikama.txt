@@ -1,0 +1,13 @@
+# El Yıkama Şarkısı - BEKLENEN sözler.
+# KAYNAK: üretim istemi depoda yok. el-yikama/sarki_1.txt ve sarki_2.txt dökümlerinin ortak metni ve el-yikama/yazi.mjs
+# içindeki ekran yazıları (ŞIR ŞIR ŞIR, KÖPÜK KÖPÜK, FIŞ FIŞ FIŞ, ŞIP ŞIP ŞIP, PAT PAT PAT, PIRIL PIRIL) ile YENİDEN KURULDU.
+Ellerim kirlendi. Hadi yıkayalım.
+Musluğu açalım. Şır şır şır.
+Sabunu alalım. Köpük köpük.
+Avuçları ovalım. Fış fış fış.
+Parmak aralarını unutmayalım.
+Elin üstünü de ovalım. Fış fış fış.
+Suyla durulayalım. Şıp şıp şıp.
+Havluyla kurulayalım. Pat pat pat.
+Ellerim tertemiz, pırıl pırıl.
+Mikroplara güle güle. Yaşasın!

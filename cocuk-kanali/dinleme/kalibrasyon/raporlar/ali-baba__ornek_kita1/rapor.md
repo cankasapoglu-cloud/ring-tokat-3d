@@ -1,0 +1,93 @@
+# Dinleme raporu: ornek_kita1.mp3
+
+_2026-11-21 16:14:09 — dinle.py 1.0 (2026-11-21). Bu rapor ölçüm ve makine tahminidir; **insan kulağı değildir**. Son karar dinleyen insanındır._
+
+## Özet
+
+| Durum | Konu | Makinenin gördüğü |
+|---|---|---|
+| ✅ iyi | Ses yüksekliği | -14,6 LUFS, gerçek tepe -1,4 dBTP. |
+| ⚠️ dikkat | Enerji / coşku | hareketlilik puanı 59/100 (tempo 134 BPM, saniyede 4,1 olay); MusicCoCa coşku farkı +0,28; CED 'ninni' olasılığı 0,000 → **ninni/sakin yana kayıyor olabilir**. Projedeki sürümlerle karşılaştırma (hareketlilik puanı: 'coşkulu' adlı 6 sürümde 66…79, 'yavaş' adlı 3 sürümde 52…61; MusicCoCa coşku farkı: 'coşkulu' adlı 6 sürümde +0,09…+0,22, 'yavaş' adlı 3 sürümde -0,10…-0,08). |
+| ✅ iyi | Vokal / altyapı dengesi | vokal altyapıdan -3,8 dB (medyan); sürenin %46 kadarında vokal var. Vokal-altyapı dengesi olağan aralıkta. |
+| ✅ iyi | Vokal altyapıyla aynı armonide mi | armonik destek farkı +0,495 (artı = uyumlu); en iyi kaydırma +0 yarım ses (0 olmalı). |
+| ✅ iyi | Gam içi söyleme | söylenen sürenin %95 kadarı altyapının gamında (Sol majör (G major)); akor sesi %86, gam dışı %5. |
+| ✅ iyi | Akort (detone mi) | notalara uzaklık medyan 9,8 cent; söylenen sürenin %86 kadarı ±25 cent içinde; vokalin genel kayması -6 cent. |
+| ⚠️ dikkat | Çakışan uzun notalar | 2 / 12 uzun nota (0,3 sn üstü) altyapıyla çakışıyor ya da detone. |
+| ❌ sorun | Ritme oturma | sıkılık R=0,19 (ölçümün tavanı ≈0,65; rastgele ≈0,15); başlangıçların %52 kadarı en yakın sekizliğe 40 ms içinde; ortalama kayma +46 ms (+ geç). Vokal başlangıçları ızgarayla ilişkisiz görünüyor (ritme oturmuyor YA DA vuruş ızgarası yanlış bulundu) (vuruş ızgarası: otomatik (altyapıdan)). |
+| ⚠️ dikkat | Yapaylık işaretleri (vekil) | 1 işaret: sesli sürenin %31 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi. |
+| ❌ sorun | Sözler | sözcük hata oranı %100,0 (13 beklenen sözcükten 10 farklı, 3 eksik, 0 fazla); küçük ek/harf farkları sayılmazsa %100,0. |
+| ℹ️ bilgi | Söyleyiş hızı | söz öbeklerinde medyan 4,5 hece/sn (en hızlı 5,9). |
+
+Eşikler kabadır (kalibre edilmedi): **iki sürümü aynı araçla ölçüp karşılaştırmak**, tek sürüme not vermekten daha güvenilirdir.
+
+## Bu raporun SÖYLEYEMEDİKLERİ
+
+- **Ses kulağa hoş / doğal mı?** Ölçülemez. Aşağıdaki 'yapaylık işaretleri' ve kalite tahminleri yalnızca kaba izleri yakalar; konuşma için eğitilmiş modeller şarkıda güvenilmezdir.
+- **Türkçe doğal mı, yabancı aksan var mı?** Ölçülemez. Döküm temiz çıksa bile aksan olabilir (tanıma modeli doğru sözcüğü yazar).
+- **Çocuk sever mi, coşku 'gerçek' mi?** Ölçülemez. Enerji göstergeleri hareketliliği sayar, duyguyu değil.
+- **Ezgi doğru ezgi mi?** Bu araç vokalin altyapıyla uyumunu ölçer; 'istenen ezgi' ile karşılaştırma yapmaz.
+
+## Ayrıntılar
+
+**Dosya:** 27,3 sn, 1 kanal, 48000 Hz, mp3, 192 kb/sn; üst frekans sınırı 20456 Hz. Kanal kaynağı: otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx).
+
+**Ses düzeyi:** -14,6 LUFS; ses yüksekliği aralığı (LRA) 1,7 LU; gerçek tepe -1,4 dBTP; tepe faktörü 13,3 dB. Stereo: tek kanal (mono) dosya (sol-sağ ilişkisi ?).
+
+**Enerji:** tempo 134,5 BPM (otomatik tahmin; yarı/çift tempo hatası yapabilir); yerel temponun %100 kadarı ±%3 içinde; nabız netliği 0,58; olay yoğunluğu 4,1/sn; vurmalı/armonik -6,3 dB; spektral akı 1,43; parlaklık (ağırlık merkezi) 2464 Hz; düzey oynaklığı 0,5 dB.
+Hareketlilik puanı bileşenleri (0-1): olay_yogunlugu_sn 0,46, nabiz_netligi 0,96, vurmali_armonik_db 0,69, spektral_aki_ort 0,35, parlaklik_agirlik_merkezi_hz 0,53.
+
+**CED etiketleri (karışım):** Cattle, bovinae 0,59, Moo 0,59, Livestock, farm animals, working animals 0,57, Music 0,37, Jingle, tinkle 0,14, Music for children 0,12, Ding 0,09, Singing 0,03.
+Hayvan sınıfları: Cattle, bovinae 0,591, Moo 0,587, Animal 0,001.
+
+**Ton (altyapı kanalı):** 0–27 sn Sol majör (G major). Akort kayması 5,0 cent. En çok duyulan akorlar: G 20 sn, C 4 sn, D 3 sn, Gm 0 sn, Em 0 sn (ortalama güven 0,79).
+
+**Vokal perdesi:** 18 nota; ses aralığı D#3–G4 (15,7 yarım ses), medyan E4; nota içi oynaklık medyan 9,8 cent; çok düz nota oranı 0,00; vibratolu uzun nota oranı 0,27; geçiş çerçevesi oranı 0,03. Perde izleyici denetimi: pYIN ile %99 uyum.
+Vokalin kendi ses dağılımından ton tahmini: Mi minör (E minor) (r=0,80).
+
+**Çakışan / detone uzun notalar:**
+
+| sn | süre | nota | akor | tür |
+|---|---|---|---|---|
+| 18,2 | 0,62 | E3 | Em | -43 cent detone |
+| 20,1 | 0,54 | E3 | G | -39 cent detone |
+
+**Yapaylık için vekil ölçümler (kanıt değil):** nota içi oynaklık 9,8 cent; ızgaraya yapışma R 0,62; donmuş ünlü 4 adet (sesli sürenin %31 kadarı); ünsüzlerde tiz payı -9,2 dB; vokalin üst frekansı 10615 Hz; tiz doku değişim katsayısı 2,03 (durağan gürültü ≈0,52); zarf titremesi -19,8 dB.
+
+**Konuşma-kalitesi tahminleri (vokal kanalı, 1-5; şarkı için eğitilmediler):** DNSMOS 2,50 (sinyal 2,89, arka plan 3,72); NISQA 2,87 (gürültüsüzlük 3,77, kesintisizlik 4,15, renklenmezlik 3,50); Distill-MOS 3,00; UTMOS22 1,48. Yalnızca aynı yolla elde edilmiş iki vokali karşılaştırmak için.
+CED, vokal kanalını şöyle etiketliyor: şarkı 0,08, konuşma 0,03, sentetik şarkı 0,002, konuşma sentezleyici 0,000.
+
+**Makinenin duyduğu sözler (Scribe, dil tur olasılık 1,00):**
+
+> [müzik] Maliboku yeşil boya. Çimdikle inek yürü. [inek sesi] Bir yağıdır çimdikle maliboku
+
+Ses olayları: [müzik] 0,0–2,7 sn, [inek sesi] 15,6–21,4 sn.
+
+Makinenin emin olamadığı sözcükler (belirsiz söylenmiş olabilir): 'Maliboku' 7,2 sn, 'Çimdikle' 12,6 sn, 'inek' 14,4 sn, 'Bir' 21,5 sn, 'yağıdır' 21,7 sn.
+
+**Söz farkları:**
+
+| sn | beklenen | duyulan | tür |
+|---|---|---|---|
+| 7,2 | Ali | Maliboku | başka sözcük |
+| 9,1 | çiftliği | yeşil | başka sözcük |
+| 9,6 | var | boya. | başka sözcük |
+| 12,6 | Çiftliğinde | Çimdikle | başka sözcük |
+| 14,4 | inekleri | inek | başka sözcük |
+| 15,0 | var | yürü. | başka sözcük |
+| 21,5 | diye | Bir | başka sözcük |
+| 21,7 | bağırır | yağıdır | başka sözcük |
+| 23,3 | Çiftliğinde | çimdikle | başka sözcük |
+| 25,1 | Ali | maliboku | başka sözcük |
+| ~7,2 | Baba'nın | — | eksik |
+| ~7,2 | bir | — | eksik |
+| ~25,1 | Baba'nın | — | eksik |
+
+## Panolar (Read aracıyla bakın)
+
+| Dosya | Ne gösterir | Neye bakmalı |
+|---|---|---|
+| `00_genel_bakis.png` | bütün dosya: spektrogram, düzeyler, hareketlilik, sorun çizelgesi (0–27 sn) | kırmızı X / şeritlerin toplandığı yer; hareketliliğin düştüğü bölümler |
+| `01_pano_000-027sn.png` | 30 sn: spektrogram + sözcükler, vokal spektrogramı, vuruşlar, düzey (0–27 sn) | ≠ işaretli sözcükler; vokal çizgisinin altyapının altında kaldığı yerler |
+| `01_perde_000-027sn.png` | 30 sn: vokal perdesi akor seslerinin üstünde, cent, ritim, kroma (0–27 sn) | kırmızı çapraz taralı notalar (gam dışı), ±25 cent bandının dışındaki X'ler, ±40 ms dışındaki başlangıçlar |
+
+_Çalışma süresi: 71 sn. Bütün sayılar: `rapor.json`._

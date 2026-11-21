@@ -1,0 +1,43 @@
+# Ali Baba'nın Çiftliği ("Dinle bak" sürümü) - beklenen sözler (dinle.py --sozler için örnek dosya)
+# Kural: yalnızca SÖYLENEN sözler yazılır. # ile başlayan satırlar, [köşeli] ve (yuvarlak) parantez içleri yok sayılır.
+Ali Baba'nın bir çiftliği var
+Çiftliğinde inekleri var
+İnekler nasıl bağırır?
+Dinle bak, dinle bak!
+[inek sesi] [inek sesi]
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde koyunları var
+Koyunlar nasıl meler?
+Dinle bak, dinle bak!
+[koyun sesi] [koyun sesi]
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde bir de atı var
+Atı nasıl kişner?
+Dinle bak, dinle bak!
+[at sesi] [at sesi]
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde horozları var
+Horozlar nasıl öter?
+Dinle bak, dinle bak!
+[horoz sesi] [horoz sesi]
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde ördekleri var
+Ördekler nasıl bağırır?
+Dinle bak, dinle bak!
+[ördek sesi] [ördek sesi]
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde köpekleri var
+Köpekler nasıl havlar?
+Dinle bak, dinle bak!
+[köpek sesi] [köpek sesi]
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde bir kedisi var
+Kedisi nasıl miyavlar?
+Dinle bak, dinle bak!
+[kedi sesi] [kedi sesi]

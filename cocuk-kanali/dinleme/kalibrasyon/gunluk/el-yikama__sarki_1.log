@@ -1,0 +1,17 @@
+dinle.py: /home/user/ring-tokat-3d/cocuk-kanali/el-yikama/sarki_1.mp3 -> /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/el-yikama__sarki_1
+  [cozme + temel            2.0 sn]
+  [enerji                   4.5 sn]
+  [CED etiket (karisim)     0.7 sn]
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  [MusicCoCa               10.5 sn]
+  kanal ayirma basladi (105 sn'lik sarki icin yaklasik 80-100 sn) ...
+  [kanallar               115.9 sn]
+  [ton + akor               4.6 sn]
+  [perde izleme             2.5 sn]
+  [nota + uyum              0.0 sn]
+  [ritim                    0.7 sn]
+  [yapaylik vekilleri       0.1 sn]
+  [MOS tahminleri (vokal)  20.1 sn]
+  [sozler                   0.1 sn]
+  [panolar                  4.5 sn]
+bitti: 167 sn. Rapor: /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/el-yikama__sarki_1/rapor.md

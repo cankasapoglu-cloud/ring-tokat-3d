@@ -1,0 +1,434 @@
+{
+ "_aciklama": "Her surum, 'n3_yeniden_karisim' (vokal kanali + altyapi kanali, asil dosyanin -42 dB artikla aynisi) uzerinde TEK degisiklikle uretildi. Sesler ~/.cache/dinleme/sinama/ses altinda; bozuk_uret.py yeniden uretir.",
+ "_ortak": {
+  "asil": "/home/user/ring-tokat-3d/cocuk-kanali/ali-baba/dinle_2.mp3",
+  "kazanc": 1.1812,
+  "bpm": 115.9,
+  "vurus_sn": 0.5177,
+  "ceyrek_vurus_ms": 129.4,
+  "yarim_vurus_ms": 258.8
+ },
+ "n1_yeniden_kodlama": {
+  "tur": "gurultu",
+  "kusur": "yok",
+  "tanim": "asil MP3 cozulup ayni ayarla (192 kb/sn) yeniden kodlandi"
+ },
+ "n2_wav": {
+  "tur": "gurultu",
+  "kusur": "yok",
+  "tanim": "asil MP3 cozulup 16 bit WAV yazildi"
+ },
+ "n3_yeniden_karisim": {
+  "tur": "gurultu",
+  "kusur": "yok",
+  "tanim": "ayrilmis vokal + altyapi kanallari toplanip 192 kb/sn MP3 yazildi (butun bozuk surumlerin TABANI)"
+ },
+ "n4_kisik_kaydirilmis": {
+  "tur": "gurultu",
+  "kusur": "yok",
+  "tanim": "yeniden karisim, 1 dB kisik ve basina 23 ms sessizlik eklenmis (duyulmaz degisiklik)"
+ },
+ "b01a_detone_50c": {
+  "tur": "kusur",
+  "no": 1,
+  "kusur": "vokal 50 cent tiz (altyapiya gore)",
+  "yontem": "ffmpeg rubberband pitch (formant korunarak)",
+  "hizalama_duzeltmesi_ornek": -64
+ },
+ "b01b_detone_100c": {
+  "tur": "kusur",
+  "no": 1,
+  "kusur": "vokal 100 cent tiz (altyapiya gore)",
+  "yontem": "ffmpeg rubberband pitch (formant korunarak)",
+  "hizalama_duzeltmesi_ornek": -128
+ },
+ "b02a_gec_ceyrek": {
+  "tur": "kusur",
+  "no": 2,
+  "kusur": "vokal ceyrek vurus (129 ms) gec",
+  "gecikme_ms": 129.4
+ },
+ "b02b_gec_yarim": {
+  "tur": "kusur",
+  "no": 2,
+  "kusur": "vokal yarim vurus (259 ms) gec",
+  "gecikme_ms": 258.8
+ },
+ "b03a_esnetme_15": {
+  "tur": "kusur",
+  "no": 3,
+  "kusur": "vokal 1.5 kat faz vokoderiyle esnetilmis dokuda (sure ve perde ayni)",
+  "yontem": "rubberband ile 1/1.5'e sikistir, librosa faz vokoderiyle 1.5 kat esnet",
+  "hizalama_duzeltmesi_ornek": 320
+ },
+ "b03b_esnetme_20": {
+  "tur": "kusur",
+  "no": 3,
+  "kusur": "vokal 2.0 kat faz vokoderiyle esnetilmis dokuda (sure ve perde ayni)",
+  "yontem": "rubberband ile 1/2.0'e sikistir, librosa faz vokoderiyle 2.0 kat esnet",
+  "hizalama_duzeltmesi_ornek": 192
+ },
+ "k00_kuru_vokal": {
+  "tur": "kuru taban",
+  "kusur": "yok",
+  "tanim": "ayrilmis vokal kanali, tek kanal, degisiklik yok"
+ },
+ "k03a_kuru_esnetme_15": {
+  "tur": "kusur (kuru vokal)",
+  "no": 3,
+  "kusur": "kuru vokal faz vokoderiyle 1.5 kat esnetildi (perde ayni, sure 1.5 kat)",
+  "sure_sn": 165.2
+ },
+ "k03b_kuru_esnetme_20": {
+  "tur": "kusur (kuru vokal)",
+  "no": 3,
+  "kusur": "kuru vokal faz vokoderiyle 2.0 kat esnetildi (perde ayni, sure 2.0 kat)",
+  "sure_sn": 220.2
+ },
+ "k10_kita1_kuru": {
+  "tur": "kuru taban (kisa)",
+  "kusur": "yok",
+  "tanim": "kuru vokal 5,9-14,8 sn (1. kita)"
+ },
+ "k13a_kita1_esnetme_15": {
+  "tur": "kusur (kuru vokal, kisa)",
+  "no": 3,
+  "kusur": "1. kita kuru vokal 1.5 kat esnetildi",
+  "sure_sn": 13.3
+ },
+ "k13b_kita1_esnetme_20": {
+  "tur": "kusur (kuru vokal, kisa)",
+  "no": 3,
+  "kusur": "1. kita kuru vokal 2.0 kat esnetildi",
+  "sure_sn": 17.8
+ },
+ "b04k_world_kontrol": {
+  "tur": "denetim",
+  "no": 4,
+  "kusur": "yok sayilir (vokal WORLD vokoderinden gecirildi, perde AYNI, tek kanala indi)",
+  "yontem": "pyworld harvest + cheaptrick + d4c + synthesize"
+ },
+ "b04_duz_perde": {
+  "tur": "kusur",
+  "no": 4,
+  "kusur": "vokalin perdesi her hece/nota parcasinda sabit (otomatik akort benzeri, yarim sese yapistirilmadan)",
+  "yontem": "pyworld; parca medyani",
+  "parca_sayisi": 338,
+  "parca_suresi_medyan_sn": 0.135
+ },
+ "b05_tik": {
+  "tur": "kusur",
+  "no": 5,
+  "kusur": "her 3 saniyede bir tik (0,18 ms, genlik 0,9; 36 adet)",
+  "tik_zamanlari": [
+   2.37,
+   5.37,
+   8.37,
+   11.37,
+   14.37,
+   17.37,
+   20.37,
+   23.37,
+   26.37,
+   29.37,
+   32.37,
+   35.37,
+   38.37,
+   41.37,
+   44.37,
+   47.37,
+   50.37,
+   53.37,
+   56.37,
+   59.37,
+   62.37,
+   65.37,
+   68.37,
+   71.37,
+   74.37,
+   77.37,
+   80.37,
+   83.37,
+   86.37,
+   89.37,
+   92.37,
+   95.37,
+   98.37,
+   101.37,
+   104.37,
+   107.37
+  ]
+ },
+ "b06a_vokal_eksi6": {
+  "tur": "kusur",
+  "no": 6,
+  "kusur": "vokal altyapiya gore -6 dB (karisimin genel duzeyi tabanla esitlendi)",
+  "genel_kazanc_db": 0.7
+ },
+ "b06b_vokal_arti6": {
+  "tur": "kusur",
+  "no": 6,
+  "kusur": "vokal altyapiya gore +6 dB (karisimin genel duzeyi tabanla esitlendi)",
+  "genel_kazanc_db": -2.02
+ },
+ "b07_satir_sonu_kesik": {
+  "tur": "kusur",
+  "no": 7,
+  "kusur": "her satirin son sozcugu 150 ms erken kesildi (30 satir)",
+  "kesimler": [
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 7.78,
+    "sozcuk_son": 8.06,
+    "kesim": 7.91,
+    "sessiz_son": 8.23
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 9.86,
+    "sozcuk_son": 10.14,
+    "kesim": 9.99,
+    "sessiz_son": 10.35
+   },
+   {
+    "sozcuk": "bağırır?",
+    "sozcuk_bas": 11.62,
+    "sozcuk_son": 12.3,
+    "kesim": 12.15,
+    "sessiz_son": 12.37
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 13.96,
+    "sozcuk_son": 14.46,
+    "kesim": 14.31,
+    "sessiz_son": 15.51
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 20.2,
+    "sozcuk_son": 20.48,
+    "kesim": 20.33,
+    "sessiz_son": 20.65
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 22.26,
+    "sozcuk_son": 22.54,
+    "kesim": 22.39,
+    "sessiz_son": 22.71
+   },
+   {
+    "sozcuk": "meler?",
+    "sozcuk_bas": 24.04,
+    "sozcuk_son": 24.74,
+    "kesim": 24.59,
+    "sessiz_son": 24.79
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 26.38,
+    "sozcuk_son": 26.74,
+    "kesim": 26.59,
+    "sessiz_son": 27.79
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 34.64,
+    "sozcuk_son": 34.96,
+    "kesim": 34.81,
+    "sessiz_son": 35.13
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 36.74,
+    "sozcuk_son": 37.08,
+    "kesim": 36.93,
+    "sessiz_son": 37.23
+   },
+   {
+    "sozcuk": "kişner?",
+    "sozcuk_bas": 38.52,
+    "sozcuk_son": 39.22,
+    "kesim": 39.07,
+    "sessiz_son": 39.27
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 40.84,
+    "sozcuk_son": 41.1,
+    "kesim": 40.95,
+    "sessiz_son": 42.15
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 48.1,
+    "sozcuk_son": 48.4,
+    "kesim": 48.25,
+    "sessiz_son": 48.57
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 50.2,
+    "sozcuk_son": 50.5,
+    "kesim": 50.35,
+    "sessiz_son": 50.67
+   },
+   {
+    "sozcuk": "öter?",
+    "sozcuk_bas": 52.02,
+    "sozcuk_son": 52.66,
+    "kesim": 52.51,
+    "sessiz_son": 52.71
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 54.3,
+    "sozcuk_son": 54.8,
+    "kesim": 54.65,
+    "sessiz_son": 55.85
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 61.02,
+    "sozcuk_son": 61.36,
+    "kesim": 61.21,
+    "sessiz_son": 61.51
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 63.1,
+    "sozcuk_son": 63.4,
+    "kesim": 63.25,
+    "sessiz_son": 63.63
+   },
+   {
+    "sozcuk": "bağırır?",
+    "sozcuk_bas": 64.9,
+    "sozcuk_son": 65.58,
+    "kesim": 65.43,
+    "sessiz_son": 65.63
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 67.22,
+    "sozcuk_son": 67.58,
+    "kesim": 67.43,
+    "sessiz_son": 68.63
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 75.5,
+    "sozcuk_son": 75.82,
+    "kesim": 75.67,
+    "sessiz_son": 75.99
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 77.6,
+    "sozcuk_son": 77.9,
+    "kesim": 77.75,
+    "sessiz_son": 78.05
+   },
+   {
+    "sozcuk": "havlar?",
+    "sozcuk_bas": 79.4,
+    "sozcuk_son": 80.06,
+    "kesim": 79.91,
+    "sessiz_son": 80.13
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 81.7,
+    "sozcuk_son": 82.2,
+    "kesim": 82.05,
+    "sessiz_son": 83.25
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 87.96,
+    "sozcuk_son": 88.22,
+    "kesim": 88.07,
+    "sessiz_son": 88.41
+   },
+   {
+    "sozcuk": "var.",
+    "sozcuk_bas": 90.02,
+    "sozcuk_son": 90.3,
+    "kesim": 90.15,
+    "sessiz_son": 90.47
+   },
+   {
+    "sozcuk": "miyavlar?",
+    "sozcuk_bas": 91.56,
+    "sozcuk_son": 92.48,
+    "kesim": 92.33,
+    "sessiz_son": 92.53
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 94.1,
+    "sozcuk_son": 94.38,
+    "kesim": 94.23,
+    "sessiz_son": 95.43
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 102.38,
+    "sozcuk_son": 102.64,
+    "kesim": 102.49,
+    "sessiz_son": 103.69
+   },
+   {
+    "sozcuk": "bak.",
+    "sozcuk_bas": 108.58,
+    "sozcuk_son": 108.9,
+    "kesim": 108.75,
+    "sessiz_son": 109.95
+   }
+  ]
+ },
+ "b08_yanlis_satir": {
+  "tur": "kusur",
+  "no": 8,
+  "kusur": "2. kitanin 3. satiri yerine 1. kitanin 3. satiri soyleniyor (yanlis soz, ayni ezgi)",
+  "hedef_satir": "Koyunlar nasıl meler?",
+  "hedef_bas": 22.74,
+  "hedef_son": 24.74,
+  "konan_satir": "İnekler nasıl bağırır?",
+  "kaynak_bas": 10.38,
+  "kaynak_son": 12.3,
+  "kaydirma_sn": 12.4245,
+  "yerlesim_bas": 22.805
+ },
+ "b09_tempo_80": {
+  "tur": "kusur",
+  "no": 9,
+  "kusur": "butun sarki %80 tempoya yavaslatildi (perde ayni)",
+  "yontem": "ffmpeg rubberband tempo=0.8",
+  "sure_sn": 137.7
+ },
+ "b10_alcak_geciren_4k": {
+  "tur": "kusur",
+  "no": 10,
+  "kusur": "butun karisim 4 kHz'de kesildi (8. derece Butterworth, sifir fazli)"
+ },
+ "c07_satir_sonu_kesik_kita12": {
+  "tur": "kusur (kisa parca)",
+  "no": 7,
+  "kusur": "b07'nin 5,0-27,5 sn parcasi (8 satir sonu kesik)",
+  "parca": [
+   5.0,
+   27.5
+  ]
+ },
+ "c08_yanlis_satir_kita12": {
+  "tur": "kusur (kisa parca)",
+  "no": 8,
+  "kusur": "b08'in 5,0-27,5 sn parcasi (2. kitanin 3. satiri yanlis)",
+  "parca": [
+   5.0,
+   27.5
+  ]
+ }
+}

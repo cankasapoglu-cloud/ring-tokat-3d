@@ -25,8 +25,72 @@
    "model": "scribe_v1",
    "sure_sn": 27.3,
    "tahmini_kredi": 150.2
+  },
+  {
+   "zaman": "2026-11-21 16:08:27",
+   "dosya": "duzgun_2.mp3",
+   "ozet": "47aa1598a811ad66",
+   "model": "scribe_v1",
+   "sure_sn": 95.0,
+   "tahmini_kredi": 522.5
+  },
+  {
+   "zaman": "2026-11-21 16:08:33",
+   "dosya": "coskulu_1.mp3",
+   "ozet": "6e614b846be99009",
+   "model": "scribe_v1",
+   "sure_sn": 80.0,
+   "tahmini_kredi": 440.0
+  },
+  {
+   "zaman": "2026-11-21 16:08:34",
+   "dosya": "turkce_2.mp3",
+   "ozet": "e416858dff8d4778",
+   "model": "scribe_v1",
+   "sure_sn": 95.0,
+   "tahmini_kredi": 522.5
+  },
+  {
+   "zaman": "2026-11-21 16:08:35",
+   "dosya": "coskulu_2.mp3",
+   "ozet": "bf2e44aaaf8d391b",
+   "model": "scribe_v1",
+   "sure_sn": 70.0,
+   "tahmini_kredi": 385.0
+  },
+  {
+   "zaman": "2026-11-21 16:08:38",
+   "dosya": "coskulu_1.mp3",
+   "ozet": "20526aaf4b91eaec",
+   "model": "scribe_v1",
+   "sure_sn": 213.0,
+   "tahmini_kredi": 1171.5
+  },
+  {
+   "zaman": "2026-11-21 16:08:54",
+   "dosya": "ali-baba-dogal-onizleme.mp3",
+   "ozet": "47b158b21fc2deb4",
+   "model": "scribe_v1",
+   "sure_sn": 134.38,
+   "tahmini_kredi": 739.1
+  },
+  {
+   "zaman": "2026-11-21 16:08:56",
+   "dosya": "sarki_birlesik.mp3",
+   "ozet": "fb00adeb8cd1f5b8",
+   "model": "scribe_v1",
+   "sure_sn": 154.74,
+   "tahmini_kredi": 851.1
+  },
+  {
+   "zaman": "2026-11-21 16:08:58",
+   "dosya": "coskulu_2.mp3",
+   "ozet": "bab9369c4cf955c6",
+   "model": "scribe_v1",
+   "sure_sn": 186.0,
+   "tahmini_kredi": 1023.0
   }
  ],
- "toplam_tahmini_kredi": 921.1,
+ "toplam_tahmini_kredi": 6575.8,
  "sinir": 8000
 }

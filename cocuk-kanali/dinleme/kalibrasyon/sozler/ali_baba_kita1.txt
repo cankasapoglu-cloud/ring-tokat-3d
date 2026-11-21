@@ -1,0 +1,6 @@
+# ornek_kita1.mp3 (1. kıta, eski 'diye bağırır' sürümü) - beklenen sözler
+Ali Baba'nın bir çiftliği var
+Çiftliğinde inekleri var
+[inek sesi] [inek sesi]
+diye bağırır
+Çiftliğinde Ali Baba'nın

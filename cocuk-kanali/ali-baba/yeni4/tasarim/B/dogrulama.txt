@@ -1,0 +1,50 @@
+R1  placed vocal (vokal_dogal.wav), frame mode, position from time alone
+  gated frames: 8968 = 44.84 s (frame table: 44.85 s); in verses 1..7; frames outside the sung bars: 0
+  PASS  every gated frame of the placed vocal lies in a sung bar of verses 1-7
+    chosen     placed file: ct 0.6202 out 0.1015 clash any 0.1403 sus 0.0351 | olcum.json frame mode: ct 0.6214 out 0.1013 clash any 0.1399 sus 0.0357 | largest difference 0.0012
+  PASS  chosen: the placed vocal gives the frame-mode numbers within 1.2 points
+    runner_up  placed file: ct 0.6261 out 0.1015 clash any 0.1394 sus 0.0351 | olcum.json frame mode: ct 0.6270 out 0.1013 clash any 0.1392 sus 0.0357 | largest difference 0.0009
+  PASS  runner_up: the placed vocal gives the frame-mode numbers within 1.2 points
+    baseline   placed file: ct 0.5031 out 0.1015 clash any 0.2349 sus 0.1117 | olcum.json frame mode: ct 0.5029 out 0.1013 clash any 0.2344 sus 0.1056 | largest difference 0.0061
+  PASS  baseline: the placed vocal gives the frame-mode numbers within 1.2 points
+    original   placed file: ct 0.6498 out 0.0911 clash any 0.2990 sus 0.1920 | olcum.json frame mode: ct 0.6487 out 0.0907 clash any 0.3006 sus 0.1861 | largest difference 0.0059
+  PASS  original: the placed vocal gives the frame-mode numbers within 1.2 points
+  PASS  plan.json frame_mode block = olcum.json
+R2  naive recount on the frame table, note mode
+    chosen     recount: ct 0.6916 non 0.3042 out 0.0041 clash any 0.0488 sus 0.0109 (3 runs) on-beat 0.6891 end 1.0000 | largest difference to plan.json 0.00004
+  PASS  chosen: plan.json reproduced by the naive recount
+    runner_up  recount: ct 0.7247 non 0.2711 out 0.0041 clash any 0.0488 sus 0.0109 (3 runs) on-beat 0.6874 end 1.0000 | largest difference to plan.json 0.00005
+  PASS  runner_up: plan.json reproduced by the naive recount
+    baseline   recount: ct 0.5795 non 0.4164 out 0.0041 clash any 0.1484 sus 0.0756 (14 runs) on-beat 0.6135 end 0.4728 | largest difference to plan.json 0.00005
+  PASS  baseline: plan.json reproduced by the naive recount
+    original   recount: ct 0.7271 non 0.2729 out 0.0000 clash any 0.2262 sus 0.1585 (33 runs) on-beat 0.7053 end 0.4728 | largest difference to plan.json 0.00004
+  PASS  original: plan.json reproduced by the naive recount
+  PASS  J of the chosen plan = chord_tone - 2 (clash_sustained + outside_scale)
+R3  the same plans as measured by designer A (tasarim/A/olcum.json)
+  PASS  C plain baseline: 9 shared numbers agree (largest difference 0.00000)
+  PASS  F plain baseline: 9 shared numbers agree (largest difference 0.00000)
+  PASS  G plain baseline: 9 shared numbers agree (largest difference 0.00000)
+  PASS  original D minor loop: 7 shared numbers agree (largest difference 0.00000)
+  PASS  designer A's plan (I IV I I | V V V V | I I | V V V V): 9 shared numbers agree (largest difference 0.00000)
+  PASS  V IV I I | V V V V | I I | V V V V (A's alternative E* = B's runner-up): 9 shared numbers agree (largest difference 0.00000)
+R4  consistency of plan.json
+  PASS  chosen: chord names match the degrees in C major
+  PASS  chosen: the verse has 8 bars of 4 beats
+  PASS  chosen: the fixed bars (answers I V7 I I, animal calls I, drum fill I) are untouched
+  PASS  chosen: bar 6 ends on V, V7 or I
+    chosen: chord changes inside the sung bars: 1; beats on I / V / V7: 30 of 32
+  PASS  runner-up: chord names match the degrees in C major
+  PASS  runner-up: the verse has 8 bars of 4 beats
+  PASS  runner-up: the fixed bars (answers I V7 I I, animal calls I, drum fill I) are untouched
+  PASS  runner-up: bar 6 ends on V, V7 or I
+    runner-up: chord changes inside the sung bars: 2; beats on I / V / V7: 31 of 32
+  PASS  chosen plan passes the strict progression rules G1-G4
+  PASS  runner-up: bar 0 fails the strict rule G3 and passes the turnaround rule set
+  PASS  chosen: chord_tone + scale_non_chord + outside_scale = 1
+  PASS  runner-up: chord_tone + scale_non_chord + outside_scale = 1
+  PASS  under-vocal policy is 'none'
+  PASS  bar 0 of the chosen plan / runner-up = the search result of the strict / turnaround rule set
+  PASS  bars 2 and 6 of the search result are the dominant on all four beats, bar 5 is I I
+
+RESULT: all checks passed
+Nothing was listened to: these checks verify the arithmetic and the bookkeeping, not how the harmony sounds.

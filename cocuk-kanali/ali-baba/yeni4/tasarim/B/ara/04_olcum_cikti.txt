@@ -1,0 +1,104 @@
+ALL SUNG FRAMES (44.85 s voiced, 7 verses); shares in % of the voiced sung time; note mode unless marked
+C plain baseline [I I IV I | I I IV I | I I | I I  ct  58.0 non  41.6 out  0.4 | clash any  14.8 sus   7.6 (14) | on-beat  61.4 end  47.3 | band: semitone  14.4 (sus  7.2) whole tone  33.3 doubled  57.7 | J  0.420 | frame: ct  50.3 sus  10.6 J  0.089
+C best by fit, strict rules [ii ii I I | V V V V7  ct  72.5 non  27.1 out  0.4 | clash any   8.8 sus   1.4 ( 4) | on-beat  77.3 end 100.0 | band: semitone   8.4 (sus  1.4) whole tone  27.2 doubled  69.5 | J  0.688 | frame: ct  65.2 sus   5.6 J  0.337
+C best by fit, turnaround rules [V IV I I | V V V  ct  75.8 non  23.8 out  0.4 | clash any   8.8 sus   1.4 ( 4) | on-beat  77.1 end 100.0 | band: semitone   8.4 (sus  1.4) whole tone  24.6 doubled  68.9 | J  0.721 | frame: ct  65.7 sus   5.6 J  0.342
+C best by fit, any sequence [V7 ii iii iii | V7 V7 ct  76.3 non  23.3 out  0.4 | clash any   8.8 sus   1.4 ( 4) | on-beat  78.3 end 100.0 | band: semitone   8.4 (sus  1.4) whole tone  44.8 doubled  69.8 | J  0.726 | frame: ct  66.5 sus   5.2 J  0.359
+F plain baseline [I I IV I | I I IV I | I I | I I  ct  24.6 non  75.2 out  0.2 | clash any  16.9 sus  12.3 (26) | on-beat  32.5 end   0.0 | band: semitone  15.8 (sus 10.8) whole tone  52.8 doubled  16.0 | J -0.005 | frame: ct  23.5 sus  12.0 J -0.205
+F best by fit, strict rules [ii I V V | ii ii IV I ct  77.7 non  22.1 out  0.2 | clash any  13.0 sus   6.2 (12) | on-beat  83.5 end  52.8 | band: semitone   8.6 (sus  1.8) whole tone  14.5 doubled  69.4 | J  0.649 | frame: ct  66.9 sus  11.4 J  0.240
+F best by fit, turnaround rules [ii I V V | ii ii  ct  77.7 non  22.1 out  0.2 | clash any  13.0 sus   6.2 (12) | on-beat  83.5 end  52.8 | band: semitone   8.6 (sus  1.8) whole tone  14.5 doubled  69.4 | J  0.649 | frame: ct  66.9 sus  11.4 J  0.240
+F best by fit, any sequence [ii I V V | ii ii ii I ct  76.0 non  23.8 out  0.2 | clash any   9.1 sus   1.4 ( 4) | on-beat  77.6 end 100.0 | band: semitone   8.9 (sus  1.4) whole tone  20.1 doubled  67.0 | J  0.727 | frame: ct  65.8 sus   6.2 J  0.334
+G plain baseline [I I IV I | I I IV I | I I | I I  ct  64.9 non  19.0 out 16.2 | clash any   7.9 sus   6.7 (13) | on-beat  65.7 end  52.7 | band: semitone   7.9 (sus  6.7) whole tone  23.6 doubled  61.6 | J  0.192 | frame: ct  56.8 sus   6.5 J  0.021
+G best by fit, strict rules [I ii IV IV | I I I I  ct  72.7 non  11.2 out 16.2 | clash any   4.9 sus   1.1 ( 3) | on-beat  69.2 end 100.0 | band: semitone   4.7 (sus  1.1) whole tone  23.1 doubled  65.5 | J  0.382 | frame: ct  62.7 sus   3.6 J  0.139
+G best by fit, turnaround rules [I V IV IV | I I I ct  72.7 non  11.2 out 16.2 | clash any   5.0 sus   1.1 ( 3) | on-beat  69.2 end 100.0 | band: semitone   4.8 (sus  1.1) whole tone  23.0 doubled  64.2 | J  0.382 | frame: ct  62.8 sus   3.6 J  0.140
+G best by fit, any sequence [I V vi vi | I I I I | ct  72.7 non  11.2 out 16.2 | clash any   5.0 sus   1.1 ( 3) | on-beat  69.2 end 100.0 | band: semitone   4.8 (sus  1.1) whole tone  23.0 doubled  64.2 | J  0.382 | frame: ct  62.8 sus   3.5 J  0.141
+C BEST                                             ct  69.2 non  30.4 out  0.4 | clash any   4.9 sus   1.1 ( 3) | on-beat  68.9 end 100.0 | band: semitone   4.5 (sus  1.1) whole tone  27.2 doubled  66.0 | J  0.662 | frame: ct  62.1 sus   3.6 J  0.347
+      = ii ii I I | V V V V | I I | V V V V  (chosen)
+C RUNNER_UP                                        ct  72.5 non  27.1 out  0.4 | clash any   4.9 sus   1.1 ( 3) | on-beat  68.7 end 100.0 | band: semitone   4.5 (sus  1.1) whole tone  24.6 doubled  65.5 | J  0.695 | frame: ct  62.7 sus   3.6 J  0.353
+      = V IV I I | V V V V | I I | V V V V  (runner-up: highest fit, rule set 'turnaround')
+C variant_ii_V_I                                   ct  69.2 non  30.4 out  0.4 | clash any   4.9 sus   1.1 ( 3) | on-beat  68.9 end 100.0 | band: semitone   4.5 (sus  1.1) whole tone  27.2 doubled  66.0 | J  0.662 | frame: ct  62.1 sus   3.6 J  0.347
+      = ii ii V I | V V V V | I I | V V V V  (the chosen plan with a full ii-V-I in bar 0)
+C symbolic_optimum_strict                          ct  72.5 non  27.1 out  0.4 | clash any   8.8 sus   1.4 ( 4) | on-beat  77.3 end 100.0 | band: semitone   8.4 (sus  1.4) whole tone  27.2 doubled  69.5 | J  0.688 | frame: ct  65.2 sus   5.6 J  0.337
+      = ii ii I I | V V V V7 | I I | V V V V7  (stage-1 optimum of the strict rules: seventh on the last beat)
+C symbolic_optimum_turnaround                      ct  75.8 non  23.8 out  0.4 | clash any   8.8 sus   1.4 ( 4) | on-beat  77.1 end 100.0 | band: semitone   8.4 (sus  1.4) whole tone  24.6 doubled  68.9 | J  0.721 | frame: ct  65.7 sus   5.6 J  0.342
+      = V IV I I | V V V V7 | I I | V V V V7  (stage-1 optimum of the turnaround rules)
+C seventh_everywhere                               ct  80.5 non  19.1 out  0.4 | clash any  15.2 sus   7.2 (15) | on-beat  97.2 end 100.0 | band: semitone  13.3 (sus  5.1) whole tone  48.0 doubled  69.5 | J  0.652 | frame: ct  72.7 sus  11.6 J  0.293
+      = ii ii I I | V7 V7 V7 V7 | I I | V7 V7 V7 V7  (the band plays the seventh in all of bars 2 and 6)
+C designer_A                                       ct  68.6 non  31.0 out  0.4 | clash any   4.9 sus   1.1 ( 3) | on-beat  59.4 end 100.0 | band: semitone   4.5 (sus  1.1) whole tone  28.3 doubled  65.5 | J  0.656 | frame: ct  58.9 sus   3.6 J  0.315
+      = I IV I I | V V V V | I I | V V V V  (designer A's plan as the band plays it)
+C tonic_first_half_bars_2_6                        ct  66.9 non  32.7 out  0.4 | clash any   5.1 sus   1.1 ( 3) | on-beat  63.2 end 100.0 | band: semitone   4.7 (sus  1.1) whole tone  29.6 doubled  66.0 | J  0.639 | frame: ct  60.7 sus   3.6 J  0.333
+      = ii ii I I | I I V V | I I | I I V V
+C L1_ends_on_V                                     ct  65.8 non  33.8 out  0.4 | clash any   2.7 sus   0.8 ( 2) | on-beat  68.9 end  74.6 | band: semitone   2.3 (sus  0.8) whole tone  30.5 doubled  62.7 | J  0.635 | frame: ct  58.9 sus   2.2 J  0.342
+      = ii ii V V | V V V V | I I | V V V V
+C bar_5_on_V                                       ct  66.3 non  33.3 out  0.4 | clash any   2.5 sus   0.4 ( 1) | on-beat  68.9 end  78.1 | band: semitone   2.1 (sus  0.4) whole tone  30.0 doubled  63.1 | J  0.648 | frame: ct  59.7 sus   1.4 J  0.367
+      = ii ii I I | V V V V | V V | V V V V
+C V_vi_I_I                                         ct  72.5 non  27.1 out  0.4 | clash any   4.9 sus   1.1 ( 3) | on-beat  68.7 end 100.0 | band: semitone   4.5 (sus  1.1) whole tone  24.6 doubled  65.5 | J  0.695 | frame: ct  62.7 sus   3.6 J  0.353
+      = V vi I I | V V V V | I I | V V V V  (outside both rule sets)
+C V_ii_I_I                                         ct  72.5 non  27.1 out  0.4 | clash any   4.9 sus   1.1 ( 3) | on-beat  68.7 end 100.0 | band: semitone   4.5 (sus  1.1) whole tone  24.6 doubled  65.5 | J  0.695 | frame: ct  62.7 sus   3.6 J  0.353
+      = V ii I I | V V V V | I I | V V V V  (outside both rule sets)
+C I_ii_V_I                                         ct  68.6 non  31.0 out  0.4 | clash any   4.9 sus   1.1 ( 3) | on-beat  59.4 end 100.0 | band: semitone   4.5 (sus  1.1) whole tone  28.3 doubled  65.5 | J  0.656 | frame: ct  58.8 sus   3.6 J  0.314
+      = I ii V I | V V V V | I I | V V V V
+original D minor loop (reference)                  ct  72.7 non  27.3 out  0.0 | clash any  22.6 sus  15.8 (33) | on-beat  70.5 end  47.3
+BAR 0 (L1): the candidates for the verse opening (frames of L1; 'beats 0-1' = up to beat 1.95)
+  I I IV I   chg 2 rules y/y | note: ct  31.3 on-beat  17.3 off-beat  39.6 J 0.289 | frame: ct  25.6 J -0.106 | dio J -0.116 | early J 0.309 | band, beats 0-1: doubled  23.5 unison  17.6 whole tone  68.5 (sus 67.1) semitone  0.0
+  I IV I I   chg 2 rules y/y | note: ct  76.3 on-beat  61.9 off-beat  84.9 J 0.739 | frame: ct  60.3 J 0.241 | dio J 0.239 | early J 0.728 | band, beats 0-1: doubled  71.9 unison  59.8 whole tone  26.3 (sus 24.9) semitone  0.0
+  ii ii I I  chg 1 rules y/y | note: ct  78.4 on-beat  97.5 off-beat  67.0 J 0.760 | frame: ct  71.8 J 0.356 | dio J 0.353 | early J 0.753 | band, beats 0-1: doubled  75.5 unison  67.4 whole tone  19.1 (sus 13.6) semitone  0.0
+  ii ii V I  chg 2 rules y/y | note: ct  78.4 on-beat  97.5 off-beat  67.0 J 0.760 | frame: ct  71.7 J 0.355 | dio J 0.351 | early J 0.753 | band, beats 0-1: doubled  75.5 unison  67.4 whole tone  19.1 (sus 13.6) semitone  0.0
+  V IV I I   chg 2 rules n/y | note: ct  90.0 on-beat  96.9 off-beat  85.9 J 0.876 | frame: ct  73.7 J 0.375 | dio J 0.374 | early J 0.871 | band, beats 0-1: doubled  71.9 unison  61.1 whole tone   2.9 (sus  0.0) semitone  0.0
+  V ii I I   chg 2 rules n/n | note: ct  90.0 on-beat  96.9 off-beat  85.9 J 0.876 | frame: ct  73.7 J 0.375 | dio J 0.374 | early J 0.871 | band, beats 0-1: doubled  71.9 unison  61.1 whole tone   2.9 (sus  0.0) semitone  0.0
+  V vi I I   chg 2 rules n/n | note: ct  90.0 on-beat  96.9 off-beat  85.9 J 0.876 | frame: ct  73.6 J 0.374 | dio J 0.370 | early J 0.871 | band, beats 0-1: doubled  71.9 unison  61.1 whole tone   2.9 (sus  0.0) semitone  0.0
+  ii ii V V  chg 1 rules y/y | note: ct  66.7 on-beat  97.5 off-beat  48.4 J 0.667 | frame: ct  60.3 J 0.336 | dio J 0.334 | early J 0.660 | band, beats 0-1: doubled  75.5 unison  67.4 whole tone  19.1 (sus 13.6) semitone  0.0
+  V V I I    chg 1 rules y/y | note: ct  62.3 on-beat  82.4 off-beat  50.2 J 0.598 | frame: ct  50.8 J 0.146 | dio J 0.140 | early J 0.605 | band, beats 0-1: doubled  23.5 unison  18.9 whole tone  45.1 (sus 42.1) semitone  0.0
+  I I I I    chg 0 rules y/y | note: ct  48.6 on-beat  47.4 off-beat  49.2 J 0.462 | frame: ct  37.6 J 0.014 | dio J 0.007 | early J 0.462 | band, beats 0-1: doubled  23.5 unison  17.6 whole tone  68.5 (sus 67.1) semitone  0.0
+GLIDE 'li': {'below G4 (scoop up from D4)': 69.0, 'G4 +-50 cents': 108.0, 'G#4 (in transit)': 36.0, 'A4 +-50 cents': 63.0} | reaches A4 at beat [0.78, 0.79, 0.76, 0.77, 0.78, 0.78, 0.8]
+STAGE 2 - the dominant of bars 2 / 6 with or without its seventh (frames of that line; the other bars as chosen)
+  bar 2 V V V V       note: ct  62.6 on-beat  47.6 clash any   0.0 sus   0.0 J 0.626 band semitone   0.0 (sus  0.0) | frame: ct  56.5 sus   0.0 J 0.410 band semitone   6.8 (sus  0.0) | dio: J 0.414 | early: J 0.626
+  bar 2 V V V V7      note: ct  69.8 on-beat  64.8 clash any   7.1 sus   0.0 J 0.698 band semitone   7.2 (sus  0.0) | frame: ct  62.5 sus   7.4 J 0.321 band semitone  12.6 (sus  7.4) | dio: J 0.346 | early: J 0.710
+  bar 2 V V V7 V7     note: ct  82.7 on-beat  95.6 clash any  16.6 sus   7.4 J 0.679 band semitone  14.6 (sus  4.3) | frame: ct  74.8 sus  14.6 J 0.300 band semitone  19.3 (sus 11.6) | dio: J 0.328 | early: J 0.685
+  bar 2 V7 V7 V7 V7   note: ct  83.4 on-beat  97.3 clash any  16.6 sus   7.4 J 0.686 band semitone  14.6 (sus  4.3) | frame: ct  75.9 sus  14.6 J 0.311 band semitone  19.5 (sus 11.6) | dio: J 0.341 | early: J 0.686
+  bar 6 V V V V       note: ct  59.8 on-beat  45.8 clash any   1.4 sus   0.0 J 0.569 band semitone   0.0 (sus  0.0) | frame: ct  54.9 sus   0.0 J 0.388 band semitone   5.9 (sus  0.0) | dio: J 0.356 | early: J 0.569
+  bar 6 V V V V7      note: ct  64.5 on-beat  57.9 clash any   8.2 sus   1.2 J 0.592 band semitone   6.8 (sus  1.2) | frame: ct  59.7 sus   0.0 J 0.436 band semitone  10.4 (sus  0.0) | dio: J 0.365 | early: J 0.597
+  bar 6 V V V7 V7     note: ct  78.0 on-beat  92.8 clash any  21.1 sus  14.1 J 0.470 band semitone  16.5 (sus  9.9) | frame: ct  71.7 sus  13.7 J 0.283 band semitone  19.9 (sus  8.6) | dio: J 0.215 | early: J 0.478
+  bar 6 V7 V7 V7 V7   note: ct  78.9 on-beat  95.0 clash any  21.1 sus  14.1 J 0.479 band semitone  16.5 (sus  9.9) | frame: ct  73.0 sus  13.7 J 0.295 band semitone  20.1 (sus  9.8) | dio: J 0.229 | early: J 0.479
+sequences inside the rules per bar: strict {0: 663, 2: 663, 5: 40, 6: 542} | turnaround {0: 714, 2: 714, 5: 40, 6: 552}
+ROBUSTNESS (18 readings):
+  strict     {'0': ('15 of 18', 0.0514), '2': ('16 of 18', 0.2549), '5': ('14 of 18', 0.1752), '6': ('16 of 18', 0.0613)}
+  turnaround {'0': ('17 of 18', 0.0515), '2': ('16 of 18', 0.2549), '5': ('14 of 18', 0.1752), '6': ('16 of 18', 0.0613)}
+   note mode                  strict {'0': 'ii ii I I', '2': 'V V V V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   frame mode                 strict {'0': 'ii ii I I', '2': 'V7 I V V', '5': 'V V', '6': 'V7 I V V7'} | turnaround bar 0: V IV I I
+   second tracker (dio)       strict {'0': 'ii ii I I', '2': 'V7 I V V', '5': 'V V', '6': 'V7 I V V7'} | turnaround bar 0: V IV I I
+   chord changes 40 ms early  strict {'0': 'ii ii I I', '2': 'V V V V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   without verse 1            strict {'0': 'ii ii I I', '2': 'V7 V7 V7 V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   without verse 2            strict {'0': 'ii ii I I', '2': 'V7 V7 V7 V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   without verse 3            strict {'0': 'ii ii I I', '2': 'V V V V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   without verse 4            strict {'0': 'ii ii I I', '2': 'V7 V7 V7 V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   without verse 5            strict {'0': 'ii ii I I', '2': 'V V V V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   without verse 6            strict {'0': 'ii ii I I', '2': 'V7 V7 V7 V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   without verse 7            strict {'0': 'ii ii I I', '2': 'V V V V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   verse 1 alone              strict {'0': 'I ii I I', '2': 'V V V V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   verse 2 alone              strict {'0': 'I ii I I', '2': 'V V V V7', '5': 'V V', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   verse 3 alone              strict {'0': 'ii ii I I', '2': 'V7 V7 V7 V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   verse 4 alone              strict {'0': 'ii ii I I', '2': 'V V V V7', '5': 'V V', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+   verse 5 alone              strict {'0': 'ii ii V V', '2': 'V7 V7 V7 V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I V
+   verse 6 alone              strict {'0': 'ii ii I I', '2': 'V V V V7', '5': 'I I', '6': 'V V V V'} | turnaround bar 0: V IV I I
+   verse 7 alone              strict {'0': 'ii ii I I', '2': 'V7 V7 V7 V7', '5': 'I I', '6': 'V V V V7'} | turnaround bar 0: V IV I I
+(32 s)
+  verse 1 inek   i:F4 nek:E4 le:F4 ri:E4                  best alone: V V V V7     | V V V V: ct  62.8 clash any  0.0 sus  0.0 | plain I I IV I: ct  65.2 sus  10.1
+  verse 2 koyun  ko:F4 yun:E4 la:F4 rı:E4                 best alone: V V V V7     | V V V V: ct  57.0 clash any  0.0 sus  0.0 | plain I I IV I: ct  60.2 sus  24.5
+  verse 3 at     at:F4 la:F4 rı:E4                        best alone: V7 V7 V7 V7  | V V V V: ct  70.7 clash any  0.0 sus  0.0 | plain I I IV I: ct  68.5 sus   0.0
+  verse 4 horoz  ho:F4 roz:E4 la:F4 rı:E4                 best alone: V V V V7     | V V V V: ct  59.7 clash any  0.0 sus  0.0 | plain I I IV I: ct  62.9 sus  12.3
+  verse 5 ördek  ör:F4 dek:E4 le:F4 ri:E4                 best alone: V7 V7 V7 V7  | V V V V: ct  61.8 clash any  0.0 sus  0.0 | plain I I IV I: ct  66.5 sus   0.0
+  verse 6 köpek  kö:F4 pek:E4 le:F4 ri:E4                 best alone: V V V V7     | V V V V: ct  62.1 clash any  0.0 sus  0.0 | plain I I IV I: ct  64.7 sus   9.6
+  verse 7 kedi   ke:F4 di:E4 si:F4+E4                     best alone: V7 V7 V7 V7  | V V V V: ct  65.4 clash any  0.0 sus  0.0 | plain I I IV I: ct  66.9 sus   0.0
+UNDER-VOCAL: voice vs tune: {'same note (unison / octave)': 0.0854, 'semitone / major 7th': 0.0022, 'whole tone / minor 7th': 0.2076, 'minor 3rd / major 6th': 0.1162, 'major 3rd / minor 6th': 0.1003, '4th / 5th': 0.4404, 'tritone': 0.0, 'no tune note sounding': 0.0479}
+   different note 86.7 %, a second/seventh apart 21.0 % (runs > 150 ms: 11.2 %, 15 runs), second in the same octave 14.4 %
+   tune vs plain harmony {'chord_tone': 1.0, 'clash': 0.0} | vs chosen {'chord_tone': 0.4288, 'clash': 0.2142} | vs runner-up {'chord_tone': 0.4645, 'clash': 0.2856}
+   none (chords, bass, drums only) - chosen harmony                              4.5 %  (in runs > 150 ms  1.1 %)
+   none - runner-up harmony                                                      4.5 %  (in runs > 150 ms  1.1 %)
+   none - chosen harmony with the seventh in the band on all of bars 2 and 6    13.3 %  (in runs > 150 ms  5.1 %)
+   soft pad: root + fifth of every chord - chosen harmony                        4.7 %  (in runs > 150 ms  1.1 %)
+   soft pad: full triads - chosen harmony                                        4.9 %  (in runs > 150 ms  1.1 %)
+   soft pad: full chords with the seventh on the dominant                       15.2 %  (in runs > 150 ms  7.2 %)
+   none - plain baseline harmony                                                14.4 %  (in runs > 150 ms  7.2 %)
+   frame mode: none - chosen harmony                                            12.5 %  (in runs > 150 ms  3.6 %)
+   frame mode: soft pad: full triads - chosen harmony                           14.0 %  (in runs > 150 ms  3.6 %)
+written: olcum.json (33 s)

@@ -1,0 +1,38 @@
+# Ali Baba'nın Çiftliği - ilk yapay kayıtların (v2_1, v2_2) BEKLENEN sözleri.
+# KAYNAK: üretim istemi depoda yok. Bu metin, ali-baba/v2_1.txt ve v2_2.txt dökümlerinin ortak kalıbından ve kullanıcının
+# sözlerinden ("atları" olmalıydı; koyun ve at yanlış ses çıkarıyor) YENİDEN KURULDU. Söylenen hayvan sesleri alışılmış
+# Türkçe yazımla yazıldı (inek mö, koyun me, at iha, horoz ü-ürü-üü, ördek vak, köpek hav, kedi miyav).
+Ali Baba'nın bir çiftliği var
+Çiftliğinde inekleri var
+Mö mö diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde koyunları var
+Me me diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde atları var
+İha iha diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde horozları var
+Ü ürü üü diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde ördekleri var
+Vak vak diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde köpekleri var
+Hav hav diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde kedileri var
+Miyav miyav diye bağırır
+Çiftliğinde Ali Baba'nın

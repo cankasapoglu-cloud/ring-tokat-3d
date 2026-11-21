@@ -1,0 +1,15 @@
+# Pıtır'ın Ailesi - BEKLENEN sözler.
+# KAYNAK: üretim istemi depoda yok. pitirin-ailesi/sarki_1.txt, sarki_2.txt, yavas_1.txt, yavas_2.txt dökümlerinin
+# ortak kalıbından YENİDEN KURULDU (her kıtada ilk dize üç ses, ikinci dize tek ses).
+Bebek kedi zıp zıp zıplar, miyav miyav miyav.
+Bebek kedi zıp zıp zıplar, miyav.
+Anne kedi sımsıkı sarılır, mır mır mır.
+Anne kedi sımsıkı sarılır, mır.
+Baba kedi havaya kaldırır, hop hop hop.
+Baba kedi havaya kaldırır, hop.
+Nine kedi örgü örer, tık tık tık.
+Nine kedi örgü örer, tık.
+Dede kedi masal okur, ho ho ho.
+Dede kedi masal okur, ho.
+Hep birlikte dans ederiz, la la la.
+Biz kocaman bir aileyiz. Yaşasın!

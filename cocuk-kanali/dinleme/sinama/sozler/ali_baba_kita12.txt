@@ -1,0 +1,10 @@
+# Ali Baba'nın Çiftliği ("Dinle bak" sürümü) - yalnızca 1. ve 2. kıta (kısa sınama parçaları için beklenen sözler)
+Ali Baba'nın bir çiftliği var
+Çiftliğinde inekleri var
+İnekler nasıl bağırır?
+Dinle bak, dinle bak!
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde koyunları var
+Koyunlar nasıl meler?
+Dinle bak, dinle bak!

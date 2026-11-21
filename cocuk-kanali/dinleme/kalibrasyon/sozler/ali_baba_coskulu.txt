@@ -1,0 +1,37 @@
+# Ali Baba'nın Çiftliği - "coşkulu" kayıtların (ali-baba/coskulu_1, coskulu_2) BEKLENEN sözleri.
+# KAYNAK: üretim istemi depoda yok. Bu metin iki kaydın Scribe dökümlerinin ORTAK kalıbından ve ali-baba/yeni/sozler.txt
+# dosyasındaki fiillerden (kişner, öter, havlar, miyavlar) YENİDEN KURULDU. Hayvan sesleri alışılmış Türkçe yazımla.
+Ali Baba'nın bir çiftliği var
+Çiftliğinde inekleri var
+Mö mö diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde koyunları var
+Me me diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde bir de atı var
+İha iha diye kişner
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde horozları var
+Ü ürü üü diye öter
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde ördekleri var
+Vak vak diye bağırır
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde köpekleri var
+Hav hav diye havlar
+Çiftliğinde Ali Baba'nın
+
+Ali Baba'nın bir çiftliği var
+Çiftliğinde kedileri var
+Miyav miyav diye miyavlar
+Çiftliğinde Ali Baba'nın

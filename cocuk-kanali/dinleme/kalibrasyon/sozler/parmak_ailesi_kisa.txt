@@ -1,0 +1,19 @@
+# Parmak Ailesi - BEKLENEN sözler (sarki_1, sarki_2: son dize kısa).
+# KAYNAK: üretim istemi depoda yok. Kıta sırası kullanıcının sözlerinden (3. kıta "abi parmak" olmalı; beş ad: baba, anne,
+# abi, abla, bebek) ve kayıtların dökümlerindeki ortak kalıptan YENİDEN KURULDU.
+Baba parmak, baba parmak, neredesin?
+Buradayım, buradayım. Merhaba!
+
+Anne parmak, anne parmak, neredesin?
+Buradayım, buradayım. Merhaba!
+
+Abi parmak, abi parmak, neredesin?
+Buradayım, buradayım. Merhaba!
+
+Abla parmak, abla parmak, neredesin?
+Buradayım, buradayım. Merhaba!
+
+Bebek parmak, bebek parmak, neredesin?
+Buradayım, buradayım. Merhaba!
+
+Parmak ailesi hep birlikte

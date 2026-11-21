@@ -22,7 +22,8 @@ EXTRA METRICS OF DESIGNER B (they describe WHERE the chord tones are, which the 
   line_end_chord_tone: chord-tone share of the LAST syllable of each line (the note a phrase comes to rest on)
 
 The sung pitch class of a frame is by default the pitch class of the NOTE it belongs to ('note' mode: scoops and
-glides count with their note); 'frame' mode rounds every frame's own pitch.
+glides count with their note); 'frame' mode rounds every frame's own pitch; 'dio' mode does the same with the second
+pitch tracker (dio + stonemask).
 """
 import numpy as np
 from ortak import *
@@ -43,12 +44,14 @@ class Frames:
         self.on_beat = np.abs(self.slot - np.round(self.slot)) < 1e-6
         self.pc_note = np.round(self.note_midi).astype(int) % 12
         self.pc_frame = np.round(self.midi).astype(int) % 12
+        # second pitch tracker (dio + stonemask); where it found no pitch the harvest value is kept
+        self.pc_dio = np.where(self.midi_dio > 0, np.round(self.midi_dio).astype(int) % 12, self.pc_frame)
         self.notes = z["notes"]
         self.n = len(self.t)
         self.total_s = self.n * FP
 
     def pc(self, mode="note"):
-        return self.pc_note if mode == "note" else self.pc_frame
+        return {"note": self.pc_note, "frame": self.pc_frame, "dio": self.pc_dio}[mode]
 
 
 def run_mask(flag, t, verse, bridged=True):

@@ -1,0 +1,72 @@
+{
+ "00_asil_a": {
+  "grup": "asil",
+  "dosya": "/home/user/ring-tokat-3d/cocuk-kanali/ali-baba/dinle_2.mp3",
+  "arg": [
+   "--ayir",
+   "--sozler",
+   "dinleme/ornek/ali_baba_dinle_bak_sozler.txt"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 75.1,
+  "donus": 0,
+  "zaman": "16:15:35"
+ },
+ "00_asil_b": {
+  "grup": "asil",
+  "dosya": "/home/user/ring-tokat-3d/cocuk-kanali/ali-baba/dinle_2.mp3",
+  "arg": [
+   "--ayir",
+   "--sozler",
+   "dinleme/ornek/ali_baba_dinle_bak_sozler.txt"
+  ],
+  "ayirma_sn": null,
+  "dinle_sn": 82.4,
+  "donus": 0,
+  "zaman": "16:16:57"
+ },
+ "n3_yeniden_karisim": {
+  "grup": "gurultu",
+  "dosya": "/root/.cache/dinleme/sinama/ses/n3_yeniden_karisim.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 172.6,
+  "dinle_sn": 75.0,
+  "donus": 0,
+  "zaman": "16:21:05"
+ },
+ "n1_yeniden_kodlama": {
+  "grup": "gurultu",
+  "dosya": "/root/.cache/dinleme/sinama/ses/n1_yeniden_kodlama.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 166.6,
+  "dinle_sn": 81.0,
+  "donus": 0,
+  "zaman": "16:25:12"
+ },
+ "n2_wav": {
+  "grup": "gurultu",
+  "dosya": "/root/.cache/dinleme/sinama/ses/n2_wav.wav",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 162.7,
+  "dinle_sn": 73.9,
+  "donus": 0,
+  "zaman": "16:29:09"
+ },
+ "n4_kisik_kaydirilmis": {
+  "grup": "gurultu",
+  "dosya": "/root/.cache/dinleme/sinama/ses/n4_kisik_kaydirilmis.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 159.1,
+  "dinle_sn": 72.0,
+  "donus": 0,
+  "zaman": "16:33:00"
+ }
+}

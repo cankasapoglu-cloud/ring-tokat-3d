@@ -1,0 +1,197 @@
+{
+ "olcu_sn": 2.285653,
+ "kitalar": [
+  {
+   "kita": 1,
+   "hayvan": "inek",
+   "sesler": [
+    {
+     "baslangic": 14.245,
+     "bitis": 15.351,
+     "kazanc_dB": -0.2
+    },
+    {
+     "baslangic": 16.531,
+     "bitis": 17.634,
+     "kazanc_dB": -0.0
+    }
+   ],
+   "diye_bagirir": 18.846,
+   "olcu_baslari": [
+    8.571,
+    10.857,
+    13.143,
+    15.428,
+    17.714,
+    20.0,
+    22.285,
+    24.571
+   ]
+  },
+  {
+   "kita": 2,
+   "hayvan": "koyun",
+   "sesler": [
+    {
+     "baslangic": 32.531,
+     "bitis": 33.843,
+     "kazanc_dB": 1.0
+    },
+    {
+     "baslangic": 34.816,
+     "bitis": 36.128,
+     "kazanc_dB": 1.0
+    }
+   ],
+   "diye_bagirir": 37.138,
+   "olcu_baslari": [
+    26.856,
+    29.142,
+    31.428,
+    33.713,
+    35.999,
+    38.285,
+    40.57,
+    42.856
+   ]
+  },
+  {
+   "kita": 3,
+   "hayvan": "at",
+   "sesler": [
+    {
+     "baslangic": 50.816,
+     "bitis": 52.666,
+     "kazanc_dB": 1.4
+    },
+    {
+     "baslangic": 53.101,
+     "bitis": 54.951,
+     "kazanc_dB": 1.4
+    }
+   ],
+   "diye_bagirir": 55.422,
+   "olcu_baslari": [
+    45.142,
+    47.427,
+    49.713,
+    51.999,
+    54.284,
+    56.57,
+    58.856,
+    61.141
+   ]
+  },
+  {
+   "kita": 4,
+   "hayvan": "horoz",
+   "sesler": [
+    {
+     "baslangic": 69.101,
+     "bitis": 70.951,
+     "kazanc_dB": 1.3
+    },
+    {
+     "baslangic": 71.387,
+     "bitis": 73.237,
+     "kazanc_dB": 1.3
+    }
+   ],
+   "diye_bagirir": 73.71,
+   "olcu_baslari": [
+    63.427,
+    65.712,
+    67.998,
+    70.284,
+    72.569,
+    74.855,
+    77.141,
+    79.426
+   ]
+  },
+  {
+   "kita": 5,
+   "hayvan": "ordek",
+   "sesler": [
+    {
+     "baslangic": 87.386,
+     "bitis": 88.703,
+     "kazanc_dB": 1.7
+    },
+    {
+     "baslangic": 89.672,
+     "bitis": 91.003,
+     "kazanc_dB": 2.1
+    }
+   ],
+   "diye_bagirir": 91.958,
+   "olcu_baslari": [
+    81.712,
+    83.998,
+    86.283,
+    88.569,
+    90.855,
+    93.14,
+    95.426,
+    97.712
+   ]
+  },
+  {
+   "kita": 6,
+   "hayvan": "kopek",
+   "sesler": [
+    {
+     "baslangic": 105.671,
+     "bitis": 106.423,
+     "kazanc_dB": -0.5
+    },
+    {
+     "baslangic": 107.957,
+     "bitis": 108.761,
+     "kazanc_dB": -0.4
+    }
+   ],
+   "diye_bagirir": 110.232,
+   "olcu_baslari": [
+    99.997,
+    102.283,
+    104.568,
+    106.854,
+    109.14,
+    111.425,
+    113.711,
+    115.997
+   ]
+  },
+  {
+   "kita": 7,
+   "hayvan": "kedi",
+   "sesler": [
+    {
+     "baslangic": 123.956,
+     "bitis": 124.723,
+     "kazanc_dB": 0.9
+    },
+    {
+     "baslangic": 126.242,
+     "bitis": 126.943,
+     "kazanc_dB": 2.3
+    }
+   ],
+   "diye_bagirir": 128.572,
+   "olcu_baslari": [
+    118.282,
+    120.568,
+    122.854,
+    125.139,
+    127.425,
+    129.711,
+    131.996,
+    134.282
+   ]
+  }
+ ],
+ "sure_sn": 136.999,
+ "giris_bitis": 8.571,
+ "bitis_baslangic": 136.568
+}

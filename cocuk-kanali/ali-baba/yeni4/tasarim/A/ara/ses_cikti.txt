@@ -1,0 +1,96 @@
+rub level = band power one semitone from the sung pitch, dB re one strummed chord note; shares of the sung time of the stretch
+  all_sung_frames
+    taban_I-I-IV-I       mean    1.0 dB  median  -12.5 dB | above -6 dB:  24.2 % (runs>150ms   6.2 %, 11) | above -12 dB:  47.5 % ( 19.2 %, 42) | above -20 dB:  88.0 % ( 73.9 %, 88)
+    A_V7-V7-V7-V7        mean   -4.5 dB  median  -10.7 dB | above -6 dB:  30.7 % (runs>150ms   2.4 %,  5) | above -12 dB:  57.4 % ( 34.6 %, 64) | above -20 dB:  87.8 % ( 70.9 %, 70)
+    Ay_V-V-V-V_SECILEN   mean   -5.6 dB  median  -12.3 dB | above -6 dB:  23.9 % (runs>150ms   0.0 %,  0) | above -12 dB:  48.5 % ( 22.6 %, 53) | above -20 dB:  86.0 % ( 67.8 %, 74)
+    Ayk_V-V-V-V_kok_bas  mean   -5.8 dB  median  -13.0 dB | above -6 dB:  20.5 % (runs>150ms   0.0 %,  0) | above -12 dB:  44.7 % ( 20.1 %, 49) | above -20 dB:  84.7 % ( 63.7 %, 78)
+    B_I-I-V7-V7          mean   -6.0 dB  median  -12.5 dB | above -6 dB:  24.7 % (runs>150ms   2.4 %,  5) | above -12 dB:  47.1 % ( 21.8 %, 38) | above -20 dB:  85.2 % ( 69.6 %, 89)
+    By_I-I-V-V           mean   -7.8 dB  median  -14.1 dB | above -6 dB:  17.2 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.9 % (  9.1 %, 21) | above -20 dB:  84.1 % ( 67.2 %, 93)
+    C_I-I-I-V7           mean   -6.4 dB  median  -13.2 dB | above -6 dB:  21.3 % (runs>150ms   2.4 %,  5) | above -12 dB:  43.5 % ( 16.4 %, 31) | above -20 dB:  84.4 % ( 68.5 %, 96)
+    Cy_I-I-I-V           mean   -7.8 dB  median  -13.9 dB | above -6 dB:  17.1 % (runs>150ms   0.0 %,  0) | above -12 dB:  40.4 % (  9.1 %, 21) | above -20 dB:  84.4 % ( 68.2 %, 95)
+    D_I-I-IV-V7          mean    1.2 dB  median  -12.6 dB | above -6 dB:  27.2 % (runs>150ms   8.9 %, 15) | above -12 dB:  47.2 % ( 23.5 %, 42) | above -20 dB:  84.2 % ( 68.8 %, 92)
+  L2_and_L4_whole_bars
+    taban_I-I-IV-I       mean    3.2 dB  median  -12.2 dB | above -6 dB:  28.5 % (runs>150ms  11.0 %, 11) | above -12 dB:  49.2 % ( 17.3 %, 19) | above -20 dB:  90.3 % ( 85.2 %, 56)
+    A_V7-V7-V7-V7        mean   -3.3 dB  median   -8.4 dB | above -6 dB:  38.8 % (runs>150ms   4.3 %,  5) | above -12 dB:  68.3 % ( 48.5 %, 48) | above -20 dB:  91.2 % ( 82.9 %, 34)
+    Ay_V-V-V-V_SECILEN   mean   -4.7 dB  median  -11.4 dB | above -6 dB:  26.7 % (runs>150ms   0.0 %,  0) | above -12 dB:  52.6 % ( 27.3 %, 37) | above -20 dB:  88.1 % ( 77.4 %, 38)
+    Ayk_V-V-V-V_kok_bas  mean   -5.0 dB  median  -12.9 dB | above -6 dB:  20.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  45.9 % ( 22.9 %, 33) | above -20 dB:  85.8 % ( 70.2 %, 42)
+    B_I-I-V7-V7          mean   -5.3 dB  median  -12.0 dB | above -6 dB:  28.2 % (runs>150ms   4.3 %,  5) | above -12 dB:  49.9 % ( 25.8 %, 22) | above -20 dB:  86.4 % ( 80.4 %, 53)
+    By_I-I-V-V           mean   -8.3 dB  median  -14.4 dB | above -6 dB:  14.9 % (runs>150ms   0.0 %,  0) | above -12 dB:  37.2 % (  3.4 %,  5) | above -20 dB:  84.4 % ( 76.1 %, 57)
+    C_I-I-I-V7           mean   -5.9 dB  median  -13.1 dB | above -6 dB:  22.2 % (runs>150ms   4.3 %,  5) | above -12 dB:  43.6 % ( 16.2 %, 15) | above -20 dB:  85.1 % ( 78.5 %, 60)
+    Cy_I-I-I-V           mean   -8.4 dB  median  -14.2 dB | above -6 dB:  14.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  38.0 % (  3.4 %,  5) | above -20 dB:  85.1 % ( 78.0 %, 59)
+    D_I-I-IV-V7          mean    3.4 dB  median  -12.0 dB | above -6 dB:  32.6 % (runs>150ms  15.8 %, 15) | above -12 dB:  50.1 % ( 28.8 %, 26) | above -20 dB:  84.7 % ( 78.9 %, 56)
+  bars_2_and_6_beat_2_only
+    taban_I-I-IV-I       mean    9.0 dB  median   -4.7 dB | above -6 dB:  50.9 % (runs>150ms  41.6 %, 11) | above -12 dB:  63.1 % ( 45.9 %, 12) | above -20 dB:  86.5 % ( 65.0 %, 16)
+    A_V7-V7-V7-V7        mean   -4.9 dB  median   -5.5 dB | above -6 dB:  54.4 % (runs>150ms   0.0 %,  0) | above -12 dB:  91.7 % ( 83.3 %, 24) | above -20 dB:  99.4 % ( 96.7 %, 14)
+    Ay_V-V-V-V_SECILEN   mean   -6.9 dB  median   -8.6 dB | above -6 dB:  33.7 % (runs>150ms   0.0 %,  0) | above -12 dB:  61.6 % ( 31.2 %, 12) | above -20 dB:  91.7 % ( 78.9 %, 14)
+    Ayk_V-V-V-V_kok_bas  mean  -10.5 dB  median  -15.9 dB | above -6 dB:   9.7 % (runs>150ms   0.0 %,  0) | above -12 dB:  34.3 % (  0.0 %,  0) | above -20 dB:  82.0 % ( 39.0 %, 12)
+    B_I-I-V7-V7          mean   -6.7 dB  median   -9.7 dB | above -6 dB:  33.2 % (runs>150ms   0.0 %,  0) | above -12 dB:  63.9 % ( 39.3 %, 11) | above -20 dB:  93.5 % ( 73.9 %, 14)
+    By_I-I-V-V           mean  -10.4 dB  median  -15.3 dB | above -6 dB:   9.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  34.8 % (  0.0 %,  0) | above -20 dB:  85.7 % ( 57.0 %, 14)
+    C_I-I-I-V7           mean  -10.9 dB  median  -14.2 dB | above -6 dB:   9.3 % (runs>150ms   0.0 %,  0) | above -12 dB:  38.7 % (  0.0 %,  0) | above -20 dB:  88.1 % ( 64.5 %, 19)
+    Cy_I-I-I-V           mean  -10.9 dB  median  -14.2 dB | above -6 dB:   9.3 % (runs>150ms   0.0 %,  0) | above -12 dB:  38.6 % (  0.0 %,  0) | above -20 dB:  88.3 % ( 68.1 %, 19)
+    D_I-I-IV-V7          mean    9.0 dB  median   -4.4 dB | above -6 dB:  51.2 % (runs>150ms  41.9 %, 11) | above -12 dB:  63.1 % ( 45.9 %, 12) | above -20 dB:  86.6 % ( 65.0 %, 16)
+  bars_2_and_6_beat_3_only
+    taban_I-I-IV-I       mean   -4.4 dB  median  -10.9 dB | above -6 dB:  31.9 % (runs>150ms   0.0 %,  0) | above -12 dB:  56.5 % ( 10.0 %,  4) | above -20 dB: 100.0 % (100.0 %, 14)
+    A_V7-V7-V7-V7        mean   -1.4 dB  median   -8.2 dB | above -6 dB:  47.0 % (runs>150ms  16.5 %,  5) | above -12 dB:  59.9 % ( 59.1 %, 14) | above -20 dB:  78.2 % ( 75.6 %, 14)
+    Ay_V-V-V-V_SECILEN   mean   -5.3 dB  median  -15.1 dB | above -6 dB:  18.2 % (runs>150ms   0.0 %,  0) | above -12 dB:  38.6 % ( 10.0 %,  4) | above -20 dB:  78.1 % ( 69.9 %, 14)
+    Ayk_V-V-V-V_kok_bas  mean   -5.3 dB  median  -15.1 dB | above -6 dB:  18.2 % (runs>150ms   0.0 %,  0) | above -12 dB:  38.6 % ( 10.0 %,  4) | above -20 dB:  78.1 % ( 69.9 %, 14)
+    B_I-I-V7-V7          mean   -1.3 dB  median   -8.3 dB | above -6 dB:  47.1 % (runs>150ms  16.5 %,  5) | above -12 dB:  59.9 % ( 59.1 %, 14) | above -20 dB:  78.2 % ( 75.6 %, 14)
+    By_I-I-V-V           mean   -5.3 dB  median  -15.1 dB | above -6 dB:  18.1 % (runs>150ms   0.0 %,  0) | above -12 dB:  38.6 % ( 10.0 %,  4) | above -20 dB:  78.0 % ( 69.9 %, 14)
+    C_I-I-I-V7           mean   -1.4 dB  median   -8.4 dB | above -6 dB:  46.7 % (runs>150ms  16.5 %,  5) | above -12 dB:  60.0 % ( 59.2 %, 14) | above -20 dB:  78.2 % ( 75.6 %, 14)
+    Cy_I-I-I-V           mean   -5.4 dB  median  -15.0 dB | above -6 dB:  18.1 % (runs>150ms   0.0 %,  0) | above -12 dB:  38.6 % ( 10.0 %,  4) | above -20 dB:  78.1 % ( 72.2 %, 14)
+    D_I-I-IV-V7          mean   -1.4 dB  median   -8.3 dB | above -6 dB:  47.0 % (runs>150ms  16.5 %,  5) | above -12 dB:  59.9 % ( 58.6 %, 14) | above -20 dB:  78.2 % ( 75.6 %, 14)
+  L1_bar_0
+    taban_I-I-IV-I       mean   -8.0 dB  median  -13.2 dB | above -6 dB:  17.7 % (runs>150ms   0.0 %,  0) | above -12 dB:  41.6 % ( 17.0 %, 14) | above -20 dB:  83.8 % ( 53.9 %, 16)
+    A_V7-V7-V7-V7        mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+    Ay_V-V-V-V_SECILEN   mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+    Ayk_V-V-V-V_kok_bas  mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+    B_I-I-V7-V7          mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+    By_I-I-V-V           mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+    C_I-I-I-V7           mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+    Cy_I-I-I-V           mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+    D_I-I-IV-V7          mean   -7.6 dB  median  -14.2 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  39.0 % (  9.1 %,  7) | above -20 dB:  81.8 % ( 48.4 %, 20)
+  diye_bar_5
+    taban_I-I-IV-I       mean   -6.6 dB  median  -11.8 dB | above -6 dB:  19.7 % (runs>150ms   0.0 %,  0) | above -12 dB:  51.1 % ( 31.1 %,  9) | above -20 dB:  86.8 % ( 69.8 %, 16)
+    A_V7-V7-V7-V7        mean   -6.6 dB  median  -11.9 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  50.6 % ( 30.5 %,  9) | above -20 dB:  85.8 % ( 68.8 %, 16)
+    Ay_V-V-V-V_SECILEN   mean   -6.6 dB  median  -11.9 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  50.6 % ( 30.5 %,  9) | above -20 dB:  85.8 % ( 68.8 %, 16)
+    Ayk_V-V-V-V_kok_bas  mean   -6.6 dB  median  -11.9 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  50.6 % ( 30.5 %,  9) | above -20 dB:  85.8 % ( 68.8 %, 16)
+    B_I-I-V7-V7          mean   -6.6 dB  median  -11.8 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  51.3 % ( 31.2 %,  9) | above -20 dB:  86.9 % ( 69.8 %, 16)
+    By_I-I-V-V           mean   -6.6 dB  median  -11.8 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  51.3 % ( 31.2 %,  9) | above -20 dB:  86.9 % ( 69.8 %, 16)
+    C_I-I-I-V7           mean   -6.6 dB  median  -11.8 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  51.3 % ( 31.2 %,  9) | above -20 dB:  86.9 % ( 69.8 %, 16)
+    Cy_I-I-I-V           mean   -6.6 dB  median  -11.8 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  51.3 % ( 31.2 %,  9) | above -20 dB:  86.9 % ( 69.8 %, 16)
+    D_I-I-IV-V7          mean   -6.6 dB  median  -11.8 dB | above -6 dB:  19.8 % (runs>150ms   0.0 %,  0) | above -12 dB:  51.3 % ( 31.2 %,  9) | above -20 dB:  86.9 % ( 69.8 %, 16)
+band level of E4 / F4 in verse bar 2 (dB re one strummed chord note), per 1/8 beat:
+  Ay_V-V-V-V_SECILEN
+     beat   1.50   1.62   1.75   1.88   2.00   2.12   2.25   2.38   2.50   2.62   2.75   2.88   3.00   3.12   3.25   3.38   3.50   3.62   3.75   3.88
+     E4    -15.6  -28.9  -27.9  -25.6  -23.0  -26.7  -22.5  -16.5  -15.4  -28.0  -25.0  -14.9  -16.3  -25.0  -23.3  -15.6  -17.9  -24.0  -22.0  -22.4
+     F4    -11.5  -23.3  -21.6  -21.2  -20.4  -25.1  -20.0  -12.2  -11.6  -22.7  -22.9  -20.0  -22.3  -27.5  -20.8  -13.1  -16.7  -24.5  -22.8  -25.1
+  Ayk_V-V-V-V_kok_bas
+     beat   1.50   1.62   1.75   1.88   2.00   2.12   2.25   2.38   2.50   2.62   2.75   2.88   3.00   3.12   3.25   3.38   3.50   3.62   3.75   3.88
+     E4    -15.6  -28.9  -25.5  -15.8  -17.3  -26.3  -21.6  -16.9  -15.0  -27.7  -25.0  -14.9  -16.4  -25.0  -23.3  -15.6  -17.9  -24.0  -22.0  -22.4
+     F4    -11.5  -23.5  -21.7  -25.8  -23.3  -23.9  -20.5  -12.1  -11.8  -22.7  -22.8  -20.0  -22.3  -27.5  -20.8  -13.1  -16.7  -24.5  -22.8  -25.1
+  A_V7-V7-V7-V7
+     beat   1.50   1.62   1.75   1.88   2.00   2.12   2.25   2.38   2.50   2.62   2.75   2.88   3.00   3.12   3.25   3.38   3.50   3.62   3.75   3.88
+     E4    -13.8  -19.6  -24.3  -24.8  -23.2  -26.9  -21.9  -20.1  -14.0  -19.6  -22.9   -9.3   -6.1  -17.1  -19.9  -20.3  -24.4  -24.8  -21.0  -22.4
+     F4     -2.5   -2.6   -8.5  -11.9  -15.2  -19.2  -17.5   -9.2   -5.0   -3.4  -10.2   -9.4    1.1   -4.4    1.8    0.7   -3.7   -2.9   -5.1  -23.8
+  C_I-I-I-V7
+     beat   1.50   1.62   1.75   1.88   2.00   2.12   2.25   2.38   2.50   2.62   2.75   2.88   3.00   3.12   3.25   3.38   3.50   3.62   3.75   3.88
+     E4      0.5   -4.3   -8.0  -15.4  -13.3  -20.9  -18.5  -16.1   -1.7   -4.2   -6.3   -8.4   -7.1  -15.5  -20.8  -20.9  -23.5  -24.5  -20.7  -22.8
+     F4    -12.3  -21.4  -17.8  -22.4  -18.2  -25.9  -20.8  -18.6  -12.5  -22.3  -18.2  -11.0    1.4   -4.5    2.0    0.8   -3.4   -2.7   -4.9  -20.4
+  taban_I-I-IV-I
+     beat   1.50   1.62   1.75   1.88   2.00   2.12   2.25   2.38   2.50   2.62   2.75   2.88   3.00   3.12   3.25   3.38   3.50   3.62   3.75   3.88
+     E4      0.5   -4.4   -7.9   -7.0   -4.1  -26.0  -27.2   -6.8  -14.1  -21.8  -12.1  -13.9   -0.3   -1.9    1.2   -4.1   -4.1   -3.0   -3.0  -11.4
+     F4    -12.3  -21.2  -17.7   -6.6    3.7    4.4    4.1    5.4   13.7   13.3   11.3   -2.9  -11.6  -17.9  -19.6  -20.3  -13.1  -22.1  -19.3  -24.6
+where the rub above -6 dB of the chosen plan comes from (top 12 of 23.9 %):
+   bar 2 beat 2.0 sung F   0.96 s ( 2.1 %)  a semitone above the voice (F#)    struck: D2 G3 G4                     overtone / attack noise
+   bar 6 beat 2.0 sung F   0.86 s ( 1.9 %)  a semitone above the voice (F#)    struck: D2 G3 G4                     overtone / attack noise
+   bar 5 beat 3.0 sung F   0.85 s ( 1.9 %)  a semitone below the voice (E)     struck: C2 C3 E3 G3 C4 E4 G4         REAL NOTE
+   bar 0 beat 3.0 sung F   0.78 s ( 1.7 %)  a semitone below the voice (E)     struck: C2 C3 E3 G3 C4 E4 G4         REAL NOTE
+   bar 6 beat 1.0 sung G   0.62 s ( 1.4 %)  a semitone below the voice (F#)    struck: G2 B2 D3 G3 B3 D4 G4         overtone / attack noise
+   bar 2 beat 1.0 sung G   0.60 s ( 1.3 %)  a semitone below the voice (F#)    struck: G2 B2 D3 G3 B3 D4 G4         overtone / attack noise
+   bar 2 beat 3.0 sung F   0.59 s ( 1.3 %)  a semitone above the voice (F#)    struck: G2 B2 D3 G3 B3 D4 G4         overtone / attack noise
+   bar 6 beat 3.0 sung F   0.57 s ( 1.3 %)  a semitone above the voice (F#)    struck: G2 B2 D3 G3 B3 D4 G4         overtone / attack noise
+   bar 0 beat 1.0 sung A   0.45 s ( 1.0 %)  a semitone above the voice (A#)    struck: F2 C3 F3 A3 C4 F4 A4         overtone / attack noise
+   bar 0 beat 0.0 sung D   0.36 s ( 0.8 %)  a semitone below the voice (C#)    struck: C2 C3 G3 C4                  overtone / attack noise
+   bar 6 beat 0.5 sung G   0.35 s ( 0.8 %)  a semitone above the voice (G#)    struck: G3 B3 D4 G4                  overtone / attack noise
+   bar 2 beat 1.0 sung G   0.33 s ( 0.7 %)  a semitone above the voice (G#)    struck: G2 B2 D3 G3 B3 D4 G4         overtone / attack noise
+written: ses_olcumu.json

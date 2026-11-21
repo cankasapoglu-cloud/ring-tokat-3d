@@ -1,0 +1,2221 @@
+{
+ "arac": "dinle.py 1.0 (2026-11-21)",
+ "dosya": "/home/user/ring-tokat-3d/cocuk-kanali/parmak-ailesi/yavas_2.mp3",
+ "zaman": "2026-11-21 16:26:29",
+ "uyari": "Bu rapor olcum ve makine tahminidir; insan kulagi degildir. Son karar dinleyen insanindir.",
+ "hatalar": [],
+ "temel": {
+  "dosya": "yavas_2.mp3",
+  "sure_sn": 95.0,
+  "kanal": 2,
+  "kodek": "mp3",
+  "ornekleme_hz": 48000,
+  "bit_hizi_kbps": 192.0,
+  "lufs": -14.4,
+  "lra_lu": 5.1,
+  "gercek_tepe_dbtp": -0.5,
+  "ornek_tepe_dbfs": -0.53,
+  "rms_dbfs": -17.44,
+  "tepe_faktoru_db": 16.9,
+  "dc_kaymasi": -0.0,
+  "kirpilma": {
+   "tam_olcek_ornek": 0,
+   "ardisik_kosu_3ornek_ustu": 0,
+   "ilk_zamanlar_sn": [],
+   "var_mi": false
+  },
+  "sessizlik": {
+   "esik_dbfs": -50.0,
+   "bastaki_sn": 0.22,
+   "sondaki_sn": 0.98,
+   "ic_bosluklar": [],
+   "sessiz_orani": 0.013
+  },
+  "stereo": {
+   "sol_sag_korelasyon": 0.821,
+   "denge_db_sol_eksi_sag": 0.91,
+   "yan_orta_db": -10.0,
+   "yorum": "olağan stereo"
+  },
+  "ust_frekans_hz": 18744
+ },
+ "enerji": {
+  "tempo_bpm": 155.8,
+  "tempo_kaynagi": "otomatik tahmin; yarı/çift tempo hatası yapabilir",
+  "vurus_sayisi": 247,
+  "nabiz_netligi": 0.539,
+  "nabiz_netligi_aciklama": "0-1; vurus egri oz-iliskisinin vurus araligindaki tepesi. Yuksek = duzenli, belirgin ritim",
+  "tempo_kararliligi": {
+   "yuzde_3_icinde": 95.3,
+   "yerel_tempo_p10_p90": [
+    152.0,
+    156.6
+   ]
+  },
+  "vurus_araligi_degiskenligi_yuzde": 3.34,
+  "olay_yogunlugu_sn": 3.82,
+  "spektral_aki_ort": 1.804,
+  "vurmali_armonik_db": -9.72,
+  "parlaklik_agirlik_merkezi_hz": 1804.0,
+  "tiz_payi_4khz_ustu_db": -19.8,
+  "bas_payi_150hz_alti_db": -8.1,
+  "duzey_oynakligi_db": 3.13,
+  "bolumler_5sn": [
+   {
+    "bas": 0.0,
+    "duzey_db": -22.1,
+    "olay_sn": 4.8,
+    "aki": 1.992
+   },
+   {
+    "bas": 5.0,
+    "duzey_db": -15.9,
+    "olay_sn": 4.0,
+    "aki": 1.993
+   },
+   {
+    "bas": 10.0,
+    "duzey_db": -15.5,
+    "olay_sn": 3.2,
+    "aki": 1.627
+   },
+   {
+    "bas": 15.0,
+    "duzey_db": -19.0,
+    "olay_sn": 3.6,
+    "aki": 1.71
+   },
+   {
+    "bas": 20.0,
+    "duzey_db": -16.5,
+    "olay_sn": 4.0,
+    "aki": 2.013
+   },
+   {
+    "bas": 25.0,
+    "duzey_db": -16.1,
+    "olay_sn": 3.2,
+    "aki": 1.596
+   },
+   {
+    "bas": 30.0,
+    "duzey_db": -17.3,
+    "olay_sn": 3.8,
+    "aki": 1.679
+   },
+   {
+    "bas": 35.0,
+    "duzey_db": -17.3,
+    "olay_sn": 4.2,
+    "aki": 2.036
+   },
+   {
+    "bas": 40.0,
+    "duzey_db": -16.5,
+    "olay_sn": 3.4,
+    "aki": 1.668
+   },
+   {
+    "bas": 45.0,
+    "duzey_db": -17.3,
+    "olay_sn": 3.6,
+    "aki": 1.735
+   },
+   {
+    "bas": 50.0,
+    "duzey_db": -17.9,
+    "olay_sn": 4.6,
+    "aki": 1.986
+   },
+   {
+    "bas": 55.0,
+    "duzey_db": -17.1,
+    "olay_sn": 3.6,
+    "aki": 1.728
+   },
+   {
+    "bas": 60.0,
+    "duzey_db": -17.8,
+    "olay_sn": 3.6,
+    "aki": 1.787
+   },
+   {
+    "bas": 65.0,
+    "duzey_db": -17.9,
+    "olay_sn": 4.4,
+    "aki": 2.032
+   },
+   {
+    "bas": 70.0,
+    "duzey_db": -17.8,
+    "olay_sn": 3.6,
+    "aki": 1.796
+   },
+   {
+    "bas": 75.0,
+    "duzey_db": -17.3,
+    "olay_sn": 3.8,
+    "aki": 1.739
+   },
+   {
+    "bas": 80.0,
+    "duzey_db": -17.8,
+    "olay_sn": 4.0,
+    "aki": 1.87
+   },
+   {
+    "bas": 85.0,
+    "duzey_db": -17.2,
+    "olay_sn": 4.0,
+    "aki": 1.735
+   },
+   {
+    "bas": 90.0,
+    "duzey_db": -23.9,
+    "olay_sn": 2.2,
+    "aki": 1.154
+   }
+  ],
+  "enerji_puani": {
+   "puan_0_100": 52.0,
+   "bilesenler_0_1": {
+    "olay_yogunlugu_sn": 0.4,
+    "nabiz_netligi": 0.88,
+    "vurmali_armonik_db": 0.45,
+    "spektral_aki_ort": 0.56,
+    "parlaklik_agirlik_merkezi_hz": 0.25
+   },
+   "aciklama": "Sinyal tabanli hareketlilik gostergesi (sarkilar arasi KARSILASTIRMA icin). 'Cocuk bunu sever' demek degildir."
+  }
+ },
+ "etiket_karisim": {
+  "pencere_sn": 10.0,
+  "pencere_sayisi": 10,
+  "sure_sn": 0.6,
+  "en_yuksek_10": [
+   [
+    "Music",
+    0.817
+   ],
+   [
+    "Music for children",
+    0.284
+   ],
+   [
+    "Happy music",
+    0.151
+   ],
+   [
+    "Jingle, tinkle",
+    0.106
+   ],
+   [
+    "Singing",
+    0.089
+   ],
+   [
+    "Lullaby",
+    0.044
+   ],
+   [
+    "Ding",
+    0.044
+   ],
+   [
+    "Ukulele",
+    0.041
+   ],
+   [
+    "Ping",
+    0.031
+   ],
+   [
+    "Glockenspiel",
+    0.028
+   ]
+  ],
+  "ses_turu": {
+   "Music": 0.817,
+   "Singing": 0.089,
+   "Child singing": 0.0,
+   "Female singing": 0.001,
+   "Male singing": 0.0,
+   "Speech": 0.005,
+   "Child speech, kid speaking": 0.0,
+   "Synthetic singing": 0.0,
+   "Speech synthesizer": 0.0,
+   "Rapping": 0.0,
+   "Humming": 0.0,
+   "Chant": 0.0
+  },
+  "duygu": {
+   "Music for children": 0.284,
+   "Happy music": 0.151,
+   "Exciting music": 0.0,
+   "Funny music": 0.0,
+   "Tender music": 0.028,
+   "Lullaby": 0.044,
+   "Sad music": 0.001
+  },
+  "hayvan": {},
+  "zaman_cizelgesi": [
+   {
+    "bas": 0.0,
+    "Singing": 0.125,
+    "Speech": 0.004,
+    "Lullaby": 0.018,
+    "Exciting music": 0.0,
+    "Happy music": 0.052,
+    "Animal": 0.0
+   },
+   {
+    "bas": 10.0,
+    "Singing": 0.069,
+    "Speech": 0.001,
+    "Lullaby": 0.102,
+    "Exciting music": 0.0,
+    "Happy music": 0.135,
+    "Animal": 0.0
+   },
+   {
+    "bas": 20.0,
+    "Singing": 0.109,
+    "Speech": 0.002,
+    "Lullaby": 0.053,
+    "Exciting music": 0.0,
+    "Happy music": 0.144,
+    "Animal": 0.0
+   },
+   {
+    "bas": 30.0,
+    "Singing": 0.128,
+    "Speech": 0.007,
+    "Lullaby": 0.043,
+    "Exciting music": 0.0,
+    "Happy music": 0.144,
+    "Animal": 0.0
+   },
+   {
+    "bas": 40.0,
+    "Singing": 0.075,
+    "Speech": 0.002,
+    "Lullaby": 0.069,
+    "Exciting music": 0.0,
+    "Happy music": 0.234,
+    "Animal": 0.0
+   },
+   {
+    "bas": 50.0,
+    "Singing": 0.097,
+    "Speech": 0.003,
+    "Lullaby": 0.05,
+    "Exciting music": 0.0,
+    "Happy music": 0.173,
+    "Animal": 0.0
+   },
+   {
+    "bas": 60.0,
+    "Singing": 0.119,
+    "Speech": 0.005,
+    "Lullaby": 0.035,
+    "Exciting music": 0.0,
+    "Happy music": 0.162,
+    "Animal": 0.0
+   },
+   {
+    "bas": 70.0,
+    "Singing": 0.092,
+    "Speech": 0.007,
+    "Lullaby": 0.039,
+    "Exciting music": 0.0,
+    "Happy music": 0.195,
+    "Animal": 0.0
+   },
+   {
+    "bas": 80.0,
+    "Singing": 0.064,
+    "Speech": 0.007,
+    "Lullaby": 0.025,
+    "Exciting music": 0.0,
+    "Happy music": 0.243,
+    "Animal": 0.0
+   },
+   {
+    "bas": 90.0,
+    "Singing": 0.015,
+    "Speech": 0.013,
+    "Lullaby": 0.006,
+    "Exciting music": 0.0,
+    "Happy music": 0.032,
+    "Animal": 0.0
+   }
+  ],
+  "coskulu_eksi_sakin": 0.079,
+  "ninni_olasiligi": 0.044,
+  "sarki_eksi_konusma": 0.084,
+  "aciklama": "AudioSet etiket olasiliklari (0-1), 10 sn'lik pencerelerin ortalamasi. Kucuk ve kalibre edilmemis sayilardir: mutlak deger degil, surumler arasi fark anlamlidir. Projedeki 9 dosyalik denemede 'Lullaby' etiketi yavas surumlerde 0,026-0,049, coskulu surumlerde 0,000 cikti (n=9, etiketler uretim niyeti)."
+ },
+ "musiccoca": {
+  "pencere_sayisi": 10,
+  "cosku": {
+   "fark": -0.078,
+   "arti": 0.037,
+   "eksi": 0.115,
+   "arti_metin": "energetic upbeat happy children's song",
+   "eksi_metin": "slow calm sleepy lullaby"
+  },
+  "cosku_zaman": [
+   {
+    "bas": 0.0,
+    "fark": -0.058
+   },
+   {
+    "bas": 10.0,
+    "fark": -0.073
+   },
+   {
+    "bas": 20.0,
+    "fark": -0.094
+   },
+   {
+    "bas": 30.0,
+    "fark": -0.083
+   },
+   {
+    "bas": 40.0,
+    "fark": -0.09
+   },
+   {
+    "bas": 50.0,
+    "fark": -0.081
+   },
+   {
+    "bas": 60.0,
+    "fark": -0.061
+   },
+   {
+    "bas": 70.0,
+    "fark": -0.075
+   },
+   {
+    "bas": 80.0,
+    "fark": -0.091
+   },
+   {
+    "bas": 90.0,
+    "fark": -0.035
+   }
+  ],
+  "tempo": {
+   "fark": 0.012,
+   "arti": -0.042,
+   "eksi": -0.054,
+   "arti_metin": "fast tempo dance music",
+   "eksi_metin": "slow tempo ballad"
+  },
+  "kayit_kalitesi": {
+   "fark": 0.067,
+   "arti": 0.088,
+   "eksi": 0.021,
+   "arti_metin": "professional studio recording, high quality",
+   "eksi_metin": "low quality amateur recording, noisy and distorted"
+  },
+  "sarki_var": {
+   "fark": 0.222,
+   "arti": 0.296,
+   "eksi": 0.074,
+   "arti_metin": "song with vocals",
+   "eksi_metin": "instrumental music without vocals"
+  },
+  "sure_sn": 11.6,
+  "aciklama": "Ses ile Ingilizce tanim metinleri arasindaki benzerlik farki (arti = soldaki tanima daha yakin). Kalibre edilmemis, goreli bir sayidir. Projedeki denemede 'cosku' farki 6 coskulu surumde +0,09..+0,23, 3 yavas surumde -0,06..-0,08 cikti (n=9). Yalnizca tam karisimda anlamlidir; kuru vokalde ya da konusmada guvenilmez."
+ },
+ "kanal_ayirma": {
+  "model": "UVR-MDX-NET-Voc_FT.onnx",
+  "onbellek": "/root/.cache/dinleme/kanallar/504d4c1c60125a24",
+  "onbellekten": false,
+  "sure_sn": 120.9
+ },
+ "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx)",
+ "armoni": {
+  "akort_kaymasi_cent": 5.0,
+  "akort_aciklama": "Altyapinin 440 Hz izgarasindan sapmasi. Vokal cent olcumleri bu izgaraya gore yapilir.",
+  "ton_parcalari": [
+   {
+    "bas": 0.0,
+    "son": 95.0,
+    "tonik": 0,
+    "mod": "major",
+    "ton": "Do majör (C major)",
+    "r": 0.92,
+    "farkli_gamli_ikinci_r": 0.6,
+    "belirsiz": false,
+    "essentia": "Do majör (C major)",
+    "essentia_ayni_gam": true
+   }
+  ],
+  "ton": "Do majör (C major)",
+  "tonik": 0,
+  "mod": "major",
+  "ton_belirsiz": false,
+  "ton_degisimi_var": false,
+  "ton_aciklama": "Ton, kromanin Krumhansl profilleriyle iliskisinden (24 sn'lik pencereler) bulunur; essentia ile capraz denetlenir. 'belirsiz' ise (iliski zayif ya da iki yontem farkli gam buluyor) gam ici / gam disi oranlarina guvenmeyin; etiketsiz 'armonik destek' olcusune bakin.",
+  "akorlar": [
+   {
+    "akor": "C",
+    "bas": 0.0,
+    "son": 9.87,
+    "sesler": [
+     0,
+     4,
+     7
+    ],
+    "guven": 0.85
+   },
+   {
+    "akor": "G",
+    "bas": 9.87,
+    "son": 15.26,
+    "sesler": [
+     2,
+     7,
+     11
+    ],
+    "guven": 0.78
+   },
+   {
+    "akor": "C",
+    "bas": 15.26,
+    "son": 24.47,
+    "sesler": [
+     0,
+     4,
+     7
+    ],
+    "guven": 0.85
+   },
+   {
+    "akor": "G",
+    "bas": 24.47,
+    "son": 29.86,
+    "sesler": [
+     2,
+     7,
+     11
+    ],
+    "guven": 0.73
+   },
+   {
+    "akor": "C",
+    "bas": 29.86,
+    "son": 39.87,
+    "sesler": [
+     0,
+     4,
+     7
+    ],
+    "guven": 0.76
+   },
+   {
+    "akor": "G",
+    "bas": 39.87,
+    "son": 45.26,
+    "sesler": [
+     2,
+     7,
+     11
+    ],
+    "guven": 0.7
+   },
+   {
+    "akor": "C",
+    "bas": 45.26,
+    "son": 56.01,
+    "sesler": [
+     0,
+     4,
+     7
+    ],
+    "guven": 0.76
+   },
+   {
+    "akor": "G",
+    "bas": 56.01,
+    "son": 61.42,
+    "sesler": [
+     2,
+     7,
+     11
+    ],
+    "guven": 0.72
+   },
+   {
+    "akor": "C",
+    "bas": 61.42,
+    "son": 71.38,
+    "sesler": [
+     0,
+     4,
+     7
+    ],
+    "guven": 0.78
+   },
+   {
+    "akor": "G",
+    "bas": 71.38,
+    "son": 76.79,
+    "sesler": [
+     2,
+     7,
+     11
+    ],
+    "guven": 0.71
+   },
+   {
+    "akor": "C",
+    "bas": 76.79,
+    "son": 83.71,
+    "sesler": [
+     0,
+     4,
+     7
+    ],
+    "guven": 0.79
+   },
+   {
+    "akor": "G",
+    "bas": 83.71,
+    "son": 89.09,
+    "sesler": [
+     2,
+     7,
+     11
+    ],
+    "guven": 0.69
+   },
+   {
+    "akor": "C",
+    "bas": 89.09,
+    "son": 94.3,
+    "sesler": [
+     0,
+     4,
+     7
+    ],
+    "guven": 0.83
+   },
+   {
+    "akor": "-",
+    "bas": 94.3,
+    "son": 95.02,
+    "sesler": [],
+    "guven": 0.0
+   }
+  ],
+  "akor_sureleri_sn": {
+   "C": 61.9,
+   "G": 32.4
+  },
+  "akor_guveni_ort": 0.77,
+  "akor_aciklama": "Akorlar yalnizca majör/minör ucsesli sablonlarla tahmin edilir (7'li vb. yok). Ortalama guven 0,75'in altindaysa akor adlari supheli: 'akor sesi' oranlarini ona gore okuyun.",
+  "kaynak": "altyapı kanalı"
+ },
+ "kanallar": {
+  "vokal_esik_dbfs": -40.9,
+  "vokalli_sure_orani": 0.601,
+  "vokal_rms_dbfs": -20.5,
+  "altyapi_rms_dbfs": -22.5,
+  "vokal_eksi_altyapi_db_medyan": 5.7,
+  "vokal_eksi_altyapi_db_p10_p90": [
+   -2.8,
+   10.7
+  ],
+  "vokalin_gomuldugu_yerler": [],
+  "denge_yorumu": "Vokal-altyapı dengesi olağan aralıkta",
+  "vokal_bolumleri": [
+   {
+    "bas": 6.55,
+    "son": 17.0
+   },
+   {
+    "bas": 21.9,
+    "son": 32.35
+   },
+   {
+    "bas": 37.31,
+    "son": 47.46
+   },
+   {
+    "bas": 52.69,
+    "son": 62.74
+   },
+   {
+    "bas": 68.08,
+    "son": 73.07
+   },
+   {
+    "bas": 73.86,
+    "son": 78.11
+   },
+   {
+    "bas": 82.31,
+    "son": 90.51
+   }
+  ],
+  "sizinti": {
+   "vokal_kanali_sarkisiz_yerlerde_db": -70.5,
+   "ayni_yerlerde_altyapi_db": -21.5,
+   "fark_db": -49.1,
+   "aciklama": "Sarki soylenmeyen yerlerde vokal kanalinda kalan ses, altyapiya gore. -25 dB'den yuksekse vokal kanalina altyapi/hayvan sesi/efekt sizmis demektir; perde ve dogallik olcumleri orada guvenilmez."
+  }
+ },
+ "perde": {
+  "izleme": {
+   "yontem": "SwiftF0 (16 ms adim)",
+   "sesli_cerceve_orani": 0.413,
+   "pyin_ile_uyum_yuzde_50cent": 97.8,
+   "pyin_sesli_ortusme": 1.0
+  },
+  "nota_sayisi": 109,
+  "nota_suresi_medyan_sn": 0.22,
+  "ses_araligi": {
+   "alt": "C4",
+   "ust": "E4",
+   "yarim_ses": 4.2,
+   "medyan": "D4",
+   "medyan_hz": 293.0
+  },
+  "nota_ici_oynaklik_cent_medyan": 9.9,
+  "nota_ici_oynaklik_aciklama": "0,2 sn'den uzun notalarda perdenin nota icindeki standart sapmasi. Insan sesinde genelde 8-35 cent; 5 cent'in altindaysa perde 'cetvelle cizilmis' gibi duzdur.",
+  "cok_duz_nota_orani": 0.02,
+  "kayan_nota_orani": 0.05,
+  "uzun_nota_sayisi_035sn_ustu": 32,
+  "vibratolu_uzun_nota_orani": 0.12,
+  "vibrato_hz_medyan": 5.6,
+  "vibrato_genlik_cent_medyan": 18.0,
+  "alttan_giris_orani": 0.03,
+  "gecis_cerceve_orani": 0.08,
+  "ses_sinifi_dagilimi": {
+   "C": 0.28,
+   "C#": 0.007,
+   "D": 0.523,
+   "D#": 0.002,
+   "E": 0.188,
+   "F": 0.0,
+   "F#": 0.0,
+   "G": 0.0,
+   "G#": 0.0,
+   "A": 0.0,
+   "A#": 0.0,
+   "B": 0.0
+  },
+  "vokal_ton_ks": {
+   "ton": "Re minör (D minor)",
+   "tonik": 2,
+   "mod": "minor",
+   "r": 0.556,
+   "ikinci_r": 0.48,
+   "adaylar": [
+    "Re minör (D minor) r=0.56",
+    "Re majör (D major) r=0.48",
+    "Sol majör (G major) r=0.45",
+    "Do majör (C major) r=0.40"
+   ]
+  }
+ },
+ "uyum": {
+  "cent_sapma_medyan_mutlak": 6.6,
+  "cent_sapma_ortalama_isaretli": -2.1,
+  "yuzde_25cent_icinde": 91.5,
+  "vokal_akort_kaymasi_cent": -2.2,
+  "perde_izgaraya_yapisma_R": 0.74,
+  "izgara_aciklama": "R: sarki perdelerinin yarim ses izgarasina ne kadar siki toplandigi (0-1). Cok yuksek (>0,9) + cok duz notalar = sert otomatik akort / sentez izlenimi. Dusuk (<0,4) = perdeler izgaraya oturmuyor (detone).",
+  "gam_ici_sure_orani": 0.991,
+  "gam_guvenilir_mi": true,
+  "armonik_destek": {
+   "gercek": 0.389,
+   "yarim_ses_yukari": 0.076,
+   "yarim_ses_asagi": 0.074,
+   "fark": 0.313,
+   "aciklama": "Vokalin soyledigi ses sinifinda altyapinin ne kadar enerjisi var; ayni olcu vokal yarim ses kaydirilmis gibi yeniden hesaplanir. Fark belirgin arti ise (>+0,05) vokal altyapiyla ayni armonide; sifir/eksi ise 'iki ayri sarki ust uste' riski. Ton etiketi gerektirmez."
+  },
+  "ton_kaydirma_denemesi": {
+   "destek_kaydirmaya_gore": {
+    "-6": 0.059,
+    "-5": 0.185,
+    "-4": 0.178,
+    "-3": 0.089,
+    "-2": 0.087,
+    "-1": 0.074,
+    "+0": 0.389,
+    "+1": 0.076,
+    "+2": 0.085,
+    "+3": 0.156,
+    "+4": 0.135,
+    "+5": 0.509
+   },
+   "en_iyi_kaydirma_yarim_ses": 5,
+   "sifir_kacinci": 2,
+   "aciklama": "Vokal -6..+5 yarim ses kaydirilmis gibi armonik destek. En iyi deger 0 kaydirmada olmali. +5/-5/+7 (dortlu/besli) komsu tonlar oldugu icin 0'a yakin cikabilir; +-1, +-2 ya da +-6 en iyiyse vokal baska tonda soyluyor olabilir."
+  },
+  "akor_sesi_sure_orani": 0.813,
+  "gam_ici_akor_disi_orani": 0.178,
+  "gam_disi_orani": 0.009,
+  "cakisan_uzun_notalar": [],
+  "cakisan_uzun_nota_sayisi": 0,
+  "uzun_nota_sayisi_03sn_ustu": 40
+ },
+ "ritim": {
+  "vokal_baslangic_sayisi": 103,
+  "vurus_araligi_ms": 766.0,
+  "sekizlik": {
+   "ortalama_kayma_ms": 17.0,
+   "sikilik_R": 0.49,
+   "medyan_mutlak_sapma_ms": 46.0,
+   "kayma_duzeltilmis_medyan_ms": 34.0,
+   "yuzde_40ms_icinde": 43.0
+  },
+  "onaltilik": {
+   "ortalama_kayma_ms": 43.0,
+   "sikilik_R": 0.58,
+   "medyan_mutlak_sapma_ms": 40.0,
+   "kayma_duzeltilmis_medyan_ms": 20.0,
+   "yuzde_40ms_icinde": 48.0
+  },
+  "rastgele_beklenen_R": 0.1,
+  "kalibrasyon": "dogrula.py denetimleri: notalari tam vurusta yapay sarkici R=0,65 (olcumun tavani), +-90 ms rastgele kaydirilmis ayni sarkici R=0,15; 70 ms gec soyleyen: R ayni, ortalama kayma +75 ms.",
+  "yorum": "Vokal ızgaraya orta derecede oturuyor (serbest / konuşur gibi söyleyiş ya da ölçüm gürültüsü)",
+  "aciklama": "R: 0-1; baslangiclarin vurus icindeki konumlarinin ne kadar ayni yerde toplandigi. 'ortalama_kayma' sabit bir erken/gec soylemeyi gosterir (+ gec). Vurus izgarasi otomatik bulunduysa 20-30 ms'lik sabit kayma olcum hatasi olabilir; gercek tempo --bpm ile verilirse daha guvenilir olur.",
+  "vurus_izgarasi_kaynagi": "otomatik (altyapıdan)",
+  "tempo_bpm": 78.3
+ },
+ "dogallik_vekilleri": {
+  "uyari": "Bunlar vekil (dolayli) olcumlerdir: 'yapay duyuluyor' yargisinin yerini tutmaz; iki surumu KARSILASTIRMAK icindir.",
+  "nota_ici_oynaklik_cent_medyan": 9.9,
+  "cok_duz_nota_orani": 0.02,
+  "bagli_gecis_sayisi": 15,
+  "bagli_gecis_suresi_ms_medyan": 32.0,
+  "ani_gecis_orani_35ms_alti": 0.6,
+  "perde_izgaraya_yapisma_R": 0.74,
+  "vibratolu_uzun_nota_orani": 0.12,
+  "vibrato_hiz_yayilimi_hz": 0.32,
+  "donmus_unlu_sayisi_045sn_ustu": 11,
+  "donmus_unluler": [
+   {
+    "bas": 10.19,
+    "sure": 0.52
+   },
+   {
+    "bas": 15.81,
+    "sure": 0.62
+   },
+   {
+    "bas": 25.58,
+    "sure": 0.55
+   },
+   {
+    "bas": 30.92,
+    "sure": 0.81
+   },
+   {
+    "bas": 40.97,
+    "sure": 0.53
+   },
+   {
+    "bas": 46.27,
+    "sure": 0.79
+   },
+   {
+    "bas": 56.35,
+    "sure": 0.52
+   },
+   {
+    "bas": 61.67,
+    "sure": 0.81
+   },
+   {
+    "bas": 71.74,
+    "sure": 0.46
+   },
+   {
+    "bas": 77.06,
+    "sure": 0.8
+   },
+   {
+    "bas": 89.35,
+    "sure": 0.92
+   }
+  ],
+  "sesli_cercevelerde_ardisik_benzerlik_medyan": 0.9898,
+  "donmus_sure_orani": 0.187,
+  "unsuz_cerceve_orani": 0.3,
+  "unsuzlerde_tiz_payi_db": -9.8,
+  "unlulerde_tiz_payi_db": -22.4,
+  "vokal_ust_frekans_hz": 10723,
+  "tiz_doku_degisim_katsayisi": 1.28,
+  "tiz_doku_aciklama": "Tutulan unlulerde 4-8 kHz'in zaman icinde ne kadar oynadigi. Duragan gurultu icin kuramsal deger ~0,52. Belirgin dusuk (<0,35) = fazla puruzsuz/'vizildayan' sentez dokusu; belirgin yuksek (>1,2) = kopuk kopuk 'muzikal gurultu' (ayirma ya da gurultu giderme artigi) olabilir.",
+  "zarf_titremesi_db": -13.5,
+  "zarf_titremesi_aciklama": "Tutulan seslerde 15-40 Hz genlik titresiminin 1-15 Hz'e orani (dB). dogrula.py'de: ayrilmis dogal vokal -9..-11, esnetilmis vokal -14, konusma sentezi -16, vokoderle ezgiye oturtulmus (reddedilen) vokal -21. Yani COK DUSUK deger asiri puruzsuz/duragan ses demek olabilir; tek basina karar verdirmez.",
+  "isaretler": [
+   "sesli sürenin %18 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi"
+  ],
+  "isaret_sayisi": 1,
+  "neyi_yakalar": "dogrula.py denetimlerinde YAKALANAN: perdesi yarim seslere yapistirilmis vokal (duzluk + izgaraya yapisma), 4 kHz'de kesilmis vokal (tiz eksigi), hecelerı vokoderle uzatilmis vokal (donmus unlu). YAKALANMAYAN: perdesi degistirilmeden vokoderden gecirilmis vokal, 1,6-1,8 kat esnetilmis vokal, konusma sentezi. 'Isaret yok' = 'dogal' DEGILDIR."
+ },
+ "etiket_vokal": {
+  "ses_turu": {
+   "Music": 0.167,
+   "Singing": 0.055,
+   "Child singing": 0.005,
+   "Female singing": 0.112,
+   "Male singing": 0.013,
+   "Speech": 0.013,
+   "Child speech, kid speaking": 0.0,
+   "Synthetic singing": 0.039,
+   "Speech synthesizer": 0.001,
+   "Rapping": 0.0,
+   "Humming": 0.004,
+   "Chant": 0.007
+  },
+  "sarki_eksi_konusma": 0.042
+ },
+ "kalite_tahminleri": {
+  "pencere_sn": 10.0,
+  "pencere_baslangiclari": [
+   0.0,
+   10.0,
+   20.0,
+   30.0,
+   40.0,
+   50.0,
+   60.0,
+   70.0,
+   80.0,
+   90.0
+  ],
+  "dnsmos": {
+   "genel": 2.82,
+   "sinyal": 3.34,
+   "arka_plan": 3.55,
+   "p808": 2.85,
+   "pencereler_genel": [
+    3.15,
+    2.78,
+    2.96,
+    2.94,
+    2.58,
+    3.18,
+    2.55,
+    2.85,
+    2.85,
+    2.42
+   ],
+   "sure_sn": 3.6
+  },
+  "nisqa": {
+   "genel": 3.71,
+   "gurultusuzluk": 4.05,
+   "kesintisizlik": 4.49,
+   "renklenmezlik": 3.94,
+   "ses_duzeyi": 2.81,
+   "pencereler_genel": [
+    3.03,
+    3.94,
+    4.2,
+    3.79,
+    4.05,
+    4.29,
+    3.4,
+    4.4,
+    4.51,
+    1.47
+   ],
+   "pencereler_kesintisizlik": [
+    4.22,
+    4.61,
+    4.65,
+    4.36,
+    4.55,
+    4.75,
+    4.39,
+    4.74,
+    4.72,
+    3.91
+   ],
+   "sure_sn": 2.3
+  },
+  "distillmos": {
+   "genel": 3.8,
+   "pencereler_genel": [
+    3.45,
+    4.12,
+    4.19,
+    3.68,
+    4.03,
+    4.18,
+    3.57,
+    4.16,
+    4.36,
+    2.26
+   ],
+   "sure_sn": 6.8
+  },
+  "utmos22": {
+   "genel": 2.15,
+   "pencereler_genel": [
+    2.41,
+    2.21,
+    2.37,
+    2.15,
+    2.24,
+    2.28,
+    2.01,
+    2.19,
+    2.06,
+    1.6
+   ],
+   "sure_sn": 11.6
+  },
+  "aciklama": "1-5 arasi KONUSMA kalitesi tahminleri (5 = temiz). Sarki icin egitilmediler: sarki sesi, temiz konusmadan hep dusuk puan alir; karisimda (muzikli) taban degeri verirler. Kullanim: ayni yolla elde edilmis iki vokali karsilastirmak ve gurultu / kirpilma / kopukluk alarmi. Ayrilmis (MDX) vokal, ayirma artiklari yuzunden kuru vokalden dusuk cikar. 0,5 puandan kucuk farklar anlamsizdir."
+ },
+ "sozler": {
+  "dokum_kaynagi": {
+   "kaynak": "mevcut *_words.json (yeniden dokum alinmadi; sozcuk guveni yok)",
+   "dosya": "/home/user/ring-tokat-3d/cocuk-kanali/parmak-ailesi/yavas_2_words.json",
+   "kredi": 0
+  },
+  "dil": null,
+  "dil_olasiligi": null,
+  "duyulan_metin": "Baba parmak, baba parmak neredesin? Buradayım, buradayım. Merhaba. Anne parmak, anne parmak neredesin? Buradayım, buradayım. Merhaba. Anne parmak, abi parmak neredesin? Buradayım, buradayım. Merhaba. Able parmak, abi parmak neredesin? Buradayım, buradayım. Merhaba. Bebek parmak, bebek parmak neredesin? Buradayım, buradayım. Merhaba. Parmak ailesi hep birlikte el sallıyor, el sallıyor. Hoşça kal.",
+  "duyulan_sozcuk_sayisi": 50,
+  "ses_olaylari": [],
+  "dusuk_guvenli_sozcukler": [],
+  "hece_hizi": {
+   "toplam_hece": 136,
+   "soz_icinde_hece_sn": 3.43,
+   "obek_sayisi": 11,
+   "obek_hece_sn_medyan": 2.96,
+   "obek_hece_sn_en_hizli": 3.62,
+   "cok_hizli_obekler": [],
+   "cok_yavas_obekler": [],
+   "obekler": [
+    {
+     "bas": 6.74,
+     "son": 10.96,
+     "hece": 12,
+     "hece_sn": 2.84,
+     "soz": "Baba parmak, baba parmak neredesin?"
+    },
+    {
+     "bas": 12.52,
+     "son": 15.96,
+     "hece": 11,
+     "hece_sn": 3.2,
+     "soz": "Buradayım, buradayım. Merhaba."
+    },
+    {
+     "bas": 22.14,
+     "son": 26.36,
+     "hece": 12,
+     "hece_sn": 2.84,
+     "soz": "Anne parmak, anne parmak neredesin?"
+    },
+    {
+     "bas": 27.92,
+     "son": 31.36,
+     "hece": 11,
+     "hece_sn": 3.2,
+     "soz": "Buradayım, buradayım. Merhaba."
+    },
+    {
+     "bas": 37.54,
+     "son": 41.74,
+     "hece": 12,
+     "hece_sn": 2.86,
+     "soz": "Anne parmak, abi parmak neredesin?"
+    },
+    {
+     "bas": 43.32,
+     "son": 46.72,
+     "hece": 11,
+     "hece_sn": 3.24,
+     "soz": "Buradayım, buradayım. Merhaba."
+    },
+    {
+     "bas": 52.96,
+     "son": 57.12,
+     "hece": 12,
+     "hece_sn": 2.88,
+     "soz": "Able parmak, abi parmak neredesin?"
+    },
+    {
+     "bas": 58.7,
+     "son": 61.76,
+     "hece": 11,
+     "hece_sn": 3.59,
+     "soz": "Buradayım, buradayım. Merhaba."
+    },
+    {
+     "bas": 68.28,
+     "son": 72.34,
+     "hece": 12,
+     "hece_sn": 2.96,
+     "soz": "Bebek parmak, bebek parmak neredesin?"
+    },
+    {
+     "bas": 74.1,
+     "son": 77.14,
+     "hece": 11,
+     "hece_sn": 3.62,
+     "soz": "Buradayım, buradayım. Merhaba."
+    },
+    {
+     "bas": 82.52,
+     "son": 89.8,
+     "hece": 21,
+     "hece_sn": 2.88,
+     "soz": "Parmak ailesi hep birlikte el sallıyor, el sallıyor. Hoşça kal."
+    }
+   ],
+   "aciklama": "Saniyede hece. Cocuk sarkilarinda soylenen sozde genelde 2-5 hece/sn; 6,5'in ustu tekerleme hizidir (cocuk eslik edemez), 1,5'in alti cok uzatilmis hecelerdir. Zamanlar Scribe'in sozcuk sinirlarindan gelir (+-50 ms)."
+  },
+  "karsilastirma": {
+   "beklenen_sozcuk": 50,
+   "duyulan_sozcuk": 50,
+   "degisik": 3,
+   "eksik": 0,
+   "fazla": 0,
+   "sozcuk_hata_orani": 0.06,
+   "dogru_sozcuk_orani": 0.94,
+   "yanlis_sozcukler": [
+    {
+     "beklenen": "Abi",
+     "duyulan": "Anne",
+     "zaman": 37.54,
+     "satir": 10,
+     "benzerlik": 0.29,
+     "tur": "başka sözcük"
+    },
+    {
+     "beklenen": "Abla",
+     "duyulan": "Able",
+     "zaman": 52.96,
+     "satir": 13,
+     "benzerlik": 0.75,
+     "tur": "küçük fark (ek/harf)"
+    },
+    {
+     "beklenen": "abla",
+     "duyulan": "abi",
+     "zaman": 54.14,
+     "satir": 13,
+     "benzerlik": 0.57,
+     "tur": "başka sözcük"
+    }
+   ],
+   "eksik_sozcukler": [],
+   "fazla_sozcukler": [],
+   "kucuk_farklar_sayilmazsa_hata_orani": 0.04,
+   "hatali_satirlar": [
+    {
+     "satir": 10,
+     "sozcuk": 5,
+     "dogru": 4,
+     "bas": 37.54
+    },
+    {
+     "satir": 13,
+     "sozcuk": 5,
+     "dogru": 3,
+     "bas": 52.96
+    }
+   ]
+  }
+ },
+ "sorunlar": [
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 10.19,
+   "son": 10.709999999999999,
+   "metin": "spektrum 0.52 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 15.81,
+   "son": 16.43,
+   "metin": "spektrum 0.62 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 25.58,
+   "son": 26.13,
+   "metin": "spektrum 0.55 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 30.92,
+   "son": 31.73,
+   "metin": "spektrum 0.81 sn hiç değişmiyor"
+  },
+  {
+   "sira": "söz hatası",
+   "zaman": 37.54,
+   "metin": "beklenen 'Abi', duyulan 'Anne'"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 40.97,
+   "son": 41.5,
+   "metin": "spektrum 0.53 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 46.27,
+   "son": 47.06,
+   "metin": "spektrum 0.79 sn hiç değişmiyor"
+  },
+  {
+   "sira": "söz hatası",
+   "zaman": 52.96,
+   "metin": "beklenen 'Abla', duyulan 'Able'"
+  },
+  {
+   "sira": "söz hatası",
+   "zaman": 54.14,
+   "metin": "beklenen 'abla', duyulan 'abi'"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 56.35,
+   "son": 56.870000000000005,
+   "metin": "spektrum 0.52 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 61.67,
+   "son": 62.480000000000004,
+   "metin": "spektrum 0.81 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 71.74,
+   "son": 72.19999999999999,
+   "metin": "spektrum 0.46 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 77.06,
+   "son": 77.86,
+   "metin": "spektrum 0.80 sn hiç değişmiyor"
+  },
+  {
+   "sira": "donmuş ünlü",
+   "zaman": 89.35,
+   "son": 90.27,
+   "metin": "spektrum 0.92 sn hiç değişmiyor"
+  }
+ ],
+ "notalar": [
+  {
+   "bas": 6.8,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": 0,
+   "ic_std_cent": 5.5,
+   "vibrato": false
+  },
+  {
+   "bas": 7.18,
+   "sure": 0.54,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 7.9,
+   "vibrato": false
+  },
+  {
+   "bas": 7.92,
+   "sure": 0.3,
+   "nota": "E4",
+   "cent": 0,
+   "ic_std_cent": 7.0,
+   "vibrato": false
+  },
+  {
+   "bas": 8.32,
+   "sure": 0.22,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 13.1,
+   "vibrato": false
+  },
+  {
+   "bas": 8.78,
+   "sure": 0.22,
+   "nota": "D4",
+   "cent": -8,
+   "ic_std_cent": 7.4,
+   "vibrato": false
+  },
+  {
+   "bas": 9.01,
+   "sure": 0.24,
+   "nota": "C4",
+   "cent": 10,
+   "ic_std_cent": 12.0,
+   "vibrato": false
+  },
+  {
+   "bas": 9.47,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": -1,
+   "ic_std_cent": 17.7,
+   "vibrato": false
+  },
+  {
+   "bas": 9.65,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": 5,
+   "ic_std_cent": 7.9,
+   "vibrato": false
+  },
+  {
+   "bas": 10.14,
+   "sure": 1.49,
+   "nota": "D4",
+   "cent": -9,
+   "ic_std_cent": 14.5,
+   "vibrato": true
+  },
+  {
+   "bas": 12.58,
+   "sure": 0.13,
+   "nota": "C4",
+   "cent": 5,
+   "ic_std_cent": 10.6,
+   "vibrato": false
+  },
+  {
+   "bas": 12.74,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 7.0,
+   "vibrato": false
+  },
+  {
+   "bas": 12.96,
+   "sure": 0.7,
+   "nota": "D4",
+   "cent": -1,
+   "ic_std_cent": 10.2,
+   "vibrato": false
+  },
+  {
+   "bas": 13.71,
+   "sure": 0.29,
+   "nota": "D4",
+   "cent": 1,
+   "ic_std_cent": 5.4,
+   "vibrato": false
+  },
+  {
+   "bas": 14.1,
+   "sure": 0.35,
+   "nota": "D4",
+   "cent": -6,
+   "ic_std_cent": 10.3,
+   "vibrato": false
+  },
+  {
+   "bas": 14.5,
+   "sure": 0.35,
+   "nota": "C4",
+   "cent": -6,
+   "ic_std_cent": 11.8,
+   "vibrato": false
+  },
+  {
+   "bas": 14.88,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": 7,
+   "ic_std_cent": 7.1,
+   "vibrato": false
+  },
+  {
+   "bas": 15.02,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 9.4,
+   "vibrato": false
+  },
+  {
+   "bas": 15.49,
+   "sure": 1.28,
+   "nota": "C4",
+   "cent": -1,
+   "ic_std_cent": 8.8,
+   "vibrato": false
+  },
+  {
+   "bas": 22.14,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": -9,
+   "ic_std_cent": 7.0,
+   "vibrato": false
+  },
+  {
+   "bas": 22.3,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": -7,
+   "ic_std_cent": 5.0,
+   "vibrato": false
+  },
+  {
+   "bas": 22.58,
+   "sure": 0.51,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 14.3,
+   "vibrato": true
+  },
+  {
+   "bas": 23.31,
+   "sure": 0.58,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 7.4,
+   "vibrato": false
+  },
+  {
+   "bas": 24.14,
+   "sure": 0.24,
+   "nota": "D4",
+   "cent": -4,
+   "ic_std_cent": 9.8,
+   "vibrato": false
+  },
+  {
+   "bas": 24.43,
+   "sure": 0.19,
+   "nota": "C4",
+   "cent": 1,
+   "ic_std_cent": 5.6,
+   "vibrato": false
+  },
+  {
+   "bas": 24.85,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": 15,
+   "ic_std_cent": 5.6,
+   "vibrato": false
+  },
+  {
+   "bas": 24.99,
+   "sure": 0.18,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 13.7,
+   "vibrato": false
+  },
+  {
+   "bas": 25.54,
+   "sure": 1.33,
+   "nota": "D4",
+   "cent": -8,
+   "ic_std_cent": 19.1,
+   "vibrato": true
+  },
+  {
+   "bas": 27.97,
+   "sure": 0.13,
+   "nota": "C4",
+   "cent": 7,
+   "ic_std_cent": 7.5,
+   "vibrato": false
+  },
+  {
+   "bas": 28.13,
+   "sure": 0.13,
+   "nota": "D4",
+   "cent": -7,
+   "ic_std_cent": 6.6,
+   "vibrato": false
+  },
+  {
+   "bas": 28.34,
+   "sure": 1.06,
+   "nota": "D4",
+   "cent": -4,
+   "ic_std_cent": 10.5,
+   "vibrato": false
+  },
+  {
+   "bas": 29.47,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 6.4,
+   "vibrato": false
+  },
+  {
+   "bas": 29.82,
+   "sure": 0.42,
+   "nota": "C4",
+   "cent": -8,
+   "ic_std_cent": 9.2,
+   "vibrato": false
+  },
+  {
+   "bas": 30.26,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": 15,
+   "ic_std_cent": 4.8,
+   "vibrato": false
+  },
+  {
+   "bas": 30.38,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 10.9,
+   "vibrato": false
+  },
+  {
+   "bas": 30.66,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 5.2,
+   "vibrato": false
+  },
+  {
+   "bas": 30.86,
+   "sure": 1.17,
+   "nota": "C4",
+   "cent": 0,
+   "ic_std_cent": 8.7,
+   "vibrato": false
+  },
+  {
+   "bas": 37.54,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": 4,
+   "ic_std_cent": 1.4,
+   "vibrato": false
+  },
+  {
+   "bas": 37.66,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 10.0,
+   "vibrato": false
+  },
+  {
+   "bas": 37.98,
+   "sure": 0.5,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 11.5,
+   "vibrato": false
+  },
+  {
+   "bas": 38.72,
+   "sure": 0.29,
+   "nota": "E4",
+   "cent": -6,
+   "ic_std_cent": 5.5,
+   "vibrato": false
+  },
+  {
+   "bas": 39.1,
+   "sure": 0.18,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 7.7,
+   "vibrato": false
+  },
+  {
+   "bas": 39.55,
+   "sure": 0.22,
+   "nota": "D4",
+   "cent": -2,
+   "ic_std_cent": 9.1,
+   "vibrato": false
+  },
+  {
+   "bas": 39.79,
+   "sure": 0.21,
+   "nota": "C4",
+   "cent": 3,
+   "ic_std_cent": 14.1,
+   "vibrato": false
+  },
+  {
+   "bas": 40.22,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": 16,
+   "ic_std_cent": 8.4,
+   "vibrato": false
+  },
+  {
+   "bas": 40.4,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": -2,
+   "ic_std_cent": 5.7,
+   "vibrato": false
+  },
+  {
+   "bas": 40.93,
+   "sure": 1.14,
+   "nota": "D4",
+   "cent": -4,
+   "ic_std_cent": 16.5,
+   "vibrato": false
+  },
+  {
+   "bas": 43.36,
+   "sure": 0.11,
+   "nota": "C4",
+   "cent": 11,
+   "ic_std_cent": 10.6,
+   "vibrato": false
+  },
+  {
+   "bas": 43.47,
+   "sure": 0.16,
+   "nota": "D4",
+   "cent": -2,
+   "ic_std_cent": 8.6,
+   "vibrato": false
+  },
+  {
+   "bas": 43.71,
+   "sure": 0.75,
+   "nota": "D4",
+   "cent": -2,
+   "ic_std_cent": 8.6,
+   "vibrato": false
+  },
+  {
+   "bas": 44.48,
+   "sure": 0.29,
+   "nota": "D4",
+   "cent": 0,
+   "ic_std_cent": 9.0,
+   "vibrato": false
+  },
+  {
+   "bas": 44.85,
+   "sure": 0.34,
+   "nota": "D4",
+   "cent": 4,
+   "ic_std_cent": 8.8,
+   "vibrato": false
+  },
+  {
+   "bas": 45.2,
+   "sure": 0.42,
+   "nota": "C4",
+   "cent": -2,
+   "ic_std_cent": 10.3,
+   "vibrato": false
+  },
+  {
+   "bas": 45.65,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": 19,
+   "ic_std_cent": 7.5,
+   "vibrato": false
+  },
+  {
+   "bas": 45.74,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": 3,
+   "ic_std_cent": 6.2,
+   "vibrato": false
+  },
+  {
+   "bas": 46.03,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": 6,
+   "ic_std_cent": 2.6,
+   "vibrato": false
+  },
+  {
+   "bas": 46.24,
+   "sure": 0.82,
+   "nota": "C4",
+   "cent": 1,
+   "ic_std_cent": 6.2,
+   "vibrato": false
+  },
+  {
+   "bas": 53.1,
+   "sure": 0.13,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 7.0,
+   "vibrato": false
+  },
+  {
+   "bas": 53.36,
+   "sure": 0.5,
+   "nota": "E4",
+   "cent": -3,
+   "ic_std_cent": 12.0,
+   "vibrato": true
+  },
+  {
+   "bas": 54.08,
+   "sure": 0.29,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 10.7,
+   "vibrato": false
+  },
+  {
+   "bas": 54.48,
+   "sure": 0.18,
+   "nota": "E4",
+   "cent": -1,
+   "ic_std_cent": 7.4,
+   "vibrato": false
+  },
+  {
+   "bas": 54.93,
+   "sure": 0.22,
+   "nota": "D4",
+   "cent": -13,
+   "ic_std_cent": 9.1,
+   "vibrato": false
+  },
+  {
+   "bas": 55.18,
+   "sure": 0.18,
+   "nota": "C4",
+   "cent": -1,
+   "ic_std_cent": 8.9,
+   "vibrato": false
+  },
+  {
+   "bas": 55.62,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": 19,
+   "ic_std_cent": 6.0,
+   "vibrato": false
+  },
+  {
+   "bas": 55.76,
+   "sure": 0.16,
+   "nota": "E4",
+   "cent": 2,
+   "ic_std_cent": 13.5,
+   "vibrato": false
+  },
+  {
+   "bas": 56.32,
+   "sure": 0.96,
+   "nota": "D4",
+   "cent": -6,
+   "ic_std_cent": 14.6,
+   "vibrato": false
+  },
+  {
+   "bas": 57.3,
+   "sure": 0.16,
+   "nota": "D4",
+   "cent": -13,
+   "ic_std_cent": 27.5,
+   "vibrato": false
+  },
+  {
+   "bas": 58.75,
+   "sure": 0.1,
+   "nota": "C4",
+   "cent": 12,
+   "ic_std_cent": 3.8,
+   "vibrato": false
+  },
+  {
+   "bas": 58.85,
+   "sure": 0.16,
+   "nota": "D4",
+   "cent": -6,
+   "ic_std_cent": 4.5,
+   "vibrato": false
+  },
+  {
+   "bas": 59.1,
+   "sure": 1.04,
+   "nota": "D4",
+   "cent": -6,
+   "ic_std_cent": 9.2,
+   "vibrato": false
+  },
+  {
+   "bas": 60.24,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": -5,
+   "ic_std_cent": 10.0,
+   "vibrato": false
+  },
+  {
+   "bas": 60.59,
+   "sure": 0.42,
+   "nota": "C4",
+   "cent": -10,
+   "ic_std_cent": 14.2,
+   "vibrato": false
+  },
+  {
+   "bas": 61.01,
+   "sure": 0.13,
+   "nota": "D4",
+   "cent": 14,
+   "ic_std_cent": 11.5,
+   "vibrato": false
+  },
+  {
+   "bas": 61.42,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": -5,
+   "ic_std_cent": 3.7,
+   "vibrato": false
+  },
+  {
+   "bas": 61.63,
+   "sure": 0.9,
+   "nota": "C4",
+   "cent": 1,
+   "ic_std_cent": 10.7,
+   "vibrato": false
+  },
+  {
+   "bas": 68.3,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": -10,
+   "ic_std_cent": 4.7,
+   "vibrato": false
+  },
+  {
+   "bas": 68.74,
+   "sure": 0.5,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 9.7,
+   "vibrato": false
+  },
+  {
+   "bas": 69.47,
+   "sure": 0.26,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 4.0,
+   "vibrato": false
+  },
+  {
+   "bas": 69.84,
+   "sure": 0.11,
+   "nota": "E4",
+   "cent": -5,
+   "ic_std_cent": 4.6,
+   "vibrato": false
+  },
+  {
+   "bas": 70.26,
+   "sure": 0.27,
+   "nota": "D4",
+   "cent": 4,
+   "ic_std_cent": 17.9,
+   "vibrato": false
+  },
+  {
+   "bas": 70.53,
+   "sure": 0.24,
+   "nota": "C4",
+   "cent": 3,
+   "ic_std_cent": 8.0,
+   "vibrato": false
+  },
+  {
+   "bas": 70.96,
+   "sure": 0.18,
+   "nota": "D4",
+   "cent": 10,
+   "ic_std_cent": 10.7,
+   "vibrato": false
+  },
+  {
+   "bas": 71.17,
+   "sure": 0.14,
+   "nota": "E4",
+   "cent": 4,
+   "ic_std_cent": 6.1,
+   "vibrato": false
+  },
+  {
+   "bas": 71.39,
+   "sure": 0.1,
+   "nota": "E4",
+   "cent": -13,
+   "ic_std_cent": 3.7,
+   "vibrato": false
+  },
+  {
+   "bas": 71.7,
+   "sure": 0.94,
+   "nota": "D4",
+   "cent": -7,
+   "ic_std_cent": 12.8,
+   "vibrato": false
+  },
+  {
+   "bas": 72.7,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": 5,
+   "ic_std_cent": 13.4,
+   "vibrato": false
+  },
+  {
+   "bas": 74.11,
+   "sure": 0.13,
+   "nota": "C4",
+   "cent": 11,
+   "ic_std_cent": 16.7,
+   "vibrato": false
+  },
+  {
+   "bas": 74.24,
+   "sure": 0.14,
+   "nota": "D4",
+   "cent": -3,
+   "ic_std_cent": 8.4,
+   "vibrato": false
+  },
+  {
+   "bas": 74.48,
+   "sure": 0.74,
+   "nota": "D4",
+   "cent": -3,
+   "ic_std_cent": 9.0,
+   "vibrato": false
+  },
+  {
+   "bas": 75.23,
+   "sure": 0.3,
+   "nota": "D4",
+   "cent": -6,
+   "ic_std_cent": 7.6,
+   "vibrato": false
+  },
+  {
+   "bas": 75.62,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": 4,
+   "ic_std_cent": 11.5,
+   "vibrato": false
+  },
+  {
+   "bas": 75.97,
+   "sure": 0.42,
+   "nota": "C4",
+   "cent": -3,
+   "ic_std_cent": 15.6,
+   "vibrato": false
+  },
+  {
+   "bas": 76.4,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": 15,
+   "ic_std_cent": 13.6,
+   "vibrato": false
+  },
+  {
+   "bas": 76.8,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": 6,
+   "ic_std_cent": 7.9,
+   "vibrato": false
+  },
+  {
+   "bas": 77.01,
+   "sure": 0.86,
+   "nota": "C4",
+   "cent": 1,
+   "ic_std_cent": 7.2,
+   "vibrato": false
+  },
+  {
+   "bas": 82.58,
+   "sure": 0.27,
+   "nota": "D4",
+   "cent": 0,
+   "ic_std_cent": 8.4,
+   "vibrato": false
+  },
+  {
+   "bas": 82.91,
+   "sure": 0.16,
+   "nota": "C4",
+   "cent": 3,
+   "ic_std_cent": 15.3,
+   "vibrato": false
+  },
+  {
+   "bas": 83.33,
+   "sure": 0.13,
+   "nota": "C#4",
+   "cent": -2,
+   "ic_std_cent": 20.3,
+   "vibrato": false
+  },
+  {
+   "bas": 83.46,
+   "sure": 0.37,
+   "nota": "D4",
+   "cent": -3,
+   "ic_std_cent": 10.2,
+   "vibrato": false
+  },
+  {
+   "bas": 84.1,
+   "sure": 0.27,
+   "nota": "D4",
+   "cent": 2,
+   "ic_std_cent": 12.2,
+   "vibrato": false
+  },
+  {
+   "bas": 84.5,
+   "sure": 0.1,
+   "nota": "D4",
+   "cent": 0,
+   "ic_std_cent": 6.9,
+   "vibrato": false
+  },
+  {
+   "bas": 84.85,
+   "sure": 0.11,
+   "nota": "D4",
+   "cent": 23,
+   "ic_std_cent": 18.2,
+   "vibrato": false
+  },
+  {
+   "bas": 84.99,
+   "sure": 0.35,
+   "nota": "E4",
+   "cent": -4,
+   "ic_std_cent": 13.2,
+   "vibrato": false
+  },
+  {
+   "bas": 85.65,
+   "sure": 0.37,
+   "nota": "D4",
+   "cent": -6,
+   "ic_std_cent": 5.7,
+   "vibrato": false
+  },
+  {
+   "bas": 86.4,
+   "sure": 0.11,
+   "nota": "C4",
+   "cent": 4,
+   "ic_std_cent": 10.1,
+   "vibrato": false
+  },
+  {
+   "bas": 86.77,
+   "sure": 0.64,
+   "nota": "D4",
+   "cent": -2,
+   "ic_std_cent": 9.2,
+   "vibrato": false
+  },
+  {
+   "bas": 87.57,
+   "sure": 0.18,
+   "nota": "D4",
+   "cent": -4,
+   "ic_std_cent": 3.1,
+   "vibrato": false
+  },
+  {
+   "bas": 87.92,
+   "sure": 0.32,
+   "nota": "D4",
+   "cent": -2,
+   "ic_std_cent": 11.7,
+   "vibrato": false
+  },
+  {
+   "bas": 88.27,
+   "sure": 0.3,
+   "nota": "C4",
+   "cent": 0,
+   "ic_std_cent": 14.3,
+   "vibrato": false
+  },
+  {
+   "bas": 89.34,
+   "sure": 0.94,
+   "nota": "C4",
+   "cent": 2,
+   "ic_std_cent": 6.3,
+   "vibrato": false
+  }
+ ],
+ "calisma_sureleri_sn": {
+  "cozme + temel": 2.5,
+  "enerji": 5.6,
+  "CED etiket (karisim)": 0.8,
+  "MusicCoCa": 11.6,
+  "kanallar": 121.8,
+  "ton + akor": 6.1,
+  "perde izleme": 3.4,
+  "nota + uyum": 0.0,
+  "ritim": 0.8,
+  "yapaylik vekilleri": 0.1,
+  "MOS tahminleri (vokal)": 26.2,
+  "sozler": 0.1,
+  "panolar": 5.4
+ },
+ "panolar": [
+  {
+   "dosya": "00_genel_bakis.png",
+   "tur": "genel bakis",
+   "bas": 0,
+   "son": 95.0
+  },
+  {
+   "dosya": "01_pano_000-024sn.png",
+   "tur": "genel pano",
+   "bas": 0.0,
+   "son": 23.75
+  },
+  {
+   "dosya": "01_perde_000-024sn.png",
+   "tur": "perde panosu",
+   "bas": 0.0,
+   "son": 23.75
+  },
+  {
+   "dosya": "02_pano_023-048sn.png",
+   "tur": "genel pano",
+   "bas": 23.75,
+   "son": 47.5
+  },
+  {
+   "dosya": "02_perde_023-048sn.png",
+   "tur": "perde panosu",
+   "bas": 23.75,
+   "son": 47.5
+  },
+  {
+   "dosya": "03_pano_047-071sn.png",
+   "tur": "genel pano",
+   "bas": 47.5,
+   "son": 71.25
+  },
+  {
+   "dosya": "03_perde_047-071sn.png",
+   "tur": "perde panosu",
+   "bas": 47.5,
+   "son": 71.25
+  },
+  {
+   "dosya": "04_pano_071-095sn.png",
+   "tur": "genel pano",
+   "bas": 71.25,
+   "son": 95.0
+  },
+  {
+   "dosya": "04_perde_071-095sn.png",
+   "tur": "perde panosu",
+   "bas": 71.25,
+   "son": 95.0
+  }
+ ],
+ "toplam_sure_sn": 185.3,
+ "ozet": [
+  {
+   "durum": "iyi",
+   "konu": "Ses yüksekliği",
+   "bulgu": "-14,4 LUFS, gerçek tepe -0,5 dBTP."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Enerji / coşku",
+   "bulgu": "hareketlilik puanı 52/100 (tempo 156 BPM, saniyede 3,8 olay); MusicCoCa coşku farkı -0,08; CED 'ninni' olasılığı 0,044 → **ninni/sakin yana kayıyor olabilir**. Projedeki sürümlerle karşılaştırma (hareketlilik puanı: 'coşkulu' adlı 6 sürümde 66…79, 'yavaş' adlı 3 sürümde 52…61; MusicCoCa coşku farkı: 'coşkulu' adlı 6 sürümde +0,09…+0,22, 'yavaş' adlı 3 sürümde -0,10…-0,08)."
+  },
+  {
+   "durum": "iyi",
+   "konu": "Vokal / altyapı dengesi",
+   "bulgu": "vokal altyapıdan +5,7 dB (medyan); sürenin %60 kadarında vokal var. Vokal-altyapı dengesi olağan aralıkta."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Vokal altyapıyla aynı armonide mi",
+   "bulgu": "armonik destek farkı +0,313 (artı = uyumlu); en iyi kaydırma +5 yarım ses (0 olmalı)."
+  },
+  {
+   "durum": "iyi",
+   "konu": "Gam içi söyleme",
+   "bulgu": "söylenen sürenin %99 kadarı altyapının gamında (Do majör (C major)); akor sesi %81, gam dışı %1."
+  },
+  {
+   "durum": "iyi",
+   "konu": "Akort (detone mi)",
+   "bulgu": "notalara uzaklık medyan 6,6 cent; söylenen sürenin %92 kadarı ±25 cent içinde; vokalin genel kayması -2 cent."
+  },
+  {
+   "durum": "iyi",
+   "konu": "Çakışan uzun notalar",
+   "bulgu": "0 / 40 uzun nota (0,3 sn üstü) altyapıyla çakışıyor ya da detone."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Ritme oturma",
+   "bulgu": "sıkılık R=0,49 (ölçümün tavanı ≈0,65; rastgele ≈0,15); başlangıçların %43 kadarı en yakın sekizliğe 40 ms içinde; ortalama kayma +17 ms (+ geç). Vokal ızgaraya orta derecede oturuyor (serbest / konuşur gibi söyleyiş ya da ölçüm gürültüsü) (vuruş ızgarası: otomatik (altyapıdan))."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Yapaylık işaretleri (vekil)",
+   "bulgu": "1 işaret: sesli sürenin %18 kadarı 'donmuş' ünlü (spektrum 0,45 sn'den uzun süre hiç değişmiyor): zaman esnetme / vokoderle uzatma izlenimi."
+  },
+  {
+   "durum": "dikkat",
+   "konu": "Sözler",
+   "bulgu": "sözcük hata oranı %6,0 (50 beklenen sözcükten 3 farklı, 0 eksik, 0 fazla); küçük ek/harf farkları sayılmazsa %4,0."
+  },
+  {
+   "durum": "bilgi",
+   "konu": "Söyleyiş hızı",
+   "bulgu": "söz öbeklerinde medyan 3,0 hece/sn (en hızlı 3,6)."
+  }
+ ]
+}

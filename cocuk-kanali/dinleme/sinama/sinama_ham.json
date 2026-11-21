@@ -1,0 +1,1317 @@
+{
+ "aciklama": "(kosulardan ONCE yazildi; sonuclara gore degistirilmedi)\n- Gurultu: kusursuz 5 kopya {asil, yeniden kodlanmis MP3, WAV, yeniden karisim, 1 dB kisik + 23 ms kaydirilmis} arasinda olcunun\n  en buyuk - en kucuk degeri (aralik). Aralik 0 cikarsa olcunun yazim cozunurlugu taban alinir.\n- Fark: bozuk surum - taban (n3_yeniden_karisim; butun bozuk surumler ondan turetildi).\n- Kat: |fark| / gurultu.\n- \"TEK RAPORLA YAKALANDI\": aracin kendi ozetinde, kusurla ILGILI satirin durumu tabandakinden kotu (iyi/bilgi -> dikkat/sorun, dikkat -> sorun)\n  ya da ilgili turde yeni bir 'sorun' kaydi var. Claude tek dosyayi olcup raporu okudugunda gorecegi sey budur.\n- \"KARSILASTIRMAYLA YAKALANDI\": kusur icin ONCEDEN secilmis olculerden en az biri gurultunun 3 katindan fazla oynadi (kat >= 3).\n  Yani yalniz iyi bilinen bir surumle yan yana olculurse gorulur.\n- \"KACTI\": ikisi de degil.",
+ "gurultu_kumesi": [
+  "00_asil_a",
+  "n1_yeniden_kodlama",
+  "n3_yeniden_karisim"
+ ],
+ "taban": "n3_yeniden_karisim",
+ "gurultu": {
+  "lufs": {
+   "n": 3,
+   "en_az": -12.7,
+   "en_cok": -12.4,
+   "aralik": 0.3,
+   "std": 0.1732,
+   "gurultu": 0.3,
+   "degerler": {
+    "00_asil_a": -12.4,
+    "n1_yeniden_kodlama": -12.7,
+    "n3_yeniden_karisim": -12.7
+   }
+  },
+  "tepe": {
+   "n": 3,
+   "en_az": -0.1,
+   "en_cok": 0.5,
+   "aralik": 0.6,
+   "std": 0.3215,
+   "gurultu": 0.6,
+   "degerler": {
+    "00_asil_a": 0.5,
+    "n1_yeniden_kodlama": -0.1,
+    "n3_yeniden_karisim": 0.0
+   }
+  },
+  "tepe_faktoru": {
+   "n": 3,
+   "en_az": 14.9,
+   "en_cok": 15.2,
+   "aralik": 0.3,
+   "std": 0.1732,
+   "gurultu": 0.3,
+   "degerler": {
+    "00_asil_a": 15.2,
+    "n1_yeniden_kodlama": 14.9,
+    "n3_yeniden_karisim": 14.9
+   }
+  },
+  "lra": {
+   "n": 3,
+   "en_az": 3.0,
+   "en_cok": 3.1,
+   "aralik": 0.1,
+   "std": 0.0577,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": 3.1,
+    "n1_yeniden_kodlama": 3.1,
+    "n3_yeniden_karisim": 3.0
+   }
+  },
+  "tam_olcek": {
+   "n": 3,
+   "en_az": 0,
+   "en_cok": 2,
+   "aralik": 2.0,
+   "std": 1.1547,
+   "gurultu": 2.0,
+   "degerler": {
+    "00_asil_a": 2,
+    "n1_yeniden_kodlama": 0,
+    "n3_yeniden_karisim": 0
+   }
+  },
+  "ust_frekans": {
+   "n": 3,
+   "en_az": 18744,
+   "en_cok": 18755,
+   "aralik": 11.0,
+   "std": 6.3509,
+   "gurultu": 50.0,
+   "degerler": {
+    "00_asil_a": 18744,
+    "n1_yeniden_kodlama": 18744,
+    "n3_yeniden_karisim": 18755
+   }
+  },
+  "tempo": {
+   "n": 3,
+   "en_az": 116.0,
+   "en_cok": 116.0,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": 116.0,
+    "n1_yeniden_kodlama": 116.0,
+    "n3_yeniden_karisim": 116.0
+   }
+  },
+  "nabiz": {
+   "n": 3,
+   "en_az": 0.825,
+   "en_cok": 0.825,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 0.005,
+   "degerler": {
+    "00_asil_a": 0.825,
+    "n1_yeniden_kodlama": 0.825,
+    "n3_yeniden_karisim": 0.825
+   }
+  },
+  "olay": {
+   "n": 3,
+   "en_az": 4.24,
+   "en_cok": 4.25,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 4.24,
+    "n1_yeniden_kodlama": 4.25,
+    "n3_yeniden_karisim": 4.24
+   }
+  },
+  "aki": {
+   "n": 3,
+   "en_az": 1.857,
+   "en_cok": 1.86,
+   "aralik": 0.003,
+   "std": 0.0015,
+   "gurultu": 0.005,
+   "degerler": {
+    "00_asil_a": 1.857,
+    "n1_yeniden_kodlama": 1.86,
+    "n3_yeniden_karisim": 1.859
+   }
+  },
+  "vurmali": {
+   "n": 3,
+   "en_az": 0.83,
+   "en_cok": 0.86,
+   "aralik": 0.03,
+   "std": 0.0173,
+   "gurultu": 0.05,
+   "degerler": {
+    "00_asil_a": 0.83,
+    "n1_yeniden_kodlama": 0.83,
+    "n3_yeniden_karisim": 0.86
+   }
+  },
+  "parlaklik": {
+   "n": 3,
+   "en_az": 2681.0,
+   "en_cok": 2684.0,
+   "aralik": 3.0,
+   "std": 1.5275,
+   "gurultu": 5.0,
+   "degerler": {
+    "00_asil_a": 2684.0,
+    "n1_yeniden_kodlama": 2681.0,
+    "n3_yeniden_karisim": 2682.0
+   }
+  },
+  "tiz_payi": {
+   "n": 3,
+   "en_az": -16.5,
+   "en_cok": -16.4,
+   "aralik": 0.1,
+   "std": 0.0577,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": -16.4,
+    "n1_yeniden_kodlama": -16.5,
+    "n3_yeniden_karisim": -16.5
+   }
+  },
+  "puan": {
+   "n": 3,
+   "en_az": 73.0,
+   "en_cok": 74.0,
+   "aralik": 1.0,
+   "std": 0.5774,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 73.0,
+    "n1_yeniden_kodlama": 74.0,
+    "n3_yeniden_karisim": 73.0
+   }
+  },
+  "coca": {
+   "n": 3,
+   "en_az": 0.179,
+   "en_cok": 0.18,
+   "aralik": 0.001,
+   "std": 0.0006,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.179,
+    "n1_yeniden_kodlama": 0.18,
+    "n3_yeniden_karisim": 0.179
+   }
+  },
+  "coca_tempo": {
+   "n": 3,
+   "en_az": 0.073,
+   "en_cok": 0.077,
+   "aralik": 0.004,
+   "std": 0.0021,
+   "gurultu": 0.004,
+   "degerler": {
+    "00_asil_a": 0.073,
+    "n1_yeniden_kodlama": 0.077,
+    "n3_yeniden_karisim": 0.076
+   }
+  },
+  "coca_kalite": {
+   "n": 3,
+   "en_az": 0.263,
+   "en_cok": 0.264,
+   "aralik": 0.001,
+   "std": 0.0006,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.263,
+    "n1_yeniden_kodlama": 0.264,
+    "n3_yeniden_karisim": 0.263
+   }
+  },
+  "ninni": {
+   "n": 3,
+   "en_az": 0.0,
+   "en_cok": 0.0,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 0.001,
+   "degerler": {
+    "00_asil_a": 0.0,
+    "n1_yeniden_kodlama": 0.0,
+    "n3_yeniden_karisim": 0.0
+   }
+  },
+  "ced_cosku": {
+   "n": 3,
+   "en_az": 0.14,
+   "en_cok": 0.142,
+   "aralik": 0.002,
+   "std": 0.001,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.142,
+    "n1_yeniden_kodlama": 0.141,
+    "n3_yeniden_karisim": 0.14
+   }
+  },
+  "denge": {
+   "n": 3,
+   "en_az": -4.1,
+   "en_cok": -3.4,
+   "aralik": 0.7,
+   "std": 0.3786,
+   "gurultu": 0.7,
+   "degerler": {
+    "00_asil_a": -3.4,
+    "n1_yeniden_kodlama": -4.0,
+    "n3_yeniden_karisim": -4.1
+   }
+  },
+  "vokalli": {
+   "n": 3,
+   "en_az": 0.58,
+   "en_cok": 0.581,
+   "aralik": 0.001,
+   "std": 0.0006,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.581,
+    "n1_yeniden_kodlama": 0.581,
+    "n3_yeniden_karisim": 0.58
+   }
+  },
+  "sizinti": {
+   "n": 3,
+   "en_az": -22.0,
+   "en_cok": -21.0,
+   "aralik": 1.0,
+   "std": 0.5132,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": -21.0,
+    "n1_yeniden_kodlama": -21.7,
+    "n3_yeniden_karisim": -22.0
+   }
+  },
+  "destek": {
+   "n": 3,
+   "en_az": 0.249,
+   "en_cok": 0.26,
+   "aralik": 0.011,
+   "std": 0.0061,
+   "gurultu": 0.011,
+   "degerler": {
+    "00_asil_a": 0.26,
+    "n1_yeniden_kodlama": 0.25,
+    "n3_yeniden_karisim": 0.249
+   }
+  },
+  "kaydirma": {
+   "n": 3,
+   "en_az": 0,
+   "en_cok": 0,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 0,
+    "n1_yeniden_kodlama": 0,
+    "n3_yeniden_karisim": 0
+   }
+  },
+  "cent": {
+   "n": 3,
+   "en_az": 8.8,
+   "en_cok": 9.0,
+   "aralik": 0.2,
+   "std": 0.1155,
+   "gurultu": 0.2,
+   "degerler": {
+    "00_asil_a": 8.8,
+    "n1_yeniden_kodlama": 8.8,
+    "n3_yeniden_karisim": 9.0
+   }
+  },
+  "cent_isaretli": {
+   "n": 3,
+   "en_az": -4.8,
+   "en_cok": -4.7,
+   "aralik": 0.1,
+   "std": 0.0577,
+   "gurultu": 0.1,
+   "degerler": {
+    "00_asil_a": -4.7,
+    "n1_yeniden_kodlama": -4.8,
+    "n3_yeniden_karisim": -4.7
+   }
+  },
+  "y25": {
+   "n": 3,
+   "en_az": 88.4,
+   "en_cok": 88.9,
+   "aralik": 0.5,
+   "std": 0.2887,
+   "gurultu": 0.5,
+   "degerler": {
+    "00_asil_a": 88.4,
+    "n1_yeniden_kodlama": 88.9,
+    "n3_yeniden_karisim": 88.4
+   }
+  },
+  "akort_kaymasi": {
+   "n": 3,
+   "en_az": -5.0,
+   "en_cok": -4.9,
+   "aralik": 0.1,
+   "std": 0.0577,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": -5.0,
+    "n1_yeniden_kodlama": -4.9,
+    "n3_yeniden_karisim": -4.9
+   }
+  },
+  "izgara_R": {
+   "n": 3,
+   "en_az": 0.66,
+   "en_cok": 0.67,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.67,
+    "n1_yeniden_kodlama": 0.67,
+    "n3_yeniden_karisim": 0.66
+   }
+  },
+  "gam_ici": {
+   "n": 3,
+   "en_az": 0.858,
+   "en_cok": 0.868,
+   "aralik": 0.01,
+   "std": 0.005,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.858,
+    "n1_yeniden_kodlama": 0.868,
+    "n3_yeniden_karisim": 0.862
+   }
+  },
+  "akor_sesi": {
+   "n": 3,
+   "en_az": 0.704,
+   "en_cok": 0.711,
+   "aralik": 0.007,
+   "std": 0.004,
+   "gurultu": 0.007,
+   "degerler": {
+    "00_asil_a": 0.704,
+    "n1_yeniden_kodlama": 0.711,
+    "n3_yeniden_karisim": 0.711
+   }
+  },
+  "cakisan": {
+   "n": 3,
+   "en_az": 0,
+   "en_cok": 0,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 0,
+    "n1_yeniden_kodlama": 0,
+    "n3_yeniden_karisim": 0
+   }
+  },
+  "ritim_R": {
+   "n": 3,
+   "en_az": 0.36,
+   "en_cok": 0.37,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.36,
+    "n1_yeniden_kodlama": 0.37,
+    "n3_yeniden_karisim": 0.37
+   }
+  },
+  "ritim_kayma": {
+   "n": 3,
+   "en_az": 24.0,
+   "en_cok": 26.0,
+   "aralik": 2.0,
+   "std": 1.1547,
+   "gurultu": 2.0,
+   "degerler": {
+    "00_asil_a": 26.0,
+    "n1_yeniden_kodlama": 24.0,
+    "n3_yeniden_karisim": 24.0
+   }
+  },
+  "ritim_40": {
+   "n": 3,
+   "en_az": 48.0,
+   "en_cok": 50.0,
+   "aralik": 2.0,
+   "std": 1.0,
+   "gurultu": 2.0,
+   "degerler": {
+    "00_asil_a": 48.0,
+    "n1_yeniden_kodlama": 50.0,
+    "n3_yeniden_karisim": 49.0
+   }
+  },
+  "ritim16_R": {
+   "n": 3,
+   "en_az": 0.36,
+   "en_cok": 0.4,
+   "aralik": 0.04,
+   "std": 0.02,
+   "gurultu": 0.04,
+   "degerler": {
+    "00_asil_a": 0.36,
+    "n1_yeniden_kodlama": 0.4,
+    "n3_yeniden_karisim": 0.38
+   }
+  },
+  "ritim16_kayma": {
+   "n": 3,
+   "en_az": 30.0,
+   "en_cok": 31.0,
+   "aralik": 1.0,
+   "std": 0.5774,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 31.0,
+    "n1_yeniden_kodlama": 30.0,
+    "n3_yeniden_karisim": 30.0
+   }
+  },
+  "baslangic": {
+   "n": 3,
+   "en_az": 200,
+   "en_cok": 203,
+   "aralik": 3.0,
+   "std": 1.5275,
+   "gurultu": 3.0,
+   "degerler": {
+    "00_asil_a": 201,
+    "n1_yeniden_kodlama": 200,
+    "n3_yeniden_karisim": 203
+   }
+  },
+  "nota_sayisi": {
+   "n": 3,
+   "en_az": 127,
+   "en_cok": 131,
+   "aralik": 4.0,
+   "std": 2.0817,
+   "gurultu": 4.0,
+   "degerler": {
+    "00_asil_a": 128,
+    "n1_yeniden_kodlama": 131,
+    "n3_yeniden_karisim": 127
+   }
+  },
+  "nota_suresi": {
+   "n": 3,
+   "en_az": 0.18,
+   "en_cok": 0.19,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.18,
+    "n1_yeniden_kodlama": 0.18,
+    "n3_yeniden_karisim": 0.19
+   }
+  },
+  "oynaklik": {
+   "n": 3,
+   "en_az": 10.8,
+   "en_cok": 11.6,
+   "aralik": 0.8,
+   "std": 0.4041,
+   "gurultu": 0.8,
+   "degerler": {
+    "00_asil_a": 11.1,
+    "n1_yeniden_kodlama": 10.8,
+    "n3_yeniden_karisim": 11.6
+   }
+  },
+  "cok_duz": {
+   "n": 3,
+   "en_az": 0.03,
+   "en_cok": 0.03,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.03,
+    "n1_yeniden_kodlama": 0.03,
+    "n3_yeniden_karisim": 0.03
+   }
+  },
+  "vibrato": {
+   "n": 3,
+   "en_az": 0.15,
+   "en_cok": 0.16,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.15,
+    "n1_yeniden_kodlama": 0.16,
+    "n3_yeniden_karisim": 0.15
+   }
+  },
+  "gecis": {
+   "n": 3,
+   "en_az": 0.17,
+   "en_cok": 0.18,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 0.18,
+    "n1_yeniden_kodlama": 0.17,
+    "n3_yeniden_karisim": 0.17
+   }
+  },
+  "sesli_oran": {
+   "n": 3,
+   "en_az": 0.302,
+   "en_cok": 0.307,
+   "aralik": 0.005,
+   "std": 0.0026,
+   "gurultu": 0.005,
+   "degerler": {
+    "00_asil_a": 0.307,
+    "n1_yeniden_kodlama": 0.303,
+    "n3_yeniden_karisim": 0.302
+   }
+  },
+  "pyin_uyum": {
+   "n": 3,
+   "en_az": 93.6,
+   "en_cok": 94.0,
+   "aralik": 0.4,
+   "std": 0.2082,
+   "gurultu": 0.4,
+   "degerler": {
+    "00_asil_a": 93.6,
+    "n1_yeniden_kodlama": 93.9,
+    "n3_yeniden_karisim": 94.0
+   }
+  },
+  "yapay_isaret": {
+   "n": 3,
+   "en_az": 0,
+   "en_cok": 0,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 1.0,
+   "degerler": {
+    "00_asil_a": 0,
+    "n1_yeniden_kodlama": 0,
+    "n3_yeniden_karisim": 0
+   }
+  },
+  "gecis_ms": {
+   "n": 3,
+   "en_az": 32.0,
+   "en_cok": 32.0,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 16.0,
+   "degerler": {
+    "00_asil_a": 32.0,
+    "n1_yeniden_kodlama": 32.0,
+    "n3_yeniden_karisim": 32.0
+   }
+  },
+  "donmus": {
+   "n": 3,
+   "en_az": 0.0,
+   "en_cok": 0.0,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 0.005,
+   "degerler": {
+    "00_asil_a": 0.0,
+    "n1_yeniden_kodlama": 0.0,
+    "n3_yeniden_karisim": 0.0
+   }
+  },
+  "benzerlik": {
+   "n": 3,
+   "en_az": 0.9825,
+   "en_cok": 0.9827,
+   "aralik": 0.0002,
+   "std": 0.0001,
+   "gurultu": 0.0005,
+   "degerler": {
+    "00_asil_a": 0.9827,
+    "n1_yeniden_kodlama": 0.9827,
+    "n3_yeniden_karisim": 0.9825
+   }
+  },
+  "unsuz_tiz": {
+   "n": 3,
+   "en_az": -11.3,
+   "en_cok": -11.1,
+   "aralik": 0.2,
+   "std": 0.1155,
+   "gurultu": 0.2,
+   "degerler": {
+    "00_asil_a": -11.1,
+    "n1_yeniden_kodlama": -11.3,
+    "n3_yeniden_karisim": -11.3
+   }
+  },
+  "vokal_ust": {
+   "n": 3,
+   "en_az": 10723,
+   "en_cok": 10723,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 50.0,
+   "degerler": {
+    "00_asil_a": 10723,
+    "n1_yeniden_kodlama": 10723,
+    "n3_yeniden_karisim": 10723
+   }
+  },
+  "tiz_doku": {
+   "n": 3,
+   "en_az": 1.42,
+   "en_cok": 1.43,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 1.42,
+    "n1_yeniden_kodlama": 1.43,
+    "n3_yeniden_karisim": 1.43
+   }
+  },
+  "zarf": {
+   "n": 3,
+   "en_az": -9.1,
+   "en_cok": -8.7,
+   "aralik": 0.4,
+   "std": 0.2082,
+   "gurultu": 0.4,
+   "degerler": {
+    "00_asil_a": -9.1,
+    "n1_yeniden_kodlama": -8.8,
+    "n3_yeniden_karisim": -8.7
+   }
+  },
+  "dnsmos": {
+   "n": 3,
+   "en_az": 2.71,
+   "en_cok": 2.73,
+   "aralik": 0.02,
+   "std": 0.0115,
+   "gurultu": 0.02,
+   "degerler": {
+    "00_asil_a": 2.71,
+    "n1_yeniden_kodlama": 2.73,
+    "n3_yeniden_karisim": 2.71
+   }
+  },
+  "nisqa": {
+   "n": 3,
+   "en_az": 2.88,
+   "en_cok": 2.94,
+   "aralik": 0.06,
+   "std": 0.0321,
+   "gurultu": 0.06,
+   "degerler": {
+    "00_asil_a": 2.88,
+    "n1_yeniden_kodlama": 2.93,
+    "n3_yeniden_karisim": 2.94
+   }
+  },
+  "nisqa_kes": {
+   "n": 3,
+   "en_az": 4.41,
+   "en_cok": 4.43,
+   "aralik": 0.02,
+   "std": 0.01,
+   "gurultu": 0.02,
+   "degerler": {
+    "00_asil_a": 4.41,
+    "n1_yeniden_kodlama": 4.43,
+    "n3_yeniden_karisim": 4.42
+   }
+  },
+  "nisqa_renk": {
+   "n": 3,
+   "en_az": 3.42,
+   "en_cok": 3.43,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 3.42,
+    "n1_yeniden_kodlama": 3.43,
+    "n3_yeniden_karisim": 3.42
+   }
+  },
+  "distillmos": {
+   "n": 3,
+   "en_az": 3.41,
+   "en_cok": 3.42,
+   "aralik": 0.01,
+   "std": 0.0058,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 3.41,
+    "n1_yeniden_kodlama": 3.42,
+    "n3_yeniden_karisim": 3.42
+   }
+  },
+  "utmos": {
+   "n": 3,
+   "en_az": 1.49,
+   "en_cok": 1.49,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 0.01,
+   "degerler": {
+    "00_asil_a": 1.49,
+    "n1_yeniden_kodlama": 1.49,
+    "n3_yeniden_karisim": 1.49
+   }
+  },
+  "ced_sarki": {
+   "n": 3,
+   "en_az": 0.078,
+   "en_cok": 0.079,
+   "aralik": 0.001,
+   "std": 0.0006,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.079,
+    "n1_yeniden_kodlama": 0.079,
+    "n3_yeniden_karisim": 0.078
+   }
+  },
+  "ced_sentetik": {
+   "n": 3,
+   "en_az": 0.021,
+   "en_cok": 0.021,
+   "aralik": 0.0,
+   "std": 0.0,
+   "gurultu": 0.002,
+   "degerler": {
+    "00_asil_a": 0.021,
+    "n1_yeniden_kodlama": 0.021,
+    "n3_yeniden_karisim": 0.021
+   }
+  }
+ },
+ "olcu_adlari": {
+  "lufs": "ses yüksekliği (LUFS)",
+  "tepe": "gerçek tepe (dBTP)",
+  "tepe_faktoru": "tepe faktörü (dB)",
+  "lra": "ses yüksekliği aralığı (LU)",
+  "tam_olcek": "tam ölçekteki örnek sayısı",
+  "ust_frekans": "üst frekans sınırı (Hz)",
+  "tempo": "tempo (BPM)",
+  "nabiz": "nabız netliği",
+  "olay": "olay yoğunluğu (1/sn)",
+  "aki": "spektral akı",
+  "vurmali": "vurmalı/armonik (dB)",
+  "parlaklik": "parlaklık (Hz)",
+  "tiz_payi": "4 kHz üstü pay (dB)",
+  "puan": "hareketlilik puanı (0-100)",
+  "coca": "MusicCoCa coşku farkı",
+  "coca_tempo": "MusicCoCa hızlı-yavaş farkı",
+  "coca_kalite": "MusicCoCa kayıt kalitesi farkı",
+  "ninni": "CED ninni olasılığı",
+  "ced_cosku": "CED coşkulu - sakin",
+  "denge": "vokal - altyapı (dB)",
+  "vokalli": "vokalli süre oranı",
+  "sizinti": "vokal kanalına sızıntı (dB)",
+  "destek": "armonik destek farkı",
+  "kaydirma": "en iyi kaydırma (yarım ses)",
+  "cent": "notaya uzaklık medyan (cent)",
+  "cent_isaretli": "notaya uzaklık ortalama, işaretli (cent)",
+  "y25": "±25 cent içinde (%)",
+  "akort_kaymasi": "vokalin genel akort kayması (cent)",
+  "izgara_R": "perde ızgarasına yapışma R",
+  "gam_ici": "gam içi süre oranı",
+  "akor_sesi": "akor sesi süre oranı",
+  "cakisan": "çakışan uzun nota sayısı",
+  "ritim_R": "ritim sıkılığı R (sekizlik)",
+  "ritim_kayma": "ortalama kayma, sekizlik (ms)",
+  "ritim_40": "40 ms içinde (%)",
+  "ritim16_R": "ritim sıkılığı R (onaltılık)",
+  "ritim16_kayma": "ortalama kayma, onaltılık (ms)",
+  "baslangic": "vokal başlangıç sayısı",
+  "nota_sayisi": "nota sayısı",
+  "nota_suresi": "nota süresi medyan (sn)",
+  "oynaklik": "nota içi oynaklık (cent)",
+  "cok_duz": "çok düz nota oranı",
+  "vibrato": "vibratolu uzun nota oranı",
+  "gecis": "geçiş çerçevesi oranı",
+  "sesli_oran": "perdeli çerçeve oranı",
+  "pyin_uyum": "iki perde izleyicinin uyumu (%)",
+  "yapay_isaret": "yapaylık işareti sayısı",
+  "gecis_ms": "bağlı geçiş süresi (ms)",
+  "donmus": "donmuş ünlü süre oranı",
+  "benzerlik": "ardışık çerçeve benzerliği",
+  "unsuz_tiz": "ünsüzlerde tiz payı (dB)",
+  "vokal_ust": "vokalin üst frekansı (Hz)",
+  "tiz_doku": "tiz doku değişim katsayısı",
+  "zarf": "zarf titremesi (dB)",
+  "dnsmos": "DNSMOS",
+  "nisqa": "NISQA",
+  "nisqa_kes": "NISQA kesintisizlik",
+  "nisqa_renk": "NISQA renklenmezlik",
+  "distillmos": "Distill-MOS",
+  "utmos": "UTMOS22",
+  "ced_sarki": "CED (vokal) şarkı olasılığı",
+  "ced_sentetik": "CED (vokal) sentetik şarkı olasılığı",
+  "wer": "sözcük hata oranı",
+  "hece": "hece hızı (hece/sn)"
+ },
+ "kosular": {
+  "00_asil_a": {
+   "olculer": {
+    "lufs": -12.4,
+    "tepe": 0.5,
+    "tepe_faktoru": 15.2,
+    "lra": 3.1,
+    "tam_olcek": 2,
+    "ust_frekans": 18744,
+    "tempo": 116.0,
+    "nabiz": 0.825,
+    "olay": 4.24,
+    "aki": 1.857,
+    "vurmali": 0.83,
+    "parlaklik": 2684.0,
+    "tiz_payi": -16.4,
+    "puan": 73.0,
+    "coca": 0.179,
+    "coca_tempo": 0.073,
+    "coca_kalite": 0.263,
+    "ninni": 0.0,
+    "ced_cosku": 0.142,
+    "denge": -3.4,
+    "vokalli": 0.581,
+    "sizinti": -21.0,
+    "destek": 0.26,
+    "kaydirma": 0,
+    "cent": 8.8,
+    "cent_isaretli": -4.7,
+    "y25": 88.4,
+    "akort_kaymasi": -5.0,
+    "izgara_R": 0.67,
+    "gam_ici": 0.858,
+    "akor_sesi": 0.704,
+    "cakisan": 0,
+    "ritim_R": 0.36,
+    "ritim_kayma": 26.0,
+    "ritim_40": 48.0,
+    "ritim16_R": 0.36,
+    "ritim16_kayma": 31.0,
+    "baslangic": 201,
+    "nota_sayisi": 128,
+    "nota_suresi": 0.18,
+    "oynaklik": 11.1,
+    "cok_duz": 0.03,
+    "vibrato": 0.15,
+    "gecis": 0.18,
+    "sesli_oran": 0.307,
+    "pyin_uyum": 93.6,
+    "yapay_isaret": 0,
+    "gecis_ms": 32.0,
+    "donmus": 0.0,
+    "benzerlik": 0.9827,
+    "unsuz_tiz": -11.1,
+    "vokal_ust": 10723,
+    "tiz_doku": 1.42,
+    "zarf": -9.1,
+    "dnsmos": 2.71,
+    "nisqa": 2.88,
+    "nisqa_kes": 4.41,
+    "nisqa_renk": 3.42,
+    "distillmos": 3.41,
+    "utmos": 1.49,
+    "ced_sarki": 0.079,
+    "ced_sentetik": 0.021,
+    "wer": 0.083,
+    "hece": 3.88,
+    "sorun_sayisi": 9
+   },
+   "ozet": {
+    "Ses yüksekliği": "iyi",
+    "Tepe": "dikkat",
+    "Enerji / coşku": "iyi",
+    "Vokal / altyapı dengesi": "iyi",
+    "Vokal altyapıyla aynı armonide mi": "iyi",
+    "Gam içi söyleme": "bilgi",
+    "Akort (detone mi)": "iyi",
+    "Çakışan uzun notalar": "iyi",
+    "Ritme oturma": "dikkat",
+    "Yapaylık işaretleri (vekil)": "bilgi",
+    "Sözler": "dikkat",
+    "Söyleyiş hızı": "bilgi"
+   },
+   "sorun_turleri": {
+    "söz hatası": 9
+   },
+   "hatalar": [],
+   "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx, önbellekten)"
+  },
+  "00_asil_b": {
+   "olculer": {
+    "lufs": -12.4,
+    "tepe": 0.5,
+    "tepe_faktoru": 15.2,
+    "lra": 3.1,
+    "tam_olcek": 2,
+    "ust_frekans": 18744,
+    "tempo": 116.0,
+    "nabiz": 0.825,
+    "olay": 4.24,
+    "aki": 1.857,
+    "vurmali": 0.83,
+    "parlaklik": 2684.0,
+    "tiz_payi": -16.4,
+    "puan": 73.0,
+    "coca": 0.179,
+    "coca_tempo": 0.073,
+    "coca_kalite": 0.263,
+    "ninni": 0.0,
+    "ced_cosku": 0.142,
+    "denge": -3.4,
+    "vokalli": 0.581,
+    "sizinti": -21.0,
+    "destek": 0.26,
+    "kaydirma": 0,
+    "cent": 8.8,
+    "cent_isaretli": -4.7,
+    "y25": 88.4,
+    "akort_kaymasi": -5.0,
+    "izgara_R": 0.67,
+    "gam_ici": 0.858,
+    "akor_sesi": 0.704,
+    "cakisan": 0,
+    "ritim_R": 0.36,
+    "ritim_kayma": 26.0,
+    "ritim_40": 48.0,
+    "ritim16_R": 0.36,
+    "ritim16_kayma": 31.0,
+    "baslangic": 201,
+    "nota_sayisi": 128,
+    "nota_suresi": 0.18,
+    "oynaklik": 11.1,
+    "cok_duz": 0.03,
+    "vibrato": 0.15,
+    "gecis": 0.18,
+    "sesli_oran": 0.307,
+    "pyin_uyum": 93.6,
+    "yapay_isaret": 0,
+    "gecis_ms": 32.0,
+    "donmus": 0.0,
+    "benzerlik": 0.9827,
+    "unsuz_tiz": -11.1,
+    "vokal_ust": 10723,
+    "tiz_doku": 1.42,
+    "zarf": -9.1,
+    "dnsmos": 2.71,
+    "nisqa": 2.88,
+    "nisqa_kes": 4.41,
+    "nisqa_renk": 3.42,
+    "distillmos": 3.41,
+    "utmos": 1.49,
+    "ced_sarki": 0.079,
+    "ced_sentetik": 0.021,
+    "wer": 0.083,
+    "hece": 3.88,
+    "sorun_sayisi": 9
+   },
+   "ozet": {
+    "Ses yüksekliği": "iyi",
+    "Tepe": "dikkat",
+    "Enerji / coşku": "iyi",
+    "Vokal / altyapı dengesi": "iyi",
+    "Vokal altyapıyla aynı armonide mi": "iyi",
+    "Gam içi söyleme": "bilgi",
+    "Akort (detone mi)": "iyi",
+    "Çakışan uzun notalar": "iyi",
+    "Ritme oturma": "dikkat",
+    "Yapaylık işaretleri (vekil)": "bilgi",
+    "Sözler": "dikkat",
+    "Söyleyiş hızı": "bilgi"
+   },
+   "sorun_turleri": {
+    "söz hatası": 9
+   },
+   "hatalar": [],
+   "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx, önbellekten)"
+  },
+  "n1_yeniden_kodlama": {
+   "olculer": {
+    "lufs": -12.7,
+    "tepe": -0.1,
+    "tepe_faktoru": 14.9,
+    "lra": 3.1,
+    "tam_olcek": 0,
+    "ust_frekans": 18744,
+    "tempo": 116.0,
+    "nabiz": 0.825,
+    "olay": 4.25,
+    "aki": 1.86,
+    "vurmali": 0.83,
+    "parlaklik": 2681.0,
+    "tiz_payi": -16.5,
+    "puan": 74.0,
+    "coca": 0.18,
+    "coca_tempo": 0.077,
+    "coca_kalite": 0.264,
+    "ninni": 0.0,
+    "ced_cosku": 0.141,
+    "denge": -4.0,
+    "vokalli": 0.581,
+    "sizinti": -21.7,
+    "destek": 0.25,
+    "kaydirma": 0,
+    "cent": 8.8,
+    "cent_isaretli": -4.8,
+    "y25": 88.9,
+    "akort_kaymasi": -4.9,
+    "izgara_R": 0.67,
+    "gam_ici": 0.868,
+    "akor_sesi": 0.711,
+    "cakisan": 0,
+    "ritim_R": 0.37,
+    "ritim_kayma": 24.0,
+    "ritim_40": 50.0,
+    "ritim16_R": 0.4,
+    "ritim16_kayma": 30.0,
+    "baslangic": 200,
+    "nota_sayisi": 131,
+    "nota_suresi": 0.18,
+    "oynaklik": 10.8,
+    "cok_duz": 0.03,
+    "vibrato": 0.16,
+    "gecis": 0.17,
+    "sesli_oran": 0.303,
+    "pyin_uyum": 93.9,
+    "yapay_isaret": 0,
+    "gecis_ms": 32.0,
+    "donmus": 0.0,
+    "benzerlik": 0.9827,
+    "unsuz_tiz": -11.3,
+    "vokal_ust": 10723,
+    "tiz_doku": 1.43,
+    "zarf": -8.8,
+    "dnsmos": 2.73,
+    "nisqa": 2.93,
+    "nisqa_kes": 4.43,
+    "nisqa_renk": 3.43,
+    "distillmos": 3.42,
+    "utmos": 1.49,
+    "ced_sarki": 0.079,
+    "ced_sentetik": 0.021,
+    "wer": null,
+    "hece": null,
+    "sorun_sayisi": 0
+   },
+   "ozet": {
+    "Ses yüksekliği": "iyi",
+    "Enerji / coşku": "iyi",
+    "Vokal / altyapı dengesi": "iyi",
+    "Vokal altyapıyla aynı armonide mi": "iyi",
+    "Gam içi söyleme": "bilgi",
+    "Akort (detone mi)": "iyi",
+    "Çakışan uzun notalar": "iyi",
+    "Ritme oturma": "dikkat",
+    "Yapaylık işaretleri (vekil)": "bilgi"
+   },
+   "sorun_turleri": {},
+   "hatalar": [],
+   "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx, önbellekten)"
+  },
+  "n3_yeniden_karisim": {
+   "olculer": {
+    "lufs": -12.7,
+    "tepe": 0.0,
+    "tepe_faktoru": 14.9,
+    "lra": 3.0,
+    "tam_olcek": 0,
+    "ust_frekans": 18755,
+    "tempo": 116.0,
+    "nabiz": 0.825,
+    "olay": 4.24,
+    "aki": 1.859,
+    "vurmali": 0.86,
+    "parlaklik": 2682.0,
+    "tiz_payi": -16.5,
+    "puan": 73.0,
+    "coca": 0.179,
+    "coca_tempo": 0.076,
+    "coca_kalite": 0.263,
+    "ninni": 0.0,
+    "ced_cosku": 0.14,
+    "denge": -4.1,
+    "vokalli": 0.58,
+    "sizinti": -22.0,
+    "destek": 0.249,
+    "kaydirma": 0,
+    "cent": 9.0,
+    "cent_isaretli": -4.7,
+    "y25": 88.4,
+    "akort_kaymasi": -4.9,
+    "izgara_R": 0.66,
+    "gam_ici": 0.862,
+    "akor_sesi": 0.711,
+    "cakisan": 0,
+    "ritim_R": 0.37,
+    "ritim_kayma": 24.0,
+    "ritim_40": 49.0,
+    "ritim16_R": 0.38,
+    "ritim16_kayma": 30.0,
+    "baslangic": 203,
+    "nota_sayisi": 127,
+    "nota_suresi": 0.19,
+    "oynaklik": 11.6,
+    "cok_duz": 0.03,
+    "vibrato": 0.15,
+    "gecis": 0.17,
+    "sesli_oran": 0.302,
+    "pyin_uyum": 94.0,
+    "yapay_isaret": 0,
+    "gecis_ms": 32.0,
+    "donmus": 0.0,
+    "benzerlik": 0.9825,
+    "unsuz_tiz": -11.3,
+    "vokal_ust": 10723,
+    "tiz_doku": 1.43,
+    "zarf": -8.7,
+    "dnsmos": 2.71,
+    "nisqa": 2.94,
+    "nisqa_kes": 4.42,
+    "nisqa_renk": 3.42,
+    "distillmos": 3.42,
+    "utmos": 1.49,
+    "ced_sarki": 0.078,
+    "ced_sentetik": 0.021,
+    "wer": null,
+    "hece": null,
+    "sorun_sayisi": 0
+   },
+   "ozet": {
+    "Ses yüksekliği": "iyi",
+    "Enerji / coşku": "iyi",
+    "Vokal / altyapı dengesi": "iyi",
+    "Vokal altyapıyla aynı armonide mi": "iyi",
+    "Gam içi söyleme": "bilgi",
+    "Akort (detone mi)": "iyi",
+    "Çakışan uzun notalar": "iyi",
+    "Ritme oturma": "dikkat",
+    "Yapaylık işaretleri (vekil)": "bilgi"
+   },
+   "sorun_turleri": {},
+   "hatalar": [],
+   "kanal_kaynagi": "otomatik ayırma (UVR-MDX-NET-Voc_FT.onnx, önbellekten)"
+  }
+ },
+ "kusurlar": [
+  {
+   "no": "1a",
+   "ad": "b01a_detone_50c",
+   "kusur": "Vokal 50 cent tiz (detone)",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "1b",
+   "ad": "b01b_detone_100c",
+   "kusur": "Vokal 100 cent (yarım ses) tiz",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "2a",
+   "ad": "b02a_gec_ceyrek",
+   "kusur": "Vokal çeyrek vuruş (129 ms) geç",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "2b",
+   "ad": "b02b_gec_yarim",
+   "kusur": "Vokal yarım vuruş (259 ms) geç",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "3a",
+   "ad": "b03a_esnetme_15",
+   "kusur": "Vokal 1,5 kat vokoder esnetmesi dokusunda (süre ve perde aynı)",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "3b",
+   "ad": "b03b_esnetme_20",
+   "kusur": "Vokal 2 kat vokoder esnetmesi dokusunda (süre ve perde aynı)",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "4",
+   "ad": "b04_duz_perde",
+   "kusur": "Vokalin perdesi hece başına düzleştirilmiş (otomatik akort benzeri)",
+   "ayirma_yolu": null,
+   "denetim": {
+    "ad": "b04k_world_kontrol",
+    "sonuc": null
+   }
+  },
+  {
+   "no": "5",
+   "ad": "b05_tik",
+   "kusur": "Her 3 saniyede bir tık (36 adet)",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "6a",
+   "ad": "b06a_vokal_eksi6",
+   "kusur": "Vokal 6 dB kısık",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "6b",
+   "ad": "b06b_vokal_arti6",
+   "kusur": "Vokal 6 dB fazla açık",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "7",
+   "ad": "b07_satir_sonu_kesik",
+   "kusur": "Her satırın son sözcüğü 150 ms erken kesilmiş",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "8",
+   "ad": "b08_yanlis_satir",
+   "kusur": "Bir satırın yerine başka satır söyleniyor (yanlış söz)",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "9",
+   "ad": "b09_tempo_80",
+   "kusur": "Bütün şarkı %80 tempoya yavaşlatılmış (enerji düşük)",
+   "ayirma_yolu": null
+  },
+  {
+   "no": "10",
+   "ad": "b10_alcak_geciren_4k",
+   "kusur": "Bütün karışım 4 kHz'de kesilmiş (boğuk)",
+   "ayirma_yolu": null
+  }
+ ]
+}

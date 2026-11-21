@@ -1,0 +1,17 @@
+dinle.py: /home/user/ring-tokat-3d/cocuk-kanali/parmak-ailesi/duzgun_1.mp3 -> /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/parmak-ailesi__duzgun_1
+  [cozme + temel            2.6 sn]
+  [enerji                   5.7 sn]
+  [CED etiket (karisim)     0.6 sn]
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  [MusicCoCa               10.7 sn]
+  kanal ayirma basladi (105 sn'lik sarki icin yaklasik 80-100 sn) ...
+  [kanallar               128.0 sn]
+  [ton + akor               6.9 sn]
+  [perde izleme             4.3 sn]
+  [nota + uyum              0.0 sn]
+  [ritim                    0.8 sn]
+  [yapaylik vekilleri       0.1 sn]
+  [MOS tahminleri (vokal)  31.2 sn]
+  [sozler                   0.2 sn]
+  [panolar                  6.2 sn]
+bitti: 198 sn. Rapor: /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/parmak-ailesi__duzgun_1/rapor.md

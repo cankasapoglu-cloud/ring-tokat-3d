@@ -1,0 +1,90 @@
+{
+ "_aciklama": "Her kusurun varligi, dinleme aracindan bagimsiz olcumle. 'taban' = n3_yeniden_karisim.",
+ "n3_yeniden_karisim": {
+  "asil_dosyadan_fark_db": -25.5,
+  "yorum": "yeniden karisim asil dosyanin aynisi sayilir (fark gurultu duzeyinde)"
+ },
+ "b01a_detone_50c": {
+  "vokal_perde_farki_cent_medyan": 50.0,
+  "karsilastirilan_cerceve": 1501,
+  "beklenen": 50
+ },
+ "b02a_gec_ceyrek": {
+  "vokal_gecikmesi_ms": 129.2,
+  "beklenen": 129.4
+ },
+ "b02b_gec_yarim": {
+  "vokal_gecikmesi_ms": 258.3,
+  "beklenen": 258.8
+ },
+ "b03b_esnetme_20": {
+  "vokal_perde_farki_cent_medyan": 0.0,
+  "gecikme_ms": 0.0,
+  "fark_sinyali_db_vokale_gore": 1.4,
+  "baslangic_keskinligi_p99_taban": 0.696,
+  "baslangic_keskinligi_p99_bozuk": 0.574,
+  "yorum": "perde ve zamanlama ayni; dalga bicimi tumuyle degismis (fark sinyali vokal kadar guclu), ani baslangiclar yumusamis"
+ },
+ "b04k_world_kontrol": {
+  "vokal_perde_farki_cent_medyan": 0.0,
+  "80ms_pencerede_perde_oynakligi_cent_medyan": 23.5,
+  "ayni_olcum_tabanda": 20.4,
+  "pencere_sayisi": 525,
+  "fark_sinyali_db_vokale_gore": 2.9
+ },
+ "b04_duz_perde": {
+  "vokal_perde_farki_cent_medyan": 0.0,
+  "80ms_pencerede_perde_oynakligi_cent_medyan": 7.3,
+  "ayni_olcum_tabanda": 20.4,
+  "pencere_sayisi": 478,
+  "fark_sinyali_db_vokale_gore": 2.7
+ },
+ "b05_tik": {
+  "bulunan_tik_sayisi": 36,
+  "ilk_zamanlar_sn": [
+   2.37,
+   5.37,
+   8.37,
+   11.37,
+   14.37
+  ],
+  "tik_tepe_genligi_medyan": 0.45,
+  "karisimin_tepe_genligi": 1.0,
+  "beklenen": "36 tik, 2,37 sn'den baslayarak 3 sn arayla"
+ },
+ "b06a_vokal_eksi6": {
+  "vokal_duzey_farki_db": -6.0,
+  "beklenen": -6.0
+ },
+ "b06b_vokal_arti6": {
+  "karisim_duzey_farki_db": -0.0,
+  "karisim_tepe_genligi": 1.17,
+  "taban_tepe_genligi": 1.0
+ },
+ "b07_satir_sonu_kesik": {
+  "satir_sayisi": 30,
+  "son_150ms_ve_kuyrukta_duzey_farki_db_medyan": -173.9,
+  "kesilen_bolgede_tabandaki_vokal_duzeyi_dbfs_medyan": -21.7,
+  "vokalin_genel_duzeyi_dbfs": -22.9
+ },
+ "b08_yanlis_satir": {
+  "degisen_aralik_sn": [
+   22.7,
+   24.8
+  ],
+  "beklenen_aralik_sn": [
+   22.74,
+   24.74
+  ],
+  "konan": "İnekler nasıl bağırır?",
+  "yerine": "Koyunlar nasıl meler?"
+ },
+ "b09_tempo_80": {
+  "sure_orani": 1.25,
+  "beklenen": 1.25
+ },
+ "b10_alcak_geciren_4k": {
+  "5khz_ustu_enerji_payi_db": -66.2,
+  "ayni_olcum_tabanda": -18.2
+ }
+}

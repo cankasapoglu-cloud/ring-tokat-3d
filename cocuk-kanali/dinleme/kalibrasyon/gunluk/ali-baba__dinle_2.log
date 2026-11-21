@@ -1,0 +1,16 @@
+dinle.py: /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/dinle_2.mp3 -> /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/ali-baba__dinle_2
+  [cozme + temel            3.3 sn]
+  [enerji                   6.7 sn]
+  [CED etiket (karisim)     0.8 sn]
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+  [MusicCoCa                9.3 sn]
+  [kanallar                 1.2 sn]
+  [ton + akor               6.9 sn]
+  [perde izleme             3.8 sn]
+  [nota + uyum              0.0 sn]
+  [ritim                    0.8 sn]
+  [yapaylik vekilleri       0.1 sn]
+  [MOS tahminleri (vokal)  24.7 sn]
+  [sozler                   0.2 sn]
+  [panolar                  6.4 sn]
+bitti: 65 sn. Rapor: /home/user/ring-tokat-3d/cocuk-kanali/dinleme/kalibrasyon/raporlar/ali-baba__dinle_2/rapor.md
