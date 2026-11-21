@@ -66,3 +66,23 @@ Uzun bölümdeki her parça ayrıca tek başına video olur (renkler, sayılar, 
 ## 8. Üretim
 
 `uzun-01/` klasörü yeni bölümler için şablondur: seslendirme ve şarkılar ElevenLabs'te üretilir, `kur.py` zamanlamayı ve sesi kurar, `sahne.js` çizer, `render.mjs` videoyu çıkarır. Bir uzun bölümün ElevenLabs maliyeti yaklaşık 15.000 kredi (çoğu iki şarkının dörder denemesi).
+
+## 9. Ek: En çok izlenen videolar listesinden çıkan sonuçlar (21 Kasım 2026)
+
+Kaynak: `kaynaklar/en-cok-izlenen-cocuk-videolari.docx` (kullanıcının derlemesi; rakamlar ayrıca doğrulanmadı).
+
+- **Zirvedeki videoların neredeyse tamamı şarkı.** Türkiye listesindeki 9 videonun 6'sı, dünya listesindeki 6 videonun 5'i şarkı ya da tekerleme. Kanalın omurgası uzun öğretici bölüm değil, şarkı klibi olmalı.
+- **En çok tutan temalar:** çiftlik ve hayvan sesleri, günlük bakım (el yıkama, banyo), uzay ve gezegenler, geleneksel tekerlemeler, harf sesleri.
+- **Derleme işe yarıyor:** "Tüm Şarkılar (1 Saat)" tek başına 100 milyon izlenmiş.
+- **Diyalogsuz mizah da güçlü:** Maşa ile Koca Ayı konuşma olmadan milyarlara ulaşıyor; dil engeli olmadığı için yurt dışında da izleniyor.
+
+### Güncellenen üretim sırası (hepsi özgün söz ve müzikle)
+
+1. Balon Şarkısı (renkler) — üretildi
+2. Pıtır'ın Çiftliği (hayvan sesleri)
+3. El Yıkama Şarkısı (günlük bakım)
+4. Gezegenler Şarkısı (uzay)
+5. Sayı Şarkısı (1–10)
+6. Beş şarkı birleşince ilk derleme
+
+Başka kanalların karakter, söz ve melodileri kullanılmaz. Anonim tekerlemeler (ör. çiftlik şarkısı kalıbı) ancak telif durumu doğrulandıktan sonra, kendi düzenlememizle yorumlanabilir.
