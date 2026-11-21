@@ -1,0 +1,5 @@
+# araştırma sırasında indirilen ham sayfalar ve geçici dosyalar depoya girmez
+ham-html/
+**/ham-html/
+**/_gecici/
+*.html
