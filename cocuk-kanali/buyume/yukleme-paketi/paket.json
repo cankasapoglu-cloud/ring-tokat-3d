@@ -71,7 +71,7 @@
     "DuDeK Stüdyo"
    ],
    "oynatma_listesi": "Pıtır ile Çocuk Şarkıları - Tüm Şarkılar",
-   "gun": "1. gün (söz kararı çıktıysa; yoksa yerine 5 numara)",
+   "gun": "bekliyor (söz kararı 22 Kasım'da verilecek)",
    "sure_sn": 111.7,
    "kitle": "cocuklara ozel",
    "yapay_icerik_sorusu": "evet",
@@ -121,7 +121,7 @@
     "DuDeK Stüdyo"
    ],
    "oynatma_listesi": "Pıtır ile Çocuk Şarkıları - Tüm Şarkılar",
-   "gun": "15. gün",
+   "gun": "1. gün (Ali Baba'nın yerine)",
    "sure_sn": 83.9,
    "kitle": "cocuklara ozel",
    "yapay_icerik_sorusu": "evet",
@@ -177,5 +177,11 @@
    "yapay_icerik_sorusu": "evet",
    "ilk_gorunurluk": "ozel"
   }
- ]
+ ],
+ "ilk_gun": [
+  "01-el-yikama-sarkisi.mp4",
+  "02-kedi-ailesi-sarkisi.mp4",
+  "05-bes-kucuk-maymun.mp4"
+ ],
+ "not": "21 Kasım gecesi kanal sahibinin kararı: Ali Baba ertesi güne kaldı; El Yıkama dinlendi, sözler anlaşılıyor."
 }
