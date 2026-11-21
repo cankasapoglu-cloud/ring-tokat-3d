@@ -1,0 +1,2187 @@
+{
+ "baslik": "Ali Baba'nın Çiftliği",
+ "ezgi": "Old MacDonald Had a Farm (geleneksel, kamu malı)",
+ "ton": "Sol majör (G); 5. kıtadan itibaren La majör (A)",
+ "olcu": "4/4",
+ "tempo_bpm": 134,
+ "vurus_sn": 0.448,
+ "olcu_sn": 1.79104,
+ "toplam_olcu": 85,
+ "muzik_bitis_sn": 152.239,
+ "dosya_suresi_sn": 154.739,
+ "sayim_ofseti_sn": 1.791,
+ "not": "Tüm zamanlar altyapi.wav / rehber.wav / altyapi_sesli.wav / demo başlangıcına göredir. rehber_sayimli.mp3 için her zamana sayim_ofseti_sn ekleyin.",
+ "ton_degisimi": {
+  "kita": 5,
+  "zaman_sn": 85.97,
+  "onceki": "G majör",
+  "sonraki": "A majör",
+  "yarim_ses": 2,
+  "gecis": "4. kıtanın son ölçüsünün 3-4. vuruşlarında E7",
+  "ezgi_araligi_once": "D4–B4",
+  "ezgi_araligi_sonra": "E4–C#5"
+ },
+ "form": {
+  "giris_olcu": 4,
+  "kita_olcu": 11,
+  "kita_sayisi": 7,
+  "bitis_olcu": 4,
+  "kita_ici": [
+   "ö1-2: satır 1",
+   "ö3: enstrümantal cevap (brass+glockenspiel)",
+   "ö4-5: satır 2",
+   "ö6: enstrümantal cevap",
+   "ö7: satır 3 (tekrarlı tonik)",
+   "ö8: satır 4 \"Dinle bak, dinle bak!\" (Si Si La / La La Sol)",
+   "ö9-10: HAYVAN SESİ boşluğu, 2 ölçü, her ölçüde bir ses (yalnız kick+hafif hi-hat+bas)",
+   "ö11: enstrümantal dönüş (cevap + D7; 4. kıtada E7)"
+  ]
+ },
+ "giris": {
+  "baslangic": 0,
+  "bitis": 7.164
+ },
+ "bitis": {
+  "baslangic": 145.075,
+  "son_vurus": 151.791
+ },
+ "kitalar": [
+  {
+   "kita": 1,
+   "hayvan": "inek",
+   "ton": "G majör",
+   "baslangic": 7.164,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 7.164,
+    "bitis": 10.746
+   },
+   "cevap1": {
+    "baslangic": 10.746,
+    "bitis": 12.537
+   },
+   "satir2": {
+    "soz": "Çiftliğinde inekleri var",
+    "baslangic": 12.537,
+    "bitis": 16.119
+   },
+   "cevap2": {
+    "baslangic": 16.119,
+    "bitis": 17.91
+   },
+   "satir3": {
+    "soz": "İnekler nasıl bağırır?",
+    "baslangic": 17.91,
+    "bitis": 19.701
+   },
+   "satir4": {
+    "soz": "Dinle bak, dinle bak!",
+    "baslangic": 19.701,
+    "bitis": 21.493
+   },
+   "hayvan_sesi": {
+    "baslangic": 21.493,
+    "bitis": 25.075,
+    "ses1_baslangic": 21.493,
+    "ses2_baslangic": 23.284
+   },
+   "donus": {
+    "baslangic": 25.075,
+    "bitis": 26.866
+   },
+   "bitis": 26.866,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 7.164,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 7.388,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 7.612,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 7.836,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 8.06,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 8.507,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 8.955,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 9.403,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 9.627,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 9.851,
+     "sure": 0.896
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 12.537,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 12.985,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 13.209,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 13.433,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "i",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 13.881,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "nek",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 14.328,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "le",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 14.776,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ri",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 15.0,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 15.224,
+     "sure": 0.896
+    },
+    {
+     "satir": 3,
+     "hece": "İ",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 17.91,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "nek",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 18.134,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ler",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 18.358,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "na",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 18.582,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "sıl",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 18.806,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 19.03,
+     "sure": 0.112
+    },
+    {
+     "satir": 3,
+     "hece": "ğı",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 19.142,
+     "sure": 0.112
+    },
+    {
+     "satir": 3,
+     "hece": "rır",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 19.254,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "Din",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 19.701,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 19.925,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 20.149,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "din",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 20.597,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 20.821,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 21.045,
+     "sure": 0.448
+    }
+   ]
+  },
+  {
+   "kita": 2,
+   "hayvan": "koyun",
+   "ton": "G majör",
+   "baslangic": 26.866,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 26.866,
+    "bitis": 30.448
+   },
+   "cevap1": {
+    "baslangic": 30.448,
+    "bitis": 32.239
+   },
+   "satir2": {
+    "soz": "Çiftliğinde koyunları var",
+    "baslangic": 32.239,
+    "bitis": 35.821
+   },
+   "cevap2": {
+    "baslangic": 35.821,
+    "bitis": 37.612
+   },
+   "satir3": {
+    "soz": "Koyunlar nasıl meler?",
+    "baslangic": 37.612,
+    "bitis": 39.403
+   },
+   "satir4": {
+    "soz": "Dinle bak, dinle bak!",
+    "baslangic": 39.403,
+    "bitis": 41.194
+   },
+   "hayvan_sesi": {
+    "baslangic": 41.194,
+    "bitis": 44.776,
+    "ses1_baslangic": 41.194,
+    "ses2_baslangic": 42.985
+   },
+   "donus": {
+    "baslangic": 44.776,
+    "bitis": 46.567
+   },
+   "bitis": 46.567,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 26.866,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 27.09,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 27.313,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 27.537,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 27.761,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 28.209,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 28.657,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 29.104,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 29.328,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 29.552,
+     "sure": 0.896
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 32.239,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 32.687,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 32.91,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 33.134,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "ko",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 33.582,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "yun",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 34.03,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "la",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 34.478,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "rı",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 34.701,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 34.925,
+     "sure": 0.896
+    },
+    {
+     "satir": 3,
+     "hece": "Ko",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 37.612,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "yun",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 37.836,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "lar",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 38.06,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "na",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 38.284,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "sıl",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 38.507,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "me",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 38.731,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ler",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 38.955,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "Din",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 39.403,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 39.627,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 39.851,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "din",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 40.299,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 40.522,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 40.746,
+     "sure": 0.448
+    }
+   ]
+  },
+  {
+   "kita": 3,
+   "hayvan": "at",
+   "ton": "G majör",
+   "baslangic": 46.567,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 46.567,
+    "bitis": 50.149
+   },
+   "cevap1": {
+    "baslangic": 50.149,
+    "bitis": 51.94
+   },
+   "satir2": {
+    "soz": "Çiftliğinde bir de atı var",
+    "baslangic": 51.94,
+    "bitis": 55.522
+   },
+   "cevap2": {
+    "baslangic": 55.522,
+    "bitis": 57.313
+   },
+   "satir3": {
+    "soz": "Atı nasıl kişner?",
+    "baslangic": 57.313,
+    "bitis": 59.104
+   },
+   "satir4": {
+    "soz": "Dinle bak, dinle bak!",
+    "baslangic": 59.104,
+    "bitis": 60.896
+   },
+   "hayvan_sesi": {
+    "baslangic": 60.896,
+    "bitis": 64.478,
+    "ses1_baslangic": 60.896,
+    "ses2_baslangic": 62.687
+   },
+   "donus": {
+    "baslangic": 64.478,
+    "bitis": 66.269
+   },
+   "bitis": 66.269,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 46.567,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 46.791,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 47.015,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 47.239,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 47.463,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 47.91,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 48.358,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 48.806,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 49.03,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 49.254,
+     "sure": 0.896
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 51.94,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 52.388,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 52.612,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 52.836,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "bir",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 53.284,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 53.731,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "a",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 54.179,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "tı",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 54.403,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 54.627,
+     "sure": 0.896
+    },
+    {
+     "satir": 3,
+     "hece": "A",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 57.313,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "tı",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 57.537,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "na",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 57.761,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "sıl",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 57.985,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "kiş",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 58.209,
+     "sure": 0.448
+    },
+    {
+     "satir": 3,
+     "hece": "ner",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 58.657,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "Din",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 59.104,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 59.328,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 59.552,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "din",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 60.0,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 60.224,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 60.448,
+     "sure": 0.448
+    }
+   ]
+  },
+  {
+   "kita": 4,
+   "hayvan": "horoz",
+   "ton": "G majör",
+   "baslangic": 66.269,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 66.269,
+    "bitis": 69.851
+   },
+   "cevap1": {
+    "baslangic": 69.851,
+    "bitis": 71.642
+   },
+   "satir2": {
+    "soz": "Çiftliğinde horozları var",
+    "baslangic": 71.642,
+    "bitis": 75.224
+   },
+   "cevap2": {
+    "baslangic": 75.224,
+    "bitis": 77.015
+   },
+   "satir3": {
+    "soz": "Horozlar nasıl öter?",
+    "baslangic": 77.015,
+    "bitis": 78.806
+   },
+   "satir4": {
+    "soz": "Dinle bak, dinle bak!",
+    "baslangic": 78.806,
+    "bitis": 80.597
+   },
+   "hayvan_sesi": {
+    "baslangic": 80.597,
+    "bitis": 84.179,
+    "ses1_baslangic": 80.597,
+    "ses2_baslangic": 82.388
+   },
+   "donus": {
+    "baslangic": 84.179,
+    "bitis": 85.97
+   },
+   "bitis": 85.97,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 66.269,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 66.493,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 66.716,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 66.94,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 67.164,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 67.612,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 68.06,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 68.507,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 68.731,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 68.955,
+     "sure": 0.896
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 71.642,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 72.09,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 72.313,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 72.537,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "ho",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 72.985,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "roz",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 73.433,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "la",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 73.881,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "rı",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 74.104,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "D4",
+     "midi": 62,
+     "baslangic": 74.328,
+     "sure": 0.896
+    },
+    {
+     "satir": 3,
+     "hece": "Ho",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 77.015,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "roz",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 77.239,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "lar",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 77.463,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "na",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 77.687,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "sıl",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 77.91,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ö",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 78.134,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ter",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 78.358,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "Din",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 78.806,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 79.03,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 79.254,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "din",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 79.701,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 79.925,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "G4",
+     "midi": 67,
+     "baslangic": 80.149,
+     "sure": 0.448
+    }
+   ]
+  },
+  {
+   "kita": 5,
+   "hayvan": "ördek",
+   "ton": "A majör",
+   "baslangic": 85.97,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 85.97,
+    "bitis": 89.552
+   },
+   "cevap1": {
+    "baslangic": 89.552,
+    "bitis": 91.343
+   },
+   "satir2": {
+    "soz": "Çiftliğinde ördekleri var",
+    "baslangic": 91.343,
+    "bitis": 94.925
+   },
+   "cevap2": {
+    "baslangic": 94.925,
+    "bitis": 96.716
+   },
+   "satir3": {
+    "soz": "Ördekler nasıl bağırır?",
+    "baslangic": 96.716,
+    "bitis": 98.507
+   },
+   "satir4": {
+    "soz": "Dinle bak, dinle bak!",
+    "baslangic": 98.507,
+    "bitis": 100.299
+   },
+   "hayvan_sesi": {
+    "baslangic": 100.299,
+    "bitis": 103.881,
+    "ses1_baslangic": 100.299,
+    "ses2_baslangic": 102.09
+   },
+   "donus": {
+    "baslangic": 103.881,
+    "bitis": 105.672
+   },
+   "bitis": 105.672,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 85.97,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 86.194,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 86.418,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 86.642,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 86.866,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 87.313,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 87.761,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 88.209,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 88.433,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 88.657,
+     "sure": 0.896
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 91.343,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 91.791,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 92.015,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 92.239,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "ör",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 92.687,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "dek",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 93.134,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "le",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 93.582,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ri",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 93.806,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 94.03,
+     "sure": 0.896
+    },
+    {
+     "satir": 3,
+     "hece": "Ör",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 96.716,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "dek",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 96.94,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ler",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 97.164,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "na",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 97.388,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "sıl",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 97.612,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ba",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 97.836,
+     "sure": 0.112
+    },
+    {
+     "satir": 3,
+     "hece": "ğı",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 97.948,
+     "sure": 0.112
+    },
+    {
+     "satir": 3,
+     "hece": "rır",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 98.06,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "Din",
+     "nota": "C#5",
+     "midi": 73,
+     "baslangic": 98.507,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "C#5",
+     "midi": 73,
+     "baslangic": 98.731,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 98.955,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "din",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 99.403,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 99.627,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 99.851,
+     "sure": 0.448
+    }
+   ]
+  },
+  {
+   "kita": 6,
+   "hayvan": "köpek",
+   "ton": "A majör",
+   "baslangic": 105.672,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 105.672,
+    "bitis": 109.254
+   },
+   "cevap1": {
+    "baslangic": 109.254,
+    "bitis": 111.045
+   },
+   "satir2": {
+    "soz": "Çiftliğinde köpekleri var",
+    "baslangic": 111.045,
+    "bitis": 114.627
+   },
+   "cevap2": {
+    "baslangic": 114.627,
+    "bitis": 116.418
+   },
+   "satir3": {
+    "soz": "Köpekler nasıl havlar?",
+    "baslangic": 116.418,
+    "bitis": 118.209
+   },
+   "satir4": {
+    "soz": "Dinle bak, dinle bak!",
+    "baslangic": 118.209,
+    "bitis": 120.0
+   },
+   "hayvan_sesi": {
+    "baslangic": 120.0,
+    "bitis": 123.582,
+    "ses1_baslangic": 120.0,
+    "ses2_baslangic": 121.791
+   },
+   "donus": {
+    "baslangic": 123.582,
+    "bitis": 125.373
+   },
+   "bitis": 125.373,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 105.672,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 105.896,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 106.119,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 106.343,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 106.567,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 107.015,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 107.463,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 107.91,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 108.134,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 108.358,
+     "sure": 0.896
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 111.045,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 111.493,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 111.716,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 111.94,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "kö",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 112.388,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "pek",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 112.836,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "le",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 113.284,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ri",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 113.507,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 113.731,
+     "sure": 0.896
+    },
+    {
+     "satir": 3,
+     "hece": "Kö",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 116.418,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "pek",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 116.642,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "ler",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 116.866,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "na",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 117.09,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "sıl",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 117.313,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "hav",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 117.537,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "lar",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 117.761,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "Din",
+     "nota": "C#5",
+     "midi": 73,
+     "baslangic": 118.209,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "C#5",
+     "midi": 73,
+     "baslangic": 118.433,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 118.657,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "din",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 119.104,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 119.328,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 119.552,
+     "sure": 0.448
+    }
+   ]
+  },
+  {
+   "kita": 7,
+   "hayvan": "kedi",
+   "ton": "A majör",
+   "baslangic": 125.373,
+   "satir1": {
+    "soz": "Ali Baba'nın bir çiftliği var",
+    "baslangic": 125.373,
+    "bitis": 128.955
+   },
+   "cevap1": {
+    "baslangic": 128.955,
+    "bitis": 130.746
+   },
+   "satir2": {
+    "soz": "Çiftliğinde bir kedisi var",
+    "baslangic": 130.746,
+    "bitis": 134.328
+   },
+   "cevap2": {
+    "baslangic": 134.328,
+    "bitis": 136.119
+   },
+   "satir3": {
+    "soz": "Kedisi nasıl miyavlar?",
+    "baslangic": 136.119,
+    "bitis": 137.91
+   },
+   "satir4": {
+    "soz": "Dinle bak, dinle bak!",
+    "baslangic": 137.91,
+    "bitis": 139.701
+   },
+   "hayvan_sesi": {
+    "baslangic": 139.701,
+    "bitis": 143.284,
+    "ses1_baslangic": 139.701,
+    "ses2_baslangic": 141.493
+   },
+   "donus": {
+    "baslangic": 143.284,
+    "bitis": 145.075
+   },
+   "bitis": 145.075,
+   "notalar": [
+    {
+     "satir": 1,
+     "hece": "A",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 125.373,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 125.597,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "Ba",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 125.821,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ba",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 126.045,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "nın",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 126.269,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "bir",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 126.716,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "çift",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 127.164,
+     "sure": 0.448
+    },
+    {
+     "satir": 1,
+     "hece": "li",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 127.612,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "ği",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 127.836,
+     "sure": 0.224
+    },
+    {
+     "satir": 1,
+     "hece": "var",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 128.06,
+     "sure": 0.896
+    },
+    {
+     "satir": 2,
+     "hece": "Çift",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 130.746,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "li",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 131.194,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "ğin",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 131.418,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "de",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 131.642,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "bir",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 132.09,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "ke",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 132.537,
+     "sure": 0.448
+    },
+    {
+     "satir": 2,
+     "hece": "di",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 132.985,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "si",
+     "nota": "F#4",
+     "midi": 66,
+     "baslangic": 133.209,
+     "sure": 0.224
+    },
+    {
+     "satir": 2,
+     "hece": "var",
+     "nota": "E4",
+     "midi": 64,
+     "baslangic": 133.433,
+     "sure": 0.896
+    },
+    {
+     "satir": 3,
+     "hece": "Ke",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 136.119,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "di",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 136.343,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "si",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 136.567,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "na",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 136.791,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "sıl",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 137.015,
+     "sure": 0.224
+    },
+    {
+     "satir": 3,
+     "hece": "mi",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 137.239,
+     "sure": 0.112
+    },
+    {
+     "satir": 3,
+     "hece": "yav",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 137.351,
+     "sure": 0.112
+    },
+    {
+     "satir": 3,
+     "hece": "lar",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 137.463,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "Din",
+     "nota": "C#5",
+     "midi": 73,
+     "baslangic": 137.91,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "C#5",
+     "midi": 73,
+     "baslangic": 138.134,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 138.358,
+     "sure": 0.448
+    },
+    {
+     "satir": 4,
+     "hece": "din",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 138.806,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "le",
+     "nota": "B4",
+     "midi": 71,
+     "baslangic": 139.03,
+     "sure": 0.224
+    },
+    {
+     "satir": 4,
+     "hece": "bak",
+     "nota": "A4",
+     "midi": 69,
+     "baslangic": 139.254,
+     "sure": 0.448
+    }
+   ]
+  }
+ ]
+}

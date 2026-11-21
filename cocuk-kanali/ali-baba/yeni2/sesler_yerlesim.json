@@ -1,0 +1,409 @@
+{
+ "model": "eleven_text_to_sound_v3",
+ "flow_id": "qdvipqwtDeWv5QJDVnRV",
+ "kredi_toplam": 476,
+ "kredi_not": "7 çağrı x 4 varyasyon x ~16,67 kredi (çağrı başına 68). Tüm varyasyonlar ses/alternatif/ içinde. 2. sürümde yeni üretim yapılmadı.",
+ "sesler": {
+  "inek": {
+   "dosya": "../yeni/ses/inek.mp3",
+   "kaynak_varyasyon": "inek_2",
+   "sure_sn": 6.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.96,
+     1.98
+    ],
+    [
+     3.98,
+     5.02
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.96,
+    5.02
+   ],
+   "aciklama": "iki farklı möö (aynı kayıt)",
+   "kita": 1,
+   "bosluk_sn": [
+    21.493,
+    25.075
+   ],
+   "cagrilar": [
+    {
+     "kirpma_sn": [
+      0.9,
+      2.06
+     ],
+     "dosya": "../yeni/ses/kirpilmis/inek_1.wav",
+     "sure_sn": 1.16,
+     "yerlesim_sn": [
+      21.453,
+      22.613
+     ],
+     "rms_dBFS": -13.9,
+     "altyapidan_fark_dB": 14.4
+    },
+    {
+     "kirpma_sn": [
+      3.92,
+      5.1
+     ],
+     "dosya": "../yeni/ses/kirpilmis/inek_2.wav",
+     "sure_sn": 1.18,
+     "yerlesim_sn": [
+      23.244,
+      24.424
+     ],
+     "rms_dBFS": -13.5,
+     "altyapidan_fark_dB": 14.8
+    }
+   ]
+  },
+  "koyun": {
+   "dosya": "../yeni/ses/koyun.mp3",
+   "kaynak_varyasyon": "koyun_1",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     1.13,
+     2.3
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    1.13,
+    2.3
+   ],
+   "aciklama": "aynı meleme iki kez",
+   "kita": 2,
+   "bosluk_sn": [
+    41.194,
+    44.776
+   ],
+   "cagrilar": [
+    {
+     "kirpma_sn": [
+      1.07,
+      2.36
+     ],
+     "dosya": "../yeni/ses/kirpilmis/koyun_1.wav",
+     "sure_sn": 1.29,
+     "yerlesim_sn": [
+      41.154,
+      42.444
+     ],
+     "rms_dBFS": -16.0,
+     "altyapidan_fark_dB": 12.4
+    },
+    {
+     "kirpma_sn": [
+      1.07,
+      2.36
+     ],
+     "dosya": "../yeni/ses/kirpilmis/koyun_2.wav",
+     "sure_sn": 1.29,
+     "yerlesim_sn": [
+      42.945,
+      44.235
+     ],
+     "rms_dBFS": -16.0,
+     "altyapidan_fark_dB": 12.4
+    }
+   ]
+  },
+  "at": {
+   "dosya": "../yeni/ses/at.mp3",
+   "kaynak_varyasyon": "at_4",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.07,
+     1.83
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.07,
+    1.83
+   ],
+   "aciklama": "aynı kişneme iki kez, sonu 1,7 sn'de fade ile kısaltıldı",
+   "kita": 3,
+   "bosluk_sn": [
+    60.896,
+    64.478
+   ],
+   "cagrilar": [
+    {
+     "kirpma_sn": [
+      0.02,
+      1.72
+     ],
+     "dosya": "../yeni/ses/kirpilmis/at_1.wav",
+     "sure_sn": 1.7,
+     "yerlesim_sn": [
+      60.856,
+      62.556
+     ],
+     "rms_dBFS": -15.2,
+     "altyapidan_fark_dB": 13.2
+    },
+    {
+     "kirpma_sn": [
+      0.02,
+      1.72
+     ],
+     "dosya": "../yeni/ses/kirpilmis/at_2.wav",
+     "sure_sn": 1.7,
+     "yerlesim_sn": [
+      62.647,
+      64.347
+     ],
+     "rms_dBFS": -15.2,
+     "altyapidan_fark_dB": 13.2
+    }
+   ]
+  },
+  "horoz": {
+   "dosya": "../yeni/ses/horoz.mp3",
+   "kaynak_varyasyon": "horoz_4",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.12,
+     0.3
+    ],
+    [
+     0.39,
+     2.06
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.12,
+    2.06
+   ],
+   "aciklama": "aynı ötüş iki kez, sonu 1,7 sn'de fade ile kısaltıldı",
+   "kita": 4,
+   "bosluk_sn": [
+    80.597,
+    84.179
+   ],
+   "cagrilar": [
+    {
+     "kirpma_sn": [
+      0.07,
+      1.77
+     ],
+     "dosya": "../yeni/ses/kirpilmis/horoz_1.wav",
+     "sure_sn": 1.7,
+     "yerlesim_sn": [
+      80.557,
+      82.257
+     ],
+     "rms_dBFS": -13.5,
+     "altyapidan_fark_dB": 14.9
+    },
+    {
+     "kirpma_sn": [
+      0.07,
+      1.77
+     ],
+     "dosya": "../yeni/ses/kirpilmis/horoz_2.wav",
+     "sure_sn": 1.7,
+     "yerlesim_sn": [
+      82.348,
+      84.048
+     ],
+     "rms_dBFS": -13.5,
+     "altyapidan_fark_dB": 14.9
+    }
+   ]
+  },
+  "ordek": {
+   "dosya": "../yeni/ses/ordek.mp3",
+   "kaynak_varyasyon": "ordek_2",
+   "sure_sn": 5.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.4,
+     0.74
+    ],
+    [
+     1.19,
+     1.54
+    ],
+    [
+     1.99,
+     2.32
+    ],
+    [
+     2.81,
+     3.12
+    ],
+    [
+     3.55,
+     3.86
+    ],
+    [
+     4.31,
+     4.6
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.4,
+    4.6
+   ],
+   "aciklama": "vak vak + vak vak: 1-2. ve 3-4. vaklamalar",
+   "kita": 5,
+   "bosluk_sn": [
+    100.299,
+    103.881
+   ],
+   "cagrilar": [
+    {
+     "kirpma_sn": [
+      0.35,
+      1.6
+     ],
+     "dosya": "../yeni/ses/kirpilmis/ordek_1.wav",
+     "sure_sn": 1.25,
+     "yerlesim_sn": [
+      100.259,
+      101.509
+     ],
+     "rms_dBFS": -18.9,
+     "altyapidan_fark_dB": 9.0
+    },
+    {
+     "kirpma_sn": [
+      1.94,
+      3.18
+     ],
+     "dosya": "../yeni/ses/kirpilmis/ordek_2.wav",
+     "sure_sn": 1.24,
+     "yerlesim_sn": [
+      102.05,
+      103.29
+     ],
+     "rms_dBFS": -18.5,
+     "altyapidan_fark_dB": 9.5
+    }
+   ]
+  },
+  "kopek": {
+   "dosya": "../yeni/ses/kopek.mp3",
+   "kaynak_varyasyon": "kopek_1",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.1,
+     0.25
+    ],
+    [
+     0.5,
+     0.69
+    ],
+    [
+     1.9,
+     2.07
+    ],
+    [
+     2.36,
+     2.52
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.1,
+    2.52
+   ],
+   "aciklama": "hav hav + hav hav: 1-2. ve 3-4. havlamalar",
+   "kita": 6,
+   "bosluk_sn": [
+    120.0,
+    123.582
+   ],
+   "cagrilar": [
+    {
+     "kirpma_sn": [
+      0.05,
+      0.77
+     ],
+     "dosya": "../yeni/ses/kirpilmis/kopek_1.wav",
+     "sure_sn": 0.72,
+     "yerlesim_sn": [
+      119.96,
+      120.68
+     ],
+     "rms_dBFS": -16.4,
+     "altyapidan_fark_dB": 11.5
+    },
+    {
+     "kirpma_sn": [
+      1.85,
+      2.6
+     ],
+     "dosya": "../yeni/ses/kirpilmis/kopek_2.wav",
+     "sure_sn": 0.75,
+     "yerlesim_sn": [
+      121.751,
+      122.501
+     ],
+     "rms_dBFS": -16.6,
+     "altyapidan_fark_dB": 11.3
+    }
+   ]
+  },
+  "kedi": {
+   "dosya": "../yeni/ses/kedi.mp3",
+   "kaynak_varyasyon": "kedi_1",
+   "sure_sn": 3.0,
+   "yuksek_bolumler_sn(-20dB)": [
+    [
+     0.02,
+     0.66
+    ],
+    [
+     1.85,
+     2.4
+    ]
+   ],
+   "yuksek_aralik_sn": [
+    0.02,
+    2.4
+   ],
+   "aciklama": "iki farklı miyav (aynı kayıt)",
+   "kita": 7,
+   "bosluk_sn": [
+    139.701,
+    143.284
+   ],
+   "cagrilar": [
+    {
+     "kirpma_sn": [
+      0.0,
+      0.72
+     ],
+     "dosya": "../yeni/ses/kirpilmis/kedi_1.wav",
+     "sure_sn": 0.72,
+     "yerlesim_sn": [
+      139.661,
+      140.381
+     ],
+     "rms_dBFS": -15.4,
+     "altyapidan_fark_dB": 12.6
+    },
+    {
+     "kirpma_sn": [
+      1.8,
+      2.46
+     ],
+     "dosya": "../yeni/ses/kirpilmis/kedi_2.wav",
+     "sure_sn": 0.66,
+     "yerlesim_sn": [
+      141.453,
+      142.113
+     ],
+     "rms_dBFS": -14.8,
+     "altyapidan_fark_dB": 13.2
+    }
+   ]
+  }
+ }
+}
