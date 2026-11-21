@@ -2,7 +2,7 @@
 
 Program: **Pıtır ile Öğren** · Hazırlanma: 21 Kasım 2026
 
-> **Önce adı onaylayın.** Mesajınızda "Dudek stüdyo" yazıyordu; biz "Dudek Stüdyo" diye aldık. "Düdük Stüdyo" demek istediyseniz **kapak görselini yüklemeden önce** söyleyin, çünkü ad görselin üstünde yazıyor. Değiştirmek kolaydır (6. bölüm).
+> **Ad kesinleşti (21 Kasım 2026):** kanalın adı **Dudek Stüdyo**, programın adı **Pıtır ile Öğren**. Kapakta ikisi de yazıyor.
 
 ## Okumadan önce
 
@@ -26,7 +26,7 @@ Kısa sözlük:
 
 Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, birlikte bakarız.
 
-1. **Adı kesinleştirin.** "Dudek" mi, "Düdük" mü? Claude'a yazın. Değişirse kapak görseli ve yazılar yeniden hazırlanır.
+1. **Ad kesin.** Kanal adı Dudek Stüdyo, program adı Pıtır ile Öğren. Bu adım tamam.
 
 2. **Kanalı açın.** Telefonun tarayıcısında (Chrome ya da Safari) ya da bilgisayarda youtube.com'a girin, Google hesabınızla oturum açın. Profil resminize dokunun, kanal listenizi açın, yeni kanal oluşturma seçeneğine dokunun (?). Bu yol kanalı kendi adınızla değil, stüdyo adıyla açar (?). YouTube uygulamasından değil, tarayıcıdan yapılır (?).
 
@@ -46,7 +46,7 @@ Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, 
 
 9. **İlk videoları yükleyin.** İlk gün üç video birden: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi. Yazılar ve işaretlenecek ayarlar 3. bölümde. Ali Baba'yı yüklemeden önce 4.4'teki notu okuyun; karar sizin.
 
-10. **Yayın günlerini seçin.** Haftada sabit iki gün, aynı saat (örneğin salı ve cuma). Kalan üç video bu günlerde birer birer yüklenir: Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı.
+10. **Yayın günlerini seçin.** Haftada sabit iki gün, aynı saat (örneğin salı ve cuma). Kalan dört video bu günlerde birer birer yüklenir: Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı, Otobüs Şarkısı.
 
 ---
 
@@ -76,7 +76,6 @@ Tanıtıcı (ilki doluysa sıradakini deneyin):
 @dudekcocuk
 ```
 
-- Ad "Düdük" ise sırayla: `@dudukstudyo`, `@dudukstudio`, `@dudukcocuk`.
 - Karar vermeden önce YouTube'da adı bir kez aratın: aynı ya da benzer adı kullanan başka kanal var mı? Bunu biz kontrol edemedik.
 - Düşünmeniz için ikinci seçenek: kanal adını "Pıtır ile Öğren - Dudek Stüdyo" yapmak. Artısı: ebeveyn programı adından tanır. Eksisi: ad uzar, ileride ikinci bir program açarsanız dar gelir.
 
@@ -129,7 +128,7 @@ Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; i
 
 ### 2.6 Oynatma listeleri
 
-Şimdi açılacak beş liste. Her birinin adı ve tek satır açıklaması:
+Şimdi açılacak altı liste. Her birinin adı ve tek satır açıklaması:
 
 **Liste 1 (ana liste; kanalın ana sayfasında en üstte dursun)**
 
@@ -141,7 +140,7 @@ Pıtır ile Çocuk Şarkıları - Tüm Şarkılar
 Pıtır'ın bütün şarkıları arka arkaya; aç, bırak, çalsın.
 ```
 
-Videolar: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi, Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı.
+Videolar: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi, Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı, Otobüs Şarkısı.
 
 **Liste 2**
 
@@ -191,6 +190,18 @@ El yıkama gibi her gün yapılan işlerin şarkıları.
 
 Videolar: El Yıkama Şarkısı (şimdilik tek video).
 
+**Liste 6**
+
+```
+Taşıtlar ve Yolculuk - Pıtır ile Öğren
+```
+
+```
+Otobüs, tekerlek, korna; taşıtları ve yolculuğu anlatan şarkılar.
+```
+
+Videolar: Otobüs Şarkısı (şimdilik tek video).
+
 Sonra açılacaklar: "Uzun Bölümler - Pıtır ile Öğren" (ilk uzun bölüm yüklenince) ve "Hareket ve Oyun - Pıtır ile Öğren" (ilk hareket ya da oyun videosu yüklenince).
 
 ---
@@ -207,10 +218,11 @@ Sonra açılacaklar: "Uzun Bölümler - Pıtır ile Öğren" (ilk uzun bölüm y
 | 4 | Beş Küçük Maymun | 1:24 | 1. yayın günü |
 | 5 | Balon Şarkısı | 0:50 | 2. yayın günü |
 | 6 | El Yıkama Şarkısı | 1:10 | 3. yayın günü |
+| 7 | Otobüs Şarkısı (Pıtır'ın Otobüsü) | 1:35 | 4. yayın günü (klibi onaylayınca) |
 
 İlk gün üç video birden yüklenir, çünkü boş kanal izlenmez. Ali Baba'yı bekletmeye karar verirseniz (4.4) ilk gün onun yerine Beş Küçük Maymun yüklenir.
 
-### Her yüklemede yapılacaklar (altı video için aynı)
+### Her yüklemede yapılacaklar (bütün videolar için aynı)
 
 1. Videoyu önce **Özel** olarak yükleyin. Böyle yüklenince sizden başka kimse göremez.
 2. **Başlık** ve **açıklama:** aşağıdaki kutulardan kopyalayın.
@@ -539,6 +551,73 @@ el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller 
 - **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Temizlik ve Günlük Alışkanlıklar - Pıtır ile Öğren.
 - **Not:** Projedeki ses ölçüm aracı bu kayıtta şarkıcının sesi ile arkadaki müziğin uyumuna bir soru işareti koymuş. Bu bir makine tahminidir, kesin değildir. Yüklemeden önce bir kez dikkatle dinleyin; kulağınıza iyi geliyorsa olduğu gibi yüklenir.
 
+### 3.7 Otobüs Şarkısı (Pıtır'ın Otobüsü)
+
+- **Dosya:** `/home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/otobus-sarkisi.mp4` (adında "720p" yazmayan)
+- **Süre:** 1 dakika 35 saniye · **Ne zaman:** 4. yayın günü
+- **Durum:** Şarkıyı onayladınız; klip onayınızı bekliyor.
+
+Başlık:
+
+```
+Otobüs Şarkısı | Pıtır'ın Otobüsü | Pıtır ile Öğren
+```
+
+Açıklama:
+
+```
+Pıtır otobüs şoförü oluyor: arkadaşlarını duraktan alıyor, tekerlekler dönüyor, korna çalıyor, yağmurda silecekler çalışıyor.
+3-7 yaş için, 1 dakika 35 saniye; ses sözcüklerine birlikte eşlik edilebilir.
+
+ŞARKI SÖZLERİ
+
+Bin bin bin, otobüse bin!
+Pıtır şoför, haydi yola!
+
+Hop hop hop, durağa geldik,
+Pıtır kapıyı açtı!
+Hop hop hop, hepimiz bindik,
+Hazırız, haydi Pıtır!
+
+Fır fır fır, teker dönüyor,
+Pıtır direksiyonda!
+Fır fır fır, hızlanıyoruz,
+Yollar bizi bekliyor!
+
+Bin bin bin, otobüse bin!
+Pıtır şoför, haydi yola!
+
+Düt düt düt, bu ses nereden?
+Pıtır kornaya bastı!
+Düt düt düt, herkes duyuyor,
+Yol verin, geliyoruz!
+
+Şıp şıp şıp, yağmur yağıyor,
+Silecek sağa sola!
+Şıp şıp şıp, Pıtır gülüyor,
+Yağmur bizi durdurmaz!
+
+Bin bin bin, otobüse bin!
+Pıtır şoför, haydi yola!
+
+Otobüs durdu, hoşça kal Pıtır!
+Güle güle, güle güle!
+
+Pıtır ile Öğren: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları. Bir Dudek Stüdyo yapımıdır.
+Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
+#PıtırileÖğren #çocukşarkıları #bebekşarkıları
+```
+
+Etiketler:
+
+```
+otobüs şarkısı, taşıtlar şarkısı, otobüs, taşıtlar, araçlar, yolculuk şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Pıtır ile Öğren, Pıtır
+```
+
+- **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/kare/02_kanca_b.png`. Sarı otobüs, direksiyonda şoför şapkalı Pıtır, camlarda el sallayan üç arkadaş. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Otobüs Şarkısı" yazısı eklemek.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Taşıtlar ve Yolculuk - Pıtır ile Öğren.
+- **Not:** Sözler ve ezgi özgündür; bilinen otobüs şarkısının sözü ve ezgisi kullanılmadı. 0:51'de "nereden" sözü "neden" gibi duyulabilir; yüklemeden önce bir kez dinleyin.
+
 ---
 
 ## 4. Bilmeniz gereken kurallar
@@ -600,6 +679,12 @@ Content ID, YouTube'un yüklenen videoları kayıtlı eserlerle otomatik karşı
 - Arama özetlerine göre bu talep, telif ihtarı ile aynı şey değildir (?).
 - Kanal henüz para kazanmadığı için asıl risk gelir kaybı değildir; videonun engellenmesi ya da videoda başkası adına reklam çıkmasıdır (?).
 - Üretim kayıtları (ses dosyaları, çalışma dosyaları) proje klasöründe duruyor. Silinmemeli; kaydın bize ait olduğunu gösterir.
+
+### 4.6 Aynı adı kullanan başka kanallar
+
+21 Kasım 2026'da YouTube aramasında (oturum açmadan, ilk sayfa) şunlar görüldü: "Pıtır ile Öğren" adını birebir kullanan iki küçük kanal (10 ve 388 abone), "Pıtır Kedi" adında kedili şarkılar yapan bir kanal ve adında "Pıtır" geçen pek çok küçük kanal. "Dudek Stüdyo" adında Türkçe bir kanal görülmedi.
+
+Kanalımızın adı Dudek Stüdyo olduğu için karışmayız; yine de "Pıtır ile Öğren" yazan biri önce o kanalları görebilir. Bu yüzden her açıklamanın sonunda "Bir Dudek Stüdyo yapımıdır" cümlesi duruyor ve kapakta, profilde hep aynı Pıtır kullanılıyor. Program adını ileride değiştirmek isterseniz yalnız yazılar değişir, videolar aynı kalır. Bu adların marka tescili sorgulanmadı.
 
 ---
 
@@ -666,17 +751,17 @@ Ne var üstlerinde:
 
 ### Adı değiştirip yeniden üretmek
 
-Siz yapmak zorunda değilsiniz. Claude'a "adı Düdük Stüdyo yap" yazmanız yeter. Yapılan iş şudur:
+Siz yapmak zorunda değilsiniz. Claude'a "adı şöyle yap: ..." yazmanız yeter. Yapılan iş şudur:
 
 ```
 cd /home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel
-python3 uret.py "Düdük Stüdyo"
+python3 uret.py "Yeni Ad"
 ```
 
 Program adını da değiştirmek için iki ad birlikte verilir:
 
 ```
-python3 uret.py "Düdük Stüdyo" "Pıtır ile Öğren"
+python3 uret.py "Yeni Ad" "Yeni Program Adı"
 ```
 
 - Yaklaşık 10 saniye sürer. İnternet ya da ücretli bir servis kullanmaz.
