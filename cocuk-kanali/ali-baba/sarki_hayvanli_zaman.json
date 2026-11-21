@@ -1,0 +1,51 @@
+[
+ {
+  "hayvan": "inek",
+  "ses1": 14.66,
+  "ses2": 16.17,
+  "bitis": 17.35,
+  "sonraki_kita": 18.62
+ },
+ {
+  "hayvan": "koyun",
+  "ses1": 26.94,
+  "ses2": 28.58,
+  "bitis": 29.87,
+  "sonraki_kita": 33.12
+ },
+ {
+  "hayvan": "at",
+  "ses1": 41.3,
+  "ses2": 43.35,
+  "bitis": 45.05,
+  "sonraki_kita": 46.56
+ },
+ {
+  "hayvan": "horoz",
+  "ses1": 55.0,
+  "ses2": 57.05,
+  "bitis": 58.75,
+  "sonraki_kita": 59.48
+ },
+ {
+  "hayvan": "ordek",
+  "ses1": 67.78,
+  "ses2": 69.38,
+  "bitis": 70.62,
+  "sonraki_kita": 73.96
+ },
+ {
+  "hayvan": "kopek",
+  "ses1": 82.4,
+  "ses2": 83.47,
+  "bitis": 84.22,
+  "sonraki_kita": 86.4
+ },
+ {
+  "hayvan": "kedi",
+  "ses1": 94.58,
+  "ses2": 95.65,
+  "bitis": 96.31,
+  "sonraki_kita": 100.84
+ }
+]
