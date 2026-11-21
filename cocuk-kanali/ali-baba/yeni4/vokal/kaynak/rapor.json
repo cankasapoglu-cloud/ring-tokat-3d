@@ -1,0 +1,2326 @@
+{
+ "about": "Choice and preparation of the vocal source of v2_2 (first AI take). Output: v2_2_vokal.wav, mono 44.1 kHz 24-bit, sample-aligned with v2_2.mp3 as decoded by ffmpeg (44.1 kHz). All times in this report are on that timeline.",
+ "written_utc": "2026-11-21 14:29:10",
+ "chosen": {
+  "name": "mdx",
+  "model": "UVR-MDX-NET-Voc_FT (open-source, run locally with audio-separator 0.48.0)",
+  "source_file": "/tmp/claude-0/-home-user-ring-tokat-3d/bd9d6832-1bf0-57ca-8544-ce6f4befd453/scratchpad/sep/out_mdx/v2_2_(Vocals)_UVR-MDX-NET-Voc_FT.wav",
+  "compared_candidates": [
+   "mdx"
+  ],
+  "summary": "Only ONE candidate could be evaluated: the MDX stem. The BS-Roformer render never produced its '(Vocals)' WAV: the out_rof folder was empty from 13:58 UTC on, the dedicated wait ran the full 12 minutes (14:10:10 - 14:22:10 UTC, checked every 60 s) and the separator process was still computing after 29 minutes of CPU rendering. As the task prescribes, the work continued with MDX alone, so there is no model-against-model comparison (part c) in this report. The MDX stem was therefore not chosen against a rival; it was examined on its own and found usable: band residue 46.5 dB below the sung level in the instrumental stretches, no measurable kick or hi-hat residue inside the sung bars, sibilants and voice harmonics kept at the level of the mix, no band holes, and zero lag / zero clock difference against the mix.",
+  "reasons": [
+   "Availability: the BS-Roformer candidate did not exist when the 12-minute wait ended (separator still running); MDX is the only candidate.",
+   "Bleed outside the singing: RMS in the purely instrumental stretches is -46.5 dB relative to the sung RMS (per stretch -39.3 .. -56.2 dB); the band is attenuated by 45.8 dB against the mix in the same stretches (per band: 40-120 Hz -60 dB, 120-300 Hz -51 dB, 300-1000 Hz -44 dB, 1-3 kHz -40 dB, 3-6 kHz -42 dB, 6-10 kHz -41 dB, 10-16 kHz -36 dB).",
+   "Kick inside the sung bars: 40-120 Hz level at the kick instants -58.9 dB relative to the sung RMS, i.e. 65.7 dB below the kick of the mix; the envelope rise at the 112 kick instants is not different from zero (2-sigma upper bound 86 dB below the kick rise of the mix).",
+   "Hi-hat inside the sung bars: the rise of the 8-16 kHz envelope at the 224 eighth-note hat instants is not different from zero (median +7.5e-5 +- 1.5e-4; 2-sigma upper bound 34 dB below the hat rise of the mix). At the 27 hat instants that fall into a steady held vowel the envelope shows a small DIP (about 3-5 dB for about 25 ms) instead of a bump: the separator removes the hat together with a little of the voice's own air above 8 kHz.",
+   "Band partials inside the sung frames (the old D-minor chords and bass, checked against the 2-bar loop of the band): median 33.8 dB down, 90 % of them at least 15.2 dB down, energy-weighted 23.2 dB down (upper bound: ringing voice tails that coincide with a band note count as bleed). Below the sung fundamental (120 Hz .. 0.8 f0) the stem is 29.7 dB below the mix and 41.4 dB below its own total level.",
+   "Everything that is not on the sung harmonics (voice noise, reverb, pitch glides and any bleed together) amounts to -25.8 dB of the harmonic energy of the stem in the voiced frames (0.9 f0 .. 4 kHz, 26.4 s): bleed that does not coincide with a voice harmonic is therefore at least 26 dB below the voice while it sings. Bleed that falls exactly on a voice harmonic cannot be measured.",
+   "Completeness: voice harmonics are kept at the level of the mix (22846 partials: median -0.14 dB, 10th percentile -2.5 dB, 0.98 % more than 12 dB down). The 21 onsets 'c' of ciftligi / ciftliginde keep 4-8 kHz within -0.4 dB (worst -0.9 dB) and 8-12 kHz within -1.2 dB (worst -2.1 dB) of the mix, the 's' of kedisi within -0.8 dB (4-8 kHz) and -0.1 dB (8-12 kHz); in the automatically found noisy consonant frames (5.0 s) the stem holds -0.3 dB (4-8 kHz), -0.6 dB (8-12 kHz), -1.6 dB (12-16 kHz) of the mix.",
+   "Spectrum: no 1/6-octave band hole between 200 Hz and 16 kHz. The stem ends at 17.6 kHz (limit of this model; the mp3 itself ends at 18.8 kHz), so 17.6-18.8 kHz is missing. The single 'notch' found (215 Hz) lies below the lowest sung fundamental (292 Hz) and is the natural gap under the voice, not a defect.",
+   "Musical noise: short isolated tonal peaks are 3.0 % of all spectral peaks in the sung frames of the stem against 2.3 % in the mix itself (33.9 against 16.7 per second, the stem being sparser); in the instrumental stretches the residue shows 0.2 such peaks per second above -60 dB. No sign of a flickering artefact floor, but there is no clean reference to compare with."
+  ]
+ },
+ "candidates": {
+  "mdx": {
+   "model": "UVR-MDX-NET-Voc_FT (open-source, run locally with audio-separator 0.48.0)",
+   "vocals": "/tmp/claude-0/-home-user-ring-tokat-3d/bd9d6832-1bf0-57ca-8544-ce6f4befd453/scratchpad/sep/out_mdx/v2_2_(Vocals)_UVR-MDX-NET-Voc_FT.wav",
+   "instrumental": "/tmp/claude-0/-home-user-ring-tokat-3d/bd9d6832-1bf0-57ca-8544-ce6f4befd453/scratchpad/sep/out_mdx/v2_2_(Instrumental)_UVR-MDX-NET-Voc_FT.wav"
+  }
+ },
+ "roformer_wait": {
+  "status": "missing",
+  "path": null,
+  "waited_s": 720.0,
+  "started_at": "14:10:10",
+  "ended_at": "14:22:10",
+  "separator_still_running": true
+ },
+ "candidate_not_available": {
+  "name": "rof",
+  "model": "model_bs_roformer_ep_317_sdr_12.9755 (BS-Roformer, open-source, audio-separator 0.48.0)",
+  "expected_file": "<scratchpad>/sep/out_rof/*(Vocals)*.wav",
+  "status": "never appeared within the allowed wait; separator process (CPU) still running at 14:22 UTC after 29 minutes",
+  "how_to_add_later": "run kod/calistir.sh once the file exists: 03_hizala.py and 02_karsilastir.py / 05_sarki_ici_sizinti.py pick the second candidate up automatically and 02 then also prints the agreement section (c); the decision text in karar.json must then be rewritten by whoever reads the numbers"
+ },
+ "measurement_notes": [
+  "Loop template (b1 in the comparison): at 40-300 Hz and 10-16 kHz the instrumental stem under the voice matches the band of the instrumental bars within 1 dB, but at 300-6000 Hz it is 4.6-6.3 dB lower (median). Since tonal band partials are 34 dB down in the vocal stem, the vocal stem cannot have absorbed that energy: the instrumental bars evidently carry extra mid-range material (a lead / fill, cf. the E4 sound that leaks after verse 6) that is not there under the voice. The template-based 'vocal energy left behind' figures are therefore not conclusive and were not used for the judgement; the template was only used to confirm that an off-harmonic peak is a band partial.",
+  "The hat measurement on all 224 eighths is an upper bound because sung syllables start on the same eighth grid; the 'steady' subsets (66 and 27 hits) avoid that but are small.",
+  "The stems were divided by the separator scale (0.87845) before every stem-to-mix ratio, so those ratios are true attenuations; the written file itself is not scaled."
+ ],
+ "known_weak_points_of_the_chosen_stem": [
+  "Voice-like residue directly after the sung bars: after verse 6 a sustained harmonic sound on E4 (about 331 Hz) stays at -26 .. -33 dB relative to the sung level for 0.9 s (86.3-87.2 s); smaller ones after verses 2 and 5. They lie in the instrumental bars, outside the segments that will be cut.",
+  "Breath intakes before the verses are present in the stem (before verse 1 at 8.1-8.5 s at about -20 .. -25 dB relative to the sung level; weaker before verses 2 and 3). They are voice, not bleed, and were kept out of the bleed numbers.",
+  "Nothing above 17.6 kHz; a small dip of the voice's air band (8-16 kHz) at hi-hat instants during held vowels."
+ ],
+ "timeline": {
+  "convention": "lag > 0: stem late against the mix",
+  "measured_lag_ms": 0.0,
+  "measured_lag_samples": 0.0,
+  "measured_clock_difference_ppm": 0.0,
+  "waveform_method_lag_ms": 0.0,
+  "waveform_method_clock_ppm": -0.0022935517436427667,
+  "sum_check_lag_ms": 0.0,
+  "sum_check_clock_ppm": 0.0,
+  "correction_applied_samples": 0,
+  "correction_note": "no shift was needed: the stem is already sample-aligned with the mix",
+  "why_zero": "audio-separator decodes the mp3 with the same gapless handling as ffmpeg (both give exactly 4630500 samples = 105.000 s at 44.1 kHz) and writes the stem on that grid; 1.021 x vocals + instrumental reproduces the ffmpeg-decoded mix to -76.7 dB with the correlation peak at exactly 0 samples in all 21 five-second windows.",
+  "methods": "S: vocals+instrumental against the stereo mix, generalised cross-correlation, 32x interpolation, 5 s windows; W: 250-3000 Hz waveform cross-correlation mix<->vocal stem per sung segment (35 segments), 32x interpolation; E: 1-4 kHz envelope cross-correlation per segment; D: stem-weighted log-magnitude derivative correlation per segment (D carries a known positive bias of about half a millisecond from the stem-energy weighting and is only a cross-check)",
+  "per_candidate": {
+   "mdx": {
+    "sum_check": {
+     "gain_mix_g": 0.8969168867665718,
+     "gain_mix_db": -0.9449559839566926,
+     "compensate_c": 1.0210179554947185,
+     "stem_scale_g_over_c": 0.878453588342611,
+     "stem_scale_db": -1.125623576012402,
+     "gain_stems_over_mix": 0.878453588342611,
+     "residual_db_re_mix_at_lag0": -76.6540114045487,
+     "plain_sum_gain": 0.8894170355967433,
+     "plain_sum_residual_db_re_mix": -40.26538492661466,
+     "corr_at_lag0": 0.9999999891963911,
+     "mix_peak": 1.0033316612243652,
+     "expected_g_0p9_over_peak": 0.8970114616952587,
+     "median_lag_ms": 0.0,
+     "median_lag_samples": 0.0,
+     "min_corr": 0.9999980293591894,
+     "trend_ms_per_s": 0.0,
+     "clock_ppm": 0.0,
+     "intercept_ms": 0.0,
+     "lag_at_0s_ms": 0.0,
+     "lag_at_105s_ms": 0.0
+    },
+    "sum_check_windows": [
+     {
+      "t": 2.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999997377579887
+     },
+     {
+      "t": 7.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999987450008849
+     },
+     {
+      "t": 12.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999991433061879
+     },
+     {
+      "t": 17.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999995208690482
+     },
+     {
+      "t": 22.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999994284948193
+     },
+     {
+      "t": 27.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.999999750676952
+     },
+     {
+      "t": 32.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.99999927212677
+     },
+     {
+      "t": 37.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999992084796211
+     },
+     {
+      "t": 42.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999991806283706
+     },
+     {
+      "t": 47.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999990132555509
+     },
+     {
+      "t": 52.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999995944844109
+     },
+     {
+      "t": 57.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999993824309145
+     },
+     {
+      "t": 62.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999995726955816
+     },
+     {
+      "t": 67.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999996193969165
+     },
+     {
+      "t": 72.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999990549745026
+     },
+     {
+      "t": 77.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999989671381945
+     },
+     {
+      "t": 82.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999988276072039
+     },
+     {
+      "t": 87.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999980293591894
+     },
+     {
+      "t": 92.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999988105082791
+     },
+     {
+      "t": 97.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999994485181968
+     },
+     {
+      "t": 102.5,
+      "lag_samples": 0.0,
+      "lag_ms": 0.0,
+      "corr": 0.9999988885880227
+     }
+    ],
+    "per_segment_summary": {
+     "wave_lag_ms": {
+      "median_ms": 0.0,
+      "mean_ms": 6.07385811467444e-05,
+      "sd_ms": 0.00042757353583460633,
+      "min_ms": -0.0007086167800453515,
+      "max_ms": 0.0007086167800453515,
+      "trend_ms_per_s": -2.2935517436427666e-06,
+      "clock_ppm": -0.0022935517436427667,
+      "intercept_ms": 0.0001836275357284676,
+      "residual_sd_ms": 0.0004228822665457169,
+      "trend_se_ppm": 0.002595511383625292
+     },
+     "env_lag_ms": {
+      "median_ms": 0.04967697629382587,
+      "mean_ms": 0.06422995895957272,
+      "sd_ms": 0.060759013912669003,
+      "min_ms": -0.022885059739479324,
+      "max_ms": 0.2445004622161,
+      "trend_ms_per_s": -0.000584000339985394,
+      "clock_ppm": -0.584000339985394,
+      "intercept_ms": 0.09552081230748574,
+      "residual_sd_ms": 0.058591677704201116,
+      "trend_se_ppm": 0.3596163246786744
+     },
+     "dspec_lag_ms": {
+      "median_ms": 0.5643738743211613,
+      "mean_ms": 0.6226569905418925,
+      "sd_ms": 0.22972421823086386,
+      "min_ms": 0.27740703666140404,
+      "max_ms": 1.3031966194516678,
+      "trend_ms_per_s": -0.003115025405748074,
+      "clock_ppm": -3.115025405748074,
+      "intercept_ms": 0.789560665886883,
+      "residual_sd_ms": 0.21310494617105943,
+      "trend_se_ppm": 1.3079676246817593
+     },
+     "wave_corr_median": 0.9501244721795753,
+     "wave_corr_min": 0.9075851683714168
+    },
+    "per_segment": [
+     {
+      "verse": 1,
+      "name": "L1",
+      "t": 8.5738,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9586286292493249,
+      "env_lag_ms": 0.07432879742127228,
+      "env_corr": 0.855222126281694,
+      "dspec_lag_ms": 0.8821833082028774,
+      "dspec_peak_over_mean": 3.33742437638347
+     },
+     {
+      "verse": 1,
+      "name": "L2",
+      "t": 10.8222,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9503611954699054,
+      "env_lag_ms": 0.05793551497791162,
+      "env_corr": 0.9237861954880815,
+      "dspec_lag_ms": 0.6676208685667602,
+      "dspec_peak_over_mean": 4.014367706286041
+     },
+     {
+      "verse": 1,
+      "name": "ses",
+      "t": 13.12,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9711929728708043,
+      "env_lag_ms": 0.03611188148682478,
+      "env_corr": 0.8911482493591282,
+      "dspec_lag_ms": 0.49557494925995776,
+      "dspec_peak_over_mean": 4.83180383102774
+     },
+     {
+      "verse": 1,
+      "name": "diye",
+      "t": 14.28,
+      "wave_lag_samples": -0.03125,
+      "wave_lag_ms": -0.0007086167800453515,
+      "wave_corr": 0.9578103034161471,
+      "env_lag_ms": 0.07965079259790733,
+      "env_corr": 0.9181660966756306,
+      "dspec_lag_ms": 0.5600592468622111,
+      "dspec_peak_over_mean": 3.6205318144655902
+     },
+     {
+      "verse": 1,
+      "name": "L4",
+      "t": 15.3706,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9489776783495195,
+      "env_lag_ms": 0.044997749271758536,
+      "env_corr": 0.928184074419359,
+      "dspec_lag_ms": 0.9696985408137688,
+      "dspec_peak_over_mean": 4.005197378030697
+     },
+     {
+      "verse": 2,
+      "name": "L1",
+      "t": 22.2764,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9520937572465471,
+      "env_lag_ms": 0.06707252803861621,
+      "env_corr": 0.8803276711637519,
+      "dspec_lag_ms": 0.5643738743211613,
+      "dspec_peak_over_mean": 3.7212710176308756
+     },
+     {
+      "verse": 2,
+      "name": "L2",
+      "t": 24.5335,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.955777408464001,
+      "env_lag_ms": 0.05676054230533002,
+      "env_corr": 0.9321477378567012,
+      "dspec_lag_ms": 0.7845437046703548,
+      "dspec_peak_over_mean": 3.4893530345249415
+     },
+     {
+      "verse": 2,
+      "name": "ses",
+      "t": 26.82,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9571105824051354,
+      "env_lag_ms": 0.0369274307223307,
+      "env_corr": 0.9234132017489652,
+      "dspec_lag_ms": 0.6354258554364631,
+      "dspec_peak_over_mean": 3.707061075969617
+     },
+     {
+      "verse": 2,
+      "name": "diye",
+      "t": 28.0,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9501244721795753,
+      "env_lag_ms": 0.07431120681247894,
+      "env_corr": 0.9087372101705953,
+      "dspec_lag_ms": 0.6373540681629422,
+      "dspec_peak_over_mean": 2.802840923052854
+     },
+     {
+      "verse": 2,
+      "name": "L4",
+      "t": 29.1008,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9428144514150957,
+      "env_lag_ms": 0.2445004622161,
+      "env_corr": 0.8631177229499154,
+      "dspec_lag_ms": 0.9326844606113968,
+      "dspec_peak_over_mean": 3.3185734560025377
+     },
+     {
+      "verse": 3,
+      "name": "L1",
+      "t": 36.0,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9524776304702093,
+      "env_lag_ms": 0.030352102102329442,
+      "env_corr": 0.9372431163679399,
+      "dspec_lag_ms": 0.8552129835299243,
+      "dspec_peak_over_mean": 3.1917530659975597
+     },
+     {
+      "verse": 3,
+      "name": "L2",
+      "t": 38.2437,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9527510258794221,
+      "env_lag_ms": 0.07892978750231235,
+      "env_corr": 0.9034196476381297,
+      "dspec_lag_ms": 0.3733165965208197,
+      "dspec_peak_over_mean": 4.315091586178025
+     },
+     {
+      "verse": 3,
+      "name": "ses",
+      "t": 40.54,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9551170401848583,
+      "env_lag_ms": 0.01727758960017568,
+      "env_corr": 0.9322216286628455,
+      "dspec_lag_ms": 0.5277848706055378,
+      "dspec_peak_over_mean": 4.21894409982285
+     },
+     {
+      "verse": 3,
+      "name": "diye",
+      "t": 41.72,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9622755436928451,
+      "env_lag_ms": 0.1280920448430196,
+      "env_corr": 0.9113839913678864,
+      "dspec_lag_ms": 0.4933309043462801,
+      "dspec_peak_over_mean": 3.2483020037106805
+     },
+     {
+      "verse": 3,
+      "name": "L4",
+      "t": 42.8193,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9473394139072299,
+      "env_lag_ms": 0.20665462799826256,
+      "env_corr": 0.7836754498692552,
+      "dspec_lag_ms": 1.143876647247378,
+      "dspec_peak_over_mean": 3.570140050539463
+     },
+     {
+      "verse": 4,
+      "name": "L1",
+      "t": 49.74,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9555030065949582,
+      "env_lag_ms": 0.05469569718785517,
+      "env_corr": 0.9230668828940493,
+      "dspec_lag_ms": 0.6845684981608284,
+      "dspec_peak_over_mean": 2.8736380529195684
+     },
+     {
+      "verse": 4,
+      "name": "L2",
+      "t": 51.9738,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9487875141533744,
+      "env_lag_ms": 0.1765635687466221,
+      "env_corr": 0.8890002736921069,
+      "dspec_lag_ms": 0.27740703666140404,
+      "dspec_peak_over_mean": 3.1440369671534056
+     },
+     {
+      "verse": 4,
+      "name": "ses",
+      "t": 54.3,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9569382848538571,
+      "env_lag_ms": -0.012611974742109637,
+      "env_corr": 0.9079478881875438,
+      "dspec_lag_ms": 0.8486514018724125,
+      "dspec_peak_over_mean": 2.8763717612812174
+     },
+     {
+      "verse": 4,
+      "name": "diye",
+      "t": 55.44,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9497583525887869,
+      "env_lag_ms": 0.04967697629382587,
+      "env_corr": 0.943756937765814,
+      "dspec_lag_ms": 0.49343016790853333,
+      "dspec_peak_over_mean": 3.8308569235544128
+     },
+     {
+      "verse": 4,
+      "name": "L4",
+      "t": 56.508,
+      "wave_lag_samples": -0.03125,
+      "wave_lag_ms": -0.0007086167800453515,
+      "wave_corr": 0.939221252698333,
+      "env_lag_ms": 0.11578618748032696,
+      "env_corr": 0.8324946735660653,
+      "dspec_lag_ms": 0.7397359013129149,
+      "dspec_peak_over_mean": 3.911554341467821
+     },
+     {
+      "verse": 5,
+      "name": "L1",
+      "t": 63.408,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9587768900924616,
+      "env_lag_ms": 0.010802849128508193,
+      "env_corr": 0.8472104282090949,
+      "dspec_lag_ms": 1.3031966194516678,
+      "dspec_peak_over_mean": 3.148104431689111
+     },
+     {
+      "verse": 5,
+      "name": "L2",
+      "t": 65.6822,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9497334783023483,
+      "env_lag_ms": 0.20527210148975575,
+      "env_corr": 0.9201006386456467,
+      "dspec_lag_ms": 0.549913516415251,
+      "dspec_peak_over_mean": 4.165960243603741
+     },
+     {
+      "verse": 5,
+      "name": "ses",
+      "t": 67.98,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9458286226961404,
+      "env_lag_ms": 0.003588352637938135,
+      "env_corr": 0.9135338973489271,
+      "dspec_lag_ms": 0.31938231926696187,
+      "dspec_peak_over_mean": 3.6918683722627725
+     },
+     {
+      "verse": 5,
+      "name": "diye",
+      "t": 69.16,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9504700341996871,
+      "env_lag_ms": 0.0388315479851083,
+      "env_corr": 0.9406016705972665,
+      "dspec_lag_ms": 0.7160206131716479,
+      "dspec_peak_over_mean": 3.3543835033047014
+     },
+     {
+      "verse": 5,
+      "name": "L4",
+      "t": 70.2393,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9481630910965156,
+      "env_lag_ms": 0.060866629263011424,
+      "env_corr": 0.8335181190872542,
+      "dspec_lag_ms": 0.4512977426479221,
+      "dspec_peak_over_mean": 4.187435526594141
+     },
+     {
+      "verse": 6,
+      "name": "L1",
+      "t": 77.1393,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9493968585280678,
+      "env_lag_ms": 0.037440904104807736,
+      "env_corr": 0.9085456250863129,
+      "dspec_lag_ms": 0.5173371713305803,
+      "dspec_peak_over_mean": 3.745653461282862
+     },
+     {
+      "verse": 6,
+      "name": "L2",
+      "t": 79.3834,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9470649218062932,
+      "env_lag_ms": 0.04353928953333819,
+      "env_corr": 0.9587396499078273,
+      "dspec_lag_ms": 0.6047675207131832,
+      "dspec_peak_over_mean": 3.53011130880248
+     },
+     {
+      "verse": 6,
+      "name": "ses",
+      "t": 81.7,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9672512724924388,
+      "env_lag_ms": -0.007267658182842637,
+      "env_corr": 0.9721463738137561,
+      "dspec_lag_ms": 0.41461224398707736,
+      "dspec_peak_over_mean": 3.3735086694089125
+     },
+     {
+      "verse": 6,
+      "name": "diye",
+      "t": 82.864,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9657363577480217,
+      "env_lag_ms": 0.04354796675622732,
+      "env_corr": 0.9181076233176156,
+      "dspec_lag_ms": 0.6209947855194754,
+      "dspec_peak_over_mean": 4.386497326801136
+     },
+     {
+      "verse": 6,
+      "name": "L4",
+      "t": 83.9492,
+      "wave_lag_samples": -0.03125,
+      "wave_lag_ms": -0.0007086167800453515,
+      "wave_corr": 0.9386698949720872,
+      "env_lag_ms": 0.023851651677338936,
+      "env_corr": 0.8622567493674518,
+      "dspec_lag_ms": 0.6262056020711919,
+      "dspec_peak_over_mean": 3.8575774369030764
+     },
+     {
+      "verse": 7,
+      "name": "L1",
+      "t": 90.8506,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9374469920569666,
+      "env_lag_ms": 0.0361080467349447,
+      "env_corr": 0.8831750039778401,
+      "dspec_lag_ms": 0.29174123825514603,
+      "dspec_peak_over_mean": 3.9909943188630526
+     },
+     {
+      "verse": 7,
+      "name": "L2",
+      "t": 93.1022,
+      "wave_lag_samples": 0.03125,
+      "wave_lag_ms": 0.0007086167800453515,
+      "wave_corr": 0.9401967662832388,
+      "env_lag_ms": 0.05054393014789323,
+      "env_corr": 0.9001656175638503,
+      "dspec_lag_ms": 0.4866557524514104,
+      "dspec_peak_over_mean": 3.3287389690797666
+     },
+     {
+      "verse": 7,
+      "name": "ses",
+      "t": 95.4,
+      "wave_lag_samples": -0.03125,
+      "wave_lag_ms": -0.0007086167800453515,
+      "wave_corr": 0.9349769495870313,
+      "env_lag_ms": -0.022885059739479324,
+      "env_corr": 0.8987962710264982,
+      "dspec_lag_ms": 0.4593856072806247,
+      "dspec_peak_over_mean": 3.5029700903071537
+     },
+     {
+      "verse": 7,
+      "name": "diye",
+      "t": 96.6,
+      "wave_lag_samples": 0.0,
+      "wave_lag_ms": 0.0,
+      "wave_corr": 0.9325902788660555,
+      "env_lag_ms": 0.0705466031584954,
+      "env_corr": 0.8606861122951049,
+      "dspec_lag_ms": 0.35290030929426147,
+      "dspec_peak_over_mean": 3.8087285076364905
+     },
+     {
+      "verse": 7,
+      "name": "L4",
+      "t": 97.6666,
+      "wave_lag_samples": -0.03125,
+      "wave_lag_ms": -0.0007086167800453515,
+      "wave_corr": 0.9075851683714168,
+      "env_lag_ms": 0.03524789602684918,
+      "env_corr": 0.8579212263708997,
+      "dspec_lag_ms": 0.5117497420359085,
+      "dspec_peak_over_mean": 4.207623201591419
+     }
+    ]
+   }
+  }
+ },
+ "output": {
+  "verification": {
+   "file": "/home/user/ring-tokat-3d/cocuk-kanali/ali-baba/yeni4/vokal/kaynak/v2_2_vokal.wav",
+   "samplerate": 44100,
+   "channels": 1,
+   "subtype": "PCM_24",
+   "frames": 4630500,
+   "duration_s": 105.0,
+   "max_abs_difference_to_source_mono": 0.0,
+   "exact_in_24_bit": true,
+   "peak": 0.640533447265625,
+   "peak_dbfs": -3.8691637482490684,
+   "rms_dbfs": -21.28464637095263,
+   "identical_to_A_v2_2_vokal_mdx_wav_within_half_16bit_lsb": true,
+   "max_abs_difference_to_A_v2_2_vokal_mdx_wav_in_16bit_lsb": 0.5,
+   "lag_of_written_file_ms": {
+    "waveform_median": 0.0,
+    "waveform_min": -0.0007086167800453515,
+    "waveform_max": 0.0007086167800453515,
+    "waveform_clock_ppm": -0.0022935517436427667,
+    "envelope_median": 0.04967697629382587,
+    "envelope_clock_ppm": -0.584000339985394,
+    "dspec_median": 0.5643738743211613,
+    "wave_corr_median": 0.9501244721795753
+   },
+   "sum_check_of_written_file": {
+    "method": "compensate*written vocal + mono instrumental stem against g*mono mix, 20-80 s, integer lags -8..+8",
+    "best_lag_samples": 0,
+    "residual_db_at_best_lag": -78.8099882129649,
+    "residual_db_at_plus_minus_1_sample": [
+     -15.231484016158984,
+     -15.231493120160817
+    ]
+   }
+  },
+  "levels_own_scale": {
+   "sung_words_rms_dbfs": -18.836260435245144,
+   "inst_rms_dbfs": -65.32766523274509,
+   "inst_rel_sung_db": -46.491404797499946,
+   "breath_zone_rms_dbfs": -50.827965041435064,
+   "tails_rms_dbfs": -43.87960487770542,
+   "inst_per_stretch_dbfs": [
+    -75.02863982159639,
+    -67.56813792115105,
+    -63.50683612781555,
+    -70.50227946879329,
+    -69.27494141333135,
+    -65.91382535461919,
+    -58.11705284659345,
+    -72.39028084604607
+   ],
+   "inst_per_stretch_rel_sung_db": [
+    -56.19237938635124,
+    -48.731877485905905,
+    -44.67057569257041,
+    -51.666019033548146,
+    -50.438680978086204,
+    -47.07756491937405,
+    -39.28079241134831,
+    -53.55402041080092
+   ]
+  },
+  "processing": "mono = (L+R)/2 of the separator output (16-bit stereo) written as 24-bit PCM, so every value is exact; no gain, no normalisation, no filtering, no dither, no time or pitch processing",
+  "scale_note": "The file keeps the level the separator wrote (no gain applied). The separator had scaled its input to a peak of 0.9 (factor 0.89692 = -0.945 dB) and this model's output is by design 1/1.021 of the vocal contained in the mix, so one sample of v2_2_vokal.wav = 0.87845 x (-1.126 dB) the vocal on the scale of the ffmpeg-decoded mix. Sung RMS of the file: about -18.8 dBFS."
+ },
+ "comparison": {
+  "candidates": {
+   "mdx": {
+    "file": "/tmp/claude-0/-home-user-ring-tokat-3d/bd9d6832-1bf0-57ca-8544-ce6f4befd453/scratchpad/sep/out_mdx/v2_2_(Vocals)_UVR-MDX-NET-Voc_FT.wav",
+    "separator_gain": 0.878453588342611
+   }
+  },
+  "regions": {
+   "sung_bars": [
+    [
+     8.5713,
+     17.7139
+    ],
+    [
+     22.2852,
+     31.4278
+    ],
+    [
+     35.9992,
+     45.1418
+    ],
+    [
+     49.7131,
+     58.8557
+    ],
+    [
+     63.427,
+     72.5696
+    ],
+    [
+     77.1409,
+     86.2835
+    ],
+    [
+     90.8548,
+     99.9975
+    ]
+   ],
+   "inst": [
+    [
+     0.3,
+     7.8713
+    ],
+    [
+     18.2139,
+     21.5852
+    ],
+    [
+     31.9278,
+     35.2992
+    ],
+    [
+     45.6418,
+     49.0131
+    ],
+    [
+     59.3557,
+     62.727
+    ],
+    [
+     73.0696,
+     76.4409
+    ],
+    [
+     86.7835,
+     90.1548
+    ],
+    [
+     100.4975,
+     104.5
+    ]
+   ],
+   "tails": [
+    [
+     17.7139,
+     18.2139
+    ],
+    [
+     31.4278,
+     31.9278
+    ],
+    [
+     45.1418,
+     45.6418
+    ],
+    [
+     58.8557,
+     59.3557
+    ],
+    [
+     72.5696,
+     73.0696
+    ],
+    [
+     86.2835,
+     86.7835
+    ],
+    [
+     99.9975,
+     100.4975
+    ]
+   ],
+   "pre": [
+    [
+     7.8713,
+     8.5213
+    ],
+    [
+     21.5852,
+     22.2352
+    ],
+    [
+     35.2992,
+     35.9492
+    ],
+    [
+     49.0131,
+     49.6631
+    ],
+    [
+     62.727,
+     63.377
+    ],
+    [
+     76.4409,
+     77.0909
+    ],
+    [
+     90.1548,
+     90.8048
+    ]
+   ]
+  },
+  "notes": {
+   "scale": "all stems divided by the separator gain (stems are on the scale of the ffmpeg mix, mono = (L+R)/2)",
+   "sung": "sung = the 105 word intervals of v2_2_words.json",
+   "inst": "inst = purely instrumental stretches with margins (see regions)"
+  },
+  "a1_levels": {
+   "mdx": {
+    "sung_rms_dbfs": -17.71063685923274,
+    "inst_rms_dbfs": -64.2020416567327,
+    "tail_rms_dbfs": -42.75398130169301,
+    "pre_rms_dbfs": -49.70234146542267,
+    "pre_rel_sung_db": -31.99170460618993,
+    "pre_per_verse_rel_sung_db": [
+     -24.859456345968137,
+     -37.05564812890606,
+     -32.65015471583659,
+     -35.52941402970407,
+     -49.40883091850189,
+     -39.89702257153931,
+     -46.212965465168935
+    ],
+    "inst_rel_sung_db": -46.49140479749997,
+    "tail_rel_sung_db": -25.04334444246027,
+    "per_stretch": [
+     {
+      "t0": 0.3,
+      "t1": 7.871,
+      "rms_dbfs": -73.90301624558398,
+      "rel_sung_db": -56.19237938635125,
+      "worst_50ms_rel_sung_db": -52.32754377622196,
+      "worst_50ms_t": 6.588
+     },
+     {
+      "t0": 18.214,
+      "t1": 21.585,
+      "rms_dbfs": -66.44251434513865,
+      "rel_sung_db": -48.73187748590591,
+      "worst_50ms_rel_sung_db": -40.41467840528067,
+      "worst_50ms_t": 18.268
+     },
+     {
+      "t0": 31.928,
+      "t1": 35.299,
+      "rms_dbfs": -62.381212551803145,
+      "rel_sung_db": -44.67057569257041,
+      "worst_50ms_rel_sung_db": -34.583493180106146,
+      "worst_50ms_t": 31.959
+     },
+     {
+      "t0": 45.642,
+      "t1": 49.013,
+      "rms_dbfs": -69.37665589278089,
+      "rel_sung_db": -51.66601903354815,
+      "worst_50ms_rel_sung_db": -44.26277785079817,
+      "worst_50ms_t": 45.782
+     },
+     {
+      "t0": 59.356,
+      "t1": 62.727,
+      "rms_dbfs": -68.14931783731895,
+      "rel_sung_db": -50.43868097808621,
+      "worst_50ms_rel_sung_db": -40.39285912110394,
+      "worst_50ms_t": 59.564
+     },
+     {
+      "t0": 73.07,
+      "t1": 76.441,
+      "rms_dbfs": -64.78820177860679,
+      "rel_sung_db": -47.077564919374055,
+      "worst_50ms_rel_sung_db": -33.84658088271678,
+      "worst_50ms_t": 73.095
+     },
+     {
+      "t0": 86.784,
+      "t1": 90.155,
+      "rms_dbfs": -56.991429270581044,
+      "rel_sung_db": -39.2807924113483,
+      "worst_50ms_rel_sung_db": -25.937626446367144,
+      "worst_50ms_t": 86.953
+     },
+     {
+      "t0": 100.497,
+      "t1": 104.5,
+      "rms_dbfs": -71.26465727003367,
+      "rel_sung_db": -53.55402041080093,
+      "worst_50ms_rel_sung_db": -45.31023909329946,
+      "worst_50ms_t": 101.095
+     }
+    ],
+    "bands": {
+     "40-120": {
+      "inst_rel_sung_db": -63.82508107246291,
+      "sung_band_rel_sung_db": -57.07624131656256,
+      "inst_attenuation_vs_mix_db": -60.053389574157386,
+      "sung_ratio_vs_mix_db": -54.132787816650236
+     },
+     "120-300": {
+      "inst_rel_sung_db": -60.90577716058253,
+      "sung_band_rel_sung_db": -15.532141166980526,
+      "inst_attenuation_vs_mix_db": -51.19622967418202,
+      "sung_ratio_vs_mix_db": -6.927230499580229
+     },
+     "300-1000": {
+      "inst_rel_sung_db": -51.10461643192521,
+      "sung_band_rel_sung_db": -1.582250876836472,
+      "inst_attenuation_vs_mix_db": -43.94607267586635,
+      "sung_ratio_vs_mix_db": -0.6134525692250925
+     },
+     "1000-3000": {
+      "inst_rel_sung_db": -51.26644282779468,
+      "sung_band_rel_sung_db": -8.29062897940143,
+      "inst_attenuation_vs_mix_db": -39.61645768265188,
+      "sung_ratio_vs_mix_db": -1.163497800546736
+     },
+     "3000-6000": {
+      "inst_rel_sung_db": -61.101263078530906,
+      "sung_band_rel_sung_db": -13.27711105100978,
+      "inst_attenuation_vs_mix_db": -41.898059250723435,
+      "sung_ratio_vs_mix_db": -0.7738829045090263
+     },
+     "6000-10000": {
+      "inst_rel_sung_db": -65.10942295820276,
+      "sung_band_rel_sung_db": -22.195923526797255,
+      "inst_attenuation_vs_mix_db": -40.68762972041664,
+      "sung_ratio_vs_mix_db": -2.2038012593579737
+     },
+     "10000-16000": {
+      "inst_rel_sung_db": -61.73598700089889,
+      "sung_band_rel_sung_db": -29.027062121770424,
+      "inst_attenuation_vs_mix_db": -35.85255202401241,
+      "sung_ratio_vs_mix_db": -4.824367818686554
+     }
+    },
+    "inst_attenuation_vs_mix_db": -45.78905411397124
+   },
+   "mix": {
+    "sung_rms_dbfs": -15.08255410842777,
+    "inst_rms_dbfs": -18.412987542761464,
+    "tail_rms_dbfs": -16.823482998038166,
+    "pre_rms_dbfs": -18.51113213978166,
+    "pre_rel_sung_db": -3.428578031353892,
+    "pre_per_verse_rel_sung_db": [
+     -12.805656624996898,
+     -1.9285820127677002,
+     -4.358903710177509,
+     -2.2349003361556203,
+     -2.5625335132831797,
+     -2.6972656185068313,
+     -3.676867310313325
+    ],
+    "inst_rel_sung_db": -3.3304334343336937,
+    "tail_rel_sung_db": -1.7409288896103963,
+    "per_stretch": [
+     {
+      "t0": 0.3,
+      "t1": 7.871,
+      "rms_dbfs": -28.530344351856538,
+      "rel_sung_db": -13.447790243428768,
+      "worst_50ms_rel_sung_db": -4.027806530880154,
+      "worst_50ms_t": 4.88
+     },
+     {
+      "t0": 18.214,
+      "t1": 21.585,
+      "rms_dbfs": -17.217551613952704,
+      "rel_sung_db": -2.134997505524934,
+      "worst_50ms_rel_sung_db": 6.425735880461149,
+      "worst_50ms_t": 21.178
+     },
+     {
+      "t0": 31.928,
+      "t1": 35.299,
+      "rms_dbfs": -17.46145581443694,
+      "rel_sung_db": -2.3789017060091684,
+      "worst_50ms_rel_sung_db": 6.195348443255726,
+      "worst_50ms_t": 32.606
+     },
+     {
+      "t0": 45.642,
+      "t1": 49.013,
+      "rms_dbfs": -16.643056811332087,
+      "rel_sung_db": -1.5605027029043175,
+      "worst_50ms_rel_sung_db": 6.741447012906658,
+      "worst_50ms_t": 48.028
+     },
+     {
+      "t0": 59.356,
+      "t1": 62.727,
+      "rms_dbfs": -17.146404733979853,
+      "rel_sung_db": -2.0638506255520834,
+      "worst_50ms_rel_sung_db": 6.1894779998672735,
+      "worst_50ms_t": 61.744
+     },
+     {
+      "t0": 73.07,
+      "t1": 76.441,
+      "rms_dbfs": -16.930128644333113,
+      "rel_sung_db": -1.847574535905343,
+      "worst_50ms_rel_sung_db": 6.539498111427946,
+      "worst_50ms_t": 75.455
+     },
+     {
+      "t0": 86.784,
+      "t1": 90.155,
+      "rms_dbfs": -17.224473666405753,
+      "rel_sung_db": -2.1419195579779835,
+      "worst_50ms_rel_sung_db": 6.212781143490977,
+      "worst_50ms_t": 89.744
+     },
+     {
+      "t0": 100.497,
+      "t1": 104.5,
+      "rms_dbfs": -18.787494944472968,
+      "rel_sung_db": -3.704940836045198,
+      "worst_50ms_rel_sung_db": 4.8432226777213945,
+      "worst_50ms_t": 102.32
+     }
+    ],
+    "bands": {
+     "40-120": {
+      "inst_rel_sung_db": -6.399774249110488,
+      "sung_band_rel_sung_db": -5.571536250717285
+     },
+     "120-300": {
+      "inst_rel_sung_db": -12.337630237205476,
+      "sung_band_rel_sung_db": -11.232993418205266
+     },
+     "300-1000": {
+      "inst_rel_sung_db": -9.786626506863831,
+      "sung_band_rel_sung_db": -3.596881058416349
+     },
+     "1000-3000": {
+      "inst_rel_sung_db": -14.278067895947766,
+      "sung_band_rel_sung_db": -9.755213929659662
+     },
+     "3000-6000": {
+      "inst_rel_sung_db": -21.831286578612435,
+      "sung_band_rel_sung_db": -15.131310897305722
+     },
+     "6000-10000": {
+      "inst_rel_sung_db": -27.049875988591083,
+      "sung_band_rel_sung_db": -22.62020501824425
+     },
+     "10000-16000": {
+      "inst_rel_sung_db": -28.51151772769144,
+      "sung_band_rel_sung_db": -26.830777053888838
+     }
+    }
+   }
+  },
+  "a2_beat_residue": {
+   "kick_40_120": {
+    "mix": {
+     "peak_phase_ms_inst_bars": 36.00000000000001,
+     "profile_peak_sung_bars": 0.2825967571729595,
+     "mod_depth_db_sung_bars": 37.683657257066045,
+     "mod_depth_db_inst_bars": 39.15231336779539
+    },
+    "mdx": {
+     "peak_at_hit_rel_sung_db": -58.93970602491878,
+     "floor_rel_sung_db": -65.65443806610661,
+     "mod_depth_db": 6.714732041187817,
+     "attenuation_of_hit_vs_mix_db": -65.6736863634915,
+     "band_rms_in_sung_bars_rel_sung_db": -57.22315495611306,
+     "modulation_index_beat_rate": 0.08950439178650438,
+     "modulation_index_2x_beat_rate": 0.15631718551826834,
+     "mix_modulation_index_beat_rate": 0.7835256912494275,
+     "mix_modulation_index_2x_beat_rate": 0.5749916266395679,
+     "inst_bars_peak_rel_sung_db": -57.49642472588516,
+     "profile_db_rel_sung": [
+      -59.7,
+      -59.0,
+      -59.4,
+      -60.5,
+      -63.0,
+      -65.1,
+      -66.8,
+      -67.1,
+      -67.8,
+      -67.6,
+      -66.7,
+      -64.3,
+      -61.0,
+      -59.9,
+      -59.8,
+      -60.8,
+      -63.0,
+      -65.2,
+      -65.6,
+      -64.0,
+      -63.2,
+      -62.1,
+      -62.0,
+      -62.0,
+      -61.3,
+      -60.0,
+      -59.5,
+      -59.2,
+      -59.9
+     ]
+    }
+   },
+   "hat_8k_16k": {
+    "mix": {
+     "peak_phase_ms_inst_bars": 292.0,
+     "profile_peak_sung_bars": 0.022626963511527223,
+     "mod_depth_db_sung_bars": 12.753956896776252,
+     "mod_depth_db_inst_bars": 28.795792428180466
+    },
+    "mdx": {
+     "peak_at_hit_rel_sung_db": -25.774984364977822,
+     "floor_rel_sung_db": -32.06447659903185,
+     "mod_depth_db": 6.28949223405403,
+     "attenuation_of_hit_vs_mix_db": -10.578146754326372,
+     "band_rms_in_sung_bars_rel_sung_db": -23.180058765228917,
+     "modulation_index_beat_rate": 0.008830863835202773,
+     "modulation_index_2x_beat_rate": 0.08718123822584835,
+     "mix_modulation_index_beat_rate": 0.05429091705468634,
+     "mix_modulation_index_2x_beat_rate": 0.145357275903826,
+     "inst_bars_peak_rel_sung_db": -59.24955604644989,
+     "profile_db_rel_sung": [
+      -31.4,
+      -26.8,
+      -25.1,
+      -25.2,
+      -25.9,
+      -26.5,
+      -28.4,
+      -29.3,
+      -28.3,
+      -27.3,
+      -25.6,
+      -27.2,
+      -28.7,
+      -32.6,
+      -33.6,
+      -29.6,
+      -26.8,
+      -25.0,
+      -23.4,
+      -24.4,
+      -25.2,
+      -25.8,
+      -27.3,
+      -28.1,
+      -28.8,
+      -33.7,
+      -37.2,
+      -35.8,
+      -34.0
+     ]
+    }
+   }
+  },
+  "a2b_transient": {
+   "kick_40_120": {
+    "hit_phase_ms": 38.0,
+    "pre_phase_ms": -13.000000000000005,
+    "n_hits_inst": 30,
+    "tau_ms": [
+     -60.0,
+     -40.0,
+     -25.0,
+     -14.0,
+     -6.0,
+     0.0,
+     6.0,
+     12.0,
+     20.0,
+     30.0,
+     45.0,
+     60.0,
+     80.0
+    ],
+    "mix": {
+     "median_rise_inst_bars": 0.3130717941284401,
+     "rel_profile_db_inst_bars": [
+      -240.0,
+      -2.49,
+      4.34,
+      6.79,
+      7.56,
+      7.63,
+      7.34,
+      6.69,
+      5.42,
+      3.33,
+      -0.18,
+      -2.31,
+      -3.75
+     ]
+    },
+    "mdx": {
+     "inst_bars_rise_vs_mix_db": -84.66733249841283,
+     "all": {
+      "n_hits": 112,
+      "median_rise": 1.0424926486069349e-06,
+      "bootstrap_se": 7.345278639467963e-06,
+      "mean_rise": -1.6590005628095248e-05,
+      "median_rise_rel_sung_rms_db": -101.92790203387065,
+      "sign": 1,
+      "rise_vs_mix_inst_rise_db": -109.55141881911732,
+      "upper_bound_2se_vs_mix_db": -85.97662042430892,
+      "significant_positive": false,
+      "significant_negative": false,
+      "mix_rise_same_hits_vs_inst_db": -0.8871806803914856,
+      "rel_profile_db": [
+       2.11,
+       2.15,
+       2.57,
+       2.36,
+       2.19,
+       1.95,
+       1.85,
+       1.55,
+       0.94,
+       0.01,
+       -1.89,
+       -4.15,
+       -5.49
+      ]
+     }
+    }
+   },
+   "hat_8k_16k": {
+    "hit_phase_ms": 8.0,
+    "pre_phase_ms": -13.999999999999998,
+    "n_hits_inst": 66,
+    "tau_ms": [
+     -60.0,
+     -40.0,
+     -25.0,
+     -14.0,
+     -6.0,
+     0.0,
+     6.0,
+     12.0,
+     20.0,
+     30.0,
+     45.0,
+     60.0,
+     80.0
+    ],
+    "mix": {
+     "median_rise_inst_bars": 0.01959627452699036,
+     "rel_profile_db_inst_bars": [
+      -15.12,
+      -15.65,
+      -240.0,
+      4.85,
+      10.79,
+      11.73,
+      11.87,
+      10.73,
+      7.64,
+      3.02,
+      -1.5,
+      -5.1,
+      -8.88
+     ]
+    },
+    "mdx": {
+     "inst_bars_rise_vs_mix_db": -63.7874024280207,
+     "all": {
+      "n_hits": 224,
+      "median_rise": 7.507268758072264e-05,
+      "bootstrap_se": 0.00015415084542236398,
+      "mean_rise": -0.0011999594843065061,
+      "median_rise_rel_sung_rms_db": -64.77972385045193,
+      "sign": 1,
+      "rise_vs_mix_inst_rise_db": -48.333831023142395,
+      "upper_bound_2se_vs_mix_db": -34.17100860122827,
+      "significant_positive": false,
+      "significant_negative": false,
+      "mix_rise_same_hits_vs_inst_db": -1.49951947117323,
+      "rel_profile_db": [
+       -5.0,
+       -6.92,
+       -6.78,
+       -5.53,
+       -4.8,
+       -3.74,
+       -2.32,
+       -1.28,
+       -0.73,
+       0.66,
+       1.86,
+       2.28,
+       2.4
+      ]
+     },
+     "steady6": {
+      "n_hits": 66,
+      "median_rise": -0.0006950524987113411,
+      "bootstrap_se": 0.000666700267099099,
+      "mean_rise": -0.0008396668024100298,
+      "median_rise_rel_sung_rms_db": -45.4490109598691,
+      "sign": -1,
+      "rise_vs_mix_inst_rise_db": -145.84347029839859,
+      "upper_bound_2se_vs_mix_db": -29.74231977477363,
+      "significant_positive": false,
+      "significant_negative": false,
+      "mix_rise_same_hits_vs_inst_db": -2.426553177049712,
+      "rel_profile_db": [
+       1.37,
+       -3.88,
+       -0.4,
+       -2.43,
+       -3.4,
+       -2.72,
+       -1.55,
+       -1.25,
+       -0.52,
+       1.65,
+       1.76,
+       1.58,
+       1.46
+      ]
+     },
+     "steady3": {
+      "n_hits": 27,
+      "median_rise": -0.0030888415273620214,
+      "bootstrap_se": 0.0005566779675392977,
+      "mean_rise": -0.003056006586940043,
+      "median_rise_rel_sung_rms_db": -32.4934505914501,
+      "sign": -1,
+      "rise_vs_mix_inst_rise_db": -145.84347029839859,
+      "upper_bound_2se_vs_mix_db": -145.84347029839859,
+      "significant_positive": false,
+      "significant_negative": true,
+      "mix_rise_same_hits_vs_inst_db": -4.322193164132618,
+      "rel_profile_db": [
+       2.3,
+       2.92,
+       2.34,
+       0.07,
+       -1.21,
+       -2.62,
+       -1.35,
+       -0.37,
+       -0.59,
+       -0.73,
+       0.41,
+       -0.24,
+       -2.37
+      ]
+     }
+    }
+   }
+  },
+  "template": {
+   "definition": "power spectrogram (2048/512, frames aligned to the bar line) median over instrumental bars 4 and 5 of verses 1-6; sung bars 0 and 2 are compared with bar 4 (Dm C), sung bars 1 and 3 with bar 5 (Gm A)",
+   "leave_one_out": {
+    "40-120": {
+     "leave_one_out_mean_db": 0.011973637156188488,
+     "leave_one_out_sd_db": 3.317948341369629,
+     "p90_abs_db": 5.6698503494262695
+    },
+    "120-300": {
+     "leave_one_out_mean_db": 0.2587255835533142,
+     "leave_one_out_sd_db": 2.709102153778076,
+     "p90_abs_db": 4.426111698150635
+    },
+    "300-1000": {
+     "leave_one_out_mean_db": 0.4380570650100708,
+     "leave_one_out_sd_db": 2.7939791679382324,
+     "p90_abs_db": 4.515838623046875
+    },
+    "1000-3000": {
+     "leave_one_out_mean_db": 1.0671504735946655,
+     "leave_one_out_sd_db": 2.9089386463165283,
+     "p90_abs_db": 4.982461452484131
+    },
+    "3000-6000": {
+     "leave_one_out_mean_db": 1.9630663394927979,
+     "leave_one_out_sd_db": 3.9064409732818604,
+     "p90_abs_db": 6.257760524749756
+    },
+    "6000-10000": {
+     "leave_one_out_mean_db": 1.48162043094635,
+     "leave_one_out_sd_db": 3.2719082832336426,
+     "p90_abs_db": 5.513528347015381
+    },
+    "10000-16000": {
+     "leave_one_out_mean_db": 1.3032959699630737,
+     "leave_one_out_sd_db": 3.5465710163116455,
+     "p90_abs_db": 5.7262067794799805
+    }
+   },
+   "caveat": "the template only describes the band if the accompaniment under the voice is the same loop as in the instrumental bars"
+  },
+  "b1_left_behind": {
+   "mdx": {
+    "40-120": {
+     "inst_over_template_median_db": -0.6616134643554688,
+     "inst_over_template_p90_db": 3.0782065391540527,
+     "excess_energy_rel_vocal_stem_db": 39.07532501220703,
+     "vocal_stem_energy_rel_mix_minus_template_db": -39.08916473388672
+    },
+    "120-300": {
+     "inst_over_template_median_db": -0.9752140045166016,
+     "inst_over_template_p90_db": 2.0585100650787354,
+     "excess_energy_rel_vocal_stem_db": -4.387840270996094,
+     "vocal_stem_energy_rel_mix_minus_template_db": -1.607940673828125
+    },
+    "300-1000": {
+     "inst_over_template_median_db": -6.264272689819336,
+     "inst_over_template_p90_db": -0.7899423837661743,
+     "excess_energy_rel_vocal_stem_db": -23.87572479248047,
+     "vocal_stem_energy_rel_mix_minus_template_db": 0.730438232421875
+    },
+    "1000-3000": {
+     "inst_over_template_median_db": -4.634926795959473,
+     "inst_over_template_p90_db": 0.6287895441055298,
+     "excess_energy_rel_vocal_stem_db": -16.429752349853516,
+     "vocal_stem_energy_rel_mix_minus_template_db": 0.5527839660644531
+    },
+    "3000-6000": {
+     "inst_over_template_median_db": -4.761112213134766,
+     "inst_over_template_p90_db": 0.629346489906311,
+     "excess_energy_rel_vocal_stem_db": -20.313308715820312,
+     "vocal_stem_energy_rel_mix_minus_template_db": -0.015720367431640625
+    },
+    "6000-10000": {
+     "inst_over_template_median_db": -2.381577491760254,
+     "inst_over_template_p90_db": 2.3728139400482178,
+     "excess_energy_rel_vocal_stem_db": -13.13289737701416,
+     "vocal_stem_energy_rel_mix_minus_template_db": -0.8002586364746094
+    },
+    "10000-16000": {
+     "inst_over_template_median_db": -0.5006580352783203,
+     "inst_over_template_p90_db": 4.58729362487793,
+     "excess_energy_rel_vocal_stem_db": -5.460947036743164,
+     "vocal_stem_energy_rel_mix_minus_template_db": -2.112394332885742
+    }
+   }
+  },
+  "b2_consonants": {
+   "auto": {
+    "n_frames": 431,
+    "seconds": 5.00390022675737,
+    "mdx": {
+     "2000-4000": {
+      "stem_vs_mix_db": -0.8896980285644531,
+      "stem_vs_mix_minus_template_db": 0.11363601684570312,
+      "inst_stem_vs_template_db": -3.762165069580078
+     },
+     "4000-8000": {
+      "stem_vs_mix_db": -0.34045982360839844,
+      "stem_vs_mix_minus_template_db": -0.1686267852783203,
+      "inst_stem_vs_template_db": -4.7440385818481445
+     },
+     "8000-12000": {
+      "stem_vs_mix_db": -0.6450405120849609,
+      "stem_vs_mix_minus_template_db": -0.3606834411621094,
+      "inst_stem_vs_template_db": -2.5963335037231445
+     },
+     "12000-16000": {
+      "stem_vs_mix_db": -1.6418209075927734,
+      "stem_vs_mix_minus_template_db": -0.9643745422363281,
+      "inst_stem_vs_template_db": 0.09105253219604492
+     }
+    }
+   },
+   "explicit": [
+    {
+     "word": "çiftliği",
+     "kind": "c",
+     "t0": 9.949750566893425,
+     "t1": 10.036825396825398,
+     "mdx": {
+      "2000-4000": -4.782304914630046,
+      "4000-8000": -0.5163922947579547,
+      "8000-12000": -1.1498083325698083,
+      "12000-16000": -6.3642059644222755
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 10.817596371882086,
+     "t1": 10.90467120181406,
+     "mdx": {
+      "2000-4000": -2.36238067364539,
+      "4000-8000": -0.18824189446420014,
+      "8000-12000": -0.6581894998467313,
+      "12000-16000": -7.091788016590989
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 15.365804988662132,
+     "t1": 15.452879818594106,
+     "mdx": {
+      "2000-4000": -1.8818868530747288,
+      "4000-8000": -0.3099055287746033,
+      "8000-12000": -1.1261305378293152,
+      "12000-16000": -5.98822685138061
+     }
+    },
+    {
+     "word": "çiftliği",
+     "kind": "c",
+     "t0": 23.666938775510204,
+     "t1": 23.75401360544218,
+     "mdx": {
+      "2000-4000": -2.4741065987008675,
+      "4000-8000": -0.6812123418996183,
+      "8000-12000": -1.1394565038758842,
+      "12000-16000": -4.412331864143425
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 24.528979591836734,
+     "t1": 24.61605442176871,
+     "mdx": {
+      "2000-4000": -3.4390787462335695,
+      "4000-8000": -0.23176046586634058,
+      "8000-12000": -1.1167048575461251,
+      "12000-16000": -6.612460041836542
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 29.094603174603176,
+     "t1": 29.181678004535147,
+     "mdx": {
+      "2000-4000": -2.398378021131638,
+      "4000-8000": -0.26263276265434854,
+      "8000-12000": -1.0629365473437105,
+      "12000-16000": -5.460492321130182
+     }
+    },
+    {
+     "word": "çiftliği",
+     "kind": "c",
+     "t0": 37.37832199546485,
+     "t1": 37.46539682539682,
+     "mdx": {
+      "2000-4000": -1.751147114052273,
+      "4000-8000": -0.4766650126262224,
+      "8000-12000": -1.3493810849767236,
+      "12000-16000": -1.962044490350209
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 38.240362811791385,
+     "t1": 38.32743764172336,
+     "mdx": {
+      "2000-4000": -2.691671640440738,
+      "4000-8000": -0.22297811333403494,
+      "8000-12000": -1.7184180477425848,
+      "12000-16000": -2.4808613087779285
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 42.80888888888889,
+     "t1": 42.89596371882086,
+     "mdx": {
+      "2000-4000": -2.4833307858783726,
+      "4000-8000": -0.722372514026322,
+      "8000-12000": -1.6306674001949624,
+      "12000-16000": -8.745515223834332
+     }
+    },
+    {
+     "word": "çiftliği",
+     "kind": "c",
+     "t0": 51.10421768707483,
+     "t1": 51.1912925170068,
+     "mdx": {
+      "2000-4000": -4.567531061706317,
+      "4000-8000": -0.9029816987086967,
+      "8000-12000": -2.065133550342143,
+      "12000-16000": -3.3437096396205312
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 51.96625850340136,
+     "t1": 52.053333333333335,
+     "mdx": {
+      "2000-4000": -3.1568211608957775,
+      "4000-8000": -0.36159077126889017,
+      "8000-12000": -1.694085465101331,
+      "12000-16000": -8.122494741677787
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 56.50866213151927,
+     "t1": 56.595736961451244,
+     "mdx": {
+      "2000-4000": -1.9801250252882205,
+      "4000-8000": -0.5048576978795971,
+      "8000-12000": -1.8123337151899186,
+      "12000-16000": -4.611158370247697
+     }
+    },
+    {
+     "word": "çiftliği",
+     "kind": "c",
+     "t0": 64.81560090702948,
+     "t1": 64.90267573696144,
+     "mdx": {
+      "2000-4000": -3.4101812244727796,
+      "4000-8000": -0.6735982733586781,
+      "8000-12000": -1.6476773627946528,
+      "12000-16000": -1.3903263783059252
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 65.68054421768707,
+     "t1": 65.76761904761904,
+     "mdx": {
+      "2000-4000": -2.2924971091656765,
+      "4000-8000": -0.37918815106900183,
+      "8000-12000": -2.0478842345091053,
+      "12000-16000": -2.8355693760188565
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 70.23746031746032,
+     "t1": 70.32453514739228,
+     "mdx": {
+      "2000-4000": -2.088933421536211,
+      "4000-8000": -0.31509804671983055,
+      "8000-12000": -1.257386738179072,
+      "12000-16000": -4.414114808929515
+     }
+    },
+    {
+     "word": "çiftliği",
+     "kind": "c",
+     "t0": 78.52408163265305,
+     "t1": 78.61115646258503,
+     "mdx": {
+      "2000-4000": -3.1307950490283467,
+      "4000-8000": -0.6660051497808759,
+      "8000-12000": -1.517134452992984,
+      "12000-16000": -2.2842567269342773
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 79.38031746031746,
+     "t1": 79.46739229024942,
+     "mdx": {
+      "2000-4000": -0.7732763367040683,
+      "4000-8000": -0.13974514042443964,
+      "8000-12000": -1.073336583309338,
+      "12000-16000": -1.8508094772507526
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 83.94594104308389,
+     "t1": 84.03301587301587,
+     "mdx": {
+      "2000-4000": -3.2418360711103134,
+      "4000-8000": -0.324502621170879,
+      "8000-12000": -0.6825731639126182,
+      "12000-16000": -1.8618494542829822
+     }
+    },
+    {
+     "word": "çiftliği",
+     "kind": "c",
+     "t0": 92.23256235827664,
+     "t1": 92.31963718820862,
+     "mdx": {
+      "2000-4000": -5.669994329623698,
+      "4000-8000": -0.5018224900621924,
+      "8000-12000": -1.2100453500507058,
+      "12000-16000": -2.5578338520845385
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 93.09460317460317,
+     "t1": 93.18167800453514,
+     "mdx": {
+      "2000-4000": -1.8913075592512847,
+      "4000-8000": -0.22381950002494477,
+      "8000-12000": -1.2330564512154822,
+      "12000-16000": -2.878305332346791
+     }
+    },
+    {
+     "word": "kedisi",
+     "kind": "s",
+     "t0": 94.70548752834466,
+     "t1": 94.79256235827664,
+     "mdx": {
+      "2000-4000": -8.723276348873323,
+      "4000-8000": -0.7532791310659093,
+      "8000-12000": -0.07475861864313949,
+      "12000-16000": -0.2671405743176898
+     }
+    },
+    {
+     "word": "çiftliğinde",
+     "kind": "c",
+     "t0": 97.66022675736961,
+     "t1": 97.74730158730158,
+     "mdx": {
+      "2000-4000": -3.9634893927856396,
+      "4000-8000": -0.37322179652836596,
+      "8000-12000": -1.191401594451321,
+      "12000-16000": -2.8690187643739264
+     }
+    }
+   ],
+   "explicit_summary": {
+    "mdx": {
+     "n_c": 21,
+     "median_stem_vs_mix_db": {
+      "2000-4000": -2.4833307858783726,
+      "4000-8000": -0.37322179652836596,
+      "8000-12000": -1.2330564512154822,
+      "12000-16000": -3.3437096396205312
+     },
+     "min_stem_vs_mix_db": {
+      "2000-4000": -5.669994329623698,
+      "4000-8000": -0.9029816987086967,
+      "8000-12000": -2.065133550342143,
+      "12000-16000": -8.745515223834332
+     },
+     "s_kedisi": [
+      {
+       "2000-4000": -8.723276348873323,
+       "4000-8000": -0.7532791310659093,
+       "8000-12000": -0.07475861864313949,
+       "12000-16000": -0.2671405743176898
+      }
+     ]
+    }
+   }
+  },
+  "b3_spectrum": {
+   "mdx": {
+    "ltas_70db_bandwidth_hz": [
+     0.0,
+     17635.693359375
+    ],
+    "sixth_octave_fc_hz": [
+     85,
+     107,
+     135,
+     151,
+     170,
+     190,
+     214,
+     240,
+     269,
+     302,
+     339,
+     381,
+     427,
+     479,
+     538,
+     604,
+     678,
+     761,
+     854,
+     959,
+     1076,
+     1208,
+     1356,
+     1522,
+     1709,
+     1918,
+     2153,
+     2416,
+     2712,
+     3044,
+     3417,
+     3836,
+     4305,
+     4833,
+     5424,
+     6089,
+     6834,
+     7671,
+     8611,
+     9665,
+     10849,
+     12177,
+     13669,
+     15343,
+     17222,
+     19331
+    ],
+    "sixth_octave_stem_vs_mix_db": [
+     -51.6,
+     -47.6,
+     -44.5,
+     -41.8,
+     -39.5,
+     -33.4,
+     -20.1,
+     -13.6,
+     -2.8,
+     -1.7,
+     -1.0,
+     -0.4,
+     -0.6,
+     -3.2,
+     -2.3,
+     -1.3,
+     -0.4,
+     -0.3,
+     -0.5,
+     -0.9,
+     -1.2,
+     -1.5,
+     -1.5,
+     -1.3,
+     -1.7,
+     -3.0,
+     -1.9,
+     -0.5,
+     -0.3,
+     -0.4,
+     -0.4,
+     -1.1,
+     -1.0,
+     -1.5,
+     -3.7,
+     -4.8,
+     -3.8,
+     -1.9,
+     -1.7,
+     -1.6,
+     -3.9,
+     -5.9,
+     -7.6,
+     -10.8,
+     -13.1,
+     -40.6
+    ],
+    "band_holes": [],
+    "narrow_notches_gt12db": [
+     {
+      "f_hz": 215.33203125,
+      "depth_db": 15.8
+     }
+    ],
+    "n_narrow_notches": 1,
+    "energy_above_16k_rel_total_db": -53.53780716157647,
+    "energy_8k_16k_rel_total_db": -22.548749954639668
+   },
+   "mix": {
+    "ltas_70db_bandwidth_hz": [
+     0.0,
+     18776.953125
+    ]
+   }
+  },
+  "b4_musical_noise": {
+   "mdx": {
+    "sung": {
+     "isolated_per_s": 33.919725114478844,
+     "all_peaks_per_s": 1147.1853875926734,
+     "isolated_fraction_of_peaks": 0.02956777996070727,
+     "isolated_energy_rel_region_db": -21.036955313270845
+    },
+    "inst": {
+     "isolated_per_s": 0.18868085980284777,
+     "all_peaks_per_s": 26.50966080230011,
+     "isolated_fraction_of_peaks": 0.0071174377224199285,
+     "isolated_energy_rel_region_db": -31.645202456483915
+    },
+    "flicker_mean_abs_dL_db": {
+     "inst": 4.1144444324232285,
+     "sung": 8.730419792453025
+    }
+   },
+   "mix": {
+    "sung": {
+     "isolated_per_s": 16.696918951700827,
+     "all_peaks_per_s": 724.3345065143916,
+     "isolated_fraction_of_peaks": 0.02305139241819219,
+     "isolated_energy_rel_region_db": -23.92447423968151
+    },
+    "inst": {
+     "isolated_per_s": 10.534681338992334,
+     "all_peaks_per_s": 436.3244882940854,
+     "isolated_fraction_of_peaks": 0.024144144144144144,
+     "isolated_energy_rel_region_db": -24.42658613509986
+    },
+    "flicker_mean_abs_dL_db": {
+     "inst": 13.27511933155636,
+     "sung": 9.591418170139866
+    }
+   }
+  }
+ },
+ "bleed_inside_the_sung_frames": {
+  "method": "see the header of kod/05_sarki_ici_sizinti.py",
+  "stft": "4096 / 512, Hann",
+  "mdx": {
+   "separator_scale": 0.878453588342611,
+   "n_voiced_steady_frames": 2270,
+   "seconds": 26.354648526077096,
+   "f0_hz": {
+    "min": 237.51142393912096,
+    "median": 390.32167330851064,
+    "max": 445.7794897358786,
+    "p05": 292.4108626882448,
+    "p95": 440.65927558967593
+   },
+   "band_partials_off_the_sung_harmonics": {
+    "n": 6812,
+    "stem_vs_mix_db_median": -31.34290722792524,
+    "p75": -19.80304925851447,
+    "p90": -6.584490075507715,
+    "p99": -0.3222902775062583,
+    "fraction_above_minus20db": 0.2533763945977686,
+    "fraction_above_minus12db": 0.15179095713446858,
+    "fraction_above_minus6db": 0.09321785085143863,
+    "by_range": {
+     "150-280": {
+      "n": 1652,
+      "median_db": -48.3816100500005,
+      "p90_db": -36.034380123592236,
+      "fraction_above_minus12db": 0.0
+     },
+     "280-600": {
+      "n": 2034,
+      "median_db": -31.34290722792524,
+      "p90_db": -17.63462662299409,
+      "fraction_above_minus12db": 0.029006882989183875
+     },
+     "600-1200": {
+      "n": 1464,
+      "median_db": -22.979555171730855,
+      "p90_db": -1.5413057654995603,
+      "fraction_above_minus12db": 0.30396174863387976
+     },
+     "1200-2400": {
+      "n": 1340,
+      "median_db": -23.086137808096886,
+      "p90_db": -3.692963264369184,
+      "fraction_above_minus12db": 0.24776119402985075
+     },
+     "2400-4000": {
+      "n": 322,
+      "median_db": -7.599291993142732,
+      "p90_db": -0.8382277965905641,
+      "fraction_above_minus12db": 0.6149068322981367
+     }
+    }
+   },
+   "band_partials_confirmed_by_loop_template": {
+    "n": 4901,
+    "stem_vs_mix_db_median": -33.80746794604145,
+    "p75": -24.481694625287567,
+    "p90": -15.239127094788898,
+    "p99": -1.161971903534834,
+    "energy_weighted_stem_vs_mix_db": -23.18931738514224,
+    "fraction_above_minus20db": 0.16221179351152826,
+    "fraction_above_minus12db": 0.07141399714344011,
+    "fraction_above_minus6db": 0.03509487859620486,
+    "by_range": {
+     "150-280": {
+      "n": 1555,
+      "median_db": -48.53412042208537,
+      "p90_db": -36.01531987075797,
+      "fraction_above_minus12db": 0.0
+     },
+     "280-600": {
+      "n": 1741,
+      "median_db": -31.2361638438624,
+      "p90_db": -17.55418139014194,
+      "fraction_above_minus12db": 0.03159103963239517
+     },
+     "600-1200": {
+      "n": 874,
+      "median_db": -25.33703335408852,
+      "p90_db": -3.5119431372348684,
+      "fraction_above_minus12db": 0.20938215102974828
+     },
+     "1200-2400": {
+      "n": 666,
+      "median_db": -26.702228361651976,
+      "p90_db": -9.289236297940384,
+      "fraction_above_minus12db": 0.13963963963963963
+     },
+     "2400-4000": {
+      "n": 65,
+      "median_db": -15.804564559303486,
+      "p90_db": -7.822464095703986,
+      "fraction_above_minus12db": 0.2923076923076923
+     }
+    }
+   },
+   "off_comb_peaks_caused_by_the_voice": {
+    "n": 409,
+    "stem_vs_mix_db_median": -7.54867579070244,
+    "p75": -1.3533246412692748,
+    "p90": -0.33199822004338136,
+    "p99": -0.05989203764614529,
+    "energy_weighted_stem_vs_mix_db": -7.33819935234823,
+    "fraction_above_minus20db": 0.7334963325183375,
+    "fraction_above_minus12db": 0.5990220048899756,
+    "fraction_above_minus6db": 0.4743276283618582,
+    "by_range": {
+     "150-280": {
+      "n": 1,
+      "median_db": -41.942776796273186,
+      "p90_db": -41.942776796273186,
+      "fraction_above_minus12db": 0.0
+     },
+     "280-600": {
+      "n": 31,
+      "median_db": -31.884034045984414,
+      "p90_db": -21.165521772969413,
+      "fraction_above_minus12db": 0.0
+     },
+     "600-1200": {
+      "n": 100,
+      "median_db": -6.07989115630247,
+      "p90_db": -0.5159164087951413,
+      "fraction_above_minus12db": 0.64
+     },
+     "1200-2400": {
+      "n": 159,
+      "median_db": -10.039058842186428,
+      "p90_db": -0.28233947176858565,
+      "fraction_above_minus12db": 0.5408805031446541
+     },
+     "2400-4000": {
+      "n": 118,
+      "median_db": -1.8200536472759516,
+      "p90_db": -0.2749874034562546,
+      "fraction_above_minus12db": 0.8050847457627118
+     }
+    }
+   },
+   "undecided": {
+    "n": 1502,
+    "stem_vs_mix_db_median": -24.705432038646734,
+    "p75": -9.526716616145006,
+    "p90": -2.0875130151149026,
+    "p99": -0.2293168829334683,
+    "energy_weighted_stem_vs_mix_db": -11.686129307283636,
+    "fraction_above_minus20db": 0.4201065246338216,
+    "fraction_above_minus12db": 0.29227696404793607,
+    "fraction_above_minus6db": 0.17909454061251665,
+    "by_range": {
+     "150-280": {
+      "n": 96,
+      "median_db": -44.90668126026341,
+      "p90_db": -36.44494815122866,
+      "fraction_above_minus12db": 0.0
+     },
+     "280-600": {
+      "n": 262,
+      "median_db": -32.11372385931091,
+      "p90_db": -17.841051967019897,
+      "fraction_above_minus12db": 0.015267175572519083
+     },
+     "600-1200": {
+      "n": 490,
+      "median_db": -17.371674318419,
+      "p90_db": -0.9466065298447858,
+      "fraction_above_minus12db": 0.40408163265306124
+     },
+     "1200-2400": {
+      "n": 515,
+      "median_db": -22.309345776574503,
+      "p90_db": -3.3504368909915683,
+      "fraction_above_minus12db": 0.2970873786407767
+     },
+     "2400-4000": {
+      "n": 139,
+      "median_db": -8.599669696624055,
+      "p90_db": -1.5136859866377306,
+      "fraction_above_minus12db": 0.60431654676259
+     }
+    }
+   },
+   "voice_partials_on_the_sung_harmonics": {
+    "n": 22846,
+    "stem_vs_mix_db_median": -0.13972408099673217,
+    "p10": -2.5112344846606582,
+    "p01": -11.854817422455065,
+    "fraction_below_minus6db": 0.03444804342116782,
+    "fraction_below_minus12db": 0.009761008491639675
+   },
+   "below_fundamental_120Hz_to_0p8f0": {
+    "stem_rel_stem_total_db": -41.43466949354621,
+    "stem_vs_mix_db": -29.71571350730842
+   },
+   "between_harmonics": {
+    "off_comb_energy_rel_on_comb_db": -25.79706497019325,
+    "off_comb_density_rel_on_comb_db": -30.34651905410236
+   },
+   "leaked_partials_above_minus6db_events": [
+    {
+     "t0": 23.51,
+     "t1": 23.557,
+     "f_hz": 882.9,
+     "n": 5,
+     "max_db": -0.5
+    },
+    {
+     "t0": 28.085,
+     "t1": 28.131,
+     "f_hz": 882.9,
+     "n": 5,
+     "max_db": -0.7
+    },
+    {
+     "t0": 37.187,
+     "t1": 37.233,
+     "f_hz": 872.1,
+     "n": 5,
+     "max_db": -0.7
+    },
+    {
+     "t0": 41.784,
+     "t1": 41.866,
+     "f_hz": 882.9,
+     "n": 4,
+     "max_db": -0.6
+    },
+    {
+     "t0": 41.877,
+     "t1": 41.9,
+     "f_hz": 2196.4,
+     "n": 3,
+     "max_db": 0.0
+    },
+    {
+     "t0": 45.0,
+     "t1": 45.023,
+     "f_hz": 656.8,
+     "n": 3,
+     "max_db": -5.5
+    },
+    {
+     "t0": 50.933,
+     "t1": 50.968,
+     "f_hz": 872.1,
+     "n": 4,
+     "max_db": -2.4
+    },
+    {
+     "t0": 52.489,
+     "t1": 52.512,
+     "f_hz": 990.5,
+     "n": 3,
+     "max_db": -2.2
+    },
+    {
+     "t0": 52.628,
+     "t1": 52.698,
+     "f_hz": 990.5,
+     "n": 6,
+     "max_db": -1.4
+    },
+    {
+     "t0": 64.691,
+     "t1": 64.714,
+     "f_hz": 882.9,
+     "n": 3,
+     "max_db": -0.3
+    },
+    {
+     "t0": 69.242,
+     "t1": 69.3,
+     "f_hz": 882.9,
+     "n": 6,
+     "max_db": -0.9
+    },
+    {
+     "t0": 69.3,
+     "t1": 69.323,
+     "f_hz": 1765.7,
+     "n": 3,
+     "max_db": -5.1
+    },
+    {
+     "t0": 69.346,
+     "t1": 69.381,
+     "f_hz": 872.1,
+     "n": 4,
+     "max_db": -0.8
+    },
+    {
+     "t0": 72.4,
+     "t1": 72.458,
+     "f_hz": 979.8,
+     "n": 6,
+     "max_db": -1.6
+    },
+    {
+     "t0": 82.315,
+     "t1": 82.512,
+     "f_hz": 592.2,
+     "n": 12,
+     "max_db": -2.6
+    },
+    {
+     "t0": 83.104,
+     "t1": 83.127,
+     "f_hz": 893.6,
+     "n": 3,
+     "max_db": -0.8
+    },
+    {
+     "t0": 92.079,
+     "t1": 92.148,
+     "f_hz": 882.9,
+     "n": 7,
+     "max_db": -3.5
+    }
+   ],
+   "leaked_partials_note": "template-confirmed band partials that are less than 6 dB down in the stem for at least 3 frames (35 ms)"
+  }
+ },
+ "not_verified": "Nobody listened. Not verified by ear: whether the stem sounds natural and free of 'underwater' / phasey separation artefacts, whether the remaining band partials (old D-minor harmony, typically 34 dB down, in places only a few dB down where they coincide with ringing voice tails) are audible under the new C-major backing, whether the small air-band dips at the hi-hat instants are audible, and how the BS-Roformer stem would have compared (it was not available; its numbers can be produced later with kod/calistir.sh once the file exists). The automatic consonant and harmonic measurements depend on the word timestamps (20 ms grid), on the pitch tracker and on the assumption that the band under the voice is the same 2-bar loop as in the instrumental bars.",
+ "reproduce": "kod/calistir.sh  (the mix is decoded on demand by common.py; 01 wait for the Roformer file; 03 lag per candidate; 02 comparison; 05 bleed inside the sung frames; karar.json = the decision written after reading the numbers; 04 write + verify + rapor.json)"
+}

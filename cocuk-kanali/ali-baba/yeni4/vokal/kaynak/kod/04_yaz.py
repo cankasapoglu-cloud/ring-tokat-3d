@@ -61,6 +61,17 @@ ver['lag_of_written_file_ms'] = dict(waveform_median=hz2['per_segment_summary'][
                                      envelope_clock_ppm=hz2['per_segment_summary']['env_lag_ms']['clock_ppm'],
                                      dspec_median=hz2['per_segment_summary']['dspec_lag_ms']['median_ms'],
                                      wave_corr_median=hz2['per_segment_summary']['wave_corr_median'])
+# strict sample check of the written file: compensate * vocal + instrumental (mono) against the mono mix at integer lags
+if P[name]['instrumental'] and 'sum_check' in hz:
+    ins_m = load_stem(P[name]['instrumental'])[:n_mix]; xm = load_mix()
+    comp = hz['sum_check']['compensate_c']; gm = hz['sum_check']['gain_mix_g']
+    sm_ = comp * z + ins_m; a_, b_ = 20 * SR, 80 * SR; res_l = {}
+    for L in range(-8, 9):
+        res_l[L] = rms_db(sm_[a_ + L:b_ + L] - gm * xm[a_:b_]) - rms_db(gm * xm[a_:b_])
+    best = min(res_l, key=res_l.get)
+    ver['sum_check_of_written_file'] = dict(method='compensate*written vocal + mono instrumental stem against g*mono mix, 20-80 s, integer lags -8..+8',
+                                            best_lag_samples=int(best), residual_db_at_best_lag=float(res_l[best]),
+                                            residual_db_at_plus_minus_1_sample=[float(res_l[-1]), float(res_l[1])])
 # levels of the written file (its own scale, i.e. NOT divided by the separator gain)
 R = regions(); N = len(z)
 m_sw = mask_from(R['sung_words'], N); m_in = mask_from(R['inst'], N); m_pre = mask_from(R['pre'], N); m_tl = mask_from(R['tails'], N)
@@ -80,10 +91,13 @@ rap = dict(
     about='Choice and preparation of the vocal source of v2_2 (first AI take). Output: v2_2_vokal.wav, mono 44.1 kHz 24-bit, '
           'sample-aligned with v2_2.mp3 as decoded by ffmpeg (44.1 kHz). All times in this report are on that timeline.',
     written_utc=time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime()),
-    chosen=dict(name=name, model=karar['models'][name], source_file=P[name]['vocals'], reasons=karar['reasons'], summary=karar['summary']),
+    chosen=dict(name=name, model=karar['models'][name], source_file=P[name]['vocals'], compared_candidates=list(P.keys()),
+                summary=karar['summary'], reasons=karar['reasons']),
     candidates={nm: dict(model=karar['models'].get(nm), vocals=P[nm]['vocals'], instrumental=P[nm]['instrumental']) for nm in P},
     roformer_wait=bek,
-    decision=karar,
+    candidate_not_available=karar.get('candidate_not_available'),
+    measurement_notes=karar.get('measurement_notes'),
+    known_weak_points_of_the_chosen_stem=karar.get('known_weak_points_of_the_chosen_stem'),
     timeline=dict(convention='lag > 0: stem late against the mix', measured_lag_ms=lag_ms, measured_lag_samples=lag_samples,
                   measured_clock_difference_ppm=ppm_sum if ppm_sum is not None else ppm_wave,
                   waveform_method_lag_ms=lag_wave, waveform_method_clock_ppm=ppm_wave, sum_check_lag_ms=lag_sum, sum_check_clock_ppm=ppm_sum,
@@ -101,9 +115,11 @@ rap = dict(
                            'no gain, no normalisation, no filtering, no dither, no time or pitch processing',
                 scale_note=karar.get('scale_note')),
     comparison=cmp_,
+    bleed_inside_the_sung_frames=(json.load(open(CACHE + '/sarki_ici_sizinti.json')) if os.path.exists(CACHE + '/sarki_ici_sizinti.json') else None),
     not_verified=karar['not_verified'],
-    reproduce='kod/calistir.sh  (00 decode is done on demand by common.py; 01 wait for the Roformer file; 03 lag per candidate; '
-              '02 comparison; karar.json = the decision written after reading the numbers; 04 write + verify + rapor.json)')
+    reproduce='kod/calistir.sh  (the mix is decoded on demand by common.py; 01 wait for the Roformer file; 03 lag per candidate; '
+              '02 comparison; 05 bleed inside the sung frames; karar.json = the decision written after reading the numbers; '
+              '04 write + verify + rapor.json)')
 json.dump(rap, open(O + '/rapor.json', 'w'), indent=1, ensure_ascii=False)
 print('written', outp, 'and', O + '/rapor.json')
 print(json.dumps(ver, indent=1))

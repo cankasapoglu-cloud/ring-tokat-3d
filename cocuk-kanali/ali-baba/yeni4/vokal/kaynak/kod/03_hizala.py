@@ -51,12 +51,22 @@ def gcc_lag(a, b, maxlag, up=UP, lo=None, hi=None):
 if pi:
     ins = load_stem(pi, mono=False)
     if ins.ndim == 1: ins = np.stack([ins, ins], 1)
-    s = (vs[:n] + ins[:n])
-    g = float((s * xs[:n]).sum() / (xs[:n] ** 2).sum())
+    # The separator writes  instrumental = g*mix - c*vocals  (g = its input normalisation, c = the model's "compensate"
+    # factor: 1.021 for UVR-MDX-NET-Voc_FT, 1 for the Roformer).  Both are estimated by least squares, so that
+    # c*vocals + instrumental can be compared with the mix sample by sample.
+    X = np.stack([xs[:n].ravel(), vs[:n].ravel()], 1)
+    (g, mc), *_ = np.linalg.lstsq(X, ins[:n].ravel(), rcond=None)
+    g = float(g); comp = float(-mc)
+    s = (comp * vs[:n] + ins[:n])
     r0 = s - g * xs[:n]
-    res['sum_check'] = dict(gain_stems_over_mix=g, gain_db=float(20 * np.log10(abs(g))),
+    s1 = vs[:n] + ins[:n]; g1 = float((s1 * xs[:n]).sum() / (xs[:n] ** 2).sum())
+    res['sum_check'] = dict(gain_mix_g=g, gain_mix_db=float(20 * np.log10(abs(g))), compensate_c=comp,
+                            stem_scale_g_over_c=g / comp, stem_scale_db=float(20 * np.log10(g / comp)),
+                            gain_stems_over_mix=g / comp,          # scale of the vocal file relative to a vocal on the mix scale
                             residual_db_re_mix_at_lag0=float(rms_db(r0) - rms_db(g * xs[:n])),
-                            corr_at_lag0=float((s * xs[:n]).sum() / np.sqrt((s ** 2).sum() * (xs[:n] ** 2).sum())))
+                            plain_sum_gain=g1, plain_sum_residual_db_re_mix=float(rms_db(s1 - g1 * xs[:n]) - rms_db(g1 * xs[:n])),
+                            corr_at_lag0=float((s * xs[:n]).sum() / np.sqrt((s ** 2).sum() * (xs[:n] ** 2).sum())),
+                            mix_peak=float(np.abs(xs).max()), expected_g_0p9_over_peak=float(0.9 / np.abs(xs).max()) if np.abs(xs).max() > 0.9 else 1.0)
     win = int(5.0 * SR); rows = []
     sm = s.mean(1)
     for a in range(0, n - win + 1, win):
@@ -68,7 +78,7 @@ if pi:
                             min_corr=float(min(r['corr'] for r in rows)),
                             trend_ms_per_s=float(b), clock_ppm=float(b * 1000), intercept_ms=float(a0),
                             lag_at_0s_ms=float(a0), lag_at_105s_ms=float(a0 + b * 105))
-    print(f"[{name}] S sum check: gain {g:.5f} ({20*np.log10(abs(g)):+.3f} dB), residual {res['sum_check']['residual_db_re_mix_at_lag0']:.1f} dB re mix, "
+    print(f"[{name}] S sum check: mix gain g {g:.5f} ({20*np.log10(abs(g)):+.3f} dB), compensate c {comp:.4f}, stem scale g/c {g/comp:.5f}, residual {res['sum_check']['residual_db_re_mix_at_lag0']:.1f} dB re mix, "
           f"median lag {np.median(ll)*SR/1000:+.3f} samples ({np.median(ll):+.4f} ms), clock {b*1000:+.2f} ppm, min corr {res['sum_check']['min_corr']:.4f}")
 
 # ---------- per sung segment ----------

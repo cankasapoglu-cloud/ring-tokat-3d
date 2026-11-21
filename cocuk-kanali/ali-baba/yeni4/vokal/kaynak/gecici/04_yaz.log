@@ -1,0 +1,67 @@
+[cikti] wave_lag_ms  : median +0.0000 ms  sd 0.0004  range -0.001..+0.001  clock -0.00 ppm (se 0.00)
+[cikti] env_lag_ms   : median +0.0497 ms  sd 0.0608  range -0.023..+0.245  clock -0.58 ppm (se 0.36)
+[cikti] dspec_lag_ms : median +0.5644 ms  sd 0.2297  range +0.277..+1.303  clock -3.12 ppm (se 1.31)
+[cikti] waveform corr mix<->stem per segment: median 0.950, min 0.908
+
+written /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/yeni4/vokal/kaynak/v2_2_vokal.wav and /home/user/ring-tokat-3d/cocuk-kanali/ali-baba/yeni4/vokal/kaynak/rapor.json
+{
+ "file": "/home/user/ring-tokat-3d/cocuk-kanali/ali-baba/yeni4/vokal/kaynak/v2_2_vokal.wav",
+ "samplerate": 44100,
+ "channels": 1,
+ "subtype": "PCM_24",
+ "frames": 4630500,
+ "duration_s": 105.0,
+ "max_abs_difference_to_source_mono": 0.0,
+ "exact_in_24_bit": true,
+ "peak": 0.640533447265625,
+ "peak_dbfs": -3.8691637482490684,
+ "rms_dbfs": -21.28464637095263,
+ "identical_to_A_v2_2_vokal_mdx_wav_within_half_16bit_lsb": true,
+ "max_abs_difference_to_A_v2_2_vokal_mdx_wav_in_16bit_lsb": 0.5,
+ "lag_of_written_file_ms": {
+  "waveform_median": 0.0,
+  "waveform_min": -0.0007086167800453515,
+  "waveform_max": 0.0007086167800453515,
+  "waveform_clock_ppm": -0.0022935517436427667,
+  "envelope_median": 0.04967697629382587,
+  "envelope_clock_ppm": -0.584000339985394,
+  "dspec_median": 0.5643738743211613,
+  "wave_corr_median": 0.9501244721795753
+ },
+ "sum_check_of_written_file": {
+  "method": "compensate*written vocal + mono instrumental stem against g*mono mix, 20-80 s, integer lags -8..+8",
+  "best_lag_samples": 0,
+  "residual_db_at_best_lag": -78.8099882129649,
+  "residual_db_at_plus_minus_1_sample": [
+   -15.231484016158984,
+   -15.231493120160817
+  ]
+ }
+}
+{
+ "sung_words_rms_dbfs": -18.836260435245144,
+ "inst_rms_dbfs": -65.32766523274509,
+ "inst_rel_sung_db": -46.491404797499946,
+ "breath_zone_rms_dbfs": -50.827965041435064,
+ "tails_rms_dbfs": -43.87960487770542,
+ "inst_per_stretch_dbfs": [
+  -75.02863982159639,
+  -67.56813792115105,
+  -63.50683612781555,
+  -70.50227946879329,
+  -69.27494141333135,
+  -65.91382535461919,
+  -58.11705284659345,
+  -72.39028084604607
+ ],
+ "inst_per_stretch_rel_sung_db": [
+  -56.19237938635124,
+  -48.731877485905905,
+  -44.67057569257041,
+  -51.666019033548146,
+  -50.438680978086204,
+  -47.07756491937405,
+  -39.28079241134831,
+  -53.55402041080092
+ ]
+}
