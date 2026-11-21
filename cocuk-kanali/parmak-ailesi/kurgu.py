@@ -3,17 +3,19 @@
 Zamanlar şarkının yazıya dökümünden (sarki_2_words.json) alındı."""
 import subprocess, os
 D = os.path.dirname(os.path.abspath(__file__))
-FPS, SON = 24, 65.04
-# (klip adı | 'kare', başlangıç, bitiş, klibin içinden başlama sn)
-SAHNE = [("kare", 0, 4.3, 0), ("aile_selam", 4.3, 9.26, 0),
-         ("aile_ara1", 9.26, 11.98, 0), ("baba", 11.98, 16.6, 0), ("aile_dans", 16.6, 18.88, 0),
-         ("aile_ara2", 18.88, 21.62, 0), ("anne", 21.62, 26.2, 0), ("aile_dans", 26.2, 28.5, 2.4),
-         ("aile_ara1", 28.5, 31.22, 2.1), ("abi", 31.22, 35.8, 0), ("aile_selam", 35.8, 39.64, 0.8),
-         ("aile_ara2", 39.64, 43.2, 1.2), ("abla", 43.2, 47.8, 0), ("aile_dans", 47.8, 50.08, 0),
-         ("aile_ara1", 50.08, 52.82, 0), ("bebek", 52.82, 57.4, 0), ("aile_dans", 57.4, 62.08, 0.2),
-         ("aile_veda", 62.08, SON, 0)]
-YAZI = [("baslik", 0.5, 8.8, 930), ("baba", 11.98, 16.4, 120), ("anne", 21.62, 26.0, 120), ("abi", 31.22, 35.6, 120),
-        ("abla", 43.2, 47.6, 120), ("bebek", 52.82, 57.2, 120)]
+FPS, SON = 24, 95.04
+# Yavaş şarkı (yavas_2.mp3). Kıta: soru + bekleme (aile arıyor) -> cevap (kukla yakın çekim) -> ara (aile dansı)
+Q = [6.74, 22.14, 37.54, 52.96, 68.28]      # soru başlangıçları
+A = [12.52, 27.92, 43.32, 58.70, 74.10]     # "Buradayım" başlangıçları
+KUKLA = ["baba", "anne", "abi", "abla", "bebek"]
+VEDA = 82.52
+SAHNE = [("kare", 0, 1.8, 0), ("aile_selam", 1.8, Q[0], 0)]
+for k in range(5):
+    sonraki = Q[k + 1] if k < 4 else VEDA
+    SAHNE += [("aile_ara1" if k % 2 == 0 else "aile_ara2", Q[k], A[k], 0), (KUKLA[k], A[k], A[k] + 5.3, 0),
+              ("aile_dans", A[k] + 5.3, sonraki, 0)]
+SAHNE += [("aile_veda", VEDA, 88.1, 0), ("aile_selam", 88.1, SON, 0)]
+YAZI = [("baslik", 0.4, 6.3, 930)] + [(KUKLA[k], A[k], A[k] + 5.1, 120) for k in range(5)]
 
 
 def sure(f):
@@ -31,7 +33,7 @@ for k, (ad, t0, t1, bas) in enumerate(SAHNE):
         continue
     f = os.path.join(D, "klip", ad + ".mp4")
     ham = sure(f) - 0.1 - bas
-    hiz = min(1.2, max(0.88, ham / hedef)) if bas == 0 and hedef > 4 else 1.0
+    hiz = min(1.2, max(0.86, ham / hedef))
     eksik = max(0.0, hedef - ham / hiz) + (0.3 if k == len(SAHNE) - 1 else 0)
     ek = f",tpad=stop_mode=clone:stop_duration={eksik:.2f}" if eksik > 0.01 else ""
     girdi += ["-i", f]
@@ -46,7 +48,7 @@ for k, (ad, t0, t1, y) in enumerate(YAZI):
     filtre.append(f"[{son}][y{k}]overlay=0:{y - 190}:enable='between(t,{t0},{t1})'[o{k}]")
     son = f"o{k}"
 filtre.append(f"[{son}]fade=in:st=0:d=0.4,fade=out:st={SON - 0.7:.2f}:d=0.7[v]")
-girdi += ["-i", os.path.join(D, "sarki_2.mp3")]
+girdi += ["-i", os.path.join(D, "yavas_2.mp3")]
 cikti = os.path.join(D, "parmak-ailesi.mp4")
 subprocess.run(["ffmpeg", "-y", "-v", "error", *girdi, "-filter_complex", ";".join(filtre),
                 "-map", "[v]", "-map", f"{n + len(YAZI)}:a", "-af", f"loudnorm=I=-15:TP=-1.5,afade=in:d=0.3,afade=out:st={SON - 1:.2f}:d=1",
