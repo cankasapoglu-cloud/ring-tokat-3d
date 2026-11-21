@@ -1,0 +1,128 @@
+[
+ {
+  "i": 1,
+  "nota": "C4",
+  "hedef_bas": 0.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 13.9,
+  "giris_farki_ms": 11
+ },
+ {
+  "i": 2,
+  "nota": "C4",
+  "hedef_bas": 1.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -20.0,
+  "perde_oynakligi_cent_std": 11.1,
+  "giris_farki_ms": 15
+ },
+ {
+  "i": 3,
+  "nota": "G4",
+  "hedef_bas": 1.7,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -0.0,
+  "perde_oynakligi_cent_std": 10.7,
+  "giris_farki_ms": 7
+ },
+ {
+  "i": 4,
+  "nota": "G4",
+  "hedef_bas": 2.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -0.0,
+  "perde_oynakligi_cent_std": 18.7,
+  "giris_farki_ms": 10
+ },
+ {
+  "i": 5,
+  "nota": "A4",
+  "hedef_bas": 2.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 12.9,
+  "giris_farki_ms": 14
+ },
+ {
+  "i": 6,
+  "nota": "A4",
+  "hedef_bas": 3.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 20.0,
+  "perde_oynakligi_cent_std": 12.5,
+  "giris_farki_ms": 6
+ },
+ {
+  "i": 7,
+  "nota": "G4",
+  "hedef_bas": 4.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 90.0,
+  "perde_oynakligi_cent_std": 24.4,
+  "giris_farki_ms": 10
+ },
+ {
+  "i": 8,
+  "nota": "F4",
+  "hedef_bas": 5.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 0.0,
+  "perde_oynakligi_cent_std": 13.1,
+  "giris_farki_ms": 17
+ },
+ {
+  "i": 9,
+  "nota": "F4",
+  "hedef_bas": 5.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 13.0,
+  "giris_farki_ms": 9
+ },
+ {
+  "i": 10,
+  "nota": "E4",
+  "hedef_bas": 6.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 13.3,
+  "giris_farki_ms": 13
+ },
+ {
+  "i": 11,
+  "nota": "E4",
+  "hedef_bas": 7.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 14.2,
+  "giris_farki_ms": 17
+ },
+ {
+  "i": 12,
+  "nota": "D4",
+  "hedef_bas": 7.7,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 11.8,
+  "giris_farki_ms": 9
+ },
+ {
+  "i": 13,
+  "nota": "D4",
+  "hedef_bas": 8.3,
+  "sesli_oran": 0.96,
+  "medyan_sapma_cent": 45.0,
+  "perde_oynakligi_cent_std": 9.3,
+  "giris_farki_ms": 13
+ },
+ {
+  "i": 14,
+  "nota": "C4",
+  "hedef_bas": 8.9,
+  "sesli_oran": 0.91,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 15.7,
+  "giris_farki_ms": null
+ }
+]

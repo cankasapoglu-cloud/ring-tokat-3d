@@ -1,0 +1,61 @@
+{
+ "kisa": {
+  "gizli_hata_sayisi": 3,
+  "gorsel_emin": {
+   "bulunan": 3,
+   "dogru_bulunan": 3,
+   "yanlis_alarm": 0,
+   "kacan": []
+  },
+  "gorsel_emin+olasi": {
+   "bulunan": 4,
+   "dogru_bulunan": 3,
+   "yanlis_alarm": 1,
+   "kacan": []
+  },
+  "gorsel_hepsi(zayif dahil)": {
+   "bulunan": 4,
+   "dogru_bulunan": 3,
+   "yanlis_alarm": 1,
+   "kacan": []
+  },
+  "sayisal_kural": {
+   "bulunan": 2,
+   "dogru_bulunan": 2,
+   "yanlis_alarm": 0,
+   "kacan": [
+    14
+   ]
+  }
+ },
+ "uzun": {
+  "gizli_hata_sayisi": 6,
+  "gorsel_emin": {
+   "bulunan": 6,
+   "dogru_bulunan": 6,
+   "yanlis_alarm": 0,
+   "kacan": []
+  },
+  "gorsel_emin+olasi": {
+   "bulunan": 8,
+   "dogru_bulunan": 6,
+   "yanlis_alarm": 2,
+   "kacan": []
+  },
+  "gorsel_hepsi(zayif dahil)": {
+   "bulunan": 12,
+   "dogru_bulunan": 6,
+   "yanlis_alarm": 6,
+   "kacan": []
+  },
+  "sayisal_kural": {
+   "bulunan": 17,
+   "dogru_bulunan": 4,
+   "yanlis_alarm": 13,
+   "kacan": [
+    3,
+    8
+   ]
+  }
+ }
+}

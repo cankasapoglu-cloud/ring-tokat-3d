@@ -22,6 +22,10 @@ DIYE = "diye bağırır"
 L4 = "çiftliğinde Ali Baba'nın"
 SES_KELIME_SAYISI = 2                      # her kitada iki soylenen hayvan sesi kelimesi (Mö mö, Me me, ...)
 
+# Hizalamada kullanilan, SOYLENDIGI gibi yazim (kita no 0..6 -> hayvan kelimesi). atlari.py'nin olcumune gore
+# 3. kitada sarkici "atları" yerine dort heceli "a-tı-la-rı" soylemistir (bkz. kesim.json: atlari_check).
+SOYLENEN = {2: "atıları"}
+
 UNLU = set("aeıioöuü")
 BEAT = 60.0 / 105.0
 BAR = 4 * BEAT

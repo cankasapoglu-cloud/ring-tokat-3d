@@ -1,0 +1,380 @@
+[
+ {
+  "i": 1,
+  "nota": "C4",
+  "hedef_bas": 0.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 0.0,
+  "perde_oynakligi_cent_std": 15.2,
+  "giris_farki_ms": 11
+ },
+ {
+  "i": 2,
+  "nota": "C4",
+  "hedef_bas": 1.1,
+  "sesli_oran": 0.94,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 11.7,
+  "giris_farki_ms": 15
+ },
+ {
+  "i": 3,
+  "nota": "G4",
+  "hedef_bas": 1.7,
+  "sesli_oran": 0.83,
+  "medyan_sapma_cent": -40.0,
+  "perde_oynakligi_cent_std": 13.6,
+  "giris_farki_ms": null
+ },
+ {
+  "i": 4,
+  "nota": "G4",
+  "hedef_bas": 2.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 11.8,
+  "giris_farki_ms": 10
+ },
+ {
+  "i": 5,
+  "nota": "A4",
+  "hedef_bas": 2.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -30.0,
+  "perde_oynakligi_cent_std": 11.8,
+  "giris_farki_ms": 14
+ },
+ {
+  "i": 6,
+  "nota": "A4",
+  "hedef_bas": 3.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 20.0,
+  "perde_oynakligi_cent_std": 13.1,
+  "giris_farki_ms": 6
+ },
+ {
+  "i": 7,
+  "nota": "G4",
+  "hedef_bas": 4.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -30.0,
+  "perde_oynakligi_cent_std": 14.5,
+  "giris_farki_ms": 10
+ },
+ {
+  "i": 8,
+  "nota": "F4",
+  "hedef_bas": 5.3,
+  "sesli_oran": 0.81,
+  "medyan_sapma_cent": 30.0,
+  "perde_oynakligi_cent_std": 14.7,
+  "giris_farki_ms": null
+ },
+ {
+  "i": 9,
+  "nota": "F4",
+  "hedef_bas": 5.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -30.0,
+  "perde_oynakligi_cent_std": 16.1,
+  "giris_farki_ms": 9
+ },
+ {
+  "i": 10,
+  "nota": "E4",
+  "hedef_bas": 6.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 13.5,
+  "giris_farki_ms": 13
+ },
+ {
+  "i": 11,
+  "nota": "E4",
+  "hedef_bas": 7.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -30.0,
+  "perde_oynakligi_cent_std": 11.1,
+  "giris_farki_ms": 17
+ },
+ {
+  "i": 12,
+  "nota": "D4",
+  "hedef_bas": 7.7,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -0.0,
+  "perde_oynakligi_cent_std": 7.6,
+  "giris_farki_ms": 9
+ },
+ {
+  "i": 13,
+  "nota": "D4",
+  "hedef_bas": 8.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 20.0,
+  "perde_oynakligi_cent_std": 12.5,
+  "giris_farki_ms": 13
+ },
+ {
+  "i": 14,
+  "nota": "C4",
+  "hedef_bas": 8.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -20.0,
+  "perde_oynakligi_cent_std": 14.7,
+  "giris_farki_ms": 16
+ },
+ {
+  "i": 15,
+  "nota": "C4",
+  "hedef_bas": 10.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 80.0,
+  "perde_oynakligi_cent_std": 13.4,
+  "giris_farki_ms": 12
+ },
+ {
+  "i": 16,
+  "nota": "C4",
+  "hedef_bas": 10.7,
+  "sesli_oran": 0.0,
+  "medyan_sapma_cent": null,
+  "perde_oynakligi_cent_std": null,
+  "giris_farki_ms": null
+ },
+ {
+  "i": 17,
+  "nota": "G4",
+  "hedef_bas": 11.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -0.0,
+  "perde_oynakligi_cent_std": 10.2,
+  "giris_farki_ms": 8
+ },
+ {
+  "i": 18,
+  "nota": "G4",
+  "hedef_bas": 11.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 30.0,
+  "perde_oynakligi_cent_std": 10.8,
+  "giris_farki_ms": 12
+ },
+ {
+  "i": 19,
+  "nota": "A4",
+  "hedef_bas": 12.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 20.0,
+  "perde_oynakligi_cent_std": 20.3,
+  "giris_farki_ms": 16
+ },
+ {
+  "i": 20,
+  "nota": "A4",
+  "hedef_bas": 13.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 0.0,
+  "perde_oynakligi_cent_std": 9.7,
+  "giris_farki_ms": 8
+ },
+ {
+  "i": 21,
+  "nota": "G4",
+  "hedef_bas": 13.7,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -30.0,
+  "perde_oynakligi_cent_std": 16.3,
+  "giris_farki_ms": 11
+ },
+ {
+  "i": 22,
+  "nota": "F4",
+  "hedef_bas": 14.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -40.0,
+  "perde_oynakligi_cent_std": 23.9,
+  "giris_farki_ms": 7
+ },
+ {
+  "i": 23,
+  "nota": "F4",
+  "hedef_bas": 15.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 0.0,
+  "perde_oynakligi_cent_std": 11.9,
+  "giris_farki_ms": 11
+ },
+ {
+  "i": 24,
+  "nota": "E4",
+  "hedef_bas": 16.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 14.2,
+  "giris_farki_ms": 15
+ },
+ {
+  "i": 25,
+  "nota": "E4",
+  "hedef_bas": 16.7,
+  "sesli_oran": 0.0,
+  "medyan_sapma_cent": null,
+  "perde_oynakligi_cent_std": null,
+  "giris_farki_ms": null
+ },
+ {
+  "i": 26,
+  "nota": "D4",
+  "hedef_bas": 17.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 15.9,
+  "giris_farki_ms": 10
+ },
+ {
+  "i": 27,
+  "nota": "D4",
+  "hedef_bas": 17.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 15.0,
+  "giris_farki_ms": 14
+ },
+ {
+  "i": 28,
+  "nota": "C4",
+  "hedef_bas": 18.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -40.0,
+  "perde_oynakligi_cent_std": 17.0,
+  "giris_farki_ms": 6
+ },
+ {
+  "i": 29,
+  "nota": "C4",
+  "hedef_bas": 19.7,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 21.2,
+  "giris_farki_ms": 14
+ },
+ {
+  "i": 30,
+  "nota": "C4",
+  "hedef_bas": 20.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 16.9,
+  "giris_farki_ms": 6
+ },
+ {
+  "i": 31,
+  "nota": "G4",
+  "hedef_bas": 20.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 95.0,
+  "perde_oynakligi_cent_std": 10.6,
+  "giris_farki_ms": 10
+ },
+ {
+  "i": 32,
+  "nota": "G4",
+  "hedef_bas": 21.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 40.0,
+  "perde_oynakligi_cent_std": 14.4,
+  "giris_farki_ms": 13
+ },
+ {
+  "i": 33,
+  "nota": "A4",
+  "hedef_bas": 22.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -10.0,
+  "perde_oynakligi_cent_std": 13.3,
+  "giris_farki_ms": 17
+ },
+ {
+  "i": 34,
+  "nota": "A4",
+  "hedef_bas": 22.7,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 11.9,
+  "giris_farki_ms": 9
+ },
+ {
+  "i": 35,
+  "nota": "G4",
+  "hedef_bas": 23.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 17.0,
+  "giris_farki_ms": 13
+ },
+ {
+  "i": 36,
+  "nota": "F4",
+  "hedef_bas": 24.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -40.0,
+  "perde_oynakligi_cent_std": 11.9,
+  "giris_farki_ms": 9
+ },
+ {
+  "i": 37,
+  "nota": "F4",
+  "hedef_bas": 25.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -20.0,
+  "perde_oynakligi_cent_std": 9.2,
+  "giris_farki_ms": 12
+ },
+ {
+  "i": 38,
+  "nota": "E4",
+  "hedef_bas": 25.7,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 11.0,
+  "giris_farki_ms": 16
+ },
+ {
+  "i": 39,
+  "nota": "E4",
+  "hedef_bas": 26.3,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -0.0,
+  "perde_oynakligi_cent_std": 12.6,
+  "giris_farki_ms": 8
+ },
+ {
+  "i": 40,
+  "nota": "D4",
+  "hedef_bas": 26.9,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": 10.0,
+  "perde_oynakligi_cent_std": 10.3,
+  "giris_farki_ms": 12
+ },
+ {
+  "i": 41,
+  "nota": "D4",
+  "hedef_bas": 27.5,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -20.0,
+  "perde_oynakligi_cent_std": 12.4,
+  "giris_farki_ms": 16
+ },
+ {
+  "i": 42,
+  "nota": "C4",
+  "hedef_bas": 28.1,
+  "sesli_oran": 1.0,
+  "medyan_sapma_cent": -90.0,
+  "perde_oynakligi_cent_std": 43.9,
+  "giris_farki_ms": 8
+ }
+]

@@ -1,0 +1,11 @@
+{
+ "tamam": true,
+ "yanit": "1. **B** – B'deki vokal doğal bir insan sesi sunarken A'daki ses oldukça robotik ve yapaydır.\n2. **B** – B'de şarkıcının sesi müziğin melodisi ve akortlarıyla tam uyumluyken A'da ses tonunda uyumsuzluk ve detone kısımlar bulunmaktadır.\n3. **B** – B'de vokal müziğin ritmine ve temposuna tam otururken A'da zamanlama kesik ve aksaktır.\n4. **B** – B'deki neşeli seslendirme ve tempolu altyapı çok daha coşkulu ve enerjiktir.\n5. **B** – B'de kelimelerin telaffuzu net ve Türkçe son derece doğalken A'da sözler kesik kesik ve bozuk duyulmaktadır.\n6. **B** – Çocuk şarkısı olarak B çok daha iyidir; A'daki en belirgin kusur sesin yapay/sentetik olması ve özellikle 0:18. saniyedeki inek sesi/vokal çıkışının detone ve bozuk olmasıdır.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "ornek_kita1.mp3",
+  "dinle_2.mp3"
+ ],
+ "bas": null,
+ "sure": 27.0
+}
