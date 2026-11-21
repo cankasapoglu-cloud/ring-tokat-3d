@@ -1,0 +1,146 @@
+[
+ {
+  "pencere_ms": 120,
+  "kirpma_sent": 50,
+  "ss_ortanca": 12.0,
+  "ss_kaymasiz": 11.2,
+  "ss_kaymali": 16.5,
+  "ortanca_kayisi_sent": 0.0,
+  "ortanca_kayisi_p90": 2.6
+ },
+ {
+  "pencere_ms": 120,
+  "kirpma_sent": 75,
+  "ss_ortanca": 12.8,
+  "ss_kaymasiz": 11.6,
+  "ss_kaymali": 17.1,
+  "ortanca_kayisi_sent": 0.0,
+  "ortanca_kayisi_p90": 2.6
+ },
+ {
+  "pencere_ms": 120,
+  "kirpma_sent": 100,
+  "ss_ortanca": 12.8,
+  "ss_kaymasiz": 11.6,
+  "ss_kaymali": 17.3,
+  "ortanca_kayisi_sent": 0.0,
+  "ortanca_kayisi_p90": 2.6
+ },
+ {
+  "pencere_ms": 120,
+  "kirpma_sent": 150,
+  "ss_ortanca": 12.8,
+  "ss_kaymasiz": 11.6,
+  "ss_kaymali": 17.3,
+  "ortanca_kayisi_sent": 0.0,
+  "ortanca_kayisi_p90": 2.6
+ },
+ {
+  "pencere_ms": 200,
+  "kirpma_sent": 50,
+  "ss_ortanca": 13.9,
+  "ss_kaymasiz": 13.3,
+  "ss_kaymali": 20.8,
+  "ortanca_kayisi_sent": 0.8,
+  "ortanca_kayisi_p90": 8.1
+ },
+ {
+  "pencere_ms": 200,
+  "kirpma_sent": 75,
+  "ss_ortanca": 15.8,
+  "ss_kaymasiz": 14.5,
+  "ss_kaymali": 23.4,
+  "ortanca_kayisi_sent": 0.8,
+  "ortanca_kayisi_p90": 8.1
+ },
+ {
+  "pencere_ms": 200,
+  "kirpma_sent": 100,
+  "ss_ortanca": 16.2,
+  "ss_kaymasiz": 14.6,
+  "ss_kaymali": 23.8,
+  "ortanca_kayisi_sent": 0.8,
+  "ortanca_kayisi_p90": 8.1
+ },
+ {
+  "pencere_ms": 200,
+  "kirpma_sent": 150,
+  "ss_ortanca": 16.2,
+  "ss_kaymasiz": 14.6,
+  "ss_kaymali": 23.8,
+  "ortanca_kayisi_sent": 0.8,
+  "ortanca_kayisi_p90": 8.1
+ },
+ {
+  "pencere_ms": 300,
+  "kirpma_sent": 50,
+  "ss_ortanca": 14.3,
+  "ss_kaymasiz": 13.2,
+  "ss_kaymali": 22.4,
+  "ortanca_kayisi_sent": 1.5,
+  "ortanca_kayisi_p90": 24.5
+ },
+ {
+  "pencere_ms": 300,
+  "kirpma_sent": 75,
+  "ss_ortanca": 16.5,
+  "ss_kaymasiz": 14.3,
+  "ss_kaymali": 29.3,
+  "ortanca_kayisi_sent": 1.5,
+  "ortanca_kayisi_p90": 24.5
+ },
+ {
+  "pencere_ms": 300,
+  "kirpma_sent": 100,
+  "ss_ortanca": 17.9,
+  "ss_kaymasiz": 14.9,
+  "ss_kaymali": 31.7,
+  "ortanca_kayisi_sent": 1.5,
+  "ortanca_kayisi_p90": 24.5
+ },
+ {
+  "pencere_ms": 300,
+  "kirpma_sent": 150,
+  "ss_ortanca": 17.9,
+  "ss_kaymasiz": 14.9,
+  "ss_kaymali": 31.7,
+  "ortanca_kayisi_sent": 1.5,
+  "ortanca_kayisi_p90": 24.5
+ },
+ {
+  "pencere_ms": 450,
+  "kirpma_sent": 50,
+  "ss_ortanca": 14.2,
+  "ss_kaymasiz": 13.1,
+  "ss_kaymali": 20.7,
+  "ortanca_kayisi_sent": 5.8,
+  "ortanca_kayisi_p90": 50.0
+ },
+ {
+  "pencere_ms": 450,
+  "kirpma_sent": 75,
+  "ss_ortanca": 16.1,
+  "ss_kaymasiz": 14.2,
+  "ss_kaymali": 28.5,
+  "ortanca_kayisi_sent": 5.8,
+  "ortanca_kayisi_p90": 61.9
+ },
+ {
+  "pencere_ms": 450,
+  "kirpma_sent": 100,
+  "ss_ortanca": 16.5,
+  "ss_kaymasiz": 14.8,
+  "ss_kaymali": 32.9,
+  "ortanca_kayisi_sent": 5.8,
+  "ortanca_kayisi_p90": 61.9
+ },
+ {
+  "pencere_ms": 450,
+  "kirpma_sent": 150,
+  "ss_ortanca": 18.6,
+  "ss_kaymasiz": 15.8,
+  "ss_kaymali": 35.4,
+  "ortanca_kayisi_sent": 5.8,
+  "ortanca_kayisi_p90": 61.9
+ }
+]
