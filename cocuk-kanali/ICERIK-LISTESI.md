@@ -12,7 +12,7 @@ Yöntem: Önce en çok izlenen videoların **temasını ve formülünü** kendi 
 |---|---|---|---|---|---|---|
 | 1 | Ali Baba'nın Çiftliği – Sevimli Dostlar (518 M) | Hayvan sesleri, tekrar, çocuk eşlik eder | **Ali Baba'nın Çiftliği** (Pıtır ve Ali Baba) | ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı | Melodi anonim (Old MacDonald); kendi kaydımız | Üretimde |
 | 2 | Renk şarkıları (genel) | Tek kavram, parlak renkler | **Balon Şarkısı** (renkler) | renkler şarkısı, renkleri öğreniyorum | Tamamen özgün | Hazır |
-| 3 | Baby Shark Dance – Pinkfong (17,6 Mr) | Aile üyeleri, el hareketi, hızlanan tempo | **Pıtır'ın Ailesi** (bebek kedi, anne, baba, nine, dede; "miyav miyav") | aile şarkısı, dans şarkısı, bebek şarkıları | Özgün söz ve melodi; "Baby Shark" adı kullanılmaz | Sırada |
+| 3 | Baby Shark Dance – Pinkfong (17,6 Mr) | Aile üyeleri, el hareketi, hızlanan tempo | **Pıtır'ın Ailesi** (bebek kedi, anne, baba, nine, dede; "miyav miyav") | aile şarkısı, dans şarkısı, bebek şarkıları | Özgün söz ve melodi; "Baby Shark" adı kullanılmaz | Hazır |
 | 4 | Wheels on the Bus – CoComelon (9,8 Mr) | Taşıt, ses taklidi, tekrar | **Otobüs Şarkısı** (tekerlek döner, kapı açılır, korna öter) | otobüs şarkısı, taşıtlar şarkısı | Özgün söz ve melodi (geleneksel ezgiyi kullanmadan) | Sırada |
 | 5 | Bath Song – CoComelon (7,7 Mr) · Kukuli hijyen (100 M) | Günlük rutin, ebeveyn de açar | **El Yıkama Şarkısı** ve **Banyo Şarkısı** | el yıkama şarkısı, banyo şarkısı, temizlik | Tamamen özgün | Sırada |
 | 6 | Gezegenler – MiniYo (559 M) | Merak uyandıran bilgi, 4–7 yaş | **Gezegenler Şarkısı** (Pıtır rokette) | gezegenler şarkısı, güneş sistemi, uzay | Tamamen özgün | Sırada |

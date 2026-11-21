@@ -1,0 +1,367 @@
+[
+ {
+  "text": "Bebek",
+  "start": 6.22,
+  "end": 6.62
+ },
+ {
+  "text": "kedi",
+  "start": 6.7,
+  "end": 7.04
+ },
+ {
+  "text": "zıp",
+  "start": 7.08,
+  "end": 7.4
+ },
+ {
+  "text": "zıp",
+  "start": 7.46,
+  "end": 7.76
+ },
+ {
+  "text": "zıplar.",
+  "start": 7.82,
+  "end": 8.72
+ },
+ {
+  "text": "Miyav",
+  "start": 8.82,
+  "end": 9.48
+ },
+ {
+  "text": "miyav",
+  "start": 9.56,
+  "end": 10.22
+ },
+ {
+  "text": "miyav.",
+  "start": 10.3,
+  "end": 10.86
+ },
+ {
+  "text": "Bebek",
+  "start": 11.8,
+  "end": 12.24
+ },
+ {
+  "text": "kedi",
+  "start": 12.32,
+  "end": 12.64
+ },
+ {
+  "text": "zıp",
+  "start": 12.72,
+  "end": 13.0
+ },
+ {
+  "text": "zıp",
+  "start": 13.06,
+  "end": 13.14
+ },
+ {
+  "text": "zıplar.",
+  "start": 13.14,
+  "end": 13.86
+ },
+ {
+  "text": "Miyav.",
+  "start": 14.06,
+  "end": 14.74
+ },
+ {
+  "text": "Anne",
+  "start": 35.98,
+  "end": 36.26
+ },
+ {
+  "text": "kedi",
+  "start": 36.32,
+  "end": 36.64
+ },
+ {
+  "text": "sımsıkı",
+  "start": 36.68,
+  "end": 37.38
+ },
+ {
+  "text": "sarılır",
+  "start": 37.44,
+  "end": 38.14
+ },
+ {
+  "text": "mır",
+  "start": 38.22,
+  "end": 38.54
+ },
+ {
+  "text": "mır",
+  "start": 38.62,
+  "end": 38.88
+ },
+ {
+  "text": "mır.",
+  "start": 38.98,
+  "end": 39.42
+ },
+ {
+  "text": "Anne",
+  "start": 39.78,
+  "end": 40.02
+ },
+ {
+  "text": "kedi",
+  "start": 40.1,
+  "end": 40.4
+ },
+ {
+  "text": "sımsıkı",
+  "start": 40.42,
+  "end": 41.14
+ },
+ {
+  "text": "sarılırmış.",
+  "start": 41.2,
+  "end": 42.54
+ },
+ {
+  "text": "Baba",
+  "start": 65.98,
+  "end": 66.26
+ },
+ {
+  "text": "kedi",
+  "start": 66.32,
+  "end": 66.66
+ },
+ {
+  "text": "havaya",
+  "start": 66.72,
+  "end": 67.26
+ },
+ {
+  "text": "kaldırır",
+  "start": 67.44,
+  "end": 68.18
+ },
+ {
+  "text": "hop",
+  "start": 68.24,
+  "end": 68.5
+ },
+ {
+  "text": "hop",
+  "start": 68.6,
+  "end": 68.88
+ },
+ {
+  "text": "hop.",
+  "start": 68.96,
+  "end": 69.26
+ },
+ {
+  "text": "Baba",
+  "start": 69.72,
+  "end": 70.02
+ },
+ {
+  "text": "kedi",
+  "start": 70.08,
+  "end": 70.4
+ },
+ {
+  "text": "havaya",
+  "start": 70.46,
+  "end": 71.0
+ },
+ {
+  "text": "kaldırır",
+  "start": 71.22,
+  "end": 71.92
+ },
+ {
+  "text": "hop.",
+  "start": 71.98,
+  "end": 72.34
+ },
+ {
+  "text": "Nine",
+  "start": 95.96,
+  "end": 96.26
+ },
+ {
+  "text": "kedi",
+  "start": 96.34,
+  "end": 96.66
+ },
+ {
+  "text": "örgü",
+  "start": 96.8,
+  "end": 97.24
+ },
+ {
+  "text": "örer",
+  "start": 97.34,
+  "end": 97.76
+ },
+ {
+  "text": "tık",
+  "start": 97.84,
+  "end": 98.14
+ },
+ {
+  "text": "tık",
+  "start": 98.24,
+  "end": 98.48
+ },
+ {
+  "text": "tık.",
+  "start": 98.6,
+  "end": 98.88
+ },
+ {
+  "text": "Nine",
+  "start": 98.98,
+  "end": 99.26
+ },
+ {
+  "text": "kedi",
+  "start": 99.34,
+  "end": 99.66
+ },
+ {
+  "text": "örgü",
+  "start": 99.8,
+  "end": 100.34
+ },
+ {
+  "text": "örer",
+  "start": 100.56,
+  "end": 101.08
+ },
+ {
+  "text": "tık.",
+  "start": 101.26,
+  "end": 101.66
+ },
+ {
+  "text": "Dede",
+  "start": 122.98,
+  "end": 123.26
+ },
+ {
+  "text": "kedi",
+  "start": 123.34,
+  "end": 123.66
+ },
+ {
+  "text": "masal",
+  "start": 123.74,
+  "end": 124.4
+ },
+ {
+  "text": "okur",
+  "start": 124.56,
+  "end": 125.1
+ },
+ {
+  "text": "ho",
+  "start": 125.2,
+  "end": 125.36
+ },
+ {
+  "text": "ho",
+  "start": 125.42,
+  "end": 125.56
+ },
+ {
+  "text": "ho.",
+  "start": 125.62,
+  "end": 125.88
+ },
+ {
+  "text": "Dede",
+  "start": 125.98,
+  "end": 126.26
+ },
+ {
+  "text": "kedi",
+  "start": 126.36,
+  "end": 126.7
+ },
+ {
+  "text": "masal",
+  "start": 126.76,
+  "end": 127.48
+ },
+ {
+  "text": "okur",
+  "start": 127.58,
+  "end": 128.199
+ },
+ {
+  "text": "ho.",
+  "start": 128.96,
+  "end": 129.34
+ },
+ {
+  "text": "Hep",
+  "start": 152.98,
+  "end": 153.32
+ },
+ {
+  "text": "birlikte",
+  "start": 153.36,
+  "end": 154.0
+ },
+ {
+  "text": "dans",
+  "start": 154.1,
+  "end": 154.48
+ },
+ {
+  "text": "ederiz",
+  "start": 154.6,
+  "end": 155.18
+ },
+ {
+  "text": "la",
+  "start": 155.22,
+  "end": 155.38
+ },
+ {
+  "text": "la",
+  "start": 155.42,
+  "end": 155.56
+ },
+ {
+  "text": "la.",
+  "start": 155.62,
+  "end": 155.82
+ },
+ {
+  "text": "Biz",
+  "start": 155.98,
+  "end": 156.26
+ },
+ {
+  "text": "kocaman",
+  "start": 156.36,
+  "end": 157.06
+ },
+ {
+  "text": "bir",
+  "start": 157.12,
+  "end": 157.32
+ },
+ {
+  "text": "aileyiz.",
+  "start": 157.42,
+  "end": 158.36
+ },
+ {
+  "text": "Yaşasın!",
+  "start": 158.44,
+  "end": 159.34
+ }
+]
