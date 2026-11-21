@@ -4,9 +4,9 @@
 Resim üreten hiçbir servis kullanılmaz, internet gerekmez.
 
 Kullanım:
-    python3 uret.py                                    -> "Dudek Stüdyo" / "Pıtır ile Öğren"
+    python3 uret.py                                    -> etikette "Pıtır ile Çocuk Şarkıları", büyük yazı "DuDeK Stüdyo"
     python3 uret.py "Düdük Stüdyo"                     -> yalnızca kanal adı değişir
-    python3 uret.py "Düdük Stüdyo" "Pıtır ile Öğren"   -> iki ad da verilir
+    python3 uret.py "Etiketteki Yazı" "Büyük Yazı"      -> ikisi de verilir
 
 Çıktılar (bu dosyanın durduğu klasöre yazılır):
     banner_2560x1440.png   kapak görseli; adlar ve Pıtır ortadaki 1546x423 güvenli alanda
@@ -449,8 +449,8 @@ def kontroller(cikti, ban, alan, prof, fil):
 # ------------------------------------------------------------------ ana akış
 def main():
     ap = argparse.ArgumentParser(description="Kanal görsellerini (kapak, profil, filigran) üretir.")
-    ap.add_argument("kanal", nargs="?", default="Dudek Stüdyo", help="Kanal / stüdyo adı")
-    ap.add_argument("program", nargs="?", default="Pıtır ile Öğren", help="Program adı")
+    ap.add_argument("kanal", nargs="?", default="Pıtır ile Çocuk Şarkıları", help="Beyaz etiketteki alt yazı")
+    ap.add_argument("program", nargs="?", default="DuDeK Stüdyo", help="Büyük renkli yazı (kanal adı)")
     ap.add_argument("--cikti", default=str(BURASI), help="Çıktı klasörü (varsayılan: bu klasör)")
     a = ap.parse_args()
     cikti = Path(a.cikti)

@@ -1,8 +1,8 @@
-# Dudek Stüdyo: YouTube Kanalı Kurulum Rehberi
+# DuDeK Stüdyo: YouTube Kanalı Kurulum Rehberi
 
-Kanal: **Dudek Stüdyo** (tek marka) · Kapaktaki alt yazı: **Pıtır ile Çocuk Şarkıları** · Hazırlanma: 21 Kasım 2026
+Kanal: **DuDeK Stüdyo** (tek marka) · Kapaktaki alt yazı: **Pıtır ile Çocuk Şarkıları** · Hazırlanma: 21 Kasım 2026 · Güncelleme: 22 Kasım 2026 (kanal açıldı: @DuDeKStudio)
 
-> **Ad kesinleşti (21 Kasım 2026):** kanalın adı **Dudek Stüdyo** ve tek marka budur; ayrı bir program adı yok. Eski program adı "Pıtır ile Öğren" bırakıldı, çünkü YouTube'da bu adı birebir kullanan iki kanal var (4.6). Pıtır, kedi yavrusunun adı olarak kalıyor; şarkılar ve videolar değişmedi. Kapakta büyük yazı "Dudek Stüdyo", altındaki beyaz kutucukta "Pıtır ile Çocuk Şarkıları" yazıyor. Bu alt yazı bir program adı değildir; kanalda ne olduğunu anlatır.
+> **Ad kesinleşti (21 Kasım 2026):** kanalın adı **DuDeK Stüdyo** ve tek marka budur; ayrı bir program adı yok. Eski program adı "Pıtır ile Öğren" bırakıldı, çünkü YouTube'da bu adı birebir kullanan iki kanal var (4.6). Pıtır, kedi yavrusunun adı olarak kalıyor; şarkılar ve videolar değişmedi. Kapakta büyük yazı "DuDeK Stüdyo", altındaki beyaz kutucukta "Pıtır ile Çocuk Şarkıları" yazıyor. Bu alt yazı bir program adı değildir; kanalda ne olduğunu anlatır.
 
 ## Okumadan önce
 
@@ -26,25 +26,12 @@ Kısa sözlük:
 
 Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, birlikte bakarız. (Görüntüde şifre, kod ya da e-posta adresi görünmesin.)
 
-1. **Ad kesin.** Kanal adı Dudek Stüdyo; tek marka budur, ayrı bir program adı yok. Bu adım tamam.
+1. **Ad kesin. (Yapıldı)** Kanal adı DuDeK Stüdyo; tek marka budur, ayrı bir program adı yok.
 
-2. **Kanalı açın.** Bu Google hesabında eski bir kişisel kanalınız zaten var. İki yol var; birini seçin.
-   - **A yolu: ayrı, yeni bir kanal açmak.**
-     - **Ne zaman:** Eski kanalla yorum yazdıysanız ya da orada kişisel videonuz varsa önerilen yol budur. Kişisel izleriniz çocuk kanalına karışmaz; eski kanalınız olduğu gibi kalır.
-     - **Nasıl:** Telefonun tarayıcısında (Chrome ya da Safari) ya da bilgisayarda youtube.com/channel_switcher adresine girin (?), Google hesabınızla oturum açın, "Kanal oluştur" seçeneğine dokunun (?). Açılan ekrana ne yazacağınız 3. adımda. Bu yol kanalı kendi adınızla değil, stüdyo adıyla açar (?). YouTube uygulamasından değil, tarayıcıdan yapılır (?).
-     - **Açılmazsa:** Adres YouTube uygulamasını açarsa geri dönün, tarayıcının menüsünden "Masaüstü sitesi" seçeneğini işaretleyip yeniden deneyin (?). Sayfa hiç açılmazsa youtube.com'da profil resminize dokunun, kanal listenizi açın, yeni kanal oluşturma seçeneğini arayın (?). Olmazsa ekran görüntüsü gönderin.
-     - **Dikkat:** Hesabınızda iki kanal olur; her seferinde doğru kanalda olduğunuza bakmanız gerekir (3. adımın sonu). Bu yol tarayıcı ister; menü adları doğrulanmadı.
-   - **B yolu: eski kanalın adını değiştirmek.**
-     - **Ne zaman:** Eski kanal boşsa ve onunla hiç yorum yazmadıysanız bu da olur.
-     - **Nasıl:** YouTube uygulamasında "Kanalı düzenle" ekranını açın: profil resminiz > "Kanalı görüntüle" > kalem işareti (?). Ne yazacağınız 3. adımda.
-     - **Dikkat:** Bu yolda kişisel kanalınız ayrı kalmaz; bu hesapla sonradan yazacağınız yorumlar da çocuk kanalının adıyla görünür (?).
-   - Kanalın eski olması, YouTube'un kanalı kapatmasına karşı bir koruma sağlamaz; B yolunu yalnız kanal eski diye seçmeyin.
+2. **Kanal açıldı. (Yapıldı, 22 Kasım 2026)** Ayrı, yeni bir kanal olarak açıldı; eski kişisel kanalınız olduğu gibi duruyor. Kanalın eski ya da yeni olması, YouTube'un kanalı kapatmasına karşı bir koruma sağlamaz.
 
-3. **Ad ve tanıtıcıyı yazın.** Kanal adı: `Dudek Stüdyo`. Tanıtıcı (ekranda "Herkese açık kullanıcı adı" diye geçebilir) için sırayla deneyin: `@dudekstudyo`, `@dudekstudio`, `@dudekcocuk`. 21 Kasım 2026'da YouTube'un herkese açık sayfalarına baktık: `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. `@dudekcocuk` adresine bakılmadı. Kesin olarak ancak siz, tanıtıcıyı YouTube'un içinde yazarken görürsünüz. Türkçe harf (ü, ö, ı, ş) kullanmayın (?).
-   - **Yazım hatasına dikkat:** ad ve tanıtıcı 14 günde en çok 2 kez değiştirilebiliyor (?).
-   - **A yolunda:** yazdıktan sonra formun altındaki "Kanal oluştur" düğmesine basın (?). Bu düğme, 2. adımda dokunduğunuz seçenekle aynı adı taşıyabilir; ikincisi formu bitiren düğmedir. Tanıtıcı kutusu bu ekranda çıkmazsa kanalı yalnız adla açın; tanıtıcı sonradan da yazılabilir (?).
-   - **B yolunda:** "Kanalı düzenle" ekranında Ad ve Herkese açık kullanıcı adı kutularına yukarıdakileri yazın. Aynı ekranda Açıklama kutusuna 2.3'teki yazıyı da yapıştırın, "Tüm aboneliklerimi gizli tut" seçeneğini açın ve kaydedin. Bu seçenek aynı ekranda olmalı (?); bulamazsanız ekran görüntüsü gönderin. Açılınca kişisel abonelikleriniz kanalda görünmez.
-   - **A yolunu seçtiyseniz** hesabınızda artık iki kanal var. Bundan sonraki her adımda önce ekranda kanal adının "Dudek Stüdyo" yazdığına bakın; eski kanalınız görünüyorsa profil resmine dokunup kanalı değiştirin (?).
+3. **Ad ve tanıtıcı. (Yapıldı)** Kanal adı `DuDeK Stüdyo`, tanıtıcısı `@DuDeKStudio`; adresi youtube.com/@DuDeKStudio. Ad ve tanıtıcı 14 günde en çok 2 kez değiştirilebiliyor (?), o yüzden bir daha dokunmayın.
+   - Hesabınızda artık iki kanal var. Bundan sonraki her adımda önce ekranda kanal adının "DuDeK Stüdyo" yazdığına bakın; eski kanalınız görünüyorsa profil resmine dokunup "Hesap değiştir" ile kanalı değiştirin.
 
 **4-7. adımlar için not:** Bu adımlardaki menü yolları bilgisayardaki YouTube Studio'ya göre yazıldı. Telefondaki YouTube Studio uygulamasında aynı yeri bulamazsanız telefonun tarayıcısında studio.youtube.com adresini açın ve tarayıcının menüsünden "Masaüstü sitesi" seçeneğini işaretleyin (?). Yine bulamazsanız ekran görüntüsü gönderin.
 
@@ -52,7 +39,7 @@ Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, 
 
 5. **Kanalı "çocuklara özel" yapın.** YouTube Studio > Ayarlar > Kanal > Gelişmiş ayarlar > Kitle bölümünde "Evet, bu kanalı çocuklara özel olarak ayarla" (?). Telefondaki uygulamada bulamazsanız yukarıdaki nota göre tarayıcıdan yapın. Bu ayardan sonra videoları yüklerken "çocuklara özel" seçili gelebilir (?); seçili olduğuna her videoda yine de bakın.
 
-6. **Kapak görselini ve profil resmini yükleyin.** Önce iki dosyayı Claude'dan isteyip telefonunuza alın. YouTube Studio'da "Özelleştirme" bölümünden yüklenir (?). Yükledikten sonra kanala telefondan bir kez bakın: yazılar kesilmiş mi?
+6. **Kapak görselini ve profil resmini yükleyin. (Yapıldı, 22 Kasım 2026)** Önce iki dosyayı Claude'dan isteyip telefonunuza alın. YouTube Studio'da "Özelleştirme" bölümünden yüklenir (?). Yükledikten sonra kanala telefondan bir kez bakın: yazılar kesilmiş mi?
    - Kapak görseli (kanalın üstündeki geniş resim): `/home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel/banner_2560x1440.png`
    - Profil resmi: `/home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel/profil_800x800.png`
 
@@ -81,25 +68,17 @@ Gri kutunun içini kopyalayıp YouTube'da ilgili yere yapıştırın.
 Kanal adı:
 
 ```
-Dudek Stüdyo
+DuDeK Stüdyo
 ```
 
-Tanıtıcı (ekranda "Herkese açık kullanıcı adı" diye geçebilir; ilki doluysa sıradakini deneyin):
+Tanıtıcı (kanal bu adla açıldı):
 
 ```
-@dudekstudyo
+@DuDeKStudio
 ```
 
-```
-@dudekstudio
-```
-
-```
-@dudekcocuk
-```
-
-- 21 Kasım 2026'da baktık: YouTube'da kanal aramasının ilk sayfasında "Dudek Stüdyo" adında bir kanal görülmedi. `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. `@dudekcocuk` adresine bakılmadı. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
-- Kanal adına başka bir söz eklemeyin; tek marka "Dudek Stüdyo"dur.
+- Kanalın adresi: youtube.com/@DuDeKStudio
+- Kanal adına başka bir söz eklemeyin; tek marka "DuDeK Stüdyo"dur.
 
 ### 2.2 Slogan (tek satır)
 
@@ -112,7 +91,7 @@ Pıtır'la birlikte söyle! 3-7 yaş çocuklar için Türkçe çocuk şarkılar�
 ### 2.3 Kanal açıklaması
 
 ```
-Dudek Stüdyo, 3-7 yaş arası çocuklar için Türkçe şarkı ve öğrenme videoları hazırlar.
+DuDeK Stüdyo, 3-7 yaş arası çocuklar için Türkçe şarkı ve öğrenme videoları hazırlar.
 
 Turuncu kedi yavrusu Pıtır, çocuklarla birlikte şarkı söyler. Şarkılarla renkleri, saymayı, hayvanları ve seslerini, aile üyelerini ve el yıkama gibi günlük alışkanlıkları tanırız.
 
@@ -131,7 +110,7 @@ Pıtır'la iyi seyirler!
 ### 2.4 Kanal anahtar kelimeleri
 
 ```
-çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, Dudek Stüdyo, Pıtır, okul öncesi, çocuklar için, renkler şarkısı, hayvan sesleri, çiftlik şarkısı, parmak ailesi, sayma şarkısı, aile şarkısı, el yıkama şarkısı, kedi çizgi film
+çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, DuDeK Stüdyo, Pıtır, okul öncesi, çocuklar için, renkler şarkısı, hayvan sesleri, çiftlik şarkısı, parmak ailesi, sayma şarkısı, aile şarkısı, el yıkama şarkısı, kedi çizgi film
 ```
 
 Bu listeye başka kanalların ya da ünlü videoların adını eklemeyin.
@@ -141,9 +120,9 @@ Bu listeye başka kanalların ya da ünlü videoların adını eklemeyin.
 Her videonun açıklamasının en sonuna konur. 3. bölümdeki açıklamalarda zaten yerinde; ayrıca yapıştırmanız gerekmez. Yeni videolar için buradan alırsınız.
 
 ```
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 "Abone ol, beğen" çağrısını bilerek koymadık: 3-7 yaş izleyici yazıyı okuyamaz, zil ve yorum da kapalı (?). Bu bir YouTube kuralı değil, bizim tercihimiz.
@@ -164,12 +143,12 @@ Pıtır'ın bütün şarkıları arka arkaya; aç, bırak, çalsın.
 
 Videolar: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi, Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı, Otobüs Şarkısı.
 
-Küçük bir tercih: altı listeden yalnız bunun adında kanal adı yok. İsterseniz adı "Tüm Şarkılar - Dudek Stüdyo" yapılabilir; Claude'a yazarsanız rehberdeki bütün yerler birlikte değişir. Yazmazsanız ad böyle kalır.
+Küçük bir tercih: altı listeden yalnız bunun adında kanal adı yok. İsterseniz adı "Tüm Şarkılar - DuDeK Stüdyo" yapılabilir; Claude'a yazarsanız rehberdeki bütün yerler birlikte değişir. Yazmazsanız ad böyle kalır.
 
 **Liste 2**
 
 ```
-Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo
+Hayvanlar ve Hayvan Sesleri - DuDeK Stüdyo
 ```
 
 ```
@@ -181,7 +160,7 @@ Videolar: Ali Baba'nın Çiftliği, Beş Küçük Maymun, Pıtır'ın Ailesi.
 **Liste 3**
 
 ```
-Aile Şarkıları ve Parmak Oyunları - Dudek Stüdyo
+Aile Şarkıları ve Parmak Oyunları - DuDeK Stüdyo
 ```
 
 ```
@@ -193,7 +172,7 @@ Videolar: Pıtır'ın Ailesi, Parmak Ailesi.
 **Liste 4**
 
 ```
-Renkler ve Sayılar - Dudek Stüdyo
+Renkler ve Sayılar - DuDeK Stüdyo
 ```
 
 ```
@@ -205,7 +184,7 @@ Videolar: Balon Şarkısı, Beş Küçük Maymun.
 **Liste 5**
 
 ```
-Temizlik ve Günlük Alışkanlıklar - Dudek Stüdyo
+Temizlik ve Günlük Alışkanlıklar - DuDeK Stüdyo
 ```
 
 ```
@@ -217,7 +196,7 @@ Videolar: El Yıkama Şarkısı (şimdilik tek video).
 **Liste 6**
 
 ```
-Taşıtlar ve Yolculuk - Dudek Stüdyo
+Taşıtlar ve Yolculuk - DuDeK Stüdyo
 ```
 
 ```
@@ -226,7 +205,7 @@ Otobüs, tekerlek, korna; taşıtları ve yolculuğu anlatan şarkılar.
 
 Videolar: Otobüs Şarkısı (şimdilik tek video).
 
-Sonra açılacaklar: "Uzun Bölümler - Dudek Stüdyo" (ilk uzun bölüm yüklenince) ve "Hareket ve Oyun - Dudek Stüdyo" (ilk hareket ya da oyun videosu yüklenince).
+Sonra açılacaklar: "Uzun Bölümler - DuDeK Stüdyo" (ilk uzun bölüm yüklenince) ve "Hareket ve Oyun - DuDeK Stüdyo" (ilk hareket ya da oyun videosu yüklenince).
 
 ---
 
@@ -250,7 +229,7 @@ Yedi videonun hepsi hazır; Otobüs Şarkısı'nın klibi de onaylandı. Eksik k
 
 ### Her yüklemede yapılacaklar (bütün videolar için aynı)
 
-1. **Önce doğru kanalda olduğunuza bakın:** ekranda kanal adı "Dudek Stüdyo" yazmalı. Eski kanalınız görünüyorsa profil resmine dokunup kanalı değiştirin (?).
+1. **Önce doğru kanalda olduğunuza bakın:** ekranda kanal adı "DuDeK Stüdyo" yazmalı. Eski kanalınız görünüyorsa profil resmine dokunup kanalı değiştirin (?).
 2. Videoyu önce **Özel** olarak yükleyin. Böyle yüklenince sizden başka kimse göremez.
 3. **Başlık** ve **açıklama:** aşağıdaki kutulardan kopyalayın.
 4. **Küçük resim:** aşağıda yazan dosyayı seçin. (1. bölümün 4. adımındaki telefon doğrulaması yapılmış olmalı.)
@@ -272,7 +251,7 @@ Başlıkta 100, açıklamada 5.000 karakter sınırı var (?). Aşağıdaki yaz�
 Başlık:
 
 ```
-Ali Baba'nın Çiftliği | Hayvan Sesleri Şarkısı | Dudek Stüdyo
+Ali Baba'nın Çiftliği | Hayvan Sesleri Şarkısı | DuDeK Stüdyo
 ```
 
 Açıklama:
@@ -318,19 +297,19 @@ Ali Baba'nın bir çiftliği var
 (kedi sesi) diye bağırır
 Çiftliğinde Ali Baba'nın
 
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı, çiftlik hayvanları, hayvanlar şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır
+ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı, çiftlik hayvanları, hayvanlar şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, DuDeK Stüdyo, Pıtır
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/ali-baba/kapak.jpg`. Pıtır iki ineğin ortasında gülüyor; arkada kırmızı ahır. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Çiftlik Şarkısı" yazısı eklemek. İkinci seçenek: aynı klasördeki `kapak-7.jpg` (Pıtır iki tayın ortasında).
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Hayvanlar ve Hayvan Sesleri - DuDeK Stüdyo.
 - **Not:** Hayvan sesleri şarkıda söylenmiyor, gerçek ses olarak çalıyor; bu yüzden sözlerde parantez içinde yazıldı.
 
 ### 3.2 Pıtır'ın Ailesi
@@ -341,7 +320,7 @@ ali babanın çiftliği, hayvan sesleri, çiftlik şarkısı, çiftlik hayvanlar
 Başlık:
 
 ```
-Pıtır'ın Ailesi | Aile Şarkısı, Bebek Şarkıları | Dudek Stüdyo
+Pıtır'ın Ailesi | Aile Şarkısı, Bebek Şarkıları | DuDeK Stüdyo
 ```
 
 Açıklama:
@@ -370,19 +349,19 @@ Dede kedi masal okur
 Hep birlikte dans ederiz, la la la
 Biz kocaman bir aileyiz. Yaşasın!
 
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-aile şarkısı, kedi ailesi, aile üyeleri, anne baba nine dede, kedi şarkısı, dans şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır'ın Ailesi
+aile şarkısı, kedi ailesi, aile üyeleri, anne baba nine dede, kedi şarkısı, dans şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, DuDeK Stüdyo, Pıtır'ın Ailesi
 ```
 
 - **Küçük resim:** Hazır kapak yok. Fikir: videonun sonundaki kucaklaşma sahnesi (1:16 civarı). Bahçede beş kedi birbirine sarılmış; üstüne "Pıtır'ın Ailesi" yazısı. Yazısız kare burada: `/home/user/ring-tokat-3d/cocuk-kanali/pitirin-ailesi/kare/13_kucak.png`. İsterseniz Claude yazıyı ekleyip kapağı hazırlar.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - Dudek Stüdyo; Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - DuDeK Stüdyo; Hayvanlar ve Hayvan Sesleri - DuDeK Stüdyo.
 - **Not:** Sözler kaydın makineyle yazıya dökülmüş hâlidir. "Miyav", "hop", "tık", "ho" seslerinin kaç kez söylendiğini izlerken bir kez kontrol edin; fark varsa açıklamada düzeltin.
 
 ### 3.3 Parmak Ailesi
@@ -393,7 +372,7 @@ aile şarkısı, kedi ailesi, aile üyeleri, anne baba nine dede, kedi şarkıs�
 Başlık:
 
 ```
-Parmak Ailesi Şarkısı | Bebek Parmak, Parmak Oyunu | Dudek Stüdyo
+Parmak Ailesi Şarkısı | Bebek Parmak, Parmak Oyunu | DuDeK Stüdyo
 ```
 
 Açıklama:
@@ -423,19 +402,19 @@ Buradayım, buradayım. Merhaba!
 Parmak ailesi hep birlikte
 El sallıyor, el sallıyor. Hoşça kal!
 
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-parmak ailesi şarkısı, parmak ailesi, bebek parmak, parmak oyunu, aile şarkısı, aile üyeleri, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo
+parmak ailesi şarkısı, parmak ailesi, bebek parmak, parmak oyunu, aile şarkısı, aile üyeleri, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, DuDeK Stüdyo
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/parmak-ailesi/kapak.jpg`. Mavi zeminde bir el, beş parmağında beş kedi kuklası. "Parmak Ailesi" yazısı üzerinde hazır; olduğu gibi kullanılır.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - Dudek Stüdyo.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Aile Şarkıları ve Parmak Oyunları - DuDeK Stüdyo.
 - **Not:** Abi kıtasında "Buradayım. Merhaba!" bir kez fazla söyleniyor; kayıtta öyle olduğu için sözlere de öyle yazıldı.
 
 ### 3.4 Beş Küçük Maymun
@@ -446,7 +425,7 @@ parmak ailesi şarkısı, parmak ailesi, bebek parmak, parmak oyunu, aile şark�
 Başlık:
 
 ```
-Beş Küçük Maymun | Sayma Şarkısı, Geri Sayım | Dudek Stüdyo
+Beş Küçük Maymun | Sayma Şarkısı, Geri Sayım | DuDeK Stüdyo
 ```
 
 Açıklama:
@@ -484,19 +463,19 @@ Anne doktoru aradı, doktor dedi ki
 
 Maymunlar uyudu mışıl mışıl
 
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-beş küçük maymun, sayma şarkısı, geri sayım, sayılar şarkısı, maymun şarkısı, tekerleme, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo
+beş küçük maymun, sayma şarkısı, geri sayım, sayılar şarkısı, maymun şarkısı, tekerleme, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, DuDeK Stüdyo
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/bes-kucuk-maymun/kapak.jpg`. Pijamalı beş maymun yatağın üstünde zıplıyor; sağ üstte büyük kırmızı 5. Başka yazı gerekmez; olduğu gibi kullanılır. (Bu resimde Pıtır yok; ileride köşeye küçük bir Pıtır eklenebilir.)
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - Dudek Stüdyo; Hayvanlar ve Hayvan Sesleri - Dudek Stüdyo.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - DuDeK Stüdyo; Hayvanlar ve Hayvan Sesleri - DuDeK Stüdyo.
 
 ### 3.5 Balon Şarkısı
 
@@ -506,7 +485,7 @@ beş küçük maymun, sayma şarkısı, geri sayım, sayılar şarkısı, maymun
 Başlık:
 
 ```
-Balon Şarkısı | Çocuklar İçin Renkler Şarkısı | Dudek Stüdyo
+Balon Şarkısı | Çocuklar İçin Renkler Şarkısı | DuDeK Stüdyo
 ```
 
 Açıklama (sözsüz hâli):
@@ -515,19 +494,19 @@ Açıklama (sözsüz hâli):
 Pıtır renkli balonlarla kırmızı, mavi, sarı ve yeşili tanıtıyor; renk adları ekranda büyük harflerle görünür.
 3-7 yaş için, 50 saniye.
 
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-balon şarkısı, renkler şarkısı, renkleri öğreniyorum, renkler, kırmızı mavi sarı yeşil, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır
+balon şarkısı, renkler şarkısı, renkleri öğreniyorum, renkler, kırmızı mavi sarı yeşil, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, DuDeK Stüdyo, Pıtır
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/balon-sarkisi/kapak.jpg`. Pıtır'ın büyük, sevinçli yüzü; arkada renkli balonlar. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Renkler Şarkısı" yazısı eklemek.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - Dudek Stüdyo.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Renkler ve Sayılar - DuDeK Stüdyo.
 - **Eksik:** Bu şarkının sözleri hiçbir dosyada yazılı değil; uydurmadık. Bu yüzden açıklama sözsüz verildi. Üç yol var: sözleri siz yazıp gönderirsiniz, ekleriz; ya da izin verirseniz şarkı yazıya döktürülür (bu araç ücretlidir, size sormadan çalıştırılmaz); ya da sözsüz yüklenir, sözler sonra eklenir.
 
 ### 3.6 El Yıkama Şarkısı
@@ -538,7 +517,7 @@ balon şarkısı, renkler şarkısı, renkleri öğreniyorum, renkler, kırmız�
 Başlık:
 
 ```
-El Yıkama Şarkısı | Çocuklar İçin Temizlik Şarkısı | Dudek Stüdyo
+El Yıkama Şarkısı | Çocuklar İçin Temizlik Şarkısı | DuDeK Stüdyo
 ```
 
 Açıklama:
@@ -563,19 +542,19 @@ Havluyla kurulayalım, pat pat pat
 Ellerim tertemiz, pırıl pırıl
 Mikroplara güle güle, yaşasın!
 
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller nasıl yıkanır, günlük alışkanlıklar, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo
+el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller nasıl yıkanır, günlük alışkanlıklar, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, DuDeK Stüdyo
 ```
 
 - **Küçük resim:** Hazır kapak yok. Fikir: videoda 0:58 civarındaki sahne. Mavi fayanslı banyoda Pıtır, pırıl pırıl parlayan iki patisini gösteriyor; üstüne "El Yıkama" yazısı. Yazısız kare burada: `/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/kare/09_temiz.png`. İsterseniz Claude yazıyı ekleyip kapağı hazırlar.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Temizlik ve Günlük Alışkanlıklar - Dudek Stüdyo.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Temizlik ve Günlük Alışkanlıklar - DuDeK Stüdyo.
 - **Not:** Projedeki ses ölçüm aracı bu kayıtta şarkıcının sesi ile arkadaki müziğin uyumuna bir soru işareti koymuş. Bu bir makine tahminidir, kesin değildir. Yüklemeden önce bir kez dikkatle dinleyin; kulağınıza iyi geliyorsa olduğu gibi yüklenir.
 
 ### 3.7 Otobüs Şarkısı (Pıtır'ın Otobüsü)
@@ -587,7 +566,7 @@ el yıkama şarkısı, el yıkama, temizlik şarkısı, temizlik, hijyen, eller 
 Başlık:
 
 ```
-Otobüs Şarkısı | Pıtır'ın Otobüsü | Dudek Stüdyo
+Otobüs Şarkısı | Pıtır'ın Otobüsü | DuDeK Stüdyo
 ```
 
 Açıklama:
@@ -630,19 +609,19 @@ Pıtır şoför, haydi yola!
 Otobüs durdu, hoşça kal Pıtır!
 Güle güle, güle güle!
 
-Dudek Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
 Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
-#DudekStüdyo #çocukşarkıları #bebekşarkıları
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
 Etiketler:
 
 ```
-otobüs şarkısı, taşıtlar şarkısı, otobüs, taşıtlar, araçlar, yolculuk şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, Dudek Stüdyo, Pıtır
+otobüs şarkısı, taşıtlar şarkısı, otobüs, taşıtlar, araçlar, yolculuk şarkısı, çocuk şarkıları, bebek şarkıları, Türkçe çocuk şarkıları, okul öncesi şarkılar, DuDeK Stüdyo, Pıtır
 ```
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/kare/02_kanca_b.png`. Sarı otobüs, direksiyonda şoför şapkalı Pıtır, camlarda el sallayan üç arkadaş. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Otobüs Şarkısı" yazısı eklemek.
-- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Taşıtlar ve Yolculuk - Dudek Stüdyo.
+- **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Taşıtlar ve Yolculuk - DuDeK Stüdyo.
 - **Not:** Sözler ve ezgi özgündür; bilinen otobüs şarkısının sözü ve ezgisi kullanılmadı. 0:51'de "nereden" sözü "neden" gibi duyulabilir. Klip onaylandı; bu yalnız bilgidir, bir şey yapmanız gerekmez. Açıklamadaki söz "nereden" olarak kalır.
 
 ---
@@ -709,11 +688,11 @@ Content ID, YouTube'un yüklenen videoları kayıtlı eserlerle otomatik karşı
 
 ### 4.6 Program adı neden bırakıldı: aynı adı kullanan başka kanallar
 
-İlk planda kanalın bir de program adı vardı: "Pıtır ile Öğren". 21 Kasım 2026'da YouTube aramasında (oturum açmadan, ilk sayfa) şunlar görüldü: bu adı birebir kullanan iki küçük kanal (10 ve 388 abone), "Pıtır Kedi" adında kedili şarkılar yapan bir kanal ve adında "Pıtır" geçen pek çok küçük kanal. Aynı adı taşıyan kanallarla karışmamak için program adı bırakıldı; tek marka Dudek Stüdyo oldu.
+İlk planda kanalın bir de program adı vardı: "Pıtır ile Öğren". 21 Kasım 2026'da YouTube aramasında (oturum açmadan, ilk sayfa) şunlar görüldü: bu adı birebir kullanan iki küçük kanal (10 ve 388 abone), "Pıtır Kedi" adında kedili şarkılar yapan bir kanal ve adında "Pıtır" geçen pek çok küçük kanal. Aynı adı taşıyan kanallarla karışmamak için program adı bırakıldı; tek marka DuDeK Stüdyo oldu.
 
-Aynı gün "Dudek Stüdyo" adına da bakıldı. Kanal aramasının ilk sayfasında bu adda bir kanal görülmedi; `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi. Yani ad ve bu iki tanıtıcı 21 Kasım 2026'da kullanılmıyor görünüyordu. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
+Aynı gün "DuDeK Stüdyo" adına da bakıldı. Kanal aramasının ilk sayfasında bu adda bir kanal görülmedi; `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi. Yani ad ve bu iki tanıtıcı 21 Kasım 2026'da kullanılmıyor görünüyordu. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
 
-Pıtır, kedi yavrusunun adı olarak kalıyor: şarkılarda ve videolarda geçiyor, onlar değişmedi. Yazılarda "Pıtır" yalnız kediyi anlatmak için geçer ("Pıtır ile Çocuk Şarkıları" gibi); marka olarak başlıklarda, açıklamalarda ve öbür beş listede "Dudek Stüdyo" yazar. Ana listenin adında yalnız açıklayıcı satır var (2.6). Kapakta ve profilde hep aynı Pıtır kullanılıyor. Bu adların marka tescili sorgulanmadı.
+Pıtır, kedi yavrusunun adı olarak kalıyor: şarkılarda ve videolarda geçiyor, onlar değişmedi. Yazılarda "Pıtır" yalnız kediyi anlatmak için geçer ("Pıtır ile Çocuk Şarkıları" gibi); marka olarak başlıklarda, açıklamalarda ve öbür beş listede "DuDeK Stüdyo" yazar. Ana listenin adında yalnız açıklayıcı satır var (2.6). Kapakta ve profilde hep aynı Pıtır kullanılıyor. Bu adların marka tescili sorgulanmadı.
 
 ---
 
@@ -781,7 +760,7 @@ Hepsi şu klasörde: `/home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel
 
 Ne var üstlerinde:
 
-- **Kapak:** Pıtır solda el sallıyor. Sağında büyük renkli "Dudek Stüdyo" yazısı, altında beyaz kutucuk içinde "Pıtır ile Çocuk Şarkıları". Üçü de ortadaki dar şeridin içinde; telefonda yalnız bu şerit görünür. Balonlar ve güneş kenarlarda; bilgisayarda ve televizyonda görünür.
+- **Kapak:** Pıtır solda el sallıyor. Sağında büyük renkli "DuDeK Stüdyo" yazısı, altında beyaz kutucuk içinde "Pıtır ile Çocuk Şarkıları". Üçü de ortadaki dar şeridin içinde; telefonda yalnız bu şerit görünür. Balonlar ve güneş kenarlarda; bilgisayarda ve televizyonda görünür.
 - **Profil:** Pıtır'ın gülen yüzü, mavi zemin, yazı yok.
 
 ### Kapaktaki yazıları değiştirip yeniden üretmek
@@ -790,7 +769,7 @@ Siz yapmak zorunda değilsiniz. Claude'a "kapaktaki yazıyı şöyle yap: ..." y
 
 ```
 cd /home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel
-python3 uret.py "Pıtır ile Çocuk Şarkıları" "Dudek Stüdyo"
+python3 uret.py "Pıtır ile Çocuk Şarkıları" "DuDeK Stüdyo"
 ```
 
 Sıra önemlidir: ilk yazı beyaz kutucuğun içine, ikinci yazı büyük renkli başlığa gider. Yazıları değiştirmek için aynı sırayla iki yeni yazı verilir:
@@ -804,7 +783,7 @@ python3 uret.py "Kutucuktaki Yazı" "Büyük Yazı"
 - Aynı adlı dosyaların üzerine yazar; eski görseller gider.
 - Uzun yazılarda yazı kendiliğinden küçülüp aynı şeride sığar.
 
-Ad kesin; bu not yalnız ileride bir gün adı değiştirmek isterseniz içindir. Kanal adı değişirse yazılarda da şu yerler değişir: kanal adı ve tanıtıcı (2.1), kanal açıklamasının ilk cümlesi (2.3), anahtar kelimeler (2.4), video altı yazısının ilk satırı ile # işaretli #DudekStüdyo sözü (2.5) ve oynatma listesi adları (2.6). 3. bölümdeki yedi videonun her birinde de başlık, açıklamanın son satırları, etiket listesi ve liste adları değişir.
+Ad kesin; bu not yalnız ileride bir gün adı değiştirmek isterseniz içindir. Kanal adı değişirse yazılarda da şu yerler değişir: kanal adı ve tanıtıcı (2.1), kanal açıklamasının ilk cümlesi (2.3), anahtar kelimeler (2.4), video altı yazısının ilk satırı ile # işaretli #DuDeKStüdyo sözü (2.5) ve oynatma listesi adları (2.6). 3. bölümdeki yedi videonun her birinde de başlık, açıklamanın son satırları, etiket listesi ve liste adları değişir.
 
 ### Bilinen zayıf yanlar
 
