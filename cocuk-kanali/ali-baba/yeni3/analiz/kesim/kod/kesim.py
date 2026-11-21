@@ -49,6 +49,7 @@ E12 = zarf(300, 3400, 12)        # sinir cukurlari icin
 E30 = zarf(300, 3400, 30)        # cekirdek (tepe) sayimi icin
 R5 = zarf(None, None, 5)         # tam bant, 5 ms (ek yeri / kapanis cukuru icin)
 FLX = np.convolve(z["fluxabs"], np.hanning(7) / np.hanning(7).sum(), "same")
+FLXP = np.convolve(z["flux"], np.hanning(7) / np.hanning(7).sum(), "same")       # yalniz artis (onset) akisi
 th = z["th"]; f0h = z["f0h"]; f0s = z["f0s"]
 VOI = np.interp(t, th, (f0h > 0).astype(float)) > 0.5
 midi = lambda f: 69 + 12 * np.log2(f / 440.0)
@@ -147,6 +148,21 @@ def sinir_bul(sol, sag):
         out.update({"t": (vs_j + ve_n) / 2, "kind": "midpoint", "depth_db": None,
                     "merged_vowel": [round(vs_j, 4), round(ve_n, 4)]})
         return out
+    FLP = FLXP
+    koda_son = sol["coda"][-1]["harf"] if sol["coda"] else ""
+    onset_ilk = sag["onset"][0]["harf"] if sag["onset"] else ""
+    if koda_son in "nm" and koda_son and onset_ilk in ("l", "y", "r", "v", "n", "m"):
+        # "Din|le", "yun|la": uzun genizsi (n) + akici unsuz. Sinir genizsinin BITTIGI yerdedir
+        # (ust bantlarda ani enerji artisi = pozitif spektral aki tepesi), genizsinin ortasinda degil.
+        lo = max(fi((vs_j + ve_j) / 2), fi(sag["onset"][0]["bas"] - 0.06)); hi = min(fi((vs_n + ve_n) / 2), fi(sag["onset"][-1]["bit"] + 0.03))
+        if hi > lo + 2:
+            ip = lo + int(np.argmax(FLP[lo:hi + 1]))
+            taban = float(np.median(FLP[fi(vs_j):fi(ve_n) + 1]))
+            oran = float(FLP[ip] / (taban + 1e-9))
+            if oran >= 2.5 and FLP[ip] >= 15.0:
+                out.update({"t": ip * DT, "kind": "spectral", "where": "nasal_release", "flux_ratio": round(oran, 2),
+                            "depth_db": None})
+                return out
     for i0, lo, hi, yer in adaylar:
         # gercek cukur derinligi: cukurun iki yanindaki (unlu) tepelerin dusugu - cukur
         derinlik = float(min(E12[sol_a:i0 + 1].max(), E12[i0:sag_b + 1].max()) - E12[i0])
@@ -166,7 +182,12 @@ def sinir_bul(sol, sag):
         else:
             out.update({"t": (vs_j + ve_n) / 2, "kind": "midpoint", "spectral_gain": round(kazanc, 2)})
         return out
-    # unsuz var ama enerji cukuru yok (n|l, y, v ...): unsuz bolgesindeki en buyuk spektral degisim
+    # unsuz var ama enerji cukuru yok (a|nın, o|yun, i|yav ...): once iki unlunun tamamini spektruma gore ikiye bol
+    if sol["vowel"]["harf"] != sag["vowel"]["harf"] and koda_son not in ("n", "m"):
+        tb, kazanc = iki_parca(vs_j + 0.01, ve_n - 0.01)
+        if kazanc >= 0.30 and (tb - vs_j) >= 0.04 and (ve_n - tb) >= 0.04:
+            out.update({"t": tb, "kind": "spectral", "where": "two_segment_fit", "spectral_gain": round(kazanc, 2)})
+            return out
     lo, hi = (wa, wb) if (sag["onset"] and wb > wa) else (a, b)
     ip = lo + int(np.argmax(FLX[lo:hi + 1]))
     taban = float(np.median(np.concatenate([FLX[fi(vs_j):fi(ve_j) + 1], FLX[fi(vs_n):fi(ve_n) + 1]])))

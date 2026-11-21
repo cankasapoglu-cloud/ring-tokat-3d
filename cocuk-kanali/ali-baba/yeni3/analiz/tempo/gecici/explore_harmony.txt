@@ -1,0 +1,212 @@
+   0   0.005 bass E 3 /E 3  chord A   0.62 (Am  0.62)  top3pc E A B     
+   1   0.522 bass E 3 /E 3  chord E   0.58 (A   0.57)  top3pc E A B     
+   2   1.039 bass E 3 /A 2  chord Am  0.61 (A   0.61)  top3pc E A B     
+   3   1.556 bass G 3 /E 3  chord Em  0.48 (G   0.47)  top3pc A B G     
+   4   2.074 bass E 3 /A 2  chord A   0.60 (Am  0.59)  top3pc A E B     
+   5   2.591 bass E 3 /E 3  chord A   0.53 (E   0.49)  top3pc E A B     
+   6   3.108 bass E 3 /A 2  chord E   0.60 (A   0.55)  top3pc E A B     
+   7   3.625 bass G 3 /G 3  chord G   0.62 (Gm  0.58)  top3pc G D A     
+   8   4.143 bass E 3 /A 2  chord Am  0.57 (A   0.57)  top3pc E A B     
+   9   4.660 bass E 3 /A 2  chord E   0.57 (C#m 0.45)  top3pc E G# B    
+  10   5.177 bass A 1 /C#2  chord E   0.56 (Em  0.47)  top3pc E B A     
+  11   5.694 bass C 2 /A#1  chord E   0.54 (G#m 0.51)  top3pc G# B E    
+  12   6.212 bass A 1 /E 3  chord A   0.63 (Am  0.60)  top3pc A E B     Ali Baba'nın 
+  13   6.729 bass E 2 /E 3  chord E   0.57 (C#m 0.45)  top3pc E G# B    bir 
+  14   7.246 bass A 1 /F 3  chord Am  0.62 (F   0.60)  top3pc A E C     çiftliği 
+  15   7.763 bass F 1 /F 2  chord E   0.72 (G#m 0.70)  top3pc B G# E    var. 
+  16   8.281 bass A 1 /E 3  chord Am  0.68 (A   0.63)  top3pc A E G#    Çiftliğinde 
+  17   8.798 bass E 2 /E 3  chord E   0.58 (G#m 0.49)  top3pc B G# A    
+  18   9.315 bass A 1 /F 3  chord F   0.65 (Am  0.61)  top3pc A F E     inekleri 
+  19   9.832 bass A#1 /A#1  chord E   0.84 (G#m 0.81)  top3pc B G# E    var. 
+  20  10.350 bass A 1 /A 2  chord A   0.61 (Am  0.57)  top3pc A E B     İnekler 
+  21  10.867 bass E 2 /E 3  chord E   0.68 (Em  0.51)  top3pc B E G#    nasıl 
+  22  11.384 bass A 1 /F 3  chord Am  0.64 (A   0.61)  top3pc A E C     bağırır? 
+  23  11.901 bass E 2 /E 2  chord E   0.81 (Em  0.70)  top3pc E B G#    
+  24  12.418 bass F 1 /E 2  chord E   0.81 (Em  0.75)  top3pc E B G#    Dinle 
+  25  12.936 bass C 2 /A#1  chord Bm  0.61 (B   0.59)  top3pc B F# A    bak, 
+  26  13.453 bass A 1 /A 1  chord Am  0.62 (A   0.53)  top3pc E A C     dinle 
+  27  13.970 bass F 1 /F 2  chord Em  0.58 (Am  0.56)  top3pc A G E     bak. 
+  28  14.487 bass A 1 /A 1  chord A   0.64 (Am  0.61)  top3pc A E G#    
+  29  15.005 bass F 1 /F 2  chord E   0.51 (Am  0.40)  top3pc G# A E    
+  30  15.522 bass A 1 /A#1  chord A   0.58 (Am  0.57)  top3pc A E G#    
+  31  16.039 bass F 1 /E 2  chord E   0.64 (G#m 0.58)  top3pc G# B E    
+  32  16.556 bass A 1 /A#1  chord A   0.67 (Am  0.58)  top3pc A E C#    
+  33  17.074 bass F 1 /E 2  chord E   0.47 (C#m 0.39)  top3pc G# A E    
+  34  17.591 bass A 1 /A 1  chord A   0.66 (Am  0.58)  top3pc A E C#    
+  35  18.108 bass A#1 /A#1  chord E   0.60 (G#m 0.59)  top3pc B G# E    
+  36  18.625 bass A 1 /E 3  chord Am  0.57 (A   0.57)  top3pc A E G#    Ali Baba'nın 
+  37  19.143 bass E 2 /E 3  chord E   0.74 (C#m 0.68)  top3pc E G# B    bir 
+  38  19.660 bass A 1 /F 3  chord A   0.55 (Am  0.47)  top3pc A C# G#   çiftliği 
+  39  20.177 bass F 1 /E 2  chord E   0.69 (G#m 0.62)  top3pc B G# E    var. 
+  40  20.694 bass A 1 /E 3  chord A   0.66 (Am  0.65)  top3pc E A G#    Çiftliğinde 
+  41  21.212 bass E 2 /E 3  chord E   0.71 (Em  0.62)  top3pc E B G#    koyunları 
+  42  21.729 bass A 1 /E 3  chord A   0.66 (Am  0.64)  top3pc E A G#    
+  43  22.246 bass C 2 /A#1  chord E   0.70 (G#m 0.62)  top3pc G# B E    var. 
+  44  22.763 bass A 1 /E 3  chord E   0.68 (Am  0.58)  top3pc E A B     Koyunlar 
+  45  23.281 bass F 1 /E 3  chord E   0.68 (C#m 0.56)  top3pc G# E B    nasıl 
+  46  23.798 bass A 1 /E 3  chord Am  0.55 (A   0.47)  top3pc A E C     meler? 
+  47  24.315 bass F 1 /E 2  chord E   0.83 (G#m 0.75)  top3pc B G# E    
+  48  24.832 bass E 2 /E 3  chord G   0.62 (Bm  0.58)  top3pc B D E     Dinle 
+  49  25.350 bass F 1 /E 2  chord D   0.64 (F#m 0.59)  top3pc A F# B    bak, 
+  50  25.867 bass A 1 /A 1  chord Am  0.65 (A   0.58)  top3pc A E C     dinle 
+  51  26.384 bass F 1 /F 2  chord E   0.50 (Em  0.49)  top3pc B A E     bak. 
+  52  26.901 bass A 1 /A#1  chord Am  0.73 (A   0.72)  top3pc A E B     
+  53  27.418 bass F 1 /F 2  chord C   0.84 (Cm  0.76)  top3pc G C E     
+  54  27.936 bass A 1 /A#1  chord E   0.59 (B   0.58)  top3pc B F# A    
+  55  28.453 bass A 1 /F#2  chord E   0.70 (G#m 0.67)  top3pc G# B E    
+  56  28.970 bass A 1 /A#1  chord A   0.76 (Am  0.74)  top3pc A E B     
+  57  29.487 bass F 1 /F 2  chord C   0.77 (Cm  0.69)  top3pc G C E     
+  58  30.005 bass A 1 /A#1  chord E   0.59 (Bm  0.59)  top3pc B A F#    
+  59  30.522 bass A 1 /F 2  chord G#m 0.65 (E   0.61)  top3pc G# B D#   
+  60  31.039 bass A 1 /A 2  chord A   0.70 (Am  0.67)  top3pc A E B     
+  61  31.556 bass F 1 /F 2  chord C   0.77 (Cm  0.70)  top3pc G C E     
+  62  32.074 bass A 1 /A 1  chord Em  0.53 (E   0.46)  top3pc B A E     
+  63  32.591 bass C 2 /A#1  chord E   0.74 (G#m 0.65)  top3pc G# B E    
+  64  33.108 bass A 1 /E 3  chord Am  0.56 (A   0.54)  top3pc A E G#    Ali Baba'nın 
+  65  33.625 bass E 2 /E 3  chord E   0.76 (C#m 0.64)  top3pc E G# B    bir 
+  66  34.143 bass A 1 /F 3  chord F   0.57 (Dm  0.50)  top3pc F A E     çiftliği 
+  67  34.660 bass F 1 /E 2  chord E   0.67 (G#m 0.62)  top3pc B G# E    var. 
+  68  35.177 bass A 1 /E 3  chord A   0.48 (Am  0.47)  top3pc A G# E    Çiftliğinde 
+  69  35.694 bass E 2 /E 3  chord E   0.74 (Em  0.58)  top3pc E B G#    bir 
+  70  36.212 bass A 1 /E 3  chord A   0.49 (Am  0.44)  top3pc A G# E    de atı 
+  71  36.729 bass C 2 /A#1  chord E   0.72 (G#m 0.62)  top3pc B G# E    var. 
+  72  37.246 bass A 1 /E 3  chord Am  0.53 (A   0.50)  top3pc E A G#    Atı 
+  73  37.763 bass F 1 /E 3  chord E   0.66 (C#m 0.56)  top3pc G# E B    nasıl 
+  74  38.281 bass A 1 /F 3  chord Am  0.59 (A   0.55)  top3pc A E G#    kişner? 
+  75  38.798 bass E 2 /D 3  chord E   0.85 (G#m 0.79)  top3pc B G# E    
+  76  39.315 bass F 1 /E 3  chord E   0.60 (Em  0.56)  top3pc B E G#    Dinle 
+  77  39.832 bass A 1 /A 1  chord B   0.50 (Bm  0.49)  top3pc B F# A    bak, 
+  78  40.350 bass A 1 /A 1  chord D   0.57 (A   0.55)  top3pc A B E     dinle 
+  79  40.867 bass G 1 /G 1  chord Em  0.58 (E   0.52)  top3pc E B A     bak. 
+  80  41.384 bass A 1 /A 1  chord A   0.85 (Am  0.81)  top3pc A E C#    
+  81  41.901 bass F 1 /F 2  chord E   0.40 (C#m 0.37)  top3pc G# A B    
+  82  42.418 bass A 1 /A 1  chord A   0.56 (F#m 0.55)  top3pc A C# G#   
+  83  42.936 bass F 1 /F#2  chord G#m 0.38 (E   0.38)  top3pc G# A B    
+  84  43.453 bass A 1 /A 1  chord A   0.54 (F#m 0.53)  top3pc A C# G#   
+  85  43.970 bass F 1 /F 2  chord E   0.36 (G#m 0.34)  top3pc G# A B    
+  86  44.487 bass A 1 /A 1  chord F#m 0.39 (D   0.39)  top3pc A G# B    
+  87  45.005 bass C 2 /A#1  chord G#m 0.45 (B   0.43)  top3pc B G# D#   
+  88  45.522 bass A 1 /A 1  chord A   0.58 (F#m 0.57)  top3pc A C# G#   
+  89  46.039 bass F 1 /F 1  chord E   0.46 (C#m 0.42)  top3pc G# A G    
+  90  46.556 bass A 1 /E 3  chord A   0.56 (Am  0.56)  top3pc A E G     Ali Baba'nın 
+  91  47.074 bass F 1 /E 3  chord E   0.58 (G#m 0.45)  top3pc G# E B    bir 
+  92  47.591 bass A 1 /F 3  chord A   0.58 (Am  0.56)  top3pc A G# C#   çiftliği 
+  93  48.108 bass F 1 /F 2  chord E   0.78 (G#m 0.77)  top3pc B G# E    var. 
+  94  48.625 bass A 1 /E 3  chord A   0.63 (Am  0.61)  top3pc A E G#    Çiftliğinde 
+  95  49.143 bass E 2 /E 3  chord E   0.60 (G#m 0.48)  top3pc B G# E    horozları 
+  96  49.660 bass A 1 /E 3  chord A   0.54 (Am  0.53)  top3pc A E F     
+  97  50.177 bass A#1 /A#1  chord E   0.79 (Em  0.71)  top3pc B E G#    var. 
+  98  50.694 bass A 1 /A 1  chord A   0.54 (Am  0.52)  top3pc A G# E    Horozlar 
+  99  51.212 bass F 1 /E 2  chord E   0.82 (Em  0.68)  top3pc B E G#    nasıl 
+ 100  51.729 bass A 1 /F 3  chord A   0.53 (Am  0.51)  top3pc A E F     öter? 
+ 101  52.246 bass C 2 /A#1  chord E   0.55 (G#m 0.53)  top3pc B G# A    
+ 102  52.763 bass F 1 /E 2  chord E   0.67 (Em  0.52)  top3pc B E G#    Dinle 
+ 103  53.281 bass A 1 /F 2  chord Bm  0.49 (D   0.47)  top3pc B A F#    bak, 
+ 104  53.798 bass A 1 /A 1  chord A   0.53 (Am  0.52)  top3pc A E B     dinle 
+ 105  54.315 bass G 1 /F 1  chord E   0.57 (G#m 0.52)  top3pc G# B E    bak. 
+ 106  54.832 bass A 1 /A 1  chord A   0.57 (Am  0.51)  top3pc A E B     
+ 107  55.350 bass F 1 /F 2  chord G#m 0.41 (E   0.38)  top3pc G# A B    
+ 108  55.867 bass A 1 /A#1  chord F#m 0.53 (A   0.51)  top3pc A C# A#   
+ 109  56.384 bass F 1 /F 2  chord G#m 0.32 (D   0.30)  top3pc G# A A#   
+ 110  56.901 bass A 1 /A 1  chord A   0.57 (F#m 0.56)  top3pc A C# A#   
+ 111  57.418 bass F 1 /E 2  chord G#m 0.38 (E   0.37)  top3pc G# A B    
+ 112  57.936 bass A 1 /A 1  chord A   0.37 (F#m 0.37)  top3pc A G# A#   
+ 113  58.453 bass C 2 /A#1  chord G#m 0.42 (B   0.42)  top3pc B D# A    
+ 114  58.970 bass G 1 /F#2  chord G#m 0.38 (E   0.35)  top3pc B G# A    
+ 115  59.487 bass A 1 /E 3  chord D   0.57 (Dm  0.57)  top3pc A G# D    Ali Baba'nın 
+ 116  60.005 bass E 2 /E 3  chord E   0.62 (C#m 0.54)  top3pc E G# A    bir 
+ 117  60.522 bass A 1 /E 3  chord A   0.64 (Am  0.60)  top3pc A E G#    çiftliği 
+ 118  61.039 bass F 1 /F 2  chord E   0.83 (G#m 0.81)  top3pc B G# E    var. 
+ 119  61.556 bass A 1 /E 3  chord A   0.51 (Am  0.48)  top3pc A E G#    Çiftliğinde 
+ 120  62.074 bass E 2 /E 3  chord E   0.71 (Em  0.58)  top3pc E B G#    ördekleri 
+ 121  62.591 bass A 1 /F 3  chord F   0.58 (Dm  0.54)  top3pc F A G#    
+ 122  63.108 bass C 2 /A#1  chord E   0.74 (G#m 0.66)  top3pc B G# E    var. 
+ 123  63.625 bass A 1 /E 3  chord D   0.59 (Dm  0.57)  top3pc A D E     Ördekler 
+ 124  64.143 bass E 2 /E 2  chord E   0.78 (Em  0.71)  top3pc B G# E    nasıl 
+ 125  64.660 bass A 1 /E 3  chord A   0.56 (Am  0.53)  top3pc A E G#    bağırır? 
+ 126  65.177 bass A#1 /D 3  chord E   0.62 (G#m 0.52)  top3pc B G# E    
+ 127  65.694 bass F 1 /E 2  chord E   0.72 (G#m 0.54)  top3pc G# B E    Dinle 
+ 128  66.212 bass G 1 /F 2  chord F   0.43 (Am  0.41)  top3pc C A D     bak, 
+ 129  66.729 bass A 1 /A 1  chord Am  0.64 (A   0.59)  top3pc E A F     dinle 
+ 130  67.246 bass A 1 /F 1  chord E   0.55 (Em  0.44)  top3pc G# E B    bak. 
+ 131  67.763 bass A 1 /A 1  chord Am  0.61 (A   0.60)  top3pc E A B     
+ 132  68.281 bass F 1 /E 3  chord E   0.85 (Em  0.81)  top3pc E B G#    
+ 133  68.798 bass A 1 /A#1  chord F   0.51 (Am  0.49)  top3pc F E A     
+ 134  69.315 bass F 1 /E 2  chord E   0.73 (Em  0.58)  top3pc B E G#    
+ 135  69.832 bass A 1 /A 1  chord A   0.58 (Am  0.57)  top3pc A E B     
+ 136  70.350 bass F 1 /E 2  chord E   0.82 (Em  0.76)  top3pc E B G#    
+ 137  70.867 bass A 1 /A 1  chord A   0.53 (Am  0.51)  top3pc A E F     
+ 138  71.384 bass C 2 /A#1  chord E   0.72 (Em  0.61)  top3pc B E G#    
+ 139  71.901 bass A 1 /A 1  chord A   0.62 (Am  0.59)  top3pc E A B     
+ 140  72.418 bass F 1 /E 3  chord E   0.86 (Em  0.81)  top3pc E B G#    
+ 141  72.936 bass F 1 /F 2  chord D   0.55 (Dm  0.49)  top3pc A D G#    
+ 142  73.453 bass A 1 /A 1  chord C   0.36 (G#  0.35)  top3pc G# G C    
+ 143  73.970 bass A 1 /E 3  chord D   0.49 (Dm  0.47)  top3pc A G# D    Ali Baba'nın 
+ 144  74.487 bass E 2 /E 3  chord E   0.41 (G#m 0.40)  top3pc G# A B    bir 
+ 145  75.005 bass A 1 /F 3  chord A   0.43 (F#m 0.40)  top3pc A G# C#   çiftliği 
+ 146  75.522 bass E 2 /F 2  chord E   0.65 (G#m 0.64)  top3pc G# B A    var. 
+ 147  76.039 bass A 1 /E 3  chord A   0.53 (F#m 0.50)  top3pc A G# C#   Çiftliğinde 
+ 148  76.556 bass F 1 /E 3  chord E   0.59 (G#m 0.50)  top3pc G# B A    ördekleri 
+ 149  77.074 bass A 1 /A 2  chord A   0.70 (Am  0.64)  top3pc A E G#    
+ 150  77.591 bass C 2 /A#1  chord E   0.73 (G#m 0.64)  top3pc B G# E    var. 
+ 151  78.108 bass A 1 /A 1  chord Am  0.64 (A   0.64)  top3pc A E D#    Köpekler 
+ 152  78.625 bass F 1 /E 2  chord E   0.79 (Em  0.63)  top3pc B E G#    nasıl 
+ 153  79.143 bass A 1 /A 1  chord A   0.63 (Am  0.58)  top3pc A E C#    havlar? 
+ 154  79.660 bass C 2 /D 3  chord E   0.56 (G#m 0.50)  top3pc B A G#    
+ 155  80.177 bass F 1 /F 2  chord E   0.79 (G#m 0.63)  top3pc G# B E    Dinle 
+ 156  80.694 bass A 1 /A 1  chord D   0.53 (Dm  0.52)  top3pc D F# A    bak, 
+ 157  81.212 bass A 1 /A 1  chord Am  0.54 (F   0.52)  top3pc A E F     dinle 
+ 158  81.729 bass A 1 /G 1  chord Em  0.58 (E   0.54)  top3pc B E G     bak. 
+ 159  82.246 bass A 1 /A 1  chord F#m 0.51 (A   0.51)  top3pc A C# G#   
+ 160  82.763 bass F 1 /E 2  chord G#m 0.38 (E   0.37)  top3pc G# A F#   
+ 161  83.281 bass A 1 /A 1  chord A   0.52 (F#m 0.52)  top3pc A C# G#   
+ 162  83.798 bass E 2 /E 2  chord E   0.37 (C#m 0.35)  top3pc G# A# F#  
+ 163  84.315 bass A 1 /A 1  chord A   0.53 (F#m 0.53)  top3pc C# A G#   
+ 164  84.832 bass F 1 /E 2  chord D   0.37 (F#m 0.36)  top3pc A G# F#   
+ 165  85.350 bass A 1 /A#1  chord A   0.49 (F#m 0.49)  top3pc A C# G#   
+ 166  85.867 bass C 2 /A#1  chord Am  0.39 (F   0.38)  top3pc A C G#    
+ 167  86.384 bass A 1 /E 3  chord A   0.54 (C#m 0.51)  top3pc E A G#    Ali Baba'nın 
+ 168  86.901 bass E 2 /E 3  chord C#m 0.64 (E   0.63)  top3pc E G# A    bir 
+ 169  87.418 bass A 1 /E 3  chord A   0.49 (F#m 0.44)  top3pc A G# C#   çiftliği 
+ 170  87.936 bass F 1 /E 2  chord E   0.79 (G#m 0.60)  top3pc G# B E    var. 
+ 171  88.453 bass A 1 /E 3  chord A   0.59 (F#m 0.49)  top3pc A C# G#   Çiftliğinde 
+ 172  88.970 bass F 1 /E 3  chord E   0.71 (C#m 0.63)  top3pc E G# B    bir 
+ 173  89.487 bass A 1 /F 3  chord A   0.54 (Am  0.52)  top3pc A G# E    kedisi 
+ 174  90.005 bass C 2 /C 2  chord E   0.65 (G#m 0.55)  top3pc B G# E    var. 
+ 175  90.522 bass A 1 /E 3  chord A   0.59 (Am  0.57)  top3pc A E G#    Kedisi 
+ 176  91.039 bass F 1 /E 3  chord E   0.70 (C#m 0.62)  top3pc E G# A    nasıl 
+ 177  91.556 bass A 1 /A#1  chord F   0.73 (Am  0.57)  top3pc C A F     miyavlar? 
+ 178  92.074 bass C 2 /D 3  chord E   0.70 (Em  0.59)  top3pc B E A     
+ 179  92.591 bass F 1 /F 2  chord E   0.51 (G#m 0.47)  top3pc G# B F    Dinle 
+ 180  93.108 bass E 2 /E 2  chord Fm  0.49 (Dm  0.46)  top3pc G# F A    bak, 
+ 181  93.625 bass A 1 /A 1  chord F   0.42 (Am  0.40)  top3pc B C A     dinle 
+ 182  94.143 bass G 1 /F#2  chord C   0.55 (Em  0.53)  top3pc G A E     bak. 
+ 183  94.660 bass A 1 /A 1  chord Am  0.64 (A   0.62)  top3pc E A B     
+ 184  95.177 bass E 2 /E 3  chord E   0.87 (Em  0.83)  top3pc E B G#    
+ 185  95.694 bass A 1 /A 1  chord D   0.73 (Dm  0.69)  top3pc A D E     
+ 186  96.212 bass E 2 /F 2  chord E   0.69 (Em  0.57)  top3pc B E G#    
+ 187  96.729 bass A 1 /A 1  chord A   0.53 (Am  0.51)  top3pc A E B     
+ 188  97.246 bass E 2 /E 2  chord E   0.87 (Em  0.81)  top3pc E B G#    
+ 189  97.763 bass A 1 /A 1  chord D   0.57 (Dm  0.56)  top3pc A D C#    
+ 190  98.281 bass F 1 /G#2  chord G#m 0.46 (E   0.42)  top3pc B G# C    
+ 191  98.798 bass A 1 /A 1  chord A   0.54 (Am  0.54)  top3pc E A B     
+ 192  99.315 bass E 2 /E 3  chord E   0.87 (Em  0.83)  top3pc B E G#    
+ 193  99.832 bass A 1 /A 1  chord D   0.76 (Dm  0.75)  top3pc A D E     
+ 194 100.350 bass C 2 /E 2  chord E   0.70 (Em  0.64)  top3pc B E G#    
+ 195 100.867 bass F 1 /F 2  chord E   0.54 (G#m 0.48)  top3pc G# B F    Dinle 
+ 196 101.384 bass F 1 /E 2  chord Fm  0.42 (Dm  0.41)  top3pc G# F B    bak, 
+ 197 101.901 bass A 1 /C 2  chord Am  0.61 (F   0.53)  top3pc A C E     dinle 
+ 198 102.418 bass A 1 /F#2  chord Am  0.56 (C   0.54)  top3pc E A C     bak. 
+ 199 102.936 bass A 1 /A 1  chord Am  0.50 (A   0.48)  top3pc A E D     
+ 200 103.453 bass E 2 /E 3  chord E   0.85 (Em  0.80)  top3pc B E G#    
+ 201 103.970 bass A 1 /A 1  chord D   0.62 (Dm  0.59)  top3pc A D E     
+ 202 104.487 bass E 2 /E 2  chord E   0.70 (Em  0.65)  top3pc B E G#    
+ 203 105.005 bass A 1 /A 1  chord Am  0.62 (A   0.56)  top3pc A E B     
+ 204 105.522 bass F 1 /E 2  chord E   0.80 (Em  0.75)  top3pc B E G#    
+ 205 106.039 bass A 1 /A 1  chord D   0.70 (Dm  0.69)  top3pc A D E     
+ 206 106.556 bass F 1 /A 1  chord Em  0.60 (G   0.58)  top3pc B G C     
+ 207 107.074 bass F 1 /F 1  chord Dm  0.66 (D   0.57)  top3pc D A G#    Dinle 
+ 208 107.591 bass F 1 /F 2  chord Bm  0.43 (E   0.43)  top3pc B F G#    bak, 
+ 209 108.108 bass A 1 /C 2  chord Am  0.66 (F   0.60)  top3pc C A E     dinle 
+ 210 108.625 bass A 1 /A 1  chord A   0.70 (Am  0.64)  top3pc A E C#    bak. 
+ 211 109.143 bass A 2 /E 3  chord Am  0.55 (A   0.51)  top3pc E A C     
