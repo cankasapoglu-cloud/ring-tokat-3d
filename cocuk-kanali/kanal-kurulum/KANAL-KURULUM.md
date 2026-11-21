@@ -2,12 +2,12 @@
 
 Kanal: **Dudek Stüdyo** (tek marka) · Kapaktaki alt yazı: **Pıtır ile Çocuk Şarkıları** · Hazırlanma: 21 Kasım 2026
 
-> **Ad kesinleşti (21 Kasım 2026):** kanalın adı **Dudek Stüdyo** ve tek marka budur; ayrı bir program adı yok. Eski program adı "Pıtır ile Öğren" bırakıldı, çünkü YouTube'da bu adı birebir kullanan iki kanal var (4.6). Pıtır, kedi yavrusunun adı olarak kalıyor; şarkılar ve videolar değişmedi. Kapakta büyük yazı "Dudek Stüdyo", altındaki etikette "Pıtır ile Çocuk Şarkıları" yazıyor. Bu alt yazı bir program adı değildir; kanalda ne olduğunu anlatır.
+> **Ad kesinleşti (21 Kasım 2026):** kanalın adı **Dudek Stüdyo** ve tek marka budur; ayrı bir program adı yok. Eski program adı "Pıtır ile Öğren" bırakıldı, çünkü YouTube'da bu adı birebir kullanan iki kanal var (4.6). Pıtır, kedi yavrusunun adı olarak kalıyor; şarkılar ve videolar değişmedi. Kapakta büyük yazı "Dudek Stüdyo", altındaki beyaz kutucukta "Pıtır ile Çocuk Şarkıları" yazıyor. Bu alt yazı bir program adı değildir; kanalda ne olduğunu anlatır.
 
 ## Okumadan önce
 
 - **Kanalı siz açarsınız.** Claude kanal açamaz, hesabınıza giremez, video yükleyemez. Yazıları, görselleri ve videoları hazırlar; düğmelere siz basarsınız.
-- **Şifrenizi ve telefonunuza gelen kodu sohbete asla yazmayın.** Claude bunları istemez. Yalnız YouTube'un kendi ekranına yazılır.
+- **Şifrenizi ve telefonunuza gelen kodu sohbete asla yazmayın.** Claude bunları istemez. Yalnız YouTube'un kendi ekranına yazılır. Ekran görüntüsü gönderirken de dikkat edin: görüntüde şifre, doğrulama kodu ya da e-posta adresiniz görünüyorsa göndermeyin ya da o kısmı kırpın.
 - **Kurallar için uyarı:** YouTube'un resmî yardım sayfaları bu çalışmada açılamadı. Buradaki kural bilgileri, arama sonuçlarında o sayfalardan görünen kısa özetlere dayanıyor. Hiçbiri sayfanın kendisinden okunmadı.
 - **(?) işareti:** Yanında (?) olan bilgi kesin değildir. Hepsi 5. bölümde açıklandı. Ekranda başka bir şey görürseniz ekrana güvenin.
 - **Menü adları** sizde biraz farklı yazabilir; YouTube bunları sık değiştirir.
@@ -15,8 +15,8 @@ Kanal: **Dudek Stüdyo** (tek marka) · Kapaktaki alt yazı: **Pıtır ile Çocu
 
 Kısa sözlük:
 
-- **YouTube Studio:** kanalınızı yönettiğiniz yer. Tarayıcıda studio.youtube.com adresi, telefonda "YouTube Studio" uygulaması.
-- **Tanıtıcı:** kanalın @ ile başlayan kısa adı.
+- **YouTube Studio:** kanalınızı yönettiğiniz yer. Tarayıcıda studio.youtube.com adresi, telefonda "YouTube Studio" uygulaması. Uygulama telefonunuzda yoksa uygulama mağazasından kurabilirsiniz; kurmadan tarayıcıdan da girilir.
+- **Tanıtıcı:** kanalın @ ile başlayan kısa adı. YouTube ekranında "Herkese açık kullanıcı adı" diye geçebilir.
 - **Küçük resim:** videonun kapak resmi.
 - **Oynatma listesi:** videoların arka arkaya çaldığı liste.
 
@@ -24,32 +24,51 @@ Kısa sözlük:
 
 ## 1. Sizin yapacaklarınız
 
-Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, birlikte bakarız.
+Sırayla gidin. Takıldığınız ekranın görüntüsünü Claude'a gönderin, birlikte bakarız. (Görüntüde şifre, kod ya da e-posta adresi görünmesin.)
 
 1. **Ad kesin.** Kanal adı Dudek Stüdyo; tek marka budur, ayrı bir program adı yok. Bu adım tamam.
 
 2. **Kanalı açın.** Bu Google hesabında eski bir kişisel kanalınız zaten var. İki yol var; birini seçin.
-   - **A yolu: ayrı, yeni bir kanal açmak (önerilen).** Eski kanalla yorum yazdıysanız ya da orada kişisel videolarınız varsa bu yolu seçin. Kişisel izleriniz çocuk kanalına karışmaz; eski kanalınız olduğu gibi kalır. Telefonun tarayıcısında (Chrome ya da Safari) ya da bilgisayarda youtube.com/channel_switcher adresine girin (?), Google hesabınızla oturum açın, "Kanal oluştur" seçeneğine dokunun (?). Adres açılmazsa youtube.com'da profil resminize dokunun, kanal listenizi açın, yeni kanal oluşturma seçeneğini arayın (?). Bu yol kanalı kendi adınızla değil, stüdyo adıyla açar (?). YouTube uygulamasından değil, tarayıcıdan yapılır (?).
-   - **B yolu: eski kanalın adını değiştirmek.** Eski kanal boşsa ve onunla hiç yorum yazmadıysanız bu da olur. YouTube uygulamasında "Kanalı düzenle" ekranını açın; Ad, Herkese açık kullanıcı adı (yani tanıtıcı) ve Açıklama alanlarını bu rehberdeki yazılarla değiştirin. Sonra "Tüm aboneliklerimi gizli tut" seçeneğini açın; böylece kişisel abonelikleriniz kanalda görünmez.
+   - **A yolu: ayrı, yeni bir kanal açmak.**
+     - **Ne zaman:** Eski kanalla yorum yazdıysanız ya da orada kişisel videonuz varsa önerilen yol budur. Kişisel izleriniz çocuk kanalına karışmaz; eski kanalınız olduğu gibi kalır.
+     - **Nasıl:** Telefonun tarayıcısında (Chrome ya da Safari) ya da bilgisayarda youtube.com/channel_switcher adresine girin (?), Google hesabınızla oturum açın, "Kanal oluştur" seçeneğine dokunun (?). Açılan ekrana ne yazacağınız 3. adımda. Bu yol kanalı kendi adınızla değil, stüdyo adıyla açar (?). YouTube uygulamasından değil, tarayıcıdan yapılır (?).
+     - **Açılmazsa:** Adres YouTube uygulamasını açarsa geri dönün, tarayıcının menüsünden "Masaüstü sitesi" seçeneğini işaretleyip yeniden deneyin (?). Sayfa hiç açılmazsa youtube.com'da profil resminize dokunun, kanal listenizi açın, yeni kanal oluşturma seçeneğini arayın (?). Olmazsa ekran görüntüsü gönderin.
+     - **Dikkat:** Hesabınızda iki kanal olur; her seferinde doğru kanalda olduğunuza bakmanız gerekir (3. adımın sonu). Bu yol tarayıcı ister; menü adları doğrulanmadı.
+   - **B yolu: eski kanalın adını değiştirmek.**
+     - **Ne zaman:** Eski kanal boşsa ve onunla hiç yorum yazmadıysanız bu da olur.
+     - **Nasıl:** YouTube uygulamasında "Kanalı düzenle" ekranını açın: profil resminiz > "Kanalı görüntüle" > kalem işareti (?). Ne yazacağınız 3. adımda.
+     - **Dikkat:** Bu yolda kişisel kanalınız ayrı kalmaz; bu hesapla sonradan yazacağınız yorumlar da çocuk kanalının adıyla görünür (?).
    - Kanalın eski olması, YouTube'un kanalı kapatmasına karşı bir koruma sağlamaz; B yolunu yalnız kanal eski diye seçmeyin.
 
-3. **Ad ve tanıtıcıyı yazın.** Kanal adı: `Dudek Stüdyo`. Tanıtıcı için sırayla deneyin: `@dudekstudyo`, `@dudekstudio`, `@dudekcocuk`. 21 Kasım 2026'da YouTube'un herkese açık sayfalarına baktık: `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. Kesin olarak ancak siz, tanıtıcıyı YouTube'un içinde yazarken görürsünüz. Türkçe harf (ü, ö, ı, ş) kullanmayın (?). A yolunda sonra "Kanal oluştur" düğmesine basın; B yolunda yazdıklarınızı kaydedin.
+3. **Ad ve tanıtıcıyı yazın.** Kanal adı: `Dudek Stüdyo`. Tanıtıcı (ekranda "Herkese açık kullanıcı adı" diye geçebilir) için sırayla deneyin: `@dudekstudyo`, `@dudekstudio`, `@dudekcocuk`. 21 Kasım 2026'da YouTube'un herkese açık sayfalarına baktık: `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. `@dudekcocuk` adresine bakılmadı. Kesin olarak ancak siz, tanıtıcıyı YouTube'un içinde yazarken görürsünüz. Türkçe harf (ü, ö, ı, ş) kullanmayın (?).
+   - **Yazım hatasına dikkat:** ad ve tanıtıcı 14 günde en çok 2 kez değiştirilebiliyor (?).
+   - **A yolunda:** yazdıktan sonra formun altındaki "Kanal oluştur" düğmesine basın (?). Bu düğme, 2. adımda dokunduğunuz seçenekle aynı adı taşıyabilir; ikincisi formu bitiren düğmedir. Tanıtıcı kutusu bu ekranda çıkmazsa kanalı yalnız adla açın; tanıtıcı sonradan da yazılabilir (?).
+   - **B yolunda:** aynı ekranda Açıklama kutusuna 2.3'teki yazıyı da yapıştırın, "Tüm aboneliklerimi gizli tut" seçeneğini açın ve kaydedin. Bu seçenek aynı ekranda olmalı (?); bulamazsanız ekran görüntüsü gönderin. Açılınca kişisel abonelikleriniz kanalda görünmez.
+   - **A yolunu seçtiyseniz** hesabınızda artık iki kanal var. Bundan sonraki her adımda önce ekranda kanal adının "Dudek Stüdyo" yazdığına bakın; eski kanalınız görünüyorsa profil resmine dokunup kanalı değiştirin (?).
 
-4. **Telefon numaranızı doğrulayın.** YouTube Studio > Ayarlar > Kanal > Özellik uygunluğu > Orta düzey özellikler > Telefon numarasını doğrula. Kod SMS ya da sesli aramayla gelir; kodu yalnız YouTube'un ekranına yazın. Bunu yapmadan videolara kendi küçük resminizi koyamazsınız. Bir telefon numarası yılda en çok 2 kanal için kullanılabilir.
+**4-7. adımlar için not:** Bu adımlardaki menü yolları bilgisayardaki YouTube Studio'ya göre yazıldı. Telefondaki YouTube Studio uygulamasında aynı yeri bulamazsanız telefonun tarayıcısında studio.youtube.com adresini açın ve tarayıcının menüsünden "Masaüstü sitesi" seçeneğini işaretleyin (?). Yine bulamazsanız ekran görüntüsü gönderin.
 
-5. **Kanalı "çocuklara özel" yapın.** YouTube Studio > Ayarlar > Kanal > Gelişmiş ayarlar > Kitle bölümünde "Evet, bu kanalı çocuklara özel olarak ayarla" (?). Telefondaki uygulamada bulamazsanız bilgisayardan ya da telefon tarayıcısında "Masaüstü sitesi" seçeneğini açarak yapın (?). Her videoyu yüklerken bunu ayrıca yine seçeceksiniz.
+4. **Telefon numaranızı doğrulayın.** Yol (?): YouTube Studio > Ayarlar > Kanal > Özellik uygunluğu > Orta düzey özellikler > Telefon numarasını doğrula. Bulamazsanız tarayıcıda youtube.com/verify adresini deneyin (?). Kod SMS ya da sesli aramayla gelir; kodu yalnız YouTube'un ekranına yazın. Bunu yapmadan videolara kendi küçük resminizi koyamazsınız. Aynı telefon numarası sınırlı sayıda kanalda kullanılabiliyor; sınır "yılda 2" mi "toplam 2" mi, doğrulayamadık (?). Eski kanalınızı da bu numarayla doğruladıysanız ekranda uyarı çıkabilir; çıkarsa Claude'a yazın.
 
-6. **Kapak görselini ve profil resmini yükleyin.** YouTube Studio'da "Özelleştirme" bölümünden yüklenir (?). Yükledikten sonra kanala telefondan bir kez bakın: yazılar kesilmiş mi?
+5. **Kanalı "çocuklara özel" yapın.** YouTube Studio > Ayarlar > Kanal > Gelişmiş ayarlar > Kitle bölümünde "Evet, bu kanalı çocuklara özel olarak ayarla" (?). Telefondaki uygulamada bulamazsanız yukarıdaki nota göre tarayıcıdan yapın. Bu ayardan sonra videoları yüklerken "çocuklara özel" seçili gelebilir (?); seçili olduğuna her videoda yine de bakın.
+
+6. **Kapak görselini ve profil resmini yükleyin.** Önce iki dosyayı Claude'dan isteyip telefonunuza alın. YouTube Studio'da "Özelleştirme" bölümünden yüklenir (?). Yükledikten sonra kanala telefondan bir kez bakın: yazılar kesilmiş mi?
    - Kapak görseli (kanalın üstündeki geniş resim): `/home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel/banner_2560x1440.png`
    - Profil resmi: `/home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel/profil_800x800.png`
 
-7. **Açıklamayı ve anahtar kelimeleri yapıştırın.** İkisi de 2. bölümde hazır. Açıklama "Özelleştirme" bölümündeki açıklama kutusuna (?), anahtar kelimeler Ayarlar > Kanal > Temel bilgiler altındaki kutuya (?) yapıştırılır. Açıklamaya e-posta adresi yazmayın.
+7. **Açıklamayı ve anahtar kelimeleri yapıştırın.** İkisi de 2. bölümde hazır (2.3 ve 2.4). Açıklama "Özelleştirme" bölümündeki açıklama kutusuna (?), anahtar kelimeler Ayarlar > Kanal > Temel bilgiler altındaki kutuya (?) yapıştırılır. B yolunda açıklamayı 3. adımda zaten yapıştırdıysanız burada yalnız anahtar kelimeler kalır. Açıklamaya e-posta adresi yazmayın.
 
-8. **Oynatma listelerini açın.** Altı listenin adı ve açıklaması 2. bölümde. En önemlisi "Tüm Şarkılar" listesidir. İlk videoyu yüklerken listeye eklemeyi deneyin: çocuklara özel video kendi listenize eklenebiliyor mu, o an görürsünüz (?).
+8. **Oynatma listelerini oluşturun.** Altı listenin adı ve açıklaması 2.6'da. İlk gün yalnız 1, 2 ve 3 numaralı listeler gerekir; 4, 5 ve 6 ilgili video yüklenirken oluşturulur. (İlk gün Ali Baba yerine Beş Küçük Maymun'u yüklerseniz 4 numaralı liste de o gün gerekir.)
+   - Liste, video yüklenirken "Oynatma listesi" satırından oluşturulabilir (?); yani bu adım 9. adımla birlikte yapılır. Yerini bulamazsanız ekran görüntüsü gönderin.
+   - Çocuklara özel video kendi listenize eklenebiliyor mu, ilk videoda görürsünüz (?). Video listeye eklenemiyorsa durun ve Claude'a yazın; plan listelere dayanıyor.
+   - Ana listeyi (Liste 1) kanalın ana sayfasında en üste koymak sonraya kalabilir; yolunu bilmiyoruz (?).
 
 9. **İlk videoları yükleyin.** İlk gün üç video birden: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi. Yazılar ve işaretlenecek ayarlar 3. bölümde. Ali Baba'yı yüklemeden önce 4.4'teki notu okuyun; karar sizin.
+   - **Yüklemeden önce Claude'a yazın:** ilk gün için üç videonun dosyasını ve küçük resimlerini isteyin; dosyalar önce telefonunuza inmeli. Pıtır'ın Ailesi'nin kapağı henüz hazır değil; "Pıtır'ın Ailesi'nin kapağını hazırla" yazın.
+   - **Nereden yüklenir:** telefonda yükleme YouTube uygulamasındaki + işaretinden yapılır (?); bulamazsanız ekran görüntüsü gönderin.
+   - **Sonraki günler için bekleyen işler:** El Yıkama Şarkısı'nın kapağı hazır değil (3.6); Balon Şarkısı'nın sözleri için kararınız bekleniyor (3.5).
 
-10. **Yayın günlerini seçin.** Haftada sabit iki gün, aynı saat (örneğin salı ve cuma). Kalan dört video bu günlerde birer birer yüklenir: Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı, Otobüs Şarkısı.
+10. **Yayın günlerini seçin.** Haftada sabit iki gün, aynı saat (örneğin salı ve cuma). Kalan dört video bu günlerde birer birer yüklenir: Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı, Otobüs Şarkısı. Eldeki yedi video ilk gün ve iki haftada biter; sonrası için yeni video gerekir.
 
 ---
 
@@ -65,7 +84,7 @@ Kanal adı:
 Dudek Stüdyo
 ```
 
-Tanıtıcı (ilki doluysa sıradakini deneyin):
+Tanıtıcı (ekranda "Herkese açık kullanıcı adı" diye geçebilir; ilki doluysa sıradakini deneyin):
 
 ```
 @dudekstudyo
@@ -79,12 +98,12 @@ Tanıtıcı (ilki doluysa sıradakini deneyin):
 @dudekcocuk
 ```
 
-- 21 Kasım 2026'da baktık: YouTube'da kanal aramasının ilk sayfasında "Dudek Stüdyo" adında bir kanal görülmedi. `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
+- 21 Kasım 2026'da baktık: YouTube'da kanal aramasının ilk sayfasında "Dudek Stüdyo" adında bir kanal görülmedi. `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi, yani boş görünüyorlar. `@dudekcocuk` adresine bakılmadı. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
 - Kanal adına başka bir söz eklemeyin; tek marka "Dudek Stüdyo"dur.
 
 ### 2.2 Slogan (tek satır)
 
-Tek satırlık tanıtım gereken her yerde kullanılır.
+Şimdilik hiçbir yere yapıştırmanız gerekmez. İleride tek satırlık tanıtım istenen bir yer çıkarsa buradan alınır.
 
 ```
 Pıtır'la birlikte söyle! 3-7 yaş çocuklar için Türkçe çocuk şarkıları.
@@ -127,13 +146,13 @@ Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; i
 #DudekStüdyo #çocukşarkıları #bebekşarkıları
 ```
 
-"Abone ol, beğen" çağrısı bilerek yok; çocuklara özel videolarda işe yaramaz.
+"Abone ol, beğen" çağrısını bilerek koymadık: 3-7 yaş izleyici yazıyı okuyamaz, zil ve yorum da kapalı (?). Bu bir YouTube kuralı değil, bizim tercihimiz.
 
 ### 2.6 Oynatma listeleri
 
-Şimdi açılacak altı liste. Her birinin adı ve tek satır açıklaması:
+Altı liste var. İlk gün yalnız 1, 2 ve 3 numaralı listeler oluşturulur; 4, 5 ve 6, ilgili video yüklenirken oluşturulur (1. bölüm, 8. adım). Her birinin adı ve tek satır açıklaması:
 
-**Liste 1 (ana liste; kanalın ana sayfasında en üstte dursun)**
+**Liste 1 (ana liste; ileride kanalın ana sayfasında en üste konabilir)**
 
 ```
 Pıtır ile Çocuk Şarkıları - Tüm Şarkılar
@@ -144,6 +163,8 @@ Pıtır'ın bütün şarkıları arka arkaya; aç, bırak, çalsın.
 ```
 
 Videolar: Ali Baba'nın Çiftliği, Pıtır'ın Ailesi, Parmak Ailesi, Beş Küçük Maymun, Balon Şarkısı, El Yıkama Şarkısı, Otobüs Şarkısı.
+
+Küçük bir tercih: altı listeden yalnız bunun adında kanal adı yok. İsterseniz adı "Tüm Şarkılar - Dudek Stüdyo" yapılabilir; Claude'a yazarsanız rehberdeki bütün yerler birlikte değişir. Yazmazsanız ad böyle kalır.
 
 **Liste 2**
 
@@ -211,6 +232,8 @@ Sonra açılacaklar: "Uzun Bölümler - Dudek Stüdyo" (ilk uzun bölüm yüklen
 
 ## 3. Videolar
 
+Yedi videonun hepsi hazır; Otobüs Şarkısı'nın klibi de onaylandı. Eksik kalanlar video değil, yan işlerdir: iki kapak ve Balon Şarkısı'nın sözleri (1. bölüm, 9. adım).
+
 ### Yükleme sırası
 
 | Sıra | Video | Süre | Ne zaman |
@@ -227,16 +250,17 @@ Sonra açılacaklar: "Uzun Bölümler - Dudek Stüdyo" (ilk uzun bölüm yüklen
 
 ### Her yüklemede yapılacaklar (bütün videolar için aynı)
 
-1. Videoyu önce **Özel** olarak yükleyin. Böyle yüklenince sizden başka kimse göremez.
-2. **Başlık** ve **açıklama:** aşağıdaki kutulardan kopyalayın.
-3. **Küçük resim:** aşağıda yazan dosyayı seçin. (1. bölümün 4. adımındaki telefon doğrulaması yapılmış olmalı.)
-4. **Oynatma listesi:** aşağıda yazan listeleri seçin.
-5. **Kitle:** "Evet, çocuklara özel" seçin.
-6. **Yapay zekâ sorusu:** **Evet** deyin. Yükleme ekranında, içeriğin değiştirilmiş ya da yapay zekâ ile üretilmiş olup olmadığını soran Evet/Hayır sorusudur; yeri ve Türkçe adı (?). Sebebi 4.2'de.
-7. **Etiketler:** kutuyu bulursanız yapıştırın. Bulamazsanız boş bırakın; zorunlu değildir, sonra eklenir.
-8. Videoyu baştan sona bir kez izleyin. Her şey tamamsa görünürlüğü **Herkese açık** yapın.
+1. **Önce doğru kanalda olduğunuza bakın:** ekranda kanal adı "Dudek Stüdyo" yazmalı. Eski kanalınız görünüyorsa profil resmine dokunup kanalı değiştirin (?).
+2. Videoyu önce **Özel** olarak yükleyin. Böyle yüklenince sizden başka kimse göremez.
+3. **Başlık** ve **açıklama:** aşağıdaki kutulardan kopyalayın.
+4. **Küçük resim:** aşağıda yazan dosyayı seçin. (1. bölümün 4. adımındaki telefon doğrulaması yapılmış olmalı.)
+5. **Oynatma listesi:** aşağıda yazan listeleri seçin. Liste henüz yoksa aynı satırdan oluşturun (?).
+6. **Kitle:** "Evet, çocuklara özel" seçili olmalı; seçili değilse siz seçin.
+7. **Yapay zekâ sorusu:** **Evet** deyin. Yükleme ekranında, içeriğin değiştirilmiş ya da yapay zekâ ile üretilmiş olup olmadığını soran Evet/Hayır sorusudur; yeri ve Türkçe adı (?). Sebebi 4.2'de. Bu soruyu telefonda bulamazsanız boş geçmeyin: videoyu "Özel" bırakın, soruyu tarayıcıdan cevaplayın, sonra "Herkese açık" yapın (5. bölüm, 13. madde).
+8. **Etiketler:** kutuyu bulursanız yapıştırın. Bulamazsanız boş bırakın; zorunlu değildir, sonra eklenir.
+9. Videoyu baştan sona bir kez izleyin. Her şey tamamsa görünürlüğü **Herkese açık** yapın.
 
-Başlıkta 100, açıklamada 5.000 karakter sınırı var. Aşağıdaki yazıların hepsi bu sınırların çok altında.
+Başlıkta 100, açıklamada 5.000 karakter sınırı var (?). Aşağıdaki yazıların hepsi bu sınırların çok altında.
 
 ### 3.1 Ali Baba'nın Çiftliği
 
@@ -570,7 +594,7 @@ Açıklama:
 
 ```
 Pıtır otobüs şoförü oluyor: arkadaşlarını duraktan alıyor, tekerlekler dönüyor, korna çalıyor, yağmurda silecekler çalışıyor.
-3-7 yaş için, 1 dakika 35 saniye; ses sözcüklerine birlikte eşlik edilebilir.
+3-7 yaş için, 1 dakika 35 saniye; "düt düt", "şıp şıp" gibi seslere birlikte eşlik edilebilir.
 
 ŞARKI SÖZLERİ
 
@@ -619,7 +643,7 @@ otobüs şarkısı, taşıtlar şarkısı, otobüs, taşıtlar, araçlar, yolcul
 
 - **Küçük resim:** `/home/user/ring-tokat-3d/cocuk-kanali/otobus-sarkisi/kare/02_kanca_b.png`. Sarı otobüs, direksiyonda şoför şapkalı Pıtır, camlarda el sallayan üç arkadaş. Üzerinde yazı yok; böyle de yüklenebilir. Fikir: üstüne "Otobüs Şarkısı" yazısı eklemek.
 - **Oynatma listeleri:** Pıtır ile Çocuk Şarkıları - Tüm Şarkılar; Taşıtlar ve Yolculuk - Dudek Stüdyo.
-- **Not:** Sözler ve ezgi özgündür; bilinen otobüs şarkısının sözü ve ezgisi kullanılmadı. 0:51'de "nereden" sözü "neden" gibi duyulabilir; yüklemeden önce bir kez dinleyin.
+- **Not:** Sözler ve ezgi özgündür; bilinen otobüs şarkısının sözü ve ezgisi kullanılmadı. 0:51'de "nereden" sözü "neden" gibi duyulabilir. Klip onaylandı; bu yalnız bilgidir, bir şey yapmanız gerekmez. Açıklamadaki söz "nereden" olarak kalır.
 
 ---
 
@@ -636,25 +660,25 @@ Arama özetlerine göre:
 - **Reklam:** izleyiciye özel reklam çıkmaz; yalnız videonun konusuna göre reklam çıkar. YouTube bunun geliri düşürebileceğini söylüyor.
 - Bu kontrolde ayrıca bakılamayanlar: video sonundaki öneri kutuları (kartlar ve bitiş ekranları), canlı yayın sohbeti ve canlı yayındaki paralı mesajlar.
 
-Bizim için anlamı: "abone ol, zile bas" demenin faydası yok. İzleyici oynatma listelerinden ve YouTube'un önerilerinden gelir.
+Bizim için anlamı: zil ve yorum kapalı olduğu için "zile bas, yorum yaz" demenin faydası yok. İzleyici oynatma listelerinden ve YouTube'un önerilerinden gelir.
 
 ### 4.2 Yapay zekâ bildirimi
 
 - Şarkı videolarında yapay zekâ sorusuna **Evet** deyin.
-- Sebep: şarkılar yapay zekâ ile üretildi ve videonun asıl konusu müzik. Arama özetine göre YouTube'un yardım sayfasında, bildirim gereken örnekler arasında "yapay zekâ ile üretilmiş müzik" açıkça geçiyor.
-- Görüntü çizgi film olduğu için tek başına bildirim gerektirmez (?). Ama müzik yüzünden cevap yine Evet'tir.
-- Evet deyince videoda yapay zekâ kullanıldığını söyleyen bir etiket görünür. Etiketin tam yeri (?).
+- Sebep: şarkılar yapay zekâ ile üretildi ve videonun asıl konusu müzik. Arama özetine göre bildirim gereken örnekler arasında müzik de geçiyor; tam ifadeyi okuyamadık (?). Emin olmadığımız için güvenli yol Evet demek.
+- Görüntü çizgi film olduğu için tek başına bildirim gerektirmez (?). Ama müzik yüzünden güvenli cevap yine Evet'tir.
+- Evet deyince videoda yapay zekâ kullanıldığını söyleyen bir not görünür. Notun tam yeri (?).
 
 ### 4.3 Para kazanma: YouTube Ortak Programı eşikleri
 
 Ortak Programı, YouTube'un kanal sahibine gelir payı verdiği programdır.
 
-- **Erken giriş:** 500 abone + son 90 günde 3 herkese açık video + son 365 günde 3.000 saat izlenme. (Saat yerine: son 90 günde 3 milyon Shorts izlenmesi. Shorts, dikey kısa videolardır.) Türkiye bu aşamaya dahil. Reklam geliri vermez; yalnız hayran desteği ve alışveriş özelliklerini açar.
-- **Reklam geliri:** 1.000 abone + son 365 günde 4.000 saat izlenme. (Saat yerine: son 90 günde 10 milyon Shorts izlenmesi.) Bu rakam yalnız **31 Ocak 2027'ye kadar** başvuranlar içindir.
+- **Erken giriş:** 500 abone + son 90 günde 3 herkese açık video + son 365 günde 3.000 saat izlenme. (Saat yerine: son 90 günde 3 milyon Shorts izlenmesi. Shorts, dikey kısa videolardır.) Türkiye'nin bu aşamaya dahil olup olmadığını doğrulayamadık (?). Reklam geliri vermez; yalnız hayran desteği ve alışveriş özelliklerini açar.
+- **Reklam geliri:** 1.000 abone + son 365 günde 4.000 saat izlenme. (Saat yerine: son 90 günde 10 milyon Shorts izlenmesi.) Bu rakam yalnız **31 Ocak 2027'ye kadar** başvuranlar içindir (?).
 - **1 Şubat 2027'den sonra başvuranlar için** 1.000 abone + 8.000 saat (ya da 20 milyon Shorts izlenmesi) gerekecek (?). Önceden programa girmiş kanallar etkilenmiyor (?).
 - Shorts akışında izlenen süre saat hesabına girmez. Kanalda etkin bir topluluk kuralı ihtarı olmamalı. Eşik dolunca YouTube kanalı inceler.
 
-Bizim için anlamı: 1 Şubat 2027'ye yaklaşık 10 hafta var. Yeni bir kanalın bu sürede 4.000 saate ulaşması gerçekçi değil. **Planı 8.000 saate göre yapın.** Proje klasöründeki strateji belgesinde hâlâ "4.000 saat" yazıyor; o belge eski kaldı.
+Bizim için anlamı: 1 Şubat 2027'ye yaklaşık 10 hafta var. Yeni bir kanalın bu sürede 4.000 saate ulaşması gerçekçi değil. Kesin değil ama temkinli olan: **planı 8.000 saate göre yapın.** Proje klasöründeki strateji belgesinde hâlâ "4.000 saat" yazıyor; o belge eski kaldı.
 
 Erken giriş çocuk kanalına pek bir şey kazandırmayabilir, çünkü hayran desteği özelliklerinin bir kısmı çocuklara özel içerikte kapalı (?).
 
@@ -663,8 +687,8 @@ Erken giriş çocuk kanalına pek bir şey kazandırmayabilir, çünkü hayran d
 Bu hukuki görüş değildir. Karar sizindir.
 
 - **Ezgi:** Videodaki ezgi "Old MacDonald" adlı eski İngilizce çiftlik şarkısının ezgisidir. Bu ezgi kamu malı sayılır (telif süresi dolmuş, herkes kullanabilir). Bugün videonun sesini ölçerek kontrol ettik: proje klasöründeki "old-macdonald" adlı kayıtla aynı.
-- **Sözler:** Videoda herkesin bildiği Türkçe "Ali Baba'nın Çiftliği" sözleri söyleniyor. Birçok kaynak bu Türkçe şarkıyı Erdoğan Çaplı'ya (1927-1977) ait gösteriyor; bazı kaynaklar "anonim" ya da "uyarlama" diyor. Hangisinin doğru olduğunu doğrulayamadık.
-- **Neden önemli:** Sözler Çaplı'ya aitse telif süresi dolmamış olabilir. Türkiye'de koruma genel olarak eser sahibinin ölümünden sonra 70 yıl sürer.
+- **Sözler:** Videoda herkesin bildiği Türkçe "Ali Baba'nın Çiftliği" sözleri söyleniyor. Birçok kaynak bu Türkçe şarkıyı 1977'de ölmüş bir Türk besteciye ait gösteriyor; bazı kaynaklar "anonim" ya da "uyarlama" diyor. Hangisinin doğru olduğunu doğrulayamadık (?). Ölüm yılı da aynı kaynaklardan alındı. Bestecinin adı Ali Baba klasöründeki araştırma notunda yazılı; isterseniz Claude söyler.
+- **Neden önemli:** Sözler o besteciye aitse telif süresi dolmamış olabilir. Türkiye'de koruma genel olarak eser sahibinin ölümünden sonra 70 yıl sürer.
 - **Projenin kendi kuralı:** İçerik listesindeki 4. kural "anonim sayılan şarkılar ancak telif durumu doğrulandıktan sonra kullanılır" diyor. Bu video için o doğrulama henüz yapılmadı.
 
 Üç yol var:
@@ -689,7 +713,7 @@ Content ID, YouTube'un yüklenen videoları kayıtlı eserlerle otomatik karşı
 
 Aynı gün "Dudek Stüdyo" adına da bakıldı. Kanal aramasının ilk sayfasında bu adda bir kanal görülmedi; `@dudekstudyo` ve `@dudekstudio` adresleri "bulunamadı" verdi. Yani ad ve bu iki tanıtıcı 21 Kasım 2026'da kullanılmıyor görünüyordu. Buna yalnız herkese açık sayfalardan bakıldı; kesin sonucu tanıtıcıyı YouTube'un içinde yazarken siz görürsünüz.
 
-Pıtır, kedi yavrusunun adı olarak kalıyor: şarkılarda ve videolarda geçiyor, onlar değişmedi. Yazılarda "Pıtır" yalnız kediyi anlatmak için geçer ("Pıtır ile Çocuk Şarkıları" gibi); marka olarak her yerde "Dudek Stüdyo" yazar. Kapakta ve profilde hep aynı Pıtır kullanılıyor. Bu adların marka tescili sorgulanmadı.
+Pıtır, kedi yavrusunun adı olarak kalıyor: şarkılarda ve videolarda geçiyor, onlar değişmedi. Yazılarda "Pıtır" yalnız kediyi anlatmak için geçer ("Pıtır ile Çocuk Şarkıları" gibi); marka olarak başlıklarda, açıklamalarda ve öbür beş listede "Dudek Stüdyo" yazar. Ana listenin adında yalnız açıklayıcı satır var (2.6). Kapakta ve profilde hep aynı Pıtır kullanılıyor. Bu adların marka tescili sorgulanmadı.
 
 ---
 
@@ -700,41 +724,47 @@ Buradaki hiçbir madde kesin değildir. Sebep hep aynı: resmî sayfalar açıla
 ### A. Ekranda görünce netleşecekler (menü yolları)
 
 1. **Kanal açma yolu (A yolu).** Tarayıcıdan açma adımları özetle uyumlu. Menülerin tam adı ("Kanal oluştur" dahil) hafızadan. Kanal listesini açtığı düşünülen youtube.com/channel_switcher adresi de hafızadan. YouTube uygulamasından yeni kanal açma adımları için hiçbir dayanak bulamadık.
-2. **Stüdyo adına kanal (Marka Hesabı).** Marka Hesabı, kanalın kişisel adınız yerine stüdyo adıyla durmasını sağlayan hesap türüdür. Bu yolun onu açtığı ve sonradan başka yöneticiler eklenebildiği özetle uyumlu; okunamadı.
-3. **Tanıtıcı.** Türkçe harf kabul ediliyor mu, bilmiyoruz. Önerdiğimiz adlardan `@dudekstudyo` ve `@dudekstudio` 21 Kasım 2026'da herkese açık sayfalarda "bulunamadı" verdi, yani boş görünüyorlar; kesin olarak ancak YouTube'un içinde yazınca belli olur. Özetle uyumlu kurallar: 3-30 karakter; harf ve rakam; alt çizgi, tire, nokta olabilir ama başta ve sonda olamaz.
-4. **Adı ve tanıtıcıyı sonradan değiştirme.** Özetlere göre ikisi de 14 günde en çok 2 kez değiştirilebilir. Yani yazım hatası sonradan düzeltilebilir; ama okuyamadık.
-5. **"Çocuklara özel" kanal ayarının yolu.** Bilgisayar yolu özetle uyumlu. Telefondaki YouTube Studio uygulamasında bu ayar var mı, bulamadık.
-6. **Telefon doğrulaması.** youtube.com/verify adresinin aynı yere götürdüğü hafızadan. Menü yolu 1. bölümde yazılı.
-7. **Kapak, profil resmi, açıklama ve anahtar kelime kutularının yeri.** "Özelleştirme" ve "Temel bilgiler" adları hafızadan.
-8. **Yapay zekâ sorusunun yeri ve Türkçe adı.** İngilizce ekranda "AI use" (yapay zekâ kullanımı) diye geçtiği özetle uyumlu. Yayından sonra da değiştirilebildiği özetle uyumlu.
-9. **Telefondan yüklerken etiket ve yapay zekâ sorusu kutuları çıkıyor mu?** Bunu hiç araştırmadık. Çıkmıyorsa videoyu "Özel" bırakın, eksikleri tarayıcıdan tamamlayın, sonra "Herkese açık" yapın.
-10. **Çocuklara özel videoyu kendi oynatma listenize ekleyebiliyor musunuz?** Kontrol etmedik. Stratejimiz listelere dayandığı için ilk videoyla hemen deneyin.
-11. **Filigran** (videonun köşesinde duran küçük kanal işareti) çocuklara özel videolarda gösterilmiyor olabilir.
+2. **Eski kanalın adını değiştirme (B yolu).** "Kanalı düzenle", "Herkese açık kullanıcı adı" ve "Tüm aboneliklerimi gizli tut" adları bugün karar verilirken kullanılan adlardır; resmî sayfadan okunmadı, ekranınızda farklı yazabilir. Ekranı açma yolu (profil resmi > "Kanalı görüntüle" > kalem işareti) ad değiştirme için özetle uyumlu. Abonelikleri gizleme seçeneğinin aynı ekranda olduğu hafızadan. Yorumların kanal adıyla göründüğü de hafızadan. Ad ve tanıtıcı 14 günde en çok 2 kez değişir (6. madde).
+3. **Stüdyo adına kanal (Marka Hesabı).** Marka Hesabı, kanalın kişisel adınız yerine stüdyo adıyla durmasını sağlayan hesap türüdür. Bu yolun onu açtığı ve sonradan başka yöneticiler eklenebildiği özetle uyumlu; okunamadı.
+4. **İki kanal arasında geçiş (A yolu).** Kanalın profil resmine dokunarak değiştirildiği hafızadan; seçeneğin ekrandaki adını bilmiyoruz.
+5. **Tanıtıcı.** Türkçe harf kabul ediliyor mu, bilmiyoruz. Önerdiğimiz adlardan `@dudekstudyo` ve `@dudekstudio` 21 Kasım 2026'da herkese açık sayfalarda "bulunamadı" verdi, yani boş görünüyorlar; `@dudekcocuk` adresine bakılmadı. Kesin olarak ancak YouTube'un içinde yazınca belli olur. Özetle uyumlu kurallar: 3-30 karakter; harf ve rakam; alt çizgi, tire, nokta olabilir ama başta ve sonda olamaz. Kanal açma ekranında tanıtıcı kutusunun çıktığı özetle uyumlu; çıkmazsa sonradan yazılabildiği hafızadan.
+6. **Adı ve tanıtıcıyı sonradan değiştirme.** Özetlere göre ikisi de 14 günde en çok 2 kez değiştirilebilir. Yani yazım hatası sonradan düzeltilebilir; ama okuyamadık.
+7. **Telefonda "Masaüstü sitesi" seçeneği.** Tarayıcı menüsündeki yeri ve adı hafızadan (Safari'de "Masaüstü Sitesini İste" diye geçebilir). Bu seçenekle bilgisayardaki YouTube ekranlarının telefonda açıldığı da hafızadan; denemedik.
+8. **"Çocuklara özel" kanal ayarının yolu.** Bilgisayar yolu özetle uyumlu. Telefondaki YouTube Studio uygulamasında bu ayar var mı, bulamadık. Kanal ayarı yapılınca videolarda "çocuklara özel"in seçili geldiği hafızadan; her yüklemede yine de bakın.
+9. **Telefon doğrulaması.** Studio'daki menü yolu hafızadan. youtube.com/verify adresinin aynı yere götürdüğü de hafızadan. Aynı numarayla iki kanal doğrulandıysa başka numara istendiği özetle uyumlu; sınırın yıllık mı toplam mı olduğu belli değil. Kodun SMS ya da sesli aramayla geldiği hafızadan.
+10. **Kapak, profil resmi, açıklama ve anahtar kelime kutularının yeri.** "Özelleştirme" ve "Temel bilgiler" adları hafızadan.
+11. **Telefondan video yükleme yeri.** YouTube uygulamasındaki + işaretinden yüklendiği hafızadan.
+12. **Yapay zekâ sorusunun yeri ve Türkçe adı.** İngilizce ekranda "AI use" (yapay zekâ kullanımı) diye geçtiği özetle uyumlu. Yayından sonra da değiştirilebildiği özetle uyumlu.
+13. **Telefondan yüklerken etiket ve yapay zekâ sorusu kutuları çıkıyor mu?** Bunu hiç araştırmadık. Çıkmıyorsa videoyu "Özel" bırakın, eksikleri tarayıcıdan tamamlayın, sonra "Herkese açık" yapın. Etiketler boş kalabilir; yapay zekâ sorusu boş geçilmez.
+14. **Oynatma listeleri.** Çocuklara özel videoyu kendi oynatma listenize ekleyebiliyor musunuz, kontrol etmedik. Stratejimiz listelere dayandığı için ilk videoyla hemen deneyin. Listenin yükleme ekranındaki "Oynatma listesi" satırından oluşturulabildiği hafızadan. Ana listeyi kanalın ana sayfasında en üste koymanın yolunu bilmiyoruz.
+15. **Filigran** (videonun köşesinde duran küçük kanal işareti) çocuklara özel videolarda gösterilmiyor olabilir.
 
 ### B. Kurallar (sayfası okunamadı)
 
-12. **"Çocuklara özel" neleri kapatır.** 4.1'deki ilk üç madde özetle uyumlu. Kartlar, bitiş ekranları, canlı sohbet ve paralı mesajlar bu kontrolde ayrıca bakılmadı. Shorts için ek kısıt var mı, bulunamadı.
-13. **Yapay zekâ etiketi nerede görünür.** Özetlere göre Mayıs 2026'dan beri daha görünür bir yerde: uzun videoda oynatıcının hemen altında. "Bildirim para kazanmayı etkilemez" ve "bildirmezseniz YouTube etiketi kendisi koyabilir" bilgileri teyit edilmedi.
-14. **Çizgi film görüntü bildirim gerektirmez.** Özetle uyumlu; okunamadı. Bizim cevabımızı değiştirmiyor, çünkü müzik yüzünden zaten Evet diyoruz.
-15. **1 Şubat 2027 değişikliği (8.000 saat).** Çok sayıda haber sitesi aynı rakamı veriyor; resmî sayfa okunamadı.
-16. **Seri üretim ve "özgün olmayan içerik" kuralı.** Özetlere göre birbirinin kopyası gibi duran, kalıptan çıkmış, sahibinin kendi katkısını taşımayan içerik para kazanmaya uygun değil; örnekler arasında kalıpla üretilmiş yapay zekâ içeriği de var. Bizim için anlamı: her videonun sahnesi, sözü ve ezgisi farklı olmalı. Okunamadı.
-17. **Çocuk içeriği kalite ilkeleri.** Özetlere göre aşırı tanıtım içeren, kötü davranışı özendiren, eğitici gibi görünüp olmayan ya da takip etmesi zor videolarda reklam geliri kısılabilir. Okunamadı.
-18. **YouTube Kids** (YouTube'un çocuklar için ayrı uygulaması). Özetlere göre "çocuklara özel" işaretlemek videoyu bu uygulamaya otomatik sokmaz; YouTube ayrıca eler. Başvuru yolu var mı, bilmiyoruz.
-19. **Görsel ölçüleri.** Kapak: önerilen 2560x1440, en çok 6 MB. Küçük resim: en az 640 piksel genişlik, telefondan yüklerken en çok 2 MB. Bunlar özetle uyumlu. Profil resmi için 800x800 önerisi hafızadan. Bizim dosyaların hepsi bu ölçülere uyuyor.
-20. **Etiketlerde toplam 500 karakter sınırı.** Yalnız başka sitelerde geçiyor. Bizim etiket listelerinin hepsi 500'ün çok altında. Kanal adı ve kanal açıklaması için bir sınır bulamadık.
-21. **Telif talebi ayrıntıları.** Özetlere göre talep ihtar sayılmaz; 5 gün içinde itiraz edilirse o videonun geliri bekletilir; talep sahibinin itiraza cevap süresi 30 gündür. Okunamadı.
-22. **"Kamu malı ezgide de otomatik talep gelebilir"** ve **"küçük kanalda risk engelleme ya da başkası adına reklamdır"** cümleleri resmî bilgi değil, bizim çıkarımımız.
+16. **"Çocuklara özel" neleri kapatır.** 4.1'deki ilk üç madde özetle uyumlu. Kartlar, bitiş ekranları, canlı sohbet ve paralı mesajlar bu kontrolde ayrıca bakılmadı. Shorts için ek kısıt var mı, bulunamadı.
+17. **Yapay zekâ ile üretilmiş müzik bildirim gerektirir mi.** Arama özeti öyle gösteriyor: bildirim gereken örnekler arasında "videonun ana odağı olan müzik" geçiyor. Sayfa okunamadı; tam ifade belli değil. Bu yüzden güvenli yolu seçip Evet diyoruz.
+18. **Yapay zekâ notu nerede görünür.** Özetlere göre Mayıs 2026'dan beri daha görünür bir yerde: uzun videoda oynatıcının hemen altında. "Bildirim para kazanmayı etkilemez" ve "bildirmezseniz YouTube notu kendisi koyabilir" bilgileri teyit edilmedi.
+19. **Çizgi film görüntü bildirim gerektirmez.** Özetle uyumlu; okunamadı. Bizim cevabımızı değiştirmiyor, çünkü müzik yüzünden zaten Evet diyoruz.
+20. **1 Şubat 2027 değişikliği (8.000 saat).** Çok sayıda haber sitesi aynı rakamı veriyor; resmî sayfa okunamadı. Önceden programa girenlerin etkilenmediği özetlerde geçiyor; o da okunamadı. Türkiye'nin 500 abonelik erken giriş aşamasında olup olmadığı ve bu aşamanın Şubat 2027'den sonra sürüp sürmediği doğrulanamadı.
+21. **Seri üretim ve "özgün olmayan içerik" kuralı.** Özetlere göre birbirinin kopyası gibi duran, kalıptan çıkmış, sahibinin kendi katkısını taşımayan içerik para kazanmaya uygun değil; örnekler arasında kalıpla üretilmiş yapay zekâ içeriği de var. Bizim için anlamı: her videonun sahnesi, sözü ve ezgisi farklı olmalı. Okunamadı.
+22. **Çocuk içeriği kalite ilkeleri.** Özetlere göre aşırı tanıtım içeren, kötü davranışı özendiren, eğitici gibi görünüp olmayan ya da takip etmesi zor videolarda reklam geliri kısılabilir. Okunamadı.
+23. **YouTube Kids** (YouTube'un çocuklar için ayrı uygulaması). Özetlere göre "çocuklara özel" işaretlemek videoyu bu uygulamaya otomatik sokmaz; YouTube ayrıca eler. Başvuru yolu var mı, bilmiyoruz.
+24. **Görsel ölçüleri.** Kapak: önerilen 2560x1440, en çok 6 MB (MB, dosya büyüklüğü ölçüsüdür). Küçük resim: en az 640 piksel genişlik, telefondan yüklerken en çok 2 MB. Bunlar özetle uyumlu. Profil resmi için 800x800 önerisi hafızadan. Bizim dosyaların hepsi bu ölçülere uyuyor.
+25. **Karakter sınırları.** Başlıkta 100 karakter sınırı özetle uyumlu. Açıklamada 5.000 ve etiketlerde toplam 500 karakter sınırı yalnız başka sitelerde geçiyor. Bizim başlık, açıklama ve etiket listelerinin hepsi bu sınırların çok altında. Kanal adı ve kanal açıklaması için bir sınır bulamadık.
+26. **Telif talebi ayrıntıları.** Özetlere göre talep ihtar sayılmaz; 5 gün içinde itiraz edilirse o videonun geliri bekletilir; talep sahibinin itiraza cevap süresi 30 gündür. Okunamadı.
+27. **"Kamu malı ezgide de otomatik talep gelebilir"** ve **"küçük kanalda risk engelleme ya da başkası adına reklamdır"** cümleleri resmî bilgi değil, bizim çıkarımımız.
 
 ### C. Bizim dosyalarımızla ilgili
 
-23. **Ali Baba'nın Çiftliği sözlerinin sahibi.** 4.4'te anlatıldı.
-24. **Balon Şarkısı'nın sözleri** yazılı değil.
-25. **Pıtır'ın Ailesi sözleri** makine dökümü; ses tekrarlarının sayısı bir fazla ya da bir eksik olabilir.
-26. **El Yıkama Şarkısı'nda** ses uyumu sorusu; makine tahmini, karar kulağınızın.
-27. **Kapak ve profil görselleri** YouTube'a yüklenip denenmedi. Kırpmaların hepsi bilgisayarda benzetimle kontrol edildi.
-28. **Eski kalan belgeler** (dokunmadık): strateji belgesinde "4.000 saat" yazıyor. İçerik listesinde Parmak Ailesi ve Beş Küçük Maymun hâlâ "Sırada" görünüyor; Ali Baba satırında yalnız melodinin anonim olduğu yazıyor, sözlerden söz edilmiyor. Bu belgelerde, araştırma notlarında ve kanal-kurulum klasöründeki hazırlık notlarında bırakılan eski program adı da hâlâ yazıyor; geçerli olan bu rehberdir. Uzun bölüm taslağının sahne dosyaları eski program adını ekrana yazıyor; o bölüm yayınlanmadan önce düzeltilmelidir (yüklenecek yedi video bundan etkilenmez).
+28. **Ali Baba'nın Çiftliği sözlerinin sahibi.** 4.4'te anlatıldı.
+29. **Balon Şarkısı'nın sözleri** yazılı değil.
+30. **Pıtır'ın Ailesi sözleri** makine dökümü; ses tekrarlarının sayısı bir fazla ya da bir eksik olabilir.
+31. **El Yıkama Şarkısı'nda** ses uyumu sorusu; makine tahmini, karar kulağınızın.
+32. **Otobüs Şarkısı'nda** 0:51'de "nereden" sözü "neden" gibi duyulabilir. Klip böyle onaylandı; yapılacak bir şey yok.
+33. **Kapak ve profil görselleri** YouTube'a yüklenip denenmedi. Kırpmaların hepsi bilgisayarda benzetimle kontrol edildi.
+34. **Eski kalan belgeler** (dokunmadık): strateji belgesinde "4.000 saat" yazıyor. İçerik listesinde Parmak Ailesi ve Beş Küçük Maymun hâlâ "Sırada" görünüyor; Ali Baba satırında yalnız melodinin anonim olduğu yazıyor, sözlerden söz edilmiyor. Bu belgelerde, araştırma notlarında ve kanal-kurulum klasöründeki hazırlık notlarında bırakılan eski program adı da hâlâ yazıyor; geçerli olan bu rehberdir. Uzun bölüm taslağının sahne dosyaları eski program adını ekrana yazıyor; o bölüm yayınlanmadan önce düzeltilmelidir (yüklenecek yedi video bundan etkilenmez).
 
-**Bunlar nasıl kesinleşir:** Bir sonraki çalışmada Claude'un internet izinlerine support.google.com ve blog.youtube adresleri eklenirse resmî sayfalar okunur, maddeler tek tek doğrulanır.
+**Bunlar nasıl kesinleşir:** Resmî sayfalar (support.google.com ve blog.youtube adresleri) okununca maddeler tek tek doğrulanır. Bunun için bir sonraki çalışmada Claude'a "YouTube yardım sayfalarını okumak için izin iste" yazın; ekranınıza bir onay çıkarsa ona siz basarsınız.
 
 ---
 
@@ -746,27 +776,27 @@ Hepsi şu klasörde: `/home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel
 |---|---|---|
 | `banner_2560x1440.png` | Kapak görseli (kanalın üstündeki geniş resim) | 2560x1440, yaklaşık 2,4 MB |
 | `profil_800x800.png` | Profil resmi (yuvarlak küçük resim) | 800x800 |
-| `filigran_150x150.png` | Videoların köşesine konan küçük Pıtır; şimdilik yedek (5. bölüm, 11. madde) | 150x150 |
+| `filigran_150x150.png` | Videoların köşesine konan küçük Pıtır; şimdilik yedek (5. bölüm, 15. madde) | 150x150 |
 | `kontrol_...png` (altı dosya) | Yalnız gözle kontrol içindir; YouTube'a yüklenmez | - |
 
 Ne var üstlerinde:
 
-- **Kapak:** Pıtır solda el sallıyor. Sağında büyük renkli "Dudek Stüdyo" yazısı, altında beyaz etiket içinde "Pıtır ile Çocuk Şarkıları". Üçü de ortadaki dar şeridin içinde; telefonda yalnız bu şerit görünür. Balonlar ve güneş kenarlarda; bilgisayarda ve televizyonda görünür.
+- **Kapak:** Pıtır solda el sallıyor. Sağında büyük renkli "Dudek Stüdyo" yazısı, altında beyaz kutucuk içinde "Pıtır ile Çocuk Şarkıları". Üçü de ortadaki dar şeridin içinde; telefonda yalnız bu şerit görünür. Balonlar ve güneş kenarlarda; bilgisayarda ve televizyonda görünür.
 - **Profil:** Pıtır'ın gülen yüzü, mavi zemin, yazı yok.
 
 ### Kapaktaki yazıları değiştirip yeniden üretmek
 
-Siz yapmak zorunda değilsiniz. Claude'a "kapaktaki yazıyı şöyle yap: ..." yazmanız yeter. Kapağın şimdiki hâlini veren komut şudur:
+Siz yapmak zorunda değilsiniz. Claude'a "kapaktaki yazıyı şöyle yap: ..." yazmanız yeter. Aşağıdaki gri kutulardaki satırlar Claude içindir; okumanız gerekmez. Kapağın şimdiki hâlini veren komut şudur:
 
 ```
 cd /home/user/ring-tokat-3d/cocuk-kanali/kanal-kurulum/gorsel
 python3 uret.py "Pıtır ile Çocuk Şarkıları" "Dudek Stüdyo"
 ```
 
-Sıra önemlidir: ilk yazı beyaz etiketin içine, ikinci yazı büyük renkli başlığa gider. Yazıları değiştirmek için aynı sırayla iki yeni yazı verilir:
+Sıra önemlidir: ilk yazı beyaz kutucuğun içine, ikinci yazı büyük renkli başlığa gider. Yazıları değiştirmek için aynı sırayla iki yeni yazı verilir:
 
 ```
-python3 uret.py "Etiketteki Yazı" "Büyük Yazı"
+python3 uret.py "Kutucuktaki Yazı" "Büyük Yazı"
 ```
 
 - İki yazı her zaman birlikte verilir. Komut yazısız ya da tek yazıyla çalıştırılırsa program kendi içinde kayıtlı eski yazıları kullanır ve bırakılan program adı kapağa geri gelir.
@@ -774,7 +804,7 @@ python3 uret.py "Etiketteki Yazı" "Büyük Yazı"
 - Aynı adlı dosyaların üzerine yazar; eski görseller gider.
 - Uzun yazılarda yazı kendiliğinden küçülüp aynı şeride sığar.
 
-Kanal adı değişirse yazılarda da şu yerler değişir: kanal adı ve tanıtıcı (2.1), kanal açıklamasının ilk cümlesi (2.3), anahtar kelimeler (2.4), video altı yazısının ilk satırı ile #DudekStüdyo etiketi (2.5) ve oynatma listesi adları (2.6). 3. bölümdeki yedi videonun her birinde de başlık, açıklamanın son satırları, etiket listesi ve liste adları değişir.
+Ad kesin; bu not yalnız ileride bir gün adı değiştirmek isterseniz içindir. Kanal adı değişirse yazılarda da şu yerler değişir: kanal adı ve tanıtıcı (2.1), kanal açıklamasının ilk cümlesi (2.3), anahtar kelimeler (2.4), video altı yazısının ilk satırı ile # işaretli #DudekStüdyo sözü (2.5) ve oynatma listesi adları (2.6). 3. bölümdeki yedi videonun her birinde de başlık, açıklamanın son satırları, etiket listesi ve liste adları değişir.
 
 ### Bilinen zayıf yanlar
 
