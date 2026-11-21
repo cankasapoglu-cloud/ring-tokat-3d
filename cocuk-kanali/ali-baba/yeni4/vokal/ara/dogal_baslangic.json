@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "verse": 1,
+   "line": "L1",
+   "pair": "çift|li",
+   "t": 10.2687,
+   "peak_dbfs": -22.4,
+   "rise_10_90_ms": 42.2,
+   "level_at_t_db_re_peak": -9.5
+  },
+  {
+   "verse": 1,
+   "line": "L2",
+   "pair": "nek|le",
+   "t": 12.5275,
+   "peak_dbfs": -19.1,
+   "rise_10_90_ms": 7.6,
+   "level_at_t_db_re_peak": -21.7
+  },
+  {
+   "verse": 1,
+   "line": "L4",
+   "pair": "çift|li",
+   "t": 15.6744,
+   "peak_dbfs": -19.4,
+   "rise_10_90_ms": 10.4,
+   "level_at_t_db_re_peak": -28.3
+  },
+  {
+   "verse": 2,
+   "line": "L1",
+   "pair": "çift|li",
+   "t": 23.9735,
+   "peak_dbfs": -16.7,
+   "rise_10_90_ms": 15.5,
+   "level_at_t_db_re_peak": -32.7
+  },
+  {
+   "verse": 2,
+   "line": "L2",
+   "pair": "çift|li",
+   "t": 24.8156,
+   "peak_dbfs": -23.7,
+   "rise_10_90_ms": 37.1,
+   "level_at_t_db_re_peak": -14.5
+  },
+  {
+   "verse": 2,
+   "line": "L4",
+   "pair": "çift|li",
+   "t": 29.3872,
+   "peak_dbfs": -21.3,
+   "rise_10_90_ms": 18.3,
+   "level_at_t_db_re_peak": -26.4
+  },
+  {
+   "verse": 3,
+   "line": "L1",
+   "pair": "çift|li",
+   "t": 37.6923,
+   "peak_dbfs": -19.9,
+   "rise_10_90_ms": 14.2,
+   "level_at_t_db_re_peak": -24.9
+  },
+  {
+   "verse": 3,
+   "line": "L2",
+   "pair": "çift|li",
+   "t": 38.5304,
+   "peak_dbfs": -23.6,
+   "rise_10_90_ms": 26.3,
+   "level_at_t_db_re_peak": -10.3
+  },
+  {
+   "verse": 3,
+   "line": "L4",
+   "pair": "çift|li",
+   "t": 43.102,
+   "peak_dbfs": -23.4,
+   "rise_10_90_ms": 35.7,
+   "level_at_t_db_re_peak": -19.8
+  },
+  {
+   "verse": 4,
+   "line": "L1",
+   "pair": "çift|li",
+   "t": 51.4092,
+   "peak_dbfs": -17.7,
+   "rise_10_90_ms": 18.5,
+   "level_at_t_db_re_peak": -27.5
+  },
+  {
+   "verse": 4,
+   "line": "L2",
+   "pair": "çift|li",
+   "t": 52.2991,
+   "peak_dbfs": -13.6,
+   "rise_10_90_ms": 5.3,
+   "level_at_t_db_re_peak": -24.7
+  },
+  {
+   "verse": 4,
+   "line": "L2",
+   "pair": "roz|la",
+   "t": 53.694,
+   "peak_dbfs": -20.9,
+   "rise_10_90_ms": 18.0,
+   "level_at_t_db_re_peak": -26.0
+  },
+  {
+   "verse": 4,
+   "line": "L4",
+   "pair": "çift|li",
+   "t": 56.8029,
+   "peak_dbfs": -21.0,
+   "rise_10_90_ms": 29.7,
+   "level_at_t_db_re_peak": -13.4
+  },
+  {
+   "verse": 5,
+   "line": "L1",
+   "pair": "çift|li",
+   "t": 65.114,
+   "peak_dbfs": -16.8,
+   "rise_10_90_ms": 15.3,
+   "level_at_t_db_re_peak": -22.6
+  },
+  {
+   "verse": 5,
+   "line": "L2",
+   "pair": "çift|li",
+   "t": 65.9581,
+   "peak_dbfs": -19.3,
+   "rise_10_90_ms": 15.1,
+   "level_at_t_db_re_peak": -24.7
+  },
+  {
+   "verse": 5,
+   "line": "L2",
+   "pair": "dek|le",
+   "t": 67.3709,
+   "peak_dbfs": -21.9,
+   "rise_10_90_ms": 24.5,
+   "level_at_t_db_re_peak": -16.4
+  },
+  {
+   "verse": 5,
+   "line": "L4",
+   "pair": "çift|li",
+   "t": 70.5217,
+   "peak_dbfs": -24.5,
+   "rise_10_90_ms": 22.9,
+   "level_at_t_db_re_peak": -13.6
+  },
+  {
+   "verse": 6,
+   "line": "L1",
+   "pair": "çift|li",
+   "t": 78.8268,
+   "peak_dbfs": -20.2,
+   "rise_10_90_ms": 21.7,
+   "level_at_t_db_re_peak": -19.9
+  },
+  {
+   "verse": 6,
+   "line": "L2",
+   "pair": "çift|li",
+   "t": 79.6669,
+   "peak_dbfs": -15.6,
+   "rise_10_90_ms": 10.5,
+   "level_at_t_db_re_peak": -28.7
+  },
+  {
+   "verse": 6,
+   "line": "L2",
+   "pair": "pek|le",
+   "t": 81.0917,
+   "peak_dbfs": -17.3,
+   "rise_10_90_ms": 22.6,
+   "level_at_t_db_re_peak": -19.1
+  },
+  {
+   "verse": 6,
+   "line": "L4",
+   "pair": "çift|li",
+   "t": 84.2346,
+   "peak_dbfs": -16.4,
+   "rise_10_90_ms": 17.1,
+   "level_at_t_db_re_peak": -22.8
+  },
+  {
+   "verse": 7,
+   "line": "L1",
+   "pair": "çift|li",
+   "t": 92.5517,
+   "peak_dbfs": -18.4,
+   "rise_10_90_ms": 21.7,
+   "level_at_t_db_re_peak": -19.8
+  },
+  {
+   "verse": 7,
+   "line": "L2",
+   "pair": "çift|li",
+   "t": 93.3818,
+   "peak_dbfs": -17.5,
+   "rise_10_90_ms": 20.4,
+   "level_at_t_db_re_peak": -19.2
+  },
+  {
+   "verse": 7,
+   "line": "L4",
+   "pair": "çift|li",
+   "t": 97.9474,
+   "peak_dbfs": -17.4,
+   "rise_10_90_ms": 10.7,
+   "level_at_t_db_re_peak": -21.9
+  }
+ ],
+ "median_ms": 18.4,
+ "q25_ms": 14.875,
+ "q75_ms": 23.299999999999997,
+ "equivalent_raised_cosine_ms": {
+  "median": 31.1864406779661,
+  "q25": 25.21186440677966,
+  "q75": 39.49152542372881
+ }
+}
