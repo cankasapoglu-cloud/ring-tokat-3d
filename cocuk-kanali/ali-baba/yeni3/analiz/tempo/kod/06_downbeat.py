@@ -4,7 +4,7 @@
 # so that irregular bar counts between verses do not matter.
 import numpy as np, json, scipy.signal as ss
 from common import *
-P=60/116.0; PHI=0.0015
+P,PHI=lattice()      # refined lattice from 14_lattice.py
 names=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
 x=load_mix(); v=load_vocal(); n=min(len(x),len(v)); x=x[:n]; v=v[:n]
 words=load_words()
@@ -40,7 +40,7 @@ for key in ('kick','low','hi','air','mid_on','low_off','kick_off','hi_off','air_
     med=np.median([bt[key] for bt in beats if VB[0]<=bt['beat']<VB[-1]+28])
     for bt in beats: bt[key]/=med
 A_pc,E_pc=9,4
-out={'lattice':dict(bpm=116.0,beat_period_s=P,phase_first_beat_s=PHI),'verse_onset_beats':VB,'verse_onset_beat_diffs':np.diff(VB).tolist(),
+out={'lattice':dict(bpm=60/P,beat_period_s=P,phase_first_beat_s=PHI),'verse_onset_beats':VB,'verse_onset_beat_diffs':np.diff(VB).tolist(),
      'verse_onset_beat_mod4_on_global_grid':[b%4 for b in VB]}
 
 # ---------- C6: intro pattern ----------

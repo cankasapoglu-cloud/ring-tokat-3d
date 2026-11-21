@@ -19,7 +19,7 @@ l=np.log(eLF+1e-4*eLF.max())
 envB=np.maximum(np.diff(l,prepend=l[0]),0)
 envB=np.convolve(envB,ker,mode='same')
 envB=np.interp(t,tLF,envB)
-np.savez(O+'/env.npz',t=t,envA=envA,envB=envB,eLF=np.interp(t,tLF,eLF))
+np.savez(CACHE+'/env.npz',t=t,envA=envA,envB=envB,eLF=np.interp(t,tLF,eLF))
 
 def search(env,t,t0,t1,bpms,nphase=200):
     best=(-1,None,None); table=[]

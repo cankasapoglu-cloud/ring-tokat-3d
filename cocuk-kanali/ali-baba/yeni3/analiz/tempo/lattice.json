@@ -1,0 +1,13 @@
+{
+ "bpm": 116.00610558450445,
+ "beat_period_s": 0.5172141560798548,
+ "bar_period_s": 2.068856624319419,
+ "phase_first_beat_s": 0.0033296783625731004,
+ "slope_ms_per_s_vs_116_000": -0.05263157894736841,
+ "slope_bootstrap_sd": 0.005385788979329131,
+ "intercept_ms_vs_phase_0_0015": 1.8296783625731003,
+ "residual_sd_ms": 0.8188371225514608,
+ "bpm_uncertainty": 0.0006247515216021792,
+ "definition": "beat time = steepest rise of the high-frequency transient of the on-beat hit (hats 8-16 kHz) / of the off-beat \"chick\" minus half a beat; the kick low-frequency body (120-300 Hz) rises about 6 ms later",
+ "drift_of_exact_116_bpm_grid_over_100s_ms": -5.263157894736841
+}

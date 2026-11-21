@@ -61,4 +61,4 @@ def wordat(g):
     return s
 for r in rows:
     print(f"{r['beat']:4d} {r['t']:7.3f} bass {names[r['bass']%12]:2s}{r['bass']//12-1} /{names[r['bass2']%12]:2s}{r['bass2']//12-1}  chord {r['chord']:3s} {r['chord_s']:.2f} ({r['chord2']:3s} {r['chord2_s']:.2f})  top3pc {' '.join(names[i] for i in np.argsort(r['chroma'])[::-1][:3]):9s} {wordat(r['t'])}")
-json.dump(rows,open(O+'/beat_harmony.json','w'))
+json.dump(rows,open(CACHE+'/beat_harmony_explore.json','w'))

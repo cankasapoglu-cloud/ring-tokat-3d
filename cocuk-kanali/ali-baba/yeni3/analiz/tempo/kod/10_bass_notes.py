@@ -2,7 +2,7 @@
 # to document the root/fifth alternation and the bar-end "turnaround" notes.
 import numpy as np, json, scipy.signal as ss
 from common import *
-x=load_mix(); P=60/116.0; PHI=0.0015
+x=load_mix(); P,PHI=lattice()      # refined lattice from 14_lattice.py
 names=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
 dec=40; fs=SR/dec
 y=ss.decimate(ss.decimate(x,8,ftype='fir',zero_phase=True),5,ftype='fir',zero_phase=True)

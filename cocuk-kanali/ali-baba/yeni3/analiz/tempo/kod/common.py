@@ -7,10 +7,17 @@ HOP=256            # 5.805 ms envelope hop
 NFFT=2048
 FPS=SR/HOP
 
+CACHE=O+'/gecici'          # deletable cache (decoded mix, envelopes); re-created on demand
 def load_mix():
-    x,sr=sf.read(O+'/mix_44k_mono.wav'); assert sr==SR; return x
-def load_mix_stereo():
-    x,sr=sf.read(O+'/mix_44k_stereo.wav'); assert sr==SR; return x
+    import os, subprocess
+    p=CACHE+'/mix_44k_mono.wav'
+    if not os.path.exists(p):
+        os.makedirs(CACHE,exist_ok=True)
+        subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',A+'/dinle_2.mp3','-ar',str(SR),'-ac','1',p],check=True)
+    x,sr=sf.read(p); assert sr==SR; return x
+def lattice():
+    """refined beat lattice of the mix (14_lattice.py): returns (beat period s, time of beat 0 s)"""
+    L=json.load(open(O+'/lattice.json')); return L['beat_period_s'],L['phase_first_beat_s']
 def load_vocal():
     x,sr=sf.read(A+'/dinle_2_vokal.wav'); assert sr==SR
     if x.ndim>1: x=x.mean(1)

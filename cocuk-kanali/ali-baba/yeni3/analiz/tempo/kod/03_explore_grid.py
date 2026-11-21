@@ -34,4 +34,4 @@ print(' k   beat  time    kick  low   mid   hi    air   words')
 for r in rows:
     k=r['k']
     print(f"{k:4d} {k/2:5.1f} {r['t']:7.3f} "+' '.join(f"{r[b]:5.2f}" for b in bands)+'  '+wordat(r['t']))
-np.save(O+'/eighth_rows.npy',np.array([[r['k'],r['t']]+[r[b] for b in bands]+[r['E_'+b] for b in bands] for r in rows]))
+np.save(CACHE+'/eighth_rows.npy',np.array([[r['k'],r['t']]+[r[b] for b in bands]+[r['E_'+b] for b in bands] for r in rows]))

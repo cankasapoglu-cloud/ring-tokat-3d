@@ -4,7 +4,7 @@
 import numpy as np, soundfile as sf, scipy.signal as ss, json
 A='/home/user/ring-tokat-3d/cocuk-kanali/ali-baba'
 O=A+'/yeni3/analiz/tempo'
-m,sr=sf.read(O+'/mix_44k_mono.wav'); v,sr2=sf.read(A+'/dinle_2_vokal.wav')
+m,sr=sf.read(O+'/gecici/mix_44k_mono.wav'); v,sr2=sf.read(A+'/dinle_2_vokal.wav')
 assert sr==sr2
 print('durations',len(m)/sr,len(v)/sr)
 hop=32; nfft=1024
@@ -25,4 +25,4 @@ for (a,b) in [(5,25),(30,50),(55,75),(80,100),(5,100)]:
     nc=c[sel][k]/np.sqrt((em**2).sum()*(ev**2).sum())
     print(f"win {a}-{b}s: mix lags vocal by {lag*hop} samples = {lag*hop/sr*1000:.2f} ms, norm corr {nc:.3f}")
     out.append(dict(win=[a,b],lag_ms=lag*hop/sr*1000,norm_corr=float(nc)))
-json.dump(out,open(O+'/align_check.json','w'),indent=1)
+json.dump(out,open(O+'/gecici/align_coarse.json','w'),indent=1)
