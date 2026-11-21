@@ -1,0 +1,1631 @@
+{
+ "lines": [
+  {
+   "verse": 1,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 6.2,
+   "onset": 6.1922,
+   "vowel_onset": 6.2012,
+   "beat_number_on_lattice": 12,
+   "downbeat_mix_timeline": 6.2084,
+   "downbeat": 6.2116,
+   "offset_sec": -0.0195,
+   "offset_beats": -0.0376,
+   "vowel_offset_sec": -0.0104,
+   "vowel_offset_beats": -0.0202,
+   "words_file_offset_sec": -0.0116,
+   "quietest_point_before_line": 6.1708,
+   "quietest_level_db_re_line_peak": -80.2,
+   "last_word_end_from_words_file": 8.06,
+   "last_word_end_beats_after_downbeat": 3.573,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 6.2,
+     "beats_words_file": -0.022,
+     "onset_refined": 6.1922,
+     "beats_refined": -0.038
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 6.46,
+     "beats_words_file": 0.48,
+     "onset_refined": 6.479,
+     "beats_refined": 0.517
+    },
+    {
+     "text": "bir",
+     "start_words_file": 6.98,
+     "beats_words_file": 1.486,
+     "onset_refined": 6.9968,
+     "beats_refined": 1.518
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 7.22,
+     "beats_words_file": 1.95,
+     "onset_refined": 7.1831,
+     "beats_refined": 1.878
+    },
+    {
+     "text": "var.",
+     "start_words_file": 7.78,
+     "beats_words_file": 3.032,
+     "onset_refined": 7.7979,
+     "beats_refined": 3.067
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde inekleri var.",
+   "word_start_from_words_file": 8.26,
+   "onset": 8.2515,
+   "vowel_onset": 8.3245,
+   "beat_number_on_lattice": 16,
+   "downbeat_mix_timeline": 8.2774,
+   "downbeat": 8.2805,
+   "offset_sec": -0.0289,
+   "offset_beats": -0.0559,
+   "vowel_offset_sec": 0.044,
+   "vowel_offset_beats": 0.0851,
+   "words_file_offset_sec": -0.0205,
+   "quietest_point_before_line": 8.2342,
+   "quietest_level_db_re_line_peak": -41.2,
+   "last_word_end_from_words_file": 10.14,
+   "last_word_end_beats_after_downbeat": 3.595,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 8.26,
+     "beats_words_file": -0.04,
+     "onset_refined": 8.2515,
+     "beats_refined": -0.056
+    },
+    {
+     "text": "inekleri",
+     "start_words_file": 9.22,
+     "beats_words_file": 1.816,
+     "onset_refined": 9.191,
+     "beats_refined": 1.76
+    },
+    {
+     "text": "var.",
+     "start_words_file": 9.86,
+     "beats_words_file": 3.054,
+     "onset_refined": 9.8447,
+     "beats_refined": 3.024
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "line": 3,
+   "first_word": "İnekler",
+   "text": "İnekler nasıl bağırır?",
+   "word_start_from_words_file": 10.38,
+   "onset": 10.3358,
+   "vowel_onset": 10.349,
+   "beat_number_on_lattice": 20,
+   "downbeat_mix_timeline": 10.3463,
+   "downbeat": 10.3493,
+   "offset_sec": -0.0135,
+   "offset_beats": -0.0261,
+   "vowel_offset_sec": -0.0003,
+   "vowel_offset_beats": -0.0006,
+   "words_file_offset_sec": 0.0307,
+   "quietest_point_before_line": 10.3203,
+   "quietest_level_db_re_line_peak": -51.7,
+   "last_word_end_from_words_file": 12.3,
+   "last_word_end_beats_after_downbeat": 3.771,
+   "words": [
+    {
+     "text": "İnekler",
+     "start_words_file": 10.38,
+     "beats_words_file": 0.059,
+     "onset_refined": 10.3358,
+     "beats_refined": -0.026
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 11.1,
+     "beats_words_file": 1.451,
+     "onset_refined": 11.1334,
+     "beats_refined": 1.516
+    },
+    {
+     "text": "bağırır?",
+     "start_words_file": 11.62,
+     "beats_words_file": 2.457,
+     "onset_refined": 11.6429,
+     "beats_refined": 2.501
+    }
+   ]
+  },
+  {
+   "verse": 1,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 12.4,
+   "onset": 12.405,
+   "vowel_onset": 12.4282,
+   "beat_number_on_lattice": 24,
+   "downbeat_mix_timeline": 12.4153,
+   "downbeat": 12.4181,
+   "offset_sec": -0.0131,
+   "offset_beats": -0.0253,
+   "vowel_offset_sec": 0.0101,
+   "vowel_offset_beats": 0.0195,
+   "words_file_offset_sec": -0.0181,
+   "quietest_point_before_line": 12.3738,
+   "quietest_level_db_re_line_peak": -11.7,
+   "last_word_end_from_words_file": 14.46,
+   "last_word_end_beats_after_downbeat": 3.948,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 12.4,
+     "beats_words_file": -0.035,
+     "onset_refined": 12.405,
+     "beats_refined": -0.025
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 12.92,
+     "beats_words_file": 0.97,
+     "onset_refined": 12.9497,
+     "beats_refined": 1.028
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 13.46,
+     "beats_words_file": 2.014,
+     "onset_refined": 13.447,
+     "beats_refined": 1.989
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 13.96,
+     "beats_words_file": 2.981,
+     "onset_refined": 13.9724,
+     "beats_refined": 3.005
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 18.62,
+   "onset": 18.6226,
+   "vowel_onset": 18.6294,
+   "beat_number_on_lattice": 36,
+   "downbeat_mix_timeline": 18.6222,
+   "downbeat": 18.6245,
+   "offset_sec": -0.002,
+   "offset_beats": -0.0038,
+   "vowel_offset_sec": 0.0048,
+   "vowel_offset_beats": 0.0094,
+   "words_file_offset_sec": -0.0045,
+   "quietest_point_before_line": 18.4226,
+   "quietest_level_db_re_line_peak": -80.1,
+   "last_word_end_from_words_file": 20.48,
+   "last_word_end_beats_after_downbeat": 3.587,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 18.62,
+     "beats_words_file": -0.009,
+     "onset_refined": 18.6226,
+     "beats_refined": -0.004
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 18.86,
+     "beats_words_file": 0.455,
+     "onset_refined": 18.8818,
+     "beats_refined": 0.497
+    },
+    {
+     "text": "bir",
+     "start_words_file": 19.38,
+     "beats_words_file": 1.461,
+     "onset_refined": 19.3995,
+     "beats_refined": 1.498
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 19.64,
+     "beats_words_file": 1.963,
+     "onset_refined": 19.619,
+     "beats_refined": 1.923
+    },
+    {
+     "text": "var.",
+     "start_words_file": 20.2,
+     "beats_words_file": 3.046,
+     "onset_refined": 20.1949,
+     "beats_refined": 3.036
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde koyunları var.",
+   "word_start_from_words_file": 20.68,
+   "onset": 20.6585,
+   "vowel_onset": 20.7209,
+   "beat_number_on_lattice": 40,
+   "downbeat_mix_timeline": 20.6912,
+   "downbeat": 20.6933,
+   "offset_sec": -0.0349,
+   "offset_beats": -0.0674,
+   "vowel_offset_sec": 0.0276,
+   "vowel_offset_beats": 0.0533,
+   "words_file_offset_sec": -0.0133,
+   "quietest_point_before_line": 20.6314,
+   "quietest_level_db_re_line_peak": -81.0,
+   "last_word_end_from_words_file": 22.54,
+   "last_word_end_beats_after_downbeat": 3.57,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 20.68,
+     "beats_words_file": -0.026,
+     "onset_refined": 20.6585,
+     "beats_refined": -0.067
+    },
+    {
+     "text": "koyunları",
+     "start_words_file": 21.58,
+     "beats_words_file": 1.714,
+     "onset_refined": 21.586,
+     "beats_refined": 1.726
+    },
+    {
+     "text": "var.",
+     "start_words_file": 22.26,
+     "beats_words_file": 3.029,
+     "onset_refined": 22.2378,
+     "beats_refined": 2.986
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 3,
+   "first_word": "Koyunlar",
+   "text": "Koyunlar nasıl meler?",
+   "word_start_from_words_file": 22.74,
+   "onset": 22.7359,
+   "vowel_onset": 22.7773,
+   "beat_number_on_lattice": 44,
+   "downbeat_mix_timeline": 22.7601,
+   "downbeat": 22.7622,
+   "offset_sec": -0.0263,
+   "offset_beats": -0.0508,
+   "vowel_offset_sec": 0.0152,
+   "vowel_offset_beats": 0.0294,
+   "words_file_offset_sec": -0.0222,
+   "quietest_point_before_line": 22.7147,
+   "quietest_level_db_re_line_peak": -86.0,
+   "last_word_end_from_words_file": 24.74,
+   "last_word_end_beats_after_downbeat": 3.824,
+   "words": [
+    {
+     "text": "Koyunlar",
+     "start_words_file": 22.74,
+     "beats_words_file": -0.043,
+     "onset_refined": 22.7359,
+     "beats_refined": -0.051
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 23.52,
+     "beats_words_file": 1.465,
+     "onset_refined": 23.5576,
+     "beats_refined": 1.538
+    },
+    {
+     "text": "meler?",
+     "start_words_file": 24.04,
+     "beats_words_file": 2.47,
+     "onset_refined": 24.0589,
+     "beats_refined": 2.507
+    }
+   ]
+  },
+  {
+   "verse": 2,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 24.82,
+   "onset": 24.8259,
+   "vowel_onset": 24.8349,
+   "beat_number_on_lattice": 48,
+   "downbeat_mix_timeline": 24.8291,
+   "downbeat": 24.831,
+   "offset_sec": -0.0051,
+   "offset_beats": -0.0098,
+   "vowel_offset_sec": 0.0039,
+   "vowel_offset_beats": 0.0076,
+   "words_file_offset_sec": -0.011,
+   "quietest_point_before_line": 24.7485,
+   "quietest_level_db_re_line_peak": -14.1,
+   "last_word_end_from_words_file": 26.74,
+   "last_word_end_beats_after_downbeat": 3.691,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 24.82,
+     "beats_words_file": -0.021,
+     "onset_refined": 24.8359,
+     "beats_refined": 0.009
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 25.34,
+     "beats_words_file": 0.984,
+     "onset_refined": 25.3509,
+     "beats_refined": 1.005
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 25.88,
+     "beats_words_file": 2.028,
+     "onset_refined": 25.8677,
+     "beats_refined": 2.004
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 26.38,
+     "beats_words_file": 2.995,
+     "onset_refined": 26.3887,
+     "beats_refined": 3.012
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 33.12,
+   "onset": 33.1072,
+   "vowel_onset": 33.1095,
+   "beat_number_on_lattice": 64,
+   "downbeat_mix_timeline": 33.1049,
+   "downbeat": 33.1062,
+   "offset_sec": 0.001,
+   "offset_beats": 0.0019,
+   "vowel_offset_sec": 0.0032,
+   "vowel_offset_beats": 0.0062,
+   "words_file_offset_sec": 0.0138,
+   "quietest_point_before_line": 33.0712,
+   "quietest_level_db_re_line_peak": -95.9,
+   "last_word_end_from_words_file": 34.96,
+   "last_word_end_beats_after_downbeat": 3.584,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 33.12,
+     "beats_words_file": 0.027,
+     "onset_refined": 33.1072,
+     "beats_refined": 0.002
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 33.34,
+     "beats_words_file": 0.452,
+     "onset_refined": 33.3507,
+     "beats_refined": 0.473
+    },
+    {
+     "text": "bir",
+     "start_words_file": 33.86,
+     "beats_words_file": 1.457,
+     "onset_refined": 33.8853,
+     "beats_refined": 1.506
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 34.12,
+     "beats_words_file": 1.96,
+     "onset_refined": 34.0978,
+     "beats_refined": 1.917
+    },
+    {
+     "text": "var.",
+     "start_words_file": 34.64,
+     "beats_words_file": 2.965,
+     "onset_refined": 34.6497,
+     "beats_refined": 2.984
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde bir de atı var.",
+   "word_start_from_words_file": 35.16,
+   "onset": 35.1369,
+   "vowel_onset": 35.2015,
+   "beat_number_on_lattice": 68,
+   "downbeat_mix_timeline": 35.1739,
+   "downbeat": 35.175,
+   "offset_sec": -0.0381,
+   "offset_beats": -0.0737,
+   "vowel_offset_sec": 0.0265,
+   "vowel_offset_beats": 0.0512,
+   "words_file_offset_sec": -0.015,
+   "quietest_point_before_line": 35.1252,
+   "quietest_level_db_re_line_peak": -59.6,
+   "last_word_end_from_words_file": 37.08,
+   "last_word_end_beats_after_downbeat": 3.683,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 35.16,
+     "beats_words_file": -0.029,
+     "onset_refined": 35.1369,
+     "beats_refined": -0.074
+    },
+    {
+     "text": "bir",
+     "start_words_file": 36.08,
+     "beats_words_file": 1.75,
+     "onset_refined": 36.0896,
+     "beats_refined": 1.768
+    },
+    {
+     "text": "de",
+     "start_words_file": 36.32,
+     "beats_words_file": 2.214,
+     "onset_refined": 36.3362,
+     "beats_refined": 2.245
+    },
+    {
+     "text": "atı",
+     "start_words_file": 36.48,
+     "beats_words_file": 2.523,
+     "onset_refined": 36.4498,
+     "beats_refined": 2.465
+    },
+    {
+     "text": "var.",
+     "start_words_file": 36.74,
+     "beats_words_file": 3.026,
+     "onset_refined": 36.725,
+     "beats_refined": 2.997
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 3,
+   "first_word": "Atı",
+   "text": "Atı nasıl kişner?",
+   "word_start_from_words_file": 37.26,
+   "onset": 37.2279,
+   "vowel_onset": 37.232,
+   "beat_number_on_lattice": 72,
+   "downbeat_mix_timeline": 37.2429,
+   "downbeat": 37.2439,
+   "offset_sec": -0.016,
+   "offset_beats": -0.0309,
+   "vowel_offset_sec": -0.0118,
+   "vowel_offset_beats": -0.0229,
+   "words_file_offset_sec": 0.0161,
+   "quietest_point_before_line": 37.2035,
+   "quietest_level_db_re_line_peak": -72.1,
+   "last_word_end_from_words_file": 39.22,
+   "last_word_end_beats_after_downbeat": 3.821,
+   "words": [
+    {
+     "text": "Atı",
+     "start_words_file": 37.26,
+     "beats_words_file": 0.031,
+     "onset_refined": 37.2279,
+     "beats_refined": -0.031
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 37.98,
+     "beats_words_file": 1.423,
+     "onset_refined": 38.0106,
+     "beats_refined": 1.482
+    },
+    {
+     "text": "kişner?",
+     "start_words_file": 38.52,
+     "beats_words_file": 2.467,
+     "onset_refined": 38.5146,
+     "beats_refined": 2.457
+    }
+   ]
+  },
+  {
+   "verse": 3,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 39.3,
+   "onset": 39.3005,
+   "vowel_onset": 39.3212,
+   "beat_number_on_lattice": 76,
+   "downbeat_mix_timeline": 39.3118,
+   "downbeat": 39.3127,
+   "offset_sec": -0.0122,
+   "offset_beats": -0.0236,
+   "vowel_offset_sec": 0.0085,
+   "vowel_offset_beats": 0.0165,
+   "words_file_offset_sec": -0.0127,
+   "quietest_point_before_line": 39.2914,
+   "quietest_level_db_re_line_peak": -14.6,
+   "last_word_end_from_words_file": 41.1,
+   "last_word_end_beats_after_downbeat": 3.455,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 39.3,
+     "beats_words_file": -0.025,
+     "onset_refined": 39.3005,
+     "beats_refined": -0.024
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 39.82,
+     "beats_words_file": 0.981,
+     "onset_refined": 39.8309,
+     "beats_refined": 1.002
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 40.36,
+     "beats_words_file": 2.025,
+     "onset_refined": 40.3491,
+     "beats_refined": 2.004
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 40.84,
+     "beats_words_file": 2.953,
+     "onset_refined": 40.8504,
+     "beats_refined": 2.973
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 46.56,
+   "onset": 46.5417,
+   "vowel_onset": 46.5502,
+   "beat_number_on_lattice": 90,
+   "downbeat_mix_timeline": 46.5532,
+   "downbeat": 46.5535,
+   "offset_sec": -0.0118,
+   "offset_beats": -0.0228,
+   "vowel_offset_sec": -0.0033,
+   "vowel_offset_beats": -0.0065,
+   "words_file_offset_sec": 0.0065,
+   "quietest_point_before_line": 46.5044,
+   "quietest_level_db_re_line_peak": -79.3,
+   "last_word_end_from_words_file": 48.4,
+   "last_word_end_beats_after_downbeat": 3.57,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 46.56,
+     "beats_words_file": 0.013,
+     "onset_refined": 46.5417,
+     "beats_refined": -0.023
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 46.8,
+     "beats_words_file": 0.477,
+     "onset_refined": 46.8088,
+     "beats_refined": 0.494
+    },
+    {
+     "text": "bir",
+     "start_words_file": 47.3,
+     "beats_words_file": 1.443,
+     "onset_refined": 47.3448,
+     "beats_refined": 1.53
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 47.56,
+     "beats_words_file": 1.946,
+     "onset_refined": 47.5389,
+     "beats_refined": 1.905
+    },
+    {
+     "text": "var.",
+     "start_words_file": 48.1,
+     "beats_words_file": 2.99,
+     "onset_refined": 48.0966,
+     "beats_refined": 2.983
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde horozları var.",
+   "word_start_from_words_file": 48.6,
+   "onset": 48.5879,
+   "vowel_onset": 48.6544,
+   "beat_number_on_lattice": 94,
+   "downbeat_mix_timeline": 48.6222,
+   "downbeat": 48.6223,
+   "offset_sec": -0.0344,
+   "offset_beats": -0.0666,
+   "vowel_offset_sec": 0.032,
+   "vowel_offset_beats": 0.0619,
+   "words_file_offset_sec": -0.0223,
+   "quietest_point_before_line": 48.5754,
+   "quietest_level_db_re_line_peak": -50.7,
+   "last_word_end_from_words_file": 50.5,
+   "last_word_end_beats_after_downbeat": 3.63,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 48.6,
+     "beats_words_file": -0.043,
+     "onset_refined": 48.5879,
+     "beats_refined": -0.067
+    },
+    {
+     "text": "horozları",
+     "start_words_file": 49.52,
+     "beats_words_file": 1.736,
+     "onset_refined": 49.5091,
+     "beats_refined": 1.715
+    },
+    {
+     "text": "var.",
+     "start_words_file": 50.2,
+     "beats_words_file": 3.05,
+     "onset_refined": 50.1876,
+     "beats_refined": 3.026
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 3,
+   "first_word": "Horozlar",
+   "text": "Horozlar nasıl öter?",
+   "word_start_from_words_file": 50.7,
+   "onset": 50.7043,
+   "vowel_onset": 50.7074,
+   "beat_number_on_lattice": 98,
+   "downbeat_mix_timeline": 50.6912,
+   "downbeat": 50.6912,
+   "offset_sec": 0.0131,
+   "offset_beats": 0.0253,
+   "vowel_offset_sec": 0.0162,
+   "vowel_offset_beats": 0.0314,
+   "words_file_offset_sec": 0.0088,
+   "quietest_point_before_line": 50.6564,
+   "quietest_level_db_re_line_peak": -44.6,
+   "last_word_end_from_words_file": 52.66,
+   "last_word_end_beats_after_downbeat": 3.806,
+   "words": [
+    {
+     "text": "Horozlar",
+     "start_words_file": 50.7,
+     "beats_words_file": 0.017,
+     "onset_refined": 50.7043,
+     "beats_refined": 0.025
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 51.48,
+     "beats_words_file": 1.525,
+     "onset_refined": 51.4868,
+     "beats_refined": 1.538
+    },
+    {
+     "text": "öter?",
+     "start_words_file": 52.02,
+     "beats_words_file": 2.569,
+     "onset_refined": 51.9909,
+     "beats_refined": 2.513
+    }
+   ]
+  },
+  {
+   "verse": 4,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 52.74,
+   "onset": 52.7605,
+   "vowel_onset": 52.7605,
+   "beat_number_on_lattice": 102,
+   "downbeat_mix_timeline": 52.7601,
+   "downbeat": 52.76,
+   "offset_sec": 0.0005,
+   "offset_beats": 0.001,
+   "vowel_offset_sec": 0.0005,
+   "vowel_offset_beats": 0.0009,
+   "words_file_offset_sec": -0.02,
+   "quietest_point_before_line": 52.7129,
+   "quietest_level_db_re_line_peak": -11.1,
+   "last_word_end_from_words_file": 54.8,
+   "last_word_end_beats_after_downbeat": 3.944,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 52.74,
+     "beats_words_file": -0.039,
+     "onset_refined": 52.7605,
+     "beats_refined": 0.001
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 53.26,
+     "beats_words_file": 0.967,
+     "onset_refined": 53.2788,
+     "beats_refined": 1.003
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 53.8,
+     "beats_words_file": 2.011,
+     "onset_refined": 53.8082,
+     "beats_refined": 2.026
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 54.3,
+     "beats_words_file": 2.977,
+     "onset_refined": 54.3067,
+     "beats_refined": 2.99
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 59.48,
+   "onset": 59.4744,
+   "vowel_onset": 59.4763,
+   "beat_number_on_lattice": 115,
+   "downbeat_mix_timeline": 59.4843,
+   "downbeat": 59.4836,
+   "offset_sec": -0.0092,
+   "offset_beats": -0.0178,
+   "vowel_offset_sec": -0.0073,
+   "vowel_offset_beats": -0.0141,
+   "words_file_offset_sec": -0.0036,
+   "quietest_point_before_line": 59.4214,
+   "quietest_level_db_re_line_peak": -79.3,
+   "last_word_end_from_words_file": 61.36,
+   "last_word_end_beats_after_downbeat": 3.628,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 59.48,
+     "beats_words_file": -0.007,
+     "onset_refined": 59.4744,
+     "beats_refined": -0.018
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 59.72,
+     "beats_words_file": 0.457,
+     "onset_refined": 59.7436,
+     "beats_refined": 0.503
+    },
+    {
+     "text": "bir",
+     "start_words_file": 60.24,
+     "beats_words_file": 1.462,
+     "onset_refined": 60.2639,
+     "beats_refined": 1.509
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 60.48,
+     "beats_words_file": 1.926,
+     "onset_refined": 60.4689,
+     "beats_refined": 1.905
+    },
+    {
+     "text": "var.",
+     "start_words_file": 61.02,
+     "beats_words_file": 2.97,
+     "onset_refined": 61.0393,
+     "beats_refined": 3.008
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde ördekleri var.",
+   "word_start_from_words_file": 61.54,
+   "onset": 61.5143,
+   "vowel_onset": 61.5893,
+   "beat_number_on_lattice": 119,
+   "downbeat_mix_timeline": 61.5532,
+   "downbeat": 61.5524,
+   "offset_sec": -0.0382,
+   "offset_beats": -0.0738,
+   "vowel_offset_sec": 0.0368,
+   "vowel_offset_beats": 0.0712,
+   "words_file_offset_sec": -0.0124,
+   "quietest_point_before_line": 61.4914,
+   "quietest_level_db_re_line_peak": -58.7,
+   "last_word_end_from_words_file": 63.4,
+   "last_word_end_beats_after_downbeat": 3.572,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 61.54,
+     "beats_words_file": -0.024,
+     "onset_refined": 61.5143,
+     "beats_refined": -0.074
+    },
+    {
+     "text": "ördekleri",
+     "start_words_file": 62.42,
+     "beats_words_file": 1.677,
+     "onset_refined": 62.4519,
+     "beats_refined": 1.739
+    },
+    {
+     "text": "var.",
+     "start_words_file": 63.1,
+     "beats_words_file": 2.992,
+     "onset_refined": 63.0993,
+     "beats_refined": 2.991
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 3,
+   "first_word": "Ördekler",
+   "text": "Ördekler nasıl bağırır?",
+   "word_start_from_words_file": 63.66,
+   "onset": 63.6017,
+   "vowel_onset": 63.6129,
+   "beat_number_on_lattice": 123,
+   "downbeat_mix_timeline": 63.6222,
+   "downbeat": 63.6213,
+   "offset_sec": -0.0195,
+   "offset_beats": -0.0377,
+   "vowel_offset_sec": -0.0083,
+   "vowel_offset_beats": -0.0161,
+   "words_file_offset_sec": 0.0387,
+   "quietest_point_before_line": 63.5786,
+   "quietest_level_db_re_line_peak": -56.0,
+   "last_word_end_from_words_file": 65.58,
+   "last_word_end_beats_after_downbeat": 3.787,
+   "words": [
+    {
+     "text": "Ördekler",
+     "start_words_file": 63.66,
+     "beats_words_file": 0.075,
+     "onset_refined": 63.6017,
+     "beats_refined": -0.038
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 64.379,
+     "beats_words_file": 1.465,
+     "onset_refined": 64.3774,
+     "beats_refined": 1.462
+    },
+    {
+     "text": "bağırır?",
+     "start_words_file": 64.9,
+     "beats_words_file": 2.472,
+     "onset_refined": 64.9222,
+     "beats_refined": 2.515
+    }
+   ]
+  },
+  {
+   "verse": 5,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 65.66,
+   "onset": 65.6698,
+   "vowel_onset": 65.6698,
+   "beat_number_on_lattice": 127,
+   "downbeat_mix_timeline": 65.6912,
+   "downbeat": 65.6901,
+   "offset_sec": -0.0203,
+   "offset_beats": -0.0392,
+   "vowel_offset_sec": -0.0203,
+   "vowel_offset_beats": -0.0392,
+   "words_file_offset_sec": -0.0301,
+   "quietest_point_before_line": 65.6645,
+   "quietest_level_db_re_line_peak": -14.2,
+   "last_word_end_from_words_file": 67.58,
+   "last_word_end_beats_after_downbeat": 3.654,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 65.66,
+     "beats_words_file": -0.058,
+     "onset_refined": 65.6698,
+     "beats_refined": -0.039
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 66.18,
+     "beats_words_file": 0.947,
+     "onset_refined": 66.1887,
+     "beats_refined": 0.964
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 66.7,
+     "beats_words_file": 1.952,
+     "onset_refined": 66.7084,
+     "beats_refined": 1.969
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 67.22,
+     "beats_words_file": 2.958,
+     "onset_refined": 67.2231,
+     "beats_refined": 2.964
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 73.96,
+   "onset": 73.9554,
+   "vowel_onset": 73.9581,
+   "beat_number_on_lattice": 143,
+   "downbeat_mix_timeline": 73.967,
+   "downbeat": 73.9653,
+   "offset_sec": -0.0099,
+   "offset_beats": -0.0192,
+   "vowel_offset_sec": -0.0072,
+   "vowel_offset_beats": -0.0139,
+   "words_file_offset_sec": -0.0053,
+   "quietest_point_before_line": 73.9381,
+   "quietest_level_db_re_line_peak": -126.6,
+   "last_word_end_from_words_file": 75.82,
+   "last_word_end_beats_after_downbeat": 3.586,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 73.96,
+     "beats_words_file": -0.01,
+     "onset_refined": 73.9554,
+     "beats_refined": -0.019
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 74.2,
+     "beats_words_file": 0.454,
+     "onset_refined": 74.2221,
+     "beats_refined": 0.496
+    },
+    {
+     "text": "bir",
+     "start_words_file": 74.72,
+     "beats_words_file": 1.459,
+     "onset_refined": 74.7464,
+     "beats_refined": 1.51
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 74.98,
+     "beats_words_file": 1.962,
+     "onset_refined": 74.9444,
+     "beats_refined": 1.893
+    },
+    {
+     "text": "var.",
+     "start_words_file": 75.5,
+     "beats_words_file": 2.967,
+     "onset_refined": 75.508,
+     "beats_refined": 2.983
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde ördekleri var.",
+   "word_start_from_words_file": 76.02,
+   "onset": 75.9995,
+   "vowel_onset": 76.0725,
+   "beat_number_on_lattice": 147,
+   "downbeat_mix_timeline": 76.036,
+   "downbeat": 76.0341,
+   "offset_sec": -0.0347,
+   "offset_beats": -0.067,
+   "vowel_offset_sec": 0.0384,
+   "vowel_offset_beats": 0.0741,
+   "words_file_offset_sec": -0.0141,
+   "quietest_point_before_line": 75.9742,
+   "quietest_level_db_re_line_peak": -70.0,
+   "last_word_end_from_words_file": 77.9,
+   "last_word_end_beats_after_downbeat": 3.607,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 76.02,
+     "beats_words_file": -0.027,
+     "onset_refined": 75.9995,
+     "beats_refined": -0.067
+    },
+    {
+     "text": "ördekleri",
+     "start_words_file": 76.9,
+     "beats_words_file": 1.674,
+     "onset_refined": 76.9512,
+     "beats_refined": 1.773
+    },
+    {
+     "text": "var.",
+     "start_words_file": 77.6,
+     "beats_words_file": 3.027,
+     "onset_refined": 77.5803,
+     "beats_refined": 2.989
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 3,
+   "first_word": "Köpekler",
+   "text": "Köpekler nasıl havlar?",
+   "word_start_from_words_file": 78.08,
+   "onset": 78.0597,
+   "vowel_onset": 78.1063,
+   "beat_number_on_lattice": 151,
+   "downbeat_mix_timeline": 78.1049,
+   "downbeat": 78.103,
+   "offset_sec": -0.0433,
+   "offset_beats": -0.0837,
+   "vowel_offset_sec": 0.0033,
+   "vowel_offset_beats": 0.0065,
+   "words_file_offset_sec": -0.023,
+   "quietest_point_before_line": 78.0231,
+   "quietest_level_db_re_line_peak": -58.4,
+   "last_word_end_from_words_file": 80.06,
+   "last_word_end_beats_after_downbeat": 3.784,
+   "words": [
+    {
+     "text": "Köpekler",
+     "start_words_file": 78.08,
+     "beats_words_file": -0.044,
+     "onset_refined": 78.0597,
+     "beats_refined": -0.084
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 78.86,
+     "beats_words_file": 1.464,
+     "onset_refined": 78.877,
+     "beats_refined": 1.496
+    },
+    {
+     "text": "havlar?",
+     "start_words_file": 79.4,
+     "beats_words_file": 2.508,
+     "onset_refined": 79.3999,
+     "beats_refined": 2.507
+    }
+   ]
+  },
+  {
+   "verse": 6,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 80.16,
+   "onset": 80.1483,
+   "vowel_onset": 80.1576,
+   "beat_number_on_lattice": 155,
+   "downbeat_mix_timeline": 80.1739,
+   "downbeat": 80.1718,
+   "offset_sec": -0.0235,
+   "offset_beats": -0.0453,
+   "vowel_offset_sec": -0.0142,
+   "vowel_offset_beats": -0.0274,
+   "words_file_offset_sec": -0.0118,
+   "quietest_point_before_line": 80.1446,
+   "quietest_level_db_re_line_peak": -26.9,
+   "last_word_end_from_words_file": 82.2,
+   "last_word_end_beats_after_downbeat": 3.921,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 80.16,
+     "beats_words_file": -0.023,
+     "onset_refined": 80.1483,
+     "beats_refined": -0.045
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 80.66,
+     "beats_words_file": 0.944,
+     "onset_refined": 80.6814,
+     "beats_refined": 0.985
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 81.2,
+     "beats_words_file": 1.988,
+     "onset_refined": 81.2043,
+     "beats_refined": 1.996
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 81.7,
+     "beats_words_file": 2.955,
+     "onset_refined": 81.705,
+     "beats_refined": 2.964
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 1,
+   "first_word": "Ali",
+   "text": "Ali Baba'nın bir çiftliği var.",
+   "word_start_from_words_file": 86.4,
+   "onset": 86.3767,
+   "vowel_onset": 86.3779,
+   "beat_number_on_lattice": 167,
+   "downbeat_mix_timeline": 86.3808,
+   "downbeat": 86.3782,
+   "offset_sec": -0.0015,
+   "offset_beats": -0.003,
+   "vowel_offset_sec": -0.0003,
+   "vowel_offset_beats": -0.0005,
+   "words_file_offset_sec": 0.0218,
+   "quietest_point_before_line": 86.2955,
+   "quietest_level_db_re_line_peak": -75.7,
+   "last_word_end_from_words_file": 88.22,
+   "last_word_end_beats_after_downbeat": 3.561,
+   "words": [
+    {
+     "text": "Ali",
+     "start_words_file": 86.4,
+     "beats_words_file": 0.042,
+     "onset_refined": 86.3767,
+     "beats_refined": -0.003
+    },
+    {
+     "text": "Baba'nın",
+     "start_words_file": 86.62,
+     "beats_words_file": 0.467,
+     "onset_refined": 86.6235,
+     "beats_refined": 0.474
+    },
+    {
+     "text": "bir",
+     "start_words_file": 87.14,
+     "beats_words_file": 1.473,
+     "onset_refined": 87.1688,
+     "beats_refined": 1.528
+    },
+    {
+     "text": "çiftliği",
+     "start_words_file": 87.4,
+     "beats_words_file": 1.975,
+     "onset_refined": 87.359,
+     "beats_refined": 1.896
+    },
+    {
+     "text": "var.",
+     "start_words_file": 87.96,
+     "beats_words_file": 3.058,
+     "onset_refined": 87.9564,
+     "beats_refined": 3.051
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 2,
+   "first_word": "Çiftliğinde",
+   "text": "Çiftliğinde bir kedisi var.",
+   "word_start_from_words_file": 88.44,
+   "onset": 88.4134,
+   "vowel_onset": 88.4991,
+   "beat_number_on_lattice": 171,
+   "downbeat_mix_timeline": 88.4498,
+   "downbeat": 88.447,
+   "offset_sec": -0.0336,
+   "offset_beats": -0.0649,
+   "vowel_offset_sec": 0.0521,
+   "vowel_offset_beats": 0.1007,
+   "words_file_offset_sec": -0.007,
+   "quietest_point_before_line": 88.392,
+   "quietest_level_db_re_line_peak": -59.1,
+   "last_word_end_from_words_file": 90.3,
+   "last_word_end_beats_after_downbeat": 3.582,
+   "words": [
+    {
+     "text": "Çiftliğinde",
+     "start_words_file": 88.44,
+     "beats_words_file": -0.014,
+     "onset_refined": 88.4134,
+     "beats_refined": -0.065
+    },
+    {
+     "text": "bir",
+     "start_words_file": 89.22,
+     "beats_words_file": 1.494,
+     "onset_refined": 89.2301,
+     "beats_refined": 1.514
+    },
+    {
+     "text": "kedisi",
+     "start_words_file": 89.5,
+     "beats_words_file": 2.036,
+     "onset_refined": 89.4568,
+     "beats_refined": 1.952
+    },
+    {
+     "text": "var.",
+     "start_words_file": 90.02,
+     "beats_words_file": 3.041,
+     "onset_refined": 90.0126,
+     "beats_refined": 3.027
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 3,
+   "first_word": "Kedisi",
+   "text": "Kedisi nasıl miyavlar?",
+   "word_start_from_words_file": 90.5,
+   "onset": 90.4905,
+   "vowel_onset": 90.5344,
+   "beat_number_on_lattice": 175,
+   "downbeat_mix_timeline": 90.5187,
+   "downbeat": 90.5158,
+   "offset_sec": -0.0253,
+   "offset_beats": -0.0489,
+   "vowel_offset_sec": 0.0186,
+   "vowel_offset_beats": 0.036,
+   "words_file_offset_sec": -0.0158,
+   "quietest_point_before_line": 90.3505,
+   "quietest_level_db_re_line_peak": -55.2,
+   "last_word_end_from_words_file": 92.48,
+   "last_word_end_beats_after_downbeat": 3.797,
+   "words": [
+    {
+     "text": "Kedisi",
+     "start_words_file": 90.5,
+     "beats_words_file": -0.031,
+     "onset_refined": 90.4905,
+     "beats_refined": -0.049
+    },
+    {
+     "text": "nasıl",
+     "start_words_file": 91.02,
+     "beats_words_file": 0.975,
+     "onset_refined": 91.0402,
+     "beats_refined": 1.014
+    },
+    {
+     "text": "miyavlar?",
+     "start_words_file": 91.56,
+     "beats_words_file": 2.019,
+     "onset_refined": 91.567,
+     "beats_refined": 2.032
+    }
+   ]
+  },
+  {
+   "verse": 7,
+   "line": 4,
+   "first_word": "Dinle",
+   "text": "Dinle bak, dinle bak.",
+   "word_start_from_words_file": 92.56,
+   "onset": 92.5756,
+   "vowel_onset": 92.5791,
+   "beat_number_on_lattice": 179,
+   "downbeat_mix_timeline": 92.5877,
+   "downbeat": 92.5847,
+   "offset_sec": -0.0091,
+   "offset_beats": -0.0175,
+   "vowel_offset_sec": -0.0056,
+   "vowel_offset_beats": -0.0108,
+   "words_file_offset_sec": -0.0247,
+   "quietest_point_before_line": 92.568,
+   "quietest_level_db_re_line_peak": -19.2,
+   "last_word_end_from_words_file": 94.38,
+   "last_word_end_beats_after_downbeat": 3.471,
+   "words": [
+    {
+     "text": "Dinle",
+     "start_words_file": 92.56,
+     "beats_words_file": -0.048,
+     "onset_refined": 92.5756,
+     "beats_refined": -0.018
+    },
+    {
+     "text": "bak,",
+     "start_words_file": 93.08,
+     "beats_words_file": 0.958,
+     "onset_refined": 93.0985,
+     "beats_refined": 0.993
+    },
+    {
+     "text": "dinle",
+     "start_words_file": 93.62,
+     "beats_words_file": 2.002,
+     "onset_refined": 93.609,
+     "beats_refined": 1.98
+    },
+    {
+     "text": "bak.",
+     "start_words_file": 94.1,
+     "beats_words_file": 2.93,
+     "onset_refined": 94.1163,
+     "beats_refined": 2.961
+    }
+   ]
+  }
+ ],
+ "offset_stats": {
+  "acoustic_onset_all28": {
+   "mean_ms": -18.189285714285713,
+   "median_ms": -17.750000000000004,
+   "sd_ms": 14.294141231461705,
+   "min_ms": -43.3,
+   "max_ms": 13.100000000000001,
+   "median_beats": -0.03431666666666667,
+   "mean_beats": -0.035165952380952374,
+   "sd_beats": 0.027635339714159296
+  },
+  "vowel_onset_all28": {
+   "mean_ms": 9.025,
+   "median_ms": 3.6,
+   "sd_ms": 19.08801495218439,
+   "min_ms": -20.299999999999997,
+   "max_ms": 52.1,
+   "median_beats": 0.006959999999999999,
+   "mean_beats": 0.017448333333333333,
+   "sd_beats": 0.03690349557422315
+  },
+  "words_file_start_all28": {
+   "mean_ms": -6.521428571428572,
+   "median_ms": -12.1,
+   "sd_ms": 17.371248215089913,
+   "min_ms": -30.099999999999998,
+   "max_ms": 38.699999999999996,
+   "median_beats": -0.023393333333333332,
+   "mean_beats": -0.01260809523809524,
+   "sd_beats": 0.0335844132158405
+  },
+  "acoustic_onset_line1": {
+   "mean_ms": -7.557142857142857,
+   "median_ms": -9.2,
+   "sd_ms": 7.183512869262304,
+   "min_ms": -19.5,
+   "max_ms": 1.0,
+   "median_beats": -0.017786666666666666,
+   "mean_beats": -0.01461047619047619,
+   "sd_beats": 0.013888124880573787
+  },
+  "vowel_onset_line1": {
+   "mean_ms": -2.9285714285714293,
+   "median_ms": -3.3,
+   "sd_ms": 5.737512319729485,
+   "min_ms": -10.4,
+   "max_ms": 4.8,
+   "median_beats": -0.006379999999999999,
+   "mean_beats": -0.005661904761904763,
+   "sd_beats": 0.01109252381814367
+  },
+  "acoustic_onset_line2": {
+   "mean_ms": -34.68571428571428,
+   "median_ms": -34.7,
+   "sd_ms": 3.130190926779905,
+   "min_ms": -38.199999999999996,
+   "max_ms": -28.9,
+   "median_beats": -0.06708666666666667,
+   "mean_beats": -0.06705904761904762,
+   "sd_beats": 0.00605170245844115
+  },
+  "vowel_onset_line2": {
+   "mean_ms": 36.771428571428565,
+   "median_ms": 36.8,
+   "sd_ms": 9.149264867684595,
+   "min_ms": 26.5,
+   "max_ms": 52.1,
+   "median_beats": 0.07114666666666666,
+   "mean_beats": 0.07109142857142856,
+   "sd_beats": 0.017688578744190216
+  },
+  "acoustic_onset_line3": {
+   "mean_ms": -18.685714285714283,
+   "median_ms": -19.5,
+   "sd_ms": 17.091365127009656,
+   "min_ms": -43.3,
+   "max_ms": 13.100000000000001,
+   "median_beats": -0.0377,
+   "mean_beats": -0.03612571428571428,
+   "sd_beats": 0.03304330591221867
+  },
+  "vowel_onset_line3": {
+   "mean_ms": 4.7,
+   "median_ms": 3.3,
+   "sd_ms": 12.274091955551471,
+   "min_ms": -11.799999999999999,
+   "max_ms": 18.599999999999998,
+   "median_beats": 0.006379999999999999,
+   "mean_beats": 0.009086666666666667,
+   "sd_beats": 0.023729911114066176
+  },
+  "acoustic_onset_line4": {
+   "mean_ms": -11.828571428571427,
+   "median_ms": -12.200000000000001,
+   "sd_ms": 8.311180077805696,
+   "min_ms": -23.5,
+   "max_ms": 0.5,
+   "median_beats": -0.023586666666666666,
+   "mean_beats": -0.022868571428571426,
+   "sd_beats": 0.016068281483757677
+  },
+  "vowel_onset_line4": {
+   "mean_ms": -2.442857142857143,
+   "median_ms": 0.5,
+   "sd_ms": 11.496645473478653,
+   "min_ms": -20.299999999999997,
+   "max_ms": 10.1,
+   "median_beats": 0.0009666666666666667,
+   "mean_beats": -0.004722857142857142,
+   "sd_beats": 0.022226847915392058
+  }
+ },
+ "vocal_only_tempo": {
+  "from_vowel_onsets": {
+   "beat_period_s": 0.5171895013929858,
+   "bpm": 116.01163565462454,
+   "bpm_se": 0.015741874392526188,
+   "intercept_s": 0.01558193829892073,
+   "residual_sd_ms": 19.437169007529835
+  },
+  "from_acoustic_onsets": {
+   "beat_period_s": 0.5171726395593098,
+   "bpm": 116.01541808384692,
+   "bpm_se": 0.011720134242441274,
+   "intercept_s": -0.010013695025462541,
+   "residual_sd_ms": 14.470409963554069
+  },
+  "note": "onsets of the 28 lines (vocal-stem timeline) regressed on the lattice beat numbers 12,16,...; independent of the mix except for the integer beat numbers",
+  "within_verse_line_spacing": {
+   "mean_beat_period_s": 0.5172464285714286,
+   "bpm": 115.99886763010171,
+   "sd_ms_per_beat": 8.329721955572573,
+   "n_intervals": 21
+  }
+ },
+ "per_verse_local_phase": [
+  {
+   "verse": 1,
+   "window": [
+    5.174,
+    15.519
+   ],
+   "methodA_flux_beat_phase_dev_from_lattice_plus_half_beat_ms": -0.8620689655174929,
+   "methodA_score": 3.4650819019838424,
+   "methodA_eighth_lattice_dev_ms": -1.3877787807814457e-13,
+   "methodB_kick_phase_dev_from_lattice_ms": 5.172413793103681,
+   "methodB_score": 7.5704543475466295
+  },
+  {
+   "verse": 2,
+   "window": [
+    17.588,
+    27.933
+   ],
+   "methodA_flux_beat_phase_dev_from_lattice_plus_half_beat_ms": -3.4482758620671405,
+   "methodA_score": 3.9309970439010904,
+   "methodA_eighth_lattice_dev_ms": -2.586206896548732,
+   "methodB_kick_phase_dev_from_lattice_ms": 4.310344827586244,
+   "methodB_score": 8.012677873900328
+  },
+  {
+   "verse": 3,
+   "window": [
+    32.07,
+    42.415
+   ],
+   "methodA_flux_beat_phase_dev_from_lattice_plus_half_beat_ms": -2.5862068965510354,
+   "methodA_score": 3.9348780281412816,
+   "methodA_eighth_lattice_dev_ms": -2.1551724137913455,
+   "methodB_kick_phase_dev_from_lattice_ms": 5.1724137931059015,
+   "methodB_score": 8.40260729852858
+  },
+  {
+   "verse": 4,
+   "window": [
+    45.519,
+    55.864
+   ],
+   "methodA_flux_beat_phase_dev_from_lattice_plus_half_beat_ms": -4.310344827584355,
+   "methodA_score": 3.8706345776763653,
+   "methodA_eighth_lattice_dev_ms": -3.879310344824666,
+   "methodB_kick_phase_dev_from_lattice_ms": 2.831068712794149e-12,
+   "methodB_score": 8.000075013180757
+  },
+  {
+   "verse": 5,
+   "window": [
+    58.45,
+    68.795
+   ],
+   "methodA_flux_beat_phase_dev_from_lattice_plus_half_beat_ms": -6.034482758621563,
+   "methodA_score": 4.211796031168249,
+   "methodA_eighth_lattice_dev_ms": -5.1724137931031535,
+   "methodB_kick_phase_dev_from_lattice_ms": 2.5862068965528118,
+   "methodB_score": 8.11313373627249
+  },
+  {
+   "verse": 6,
+   "window": [
+    72.933,
+    83.277
+   ],
+   "methodA_flux_beat_phase_dev_from_lattice_plus_half_beat_ms": -6.034482758626448,
+   "methodA_score": 3.9896362677026618,
+   "methodA_eighth_lattice_dev_ms": -5.603448275866757,
+   "methodB_kick_phase_dev_from_lattice_ms": 2.586206896547927,
+   "methodB_score": 9.184104723384937
+  },
+  {
+   "verse": 7,
+   "window": [
+    85.346,
+    95.691
+   ],
+   "methodA_flux_beat_phase_dev_from_lattice_plus_half_beat_ms": -6.896551724135891,
+   "methodA_score": 3.762671093413718,
+   "methodA_eighth_lattice_dev_ms": -6.465517241376201,
+   "methodB_kick_phase_dev_from_lattice_ms": 4.310344827590795,
+   "methodB_score": 7.882295161489177
+  }
+ ],
+ "mix_to_vocal_timeline": {
+  "lag_ms_at_t0": -3.6937231473397296,
+  "lag_slope_ms_per_s": 0.07280080904004263,
+  "residual_sd_ms": 1.2853053910758208,
+  "formula": "t_vocal = t_mix - (lag_ms_at_t0 + lag_slope_ms_per_s * t_mix)/1000"
+ }
+}
