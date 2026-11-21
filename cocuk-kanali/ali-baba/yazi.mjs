@@ -12,6 +12,7 @@ const R = {
   inek: ['İNEK', '#EC407A', '#F8BBD0', '#880E4F'], koyun: ['KOYUN', '#5C6BC0', '#C5CAE9', '#1A237E'],
   ordek: ['ÖRDEK', '#FB8C00', '#FFCC80', '#A84E00'], kopek: ['KÖPEK', '#8D6E63', '#D7CCC8', '#3E2723'],
   kedi: ['KEDİ', '#FF8A3D', '#FFD0A8', '#A84E00'],
+  at: ['AT', '#A1663A', '#E0B58C', '#5A3214'], horoz: ['HOROZ', '#E53935', '#FF8A80', '#9A1212'],
 };
 const P = { kirmizi: ['', '#E53935', '#FF8A80', '#9A1212'], mavi: ['', '#1E88E5', '#90CAF9', '#0B3C8A'], yesil: ['', '#43A047', '#A5D6A7', '#14521A'] };
 const tarayici = await chromium.launch();
