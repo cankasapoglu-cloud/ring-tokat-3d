@@ -1,0 +1,137 @@
+{
+ "01_giris": {
+  "status": "done",
+  "prompt": "The orange kitten stands on the wooden step stool and holds up his two muddy front paws, looking at one paw and then the other, wiggling them slightly; his tail sways gently and he blinks. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465679148552399",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465675166154984",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/01_giris.mp4"
+ },
+ "02_musluk": {
+  "status": "done",
+  "prompt": "The orange kitten stands on the wooden step stool with one paw resting on the chrome tap handle; clear water keeps flowing steadily from the tap into the sink; he watches the water, nods a little, his tail sways gently. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465679486062852",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465679613509901",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/02_musluk.mp4"
+ },
+ "03_sabun": {
+  "status": "done",
+  "prompt": "The orange kitten presses down the pump of the blue soap bottle with one paw a couple of times; the white foam in his other paw grows a little, a few small soap bubbles drift up; he blinks. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465677647679839",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465674988433718",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/03_sabun.mp4"
+ },
+ "04_avuc": {
+  "status": "done",
+  "prompt": "The orange kitten rubs his foamy front paws together palm to palm in a steady rhythm; the white foam squishes softly and a few small bubbles drift up; he blinks and sways his head slightly. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465679295635653",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465678292025685",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/04_avuc.mp4"
+ },
+ "05_parmak": {
+  "status": "done",
+  "prompt": "The orange kitten keeps his foamy front paws clasped together in front of his chest and gently rubs and slides them against each other; the soap bubbles around him float slowly upward; he blinks. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465674524586362",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465676880912685",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/05_parmak.mp4"
+ },
+ "06_ust": {
+  "status": "done",
+  "prompt": "The orange kitten rubs one foamy front paw over the back of the other in a steady rhythm while watching a big soap bubble; the soap bubbles float slowly through the air; his tail sways. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465679669481666",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465676825051388",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/06_ust.mp4"
+ },
+ "_log": [
+  {
+   "07_durula": {
+    "status": "error",
+    "prompt": "The orange kitten stands on the wooden step stool and rubs his front paws together under the running tap; the water flows steadily and washes the white foam away, small splashes; his tail sways gently. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+    "task_id": "",
+    "resp": {
+     "status_code": 1002,
+     "status_msg": "rate limit exceeded(RPM)"
+    }
+   }
+  }
+ ],
+ "08_havlu": {
+  "status": "done",
+  "prompt": "The orange kitten gently pats and rubs his front paws dry with the yellow polka-dot towel he is holding, in a steady rhythm; he blinks and his tail sways. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465677023519037",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465678900240741",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/08_havlu.mp4"
+ },
+ "09_temiz": {
+  "status": "done",
+  "prompt": "The orange kitten proudly holds up both clean front paws toward the camera and wiggles them gently side to side; the little sparkle stars around the paws twinkle; he blinks and tilts his head. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465675929346411",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465679065755855",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/09_temiz.mp4"
+ },
+ "10_dans": {
+  "status": "done",
+  "prompt": "The orange kitten bounces and sways happily from side to side with both arms up in a cheer, dancing on the spot; the soap bubbles float slowly around him; the yellow rubber duck stays on the floor beside him. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465677038121329",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465678238998877",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/10_dans.mp4"
+ },
+ "07_durula_red": {
+  "status": "done",
+  "prompt": "The orange kitten stands on the wooden step stool and rubs his front paws together under the running tap; the water flows steadily and washes the white foam away, small splashes; his tail sways gently. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465675455275386",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465679083270492",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/07_durula_red.mp4",
+  "note": "rejected: mouth opens, small fangs visible"
+ },
+ "07_durula": {
+  "status": "done",
+  "prompt": "The orange kitten stands still on the wooden step stool and keeps both front paws under the running tap the whole time, slowly rubbing them together in the water; the water flows steadily and rinses the white foam away. His mouth stays closed in a small quiet smile for the entire shot; he only blinks and his tail sways gently. Gentle, smooth, natural 3D cartoon animation. Static camera. The kitten keeps exactly the same look, mouth closed with a soft smile, no teeth. No new characters or objects appear, no text.",
+  "task_id": "465678887633186",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "file_id": "465676651782441",
+  "file": "/home/user/ring-tokat-3d/cocuk-kanali/el-yikama/klip/07_durula.mp4"
+ }
+}
