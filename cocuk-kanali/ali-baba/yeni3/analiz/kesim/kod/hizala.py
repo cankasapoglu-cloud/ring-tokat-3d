@@ -108,12 +108,18 @@ F[:, -1] *= 2.0        # seslilik agirligi
 F[:, 13:26] *= 0.7     # delta agirligi
 
 
+# Kayitta 1-2 kez gecen harfler kendi modelini ogrenemez (ilk denemede 'kişner'deki tek 'ş' komsu unluyu yuttu):
+# benzer sesin modeline baglanir.
+BAGLA = {"ş": "s", "p": "k", "m": "n"}
+
+
 def durumlar(p):
     """[(ad, kelime_no, enaz_kare, encok_kare|None)]"""
     ds = []
     nh = len(p["harf"])
-    for i, (ki, ch, dsonu) in enumerate(p["harf"]):
-        _, mn, mx, _ = SINIF[ch]
+    for i, (ki, ch0, dsonu) in enumerate(p["harf"]):
+        ch = BAGLA.get(ch0, ch0)
+        _, mn, mx, _ = SINIF[ch0]
         if dsonu and mx is not None:
             mx = None if i == nh - 1 else 170          # dize sonu unsuzu uzayabilir (var -> surtunmeli r, bak -> k + kuyruk)
         a = max(1, int(round(mn / 1000 / DT))); b = None if mx is None else max(a + 1, int(round(mx / 1000 / DT)))

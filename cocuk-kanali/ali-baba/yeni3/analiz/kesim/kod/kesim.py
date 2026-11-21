@@ -125,9 +125,8 @@ def sinir_bul(sol, sag):
     """sol / sag: ardisik iki hecenin harf yapisi (hizalamadan). Donus: sinir sozlugu."""
     vs_j, ve_j = sol["vowel"]["bas"], sol["vowel"]["bit"]
     vs_n, ve_n = sag["vowel"]["bas"], sag["vowel"]["bit"]
-    a = fi(max(ve_j - 0.03, (vs_j + ve_j) / 2)); b = fi(min(vs_n + 0.03, (vs_n + ve_n) / 2))
-    if b <= a + 1:
-        a, b = fi((vs_j + ve_j) / 2), fi((vs_n + ve_n) / 2)
+    # arama bolgesi: iki unlunun (hizalamadaki) ORTALARI arasi - hizalamanin unsuz kenarlarina guvenilmez
+    a, b = fi((vs_j + ve_j) / 2), fi((vs_n + ve_n) / 2)
     unsuz = "".join(s_["harf"] for s_ in sol["coda"]) + "|" + "".join(s_["harf"] for s_ in sag["onset"])
     out = {"consonants": unsuz}
     sol_a = fi(vs_j - 0.02); sag_b = fi(ve_n + 0.02)
@@ -141,7 +140,9 @@ def sinir_bul(sol, sag):
         wa = max(a, fi(sag["onset"][-1]["bas"] - 0.025)); wb = min(b, fi(sag["onset"][-1]["bit"] + 0.025))
         if wb > wa:
             iW = wa + int(np.argmin(E12[wa:wb + 1]))
-            if Ek(iW) <= ER + 6.0:
+            dW = float(min(E12[sol_a:iW + 1].max(), E12[iW:sag_b + 1].max()) - E12[iW])
+            # onset cevresindeki cukur: ya en derin cukura yakin (6 dB) ya da kendi basina belirgin (>= 10 dB)
+            if Ek(iW) <= ER + 6.0 or dW >= 10.0:
                 adaylar.append((iW, wa, wb, "onset"))
     else:
         wa, wb = a, b
