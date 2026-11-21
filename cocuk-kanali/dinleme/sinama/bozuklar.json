@@ -57,16 +57,18 @@
  "b03a_esnetme_15": {
   "tur": "kusur",
   "no": 3,
-  "kusur": "vokal 1.5 kat faz vokoderiyle esnetilmis dokuda (sure ve perde ayni)",
-  "yontem": "rubberband ile 1/1.5'e sikistir, librosa faz vokoderiyle 1.5 kat esnet",
-  "hizalama_duzeltmesi_ornek": 320
+  "kusur": "vokal 1.5 kat faz vokoderiyle esnetilmis dokuda (sure, perde ve duzey ayni)",
+  "yontem": "rubberband ile 1/1.5'e sikistir, librosa faz vokoderiyle 1.5 kat esnet, duzeyi aslina esitle",
+  "hizalama_duzeltmesi_ornek": 320,
+  "duzey_esitleme_db": 4.79
  },
  "b03b_esnetme_20": {
   "tur": "kusur",
   "no": 3,
-  "kusur": "vokal 2.0 kat faz vokoderiyle esnetilmis dokuda (sure ve perde ayni)",
-  "yontem": "rubberband ile 1/2.0'e sikistir, librosa faz vokoderiyle 2.0 kat esnet",
-  "hizalama_duzeltmesi_ornek": 192
+  "kusur": "vokal 2.0 kat faz vokoderiyle esnetilmis dokuda (sure, perde ve duzey ayni)",
+  "yontem": "rubberband ile 1/2.0'e sikistir, librosa faz vokoderiyle 2.0 kat esnet, duzeyi aslina esitle",
+  "hizalama_duzeltmesi_ornek": 192,
+  "duzey_esitleme_db": 4.68
  },
  "k00_kuru_vokal": {
   "tur": "kuru taban",

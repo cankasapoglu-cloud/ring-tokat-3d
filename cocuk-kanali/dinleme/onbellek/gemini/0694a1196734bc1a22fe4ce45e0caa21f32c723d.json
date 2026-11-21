@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "DUYDUGUM: Türkçe seslendirilen bir çocuk şarkısı kaydıdır. Vokali yetişkin bir kadın seslendirmekte olup altyapıda akustik gitar ve ritim çalgıları yer almaktadır. Gerçek hayvan sesi efekti bulunmamakta, hayvan sesleri vokalist tarafından taklit edilmektedir.\nSOZLER: Ali Babanın bir çiftliği var çiftliğinde inekleri var mö mö diye bağırır çiftliğinde Ali Babanın Ali Babanın bir çiftliği var çiftliğinde koyunları var mö mö diye bağırır çiftliğinde Ali Babanın Ali Babanın bir çiftliği var çiftliğinde atları var ne ne diye bağırır çiftliğinde Ali Babanın\nSES: doğal insan sesi | Şarkı herhangi bir dijital müdahale olmaksızın doğal yetişkin kadın vokaliyle seslendirilmiştir.\nAKORT: müzikle uyumlu | Şarkıcının detone olduğu bir yer bulunmamakta, vokaller altyapı ezgisine tam uymaktadır.\nRITIM: ritme oturuyor | Vokal ve enstrümanlar şarkının temposuna başından sonuna kadar eksiksiz uymaktadır.\nENERJI: canlı | Şarkı tempolu, neşeli ve çocukların ilgisini çekecek canlı bir enerjiye sahiptir.\nTELAFFUZ: doğal Türkçe | Şarkı anlaşılır ve doğal bir Türkçe telaffuzla seslendirilmiştir.\nSARKI_MI: ezgiyle söylüyor | Şarkıcı sözleri bütünüyle melodiye uyarlayarak ezgiyle söylemektedir.\nDENGE: dengeli | Vokal ses seviyesi ile arka plandaki enstrümanların sesi birbirini kapatmayacak şekilde dengelidir.\nTUHAF: 00:27 - koyun sesi olarak \"me me\" yerine yanlışlıkla inek sesi olan \"mö mö\" denmesi; 00:41 - at sesi taklidi olarak anlamsız şekilde \"ne ne\" sesinin çıkarılması\nOZET: Bu kaydın en belirgin kusuru, farklı hayvanlar için yanlış ve mantıksız hayvan sesi taklitlerinin kullanılmış olmasıdır.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "v2_2.mp3"
+ ],
+ "bas": 0.0,
+ "sure": 47.0,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 17:06:23"
+}

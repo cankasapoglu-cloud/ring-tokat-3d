@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "DUYDUGUM: Türkçe dilinde neşeli bir çocuk şarkısı çalıyor; çocuksu tonda söylenmiş kadın vokaline trompet, akordeon ve tempolu altyapı enstrümanları eşlik ediyor. Şarkı aralarında inek ve koyun sesi efektleri yer alıyor.\nSOZLER: Ali Babanın bir çiftliği var Çiftliğinde inekleri var Möö möö diye bağırır çiftliğinde Ali Babanın Ali Babanın bir çiftliği var Çiftliğinde koyunları var Mee mee diye bağırır çiftliğinde Ali Babanın\nSES: biraz yapay | Vokal dijital olarak işlenip tizleştirildiği için hafif sentetik bir tona sahiptir.\nAKORT: müzikle uyumlu | Şarkı boyunca vokal ve enstrümanlar birbiriyle tam uyumlu bir akortta ilerliyor.\nRITIM: ritme oturuyor | Vokal ve altyapı vuruşları tempo boyunca senkronize şekilde devam ediyor.\nENERJI: canlı | Şarkı tempolu, neşeli ve hareketli bir çocuk şarkısı enerjisi taşıyor.\nTELAFFUZ: doğal Türkçe | Sözler son derece net, anlaşılır ve doğal bir Türkçe ile telaffuz ediliyor.\nSARKI_MI: ezgiyle söylüyor | Şarkıcı kelimeleri net bir melodiye uyarlayarak ezgili biçimde seslendiriyor.\nDENGE: dengeli | Vokal yüksekliği ile arkadaki müzik ve ses efektlerinin seviyesi gayet dengelidir.\nTUHAF: 00:17 - inek sesi efekti aniden ve yapay giriyor; 00:35 - koyun sesi efekti mekanik duyuluyor\nOZET: Kaydın en belirgin kusuru, vokalin dijital işlenmesinden kaynaklanan hafif yapay tondur.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "sarki_A_ozgun_ses.mp3"
+ ],
+ "bas": 0.0,
+ "sure": 47.0,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 16:58:40"
+}

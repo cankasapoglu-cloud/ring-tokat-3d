@@ -67,7 +67,7 @@
 
 ## 1a  Vokal 50 cent tiz (detone)  [ayirma_yolu]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Akort (detone mi)', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Tepe', 'taban': None, 'bozuk': 'dikkat'}, {'konu': 'Akort (detone mi)', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 14}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Akort (detone mi)', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Akort (detone mi)', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Tepe', 'taban': None, 'bozuk': 'dikkat'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 14}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -82,7 +82,7 @@ ilgili sayilmayan ama 3 kattan fazla oynayanlar: akor sesi süre oranı 0.711->0
 
 ## 1b  Vokal 100 cent (yarım ses) tiz  [ayirma_yolu]  -> TEK RAPORLA YAKALANDI
 
-ozet satirlari (ilgili, kotulesen): [{'konu': 'Vokal altyapıyla aynı armonide mi', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Tepe', 'taban': None, 'bozuk': 'dikkat'}, {'konu': 'Vokal altyapıyla aynı armonide mi', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 21}
+ozet satirlari (ilgili, kotulesen): [{'konu': 'Vokal altyapıyla aynı armonide mi', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; butun kotulesenler: [{'konu': 'Vokal altyapıyla aynı armonide mi', 'taban': 'iyi', 'bozuk': 'sorun'}, {'konu': 'Tepe', 'taban': None, 'bozuk': 'dikkat'}, {'konu': 'Çakışan uzun notalar', 'taban': 'iyi', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {'çakışan / detone nota': 21}
 
 | ilgili ölçü | taban | bozuk | fark | gürültü | kat |
 |---|---|---|---|---|---|
@@ -94,4 +94,70 @@ ozet satirlari (ilgili, kotulesen): [{'konu': 'Vokal altyapıyla aynı armonide 
 | vokalin genel akort kayması (cent) | -4.9 | -1.9 | 3.0 | 1.0 | 3.0 |
 
 ilgili sayilmayan ama 3 kattan fazla oynayanlar: notaya uzaklık ortalama, işaretli (cent) -4.7->-1.8 (29.0x); UTMOS22 1.49->1.38 (11.0x); CED (vokal) şarkı olasılığı 0.078->0.057 (10.5x); 4 kHz üstü pay (dB) -16.5->-17.5 (10.0x); CED (vokal) sentetik şarkı olasılığı 0.021->0.04 (9.5x); spektral akı 1.859->1.904 (9.0x); tiz doku değişim katsayısı 1.43->1.62 (6.3x); olay yoğunluğu (1/sn) 4.24->4.3 (6.0x); parlaklık (Hz) 2682.0->2600.0 (5.5x); vibratolu uzun nota oranı 0.15->0.35 (5.0x); ortalama kayma, sekizlik (ms) 24.0->15.0 (4.5x); tam ölçekteki örnek sayısı 0->8 (4.0x)
+
+## 2a  Vokal çeyrek vuruş (129 ms) geç  [ayirma_yolu]  -> YALNIZ KARŞILAŞTIRMAYLA YAKALANDI
+
+ozet satirlari (ilgili, kotulesen): [] ; butun kotulesenler: [{'konu': 'Tepe', 'taban': None, 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+
+| ilgili ölçü | taban | bozuk | fark | gürültü | kat |
+|---|---|---|---|---|---|
+| ortalama kayma, sekizlik (ms) | 24.0 | -109.0 | -133.0 | 2.0 | 66.5 |
+| ritim sıkılığı R (sekizlik) | 0.37 | 0.58 | 0.21 | 0.04 | 5.2 |
+| 40 ms içinde (%) | 49.0 | 6.0 | -43.0 | 2.0 | 21.5 |
+| ortalama kayma, onaltılık (ms) | 30.0 | 23.0 | -7.0 | 1.0 | 7.0 |
+| ritim sıkılığı R (onaltılık) | 0.38 | 0.32 | -0.06 | 0.04 | 1.5 |
+
+ilgili sayilmayan ama 3 kattan fazla oynayanlar: olay yoğunluğu (1/sn) 4.24->4.93 (69.0x); spektral akı 1.859->1.939 (16.0x); notaya uzaklık ortalama, işaretli (cent) -4.7->-3.1 (16.0x); MusicCoCa kayıt kalitesi farkı 0.263->0.289 (13.0x); tam ölçekteki örnek sayısı 0->23 (11.5x); CED (vokal) sentetik şarkı olasılığı 0.021->0.043 (11.0x); NISQA 2.94->3.63 (9.9x); tiz doku değişim katsayısı 1.43->1.7 (9.0x); hareketlilik puanı (0-100) 73.0->78.0 (5.0x); parlaklık (Hz) 2682.0->2621.0 (4.1x); vurmalı/armonik (dB) 0.86->0.67 (3.8x); nabız netliği 0.825->0.807 (3.6x)
+
+## 2b  Vokal yarım vuruş (259 ms) geç  [ayirma_yolu]  -> KAÇTI
+
+ozet satirlari (ilgili, kotulesen): [] ; butun kotulesenler: [{'konu': 'Tepe', 'taban': None, 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+
+| ilgili ölçü | taban | bozuk | fark | gürültü | kat |
+|---|---|---|---|---|---|
+| ortalama kayma, sekizlik (ms) | 24.0 | 22.0 | -2.0 | 2.0 | 1.0 |
+| ritim sıkılığı R (sekizlik) | 0.37 | 0.33 | -0.04 | 0.04 | 1.0 |
+| 40 ms içinde (%) | 49.0 | 47.0 | -2.0 | 2.0 | 1.0 |
+| ortalama kayma, onaltılık (ms) | 30.0 | 28.0 | -2.0 | 1.0 | 2.0 |
+| ritim sıkılığı R (onaltılık) | 0.38 | 0.3 | -0.08 | 0.04 | 2.0 |
+
+ilgili sayilmayan ama 3 kattan fazla oynayanlar: tam ölçekteki örnek sayısı 0->32 (16.0x); spektral akı 1.859->1.923 (12.8x); MusicCoCa kayıt kalitesi farkı 0.263->0.284 (10.5x); olay yoğunluğu (1/sn) 4.24->4.34 (10.0x); notaya uzaklık ortalama, işaretli (cent) -4.7->-3.7 (10.0x); CED (vokal) sentetik şarkı olasılığı 0.021->0.035 (7.0x); tiz doku değişim katsayısı 1.43->1.63 (6.7x); akor sesi süre oranı 0.711->0.668 (6.1x); NISQA 2.94->3.36 (6.0x); tepe faktörü (dB) 14.9->16.2 (4.3x); parlaklık (Hz) 2682.0->2623.0 (3.9x); perdeli çerçeve oranı 0.302->0.323 (3.5x)
+
+## 3a  Vokal 1,5 kat vokoder esnetmesi dokusunda (süre ve perde aynı)  [ayirma_yolu]  -> YALNIZ KARŞILAŞTIRMAYLA YAKALANDI
+
+ozet satirlari (ilgili, kotulesen): [] ; butun kotulesenler: [{'konu': 'Vokal / altyapı dengesi', 'taban': 'iyi', 'bozuk': 'dikkat'}, {'konu': 'Ritme oturma', 'taban': 'dikkat', 'bozuk': 'sorun'}] ; yeni ilgili sorunlar: {}
+
+| ilgili ölçü | taban | bozuk | fark | gürültü | kat |
+|---|---|---|---|---|---|
+| yapaylık işareti sayısı | 0 | 0 | 0.0 | 1.0 | 0.0 |
+| donmuş ünlü süre oranı | 0.0 | 0.0 | 0.0 | 0.005 | 0.0 |
+| ardışık çerçeve benzerliği | 0.9825 | 0.9858 | 0.0033 | 0.0005 | 6.6 |
+| zarf titremesi (dB) | -8.7 | -14.7 | -6.0 | 0.6 | 10.0 |
+| tiz doku değişim katsayısı | 1.43 | 1.68 | 0.25 | 0.03 | 8.3 |
+| ünsüzlerde tiz payı (dB) | -11.3 | -12.1 | -0.8 | 0.2 | 4.0 |
+| DNSMOS | 2.71 | 2.53 | -0.18 | 0.07 | 2.6 |
+| NISQA | 2.94 | 2.47 | -0.47 | 0.07 | 6.7 |
+| Distill-MOS | 3.42 | 2.93 | -0.49 | 0.03 | 16.3 |
+| UTMOS22 | 1.49 | 1.29 | -0.2 | 0.01 | 20.0 |
+
+ilgili sayilmayan ama 3 kattan fazla oynayanlar: MusicCoCa kayıt kalitesi farkı 0.263->0.205 (29.0x); ortalama kayma, onaltılık (ms) 30.0->4.0 (26.0x); CED (vokal) sentetik şarkı olasılığı 0.021->0.067 (23.0x); vurmalı/armonik (dB) 0.86->1.71 (17.0x); 4 kHz üstü pay (dB) -16.5->-18.1 (16.0x); vokalli süre oranı 0.58->0.553 (13.5x); perdeli çerçeve oranı 0.302->0.232 (11.7x); iki perde izleyicinin uyumu (%) 94.0->98.5 (11.2x); olay yoğunluğu (1/sn) 4.24->4.13 (11.0x); NISQA kesintisizlik 4.42->3.83 (9.8x); nabız netliği 0.825->0.865 (8.0x); ortalama kayma, sekizlik (ms) 24.0->9.0 (7.5x)
+
+## 3b  Vokal 2 kat vokoder esnetmesi dokusunda (süre ve perde aynı)  [ayirma_yolu]  -> YALNIZ KARŞILAŞTIRMAYLA YAKALANDI
+
+ozet satirlari (ilgili, kotulesen): [] ; butun kotulesenler: [{'konu': 'Vokal / altyapı dengesi', 'taban': 'iyi', 'bozuk': 'dikkat'}] ; yeni ilgili sorunlar: {}
+
+| ilgili ölçü | taban | bozuk | fark | gürültü | kat |
+|---|---|---|---|---|---|
+| yapaylık işareti sayısı | 0 | 0 | 0.0 | 1.0 | 0.0 |
+| donmuş ünlü süre oranı | 0.0 | 0.0 | 0.0 | 0.005 | 0.0 |
+| ardışık çerçeve benzerliği | 0.9825 | 0.9845 | 0.002 | 0.0005 | 4.0 |
+| zarf titremesi (dB) | -8.7 | -14.2 | -5.5 | 0.6 | 9.2 |
+| tiz doku değişim katsayısı | 1.43 | 1.72 | 0.29 | 0.03 | 9.7 |
+| ünsüzlerde tiz payı (dB) | -11.3 | -12.5 | -1.2 | 0.2 | 6.0 |
+| DNSMOS | 2.71 | 2.35 | -0.36 | 0.07 | 5.1 |
+| NISQA | 2.94 | 2.69 | -0.25 | 0.07 | 3.6 |
+| Distill-MOS | 3.42 | 2.88 | -0.54 | 0.03 | 18.0 |
+| UTMOS22 | 1.49 | 1.3 | -0.19 | 0.01 | 19.0 |
+
+ilgili sayilmayan ama 3 kattan fazla oynayanlar: MusicCoCa kayıt kalitesi farkı 0.263->0.213 (25.0x); CED (vokal) sentetik şarkı olasılığı 0.021->0.055 (17.0x); 4 kHz üstü pay (dB) -16.5->-18.1 (16.0x); vurmalı/armonik (dB) 0.86->1.65 (15.8x); iki perde izleyicinin uyumu (%) 94.0->98.6 (11.5x); ortalama kayma, onaltılık (ms) 30.0->19.0 (11.0x); perdeli çerçeve oranı 0.302->0.25 (8.7x); notaya uzaklık ortalama, işaretli (cent) -4.7->-5.5 (8.0x); geçiş çerçevesi oranı 0.17->0.09 (8.0x); olay yoğunluğu (1/sn) 4.24->4.17 (7.0x); nabız netliği 0.825->0.859 (6.8x); NISQA kesintisizlik 4.42->4.03 (6.5x)
 

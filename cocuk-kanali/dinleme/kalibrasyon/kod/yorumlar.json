@@ -1,0 +1,179 @@
+{
+ "ENERJI_YORUM": "**MusicCoCa coşku farkı ve CED \"ninni\" olasılığı kullanıcının yargısını temiz ayırıyor;** iki şarkıda da aynı şarkının coşkulu ve ninni gibi kaydı doğru yana düşüyor (El Yıkama: +0,09 karşısında -0,04; Parmak Ailesi: +0,10 karşısında -0,08).\n\n- Etiketsiz kayıtlar da tutarlı: yavaş dönemin öteki kayıtları (`duzgun_1` -0,05, `duzgun_2` -0,10, `turkce_2` -0,03) eksi yanda.\n- `v2_2` (beğenildi, coşkusu hiç konuşulmadı) +0,01 ile boşluğun içinde. Eşik bıçak sırtı değil; arada kalan kayıt \"kararsız\" sayılmalı.\n- **Hareketlilik puanı tek başına güvenilmez.** \"Ninni gibi\" denen `el-yikama/sarki_1` 71 puan alıyor; seçilen coşkulu kayıtlar 77 … 79. Aradaki 6 puanlık boşluğun içine etiketsiz 3 kayıt giriyor. Puan vuruş ve olay sayıyor; `sarki_1` yavaş söylenmiş ama altyapısı kıpırtılı.\n- **Aracın özet satırı yanlış uyarı veriyor.** Kural \"MusicCoCa eksi YA DA ninni ≥ 0,02 YA DA puan < 62\". Üçüncü koşul yüzünden MusicCoCa'sı açıkça artı olan 2 kayıt \"ninni/sakin\" uyarısı alıyor: `ornek_kita1` (puan 59, MusicCoCa +0,28), `dogal_onizleme` (puan 56, MusicCoCa +0,13).\n- Hece hızı ve otomatik tempo coşkuyu göstermiyor: seçilen `el-yikama/coskulu_2` 2,7 hece/sn ile \"ninni gibi\" `parmak/yavas_2`'den (3,0) yavaş; otomatik tempo \"ninni gibi\" kayıtlarda daha yüksek çıkıyor (156 … 160 BPM; büyük olasılıkla çift sayım).\n\nNeyi söylemez: bu göstergeler müziğin türünü ve hareketini tanıyor; şarkıcının sesindeki neşeyi değil. Coşkulu bir altyapının üstünde isteksiz söyleyen bir ses bu sayılarla yakalanmaz.",
+ "DOGALLIK_YORUM": "Burada üç kayıt **aynı vokalden** geliyor, bu yüzden karşılaştırma temiz: `dinle_2` (özgün, beğenildi), `dogal-onizleme` (aynı vokal hiç işlenmeden başka orkestraya kondu), `sarki_birlesik` (aynı vokal iki katına esnetildi ve perdesi ezgiye çekildi). `ornek_kita1` ise konuşma sentezinin vokoderle ezgiye oturtulmuş hâli.\n\n**Temiz ayıran tek sayı: makine sözleri anlıyor mu.**\n\n- İşlenmemiş 11 yapay şarkıcı kaydında sözcük hata oranı %0,0 … %10,0. Aynı vokal başka orkestrada %19,4. İşlenmiş iki vokalde %48,1 ve %100,0.\n- `dinle_2` → `sarki_birlesik`: aynı ses, aynı sözler; esnetme ve perde düzleme hata oranını %8,3'ten %48,1'e çıkarıyor. Scribe \"Ali Baba'nın\" yerine \"Ülke'nin\", \"dinle bak\" yerine \"iner ya\" duyuyor.\n- Scribe'ın emin olmadığı sözcüklerin oranı da aynı yönde (%7 ve %70; doğal kayıtlarda en çok %3,7), ama boşluk dar; eşik önermiyorum.\n\n**Aracın \"yapaylık\" vekilleri ayırmıyor.**\n\n- **Donmuş ünlü:** işlenmiş iki vokali yakalıyor (%20 ve %31), ama doğal kayıtlardan `parmak-ailesi/yavas_2` (%19) de aynı uyarıyı alıyor. Bunlar yavaş, uzun tutulan notalarla söylenen kayıtlar; uyarı \"zaman esnetme / vokoder izlenimi\" diyor, oysa ölçtüğü şey uzun tutulan ünlü. Aynı vokalin iki hâli arasında işe yarıyor (`dinle_2` %0 → `sarki_birlesik` %20), tek kayda hüküm olarak yaramıyor.\n- **Nota içi oynaklık, ızgaraya yapışma, vibrato:** örtüşüyor. `sarki_birlesik`'in perdesi panoda cetvelle çizilmiş gibi, ama oynaklığı 10,6 cent (doğal kayıtlar 9,1 … 11,8). Ayrılmış kanaldaki artıklar düz perdeye sahte bir titreme ekliyor.\n- **\"Ünsüzlerde tiz zayıf\" uyarısı:** beğenilen `parmak/coskulu_1` de alıyor (-16,1 dB; eşik −14). Yanlış alarm.\n- **Tiz doku:** işlenmiş vokallerde yüksek (2,03, 2,42), ama hiç işlenmemiş vokalin başka orkestradaki hâlinde de 2,42. Sesi değil, ayırma artığını ölçüyor.\n- **Konuşma-kalitesi tahminleri (DNSMOS, NISQA, Distill-MOS, UTMOS22):** hiç ayırmıyor. İşlenmiş vokaller UTMOS 1,48 ve 1,34; beğenilen dört kayıt 1,31 … 1,52. Üstelik en yüksek puanları \"ninni gibi\" diye reddedilen kayıtlar alıyor (UTMOS 1,30 … 2,15; NISQA 1,76 … 3,71): sakin, seyrek altyapılı kayıtta ses \"temiz konuşma\"ya daha çok benziyor. **Bu puanlar kullanıcının zevkiyle ters düşüyor; iyi/kötü notu olarak kullanılmamalı.**\n- CED'in \"sentetik şarkı\" ve \"konuşma sentezleyici\" etiketleri: ayırmıyor (hepsi 0,06'nın altında; işlenmiş vokallerde daha yüksek değil).\n\nSonuç: araç \"bu vokal bozulmuş\" yargısını **sözlerin anlaşılmazlığı üzerinden** veriyor, sesin tınısı üzerinden değil. Sözleri anlaşılır kalan ama yapay tınlayan bir vokal bu sayılardan temiz çıkar.",
+ "GERCEK_KANAL_YORUM": "- **Ön dinleme (işlenmemiş vokal, başka orkestra):** otomatik ayırmada ±25 cent içinde %68, ızgaraya yapışma 0,28, vokal − altyapı -13,0 dB çıkmıştı. Gerçek kanallarla %–, – ve – dB. Yani \"detone\" ve \"gömük\" görünen vokal aslında öyle değil; ayırıcı bu karışımda vokali temiz çıkaramamış (klarnet ezgisi ve hayvan sesleri vokal kanalına sızmış).\n- **Aynı kayıtta armoni:** gerçek kanallarla en iyi kaydırma –, armonik destek –, akor sesi –, gam içi –.\n- **Esnetilmiş vokal (`sarki_birlesik`):** gerçek kanalla donmuş ünlü – (ayırmayla %20), nota içi oynaklık – cent (ayırmayla 10,6), ızgaraya yapışma – (ayırmayla 0,66). \n- **Vokoder vokali (`ornek_kita1`, kurucunun eski ölçümü):** gerçek kanalla ızgaraya yapışma 0,82 (ayırmayla 0,62), ±25 cent içinde %99 (ayırmayla %86), ritim R 0,57 (ayırmayla 0,19). Ayırma, yapaylığın en belirgin izini (perdenin ızgaraya aşırı yapışması) siliyor ve ritmi bozuk gösteriyor.\n\nÇıkarım: **kendi ürettiğimiz kayıtlarda kanallar zaten elimizde; `--ayir` yerine `--vokal/--altyapi` kullanılmalı.** Otomatik ayırma hem yapaylık izlerini bulandırıyor hem de sahte \"detone / gömük\" uyarıları üretiyor.",
+ "UYUM_YORUM": "Reddedilen ön dinlemede vokal, beğenilen `dinle_2`'nin vokalinin **hiç işlenmemiş** hâli; değişen yalnızca orkestra. Yani bu çift, \"vokal iyi ama orkestrayla olmamış\" yargısı için neredeyse deney gibi.\n\n**Yan yana (aynı vokal, iki orkestra) fark çok açık:**\n\n| | `dinle_2` (beğenildi) | ön dinleme (\"olmamış\") |\n|---|---|---|\n| Vokalin söylediği seste orkestranın enerjisi (armonik destek) | 0,65 | 0,28 |\n| En iyi kaydırma (0 olmalı) | +0 | -4 |\n| Vokal − altyapı | -3,4 dB | -13,0 dB |\n| ±25 cent içinde | %88 | %68 |\n| Sözcük hata oranı | %8,3 | %19,4 (\"Ali Baba'nın\" → \"Anne babamın\") |\n\n**Tek kayda bakınca aracın armoni hükmü tutmuyor:**\n\n- \"En iyi kaydırma 0 olmalı\" denetimi ön dinlemeye **sorun** diyor (-4). Ama beğenilen `el-yikama/coskulu_2` de aynı sonucu alıyor (-4; destek 0,34). Ayrıca `el-yikama/coskulu_2` (-4), `parmak-ailesi/duzgun_2` (+5), `parmak-ailesi/turkce_2` (+5), `parmak-ailesi/yavas_2` (+5) kayıtta en iyi kaydırma 0 değil.\n- Nedeni: ölçü, vokalin söylediği seste orkestranın ne kadar enerjisi olduğuna bakıyor. Vokal akorun üçlüsünde ya da beşlisinde duruyorsa (kök ses yerine), tamamen uyumlu olsa bile \"kaydırsak daha iyi\" çıkıyor.\n- \"Gam içi söyleme\" ön dinlemede %91 ile **iyi** diyor; armoni kuramı açısından vokal gerçekten gamın içinde. Kullanıcının \"olmamış\" dediği şey kuramsal uyumsuzluk değil.\n\n**Ön dinlemeyi öteki 13 vokalli kayıttan ayıran sayılar var, ama armoni sayıları değil:**\n\n- ±25 cent içinde: ön dinleme %68, öteki 13 kayıt %85 … 94.\n- ızgaraya yapışma R: ön dinleme 0,28, öteki 13 kayıt 0,59 … 0,78.\n- vokal − altyapı dB: ön dinleme -13,0, öteki 13 kayıt -5,9 … +5,7.\n- CED'in vokal kanalına \"konuşma\" demesi: ön dinleme 0,43, öteki 13 kayıt 0,01 … 0,20.\n\nBunların hepsi aynı şeyi söylüyor: **ayırıcı bu karışımdan temiz bir vokal çıkaramıyor.** Gerçek kanallarla ölçünce (yukarıdaki tablo) vokalin kendisi sağlam. Demek ki aracın yakaladığı şey dolaylı bir belirti: vokalin yerinde, onunla yarışan başka bir ezgi sesi var (vokalin altına konan klarnet) ve makine ikisini ayıramıyor. Bu, kullanıcının \"altta başka ezgi çalıyor, olmamış\" demesiyle uyumlu; ama tek örnek.\n\nRitim ölçüsü bu boyutta işe yaramadı: ön dinleme R 0,34, beğenilen `dinle_2` 0,36; doğal ve kusursuz kabul edilen `el-yikama/sarki_1` ise 0,07 (vuruş ızgarası yanlış bulunmuş).",
+ "AKSAN_YORUM": "Altı Parmak Ailesi kaydı aynı sözleri söylüyor; ikisi (`duzgun_1`, `duzgun_2`) \"Türkçe konuşan bir İngiliz gibi\" diye reddedildi. **Hiçbir sayı bu ikisini ötekilerden ayırmıyor:**\n\n- **Sözcük hata oranı:** aksanlı iki kayıt %4 … %8; öteki dördü %2 … %10. Scribe aksanlı söyleneni de doğru yazıyor.\n- **Scribe'ın güveni:** `duzgun_2` ortalama logprob -0,007; seçilen kayıt -0,004. Fark yok. Dil olasılığı hepsinde 1,00 (Türkçe).\n- **Kalite tahminleri:** aksanlı iki kayıt birbirine bile benzemiyor (NISQA 1,93 ve 3,67).\n- **İki fonetik deney** (araç dışı; aynı sözcükler kayıtlar arasında karşılaştırıldı): \"parmak\"taki r'nin İngiliz r'sine benzeyip benzemediği (aksanlılar +2,7 … +5,1 dB, ötekiler +2,7 … +5,3 dB) ve \"buradayım\"ın son ünlüsünün \"ı\" mı \"i\" mi olduğu (aksanlılar +0,3 … +3,9 dB, ötekiler -9,1 … +16,1 dB). İkisinde de aksanlı kayıtlar ötekilerin aralığının içinde. Ayrıca ikinci ölçü sözcüğün süresinden etkileniyor; güvenilmez.\n- **Ortak ölçülebilir tek özellik yavaşlık:** \"buradayım\" sözcüğü aksanlı iki kayıtta 1,42 … 1,44 sn sürüyor, öteki dördünde 0,52 … 1,06 sn; hece hızı da en düşük ikisi (2,4 … 2,6/sn). Bu bir tempo ölçüsü; yavaş ama düzgün Türkçeyle söylenen bir kayıt da aynı sayıyı verir. **Aksan dedektörü olarak önermiyorum.**\n- `duzgun_1`'de bir \"Merhaba\" dökümde \"Merengim\" çıktı. Bozuk telaffuzun izi olabilir; ama tek sözcük ve `duzgun_2`'de böyle bir şey yok.\n\n**Gemini'nin \"TELAFFUZ\" satırı denenmedi.** Araçta hazır (`gemini_dinle.py dinle <dosya>`), ama bu çalışmada canlı istek göndermedim. Sınamak için üç istek yeter: `duzgun_1`, `duzgun_2` ve `coskulu_1`. Önbellekteki eski cevaplar temkinli olmayı gerektiriyor: aynı iki kayıt sırası değiştirilip iki kez sorulduğunda (yeni45 / eski41) altı maddenin altısında da iki seferde **\"B\"**, yani sonra çalınan kazanmış. Tek yönlü A/B cevabı kanıt sayılmamalı.\n\nSonuç: **aksan için tek hakem hâlâ kullanıcının kulağı.** Araç bu konuda \"sorun yok\" derse bu hiçbir şey ifade etmez.",
+ "HIZ_YORUM": "- `sarki_2` (\"sözler çok hızlı geçiyor\") altı kaydın en hızlısı: öbek medyanı 4,8 hece/sn, kıtadan kıtaya 10,2 sn, toplam 65 sn.\n- Ama **seçilen** `coskulu_1` hemen yanında: 4,6 hece/sn, 12,9 sn. Aradaki 0,2 hece/sn'lik fark, sözcük zamanlarının ±50 ms belirsizliği kadar. Söz içi hızda seçilen kayıt daha bile hızlı (5,4 karşısında 5,2).\n- Aracın \"söyleyiş hızı\" uyarısı ters çalışıyor: uyarıyı beğenilen `coskulu_1` alıyor (bir saniyelik \"Buradayım, merhaba\" parçası 6,6 hece/sn çıktığı için), reddedilen `sarki_2` almıyor.\n- Görünen tek fark nefes payı: `sarki_2`'de soru ve cevap tek solukta söyleniyor ve kıtalar 10 saniyede bir geliyor; `coskulu_1`'de son iki kıtada soruyla cevap arasında bir saniyelik ara var ve kıtalar 13 saniyede bir geliyor.\n\n**Eşik önermiyorum.** Kullanıcının kabul ettiği en hızlı kayıt ile reddettiği kayıt arasında ölçülebilir boşluk yok. Hece hızı iki sürümü sıralamaya yarar, \"çok hızlı\" hükmü vermeye yaramaz.",
+ "SURE_YORUM": "\"Çok uzun\" denen iki kayıt – sn; kabul edilen dört şarkı 70 … 110 sn; \"olmuş\" denen yedi kıtalık altyapı 155 sn. Arada temiz boşluk var (155 ile 0 sn arası). Doğrudan ölçüm; araç süreyi yazıyor ama uyarı vermiyor.",
+ "EZGI_YORUM": "Kullanıcı `v2_2` ve `dinle_2` için \"ezgi bilinen Ali Baba ezgisi değil\" dedi. **Araç bunu ölçmüyor;** yalnızca vokalin kendi orkestrasıyla uyumuna bakıyor, ve ikisi de kendi orkestrasıyla uyumlu çıkıyor.\n\nTek dolaylı ipucu: `v2_2`'nin altyapı tonu **Re minör (D minor)** bulundu. Bilinen ezgi majör; minör bir kayıt o ezgi olamaz. `dinle_2`'de ton belirsiz çıktığı için aynı ipucu yok. Gerçek denetim için vokalin nota dizisini bilinen ezginin notalarıyla karşılaştırmak gerekir; notalar depoda hazır (`ali-baba/yeni/zaman.json`), araçta böyle bir adım yok.",
+ "ESIKLER": "| Boyut | Kural | Dayanak | Örnek sayısı (olumlu + olumsuz) | Not |\n|---|---|---|---|---|\n| Enerji | MusicCoCa coşku farkı **≥ +0,09 → coşkulu yanda**; **≤ -0,04 → ninni yanında**; arası kararsız | coşkulu denen 3 kayıt +0,09 … +0,26; ninni denen 3 kayıt -0,09 … -0,04 | 3 + 3 | `v2_2` (+0,01) arada kalıyor |\n| Enerji | CED \"ninni\" olasılığı **≥ 0,023 → ninni yanında**; **≤ 0,000 → değil** | coşkulu 0,000; ninni 0,023 … 0,044 | 3 + 3 | iki gösterge birlikte aynı yanı gösteriyorsa güvenilir; biri yetmez |\n| Sözler | Her kıtanın anahtar sözcüğü (aile adı, hayvan adı, söylenen hayvan sesi) beklenenle aynı değilse **ele** | kullanıcının söylediği yanlış ad hatalarının ikisi de bu yolla bulundu; sözcük hata oranı ayırmıyor | 2 + 3 | eşik değil, kural; tek hecelik seslerde döküm yanılabiliyor |\n| Anlaşılırlık (işlenmiş vokal) | Sözcük hata oranı **≥ %%30 → makine sözleri anlamıyor**, vokal bozulmuş olabilir | işlenmemiş kayıtlar en çok %10,0; aynı vokal başka orkestrada %19,4; işlenmiş iki vokal %48,1 ve %100,0 | 11 + 2 | %30, %19 ile %48 arasındaki boşluğun içinde bir değer; altında kalmak \"doğal\" demek değil |\n| Süre | **180 sn'den uzun → \"çok uzun\" uyarısı** | reddedilen – sn; kabul edilen en uzun 155 sn | 5 + 2 | kullanıcının sözü: \"3-3,5 dakika çok uzun\" |\n| Uyum (geçici, tek örnek) | `--ayir` sonrası **vokal − altyapı < −8 dB** ve **±25 cent içinde < %75** birlikteyse: vokal karışımda kayboluyor, kullanıcıya göndermeden önce bak | ön dinleme -13,0 dB ve %68; öteki vokalli kayıtlar en kötü -5,9 dB ve %85 | 13 + 1 | **tek olumsuz örnek**; armoniyi değil ayırıcının zorlanmasını ölçüyor |\n\n**Eşik önermediğim yerler** (boşluk temiz değil): hareketlilik puanı; küçük sözcük hata oranları (%30'un altı); donmuş ünlü oranı ve öteki yapaylık vekilleri; konuşma-kalitesi tahminleri; armonik destek ve \"en iyi kaydırma\"; ritim sıkılığı; hece hızı; aksanla ilgili her şey.",
+ "_esikler_json": [
+  {
+   "boyut": "Enerji",
+   "kural": "MusicCoCa coşku farkı ≥ +0,09 → coşkulu yanda; ≤ -0,04 → ninni yanında; arası kararsız",
+   "dayanak": "coşkulu denen 3 kayıt +0,09 … +0,26; ninni denen 3 kayıt -0,09 … -0,04",
+   "ornek_sayisi": "3 + 3",
+   "not": "`v2_2` (+0,01) arada kalıyor"
+  },
+  {
+   "boyut": "Enerji",
+   "kural": "CED \"ninni\" olasılığı ≥ 0,023 → ninni yanında; ≤ 0,000 → değil",
+   "dayanak": "coşkulu 0,000; ninni 0,023 … 0,044",
+   "ornek_sayisi": "3 + 3",
+   "not": "iki gösterge birlikte aynı yanı gösteriyorsa güvenilir; biri yetmez"
+  },
+  {
+   "boyut": "Sözler",
+   "kural": "Her kıtanın anahtar sözcüğü (aile adı, hayvan adı, söylenen hayvan sesi) beklenenle aynı değilse ele",
+   "dayanak": "kullanıcının söylediği yanlış ad hatalarının ikisi de bu yolla bulundu; sözcük hata oranı ayırmıyor",
+   "ornek_sayisi": "2 + 3",
+   "not": "eşik değil, kural; tek hecelik seslerde döküm yanılabiliyor"
+  },
+  {
+   "boyut": "Anlaşılırlık (işlenmiş vokal)",
+   "kural": "Sözcük hata oranı ≥ %%30 → makine sözleri anlamıyor, vokal bozulmuş olabilir",
+   "dayanak": "işlenmemiş kayıtlar en çok %10,0; aynı vokal başka orkestrada %19,4; işlenmiş iki vokal %48,1 ve %100,0",
+   "ornek_sayisi": "11 + 2",
+   "not": "%30, %19 ile %48 arasındaki boşluğun içinde bir değer; altında kalmak \"doğal\" demek değil"
+  },
+  {
+   "boyut": "Süre",
+   "kural": "180 sn'den uzun → \"çok uzun\" uyarısı",
+   "dayanak": "reddedilen – sn; kabul edilen en uzun 155 sn",
+   "ornek_sayisi": "5 + 2",
+   "not": "kullanıcının sözü: \"3-3,5 dakika çok uzun\""
+  },
+  {
+   "boyut": "Uyum (geçici, tek örnek)",
+   "kural": "`--ayir` sonrası vokal − altyapı < −8 dB ve ±25 cent içinde < %75 birlikteyse: vokal karışımda kayboluyor, kullanıcıya göndermeden önce bak",
+   "dayanak": "ön dinleme -13,0 dB ve %68; öteki vokalli kayıtlar en kötü -5,9 dB ve %85",
+   "ornek_sayisi": "13 + 1",
+   "not": "tek olumsuz örnek; armoniyi değil ayırıcının zorlanmasını ölçüyor"
+  }
+ ],
+ "OZET_SATIRI_YORUM": "- **Uyarı sayısı bir kalite notu değil.** Beğenilen dört şarkıda 0 ile 3 arası uyarı var; reddedilen on iki kayıtta 2 ile 8 arası. Örtüşüyor: aksan yüzünden reddedilen `duzgun_2` 2 uyarıyla, seçilen `parmak/coskulu_1` 3 uyarıyla çıkıyor.\n- **Beğenilen kayıtlarda yanlış alarmlar:** `el-yikama/coskulu_2`'de \"aynı armonide mi: sorun\"; `parmak/coskulu_1`'de \"ünsüzlerde tiz zayıf\" ve \"söyleyiş hızı\"; üç beğenilen kayıtta \"ritme oturma: dikkat\" (R 0,36 … 0,43).\n- **Doğru yerde öten satırlar:** \"Sözler\" (işlenmiş iki vokalde ve ön dinlemede ✗), \"Enerji\" (ninni denen üç kayıtta !), \"Vokal / altyapı dengesi\" ve \"Akort\" (yalnızca ön dinlemede).\n- **Hiç işe yaramayan satır:** \"Ritme oturma\". Beğenilen ve reddedilen kayıtlar arasında R değerleri tamamen karışık; doğal bir kayıtta R 0,07 çıktı.",
+ "PANO_YORUM": "Yedi kaydın panolarına Read aracıyla baktım (üç beğenilen, dört reddedilen). Resim, özet sayıların söylemediği dört şeyi gösterdi:\n\n1. **Merdiven gibi perde (`sarki_birlesik`, perde panosu).** Vokal çizgisi cetvelle çizilmiş yatay çubuklar; notadan notaya dik basamakla iniyor; birkaç hece tek düz çizginin üstünde. Aynı vokalin özgün hâlinde (`dinle_2`) çizgi kıvrımlı, notalar kısa, geçişler eğik. Sayılar bunu kaçırdı (nota içi oynaklık 10,6 cent, \"çok düz\" uyarısı yok); göz hemen görüyor. `ornek_kita1`'de aynı görüntü var: düz çubuklar, aralarında geçiş yok.\n2. **Vokal orkestranın boş bıraktığı seste (`dogal-onizleme`, perde panosunun en alt şeridi).** Mavi noktalar (vokalin söylediği ses: Mi) beyaz, boş bir satırda duruyor; orkestranın koyu şeritleri Do, Sol ve Fa'da. `dinle_2`'de aynı mavi noktalar koyu bir şeridin tam üstünde. Özet satırı \"gam içi %91, iyi\" diyordu; resim \"şarkıcı orkestranın çalmadığı yerde söylüyor\" diyor. Üst şeritte bir şey daha görünüyor: `dinle_2`'de orkestra tek akorda duruyor, ön dinlemede her ölçüde akor değişiyor ama vokal hep aynı seste kalıyor.\n3. **\"Çakışan nota\" dediği şey hayvan sesi (`ornek_kita1`, `dogal-onizleme`, `sarki_birlesik`).** Genel panoda turuncu \"[inek sesi]\" şeridinin altında, aşağı doğru kayan geniş bir harmonik yığını var; perde panosunda tam orada pes, −40 centlik kırmızı X'li iki \"nota\". Araç ineği detone şarkıcı sanıyor. Sayıya bakınca \"2 çakışan nota\" bir vokal kusuru gibi; resme bakınca değil.\n4. **Ninni ile coşkulu arasındaki fark tek bakışta (`parmak/yavas_2` karşısında `parmak/coskulu_1`, genel bakış).** MusicCoCa çubukları birinde baştan sona kırmızı (eksi), ötekinde baştan sona mavi. Spektrogramda coşkulu kayıt baştan aşağı sık dikey çizgilerle dolu (vurmalılar); ninni gibi olanda yatay bantlar ve altta toplanmış enerji var. Düzey şeridinde ninni kaydında altyapı vokal girince geri çekiliyor. `yavas_2`'nin \"donmuş ünlü\" satırındaki 11 kırmızı işaret her dizenin sonuna düzenli diziliyor: bunlar işlem artığı değil, uzatılan dize sonları.\n\nResmin **göstermediği**: aksan. `duzgun_1` ile `coskulu_1`'in panoları yan yana konunca görülen tek fark, `duzgun_1`'de sözcüklerin iki üç kat uzun, kaygan ve ünsüzlerin silik olması; bu yavaş söyleyişin resmi, aksanın değil. \"atıları\" gibi tek hecelik bir bozukluk da panoda seçilmiyor.\n\nSonuç: **görsel kanal gerçek bilgi ekliyor**, özellikle doğallık ve uyum boyutlarında, yani sayıların en zayıf olduğu yerde. Her yeni kayıtta en az bir perde panosuna bakmak, \"yapaylık işareti yok\" satırına güvenmekten iyidir.",
+ "_gorsel_json": [
+  {
+   "kayitlar": [
+    "ali-baba__sarki_birlesik",
+    "ali-baba__ornek_kita1",
+    "ali-baba__dinle_2"
+   ],
+   "gorulen": "islenmis vokalde perde cizgisi merdiven basamagi gibi duz ve dik gecisli; ozgun vokalde kivrimli",
+   "sayida_var_mi": false
+  },
+  {
+   "kayitlar": [
+    "ali-baba__dogal_onizleme",
+    "ali-baba__dinle_2"
+   ],
+   "gorulen": "kroma seridinde vokalin ses sinifi orkestranin bos satirinda; ozgun kayitta koyu seridin ustunde",
+   "sayida_var_mi": "kismen (armonik destek 0,28'e karsi 0,65; ozet satirinda gorunmuyor)"
+  },
+  {
+   "kayitlar": [
+    "ali-baba__ornek_kita1",
+    "ali-baba__dogal_onizleme",
+    "ali-baba__sarki_birlesik"
+   ],
+   "gorulen": "'cakisan / detone nota' isaretleri hayvan sesinin ustunde",
+   "sayida_var_mi": false
+  },
+  {
+   "kayitlar": [
+    "parmak-ailesi__yavas_2",
+    "parmak-ailesi__coskulu_1"
+   ],
+   "gorulen": "MusicCoCa cubuklari bastan sona eksi / arti; spektrogramda vurmali cizgileri; donmus unlu isaretleri dize sonlarinda",
+   "sayida_var_mi": true
+  },
+  {
+   "kayitlar": [
+    "parmak-ailesi__duzgun_1",
+    "parmak-ailesi__coskulu_1"
+   ],
+   "gorulen": "aksan gorunmuyor; yalnizca sozcuklerin uzunlugu ve kayganligi",
+   "sayida_var_mi": "aksan icin hicbir iz yok"
+  }
+ ],
+ "KUSURLAR": "| Konu | Görülen | Öneri |\n|---|---|---|\n| Enerji özet satırı | \"ninni/sakin\" uyarısı hareketlilik puanı < 62 olunca tek başına ötüyor; MusicCoCa'sı açıkça artı olan kayıtlarda yanlış uyarı (`ornek_kita1`, `dogal_onizleme`). | Uyarıyı MusicCoCa < 0 ya da CED ninni ≥ 0,02 koşuluna bağlamak; puanı yalnızca bilgi olarak yazmak. |\n| Hayvan sesleri vokal sanılıyor | Ayırıcı gerçek hayvan seslerini vokal kanalına koyuyor; araç bunları nota sayıp \"çakışan / detone nota\" ve geniş ses aralığı raporluyor (`ornek_kita1` 2/12, `dogal-onizleme` 4/31, `sarki_birlesik` 3/99; çalgısal `demo_altyapi_sesli`'de bütün \"vokal\" ölçümleri hayvan sesi). | Scribe'ın ses olayı aralıklarını ([inek sesi] …) ya da CED'in hayvan pencerelerini nota analizinden çıkarmak; vokalsiz dosyada vokal bölümlerini hiç yazmamak. |\n| \"Aynı armonide mi\" denetimi | Beğenilen `el-yikama/coskulu_2`'ye \"sorun\" diyor (en iyi kaydırma -4). Vokal akorun kökünde değil üçlüsünde / beşlisinde durunca yanlış alarm. | Hükmü kaydırma sırasına değil, akor sesi oranına ve gam dışı orana bağlamak; ya da yalnızca ±1, ±2, ±6 kaydırmayı sorun saymak (şimdi −4 de sorun sayılıyor). |\n| Donmuş ünlü uyarısı | Doğal ama yavaş söylenen kayıtlarda ötüyor (`parmak-ailesi/yavas_2` %19). Metni \"zaman esnetme / vokoder izlenimi\" diyor. | Eşiği hece hızına göre ayarlamak ya da metni \"uzun tutulan ünlüler\" diye yumuşatmak. |\n| \"Ünsüzlerde tiz zayıf\" uyarısı | −14 dB eşiği doğal kayıtların ortasında: beğenilen `parmak/coskulu_1` -16,1 dB. | Eşiği düşürmek ya da uyarıyı kaldırmak. |\n| Söyleyiş hızı uyarısı | Tek bir bir saniyelik öbek 6,5 hece/sn'yi geçince bütün kayda \"dikkat\" diyor; beğenilen kayıt uyarı alıyor, \"çok hızlı\" denen almıyor. | En hızlı tek öbek yerine medyanı ve kıta aralığını kullanmak. |\n| Ritim satırındaki \"tavan ≈ 0,65\" | Gerçek kayıtlarda R 0,72 ölçüldü; 0,65 tavan değil. Ayrıca doğal bir kayıtta R 0,07 (ızgara yanlış bulunmuş). | Metni düzeltmek; otomatik ızgarada R'yi hüküm olarak değil bilgi olarak vermek. |\n| Eski döküm verilemiyor | Elde `*_words.json` varken aracı yeniden kredi harcamadan çalıştırmanın yolu yok; sarıcı yazmak gerekti. | `--dokum-dosyasi` seçeneği. |\n| Varsayılan çıktı klasörü çakışıyor | Klasör adı yalnızca dosya adından geliyor: `ali-baba/coskulu_1.mp3` ile `parmak-ailesi/coskulu_1.mp3` aynı `raporlar/coskulu_1/` klasörüne yazar. | Klasör adına üst klasörü ya da dosya özetini eklemek. |\n| Kanal ayırma hep 0. ve 1. çekirdekte | Aynı anda çalışan bütün dinle.py kopyaları aynı iki çekirdeğe sabitleniyor; bu çalışmada ayırma, öteki ekiplerle çakıştığı için beklenenin 2-3 katı sürdü (155 sn'lik şarkı 397 sn). | Çekirdek seçimini ortam değişkenine bağlamak. |\n| Beklenen sözlerdeki [hayvan sesi] etiketleri kullanılmıyor | Scribe gerçek hayvan seslerini adıyla etiketliyor ([inek sesi], [koyun sesi] …; ön dinlemede yedisi de doğru sırada), ama araç bunları beklenenle karşılaştırmıyor. | Söz dosyasındaki köşeli etiketleri Scribe'ın ses olaylarıyla sırayla eşleştirmek. Dikkat: `sarki_birlesik`'te Scribe sözleri yanlış duyunca kediyi \"[tilki sesi]\" diye etiketledi; etiket sözlerden bağımsız değil. |",
+ "_kusurlar_json": [
+  {
+   "konu": "Enerji özet satırı",
+   "gorulen": "\"ninni/sakin\" uyarısı hareketlilik puanı < 62 olunca tek başına ötüyor; MusicCoCa'sı açıkça artı olan kayıtlarda yanlış uyarı (ornek_kita1, dogal_onizleme).",
+   "oneri": "Uyarıyı MusicCoCa < 0 ya da CED ninni ≥ 0,02 koşuluna bağlamak; puanı yalnızca bilgi olarak yazmak."
+  },
+  {
+   "konu": "Hayvan sesleri vokal sanılıyor",
+   "gorulen": "Ayırıcı gerçek hayvan seslerini vokal kanalına koyuyor; araç bunları nota sayıp \"çakışan / detone nota\" ve geniş ses aralığı raporluyor (ornek_kita1 2/12, dogal-onizleme 4/31, sarki_birlesik 3/99; çalgısal demo_altyapi_sesli'de bütün \"vokal\" ölçümleri hayvan sesi).",
+   "oneri": "Scribe'ın ses olayı aralıklarını ([inek sesi] …) ya da CED'in hayvan pencerelerini nota analizinden çıkarmak; vokalsiz dosyada vokal bölümlerini hiç yazmamak."
+  },
+  {
+   "konu": "\"Aynı armonide mi\" denetimi",
+   "gorulen": "Beğenilen el-yikama/coskulu_2'ye \"sorun\" diyor (en iyi kaydırma -4). Vokal akorun kökünde değil üçlüsünde / beşlisinde durunca yanlış alarm.",
+   "oneri": "Hükmü kaydırma sırasına değil, akor sesi oranına ve gam dışı orana bağlamak; ya da yalnızca ±1, ±2, ±6 kaydırmayı sorun saymak (şimdi −4 de sorun sayılıyor)."
+  },
+  {
+   "konu": "Donmuş ünlü uyarısı",
+   "gorulen": "Doğal ama yavaş söylenen kayıtlarda ötüyor (parmak-ailesi/yavas_2 %19). Metni \"zaman esnetme / vokoder izlenimi\" diyor.",
+   "oneri": "Eşiği hece hızına göre ayarlamak ya da metni \"uzun tutulan ünlüler\" diye yumuşatmak."
+  },
+  {
+   "konu": "\"Ünsüzlerde tiz zayıf\" uyarısı",
+   "gorulen": "−14 dB eşiği doğal kayıtların ortasında: beğenilen parmak/coskulu_1 -16,1 dB.",
+   "oneri": "Eşiği düşürmek ya da uyarıyı kaldırmak."
+  },
+  {
+   "konu": "Söyleyiş hızı uyarısı",
+   "gorulen": "Tek bir bir saniyelik öbek 6,5 hece/sn'yi geçince bütün kayda \"dikkat\" diyor; beğenilen kayıt uyarı alıyor, \"çok hızlı\" denen almıyor.",
+   "oneri": "En hızlı tek öbek yerine medyanı ve kıta aralığını kullanmak."
+  },
+  {
+   "konu": "Ritim satırındaki \"tavan ≈ 0,65\"",
+   "gorulen": "Gerçek kayıtlarda R 0,72 ölçüldü; 0,65 tavan değil. Ayrıca doğal bir kayıtta R 0,07 (ızgara yanlış bulunmuş).",
+   "oneri": "Metni düzeltmek; otomatik ızgarada R'yi hüküm olarak değil bilgi olarak vermek."
+  },
+  {
+   "konu": "Eski döküm verilemiyor",
+   "gorulen": "Elde *_words.json varken aracı yeniden kredi harcamadan çalıştırmanın yolu yok; sarıcı yazmak gerekti.",
+   "oneri": "--dokum-dosyasi seçeneği."
+  },
+  {
+   "konu": "Varsayılan çıktı klasörü çakışıyor",
+   "gorulen": "Klasör adı yalnızca dosya adından geliyor: ali-baba/coskulu_1.mp3 ile parmak-ailesi/coskulu_1.mp3 aynı raporlar/coskulu_1/ klasörüne yazar.",
+   "oneri": "Klasör adına üst klasörü ya da dosya özetini eklemek."
+  },
+  {
+   "konu": "Kanal ayırma hep 0. ve 1. çekirdekte",
+   "gorulen": "Aynı anda çalışan bütün dinle.py kopyaları aynı iki çekirdeğe sabitleniyor; bu çalışmada ayırma, öteki ekiplerle çakıştığı için beklenenin 2-3 katı sürdü (155 sn'lik şarkı 397 sn).",
+   "oneri": "Çekirdek seçimini ortam değişkenine bağlamak."
+  },
+  {
+   "konu": "Beklenen sözlerdeki [hayvan sesi] etiketleri kullanılmıyor",
+   "gorulen": "Scribe gerçek hayvan seslerini adıyla etiketliyor ([inek sesi], [koyun sesi] …; ön dinlemede yedisi de doğru sırada), ama araç bunları beklenenle karşılaştırmıyor.",
+   "oneri": "Söz dosyasındaki köşeli etiketleri Scribe'ın ses olaylarıyla sırayla eşleştirmek. Dikkat: sarki_birlesik'te Scribe sözleri yanlış duyunca kediyi \"[tilki sesi]\" diye etiketledi; etiket sözlerden bağımsız değil."
+  }
+ ],
+ "SINIRLAR": "- **Örnek çok küçük.** 17 kayıt; boyut başına 1 ile 6 arası etiket. \"Temiz boşluk\" iki üç noktanın arasındaki boşluktur; bir sonraki kayıt onu kapatabilir.\n- **Etiketler özet.** Kullanıcının sözleri bana tek cümlelik özetler olarak geldi. Bir kayıt birden çok nedenle reddedilmiş olabilir (`duzgun_1` hem aksanlı hem yavaş hem söz hatalı); hangisinin belirleyici olduğunu bilmiyorum.\n- **Beğenilen kayıt kusursuz kayıt değil.** `v2_2` beğenildi ama söz hatalı; `dinle_2` beğenildi ama bir kıtada yanlış hayvan var. \"Olumlu\" grup, o boyutta şikâyet edilmeyen kayıtlar demek.\n- **Beklenen sözler yeniden kuruldu** (üretim istemleri depoda yok); sözcük hata oranları birkaç puan oynayabilir.\n- **Yedi kayıtta eski döküm kullanıldı**; bunlarda Scribe'ın sözcük güveni yok. Aksanla reddedilen `duzgun_1` bunlardan biri.\n- **Bütün vokaller otomatik ayırmayla elde edildi.** Ayırma kendi artıklarını ekliyor; gerçek kanallarla ölçüm iki kayıtta bunu gösterdi. Perde, akort ve yapaylık sayıları \"ayrılmış vokal\" için geçerlidir.\n- **Bütün doğal vokaller aynı tür yapay şarkıcıdan.** Gerçek bir insan şarkıcının ya da başka bir üreticinin kaydında sayılar başka yerde durabilir.\n- **Ben hiçbir kaydı duymadım.** Bu rapor, makinelerin ürettiği sayıların ve resimlerin kullanıcının sözleriyle karşılaştırmasıdır.",
+ "_sinirlar_json": [
+  "Örnek çok küçük. 17 kayıt; boyut başına 1 ile 6 arası etiket. \"Temiz boşluk\" iki üç noktanın arasındaki boşluktur; bir sonraki kayıt onu kapatabilir.",
+  "Etiketler özet. Kullanıcının sözleri bana tek cümlelik özetler olarak geldi. Bir kayıt birden çok nedenle reddedilmiş olabilir (duzgun_1 hem aksanlı hem yavaş hem söz hatalı); hangisinin belirleyici olduğunu bilmiyorum.",
+  "Beğenilen kayıt kusursuz kayıt değil. v2_2 beğenildi ama söz hatalı; dinle_2 beğenildi ama bir kıtada yanlış hayvan var. \"Olumlu\" grup, o boyutta şikâyet edilmeyen kayıtlar demek.",
+  "Beklenen sözler yeniden kuruldu (üretim istemleri depoda yok); sözcük hata oranları birkaç puan oynayabilir.",
+  "Yedi kayıtta eski döküm kullanıldı; bunlarda Scribe'ın sözcük güveni yok. Aksanla reddedilen duzgun_1 bunlardan biri.",
+  "Bütün vokaller otomatik ayırmayla elde edildi. Ayırma kendi artıklarını ekliyor; gerçek kanallarla ölçüm iki kayıtta bunu gösterdi. Perde, akort ve yapaylık sayıları \"ayrılmış vokal\" için geçerlidir.",
+  "Bütün doğal vokaller aynı tür yapay şarkıcıdan. Gerçek bir insan şarkıcının ya da başka bir üreticinin kaydında sayılar başka yerde durabilir.",
+  "Ben hiçbir kaydı duymadım. Bu rapor, makinelerin ürettiği sayıların ve resimlerin kullanıcının sözleriyle karşılaştırmasıdır."
+ ],
+ "SONRA": "1. **Her yeni kullanıcı kararını bu kümeye ekle.** `kod/set.py`'ye bir satır, sonra `02` ve `05`…`11` betikleri: tablolar ve eşikler kendiliğinden güncellenir. Kalibrasyonu güçlendirecek tek şey daha çok etiket.\n2. **Kullanıcıya göndermeden önce sıra:** (1) kıta kıta anahtar sözcük denetimi, (2) MusicCoCa + CED ninni, (3) süre, (4) bir perde panosuna göz at, (5) önceki beğenilen kayıtla yan yana ölç. Aksan ve \"hoş mu\" için kullanıcının kulağı.\n3. **Kendi ürettiğimiz karışımlarda `--vokal/--altyapi` kullan**, `--ayir` değil.\n4. **Gemini'nin telaffuz satırını sına** (izin verilirse üç istek: `duzgun_1`, `duzgun_2`, `coskulu_1`). Aksanı yakalıyorsa araçtaki tek aksan göstergesi olur; yakalamıyorsa o satır rapordan çıkarılmalı.\n5. **Ezgi karşılaştırması ekle:** vokalin nota dizisini bilinen ezginin notalarıyla hizalayan bir adım. Kullanıcının iki kayıtta söylediği şikâyeti şu an hiçbir şey ölçmüyor.\n6. **Kullanıcının beğendiği gerçek Türkçe çocuk şarkıları** (3-5 tane) referans olarak eklenirse, \"doğal ses\" ve \"doğru aksan\" için ilk kez olumlu bir ölçüt olur.",
+ "_gereksinim_json": [
+  "Her yeni kullanıcı kararını bu kümeye ekle. kod/set.py'ye bir satır, sonra 02 ve 05…11 betikleri: tablolar ve eşikler kendiliğinden güncellenir. Kalibrasyonu güçlendirecek tek şey daha çok etiket.",
+  "Kullanıcıya göndermeden önce sıra: (1) kıta kıta anahtar sözcük denetimi, (2) MusicCoCa + CED ninni, (3) süre, (4) bir perde panosuna göz at, (5) önceki beğenilen kayıtla yan yana ölç. Aksan ve \"hoş mu\" için kullanıcının kulağı.",
+  "Kendi ürettiğimiz karışımlarda --vokal/--altyapi kullan, --ayir değil.",
+  "Gemini'nin telaffuz satırını sına (izin verilirse üç istek: duzgun_1, duzgun_2, coskulu_1). Aksanı yakalıyorsa araçtaki tek aksan göstergesi olur; yakalamıyorsa o satır rapordan çıkarılmalı.",
+  "Ezgi karşılaştırması ekle: vokalin nota dizisini bilinen ezginin notalarıyla hizalayan bir adım. Kullanıcının iki kayıtta söylediği şikâyeti şu an hiçbir şey ölçmüyor.",
+  "Kullanıcının beğendiği gerçek Türkçe çocuk şarkıları (3-5 tane) referans olarak eklenirse, \"doğal ses\" ve \"doğru aksan\" için ilk kez olumlu bir ölçüt olur."
+ ]
+}

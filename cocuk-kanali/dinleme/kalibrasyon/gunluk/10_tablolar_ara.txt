@@ -1,0 +1,168 @@
+
+## enerji
+| Kayıt | Kullanıcının coşku yargısı | Hareketlilik puanı | MusicCoCa coşku farkı | CED 'ninni' | Olay/sn | Vurmalı/armonik dB | Parlaklık Hz | Hece/sn | Aracın özet satırı |
+|---|---|---|---|---|---|---|---|---|---|
+| ali-baba/yeni/demo_altyapi_sesli | **'olmuş'** (coşku istendikten sonra) | 64 | +0,26 | 0,000 | 4,2 | -4,6 | 2491 | – | yorum yok |
+| parmak-ailesi/coskulu_1 | **coşkulu diye seçildi** | 79 | +0,10 | 0,000 | 5,5 | -1,8 | 2290 | 4,6 | coşkulu yana yakın |
+| el-yikama/coskulu_2 | **coşkulu diye seçildi** | 77 | +0,09 | 0,000 | 5,1 | -3,3 | 2916 | 2,7 | coşkulu yana yakın |
+| ali-baba/yeni/vokal/ornek_kita1 | yargı yok (reddetti) | 59 | +0,28 | 0,000 | 4,1 | -6,3 | 2464 | 4,5 | ninni/sakin uyarısı |
+| ali-baba/yeni2/sarki_birlesik | yargı yok (reddetti) | 62 | +0,25 | 0,000 | 4,0 | -5,0 | 2554 | 3,3 | yorum yok |
+| ali-baba/dinle_2 | yargı yok (beğendi) | 73 | +0,18 | 0,000 | 4,2 | +0,8 | 2684 | 3,9 | coşkulu yana yakın |
+| ali-baba/yeni3/…/dogal-onizleme | yargı yok (reddetti) | 56 | +0,13 | 0,000 | 3,5 | -5,0 | 2429 | 4,7 | ninni/sakin uyarısı |
+| parmak-ailesi/sarki_2 | yargı yok (reddetti) | 73 | +0,06 | 0,001 | 4,5 | +0,1 | 2124 | 4,8 | yorum yok |
+| ali-baba/v2_2 | yargı yok (beğendi) | 75 | +0,01 | 0,000 | 4,7 | +0,9 | 2397 | 3,9 | yorum yok |
+| parmak-ailesi/turkce_2 | yargı yok (reddetti) | 66 | -0,03 | 0,007 | 4,4 | -3,6 | 1894 | 3,4 | ninni/sakin uyarısı |
+| parmak-ailesi/duzgun_1 | yargı yok (reddetti) | 52 | -0,05 | 0,016 | 4,2 | -9,8 | 2043 | 2,4 | ninni/sakin uyarısı |
+| parmak-ailesi/duzgun_2 | yargı yok (reddetti) | 46 | -0,10 | 0,025 | 3,5 | -8,3 | 1829 | 2,6 | ninni/sakin uyarısı |
+| el-yikama/sarki_1 | **'ninni gibi'** | 71 | -0,04 | 0,027 | 4,9 | -5,3 | 2539 | 2,4 | ninni/sakin uyarısı |
+| parmak-ailesi/yavas_2 | **'ninni gibi'** | 52 | -0,08 | 0,044 | 3,8 | -9,7 | 1804 | 3,0 | ninni/sakin uyarısı |
+| pitirin-ailesi/yavas_2 | **'ninni gibi'** | 58 | -0,09 | 0,023 | 4,5 | -9,8 | 2145 | 2,2 | ninni/sakin uyarısı |
+
+## sozler
+| Kayıt | Karar | Döküm | Sözcük hata oranı | Değişik / eksik / fazla | Scribe'ın emin olmadığı sözcükler | Kıta kıta yapısal denetim (✗ = uymuyor) |
+|---|---|---|---|---|---|---|
+| ali-baba/v2_2 | beğendi | eski dosya | %4,7 | 4 / 1 / 0 | ölçülemedi | inek: Mö mö; koyun: Me me; at: Me me ✗; horoz: Üü üü; ördek: Vak vak; köpek: Hav hav; kedi: Miyav miyav |
+| ali-baba/dinle_2 | beğendi | bu çalışma | %8,3 | 1 / 0 / 8 | %0 | – |
+| el-yikama/coskulu_2 | beğendi | bu çalışma | %4,3 | 0 / 0 / 2 | %0 | – |
+| parmak-ailesi/coskulu_1 | beğendi | bu çalışma | %4,0 | 0 / 0 / 2 | %0 | 1. baba+baba; 2. anne+anne; 3. abi+abi; 4. abla+abla; 5. bebek+bebek |
+| ali-baba/yeni/demo_altyapi_sesli | beğendi | yok | – | – | ölçülemedi | – |
+| ali-baba/yeni/vokal/ornek_kita1 | reddetti | bu çalışma | %100,0 | 10 / 3 / 0 | %70 | – |
+| ali-baba/yeni2/sarki_birlesik | reddetti | bu çalışma | %48,1 | 42 / 10 / 0 | %7 | – |
+| ali-baba/yeni3/…/dogal-onizleme | reddetti | bu çalışma | %19,4 | 20 / 1 / 0 | %4 | – |
+| parmak-ailesi/duzgun_1 | reddetti | eski dosya | %8,0 | 3 / 1 / 0 | ölçülemedi | 1. baba+baba; 2. anne+anne; 3. abi+abi; 4. abla+abla; 5. abla+abla ✗ |
+| parmak-ailesi/duzgun_2 | reddetti | bu çalışma | %4,0 | 2 / 0 / 0 | %0 | 1. baba+baba; 2. anne+anne; 3. abi+abi; 4. abla+abla; 5. bebek+bebek |
+| parmak-ailesi/turkce_2 | reddetti | bu çalışma | %10,0 | 2 / 0 / 3 | %2 | 1. baba+baba; 2. anne+anne; 3. anne+anne ✗; 4. abla+abla; 5. bebek+bebek |
+| parmak-ailesi/yavas_2 | reddetti | eski dosya | %6,0 | 3 / 0 / 0 | ölçülemedi | 1. baba+baba; 2. anne+anne; 3. anne+abi ✗; 4. able+abi ✗; 5. bebek+bebek |
+| pitirin-ailesi/yavas_2 | reddetti | eski dosya | %5,4 | 0 / 3 / 1 | ölçülemedi | – |
+| el-yikama/sarki_1 | reddetti | eski dosya | %0,0 | 0 / 0 / 0 | ölçülemedi | – |
+| parmak-ailesi/sarki_2 | reddetti | eski dosya | %2,3 | 0 / 1 / 0 | ölçülemedi | 1. baba+baba; 2. anne+anne; 3. abi+abi; 4. abla+abla; 5. bebek ✗ |
+
+## dogallik
+| Kayıt | Vokal | Karar | Sözcük hata oranı | Donmuş ünlü | Nota içi oynaklık (cent) | Izgaraya yapışma R | Zarf titremesi dB | Tiz doku | Ünsüzde tiz dB | Aracın işaretleri | DNSMOS | NISQA | Distill | UTMOS |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ali-baba/yeni/vokal/ornek_kita1 | **konuşma sentezi + vokoder** | reddetti | %100 | %31 | 9,8 | 0,62 | -19,8 | 2,03 | -9,2 | sesli sürenin %31 kadarı 'donmuş' ünlü | 2,50 | 2,87 | 3,00 | 1,48 |
+| ali-baba/yeni2/sarki_birlesik | **esnetilmiş + perdesi düzlenmiş** | reddetti | %48 | %20 | 10,6 | 0,66 | -14,8 | 2,42 | -15,4 | sesli sürenin %20 kadarı 'donmuş' ünlü; ünsüzlerde | 2,39 | 2,76 | 3,19 | 1,34 |
+| ali-baba/v2_2 | doğal yapay şarkıcı | beğendi | %5 | %0 | 11,3 | 0,69 | -13,3 | 1,31 | -11,2 | yok | 2,68 | 3,33 | 3,94 | 1,44 |
+| ali-baba/dinle_2 | doğal yapay şarkıcı | beğendi | %8 | %0 | 11,1 | 0,67 | -9,1 | 1,42 | -11,1 | yok | 2,71 | 2,88 | 3,41 | 1,49 |
+| el-yikama/coskulu_2 | doğal yapay şarkıcı | beğendi | %4 | %0 | 11,8 | 0,63 | -11,7 | 1,16 | -9,5 | yok | 2,45 | 2,67 | 3,19 | 1,31 |
+| parmak-ailesi/coskulu_1 | doğal yapay şarkıcı | beğendi | %4 | %0 | 11,5 | 0,68 | -10,8 | 1,49 | -16,1 | ünsüzlerde | 2,47 | 2,31 | 2,98 | 1,52 |
+| ali-baba/yeni3/…/dogal-onizleme | doğal (dinle_2'nin vokali, başka orkestrada) | reddetti | %19 | %5 | 14,6 | 0,28 | -14,4 | 2,42 | -16,0 | ünsüzlerde | 2,56 | 2,76 | 2,97 | 1,43 |
+| parmak-ailesi/duzgun_1 | doğal yapay şarkıcı | reddetti | %8 | %0 | 9,1 | 0,74 | -12,0 | 1,07 | -14,1 | ünsüzlerde | 2,51 | 1,93 | 3,29 | 1,30 |
+| parmak-ailesi/duzgun_2 | doğal yapay şarkıcı | reddetti | %4 | %0 | 11,2 | 0,59 | -12,5 | 1,13 | -10,6 | yok | 2,76 | 3,67 | 3,91 | 1,95 |
+| parmak-ailesi/turkce_2 | doğal yapay şarkıcı | reddetti | %10 | %3 | 9,1 | 0,78 | -13,8 | 1,45 | -10,7 | yok | 2,63 | 3,37 | 3,89 | 2,00 |
+| parmak-ailesi/yavas_2 | doğal yapay şarkıcı | reddetti | %6 | %19 | 9,9 | 0,74 | -13,5 | 1,28 | -9,8 | sesli sürenin %18 kadarı 'donmuş' ünlü | 2,82 | 3,71 | 3,80 | 2,15 |
+| pitirin-ailesi/yavas_2 | doğal yapay şarkıcı | reddetti | %5 | %0 | 9,1 | 0,64 | -13,2 | 1,01 | -11,9 | yok | 2,21 | 1,76 | 2,71 | 1,30 |
+| el-yikama/sarki_1 | doğal yapay şarkıcı | reddetti | %0 | %4 | 10,1 | 0,76 | -14,5 | 1,13 | -4,0 | yok | 2,55 | 3,56 | 3,53 | 1,85 |
+| parmak-ailesi/sarki_2 | doğal yapay şarkıcı | reddetti | %2 | %0 | 10,3 | 0,75 | -13,6 | 1,11 | -16,2 | ünsüzlerde | 2,50 | 2,29 | 3,12 | 1,50 |
+| ali-baba/yeni/demo_altyapi_sesli | vokal yok (çalgısal) | beğendi | – | %26 | 11,3 | 0,15 | -11,1 | 1,60 | -18,0 | sesli sürenin %26 kadarı 'donmuş' ünlü; ünsüzlerde | 2,02 | 1,43 | 1,79 | 1,44 |
+
+## uyum
+| Kayıt | Karar | En iyi kaydırma (0 olmalı) | Armonik destek (kaydırmasız) | Destek farkı | Gam içi | ±25 cent içinde | Cent sapma | Çakışan / uzun nota | Ritim R | Vokal − altyapı dB | Sızıntı dB | Aracın 'aynı armonide mi' satırı |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ali-baba/yeni3/…/dogal-onizleme | reddetti | -4 | 0,28 | +0,14 | %91 | %68 | 17,0 | 4 / 31 | 0,34 | -13,0 | -15 | sorun |
+| ali-baba/v2_2 | beğendi | +0 | 0,57 | +0,31 | %100 | %91 | 8,1 | 0 / 40 | 0,57 | +0,8 | -46 | iyi |
+| ali-baba/dinle_2 | beğendi | +0 | 0,65 | +0,26 | %86 (ton belirsiz) | %88 | 8,8 | 0 / 25 | 0,36 | -3,4 | -21 | iyi |
+| el-yikama/coskulu_2 | beğendi | -4 | 0,34 | +0,13 | %100 | %87 | 8,6 | 1 / 24 | 0,43 | -2,6 | -17 | sorun |
+| parmak-ailesi/coskulu_1 | beğendi | +0 | 0,56 | +0,27 | %100 | %92 | 9,2 | 0 / 13 | 0,39 | -1,6 | -21 | iyi |
+| ali-baba/yeni/vokal/ornek_kita1 | reddetti | +0 | 0,69 | +0,49 | %95 | %86 | 9,8 | 2 / 12 | 0,19 | -3,8 | -44 | iyi |
+| ali-baba/yeni2/sarki_birlesik | reddetti | +0 | 0,65 | +0,49 | %99 | %91 | 8,4 | 3 / 99 | 0,41 | -5,9 | -13 | iyi |
+| parmak-ailesi/duzgun_1 | reddetti | +0 | 0,37 | +0,28 | %90 (ton belirsiz) | %94 | 7,1 | 8 / 59 | 0,72 | +4,4 | -51 | iyi |
+| parmak-ailesi/duzgun_2 | reddetti | +5 | 0,27 | +0,19 | %98 | %85 | 8,5 | 0 / 30 | 0,64 | +4,7 | -15 | dikkat |
+| parmak-ailesi/turkce_2 | reddetti | +5 | 0,21 | +0,07 | %83 (ton belirsiz) | %94 | 5,4 | 0 / 35 | 0,48 | +1,7 | -48 | dikkat |
+| parmak-ailesi/yavas_2 | reddetti | +5 | 0,39 | +0,31 | %99 | %92 | 6,6 | 0 / 40 | 0,49 | +5,7 | -49 | dikkat |
+| pitirin-ailesi/yavas_2 | reddetti | +0 | 0,59 | +0,51 | %99 | %87 | 9,6 | 0 / 41 | 0,14 | +2,7 | -23 | iyi |
+| el-yikama/sarki_1 | reddetti | +0 | 0,37 | +0,17 | %100 | %94 | 6,3 | 1 / 49 | 0,07 | +1,2 | -52 | iyi |
+| parmak-ailesi/sarki_2 | reddetti | +0 | 0,61 | +0,37 | %100 | %94 | 8,0 | 0 / 8 | 0,45 | -0,1 | -42 | iyi |
+| ali-baba/yeni/demo_altyapi_sesli | beğendi | +0 | 0,55 | +0,30 | %79 | %52 | 23,7 | 3 / 7 | 0,43 | +9,4 | -16 | iyi |
+
+## aksan
+| Kayıt | Karar ve gerekçe | Sözcük hata oranı | Scribe ortalama logprob | Hece/sn | 'buradayım' süresi (sn) | 'parmak' r vekili (dB) | 'buradayım' son ünlü vekili (dB) | DNSMOS | NISQA | UTMOS |
+|---|---|---|---|---|---|---|---|---|---|---|
+| parmak-ailesi/coskulu_1 | beğendi: seçilen kayıt | %4 | -0,004 | 4,6 | 0,52 | +4,7 | +12,5 | 2,47 | 2,31 | 1,52 |
+| parmak-ailesi/duzgun_1 | reddetti: **'İngiliz gibi'** | %8 | yok (eski döküm) | 2,4 | 1,44 | +5,1 | +3,9 | 2,51 | 1,93 | 1,30 |
+| parmak-ailesi/duzgun_2 | reddetti: **'İngiliz gibi'** | %4 | -0,007 | 2,6 | 1,42 | +2,7 | +0,3 | 2,76 | 3,67 | 1,95 |
+| parmak-ailesi/turkce_2 | reddetti: sözler yanlış | %10 | -0,010 | 3,4 | 1,03 | +5,3 | -9,1 | 2,63 | 3,37 | 2,00 |
+| parmak-ailesi/yavas_2 | reddetti: sözler yanlış + ninni | %6 | yok (eski döküm) | 3,0 | 1,06 | +2,7 | +16,1 | 2,82 | 3,71 | 2,15 |
+| parmak-ailesi/sarki_2 | reddetti: çok hızlı | %2 | yok (eski döküm) | 4,8 | 0,55 | +4,6 | +7,8 | 2,50 | 2,29 | 1,50 |
+
+## hiz
+| Kayıt | Karar ve gerekçe | Süre (sn) | Kıtadan kıtaya ortalama süre (sn) | Hece/sn (söz içi) | Hece/sn (öbek medyanı) | En hızlı öbek | Aracın 'söyleyiş hızı' satırı |
+|---|---|---|---|---|---|---|---|
+| parmak-ailesi/coskulu_1 | beğendi | 80 | 12,9 | 5,4 | 4,6 | 6,6 | dikkat |
+| parmak-ailesi/duzgun_1 | reddetti | 91 | 16,6 | 2,7 | 2,4 | 3,0 | bilgi |
+| parmak-ailesi/duzgun_2 | reddetti | 95 | 16,6 | 3,1 | 2,6 | 3,1 | bilgi |
+| parmak-ailesi/turkce_2 | reddetti | 95 | 15,4 | 3,7 | 3,4 | 3,9 | bilgi |
+| parmak-ailesi/yavas_2 | reddetti | 95 | 15,4 | 3,4 | 3,0 | 3,6 | bilgi |
+| parmak-ailesi/sarki_2 | reddetti: **'sözler çok hızlı geçiyor'** | 65 | 10,2 | 5,2 | 4,8 | 4,9 | bilgi |
+
+## sure
+| Kayıt | Karar | Süre |
+|---|---|---|
+| ali-baba/yeni/vokal/ornek_kita1 | reddetti | 27 sn (0:27) |
+| parmak-ailesi/sarki_2 | reddetti | 65 sn (1:05) |
+| el-yikama/coskulu_2 | beğendi | 70 sn (1:10) |
+| el-yikama/sarki_1 | reddetti | 75 sn (1:15) |
+| parmak-ailesi/coskulu_1 | beğendi | 80 sn (1:20) |
+| parmak-ailesi/duzgun_1 | reddetti | 91 sn (1:31) |
+| parmak-ailesi/duzgun_2 | reddetti | 95 sn (1:35) |
+| parmak-ailesi/turkce_2 | reddetti | 95 sn (1:35) |
+| parmak-ailesi/yavas_2 | reddetti | 95 sn (1:35) |
+| ali-baba/v2_2 | beğendi | 105 sn (1:45) |
+| ali-baba/dinle_2 | beğendi | 110 sn (1:50) |
+| ali-baba/yeni3/…/dogal-onizleme | reddetti | 134 sn (2:14) |
+| ali-baba/yeni/demo_altyapi_sesli | beğendi | 155 sn (2:35) |
+| ali-baba/yeni2/sarki_birlesik | reddetti | 155 sn (2:35) |
+| pitirin-ailesi/yavas_2 | reddetti | 185 sn (3:05) |
+
+## ozet_satirlari
+| Kayıt | Karar | Enerji | Denge | Armoni | Gam içi | Akort | Çakışan nota | Ritim | Yapaylık | Sözler | Hız | ! ve ✗ sayısı |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ali-baba/v2_2 | beğendi | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | 0 |
+| ali-baba/dinle_2 | beğendi | ✓ | ✓ | ✓ | · | ✓ | ✓ | ! | · | ! | · | 2 |
+| el-yikama/coskulu_2 | beğendi | ✓ | ✓ | ✗ | ✓ | ✓ | ! | ! | · | ✓ | · | 3 |
+| parmak-ailesi/coskulu_1 | beğendi | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ! | ! | ✓ | ! | 3 |
+| ali-baba/yeni/demo_altyapi_sesli | beğendi | · | ! | ✓ | ! | ! | ✗ | ! | ! | – | – | 6 |
+| ali-baba/yeni/vokal/ornek_kita1 | reddetti | ! | ✓ | ✓ | ✓ | ✓ | ! | ✗ | ! | ✗ | · | 5 |
+| ali-baba/yeni2/sarki_birlesik | reddetti | · | ✓ | ✓ | ✓ | ✓ | ! | ! | ! | ✗ | ! | 5 |
+| ali-baba/yeni3/…/dogal-onizleme | reddetti | ! | ! | ✗ | ✓ | ! | ✗ | ! | ! | ✗ | · | 8 |
+| parmak-ailesi/duzgun_1 | reddetti | ! | ✓ | ✓ | · | ✓ | ✗ | ✓ | ! | ! | · | 4 |
+| parmak-ailesi/duzgun_2 | reddetti | ! | ✓ | ! | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | 2 |
+| parmak-ailesi/turkce_2 | reddetti | ! | ✓ | ! | · | ✓ | ✓ | ! | · | ! | · | 4 |
+| parmak-ailesi/yavas_2 | reddetti | ! | ✓ | ! | ✓ | ✓ | ✓ | ! | ! | ! | · | 5 |
+| pitirin-ailesi/yavas_2 | reddetti | ! | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | · | ! | · | 3 |
+| el-yikama/sarki_1 | reddetti | ! | ✓ | ✓ | ✓ | ✓ | ! | ✗ | · | ✓ | · | 3 |
+| parmak-ailesi/sarki_2 | reddetti | · | ✓ | ✓ | ✓ | ✓ | ✓ | ! | ! | ✓ | · | 2 |
+
+## hayvan_sesi
+| Kayıt | Kıta başı | Kıtanın hayvanı | Dökümde söylenen ses | Hayvana uyuyor mu (döküme göre) | Ünlü tınısı: 1,8–2,8 kHz eksi 1,2–1,8 kHz (dB) |
+|---|---|---|---|---|---|
+| ali-baba/v2_2 | 9. sn | inek | Mö mö | uyuyor | -8,4 |
+| ali-baba/v2_2 | 22. sn | koyun | Me me | uyuyor | +3,8 |
+| ali-baba/v2_2 | 36. sn | at | Me me | **uymuyor** | +2,1 |
+| ali-baba/v2_2 | 50. sn | horoz | Üü üü | uyuyor | +5,0 |
+| ali-baba/v2_2 | 63. sn | ördek | Vak vak | uyuyor | -18,6 |
+| ali-baba/v2_2 | 77. sn | köpek | Hav hav | uyuyor | -17,9 |
+| ali-baba/v2_2 | 91. sn | kedi | Miyav miyav | uyuyor | -3,3 |
+| ali-baba/coskulu_1 | 8. sn | inek | Mö mö | uyuyor | – |
+| ali-baba/coskulu_1 | 41. sn | koyun | Me me | uyuyor | – |
+| ali-baba/coskulu_1 | 74. sn | at | İha iha | uyuyor | – |
+| ali-baba/coskulu_1 | 108. sn | horoz | Üü üü | uyuyor | – |
+| ali-baba/coskulu_1 | 134. sn | ördek | Vak vak | uyuyor | – |
+| ali-baba/coskulu_1 | 170. sn | köpek | Hav hav | uyuyor | – |
+| ali-baba/coskulu_1 | 203. sn | kedi | Miyav miyav | uyuyor | – |
+| ali-baba/coskulu_2 | 8. sn | inek | Mö mö | uyuyor | – |
+| ali-baba/coskulu_2 | 33. sn | koyun | Mö mö | **uymuyor** | – |
+| ali-baba/coskulu_2 | 60. sn | at | İha ha ihan ha | uyuyor | – |
+| ali-baba/coskulu_2 | 87. sn | horoz | Ü ürü ü | uyuyor | – |
+| ali-baba/coskulu_2 | 114. sn | ördek | Vak vak | uyuyor | – |
+| ali-baba/coskulu_2 | 141. sn | köpek | Hav hav | uyuyor | – |
+| ali-baba/coskulu_2 | 168. sn | köpek | Hav hav | uyuyor | – |
+
+## gercek_kanallar
+| Kayıt | Kanallar | Vokal − altyapı dB | En iyi kaydırma | Armonik destek | Destek farkı | Gam içi | Akor sesi | Cent sapma | ±25 cent | Çakışan / uzun | Ritim R | Ritim kayması ms | Donmuş ünlü | Oynaklık (cent) | Izgara R | Zarf dB | UTMOS | NISQA |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ali-baba/dinle_2 | otomatik ayırma (karşılaştırma için: aynı vokalin özgün kaydı) | -3,4 | +0 | 0,65 | +0,26 | %86 | %70 | 8,8 | %88 | 0 / 25 | 0,36 | +26 | %0 | 11,1 | 0,67 | -9,1 | 1,49 | 2,88 |
+| ali-baba/yeni3/…/dogal-onizleme | otomatik ayırma | -13,0 | -4 | 0,28 | +0,14 | %91 | %67 | 17,0 | %68 | 4 / 31 | 0,34 | +4 | %5 | 14,6 | 0,28 | -14,4 | 1,43 | 2,76 |
+| ali-baba/yeni2/sarki_birlesik | otomatik ayırma | -5,9 | +0 | 0,65 | +0,49 | %99 | %96 | 8,4 | %91 | 3 / 99 | 0,41 | +29 | %20 | 10,6 | 0,66 | -14,8 | 1,34 | 2,76 |
+| ali-baba/yeni/vokal/ornek_kita1 | otomatik ayırma | -3,8 | +0 | 0,69 | +0,49 | %95 | %86 | 9,8 | %86 | 2 / 12 | 0,19 | +46 | %31 | 9,8 | 0,62 | -19,8 | 1,48 | 2,87 |
+| ali-baba/yeni/vokal/ornek_kita1 | gerçek kanallar (kurucunun raporu) | -2,5 | +0 | 0,69 | +0,50 | %100 | %95 | 8,3 | %99 | 0 / 13 | 0,57 | +44 | %19 | 8,9 | 0,82 | -20,8 | 1,64 | 3,31 |

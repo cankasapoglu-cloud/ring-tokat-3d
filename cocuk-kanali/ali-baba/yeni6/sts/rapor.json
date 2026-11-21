@@ -1,0 +1,44 @@
+[
+ {
+  "kita": 1,
+  "giris_sn": 9.2,
+  "cikis_sn": 9.24,
+  "gecikme_ms": 0.0
+ },
+ {
+  "kita": 2,
+  "giris_sn": 9.02,
+  "cikis_sn": 9.06,
+  "gecikme_ms": 0.0
+ },
+ {
+  "kita": 3,
+  "giris_sn": 9.11,
+  "cikis_sn": 9.15,
+  "gecikme_ms": 0.0
+ },
+ {
+  "kita": 4,
+  "giris_sn": 9.21,
+  "cikis_sn": 9.24,
+  "gecikme_ms": 0.0
+ },
+ {
+  "kita": 5,
+  "giris_sn": 9.32,
+  "cikis_sn": 9.33,
+  "gecikme_ms": 0.0
+ },
+ {
+  "kita": 6,
+  "giris_sn": 9.14,
+  "cikis_sn": 9.15,
+  "gecikme_ms": 0.0
+ },
+ {
+  "kita": 7,
+  "giris_sn": 9.09,
+  "cikis_sn": 9.1,
+  "gecikme_ms": 0.0
+ }
+]

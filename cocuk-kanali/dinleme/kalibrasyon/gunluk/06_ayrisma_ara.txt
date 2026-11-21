@@ -1,0 +1,179 @@
+
+================ ENERJI ================
+Kullanicinin 'cosku' yargisi: olumlu = sectigi coskulu kayitlar ve 'olmus' dedigi altyapi; olumsuz = 'ninni gibi, cosku yok' dedigi kayitlar
+  hareketlilik puani (0-100)                       + coskulu_2=77 coskulu_1=79 demo_altyapi_sesli=64 | - yavas_2=52 yavas_2=58 sarki_1=71  => ORTUSUYOR
+  MusicCoCa cosku farki                            + coskulu_2=0.089 coskulu_1=0.105 demo_altyapi_sesli=0.26 | - yavas_2=-0.078 yavas_2=-0.086 sarki_1=-0.045  => TEMIZ BOSLUK -0.045..0.089 (oran 0.39) esik~0.022
+  MusicCoCa tempo farki                            + coskulu_2=-0.052 coskulu_1=-0.053 demo_altyapi_sesli=0.087 | - yavas_2=0.012 yavas_2=-0.032 sarki_1=-0.053  => ORTUSUYOR
+  CED 'ninni' olasiligi                            + coskulu_2=0 coskulu_1=0 demo_altyapi_sesli=0 | - yavas_2=0.044 yavas_2=0.023 sarki_1=0.027  => TEMIZ BOSLUK 0..0.023 (oran 0.52) esik~0.0115
+  CED coskulu-sakin                                + coskulu_2=0.085 coskulu_1=0.198 demo_altyapi_sesli=0.028 | - yavas_2=0.079 yavas_2=0.053 sarki_1=0.143  => ORTUSUYOR
+  CED 'Tender music'                               + coskulu_2=0.001 coskulu_1=0 demo_altyapi_sesli=0.003 | - yavas_2=0.028 yavas_2=0.007 sarki_1=0.045  => TEMIZ BOSLUK 0.003..0.007 (oran 0.09) esik~0.005
+  CED 'Happy music'                                + coskulu_2=0.051 coskulu_1=0.158 demo_altyapi_sesli=0.014 | - yavas_2=0.151 yavas_2=0.083 sarki_1=0.21  => ORTUSUYOR
+  olay yogunlugu /sn                               + coskulu_2=5.13 coskulu_1=5.46 demo_altyapi_sesli=4.18 | - yavas_2=3.82 yavas_2=4.49 sarki_1=4.93  => ORTUSUYOR
+  nabiz netligi                                    + coskulu_2=0.68 coskulu_1=0.771 demo_altyapi_sesli=0.582 | - yavas_2=0.539 yavas_2=0.684 sarki_1=0.667  => ORTUSUYOR
+  vurmali/armonik dB                               + coskulu_2=-3.33 coskulu_1=-1.77 demo_altyapi_sesli=-4.57 | - yavas_2=-9.72 yavas_2=-9.83 sarki_1=-5.26  => TEMIZ BOSLUK -5.26..-4.57 (oran 0.09) esik~-4.92
+  spektral aki                                     + coskulu_2=1.79 coskulu_1=1.94 demo_altyapi_sesli=1.5 | - yavas_2=1.8 yavas_2=1.61 sarki_1=1.75  => ORTUSUYOR
+  parlaklik Hz                                     + coskulu_2=2.92e+03 coskulu_1=2.29e+03 demo_altyapi_sesli=2.49e+03 | - yavas_2=1.8e+03 yavas_2=2.14e+03 sarki_1=2.54e+03  => ORTUSUYOR
+  tempo BPM (otomatik)                             + coskulu_2=118 coskulu_1=112 demo_altyapi_sesli=134 | - yavas_2=156 yavas_2=160 sarki_1=160  => TEMIZ BOSLUK 134..156 (oran 0.45) esik~145
+  hece/sn (obek medyani)                           + coskulu_2=2.68 coskulu_1=4.57 | - yavas_2=2.96 yavas_2=2.25 sarki_1=2.35  => ORTUSUYOR
+  hece/sn (soz ici)                                + coskulu_2=3.28 coskulu_1=5.36 | - yavas_2=3.43 yavas_2=2.59 sarki_1=2.66  => ORTUSUYOR
+
+================ DOGALLIK ================
+olumlu = sesi begenilen / uygun bulunan dogal yapay sarkici kayitlari; olumsuz = vokoderle ezgiye oturtulmus ve esnetilip perdesi duzlenmis vokaller. 'diger' = islenmemis ama baska nedenle reddedilmis yapay sarkici kayitlari (bunlar da 'dogal' tarafta kalmali)
+  sozcuk hata orani                                + v2_2=0.047 dinle_2=0.083 coskulu_2=0.043 coskulu_1=0.04 | - ornek_kita1=1 sarki_birlesik=0.481  => TEMIZ BOSLUK 0.083..0.481 (oran 0.41) esik~0.282 | DIGER olumsuz tarafta: []; bosluk icinde: ['turkce_2', 'dogal_onizleme']
+                                                     diger: duzgun_1=0.08 duzgun_2=0.04 turkce_2=0.1 yavas_2=0.06 yavas_2=0.054 sarki_1=0 sarki_2=0.023 dogal_onizleme=0.194
+  Scribe'in emin olmadigi sozcuk orani (logprob<-0,3) + dinle_2=0 coskulu_2=0 coskulu_1=0 | - ornek_kita1=0.7 sarki_birlesik=0.071  => TEMIZ BOSLUK 0..0.071 (oran 0.10) esik~0.0355 | DIGER olumsuz tarafta: []; bosluk icinde: ['turkce_2', 'dogal_onizleme']
+                                                     diger: duzgun_2=0 turkce_2=0.019 dogal_onizleme=0.037
+  Scribe ortalama logprob                          + dinle_2=-0.001 coskulu_2=-0.004 coskulu_1=-0.004 | - ornek_kita1=-0.588 sarki_birlesik=-0.053  => TEMIZ BOSLUK -0.053..-0.004 (oran 0.08) esik~-0.0285 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_2', 'turkce_2', 'dogal_onizleme']
+                                                     diger: duzgun_2=-0.007 turkce_2=-0.01 dogal_onizleme=-0.034
+  donmus unlu sure orani                           + v2_2=0 dinle_2=0 coskulu_2=0 coskulu_1=0 | - ornek_kita1=0.31 sarki_birlesik=0.204  => TEMIZ BOSLUK 0..0.204 (oran 0.66) esik~0.102 | DIGER olumsuz tarafta: []; bosluk icinde: ['turkce_2', 'yavas_2', 'sarki_1', 'dogal_onizleme']
+                                                     diger: duzgun_1=0 duzgun_2=0 turkce_2=0.03 yavas_2=0.187 yavas_2=0 sarki_1=0.036 sarki_2=0 dogal_onizleme=0.049
+  nota ici oynaklik (cent)                         + v2_2=11.3 dinle_2=11.1 coskulu_2=11.8 coskulu_1=11.5 | - ornek_kita1=9.8 sarki_birlesik=10.6  => TEMIZ BOSLUK 10.6..11.1 (oran 0.25) esik~10.8 | DIGER olumsuz tarafta: ['duzgun_1', 'turkce_2', 'yavas_2', 'yavas_2', 'sarki_1', 'sarki_2']; bosluk icinde: []
+                                                     diger: duzgun_1=9.1 duzgun_2=11.2 turkce_2=9.1 yavas_2=9.9 yavas_2=9.1 sarki_1=10.1 sarki_2=10.3 dogal_onizleme=14.6
+  cok duz nota orani                               + v2_2=0.04 dinle_2=0.03 coskulu_2=0 coskulu_1=0 | - ornek_kita1=0 sarki_birlesik=0.08  => ORTUSUYOR
+                                                     diger: duzgun_1=0.05 duzgun_2=0 turkce_2=0.11 yavas_2=0.02 yavas_2=0.08 sarki_1=0.01 sarki_2=0.04 dogal_onizleme=0.01
+  perde izgaraya yapisma R                         + v2_2=0.69 dinle_2=0.67 coskulu_2=0.63 coskulu_1=0.68 | - ornek_kita1=0.62 sarki_birlesik=0.66  => ORTUSUYOR
+                                                     diger: duzgun_1=0.74 duzgun_2=0.59 turkce_2=0.78 yavas_2=0.74 yavas_2=0.64 sarki_1=0.76 sarki_2=0.75 dogal_onizleme=0.28
+  vibratolu uzun nota orani                        + v2_2=0.06 dinle_2=0.15 coskulu_2=0.29 coskulu_1=0.1 | - ornek_kita1=0.27 sarki_birlesik=0.08  => ORTUSUYOR
+                                                     diger: duzgun_1=0.06 duzgun_2=0.56 turkce_2=0.08 yavas_2=0.12 yavas_2=0 sarki_1=0.17 sarki_2=0 dogal_onizleme=0.08
+  zarf titremesi dB                                + v2_2=-13.3 dinle_2=-9.1 coskulu_2=-11.7 coskulu_1=-10.8 | - ornek_kita1=-19.8 sarki_birlesik=-14.8  => TEMIZ BOSLUK -14.8..-13.3 (oran 0.14) esik~-14.1 | DIGER olumsuz tarafta: []; bosluk icinde: ['turkce_2', 'yavas_2', 'sarki_1', 'sarki_2', 'dogal_onizleme']
+                                                     diger: duzgun_1=-12 duzgun_2=-12.5 turkce_2=-13.8 yavas_2=-13.5 yavas_2=-13.2 sarki_1=-14.5 sarki_2=-13.6 dogal_onizleme=-14.4
+  tiz doku degisim katsayisi                       + v2_2=1.31 dinle_2=1.42 coskulu_2=1.16 coskulu_1=1.49 | - ornek_kita1=2.03 sarki_birlesik=2.42  => TEMIZ BOSLUK 1.49..2.03 (oran 0.43) esik~1.76 | DIGER olumsuz tarafta: ['dogal_onizleme']; bosluk icinde: []
+                                                     diger: duzgun_1=1.07 duzgun_2=1.13 turkce_2=1.45 yavas_2=1.28 yavas_2=1.01 sarki_1=1.13 sarki_2=1.11 dogal_onizleme=2.42
+  unsuzlerde tiz payi dB                           + v2_2=-11.2 dinle_2=-11.1 coskulu_2=-9.5 coskulu_1=-16.1 | - ornek_kita1=-9.2 sarki_birlesik=-15.4  => ORTUSUYOR
+                                                     diger: duzgun_1=-14.1 duzgun_2=-10.6 turkce_2=-10.7 yavas_2=-9.8 yavas_2=-11.9 sarki_1=-4 sarki_2=-16.2 dogal_onizleme=-16
+  bagli gecis suresi ms                            + v2_2=32 dinle_2=32 | - sarki_birlesik=32  => ORTUSUYOR
+                                                     diger: duzgun_2=32 turkce_2=32 yavas_2=32 sarki_1=32 dogal_onizleme=32
+  ardisik cerceve benzerligi                       + v2_2=0.985 dinle_2=0.983 coskulu_2=0.981 coskulu_1=0.984 | - ornek_kita1=0.992 sarki_birlesik=0.992  => TEMIZ BOSLUK 0.985..0.992 (oran 0.57) esik~0.989 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_2', 'turkce_2', 'yavas_2', 'sarki_1']
+                                                     diger: duzgun_1=0.982 duzgun_2=0.987 turkce_2=0.987 yavas_2=0.99 yavas_2=0.982 sarki_1=0.988 sarki_2=0.98 dogal_onizleme=0.985
+  yapaylik isareti sayisi                          + v2_2=0 dinle_2=0 coskulu_2=0 coskulu_1=1 | - ornek_kita1=1 sarki_birlesik=2  => ORTUSUYOR
+                                                     diger: duzgun_1=1 duzgun_2=0 turkce_2=0 yavas_2=1 yavas_2=0 sarki_1=0 sarki_2=1 dogal_onizleme=1
+  DNSMOS                                           + v2_2=2.68 dinle_2=2.71 coskulu_2=2.45 coskulu_1=2.47 | - ornek_kita1=2.5 sarki_birlesik=2.39  => ORTUSUYOR
+                                                     diger: duzgun_1=2.51 duzgun_2=2.76 turkce_2=2.63 yavas_2=2.82 yavas_2=2.21 sarki_1=2.55 sarki_2=2.5 dogal_onizleme=2.56
+  NISQA                                            + v2_2=3.33 dinle_2=2.88 coskulu_2=2.67 coskulu_1=2.31 | - ornek_kita1=2.87 sarki_birlesik=2.76  => ORTUSUYOR
+                                                     diger: duzgun_1=1.93 duzgun_2=3.67 turkce_2=3.37 yavas_2=3.71 yavas_2=1.76 sarki_1=3.56 sarki_2=2.29 dogal_onizleme=2.76
+  NISQA kesintisizlik                              + v2_2=4.32 dinle_2=4.41 coskulu_2=4.11 coskulu_1=3.93 | - ornek_kita1=4.15 sarki_birlesik=4.1  => ORTUSUYOR
+                                                     diger: duzgun_1=3.54 duzgun_2=4.43 turkce_2=4.35 yavas_2=4.49 yavas_2=3.39 sarki_1=4.34 sarki_2=3.83 dogal_onizleme=3.92
+  Distill-MOS                                      + v2_2=3.94 dinle_2=3.41 coskulu_2=3.19 coskulu_1=2.98 | - ornek_kita1=3 sarki_birlesik=3.19  => ORTUSUYOR
+                                                     diger: duzgun_1=3.29 duzgun_2=3.91 turkce_2=3.89 yavas_2=3.8 yavas_2=2.71 sarki_1=3.53 sarki_2=3.12 dogal_onizleme=2.97
+  UTMOS22                                          + v2_2=1.44 dinle_2=1.49 coskulu_2=1.31 coskulu_1=1.52 | - ornek_kita1=1.48 sarki_birlesik=1.34  => ORTUSUYOR
+                                                     diger: duzgun_1=1.3 duzgun_2=1.95 turkce_2=2 yavas_2=2.15 yavas_2=1.3 sarki_1=1.85 sarki_2=1.5 dogal_onizleme=1.43
+  CED vokal: Singing                               + v2_2=0.136 dinle_2=0.079 coskulu_2=0.113 coskulu_1=0.102 | - ornek_kita1=0.084 sarki_birlesik=0.068  => ORTUSUYOR
+                                                     diger: duzgun_1=0.073 duzgun_2=0.104 turkce_2=0.094 yavas_2=0.055 yavas_2=0.111 sarki_1=0.041 sarki_2=0.07 dogal_onizleme=0.018
+  CED vokal: Speech                                + v2_2=0.03 dinle_2=0.067 coskulu_2=0.072 coskulu_1=0.2 | - ornek_kita1=0.027 sarki_birlesik=0.072  => ORTUSUYOR
+                                                     diger: duzgun_1=0.018 duzgun_2=0.005 turkce_2=0.072 yavas_2=0.013 yavas_2=0.023 sarki_1=0.008 sarki_2=0.123 dogal_onizleme=0.435
+  CED vokal: Synthetic singing                     + v2_2=0.029 dinle_2=0.021 coskulu_2=0.026 coskulu_1=0.017 | - ornek_kita1=0.002 sarki_birlesik=0.021  => ORTUSUYOR
+                                                     diger: duzgun_1=0.054 duzgun_2=0.029 turkce_2=0.044 yavas_2=0.039 yavas_2=0.052 sarki_1=0.05 sarki_2=0.034 dogal_onizleme=0.002
+  CED vokal: Speech synthesizer                    + v2_2=0.001 dinle_2=0.005 coskulu_2=0.002 coskulu_1=0.008 | - ornek_kita1=0 sarki_birlesik=0  => TEMIZ BOSLUK 0..0.001 (oran 0.12) esik~0.0005 | DIGER olumsuz tarafta: ['duzgun_2', 'yavas_2', 'sarki_1']; bosluk icinde: []
+                                                     diger: duzgun_1=0.001 duzgun_2=0 turkce_2=0.007 yavas_2=0.001 yavas_2=0 sarki_1=0 sarki_2=0.008 dogal_onizleme=0.005
+  ritim sikiligi R                                 + v2_2=0.57 dinle_2=0.36 coskulu_2=0.43 coskulu_1=0.39 | - ornek_kita1=0.19 sarki_birlesik=0.41  => ORTUSUYOR
+                                                     diger: duzgun_1=0.72 duzgun_2=0.64 turkce_2=0.48 yavas_2=0.49 yavas_2=0.14 sarki_1=0.07 sarki_2=0.45 dogal_onizleme=0.34
+  vokalli saniye basina bulunan nota               + v2_2=2.49 dinle_2=2 coskulu_2=1.5 coskulu_1=1.5 | - ornek_kita1=1.45 sarki_birlesik=1.46  => TEMIZ BOSLUK 1.46..1.5 (oran 0.04) esik~1.48 | DIGER olumsuz tarafta: []; bosluk icinde: []
+                                                     diger: duzgun_1=1.62 duzgun_2=2.4 turkce_2=2.26 yavas_2=1.91 yavas_2=1.59 sarki_1=1.76 sarki_2=2.05 dogal_onizleme=1.72
+  nota suresi medyani sn                           + v2_2=0.19 dinle_2=0.18 coskulu_2=0.22 coskulu_1=0.19 | - ornek_kita1=0.42 sarki_birlesik=0.4  => TEMIZ BOSLUK 0.22..0.4 (oran 0.75) esik~0.31 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_1', 'yavas_2', 'sarki_1']
+                                                     diger: duzgun_1=0.38 duzgun_2=0.18 turkce_2=0.21 yavas_2=0.22 yavas_2=0.26 sarki_1=0.29 sarki_2=0.16 dogal_onizleme=0.19
+  gecis cercevesi orani                            + v2_2=0.13 dinle_2=0.18 coskulu_2=0.13 coskulu_1=0.15 | - ornek_kita1=0.03 sarki_birlesik=0.03  => TEMIZ BOSLUK 0.03..0.13 (oran 0.67) esik~0.08 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_1', 'turkce_2', 'yavas_2', 'yavas_2', 'sarki_1', 'sarki_2']
+                                                     diger: duzgun_1=0.05 duzgun_2=0.15 turkce_2=0.09 yavas_2=0.08 yavas_2=0.05 sarki_1=0.05 sarki_2=0.08 dogal_onizleme=0.19
+  kayan nota orani                                 + v2_2=0.03 dinle_2=0.12 coskulu_2=0.31 coskulu_1=0.08 | - ornek_kita1=0 sarki_birlesik=0.14  => ORTUSUYOR
+                                                     diger: duzgun_1=0.11 duzgun_2=0.09 turkce_2=0.02 yavas_2=0.05 yavas_2=0.14 sarki_1=0.06 sarki_2=0.19 dogal_onizleme=0.33
+  ani gecis orani (35 ms alti)                     + v2_2=0.88 dinle_2=0.93 | - sarki_birlesik=0.83  => TEMIZ BOSLUK 0.83..0.88 (oran 0.50) esik~0.855 | DIGER olumsuz tarafta: ['duzgun_2', 'turkce_2', 'yavas_2', 'dogal_onizleme']; bosluk icinde: []
+                                                     diger: duzgun_2=0.64 turkce_2=0.64 yavas_2=0.6 sarki_1=0.93 dogal_onizleme=0.8
+  uzun nota (0,35 sn ustu) orani                   + v2_2=0.21 dinle_2=0.156 coskulu_2=0.25 coskulu_1=0.179 | - ornek_kita1=0.611 sarki_birlesik=0.592  => TEMIZ BOSLUK 0.25..0.592 (oran 0.75) esik~0.421 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_1', 'yavas_2', 'yavas_2', 'sarki_1']
+                                                     diger: duzgun_1=0.536 duzgun_2=0.118 turkce_2=0.197 yavas_2=0.294 yavas_2=0.3 sarki_1=0.354 sarki_2=0.0923 dogal_onizleme=0.174
+
+================ UYUM ================
+olumlu = sarkici ve orkestrasi birlikte uretilmis, kabul edilmis kayitlar; olumsuz = dogal vokalin baska ezgi calan orkestranin ustune kondugu on dinleme ('olmamis'). 'diger' = birlikte uretilmis ama baska nedenle reddedilmis kayitlar (bunlar da 'uyumlu' tarafta kalmali)
+  en iyi kaydirma (yarim ses; 0 olmali)            + v2_2=0 dinle_2=0 coskulu_2=-4 coskulu_1=0 | - dogal_onizleme=-4  => ORTUSUYOR
+                                                     diger: duzgun_1=0 duzgun_2=5 turkce_2=5 yavas_2=5 yavas_2=0 sarki_1=0 sarki_2=0 ornek_kita1=0 sarki_birlesik=0
+  0 kaydirmanin sirasi (1 olmali)                  + v2_2=1 dinle_2=1 coskulu_2=6 coskulu_1=1 | - dogal_onizleme=3  => ORTUSUYOR
+                                                     diger: duzgun_1=1 duzgun_2=2 turkce_2=5 yavas_2=2 yavas_2=1 sarki_1=1 sarki_2=1 ornek_kita1=1 sarki_birlesik=1
+  armonik destek (kaydirmasiz)                     + v2_2=0.566 dinle_2=0.65 coskulu_2=0.336 coskulu_1=0.559 | - dogal_onizleme=0.281  => TEMIZ BOSLUK 0.281..0.336 (oran 0.15) esik~0.308 | DIGER olumsuz tarafta: ['duzgun_2', 'turkce_2']; bosluk icinde: []
+                                                     diger: duzgun_1=0.367 duzgun_2=0.267 turkce_2=0.211 yavas_2=0.389 yavas_2=0.591 sarki_1=0.367 sarki_2=0.614 ornek_kita1=0.688 sarki_birlesik=0.65
+  armonik destek farki                             + v2_2=0.311 dinle_2=0.26 coskulu_2=0.132 coskulu_1=0.273 | - dogal_onizleme=0.141  => ORTUSUYOR
+                                                     diger: duzgun_1=0.275 duzgun_2=0.19 turkce_2=0.073 yavas_2=0.313 yavas_2=0.511 sarki_1=0.172 sarki_2=0.37 ornek_kita1=0.495 sarki_birlesik=0.49
+  gam ici sure orani                               + v2_2=0.995 dinle_2=0.858 coskulu_2=0.996 coskulu_1=0.999 | - dogal_onizleme=0.911  => ORTUSUYOR
+                                                     diger: duzgun_1=0.895 duzgun_2=0.982 turkce_2=0.829 yavas_2=0.991 yavas_2=0.992 sarki_1=0.998 sarki_2=0.998 ornek_kita1=0.953 sarki_birlesik=0.988
+  akor sesi sure orani                             + v2_2=0.608 dinle_2=0.704 coskulu_2=0.628 coskulu_1=0.807 | - dogal_onizleme=0.671  => ORTUSUYOR
+                                                     diger: duzgun_1=0.52 duzgun_2=0.621 turkce_2=0.561 yavas_2=0.813 yavas_2=0.758 sarki_1=0.548 sarki_2=0.759 ornek_kita1=0.862 sarki_birlesik=0.955
+  gam disi oran                                    + v2_2=0.005 dinle_2=0.107 coskulu_2=0.003 coskulu_1=0.001 | - dogal_onizleme=0.084  => ORTUSUYOR
+                                                     diger: duzgun_1=0.105 duzgun_2=0.018 turkce_2=0.081 yavas_2=0.009 yavas_2=0.008 sarki_1=0.002 sarki_2=0.002 ornek_kita1=0.047 sarki_birlesik=0.012
+  cent sapma medyani                               + v2_2=8.1 dinle_2=8.8 coskulu_2=8.6 coskulu_1=9.2 | - dogal_onizleme=17  => TEMIZ BOSLUK 9.2..17 (oran 0.88) esik~13.1 | DIGER olumsuz tarafta: []; bosluk icinde: ['yavas_2', 'ornek_kita1']
+                                                     diger: duzgun_1=7.1 duzgun_2=8.5 turkce_2=5.4 yavas_2=6.6 yavas_2=9.6 sarki_1=6.3 sarki_2=8 ornek_kita1=9.8 sarki_birlesik=8.4
+  +-25 cent icinde %                               + v2_2=90.6 dinle_2=88.4 coskulu_2=86.9 coskulu_1=92.5 | - dogal_onizleme=68.1  => TEMIZ BOSLUK 68.1..86.9 (oran 0.77) esik~77.5 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_2', 'ornek_kita1']
+                                                     diger: duzgun_1=93.8 duzgun_2=85.1 turkce_2=93.7 yavas_2=91.5 yavas_2=87.2 sarki_1=93.6 sarki_2=93.7 ornek_kita1=85.5 sarki_birlesik=91
+  perde izgaraya yapisma R                         + v2_2=0.69 dinle_2=0.67 coskulu_2=0.63 coskulu_1=0.68 | - dogal_onizleme=0.28  => TEMIZ BOSLUK 0.28..0.63 (oran 0.85) esik~0.455 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_2', 'ornek_kita1']
+                                                     diger: duzgun_1=0.74 duzgun_2=0.59 turkce_2=0.78 yavas_2=0.74 yavas_2=0.64 sarki_1=0.76 sarki_2=0.75 ornek_kita1=0.62 sarki_birlesik=0.66
+  cakisan uzun nota orani                          + v2_2=0 dinle_2=0 coskulu_2=0.0417 coskulu_1=0 | - dogal_onizleme=0.129  => TEMIZ BOSLUK 0.0417..0.129 (oran 0.68) esik~0.0853 | DIGER olumsuz tarafta: ['duzgun_1', 'ornek_kita1']; bosluk icinde: []
+                                                     diger: duzgun_1=0.136 duzgun_2=0 turkce_2=0 yavas_2=0 yavas_2=0 sarki_1=0.0204 sarki_2=0 ornek_kita1=0.167 sarki_birlesik=0.0303
+  ritim sikiligi R                                 + v2_2=0.57 dinle_2=0.36 coskulu_2=0.43 coskulu_1=0.39 | - dogal_onizleme=0.34  => TEMIZ BOSLUK 0.34..0.36 (oran 0.09) esik~0.35 | DIGER olumsuz tarafta: ['yavas_2', 'sarki_1', 'ornek_kita1']; bosluk icinde: []
+                                                     diger: duzgun_1=0.72 duzgun_2=0.64 turkce_2=0.48 yavas_2=0.49 yavas_2=0.14 sarki_1=0.07 sarki_2=0.45 ornek_kita1=0.19 sarki_birlesik=0.41
+  40 ms icinde %                                   + v2_2=55 dinle_2=48 coskulu_2=61 coskulu_1=50 | - dogal_onizleme=57  => ORTUSUYOR
+                                                     diger: duzgun_1=76 duzgun_2=53 turkce_2=66 yavas_2=43 yavas_2=40 sarki_1=44 sarki_2=51 ornek_kita1=52 sarki_birlesik=55
+  vokal - altyapi dB                               + v2_2=0.8 dinle_2=-3.4 coskulu_2=-2.6 coskulu_1=-1.6 | - dogal_onizleme=-13  => TEMIZ BOSLUK -13..-3.4 (oran 0.70) esik~-8.2 | DIGER olumsuz tarafta: []; bosluk icinde: ['ornek_kita1', 'sarki_birlesik']
+                                                     diger: duzgun_1=4.4 duzgun_2=4.7 turkce_2=1.7 yavas_2=5.7 yavas_2=2.7 sarki_1=1.2 sarki_2=-0.1 ornek_kita1=-3.8 sarki_birlesik=-5.9
+  vokal kanalina sizinti dB                        + v2_2=-46 dinle_2=-21 coskulu_2=-17.3 coskulu_1=-20.6 | - dogal_onizleme=-14.6  => TEMIZ BOSLUK -17.3..-14.6 (oran 0.09) esik~-15.9 | DIGER olumsuz tarafta: ['sarki_birlesik']; bosluk icinde: ['duzgun_2']
+                                                     diger: duzgun_1=-51.4 duzgun_2=-15.1 turkce_2=-47.7 yavas_2=-49.1 yavas_2=-23.1 sarki_1=-51.6 sarki_2=-42.3 ornek_kita1=-43.5 sarki_birlesik=-13.2
+  sozcuk hata orani                                + v2_2=0.047 dinle_2=0.083 coskulu_2=0.043 coskulu_1=0.04 | - dogal_onizleme=0.194  => TEMIZ BOSLUK 0.083..0.194 (oran 0.72) esik~0.139 | DIGER olumsuz tarafta: ['ornek_kita1', 'sarki_birlesik']; bosluk icinde: ['turkce_2']
+                                                     diger: duzgun_1=0.08 duzgun_2=0.04 turkce_2=0.1 yavas_2=0.06 yavas_2=0.054 sarki_1=0 sarki_2=0.023 ornek_kita1=1 sarki_birlesik=0.481
+  CED vokal: Singing                               + v2_2=0.136 dinle_2=0.079 coskulu_2=0.113 coskulu_1=0.102 | - dogal_onizleme=0.018  => TEMIZ BOSLUK 0.018..0.079 (oran 0.52) esik~0.0485 | DIGER olumsuz tarafta: []; bosluk icinde: ['duzgun_1', 'yavas_2', 'sarki_1', 'sarki_2', 'sarki_birlesik']
+                                                     diger: duzgun_1=0.073 duzgun_2=0.104 turkce_2=0.094 yavas_2=0.055 yavas_2=0.111 sarki_1=0.041 sarki_2=0.07 ornek_kita1=0.084 sarki_birlesik=0.068
+  CED vokal: Speech                                + v2_2=0.03 dinle_2=0.067 coskulu_2=0.072 coskulu_1=0.2 | - dogal_onizleme=0.435  => TEMIZ BOSLUK 0.2..0.435 (oran 0.58) esik~0.318 | DIGER olumsuz tarafta: []; bosluk icinde: []
+                                                     diger: duzgun_1=0.018 duzgun_2=0.005 turkce_2=0.072 yavas_2=0.013 yavas_2=0.023 sarki_1=0.008 sarki_2=0.123 ornek_kita1=0.027 sarki_birlesik=0.072
+  bulunan ses araligi (yarim ses)                  + v2_2=7.2 dinle_2=5 coskulu_2=7 coskulu_1=10.2 | - dogal_onizleme=26.8  => TEMIZ BOSLUK 10.2..26.8 (oran 0.76) esik~18.5 | DIGER olumsuz tarafta: []; bosluk icinde: ['ornek_kita1', 'sarki_birlesik']
+                                                     diger: duzgun_1=7.2 duzgun_2=7.2 turkce_2=6.9 yavas_2=4.2 yavas_2=7.4 sarki_1=7.9 sarki_2=7.2 ornek_kita1=15.7 sarki_birlesik=16.1
+
+================ AKSAN ================
+olumsuz = 'Turkce konusan Ingiliz gibi' denen iki kayit; olumlu = ayni sarkinin secilen kaydi; 'diger' = ayni sarkinin baska nedenle reddedilen kayitlari ve oteki dogal kayitlar (aksan sikayeti yok)
+  sozcuk hata orani                                + coskulu_1=0.04 | - duzgun_1=0.08 duzgun_2=0.04  => ORTUSUYOR
+                                                     diger: turkce_2=0.1 yavas_2=0.06 sarki_2=0.023 v2_2=0.047 dinle_2=0.083 coskulu_2=0.043 sarki_1=0 yavas_2=0.054
+  Scribe ortalama logprob                          + coskulu_1=-0.004 | - duzgun_2=-0.007  => TEMIZ BOSLUK -0.007..-0.004 (oran 1.00) esik~-0.0055 | DIGER olumsuz tarafta: ['turkce_2']; bosluk icinde: []
+                                                     diger: turkce_2=-0.01 dinle_2=-0.001 coskulu_2=-0.004
+  emin olunmayan sozcuk orani                      + coskulu_1=0 | - duzgun_2=0  => ORTUSUYOR
+                                                     diger: turkce_2=0.019 dinle_2=0 coskulu_2=0
+  Scribe dil olasiligi (Turkce)                    + coskulu_1=1 | - duzgun_2=1  => ORTUSUYOR
+                                                     diger: turkce_2=1 dinle_2=1 coskulu_2=1
+  DNSMOS                                           + coskulu_1=2.47 | - duzgun_1=2.51 duzgun_2=2.76  => TEMIZ BOSLUK 2.47..2.51 (oran 0.14) esik~2.49 | DIGER olumsuz tarafta: ['turkce_2', 'yavas_2', 'v2_2', 'dinle_2', 'sarki_1']; bosluk icinde: ['sarki_2']
+                                                     diger: turkce_2=2.63 yavas_2=2.82 sarki_2=2.5 v2_2=2.68 dinle_2=2.71 coskulu_2=2.45 sarki_1=2.55 yavas_2=2.21
+  NISQA                                            + coskulu_1=2.31 | - duzgun_1=1.93 duzgun_2=3.67  => ORTUSUYOR
+                                                     diger: turkce_2=3.37 yavas_2=3.71 sarki_2=2.29 v2_2=3.33 dinle_2=2.88 coskulu_2=2.67 sarki_1=3.56 yavas_2=1.76
+  Distill-MOS                                      + coskulu_1=2.98 | - duzgun_1=3.29 duzgun_2=3.91  => TEMIZ BOSLUK 2.98..3.29 (oran 0.33) esik~3.13 | DIGER olumsuz tarafta: ['turkce_2', 'yavas_2', 'v2_2', 'dinle_2', 'sarki_1']; bosluk icinde: ['sarki_2', 'coskulu_2']
+                                                     diger: turkce_2=3.89 yavas_2=3.8 sarki_2=3.12 v2_2=3.94 dinle_2=3.41 coskulu_2=3.19 sarki_1=3.53 yavas_2=2.71
+  UTMOS22                                          + coskulu_1=1.52 | - duzgun_1=1.3 duzgun_2=1.95  => ORTUSUYOR
+                                                     diger: turkce_2=2 yavas_2=2.15 sarki_2=1.5 v2_2=1.44 dinle_2=1.49 coskulu_2=1.31 sarki_1=1.85 yavas_2=1.3
+  CED vokal: Speech                                + coskulu_1=0.2 | - duzgun_1=0.018 duzgun_2=0.005  => TEMIZ BOSLUK 0.018..0.2 (oran 0.93) esik~0.109 | DIGER olumsuz tarafta: ['yavas_2', 'sarki_1']; bosluk icinde: ['turkce_2', 'sarki_2', 'v2_2', 'dinle_2', 'coskulu_2', 'yavas_2']
+                                                     diger: turkce_2=0.072 yavas_2=0.013 sarki_2=0.123 v2_2=0.03 dinle_2=0.067 coskulu_2=0.072 sarki_1=0.008 yavas_2=0.023
+  unsuzlerde tiz payi dB                           + coskulu_1=-16.1 | - duzgun_1=-14.1 duzgun_2=-10.6  => TEMIZ BOSLUK -16.1..-14.1 (oran 0.36) esik~-15.1 | DIGER olumsuz tarafta: ['turkce_2', 'yavas_2', 'v2_2', 'dinle_2', 'coskulu_2', 'sarki_1', 'yavas_2']; bosluk icinde: []
+                                                     diger: turkce_2=-10.7 yavas_2=-9.8 sarki_2=-16.2 v2_2=-11.2 dinle_2=-11.1 coskulu_2=-9.5 sarki_1=-4 yavas_2=-11.9
+  hece/sn (obek medyani)                           + coskulu_1=4.57 | - duzgun_1=2.39 duzgun_2=2.63  => TEMIZ BOSLUK 2.63..4.57 (oran 0.89) esik~3.6 | DIGER olumsuz tarafta: ['sarki_1', 'yavas_2']; bosluk icinde: ['turkce_2', 'yavas_2', 'v2_2', 'dinle_2', 'coskulu_2']
+                                                     diger: turkce_2=3.39 yavas_2=2.96 sarki_2=4.79 v2_2=3.85 dinle_2=3.88 coskulu_2=2.68 sarki_1=2.35 yavas_2=2.25
+  yapaylik isareti sayisi                          + coskulu_1=1 | - duzgun_1=1 duzgun_2=0  => ORTUSUYOR
+                                                     diger: turkce_2=0 yavas_2=1 sarki_2=1 v2_2=0 dinle_2=0 coskulu_2=0 sarki_1=0 yavas_2=0
+
+================ HIZ ================
+olumsuz = 'sozler cok hizli geciyor' denen kayit; olumlu = ayni sarkinin secilen kaydi; 'diger' = ayni sarkinin oteki kayitlari
+  hece/sn (soz ici)                                + coskulu_1=5.36 | - sarki_2=5.15  => TEMIZ BOSLUK 5.15..5.36 (oran 1.00) esik~5.25 | DIGER olumsuz tarafta: ['duzgun_1', 'duzgun_2', 'turkce_2', 'yavas_2']; bosluk icinde: []
+                                                     diger: duzgun_1=2.68 duzgun_2=3.08 turkce_2=3.71 yavas_2=3.43
+  hece/sn (obek medyani)                           + coskulu_1=4.57 | - sarki_2=4.79  => TEMIZ BOSLUK 4.57..4.79 (oran 1.00) esik~4.68 | DIGER olumsuz tarafta: []; bosluk icinde: []
+                                                     diger: duzgun_1=2.39 duzgun_2=2.63 turkce_2=3.39 yavas_2=2.96
+  hece/sn (en hizli obek)                          + coskulu_1=6.6 | - sarki_2=4.89  => TEMIZ BOSLUK 4.89..6.6 (oran 1.00) esik~5.75 | DIGER olumsuz tarafta: ['duzgun_1', 'duzgun_2', 'turkce_2', 'yavas_2']; bosluk icinde: []
+                                                     diger: duzgun_1=2.98 duzgun_2=3.11 turkce_2=3.88 yavas_2=3.62
+  cok hizli obek sayisi                            + coskulu_1=1 | - sarki_2=0  => TEMIZ BOSLUK 0..1 (oran 1.00) esik~0.5 | DIGER olumsuz tarafta: ['duzgun_1', 'duzgun_2', 'turkce_2', 'yavas_2']; bosluk icinde: []
+                                                     diger: duzgun_1=0 duzgun_2=0 turkce_2=0 yavas_2=0
+  sure sn                                          + coskulu_1=80 | - sarki_2=65  => TEMIZ BOSLUK 65..80 (oran 1.00) esik~72.5 | DIGER olumsuz tarafta: []; bosluk icinde: []
+                                                     diger: duzgun_1=91 duzgun_2=95 turkce_2=95 yavas_2=95
+  tempo BPM (otomatik)                             + coskulu_1=112 | - sarki_2=100  => TEMIZ BOSLUK 100..112 (oran 1.00) esik~106 | DIGER olumsuz tarafta: []; bosluk icinde: []
+                                                     diger: duzgun_1=156 duzgun_2=156 turkce_2=160 yavas_2=156
+  vokalli sure orani                               + coskulu_1=0.467 | - sarki_2=0.488  => TEMIZ BOSLUK 0.467..0.488 (oran 1.00) esik~0.477 | DIGER olumsuz tarafta: ['duzgun_1', 'duzgun_2', 'turkce_2', 'yavas_2']; bosluk icinde: []
+                                                     diger: duzgun_1=0.66 duzgun_2=0.596 turkce_2=0.569 yavas_2=0.601
+
+================ SURE ================
+olumsuz = 'cok uzun (3-3,5 dk)' denen iki kayit; olumlu = kabul edilen kayitlar
+  sure sn                                          (veri eksik: olumlu 5, olumsuz 0)
+
+================ SOZLER ================
+olumsuz = kullanicinin soz hatasi soyledigi kayitlar; olumlu = sozleri icin sikayet etmedigi / 'bes ad da dogru' dedigi secilmis kayitlar
+  sozcuk hata orani                                + coskulu_1=0.04 coskulu_2=0.043 dinle_2=0.083 | - v2_2=0.047 turkce_2=0.1 yavas_2=0.06 ornek_kita1=1  => ORTUSUYOR
+  kucuk farklar sayilmazsa                         + coskulu_1=0.04 coskulu_2=0.043 dinle_2=0.074 | - v2_2=0.038 turkce_2=0.1 yavas_2=0.04 ornek_kita1=1  => ORTUSUYOR
+  degisik sozcuk                                   + coskulu_1=0 coskulu_2=0 dinle_2=1 | - v2_2=4 turkce_2=2 yavas_2=3 ornek_kita1=10  => TEMIZ BOSLUK 1..2 (oran 0.10) esik~1.5
+  eksik sozcuk                                     + coskulu_1=0 coskulu_2=0 dinle_2=0 | - v2_2=1 turkce_2=0 yavas_2=0 ornek_kita1=3  => ORTUSUYOR
+  fazla sozcuk                                     + coskulu_1=2 coskulu_2=2 dinle_2=8 | - v2_2=0 turkce_2=3 yavas_2=0 ornek_kita1=0  => ORTUSUYOR
+  emin olunmayan sozcuk orani                      + coskulu_1=0 coskulu_2=0 dinle_2=0 | - turkce_2=0.019 ornek_kita1=0.7  => TEMIZ BOSLUK 0..0.019 (oran 0.03) esik~0.0095

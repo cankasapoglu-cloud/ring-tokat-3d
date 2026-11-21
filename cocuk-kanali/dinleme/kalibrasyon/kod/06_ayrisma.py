@@ -70,8 +70,13 @@ BOYUT = {
              ("logprob_dusuk_oran", "emin olunmayan sozcuk orani")]),
 }
 
+def KISALT(a):
+    sarki, ad = a.split("__")
+    return {"parmak-ailesi": "parmak", "pitirin-ailesi": "pitirin", "el-yikama": "el-yikama", "ali-baba": "ali-baba"}[sarki] + "/" + ad
+
+
 def deger(adlar, anahtar):
-    return [(a.split("__")[-1] if True else a, M[a].get(anahtar)) for a in adlar if a in M and M[a].get(anahtar) is not None and not isinstance(M[a].get(anahtar), (list, dict, str))]
+    return [(KISALT(a), M[a].get(anahtar)) for a in adlar if a in M and M[a].get(anahtar) is not None and not isinstance(M[a].get(anahtar), (list, dict, str))]
 
 C = {}
 for boyut, b in BOYUT.items():

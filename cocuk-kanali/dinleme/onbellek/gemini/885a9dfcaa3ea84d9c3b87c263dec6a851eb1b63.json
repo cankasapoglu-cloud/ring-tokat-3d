@@ -1,0 +1,12 @@
+{
+ "tamam": true,
+ "yanit": "DUYDUGUM: Türkçe olarak seslendirilmiş kayıtta yetişkin bir kadın vokal yer almaktadır. Arka planda hareketli enstrümantal bir altyapı çalmakta ve şarkı aralarında at, horoz, ördek, köpek ile kedi ses efektleri duyulmaktadır.\nSOZLER: çiftliği var Çiftliğinde atları var diye bağırır çiftliğinde Ali Baba'nın Ali Baba'nın bir çiftliği var Çiftliğinde horozları var diye bağırır çiftliğinde Ali Baba'nın Ali Baba'nın bir çiftliği var Çiftliğinde ördekleri var diye bağırır çiftliğinde Ali Baba'nın Ali Baba'nın bir çiftliği var Çiftliğinde köpekleri var diye bağırır çiftliğinde Ali Baba'm Ali Baba'nın bir çiftliği var Çiftliğinde kedisi var diye bağırır çiftliğinde Ali Baba'nın\nSES: doğal insan sesi | Şarkı net ve doğal bir yetişkin kadın vokali tarafından seslendirilmiştir.\nAKORT: müzikle uyumlu | Vokaller şarkı boyunca müziğin detonesiz ve akortlu yapısıyla tam uyum içindedir.\nRITIM: ritme oturuyor | Şarkının temposu ve vokal vuruşları ritme eksiksiz şekilde oturmaktadır.\nENERJI: canlı | Çocuk şarkısına uygun, tempolu ve neşeli bir ifadeyle söylenmiştir.\nTELAFFUZ: doğal Türkçe | Şarkıcının diksiyonu akıcı ve standart Türkçe telaffuzuna uygundur.\nSARKI_MI: ezgiyle söylüyor | Vokal sözleri belirli bir melodi ve ezgiye bağlı kalarak söylemektedir.\nDENGE: dengeli | Vokal, müzik ve eklenen hayvan ses efektleri ses seviyesi bakımından gayet dengelidir.\nTUHAF: 00:00 - ses kaydı cümlenin başı kesik olarak \"çiftliği var\" şeklinde başlamaktadır; 01:09 - vokal \"Ali Baba'nın\" kelimesini yanlışlıkla \"Ali Baba'm\" olarak söylemektedir\nOZET: Kaydın en belirgin kusuru, başlangıçtaki ilk sözcüklerin kesilmiş olması ve bir yerde yaşanan kelime söyleyiş hatasıdır.",
+ "model": "gemini-3.5-flash",
+ "dosyalar": [
+  "sarki_A_ozgun_ses.mp3"
+ ],
+ "bas": 47.0,
+ "sure": 101.0,
+ "yol": "openai-uyumlu",
+ "zaman": "2026-11-21 17:05:50"
+}

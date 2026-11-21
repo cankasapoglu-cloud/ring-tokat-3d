@@ -143,7 +143,10 @@ def gidis_donus_esnet(V, kat):
     import librosa
     k = rubberband(V, tempo="%.6f" % kat)
     y = np.stack([librosa.effects.time_stretch(np.ascontiguousarray(k[:, c]).astype(np.float32), rate=1.0 / kat) for c in range(k.shape[1])], axis=1)
-    return hizala(V, y.astype(float))
+    y, g = hizala(V, y.astype(float))
+    # faz vokoderi sesi 5-7 dB kisiyor; TEK kusur kalsin diye vokalin duzeyi aslina esitlenir
+    kazanc = float(np.sqrt((V ** 2).mean() / ((y ** 2).mean() + 1e-20)))
+    return y * kazanc, {"hizalama_duzeltmesi_ornek": g, "duzey_esitleme_db": round(20 * np.log10(kazanc), 2)}
 
 
 def world_coz(v):
@@ -377,10 +380,12 @@ def main():
     # ---- 3) vokoderle esnetme (karisimda: gidis-donus; kuru: duz esnetme)
     for ad, kat in (("b03a_esnetme_15", 1.5), ("b03b_esnetme_20", 2.0)):
         def f(kat=kat, ad=ad):
-            y, g = gidis_donus_esnet(V, kat)
+            y, ek = gidis_donus_esnet(V, kat)
             mp3_yaz(ad, karis(y))
-            return {"tur": "kusur", "no": 3, "kusur": "vokal %.1f kat faz vokoderiyle esnetilmis dokuda (sure ve perde ayni)" % kat,
-                    "yontem": "rubberband ile 1/%.1f'e sikistir, librosa faz vokoderiyle %.1f kat esnet" % (kat, kat), "hizalama_duzeltmesi_ornek": g}
+            d = {"tur": "kusur", "no": 3, "kusur": "vokal %.1f kat faz vokoderiyle esnetilmis dokuda (sure, perde ve duzey ayni)" % kat,
+                 "yontem": "rubberband ile 1/%.1f'e sikistir, librosa faz vokoderiyle %.1f kat esnet, duzeyi aslina esitle" % (kat, kat)}
+            d.update(ek)
+            return d
         yap(ad, f)
     vm = V.mean(axis=1)
 
@@ -392,6 +397,7 @@ def main():
         def f(kat=kat, ad=ad):
             import librosa
             y = librosa.effects.time_stretch(vm.astype(np.float32), rate=1.0 / kat)
+            y = y * float(np.sqrt((vm ** 2).mean() / ((y ** 2).mean() + 1e-20)))          # duzeyi aslina esitle
             wav_yaz(ad, y)
             return {"tur": "kusur (kuru vokal)", "no": 3, "kusur": "kuru vokal faz vokoderiyle %.1f kat esnetildi (perde ayni, sure %.1f kat)" % (kat, kat), "sure_sn": round(len(y) / SR, 1)}
         yap(ad, f)
@@ -406,6 +412,7 @@ def main():
         def f(kat=kat, ad=ad):
             import librosa
             y = librosa.effects.time_stretch(vm[a0:a1].astype(np.float32), rate=1.0 / kat)
+            y = y * float(np.sqrt((vm[a0:a1] ** 2).mean() / ((y ** 2).mean() + 1e-20)))
             wav_yaz(ad, y)
             return {"tur": "kusur (kuru vokal, kisa)", "no": 3, "kusur": "1. kita kuru vokal %.1f kat esnetildi" % kat, "sure_sn": round(len(y) / SR, 1)}
         yap(ad, f)

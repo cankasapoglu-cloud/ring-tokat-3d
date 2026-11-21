@@ -79,6 +79,86 @@
    ]
   }
  },
+ "parmak-ailesi__duzgun_2": {
+  "karar": "reddetti",
+  "gerekce": "'çok kötü söylüyor, Türkçe konuşan bir İngiliz gibi' (yabancı aksan)",
+  "dokum": "Scribe (onbellek)",
+  "vokal_f0_medyan_hz": 292,
+  "parmak_r_vekili_db": {
+   "n": 11,
+   "medyan": 2.7,
+   "p25": 2.2,
+   "p75": 3.9
+  },
+  "buradayim_son_unlu_on_art_db": {
+   "n": 9,
+   "medyan": 0.3,
+   "p25": -1.1,
+   "p75": 3.8
+  },
+  "sozcuk_suresi_sn": {
+   "buradayım": [
+    1.42,
+    0.01,
+    9
+   ],
+   "neredesin": [
+    1.2,
+    0.1,
+    6
+   ],
+   "merhaba": [
+    1.12,
+    0.01,
+    5
+   ],
+   "parmak": [
+    0.68,
+    0.04,
+    11
+   ]
+  }
+ },
+ "parmak-ailesi__turkce_2": {
+  "karar": "reddetti",
+  "gerekce": "sözler yanlış (3. kıtada 'abi parmak' yerine 'anne parmak')",
+  "dokum": "Scribe (onbellek)",
+  "vokal_f0_medyan_hz": 321,
+  "parmak_r_vekili_db": {
+   "n": 11,
+   "medyan": 5.3,
+   "p25": 3.3,
+   "p75": 5.9
+  },
+  "buradayim_son_unlu_on_art_db": {
+   "n": 12,
+   "medyan": -9.1,
+   "p25": -9.8,
+   "p75": -4.9
+  },
+  "sozcuk_suresi_sn": {
+   "buradayım": [
+    1.03,
+    0.08,
+    12
+   ],
+   "neredesin": [
+    0.96,
+    0.01,
+    5
+   ],
+   "merhaba": [
+    1.03,
+    0.04,
+    6
+   ],
+   "parmak": [
+    0.68,
+    0.06,
+    11
+   ]
+  }
+ },
  "parmak-ailesi__yavas_2": {
   "karar": "reddetti",
   "gerekce": "sözler yanlış (3. kıtada 'anne parmak') ve 'ninni gibi söylüyor, coşku yok'",
@@ -115,6 +195,46 @@
    "parmak": [
     0.64,
     0.06,
+    11
+   ]
+  }
+ },
+ "parmak-ailesi__sarki_2": {
+  "karar": "reddetti",
+  "gerekce": "'sözler çok hızlı geçiyor'",
+  "dokum": "eski *_words.json",
+  "vokal_f0_medyan_hz": 330,
+  "parmak_r_vekili_db": {
+   "n": 10,
+   "medyan": 4.6,
+   "p25": 4.3,
+   "p75": 5.8
+  },
+  "buradayim_son_unlu_on_art_db": {
+   "n": 10,
+   "medyan": 7.8,
+   "p25": 3.0,
+   "p75": 8.7
+  },
+  "sozcuk_suresi_sn": {
+   "buradayım": [
+    0.55,
+    0.33,
+    10
+   ],
+   "neredesin": [
+    0.84,
+    0.07,
+    5
+   ],
+   "merhaba": [
+    0.88,
+    0.05,
+    5
+   ],
+   "parmak": [
+    0.5,
+    0.26,
     11
    ]
   }

@@ -101,5 +101,49 @@
   "dinle_sn": 83.6,
   "donus": 0,
   "zaman": "16:47:55"
+ },
+ "b02b_gec_yarim": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b02b_gec_yarim.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 168.6,
+  "dinle_sn": 79.6,
+  "donus": 0,
+  "zaman": "16:52:03"
+ },
+ "b03a_esnetme_15": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b03a_esnetme_15.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 164.0,
+  "dinle_sn": 91.3,
+  "donus": 0,
+  "zaman": "16:56:18"
+ },
+ "b03b_esnetme_20": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b03b_esnetme_20.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 167.2,
+  "dinle_sn": 72.5,
+  "donus": 0,
+  "zaman": "17:00:18"
+ },
+ "b04k_world_kontrol": {
+  "grup": "kusur",
+  "dosya": "/root/.cache/dinleme/sinama/ses/b04k_world_kontrol.mp3",
+  "arg": [
+   "--ayir"
+  ],
+  "ayirma_sn": 178.1,
+  "dinle_sn": 67.3,
+  "donus": 0,
+  "zaman": "17:04:24"
  }
 }
