@@ -1,0 +1,44 @@
+{
+ "a_gecis": {
+  "reddedilen_psola": {
+   "gecis": 45,
+   "sure_ortanca_ms": 25.0,
+   "p25": 20.0,
+   "p75": 30.0,
+   "adim_ortanca_yarim_ses": 2.02,
+   "hiz_ortanca_yarim_ses/sn": 60.1,
+   "30ms_ve_alti_%": 68.9
+  },
+  "referans": {
+   "gecis": 57,
+   "sure_ortanca_ms": 30.0,
+   "p25": 20.0,
+   "p75": 35.0,
+   "adim_ortanca_yarim_ses": 2.03,
+   "hiz_ortanca_yarim_ses/sn": 48.9,
+   "30ms_ve_alti_%": 50.9
+  }
+ },
+ "b_referans": {
+  "tek_kanal_toplam, kullanilan_hecelerde": 1.0,
+  "tek_kanal_toplam, tum_soylenen_kareler_(hayvan_sesleri_dahil)": 1.2,
+  "kanal_basina_guc, kullanilan_hecelerde": 0.6,
+  "hece_bazinda_ortanca": 4.9,
+  "hece_p10": -3.7,
+  "hece_p90": 10.3,
+  "orkestra_stereo_genisligi_(yan/orta dB)": -8.0,
+  "vokal_stereo_(yan/orta dB)": -12.5
+ },
+ "b_reddedilen": {
+  "mp3_gecikme_ornek": 219,
+  "uydurulan_kazanc_orkestra": 0.525,
+  "uydurulan_kazanc_vokal": 1.302,
+  "aciklanan_varyans_%": 93.0,
+  "bitmis_mp3te_vokal - orkestra dB (söylenen karelerde)": 8.6,
+  "kanal_basina_guc_ile": 8.2,
+  "orkestra_stereo_genisligi_(yan/orta dB)": -10.5,
+  "hece_bazinda_ortanca": 8.3,
+  "hece_p10": 4.5,
+  "hece_p90": 11.7
+ }
+}
