@@ -14,7 +14,7 @@ Yöntem: Önce en çok izlenen videoların **temasını ve formülünü** kendi 
 | 2 | Renk şarkıları (genel) | Tek kavram, parlak renkler | **Balon Şarkısı** (renkler) | renkler şarkısı, renkleri öğreniyorum | Tamamen özgün | Hazır |
 | 3 | Baby Shark Dance – Pinkfong (17,6 Mr) | Aile üyeleri, el hareketi, hızlanan tempo | **Pıtır'ın Ailesi** (bebek kedi, anne, baba, nine, dede; "miyav miyav") | aile şarkısı, dans şarkısı, bebek şarkıları | Özgün söz ve melodi; "Baby Shark" adı kullanılmaz | Hazır |
 | 4 | Wheels on the Bus – CoComelon (9,8 Mr) | Taşıt, ses taklidi, tekrar | **Otobüs Şarkısı** (tekerlek döner, kapı açılır, korna öter) | otobüs şarkısı, taşıtlar şarkısı | Özgün söz ve melodi (geleneksel ezgiyi kullanmadan) | Sırada |
-| 5 | Bath Song – CoComelon (7,7 Mr) · Kukuli hijyen (100 M) | Günlük rutin, ebeveyn de açar | **El Yıkama Şarkısı** ve **Banyo Şarkısı** | el yıkama şarkısı, banyo şarkısı, temizlik | Tamamen özgün | Sırada |
+| 5 | Bath Song – CoComelon (7,7 Mr) · Kukuli hijyen (100 M) | Günlük rutin, ebeveyn de açar | **El Yıkama Şarkısı** ve **Banyo Şarkısı** | el yıkama şarkısı, banyo şarkısı, temizlik | Tamamen özgün | El Yıkama hazır |
 | 6 | Gezegenler – MiniYo (559 M) | Merak uyandıran bilgi, 4–7 yaş | **Gezegenler Şarkısı** (Pıtır rokette) | gezegenler şarkısı, güneş sistemi, uzay | Tamamen özgün | Sırada |
 | 7 | Phonics Song – ChuChu TV (7,2 Mr) | Okula hazırlık, öğretmenler kullanır | **Harfler Şarkısı** (29 harf, her harfe bir nesne) | alfabe şarkısı, harfler şarkısı, a b c | Tamamen özgün | Sırada |
 | 8 | Sayı şarkıları (genel) | Sayma, parmak oyunu | **Sayı Şarkısı** (1–10) | sayılar şarkısı, 1'den 10'a kadar | Tamamen özgün | Sırada |
