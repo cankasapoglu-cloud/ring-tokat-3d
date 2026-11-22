@@ -102,6 +102,24 @@
   "bay": [
    "Bay bay!",
    "mor"
+  ],
+  "m1": [
+   "1",
+   "kirmizi",
+   0,
+   185
+  ],
+  "m2": [
+   "2",
+   "mavi",
+   0,
+   185
+  ],
+  "m3": [
+   "3",
+   "turuncu",
+   0,
+   185
   ]
  },
  "bolumler": [
@@ -663,26 +681,27 @@
     [
      [
       0,
-      "n1",
-      560,
-      900
+      "m1",
+      1150,
+      125
      ],
      [
       1,
-      "n2",
-      960,
-      900
+      "m2",
+      1420,
+      125
      ],
      [
       2,
-      "n3",
-      1360,
-      900
+      "m3",
+      1690,
+      125
      ]
     ],
     "bay"
    ]
   }
  ],
- "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Rakamlar sayı söylenirken ekranda belirir (1-2-3 elma, 4-5-6 balon, 7-8-9 yıldız, 10 çiçek). Rakamlar sayılan nesnelerin üstünde belirir: 'efekt' alanında 'kare' = o satırda duran kare, 'duz' = klip yakınlaştırmasız kullanılır."
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Rakamlar sayı söylenirken ekranda belirir (1-2-3 elma, 4-5-6 balon, 7-8-9 yıldız, 10 çiçek). Rakamlar sayılan nesnelerin üstünde belirir: 'efekt' alanında 'kare' = o satırda duran kare, 'duz' = klip yakınlaştırmasız kullanılır.",
+ "baslik_y": 660
 }

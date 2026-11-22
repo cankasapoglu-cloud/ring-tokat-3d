@@ -19,13 +19,13 @@
    "Merkür",
    "gri",
    0,
-   120
+   100
   ],
   "venus": [
    "Venüs",
    "sari",
    0,
-   120
+   105
   ],
   "dunya": [
    "Dünya",
@@ -108,13 +108,13 @@
       2,
       "merkur",
       330,
-      690
+      262
      ],
      [
       4,
       "venus",
-      735,
-      725
+      720,
+      112
      ]
     ],
     null,
@@ -304,5 +304,6 @@
    ]
   }
  ],
- "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Sıra doğru: Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs, Neptün; adlar söylenirken ekranda belirir."
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Sıra doğru: Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs, Neptün; adlar söylenirken ekranda belirir.",
+ "baslik_y": 660
 }

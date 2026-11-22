@@ -6,6 +6,7 @@ Her satır başlamadan 0,25 sn önce o satırın sahnesine geçilir; ilk satıra
   yazi: [her satır için: null | "anahtar" (satır başında 1,7 sn) | [[sıra, "anahtar"(, x, y)], ...]]
         sıra 0,1,2.. = o sözcük söylenirken belirir; -1 = satır başında; 0-1 arası kesir = satırın o oranında. x,y verilirse yazının merkezi oraya konur (1920x1080).
   efekt (isteğe bağlı): [her satır için: null | "kare" (klip yerine duran kare) | "duz" (klip yakınlaştırmasız)]  -> nesnelerin üstüne etiket koymak için
+sozler.json içinde "baslik_y": başlık yazısının düşey yeri (varsayılan -40 = üstte; 660 = altta, Pıtır'ın yüzü üstteyse).
 Gerekenler: <klasör>/<şarkı>.mp3 ve .json (sözcük zamanları), kare/<ad>.png, klip/<ad>.mp4, yazi/<anahtar>.png, yazi/baslik.png
 Kullanım: python3 kurgu.py <şarkı klasörü> <şarkı adı (örn. deneme_2)> <çıktı adı (örn. banyo-sarkisi)>"""
 import json, os, re, subprocess, sys
@@ -64,7 +65,7 @@ for k, (ad, t0, t1, konum) in enumerate(yazi):
     if ad not in kirpik:                                # yazı resmini dolu kısmına kırp (kaplama hızlı olsun)
         im = Image.open(os.path.join(D, "yazi", ad + ".png")); kutu = im.getbbox(); yol = os.path.join(GEC, ad + ".png"); im.crop(kutu).save(yol); kirpik[ad] = (yol, kutu[0], kutu[1])
     yol, sol, ust = kirpik[ad]
-    x, y = (konum[0] - 960 + sol, konum[1] - 190 + ust) if konum else (sol, (-40 if ad == "baslik" else 700) + ust)
+    x, y = (konum[0] - 960 + sol, konum[1] - 190 + ust) if konum else (sol, (S.get("baslik_y", -40) if ad == "baslik" else 700) + ust)
     gir, cik = (0.12, 0.12) if konum else (0.25, 0.25)
     girdi += ["-loop", "1", "-t", f"{SON}", "-i", yol]
     filtre.append(f"[{n + k}:v]format=rgba,fade=in:st={t0:.2f}:d={gir}:alpha=1,fade=out:st={t1 - cik:.2f}:d={cik}:alpha=1[y{k}]")

@@ -145,6 +145,18 @@
   "resp": {
    "status_code": 0,
    "status_msg": "success"
-  }
+  },
+  "status": "done",
+  "file_id": "466053957861621"
+ },
+ "k4c": {
+  "prompt": "The kitten rubs his head and ears with the towel back and forth, his fluffy fur bouncing. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466056594981187",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466056952574210"
  }
 }
