@@ -1,0 +1,150 @@
+{
+ "h2": {
+  "prompt": "The kitten splashes the water up and down with both paws in rhythm, droplets fly, the foam bounces and the rubber duck bobs on the water. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466052287242552",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466053472969055"
+ },
+ "h1": {
+  "prompt": "The kitten bounces happily on the stool with both paws raised, soap bubbles drift slowly upward, the foam in the tub wobbles gently. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054246432982",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466052863619308"
+ },
+ "k1b": {
+  "prompt": "The kitten swings his legs in the water and pats the water surface with one paw, making small splashes, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054929183047",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466053079920940"
+ },
+ "k1a": {
+  "prompt": "Water streams steadily from the faucet into the tub, the water surface ripples and small bubbles appear; the kitten's eyes follow the water and his ears twitch. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466053885522261",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466054607687893"
+ },
+ "k1c": {
+  "prompt": "The kitten sighs happily and wiggles gently in the warm water, thin steam rises slowly, the water ripples softly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466053324026152",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466053390279018"
+ },
+ "k2a": {
+  "prompt": "The kitten tosses foam up into the air with both paws again and again, foam flakes fall slowly like snow and soap bubbles drift around. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054927905033",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466055845863680"
+ },
+ "k2b": {
+  "prompt": "The foam-covered kitten looks left and right in surprise, then giggles and shakes a little, and small foam flakes fall off him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466055616495936",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466054468878684"
+ },
+ "k2c": {
+  "prompt": "The kitten wiggles his nose, the blob of foam wobbles, he blows at it and giggles; soap bubbles drift in the background. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054819541323",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466053944766812"
+ },
+ "k3a": {
+  "prompt": "The yellow rubber duck bobs and glides slowly across the water, ripples spread out, and the kitten's eyes follow the duck with a smile. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466053308158311",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466055496962309"
+ },
+ "k3b": {
+  "prompt": "The kitten squeezes the rubber duck gently and moves it up and down in a playful dance, laughing. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054973317391",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466055110422862"
+ },
+ "k3c": {
+  "prompt": "The kitten paddles forward with his front paws and the rubber duck glides along beside him, splashes and small waves trail behind them. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466053223047516",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466054071685402"
+ },
+ "k4a": {
+  "prompt": "Water drops fall from the kitten's wet fur and tail onto the mat one after another; he gives a little shiver and a small shake, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466052719591732",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466052686250348"
+ },
+ "veda": {
+  "prompt": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466052694069484",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466056263659847"
+ },
+ "k4b": {
+  "prompt": "The towel-wrapped kitten sways gently from side to side, snuggling into the towel with a cozy smile, his ears twitching. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466055700853075",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466054929215698"
+ },
+ "k4d": {
+  "prompt": "The kitten stands proudly and turns a little to the left and to the right showing off his clean fluffy fur, sparkles twinkle around him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466055016337613",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ }
+}

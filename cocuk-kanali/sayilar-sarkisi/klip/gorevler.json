@@ -1,0 +1,70 @@
+{
+ "h1": {
+  "prompt": "The kitten bounces on his feet and waves his raised paw in rhythm as if counting, smiling; the flowers sway in the breeze. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466056047653189",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466055715926347"
+ },
+ "k1b": {
+  "prompt": "The kitten chews with full cheeks, takes another bite of the apple and chews happily. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466053390279022",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466052186341689"
+ },
+ "h2": {
+  "prompt": "The kitten slides the beads along the abacus row one by one with his paw, nodding his head with each bead, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466052028248364",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466055618085130"
+ },
+ "k1d": {
+  "prompt": "The kitten pats his round tummy slowly and sighs happily, wiggling his feet. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466052687327613",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466053223047525"
+ },
+ "k3a": {
+  "prompt": "The nine golden stars twinkle and glow softly, pulsing gently in brightness. Nothing else moves. Static camera. No new stars, characters or objects appear, no text.",
+  "task_id": "466056040116421",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466056254320836"
+ },
+ "k2b": {
+  "prompt": "The kitten holds the strings tight, the six balloons bob and sway above him and he bounces proudly. The number of balloons stays the same. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054325838124",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466056254320838"
+ },
+ "k2c": {
+  "prompt": "The kitten drifts gently upward and sideways under the six balloons, his legs kicking happily, clouds drifting by. The number of balloons stays the same. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054558163236",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ }
+}

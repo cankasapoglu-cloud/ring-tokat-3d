@@ -1,0 +1,308 @@
+{
+ "baslik": "Gezegenler Şarkısı (Pıtır Uzayda)",
+ "baslik_yazi": "Gezegenler Şarkısı",
+ "baslik_karesi": "h1",
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "sparkly space synth arpeggio",
+  "twinkling bells"
+ ],
+ "yazilar": {
+  "vin": [
+   "Vın vın vın!",
+   "renkli"
+  ],
+  "merkur": [
+   "Merkür",
+   "gri",
+   0,
+   120
+  ],
+  "venus": [
+   "Venüs",
+   "sari",
+   0,
+   120
+  ],
+  "dunya": [
+   "Dünya",
+   "mavi"
+  ],
+  "mars": [
+   "Mars",
+   "kirmizi"
+  ],
+  "jupiter": [
+   "Jüpiter",
+   "turuncu"
+  ],
+  "saturn": [
+   "Satürn",
+   "sari"
+  ],
+  "uranus": [
+   "Uranüs",
+   "turkuaz",
+   0,
+   125
+  ],
+  "neptun": [
+   "Neptün",
+   "lacivert",
+   0,
+   125
+  ],
+  "tir": [
+   "Tir tir tir!",
+   "turkuaz"
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Vın vın vın, roket uçuyor!",
+    "Pıtır uzayda geziyor!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "vin",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Bir, iki, Merkür ve Venüs,",
+    "Güneş'e en yakınlar!",
+    "Ateş gibi, çok sıcaklar,",
+    "Pıtır terledi, of of!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1a",
+    "k1c"
+   ],
+   "yazi": [
+    [
+     [
+      2,
+      "merkur",
+      330,
+      690
+     ],
+     [
+      4,
+      "venus",
+      735,
+      725
+     ]
+    ],
+    null,
+    null,
+    null
+   ],
+   "efekt": [
+    "duz",
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Üç, Dünya, bizim evimiz,",
+    "Mavi, yeşil, çok güzel!",
+    "Dört, Mars, kırmızı gezegen,",
+    "Pıtır ona selam der!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2c",
+    "k2d"
+   ],
+   "yazi": [
+    [
+     [
+      1,
+      "dunya"
+     ]
+    ],
+    null,
+    [
+     [
+      1,
+      "mars"
+     ]
+    ],
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Vın vın vın, roket uçuyor!",
+    "Pıtır uzayda geziyor!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "vin",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Beş, Jüpiter, en büyüğü,",
+    "Kocaman bir dev gibi!",
+    "Altı, Satürn, halkası var,",
+    "Pıtır halkada kayar!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3c",
+    "k3d"
+   ],
+   "yazi": [
+    [
+     [
+      1,
+      "jupiter"
+     ]
+    ],
+    null,
+    [
+     [
+      1,
+      "saturn"
+     ]
+    ],
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "Uranüs ve Neptün uzak,",
+    "Buz gibi, çok soğuklar!",
+    "Tir tir tir, Pıtır üşüdü,",
+    "Haydi eve dönelim!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4b",
+    "k4c",
+    "k2a"
+   ],
+   "yazi": [
+    [
+     [
+      0,
+      "uranus",
+      1005,
+      850
+     ],
+     [
+      2,
+      "neptun",
+      1608,
+      850
+     ]
+    ],
+    null,
+    "tir",
+    null
+   ],
+   "efekt": [
+    "duz",
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Vın vın vın, roket uçuyor!",
+    "Pıtır uzayda geziyor!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "vin",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Sekiz gezegen saydık!",
+    "Hoşça kalın, gezegenler!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "son",
+    "veda"
+   ],
+   "yazi": [
+    null,
+    null
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Sıra doğru: Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs, Neptün; adlar söylenirken ekranda belirir."
+}

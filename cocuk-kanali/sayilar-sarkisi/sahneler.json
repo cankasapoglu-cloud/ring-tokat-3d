@@ -1,0 +1,94 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı MiniMax için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "sayilar-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears no clothes or accessories. If a second reference image is given, the garden meadow with the white picket fence and the big wooden abacus look exactly as in reference image 2. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A sunny green garden meadow with a big round tree, colorful flowers along a white picket fence and a blue sky with fluffy clouds. In the middle stands a big colorful wooden abacus with rows of round beads in red, blue, yellow and green (plain beads without any markings). The orange kitten stands next to the abacus pointing one paw up in the air like a little teacher, mouth open in an excited happy smile.",
+   "video": "The kitten bounces on his feet and waves his raised paw in rhythm as if counting, smiling; the flowers sway in the breeze. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Medium shot: the orange kitten slides colorful round beads along a row of the big wooden abacus with one paw, looking at the viewer with a big happy smile. The sunny garden is in the background.",
+   "video": "The kitten slides the beads along the abacus row one by one with his paw, nodding his head with each bead, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "On a red-and-white checkered picnic blanket in the sunny garden lie exactly three big shiny red apples in a neat row, evenly spaced and clearly separate from each other. The orange kitten kneels behind them and points at the first apple with one paw, counting. There are exactly 3 apples in the picture, no more and no fewer, and no other fruit.",
+   "video": "The kitten points his paw at the first apple, then the second, then the third, nodding with each one. The three apples stay in place. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "The orange kitten sits on the red-and-white checkered picnic blanket in the garden and happily munches a big red apple held in both paws, cheeks full, brown eyes sparkling; a bite is missing from the apple.",
+   "video": "The kitten chews with full cheeks, takes another bite of the apple and chews happily. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "On the red-and-white checkered picnic blanket lie exactly three eaten apple cores in a neat row. Behind them sits the orange kitten with a round full belly, both paws resting on his tummy, looking down at the cores with a funny surprised smile. There are exactly 3 apple cores and no whole apples.",
+   "video": "The kitten looks at the three apple cores, pats his round tummy with both paws and giggles. The apple cores stay in place. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1d",
+   "prompt": "The orange kitten lies on his back on the red-and-white checkered picnic blanket in the sunny garden, his round full tummy up, patting it with one paw, with a satisfied happy smile, his big round brown eyes open.",
+   "video": "The kitten pats his round tummy slowly and sighs happily, wiggling his feet. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "Exactly six round balloons float up into the blue sky above the garden, each a different color: one red, one blue, one yellow, one green, one orange and one purple, each with a thin white string dangling. Below on the grass the orange kitten jumps and stretches both paws up toward them. There are exactly 6 balloons, clearly separate from each other.",
+   "video": "The six balloons drift slowly upward and sway in the breeze, the kitten jumps and reaches up for the strings. The number of balloons stays the same. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "The orange kitten stands on the grass proudly holding the strings of exactly six round balloons in his paws: one red, one blue, one yellow, one green, one orange and one purple balloon floating in a bunch above his head. A big proud smile. There are exactly 6 balloons.",
+   "video": "The kitten holds the strings tight, the six balloons bob and sway above him and he bounces proudly. The number of balloons stays the same. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "The orange kitten floats in the air high above the green garden, lifted by a bunch of exactly six colorful balloons (red, blue, yellow, green, orange and purple) whose strings he holds with both paws, his legs dangling, laughing with surprise and joy. Blue sky, fluffy clouds, the garden and the big tree far below.",
+   "video": "The kitten drifts gently upward and sideways under the six balloons, his legs kicking happily, clouds drifting by. The number of balloons stays the same. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "A deep-blue night sky above a dark grassy hill: exactly nine big golden five-pointed stars shine in the sky, arranged in three neat rows of three, evenly spaced, each glowing softly. No moon and no characters. There are exactly 9 stars and no other stars or dots in the sky.",
+   "video": "The nine golden stars twinkle and glow softly, pulsing gently in brightness. Nothing else moves. Static camera. No new stars, characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "Night: the orange kitten sits on top of a grassy hill, seen from the side, looking up at the deep-blue sky with wonder, his big round brown eyes reflecting golden starlight, mouth slightly open in awe. A few big golden five-pointed stars glow above him.",
+   "video": "The kitten gazes up at the sky, his head moving slowly as he looks from star to star, his tail swaying gently. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "Close-up in the deep-blue night sky: one big cute golden five-pointed star with a friendly little face winks one eye and smiles, surrounded by a soft glow and tiny sparkles.",
+   "video": "The golden star winks one eye, smiles and glows brighter and softer in a gentle pulse, tiny sparkles twinkle around it. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "In the sunny garden, exactly ten flowers grow in one straight row in front of the white picket fence: single flowers on green stems, each with one big round bloom, in the colors red, yellow, pink, blue and purple repeating twice, evenly spaced and clearly separate. The orange kitten stands at the left end of the row looking at the flowers with delight. There are exactly 10 flowers, no more and no fewer.",
+   "video": "The ten flowers sway gently in the breeze; the kitten claps his paws in delight. The flowers stay in place and their number stays the same. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "The orange kitten walks along a row of single colorful flowers by the white picket fence, pointing at one flower with one paw as he counts them, concentrating with a happy smile. Close view with five of the flowers visible.",
+   "video": "The kitten points his paw at one flower after another, nodding with each one. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "The orange kitten jumps high in the air in the sunny garden with both paws up, cheering, mouth open in a huge joyful smile; colorful confetti and paper streamers fly all around him. The wooden abacus stands in the background.",
+   "video": "The kitten jumps up and down cheering with both paws up, confetti falls and swirls around him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten stands in the sunny garden next to the wooden abacus and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. Warm golden afternoon light.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

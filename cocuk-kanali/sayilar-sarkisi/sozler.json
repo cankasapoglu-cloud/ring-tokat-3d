@@ -1,0 +1,688 @@
+{
+ "baslik": "Sayılar Şarkısı (Pıtır Sayıyor: 1'den 10'a)",
+ "baslik_yazi": "Sayılar Şarkısı",
+ "baslik_karesi": "h1",
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "marching snare drum",
+  "playful counting chant feel"
+ ],
+ "yazilar": {
+  "e1": [
+   "1",
+   "kirmizi",
+   0,
+   120
+  ],
+  "e2": [
+   "2",
+   "mavi",
+   0,
+   120
+  ],
+  "e3": [
+   "3",
+   "turuncu",
+   0,
+   120
+  ],
+  "e4": [
+   "4",
+   "yesil",
+   0,
+   120
+  ],
+  "e5": [
+   "5",
+   "mor",
+   0,
+   120
+  ],
+  "e6": [
+   "6",
+   "pembe",
+   0,
+   120
+  ],
+  "e7": [
+   "7",
+   "turkuaz",
+   0,
+   120
+  ],
+  "e8": [
+   "8",
+   "kirmizi",
+   0,
+   120
+  ],
+  "e9": [
+   "9",
+   "mavi",
+   0,
+   120
+  ],
+  "e10": [
+   "10",
+   "turuncu",
+   0,
+   120
+  ],
+  "n1": [
+   "1",
+   "kirmizi",
+   0,
+   230
+  ],
+  "n2": [
+   "2",
+   "mavi",
+   0,
+   230
+  ],
+  "n3": [
+   "3",
+   "turuncu",
+   0,
+   230
+  ],
+  "n10": [
+   "10",
+   "turuncu",
+   0,
+   230
+  ],
+  "say": [
+   "Say say say!",
+   "renkli"
+  ],
+  "bay": [
+   "Bay bay!",
+   "mor"
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Say say say, haydi sayalım!",
+    "Pıtır'la birden ona dek!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "say",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Bir, iki, üç, elma saydım,",
+    "Pıtır üçünü yedi!",
+    "Bir, iki, üç, hepsi bitti,",
+    "Karnı doydu Pıtır'ın!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1c",
+    "k1d"
+   ],
+   "yazi": [
+    [
+     [
+      0,
+      "e1",
+      772,
+      850
+     ],
+     [
+      1,
+      "e2",
+      1113,
+      850
+     ],
+     [
+      2,
+      "e3",
+      1449,
+      850
+     ]
+    ],
+    null,
+    [
+     [
+      0,
+      "e1",
+      772,
+      1000
+     ],
+     [
+      1,
+      "e2",
+      1005,
+      1000
+     ],
+     [
+      2,
+      "e3",
+      1237,
+      1000
+     ]
+    ],
+    null
+   ],
+   "efekt": [
+    "kare",
+    null,
+    "kare",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Dört, beş, altı, balon uçtu,",
+    "Pıtır hepsini tuttu!",
+    "Dört, beş, altı, renkli balon,",
+    "Pıtır uçtu havaya!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2a",
+    "k2c"
+   ],
+   "yazi": [
+    [
+     [
+      -1,
+      "e1",
+      426,
+      158
+     ],
+     [
+      -1,
+      "e2",
+      642,
+      102
+     ],
+     [
+      -1,
+      "e3",
+      838,
+      140
+     ],
+     [
+      0,
+      "e4",
+      1034,
+      210
+     ],
+     [
+      1,
+      "e5",
+      1227,
+      123
+     ],
+     [
+      2,
+      "e6",
+      1443,
+      200
+     ]
+    ],
+    null,
+    [
+     [
+      -1,
+      "e1",
+      426,
+      158
+     ],
+     [
+      -1,
+      "e2",
+      642,
+      102
+     ],
+     [
+      -1,
+      "e3",
+      838,
+      140
+     ],
+     [
+      0,
+      "e4",
+      1034,
+      210
+     ],
+     [
+      1,
+      "e5",
+      1227,
+      123
+     ],
+     [
+      2,
+      "e6",
+      1443,
+      200
+     ]
+    ],
+    null
+   ],
+   "efekt": [
+    "kare",
+    null,
+    "kare",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Say say say, haydi sayalım!",
+    "Pıtır'la birden ona dek!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "say",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Yedi, sekiz, dokuz yıldız,",
+    "Pıtır göğe bakıyor!",
+    "Yedi, sekiz, dokuz, parlar,",
+    "Göz kırpar bize yıldız!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3a",
+    "k3c"
+   ],
+   "yazi": [
+    [
+     [
+      -1,
+      "e1",
+      980,
+      162
+     ],
+     [
+      -1,
+      "e2",
+      1266,
+      162
+     ],
+     [
+      -1,
+      "e3",
+      1550,
+      162
+     ],
+     [
+      -1,
+      "e4",
+      980,
+      416
+     ],
+     [
+      -1,
+      "e5",
+      1266,
+      416
+     ],
+     [
+      -1,
+      "e6",
+      1550,
+      416
+     ],
+     [
+      0,
+      "e7",
+      980,
+      657
+     ],
+     [
+      1,
+      "e8",
+      1266,
+      657
+     ],
+     [
+      2,
+      "e9",
+      1550,
+      657
+     ]
+    ],
+    null,
+    [
+     [
+      -1,
+      "e1",
+      980,
+      162
+     ],
+     [
+      -1,
+      "e2",
+      1266,
+      162
+     ],
+     [
+      -1,
+      "e3",
+      1550,
+      162
+     ],
+     [
+      -1,
+      "e4",
+      980,
+      416
+     ],
+     [
+      -1,
+      "e5",
+      1266,
+      416
+     ],
+     [
+      -1,
+      "e6",
+      1550,
+      416
+     ],
+     [
+      0,
+      "e7",
+      980,
+      657
+     ],
+     [
+      1,
+      "e8",
+      1266,
+      657
+     ],
+     [
+      2,
+      "e9",
+      1550,
+      657
+     ]
+    ],
+    null
+   ],
+   "efekt": [
+    "kare",
+    null,
+    "duz",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "On çiçek açtı bahçede,",
+    "Pıtır saydı hepsini!",
+    "Birden ona kadar saydık,",
+    "Aferin, bravo bize!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4a",
+    "h2",
+    "k4c"
+   ],
+   "yazi": [
+    [
+     [
+      0,
+      "n10",
+      1000,
+      190
+     ]
+    ],
+    [
+     [
+      0.04,
+      "e1",
+      453,
+      860
+     ],
+     [
+      0.125,
+      "e2",
+      596,
+      860
+     ],
+     [
+      0.21,
+      "e3",
+      740,
+      860
+     ],
+     [
+      0.295,
+      "e4",
+      887,
+      860
+     ],
+     [
+      0.38,
+      "e5",
+      1032,
+      860
+     ],
+     [
+      0.465,
+      "e6",
+      1181,
+      860
+     ],
+     [
+      0.55,
+      "e7",
+      1322,
+      860
+     ],
+     [
+      0.635,
+      "e8",
+      1464,
+      860
+     ],
+     [
+      0.72,
+      "e9",
+      1602,
+      860
+     ],
+     [
+      0.805,
+      "e10",
+      1745,
+      860
+     ]
+    ],
+    [
+     [
+      0.0,
+      "e1",
+      186,
+      985
+     ],
+     [
+      0.075,
+      "e2",
+      358,
+      985
+     ],
+     [
+      0.15,
+      "e3",
+      530,
+      985
+     ],
+     [
+      0.225,
+      "e4",
+      702,
+      985
+     ],
+     [
+      0.3,
+      "e5",
+      874,
+      985
+     ],
+     [
+      0.375,
+      "e6",
+      1046,
+      985
+     ],
+     [
+      0.45,
+      "e7",
+      1218,
+      985
+     ],
+     [
+      0.525,
+      "e8",
+      1390,
+      985
+     ],
+     [
+      0.6,
+      "e9",
+      1562,
+      985
+     ],
+     [
+      0.675,
+      "e10",
+      1734,
+      985
+     ]
+    ],
+    null
+   ],
+   "efekt": [
+    "kare",
+    "duz",
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Say say say, haydi sayalım!",
+    "Pıtır'la birden ona dek!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "say",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Bir, iki, üç, yaşasın!",
+    "Hoşça kalın, bay bay!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "k4c",
+    "veda"
+   ],
+   "yazi": [
+    [
+     [
+      0,
+      "n1",
+      560,
+      900
+     ],
+     [
+      1,
+      "n2",
+      960,
+      900
+     ],
+     [
+      2,
+      "n3",
+      1360,
+      900
+     ]
+    ],
+    "bay"
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Rakamlar sayı söylenirken ekranda belirir (1-2-3 elma, 4-5-6 balon, 7-8-9 yıldız, 10 çiçek). Rakamlar sayılan nesnelerin üstünde belirir: 'efekt' alanında 'kare' = o satırda duran kare, 'duz' = klip yakınlaştırmasız kullanılır."
+}

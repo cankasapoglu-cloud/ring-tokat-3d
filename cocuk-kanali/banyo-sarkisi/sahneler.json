@@ -1,0 +1,94 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı MiniMax için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "banyo-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears no clothes or accessories. If a second reference image is given, the bathroom, the white bathtub with the golden faucet, the yellow rubber duck and the blue towel look exactly as in reference image 2. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A bright, cheerful children's bathroom with light-blue tiled walls and a round window with sunlight. In the middle stands a white rounded bathtub with a golden faucet, filled with warm water and fluffy white foam; a yellow rubber duck sits on the tub edge, a fluffy blue towel hangs on a hook on the wall, a blue bath mat lies in front of the tub. The orange kitten stands on a small wooden step stool next to the bathtub with both paws raised high in the air, excited, mouth open in a big happy smile. A few soap bubbles float in the air.",
+   "video": "The kitten bounces happily on the stool with both paws raised, soap bubbles drift slowly upward, the foam in the tub wobbles gently. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Medium shot of the bathtub: the orange kitten sits in the bathtub up to his chest in fluffy white foam and splashes the water with both front paws, water droplets and small foam flakes flying in the air, mouth open laughing. The yellow rubber duck floats next to him.",
+   "video": "The kitten splashes the water up and down with both paws in rhythm, droplets fly, the foam bounces and the rubber duck bobs on the water. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "Close view of the golden faucet of the bathtub with a strong stream of clear water pouring into the tub, the water surface rippling and the first bubbles forming; the tub is half full with clear water and has no foam yet. The orange kitten stands outside the tub, peeking over the tub edge with both paws on the rim, watching the water with wide curious eyes and a smile.",
+   "video": "Water streams steadily from the faucet into the tub, the water surface ripples and small bubbles appear; the kitten's eyes follow the water and his ears twitch. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "The orange kitten climbs into the bathtub from the wooden step stool: he sits on the tub edge with his hind legs dangling into the water and dips one front paw into the water, smiling with excitement. The tub is full of clear warm water with a little foam; the yellow rubber duck floats nearby.",
+   "video": "The kitten swings his legs in the water and pats the water surface with one paw, making small splashes, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "The orange kitten lies back relaxed in the bathtub, up to his chest in warm water with a little foam, both arms resting on the tub edge, his big round brown eyes open and sparkling, a wide content smile. Thin wisps of warm steam rise from the water. Cozy warm light.",
+   "video": "The kitten sighs happily and wiggles gently in the warm water, thin steam rises slowly, the water ripples softly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "The bathtub is overflowing with huge fluffy mountains of white foam; foam flakes and shiny soap bubbles float all around the bathroom. In the middle of the foam the orange kitten throws two pawfuls of foam into the air, laughing.",
+   "video": "The kitten tosses foam up into the air with both paws again and again, foam flakes fall slowly like snow and soap bubbles drift around. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "The orange kitten sits in the bathtub completely covered in white foam like a little snowman: a big foam hat on his head, a foam beard and foam on his shoulders; only his orange face with big round brown eyes, pink nose and the tips of his orange ears show. He looks surprised and delighted.",
+   "video": "The foam-covered kitten looks left and right in surprise, then giggles and shakes a little, and small foam flakes fall off him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "Extreme close-up of the orange kitten's face: a round blob of white foam sits on the tip of his pink nose and he looks at it cross-eyed with a funny, amused expression. Soft foam and bubbles in the blurred background.",
+   "video": "The kitten wiggles his nose, the blob of foam wobbles, he blows at it and giggles; soap bubbles drift in the background. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "Close view of the bath water surface with light foam: the yellow rubber duck with an orange beak floats in the foreground, small ripples around it. Behind it the orange kitten, up to his chin in the water, watches the duck with delighted wide eyes.",
+   "video": "The yellow rubber duck bobs and glides slowly across the water, ripples spread out, and the kitten's eyes follow the duck with a smile. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "The orange kitten sits in the foamy bathtub and holds the yellow rubber duck up in both front paws in front of his face, nose to beak, laughing happily.",
+   "video": "The kitten squeezes the rubber duck gently and moves it up and down in a playful dance, laughing. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "Side view of the bathtub like a little race track: the orange kitten paddles through the water with his front paws, and right beside him the yellow rubber duck glides along, both leaving small trails of waves and splashes behind them. The kitten looks at the duck with a playful, competitive grin.",
+   "video": "The kitten paddles forward with his front paws and the rubber duck glides along beside him, splashes and small waves trail behind them. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "The orange kitten stands on the blue bath mat in front of the bathtub, his fur wet and slicked down, drops of water dripping from his ears, his arms and the tip of his tail, a small puddle forming on the mat. He holds his arms slightly away from his body and smiles. The fluffy blue towel hangs on the wall hook behind him.",
+   "video": "Water drops fall from the kitten's wet fur and tail onto the mat one after another; he gives a little shiver and a small shake, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "The orange kitten is wrapped snugly from head to toe in the big fluffy blue towel like a little bundle; only his happy face with big round brown eyes and his two orange ears peek out. He hugs the towel tight with a cozy smile. Bathroom background softly blurred.",
+   "video": "The towel-wrapped kitten sways gently from side to side, snuggling into the towel with a cozy smile, his ears twitching. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "The orange kitten stands on the blue bath mat and rubs the top of his head with the fluffy blue towel held in both paws, drying himself; the fur on his body is already dry, extra fluffy and puffed up. He smiles happily with his brown eyes open.",
+   "video": "The kitten rubs his head and ears with the towel back and forth, his fluffy fur bouncing. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4d",
+   "prompt": "The orange kitten stands proudly in the middle of the tidy bathroom, perfectly clean, dry and extra fluffy, his fur shining; small white sparkles twinkle around him. He holds both paws on his hips with a proud, happy smile. The fluffy blue towel hangs neatly on the hook and the bathtub is behind him.",
+   "video": "The kitten stands proudly and turns a little to the left and to the right showing off his clean fluffy fur, sparkles twinkle around him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the clean, fluffy orange kitten stands in the bathroom doorway and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. The bright bathroom with the bathtub is softly visible behind him.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

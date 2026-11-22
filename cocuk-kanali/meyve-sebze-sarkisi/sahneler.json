@@ -1,0 +1,99 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı MiniMax için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "meyve-sebze-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears no clothes. If a second reference image is given, the market stalls, the round wicker basket and the white bunny look exactly as in reference image 2. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A sunny, colorful open-air farmers' market: wooden stalls with red-and-white striped awnings, wooden crates full of red apples, yellow bananas, red strawberries, big green striped watermelons, orange carrots with green tops and shiny green bell peppers. Behind one stall stands a small fluffy white bunny with pink inner ears and a little green apron, smiling. In the foreground the orange kitten walks into the market holding an empty round wicker basket in one paw, mid-hop with excitement, mouth open in a happy smile. Blue sky.",
+   "video": "The kitten hops forward happily with his basket swinging, the white bunny behind the stall waves, the awnings flutter slightly in the breeze. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Medium close shot in the market: the orange kitten proudly holds up his round wicker basket with both paws; the basket is half filled with a red apple, a yellow banana, strawberries, an orange carrot and a green bell pepper. Colorful market stalls softly blurred behind him.",
+   "video": "The kitten lifts the basket up and down proudly and bounces on his feet, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "At a market stall with a wooden crate full of shiny red apples: the orange kitten holds one big shiny red apple up in both paws and looks at it with wide delighted eyes, mouth open, about to take a bite. His wicker basket stands on the ground next to him.",
+   "video": "The kitten lifts the red apple toward his mouth, opens his mouth wide and licks his lips, looking at the apple with delight. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "Close-up of the orange kitten happily biting into a big red apple that he holds in both paws; a bite is missing from the apple showing its white flesh, tiny juice droplets fly, his cheeks are full and his brown eyes sparkle with delight.",
+   "video": "The kitten chews with full cheeks, takes another crunchy bite of the red apple and chews happily. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "At a market stall with big bunches of bright yellow bananas hanging above and lying in a crate: the orange kitten holds one half-peeled yellow banana in his paw, smiling at the viewer. His wicker basket with a red apple in it stands next to him.",
+   "video": "The kitten waves the half-peeled banana happily, takes a small bite and chews, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "Close view of a wooden crate overflowing with bright red strawberries with green leaves; soft wavy scent swirls and little sparkles rise from them. The orange kitten peeks over the edge of the crate from behind, eyes wide, nose lifted, sniffing.",
+   "video": "Soft scent swirls rise from the strawberries; the kitten sniffs the air with his nose twitching and his eyes widening in delight. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "Close-up: the orange kitten holds one big red strawberry in his paw right under his pink nose and sniffs it, smiling blissfully with rosy cheeks, his big round brown eyes open and dreamy. The market is softly blurred behind him.",
+   "video": "The kitten sniffs the strawberry, sighs happily and sways his head gently from side to side, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "A gigantic round green striped watermelon, taller than the orange kitten, stands on the ground in the market. The kitten hugs it with both arms stretched wide, barely reaching around it, looking up at it amazed with his mouth open.",
+   "video": "The kitten tries to hug and lift the huge watermelon, it wobbles a little, he looks up at it amazed and laughs. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2d",
+   "prompt": "On a wooden market table lies a row of juicy watermelon slices, bright red with black seeds and green rind, next to half a watermelon. The orange kitten stands behind the table holding one big triangular watermelon slice in both paws, grinning. There is no knife in the picture.",
+   "video": "The kitten lifts the watermelon slice, takes a juicy bite and chews happily, a drop of juice falls. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "At a market stall with a crate full of orange carrots with green leafy tops: the orange kitten bites the tip of an orange carrot that he holds in one paw, small crunchy bits flying, a cheerful face.",
+   "video": "The kitten bites the carrot with a crunch, chews fast with full cheeks and bites again. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "The orange kitten and the small fluffy white bunny with pink inner ears and a little green apron sit side by side on a wooden crate in the market, each holding an orange carrot and munching it, looking at each other and smiling.",
+   "video": "The kitten and the white bunny munch their carrots together, chewing quickly, and nod to each other happily. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "At a market stall with a crate full of shiny green bell peppers: the orange kitten holds one big shiny green bell pepper up high in one paw like a trophy, smiling proudly at the viewer.",
+   "video": "The kitten raises the green pepper up high and waves it proudly, bouncing lightly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3d",
+   "prompt": "The orange kitten stands in the market flexing both arms like a little strongman, showing small round arm muscles, with a proud confident grin. Next to him on a wooden crate lie an orange carrot and a green bell pepper. Beside him the small fluffy white bunny with pink inner ears and a little green apron cheers with both paws up.",
+   "video": "The kitten flexes his arms up and down proudly, the white bunny cheers and hops beside him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "Close view of an outdoor stone sink at the edge of the market with a brass tap: clear water streams from the tap into a metal colander full of red apples, strawberries, orange carrots and green bell peppers; water drops splash and sparkle in the sun. No characters in this picture.",
+   "video": "Water streams steadily from the tap over the fruit and vegetables in the colander, drops splash and sparkle and the water runs off. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "The orange kitten stands on a small wooden stool at the outdoor stone sink and washes a red apple with both paws under the stream of clear water from the brass tap, concentrating with a smile. The metal colander with fruit and vegetables stands beside him.",
+   "video": "The kitten turns the red apple under the running water and rubs it with both paws, water splashing lightly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "A wooden table in the sunny market covered with a white tablecloth; in the middle a big round platter with a rainbow of fresh food: red apple slices, yellow banana pieces, red strawberries, watermelon slices, orange carrot sticks and green pepper strips. The orange kitten and the small fluffy white bunny with pink inner ears and a little green apron sit behind the table side by side, both delighted, paws raised.",
+   "video": "The kitten and the white bunny cheer with their paws up, then each picks a piece of fruit from the platter and takes a bite. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten stands in the sunny market holding his wicker basket full of colorful fruit and vegetables in one paw and waves goodbye with the other paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. Beside him the small fluffy white bunny with pink inner ears and a little green apron waves too.",
+   "video": "The kitten and the white bunny wave goodbye with their raised paws, smiling, the kitten's brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

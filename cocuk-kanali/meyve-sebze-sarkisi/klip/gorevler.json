@@ -1,0 +1,48 @@
+{
+ "k1a": {
+  "prompt": "The kitten lifts the red apple toward his mouth, opens his mouth wide and licks his lips, looking at the apple with delight. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466051124547886",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466052772204798"
+ },
+ "k3c": {
+  "prompt": "The kitten raises the green pepper up high and waves it proudly, bouncing lightly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466053885522263",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466053201547558"
+ },
+ "k1c": {
+  "prompt": "The kitten waves the half-peeled banana happily, takes a small bite and chews, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466052492058990",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  },
+  "status": "done",
+  "file_id": "466055672324310"
+ },
+ "k2a": {
+  "prompt": "Soft scent swirls rise from the strawberries; the kitten sniffs the air with his nose twitching and his eyes widening in delight. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466054819541349",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ },
+ "h2": {
+  "prompt": "The kitten lifts the basket up and down proudly and bounces on his feet, smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+  "task_id": "466053885522277",
+  "resp": {
+   "status_code": 0,
+   "status_msg": "success"
+  }
+ }
+}

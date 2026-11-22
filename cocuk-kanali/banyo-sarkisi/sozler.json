@@ -1,0 +1,226 @@
+{
+ "baslik": "Banyo Şarkısı (Pıtır Banyoda)",
+ "baslik_yazi": "Banyo Şarkısı",
+ "baslik_karesi": "h1",
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "bubbly marimba",
+  "playful water-drop percussion"
+ ],
+ "yazilar": {
+  "sap": [
+   "Şap şup şap!",
+   "mavi"
+  ],
+  "sir": [
+   "Şır şır şır!",
+   "turkuaz"
+  ],
+  "pof": [
+   "Pof pof pof!",
+   "pembe"
+  ],
+  "vak": [
+   "Vak vak vak!",
+   "sari"
+  ],
+  "sip": [
+   "Şıp şıp şıp!",
+   "mavi"
+  ],
+  "bay": [
+   "Bay bay!",
+   "turuncu"
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Şap şup şap, banyo zamanı!",
+    "Haydi Pıtır, suya hop hop!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "sap",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Şır şır şır, küvet doluyor,",
+    "Pıtır suya giriyor!",
+    "Şır şır şır, sular sıcacık,",
+    "Ne güzel, oh ne rahat!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1a",
+    "k1c"
+   ],
+   "yazi": [
+    "sir",
+    null,
+    "sir",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Pof pof pof, köpük her yerde,",
+    "Pıtır bembeyaz oldu!",
+    "Pof pof pof, burnunda köpük,",
+    "Bizi güldürdü Pıtır!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2c",
+    "k2a"
+   ],
+   "yazi": [
+    "pof",
+    null,
+    "pof",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Şap şup şap, banyo zamanı!",
+    "Haydi Pıtır, suya hop hop!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "sap",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Vak vak vak, ördek yüzüyor,",
+    "Pıtır onunla oynar!",
+    "Vak vak vak, sarı ördeğim,",
+    "Pıtır'la yarışıyor!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3a",
+    "k3c"
+   ],
+   "yazi": [
+    "vak",
+    null,
+    "vak",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "Şıp şıp şıp, sular damlıyor,",
+    "Havluya sarıl Pıtır!",
+    "Şıp şıp şıp, damla kalmadı,",
+    "Mis gibi kokar Pıtır!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4b",
+    "k4c",
+    "k4d"
+   ],
+   "yazi": [
+    "sip",
+    null,
+    "sip",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Şap şup şap, banyo zamanı!",
+    "Haydi Pıtır, suya hop hop!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "sap",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Tertemiz oldu Pıtır!",
+    "Hoşça kalın, bay bay!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "k4d",
+    "veda"
+   ],
+   "yazi": [
+    null,
+    "bay"
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Sıra: su doluyor, köpük, ördek, kurulanma."
+}

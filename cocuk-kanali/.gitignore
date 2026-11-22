@@ -7,3 +7,10 @@ uzun-01/ses/mix.wav
 bes-kucuk-maymun/sarki_kisa.wav
 pitirin-ailesi/sarki_kisa.wav
 el-yikama/sarki_kisa.wav
+
+# üretim sırasındaki geçici dosyalar
+*-sarkisi/_*.log
+*-sarkisi/kare/_*.json
+*-sarkisi/klip/_*.json
+*.basliklar.txt
+*.yanit.bin

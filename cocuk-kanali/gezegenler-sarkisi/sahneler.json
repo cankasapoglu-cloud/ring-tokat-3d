@@ -1,0 +1,104 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı MiniMax için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "gezegenler-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears a small white astronaut suit; his head is bare or inside a clear glass bubble helmet so that his whole face is clearly visible. If a second reference image is given, the red-and-white toy rocket and the kitten's astronaut suit look exactly as in reference image 2. Friendly, colorful outer space with a deep-blue starry background. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A cute rounded red-and-white toy rocket with a big round glass window and three small fins flies through deep-blue outer space full of twinkling stars and soft colorful nebula clouds, a bright orange-yellow flame coming from its engine. Through the big round window the orange kitten is clearly visible, wearing a small white astronaut suit, waving one paw and smiling happily. The whole rocket is visible, flying diagonally upward to the right.",
+   "video": "The rocket flies steadily through space with its flame flickering, stars drift past slowly, the kitten waves from the window. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Inside the cozy rocket cockpit: the orange kitten in his small white astronaut suit (no helmet) sits in the pilot seat holding a round steering wheel with both paws, leaning forward with an excited happy face. Behind him a big round window shows deep-blue space with stars streaking past. Colorful round buttons and lights glow on the control panel (plain colored lights without any markings).",
+   "video": "The kitten steers the wheel a little to the left and to the right, bouncing in his seat with excitement, the control lights blink, stars streak past the window. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "In space, near the glowing edge of the huge bright Sun on the left side of the picture, float two planets side by side: the small grey rocky planet Mercury covered with craters, and next to it the larger pale-yellow cloudy planet Venus. The small red-and-white toy rocket flies past them. Warm orange light from the Sun. Only these two planets are in the picture.",
+   "video": "Mercury and Venus rotate slowly, the Sun's edge glows and flickers, the small rocket glides slowly past. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "The enormous bright Sun fills the left half of the picture, glowing yellow and orange with soft flames on its surface (no face). Very close to it are two planets: tiny grey Mercury nearest to the Sun and pale-yellow Venus a little farther out, each on a thin faint orbit line. Deep-blue space with stars on the right. Only these two planets are in the picture.",
+   "video": "The Sun's flames flicker and glow, Mercury and Venus move slowly along their orbit lines around the Sun. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "Inside the rocket cockpit, bathed in hot orange light coming through the round window: the orange kitten in his white astronaut suit (no helmet) is sweating, big sweat drops on his forehead, his tongue sticking out a little, fanning his face with one paw, with a funny overheated but cheerful expression, his brown eyes open.",
+   "video": "The kitten fans his face quickly with one paw, sweat drops roll down, he puffs out a breath, the orange light flickers. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "The beautiful planet Earth, big in the picture, floats in deep-blue starry space: blue oceans, green continents and swirling white clouds, softly glowing. The small red-and-white toy rocket flies beside it with the orange kitten visible in its round window. Unlike reference image 2, the background contains only stars and nebula clouds: the only other body is the Earth's small grey Moon; there are no other planets in the picture.",
+   "video": "The Earth rotates slowly, its white clouds drifting, the rocket glides slowly beside it. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "Inside the rocket: the orange kitten in his white astronaut suit (no helmet) presses both front paws against the big round window and looks out lovingly at the blue-and-green planet Earth that fills the view outside, his eyes sparkling, a warm smile. Seen from the side so that both his face and the Earth are visible. Unlike reference image 2, the background contains only stars: no other planets and no moons are visible, only the Earth.",
+   "video": "The kitten gazes at the Earth through the window, tilts his head and smiles warmly; the Earth rotates slowly outside. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "The red planet Mars, big in the picture, floats in deep-blue starry space: a rusty red-orange surface with craters, darker patches and a small white ice cap at the top. The small red-and-white toy rocket approaches it.",
+   "video": "Mars rotates slowly, the small rocket glides toward it with its flame flickering. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2d",
+   "prompt": "The orange kitten in his white astronaut suit with a clear glass bubble helmet (his whole face clearly visible) stands in the open hatch on top of the red-and-white toy rocket and waves one paw high in greeting toward the big red planet Mars in the background. Starry deep-blue space.",
+   "video": "The kitten waves his paw back and forth toward Mars, bouncing a little; Mars rotates slowly behind him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "The gigantic planet Jupiter fills most of the picture: wide horizontal stripes in cream, orange and brown and its big oval Great Red Spot. Next to it, tiny by comparison, flies the small red-and-white toy rocket. Deep-blue starry space.",
+   "video": "Jupiter's stripes drift slowly and the red spot swirls slowly, the tiny rocket glides past. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "Inside the rocket: the orange kitten in his white astronaut suit (no helmet) looks up through the big round window with his mouth wide open in amazement and both paws on his cheeks; outside, the enormous striped planet Jupiter with its red spot fills the whole window.",
+   "video": "The kitten stares up amazed, his eyes widening, and leans back a little; Jupiter's stripes drift slowly outside the window. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "The golden-yellow planet Saturn with its wide, bright, flat rings tilted around it floats big in the picture in deep-blue starry space; the rings shine in pale gold and cream bands. The small red-and-white toy rocket flies toward it. Unlike reference image 2, the background contains only stars and nebula clouds: Saturn is the only planet in the picture, with no other planets or moons.",
+   "video": "Saturn rotates slowly and its rings shimmer, the small rocket glides toward the rings. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3d",
+   "prompt": "The orange kitten in his white astronaut suit with a clear glass bubble helmet (his whole face clearly visible) slides along the wide shining ring of Saturn as if it were a giant playground slide, sitting with both arms up in the air and laughing; the golden planet Saturn is big behind him and the red-and-white toy rocket is parked on the ring farther back.",
+   "video": "The kitten slides along the shining ring with his arms up, laughing, sparkling ice dust spraying behind him. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "Far out in dark, cold deep space float two distant planets side by side: the pale cyan-blue planet Uranus with a thin faint ring around it tilted almost upright, and the deep royal-blue planet Neptune with a few white cloud streaks. The Sun is only a tiny bright star far away. The small red-and-white toy rocket flies toward them, very small. Only these two planets are in the picture.",
+   "video": "Uranus and Neptune rotate slowly, the tiny rocket glides slowly toward them, stars twinkle. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "Close view of the red-and-white toy rocket's big round window from outside in cold blue light: frost and ice crystals have formed around the edge of the glass and small sparkling ice crystals float in space around the rocket. Behind the frosty glass the orange kitten in his white astronaut suit looks out with wide eyes. The deep-blue planet Neptune glows in the background.",
+   "video": "Sparkling ice crystals drift slowly past the rocket, the frost on the window glitters, the kitten blinks and looks around behind the glass. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "Inside the rocket cockpit in cold blue light: the orange kitten in his white astronaut suit (no helmet) shivers with cold, wrapped in a red knitted scarf, hugging himself with both arms, with a funny shivering expression, a small cloud of breath in front of his mouth, his big round brown eyes open. Frost on the round window behind him. Through the frosty round window only dark space with a few stars and a faint deep-blue glow is visible: no planets are visible in the window.",
+   "video": "The kitten shivers and trembles, hugging himself, small breath clouds puff from his mouth. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "son",
+   "prompt": "Overview of the solar system in deep-blue starry space: the glowing Sun at the far left edge, and to its right exactly eight planets in one horizontal row in this order: small grey Mercury, pale-yellow Venus, blue-and-green Earth, red Mars, huge striped orange Jupiter with a red spot, golden Saturn with wide rings, pale cyan Uranus with a thin ring, and deep-blue Neptune. Each planet is clearly separate from the others. The small red-and-white toy rocket with the orange kitten in its window flies above the row. There are exactly 8 planets.",
+   "video": "The eight planets rotate slowly in place, the Sun glows, the small rocket flies slowly from left to right above the planets. No new planets, characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot of the big round window of the red-and-white toy rocket from outside: behind the glass the orange kitten in his white astronaut suit waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. Colorful planets and twinkling stars glow softly in the background.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}
