@@ -1,0 +1,40 @@
+YÜKLEME GÜNÜ: 22 Kasım'da hazırlandı (derleme). Sahibi henüz izlemedi; izleyip onaylamadan herkese açık yapılmaz.
+VİDEO: 12-cocuk-sarkilari-derlemesi.mp4   (14 dk 49 sn)
+Video dosyası depoda YOK (depo için fazla büyük). Bilgisayarda üretilir: cocuk-kanali/derleme-01 klasöründe 'python derle.py' ya da PowerShell'de '.\derle.ps1' (ffmpeg gerekir). Çıktı: cocuk-kanali/derleme-01/cikti/12-cocuk-sarkilari-derlemesi.mp4, 14 dk 49 sn, 1920x1080.
+KAPAK: 12-cocuk-sarkilari-derlemesi-kapak.jpg
+
+BAŞLIK
+Çocuk Şarkıları | 11 Şarkı Bir Arada, 15 Dakika | DuDeK Stüdyo
+
+AÇIKLAMA
+Pıtır'ın 11 şarkısı arka arkaya, tek videoda: otobüs, banyo, çiftlik, sayılar, el yıkama, meyve ve sebzeler, parmak ailesi, gezegenler, renkler, kedi ailesi ve beş küçük maymun.
+3-7 yaş için, yaklaşık 15 dakika.
+
+BÖLÜMLER
+0:00 Otobüs Şarkısı
+1:35 Banyo Şarkısı
+3:07 Ali Baba'nın Çiftliği
+4:43 Sayılar Şarkısı (1'den 10'a)
+6:15 El Yıkama Şarkısı
+7:16 Meyve ve Sebzeler Şarkısı
+8:48 Parmak Ailesi Şarkısı
+10:00 Gezegenler Şarkısı
+11:32 Renkler Şarkısı (Balonlar)
+12:10 Kedi Ailesi Şarkısı
+13:26 Beş Küçük Maymun
+
+DuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.
+Bu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.
+#DuDeKStüdyo #çocukşarkıları #bebekşarkıları
+
+ETİKETLER
+çocuk şarkıları, bebek şarkıları, çocuk şarkıları derlemesi, okul öncesi şarkılar, şarkılar bir arada, eğitici çocuk şarkıları, Türkçe çocuk şarkıları, çizgi film şarkıları, Pıtır, DuDeK Stüdyo
+
+OYNATMA LİSTESİ
+Pıtır ile Çocuk Şarkıları - Tüm Şarkılar (listenin en başına)
+
+AYARLAR
+- Kitle: Evet, çocuklara özel
+- Değiştirilmiş ya da yapay içerik sorusu: Evet
+- Önce "Özel" olarak yükle; baştan sona izlendikten sonra "Herkese açık" yap
+- Not: doğrulanmamış kanalda 15 dakikadan uzun video yüklenemez; bu video bilerek 14 dk 49 sn tutuldu.

@@ -1,0 +1,112 @@
+{
+ "01-el-yikama-sarkisi": {
+  "sure": 70.0,
+  "ilk_soz": 8.68,
+  "son_soz": 64.54,
+  "ilk_ses": 0.0,
+  "son_ses": 67.48,
+  "lufs": -14.1,
+  "ilk": "Ellerim kirlendi. Hadi yıkayalım.",
+  "son": "güle güle yaşasın."
+ },
+ "02-kedi-ailesi-sarkisi": {
+  "sure": 84.08,
+  "ilk_soz": 6.36,
+  "son_soz": 76.84,
+  "ilk_ses": 0.37,
+  "son_ses": 84.08,
+  "lufs": -14.3,
+  "ilk": "Bebek kedi zıp zıp",
+  "son": "bir aileyiz yaşasın."
+ },
+ "03-ali-babanin-ciftligi": {
+  "sure": 111.67,
+  "ilk_soz": 4.58,
+  "son_soz": 95.84,
+  "ilk_ses": 0.0,
+  "son_ses": 111.13,
+  "lufs": -14.3,
+  "ilk": "Ali Baba'nın bir çiftliği",
+  "son": "çiftliğinde Ali baba'nın."
+ },
+ "04-otobus-sarkisi": {
+  "sure": 95.46,
+  "ilk_soz": 4.16,
+  "son_soz": 91.18,
+  "ilk_ses": 0.49,
+  "son_ses": 94.04,
+  "lufs": -14.3,
+  "ilk": "Bin, bin, bin, otobüse",
+  "son": "güle, güle güle."
+ },
+ "05-bes-kucuk-maymun": {
+  "sure": 83.92,
+  "ilk_soz": 4.5,
+  "son_soz": 79.16,
+  "ilk_ses": 0.0,
+  "son_ses": 82.81,
+  "lufs": -14.9,
+  "ilk": "Beş küçük maymun yatakta",
+  "son": "uyudu mışıl mışıl."
+ },
+ "06-renkler-balon-sarkisi": {
+  "sure": 50.0,
+  "ilk_soz": 8.7,
+  "son_soz": 42.26,
+  "ilk_ses": 0.0,
+  "son_ses": 48.72,
+  "lufs": -14.2,
+  "ilk": "Kırmızı balon uçuyor, uçuyor,",
+  "son": "çocuklar. Uçuyor balonlar."
+ },
+ "07-parmak-ailesi-sarkisi": {
+  "sure": 80.0,
+  "ilk_soz": 8.54,
+  "son_soz": 77.42,
+  "ilk_ses": 0.0,
+  "son_ses": 78.18,
+  "lufs": -14.5,
+  "ilk": "Baba parmak, baba parmak,",
+  "son": "sallıyor. Hoşça kal."
+ },
+ "08-banyo-sarkisi": {
+  "sure": 95.46,
+  "ilk_soz": 4.58,
+  "son_soz": 91.38,
+  "ilk_ses": 0.48,
+  "son_ses": 94.46,
+  "lufs": -14.3,
+  "ilk": "Şap şup şap. Banyo",
+  "son": "kalın. Bay bay."
+ },
+ "09-meyve-ve-sebzeler-sarkisi": {
+  "sure": 95.46,
+  "ilk_soz": 4.14,
+  "son_soz": 91.38,
+  "ilk_ses": 0.48,
+  "son_ses": 94.62,
+  "lufs": -14.3,
+  "ilk": "Hop, hop, hop, pazara",
+  "son": "kalın. Bay bay."
+ },
+ "10-sayilar-sarkisi": {
+  "sure": 95.46,
+  "ilk_soz": 3.66,
+  "son_soz": 92.08,
+  "ilk_ses": 0.0,
+  "son_ses": 94.02,
+  "lufs": -14.3,
+  "ilk": "Say, say, say. Haydi",
+  "son": "kalın. Bay bay."
+ },
+ "11-gezegenler-sarkisi": {
+  "sure": 95.46,
+  "ilk_soz": 3.7,
+  "son_soz": 91.4,
+  "ilk_ses": 0.0,
+  "son_ses": 94.03,
+  "lufs": -14.3,
+  "ilk": "Vın, vın, vın. Roket",
+  "son": "Hoşça kalın gezegenler."
+ }
+}

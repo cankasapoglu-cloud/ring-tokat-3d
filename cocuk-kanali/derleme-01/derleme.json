@@ -1,0 +1,123 @@
+{
+ "cikti": "12-cocuk-sarkilari-derlemesi.mp4",
+ "not": "bas/bit: kaynak videodaki kesim noktaları (sn): ilk sözden 1,8 sn önce başlar, son sesten hemen sonra (en geç son sözden 3 sn sonra) biter. Ölçümler olcum.json içinde. Toplam süre bilerek 15 dakikanın altında tutuldu (doğrulanmamış kanal sınırı).",
+ "parcalar": [
+  {
+   "dosya": "acilis.mp4",
+   "yerel": true,
+   "bas": 0.0,
+   "bit": 3.48,
+   "ses_giris": 0.02,
+   "ses_cikis": 0.05,
+   "baslik": null
+  },
+  {
+   "dosya": "04-otobus-sarkisi.mp4",
+   "bas": 2.36,
+   "bit": 94.18,
+   "kazanc_db": 0.0,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "Otobüs Şarkısı"
+  },
+  {
+   "dosya": "08-banyo-sarkisi.mp4",
+   "bas": 2.3,
+   "bit": 94.36,
+   "kazanc_db": 0.0,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "Banyo Şarkısı"
+  },
+  {
+   "dosya": "03-ali-babanin-ciftligi.mp4",
+   "bas": 2.78,
+   "bit": 98.84,
+   "kazanc_db": 0.0,
+   "ses_giris": 0.3,
+   "ses_cikis": 1.2,
+   "baslik": "Ali Baba'nın Çiftliği"
+  },
+  {
+   "dosya": "10-sayilar-sarkisi.mp4",
+   "bas": 1.82,
+   "bit": 94.22,
+   "kazanc_db": 0.0,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "Sayılar Şarkısı (1'den 10'a)"
+  },
+  {
+   "dosya": "01-el-yikama-sarkisi.mp4",
+   "bas": 6.88,
+   "bit": 67.54,
+   "kazanc_db": -0.2,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "El Yıkama Şarkısı"
+  },
+  {
+   "dosya": "09-meyve-ve-sebzeler-sarkisi.mp4",
+   "bas": 2.32,
+   "bit": 94.36,
+   "kazanc_db": 0.0,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "Meyve ve Sebzeler Şarkısı"
+  },
+  {
+   "dosya": "07-parmak-ailesi-sarkisi.mp4",
+   "bas": 6.74,
+   "bit": 78.38,
+   "kazanc_db": 0.2,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "Parmak Ailesi Şarkısı"
+  },
+  {
+   "dosya": "11-gezegenler-sarkisi.mp4",
+   "bas": 1.88,
+   "bit": 94.23,
+   "kazanc_db": 0.0,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "Gezegenler Şarkısı"
+  },
+  {
+   "dosya": "06-renkler-balon-sarkisi.mp4",
+   "bas": 6.9,
+   "bit": 45.26,
+   "kazanc_db": -0.1,
+   "ses_giris": 0.3,
+   "ses_cikis": 1.2,
+   "baslik": "Renkler Şarkısı (Balonlar)"
+  },
+  {
+   "dosya": "02-kedi-ailesi-sarkisi.mp4",
+   "bas": 4.56,
+   "bit": 79.84,
+   "kazanc_db": 0.0,
+   "ses_giris": 0.3,
+   "ses_cikis": 1.2,
+   "baslik": "Kedi Ailesi Şarkısı"
+  },
+  {
+   "dosya": "05-bes-kucuk-maymun.mp4",
+   "bas": 2.7,
+   "bit": 82.16,
+   "kazanc_db": 0.6,
+   "ses_giris": 0.3,
+   "ses_cikis": 0.5,
+   "baslik": "Beş Küçük Maymun"
+  },
+  {
+   "dosya": "kapanis.mp4",
+   "yerel": true,
+   "bas": 0.0,
+   "bit": 3.5,
+   "ses_giris": 0.02,
+   "ses_cikis": 0.05,
+   "baslik": null
+  }
+ ]
+}

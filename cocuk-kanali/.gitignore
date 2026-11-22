@@ -14,3 +14,5 @@ el-yikama/sarki_kisa.wav
 *-sarkisi/klip/_*.json
 *.basliklar.txt
 *.yanit.bin
+derleme-*/cikti/
+derleme-*/gecici/

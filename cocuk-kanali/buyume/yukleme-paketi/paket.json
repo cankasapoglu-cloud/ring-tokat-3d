@@ -276,6 +276,32 @@
    "kitle": "cocuklara ozel",
    "yapay_icerik_sorusu": "evet",
    "ilk_gorunurluk": "ozel"
+  },
+  {
+   "sira": 12,
+   "dosya": "12-cocuk-sarkilari-derlemesi.mp4",
+   "dosya_notu": "Video dosyası depoda YOK (depo için fazla büyük). Bilgisayarda üretilir: cocuk-kanali/derleme-01 klasöründe 'python derle.py' ya da PowerShell'de '.\\derle.ps1' (ffmpeg gerekir). Çıktı: cocuk-kanali/derleme-01/cikti/12-cocuk-sarkilari-derlemesi.mp4, 14 dk 49 sn, 1920x1080.",
+   "kapak": "12-cocuk-sarkilari-derlemesi-kapak.jpg",
+   "baslik": "Çocuk Şarkıları | 11 Şarkı Bir Arada, 15 Dakika | DuDeK Stüdyo",
+   "aciklama": "Pıtır'ın 11 şarkısı arka arkaya, tek videoda: otobüs, banyo, çiftlik, sayılar, el yıkama, meyve ve sebzeler, parmak ailesi, gezegenler, renkler, kedi ailesi ve beş küçük maymun.\n3-7 yaş için, yaklaşık 15 dakika.\n\nBÖLÜMLER\n0:00 Otobüs Şarkısı\n1:35 Banyo Şarkısı\n3:07 Ali Baba'nın Çiftliği\n4:43 Sayılar Şarkısı (1'den 10'a)\n6:15 El Yıkama Şarkısı\n7:16 Meyve ve Sebzeler Şarkısı\n8:48 Parmak Ailesi Şarkısı\n10:00 Gezegenler Şarkısı\n11:32 Renkler Şarkısı (Balonlar)\n12:10 Kedi Ailesi Şarkısı\n13:26 Beş Küçük Maymun\n\nDuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.\nBu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.\n#DuDeKStüdyo #çocukşarkıları #bebekşarkıları",
+   "etiketler": [
+    "çocuk şarkıları",
+    "bebek şarkıları",
+    "çocuk şarkıları derlemesi",
+    "okul öncesi şarkılar",
+    "şarkılar bir arada",
+    "eğitici çocuk şarkıları",
+    "Türkçe çocuk şarkıları",
+    "çizgi film şarkıları",
+    "Pıtır",
+    "DuDeK Stüdyo"
+   ],
+   "oynatma_listesi": "Pıtır ile Çocuk Şarkıları - Tüm Şarkılar",
+   "gun": "22 Kasım'da hazırlandı (derleme); sahibi henüz izlemedi",
+   "sure_sn": 889.0,
+   "kitle": "cocuklara ozel",
+   "yapay_icerik_sorusu": "evet",
+   "ilk_gorunurluk": "ozel"
   }
  ],
  "ilk_gun": [
@@ -283,5 +309,78 @@
   "02-kedi-ailesi-sarkisi.mp4",
   "05-bes-kucuk-maymun.mp4"
  ],
- "not": "21 Kasım gecesi kanal sahibinin kararı: Ali Baba ertesi güne kaldı; El Yıkama dinlendi, sözler anlaşılıyor. 22 Kasım: sahibi yedi videonun hepsinin yüklenmesini istedi. Balon Şarkısı'nın sözleri yazıya dökülerek doğrulandı. 22 Kasım (ikinci tur): sahibinin isteğiyle dört yeni video eklendi (08 Banyo, 09 Meyve ve Sebzeler, 10 Sayılar, 11 Gezegenler); şarkıların sözleri yazıya dökülerek denetlendi, dördünde de eksik ya da yanlış sözcük çıkmadı."
+ "not": "21 Kasım gecesi kanal sahibinin kararı: Ali Baba ertesi güne kaldı; El Yıkama dinlendi, sözler anlaşılıyor. 22 Kasım: sahibi yedi videonun hepsinin yüklenmesini istedi. Balon Şarkısı'nın sözleri yazıya dökülerek doğrulandı. 22 Kasım (ikinci tur): sahibinin isteğiyle dört yeni video eklendi (08 Banyo, 09 Meyve ve Sebzeler, 10 Sayılar, 11 Gezegenler); şarkıların sözleri yazıya dökülerek denetlendi, dördünde de eksik ya da yanlış sözcük çıkmadı.",
+ "oynatma_listeleri": [
+  {
+   "ad": "Pıtır ile Çocuk Şarkıları - Tüm Şarkılar",
+   "durum": "var",
+   "sira": [
+    12,
+    4,
+    8,
+    3,
+    10,
+    1,
+    9,
+    7,
+    11,
+    6,
+    2,
+    5
+   ],
+   "not": "Derleme yüklenince en başa; ardından şarkılar derlemedeki sırayla."
+  },
+  {
+   "ad": "Eğitici Çocuk Şarkıları | Sayılar, Renkler, Gezegenler",
+   "durum": "yeni",
+   "sira": [
+    10,
+    6,
+    11,
+    9,
+    5
+   ],
+   "aciklama": "Sayılar, renkler, gezegenler, meyve ve sebzeler: Pıtır ile öğreten şarkılar. 3-7 yaş."
+  },
+  {
+   "ad": "Temizlik ve Sağlık Şarkıları | El Yıkama, Banyo",
+   "durum": "yeni",
+   "sira": [
+    1,
+    8,
+    9
+   ],
+   "aciklama": "El yıkama, banyo ve sağlıklı beslenme şarkıları. 3-7 yaş."
+  },
+  {
+   "ad": "Hayvanlar ve Aile Şarkıları | Çiftlik, Kedi Ailesi, Parmak Ailesi",
+   "durum": "yeni",
+   "sira": [
+    3,
+    2,
+    7,
+    5
+   ],
+   "aciklama": "Çiftlik hayvanları, kedi ailesi, parmak ailesi ve beş küçük maymun. 3-7 yaş."
+  }
+ ],
+ "yukleme_durumu": {
+  "tarih": "22 Kasım 2026 akşamı",
+  "herkese_acik": {
+   "1": "CULmUxUFnhQ",
+   "2": "0cgPqDe7XTI",
+   "3": "mfNJFZHuTrA",
+   "4": "Hu3GtNGdZE8",
+   "5": "ipkwWwYSF9A",
+   "6": "ErPb3i67BFw",
+   "7": "d0v3eMRWxCk",
+   "8": "DDOxF1mXJt0",
+   "9": "K0qqKgsYjsw",
+   "10": "FDvIbBFEIS4"
+  },
+  "bekleyen": {
+   "11": "Gezegenler: günlük yükleme sınırı yüzünden yüklenemedi (yükleme oturumunun gördüğü uyarı); sahibi herkese açık yüklenmesini onayladı",
+   "12": "Derleme: bilgisayarda üretilecek, sahibi izleyince yüklenecek"
+  }
+ }
 }
