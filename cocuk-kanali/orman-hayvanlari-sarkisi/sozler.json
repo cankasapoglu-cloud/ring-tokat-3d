@@ -105,12 +105,6 @@
     null,
     "hu",
     null
-   ],
-   "efekt": [
-    null,
-    "kare+",
-    null,
-    "kare+"
    ]
   },
   {
@@ -139,12 +133,6 @@
     null,
     "tik",
     null
-   ],
-   "efekt": [
-    null,
-    "kare+",
-    null,
-    "kare+"
    ]
   },
   {
@@ -198,12 +186,6 @@
     null,
     "cit",
     null
-   ],
-   "efekt": [
-    null,
-    "kare+",
-    null,
-    "kare+"
    ]
   },
   {
@@ -232,12 +214,6 @@
     null,
     "ham",
     null
-   ],
-   "efekt": [
-    null,
-    "kare+",
-    null,
-    "kare+"
    ]
   },
   {
@@ -280,12 +256,8 @@
    "yazi": [
     null,
     "bay"
-   ],
-   "efekt": [
-    "kare+",
-    null
    ]
   }
  ],
- "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Her kıtada 1. ve 3. satır aynı klibi kullanır, 2. ve 4. satır yavaş yakınlaşan duran karedir (\"kare+\"): 7 klip, 16 kare."
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Her kıtada 1. ve 3. satır aynı klibi kullanır. Sahibinin isteğiyle bütün sahneler hareketli (16 klip); ilk sürümde 2. ve 4. satırlar duran kareydi."
 }
