@@ -402,6 +402,31 @@
    "kitle": "cocuklara ozel",
    "yapay_icerik_sorusu": "evet",
    "ilk_gorunurluk": "ozel"
+  },
+  {
+   "sira": 17,
+   "dosya": "17-orman-hayvanlari-sarkisi.mp4",
+   "kapak": "17-orman-hayvanlari-sarkisi-kapak.jpg",
+   "baslik": "Orman Hayvanları Şarkısı | Baykuş, Sincap, Ayı | DuDeK Stüdyo",
+   "aciklama": "Pıtır ormanda geziyor ve dört hayvanla tanışıyor: baykuş, ağaçkakan, sincap ve ayıcık. Her hayvanın adı söylenirken ekranda yazıyla da görünür.\n3-7 yaş için, 1 dakika 35 saniye; \"hu hu\", \"tık tık\", \"çıt çıt\", \"ham ham\" seslerine birlikte eşlik edilebilir.\n\nŞARKI SÖZLERİ\n\nBak bak bak, ormanda kim var?\nPıtır geziyor, haydi gel!\n\nHu hu hu, baykuş ötüyor,\nKocaman gözleri var!\nHu hu hu, dalda oturur,\nGece olunca uçar!\n\nTık tık tık, bak ağaçkakan,\nKırmızı şapkası var!\nTık tık tık, ağaca vurur,\nGövdeye yuva oyar!\n\nBak bak bak, ormanda kim var?\nPıtır geziyor, haydi gel!\n\nÇıt çıt çıt, sincap fındık yer,\nKuyruğu pofuduk, bak!\nÇıt çıt çıt, kabuğu kırar,\nKışa palamut saklar!\n\nHam ham ham, ayıcık bal yer,\nTüyleri kahverengi!\nHam ham ham, balı çok tatlı,\nPıtır'la dost oldular!\n\nBak bak bak, ormanda kim var?\nPıtır geziyor, haydi gel!\n\nOrmanda çok dostumuz var!\nHoşça kalın, bay bay!\n\nDuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.\nBu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.\n#DuDeKStüdyo #çocukşarkıları #bebekşarkıları",
+   "etiketler": [
+    "orman hayvanları şarkısı",
+    "orman hayvanları",
+    "hayvanlar şarkısı",
+    "baykuş şarkısı",
+    "sincap şarkısı",
+    "ağaçkakan",
+    "ayı şarkısı",
+    "hayvanları öğreniyorum",
+    "çocuk şarkıları",
+    "DuDeK Stüdyo"
+   ],
+   "oynatma_listesi": "Pıtır ile Çocuk Şarkıları - Tüm Şarkılar",
+   "gun": "25 Kasım (sahibinin takvimi)",
+   "sure_sn": 95.5,
+   "kitle": "cocuklara ozel",
+   "yapay_icerik_sorusu": "evet",
+   "ilk_gorunurluk": "ozel"
   }
  ],
  "ilk_gun": [
@@ -422,6 +447,7 @@
     8,
     14,
     3,
+    17,
     10,
     1,
     16,
@@ -463,11 +489,12 @@
    "durum": "yeni",
    "sira": [
     3,
+    17,
     2,
     7,
     5
    ],
-   "aciklama": "Çiftlik hayvanları, kedi ailesi, parmak ailesi ve beş küçük maymun. 3-7 yaş."
+   "aciklama": "Çiftlik ve orman hayvanları, kedi ailesi, parmak ailesi ve beş küçük maymun. 3-7 yaş."
   },
   {
    "ad": "Taşıtlar Şarkıları | Otobüs, İtfaiye, Tren",
@@ -492,15 +519,31 @@
    "7": "d0v3eMRWxCk",
    "8": "DDOxF1mXJt0",
    "9": "K0qqKgsYjsw",
-   "10": "FDvIbBFEIS4"
+   "10": "FDvIbBFEIS4",
+   "11": "23 Kasım'da yüklendi (kanal sayfasında görüldü)"
   },
   "bekleyen": {
-   "11": "Gezegenler: günlük yükleme sınırı yüzünden yüklenemedi (yükleme oturumunun gördüğü uyarı); sahibi herkese açık yüklenmesini onayladı",
    "12": "Derleme: bilgisayarda üretilecek, sahibi izleyince yüklenecek",
    "13": "İtfaiye",
    "14": "Diş Fırçalama",
    "15": "Tren",
-   "16": "Günaydın"
+   "16": "Günaydın",
+   "17": "Orman Hayvanları"
   }
+ },
+ "yukleme_takvimi": {
+  "kaynak": "sahibinin 23 Kasım talimatı: bugün 2, yarın 2 video; 3 günlük video hazır olsun",
+  "23 Kasım": [
+   11,
+   13
+  ],
+  "24 Kasım": [
+   14,
+   15
+  ],
+  "25 Kasım": [
+   16,
+   17
+  ]
  }
 }

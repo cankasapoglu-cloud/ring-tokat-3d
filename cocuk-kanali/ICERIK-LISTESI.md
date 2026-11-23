@@ -35,6 +35,7 @@ Mr = milyar, M = milyon. 13 ve 14. satırlardaki izlenme bilgisi genel bilgidir,
 | 23 | **Diş Fırçalama Şarkısı** | El Yıkama ve Banyo ile aynı küme (Temizlik ve Sağlık) | Hazır |
 | 24 | **Tren Şarkısı** (Makinist Pıtır) | Otobüs ve İtfaiye ile Taşıtlar kümesi | Hazır |
 | 25 | **Günaydın Şarkısı** (Pıtır'ın sabahı) | Günlük rutin; ebeveynin sabah açacağı video | Hazır |
+| 26 | **Orman Hayvanları Şarkısı** (baykuş, ağaçkakan, sincap, ayıcık) | "orman hayvanları şarkısı" çok izlenen bir arama; Ali Baba ile Hayvanlar kümesi | Hazır |
 
 Araştırmanın ayrıntısı: `buyume/arastirma-yeni-konular/OKU.md`.
 
