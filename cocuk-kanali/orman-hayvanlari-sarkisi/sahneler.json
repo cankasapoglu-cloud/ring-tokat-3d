@@ -1,0 +1,94 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı klip için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "orman-hayvanlari-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears a small green explorer hat and has a pair of red binoculars hanging around his neck. If a second reference image is given, the sunny cartoon forest and the kitten's green explorer hat and red binoculars look exactly as in reference image 2. All animals are cute, round, friendly toy-like cartoon animals; nothing in the pictures is scary. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A sunny, friendly cartoon forest: tall round green trees, a winding earth path, red-and-white mushrooms, ferns and colorful flowers, golden sunbeams falling between the trees. The orange kitten walks along the path toward the viewer in mid-step, one paw raised and pointing ahead, wearing a small green explorer hat and red binoculars around his neck, mouth open in an excited happy smile.",
+   "video": "The kitten walks toward the camera along the forest path with bouncy steps, always facing the viewer with his happy face visible the whole time, pointing ahead with one paw and looking up at the trees with curiosity; he never turns around and never shows his back. The sunbeams shimmer and the leaves sway gently. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Close shot in the forest: the orange kitten in his green explorer hat peeks out from behind a big green fern, holding his red binoculars in both paws just below his chin, his big brown eyes wide with curiosity as he looks up into the trees, smiling. Sunny green forest softly blurred behind.",
+   "video": "The kitten lifts the red binoculars to his eyes, looks around, then lowers them again and smiles with excitement, his ears twitching. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "On a thick branch of a big tree sits a cute round brown owl with huge round yellow eyes, small ear tufts and a small orange beak, its beak open as it hoots. Green leaves around, soft daylight. Below the branch, small at the bottom of the picture, the orange kitten in his explorer hat looks up at the owl with delight.",
+   "video": "The owl hoots with its beak opening and closing, bobs its head and blinks its big round eyes; the kitten below looks up and smiles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "Close-up: the cute brown owl's face fills the left half of the picture, with two huge round yellow eyes with big black pupils, a small orange beak and soft feathers. On the right, the orange kitten in his explorer hat makes circles around his own eyes with his paws like glasses, imitating the owl's big eyes, giggling.",
+   "video": "The owl blinks its huge eyes; the kitten holds his paws around his eyes and giggles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "Night in the forest: the cute brown owl flies with its wings spread wide across a big bright full moon in a deep-blue starry sky, above dark rounded treetops. Calm and beautiful, friendly, not scary. No other characters.",
+   "video": "The owl glides across the moon with slow wing beats; the stars twinkle. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "A cute woodpecker with a bright red cap, black-and-white feathers and a long strong beak clings to the side of a big brown tree trunk and pecks at the bark; a few small wood chips fly from the beak. Sunny green forest behind. At the foot of the tree, small in the picture, the orange kitten in his explorer hat looks up at the woodpecker.",
+   "video": "The woodpecker pecks the tree trunk rapidly with its beak in rhythm, pauses for a moment, and pecks again; small wood chips fly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "Extreme close-up of the woodpecker's head with its bright red cap and shiny black eye: its long strong beak touches the brown bark of the tree, with small motion lines and tiny wood chips flying around the tip of the beak.",
+   "video": "The woodpecker's beak taps the bark quickly and tiny wood chips fly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "A neat round nest hole in the brown tree trunk: the cute woodpecker with the red cap sits inside its nest hole with its head and chest out, looking proud and happy. A few fresh wood chips lie on a small branch below the hole. Green leaves around.",
+   "video": "The woodpecker looks left and right from its nest hole and nods proudly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "A cute red-brown squirrel with a big fluffy tail and a cream belly sits upright on a tree branch, holding a round brown hazelnut in both tiny paws and nibbling it, its cheeks slightly puffed. A few hazelnuts lie on the branch beside it. On the same branch, a little farther back, the orange kitten in his explorer hat watches with a smile.",
+   "video": "The squirrel nibbles the hazelnut quickly, its cheeks moving and its fluffy tail twitching; the kitten watches and smiles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "Side view of the cute red-brown squirrel on the branch, showing its huge, soft, fluffy tail curled up high behind its back. Beside it the orange kitten in his explorer hat points at the squirrel's fluffy tail with one paw, his eyes wide with admiration.",
+   "video": "The squirrel's fluffy tail sways gently; the kitten points at it with admiration. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "A hollow in a big tree trunk filled with a little pile of brown acorns: the cute red-brown squirrel with the fluffy tail stands at the hollow, placing one more acorn onto the pile with both tiny paws, looking pleased. A few orange autumn leaves on the branch.",
+   "video": "The squirrel places the acorn onto the pile in the tree hollow and pats it, its fluffy tail twitching. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "A cute, round, cuddly brown bear cub with a cream muzzle, small round ears and a friendly smile sits on the grass in the sunny forest, hugging a round clay pot full of golden honey with one arm and licking honey from its other paw, a little honey on its nose. Next to it the orange kitten in his explorer hat watches with a big smile. Two small friendly cartoon bees fly nearby. Soft, toy-like and friendly, not scary.",
+   "video": "The bear cub dips its paw into the honey pot and licks the honey happily again and again; the kitten watches and laughs, and the two little bees fly in small circles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "The cute brown bear cub stands upright on the sunny forest path, facing the viewer, showing its soft, fluffy, chocolate-brown fur and cream muzzle, with a friendly smile. Beside it the orange kitten in his explorer hat gently pats the bear cub's fluffy brown arm with one paw, smiling.",
+   "video": "The kitten gently pats the bear cub's fluffy fur; the bear cub smiles and sways a little. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "The orange kitten in his explorer hat and the cute brown bear cub sit side by side on a fallen log in the sunny forest, giving each other a happy high-five with their paws, both laughing. The round clay honey pot stands on the log between them.",
+   "video": "The kitten and the bear cub clap their paws together in a high-five and laugh. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "son",
+   "prompt": "A happy group picture in a sunny forest clearing: the orange kitten in his green explorer hat stands in the middle with one arm around the cute brown bear cub; the red-brown squirrel with the fluffy tail sits on the bear cub's head; on a branch just above them sit the round brown owl and the woodpecker with the red cap. All five smile toward the viewer.",
+   "video": "The kitten and the bear cub sway happily side by side, the squirrel waves its tail, and the owl and the woodpecker nod on the branch. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten in his green explorer hat, with the red binoculars around his neck, stands on the forest path and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. The sunny green forest softly blurred behind him.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

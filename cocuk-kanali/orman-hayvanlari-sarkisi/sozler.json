@@ -1,0 +1,291 @@
+{
+ "baslik": "Orman Hayvanları Şarkısı (Pıtır Ormanda)",
+ "baslik_yazi": "Orman Hayvanları",
+ "baslik_karesi": "h1",
+ "baslik_y": 660,
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "playful woodblock and marimba",
+  "cheerful flute melody"
+ ],
+ "yazilar": {
+  "kim": [
+   "Ormanda kim var?",
+   "renkli"
+  ],
+  "baykus": [
+   "Baykuş",
+   "turuncu"
+  ],
+  "agackakan": [
+   "Ağaçkakan",
+   "kirmizi"
+  ],
+  "sincap": [
+   "Sincap",
+   "turuncu"
+  ],
+  "ayi": [
+   "Ayı",
+   "mor"
+  ],
+  "hu": [
+   "Hu hu hu!",
+   "mavi"
+  ],
+  "tik": [
+   "Tık tık tık!",
+   "kirmizi"
+  ],
+  "cit": [
+   "Çıt çıt çıt!",
+   "yesil"
+  ],
+  "ham": [
+   "Ham ham ham!",
+   "sari"
+  ],
+  "bay": [
+   "Bay bay!",
+   "yesil"
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Bak bak bak, ormanda kim var?",
+    "Pıtır geziyor, haydi gel!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "kim",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Hu hu hu, baykuş ötüyor,",
+    "Kocaman gözleri var!",
+    "Hu hu hu, dalda oturur,",
+    "Gece olunca uçar!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1a",
+    "k1c"
+   ],
+   "yazi": [
+    [
+     [
+      3,
+      "baykus"
+     ]
+    ],
+    null,
+    "hu",
+    null
+   ],
+   "efekt": [
+    null,
+    "kare+",
+    null,
+    "kare+"
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Tık tık tık, bak ağaçkakan,",
+    "Kırmızı şapkası var!",
+    "Tık tık tık, ağaca vurur,",
+    "Gövdeye yuva oyar!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2a",
+    "k2c"
+   ],
+   "yazi": [
+    [
+     [
+      4,
+      "agackakan"
+     ]
+    ],
+    null,
+    "tik",
+    null
+   ],
+   "efekt": [
+    null,
+    "kare+",
+    null,
+    "kare+"
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Bak bak bak, ormanda kim var?",
+    "Pıtır geziyor, haydi gel!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "kim",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Çıt çıt çıt, sincap fındık yer,",
+    "Kuyruğu pofuduk, bak!",
+    "Çıt çıt çıt, kabuğu kırar,",
+    "Kışa palamut saklar!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3a",
+    "k3c"
+   ],
+   "yazi": [
+    [
+     [
+      3,
+      "sincap"
+     ]
+    ],
+    null,
+    "cit",
+    null
+   ],
+   "efekt": [
+    null,
+    "kare+",
+    null,
+    "kare+"
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "Ham ham ham, ayıcık bal yer,",
+    "Tüyleri kahverengi!",
+    "Ham ham ham, balı çok tatlı,",
+    "Pıtır'la dost oldular!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4b",
+    "k4a",
+    "k4c"
+   ],
+   "yazi": [
+    [
+     [
+      3,
+      "ayi"
+     ]
+    ],
+    null,
+    "ham",
+    null
+   ],
+   "efekt": [
+    null,
+    "kare+",
+    null,
+    "kare+"
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Bak bak bak, ormanda kim var?",
+    "Pıtır geziyor, haydi gel!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "kim",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Ormanda çok dostumuz var!",
+    "Hoşça kalın, bay bay!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "son",
+    "veda"
+   ],
+   "yazi": [
+    null,
+    "bay"
+   ],
+   "efekt": [
+    "kare+",
+    null
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Her kıtada 1. ve 3. satır aynı klibi kullanır, 2. ve 4. satır yavaş yakınlaşan duran karedir (\"kare+\"): 7 klip, 16 kare."
+}
