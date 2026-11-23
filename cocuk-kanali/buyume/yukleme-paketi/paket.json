@@ -535,7 +535,7 @@
   }
  ],
  "yukleme_durumu": {
-  "tarih": "23 Kasım 2026 akşamı: 15 video herkese açık (yükleme oturumunun kaydı ve kanal sayfası)",
+  "tarih": "23 Kasım 2026 akşamı: kanal sayfasında 12 video herkese açık (01-11 ve 13)",
   "herkese_acik": {
    "1": "CULmUxUFnhQ",
    "2": "0cgPqDe7XTI",
@@ -548,15 +548,18 @@
    "9": "K0qqKgsYjsw",
    "10": "FDvIbBFEIS4",
    "11": "NrZuIGW38bA",
-   "13": "6ic0RbfPU7U",
-   "14": "J2HlXE5F4cw",
-   "15": "Bl8B-w4dEtk",
-   "16": "VH_kiFZk3fQ"
+   "13": "6ic0RbfPU7U"
   },
   "bekleyen": {
    "12": "Derleme: bilgisayarda üretilecek, sahibi izleyince yüklenecek",
    "17": "Orman Hayvanları",
    "18": "Oyuncakları Toplama"
+  },
+  "planli": {
+   "14": "J2HlXE5F4cw",
+   "15": "Bl8B-w4dEtk",
+   "16": "VH_kiFZk3fQ",
+   "not": "23 Kasım akşamı kanal sayfasında görünmüyorlar: yükleme oturumunda gizlenip tarihe bağlanmış olmalılar; kesin tarihler yükleme oturumunun kaydında."
   }
  },
  "yukleme_takvimi": {
