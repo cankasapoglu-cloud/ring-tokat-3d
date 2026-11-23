@@ -35,3 +35,4 @@ Klip sağlayıcısı (`klip_uret.py --saglayici=oto|minimax|eleven`):
 - Model klibin sonunda hareketi bitirip durabiliyor; kurgu son sahnede klibin yalnız ilk 4,4 saniyesini kullanır (`son_klip_sn` ile değişir).
 - Ölçülen örnek (23 Kasım, Orman Hayvanları): 16 kare, 7 klip ve yeniden üretilen 1 klip, 2 şarkı denemesi = toplam 42.600 kredi. Bu videonun gönderim notundaki "yaklaşık 28.000" tahmini yanlıştı; doğrusu budur.
 - Aynı video sahibinin isteğiyle tümü hareketli hâle getirildi (9 klip daha): toplam yaklaşık 75.000 kredi. ElevenLabs kredisi aylık 610.000; 21 Aralık 2026'da yenileniyor.
+- Ölçülen örnek (23 Kasım, Oyuncakları Toplama; klipler Hailuo ile): 17 kare ve 4 şarkı denemesi = 17.100 kredi; 16 klip = yaklaşık 3 dolar. Bütün sahneler hareketli.

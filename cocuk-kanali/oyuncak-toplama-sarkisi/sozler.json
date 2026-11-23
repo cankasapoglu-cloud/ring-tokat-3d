@@ -12,9 +12,47 @@
   "playful toy piano"
  ],
  "yazilar": {
+  "topla": [
+   "Toplayalım!",
+   "renkli"
+  ],
+  "zip": [
+   "Zıp zıp zıp!",
+   "turuncu"
+  ],
+  "tok": [
+   "Tok tok tok!",
+   "yesil"
+  ],
+  "bip": [
+   "Bip bip bip!",
+   "kirmizi"
+  ],
   "bay": [
    "Bay bay!",
    "turuncu"
+  ],
+  "kirmizi": [
+   "Kırmızı",
+   "kirmizi",
+   -430,
+   110
+  ],
+  "mavi": [
+   "Mavi",
+   "mavi",
+   10,
+   110
+  ],
+  "sari": [
+   "Sarı",
+   "sari",
+   380,
+   110
+  ],
+  "hop": [
+   "Hop hop hop!",
+   "pembe"
   ]
  },
  "bolumler": [
@@ -22,8 +60,8 @@
    "ad": "Nakarat",
    "etiket": "Chorus",
    "satirlar": [
-    "Topla topla, haydi topla!",
-    "Oyuncaklar yerlerine!"
+    "Hep birlikte toplayalım!",
+    "Her oyuncak yuvasına!"
    ],
    "sure_ms": 7400,
    "sahneler": [
@@ -31,7 +69,7 @@
     "h2"
    ],
    "yazi": [
-    null,
+    "topla",
     null
    ],
    "stiller_tr": [
@@ -47,10 +85,10 @@
    "ad": "Kıta 1",
    "etiket": "Verse 1",
    "satirlar": [
-    "a b c d e,",
-    "a b c!",
-    "a b c d e,",
-    "a b c!"
+    "Zıp zıp zıp, toplar sepete,",
+    "Kırmızı, mavi, sarı!",
+    "Zıp zıp zıp, hepsi sepete,",
+    "Sepet doldu, yaşasın!"
    ],
    "sure_ms": 14800,
    "sahneler": [
@@ -60,9 +98,22 @@
     "k1c"
    ],
    "yazi": [
-    null,
-    null,
-    null,
+    "zip",
+    [
+     [
+      0,
+      "kirmizi"
+     ],
+     [
+      1,
+      "mavi"
+     ],
+     [
+      2,
+      "sari"
+     ]
+    ],
+    "zip",
     null
    ]
   },
@@ -70,10 +121,10 @@
    "ad": "Kıta 2",
    "etiket": "Verse 2",
    "satirlar": [
-    "a b c d e,",
-    "a b c!",
-    "a b c d e,",
-    "a b c!"
+    "Tok tok tok, küpler kutuya,",
+    "Kare kare, rengârenk!",
+    "Tok tok tok, hepsi kutuya,",
+    "Kutumuz kapandı, bak!"
    ],
    "sure_ms": 14800,
    "sahneler": [
@@ -83,9 +134,9 @@
     "k2c"
    ],
    "yazi": [
+    "tok",
     null,
-    null,
-    null,
+    "tok",
     null
    ]
   },
@@ -93,8 +144,8 @@
    "ad": "Nakarat",
    "etiket": "Chorus",
    "satirlar": [
-    "Topla topla, haydi topla!",
-    "Oyuncaklar yerlerine!"
+    "Hep birlikte toplayalım!",
+    "Her oyuncak yuvasına!"
    ],
    "sure_ms": 7400,
    "sahneler": [
@@ -102,7 +153,7 @@
     "h2"
    ],
    "yazi": [
-    null,
+    "topla",
     null
    ],
    "stiller_tr": [
@@ -118,10 +169,10 @@
    "ad": "Kıta 3",
    "etiket": "Verse 3",
    "satirlar": [
-    "a b c d e,",
-    "a b c!",
-    "a b c d e,",
-    "a b c!"
+    "Bip bip bip, minik araba,",
+    "Farları parıl parıl!",
+    "Bip bip bip, hepsi garaja,",
+    "Garajda sıra sıra!"
    ],
    "sure_ms": 14800,
    "sahneler": [
@@ -131,9 +182,9 @@
     "k3c"
    ],
    "yazi": [
+    "bip",
     null,
-    null,
-    null,
+    "bip",
     null
    ]
   },
@@ -141,10 +192,10 @@
    "ad": "Kıta 4",
    "etiket": "Verse 4",
    "satirlar": [
-    "a b c d e,",
-    "a b c!",
-    "a b c d e,",
-    "a b c!"
+    "Hop hop hop, peluşlar rafa,",
+    "Pamuk gibi yumuşak!",
+    "Hop hop hop, hepsi de rafa,",
+    "Yan yana oturdular!"
    ],
    "sure_ms": 14800,
    "sahneler": [
@@ -154,9 +205,9 @@
     "k4c"
    ],
    "yazi": [
+    "hop",
     null,
-    null,
-    null,
+    "hop",
     null
    ]
   },
@@ -164,8 +215,8 @@
    "ad": "Nakarat",
    "etiket": "Chorus",
    "satirlar": [
-    "Topla topla, haydi topla!",
-    "Oyuncaklar yerlerine!"
+    "Hep birlikte toplayalım!",
+    "Her oyuncak yuvasına!"
    ],
    "sure_ms": 7400,
    "sahneler": [
@@ -173,7 +224,7 @@
     "h2"
    ],
    "yazi": [
-    null,
+    "topla",
     null
    ],
    "stiller_tr": [
@@ -194,7 +245,7 @@
    ],
    "sure_ms": 8000,
    "sahneler": [
-    "k4c",
+    "son",
     "veda"
    ],
    "yazi": [

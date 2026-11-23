@@ -427,6 +427,31 @@
    "kitle": "cocuklara ozel",
    "yapay_icerik_sorusu": "evet",
    "ilk_gorunurluk": "ozel"
+  },
+  {
+   "sira": 18,
+   "dosya": "18-oyuncak-toplama-sarkisi.mp4",
+   "kapak": "18-oyuncak-toplama-sarkisi-kapak.jpg",
+   "baslik": "Oyuncakları Toplama Şarkısı | Toplanma Zamanı | DuDeK Stüdyo",
+   "aciklama": "Pıtır oyun odasını topluyor: toplar sepete, küpler kutuya, arabalar garaja, peluşlar rafa. Her oyuncak yuvasına dönüyor, oda tertemiz oluyor.\n3-7 yaş için, 1 dakika 35 saniye; evde ve anaokulunda toplanma vaktinde birlikte söylenebilir.\n\nŞARKI SÖZLERİ\n\nHep birlikte toplayalım!\nHer oyuncak yuvasına!\n\nZıp zıp zıp, toplar sepete,\nKırmızı, mavi, sarı!\nZıp zıp zıp, hepsi sepete,\nSepet doldu, yaşasın!\n\nTok tok tok, küpler kutuya,\nKare kare, rengârenk!\nTok tok tok, hepsi kutuya,\nKutumuz kapandı, bak!\n\nHep birlikte toplayalım!\nHer oyuncak yuvasına!\n\nBip bip bip, minik araba,\nFarları parıl parıl!\nBip bip bip, hepsi garaja,\nGarajda sıra sıra!\n\nHop hop hop, peluşlar rafa,\nPamuk gibi yumuşak!\nHop hop hop, hepsi de rafa,\nYan yana oturdular!\n\nHep birlikte toplayalım!\nHer oyuncak yuvasına!\n\nOdamız tertemiz oldu!\nHoşça kalın, bay bay!\n\nDuDeK Stüdyo: 3-7 yaş çocuklar için Türkçe şarkılar ve öğrenme videoları.\nBu videodaki şarkı kaydı ve çizimler kanalımız için hazırlanmıştır; izinsiz kopyalanıp yeniden yayınlanamaz.\n#DuDeKStüdyo #çocukşarkıları #bebekşarkıları",
+   "etiketler": [
+    "oyuncakları toplama şarkısı",
+    "toplama şarkısı",
+    "toplanma şarkısı",
+    "toplanma zamanı",
+    "oyuncak toplama",
+    "oda toplama şarkısı",
+    "okul öncesi şarkılar",
+    "çocuk şarkıları",
+    "bebek şarkıları",
+    "DuDeK Stüdyo"
+   ],
+   "oynatma_listesi": "Pıtır ile Çocuk Şarkıları - Tüm Şarkılar",
+   "gun": "sahibinin takvimine göre (23 Kasım'da hazırlandı)",
+   "sure_sn": 95.5,
+   "kitle": "cocuklara ozel",
+   "yapay_icerik_sorusu": "evet",
+   "ilk_gorunurluk": "ozel"
   }
  ],
  "ilk_gun": [
@@ -446,6 +471,7 @@
     15,
     8,
     14,
+    18,
     3,
     17,
     10,
@@ -480,7 +506,8 @@
     8,
     14,
     16,
-    9
+    9,
+    18
    ],
    "aciklama": "El yıkama, banyo, diş fırçalama, sabah rutini ve sağlıklı beslenme şarkıları. 3-7 yaş."
   },
@@ -508,7 +535,7 @@
   }
  ],
  "yukleme_durumu": {
-  "tarih": "22 Kasım 2026 akşamı",
+  "tarih": "23 Kasım 2026 akşamı: 15 video herkese açık (yükleme oturumunun kaydı ve kanal sayfası)",
   "herkese_acik": {
    "1": "CULmUxUFnhQ",
    "2": "0cgPqDe7XTI",
@@ -520,30 +547,24 @@
    "8": "DDOxF1mXJt0",
    "9": "K0qqKgsYjsw",
    "10": "FDvIbBFEIS4",
-   "11": "23 Kasım'da yüklendi (kanal sayfasında görüldü)"
+   "11": "NrZuIGW38bA",
+   "13": "6ic0RbfPU7U",
+   "14": "J2HlXE5F4cw",
+   "15": "Bl8B-w4dEtk",
+   "16": "VH_kiFZk3fQ"
   },
   "bekleyen": {
    "12": "Derleme: bilgisayarda üretilecek, sahibi izleyince yüklenecek",
-   "13": "İtfaiye",
-   "14": "Diş Fırçalama",
-   "15": "Tren",
-   "16": "Günaydın",
-   "17": "Orman Hayvanları"
+   "17": "Orman Hayvanları",
+   "18": "Oyuncakları Toplama"
   }
  },
  "yukleme_takvimi": {
-  "kaynak": "sahibinin 23 Kasım talimatı: bugün 2, yarın 2 video; 3 günlük video hazır olsun",
-  "23 Kasım": [
-   11,
-   13
-  ],
-  "24 Kasım": [
-   14,
-   15
-  ],
-  "25 Kasım": [
-   16,
-   17
+  "kaynak": "sahibi 23 Kasım'da 'bugün 2, yarın 2' dedi; ancak 13-16 aynı gün yükleme oturumunda 'Herkese açık yükle' seçilerek yayınlandı. Yeni takvim sahibinin kararını bekliyor.",
+  "bekleyen": [
+   17,
+   18,
+   12
   ]
  }
 }

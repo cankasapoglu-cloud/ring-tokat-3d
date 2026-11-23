@@ -36,6 +36,7 @@ Mr = milyar, M = milyon. 13 ve 14. satırlardaki izlenme bilgisi genel bilgidir,
 | 24 | **Tren Şarkısı** (Makinist Pıtır) | Otobüs ve İtfaiye ile Taşıtlar kümesi | Hazır |
 | 25 | **Günaydın Şarkısı** (Pıtır'ın sabahı) | Günlük rutin; ebeveynin sabah açacağı video | Hazır |
 | 26 | **Orman Hayvanları Şarkısı** (baykuş, ağaçkakan, sincap, ayıcık) | "orman hayvanları şarkısı" çok izlenen bir arama; Ali Baba ile Hayvanlar kümesi | Hazır |
+| 27 | **Oyuncakları Toplama Şarkısı** (toplar, küpler, arabalar, peluşlar) | Evde ve anaokulunda toplanma vaktinde tekrar tekrar açılan konu; aramada küçük kanallar öne çıkabiliyor | Hazır |
 
 Araştırmanın ayrıntısı: `buyume/arastirma-yeni-konular/OKU.md`.
 
