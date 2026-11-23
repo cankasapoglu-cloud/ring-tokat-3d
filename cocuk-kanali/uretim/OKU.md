@@ -33,3 +33,4 @@ Klip sağlayıcısı (`klip_uret.py --saglayici=oto|minimax|eleven`):
 - Kredi tasarrufu: sozler.json içinde satırın `efekt` değeri "kare+" yapılırsa o satır klip üretmeden, yavaş yakınlaşan duran kareyle kurulur.
 - Video modeli bazen sahneye kendiliğinden yazılı ambalaj ya da marka benzeri nesne ekliyor; kliplerin kenarlarına bakılmalı (bkz. Diş Fırçalama: üç klip yeniden üretildi).
 - Model klibin sonunda hareketi bitirip durabiliyor; kurgu son sahnede klibin yalnız ilk 4,4 saniyesini kullanır (`son_klip_sn` ile değişir).
+- Ölçülen örnek (23 Kasım, Orman Hayvanları): 16 kare, 7 klip ve yeniden üretilen 1 klip, 2 şarkı denemesi = toplam 42.600 kredi. Bu videonun gönderim notundaki "yaklaşık 28.000" tahmini yanlıştı; doğrusu budur.
