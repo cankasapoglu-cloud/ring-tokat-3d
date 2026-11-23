@@ -1,0 +1,99 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı klip için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "tren-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears a blue-and-white striped train driver's cap and a small red neckerchief. If a second reference image is given, the blue steam locomotive, its three wagons and the kitten's cap and neckerchief look exactly as in reference image 2; the passengers, when present, are a white bunny, a brown puppy and a pink piglet. Nothing in the pictures is scary: the mood is cheerful and safe. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "Front three-quarter view of a cute rounded toy-like blue steam locomotive with a red chimney, a round yellow headlight, yellow wheels and a small red cow-catcher, pulling three small wagons (one red, one yellow, one green) along shiny rails through sunny green countryside with flowers and a blue sky. Round white puffs of steam rise from the chimney. The orange kitten leans out of the side window of the driver's cab, waving one paw and smiling happily. The whole locomotive is visible.",
+   "video": "The blue steam train rolls forward along the rails with a gentle bouncy motion, its wheels turning and white steam puffing from the chimney in rhythm. The kitten waves from the cab window. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Close view of the driver's cab of the blue steam train: the orange kitten pulls a golden whistle cord above his head with one paw, mouth open in a happy shout, ears perked. Brass levers and round blank gauges (no numbers) behind him; green countryside rushing past the cab window.",
+   "video": "The kitten pulls the whistle cord down in rhythm, bouncing with excitement, the countryside moving past the window. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "A small cheerful railway station with a red roof and flower boxes: the blue steam train with its three colorful wagons stands at the platform. On the platform stand the white bunny, the brown puppy and the pink piglet, each holding a small suitcase, looking at the train with excitement. The orange kitten leans out of the locomotive cab window. Sunny morning. No clock and no signs with writing.",
+   "video": "The train stands at the platform with a little steam puffing; the bunny, the puppy and the piglet bounce with excitement on the platform, and the kitten waves from the cab. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "At the station platform: the white bunny, the brown puppy and the pink piglet climb one after another through the open door of the red wagon, carrying their small suitcases, smiling. From the cab window of the blue locomotive ahead, the orange kitten waves them in with one paw.",
+   "video": "The bunny steps into the wagon, followed by the puppy and the piglet; the kitten beckons from the cab window. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "Close-up of the red chimney of the blue steam train: big round fluffy white puffs of steam rise from it one after another into the blue sky. The top of the blue boiler and the yellow headlight are visible below.",
+   "video": "Round white puffs of steam pop out of the red chimney one after another in rhythm and float upward. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "Low close-up side view of the big yellow wheels of the blue steam train with their red connecting rods on the shiny rails, curved motion lines around the wheels, small puffs of white steam near the rails. Green grass and flowers at the trackside, blurred with speed. No characters.",
+   "video": "The yellow wheels turn steadily and the red connecting rods move back and forth in rhythm; the grass rushes past. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "Wide scenic view from above: long shiny rails curve far away through rolling green hills with flowers, round trees and a blue lake under a bright sky. Far along the rails, small in the picture, the blue steam train with its three colorful wagons travels along, a line of white steam puffs behind it.",
+   "video": "The small train travels along the long curving rails; white steam puffs trail behind it and clouds drift slowly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "Side view of the three wagons (red, yellow, green) of the train rolling along the rails one behind the other: the white bunny waves from the window of the red wagon, the brown puppy from the yellow wagon and the pink piglet from the green wagon. Green meadow behind.",
+   "video": "The three wagons roll along one behind the other with a gentle bounce; the bunny, the puppy and the piglet wave from their windows. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "The blue steam train is about to enter a round stone tunnel entrance in the side of a green flowery hill; the locomotive is half inside the dark opening, steam curling at the top of the arch. The wagons follow behind in the sunshine. Friendly and bright.",
+   "video": "The train rolls into the round tunnel entrance, the locomotive disappearing into the dark opening while the wagons follow. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "Inside the tunnel: it is dark and cozy, with a warm golden beam of light shining from the locomotive's round yellow headlight onto the rails ahead. In the dim cab window the orange kitten's happy face and big bright brown eyes glow softly. Not scary: warm light and a calm, exciting mood.",
+   "video": "The golden headlight beam moves forward along the rails in the dark tunnel; the kitten's bright eyes look around with excitement. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "The blue steam train bursts out of the round stone tunnel exit into bright sunshine, white steam puffing, the orange kitten leaning out of the cab window with a joyful laugh and one paw in the air. Sunlit green hills and flowers all around.",
+   "video": "The train rolls out of the tunnel into the sunshine, steam puffing; the kitten cheers with one paw in the air. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3d",
+   "prompt": "A big friendly cartoon sun with a smiling face, rosy cheeks and soft golden rays shines in the blue sky. Below it, small at the bottom of the picture, the blue steam train with its three wagons travels along the rails across green hills.",
+   "video": "The smiling sun's golden rays turn slowly and it beams happily; the small train travels along below. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "The blue steam train with its three colorful wagons crosses a red iron arch bridge over a sparkling blue stream in a green valley. The whole bridge and train are visible from the side; the orange kitten is visible in the cab window. Sunny, cheerful.",
+   "video": "The train rolls steadily across the red bridge; the stream below sparkles and flows. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "View from the bridge looking down: a clear, sparkling blue stream flows between green banks with smooth round stones and reeds; two small orange fish jump out of the water and a yellow duck paddles by. The shadow of the red bridge crosses the water.",
+   "video": "The stream flows and sparkles, the two little fish jump and splash back, and the duck paddles along. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "A green meadow next to the railway line: two friendly black-and-white cows with pink noses stand by a wooden fence, their heads raised, looking toward the rails with curious happy faces, one with its mouth open mooing. In the background the blue steam train with its colorful wagons passes by.",
+   "video": "The two cows lift their heads and moo, their tails swishing, as the train passes by in the background. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "son",
+   "prompt": "The blue steam train has stopped at the small station with the red roof. The white bunny, the brown puppy and the pink piglet stand on the platform next to the locomotive, clapping and cheering toward the orange kitten, who leans out of the cab window with a proud happy smile and tips his striped cap.",
+   "video": "The bunny, the puppy and the piglet clap and cheer on the platform; the kitten tips his cap and nods proudly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten in his blue-and-white striped cap and red neckerchief leans out of the cab window of the blue steam train and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. The station softly blurred behind.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "model_id": "music_v2_5",
+ "composition_plan": {
+  "chunks": [
+   {
+    "text": "[Instrumental Intro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "ukulele, hand claps, tambourine, bouncy bass, live drums",
+     "glockenspiel",
+     "kids choir on the chorus",
+     "sing-along, danceable, bouncy",
+     "great production quality",
+     "bouncy xylophone",
+     "playful shaker percussion"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nHış hış hış, fırçala Pıtır!\nDişler olsun pırıl pırıl!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 1]\nPıt pıt pıt, macunu sıktım,\nFırçanın tam üstüne!\nPıt pıt pıt, nohut kadar az,\nBu kadarı yeterli!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 2]\nHış hış hış, önden başladım,\nMinik minik çemberler!\nHış hış hış, arkaya geçtim,\nHiçbirini unutmam!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nHış hış hış, fırçala Pıtır!\nDişler olsun pırıl pırıl!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 3]\nZıp zıp zıp, mikroplar kaçtı,\nHepsini kovaladım!\nHış hış hış, sıra dilimde,\nNefesim de mis gibi!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 4]\nŞır şır şır, fırçam yıkandı,\nKöpüğü de tükürdüm!\nHış hış hış, sabah ve akşam,\nGünde iki kez, tamam!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nHış hış hış, fırçala Pıtır!\nDişler olsun pırıl pırıl!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Outro Verse]\nDişlerim bembeyaz oldu!\nHoşça kalın, bay bay!",
+    "duration_ms": 8000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Instrumental Outro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "short happy ending, final hit"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   }
+  ]
+ },
+ "with_timestamps": true
+}

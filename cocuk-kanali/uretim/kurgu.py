@@ -5,7 +5,7 @@ Her satır başlamadan 0,25 sn önce o satırın sahnesine geçilir; ilk satıra
 <klasör>/sozler.json içinde her bölüm için:  satirlar: [...], sahneler: [her satır için kare adı],
   yazi: [her satır için: null | "anahtar" (satır başında 1,7 sn) | [[sıra, "anahtar"(, x, y)], ...]]
         sıra 0,1,2.. = o sözcük söylenirken belirir; -1 = satır başında; 0-1 arası kesir = satırın o oranında. x,y verilirse yazının merkezi oraya konur (1920x1080).
-  efekt (isteğe bağlı): [her satır için: null | "kare" (klip yerine duran kare) | "duz" (klip yakınlaştırmasız)]  -> nesnelerin üstüne etiket koymak için
+  efekt (isteğe bağlı): [her satır için: null | "kare" (klip yerine duran kare) | "kare+" (duran kare, yavaş yakınlaşma; klip üretmeden) | "duz" (klip yakınlaştırmasız)]  -> nesnelerin üstüne etiket koymak için
 sozler.json içinde "baslik_y": başlık yazısının düşey yeri (varsayılan -40 = üstte; 660 = altta, Pıtır'ın yüzü üstteyse).
 Gerekenler: <klasör>/<şarkı>.mp3 ve .json (sözcük zamanları), kare/<ad>.png, klip/<ad>.mp4, yazi/<anahtar>.png, yazi/baslik.png
 Kullanım: python3 kurgu.py <şarkı klasörü> <şarkı adı (örn. deneme_2)> <çıktı adı (örn. banyo-sarkisi)>"""
@@ -33,6 +33,7 @@ for k, s in enumerate(satirlar):
     u = kullanim.get(s["sahne"], 0); kullanim[s["sahne"]] = u + 1
     sure = kes[k + 1] - kes[k]
     if s["efekt"] == "kare": sahne.append(("kare:" + s["sahne"], kes[k], kes[k + 1], 0, "duz"))          # duran kare (üstüne etiket konacak)
+    elif s["efekt"] == "kare+": sahne.append(("kare:" + s["sahne"], kes[k], kes[k + 1], 0, "yaklas" if u % 2 == 0 else "uzaklas"))   # duran kare, yavaş yakınlaşma (klipsiz sahne)
     elif s["efekt"] == "duz": sahne.append((s["sahne"], kes[k], kes[k + 1], 0, "duz"))                    # klip, yakınlaştırmasız (etiketler yerinde kalsın)
     else: sahne.append((s["sahne"], kes[k], kes[k + 1], BAS[u % 4] if sure <= KLIP_SN - BAS[u % 4] + 0.6 else 0, EFEKT[u % 4]))
     if isinstance(s["yazi"], str): yazi.append((s["yazi"], s["bas"] - 0.1, s["bas"] + 1.6, None))
@@ -52,7 +53,8 @@ for k, (ad, t0, t1, bas, efekt) in enumerate(sahne):
     if ad.startswith("kare:"):
         girdi += ["-loop", "1", "-framerate", str(FPS), "-t", f"{hedef:.3f}", "-i", os.path.join(D, "kare", ad[5:] + ".png")]
         filtre.append(f"[{k}:v]scale=1920:1080:flags=lanczos,fps={FPS},setpts=PTS-STARTPTS,{zoom},setsar=1,trim=0:{hedef:.3f},setpts=PTS-STARTPTS[v{k}]"); continue
-    ham = KLIP_SN - bas; hiz = min(1.15, max(0.85, ham / hedef)); eksik = max(0.0, hedef - ham / hiz)
+    ham = (min(KLIP_SN, S.get("son_klip_sn", 4.4)) if k == n - 1 else KLIP_SN) - bas     # son sahne: klibin sonu (el sallama bittikten sonrası) kullanılmaz, son iyi karede durur
+    hiz = min(1.15, max(0.85, ham / hedef)); eksik = max(0.0, hedef - ham / hiz)
     girdi += ["-i", os.path.join(D, "klip", ad + ".mp4")]
     filtre.append(f"[{k}:v]trim={bas}:{bas + min(ham, hedef * hiz):.3f},setpts=(PTS-STARTPTS)/{hiz:.4f},fps={FPS},scale=1920:1080:flags=lanczos,"
                   f"tpad=stop_mode=clone:stop_duration={eksik + 0.1:.2f},trim=0:{hedef:.3f},setpts=PTS-STARTPTS,{zoom},setsar=1[v{k}]")

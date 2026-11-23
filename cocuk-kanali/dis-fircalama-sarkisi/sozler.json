@@ -1,0 +1,229 @@
+{
+ "baslik": "Diş Fırçalama Şarkısı (Pıtır Dişlerini Fırçalıyor)",
+ "baslik_yazi": "Diş Fırçalama Şarkısı",
+ "baslik_karesi": "h1",
+ "baslik_y": 660,
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "bouncy xylophone",
+  "playful shaker percussion"
+ ],
+ "yazilar": {
+  "his": [
+   "Hış hış hış!",
+   "turkuaz"
+  ],
+  "pit": [
+   "Pıt pıt pıt!",
+   "pembe"
+  ],
+  "zip": [
+   "Zıp zıp zıp!",
+   "yesil"
+  ],
+  "sir": [
+   "Şır şır şır!",
+   "mavi"
+  ],
+  "bay": [
+   "Bay bay!",
+   "turuncu"
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Hış hış hış, fırçala Pıtır!",
+    "Dişler olsun pırıl pırıl!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "his",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Pıt pıt pıt, macunu sıktım,",
+    "Fırçanın tam üstüne!",
+    "Pıt pıt pıt, nohut kadar az,",
+    "Bu kadarı yeterli!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1a",
+    "k1c"
+   ],
+   "yazi": [
+    "pit",
+    null,
+    "pit",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Hış hış hış, önden başladım,",
+    "Minik minik çemberler!",
+    "Hış hış hış, arkaya geçtim,",
+    "Hiçbirini unutmam!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2c",
+    "k2b"
+   ],
+   "yazi": [
+    "his",
+    null,
+    "his",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Hış hış hış, fırçala Pıtır!",
+    "Dişler olsun pırıl pırıl!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "his",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Zıp zıp zıp, mikroplar kaçtı,",
+    "Hepsini kovaladım!",
+    "Hış hış hış, sıra dilimde,",
+    "Ağzım şimdi mis gibi!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3c",
+    "k3d"
+   ],
+   "yazi": [
+    "zip",
+    null,
+    "his",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "Şır şır şır, fırçam yıkandı,",
+    "Köpüğü de tükürdüm!",
+    "Hış hış hış, sabah ve akşam,",
+    "Günde iki kez, tamam!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4b",
+    "k4c",
+    "k1c"
+   ],
+   "yazi": [
+    "sir",
+    null,
+    "his",
+    null
+   ],
+   "efekt": [
+    null,
+    null,
+    "kare",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Hış hış hış, fırçala Pıtır!",
+    "Dişler olsun pırıl pırıl!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "his",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Dişlerim bembeyaz oldu!",
+    "Hoşça kalın, bay bay!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "son",
+    "veda"
+   ],
+   "yazi": [
+    null,
+    "bay"
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Bilgi: nohut kadar macun, küçük dairesel hareketler, dil de fırçalanır, fırçalamadan sonra köpük tükürülür, günde iki kez."
+}

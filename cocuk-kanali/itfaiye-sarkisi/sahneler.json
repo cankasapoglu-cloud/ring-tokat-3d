@@ -1,0 +1,109 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı klip için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "itfaiye-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears a yellow firefighter helmet and a small red firefighter jacket with yellow reflective stripes. If a second reference image is given, the red fire truck and the kitten's firefighter outfit look exactly as in reference image 2. Nothing in the pictures is scary: the mood is cheerful and safe. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "Front three-quarter view of a cute rounded toy-like red fire truck with a silver ladder lying on its roof, a round blue siren light on top of the cab, big black wheels with yellow hubcaps and friendly round headlights, driving on a sunny toy-town street with colorful houses and a blue sky. The orange kitten sits in the driver's seat behind the big windshield, one paw on the steering wheel and the other paw waving out of the open side window, smiling happily. The whole fire truck is visible.",
+   "video": "The red fire truck drives forward along the street with a gentle bouncy motion, its wheels turning and its blue siren light flashing softly. The kitten waves from the window and smiles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Close view of the cab of the red fire truck: the orange kitten leans out of the open side window, pointing forward with one paw, mouth open in a happy shout, ears perked up. The round blue siren light glows on the cab roof above him. Sunny toy-town street softly blurred behind.",
+   "video": "The kitten points forward and waves his paw energetically, bouncing in the window; the blue siren light flashes softly. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "Inside a bright, tidy fire station: a big golden alarm bell on the wall is ringing, with curved motion lines around it. The orange kitten (wearing his red firefighter jacket but no helmet yet) jumps up from a small wooden chair with wide excited eyes, paws in the air. Behind him firefighter helmets hang on hooks and the front of the red fire truck is visible.",
+   "video": "The golden bell shakes and rings; the kitten jumps up from the chair and looks at the bell with excitement. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "Inside the fire station: the orange kitten in his red firefighter jacket lowers a yellow firefighter helmet onto his head with both paws, with a determined happy smile, his brown eyes looking at the viewer. A row of hooks with red jackets behind him.",
+   "video": "The kitten sets the yellow helmet on his head, pats it into place with both paws and nods with a confident smile. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "Inside the fire station: the orange kitten in helmet and jacket hops up the step into the open cab door of the red fire truck, one foot on the step and one paw on the handle, mid-jump, smiling with excitement. Side view of the cab.",
+   "video": "The kitten hops up the step into the cab of the fire truck and pulls himself onto the seat. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1d",
+   "prompt": "Seen from outside: the red fire truck rolls out of the big open red garage door of the fire station into the sunny street, the orange kitten at the steering wheel behind the windshield with a happy determined face. The fire station is a cute red brick building.",
+   "video": "The red fire truck rolls slowly out of the garage door into the sunny street, its wheels turning, its blue light flashing softly; the kitten steers and smiles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "Side view of the red fire truck speeding along a sunny toy-town street, curved motion lines behind it and its big wheels spinning, small dust puffs at the tires. The orange kitten is visible at the steering wheel through the side window. Colorful houses blurred with speed.",
+   "video": "The red fire truck drives fast along the street, its wheels spinning, the houses rushing past, small dust puffs trailing behind. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "Close-up of the round blue siren light on the roof of the cab of the red fire truck, shining brightly with soft blue light rays all around. Just below it, through the top of the windshield, the orange kitten's yellow helmet and happy eyes are visible. Blue sky behind.",
+   "video": "The round blue siren light flashes on and off with rotating blue light rays; the kitten's eyes look up at it happily. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "Inside the cab of the fire truck: the orange kitten in helmet and jacket presses a big round red horn button in the center of the steering wheel with one paw, the other paw on the wheel, with a cheeky delighted grin. The windshield and the sunny street are softly visible behind him.",
+   "video": "The kitten presses the big red horn button three times in rhythm, bouncing with each press, grinning. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2d",
+   "prompt": "A sunny toy-town street: a small blue car and a small green car have pulled over to the right side of the road; their drivers, a white bunny in the blue car and a brown puppy in the green car, lean out of their windows and wave cheerfully. In the free lane beside them the red fire truck drives past with the orange kitten at the wheel.",
+   "video": "The red fire truck drives past along the free lane; the bunny and the puppy wave from their parked cars, and the kitten waves back. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "In a sunny park: the orange kitten in helmet and jacket stands firmly on the grass holding a grey fire hose with a brass nozzle in both paws; a strong stream of clear water sprays from the nozzle in an arc toward the right edge of the picture. The red fire truck is parked behind him with the hose connected to it. Happy, concentrated face. No fire is visible in this picture.",
+   "video": "Water sprays steadily from the hose in an arc; the kitten holds the hose firmly with both paws, leaning back a little, smiling with concentration. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "In the sunny park: a stream of water arcs in from the left and lands on a small, harmless-looking orange fire burning in a little pile of dry autumn leaves on the grass, at the foot of a big green tree. Water splashes around the small flames and a little white steam rises. Nobody is near the fire. The fire is small, cartoonish and not scary.",
+   "video": "The stream of water pours onto the small fire in the pile of leaves; the little flames flicker and shrink, water splashes and white steam rises. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "Close-up of the pile of leaves: the small cartoon fire is almost out, only two tiny orange flames left among wet leaves, with soft white steam hissing upward and water drops splashing. Friendly, bright colors.",
+   "video": "The last tiny flames shrink and go out under the falling water, white steam hisses upward and drifts away. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3d",
+   "prompt": "The fire is completely out: a pile of wet leaves with no flames and one last small wisp of white steam floating away. Next to it stands the orange kitten in helmet and jacket, the hose lying on the grass, giving a proud thumbs-up with one paw and wiping his forehead with the other, with a relieved happy smile. The big green tree and the red fire truck are behind him.",
+   "video": "The kitten wipes his forehead, then gives a proud thumbs-up and nods, smiling; the last wisp of steam drifts away. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "In the sunny park: the long silver ladder of the red fire truck is extending diagonally upward toward the leafy top of the big green tree. The orange kitten in helmet and jacket stands at the base of the ladder on the truck, one paw on a lever, looking up at the ladder with a smile.",
+   "video": "The silver ladder slowly extends upward toward the top of the tree; the kitten holds the lever and watches it rise. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "The orange kitten in helmet and jacket climbs the long silver ladder, halfway up, holding the rails with both paws and looking up with a brave happy smile. Green tree leaves around the top of the ladder, blue sky behind, the park far below.",
+   "video": "The kitten climbs up the ladder step by step, paw over paw, looking up and smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "Close-up among green leaves: a round straw bird's nest on a tree branch with exactly three tiny fluffy yellow baby birds inside, their little orange beaks open, chirping happily with bright eyes. Sunlight through the leaves. No other characters.",
+   "video": "The three baby birds chirp with their beaks opening and closing and bob their heads happily in the nest. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4d",
+   "prompt": "At the top of the silver ladder among the green leaves: the orange kitten in helmet and jacket leans toward the straw nest with the three tiny yellow baby birds; the baby birds chirp happily at him and one of them has hopped onto the top of his yellow helmet. The kitten smiles warmly with his brown eyes open.",
+   "video": "The baby birds chirp happily at the kitten and flutter their tiny wings; the kitten tilts his head and smiles, the little bird on his helmet hops once. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten in his yellow helmet and red firefighter jacket stands in front of the red fire truck and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. Sunny toy-town street behind.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

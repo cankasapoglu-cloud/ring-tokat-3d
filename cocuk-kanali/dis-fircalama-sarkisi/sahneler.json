@@ -1,0 +1,99 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı klip için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "dis-fircalama-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears no clothes unless the scene says otherwise. If a second reference image is given, the bathroom sink, the round mirror, the blue toothbrush, the white toothpaste tube with a red cap and the blue cup look exactly as in reference image 2. The kitten's teeth are small, white and friendly-looking. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A bright, cheerful children's bathroom with light-green tiled walls: a white sink with a silver faucet under a big round mirror, a blue cup and a plain white toothpaste tube with a red cap (no writing on it) on the sink edge. The orange kitten stands on a small wooden step stool at the sink, holding a blue toothbrush up high in one paw like a trophy, with a big happy smile showing his small white teeth. His back is reflected softly in the round mirror.",
+   "video": "The kitten bounces on the stool and waves the blue toothbrush in the air in rhythm, smiling widely. The only toothpaste tube is the plain white one with the red cap, and it stays plain white: no second tube, no box, no packaging, no label, no logo and no letters appear anywhere in the video. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "Close-up of the orange kitten brushing his teeth with the blue toothbrush: mouth open in a happy grin, white toothpaste foam around his mouth and on the brush, his big round brown eyes bright and cheerful. The round mirror and green tiles softly blurred behind.",
+   "video": "The kitten moves the toothbrush back and forth over his teeth in rhythm, foam bubbling a little around his mouth, his eyes smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "Close-up above the sink: the orange kitten's two cream paws squeeze the plain white toothpaste tube with the red cap; a small blob of white-and-blue striped toothpaste comes out of the tube right above the bristles of the blue toothbrush, which lies on the sink edge. The kitten's concentrated, happy face is partly visible at the top.",
+   "video": "The paws squeeze the tube gently and a small blob of toothpaste comes out onto the toothbrush bristles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "Extreme close-up of the head of the blue toothbrush held in a cream paw: one tiny round dot of white-and-blue toothpaste, only the size of a small pea, sits in the middle of the bristles; most of the white bristles are empty and clearly visible around the tiny dot. There is no long stripe or swirl of toothpaste, only this one small pea-sized dot. Behind it, softly blurred, the orange kitten's delighted face with wide brown eyes looks at it.",
+   "video": "The toothbrush is held still with the small blob of toothpaste on it; behind it the kitten's eyes widen and he smiles and nods. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "The orange kitten stands at the sink holding the blue toothbrush with the small pea-sized blob of toothpaste in one paw and gives a proud thumbs-up with the other paw, smiling at the viewer with his brown eyes open. Round mirror behind him.",
+   "video": "The kitten gives a proud thumbs-up and nods happily, holding the toothbrush steady in his other paw. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "Close-up: the orange kitten brushes his front teeth, his mouth in a wide grin showing his small white front teeth, the blue toothbrush on the front teeth with white foam, cheerful eyes.",
+   "video": "The kitten brushes his front teeth with small quick movements of the toothbrush, foam building up, his eyes smiling. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "The orange kitten stands at the sink in front of the round mirror, brushing his teeth; small circular motion lines swirl around the toothbrush to show tiny circles. His happy reflection is visible in the mirror. White foam on his mouth.",
+   "video": "The kitten brushes in tiny circles, the toothbrush moving round and round, his reflection doing the same in the mirror. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "Close-up: the orange kitten opens his mouth wide and reaches the blue toothbrush toward his back teeth, one eye squinting in concentration and the other open, a funny determined face, a little foam on his chin.",
+   "video": "The kitten moves the toothbrush at the back of his open mouth, concentrating, then switches the brush to the other side. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "Close view of the white sink edge: three tiny, cute, round green germ characters with silly worried faces and little arms and legs hop away in a row, running from a foamy blue toothbrush that enters the picture from the left. Funny and friendly, not scary.",
+   "video": "The three tiny green germs hop away quickly along the sink edge one after another, looking back with worried funny faces. The only toothpaste tube is the plain white one with the red cap, and it stays plain white: no second tube, no box, no packaging, no label, no logo and no letters appear anywhere in the video. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "The orange kitten stands on the stool at the sink holding the foamy blue toothbrush up like a little hero's sword, chest out, with a proud victorious smile. Far behind him on the sink edge the three tiny green germ characters are running away, very small.",
+   "video": "The kitten raises the toothbrush high like a hero and laughs proudly; the tiny green germs in the background run off out of the picture. The only toothpaste tube is the plain white one with the red cap, and it stays plain white: no second tube, no box, no packaging, no label, no logo and no letters appear anywhere in the video. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "Close-up of the orange kitten's face: his mouth is open and his small pink tongue sticks far out of his mouth, clearly visible, and the bristles of the blue toothbrush rest on top of the tongue, gently brushing it. His teeth are not being brushed in this picture, only the tongue. A funny cross-eyed look, a little white foam on the tongue. Round mirror softly blurred behind.",
+   "video": "The kitten gently brushes his pink tongue with the toothbrush, wiggling his ears, with a funny face. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3d",
+   "prompt": "The orange kitten at the sink breathes out a soft, pale-blue cloud of fresh breath with tiny white flowers and sparkles floating in it, his cheeks rosy and his brown eyes open and happy, a wide smile with clean white teeth.",
+   "video": "The kitten breathes out and the soft fresh cloud with tiny flowers and sparkles floats gently upward; he smiles happily. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "Close-up of the sink: the blue toothbrush is held by a cream paw under a stream of clear water from the silver faucet, the last white foam washing off the bristles, water drops sparkling.",
+   "video": "Water runs over the toothbrush bristles and washes the foam away; the paw turns the toothbrush a little under the stream. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "The orange kitten leans over the white sink; a little white toothpaste foam lies in the sink basin near the drain. He wipes his mouth with the back of one paw, with a satisfied, clean smile, the blue toothbrush in his other paw.",
+   "video": "The kitten wipes his mouth with his paw, looks up and smiles with satisfaction. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "A picture split into two equal halves side by side. Left half, morning: the bathroom window shows a bright yellow sun and blue sky, and the orange kitten brushes his teeth with the blue toothbrush. Right half, evening: the bathroom window shows a crescent moon and stars in a dark blue sky, and the same orange kitten, now wearing light-blue pajamas, brushes his teeth with the blue toothbrush. The two halves are separated by a thin white vertical line.",
+   "video": "In both halves the kitten brushes his teeth with small movements; the sun shines on the left and the stars twinkle on the right. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "son",
+   "prompt": "Close-up of the orange kitten's face with a huge happy smile showing sparkling clean white teeth, small four-pointed star sparkles twinkling on his teeth, rosy cheeks, bright brown eyes. The round mirror softly blurred behind him.",
+   "video": "The kitten grins widely and turns his head a little from side to side; star sparkles twinkle on his clean white teeth. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten stands on the step stool at the sink and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile with clean white teeth. The blue toothbrush stands in the blue cup on the sink edge beside him; round mirror behind.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

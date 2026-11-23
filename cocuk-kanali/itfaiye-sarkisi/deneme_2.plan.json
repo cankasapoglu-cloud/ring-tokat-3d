@@ -1,0 +1,176 @@
+{
+ "model_id": "music_v2_5",
+ "composition_plan": {
+  "chunks": [
+   {
+    "text": "[Instrumental Intro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "ukulele, hand claps, tambourine, bouncy bass, live drums",
+     "glockenspiel",
+     "kids choir on the chorus",
+     "sing-along, danceable, bouncy",
+     "great production quality"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nNi no ni no, itfaiye!\nYol verin, Pıtır geliyor!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 1]\nZır zır zır, büyük zil çaldı,\nPıtır kaskını taktı!\nHop hop hop, kamyona bindik,\nHazırız, çıkıyoruz!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 2]\nVın vın vın, kırmızı kamyon,\nTepesinde siren var!\nDüt düt düt, korna çalıyor,\nArabalar yol verdi!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nNi no ni no, itfaiye!\nYol verin, Pıtır geliyor!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 3]\nFış fış fış, hortumu açtık,\nKüçük ateşe sıktık!\nCız cız cız, ateş sönüyor,\nDuman uçtu, kalmadı!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 4]\nTık tık tık, merdiven uzar,\nPıtır yukarı çıktı!\nCik cik cik, yuvada kuşlar,\nSağ ol Pıtır, dediler!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nNi no ni no, itfaiye!\nYol verin, Pıtır geliyor!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Outro Verse]\nYangın söndü, aferin Pıtır!\nHoşça kalın, bay bay!",
+    "duration_ms": 8000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Instrumental Outro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "short happy ending, final hit"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   }
+  ]
+ },
+ "with_timestamps": true
+}

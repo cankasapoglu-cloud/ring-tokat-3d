@@ -27,6 +27,17 @@ Yöntem: Önce en çok izlenen videoların **temasını ve formülünü** kendi 
 
 Mr = milyar, M = milyon. 13 ve 14. satırlardaki izlenme bilgisi genel bilgidir, derlemede yoktu.
 
+## 23 Kasım 2026: konu araştırmasından çıkan yeni videolar
+
+| # | Video | Neden | Durum |
+|---|---|---|---|
+| 22 | **İtfaiye Şarkısı** (İtfaiyeci Pıtır) | "itfaiye şarkısı" aramasında ilk 10'un 5'i küçük kanal | Hazır |
+| 23 | **Diş Fırçalama Şarkısı** | El Yıkama ve Banyo ile aynı küme (Temizlik ve Sağlık) | Hazır |
+| 24 | **Tren Şarkısı** (Makinist Pıtır) | Otobüs ve İtfaiye ile Taşıtlar kümesi | Hazır |
+| 25 | **Günaydın Şarkısı** (Pıtır'ın sabahı) | Günlük rutin; ebeveynin sabah açacağı video | Hazır |
+
+Araştırmanın ayrıntısı: `buyume/arastirma-yeni-konular/OKU.md`.
+
 ## Faz 2 — Derlemeler (5 şarkı tamamlanınca)
 
 | # | Video | İçerik | Neden |
@@ -46,7 +57,7 @@ Mr = milyar, M = milyon. 13 ve 14. satırlardaki izlenme bilgisi genel bilgidir,
 
 ## Üretim sırası ve bütçe
 
-Tam hareketli bir şarkı klibi yaklaşık 40.000 ElevenLabs kredisi tutuyor.
+Bir şarkı klibinin maliyeti hareketli sahnelerin nerede üretildiğine bağlı (23 Kasım ölçümü): şarkı ve kareler yaklaşık 15.000 ElevenLabs kredisi. Klipler Hailuo (MiniMax) ile yaklaşık 3 dolar; ElevenLabs video modeliyle (Veo 3.1 Fast) klip başına yaklaşık 3.600 kredi, yani video başına 55.000-70.000 kredi daha.
 
 | Dönem | Üretilecek | Tahmini kredi |
 |---|---|---|

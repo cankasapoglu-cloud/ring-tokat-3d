@@ -1,0 +1,243 @@
+{
+ "baslik": "İtfaiye Şarkısı (İtfaiyeci Pıtır)",
+ "baslik_yazi": "İtfaiye Şarkısı",
+ "baslik_karesi": "h1",
+ "baslik_y": 660,
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "driving rock drums",
+  "playful siren-like synth lead"
+ ],
+ "yazilar": {
+  "nino": [
+   "Ni no ni no!",
+   "kirmizi"
+  ],
+  "zir": [
+   "Zır zır zır!",
+   "sari"
+  ],
+  "hop": [
+   "Hop hop hop!",
+   "turuncu"
+  ],
+  "vin": [
+   "Vın vın vın!",
+   "kirmizi"
+  ],
+  "dut": [
+   "Düt düt düt!",
+   "mavi"
+  ],
+  "fis": [
+   "Fış fış fış!",
+   "turkuaz"
+  ],
+  "ciz": [
+   "Cız cız cız!",
+   "turuncu"
+  ],
+  "tik": [
+   "Tık tık tık!",
+   "mor"
+  ],
+  "cik": [
+   "Cik cik cik!",
+   "sari"
+  ],
+  "bay": [
+   "Bay bay!",
+   "kirmizi"
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Ni no ni no, itfaiye!",
+    "Yol verin, Pıtır geliyor!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "nino",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Zır zır zır, büyük zil çaldı,",
+    "Pıtır kaskını taktı!",
+    "Hop hop hop, kamyona bindik,",
+    "Hazırız, çıkıyoruz!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1c",
+    "k1d"
+   ],
+   "yazi": [
+    "zir",
+    null,
+    "hop",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Vın vın vın, kırmızı kamyon,",
+    "Tepesinde siren var!",
+    "Düt düt düt, korna çalıyor,",
+    "Arabalar yol verdi!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2c",
+    "k2d"
+   ],
+   "yazi": [
+    "vin",
+    null,
+    "dut",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Ni no ni no, itfaiye!",
+    "Yol verin, Pıtır geliyor!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "nino",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Fış fış fış, hortumu açtık,",
+    "Küçük ateşe sıktık!",
+    "Cız cız cız, ateş sönüyor,",
+    "Duman uçtu, kalmadı!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3c",
+    "k3d"
+   ],
+   "yazi": [
+    "fis",
+    null,
+    "ciz",
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "Tık tık tık, merdiven uzar,",
+    "Pıtır yukarı çıktı!",
+    "Cik cik cik, yuvada kuşlar,",
+    "Sağ ol Pıtır, dediler!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4b",
+    "k4c",
+    "k4d"
+   ],
+   "yazi": [
+    "tik",
+    null,
+    "cik",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Ni no ni no, itfaiye!",
+    "Yol verin, Pıtır geliyor!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "nino",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Yangın söndü, aferin Pıtır!",
+    "Hoşça kalın, bay bay!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "k3d",
+    "veda"
+   ],
+   "yazi": [
+    null,
+    "bay"
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Ateş küçük ve korkutmayan bir sahne: parkta bir yaprak yığını; kimse tehlikede değil."
+}

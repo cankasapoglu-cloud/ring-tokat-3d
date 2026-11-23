@@ -1,0 +1,299 @@
+{
+ "baslik": "Günaydın Şarkısı (Pıtır'ın Sabahı)",
+ "baslik_yazi": "Günaydın Şarkısı",
+ "baslik_karesi": "h1",
+ "baslik_y": 660,
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "bright morning glockenspiel",
+  "sunny whistling melody"
+ ],
+ "yazilar": {
+  "gunaydin": [
+   "Günaydın!",
+   "renkli"
+  ],
+  "mir": [
+   "Mır mır mır!",
+   "turuncu"
+  ],
+  "hop": [
+   "Hop hop hop!",
+   "kirmizi"
+  ],
+  "sip": [
+   "Şıp şıp şıp!",
+   "mavi"
+  ],
+  "cik": [
+   "Cik cik cik!",
+   "turkuaz"
+  ],
+  "ham": [
+   "Ham ham ham!",
+   "kirmizi"
+  ],
+  "lik": [
+   "Lık lık lık!",
+   "mavi"
+  ],
+  "cirt": [
+   "Cırt cırt cırt!",
+   "mor"
+  ],
+  "tak": [
+   "Tak tak tak!",
+   "yesil"
+  ],
+  "bay": [
+   "Bay bay!",
+   "turuncu"
+  ],
+  "peynir": [
+   "Peynir",
+   "sari",
+   0,
+   88
+  ],
+  "ekmek": [
+   "Ekmek",
+   "turuncu",
+   0,
+   88
+  ],
+  "yumurta": [
+   "Yumurta",
+   "kirmizi",
+   0,
+   88
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Günaydın, günaydın güneş!",
+    "Pıtır uyandı, haydi kalk!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "gunaydin",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "Mır mır mır, Pıtır uyanır,",
+    "Minik gözler açıldı!",
+    "Hop hop hop, yere atladı,",
+    "Gerindi, esnedi, oh!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1c",
+    "k1d"
+   ],
+   "yazi": [
+    "mir",
+    null,
+    "hop",
+    null
+   ],
+   "efekt": [
+    null,
+    "kare+",
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "Şıp şıp şıp, yüzünü yıkar,",
+    "Uykusu kaçtı gitti!",
+    "Cik cik cik, kuşlar ötüyor,",
+    "Pencereyi açalım!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2c",
+    "k2d"
+   ],
+   "yazi": [
+    "sip",
+    null,
+    "cik",
+    null
+   ],
+   "efekt": [
+    null,
+    "kare+",
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Günaydın, günaydın güneş!",
+    "Pıtır uyandı, haydi kalk!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "gunaydin",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "Ham ham ham, kahvaltı vakti,",
+    "Peynir, ekmek, yumurta!",
+    "Lık lık lık, suyunu içti,",
+    "Tabağını bitirdi!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3c",
+    "k3d"
+   ],
+   "yazi": [
+    "ham",
+    [
+     [
+      0,
+      "peynir",
+      480,
+      885
+     ],
+     [
+      1,
+      "ekmek",
+      952,
+      885
+     ],
+     [
+      2,
+      "yumurta",
+      1420,
+      885
+     ]
+    ],
+    "lik",
+    null
+   ],
+   "efekt": [
+    null,
+    "kare",
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "Cırt cırt cırt, ayakkabılar,",
+    "Pıtır hazır, haydi gel!",
+    "Tak tak tak, dışarı çıktı,",
+    "Yeni gün başlıyor, hey!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4b",
+    "k4c",
+    "k4d"
+   ],
+   "yazi": [
+    "cirt",
+    null,
+    "tak",
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Günaydın, günaydın güneş!",
+    "Pıtır uyandı, haydi kalk!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    "gunaydin",
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Günaydın herkese, günaydın!",
+    "Hoşça kalın, bay bay!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "k4d",
+    "veda"
+   ],
+   "yazi": [
+    "gunaydin",
+    "bay"
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Kahvaltıda süt yerine su: kedilere süt verilmesi yanlış bir inanış olduğu için. 'efekt' alanında \"kare+\" ve \"kare\" olan satırlar klipsiz duran karedir.",
+ "son_klip_sn": 3.6
+}

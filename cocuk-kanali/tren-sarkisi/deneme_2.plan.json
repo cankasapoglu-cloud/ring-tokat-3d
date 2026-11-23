@@ -1,0 +1,176 @@
+{
+ "model_id": "music_v2_5",
+ "composition_plan": {
+  "chunks": [
+   {
+    "text": "[Instrumental Intro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "ukulele, hand claps, tambourine, bouncy bass, live drums",
+     "glockenspiel",
+     "kids choir on the chorus",
+     "sing-along, danceable, bouncy",
+     "great production quality"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nÇuf çuf çuf, trenim geliyor!\nPıtır sürüyor, haydi bin!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 1]\nDüt düt düt, tren istasyonda,\nHaydi yolcular, binin!\nÇuf çuf çuf, duman çıkıyor,\nYavaş yavaş kalkıyor!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 2]\nTak tak tak, tekerler döner,\nUzun uzun raylarda!\nTak tak tak, vagonlar koşar,\nSıra sıra, peş peşe!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nÇuf çuf çuf, trenim geliyor!\nPıtır sürüyor, haydi bin!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 3]\nDüt düt düt, tünele girdik,\nHer yer karanlık oldu!\nÇuf çuf çuf, tünelden çıktık,\nGüneş bize gülüyor!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 4]\nGüm güm güm, köprüden geçtik,\nAltımızda dere var!\nMö mö mö, inekler bakar,\nEl salladık onlara!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nÇuf çuf çuf, trenim geliyor!\nPıtır sürüyor, haydi bin!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Outro Verse]\nTren durdu, sağ ol Pıtır!\nHoşça kalın, bay bay!",
+    "duration_ms": 8000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Instrumental Outro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "short happy ending, final hit"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   }
+  ]
+ },
+ "with_timestamps": true
+}

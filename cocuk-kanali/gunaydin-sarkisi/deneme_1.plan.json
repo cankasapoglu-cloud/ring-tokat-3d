@@ -1,0 +1,178 @@
+{
+ "model_id": "music_v2_5",
+ "composition_plan": {
+  "chunks": [
+   {
+    "text": "[Instrumental Intro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "ukulele, hand claps, tambourine, bouncy bass, live drums",
+     "glockenspiel",
+     "kids choir on the chorus",
+     "sing-along, danceable, bouncy",
+     "great production quality",
+     "bright morning glockenspiel",
+     "sunny whistling melody"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nGünaydın, günaydın güneş!\nPıtır uyandı, haydi kalk!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 1]\nMır mır mır, Pıtır uyanır,\nMinik gözler açıldı!\nHop hop hop, yere atladı,\nGerindi, esnedi, oh!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 2]\nŞıp şıp şıp, yüzünü yıkar,\nUykusu kaçtı gitti!\nCik cik cik, kuşlar ötüyor,\nPencereyi açalım!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nGünaydın, günaydın güneş!\nPıtır uyandı, haydi kalk!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 3]\nHam ham ham, kahvaltı vakti,\nPeynir, ekmek, yumurta!\nLık lık lık, suyunu içti,\nTabağını bitirdi!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Verse 4]\nCırt cırt cırt, ayakkabılar,\nPıtır hazır, haydi gel!\nTak tak tak, dışarı çıktı,\nYeni gün başlıyor, hey!",
+    "duration_ms": 14800,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Chorus]\nGünaydın, günaydın güneş!\nPıtır uyandı, haydi kalk!",
+    "duration_ms": 7400,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation",
+     "kids choir shouting along",
+     "hand claps"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Outro Verse]\nGünaydın herkese, günaydın!\nHoşça kalın, bay bay!",
+    "duration_ms": 8000,
+    "positive_styles": [
+     "upbeat Turkish children's song",
+     "fast, 130 BPM",
+     "energetic joyful female lead vocal, native Turkish singer",
+     "clear natural Turkish pronunciation"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   },
+   {
+    "text": "[Instrumental Outro]",
+    "duration_ms": 3000,
+    "positive_styles": [
+     "short happy ending, final hit"
+    ],
+    "negative_styles": [
+     "lullaby",
+     "slow",
+     "ballad",
+     "foreign accent"
+    ]
+   }
+  ]
+ },
+ "with_timestamps": true
+}

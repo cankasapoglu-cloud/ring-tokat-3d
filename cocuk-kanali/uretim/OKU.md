@@ -24,3 +24,12 @@ Bilinen sınırlar:
 - MiniMax dakikalık istek sınırı var; `klip_uret.py` sınıra takılınca bekleyip yeniden dener. Aynı anda birden çok klasör çalıştırılabilir.
 - Var olan kare ve klipler yeniden üretilmez; yenilemek için dosya silinir (klipte `klip/gorevler.json` içindeki kayıt da).
 - Nesnelerin üstüne etiket (rakam, ad) konacaksa o satırda `efekt` "kare" ya da "duz" olmalı; konumlar 1920x1080 üzerinden verilir.
+
+Klip sağlayıcısı (`klip_uret.py --saglayici=oto|minimax|eleven`):
+
+- `oto` (varsayılan): önce MiniMax Hailuo (klip başına yaklaşık 0,19 dolar); bakiye bitince kendiliğinden ElevenLabs video modeline geçer.
+- `eleven`: ElevenLabs video (varsayılan model Veo 3.1 Fast, 6 sn, 720p, sessiz). 23 Kasım 2026 ölçümü: klip başına yaklaşık 3.600 kredi. 16 klipli bir video yaklaşık 58.000 kredi tutar; Hailuo'ya göre çok pahalıdır.
+- Hesapta ByteDance (Seedance) modelleri kapalı: "model_access_denied"; açtırmak için ElevenLabs desteğine yazmak gerekiyor.
+- Kredi tasarrufu: sozler.json içinde satırın `efekt` değeri "kare+" yapılırsa o satır klip üretmeden, yavaş yakınlaşan duran kareyle kurulur.
+- Video modeli bazen sahneye kendiliğinden yazılı ambalaj ya da marka benzeri nesne ekliyor; kliplerin kenarlarına bakılmalı (bkz. Diş Fırçalama: üç klip yeniden üretildi).
+- Model klibin sonunda hareketi bitirip durabiliyor; kurgu son sahnede klibin yalnız ilk 4,4 saniyesini kullanır (`son_klip_sn` ile değişir).

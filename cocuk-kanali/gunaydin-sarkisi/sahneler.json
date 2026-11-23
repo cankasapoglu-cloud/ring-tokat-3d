@@ -1,0 +1,109 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı klip için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "gunaydin-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears no clothes unless the scene says otherwise. If a second reference image is given, the cozy bedroom with the small wooden bed, the yellow blanket and the big window look exactly as in reference image 2. Warm, fresh morning light in every picture. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A cozy children's bedroom in warm morning light: a small wooden bed with a yellow blanket and a white pillow, a round blue rug on the wooden floor, a shelf with toys, and a big window through which a bright golden sun is rising over green hills. The orange kitten sits up in the bed with both arms stretched high above his head, awake and happy, mouth open in a big smile. Sunbeams fall across the room.",
+   "video": "The kitten stretches his arms up and bounces on the bed with a happy smile; the sunbeams shimmer and the curtains move gently. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "The orange kitten stands on the round blue rug in the sunny bedroom, jumping for joy with both paws in the air and a huge smile, golden sunbeams from the big window falling on him. The small wooden bed with the yellow blanket is behind him.",
+   "video": "The kitten jumps up and down on the rug with both paws in the air, laughing, in the warm sunbeams. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "The orange kitten lies curled up in the small wooden bed under the yellow blanket, his head on the white pillow; one eye is just opening sleepily while the other is still closed, a soft smile on his face. A warm sunbeam from the window falls on his face. Calm, cozy morning.",
+   "video": "The kitten purrs softly, his body rising and falling as he breathes; he slowly opens one eye and wiggles his ears in the sunbeam. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "Close-up of the orange kitten's face on the white pillow: both of his big round brown eyes are now wide open and sparkling, with a fresh happy smile and rosy cheeks. The yellow blanket is pulled up to his chin. Golden morning light.",
+   "video": "The kitten blinks his big brown eyes and smiles. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "The orange kitten is in mid-jump from the small wooden bed down to the round blue rug, arms and legs spread, ears flying, laughing. The yellow blanket is thrown back on the bed. Sunny bedroom.",
+   "video": "The kitten hops down from the bed onto the rug and lands on his feet with a little bounce. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1d",
+   "prompt": "The orange kitten stands on the round blue rug and stretches with both arms high above his head and his back arched, his mouth wide open in a big cute yawn and his eyes squeezed shut. Sunny bedroom behind him.",
+   "video": "The kitten stretches his arms up high and gives a big yawn, then lowers his arms and shakes himself awake. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "At a small white bathroom sink with a silver faucet: the orange kitten stands on a wooden step stool and splashes clear water onto his face with both paws, water drops flying around, his eyes closed and a happy smile. A soft yellow towel hangs beside the sink. Bright morning light.",
+   "video": "The kitten splashes water onto his face with both paws again and again, drops flying, then shakes his head happily. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "The orange kitten stands at the sink with a soft yellow towel around his neck, his face fresh, clean and wide awake, eyes sparkling. Next to him a small, cute, sleepy pale-purple cloud with closed eyes and a tiny smile floats away toward the open window, as if the sleepiness is leaving.",
+   "video": "The kitten smiles brightly; the sleepy little cloud drifts slowly away toward the window. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "View of the open bedroom window from inside: on a flowering branch just outside sit two little blue birds with orange beaks, singing with their beaks open. Green hills and the morning sun behind them. No other characters.",
+   "video": "The two little blue birds sing with their beaks opening and closing and hop on the branch; the blossoms sway in the breeze. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2d",
+   "prompt": "The orange kitten stands at the wide-open window with both paws on the windowsill, leaning out a little and taking a deep happy breath of fresh morning air, eyes bright, a big smile. The two little blue birds sit on the branch nearby and the golden sun shines over green hills.",
+   "video": "The kitten takes a deep breath and smiles, his whiskers moving in the breeze; the two blue birds chirp on the branch. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "A sunny kitchen: the orange kitten sits at a small wooden table with a white napkin tied around his neck, holding a small fork upright in one paw and a spoon in the other, looking down hungrily and happily at his breakfast. On the round white plate in front of him there are exactly three foods: a thick slice of white cheese, a slice of golden-brown bread and a boiled egg in a small blue egg cup. There is no meat, no sausage and no other food on the plate. A glass of water stands on the table. Morning light through the kitchen window.",
+   "video": "The kitten taps his fork and spoon lightly on the table in rhythm and licks his lips, looking at his breakfast. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "Top-down close view of a round white breakfast plate on a wooden table, with three foods placed clearly apart from each other in a row from left to right: a thick slice of white cheese on the left, a slice of golden-brown bread in the middle, and a boiled egg in a small blue egg cup on the right. Nothing else on the plate. Bright, clean, appetizing. No characters.",
+   "video": "The breakfast plate stays still on the table in the morning light. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "The orange kitten sits at the kitchen table holding a clear glass of water in both paws and drinking from it, his eyes happy. The breakfast plate in front of him is half empty.",
+   "video": "The kitten drinks the water in small gulps, then lowers the glass and smiles with satisfaction. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3d",
+   "prompt": "The orange kitten sits at the kitchen table with an empty white plate with only a few crumbs in front of him, the empty glass beside it. He leans back, patting his round tummy with one paw, with a proud, satisfied smile, the napkin still around his neck.",
+   "video": "The kitten pats his round tummy and nods happily, then gives a little proud wave of his paw. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "Close-up near the floor by the front door: the orange kitten's cream paws press down the wide velcro strap of a small red sneaker on his foot; the other red sneaker is already on. A wooden floor and a doormat. His happy face is partly visible at the top, concentrating.",
+   "video": "The paws press the velcro strap down firmly and pat the red sneaker; the kitten wiggles his foot. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "The orange kitten stands ready at the front door wearing small red sneakers and a little yellow backpack, one paw on the door handle and the other paw beckoning toward the viewer, with an excited smile. Morning light shines through the glass of the door.",
+   "video": "The kitten beckons with his paw and bounces on his toes in his red sneakers, smiling with excitement. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "Seen from outside: the front door of a cute little house is open and the orange kitten in his red sneakers and yellow backpack steps out onto a stone garden path, one foot forward, looking up at the sunny morning sky with joy. Flowers along the path, a white garden gate ahead.",
+   "video": "The kitten steps out of the door and walks forward along the garden path with happy, bouncy steps. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4d",
+   "prompt": "The orange kitten in his red sneakers and yellow backpack skips along the sunny garden path with both arms raised in the air, laughing. A big golden sun shines in the blue sky, the two little blue birds fly beside him and flowers bloom along the path.",
+   "video": "The kitten skips along the path with his arms in the air, the two blue birds flying beside him and the flowers swaying. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten in his red sneakers and yellow backpack stands at the white garden gate and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. Sunny morning garden and the little house behind him.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}
