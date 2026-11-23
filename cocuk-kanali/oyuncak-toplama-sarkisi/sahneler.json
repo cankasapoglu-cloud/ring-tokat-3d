@@ -1,0 +1,89 @@
+{
+ "not": "Kareler 16:9. 'ref' yoksa ortak referanslar kullanılır: 1 = Pıtır (El Yıkama karesi), 2 = bu şarkının ilk karesi. 'video' alanı klip için hareket tarifidir.",
+ "kalite": "high",
+ "ref": [
+  "el-yikama/kare/01_giris.png",
+  "oyuncak-toplama-sarkisi/kare/h1.png"
+ ],
+ "stil": "The orange kitten is exactly the same character as in reference image 1 (fluffy orange fur, cream belly, cream paws, cream tail tip, big round brown eyes, small pink nose) and wears no clothes or accessories. If a second reference image is given, the playroom with its colorful rug, the low white toy shelf, the wicker basket, the wooden toy box and the toys look exactly as in reference image 2. Bright, tidy, friendly children's playroom. High-quality 3D CGI render in the style of modern 3D preschool nursery-rhyme cartoons, soft rounded toy-like shapes, smooth plush toy materials, vivid saturated colors, bright cheerful lighting, wide 16:9 composition, no text, no letters, no numbers, no logos, no watermark.",
+ "sahneler": [
+  {
+   "ad": "h1",
+   "prompt": "A bright, cheerful children's playroom with a round colorful rug, a low white toy shelf with three open compartments against the wall, an empty round wicker basket, an open wooden toy box and a sunny window. Toys are scattered all over the floor: colorful balls (red, blue and yellow), wooden building cubes in bright colors, four small toy cars, a brown teddy bear and a white plush bunny. The orange kitten stands in the middle of the mess with both paws raised in the air, with a determined, excited happy smile, ready to tidy up.",
+   "video": "The kitten bounces on his feet with both paws raised, looks left and right at the scattered toys and claps his paws with excitement. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text.",
+   "ref": [
+    "el-yikama/kare/01_giris.png"
+   ]
+  },
+  {
+   "ad": "h2",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1a",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1b",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k1c",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2a",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2b",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k2c",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3a",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3b",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k3c",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4a",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4b",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "k4c",
+   "prompt": "yer tutucu",
+   "video": "yer tutucu Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  },
+  {
+   "ad": "veda",
+   "prompt": "Medium close shot: the orange kitten stands in the tidy playroom and waves goodbye with one paw raised high, his big round brown eyes wide open and sparkling, mouth open in a big joyful smile. Behind him the white toy shelf with the teddy bear and the plush bunny sitting on it, the full wicker basket of balls and the closed wooden toy box are softly visible.",
+   "video": "The kitten waves his raised paw back and forth in a happy goodbye, tilting his head and smiling, his brown eyes staying open. Smooth, lively 3D cartoon animation. Static camera. No new characters or objects appear, no text."
+  }
+ ]
+}

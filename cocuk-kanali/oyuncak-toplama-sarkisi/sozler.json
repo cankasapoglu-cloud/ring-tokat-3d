@@ -1,0 +1,207 @@
+{
+ "baslik": "Oyuncakları Toplama Şarkısı (Pıtır Odasını Topluyor)",
+ "baslik_yazi": "Toplama Şarkısı",
+ "baslik_karesi": "h1",
+ "baslik_y": 660,
+ "model": "music_v2_5",
+ "tempo_bpm": 130,
+ "giris_ms": 3000,
+ "bitis_ms": 3000,
+ "ek_stil": [
+  "bouncy ukulele and claps",
+  "playful toy piano"
+ ],
+ "yazilar": {
+  "bay": [
+   "Bay bay!",
+   "turuncu"
+  ]
+ },
+ "bolumler": [
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Topla topla, haydi topla!",
+    "Oyuncaklar yerlerine!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    null,
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 1",
+   "etiket": "Verse 1",
+   "satirlar": [
+    "a b c d e,",
+    "a b c!",
+    "a b c d e,",
+    "a b c!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k1a",
+    "k1b",
+    "k1a",
+    "k1c"
+   ],
+   "yazi": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 2",
+   "etiket": "Verse 2",
+   "satirlar": [
+    "a b c d e,",
+    "a b c!",
+    "a b c d e,",
+    "a b c!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k2a",
+    "k2b",
+    "k2a",
+    "k2c"
+   ],
+   "yazi": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Topla topla, haydi topla!",
+    "Oyuncaklar yerlerine!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    null,
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Kıta 3",
+   "etiket": "Verse 3",
+   "satirlar": [
+    "a b c d e,",
+    "a b c!",
+    "a b c d e,",
+    "a b c!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k3a",
+    "k3b",
+    "k3a",
+    "k3c"
+   ],
+   "yazi": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Kıta 4",
+   "etiket": "Verse 4",
+   "satirlar": [
+    "a b c d e,",
+    "a b c!",
+    "a b c d e,",
+    "a b c!"
+   ],
+   "sure_ms": 14800,
+   "sahneler": [
+    "k4a",
+    "k4b",
+    "k4a",
+    "k4c"
+   ],
+   "yazi": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "ad": "Nakarat",
+   "etiket": "Chorus",
+   "satirlar": [
+    "Topla topla, haydi topla!",
+    "Oyuncaklar yerlerine!"
+   ],
+   "sure_ms": 7400,
+   "sahneler": [
+    "h1",
+    "h2"
+   ],
+   "yazi": [
+    null,
+    null
+   ],
+   "stiller_tr": [
+    "çocuk korosu hep birlikte bağırarak söyler",
+    "alkışlı"
+   ],
+   "stiller_en": [
+    "kids choir shouting along",
+    "hand claps"
+   ]
+  },
+  {
+   "ad": "Bitiş",
+   "etiket": "Outro Verse",
+   "satirlar": [
+    "Odamız tertemiz oldu!",
+    "Hoşça kalın, bay bay!"
+   ],
+   "sure_ms": 8000,
+   "sahneler": [
+    "k4c",
+    "veda"
+   ],
+   "yazi": [
+    null,
+    "bay"
+   ]
+  }
+ ],
+ "not": "Sözler özgündür. Kıtalar 8/7/8/7, nakarat 8/8 hece. Her kıtada 1. ve 3. satır aynı klibi kullanır. Bütün sahneler hareketli; klipler Hailuo (MiniMax) ile."
+}
